@@ -3,6 +3,7 @@
         "#tip#",
         "#creation#",
         "#realization#",
+        "#decktech#",
         "#announcement#",
         "#clickbait#"
     ],
@@ -30,6 +31,10 @@
         "#tipTitle#: #deckChange.capitalize# to #verb# #obstacle#",
         "#tipTitle#: Spend more money on #thing#"
     ],
+    "decktech": [
+        "Deck Tech: #deckVariation#",
+        "Winning #format# with #deckVariation#"
+    ],    
     "descriptor": [
         "more powerful",
         "better",
@@ -294,6 +299,7 @@
     ],
     "deckArch": [
         "#deck#",
+        "#deckVariation#",
         "decks with #card#",
         "#creatureTypes.capitalize# decks",
         "#creatureTypes.capitalize# Tribal",
@@ -316,18 +322,32 @@
         "Onslaught Block Constructed",
         "Holiday Cube"
     ],
-    "colors": [
-        "Bant",
-        "Grixis",
+
+    "colors": [         
         "Mono-Black",
         "Mono-White",
         "Red",
         "Green",
-        "Blue",
-        "Orzhov",
+        "Blue",      
         "Mono-Brown",
-        "Purple"
+        "Purple",
+        "RUG",
+        "BUG",
+        "Four-Color",
+        "Five-Color",
+        "#colorComboNickname"
     ],
+
+    "colorComboNickname": [
+        "Bant",
+        "Grixis",
+        "Mardu",
+        "Esper",
+        "Jeskai",
+        "Orzhov",
+        "Boros"
+    ],
+
     "deck": [
         "Draw Go",
         "Dredge",
@@ -342,11 +362,85 @@
         "Elves",
         "Draft Leftovers",
         "Fish",
-        "RUG Delver",
+        "Delver",
         "Solidarity",
         "Maverick",
-        "Death & Taxes"
+        "Death & Taxes",
+        "Oath",
+        "Affinity",
+        "Tron",
+        "Burn",
+        "Company",
+        "Hatebears",
+        "Madness",
+        "Zoo",
+        "Slide",
+        "#n1-4#-Rack",
+        "#n1-4#-Post",
+        "#colors# Deck Wins"       
     ],
+
+    "deckVariation" : [
+      "#deckPrefix# #deck#",
+      "#deck# #deckSuffix#",
+      "#definingCardname# #deck#",
+      "#deckPrefix# #definingCardname#",
+      "#definingCardname# #deckSuffix#"
+    ],
+
+    "deckPrefix" : [
+      "Turbo",
+      "Midrange",
+      "Manaless",
+      "Suicide",
+      "Counter",
+      "Owling",
+      "Shardless",
+      "Wet #colorComboNickname#",
+      "Dark #colorComboNickname#",
+      "Tooth & ",
+      "All-in",
+      "Aggro"  
+    ],
+
+    "deckSuffix" : [
+      "& Taxes",
+      "& Nail"
+    ], 
+
+    "deckNameCompoundPrefix" :[
+      "Counter",
+      "Elf",
+      "Stone",
+      "Caw"
+    ],
+
+    "deckNameCompoundPrefix" :[
+      "ball",
+      "blade",
+      "haups",
+      "stacks",
+      "storm",
+      "still",
+      "tron",
+      "erator"
+    ],
+
+    "definingCardname" : [
+      "Death's Shadow",
+      "Delver",
+      "Ravager",
+      "Amulet",
+      "Belcher",
+      "Pod",
+      "Kiki",
+      "Melira",
+      "Gifts",
+      "Twin",
+      "Tog",
+      "Slaver"
+    ],
+
     "card": [
         "Air Elemental",
         "Ancestral Recall",
@@ -656,6 +750,9 @@
         "2",
         "3",
         "4",
-        "7"
+        "6",
+        "7",
+        "8",
+        "12"
     ]
 }
