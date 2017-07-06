@@ -386,7 +386,8 @@
       "#deck# #deckSuffix#",
       "#definingCardname# #deck#",
       "#deckPrefix# #definingCardname#",
-      "#definingCardname# #deckSuffix#"
+      "#definingCardname# #deckSuffix#",
+      "#deckPrefix# #deckVariation#"
     ],
 
     "deckPrefix" : [
