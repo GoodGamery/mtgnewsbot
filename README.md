@@ -1,0 +1,2 @@
+# mtgnewsbot
+MT. Gnewsbot
