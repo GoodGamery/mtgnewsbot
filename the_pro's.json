@@ -372,9 +372,11 @@
         "Burn",
         "Company",
         "Hatebears",
+        "Fires",
         "Madness",
         "Zoo",
         "Slide",
+        "Tokens",
         "#n1-4#-Rack",
         "#n1-4#-Post",
         "#colors# Deck Wins",
@@ -399,6 +401,9 @@
       "Counter",
       "Owling",
       "Shardless",
+      "Eternal",        
+      "Full English",
+      "Angry",
       "Wet #colorComboNickname#",
       "Dark #colorComboNickname#",
       "Tooth & ",
@@ -441,7 +446,9 @@
       "Gifts",
       "Twin",
       "Tog",
-      "Slaver"
+      "Slaver",
+      "Valakut",
+      "Scepter"  
     ],
 
     "card": [
