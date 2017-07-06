@@ -308,6 +308,7 @@
         "#card# lists",
         "#deck# lists",
         "#format# #deck#",
+        "#format# #deckVariation#",        
         "#colors.capitalize# #deck#"
     ],
     "format": [
