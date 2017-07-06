@@ -246,7 +246,7 @@
         "ant",
         "bird",
         "dinosaur",
-        "hipppo",
+        "hippo",
         "elf",
         "zombie",
         "cleric",
@@ -267,7 +267,7 @@
         "ants",
         "birds",
         "dinosaurs",
-        "hipppos",
+        "hippos",
         "elves",
         "zombies",
         "clerics",
@@ -308,6 +308,7 @@
         "#card# lists",
         "#deck# lists",
         "#format# #deck#",
+        "#format# #deckVariation#",        
         "#colors.capitalize# #deck#"
     ],
     "format": [
@@ -349,7 +350,7 @@
     ],
 
     "deck": [
-        "Draw Go",
+        "Draw-Go",
         "Dredge",
         "Lands",
         "Stompy",
@@ -372,12 +373,16 @@
         "Burn",
         "Company",
         "Hatebears",
+        "Fires",
         "Madness",
         "Zoo",
         "Slide",
+        "Tokens",
         "#n1-4#-Rack",
         "#n1-4#-Post",
-        "#colors# Deck Wins"       
+        "#colors# Deck Wins",
+        "#definingCardname#-Go",
+        "#deckNameCompoundPrefix##deckNameCompoundSuffix#"  
     ],
 
     "deckVariation" : [
@@ -385,7 +390,8 @@
       "#deck# #deckSuffix#",
       "#definingCardname# #deck#",
       "#deckPrefix# #definingCardname#",
-      "#definingCardname# #deckSuffix#"
+      "#definingCardname# #deckSuffix#",
+      "#deckPrefix# #deckVariation#"
     ],
 
     "deckPrefix" : [
@@ -396,6 +402,9 @@
       "Counter",
       "Owling",
       "Shardless",
+      "Eternal",        
+      "Full English",
+      "Angry",
       "Wet #colorComboNickname#",
       "Dark #colorComboNickname#",
       "Tooth & ",
@@ -415,7 +424,7 @@
       "Caw"
     ],
 
-    "deckNameCompoundPrefix" :[
+    "deckNameCompoundSuffix" :[
       "ball",
       "blade",
       "haups",
@@ -438,7 +447,9 @@
       "Gifts",
       "Twin",
       "Tog",
-      "Slaver"
+      "Slaver",
+      "Valakut",
+      "Scepter"  
     ],
 
     "card": [
