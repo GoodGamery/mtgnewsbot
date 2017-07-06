@@ -1,0 +1,217 @@
+{
+    "origin": [
+        "#tip#",
+        "#creation#",
+        "#realization#"
+    ],
+    "creation": [
+        "#pro# is #creating# a #tech# to #verb# #obstacle#",
+        "#pros# are #creating# a #tech# to #verb# #obstacle#"
+    ],
+    "realization": [
+        "The #pros# don't #realize# that #tech.s# #verb# #obstacle#",
+        "The secret of #obstacle# is #deckChange#"
+    ],
+    "tip": [
+        "#tipTitle#: Make your #deckArch# list #descriptor# by #deckChange#",
+        "#tipTitle#: Improve your #deckArch# by #deckChange#",
+        "#tipTitle#: #deckChange.capitalize# is a #adj# idea, according to #pro#",
+        "#tipTitle#: #deckChange.capitalize# to #verb# #obstacle#",
+        "#tipTitle#: Spend more money on #format#"
+    ],
+    "descriptor": [
+        "more powerful",
+        "better",
+        "sleeker",
+        "cheaper",
+        "more explosive",
+        "deadlier",
+        "quicker",
+        "more reliable",
+        "more impressive",
+        "bad",
+        "worse"
+    ],
+    "adj": [
+        "bad",
+        "good",
+        "awful",
+        "wonderful"
+    ],
+    "tipTitle": [
+        "MTG TIPS",
+        "MTG ADVICE",
+        "DECKBUILDING TIPS",
+        "TIPS FROM THE PROS",
+        "BREAKING NEWS",
+        "INVESTOR REPORT",
+        "DATING ADVICE"
+    ],
+    "deckChange": [
+        "adding #card# to the #deckLocation#",
+        "maindecking #card#",
+        "sideboarding #card#",
+        "removing #card#",
+        "including #n1-4# #card#",
+        "cutting #card# for #card#",
+        "using all foils",
+        "using only misprint cards"
+    ],
+    "deckLocation": [
+        "maindeck",
+        "sideboard"
+    ],
+    "realize": [
+        "realize",
+        "realize",
+        "know",
+        "understand"
+    ],
+    "people": [
+        "#pros#",
+        "#pro#"
+    ],
+    "pro": [
+        "Kai Budde",
+        "Dirk Baberowski",
+        "Marco Blume",
+        "The DCI",
+        "Hasbro",
+        "WOTC",
+        "Jarvis Yu",
+        "Mark Rosewater",
+        "Jon Finkel",
+        "LSV",
+        "Kibler",
+        "Tommi Hovi",
+        "Nassif",
+        "Shouta Yasooka",
+        "Raphaël Lévy",
+        "PVDDR",
+        "Watanabe",
+        "Ruel",
+        "Saitou",
+        "Jůza",
+        "Richard Garfield",
+        "GLEEMAX"
+    ],
+    "pros": [
+        "Magic players",
+        "Wizards",
+        "Sorcerers",
+        "MODO players",
+        "Casuals",
+        "Forum Posters",
+        "Facebook Commenters",
+        "You Make The Card participants",
+        "the pro's"
+    ],
+    "creating": [
+        "designing",
+        "creating",
+        "brewing",
+        "developing",
+        "stewing up",
+        "mashing together"
+    ],
+    "tech": [
+        "deck",
+        "card",
+        "format",
+        "rule change",
+        "large set",
+        "realization",
+        "sideboard",
+        "spicy new tech"
+    ],
+    "verb": [
+        "control",
+        "defeat",
+        "beat",
+        "overcome",
+        "deal with",
+        "handle",
+        "become",
+        "truly know",
+        "lock down",
+        "fix"
+    ],
+    "obstacle": [
+        "#tournament.s#",
+        "#deckArch#",
+        "#people#",
+        "#concept#"
+    ],
+    "concept": [
+        "bad draws",
+        "mana screw",
+        "poor play",
+        "connection problems",
+        "bugs",
+        "bad cards"
+    ],
+    "tournament": [
+        "Pro Tour",
+        "Invitational",
+        "GP"
+    ],
+    "deckArch": [
+        "#deck#",
+        "#format# #deck#",
+        "#colors# #deck#"
+    ],
+    "format": [
+        "Legacy",
+        "Modern",
+        "Commander",
+        "EDH",
+        "Vintage",
+        "Standard"
+    ],
+    "colors": [
+        "Bant",
+        "Grixis",
+        "Mono-Black",
+        "Mono-White",
+        "Red",
+        "Green",
+        "Blue",
+        "Orzhov",
+        "Mobo-Brown"
+    ],
+    "deck": [
+        "Draw Go",
+        "Dredge",
+        "Lands",
+        "Stompy",
+        "Control",
+        "Sligh",
+        "Combo",
+        "Marvel",
+        "Miracles",
+        "Goblins",
+        "Elves",
+        "Draft Leftovers"
+    ],
+    "card": [
+        "Healing Salve",
+        "Squire",
+        "Eager Cadet",
+        "Plains",
+        "Island",
+        "Mountain",
+        "Swamp",
+        "Forest",
+        "Desert",
+        "Stolen Grain",
+        "Borrowing 10,000 Arrows",
+        "Black Lotus",
+        "Llanowar Elves"
+    ],
+    "n1-4": [
+        "1",
+        "2",
+        "3",
+        "4"
+    ]
+}
