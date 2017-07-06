@@ -349,7 +349,7 @@
     ],
 
     "deck": [
-        "Draw Go",
+        "Draw-Go",
         "Dredge",
         "Lands",
         "Stompy",
@@ -378,6 +378,7 @@
         "#n1-4#-Rack",
         "#n1-4#-Post",
         "#colors# Deck Wins",
+        "#definingCardname#-Go",
         "#deckNameCompoundPrefix##deckNameCompoundSuffix#"  
     ],
 
