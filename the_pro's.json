@@ -3,18 +3,29 @@
         "#tip#",
         "#creation#",
         "#realization#",
-        "#decktech#"
+        "#decktech#",
+        "#announcement#",
+        "#clickbait#"
+    ],
+    "clickbait": [
+        "Why #pro# is #verbing.capitalize# #nouns.capitalize#",
+        "How #pro# is #verbing.capitalize# #nouns.capitalize#"
     ],
     "creation": [
         "#pro# is #creating# a #tech# to #verb# #obstacle#",
         "#pros# are #creating# a #tech# to #verb# #obstacle#"
+    ],
+    "announcement": [
+        "Wizards Announces: Duel Decks: #nouns.capitalize# vs #nouns.capitalize#",
+        "Wizards Announces: From the Vault: #nouns.capitalize#",
+        "Wizards Announces: Return to #nouns.capitalize#"
     ],
     "realization": [
         "#pros# don't #realize# that #tech.s# #verb# #obstacle#",
         "The secret of #obstacle# is #deckChange#"
     ],
     "tip": [
-        "#tipTitle#: Make your #deckArch# list #descriptor# by #deckChange#",
+        "#tipTitle#: Make #deckArch# #descriptor# by #deckChange#",
         "#tipTitle#: Improve your #deckArch# by #deckChange#",
         "#tipTitle#: #deckChange.capitalize# is a #adj# idea, according to #pro#",
         "#tipTitle#: #deckChange.capitalize# to #verb# #obstacle#",
@@ -37,9 +48,9 @@
         "bad",
         "worse",
         "more expensive",
-      "more streamlined",
-      "more fun",
-      "sexier"
+        "more streamlined",
+        "more fun",
+        "sexier"
     ],
     "adj": [
         "bad",
@@ -47,11 +58,11 @@
         "awful",
         "wonderful",
         "timeless",
-      "cute",
-      "funny",
-      "exciting",
-      "boring",
-      "shameful"
+        "cute",
+        "funny",
+        "exciting",
+        "boring",
+        "shameful"
     ],
     "tipTitle": [
         "MTG TIPS",
@@ -81,7 +92,8 @@
         "realize",
         "realize",
         "know",
-        "understand"
+        "understand",
+        "comprehend"
     ],
     "people": [
         "#pros#",
@@ -89,8 +101,6 @@
     ],
     "pro": [
         "Kai Budde",
-        "Dirk Baberowski",
-        "Marco Blume",
         "The DCI",
         "Hasbro",
         "WOTC",
@@ -99,9 +109,7 @@
         "Jon Finkel",
         "LSV",
         "Kibler",
-        "Tommi Hovi",
         "Nassif",
-        "Shouta Yasooka",
         "Raphaël Lévy",
         "PVDDR",
         "Watanabe",
@@ -117,10 +125,11 @@
         "Wizards",
         "Sorcerers",
         "MODO players",
-        "Casuals",
+        "MTGOnline Developers",
+        "Casual players",
         "Forum posters",
         "Facebook Commenters",
-        "You Make The Card participants",
+        "'You Make The Card' participants",
         "the pro's"
     ],
     "creating": [
@@ -138,7 +147,6 @@
         "format",
         "rule change",
         "large set",
-        "realization",
         "sideboard",
         "spicy new tech"
     ],
@@ -155,12 +163,55 @@
         "fix",
         "take down"
     ],
+    "verbing": [
+        "controlling",
+        "defeating",
+        "beating",
+        "overcoming",
+        "dealing with",
+        "handling",
+        "becoming",
+        "truly knowing",
+        "locking down",
+        "fixing",
+        "taking down"
+    ],
     "obstacle": [
         "#tournament.s#",
         "#deckArch#",
         "#people#",
         "#concept#",
         "#cardCategory#"
+    ],
+    "noun": [
+        "#cardCategory#",
+        "#things2#",
+        "#creatureTypes#"
+    ],
+    "nouns": [
+        "#cardCategory#",
+        "#things2#",
+        "#creatureTypesPlural#"
+    ],
+    "things2": [
+        "speed",
+        "cunning",
+        "might",
+        "trickery",
+        "riddles",
+        "growth",
+        "death",
+        "law",
+        "order",
+        "chaos",
+        "capitalism",
+        "vault",
+        "caves",
+        "weather",
+        "anger",
+        "blessings",
+        "blessings",
+        "volcanoes"
     ],
     "concept": [
         "bad draws",
@@ -177,6 +228,10 @@
         "bad cards, like #card#"
     ],
     "cardCategory": [
+        "attackers",
+        "blockers",
+        "walls",
+        "flyers",
         "bad cards",
         "good cards",
         "expensive cards",
@@ -187,12 +242,54 @@
         "sorceries",
         "instants"
     ],
+    "creatureTypes": [
+        "ant",
+        "bird",
+        "dinosaur",
+        "hipppo",
+        "elf",
+        "zombie",
+        "cleric",
+        "archer",
+        "knight",
+        "human",
+        "goblin",
+        "merfolk",
+        "wizard",
+        "skeleton",
+        "lord",
+        "crocodile",
+        "demon",
+        "devil",
+        "spirit"
+    ],
+    "creatureTypesPlural": [
+        "ants",
+        "birds",
+        "dinosaurs",
+        "hipppos",
+        "elves",
+        "zombies",
+        "clerics",
+        "archers",
+        "knights",
+        "humans",
+        "goblins",
+        "merfolk",
+        "wizards",
+        "skeletons",
+        "lords",
+        "crocodiles",
+        "demons",
+        "devils",
+        "spirits"
+    ],
     "tournament": [
         "Pro Tour",
         "Invitational",
         "GP",
         "FNM",
-      "your local draft league"
+        "your local draft league"
     ],
     "thing": [
         "#deckArch#",
@@ -204,9 +301,14 @@
         "#deck#",
         "#deckVariation#",
         "decks with #card#",
+        "#creatureTypes.capitalize# decks",
+        "#creatureTypes.capitalize# Tribal",
+        "#format# #creatureTypesPlural.capitalize#",
         "#card# decks",
+        "#card# lists",
+        "#deck# lists",
         "#format# #deck#",
-        "#colors# #deck#"
+        "#colors.capitalize# #deck#"
     ],
     "format": [
         "Legacy",
@@ -216,9 +318,9 @@
         "Vintage",
         "Standard",
         "Pauper",
-      "Momir",
-      "Onslaught Block Constructed",
-      "Holiday Cube"
+        "Momir",
+        "Onslaught Block Constructed",
+        "Holiday Cube"
     ],
 
     "colors": [         
