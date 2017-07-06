@@ -377,7 +377,8 @@
         "Slide",
         "#n1-4#-Rack",
         "#n1-4#-Post",
-        "#colors# Deck Wins"       
+        "#colors# Deck Wins",
+        "#deckNameCompoundPrefix##deckNameCompoundSuffix#"  
     ],
 
     "deckVariation" : [
@@ -415,7 +416,7 @@
       "Caw"
     ],
 
-    "deckNameCompoundPrefix" :[
+    "deckNameCompoundSuffix" :[
       "ball",
       "blade",
       "haups",
