@@ -14,7 +14,12 @@
         "[interrogative:Why,How] #interrogative# #pro# is #verbing.capitalize# #nouns.capitalize#",
         "#count.capitalize# [_thing: #cardCategory#, #creatureTypes.s#, #cardSet# cards, #format# cards] #_thing# [reprinted: that need to be reprinted, we'd love to see reprinted in #teaserCardSet#] #reprinted#",
         "#count.capitalize# #cardCategory# from #teaserCardSet# leaked",
-        "#format# Banwatch: #card#"
+        "#format# Banwatch: #card#",
+        "Have you Considered? #considerations#"
+    ],
+    "considerations": [
+        "#card# in #format#",
+        "#deck#"
     ],
     "creation": [
         "#pro# is #creating# a #tech# to #verb# #obstacle#",
