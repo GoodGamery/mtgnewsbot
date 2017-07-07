@@ -4,6 +4,7 @@
         "#creation#",
         "#realization#",
         "#editorial#",
+        "#tournamentNews#",
         "#playguide#",
         "#decktech#",
         "#announcement#",
@@ -12,7 +13,8 @@
     "clickbait": [
         "[interrogative:Why,How] #interrogative# #pro# is #verbing.capitalize# #nouns.capitalize#",
         "#count.capitalize# [_thing: #cardCategory#, #creatureTypes.s#, #cardSet# cards, #format# cards] #_thing# [reprinted: that need to be reprinted, we'd love to see reprinted in #teaserCardSet#] #reprinted#",
-        "#count.capitalize# #cardCategory# from #teaserCardSet# leaked"
+        "#count.capitalize# #cardCategory# from #teaserCardSet# leaked",
+        "#format# Banwatch: #card#"
     ],
     "creation": [
         "#pro# is #creating# a #tech# to #verb# #obstacle#",
@@ -31,6 +33,10 @@
         "#count.capitalize# [modifier:#basicColors#, #format#, #cardSet#, #nothing#][cards: cards, #cardCategory#, #creatureTypes.s#] #modifier# #cards# that should never have been [verbed:printed, banned, unbanned, played, ignored] #verbed#",
         "The case for [suggestion: banning, improving, reconsidering] #suggestion# [bannedThing: #card#, #concept#] #bannedThing# [where: in #format#, #nothing#] #where#"
     ],
+    "tournamentNews": [
+        "[winner: #pro#, #deck#] #winner# [winWord: wins, triumphs, victorious, crushes, dominates, absolutely destroys] #winWord# [where: at #tournament#, in #city#] #where#",
+        "Pro Tour #teaserCardSet# will be in #city#"
+    ],
     "tip": [
         "#tipTitle#: Make #deckArch# #descriptor# by #deckChange#",
         "#tipTitle#: Improve your #deckArch# [improvable: matchup, list, deck, game] #improvable# by #deckChange#",
@@ -41,7 +47,8 @@
     "decktech": [
         "Deck Tech: #deckVariation#",
         "Deck of the Day: #deckVariation#",        
-        "Winning #format# with #deckVariation#"
+        "Winning #format# with #deckVariation#",
+        "Preparing for #tournament# with #deckVariation#"
     ],
     "playguide": [
         "#recentCardSet# [_format: Limited, Constucted] #_format# Set Review: [_color: #basicColors#, #nothing#] #_color# #cardCategory.capitalizeAll# and #cardCategory.capitalizeAll#",
@@ -189,7 +196,7 @@
         "taking down"
     ],
     "obstacle": [
-        "#tournament.s#",
+        "#tournamentType.s#",
         "#deckArch#",
         "#people#",
         "#concept#",
@@ -320,12 +327,57 @@
         "devils",
         "spirits"
     ],
-    "tournament": [
+    "tournamentType": [
         "Pro Tour",
         "Invitational",
         "GP",
         "FNM",
         "your local draft league"
+    ],
+    "tournament": [
+        "Pro Tour #recentCardSet#",
+        "GP #city#",
+        "SCG #city#"
+    ],
+    "city": [
+        "Abu Dhabi",
+        "Aleppo",
+        "Antwerp",
+        "Beersheeba",
+        "Beirut",
+        "Belfast",
+        "Bangalore",
+        "Baton Rouge",
+        "Boise",
+        "Bologna",
+        "Budapest",
+        "Cairo",
+        "Chihuahua",
+        "Fukushima",
+        "Gloucester",
+        "Grozny",
+        "Guangzhou",
+        "Havana",
+        "Hamburg",
+        "Ho Chi Minh City",
+        "Innsbruck",
+        "Jakarta",
+        "Jersey City",
+        "Kandahar",
+        "Khartoum",
+        "Limerick",
+        "Kraków",
+        "Malmö",
+        "Minsk",
+        "Mogadishu",
+        "Nairobi",
+        "Port-au-Prince",
+        "Pyongyang",
+        "Quito",
+        "Reykjavík",
+        "Tehran",
+        "Winnipeg",
+        "Yonkers"
     ],
     "thing": [
         "#deckArch#",
