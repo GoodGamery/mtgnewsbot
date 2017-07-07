@@ -881,7 +881,7 @@
         "Dominaria",
         "Unstable",
         "#codename#",
-        "#novelCardSetName#" 
+        "#novelCardSetName.capitalizeAll#" 
     ],
     "codename": [
         "Spaghetti",
