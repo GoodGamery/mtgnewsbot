@@ -26,7 +26,7 @@
     ],
     "tip": [
         "#tipTitle#: Make #deckArch# #descriptor# by #deckChange#",
-        "#tipTitle#: Improve your #deckArch# by #deckChange#",
+        "#tipTitle#: Improve your #deckArch# matchup by #deckChange#",
         "#tipTitle#: #deckChange.capitalize# is a #adj# idea, according to #pro#",
         "#tipTitle#: #deckChange.capitalize# to #verb# #obstacle#",
         "#tipTitle#: Spend more money on #thing#"
@@ -336,7 +336,7 @@
         "BUG",
         "Four-Color",
         "Five-Color",
-        "#colorComboNickname"
+        "#colorComboNickname#"
     ],
 
     "colorComboNickname": [
@@ -382,6 +382,7 @@
         "#n1-4#-Post",
         "#colors# Deck Wins",
         "#definingCardname#-Go",
+        "#creatureTypes.capitalize# in a Blender",
         "#deckNameCompoundPrefix##deckNameCompoundSuffix#"  
     ],
 
