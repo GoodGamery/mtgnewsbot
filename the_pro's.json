@@ -3,13 +3,16 @@
         "#tip#",
         "#creation#",
         "#realization#",
+        "#editorial#",
+        "#playguide#",
         "#decktech#",
         "#announcement#",
         "#clickbait#"
     ],
     "clickbait": [
-        "Why #pro# is #verbing.capitalize# #nouns.capitalize#",
-        "How #pro# is #verbing.capitalize# #nouns.capitalize#"
+        "[interrogative:Why,How] #interrogative# #pro# is #verbing.capitalize# #nouns.capitalize#",
+        "#count.capitalize# [_thing: #cardCategory#, #creatureTypes.s#, #cardSet# cards, #format# cards] #_thing# [reprinted: that need to be reprinted, we'd love to see reprinted in #teaserCardSet#] #reprinted#",
+        "#count.capitalize# #cardCategory# from #teaserCardSet# leaked"
     ],
     "creation": [
         "#pro# is #creating# a #tech# to #verb# #obstacle#",
@@ -24,6 +27,10 @@
         "#pros# don't #realize# that #tech.s# #verb# #obstacle#",
         "The secret of #obstacle# is #deckChange#"
     ],
+    "editorial": [
+        "#count.capitalize# [modifier:#basicColors#, #format#, #cardSet#, #nothing#][cards: cards, #cardCategory#, #creatureTypes.s#] #modifier# #cards# that should never have been [verbed:printed, banned, unbanned, played, ignored] #verbed#",
+        "The case for [suggestion: banning, improving, reconsidering] #suggestion# [bannedThing: #card#, #concept#] #bannedThing# [where: in #format#, #nothing#] #where#"
+    ],
     "tip": [
         "#tipTitle#: Make #deckArch# #descriptor# by #deckChange#",
         "#tipTitle#: Improve your #deckArch# [improvable: matchup, list, deck, game] #improvable# by #deckChange#",
@@ -33,8 +40,13 @@
     ],
     "decktech": [
         "Deck Tech: #deckVariation#",
+        "Deck of the Day: #deckVariation#",        
         "Winning #format# with #deckVariation#"
-    ],    
+    ],
+    "playguide": [
+        "#recentCardSet# [_format: Limited, Constucted] #_format# Set Review: [_color: #basicColors#, #nothing#] #_color# #cardCategory.capitalizeAll# and #cardCategory.capitalizeAll#",
+        "#recentCardSet# #format# Set Review: [category: #basicColors#, #cardCategory# and #cardCategory#] #category.capitalizeAll#"        
+    ],
     "descriptor": [
         "more powerful",
         "better",
@@ -79,7 +91,7 @@
         "maindecking #card#",
         "sideboarding #card#",
         "removing #card#",
-        "including #n1-4# #card#",
+        "including #cardCopyCount# #card#",
         "cutting #card# for #card#",
         "using all foils",
         "using only misprint cards"
@@ -217,7 +229,9 @@
         "bad draws",
         "mana screw",
         "poor play",
+        "slow play",
         "connection problems",
+        "the shuffler",
         "bugs",
         "bad cards",
         "counter's",
@@ -225,7 +239,17 @@
         "discard",
         "two-card combos",
         "#card#",
-        "bad cards, like #card#"
+        "bad cards, like #card#",
+        "swiss pairings",
+        "collusion",
+        "scouting",
+        "#gameAccesory.s#"       
+    ],
+    "gameAccesory" :[
+        "UltraPro sleeve",
+        "playmat",
+        "spindown",
+        "deckbox"
     ],
     "cardCategory": [
         "attackers",
@@ -237,10 +261,22 @@
         "expensive cards",
         "foils",
         "burn spells",
-        "countermagic",
-        "land destruction",
+        "counterspells",
+        "land destruction spells",
         "sorceries",
-        "instants"
+        "instants",
+        "artifacts",
+        "enchantments",
+        "lands",
+        "vehicles",
+        "equipment",
+        "#rarity.s#"
+    ],
+    "rarity": [
+        "common",
+        "uncommon",
+        "rare",
+        "mythic"
     ],
     "creatureTypes": [
         "ant",
@@ -321,15 +357,15 @@
         "Pauper",
         "Momir",
         "Onslaught Block Constructed",
-        "Holiday Cube"
+        "Holiday Cube",
+        "Type 4",
+        "Two-Headed Giant"
     ],
 
-    "colors": [         
+    "colors": [      
+        "#basicColors#",
         "Mono-Black",
-        "Mono-White",
-        "Red",
-        "Green",
-        "Blue",      
+        "Mono-White",       
         "Mono-Brown",
         "Purple",
         "RUG",
@@ -337,6 +373,15 @@
         "Four-Color",
         "Five-Color",
         "#colorComboNickname#"
+    ],
+
+    "basicColors": [
+        "Red",
+        "Green",
+        "White",
+        "Blue",
+        "Black",
+        "Colorless"
     ],
 
     "colorComboNickname": [
@@ -378,8 +423,8 @@
         "Zoo",
         "Slide",
         "Tokens",
-        "#n1-4#-Rack",
-        "#n1-4#-Post",
+        "#deckNameNumber#-Rack",
+        "#deckNameNumber#-Post",
         "#colors# Deck Wins",
         "#definingCardname#-Go",
         "#creatureTypes.capitalize# in a Blender",
@@ -757,7 +802,42 @@
         "Pillage",
         "Prodigal Sorcerer"
     ],
-    "n1-4": [
+    "cardSet": [
+        "#recentCardSet#",        
+        "Modern Masters",
+        "Arabian Nights",
+        "Revised",
+        "Fallen Empires",        
+        "Ice Age",
+        "Homelands",
+        "Ravnica",
+        "Time Spiral",
+        "Unglued",
+        "Eternal Masters"
+    ],
+    "recentCardSet": [
+        "Amonkhet",
+        "Hour of Devastation",
+        "Modern Masters",
+        "Eternal Masters"
+    ],
+    "teaserCardSet": [
+        "Ixalan",
+        "Rivals of Ixalan",
+        "Explorers of Ixalan",        
+        "Dominaria",
+        "Unstable",
+        "Spaghetti",
+        "Meatballs"        
+    ],
+    "cardCopyCount": [
+        "1",
+        "2",
+        "3",
+        "4",
+        "7"
+    ],
+    "deckNameNumber": [
         "1",
         "2",
         "3",
@@ -766,5 +846,15 @@
         "7",
         "8",
         "12"
-    ]
+    ],
+    "count": [
+        "Two",
+        "Three",
+        "Four",
+        "Five",
+        "Six",
+        "Seven",
+        "Ten"
+    ],
+    "nothing": []
 }
