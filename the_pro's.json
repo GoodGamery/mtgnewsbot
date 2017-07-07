@@ -3,13 +3,18 @@
         "#tip#",
         "#creation#",
         "#realization#",
+        "#editorial#",
+        "#tournamentNews#",
+        "#playguide#",
         "#decktech#",
         "#announcement#",
         "#clickbait#"
     ],
     "clickbait": [
-        "Why #pro# is #verbing.capitalize# #nouns.capitalize#",
-        "How #pro# is #verbing.capitalize# #nouns.capitalize#"
+        "[interrogative:Why,How] #interrogative# #pro# is #verbing.capitalize# #nouns.capitalize#",
+        "#count.capitalize# [_thing: #cardCategory#, #creatureTypes.s#, #cardSet# cards, #format# cards] #_thing# [reprinted: that need to be reprinted, we'd love to see reprinted in #teaserCardSet#] #reprinted#",
+        "#count.capitalize# #cardCategory# from #teaserCardSet# leaked",
+        "#format# Banwatch: #card#"
     ],
     "creation": [
         "#pro# is #creating# a #tech# to #verb# #obstacle#",
@@ -18,23 +23,38 @@
     "announcement": [
         "Wizards Announces: Duel Decks: #nouns.capitalize# vs #nouns.capitalize#",
         "Wizards Announces: From the Vault: #nouns.capitalize#",
-        "Wizards Announces: Return to #nouns.capitalize#"
+        "Wizards Announces: #novelCardSetName.capitalizeAll#",       
+        "[_nextSet:The next set, The next fall set, #codename.capitalize#] [_verbphrase: is actually, is really named, will be named] #_nextSet# #_verbphrase# #novelCardSetName.capitalizeAll#"
     ],
     "realization": [
         "#pros# don't #realize# that #tech.s# #verb# #obstacle#",
         "The secret of #obstacle# is #deckChange#"
     ],
+    "editorial": [
+        "#count.capitalize# [modifier:#basicColors#, #format#, #cardSet#, #nothing#][cards: cards, #cardCategory#, #creatureTypes.s#] #modifier# #cards# that should never have been [verbed:printed, banned, unbanned, played, ignored] #verbed#",
+        "The case for [suggestion: banning, improving, reconsidering] #suggestion# [bannedThing: #card#, #concept#] #bannedThing# [where: in #format#, #nothing#] #where#"
+    ],
+    "tournamentNews": [
+        "[winner: #pro#, #deck#] #winner# [winWord: wins, triumphs, victorious, crushes, dominates, absolutely destroys] #winWord# [where: at #tournament#, in #city#] #where#",
+        "Pro Tour #teaserCardSet# will be in #city#"
+    ],
     "tip": [
         "#tipTitle#: Make #deckArch# #descriptor# by #deckChange#",
-        "#tipTitle#: Improve your #deckArch# by #deckChange#",
+        "#tipTitle#: Improve your #deckArch# [improvable: matchup, list, deck, game] #improvable# by #deckChange#",
         "#tipTitle#: #deckChange.capitalize# is a #adj# idea, according to #pro#",
         "#tipTitle#: #deckChange.capitalize# to #verb# #obstacle#",
         "#tipTitle#: Spend more money on #thing#"
     ],
     "decktech": [
         "Deck Tech: #deckVariation#",
-        "Winning #format# with #deckVariation#"
-    ],    
+        "Deck of the Day: #deckVariation#",        
+        "Winning #format# with #deckVariation#",
+        "Preparing for #tournament# with #deckVariation#"
+    ],
+    "playguide": [
+        "#recentCardSet# [_format: Limited, Constucted] #_format# Set Review: [_color: #basicColors#, #nothing#] #_color# #cardCategory.capitalizeAll# and #cardCategory.capitalizeAll#",
+        "#recentCardSet# #format# Set Review: [category: #basicColors#, #cardCategory# and #cardCategory#] #category.capitalizeAll#"        
+    ],
     "descriptor": [
         "more powerful",
         "better",
@@ -79,7 +99,7 @@
         "maindecking #card#",
         "sideboarding #card#",
         "removing #card#",
-        "including #n1-4# #card#",
+        "including #cardCopyCount# #card#",
         "cutting #card# for #card#",
         "using all foils",
         "using only misprint cards"
@@ -177,7 +197,7 @@
         "taking down"
     ],
     "obstacle": [
-        "#tournament.s#",
+        "#tournamentType.s#",
         "#deckArch#",
         "#people#",
         "#concept#",
@@ -217,7 +237,9 @@
         "bad draws",
         "mana screw",
         "poor play",
+        "slow play",
         "connection problems",
+        "the shuffler",
         "bugs",
         "bad cards",
         "counter's",
@@ -225,7 +247,17 @@
         "discard",
         "two-card combos",
         "#card#",
-        "bad cards, like #card#"
+        "bad cards, like #card#",
+        "swiss pairings",
+        "collusion",
+        "scouting",
+        "#gameAccesory.s#"       
+    ],
+    "gameAccesory" :[
+        "UltraPro sleeve",
+        "playmat",
+        "spindown",
+        "deckbox"
     ],
     "cardCategory": [
         "attackers",
@@ -237,10 +269,22 @@
         "expensive cards",
         "foils",
         "burn spells",
-        "countermagic",
-        "land destruction",
+        "counterspells",
+        "land destruction spells",
         "sorceries",
-        "instants"
+        "instants",
+        "artifacts",
+        "enchantments",
+        "lands",
+        "vehicles",
+        "equipment",
+        "#rarity.s#"
+    ],
+    "rarity": [
+        "common",
+        "uncommon",
+        "rare",
+        "mythic"
     ],
     "creatureTypes": [
         "ant",
@@ -284,12 +328,57 @@
         "devils",
         "spirits"
     ],
-    "tournament": [
+    "tournamentType": [
         "Pro Tour",
         "Invitational",
         "GP",
         "FNM",
         "your local draft league"
+    ],
+    "tournament": [
+        "Pro Tour #recentCardSet#",
+        "GP #city#",
+        "SCG #city#"
+    ],
+    "city": [
+        "Abu Dhabi",
+        "Aleppo",
+        "Antwerp",
+        "Beersheeba",
+        "Beirut",
+        "Belfast",
+        "Bangalore",
+        "Baton Rouge",
+        "Boise",
+        "Bologna",
+        "Budapest",
+        "Cairo",
+        "Chihuahua",
+        "Fukushima",
+        "Gloucester",
+        "Grozny",
+        "Guangzhou",
+        "Havana",
+        "Hamburg",
+        "Ho Chi Minh City",
+        "Innsbruck",
+        "Jakarta",
+        "Jersey City",
+        "Kandahar",
+        "Khartoum",
+        "Limerick",
+        "Kraków",
+        "Malmö",
+        "Minsk",
+        "Mogadishu",
+        "Nairobi",
+        "Port-au-Prince",
+        "Pyongyang",
+        "Quito",
+        "Reykjavík",
+        "Tehran",
+        "Winnipeg",
+        "Yonkers"
     ],
     "thing": [
         "#deckArch#",
@@ -321,22 +410,31 @@
         "Pauper",
         "Momir",
         "Onslaught Block Constructed",
-        "Holiday Cube"
+        "Holiday Cube",
+        "Type 4",
+        "Two-Headed Giant"
     ],
 
-    "colors": [         
+    "colors": [      
+        "#basicColors#",
         "Mono-Black",
-        "Mono-White",
-        "Red",
-        "Green",
-        "Blue",      
+        "Mono-White",       
         "Mono-Brown",
         "Purple",
         "RUG",
         "BUG",
         "Four-Color",
         "Five-Color",
-        "#colorComboNickname"
+        "#colorComboNickname#"
+    ],
+
+    "basicColors": [
+        "Red",
+        "Green",
+        "White",
+        "Blue",
+        "Black",
+        "Colorless"
     ],
 
     "colorComboNickname": [
@@ -378,10 +476,11 @@
         "Zoo",
         "Slide",
         "Tokens",
-        "#n1-4#-Rack",
-        "#n1-4#-Post",
+        "#deckNameNumber#-Rack",
+        "#deckNameNumber#-Post",
         "#colors# Deck Wins",
         "#definingCardname#-Go",
+        "#creatureTypes.capitalize# in a Blender",
         "#deckNameCompoundPrefix##deckNameCompoundSuffix#"  
     ],
 
@@ -687,7 +786,7 @@
         "Soul Net",
         "Spell Blast",
         "Stasis",
-        "Steal",
+        "Steal Artifact",
         "Stone Giant",
         "Stone Rain",
         "Stream of Life",
@@ -756,7 +855,63 @@
         "Pillage",
         "Prodigal Sorcerer"
     ],
-    "n1-4": [
+    "cardSet": [
+        "#recentCardSet#",        
+        "Modern Masters",
+        "Arabian Nights",
+        "Revised",
+        "Fallen Empires",        
+        "Ice Age",
+        "Homelands",
+        "Ravnica",
+        "Time Spiral",
+        "Unglued",
+        "Eternal Masters"
+    ],
+    "recentCardSet": [
+        "Amonkhet",
+        "Hour of Devastation",
+        "Modern Masters",
+        "Eternal Masters"
+    ],
+    "teaserCardSet": [
+        "Ixalan",
+        "Rivals of Ixalan",
+        "Explorers of Ixalan",        
+        "Dominaria",
+        "Unstable",
+        "#codename#",
+        "#novelCardSetName.capitalizeAll#" 
+    ],
+    "codename": [
+        "Spaghetti",
+        "Meatballs"
+    ],
+    "novelCardSetName": [
+        "#cardSetPrefix# #plane#",
+        "#plane# #cardSetSuffix#"
+    ],
+    "cardSetPrefix": [
+        "#creatureTypes.s# of",
+        "#characterClass.s# of",
+        "#things2# of",
+        "escape from",
+        "return to",
+        "shadows over",
+        "fires of",
+        "echoes of"
+    ],
+    "cardSetSuffix": ["reborn", "revisited", "unleashed"],
+    "characterClass": ["master", "warlord", "avenger", "champion", "explorer", "pirate", "chieftain", "conqueror", "god", "assassin", "oracle", "ghost"],
+    "plane": ["Rath", "Shandalar", "Mirrodin", "Kamigawa", "Alara", "Zendikar", "Innistrad", "Kaladesh", "Amonkhet", "Muruganda", "Mirrodin", "Ravnica"],    
+    "cardCopyCount": [
+        "1",
+        "2",
+        "3",
+        "4",
+        "7"
+    ],
+    "deckNameNumber": [
         "1",
         "2",
         "3",
@@ -765,5 +920,15 @@
         "7",
         "8",
         "12"
-    ]
+    ],
+    "count": [
+        "Two",
+        "Three",
+        "Four",
+        "Five",
+        "Six",
+        "Seven",
+        "Ten"
+    ],
+    "nothing": []
 }
