@@ -23,7 +23,9 @@
     "announcement": [
         "Wizards Announces: Duel Decks: #nouns.capitalize# vs #nouns.capitalize#",
         "Wizards Announces: From the Vault: #nouns.capitalize#",
-        "Wizards Announces: Return to #nouns.capitalize#"
+        "Wizards Announces: Return to [where: #nouns.capitalize#]",
+        "Wizards Announces: #novelCardSetName.capitalizeAll#",       
+        "[_nextSet:The next set, The next fall set, #codename.capitalize#] [_verbphrase: is actually, is really named, will be named] #_nextSet# #_verbphrase# #novelCardSetName.capitalizeAll#"
     ],
     "realization": [
         "#pros# don't #realize# that #tech.s# #verb# #obstacle#",
@@ -879,9 +881,29 @@
         "Explorers of Ixalan",        
         "Dominaria",
         "Unstable",
-        "Spaghetti",
-        "Meatballs"        
+        "#codename#"       
     ],
+    "codename": [
+        "Spaghetti",
+        "Meatballs"
+    ],
+    "novelCardSetName": [
+        "#cardSetPrefix# #plane#",
+        "#plane# #cardSetSuffix#"
+    ],
+    "cardSetPrefix": [
+        "#creatureTypes.s# of",
+        "#characterClass.s# of",
+        "#things2# of",
+        "escape from",
+        "return to",
+        "shadows over",
+        "fires of",
+        "echoes of"
+    ],
+    "cardSetSuffix": ["reborn", "revisited", "unleashed"],
+    "characterClass": ["#creatureType", "master", "warlord", "avenger", "champion", "explorer", "pirate", "chieftain", "conqueror", "god", "assassin", "oracle", "ghost"],
+    "plane": ["Rath", "Shandalar", "Mirrodin", "Kamigawa", "Alara", "Zendikar", "Innistrad", "Kaladesh", "Amonkhet", "Muruganda", "Mirrodin", "Ravnica"],    
     "cardCopyCount": [
         "1",
         "2",
