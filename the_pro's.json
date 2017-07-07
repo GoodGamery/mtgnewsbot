@@ -26,7 +26,7 @@
     ],
     "tip": [
         "#tipTitle#: Make #deckArch# #descriptor# by #deckChange#",
-        "#tipTitle#: Improve your #deckArch# matchup by #deckChange#",
+        "#tipTitle#: Improve your #deckArch# [improvable: matchup, list, deck, game] #improvable# by #deckChange#",
         "#tipTitle#: #deckChange.capitalize# is a #adj# idea, according to #pro#",
         "#tipTitle#: #deckChange.capitalize# to #verb# #obstacle#",
         "#tipTitle#: Spend more money on #thing#"
