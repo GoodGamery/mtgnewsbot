@@ -880,7 +880,8 @@
         "Explorers of Ixalan",        
         "Dominaria",
         "Unstable",
-        "#codename#"       
+        "#codename#",
+        "#novelCardSetName#" 
     ],
     "codename": [
         "Spaghetti",
