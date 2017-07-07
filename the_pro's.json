@@ -902,7 +902,7 @@
         "echoes of"
     ],
     "cardSetSuffix": ["reborn", "revisited", "unleashed"],
-    "characterClass": ["#creatureType", "master", "warlord", "avenger", "champion", "explorer", "pirate", "chieftain", "conqueror", "god", "assassin", "oracle", "ghost"],
+    "characterClass": ["master", "warlord", "avenger", "champion", "explorer", "pirate", "chieftain", "conqueror", "god", "assassin", "oracle", "ghost"],
     "plane": ["Rath", "Shandalar", "Mirrodin", "Kamigawa", "Alara", "Zendikar", "Innistrad", "Kaladesh", "Amonkhet", "Muruganda", "Mirrodin", "Ravnica"],    
     "cardCopyCount": [
         "1",
