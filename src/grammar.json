@@ -1,52 +1,50 @@
 {
     "origin": [
         "#tip#",
-        "#creation#",
+        "[_proIs:#pro# is,#pros# are]#_proIs# #creating# #tech.a# to #verb# #obstacle#",
         "#realization#",
-        "#editorial#",
+        "#count.capitalize# #broadCardClassification# that should never have been [verbed:printed,banned,unbanned,played,ignored]#verbed#",
+        "The case for #suggestion# [_bannedThing:#card#,#concept#]#_bannedThing#[_where: in #format#,#nothing#]#_where#",
         "#tournamentNews#",
         "#playguide#",
         "#decktech#",
         "#announcement#",
         "#clickbait#",
-        "Top pro reveals plan for #event#: Play #card# in #deck# to counter #card#"
+        "Top pro reveals plan for #event#: Play #card# in #deck# to counter #card#",
+        "Emergency: #card# banned in #format#",
+        "#card# banned in #format# after #deck# wins #tournament#"
     ],
+    "broadCardClassification": ["#cardModifier##cardBase#"],
+    "cardModifier": ["#basicColors# ","#format# ","#cardSet# ","#nothing#"],
+    "cardBase": ["cards","#cardCategory#","#creatureTypes.s#"],
+    "suggestion": ["banning","improving","reconsidering"],
     "clickbait": [
         "[interrogative:Why,How]#interrogative# #pro# is #verbing.capitalize# #nouns.capitalize#",
-        "#count.capitalize# [_thing: #cardCategory#, #creatureTypes.s#, #cardSet# cards, #format# cards]#_thing# [reprinted: that need to be reprinted, we'd love to see reprinted in #teaserCardSet#]#reprinted#",
+        "#count.capitalize# [_thing:#cardCategory#,#creatureTypes.s#,#cardSet# cards,#format# cards]#_thing# [reprinted:that need to be reprinted,we'd love to see reprinted in #teaserCardSet#]#reprinted#",
         "#count.capitalize# #cardCategory# from #teaserCardSet# leaked",
         "#format# Banwatch: #card#",
-        "Have you Considered? #considerations#"
-    ],
-    "considerations": [
-        "#card# in #format#",
-        "#deck#"
-    ],
-    "creation": [
-        "#pro# is #creating# a #tech# to #verb# #obstacle#",
-        "#pros# are #creating# a #tech# to #verb# #obstacle#"
+        "Have you Considered? [_consider:#card# in #format#,#deck#]#_consider#"
     ],
     "announcement": [
         "Wizards Announces: Duel Decks: #nouns.capitalize# vs #nouns.capitalize#",
         "Wizards Announces: From the Vault: #nouns.capitalize#",
         "Wizards Announces: #novelCardSetName.capitalizeAll#",       
-        "[_nextSet:The next set, The next fall set, #codename.capitalize#] [_verbphrase: is actually, is really named, will be named]#_nextSet# #_verbphrase# #novelCardSetName.capitalizeAll#"
+        "[_nextSet:The next set,The next fall set,#codename.capitalize#][_verbphrase:is actually,is really named,will be named]#_nextSet# #_verbphrase# #novelCardSetName.capitalizeAll#"
     ],
     "realization": [
-        "#pros# don't #realize# that #tech.s# #verb# #obstacle#",
-        "The secret of #obstacle# is #deckChange#"
+        "#pros# Don't #realize.capitalize# that #tech.s# #verb# #obstacle.capitalize#",
+        "The Secret of #obstacle# is #deckChange#"
     ],
     "editorial": [
-        "#count.capitalize# [modifier:#basicColors#, #format#, #cardSet#, #nothing#][cards: cards, #cardCategory#, #creatureTypes.s#]#modifier# #cards# that should never have been [verbed:printed, banned, unbanned, played, ignored]#verbed#",
-        "The case for [suggestion: banning, improving, reconsidering]#suggestion# [bannedThing: #card#, #concept#]#bannedThing# [where: in #format#, #nothing#]#where#"
+
     ],
     "tournamentNews": [
-        "[winner: #pro#, #deck#]#winner# [winWord: wins, triumphs, victorious, crushes, dominates, absolutely destroys]#winWord# [where: at #tournament#, in #city#]#where#",
+        "[winner:#pro#,#deck#]#winner# [winWord:wins,triumphs,victorious,crushes,dominates,absolutely destroys]#winWord# [where:at #tournament#,in #city#]#where#",
         "Pro Tour #teaserCardSet# will be in #city#"
     ],
     "tip": [
         "#tipTitle#: Make #deckArch# #descriptor# by #deckChange#",
-        "#tipTitle#: Improve your #deckArch# [improvable: matchup, list, deck, game]#improvable# by #deckChange#",
+        "#tipTitle#: Improve your #deckArch# [improvable:matchup,list,deck,game]#improvable# by #deckChange#",
         "#tipTitle#: #deckChange.capitalize# is a #adj# idea, according to #pro#",
         "#tipTitle#: #deckChange.capitalize# to #verb# #obstacle#",
         "#tipTitle#: Spend more money on #thing#"
@@ -58,8 +56,8 @@
         "Preparing for #tournament# with #deckVariation#"
     ],
     "playguide": [
-        "#recentCardSet# [_format: Limited, Constucted]#_format# Set Review: [_color: #basicColors#, #nothing#]#_color# #cardCategory.capitalizeAll# and #cardCategory.capitalizeAll#",
-        "#recentCardSet# #format# Set Review: [category: #basicColors#, #cardCategory# and #cardCategory#]#category.capitalizeAll#"        
+        "#recentCardSet# [_format:Limited,Constucted]#_format# Set Review: [_color:#basicColors#,#nothing#]#_color# #cardCategory.capitalizeAll# and #cardCategory.capitalizeAll#",
+        "#recentCardSet# #format# Set Review: [category:#basicColors#,#cardCategory# and #cardCategory#]#category.capitalizeAll#"        
     ],
     "descriptor": [
         "more powerful",
@@ -121,10 +119,7 @@
         "understand that",
         "comprehend"
     ],
-    "people": [
-        "#pros#",
-        "#pro#"
-    ],
+    "people": ["#pros#","#pro#"],
     "pro": [
         "Kai Budde",
         "The DCI",
@@ -144,7 +139,8 @@
         "Jůza",
         "Richard Garfield",
         "GLEEMAX",
-        "Mike Flores"
+        "Mike Flores",
+        "Urza"
     ],
     "pros": [
         "Magic players",
@@ -338,6 +334,7 @@
         "Pro Tour",
         "Invitational",
         "GP",
+        "Grand Prix",
         "FNM",
         "your local draft league"
     ],
@@ -345,6 +342,7 @@
     "tournament": [
         "Pro Tour #recentCardSet#",
         "GP #city#",
+        "Grand Prix #city#",
         "SCG #city#"
     ],
     "city": [
