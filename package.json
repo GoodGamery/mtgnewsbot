@@ -1,0 +1,25 @@
+{
+  "name": "mtgnewsbot",
+  "version": "1.0.0",
+  "description": "MTG News Robot",
+  "main": "index.js",
+  "scripts": {
+    "test": "jsonlint the_pro's.json"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mdiehr/mtgnewsbot.git"
+  },
+  "keywords": [
+    "Robot",
+    "Twitter"
+  ],
+  "author": "Mark Diehr",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/mdiehr/mtgnewsbot/issues"
+  },
+  "homepage": "https://github.com/mdiehr/mtgnewsbot#readme",
+  "devDependencies": {
+  }
+}
