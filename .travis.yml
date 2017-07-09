@@ -1,4 +1,6 @@
 language: node_js
 node_js: node
-install: npm install jsonlint -g
-script: jsonlint the_pro\'s.json
+install: npm install
+before_script: npm install jsonlint -g
+script: npm test
+after_script: npm start
