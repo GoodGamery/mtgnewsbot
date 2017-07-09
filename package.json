@@ -5,7 +5,7 @@
   "main": "src/index.js",
   "scripts": {
     "start": "node src/index.js",
-    "test": "jsonlint src/the_pro's.json"
+    "test": "jsonlint src/grammar.json"
   },
   "repository": {
     "type": "git",
