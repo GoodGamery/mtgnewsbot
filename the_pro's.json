@@ -8,7 +8,8 @@
         "#playguide#",
         "#decktech#",
         "#announcement#",
-        "#clickbait#"
+        "#clickbait#",
+        "Top pro reveals plan for #event#: Play #card# in #deck# to counter #card#"
     ],
     "clickbait": [
         "[interrogative:Why,How] #interrogative# #pro# is #verbing.capitalize# #nouns.capitalize#",
@@ -117,7 +118,7 @@
         "realize",
         "realize",
         "know",
-        "understand",
+        "understand that",
         "comprehend"
     ],
     "people": [
@@ -340,6 +341,7 @@
         "FNM",
         "your local draft league"
     ],
+    "event": ["#tournament#"],
     "tournament": [
         "Pro Tour #recentCardSet#",
         "GP #city#",
@@ -491,6 +493,7 @@
     ],
 
     "deckVariation" : [
+      "#deck#",
       "#deckPrefix# #deck#",
       "#deck# #deckSuffix#",
       "#definingCardname# #deck#",
