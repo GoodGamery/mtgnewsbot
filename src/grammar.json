@@ -130,10 +130,10 @@
         "MAGIC ARCANA"
     ],
     "deckChange": [
-        "adding #card# to the #deckLocation#",
-        "maindecking #card#",
+        "adding [_what:#card#,#card#,#card#,#cardCategory.s#]#_what# to the #deckLocation#",
+        "maindecking [_what:#card#,#cardCategory.s#]#_what#",
         "sideboarding #card#",
-        "removing #card#",
+        "removing [_what:#card#,#cardCategory.s#]#_what#",
         "including #cardCopyCount# #card#",
         "cutting #card# for #card#",
         "using all foils",
@@ -241,8 +241,8 @@
     "verb": [
         "control", "defeat", "hold", "capture", "handle", "understand", "wield", "observe", "abuse", "carry", "shuffle",
         "perceive", "realize", "grow", "water", "nourish", "swallow", "question", "cradle", "cherish", "despise", "summon",
-        "transform", "explain", "forget", "remember", "ignore", "paint", "study", "capture", "release", "misundertand",
-        "sacrifice"
+        "transform", "explain", "forget", "remember", "ignore", "adorn", "study", "capture", "release", "misundertand",
+        "sacrifice", "destroy"
     ],
     "noun": [
         "#singularNoun#",
@@ -283,12 +283,12 @@
         "grimoire", "chalice", "blade", "gift", "signet", "monolith", "gemstone", "clue", "scroll", "lantern", "collar", "talisman"
     ],
     "irregularPluralNoun": [
-        "teeth", "feet", "pants", "geese", "fish", "children", "men", "women", "potatoes", "guacamole"
+        "teeth", "feet", "pants", "geese", "fish", "children", "men", "women", "potatoes", "knives"
     ],    
     "massNoun": [
-      "land", "ichor", "water", "sand", "mana", "ashes", "wood", "fire", "lightning", "phyrexian oil", "snow", "riches", "lunch", "treasure"
+      "land", "ichor", "water", "sand", "mana", "ashes", "wood", "fire", "lightning", "phyrexian oil", "snow", "riches", "lunch", "treasure", "guacamole"
     ],
-    "objectNounPronoun": ["[_noun:#aNoun#,#abstractNoun#,#massNoun#][_pronoun:it]","[_noun:#pluralNoun#][_pronoun:them]"],
+    "objectNounPronoun": ["[_noun:#aNoun#,#abstractNoun#,#abstractNoun#,#massNoun#,#adj.a# #itemNoun#][_pronoun:it]","[_noun:#pluralNoun#][_pronoun:them]"],
     "nouns": [
         "#cardCategory.s#",
         "#things2#",
@@ -353,12 +353,15 @@
         "bad card",
         "good card",
         "expensive card",
+        "banned card",
+        "counterfeit card",
         "foil",
         "burn spell",
         "counterspell",
         "land destruction spell",
         "sorcery",
         "instant",
+        "planeswalker",
         "artifact",
         "enchantment",
         "land",
@@ -546,6 +549,7 @@
         "Sligh",
         "Combo",
         "Marvel",
+        "Energy",
         "Miracles",
         "Goblins",
         "Elves",
@@ -566,6 +570,7 @@
         "Zoo",
         "Slide",
         "Tokens",
+        "Superfriends",
         "#deckNameNumber#-Rack",
         "#deckNameNumber#-Post",
         "#colors# Deck Wins",
@@ -595,26 +600,33 @@
       "Eternal",        
       "Full English",
       "Angry",
+      "Fruity",
       "Wet #colorComboNickname#",
       "Dark #colorComboNickname#",
-      "Tooth & ",
+      "Light #colorComboNickname#",
+      "Hot #colorComboNickname#",           
+      "Tooth &",
       "All-in",
       "Aggro",
       "Angel",
       "Dragon",
+      "Eldrazi",
       "Oops! All #definingCardname.s#"
     ],
 
     "deckSuffix" : [
       "& Taxes",
-      "& Nail"
+      "& Nail",
+      "Pebbles"
     ], 
 
     "deckNameCompoundPrefix" :[
       "Counter",
       "Elf",
       "Stone",
-      "Caw"
+      "Caw",
+      "Grisel",
+      "Death"
     ],
 
     "deckNameCompoundSuffix" :[
@@ -642,7 +654,13 @@
       "Tog",
       "Slaver",
       "Valakut",
-      "Scepter"  
+      "Scepter",
+      "Lantern",
+      "Ad Nauseam",
+      "Mentor",
+      "Workshop",
+      "Moon",
+      "Vial"
     ],
 
     "card": [
@@ -996,7 +1014,8 @@
         "echoes of"
     ],
     "cardSetSuffix": ["reborn", "revisited", "unleashed"],
-    "characterClass": ["master", "warlord", "avenger", "champion", "explorer", "pirate", "chieftain", "conqueror", "god", "assassin", "oracle", "ghost"],
+    "characterClass": ["master", "warlord", "avenger", "champion", "explorer", "pirate", "chieftain", "conqueror", "god", "assassin", "oracle", "ghost",
+                        "knave", "defender","ancient", "master", "prisoner", "buffoon", "baby", "clown", "villain", "freak", "fiend", "titan", "horror"],
     "plane": ["Rath", "Shandalar", "Mirrodin", "Kamigawa", "Alara", "Zendikar", "Innistrad", "Kaladesh", "Amonkhet", "Muruganda", "Mirrodin", "Ravnica"],    
     "cardCopyCount": [
         "1",
