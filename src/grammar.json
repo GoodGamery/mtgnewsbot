@@ -10,41 +10,42 @@
         "#decktech#",
         "#announcement#",
         "#clickbait#",
-        "[_proIs:#pro# is,#pros# are]#_proIs# #creating# #tech.a# to #verbDefeat# #obstacle#",
+        "[_proIs:#pro# is,#pros# are]#_proIs# #creating# #tech.a# to #verbDefeat# #obstacle.capitalize#",
         "#count.capitalize# #broadCardClassification.capitalizeAll# That Should Never Have Been [_verbed:Printed,Banned,Unbanned,Played,Ignored]#_verbed#",
-        "The Case for #suggestion.capitalizeAll# [_bannedThing:#card#,#concept#]#_bannedThing.capitalizeAll#[_where: in #format#,#nothing#]#_where#",
+        "The Case for #suggestion.capitalizeAll# [_bannedThing:#card#,#gameConcept#]#_bannedThing.capitalizeAll#[_where: in #format#,#nothing#]#_where#",
         "[_pro:Top Pro,#pro#,#pros#]#_pro# #revealsVerb.capitalize# #planNoun.capitalize# for #event#: Play #card# in #deck# to counter #card#",
-        "Emergency: #card# Banned in #format#",
+        "Emergency Banning: #card# Banned in #format#",
         "#card# Banned in #format.capitalizeAll# After #deck.capitalizeAll# Wins #tournament.capitalizeAll#",
-        "THE STORY BEHIND THE FLAVOR TEXT: #flavorText#",
-        "#pro# [_picked:First Picked,Last Picked,Wheeled,Drafted]#_picked# #card# and You Won't Believe What Happens Next"
+        "BEHIND THE FLAVOR TEXT: #flavorText#",
+        "#pro# [_picked:First Picked,Last Picked,Wheeled,Drafted]#_picked# #card# and You Won't Believe What Happens Next",
+        "The importance of [_thing:#card#,#cardCategory.s#,#creatureTypes.s#,#gameConcept#]#_thing# in [_where:#format#,#recentCardSet#]#_where#"
     ],
     "clickbait": [
         "[interrogative:Why,How]#interrogative# #pro# is #verbDefeating.capitalize# #nouns.capitalize#",
-        "#count.capitalize# [_thing:#cardCategory#,#creatureTypes.s#,#cardSet# Cards,#format# Cards]#_thing# [reprinted:That Need to be Reprinted,We'd Love to See Reprinted in #teaserCardSet#]#reprinted#",
-        "#count.capitalize# #cardCategory# from #teaserCardSet# leaked",
+        "#count.capitalize# [_thing:#cardCategory.s#,#creatureTypes.s#,#cardSet# Cards,#format# Cards]#_thing# [reprinted:That Need to be Reprinted,We'd Love to See Reprinted in #teaserCardSet#]#reprinted#",
+        "#count.capitalize# #cardCategory.s# from #teaserCardSet# leaked",
         "#format# Banwatch: #card#",
-        "Have You Considered? [_consider:#card# in #format#,#deck#]#_consider#"
+        "Have You Considered? [_consider:#card# in #format#,#deck#]#_consider#",
+        "The card you're thinking of is #card#"
     ],
     "announcement": [
-        "Wizards Announces: Duel Decks: #nouns.capitalize# vs #nouns.capitalize#",
-        "Wizards Announces: From the Vault: #nouns.capitalize#",
+        "Wizards Announces: Duel Decks: [_one:#nouns.capitalizeAll#,#planeswalkerFirstName#]#_one# vs. [_two:#nouns.capitalizeAll#,#planeswalkerFirstName#]#_two#",
+        "Wizards Announces: From the Vault: #nouns.capitalizeAll#",
         "Wizards Announces: #novelCardSetName.capitalizeAll#",       
         "[_nextSet:The next set,The next fall set,#codename.capitalize#][_verbphrase:is actually,is really named,will be named]#_nextSet# #_verbphrase# #novelCardSetName.capitalizeAll#"
     ],
     "realization": [
         "#pros# Don't #realize.capitalize# that #tech.s# #verbDefeat# #obstacle.capitalize#",
-        "The Secret of #obstacle.capitalizeAll# is #deckChange.capitalizeAll#"
+        "The Secret to #improvementGoal.capitalizeAll# is #deckChange.capitalizeAll#"
     ],
     "tournamentNews": [
         "[winner:#pro#,#deck#]#winner# #winWord# [where:at #tournament#,in #city#]#where#",
         "Pro Tour #teaserCardSet# will be in #city#"
     ],
     "tip": [
-        "#tipTitle#: Make #deckArch# #descriptor# by #deckChange#",
-        "#tipTitle#: Improve your #deckArch# [improvable:matchup,list,deck,game]#improvable# by #deckChange#",
+        "#tipTitle#: Improve your #deckArch# by #deckChange#",
         "#tipTitle#: #deckChange.capitalize# is a #adj# idea, according to #pro#",
-        "#tipTitle#: #deckChange.capitalize# to #verbDefeat# #obstacle#",
+        "#tipTitle#: #improvementGoal.capitalize# by #deckChange#",
         "#tipTitle#: Spend more money on #thing#"
     ],
     "revealsVerb": ["reveals", "unveils", "discloses", "uncovers", "exposes"],
@@ -52,21 +53,24 @@
     "decktech": [
         "Deck Tech: #deckVariation#",
         "Deck of the Day: #deckVariation#",        
-        "Winning #format# with #deckVariation#",
+        "Winning at #format# with #deckVariation#",
         "Preparing for #tournament# with #deckVariation#"
     ],
     "playguide": [
-        "#recentCardSet# [_format:Limited,Constucted]#_format# Set Review:[_color: #basicColors#,#nothing#]#_color# #cardCategory.capitalizeAll# and #cardCategory.capitalizeAll#",
-        "#recentCardSet# #format# Set Review: [_cat:#basicColors#,#cardCategory# and #cardCategory#]#_cat.capitalizeAll#"        
+        "#recentCardSet# [_format:Limited,Constucted]#_format# Set Review:[_color: #basicColors#,#nothing#]#_color# #cardCategory.s.capitalizeAll# and [_other:#cardCategory#,#creatureTypes#]#_other.s.capitalizeAll#",
+        "#recentCardSet# #format# Set Review: [_cat:#basicColors#,#cardCategory.s# and #cardCategory.s#]#_cat.capitalizeAll#"        
     ],
     "flavorText": [
-        "\"I want #aNoun# THIS #adj#!\"",
-        "\"[_pronoun:He,She,They,It]#_pronoun# wished for #aNoun#, but not for the #noun# to #verb# it.\"",
-        "\"Only a madman could create such a #noun#. Only an imbecile would #verb# it.\"",
-        "\"There's a thin line between #noun# and #aNoun#. Allow me to #verb# it.\" -- Liliana Vess",
+        "\"I want [_thing:#aNoun#,,#massNoun#,#pluralNoun#,#abstractNoun#]#_thing# THIS #adj#!\"",
+        "\"[_wisher:He,She,They,It]#_wisher# wished for [#objectNounPronoun#]#_noun#, but not for the #noun# to #verb# #_pronoun#.\"",
+        "\"Only a madman could create such [#objectNounPronoun#]#_noun#. Only an imbecile would #verb# #_pronoun#.\"",
+        "\"There's a thin line between [_thing1:#aNoun#,#pluralNoun#]#_thing1# and [_thing2:#aNoun#,#pluralNoun#]#_thing2#. Allow me to #verb# it.\" -- Liliana Vess",
         "\"I've got the [_n1:#noun#]#_n1#\", #planeswalkerFirstName# said as the #noun# came to life. \"I've got the #_n1#!\"",
-        "\"From nothing came #noun#.\""
+        "\"From nothing came [_thing:#aNoun#,#massNoun#,#pluralNoun#]#_thing#.\"",
+        "\"The #covering# of [_thing:#emotion#,#abstractNoun#]#_thing# #outVerb.ed# from the [_who:#characterClass#,#creatureTypes#]#_who#, revealing the #emotion# and [_otherThing:#emotion#,#pluralNoun#]#_otherThing# beneath.\""
     ],
+    "covering": [ "veneer", "facade", "aura", "layer", "mask", "veil", "blanket", "curtain", "girdle", "thin film", "cloud", "light dusting", "thick coating", "membrane"],
+    "outVerb": [ "peel", "dissolve", "evaporate", "melt", "erode",  "crumble"],    
     "winWord": [
         "wins","triumphs","victorious","crushes","dominates","absolutely destroys"
     ],
@@ -75,9 +79,8 @@
     ],
     "broadCardClassification": ["#cardModifier##cardBase#"],
     "cardModifier": ["#basicColors# ","#format# ","#cardSet# ","#nothing#"],
-    "cardBase": ["cards","#cardCategory#","#creatureTypes.s#"],
+    "cardBase": ["cards","#cardCategory.s#","#creatureTypes.s#"],
     "suggestion": ["banning","improving","reconsidering"],
-
     "descriptor": [
         "more powerful",
         "better",
@@ -93,7 +96,12 @@
         "more expensive",
         "more streamlined",
         "more fun",
-        "sexier"
+        "more flexible",
+        "less random",
+        "sexier",
+        "competetive",
+        "great again",
+        "unqiue"
     ],
     "adj": [
         "bad",
@@ -114,7 +122,13 @@
         "rough",
         "scaly",
         "pointy",
-        "smelly"
+        "smelly",
+        "groundbreaking",
+        "laughable",
+        "serious",
+        "ridiculous",
+        "pathetic",     
+        "patheitc"
     ],
     "tipTitle": [
         "MTG TIPS",
@@ -127,10 +141,10 @@
         "MAGIC ARCANA"
     ],
     "deckChange": [
-        "adding #card# to the #deckLocation#",
-        "maindecking #card#",
+        "adding [_what:#card#,#card#,#card#,#cardCategory.s#]#_what# to the #deckLocation#",
+        "maindecking [_what:#card#,#cardCategory.s#]#_what#",
         "sideboarding #card#",
-        "removing #card#",
+        "removing [_what:#card#,#cardCategory.s#]#_what#",
         "including #cardCopyCount# #card#",
         "cutting #card# for #card#",
         "using all foils",
@@ -164,6 +178,8 @@
         "Watanabe",
         "Ruel",
         "Saitou",
+        "Reid Duke",
+        "Wrapter",
         "Jůza",
         "Richard Garfield",
         "GLEEMAX",
@@ -230,29 +246,69 @@
         "#tournamentType.s#",
         "#deckArch#",
         "#people#",
-        "#concept#",
-        "#cardCategory#"
+        "#gameConcept#",
+        "#cardCategory.s#"
+    ],    
+    "improvementGoal": [
+        "[_challenge:winning,placing at,preparing for,#verbDefeating#]#tournamentType.s#",
+        "[_challenge:winning with,#verbDefeating#]#_challenge# #deckArch#",
+        "[_challenge:winning against,defeating,outplaying,#verbDefeating#]#_challenge# #people#",
+        "[_challenge:understanding,exploiting,getting the most out of,#verbDefeating#]#_challenge# #gameConcept#",
+        "[_challenge:using,winning with,understanding,answering,#verbDefeating#]#_challenge# #cardCategory.s#"
     ],
     "verb": [
-        "control", "defeat", "hold", "capture", "handle", "understand", "wield", "apply", "abuse", "carry", "shuffle",
-        "perceive", "realize", "grow", "water", "nourish"
+        "control", "defeat", "hold", "capture", "handle", "understand", "wield", "observe", "abuse", "carry", "shuffle",
+        "perceive", "realize", "grow", "water", "nourish", "swallow", "question", "cradle", "cherish", "despise", "summon",
+        "transform", "explain", "forget", "remember", "ignore", "adorn", "study", "capture", "release", "misundertand",
+        "sacrifice", "destroy"
     ],
     "noun": [
+        "#singularNoun#",
+        "[_other:#pluralNoun#,#massNoun#]#_other#"       
+    ],
+    "singularNoun": [
         "#cardCategory#",
         "#creatureTypes#",
-        "weapon", "knowledge", "will", "skill", "power", "longevity", "strength", "nation", "nobility", "honor", "growth",
-        "card", "tech", "wand", "spellbook", "staff", "orb", "tree", "plant", "land", "strength", "energy", "control",
-        "mana", "teeth"
+        "#itemNoun#",
+        "#abstractNoun#",
+        "#massNoun#"       
     ],
+    "pluralNoun": [
+        "#cardCategory.s#",        
+        "#creatureTypes.s#",        
+        "#itemNoun.s#",
+        "#irregularPluralNoun#"     
+    ],    
     "aNoun": [
-        "#cardCategory#",
-        "#creatureTypes.a#",
-        "a weapon", "knowledge", "will", "skill", "power", "longevity", "strength", "a nation", "nobility", "honor", "growth", "a way",
-        "a card", "tech", "a wand", "a spellbook", "a staff", "an orb", "a tree", "a plant", "land", "strength", "energy", "control",
-        "a #card#", "teeth"
+        "#cardCategory.a#",
+        "#creatureTypes.a#",    
+        "#itemNoun.a#"
     ],
+    "abstractNoun": [
+        "knowledge", "will", "skill", "power", "longevity", "strength", "a nation", "nobility", "honor", "growth", "a way",
+        "strength", "energy", "control", "technology", "rationality", "fear", "glory", "whimsy", "balance", "truth", "lies",
+        "gloom", "misery", "indigestion", "shirtlessness", "prize eligibility", "a strong fashion sense", "bootlicking",
+        "snobbery", "megalomania", "pathos", "information"
+    ],
+    "emotion": [
+        "anticipation", "discomfort",  "disgust", "envy", "confusion", "giddiness", "fear", "consternation", "squeamishness", "hatred",
+        "panic", "glee", "rage", "insecurity", "self-consciousness", "abject terror", "cautious optimism", "boredom", "cowardice",
+        "lust", "near-fanatical devotion", "arrogance", "pluckiness", "indifference", "unwillingness", "begrudging admiration"
+    ],
+    "itemNoun": [
+        "weapon", "card", "wand", "spellbook", "staff", "orb", "tree", "plant", "crown", "jewel", "amulet", "egg", "banner", "boot",
+        "aegis", "hedron", "altar", "portal", "door", "cluestone", "flask", "bident", "scepter", "idol", "mask", "sword", "longbow",
+        "grimoire", "chalice", "blade", "gift", "signet", "monolith", "gemstone", "clue", "scroll", "lantern", "collar", "talisman"
+    ],
+    "irregularPluralNoun": [
+        "teeth", "feet", "pants", "geese", "fish", "children", "men", "women", "potatoes", "knives"
+    ],    
+    "massNoun": [
+      "land", "ichor", "water", "sand", "mana", "ashes", "wood", "fire", "lightning", "phyrexian oil", "snow", "riches", "lunch", "treasure", "guacamole"
+    ],
+    "objectNounPronoun": ["[_noun:#aNoun#,#abstractNoun#,#abstractNoun#,#massNoun#,#adj.a# #itemNoun#][_pronoun:it]","[_noun:#pluralNoun#][_pronoun:them]"],
     "nouns": [
-        "#cardCategory#",
+        "#cardCategory.s#",
         "#things2#",
         "#creatureTypesPlural#"
     ],
@@ -275,7 +331,7 @@
         "blessings",
         "volcanoes"
     ],
-    "concept": [
+    "gameConcept": [
         "bad draws",
         "mana screw",
         "poor play",
@@ -293,6 +349,12 @@
         "swiss pairings",
         "collusion",
         "scouting",
+        "manabases",
+        "mulliganing",
+        "scrying",
+        "playing first",
+        "drawing first",
+        "shuffling",
         "#gameAccesory.s#"       
     ],
     "gameAccesory" :[
@@ -302,25 +364,28 @@
         "deckbox"
     ],
     "cardCategory": [
-        "attackers",
-        "blockers",
-        "walls",
-        "flyers",
-        "bad cards",
-        "good cards",
-        "expensive cards",
-        "foils",
-        "burn spells",
-        "counterspells",
-        "land destruction spells",
-        "sorceries",
-        "instants",
-        "artifacts",
-        "enchantments",
-        "lands",
-        "vehicles",
+        "attacker",
+        "blocker",
+        "wall",
+        "flyer",
+        "bad card",
+        "good card",
+        "expensive card",
+        "banned card",
+        "counterfeit card",
+        "foil",
+        "burn spell",
+        "counterspell",
+        "land destruction spell",
+        "sorcery",
+        "instant",
+        "planeswalker",
+        "artifact",
+        "enchantment",
+        "land",
+        "vehicle",
         "equipment",
-        "#rarity.s#"
+        "#rarity#"
     ],
     "rarity": [
         "common",
@@ -430,7 +495,7 @@
         "#deckArch#",
         "#card#",
         "#format#",
-        "#cardCategory#"
+        "#cardCategory.s#"
     ],
     "deckArch": [
         "#deck#",
@@ -442,6 +507,7 @@
         "#card# decks",
         "#card# lists",
         "#deck# lists",
+        "#deck# matchups",
         "#format# #deck#",
         "#format# #deckVariation#",        
         "#colors.capitalize# #deck#"
@@ -466,9 +532,15 @@
         "Mono-Black",
         "Mono-White",       
         "Mono-Brown",
+        "Mono-Red",
+        "Mono-Blue",
+        "Mono-Green",
         "Purple",
         "RUG",
         "BUG",
+        "UG",
+        "Green-White",
+        "Red-Green",        
         "Four-Color",
         "Five-Color",
         "#colorComboNickname#"
@@ -502,6 +574,7 @@
         "Sligh",
         "Combo",
         "Marvel",
+        "Energy",
         "Miracles",
         "Goblins",
         "Elves",
@@ -515,6 +588,7 @@
         "Affinity",
         "Tron",
         "Burn",
+        "Rock",
         "Company",
         "Hatebears",
         "Fires",
@@ -522,6 +596,10 @@
         "Zoo",
         "Slide",
         "Tokens",
+        "Eggs",
+        "Junk",
+        "Pebbles",        
+        "Superfriends",
         "#deckNameNumber#-Rack",
         "#deckNameNumber#-Post",
         "#colors# Deck Wins",
@@ -551,13 +629,18 @@
       "Eternal",        
       "Full English",
       "Angry",
+      "Fruity",
+      "Sped",
       "Wet #colorComboNickname#",
       "Dark #colorComboNickname#",
-      "Tooth & ",
+      "Light #colorComboNickname#",
+      "Hot #colorComboNickname#",           
+      "Tooth &",
       "All-in",
       "Aggro",
       "Angel",
       "Dragon",
+      "Eldrazi",
       "Oops! All #definingCardname.s#"
     ],
 
@@ -570,7 +653,9 @@
       "Counter",
       "Elf",
       "Stone",
-      "Caw"
+      "Caw",
+      "Grisel",
+      "Death"
     ],
 
     "deckNameCompoundSuffix" :[
@@ -581,7 +666,9 @@
       "storm",
       "still",
       "tron",
-      "erator"
+      "erator",
+      "-troll",
+      "-Gro"
     ],
 
     "definingCardname" : [
@@ -598,7 +685,13 @@
       "Tog",
       "Slaver",
       "Valakut",
-      "Scepter"  
+      "Scepter",
+      "Lantern",
+      "Ad Nauseam",
+      "Mentor",
+      "Workshop",
+      "Moon",
+      "Vial"
     ],
 
     "card": [
@@ -952,7 +1045,8 @@
         "echoes of"
     ],
     "cardSetSuffix": ["reborn", "revisited", "unleashed"],
-    "characterClass": ["master", "warlord", "avenger", "champion", "explorer", "pirate", "chieftain", "conqueror", "god", "assassin", "oracle", "ghost"],
+    "characterClass": ["master", "warlord", "avenger", "champion", "explorer", "pirate", "chieftain", "conqueror", "god", "assassin", "oracle", "ghost",
+                        "knave", "defender","ancient", "master", "prisoner", "buffoon", "baby", "clown", "villain", "freak", "fiend", "titan", "horror"],
     "plane": ["Rath", "Shandalar", "Mirrodin", "Kamigawa", "Alara", "Zendikar", "Innistrad", "Kaladesh", "Amonkhet", "Muruganda", "Mirrodin", "Ravnica"],    
     "cardCopyCount": [
         "1",
