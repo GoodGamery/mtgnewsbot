@@ -17,7 +17,8 @@
         "Emergency Banning: #card# Banned in #format#",
         "#card# Banned in #format.capitalizeAll# After #deck.capitalizeAll# Wins #tournament.capitalizeAll#",
         "BEHIND THE FLAVOR TEXT: #flavorText#",
-        "#pro# [_picked:First Picked,Last Picked,Wheeled,Drafted]#_picked# #card# and You Won't Believe What Happens Next"
+        "#pro# [_picked:First Picked,Last Picked,Wheeled,Drafted]#_picked# #card# and You Won't Believe What Happens Next",
+        "The importance of [_thing:#card#,#cardCategory.s#,#creatureTypes.s#,#gameConcept#]#_thing# in [_where:#format#,#recentCardSet#]#_where#"
     ],
     "clickbait": [
         "[interrogative:Why,How]#interrogative# #pro# is #verbDefeating.capitalize# #nouns.capitalize#",
@@ -80,7 +81,6 @@
     "cardModifier": ["#basicColors# ","#format# ","#cardSet# ","#nothing#"],
     "cardBase": ["cards","#cardCategory.s#","#creatureTypes.s#"],
     "suggestion": ["banning","improving","reconsidering"],
-
     "descriptor": [
         "more powerful",
         "better",
@@ -239,8 +239,10 @@
         "#cardCategory.s#"
     ],
     "verb": [
-        "control", "defeat", "hold", "capture", "handle", "understand", "wield", "apply", "abuse", "carry", "shuffle",
-        "perceive", "realize", "grow", "water", "nourish", "swallow", "question", "cradle", "cherish", "despise"
+        "control", "defeat", "hold", "capture", "handle", "understand", "wield", "observe", "abuse", "carry", "shuffle",
+        "perceive", "realize", "grow", "water", "nourish", "swallow", "question", "cradle", "cherish", "despise", "summon",
+        "transform", "explain", "forget", "remember", "ignore", "paint", "study", "capture", "release", "misundertand",
+        "sacrifice"
     ],
     "noun": [
         "#singularNoun#",
@@ -249,6 +251,7 @@
     "singularNoun": [
         "#cardCategory#",
         "#creatureTypes#",
+        "#itemNoun#",
         "#abstractNoun#",
         "#massNoun#"       
     ],
@@ -267,25 +270,27 @@
         "knowledge", "will", "skill", "power", "longevity", "strength", "a nation", "nobility", "honor", "growth", "a way",
         "strength", "energy", "control", "technology", "rationality", "fear", "glory", "whimsy", "balance", "truth", "lies",
         "gloom", "misery", "indigestion", "shirtlessness", "prize eligibility", "a strong fashion sense", "bootlicking",
-        "snobbery", "megalomania", "pathos"
+        "snobbery", "megalomania", "pathos", "information"
     ],
     "emotion": [
-        "anticipation", "discomfort",  "disgust", "envy", "confusion", "giddiness", "fear", "consternation", "squeamishness",
+        "anticipation", "discomfort",  "disgust", "envy", "confusion", "giddiness", "fear", "consternation", "squeamishness", "hatred",
         "panic", "glee", "rage", "insecurity", "self-consciousness", "abject terror", "cautious optimism", "boredom", "cowardice",
         "lust", "near-fanatical devotion", "arrogance", "pluckiness", "indifference", "unwillingness", "begrudging admiration"
     ],
     "itemNoun": [
-        "weapon", "card", "wand", "spellbook", "staff", "orb", "tree", "plant"
+        "weapon", "card", "wand", "spellbook", "staff", "orb", "tree", "plant", "crown", "jewel", "amulet", "egg", "banner", "boot",
+        "aegis", "hedron", "altar", "portal", "door", "cluestone", "flask", "bident", "scepter", "idol", "mask", "sword", "longbow",
+        "grimoire", "chalice", "blade", "gift", "signet", "monolith", "gemstone", "clue", "scroll", "lantern", "collar", "talisman"
     ],
     "irregularPluralNoun": [
-        "teeth"
+        "teeth", "feet", "pants", "geese", "fish", "children", "men", "women", "potatoes", "guacamole"
     ],    
     "massNoun": [
-      "land", "ichor"
+      "land", "ichor", "water", "sand", "mana", "ashes", "wood", "fire", "lightning", "phyrexian oil", "snow", "riches", "lunch", "treasure"
     ],
     "objectNounPronoun": ["[_noun:#aNoun#,#abstractNoun#,#massNoun#][_pronoun:it]","[_noun:#pluralNoun#][_pronoun:them]"],
     "nouns": [
-        "#cardCategory#",
+        "#cardCategory.s#",
         "#things2#",
         "#creatureTypesPlural#"
     ],
@@ -326,6 +331,12 @@
         "swiss pairings",
         "collusion",
         "scouting",
+        "manabases",
+        "mulliganing",
+        "scrying",
+        "playing first",
+        "drawing first",
+        "shuffling",
         "#gameAccesory.s#"       
     ],
     "gameAccesory" :[
