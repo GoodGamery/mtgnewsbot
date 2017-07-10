@@ -26,7 +26,7 @@
         "#count.capitalize# #cardCategory.s# from #teaserCardSet# leaked",
         "#format# Banwatch: #card#",
         "Have You Considered? [_consider:#card# in #format#,#deck#]#_consider#",
-        "The card you're thinking of is #card#"
+        "We're not wrong: the card you're thinking of is #card#"
     ],
     "announcement": [
         "Wizards Announces: Duel Decks: [_one:#nouns.capitalizeAll#,#planeswalkerFirstName#]#_one# vs. [_two:#nouns.capitalizeAll#,#planeswalkerFirstName#]#_two#",
@@ -61,10 +61,11 @@
         "#recentCardSet# #format# Set Review: [_cat:#basicColors#,#cardCategory.s# and #cardCategory.s#]#_cat.capitalizeAll#"        
     ],
     "flavorText": [
-        "\"I want [_thing:#aNoun#,,#massNoun#,#pluralNoun#,#abstractNoun#]#_thing# THIS #adj#!\"",
+        "\"I want [_thing:#aNoun#,#massNoun#,#pluralNoun#,#abstractNoun#]#_thing# THIS #adj#!\"",
         "\"[_wisher:He,She,They,It]#_wisher# wished for [#objectNounPronoun#]#_noun#, but not for the #noun# to #verb# #_pronoun#.\"",
         "\"Only a madman could create such [#objectNounPronoun#]#_noun#. Only an imbecile would #verb# #_pronoun#.\"",
-        "\"There's a thin line between [_thing1:#aNoun#,#pluralNoun#]#_thing1# and [_thing2:#aNoun#,#pluralNoun#]#_thing2#. Allow me to #verb# it.\" -- Liliana Vess",
+        "\"There's a thin line between [_thing1:#aNoun#,#pluralNoun#]#_thing1# and [_thing2:#aNoun#,#pluralNoun#]#_thing2#. Allow me to #verb# it.\" — Liliana Vess",
+        "\"Of course you should fight [_thing1:#abstractNoun#,#massNoun#,#pluralNoun#]#_thing1# with [_thing2:#abstractNoun#,#massNoun#,#pluralNoun#]#_thing2#. You should fight everything with #_thing2#.\" — Jaya Ballard, Task Mage",
         "\"I've got the [_n1:#noun#]#_n1#\", #planeswalkerFirstName# said as the #noun# came to life. \"I've got the #_n1#!\"",
         "\"From nothing came [_thing:#aNoun#,#massNoun#,#pluralNoun#]#_thing#.\"",
         "\"The #covering# of [_thing:#emotion#,#abstractNoun#]#_thing# #outVerb.ed# from the [_who:#characterClass#,#creatureTypes#]#_who#, revealing the #emotion# and [_otherThing:#emotion#,#pluralNoun#]#_otherThing# beneath.\""
@@ -250,7 +251,7 @@
         "#cardCategory.s#"
     ],    
     "improvementGoal": [
-        "[_challenge:winning,placing at,preparing for,#verbDefeating#]#tournamentType.s#",
+        "[_challenge:winning,placing at,preparing for,#verbDefeating#]#_challenge# #tournamentType.s#",
         "[_challenge:winning with,#verbDefeating#]#_challenge# #deckArch#",
         "[_challenge:winning against,defeating,outplaying,#verbDefeating#]#_challenge# #people#",
         "[_challenge:understanding,exploiting,getting the most out of,#verbDefeating#]#_challenge# #gameConcept#",
@@ -301,10 +302,10 @@
         "grimoire", "chalice", "blade", "gift", "signet", "monolith", "gemstone", "clue", "scroll", "lantern", "collar", "talisman"
     ],
     "irregularPluralNoun": [
-        "teeth", "feet", "pants", "geese", "fish", "children", "men", "women", "potatoes", "knives"
+        "teeth", "feet", "pants", "geese", "fish", "children", "men", "women", "potatoes", "knives", "ashes", "riches"
     ],    
     "massNoun": [
-      "land", "ichor", "water", "sand", "mana", "ashes", "wood", "fire", "lightning", "phyrexian oil", "snow", "riches", "lunch", "treasure", "guacamole"
+      "land", "ichor", "water", "sand", "mana", "wood", "fire", "lightning", "phyrexian oil", "snow", "lunch", "treasure", "guacamole"
     ],
     "objectNounPronoun": ["[_noun:#aNoun#,#abstractNoun#,#abstractNoun#,#massNoun#,#adj.a# #itemNoun#][_pronoun:it]","[_noun:#pluralNoun#][_pronoun:them]"],
     "nouns": [
