@@ -25,11 +25,12 @@
         "#count.capitalize# [_thing:#cardCategory.s#,#creatureTypes.s#,#cardSet# Cards,#format# Cards]#_thing# [reprinted:That Need to be Reprinted,We'd Love to See Reprinted in #teaserCardSet#]#reprinted#",
         "#count.capitalize# #cardCategory.s# from #teaserCardSet# leaked",
         "#format# Banwatch: #card#",
-        "Have You Considered? [_consider:#card# in #format#,#deck#]#_consider#"
+        "Have You Considered? [_consider:#card# in #format#,#deck#]#_consider#",
+        "The card you're thinking of is #card#"
     ],
     "announcement": [
-        "Wizards Announces: Duel Decks: #nouns.capitalize# vs #nouns.capitalize#",
-        "Wizards Announces: From the Vault: #nouns.capitalize#",
+        "Wizards Announces: Duel Decks: [_one:#nouns.capitalizeAll#,#planeswalkerFirstName#]#_one# vs. [_two:#nouns.capitalizeAll#,#planeswalkerFirstName#]#_two#",
+        "Wizards Announces: From the Vault: #nouns.capitalizeAll#",
         "Wizards Announces: #novelCardSetName.capitalizeAll#",       
         "[_nextSet:The next set,The next fall set,#codename.capitalize#][_verbphrase:is actually,is really named,will be named]#_nextSet# #_verbphrase# #novelCardSetName.capitalizeAll#"
     ],
@@ -61,10 +62,10 @@
         "#recentCardSet# #format# Set Review: [_cat:#basicColors#,#cardCategory.s# and #cardCategory.s#]#_cat.capitalizeAll#"        
     ],
     "flavorText": [
-        "\"I want [_thing:#aNoun#,#noun#]#_thing# THIS #adj#!\"",
+        "\"I want [_thing:#aNoun#,,#massNoun#,#pluralNoun#,#abstractNoun#]#_thing# THIS #adj#!\"",
         "\"[_wisher:He,She,They,It]#_wisher# wished for [#objectNounPronoun#]#_noun#, but not for the #noun# to #verb# #_pronoun#.\"",
         "\"Only a madman could create such [#objectNounPronoun#]#_noun#. Only an imbecile would #verb# #_pronoun#.\"",
-        "\"There's a thin line between [_thing:#aNoun#,#pluralNoun#]#_thing# and #_thing#. Allow me to #verb# it.\" -- Liliana Vess",
+        "\"There's a thin line between [_thing1:#aNoun#,#pluralNoun#]#_thing1# and [_thing2:#aNoun#,#pluralNoun#]#_thing2#. Allow me to #verb# it.\" -- Liliana Vess",
         "\"I've got the [_n1:#noun#]#_n1#\", #planeswalkerFirstName# said as the #noun# came to life. \"I've got the #_n1#!\"",
         "\"From nothing came [_thing:#aNoun#,#massNoun#,#pluralNoun#]#_thing#.\"",
         "\"The #covering# of [_thing:#emotion#,#abstractNoun#]#_thing# #outVerb.ed# from the [_who:#characterClass#,#creatureTypes#]#_who#, revealing the #emotion# and [_otherThing:#emotion#,#pluralNoun#]#_otherThing# beneath.\""
@@ -117,7 +118,12 @@
         "rough",
         "scaly",
         "pointy",
-        "smelly"
+        "smelly",
+        "groundbreaking",
+        "laughable",
+        "serious",
+        "ridiculous",
+        "patheitc"
     ],
     "tipTitle": [
         "MTG TIPS",
@@ -233,10 +239,10 @@
     ],
     "obstacle": [
         "#tournamentType.s#",
-        "#deckArch#",
-        "#people#",
+        "[_challenge:,winning with,beating]#_challenge# #deckArch#",
+        "[_challenge:,winning against,defeating,outplaying]#_challenge# #people#",
         "#gameConcept#",
-        "#cardCategory.s#"
+        "[_challenge:,using,winning with,understanding,answering]#_challenge# #cardCategory.s#"
     ],
     "verb": [
         "control", "defeat", "hold", "capture", "handle", "understand", "wield", "observe", "abuse", "carry", "shuffle",
@@ -513,9 +519,15 @@
         "Mono-Black",
         "Mono-White",       
         "Mono-Brown",
+        "Mono-Red",
+        "Mono-Blue",
+        "Mono-Green",
         "Purple",
         "RUG",
         "BUG",
+        "UG",
+        "Green-White",
+        "Red-Green",        
         "Four-Color",
         "Five-Color",
         "#colorComboNickname#"
@@ -563,6 +575,7 @@
         "Affinity",
         "Tron",
         "Burn",
+        "Rock",
         "Company",
         "Hatebears",
         "Fires",
@@ -570,6 +583,8 @@
         "Zoo",
         "Slide",
         "Tokens",
+        "Eggs",
+        "Junk",
         "Superfriends",
         "#deckNameNumber#-Rack",
         "#deckNameNumber#-Post",
@@ -601,6 +616,7 @@
       "Full English",
       "Angry",
       "Fruity",
+      "Sped",
       "Wet #colorComboNickname#",
       "Dark #colorComboNickname#",
       "Light #colorComboNickname#",
@@ -637,7 +653,9 @@
       "storm",
       "still",
       "tron",
-      "erator"
+      "erator",
+      "-troll",
+      "-Gro"
     ],
 
     "definingCardname" : [
