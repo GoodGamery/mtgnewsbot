@@ -10,7 +10,7 @@
         "#decktech#",
         "#announcement#",
         "#clickbait#",
-        "[_proIs:#pro# is,#pros# are]#_proIs# #creating# #tech.a# to #verbDefeat# #obstacle#",
+        "[_proIs:#pro# is,#pros# are]#_proIs# #creating# #tech.a# to #verbDefeat# #obstacle.capitalize#",
         "#count.capitalize# #broadCardClassification.capitalizeAll# That Should Never Have Been [_verbed:Printed,Banned,Unbanned,Played,Ignored]#_verbed#",
         "The Case for #suggestion.capitalizeAll# [_bannedThing:#card#,#gameConcept#]#_bannedThing.capitalizeAll#[_where: in #format#,#nothing#]#_where#",
         "[_pro:Top Pro,#pro#,#pros#]#_pro# #revealsVerb.capitalize# #planNoun.capitalize# for #event#: Play #card# in #deck# to counter #card#",
@@ -36,17 +36,16 @@
     ],
     "realization": [
         "#pros# Don't #realize.capitalize# that #tech.s# #verbDefeat# #obstacle.capitalize#",
-        "The Secret to #obstacle.capitalizeAll# is #deckChange.capitalizeAll#"
+        "The Secret to #improvementGoal.capitalizeAll# is #deckChange.capitalizeAll#"
     ],
     "tournamentNews": [
         "[winner:#pro#,#deck#]#winner# #winWord# [where:at #tournament#,in #city#]#where#",
         "Pro Tour #teaserCardSet# will be in #city#"
     ],
     "tip": [
-        "#tipTitle#: Make #deckArch# #descriptor# by #deckChange#",
-        "#tipTitle#: Improve your #deckArch# [improvable:matchup,list,deck,game]#improvable# by #deckChange#",
+        "#tipTitle#: Improve your #deckArch# by #deckChange#",
         "#tipTitle#: #deckChange.capitalize# is a #adj# idea, according to #pro#",
-        "#tipTitle#: #deckChange.capitalize# to #verbDefeat# #obstacle#",
+        "#tipTitle#: #improvementGoal.capitalize# by #deckChange#",
         "#tipTitle#: Spend more money on #thing#"
     ],
     "revealsVerb": ["reveals", "unveils", "discloses", "uncovers", "exposes"],
@@ -54,7 +53,7 @@
     "decktech": [
         "Deck Tech: #deckVariation#",
         "Deck of the Day: #deckVariation#",        
-        "Winning #format# with #deckVariation#",
+        "Winning at #format# with #deckVariation#",
         "Preparing for #tournament# with #deckVariation#"
     ],
     "playguide": [
@@ -97,7 +96,12 @@
         "more expensive",
         "more streamlined",
         "more fun",
-        "sexier"
+        "more flexible",
+        "less random",
+        "sexier",
+        "competetive",
+        "great again",
+        "unqiue"
     ],
     "adj": [
         "bad",
@@ -123,6 +127,7 @@
         "laughable",
         "serious",
         "ridiculous",
+        "pathetic",     
         "patheitc"
     ],
     "tipTitle": [
@@ -239,10 +244,17 @@
     ],
     "obstacle": [
         "#tournamentType.s#",
-        "[_challenge:,winning with,beating]#_challenge# #deckArch#",
-        "[_challenge:,winning against,defeating,outplaying]#_challenge# #people#",
+        "#deckArch#",
+        "#people#",
         "#gameConcept#",
-        "[_challenge:,using,winning with,understanding,answering]#_challenge# #cardCategory.s#"
+        "#cardCategory.s#"
+    ],    
+    "improvementGoal": [
+        "[_challenge:winning,placing at,preparing for,#verbDefeating#]#tournamentType.s#",
+        "[_challenge:winning with,#verbDefeating#]#_challenge# #deckArch#",
+        "[_challenge:winning against,defeating,outplaying,#verbDefeating#]#_challenge# #people#",
+        "[_challenge:understanding,exploiting,getting the most out of,#verbDefeating#]#_challenge# #gameConcept#",
+        "[_challenge:using,winning with,understanding,answering,#verbDefeating#]#_challenge# #cardCategory.s#"
     ],
     "verb": [
         "control", "defeat", "hold", "capture", "handle", "understand", "wield", "observe", "abuse", "carry", "shuffle",
@@ -495,6 +507,7 @@
         "#card# decks",
         "#card# lists",
         "#deck# lists",
+        "#deck# matchups",
         "#format# #deck#",
         "#format# #deckVariation#",        
         "#colors.capitalize# #deck#"
