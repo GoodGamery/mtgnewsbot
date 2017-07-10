@@ -585,6 +585,7 @@
         "Tokens",
         "Eggs",
         "Junk",
+        "Pebbles",        
         "Superfriends",
         "#deckNameNumber#-Rack",
         "#deckNameNumber#-Post",
@@ -632,8 +633,7 @@
 
     "deckSuffix" : [
       "& Taxes",
-      "& Nail",
-      "Pebbles"
+      "& Nail"
     ], 
 
     "deckNameCompoundPrefix" :[
