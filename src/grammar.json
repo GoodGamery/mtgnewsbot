@@ -3,7 +3,22 @@
         "#headline#"
     ],
     "headline": [
-        "BEHIND THE FLAVOR TEXT: #flavorText#"
+        "#tip#",
+        "#realization#",
+        "#tournamentNews#",
+        "#playguide#",
+        "#decktech#",
+        "#announcement#",
+        "#clickbait#",
+        "[_proIs:#pro# is,#pros# are]#_proIs# #creating# #tech.a# to #verbDefeat# #obstacle.capitalize#",
+        "#count.capitalize# #broadCardClassification.capitalizeAll# That Should Never Have Been [_verbed:Printed,Banned,Unbanned,Played,Ignored]#_verbed#",
+        "The Case for #suggestion.capitalizeAll# [_bannedThing:#card#,#gameConcept#]#_bannedThing.capitalizeAll#[_where: in #format#,#nothing#]#_where#",
+        "[_pro:Top Pro,#pro#,#pros#]#_pro# #revealsVerb.capitalize# #planNoun.capitalize# for #event#: Play #card# in #deck# to counter #card#",
+        "Emergency Banning: #card# Banned in #format#",
+        "#card# Banned in #format.capitalizeAll# After #deck.capitalizeAll# Wins #tournament.capitalizeAll#",
+        "BEHIND THE FLAVOR TEXT: #flavorText#",
+        "#pro# [_picked:First Picked,Last Picked,Wheeled,Drafted]#_picked# #card# and You Won't Believe What Happens Next",
+        "The importance of [_thing:#card#,#cardCategory.s#,#creatureTypes.s#,#gameConcept#]#_thing# in [_where:#format#,#recentCardSet#]#_where#"
     ],
     "clickbait": [
         "[interrogative:Why,How]#interrogative# #pro# is #verbDefeating.capitalize# #nouns.capitalize#",
@@ -28,7 +43,7 @@
         "Pro Tour #teaserCardSet# will be in #city#"
     ],
     "tip": [
-        "#tipTitle#: Improve your #deckArch# by #deckChange#",
+        "#tipTitle#: Improve your #deckObjective# by #deckChange#",
         "#tipTitle#: #deckChange.capitalize# is a #adj# idea, according to #pro#",
         "#tipTitle#: #improvementGoal.capitalize# by #deckChange#",
         "#tipTitle#: Spend more money on #thing#"
@@ -234,6 +249,7 @@
     "obstacle": [
         "#tournamentType.s#",
         "#deckArch#",
+        "deckObjective",
         "#people#",
         "#gameConcept#",
         "#cardCategory.s#"
@@ -494,16 +510,21 @@
         "#deck#",
         "#deckVariation#",
         "decks with #card#",
-        "#creatureTypes.capitalize# decks",
         "#creatureTypes.capitalize# Tribal",
         "#format# #creatureTypesPlural.capitalize#",
-        "#card# decks",
-        "#card# lists",
-        "#deck# lists",
         "#deck# matchups",
         "#format# #deck#",
         "#format# #deckVariation#",        
         "#colors.capitalize# #deck#"
+    ],
+    "deckObjective": [
+        "#deck# decks",
+        "#deck# lists",
+        "#deckArch# decks",
+        "#deckArch# lists",
+        "#deckArch# [_m:matchup,matchups]#_m#",        
+        "#card# decks",
+        "#creatureTypes.capitalize# decks"
     ],
     "format": [
         "Legacy",
