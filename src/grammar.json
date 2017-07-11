@@ -13,7 +13,7 @@
         "[_proIs:#pro# is,#pros# are]#_proIs# #creating# #tech.a# to #verbDefeat# #obstacle.capitalize#",
         "#count.capitalize# #broadCardClassification.capitalizeAll# That Should Never Have Been [_verbed:Printed,Banned,Unbanned,Played,Ignored]#_verbed#",
         "The Case for #suggestion.capitalizeAll# [_bannedThing:#card#,#gameConcept#]#_bannedThing.capitalizeAll#[_where: in #format#,#nothing#]#_where#",
-        "[_pro:Top Pro,#pro#,#pros#]#_pro# #revealsVerb.capitalize# #planNoun.capitalize# for #event#: Play #card# in #deck# to counter [_what:#card#,#deckArch#]#_what#",
+        "[_proReveals:Top Pro #revealVerb.s#,#pro# #revealVerb.s#,#pros# #revealVerb#]#_proReveals.capitalizeAll# #planNoun.capitalize# for #event#: Play #card# in #deck# to counter [_what:#card#,#deckArch#]#_what#",
         "Emergency Banning: #card# Banned in #format#",
         "#card# Banned in #format.capitalizeAll# After #deck.capitalizeAll# Wins #tournament.capitalizeAll#",
         "BEHIND THE FLAVOR TEXT: #flavorText#",
@@ -48,7 +48,7 @@
         "#tipTitle#: #improvementGoal.capitalize# by #deckChange#",
         "#tipTitle#: Spend more money on #thing#"
     ],
-    "revealsVerb": ["reveals", "unveils", "discloses", "uncovers", "exposes"],
+    "revealVerb": ["reveal", "unveil", "disclose", "uncover", "expose", "explain"],
     "planNoun": ["plan", "scheme", "strategy", "objective", "stratagem", "tactic"],
     "decktech": [
         "Deck Tech: #deckVariation#",
