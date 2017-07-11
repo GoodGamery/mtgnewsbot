@@ -63,7 +63,7 @@
         "#recentCardSet# #format# Set Review: [_cat:#basicColors#,#cardCategory.s# and #cardCategory.s#]#_cat.capitalizeAll#"        
     ],
     "jayaText": [
-        "\"Of course you should fight #_thing1# with #_thing2#. You should fight everything with #_thing2#.\" — Jaya Ballard, Task Mage"
+        "\"Of course you should fight #_thing1# with #_thing2#. You should fight everything with #_thing2#.\" — Jaya Ballard, [_magic:Task,#abstractNoun#,#emotion#,#itemNoun#,#massNoun#]#_magic.capitalizeAll# Mage"
     ],    
     "flavorText": [
         "\"I want [_thing:#aNoun#,#massNoun#,#pluralNoun#,#abstractNoun#]#_thing# THIS #adj#!\"",
@@ -205,7 +205,9 @@
         "Facebook Commenters",
         "'You Make The Card' participants",
         "The Future Future League",
-        "the pro's"
+        "The pro's",
+        "Barns",
+        "Scrubs"
     ],
     "creating": [
         "designing",
@@ -557,7 +559,7 @@
         "Holiday Cube",
         "Type 4",
         "Two-Headed Giant",
-        "Kitchen Table"
+        "Kitchen Table Magic"
     ],
 
     "colors": [      
