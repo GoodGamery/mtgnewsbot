@@ -96,7 +96,7 @@
         "\"From nothing came [_thing:#aNoun#,#massNoun#,#pluralNoun#]#_thing#.\"",
         "\"The #covering# of [_thing:#emotion#,#abstractNoun#]#_thing# #outVerb.ed# from the [_who:#characterClass#,#creatureTypes#]#_who#, revealing the #emotion# and [_otherThing:#emotion#,#pluralNoun#]#_otherThing# beneath.\"",
         "\"Your patheitc #pluralNoun# lie in shambles, Planeswalker. Where is your #adj# #singularNoun# now?\" — Nicol Bolas",
-        "\"If there's anything a #creatureTypes# hates, it's a [_n1:#singularNoun#]#_n1#—especially Avacyn's #_n1.capitalizeAll#, the symbol of her #noun#.\""
+        "\"If there's anything #creatureTypes.a# hates, it's [_n1:#singularNoun#]#_n1.a#—especially Avacyn's #_n1.capitalizeAll#, the symbol of her #noun#.\""
     ],
     "covering": [ "veneer", "facade", "aura", "layer", "mask", "veil", "blanket", "curtain", "girdle", "thin film", "cloud", "light dusting", "thick coating", "membrane"],
     "outVerb": [ "peel", "dissolve", "evaporate", "melt", "erode",  "crumble"],    
