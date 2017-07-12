@@ -15,7 +15,7 @@
         "The Case for #suggestion.capitalizeAll# [_bannedThing:#card#,#gameConcept#]#_bannedThing.capitalizeAll#[_where: in #format#,#nothing#]#_where#",
         "[_proReveals:Top Pro #revealVerb.s#,#pro# #revealVerb.s#,#pros# #revealVerb#]#_proReveals.capitalizeAll# #planNoun.capitalize# for #event#: Play #card# in #deck# to counter [_what:#card#,#deckArch#]#_what#",
         "Emergency Banning: #card# Banned in #format#",
-        "#card# Banned in #format.capitalizeAll# After #deck.capitalizeAll# Wins #tournament.capitalizeAll#",
+        "#card.capitalize# Banned in #format.capitalizeAll# After #deck.capitalizeAll# Wins #tournament.capitalizeAll#",
         "BEHIND THE FLAVOR TEXT: #flavorText#",
         "#pro# [_picked:First Picked,Last Picked,Wheeled,Drafted]#_picked# #card#[_challenge: and You Won't Believe,. You'll Be Floored By,. Guess,. Find Out,. #pros.capitalizeAll# are still talking about#]#_challenge# [_what:What Happened Next,What #pro.capitalize# Said Next,What #pro.capitalize# Did Next,Why #pro.capitalize# Called a Judge]#_what#",
         "The importance of [_thing:#card#,#cardCategory.s#,#creatureTypes.s#,#gameConcept#]#_thing# in [_where:#format#,#recentCardSet#]#_where#",
@@ -28,7 +28,7 @@
         "#count.capitalize# #cardCategory.s# from #teaserCardSet# leaked",
         "#format# Banwatch: #card#",
         "Have You Considered? [_consider:#card# in #format#,#deck#]#_consider#",
-        "We're not wrong: the card you're thinking of is #card#"
+        "[_cardname:#card#]We're not wrong: the card you're thinking of is #_cardname# #imgCard#"
     ],
     "announcement": [
         "Wizards Announces: Duel Decks: [_one:#nouns.capitalizeAll#,#planeswalkerFirstName#]#_one# vs. [_two:#nouns.capitalizeAll#,#planeswalkerFirstName#]#_two#",
@@ -165,7 +165,7 @@
         "realize",
         "realize",
         "know",
-        "understand that",
+        "understand",
         "comprehend"
     ],
     "people": ["#pros#","#pro#"],
@@ -191,7 +191,8 @@
         "Richard Garfield",
         "GLEEMAX",
         "Mike Flores",
-        "Urza"
+        "Urza",
+        "RoboRosewater"
     ],
     "pros": [
         "Magic players",
@@ -780,13 +781,7 @@
         "#realNormalCard#",
         "#realNormalCard#",
         "#realNormalCard#",
-        "#realNormalCard#",
-        "#realNormalCard#",
-        "#realNormalCard#",
-        "#realNormalCard#",
-        "#realNormalCard#",
-        "#realNormalCard#",
-        "#realNormalCard#",
+        "#realNotableCard#",
         "#realPowerfulCard#",
         "#realBadCard#"
     ],
@@ -802,6 +797,9 @@
         "Pot of Greed",
         "Exodia, the Forbidden One",
         "Blue Eyes White Dragon",
+        "Two Explores",
+        "HEHAL",
+        "Throat Wolf",
         "the [_cardCount:ace,two,three,four,five,ten]#_cardCount# of [_cardSuit:spades,hearts,clubs,diamonds]#_cardSuit#",
         "a saltine with a Magic card back",
         "Jace's #realCard#",
@@ -853,6 +851,26 @@
         "Wood Elemental"
     ],
 
+    "realNotableCard": [
+      "Arc Slogger",
+      "Barbed Lightning",
+      "Borrowing 100,000 Arrows",
+      "Energizer",
+      "Incite",
+      "Jade Leech",
+      "Land Tax",
+      "Lost in the Woods",
+      "Magmaw",
+      "Nantuko Vigilante",
+      "Noggle Bridgebreaker",
+      "Phyrexian Tribute",
+      "Pillage",
+      "Rumbling Slum",
+      "Sneaky Homonculus",
+      "Tectonic Edge",
+      "Werebear"
+    ],
+
     "realNormalCard":
     [
         "Air Elemental",
@@ -878,7 +896,6 @@
         "Blue Elemental Blast",
         "Blue Ward",
         "Bog Wraith",
-        "Borrowing 10,000 Arrows",
         "Braingeyser",
         "Burrowing",
         "Camouflage",
@@ -1028,7 +1045,6 @@
         "Phantasmal Forces",
         "Phantasmal Terrain",
         "Phantom Monster",
-        "Pillage",
         "Pirate Ship",
         "Plague Rats",
         "Plains",
@@ -1129,6 +1145,7 @@
         "Wrath of God",
         "Zombie Master"
     ],
+    "imgCard": "{svg <svg xmlns=\"http://www.w3.org/2000/svg\" xmlns:xlink=\"http://www.w3.org/1999/xlink\" width=\"233\" height=\"311\"><image width=\"233\" height=\"311\" xlink:href=\"https://forums.goodgamery.com/includes/mtg/mtg_helper_cardfinder_v3.php?img&amp;find=#_cardname#\" /></svg>}",
     "cardSet": [
         "#recentCardSet#",        
         "Modern Masters",
