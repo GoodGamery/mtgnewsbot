@@ -53,8 +53,8 @@
     ],
     "tipMoney": [
         "#titleMoney#: Spend more money on #thing#",
-        "#titleMoney#: [_invest:Short,Buy,Invest In,Sell]#_invest# #card# #investReason#",
-        "#titleMoney#: [_invest:Short,Buy,Invest In,Sell]#_invest# #card#"
+        "#titleMoney#: [_invest:Short,Buy,Hold,Invest In,Sell]#_invest# #card# #investReason#",
+        "#titleMoney#: [_invest:Short,Buy,Hold,Invest In,Sell]#_invest# #card#"
     ],
     "classifieds": [
         "#titleClassified#: #card#",
