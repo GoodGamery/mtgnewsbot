@@ -781,13 +781,7 @@
         "#realNormalCard#",
         "#realNormalCard#",
         "#realNormalCard#",
-        "#realNormalCard#",
-        "#realNormalCard#",
-        "#realNormalCard#",
-        "#realNormalCard#",
-        "#realNormalCard#",
-        "#realNormalCard#",
-        "#realNormalCard#",
+        "#realNotableCard#",
         "#realPowerfulCard#",
         "#realBadCard#"
     ],
@@ -803,6 +797,9 @@
         "Pot of Greed",
         "Exodia, the Forbidden One",
         "Blue Eyes White Dragon",
+        "Two Explores",
+        "HEHAL",
+        "Throat Wolf",
         "the [_cardCount:ace,two,three,four,five,ten]#_cardCount# of [_cardSuit:spades,hearts,clubs,diamonds]#_cardSuit#",
         "a saltine with a Magic card back",
         "Jace's #realCard#",
@@ -854,6 +851,25 @@
         "Wood Elemental"
     ],
 
+    "realNotableCard": [
+      "Arc Slogger",
+      "Barbed Lightning",
+      "Energizer",
+      "Incite",
+      "Jade Leech",
+      "Land Tax",
+      "Lost in the Woods",
+      "Magmaw",
+      "Nantuko Vigilante",
+      "Noggle Bridgebreaker",
+      "Phyrexian Tribute",
+      "Pillage",
+      "Rumbling Slum",
+      "Sneaky Homonculus",
+      "Tectonic Edge",
+      "Werebear"
+    ],
+
     "realNormalCard":
     [
         "Air Elemental",
@@ -879,7 +895,6 @@
         "Blue Elemental Blast",
         "Blue Ward",
         "Bog Wraith",
-        "Borrowing 10,000 Arrows",
         "Braingeyser",
         "Burrowing",
         "Camouflage",
@@ -1029,7 +1044,6 @@
         "Phantasmal Forces",
         "Phantasmal Terrain",
         "Phantom Monster",
-        "Pillage",
         "Pirate Ship",
         "Plague Rats",
         "Plains",
