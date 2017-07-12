@@ -299,7 +299,7 @@
         "#itemNoun.a#"
     ],
     "abstractNoun": [
-        "knowledge", "will", "skill", "power", "longevity", "strength", "a nation", "nobility", "honor", "growth", "a way",
+        "knowledge", "will", "skill", "power", "longevity", "strength", "a nation", "nobility", "honor", "growth", "way",
         "strength", "energy", "control", "technology", "rationality", "fear", "glory", "whimsy", "balance", "truth", "lies",
         "gloom", "misery", "indigestion", "shirtlessness", "prize eligibility", "strong fashion sense", "bootlicking",
         "snobbery", "megalomania", "pathos", "information"
@@ -576,6 +576,7 @@
         "RUG",
         "BUG",
         "UG",
+        "UR",
         "Green-White",
         "Red-Green",        
         "Four-Color",
