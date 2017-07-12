@@ -162,7 +162,6 @@
         "DECKBUILDING TIPS",
         "TIPS FROM THE PROS",
         "BREAKING NEWS",
-        "INVESTOR REPORT",
         "DATING ADVICE",
         "MAGIC ARCANA"
     ],
@@ -453,7 +452,6 @@
         "cleric",
         "archer",
         "knight",
-        "human",
         "goblin",
         "merfolk",
         "wizard",
@@ -474,7 +472,6 @@
         "clerics",
         "archers",
         "knights",
-        "humans",
         "goblins",
         "merfolk",
         "wizards",
