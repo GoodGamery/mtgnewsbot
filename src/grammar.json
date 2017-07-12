@@ -21,7 +21,8 @@
         "BEHIND THE FLAVOR TEXT: #flavorText#",
         "The Importance of [_thing:#card#,#cardCategory.s#,#creatureTypes.s#,#gameConcept#]#_thing# in [_where:#format#,#recentCardSet#]#_where#",
         "CLASSIC STRATEGY: [_prefix:The Philosophy of,It's All About the]#_prefix# [_thing:#massNoun#,#pluralNoun#,#abstractNoun#,#nouns#]#_thing.capitalizeAll#, by #pro.capitalize#",
-        "Are you [_verbing:overrating,underrating]#_verbing# [_thing:#gameConcept#,#card#,#deckArch#,#creatureTypes.s#,#cardSet#]#_thing#?"
+        "Are you [_verbing:overrating,underrating]#_verbing# [_thing:#gameConcept#,#card#,#deckArch#,#creatureTypes.s#,#cardSet#]#_thing#?",
+        "#tournamentRound#: #pro# vs. [_opp:#lesserKnownPro#,Evil #pro#,Cyborg #pro#,Baby #pro#,Bizarro #pro#,Dr. #pro# M.D.,a Cardboard Cutout of #pro#,#adj.a# #creatureTypes#]#_opp.capitalizeAll#"
     ],
     "clickbait": [
         "[interrogative:Why,How]#interrogative# #pro# is #verbDefeating.capitalize# #nouns.capitalize#",
@@ -81,6 +82,12 @@
     "playguide": [
         "#recentCardSet# [_format:Limited,Constucted]#_format# Set Review:[_color: #basicColors#,]#_color# #cardCategory.s.capitalizeAll# and [_other:#cardCategory#,#creatureTypes#]#_other.s.capitalizeAll#",
         "#recentCardSet# #format# Set Review: [_cat:#basicColors#,#cardCategory.s# and #cardCategory.s#]#_cat.capitalizeAll#"        
+    ],
+    "tournamentRound": [
+      "[_tournament:#tournament##colon# ,]#_tournament.capitalize#[_round:Round #num2-9#,Quarterfinals,Semifinals,Finals]#_round# Feature Match",
+      "Grudge Match",
+      "#format# Super League [_round:Quarterfinals,Semifinals,Finals]#_round#",
+      "MOCS [_round:Quarterfinals,Semifinals,Finals]#_round#"
     ],
     "jayaText": [
         "\"Of course you should fight #_thing1# with #_thing2#. You should fight everything with #_thing2#.\" — Jaya Ballard, [_magic:Task,#abstractNoun#,#emotion#,#itemNoun#,#massNoun#]#_magic.capitalizeAll# Mage"
@@ -275,6 +282,18 @@
         "Rich Hagon",
         "Urza",
         "RoboRosewater"
+    ],
+    "lesserKnownPro": [
+      "Bram Snepvangers",
+      "Balki Bartokomous",
+      "Young Victor Frankenstein",
+      "Ants-In-My-Eyes Johnson",
+      "a monkey in a business suit",
+      "some guy in a horse mask",
+      "a gaggle of angry geese",
+      "two dwarves in a trenchcoat",
+      "144 delicious hardboiled eggs",
+      "the 1979 Toronto Blue Jays"
     ],
     "pros": [
         "Magic players",
@@ -1505,5 +1524,6 @@
     ],
     "num0-9": ["0","1","2","3","4","5","6","7","8","9"],
     "num1-9": ["1","2","3","4","5","6","7","8","9"],
-    "num2-9": ["2","3","4","5","6","7","8","9"]
+    "num2-9": ["2","3","4","5","6","7","8","9"],
+    "colon": ":"
 }
