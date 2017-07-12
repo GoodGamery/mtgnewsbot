@@ -28,7 +28,7 @@
         "#count.capitalize# #cardCategory.s# from #teaserCardSet# leaked",
         "#format# Banwatch: #card#",
         "Have You Considered? [_consider:#card# in #format#,#deck#]#_consider#",
-        "[_cardname:#card#]We're not wrong: the card you're thinking of is #_cardname# #cardImage#"
+        "[_cardname:#card#]We're not wrong: the card you're thinking of is #_cardname# #imgCard#"
     ],
     "announcement": [
         "Wizards Announces: Duel Decks: [_one:#nouns.capitalizeAll#,#planeswalkerFirstName#]#_one# vs. [_two:#nouns.capitalizeAll#,#planeswalkerFirstName#]#_two#",
@@ -1130,7 +1130,7 @@
         "Wrath of God",
         "Zombie Master"
     ],
-    "cardImage": "{svg <svg xmlns=\"http://www.w3.org/2000/svg\" xmlns:xlink=\"http://www.w3.org/1999/xlink\" width=\"233\" height=\"311\"><image width=\"233\" height=\"311\" xlink:href=\"https://forums.goodgamery.com/includes/mtg/mtg_helper_cardfinder_v3.php?img&amp;find=#_cardname#\" /></svg>}",
+    "imgCard": "{svg <svg xmlns=\"http://www.w3.org/2000/svg\" xmlns:xlink=\"http://www.w3.org/1999/xlink\" width=\"233\" height=\"311\"><image width=\"233\" height=\"311\" xlink:href=\"https://forums.goodgamery.com/includes/mtg/mtg_helper_cardfinder_v3.php?img&amp;find=#_cardname#\" /></svg>}",
     "cardSet": [
         "#recentCardSet#",        
         "Modern Masters",
