@@ -4,6 +4,8 @@
     ],
     "headline": [
         "#tip#",
+        "#tipMoney#",
+        "#classifieds#",
         "#realization#",
         "#tournamentNews#",
         "#playguide#",
@@ -12,13 +14,12 @@
         "#clickbait#",
         "[_proIs:#pro# is,#pros# are]#_proIs# #creating# #tech.a# to #verbDefeat# #obstacle.capitalize#",
         "#count.capitalize# #broadCardClassification.capitalizeAll# That Should Never Have Been [_verbed:Printed,Banned,Unbanned,Played,Ignored]#_verbed#",
-        "The Case for #suggestion.capitalizeAll# [_bannedThing:#card#,#gameConcept#]#_bannedThing.capitalizeAll#[_where: in #format#,#nothing#]#_where#",
+        "The Case for #suggestion.capitalizeAll# [_bannedThing:#card#,#gameConcept#]#_bannedThing.capitalizeAll#[_where: in #format#,]#_where#",
         "[_proReveals:Top Pro #revealVerb.s#,#pro# #revealVerb.s#,#pros# #revealVerb#]#_proReveals.capitalizeAll# #planNoun.capitalize# for #event#: Play #card# in #deck# to counter [_what:#card#,#deckArch#]#_what#",
         "Emergency Banning: #card# Banned in #format#",
         "#card.capitalize# Banned in #format.capitalizeAll# After #deck.capitalizeAll# Wins #tournament.capitalizeAll#",
         "BEHIND THE FLAVOR TEXT: #flavorText#",
-        "#pro# [_picked:First Picked,Last Picked,Wheeled,Drafted]#_picked# #card#[_challenge: and You Won't Believe,. You'll Be Floored By,. Guess,. Find Out,. #pros.capitalizeAll# are still talking about#]#_challenge# [_what:What Happened Next,What #pro.capitalize# Said Next,What #pro.capitalize# Did Next,Why #pro.capitalize# Called a Judge]#_what#",
-        "The importance of [_thing:#card#,#cardCategory.s#,#creatureTypes.s#,#gameConcept#]#_thing# in [_where:#format#,#recentCardSet#]#_where#",
+        "The Importance of [_thing:#card#,#cardCategory.s#,#creatureTypes.s#,#gameConcept#]#_thing# in [_where:#format#,#recentCardSet#]#_where#",
         "CLASSIC STRATEGY: [_prefix:The Philosophy of,It's all about the]#_prefix# [_thing:#massNoun#,#pluralNoun#,#abstractNoun#,#nouns#]#_thing.capitalizeAll#, by #pro.capitalizeAll#",
         "Are you [_verbing:overrating,underrating]#_verbing# [_thing:#gameConcept#,#card#,#deckArch#,#creatureTypes.s#,#cardSet#]#_thing#?"
     ],
@@ -28,6 +29,7 @@
         "#count.capitalize# #cardCategory.s# from #teaserCardSet# leaked",
         "#format# Banwatch: #card#",
         "Have You Considered? [_consider:#card# in #format#,#deck#]#_consider#",
+        "#pro# [_picked:First Picked,Last Picked,Wheeled,Drafted]#_picked# #card#[_challenge: and You Won't Believe,. You'll Be Floored By,. Guess,. Find Out,. #pros.capitalizeAll# are still talking about#]#_challenge# [_what:What Happened Next,What #pro.capitalize# Said Next,What #pro.capitalize# Did Next,Why #pro.capitalize# Called a Judge]#_what#",
         "[_cardname:#card#]We're not wrong: the card you're thinking of is #_cardname# #imgCard#"
     ],
     "announcement": [
@@ -37,7 +39,7 @@
         "[_nextSet:The next set,The next fall set,#codename.capitalize#][_verbphrase:is actually,is really named,will be named]#_nextSet# #_verbphrase# #novelCardSetName.capitalizeAll#"
     ],
     "realization": [
-        "#pros# Don't #realize.capitalize# that #tech.s# #verbDefeat# #obstacle.capitalize#",
+        "#pros# Don't realize that #tech.s# #verbDefeat# #obstacle.capitalize#",
         "The Secret to #improvementGoal.capitalizeAll# is #deckChange.capitalizeAll#"
     ],
     "tournamentNews": [
@@ -45,10 +47,27 @@
         "Pro Tour #teaserCardSet# will be in #city#"
     ],
     "tip": [
-        "#tipTitle#: Improve your #deckObjective# by #deckChange#",
-        "#tipTitle#: #deckChange.capitalize# is a #adj# idea, according to #pro#",
-        "#tipTitle#: #improvementGoal.capitalize# by #deckChange#",
-        "#tipTitle#: Spend more money on #thing#"
+        "#tipTitle#: Improve Your #deckObjective.capitalizeAll# by #deckChange.capitalizeAll#",
+        "#tipTitle#: #deckChange.capitalize# is a #adj.capitalize# Idea, [_says:Says,Reports]#_says# #pro#",
+        "#tipTitle#: #improvementGoal.capitalize# by #deckChange#"
+    ],
+    "tipMoney": [
+        "#titleMoney#: Spend more money on #thing#",
+        "#titleMoney#: [_invest:Short,Buy,Hold,Invest In,Sell]#_invest# #card# #investReason#",
+        "#titleMoney#: [_invest:Short,Buy,Hold,Invest In,Sell]#_invest# #card#"
+    ],
+    "classifieds": [
+        "#titleClassified#: #card#",
+        "#titleClassified#: #num2-99#x #card# @ #priceUSD# ea.",
+        "#titleClassified#: #broadCardClassification.capitalizeAll# Collection for #priceUSD#",
+        "#titleClassified#: Complete #broadCardClassification.capitalizeAll# Set for #priceUSD#"
+    ],
+    "titleClassified": [
+        "FOR SALE", "BUYLIST", "LOOKING TO TRADE", "TRADING POST"
+    ],
+    "investReason": [
+        "Before #card# is [_fate:Banned,Restricted][_in: in #cardSet#,]#_fate##_in#",
+        "Before #cardSet# [_fate:Rotates,is Released,Arrives on MTGO]#_fate#"
     ],
     "revealVerb": ["reveal", "unveil", "disclose", "uncover", "expose", "explain"],
     "planNoun": ["plan", "scheme", "strategy", "objective", "stratagem", "tactic"],
@@ -59,7 +78,7 @@
         "Preparing for #tournament# with #deckVariation#"
     ],
     "playguide": [
-        "#recentCardSet# [_format:Limited,Constucted]#_format# Set Review:[_color: #basicColors#,#nothing#]#_color# #cardCategory.s.capitalizeAll# and [_other:#cardCategory#,#creatureTypes#]#_other.s.capitalizeAll#",
+        "#recentCardSet# [_format:Limited,Constucted]#_format# Set Review:[_color: #basicColors#,]#_color# #cardCategory.s.capitalizeAll# and [_other:#cardCategory#,#creatureTypes#]#_other.s.capitalizeAll#",
         "#recentCardSet# #format# Set Review: [_cat:#basicColors#,#cardCategory.s# and #cardCategory.s#]#_cat.capitalizeAll#"        
     ],
     "jayaText": [
@@ -85,7 +104,7 @@
         "Jace","Liliana","Ajani","Dack","Gideon","Karn","Koth","Garruk","Chandra","Nissa","Sorin","Tamiyo","Teferi","Jaya","Urza","Freyalise"
     ],
     "broadCardClassification": ["#cardModifier##cardBase#"],
-    "cardModifier": ["#basicColors# ","#format# ","#cardSet# ","#nothing#"],
+    "cardModifier": ["#basicColors# ","#format# ","#cardSet# ",""],
     "cardBase": ["cards","#cardCategory.s#","#creatureTypes.s#"],
     "suggestion": ["banning","improving","reconsidering", "nerfing"],
     "descriptor": [
@@ -143,9 +162,14 @@
         "DECKBUILDING TIPS",
         "TIPS FROM THE PROS",
         "BREAKING NEWS",
-        "INVESTOR REPORT",
         "DATING ADVICE",
         "MAGIC ARCANA"
+    ],
+    "titleMoney": [
+        "INVESTOR REPORT",
+        "MAGIC MONEY",
+        "TRADING REPORT",
+        "MAGIC FINANCE"
     ],
     "deckChange": [
         "adding [_what:#card#,#card#,#card#,#cardCategory.s#]#_what# to the #deckLocation#",
@@ -160,13 +184,6 @@
     "deckLocation": [
         "maindeck",
         "sideboard"
-    ],
-    "realize": [
-        "realize",
-        "realize",
-        "know",
-        "understand",
-        "comprehend"
     ],
     "people": ["#pros#","#pro#"],
     "pro": [
@@ -213,8 +230,9 @@
     ],
     "creating": [
         "designing",
+        "making",
         "creating",
-        "brewing",
+        "brewing up",
         "developing",
         "stewing up",
         "mashing together",
@@ -234,10 +252,6 @@
         "defeat",
         "beat",
         "overcome",
-        "deal with",
-        "handle",
-        "become",
-        "truly know",
         "lock down",
         "fix",
         "take down"
@@ -434,7 +448,6 @@
         "cleric",
         "archer",
         "knight",
-        "human",
         "goblin",
         "merfolk",
         "wizard",
@@ -455,7 +468,6 @@
         "clerics",
         "archers",
         "knights",
-        "humans",
         "goblins",
         "merfolk",
         "wizards",
@@ -1232,5 +1244,23 @@
         "Seven",
         "Ten"
     ],
-    "nothing": [""]
+    "num1-999": [
+        "#num1-9#",
+        "#num1-9##num0-9#",
+        "#num1-9##num0-9##num0-9#"
+    ],
+    "num1-99": [
+        "#num1-9#",
+        "#num1-9##num0-9#"
+    ],
+    "num2-99": [
+        "#num2-9#",
+        "#num1-9##num0-9#"
+    ],
+    "priceUSD": [
+        "$#num1-999#.#num0-9##num0-9#"
+    ],
+    "num0-9": ["0","1","2","3","4","5","6","7","8","9"],
+    "num1-9": ["1","2","3","4","5","6","7","8","9"],
+    "num2-9": ["2","3","4","5","6","7","8","9"]
 }

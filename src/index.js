@@ -6,7 +6,7 @@ const grammar = tracery.createGrammar(the_pros);
 
 grammar.addModifiers(tracery.baseEngModifiers); 
 
-const numExamples = process.argv[2] || 10;
+const numExamples = process.argv[2] || 30;
 for (let i = 0; i < numExamples; ++i) {
     console.log("\n * " + grammar.flatten('#origin#'));
 }
