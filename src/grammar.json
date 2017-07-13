@@ -17,7 +17,7 @@
         "The Case for #suggestion.capitalizeAll# [_bannedThing:#card#,#gameConcept#]#_bannedThing.capitalizeAll#[_where: in #format#,]#_where#",
         "[_proReveals:Top Pro #revealVerb.s#,#pro# #revealVerb.s#,#pros# #revealVerb#]#_proReveals.capitalizeAll# #planNoun.capitalize# for #event#: Play #card# in #deck# to counter [_what:#card#,#deckArch#]#_what#",
         "Emergency Banning: #card.capitalize# Banned in #format#",
-        "#card.capitalize# Banned in #format.capitalizeAll# After [winner:#deck.capitalizeAll#,#pro#]#winner# Wins #tournament.capitalizeAll#",
+        "#card.capitalize# Banned in #format.capitalizeAll# After [winner:#deck#,#pro#]#winner.capitalizeAll# Wins #tournament.capitalizeAll#",
         "BEHIND THE FLAVOR: #flavorText#",
         "The Importance of [_thing:#card#,#cardCategory.s#,#creatureTypes.s#,#gameConcept#]#_thing# in [_where:#format#,#recentCardSet#]#_where#",
         "CLASSIC STRATEGY: [_prefix:The Philosophy of,It's All About the]#_prefix# [_thing:#massNoun#,#pluralNoun#,#abstractNoun#,#nouns#]#_thing.capitalizeAll#, by #pro.capitalize#",
