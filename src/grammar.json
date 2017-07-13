@@ -31,7 +31,8 @@
         "#format# Banwatch: #card#",
         "Have You Considered? [_consider:#card# in #format#,#deck#]#_consider.capitalize#",
         "#pro# [_picked:First Picked,Last Picked,Wheeled,Drafted]#_picked# #card#[_challenge: and You Won't Believe,. You'll Be Floored By,. Guess,. Find Out,. #pros.capitalizeAll# are still talking about#]#_challenge# [_what:What Happened Next,What #pro.capitalize# Said Next,What #pro.capitalize# Did Next,Why #pro.capitalize# Called a Judge]#_what#",
-        "[_cardname:#realCard#]We're not wrong: the card you're thinking of is #_cardname# #imgCard#"
+        "[_cardname:#realCard#]We're not wrong: the card you're thinking of is #_cardname# #imgCard#",
+        "PICTURES: #pro#'s amazing cosplay of #cardAlone#"
     ],
     "announcement": [
         "Wizards Announces: Duel Decks: [_one:#nouns.capitalizeAll#,#planeswalkerFirstName#]#_one# vs. [_two:#nouns.capitalizeAll#,#planeswalkerFirstName#]#_two#",
@@ -102,7 +103,8 @@
         "\"I've got the [_n1:#noun#]#_n1#\", #planeswalkerFirstName# said as the #noun# came to life. \"I've got the #_n1#!\"",
         "\"From nothing came [_thing:#aNoun#,#massNoun#,#pluralNoun#]#_thing#.\"",
         "\"The #covering# of [_thing:#emotion#,#abstractNoun#]#_thing# #outVerb.ed# from the [_who:#characterClass#,#creatureTypes#]#_who#, revealing the #emotion# and [_otherThing:#emotion#,#pluralNoun#]#_otherThing# beneath.\"",
-        "\"Your patheitc #pluralNoun# lie in shambles, Planeswalker. Where is your #adj# #singularNoun# now?\" — Nicol Bolas"
+        "\"Your patheitc #pluralNoun# lie in shambles, Planeswalker. Where is your #adj# #singularNoun# now?\" — Nicol Bolas",
+        "\"If there's anything #creatureTypes.a# hates, it's [_n1:#concreteNoun#]#_n1.a#—especially Avacyn's #_n1.capitalizeAll#, the symbol of her #noun#.\""
     ],
     "covering": [ "veneer", "facade", "aura", "layer", "mask", "veil", "blanket", "curtain", "girdle", "thin film", "cloud", "light dusting", "thick coating", "membrane"],
     "outVerb": [ "peel", "dissolve", "evaporate", "melt", "erode",  "crumble"],    
@@ -407,6 +409,10 @@
         "#creatureTypes.a#",    
         "#itemNoun.a#"
     ],
+    "concreteNoun": [
+        "#itemNoun#",
+        "#placeNoun#"
+    ],
     "abstractNoun": [
         "knowledge", "will", "skill", "power", "longevity", "strength", "nobility", "honor", "growth", "information", "nerve",
         "strength", "energy", "control", "technology", "rationality", "fear", "glory", "whimsy", "balance", "truth", "lies",
@@ -602,17 +608,28 @@
         "FNM",
         "your local draft league"
     ],
-    "event": ["#tournament#"],
+    "event": [
+        "#tournament#",
+        "#tournament#",
+        "#nonTournamentEvent#"
+    ],
     "tournament": [
         "Pro Tour #recentCardSet#",
         "GP #city#",
         "Grand Prix #city#",
         "SCG #city#"
     ],
+    "nonTournamentEvent": [
+        "the next team draft",
+        "casual Commander night",
+        "a drunk kitchen-table game",
+        "a 24-hour MTGO stream"
+    ],
     "city": [
         "Abu Dhabi",
         "Aleppo",
         "Antwerp",
+        "Atlantis",
         "Beersheeba",
         "Beirut",
         "Belfast",
@@ -646,6 +663,7 @@
         "Pyongyang",
         "Quito",
         "Reykjavík",
+        "Scott Larabee's basement",
         "Tehran",
         "Winnipeg",
         "Yonkers"
