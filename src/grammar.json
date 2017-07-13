@@ -17,11 +17,12 @@
         "The Case for #suggestion.capitalizeAll# [_bannedThing:#card#,#gameConcept#]#_bannedThing.capitalizeAll#[_where: in #format#,]#_where#",
         "[_proReveals:Top Pro #revealVerb.s#,#pro# #revealVerb.s#,#pros# #revealVerb#]#_proReveals.capitalizeAll# #planNoun.capitalize# for #event#: Play #card# in #deck# to counter [_what:#card#,#deckArch#]#_what#",
         "Emergency Banning: #card.capitalize# Banned in #format#",
-        "#card.capitalize# Banned in #format.capitalizeAll# After #deck.capitalizeAll# Wins #tournament.capitalizeAll#",
-        "BEHIND THE FLAVOR TEXT: #flavorText#",
+        "#card.capitalize# Banned in #format.capitalizeAll# After [winner:#deck#,#pro#]#winner.capitalizeAll# Wins #tournament.capitalizeAll#",
+        "BEHIND THE FLAVOR: #flavorText#",
         "The Importance of [_thing:#card#,#cardCategory.s#,#creatureTypes.s#,#gameConcept#]#_thing# in [_where:#format#,#recentCardSet#]#_where#",
         "CLASSIC STRATEGY: [_prefix:The Philosophy of,It's All About the]#_prefix# [_thing:#massNoun#,#pluralNoun#,#abstractNoun#,#nouns#]#_thing.capitalizeAll#, by #pro.capitalize#",
-        "Are you [_verbing:overrating,underrating]#_verbing# [_thing:#gameConcept#,#card#,#deckArch#,#creatureTypes.s#,#cardSet#]#_thing#?"
+        "Are you [_verbing:overrating,underrating]#_verbing# [_thing:#gameConcept#,#card#,#deckArch#,#creatureTypes.s#,#cardSet#]#_thing#?",
+        "#tournamentRound#: #pro# vs. [_opp:#otherPersonality#,Evil #pro#,Cyborg #pro#,Baby #pro#,Bizarro #pro#,Dr. #pro# M.D.,a Cardboard Cutout of #pro#,#adj.a# #creatureTypes#]#_opp.capitalizeAll#"
     ],
     "clickbait": [
         "[interrogative:Why,How]#interrogative# #pro# is #verbDefeating.capitalize# #nouns.capitalize#",
@@ -49,6 +50,7 @@
     "tip": [
         "#tipTitle#: Improve Your #deckObjective.capitalizeAll# by #deckChange.capitalizeAll#",
         "#tipTitle#: #deckChange.capitalize# is #adj.a# idea, [_says:Says,Reports]#_says# #pro#",
+        "[_title:#tipTitle#,#pro#]#_title.capitalize#: [_replacement:#card# can replace #cardAlone#,#cardCategory.s# can replace #cardCategory.s#]#_replacement.capitalize# in #format#",
         "#tipTitle#: #improvementGoal.capitalize# by #deckChange#"
     ],
     "tipMoney": [
@@ -82,8 +84,14 @@
         "#recentCardSet# [_format:Limited,Constucted]#_format# Set Review:[_color: #basicColors#,]#_color# #cardCategory.s.capitalizeAll# and [_other:#cardCategory#,#creatureTypes#]#_other.s.capitalizeAll#",
         "#recentCardSet# #format# Set Review: [_cat:#basicColors#,#cardCategory.s# and #cardCategory.s#]#_cat.capitalizeAll#"        
     ],
+    "tournamentRound": [
+      "[_tournament:#tournament##colon# ,]#_tournament.capitalize#[_round:Round #num2-9#,Quarterfinals,Semifinals,Finals]#_round# Feature Match",
+      "Grudge Match",
+      "#format# Super League [_round:Quarterfinals,Semifinals,Finals]#_round#",
+      "MOCS [_round:Quarterfinals,Semifinals,Finals]#_round#"
+    ],
     "jayaText": [
-        "\"Of course you should fight #_thing1# with #_thing2#. You should fight everything with #_thing2#.\" — Jaya Ballard, [_magic:Task,#abstractNoun#,#emotion#,#itemNoun#,#massNoun#]#_magic.capitalizeAll# Mage"
+        "\"Of course you should fight #_thing1# with #_thing2#. You should fight everything with #_thing2#.\" — Jaya Ballard, [_otherThing:#abstractNoun#,#emotion#,#itemNoun#,#massNoun#][_magic:Task,#_thing2#,#_otherThing#]#_magic.capitalizeAll# Mage"
     ],    
     "flavorText": [
         "\"I want [_thing:#aNoun#,#massNoun#,#pluralNoun#,#abstractNoun#]#_thing# THIS #adj#!\"",
@@ -276,6 +284,24 @@
         "Urza",
         "RoboRosewater"
     ],
+    "otherPersonality": [
+      "Bram Snepvangers",
+      "Balki Bartokomous",
+      "Young Victor Frankenstein",
+      "Ants-In-My-Eyes Johnson",
+      "a monkey in a business suit",
+      "some guy in a horse mask",
+      "a gaggle of angry geese",
+      "two dwarves in a trenchcoat",
+      "144 delicious hardboiled eggs",
+      "the 1979 Toronto Blue Jays",
+      "Fblthp",
+      "Evan Erwin",
+      "Jamie Wakefield",
+      "Sheldon Mennery",
+      "John Friggin' Rizzo",
+      "McGruff the Crime Dog"
+    ],
     "pros": [
         "Magic players",
         "Wizards",
@@ -333,7 +359,8 @@
         "truly knowing",
         "locking down",
         "fixing",
-        "taking down"
+        "taking down",
+        "mastering"
     ],
     "obstacle": [
         "#tournamentType.s#",
@@ -353,8 +380,9 @@
     "verb": [
         "control", "defeat", "hold", "capture", "handle", "understand", "wield", "observe", "abuse", "carry", "shuffle",
         "perceive", "realize", "grow", "water", "nourish", "swallow", "question", "cradle", "cherish", "despise", "summon",
-        "transform", "explain", "forget", "remember", "ignore", "adorn", "study", "capture", "release", "misundertand",
-        "sacrifice", "destroy"
+        "transform", "explain", "forget", "remember", "ignore", "adorn", "study", "capture", "release", "misunderstand",
+        "sacrifice", "destroy", "collect", "dismiss", "praise", "scrutinize", "celebrate", "minimize", "exaggerate", "quantify",
+        "trivialize", "renounce", "abhor", "dispute", "pantomime", "advertise", "lie about", "deep-fry", "decorate"
     ],
     "noun": [
         "#singularNoun#",
@@ -393,13 +421,14 @@
     "itemNoun": [
         "weapon", "card", "wand", "spellbook", "staff", "orb", "tree", "plant", "crown", "jewel", "amulet", "egg", "banner", "boot",
         "aegis", "hedron", "altar", "portal", "door", "cluestone", "flask", "bident", "scepter", "idol", "mask", "sword", "longbow",
-        "grimoire", "chalice", "blade", "gift", "signet", "monolith", "gemstone", "clue", "scroll", "lantern", "collar", "talisman"
+        "grimoire", "chalice", "blade", "gift", "signet", "monolith", "gemstone", "clue", "scroll", "lantern", "collar", "talisman",
+        "doodad"
     ],
     "placeNoun": [
-        "temple", "palace", "castle", "garden", "market", "dungeon", "sanctuary", "mansion", "kingdom", "colony", "isle", "graveyard",
+        "temple", "palace", "castle", "garden", "market", "dungeon", "sanctuary", "mansion", "kingdom", "colony", "vacation rental", "graveyard",
         "oasis", "metropolis", "village", "hamlet", "carnival", "closet", "guildhouse", "amphitheater", "lighthouse", "hovel", "guildgate",
-        "cathedral", "church", "catacomb", "coliseum", "wharf", "tower", "mineshaft", "necropolis", "citadel", "encampment", "valley",
-        "hedge maze", "ball pit", "orchard", "watchtower", "sanitarium", "ballroom", "schoolyard", "university", "harbor", "library",
+        "cathedral", "church", "catacomb", "coliseum", "wharf", "tower", "mineshaft", "necropolis", "citadel", "encampment", "valley", "planet",
+        "hedge maze", "ball pit", "orchard", "watchtower", "sanitarium", "ballroom", "schoolyard", "university", "harbor", "library", "plane",
         "factory", "greenhouse", "basement", "monastery", "academy", "farmstead", "petting zoo", "ghost town", "secret lair", "laboratory",
         "portal", "hair salon", "shipwreck", "pasture", "circus tent", "fortress", "junkyard", "pillow fort", "mausoleum", "sepulcher",
         "kitchenette", "churchyard", "mortuary", "abattoir", "art studio", "pet store", "armory", "gazebo", "playground", "animal shelter"
@@ -408,7 +437,7 @@
         "teeth", "feet", "pants", "geese", "fish", "children", "men", "women", "potatoes", "knives", "ashes", "riches"
     ],    
     "massNoun": [
-      "land", "ichor", "water", "sand", "mana", "wood", "fire", "lightning", "phyrexian oil", "snow", "lunch", "treasure", "guacamole"
+      "land", "ichor", "water", "sand", "mana", "wood", "fire", "ice", "lightning", "phyrexian oil", "snow", "lunch", "treasure", "guacamole", "butterscotch"
     ],
     "objectNounPronoun": ["[_noun:#aNoun#,#abstractNoun#,#abstractNoun#,#massNoun#,#adj.a# #itemNoun#][_pronoun:it]","[_noun:#pluralNoun#][_pronoun:them]"],
     "twoObjects": [
@@ -473,13 +502,19 @@
         "jedi mind tricks",
         "tight play",
         "getting lucky",
+        "the storm scale",
         "#gameAccesory.s#"       
     ],
     "gameAccesory" :[
         "UltraPro sleeve",
+        "perfect-fit sleeve",
         "playmat",
-        "spindown",
-        "deckbox"
+        "spindown counter",
+        "deckbox",
+        "treasure chest",
+        "event ticket",
+        "play point",
+        "untradeable war mark"
     ],
     "cardCategory": [
         "attacker",
@@ -877,14 +912,15 @@
         "#realNormalCard#",
         "#realNormalCard#",
         "#realNotableCard#",
+        "#realObscureCard#",        
         "#realPowerfulCard#",
         "#realBadCard#"
     ],
 
-    "fakeCard":
-    [
-        "Hurloon Wrangler",
-        "Gleemax",
+    "fakeCard": [
+        "Every Last Vestige Shall Rot",
+        "Question Elemental?",
+        "Look at Me, I'm the DCI",
         "Drake Stone",
         "1997 World Champion",
         "Horse",
@@ -896,8 +932,9 @@
         "Grand Market",
         "Lee Sin Jungle",        
         "Two Explores",
-        "HEHAL",
         "Throat Wolf",
+        "Horrorcane",
+        "Octopus Token",
         "the [_cardCount:ace,two,three,four,five,ten]#_cardCount# of [_cardSuit:spades,hearts,clubs,diamonds]#_cardSuit#",
         "a saltine with a Magic card back",
         "Jace's #realCard#",
@@ -908,7 +945,8 @@
         "#realCard# Elemental Blast",
         "#realCard# of the Pearl Trident",
         "#realCard# (Not the #cardSet# One)",
-        "#realCard# (Not the #novelCardSetName.capitalizeAll# One)"
+        "#realCard# (Not the #novelCardSetName.capitalizeAll# One)",
+        "Circle of Protection: [_someNoun:#abstractNoun#,#emotion#,#massNoun#,#pluralNoun#,#things2#][_what:#creatureTypes.s#,#cardCategory.s#,#_someNoun#]#_what.capitalizeAll#"
     ],
 
     "realPowerfulCard":
@@ -987,6 +1025,7 @@
         "Mana Crypt",
         "Mana Drain",
         "Mana Vault",
+        "Maze of Ith",
         "Merfolk Looter",
         "Metalworker",
         "Mindslaver",
@@ -1036,6 +1075,8 @@
         "Snapcaster Mage",
         "Sneak Attack",
         "Sol Ring",
+        "Spell Pierce",
+        "Spell Queller",
         "Spellskite",
         "Stoneforge Mystic",
         "Strip Mine",
@@ -1062,6 +1103,9 @@
         "Ugin, the Spirit Dragon",        
         "Ulamog, the Ceaseless Hunger",
         "Umezawa's Jitte",
+        "Urza's Tower",
+        "Urza's Mine",
+        "Urza's Power Plant",
         "Vindicate",
         "Walking Ballista",
         "Wasteland",
@@ -1079,51 +1123,117 @@
         "Chaoslace",
         "Crookshank Kobolds",
         "Cyclopean Mummy",
+        "Chimney Imp",
         "Deathlace",
         "Eager Cadet",
         "Floral Spuzzem",
         "Fog",
+        "Goblin Snowman",
         "Great Wall",
         "Healing Salve",
+        "Icatian Moneychanger",
         "Joven",
         "Lifelace",
         "Merfolk of the Pearl Trident",
         "Moss Monster",
+        "Mudhole",
         "One with Nothing",
         "Purelace",
         "Quarum Trench Gnomes",
         "Rakalite",
         "Sea Kings' Blessing",
+        "Slash Panther",
         "Sorrow's Path",
         "Squire",
         "Stangg",
         "Stream of Life",
+        "Suntail Hawk",
         "Wood Elemental"
+    ],
+
+    "realObscureCard": [
+      "Arcum's Whistle",
+      "Chaos Harlequin",
+      "Cognivore",
+      "Corrupted Zendikon",
+      "Cruel Fate",
+      "Forest Bear",      
+      "Frog Tongue",
+      "Goblin Bangchuckers",
+      "Horrible Hordes",   
+      "Hot Soup",         
+      "Hubris",
+      "Illusionary Pet",
+      "It That Betrays",
+      "Krark's Thumb",
+      "Mindstab Thrull",
+      "Mundungu",
+      "Ogre Slumlord",
+      "Outrage Shaman",
+      "Phytotitan",
+      "Royal Trooper",
+      "Serrated Biskelion",
+      "Scalpelexis",
+      "Scrambleverse",
+      "Sengir Autocrat",
+      "Spinal Villain",
+      "Takklemaggot",      
+      "That Which Was Taken"
     ],
 
     "realNotableCard": [
       "Amulet of Quoz",
-      "Arc Slogger",
+      "Arc-Slogger",
+      "Ass Whuppin'",
       "Barbed Lightning",
+      "Blacker Lotus",
       "Bonfire of the Damned",
       "Borrowing 100,000 Arrows",
       "Brain in a Jar",
+      "Brushwagg",
+      "Cheatyface",
+      "Clambassadors",
+      "Collector Protector",
+      "Creature Guy",
+      "Dwarven Blastminer",
+      "Elephant Ambush",
+      "Elvish Impersonators",
       "Energizer",
+      "Enter the Dungeon",
+      "Giant Ambush Beetle",
+      "Gilder Bairn",
+      "Gleemax",
+      "Gravelgill Axeshark",
+      "Hurloon Wrangler",    
       "Incite",
+      "Island of Wak-Wak",
       "Jade Leech",
       "Jar of Eyeballs",
+      "Kaboom!",
       "Land Tax",
+      "Lhurgoyf",
       "Lost in the Woods",
       "Magmaw",
       "Nantuko Vigilante",
       "Noggle Bridgebreaker",
+      "Poultrygeist",
       "Phyrexian Tribute",
       "Pillage",
+      "Platinum Angel",
+      "Relentless Rats",
+      "Rocket-Powered Turbo Slug",
       "Rumbling Slum",
+      "Searing Flesh",
       "Shahrazad",
+      "Shoving Match",
       "Sneaky Homonculus",
       "Tectonic Edge",
-      "Werebear"
+      "The Cheese Stands Alone",
+      "Totally Lost",
+      "Turn to Frog",
+      "Vial Smasher the Fierce",
+      "Werebear",
+      "Zzzyxas's Abyss"
     ],
 
     "realNormalCard":
@@ -1402,17 +1512,32 @@
     ],
     "imgCard": "{svg <svg xmlns=\"http://www.w3.org/2000/svg\" xmlns:xlink=\"http://www.w3.org/1999/xlink\" width=\"233\" height=\"311\"><image width=\"233\" height=\"311\" xlink:href=\"https://forums.goodgamery.com/includes/mtg/mtg_helper_cardfinder_v3.php?img&amp;find=#_cardname#\" /></svg>}",
     "cardSet": [
-        "#recentCardSet#",        
-        "Modern Masters",
+        "#recentCardSet#",
         "Arabian Nights",
-        "Revised",
-        "Fallen Empires",        
+        "Archenemy",
+        "Avacyn Restored",
+        "Chronicles",
+        "Eldritch Moon",
+        "Fallen Empires",
+        "Fifth Edition",
+        "Homelands",        
         "Ice Age",
-        "Homelands",
+        "Innistrad",
+        "Invasion",
+        "Legends",
+        "Mercadian Masques",
+        "Planechase",
+        "Portal Three Kingdoms",
         "Ravnica",
+        "Revised",        
+        "Shards of Alara",
+        "Shadowmoor",
         "Time Spiral",
         "Unglued",
-        "Eternal Masters"
+        "Unhinged",
+        "Urza's Legacy",        
+        "Weatherlight",
+        "Zendikar"
     ],
     "recentCardSet": [
         "Amonkhet",
@@ -1421,7 +1546,9 @@
         "Eternal Masters"
     ],
     "teaserCardSet": [
+        "Commander 2017",
         "Ixalan",
+        "Masters 25",
         "Rivals of Ixalan",
         "Explorers of Ixalan",        
         "Dominaria",
@@ -1459,7 +1586,8 @@
     ],
     "cardSetSuffix": ["reborn", "revisited", "unleashed", "dawn", "ascendant"],
     "characterClass": ["master", "warlord", "avenger", "champion", "explorer", "pirate", "chieftain", "conqueror", "god", "assassin", "oracle", "ghost",
-                        "knave", "defender","ancient", "master", "prisoner", "buffoon", "baby", "clown", "villain", "freak", "fiend", "titan", "horror"],
+                        "knave", "defender","ancient", "master", "prisoner", "buffoon", "baby", "clown", "villain", "freak", "fiend", "titan", "horror",
+                        "cyborg", "ambassador", "agent", "mercenary", "cowboy", "mime", "architect", "inventor", "guardian", "groundskeeper"],
     "plane": ["Rath", "Shandalar", "Mirrodin", "Kamigawa", "Alara", "Zendikar", "Innistrad", "Kaladesh", "Amonkhet", "Muruganda", "Mirrodin", "Ravnica", "Lorwyn", "Tarkir", "Vryn"],    
     "cardCopyCount": [
         "1",
@@ -1501,9 +1629,10 @@
         "#num1-9##num0-9#"
     ],
     "priceUSD": [
-        "$#num1-999#.#num0-9##num0-9#"
+        "$#num1-999#", "$#num1-999#.#num0-9##num0-9#"
     ],
     "num0-9": ["0","1","2","3","4","5","6","7","8","9"],
     "num1-9": ["1","2","3","4","5","6","7","8","9"],
-    "num2-9": ["2","3","4","5","6","7","8","9"]
+    "num2-9": ["2","3","4","5","6","7","8","9"],
+    "colon": ":"
 }
