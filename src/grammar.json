@@ -1,6 +1,6 @@
 {
     "origin": [
-        "#headline#"
+        "#tipMoney#"
     ],
     "headline": [
         "#tip#",
@@ -34,7 +34,8 @@
     "realization": [
         "The Importance of [_thing:#card#,#cardCategory.s#,#creatureTypes.s#,#gameConcept#]#_thing# in [_where:#format#,#recentCardSet#]#_where#",
         "#pros# Don't realize that #tech.s# #verbDefeat# #obstacle.capitalize#",
-        "The Secret to #improvementGoal.capitalizeAll# is #deckChange.capitalize#"
+        "The Secret to #improvementGoal.capitalizeAll# is #deckChange.capitalize#",
+        "In today's Magic Story: #character#'s #adj# history with #character# finally revealed!"
     ],
     "tournamentNews": [
         "Emergency Banning: #card.capitalize# Banned in #format#",
@@ -53,7 +54,9 @@
     "tipMoney": [
         "#titleMoney#: Spend more money on #thing#",
         "#titleMoney#: #investType# #card# #investReason#",
-        "#titleMoney#: #investType# #card#"
+        "#titleMoney#: #investType# #card#",
+        "#titleMoney#: #pro# is #investType#ing #broadCardClassification.capitalizeAll#; Should You?",
+        "BREAKING: Prices of #card# Spiking; Market Cornered by #pros#"
     ],
     "classifieds": [
         "#titleClassified#: #card#",
@@ -86,7 +89,7 @@
         "FOR SALE", "BUYLIST", "LOOKING TO TRADE", "TRADING POST"
     ],
     "investType": [
-        "Short","Buy","Hold","Invest In","Sell"
+        "Short","Buy","Hold","Hoard","Sell"
     ],
     "investReason": [
         "Before #card# is [_fate:Banned,Restricted][_in: in #cardSet#,]#_fate##_in#",
