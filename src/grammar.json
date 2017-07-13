@@ -17,7 +17,7 @@
         "The Case for #suggestion.capitalizeAll# [_bannedThing:#card#,#gameConcept#]#_bannedThing.capitalizeAll#[_where: in #format#,]#_where#",
         "[_proReveals:Top Pro #revealVerb.s#,#pro# #revealVerb.s#,#pros# #revealVerb#]#_proReveals.capitalizeAll# #planNoun.capitalize# for #event#: Play #card# in #deck# to counter [_what:#card#,#deckArch#]#_what#",
         "Emergency Banning: #card.capitalize# Banned in #format#",
-        "#card.capitalize# Banned in #format.capitalizeAll# After #deck.capitalizeAll# Wins #tournament.capitalizeAll#",
+        "#card.capitalize# Banned in #format.capitalizeAll# After [winner:#deck.capitalizeAll#,#pro#]#winner# Wins #tournament.capitalizeAll#",
         "BEHIND THE FLAVOR: #flavorText#",
         "The Importance of [_thing:#card#,#cardCategory.s#,#creatureTypes.s#,#gameConcept#]#_thing# in [_where:#format#,#recentCardSet#]#_where#",
         "CLASSIC STRATEGY: [_prefix:The Philosophy of,It's All About the]#_prefix# [_thing:#massNoun#,#pluralNoun#,#abstractNoun#,#nouns#]#_thing.capitalizeAll#, by #pro.capitalize#",
@@ -427,8 +427,8 @@
     "placeNoun": [
         "temple", "palace", "castle", "garden", "market", "dungeon", "sanctuary", "mansion", "kingdom", "colony", "vacation rental", "graveyard",
         "oasis", "metropolis", "village", "hamlet", "carnival", "closet", "guildhouse", "amphitheater", "lighthouse", "hovel", "guildgate",
-        "cathedral", "church", "catacomb", "coliseum", "wharf", "tower", "mineshaft", "necropolis", "citadel", "encampment", "valley",
-        "hedge maze", "ball pit", "orchard", "watchtower", "sanitarium", "ballroom", "schoolyard", "university", "harbor", "library",
+        "cathedral", "church", "catacomb", "coliseum", "wharf", "tower", "mineshaft", "necropolis", "citadel", "encampment", "valley", "planet",
+        "hedge maze", "ball pit", "orchard", "watchtower", "sanitarium", "ballroom", "schoolyard", "university", "harbor", "library", "plane",
         "factory", "greenhouse", "basement", "monastery", "academy", "farmstead", "petting zoo", "ghost town", "secret lair", "laboratory",
         "portal", "hair salon", "shipwreck", "pasture", "circus tent", "fortress", "junkyard", "pillow fort", "mausoleum", "sepulcher",
         "kitchenette", "churchyard", "mortuary", "abattoir", "art studio", "pet store", "armory", "gazebo", "playground", "animal shelter"
@@ -917,10 +917,10 @@
         "#realBadCard#"
     ],
 
-    "fakeCard":
-    [
+    "fakeCard": [
         "Every Last Vestige Shall Rot",
-        "Question Elemental?",        
+        "Question Elemental?",
+        "Look at Me, I'm the DCI",
         "Drake Stone",
         "1997 World Champion",
         "Horse",
@@ -1171,7 +1171,6 @@
       "Ogre Slumlord",
       "Outrage Shaman",
       "Phytotitan",
-      "Putrefaction",
       "Royal Trooper",
       "Serrated Biskelion",
       "Scalpelexis",
@@ -1587,7 +1586,8 @@
     ],
     "cardSetSuffix": ["reborn", "revisited", "unleashed", "dawn", "ascendant"],
     "characterClass": ["master", "warlord", "avenger", "champion", "explorer", "pirate", "chieftain", "conqueror", "god", "assassin", "oracle", "ghost",
-                        "knave", "defender","ancient", "master", "prisoner", "buffoon", "baby", "clown", "villain", "freak", "fiend", "titan", "horror"],
+                        "knave", "defender","ancient", "master", "prisoner", "buffoon", "baby", "clown", "villain", "freak", "fiend", "titan", "horror",
+                        "cyborg", "ambassador", "agent", "mercenary", "cowboy", "mime", "architect", "inventor", "guardian", "groundskeeper"],
     "plane": ["Rath", "Shandalar", "Mirrodin", "Kamigawa", "Alara", "Zendikar", "Innistrad", "Kaladesh", "Amonkhet", "Muruganda", "Mirrodin", "Ravnica", "Lorwyn", "Tarkir", "Vryn"],    
     "cardCopyCount": [
         "1",
@@ -1629,7 +1629,7 @@
         "#num1-9##num0-9#"
     ],
     "priceUSD": [
-        "$#num1-999#.#num0-9##num0-9#"
+        "$#num1-999#", "$#num1-999#.#num0-9##num0-9#"
     ],
     "num0-9": ["0","1","2","3","4","5","6","7","8","9"],
     "num1-9": ["1","2","3","4","5","6","7","8","9"],
