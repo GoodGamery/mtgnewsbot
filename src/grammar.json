@@ -50,6 +50,7 @@
     "tip": [
         "#tipTitle#: Improve Your #deckObjective.capitalizeAll# by #deckChange.capitalizeAll#",
         "#tipTitle#: #deckChange.capitalize# is #adj.a# idea, [_says:Says,Reports]#_says# #pro#",
+        "[_title:#tipTitle#,#pro#]#_title.capitalize#: [_replacement:#card# can replace #cardAlone#,#cardCategory.s# can replace #cardCategory.s#]#_replacement.capitalize# in #format#",
         "#tipTitle#: #improvementGoal.capitalize# by #deckChange#"
     ],
     "tipMoney": [
@@ -90,18 +91,11 @@
       "MOCS [_round:Quarterfinals,Semifinals,Finals]#_round#"
     ],
     "jayaText": [
-        "\"Of course you should fight #_thing1# with #_thing2#. You should fight everything with #_thing2#.\" — Jaya Ballard, [_magic:Task,#abstractNoun#,#emotion#,#itemNoun#,#massNoun#]#_magic.capitalizeAll# Mage"
+        "\"Of course you should fight #_thing1# with #_thing2#. You should fight everything with #_thing2#.\" — Jaya Ballard, [_otherThing:#abstractNoun#,#emotion#,#itemNoun#,#massNoun#][_magic:Task,#_thing2#,#_otherThing#]#_magic.capitalizeAll# Mage"
     ],    
     "flavorText": [
-        "\"I want [_thing:#aNoun#,#massNoun#,#pluralNoun#,#abstractNoun#]#_thing# THIS #adj#!\"",
-        "\"[_wisher:He,She,They,It]#_wisher# wished for [#objectNounPronoun#]#_noun#, but not for the #noun# to #verb# #_pronoun#.\"",
-        "\"Only a madman could create such [#objectNounPronoun#]#_noun#. Only an imbecile would #verb# #_pronoun#.\"",
-        "\"There's a thin line between [_thing1:#aNoun#,#pluralNoun#]#_thing1# and [_thing2:#aNoun#,#pluralNoun#]#_thing2#. Allow me to #verb# it.\" — Liliana Vess",
-        "#[#twoObjects#]jayaText#",
-        "\"I've got the [_n1:#noun#]#_n1#\", #planeswalkerFirstName# said as the #noun# came to life. \"I've got the #_n1#!\"",
-        "\"From nothing came [_thing:#aNoun#,#massNoun#,#pluralNoun#]#_thing#.\"",
-        "\"The #covering# of [_thing:#emotion#,#abstractNoun#]#_thing# #outVerb.ed# from the [_who:#characterClass#,#creatureTypes#]#_who#, revealing the #emotion# and [_otherThing:#emotion#,#pluralNoun#]#_otherThing# beneath.\"",
-        "\"Your patheitc #pluralNoun# lie in shambles, Planeswalker. Where is your #adj# #singularNoun# now?\" — Nicol Bolas"
+     
+        "#[#twoObjects#]jayaText#"
     ],
     "covering": [ "veneer", "facade", "aura", "layer", "mask", "veil", "blanket", "curtain", "girdle", "thin film", "cloud", "light dusting", "thick coating", "membrane"],
     "outVerb": [ "peel", "dissolve", "evaporate", "melt", "erode",  "crumble"],    
@@ -412,7 +406,8 @@
     "itemNoun": [
         "weapon", "card", "wand", "spellbook", "staff", "orb", "tree", "plant", "crown", "jewel", "amulet", "egg", "banner", "boot",
         "aegis", "hedron", "altar", "portal", "door", "cluestone", "flask", "bident", "scepter", "idol", "mask", "sword", "longbow",
-        "grimoire", "chalice", "blade", "gift", "signet", "monolith", "gemstone", "clue", "scroll", "lantern", "collar", "talisman"
+        "grimoire", "chalice", "blade", "gift", "signet", "monolith", "gemstone", "clue", "scroll", "lantern", "collar", "talisman",
+        "doodad"
     ],
     "placeNoun": [
         "temple", "palace", "castle", "garden", "market", "dungeon", "sanctuary", "mansion", "kingdom", "colony", "isle", "graveyard",
@@ -427,7 +422,7 @@
         "teeth", "feet", "pants", "geese", "fish", "children", "men", "women", "potatoes", "knives", "ashes", "riches"
     ],    
     "massNoun": [
-      "land", "ichor", "water", "sand", "mana", "wood", "fire", "lightning", "phyrexian oil", "snow", "lunch", "treasure", "guacamole"
+      "land", "ichor", "water", "sand", "mana", "wood", "fire", "ice", "lightning", "phyrexian oil", "snow", "lunch", "treasure", "guacamole", "butterscotch"
     ],
     "objectNounPronoun": ["[_noun:#aNoun#,#abstractNoun#,#abstractNoun#,#massNoun#,#adj.a# #itemNoun#][_pronoun:it]","[_noun:#pluralNoun#][_pronoun:them]"],
     "twoObjects": [
