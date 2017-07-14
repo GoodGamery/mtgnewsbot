@@ -63,7 +63,7 @@
         "BREAKING: Prices of #card.capitalizeAll# Spiking; Market Cornered by #pros#"
     ],
     "classifieds": [
-                "#titleClassified#: #card#",
+        "#titleClassified#: #card#",
         "#titleClassified#: #card# playset for #priceUSD#",
         "#titleClassified#: #num2-99#x #cardAlone# @ #priceUSD# ea.",
         "#titleClassified#: #broadCardClassification.capitalizeAll# Collection for #priceUSD#",
@@ -105,7 +105,24 @@
         "\"Of course you should fight #_thing1# with #_thing2#. You should fight everything with #_thing2#.\" — Jaya Ballard, [_otherThing:#abstractNoun#,#emotion#,#itemNoun#,#massNoun#][_magic:Task,#_thing2#,#_otherThing#]#_magic.capitalizeAll# Mage"
     ],
     "flavorText": [
-        "\"[#character#][_first:#pluralNounOrMassMoun#][_second:#pluralNounOrMassMoun#][_third:#pluralNounOrMassMoun#][_fourth:#pluralNounOrMassMoun#]#they.capitalize# traded #_first# for #_second#, #_second# for #_third#, #_third# for #_fourth#. In the end, #they# traded #_fourth# for #_first#.\""    ],
+        "\"I want [_thing:#aNoun#,#massNoun#,#pluralNoun#]#_thing# THIS #adj#!\"",
+        "\"[_wisher:He,She,They,It]#_wisher# wished for [#objectNounPronoun#]#_noun#, but not for the #noun# to #verb# #_pronoun#.\"",
+        "\"Only a madman could create such [#objectNounPronoun#]#_noun#. Only an imbecile would #verb# #_pronoun#.\"",
+        "\"There's a thin line between [_thing1:#aNoun#,#pluralNoun#]#_thing1# and [_thing2:#aNoun#,#pluralNoun#]#_thing2#. Allow me to #verb# it.\" — Liliana Vess",
+        "#[#twoObjects#]jayaText#",
+        "\"I've got the [_n1:#noun#]#_n1#\", #planeswalkerFirstName# said as the #noun# came to life. \"I've got the #_n1#!\"",
+        "\"From nothing came [_thing:#aNoun#,#massNoun#,#pluralNoun#]#_thing#.\"",
+        "\"The #covering# of [_thing:#emotion#,#abstractNoun#]#_thing# #outVerb.ed# from the [_who:#characterClass#,#creatureTypes#]#_who#, revealing the #emotion# and [_otherThing:#emotion#,#pluralNoun#]#_otherThing# beneath.\"",
+        "\"Your patheitc #pluralNoun# lie in shambles, Planeswalker. Where is your #adj# #singularNoun# now?\" — Nicol Bolas",
+        "\"If there's anything #creatureTypes.a# hates, it's [_n1:#concreteNoun#]#_n1.a#—especially #character#'s #_n1.capitalizeAll#, the symbol of #their# #noun#.\"",
+        "\"Ach! #character#, #verb#! It's the #creatureTypes#!\" —#character# #planeswalkerFirstName#sdotter, last words",
+        "\"Sorry I #verbPastTense# your #concreteNoun#. Here's some #pluralNoun#.\"",
+        "\"[_v1:#verbPastTense#]He #_v1# at the #placeNoun#, at his #noun#, at his #noun#. But mostly he just #_v1#.\"",
+        "\"One #concreteNoun# #verbPastTense# for every #concreteNoun# #verbPastTense# underfoot.\" —#plane# penalty for trespassing",
+        "\"Its diet consists of #pluralNoun#, [_place1:#placeNoun#][_thing:#pluralNoun#]#adj# #_place1# #_thing#, #adj# #_place1# #_thing#, and #_place1.s#.\"",
+        "\"‘[_who:#character#]#_who.capitalize#, #verb# those #itemOrCreatureType.s#.’ ‘#_who#, #verb# those #itemOrCreatureType.s#.’ No one cares that today is #occasion#.\"",
+        "\"[#character#][_first:#pluralNounOrMassMoun#][_second:#pluralNounOrMassMoun#][_third:#pluralNounOrMassMoun#][_fourth:#pluralNounOrMassMoun#]#they.capitalize# traded #_first# for #_second#, #_second# for #_third#, #_third# for #_fourth#. In the end, #they# traded #_fourth# for #_first#.\""
+    ],
     "occasion": ["my birthday", "my anniversary", "my first day on the job", "my last day on the job", "my bar mitzvah", "my unbirthday", "my cake day",
                  "my inauguration", "Durin's Day", "Robanukah", "Festivus", "Wednesday", "Guy Fawkes' Day", "Boxing Day", "Shrove Tuesday", "National Corndog Day",
                  "Ice Cream for Breakfast Day", "World Kindness Day", "Take Your Dog to Work Day", "Leg Day", "Casual Friday", "April Fools' Day", "CAPS LOCK DAY",
