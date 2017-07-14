@@ -121,7 +121,8 @@
         "\"One #concreteNoun# #verbPastTense# for every #concreteNoun# #verbPastTense# underfoot.\" —#plane# penalty for trespassing",
         "\"Its diet consists of #pluralNoun#, [_place1:#placeNoun#][_thing:#pluralNoun#]#adj# #_place1# #_thing#, #adj# #_place1# #_thing#, and #_place1.s#.\"",
         "\"‘[_who:#character#]#_who.capitalize#, #verb# those #itemOrCreatureType.s#.’ ‘#_who#, #verb# those #itemOrCreatureType.s#.’ No one cares that today is #occasion#.\"",
-        "\"[#character#][_first:#pluralNounOrMassMoun#][_second:#pluralNounOrMassMoun#][_third:#pluralNounOrMassMoun#][_fourth:#pluralNounOrMassMoun#]#they.capitalize# traded #_first# for #_second#, #_second# for #_third#, #_third# for #_fourth#. In the end, #they# traded #_fourth# for #_first#.\""
+        "\"[#character#][_first:#pluralNounOrMassMoun#][_second:#pluralNounOrMassMoun#][_third:#pluralNounOrMassMoun#][_fourth:#pluralNounOrMassMoun#]#they.capitalize# traded #_first# for #_second#, #_second# for #_third#, #_third# for #_fourth#. In the end, #they# traded #_fourth# for #_first#.\"",
+        "\"[#character#]#they.capitalize# #are# #creatureTypeOrCharacterClass#, #creatureTypeOrCharacterClass#, and #creatureTypeOrCharacterClass# because #they# killed them all.\" —Bishop Cawle of Elgaud" 
     ],
     "occasion": ["my birthday", "my anniversary", "my first day on the job", "my last day on the job", "my bar mitzvah", "my unbirthday", "my cake day",
                  "my inauguration", "Durin's Day", "Robanukah", "Festivus", "Wednesday", "Guy Fawkes' Day", "Boxing Day", "Shrove Tuesday", "National Corndog Day",
@@ -129,6 +130,7 @@
                  "International Talk Like a Pirate Day", "the Kentucky Derby", "Christmas in July"],
     "covering": [ "veneer", "facade", "aura", "layer", "mask", "veil", "blanket", "curtain", "girdle", "thin film", "cloud", "light dusting", "thick coating", "membrane"],
     "itemOrCreatureType": ["#itemNoun#","#creatureTypes#"],
+    "creatureTypeOrCharacterClass": ["#creatureType#", "#characterClass#"],
     "concreteNounOrPluralNoun": ["#concreteNoun#","#pluralNoun#"],
     "pluralNounOrMassMoun": ["#pluralNoun#","#massNoun#"],
     "outVerb": [ "peel", "dissolve", "evaporate", "melt", "erode",  "crumble"],
@@ -179,13 +181,13 @@
         "Grakk#malePronouns#"
     ],
     "malePronouns": [
-        "[they:he][theirs:his][their:his][them:him]"
+        "[they:he][theirs:his][their:his][them:him][are:is]"
     ],
     "femalePronouns": [
-        "[they:she][theirs:hers][their:her][them:her]"
+        "[they:she][theirs:hers][their:her][them:her][are:is]"
     ],
     "pluralPronouns": [
-        "[they:they][theirs:theirs][their:their][them:them]"
+        "[they:they][theirs:theirs][their:their][them:them][are:are]"
     ],
     "broadCardClassification": ["#cardModifier##cardBase#"],
     "cardModifier": ["#basicColors# ","#format# ","#cardSet# ",""],
@@ -476,7 +478,7 @@
         "[_challenge:using,winning with,understanding,answering,#verbDefeating#]#_challenge# #cardCategory.s#"
     ],
     "verb": [
-        "control", "defeat", "hold", "capture", "handle", "understand", "wield", "observe", "carry", "shuffle",
+        "control", "defeat", "hold", "capture", "handle", "understand", "wield", "observe", "carry", "shuffle", "kill",
         "perceive", "realize", "grow", "water", "nourish", "swallow", "question", "cradle", "cherish", "despise", "summon",
         "transform", "explain", "forget", "remember", "ignore", "adorn", "study", "capture", "release", "misunderstand",
         "sacrifice", "destroy", "collect", "dismiss", "praise", "scrutinize", "celebrate", "minimize", "exaggerate", "quantify",
@@ -487,8 +489,8 @@
         "perceived", "realized", "watered", "nourished", "swallowed", "questioned", "cradled", "cherished", "despised", "summoned",
         "transformed", "explained", "forgot", "remembered", "ignored", "adorned", "studied", "captured", "released", "misunderstood",
         "sacrificed", "destroyed", "collected", "dismissed", "praised", "scrutinized", "celebrated", "minimized", "exaggerated", "quantified",
-        "trivialized", "renounced", "abhorred", "disputed", "pantomimed", "advertised", "deep-fried", "decorated", "ran",
-        "burned down", "raged"
+        "trivialized", "renounced", "abhorred", "disputed", "pantomimed", "advertised", "deep-fried", "decorated", "ran", "burned down",
+        "raged", "killed"
     ],
     "noun": [
         "#singularNoun#",
@@ -520,7 +522,7 @@
     "abstractNoun": [
         "knowledge", "will", "skill", "power", "longevity", "strength", "nobility", "honor", "growth", "information", "nerve",
         "strength", "energy", "control", "technology", "rationality", "fear", "glory", "whimsy", "balance", "truth", "lies",
-        "gloom", "misery", "indigestion", "shirtlessness", "prize eligibility", "strong fashion sense", "bootlicking",
+        "gloom", "misery", "indigestion", "shirtlessness", "prize eligibility", "strong fashion sense", "bootlicking", "intellect",
         "snobbery", "megalomania", "pathos", "foresight", "fortitude", "charisma", "constitution", "dexterity", "self-control"
     ],
     "emotion": [
@@ -532,7 +534,7 @@
         "weapon", "card", "wand", "spellbook", "staff", "orb", "tree", "plant", "crown", "jewel", "amulet", "egg", "banner", "boot",
         "aegis", "hedron", "altar", "portal", "door", "cluestone", "flask", "bident", "scepter", "idol", "mask", "sword", "longbow",
         "grimoire", "chalice", "blade", "gift", "signet", "monolith", "gemstone", "clue", "scroll", "lantern", "collar", "talisman",
-        "doodad", "bone", "vuvuzela", "handlebar moustache", "horseshoe", "sweater vest"
+        "doodad", "bone", "vuvuzela", "handlebar moustache", "horseshoe", "sweater vest", "prawn"
     ],
     "placeNoun": [
         "temple", "palace", "castle", "garden", "market", "dungeon", "sanctuary", "mansion", "kingdom", "colony", "vacation rental", "graveyard",
@@ -1742,7 +1744,7 @@
     "characterClass": ["master", "warlord", "avenger", "champion", "explorer", "pirate", "chieftain", "conqueror", "god", "assassin", "oracle", "ghost",
                         "knave", "defender","ancient", "master", "prisoner", "buffoon", "baby", "clown", "villain", "freak", "fiend", "titan", "horror",
                         "cyborg", "ambassador", "agent", "mercenary", "cowboy", "mime", "architect", "inventor", "guardian", "groundskeeper", "farmer",
-                        "doctor", "thief"],
+                        "doctor", "thief", "judge", "juror", "executioner"],
     "plane": ["Rath", "Shandalar", "Mirrodin", "Kamigawa", "Alara", "Zendikar", "Innistrad", "Kaladesh", "Amonkhet", "Muruganda", "Mirrodin", "Ravnica", "Lorwyn", "Tarkir", "Vryn"],
     "cardCopyCount": [
         "1",
