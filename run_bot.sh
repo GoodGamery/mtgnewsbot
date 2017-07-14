@@ -6,6 +6,7 @@ set -a
 set +a
 
 # update source
+git fetch
 git pull
 
 # tweet
