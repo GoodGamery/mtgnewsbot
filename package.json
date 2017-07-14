@@ -2,7 +2,7 @@
   "name": "mtgnewsbot",
   "version": "1.0.0",
   "description": "MTG News Robot",
-  "main": "src/index.js",
+  "main": "src/mtgnewsbot.js",
   "scripts": {
     "start": "node src/index.js",
     "test": "jsonlint -q src/grammar.json"
