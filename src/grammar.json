@@ -110,10 +110,14 @@
         "\"From nothing came [_thing:#aNoun#,#massNoun#,#pluralNoun#]#_thing#.\"",
         "\"The #covering# of [_thing:#emotion#,#abstractNoun#]#_thing# #outVerb.ed# from the [_who:#characterClass#,#creatureTypes#]#_who#, revealing the #emotion# and [_otherThing:#emotion#,#pluralNoun#]#_otherThing# beneath.\"",
         "\"Your patheitc #pluralNoun# lie in shambles, Planeswalker. Where is your #adj# #singularNoun# now?\" — Nicol Bolas",
-        "\"If there's anything #creatureTypes.a# hates, it's [_n1:#concreteNoun#]#_n1.a#—especially #character#'s #_n1.capitalizeAll#, the symbol of #their# #noun#.\""
+        "\"If there's anything #creatureTypes.a# hates, it's [_n1:#concreteNoun#]#_n1.a#—especially #character#'s #_n1.capitalizeAll#, the symbol of #their# #noun#.\"",
+        "\"Ach! #character#, #verb#! It's the #creatureTypes#!\" —#character# #planeswalkerFirstName#sdotter, last words",
+        "\"Sorry I #verbPastTense# your #concreteNoun#. Here's some #pluralNoun#.\"",
+        "\"[_v1:#verbPastTense#]He #_v1# at the #placeNoun#, at his #noun#, at his #noun#. But mostly he just #_v1#.\"",
+        "\"One #concreteNoun# #verbPastTense# for every #concreteNoun# #verbPastTense# underfoot.\"—#plane# penalty for trespassing"
     ],
     "covering": [ "veneer", "facade", "aura", "layer", "mask", "veil", "blanket", "curtain", "girdle", "thin film", "cloud", "light dusting", "thick coating", "membrane"],
-    "outVerb": [ "peel", "dissolve", "evaporate", "melt", "erode",  "crumble"],    
+    "outVerb": [ "peel", "dissolve", "evaporate", "melt", "erode",  "crumble"],   
     "winWord": [
         "wins","triumphs","victorious","crushes","dominates","absolutely destroys"
     ],
@@ -433,11 +437,19 @@
         "[_challenge:using,winning with,understanding,answering,#verbDefeating#]#_challenge# #cardCategory.s#"
     ],
     "verb": [
-        "control", "defeat", "hold", "capture", "handle", "understand", "wield", "observe", "abuse", "carry", "shuffle",
+        "control", "defeat", "hold", "capture", "handle", "understand", "wield", "observe", "carry", "shuffle",
         "perceive", "realize", "grow", "water", "nourish", "swallow", "question", "cradle", "cherish", "despise", "summon",
         "transform", "explain", "forget", "remember", "ignore", "adorn", "study", "capture", "release", "misunderstand",
         "sacrifice", "destroy", "collect", "dismiss", "praise", "scrutinize", "celebrate", "minimize", "exaggerate", "quantify",
-        "trivialize", "renounce", "abhor", "dispute", "pantomime", "advertise", "lie about", "deep-fry", "decorate"
+        "trivialize", "renounce", "abhor", "dispute", "pantomime", "advertise", "lie about", "deep-fry", "decorate", "run"
+    ],
+    "verbPastTense": [
+        "controlled", "defeated", "held", "captured", "handled", "understood", "wielded", "observed", "carried", "shuffled",
+        "perceived", "realized", "watered", "nourished", "swallowed", "questioned", "cradled", "cherished", "despised", "summoned",
+        "transformed", "explained", "forgot", "remembered", "ignored", "adorned", "studied", "captured", "released", "misunderstood",
+        "sacrificed", "destroyed", "collected", "dismissed", "praised", "scrutinized", "celebrated", "minimized", "exaggerated", "quantified",
+        "trivialized", "renounced", "abhorred", "disputed", "pantomimed", "advertised", "deep-fried", "decorated", "ran",
+        "burned down", "raged"
     ],
     "noun": [
         "#singularNoun#",
@@ -481,7 +493,7 @@
         "weapon", "card", "wand", "spellbook", "staff", "orb", "tree", "plant", "crown", "jewel", "amulet", "egg", "banner", "boot",
         "aegis", "hedron", "altar", "portal", "door", "cluestone", "flask", "bident", "scepter", "idol", "mask", "sword", "longbow",
         "grimoire", "chalice", "blade", "gift", "signet", "monolith", "gemstone", "clue", "scroll", "lantern", "collar", "talisman",
-        "doodad"
+        "doodad", "bone"
     ],
     "placeNoun": [
         "temple", "palace", "castle", "garden", "market", "dungeon", "sanctuary", "mansion", "kingdom", "colony", "vacation rental", "graveyard",
@@ -618,6 +630,7 @@
         "bird",
         "dinosaur",
         "hippo",
+        "lhurgoyf",
         "elf",
         "zombie",
         "cleric",
