@@ -3,11 +3,20 @@
         "#headline#"
     ],
     "headline": [
+        "#tip#",
+        "#tipMoney#",
+        "#classifieds#",
+        "#realization#",
+        "#tournamentNews#",
+        "#playguide#",
+        "#decktech#",
+        "#announcement#",
+        "#clickbait#",
         "#flavorArcana#"
     ],
     "flavorArcana": [
-        "BEHIND THE FLAVOR: #flavorText#",              
-        "FLAVOR FLASHBACK: #flavorText#"      
+        "BEHIND THE FLAVOR: #flavorText#",
+        "FLAVOR FLASHBACK: #flavorText#"
     ],
     "clickbait": [
         "Are you [_verbing:overrating,underrating]#_verbing# [_thing:#gameConcept#,#card#,#deckArch#,#creatureTypes.s#,#cardSet#]#_thing#?",
@@ -30,7 +39,7 @@
         "The Importance of [_thing:#card#,#cardCategory.s#,#creatureTypes.s#,#gameConcept#]#_thing# in [_where:#format#,#recentCardSet#]#_where#",
         "#pros# Don't realize that #tech.s# #verbDefeat# #obstacle.capitalize#",
         "The Secret to #improvementGoal.capitalizeAll# is #deckChange.capitalize#",
-        "In today's Magic Story: #character#'s #adj# history with #character# finally revealed!"
+        "In today's Magic Story: #character#'s #adj# history with #character# finally revealed"
     ],
     "tournamentNews": [
         "Emergency Banning: #card.capitalize# Banned in #format#",
@@ -111,8 +120,8 @@
         "\"[_v1:#verbPastTense#]He #_v1# at the #placeNoun#, at his #noun#, at his #noun#. But mostly he just #_v1#.\"",
         "\"One #concreteNoun# #verbPastTense# for every #concreteNoun# #verbPastTense# underfoot.\" —#plane# penalty for trespassing",
         "\"Its diet consists of #pluralNoun#, [_place1:#placeNoun#][_thing:#pluralNoun#]#adj# #_place1# #_thing#, #adj# #_place1# #_thing#, and #_place1.s#.\"",
-        "\"‘#character#, #verb# those #itemOrCreatureType.s#.’ ‘#character#, #verb# those #itemOrCreatureType.s#.’ No one cares that today is #occasion#.\"",
-        "\"[_who:#character#]For the first time in #their# life, #_who# felt a little #adj# and #adj# inside.\""        
+        "\"‘[_who:#character#]#_who.capitalize#, #verb# those #itemOrCreatureType.s#.’ ‘#_who#, #verb# those #itemOrCreatureType.s#.’ No one cares that today is #occasion#.\"",
+        "\"[#character#][_first:#pluralNounOrMassMoun#][_second:#pluralNounOrMassMoun#][_third:#pluralNounOrMassMoun#][_fourth:#pluralNounOrMassMoun#]#they.capitalize# traded #_first# for #_second#, #_second# for #_third#, #_third# for #_fourth#. In the end, #they# traded #_fourth# for #_first#.\""
     ],
     "occasion": ["my birthday", "my anniversary", "my first day on the job", "my last day on the job", "my bar mitzvah", "my unbirthday", "my cake day",
                  "my inauguration", "Durin's Day", "Robanukah", "Festivus", "Wednesday", "Guy Fawkes' Day", "Boxing Day", "Shrove Tuesday", "National Corndog Day",
@@ -121,6 +130,7 @@
     "covering": [ "veneer", "facade", "aura", "layer", "mask", "veil", "blanket", "curtain", "girdle", "thin film", "cloud", "light dusting", "thick coating", "membrane"],
     "itemOrCreatureType": ["#itemNoun#","#creatureTypes#"],
     "concreteNounOrPluralNoun": ["#concreteNoun#","#pluralNoun#"],
+    "pluralNounOrMassMoun": ["#pluralNoun#","#massNoun#"],
     "outVerb": [ "peel", "dissolve", "evaporate", "melt", "erode",  "crumble"],
     "winWord": [
         "wins","triumphs","victorious","crushes","dominates","absolutely destroys"
@@ -305,7 +315,12 @@
         "vainglorious",
         "surly",
         "sullen",
-        "two-faced"
+        "two-faced",
+        "sultry",
+        "tepid",
+        "clammy",
+        "sweaty",
+        "ordinary"
     ],
     "tipTitle": [
         "MTG TIPS",
