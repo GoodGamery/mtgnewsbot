@@ -1,7 +1,7 @@
 'use strict';
 const Twit = require('twit');
 const tracery = require(`tracery-grammar`);
-const the_pros = require(`./grammar.json`);
+const the_pros = require(`./src/grammar.json`);
 
 // Create tweet from grammar
 const grammar = tracery.createGrammar(the_pros);
