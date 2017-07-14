@@ -12,7 +12,11 @@
         "#decktech#",
         "#announcement#",
         "#clickbait#",
-        "BEHIND THE FLAVOR: #flavorText#"
+        "#flavorArcana#"
+    ],
+    "flavorArcana": [
+        "BEHIND THE FLAVOR: #flavorText#",              
+        "FLAVOR FLASHBACK: #flavorText#"      
     ],
     "clickbait": [
         "Are you [_verbing:overrating,underrating]#_verbing# [_thing:#gameConcept#,#card#,#deckArch#,#creatureTypes.s#,#cardSet#]#_thing#?",
@@ -116,7 +120,8 @@
         "\"[_v1:#verbPastTense#]He #_v1# at the #placeNoun#, at his #noun#, at his #noun#. But mostly he just #_v1#.\"",
         "\"One #concreteNoun# #verbPastTense# for every #concreteNoun# #verbPastTense# underfoot.\" —#plane# penalty for trespassing",
         "\"Its diet consists of #pluralNoun#, [_place1:#placeNoun#][_thing:#pluralNoun#]#adj# #_place1# #_thing#, #adj# #_place1# #_thing#, and #_place1.s#.\"",
-        "\"[_who:#character#,#pro#]‘#_who#, #verb# those #itemOrCreatureType.s#.’ ‘#_who#, #verb# those #itemOrCreatureType.s#.’ No one cares that today is #occasion#.\""
+        "\"‘#character#, #verb# those #itemOrCreatureType.s#.’ ‘#character#, #verb# those #itemOrCreatureType.s#.’ No one cares that today is #occasion#.\"",
+        "\"[_who:#character#]For the first time in #their# life, #_who# felt a little #adj# and #adj# inside.\""        
     ],
     "occasion": ["my birthday", "my anniversary", "my first day on the job", "my last day on the job", "my bar mitzvah", "my unbirthday", "my cake day",
                  "my inauguration", "Durin's Day", "Robanukah", "Festivus", "Wednesday", "Guy Fawkes' Day", "Boxing Day", "Shrove Tuesday", "National Corndog Day",
@@ -170,7 +175,7 @@
         "Thassa#femalePronouns#",
         "Yawgmoth#malePronouns#",
         "Davvol#malePronouns#",
-        "Grak#malePronouns#"
+        "Grakk#malePronouns#"
     ],
     "malePronouns": [
         "[they:he][theirs:his][their:his][them:him]"
