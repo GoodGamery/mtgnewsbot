@@ -23,7 +23,7 @@
         "Have You Considered? [_consider:#card# in #format#,#deck#]#_consider.capitalize#",
         "#pro# [_picked:First Picked,Last Picked,Wheeled,Drafted,Morphed]#_picked# #card.capitalizeAll#[_challenge: and You Won't Believe,. You'll Be Floored By,. Guess,. Find Out,. #pros.capitalizeAll# are still talking about#]#_challenge# [_what:What Happened Next,What #pro.capitalize# Said Next,What #pro.capitalize# Did Next,Why #pro.capitalize# Called a Judge]#_what#",
         "[_cardname:#realCard#]We're not wrong: the card you're thinking of is #_cardname# #imgCard#",
-        "PICTURES: #pro#'s amazing cosplay of #cardAlone#"
+        "PICTURES: [_who:#pro#,#otherPersonality#]#_who.capitalize#'s amazing cosplay of #cardAlone#"
     ],
     "announcement": [
         "Wizards Announces: Duel Decks: [_one:#nouns.capitalizeAll#,#planeswalkerFirstName#]#_one# vs. [_two:#nouns.capitalizeAll#,#planeswalkerFirstName#]#_two#",
@@ -59,7 +59,7 @@
         "BREAKING: Prices of #card.capitalizeAll# Spiking; Market Cornered by #pros#"
     ],
     "classifieds": [
-        "#titleClassified#: #card#",
+                "#titleClassified#: #card#",
         "#titleClassified#: #card# playset for #priceUSD#",        
         "#titleClassified#: #num2-99#x #cardAlone# @ #priceUSD# ea.",
         "#titleClassified#: #broadCardClassification.capitalizeAll# Collection for #priceUSD#",
@@ -101,7 +101,7 @@
         "\"Of course you should fight #_thing1# with #_thing2#. You should fight everything with #_thing2#.\" — Jaya Ballard, [_otherThing:#abstractNoun#,#emotion#,#itemNoun#,#massNoun#][_magic:Task,#_thing2#,#_otherThing#]#_magic.capitalizeAll# Mage"
     ],    
     "flavorText": [
-        "\"I want [_thing:#aNoun#,#massNoun#,#pluralNoun#,#abstractNoun#]#_thing# THIS #adj#!\"",
+        "\"I want [_thing:#aNoun#,#massNoun#,#pluralNoun#]#_thing# THIS #adj#!\"",
         "\"[_wisher:He,She,They,It]#_wisher# wished for [#objectNounPronoun#]#_noun#, but not for the #noun# to #verb# #_pronoun#.\"",
         "\"Only a madman could create such [#objectNounPronoun#]#_noun#. Only an imbecile would #verb# #_pronoun#.\"",
         "\"There's a thin line between [_thing1:#aNoun#,#pluralNoun#]#_thing1# and [_thing2:#aNoun#,#pluralNoun#]#_thing2#. Allow me to #verb# it.\" — Liliana Vess",
@@ -114,15 +114,17 @@
         "\"Ach! #character#, #verb#! It's the #creatureTypes#!\" —#character# #planeswalkerFirstName#sdotter, last words",
         "\"Sorry I #verbPastTense# your #concreteNoun#. Here's some #pluralNoun#.\"",
         "\"[_v1:#verbPastTense#]He #_v1# at the #placeNoun#, at his #noun#, at his #noun#. But mostly he just #_v1#.\"",
-        "\"One #concreteNoun# #verbPastTense# for every #concreteNoun# #verbPastTense# underfoot.\"—#plane# penalty for trespassing",
+        "\"One #concreteNoun# #verbPastTense# for every #concreteNoun# #verbPastTense# underfoot.\" —#plane# penalty for trespassing",
         "\"Its diet consists of #pluralNoun#, [_place1:#placeNoun#][_thing:#pluralNoun#]#adj# #_place1# #_thing#, #adj# #_place1# #_thing#, and #_place1.s#.\"",
-        "\"‘#character#, #verb# those #creatureTypes.s#.’ ‘#character#, #verb# those #creatureTypes.s#.’ No one cares that today #occasion#.”\""
+        "\"[_who:#character#,#pro#]‘#_who#, #verb# those #itemOrCreatureType.s#.’ ‘#_who#, #verb# those #itemOrCreatureType.s#.’ No one cares that today is #occasion#.\""
     ],
     "occasion": ["my birthday", "my anniversary", "my first day on the job", "my last day on the job", "my bar mitzvah", "my unbirthday", "my cake day",
                  "my inauguration", "Durin's Day", "Robanukah", "Festivus", "Wednesday", "Guy Fawkes' Day", "Boxing Day", "Shrove Tuesday", "National Corndog Day",
                  "Ice Cream for Breakfast Day", "World Kindness Day", "Take Your Dog to Work Day", "Leg Day", "Casual Friday", "April Fools' Day", "CAPS LOCK DAY", 
                  "International Talk Like a Pirate Day", "the Kentucky Derby", "Christmas in July"],
     "covering": [ "veneer", "facade", "aura", "layer", "mask", "veil", "blanket", "curtain", "girdle", "thin film", "cloud", "light dusting", "thick coating", "membrane"],
+    "itemOrCreatureType": ["#itemNoun#","#creatureTypes#"],
+    "concreteNounOrPluralNoun": ["#concreteNoun#","#pluralNoun#"],
     "outVerb": [ "peel", "dissolve", "evaporate", "melt", "erode",  "crumble"],   
     "winWord": [
         "wins","triumphs","victorious","crushes","dominates","absolutely destroys"
