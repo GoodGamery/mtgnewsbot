@@ -6,6 +6,7 @@
   "scripts": {
     "start": "node src/index.js",
     "test": "jsonlint -q src/grammar.json"
+    "lint": "jsonlint -q src/grammar.json"
   },
   "repository": {
     "type": "git",
@@ -23,7 +24,7 @@
   "homepage": "https://github.com/mdiehr/mtgnewsbot#readme",
   "devDependencies": {},
   "dependencies": {
-    "chalk": "^2.0.1",
-    "tracery-grammar": "^2.7.3"
+    "tracery-grammar": "2.7.3",
+    "twit": "2.2.9"
   }
 }
