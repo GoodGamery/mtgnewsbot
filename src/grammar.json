@@ -60,7 +60,7 @@
         "#titleMoney#: #investType# #card# #investReason#",
         "#titleMoney#: #investType# #card#",
         "#titleMoney#: #pro# is #investType#ing #broadCardClassification.capitalizeAll#; Should You?",
-        "BREAKING: Prices of #card.capitalizeAll# Spiking; Market Cornered by #pros#"
+        "BREAKING: Prices of #card# Spiking; Market Cornered by #pros#"
     ],
     "classifieds": [
         "#titleClassified#: #card#",
