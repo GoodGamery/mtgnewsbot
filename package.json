@@ -4,8 +4,9 @@
   "description": "MTG News Robot",
   "main": "src/index.js",
   "scripts": {
-    "start": "node src/index.js",
-    "test": "jsonlint -q src/grammar.json"
+    "start": "npm run print",
+    "test": "npm run lint && npm run print",
+    "print": "node src/index.js ",
     "lint": "jsonlint -q src/grammar.json"
   },
   "repository": {
