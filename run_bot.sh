@@ -2,7 +2,7 @@
 
 # Export env vars for twitter tokens
 set -a
-. .env
+. ./.env
 set +a
 
 node bot.js
