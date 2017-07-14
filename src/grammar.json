@@ -12,7 +12,11 @@
         "#decktech#",
         "#announcement#",
         "#clickbait#",
-        "BEHIND THE FLAVOR: #flavorText#"
+        "#flavorArcana#"
+    ],
+    "flavorArcana": [
+        "BEHIND THE FLAVOR: #flavorText#",
+        "FLAVOR FLASHBACK: #flavorText#"
     ],
     "clickbait": [
         "Are you [_verbing:overrating,underrating]#_verbing# [_thing:#gameConcept#,#card#,#deckArch#,#creatureTypes.s#,#cardSet#]#_thing#?",
@@ -21,21 +25,21 @@
         "#count.capitalize# #cardCategory.s# from #teaserCardSet# leaked",
         "#format# Banwatch: #card#",
         "Have You Considered? [_consider:#card# in #format#,#deck#]#_consider.capitalize#",
-        "#pro# [_picked:First Picked,Last Picked,Wheeled,Drafted]#_picked# #card.capitalizeAll#[_challenge: and You Won't Believe,. You'll Be Floored By,. Guess,. Find Out,. #pros.capitalizeAll# are still talking about#]#_challenge# [_what:What Happened Next,What #pro.capitalize# Said Next,What #pro.capitalize# Did Next,Why #pro.capitalize# Called a Judge]#_what#",
+        "#pro# [_picked:First Picked,Last Picked,Wheeled,Drafted,Morphed]#_picked# #card.capitalizeAll#[_challenge: and You Won't Believe,. You'll Be Floored By,. Guess,. Find Out,. #pros.capitalizeAll# are still talking about#]#_challenge# [_what:What Happened Next,What #pro.capitalize# Said Next,What #pro.capitalize# Did Next,Why #pro.capitalize# Called a Judge]#_what#",
         "[_cardname:#realCard#]We're not wrong: the card you're thinking of is #_cardname# #imgCard#",
-        "PICTURES: #pro#'s amazing cosplay of #cardAlone#"
+        "PICTURES: [_who:#pro#,#otherPersonality#]#_who.capitalize#'s amazing cosplay of #cardAlone#"
     ],
     "announcement": [
         "Wizards Announces: Duel Decks: [_one:#nouns.capitalizeAll#,#planeswalkerFirstName#]#_one# vs. [_two:#nouns.capitalizeAll#,#planeswalkerFirstName#]#_two#",
         "Wizards Announces: From the Vault: [_contents:#nouns#,#pluralNoun#,#massNoun#]#_contents.capitalize#",
-        "Wizards Announces: #novelCardSetName.capitalizeAll#",       
+        "Wizards Announces: #novelCardSetName.capitalizeAll#",
         "[_nextSet:The next set,The next fall set,#codename.capitalize#][_verbphrase:is actually,is really named,will be named]#_nextSet# #_verbphrase# #novelCardSetName.capitalizeAll#"
     ],
     "realization": [
         "The Importance of [_thing:#card#,#cardCategory.s#,#creatureTypes.s#,#gameConcept#]#_thing# in [_where:#format#,#recentCardSet#]#_where#",
         "#pros# Don't realize that #tech.s# #verbDefeat# #obstacle.capitalize#",
         "The Secret to #improvementGoal.capitalizeAll# is #deckChange.capitalize#",
-        "In today's Magic Story: #character#'s #adj# history with #character# finally revealed!"
+        "In today's Magic Story: #character#'s #adj# history with #character# finally revealed"
     ],
     "tournamentNews": [
         "Emergency Banning: #card.capitalize# Banned in #format#",
@@ -60,14 +64,14 @@
     ],
     "classifieds": [
         "#titleClassified#: #card#",
-        "#titleClassified#: #card# playset for #priceUSD#",        
+        "#titleClassified#: #card# playset for #priceUSD#",
         "#titleClassified#: #num2-99#x #cardAlone# @ #priceUSD# ea.",
         "#titleClassified#: #broadCardClassification.capitalizeAll# Collection for #priceUSD#",
         "#titleClassified#: Complete #broadCardClassification.capitalizeAll# Set for #priceUSD#"
     ],
     "decktech": [
         "Deck Tech: #deckVariation#",
-        "Deck of the Day: #deckVariation#",        
+        "Deck of the Day: #deckVariation#",
         "Winning at #format# with #deckVariation#",
         "Preparing for #tournament# with #deckVariation#"
     ],
@@ -77,7 +81,7 @@
         "#count.capitalize# #broadCardClassification.capitalizeAll# That Should Never Have Been [_verbed:Printed,Banned,Unbanned,Played,Ignored]#_verbed#",
         "[_proReveals:Top Pro #revealVerb.s#,#pro# #revealVerb.s#,#pros# #revealVerb#]#_proReveals.capitalizeAll# #planNoun.capitalize# for #event#: Play #card# in #deck# to counter [_what:#card#,#deckArch#]#_what#",
         "#recentCardSet# [_format:Limited,Constucted]#_format# Set Review:[_color: #basicColors#,]#_color# #cardCategory.s.capitalizeAll# and [_other:#cardCategory#,#creatureTypes#]#_other.s.capitalizeAll#",
-        "#recentCardSet# #format# Set Review: [_cat:#basicColors#,#cardCategory.s# and #cardCategory.s#]#_cat.capitalizeAll#"        
+        "#recentCardSet# #format# Set Review: [_cat:#basicColors#,#cardCategory.s# and #cardCategory.s#]#_cat.capitalizeAll#"
     ],
     "tournamentRound": [
       "[_tournament:#tournament##colon# ,]#_tournament.capitalize#[_round:Round #num2-9#,Quarterfinals,Semifinals,Finals]#_round# Feature Match",
@@ -99,9 +103,9 @@
     "planNoun": ["plan", "scheme", "strategy", "objective", "stratagem", "tactic"],
     "jayaText": [
         "\"Of course you should fight #_thing1# with #_thing2#. You should fight everything with #_thing2#.\" — Jaya Ballard, [_otherThing:#abstractNoun#,#emotion#,#itemNoun#,#massNoun#][_magic:Task,#_thing2#,#_otherThing#]#_magic.capitalizeAll# Mage"
-    ],    
+    ],
     "flavorText": [
-        "\"I want [_thing:#aNoun#,#massNoun#,#pluralNoun#,#abstractNoun#]#_thing# THIS #adj#!\"",
+        "\"I want [_thing:#aNoun#,#massNoun#,#pluralNoun#]#_thing# THIS #adj#!\"",
         "\"[_wisher:He,She,They,It]#_wisher# wished for [#objectNounPronoun#]#_noun#, but not for the #noun# to #verb# #_pronoun#.\"",
         "\"Only a madman could create such [#objectNounPronoun#]#_noun#. Only an imbecile would #verb# #_pronoun#.\"",
         "\"There's a thin line between [_thing1:#aNoun#,#pluralNoun#]#_thing1# and [_thing2:#aNoun#,#pluralNoun#]#_thing2#. Allow me to #verb# it.\" — Liliana Vess",
@@ -114,10 +118,21 @@
         "\"Ach! #character#, #verb#! It's the #creatureTypes#!\" —#character# #planeswalkerFirstName#sdotter, last words",
         "\"Sorry I #verbPastTense# your #concreteNoun#. Here's some #pluralNoun#.\"",
         "\"[_v1:#verbPastTense#]He #_v1# at the #placeNoun#, at his #noun#, at his #noun#. But mostly he just #_v1#.\"",
-        "\"One #concreteNoun# #verbPastTense# for every #concreteNoun# #verbPastTense# underfoot.\"—#plane# penalty for trespassing"
+        "\"One #concreteNoun# #verbPastTense# for every #concreteNoun# #verbPastTense# underfoot.\" —#plane# penalty for trespassing",
+        "\"Its diet consists of #pluralNoun#, [_place1:#placeNoun#][_thing:#pluralNoun#]#adj# #_place1# #_thing#, #adj# #_place1# #_thing#, and #_place1.s#.\"",
+        "\"‘[_who:#character#]#_who.capitalize#, #verb# those #itemOrCreatureType.s#.’ ‘#_who#, #verb# those #itemOrCreatureType.s#.’ No one cares that today is #occasion#.\"",
+        "\"[#character#][_first:#pluralNounOrMassMoun#][_second:#pluralNounOrMassMoun#][_third:#pluralNounOrMassMoun#][_fourth:#pluralNounOrMassMoun#]#they.capitalize# traded #_first# for #_second#, #_second# for #_third#, #_third# for #_fourth#. In the end, #they# traded #_fourth# for #_first#.\""
     ],
-    "covering": [ "veneer", "facade", "aura", "layer", "mask", "veil", "blanket", "curtain", "girdle", "thin film", "cloud", "light dusting", "thick coating", "membrane"],
-    "outVerb": [ "peel", "dissolve", "evaporate", "melt", "erode",  "crumble"],   
+    "occasion": ["my birthday", "my anniversary", "my first day on the job", "my last day on the job", "my bar mitzvah", "my unbirthday", "my cake day",
+                 "my inauguration", "Durin's Day", "Robanukah", "Festivus", "Wednesday", "Guy Fawkes' Day", "Boxing Day", "Shrove Tuesday", "National Corndog Day",
+                 "Ice Cream for Breakfast Day", "World Kindness Day", "Take Your Dog to Work Day", "Leg Day", "Casual Friday", "April Fools' Day", "CAPS LOCK DAY",
+                 "International Talk Like a Pirate Day", "the Kentucky Derby", "Christmas in July"],
+    "covering": [ "veneer", "facade", "aura", "layer", "mask", "veil", "blanket", "curtain", "girdle", "thin film", "cloud", "light dusting", "thick coating", "membrane", "halo"],
+    "itemOrCreatureType": ["#itemNoun#","#creatureTypes#"],
+    "creatureTypeOrCharacterClass": ["#creatureTypes#", "#characterClass#"],
+    "concreteNounOrPluralNoun": ["#concreteNoun#","#pluralNoun#"],
+    "pluralNounOrMassMoun": ["#pluralNoun#","#massNoun#"],
+    "outVerb": [ "peel", "dissolve", "evaporate", "melt", "erode",  "crumble"],
     "winWord": [
         "wins","triumphs","victorious","crushes","dominates","absolutely destroys"
     ],
@@ -160,16 +175,18 @@
         "Squee#malePronouns#",
         "Tasigur#malePronouns#",
         "Thassa#femalePronouns#",
-        "Yawgmoth#malePronouns#"
+        "Yawgmoth#malePronouns#",
+        "Davvol#malePronouns#",
+        "Grakk#malePronouns#"
     ],
     "malePronouns": [
-        "[they:he][theirs:his][their:his][them:him]"
+        "[they:he][theirs:his][their:his][them:him][are:is]"
     ],
     "femalePronouns": [
-        "[they:she][theirs:hers][their:her][them:her]"
+        "[they:she][theirs:hers][their:her][them:her][are:is]"
     ],
     "pluralPronouns": [
-        "[they:they][theirs:theirs][their:their][them:them]"
+        "[they:they][theirs:theirs][their:their][them:them][are:are]"
     ],
     "broadCardClassification": ["#cardModifier##cardBase#"],
     "cardModifier": ["#basicColors# ","#format# ","#cardSet# ",""],
@@ -280,8 +297,31 @@
         "ridiculous",
         "obvious",
         "worthless",
-        "pathetic",     
-        "patheitc"
+        "pathetic",
+        "patheitc",
+        "dirty",
+        "filthy",
+        "rotten",
+        "stinking",
+        "arrogant",
+        "fancy",
+        "glamorous",
+        "amorous",
+        "charming",
+        "screwball",
+        "ramshackle",
+        "tacky",
+        "delightful",
+        "glorious",
+        "vainglorious",
+        "surly",
+        "sullen",
+        "two-faced",
+        "sultry",
+        "tepid",
+        "clammy",
+        "sweaty",
+        "ordinary"
     ],
     "tipTitle": [
         "MTG TIPS",
@@ -428,7 +468,7 @@
         "#people#",
         "#gameConcept#",
         "#cardCategory.s#"
-    ],    
+    ],
     "improvementGoal": [
         "[_challenge:winning,placing at,preparing for,#verbDefeating#]#_challenge# #tournamentType.s#",
         "[_challenge:winning with,#verbDefeating#]#_challenge# #deckArch#",
@@ -437,23 +477,23 @@
         "[_challenge:using,winning with,understanding,answering,#verbDefeating#]#_challenge# #cardCategory.s#"
     ],
     "verb": [
-        "control", "defeat", "hold", "capture", "handle", "understand", "wield", "observe", "carry", "shuffle",
+        "control", "defeat", "hold", "capture", "handle", "understand", "wield", "observe", "carry", "shuffle", "kill",
         "perceive", "realize", "grow", "water", "nourish", "swallow", "question", "cradle", "cherish", "despise", "summon",
         "transform", "explain", "forget", "remember", "ignore", "adorn", "study", "capture", "release", "misunderstand",
         "sacrifice", "destroy", "collect", "dismiss", "praise", "scrutinize", "celebrate", "minimize", "exaggerate", "quantify",
-        "trivialize", "renounce", "abhor", "dispute", "pantomime", "advertise", "lie about", "deep-fry", "decorate", "run"
+        "trivialize", "renounce", "abhor", "dispute", "pantomime", "advertise", "lie about", "deep-fry", "decorate", "run", "brandish"
     ],
     "verbPastTense": [
         "controlled", "defeated", "held", "captured", "handled", "understood", "wielded", "observed", "carried", "shuffled",
         "perceived", "realized", "watered", "nourished", "swallowed", "questioned", "cradled", "cherished", "despised", "summoned",
         "transformed", "explained", "forgot", "remembered", "ignored", "adorned", "studied", "captured", "released", "misunderstood",
         "sacrificed", "destroyed", "collected", "dismissed", "praised", "scrutinized", "celebrated", "minimized", "exaggerated", "quantified",
-        "trivialized", "renounced", "abhorred", "disputed", "pantomimed", "advertised", "deep-fried", "decorated", "ran",
-        "burned down", "raged"
+        "trivialized", "renounced", "abhorred", "disputed", "pantomimed", "advertised", "deep-fried", "decorated", "ran", "burned down",
+        "raged", "killed"
     ],
     "noun": [
         "#singularNoun#",
-        "[_other:#pluralNoun#,#massNoun#]#_other#"       
+        "[_other:#pluralNoun#,#massNoun#]#_other#"
     ],
     "singularNoun": [
         "#cardCategory#",
@@ -461,17 +501,17 @@
         "#itemNoun#",
         "#placeNoun#",
         "#abstractNoun#",
-        "#massNoun#"       
+        "#massNoun#"
     ],
     "pluralNoun": [
-        "#cardCategory.s#",        
-        "#creatureTypes.s#",        
+        "#cardCategory.s#",
+        "#creatureTypes.s#",
         "#itemNoun.s#",
-        "#irregularPluralNoun#"     
-    ],    
+        "#irregularPluralNoun#"
+    ],
     "aNoun": [
         "#cardCategory.a#",
-        "#creatureTypes.a#",    
+        "#creatureTypes.a#",
         "#itemNoun.a#"
     ],
     "concreteNoun": [
@@ -481,7 +521,7 @@
     "abstractNoun": [
         "knowledge", "will", "skill", "power", "longevity", "strength", "nobility", "honor", "growth", "information", "nerve",
         "strength", "energy", "control", "technology", "rationality", "fear", "glory", "whimsy", "balance", "truth", "lies",
-        "gloom", "misery", "indigestion", "shirtlessness", "prize eligibility", "strong fashion sense", "bootlicking",
+        "gloom", "misery", "indigestion", "shirtlessness", "prize eligibility", "strong fashion sense", "bootlicking", "intellect",
         "snobbery", "megalomania", "pathos", "foresight", "fortitude", "charisma", "constitution", "dexterity", "self-control"
     ],
     "emotion": [
@@ -493,7 +533,7 @@
         "weapon", "card", "wand", "spellbook", "staff", "orb", "tree", "plant", "crown", "jewel", "amulet", "egg", "banner", "boot",
         "aegis", "hedron", "altar", "portal", "door", "cluestone", "flask", "bident", "scepter", "idol", "mask", "sword", "longbow",
         "grimoire", "chalice", "blade", "gift", "signet", "monolith", "gemstone", "clue", "scroll", "lantern", "collar", "talisman",
-        "doodad", "bone"
+        "doodad", "bone", "vuvuzela", "handlebar moustache", "horseshoe", "sweater vest", "prawn"
     ],
     "placeNoun": [
         "temple", "palace", "castle", "garden", "market", "dungeon", "sanctuary", "mansion", "kingdom", "colony", "vacation rental", "graveyard",
@@ -506,7 +546,7 @@
     ],
     "irregularPluralNoun": [
         "teeth", "feet", "pants", "geese", "fish", "children", "fungi", "stimuli", "potatoes", "knives", "ashes", "riches", "hypotheses", "neuroses", "crises", "appendices", "indices", "sheep", "wolves", "thieves"
-    ],   
+    ],
     "massNoun": [
       "land", "ichor", "water", "sand", "mana", "wood", "fire", "ice", "lightning", "phyrexian oil", "snow", "lunch", "treasure", "guacamole", "butterscotch"
     ],
@@ -514,7 +554,7 @@
     "twoObjects": [
         "[_thing1:#pluralNoun#][_thing2:#pluralNoun#]","[_thing1:#pluralNoun#][_thing2:#massNoun#]","[_thing1:#pluralNoun#][_thing2:#abstractNoun#]",
         "[_thing1:#massNoun#][_thing2:#massNoun#]","[_thing1:#massNoun#][_thing2:#abstractNoun#]","[_thing1:#abstractNoun#][_thing2:#abstractNoun#]"
-    ],    
+    ],
     "nouns": [
         "#cardCategory.s#",
         "#things2#",
@@ -552,7 +592,7 @@
         "land destruction",
         "discard",
         "two-card combos",
-        "three-card combos",        
+        "three-card combos",
         "nonbos",
         "#card#",
         "bad cards, like #card#",
@@ -574,7 +614,7 @@
         "tight play",
         "getting lucky",
         "the storm scale",
-        "#gameAccesory.s#"       
+        "#gameAccesory.s#"
     ],
     "gameAccesory" :[
         "UltraPro sleeve",
@@ -626,25 +666,74 @@
         "mythic"
     ],
     "creatureTypes": [
+        "angel",
         "ant",
+        "archer",
+        "ape",
+        "aurochs",
+        "badger",
+        "basilisk",
+        "beast",
         "bird",
+        "camel",
+        "centaur",
+        "cephalid",
+        "cleric",
+        "crab",
+        "crocodile",
+        "cyclops",
+        "demon",
+        "devil",
         "dinosaur",
+        "dwarf",
+        "elephant",
+        "elemental",
         "hippo",
         "lhurgoyf",
         "elf",
-        "zombie",
-        "cleric",
-        "archer",
-        "knight",
+        "faerie",
+        "fungus",
+        "giant",
+        "goat",
         "goblin",
-        "merfolk",
-        "wizard",
-        "skeleton",
+        "hippo",
+        "illusion",
+        "knight",
+        "kobold",
+        "kraken",
+        "lhurgoyf",
+        "lizard",
         "lord",
-        "crocodile",
-        "demon",
-        "devil",
-        "spirit"
+        "merfolk",
+        "metathran",
+        "minotaur",
+        "moonfolk",
+        "monkey",
+        "ninja",
+        "noggle",
+        "octopus",
+        "ooze",
+        "pegasus",
+        "plant",
+        "samurai",
+        "satyr",
+        "scarecrow",
+        "skeleton",
+        "snake",
+        "sphinx",
+        "spider",
+        "spirit",
+        "squid",
+        "squirrel",
+        "thopter",
+        "treefolk",
+        "turtle",
+        "unicorn",
+        "vampire",
+        "werewolf",
+        "wizard",
+        "yeti",
+        "zombie"
     ],
     "creatureTypesPlural": [
         "ants",
@@ -748,7 +837,7 @@
         "#format# #creatureTypesPlural.capitalize#",
         "#deck# matchups",
         "#format# #deck#",
-        "#format# #deckVariation#",        
+        "#format# #deckVariation#",
         "#colors.capitalize# #deck#"
     ],
     "deckObjective": [
@@ -756,7 +845,7 @@
         "#deck# lists",
         "#deckArch# decks",
         "#deckArch# lists",
-        "#deckArch# [_m:matchup,matchups]#_m#",        
+        "#deckArch# [_m:matchup,matchups]#_m#",
         "#cardAlone# decks",
         "#creatureTypes.capitalize# decks"
     ],
@@ -775,11 +864,10 @@
         "Two-Headed Giant",
         "Kitchen Table Magic"
     ],
-
-    "colors": [      
+    "colors": [
         "#basicColors#",
         "Mono-Black",
-        "Mono-White",       
+        "Mono-White",
         "Mono-Brown",
         "Mono-Red",
         "Mono-Blue",
@@ -790,12 +878,11 @@
         "UG",
         "UR",
         "Green-White",
-        "Red-Green",        
+        "Red-Green",
         "Four-Color",
         "Five-Color",
         "#colorComboNickname#"
     ],
-
     "basicColors": [
         "Red",
         "Green",
@@ -804,7 +891,6 @@
         "Black",
         "Colorless"
     ],
-
     "colorComboNickname": [
         "Bant",
         "Grixis",
@@ -814,7 +900,6 @@
         "Orzhov",
         "Boros"
     ],
-
     "deck": [
         "Draw-Go",
         "Dredge",
@@ -849,9 +934,9 @@
         "Tokens",
         "Eggs",
         "Junk",
-        "Pebbles",        
+        "Pebbles",
         "Superfriends",
-        "Survival",        
+        "Survival",
         "#deckNameNumber#-Rack",
         "#deckNameNumber#-Post",
         "#colors# Deck Wins",
@@ -859,9 +944,8 @@
         "#creatureTypes.capitalize# in a Blender",
         "#creatureTypes.capitalize#vantage",
         "#creatureTypes.capitalize# Dad",
-        "#deckNameCompoundPrefix##deckNameCompoundSuffix#"  
+        "#deckNameCompoundPrefix##deckNameCompoundSuffix#"
     ],
-
     "deckVariation" : [
       "#deck#",
       "#deckPrefix# #deck#",
@@ -871,7 +955,6 @@
       "#definingCardname# #deckSuffix#",
       "#deckPrefix# #deckVariation#"
     ],
-
     "deckPrefix" : [
       "Turbo",
       "Midrange",
@@ -880,7 +963,7 @@
       "Counter",
       "Owling",
       "Shardless",
-      "Eternal",        
+      "Eternal",
       "Full English",
       "Angry",
       "Fruity",
@@ -888,7 +971,7 @@
       "Wet #colorComboNickname#",
       "Dark #colorComboNickname#",
       "Light #colorComboNickname#",
-      "Hot #colorComboNickname#",           
+      "Hot #colorComboNickname#",
       "Tooth &",
       "All-in",
       "Aggro",
@@ -898,12 +981,10 @@
       "Seething",
       "Oops! All #definingCardname.s#"
     ],
-
     "deckSuffix" : [
       "& Taxes",
       "& Nail"
-    ], 
-
+    ],
     "deckNameCompoundPrefix" :[
       "Counter",
       "Elf",
@@ -912,7 +993,6 @@
       "Grisel",
       "Death"
     ],
-
     "deckNameCompoundSuffix" :[
       "ball",
       "blade",
@@ -926,7 +1006,6 @@
       "-Gro",
       "vantage"
     ],
-
     "definingCardname" : [
       "Death's Shadow",
       "Delver",
@@ -950,7 +1029,6 @@
       "Vial",
       "Necro"
     ],
-
     "card": [
         "#cardAlone#",
         "#cardAlone#",
@@ -962,7 +1040,6 @@
         "#cardAlone#",
         "#descriptiveCard#"
     ],
-
     "descriptiveCard": [
         "an altered #realCard#",
         "an artist-signed #realCard#",
@@ -977,7 +1054,6 @@
         "#realCard.a# borrowed from a dealer",
         "#pro#'s personal #realCard#"
     ],
-
     "cardAlone": [
         "#realCard#",
         "#realCard#",
@@ -991,16 +1067,14 @@
         "#realCard#",
         "#fakeCard#"
     ],
-
     "realCard": [
         "#realNormalCard#",
         "#realNormalCard#",
         "#realNotableCard#",
-        "#realObscureCard#",        
+        "#realObscureCard#",
         "#realPowerfulCard#",
         "#realBadCard#"
     ],
-
     "fakeCard": [
         "Every Last Vestige Shall Rot",
         "Question Elemental?",
@@ -1014,7 +1088,7 @@
         "Blue Eyes White Dragon",
         "Knife Juggler",
         "Grand Market",
-        "Lee Sin Jungle",        
+        "Lee Sin Jungle",
         "Two Explores",
         "Throat Wolf",
         "Horrorcane",
@@ -1032,7 +1106,6 @@
         "#realCard# (Not the #novelCardSetName.capitalizeAll# One)",
         "Circle of Protection: [_someNoun:#abstractNoun#,#emotion#,#massNoun#,#pluralNoun#,#things2#][_what:#creatureTypes.s#,#cardCategory.s#,#_someNoun#]#_what.capitalizeAll#"
     ],
-
     "realPowerfulCard":
     [
         "Abrupt Decay",
@@ -1102,7 +1175,7 @@
         "Land Tax",
         "Life from the Loam",
         "Lightning Bolt",
-        "Lightning Helix",        
+        "Lightning Helix",
         "Liliana of the Veil",
         "Lion's Eye Diamond",
         "Lotus Cobra",
@@ -1184,7 +1257,7 @@
         "Tolarian Academy",
         "True-Name Nemesis",
         "Treachery",
-        "Ugin, the Spirit Dragon",        
+        "Ugin, the Spirit Dragon",
         "Ulamog, the Ceaseless Hunger",
         "Umezawa's Jitte",
         "Urza's Tower",
@@ -1200,7 +1273,6 @@
         "Yawgmoth's Will",
         "Young Pyromancer"
     ],
-
     "realBadCard":
     [
         "Barktooth Warbeard",
@@ -1234,19 +1306,19 @@
         "Suntail Hawk",
         "Wood Elemental"
     ],
-
     "realObscureCard": [
       "Arcum's Whistle",
       "Chaos Harlequin",
       "Cognivore",
       "Corrupted Zendikon",
       "Cruel Fate",
-      "Forest Bear",      
+      "Forest Bear",
       "Frog Tongue",
       "Goblin Bangchuckers",
-      "Horrible Hordes",   
-      "Hot Soup",         
+      "Horrible Hordes",
+      "Hot Soup",
       "Hubris",
+      "Hundroog",
       "Illusionary Pet",
       "It That Betrays",
       "Krark's Thumb",
@@ -1261,10 +1333,9 @@
       "Scrambleverse",
       "Sengir Autocrat",
       "Spinal Villain",
-      "Takklemaggot",      
+      "Takklemaggot",
       "That Which Was Taken"
     ],
-
     "realNotableCard": [
       "Amulet of Quoz",
       "Arc-Slogger",
@@ -1288,7 +1359,7 @@
       "Gilder Bairn",
       "Gleemax",
       "Gravelgill Axeshark",
-      "Hurloon Wrangler",    
+      "Hurloon Wrangler",
       "Incite",
       "Island of Wak-Wak",
       "Jade Leech",
@@ -1317,9 +1388,9 @@
       "Turn to Frog",
       "Vial Smasher the Fierce",
       "Werebear",
+      "Whipgrass Entagler",
       "Zzzyxas's Abyss"
     ],
-
     "realNormalCard":
     [
         "Air Elemental",
@@ -1604,7 +1675,7 @@
         "Eldritch Moon",
         "Fallen Empires",
         "Fifth Edition",
-        "Homelands",        
+        "Homelands",
         "Ice Age",
         "Innistrad",
         "Invasion",
@@ -1613,13 +1684,13 @@
         "Planechase",
         "Portal Three Kingdoms",
         "Ravnica",
-        "Revised",        
+        "Revised",
         "Shards of Alara",
         "Shadowmoor",
         "Time Spiral",
         "Unglued",
         "Unhinged",
-        "Urza's Legacy",        
+        "Urza's Legacy",
         "Weatherlight",
         "Zendikar"
     ],
@@ -1634,11 +1705,11 @@
         "Ixalan",
         "Masters 25",
         "Rivals of Ixalan",
-        "Explorers of Ixalan",        
+        "Explorers of Ixalan",
         "Dominaria",
         "Unstable",
         "#codename#",
-        "#novelCardSetName.capitalizeAll#" 
+        "#novelCardSetName.capitalizeAll#"
     ],
     "codename": [
         "Spaghetti",
@@ -1671,8 +1742,9 @@
     "cardSetSuffix": ["reborn", "revisited", "unleashed", "dawn", "ascendant"],
     "characterClass": ["master", "warlord", "avenger", "champion", "explorer", "pirate", "chieftain", "conqueror", "god", "assassin", "oracle", "ghost",
                         "knave", "defender","ancient", "master", "prisoner", "buffoon", "baby", "clown", "villain", "freak", "fiend", "titan", "horror",
-                        "cyborg", "ambassador", "agent", "mercenary", "cowboy", "mime", "architect", "inventor", "guardian", "groundskeeper"],
-    "plane": ["Rath", "Shandalar", "Mirrodin", "Kamigawa", "Alara", "Zendikar", "Innistrad", "Kaladesh", "Amonkhet", "Muruganda", "Mirrodin", "Ravnica", "Lorwyn", "Tarkir", "Vryn"],    
+                        "cyborg", "ambassador", "agent", "mercenary", "cowboy", "mime", "architect", "inventor", "guardian", "groundskeeper", "farmer",
+                        "doctor", "thief", "judge", "juror", "executioner"],
+    "plane": ["Rath", "Shandalar", "Mirrodin", "Kamigawa", "Alara", "Zendikar", "Innistrad", "Kaladesh", "Amonkhet", "Muruganda", "Mirrodin", "Ravnica", "Lorwyn", "Tarkir", "Vryn"],
     "cardCopyCount": [
         "1",
         "2",
