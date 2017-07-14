@@ -12,25 +12,16 @@
         "#decktech#",
         "#announcement#",
         "#clickbait#",
-        "[_proIs:#pro# is,#pros# are]#_proIs# #creating# #tech.a# to #verbDefeat# #obstacle.capitalize#",
-        "#count.capitalize# #broadCardClassification.capitalizeAll# That Should Never Have Been [_verbed:Printed,Banned,Unbanned,Played,Ignored]#_verbed#",
-        "The Case for #suggestion.capitalizeAll# [_bannedThing:#card#,#gameConcept#]#_bannedThing.capitalizeAll#[_where: in #format#,]#_where#",
-        "[_proReveals:Top Pro #revealVerb.s#,#pro# #revealVerb.s#,#pros# #revealVerb#]#_proReveals.capitalizeAll# #planNoun.capitalize# for #event#: Play #card# in #deck# to counter [_what:#card#,#deckArch#]#_what#",
-        "Emergency Banning: #card.capitalize# Banned in #format#",
-        "#card.capitalize# Banned in #format.capitalizeAll# After [winner:#deck#,#pro#]#winner.capitalizeAll# Wins #tournament.capitalizeAll#",
-        "BEHIND THE FLAVOR: #flavorText#",
-        "The Importance of [_thing:#card#,#cardCategory.s#,#creatureTypes.s#,#gameConcept#]#_thing# in [_where:#format#,#recentCardSet#]#_where#",
-        "CLASSIC STRATEGY: [_prefix:The Philosophy of,It's All About the]#_prefix# [_thing:#massNoun#,#pluralNoun#,#abstractNoun#,#nouns#]#_thing.capitalizeAll#, by #pro.capitalize#",
-        "Are you [_verbing:overrating,underrating]#_verbing# [_thing:#gameConcept#,#card#,#deckArch#,#creatureTypes.s#,#cardSet#]#_thing#?",
-        "#tournamentRound#: #pro# vs. [_opp:#otherPersonality#,Evil #pro#,Cyborg #pro#,Baby #pro#,Bizarro #pro#,Dr. #pro# M.D.,a Cardboard Cutout of #pro#,#adj.a# #creatureTypes#]#_opp.capitalizeAll#"
+        "BEHIND THE FLAVOR: #flavorText#"
     ],
     "clickbait": [
+        "Are you [_verbing:overrating,underrating]#_verbing# [_thing:#gameConcept#,#card#,#deckArch#,#creatureTypes.s#,#cardSet#]#_thing#?",
         "[interrogative:Why,How]#interrogative# #pro# is #verbDefeating.capitalize# #nouns.capitalize#",
-        "#count.capitalize# [_thing:#cardCategory.s#,#creatureTypes.s#,#cardSet# Cards,#format# Cards]#_thing# [reprinted:That Need to be Reprinted,We'd Love to See Reprinted in #teaserCardSet#]#reprinted#",
+        "#count.capitalize# [_thing:#cardCategory.s#,#creatureTypes.s#,#cardSet# Cards,#format# Cards]#_thing.capitalize# [reprinted:That Need to be Reprinted,We'd Love to See Reprinted in #teaserCardSet#]#reprinted#",
         "#count.capitalize# #cardCategory.s# from #teaserCardSet# leaked",
         "#format# Banwatch: #card#",
         "Have You Considered? [_consider:#card# in #format#,#deck#]#_consider.capitalize#",
-        "#pro# [_picked:First Picked,Last Picked,Wheeled,Drafted]#_picked# #card#[_challenge: and You Won't Believe,. You'll Be Floored By,. Guess,. Find Out,. #pros.capitalizeAll# are still talking about#]#_challenge# [_what:What Happened Next,What #pro.capitalize# Said Next,What #pro.capitalize# Did Next,Why #pro.capitalize# Called a Judge]#_what#",
+        "#pro# [_picked:First Picked,Last Picked,Wheeled,Drafted]#_picked# #card.capitalizeAll#[_challenge: and You Won't Believe,. You'll Be Floored By,. Guess,. Find Out,. #pros.capitalizeAll# are still talking about#]#_challenge# [_what:What Happened Next,What #pro.capitalize# Said Next,What #pro.capitalize# Did Next,Why #pro.capitalize# Called a Judge]#_what#",
         "[_cardname:#realCard#]We're not wrong: the card you're thinking of is #_cardname# #imgCard#",
         "PICTURES: #pro#'s amazing cosplay of #cardAlone#"
     ],
@@ -41,14 +32,20 @@
         "[_nextSet:The next set,The next fall set,#codename.capitalize#][_verbphrase:is actually,is really named,will be named]#_nextSet# #_verbphrase# #novelCardSetName.capitalizeAll#"
     ],
     "realization": [
+        "The Importance of [_thing:#card#,#cardCategory.s#,#creatureTypes.s#,#gameConcept#]#_thing# in [_where:#format#,#recentCardSet#]#_where#",
         "#pros# Don't realize that #tech.s# #verbDefeat# #obstacle.capitalize#",
-        "The Secret to #improvementGoal.capitalizeAll# is #deckChange.capitalize#"
+        "The Secret to #improvementGoal.capitalizeAll# is #deckChange.capitalize#",
+        "In today's Magic Story: #character#'s #adj# history with #character# finally revealed!"
     ],
     "tournamentNews": [
+        "Emergency Banning: #card.capitalize# Banned in #format#",
+        "#card.capitalize# Banned in #format.capitalizeAll# After [winner:#deck#,#pro#]#winner.capitalizeAll# Wins #tournament.capitalizeAll#",
+        "#tournamentRound#: #pro# vs. [_opp:#otherPersonality#,Evil #pro#,Cyborg #pro#,Baby #pro#,Bizarro #pro#,Dr. #pro# M.D.,a Cardboard Cutout of #pro#,#adj.a# #creatureTypes#]#_opp.capitalizeAll#",
         "[winner:#pro#,#deck#]#winner# #winWord# [where:at #tournament#,in #city#]#where#",
         "Pro Tour #teaserCardSet# will be in #city#"
     ],
     "tip": [
+        "The Case for #suggestion.capitalizeAll# [_bannedThing:#card#,#gameConcept#]#_bannedThing.capitalizeAll#[_where: in #format#,]#_where#",
         "#tipTitle#: Improve Your #deckObjective.capitalizeAll# by #deckChange.capitalizeAll#",
         "#tipTitle#: #deckChange.capitalize# is #adj.a# idea, [_says:Says,Reports]#_says# #pro#",
         "[_title:#tipTitle#,#pro#]#_title.capitalize#: [_replacement:#card# can replace #cardAlone#,#cardCategory.s# can replace #cardCategory.s#]#_replacement.capitalize# in #format#",
@@ -56,8 +53,10 @@
     ],
     "tipMoney": [
         "#titleMoney#: Spend more money on #thing#",
-        "#titleMoney#: [_invest:Short,Buy,Hold,Invest In,Sell]#_invest# #card# #investReason#",
-        "#titleMoney#: [_invest:Short,Buy,Hold,Invest In,Sell]#_invest# #card#"
+        "#titleMoney#: #investType# #card# #investReason#",
+        "#titleMoney#: #investType# #card#",
+        "#titleMoney#: #pro# is #investType#ing #broadCardClassification.capitalizeAll#; Should You?",
+        "BREAKING: Prices of #card.capitalizeAll# Spiking; Market Cornered by #pros#"
     ],
     "classifieds": [
         "#titleClassified#: #card#",
@@ -66,15 +65,6 @@
         "#titleClassified#: #broadCardClassification.capitalizeAll# Collection for #priceUSD#",
         "#titleClassified#: Complete #broadCardClassification.capitalizeAll# Set for #priceUSD#"
     ],
-    "titleClassified": [
-        "FOR SALE", "BUYLIST", "LOOKING TO TRADE", "TRADING POST"
-    ],
-    "investReason": [
-        "Before #card# is [_fate:Banned,Restricted][_in: in #cardSet#,]#_fate##_in#",
-        "Before #cardSet# [_fate:Rotates,is Released,Arrives on MTGO]#_fate#"
-    ],
-    "revealVerb": ["reveal", "unveil", "disclose", "uncover", "expose", "explain"],
-    "planNoun": ["plan", "scheme", "strategy", "objective", "stratagem", "tactic"],
     "decktech": [
         "Deck Tech: #deckVariation#",
         "Deck of the Day: #deckVariation#",        
@@ -82,6 +72,10 @@
         "Preparing for #tournament# with #deckVariation#"
     ],
     "playguide": [
+        "CLASSIC STRATEGY: [_prefix:The Philosophy of,It's All About the]#_prefix# [_thing:#massNoun#,#pluralNoun#,#abstractNoun#,#nouns#]#_thing.capitalizeAll#, by #pro.capitalize#",
+        "[_proIs:#pro# is,#pros# are]#_proIs# #creating# #tech.a# to #verbDefeat# #obstacle.capitalize#",
+        "#count.capitalize# #broadCardClassification.capitalizeAll# That Should Never Have Been [_verbed:Printed,Banned,Unbanned,Played,Ignored]#_verbed#",
+        "[_proReveals:Top Pro #revealVerb.s#,#pro# #revealVerb.s#,#pros# #revealVerb#]#_proReveals.capitalizeAll# #planNoun.capitalize# for #event#: Play #card# in #deck# to counter [_what:#card#,#deckArch#]#_what#",
         "#recentCardSet# [_format:Limited,Constucted]#_format# Set Review:[_color: #basicColors#,]#_color# #cardCategory.s.capitalizeAll# and [_other:#cardCategory#,#creatureTypes#]#_other.s.capitalizeAll#",
         "#recentCardSet# #format# Set Review: [_cat:#basicColors#,#cardCategory.s# and #cardCategory.s#]#_cat.capitalizeAll#"        
     ],
@@ -91,6 +85,18 @@
       "#format# Super League [_round:Quarterfinals,Semifinals,Finals]#_round#",
       "MOCS [_round:Quarterfinals,Semifinals,Finals]#_round#"
     ],
+    "titleClassified": [
+        "FOR SALE", "BUYLIST", "LOOKING TO TRADE", "TRADING POST"
+    ],
+    "investType": [
+        "Short","Buy","Hold","Hoard","Sell"
+    ],
+    "investReason": [
+        "Before #card# is [_fate:Banned,Restricted][_in: in #cardSet#,]#_fate##_in#",
+        "Before #cardSet# [_fate:Rotates,is Released,Arrives on MTGO]#_fate#"
+    ],
+    "revealVerb": ["reveal", "unveil", "disclose", "uncover", "expose", "explain"],
+    "planNoun": ["plan", "scheme", "strategy", "objective", "stratagem", "tactic"],
     "jayaText": [
         "\"Of course you should fight #_thing1# with #_thing2#. You should fight everything with #_thing2#.\" — Jaya Ballard, [_otherThing:#abstractNoun#,#emotion#,#itemNoun#,#massNoun#][_magic:Task,#_thing2#,#_otherThing#]#_magic.capitalizeAll# Mage"
     ],    
@@ -104,15 +110,62 @@
         "\"From nothing came [_thing:#aNoun#,#massNoun#,#pluralNoun#]#_thing#.\"",
         "\"The #covering# of [_thing:#emotion#,#abstractNoun#]#_thing# #outVerb.ed# from the [_who:#characterClass#,#creatureTypes#]#_who#, revealing the #emotion# and [_otherThing:#emotion#,#pluralNoun#]#_otherThing# beneath.\"",
         "\"Your patheitc #pluralNoun# lie in shambles, Planeswalker. Where is your #adj# #singularNoun# now?\" — Nicol Bolas",
-        "\"If there's anything #creatureTypes.a# hates, it's [_n1:#concreteNoun#]#_n1.a#—especially Avacyn's #_n1.capitalizeAll#, the symbol of her #noun#.\""
+        "\"If there's anything #creatureTypes.a# hates, it's [_n1:#concreteNoun#]#_n1.a#—especially #character#'s #_n1.capitalizeAll#, the symbol of #their# #noun#.\""
     ],
     "covering": [ "veneer", "facade", "aura", "layer", "mask", "veil", "blanket", "curtain", "girdle", "thin film", "cloud", "light dusting", "thick coating", "membrane"],
     "outVerb": [ "peel", "dissolve", "evaporate", "melt", "erode",  "crumble"],    
     "winWord": [
         "wins","triumphs","victorious","crushes","dominates","absolutely destroys"
     ],
+    "character": [
+        "#planeswalkerFirstName#",
+        "#nonPlaneswalkerCharacter#"
+    ],
     "planeswalkerFirstName": [
-        "Jace","Liliana","Ajani","Dack","Gideon","Karn","Koth","Garruk","Chandra","Nissa","Sorin","Tamiyo","Teferi","Jaya","Urza","Freyalise"
+        "Ajani#malePronouns#",
+        "Ashiok#pluralPronouns#",
+        "Chandra#femalePronouns#",
+        "Dack#malePronouns#",
+        "Freyalise#femalePronouns#",
+        "Garruk#malePronouns#",
+        "Gideon#malePronouns#",
+        "Jace#malePronouns#",
+        "Jaya#femalePronouns#",
+        "Karn#malePronouns#",
+        "Koth#malePronouns#",
+        "Liliana#femalePronouns#",
+        "Nissa#femalePronouns#",
+        "Sorin#malePronouns#",
+        "Tamiyo#femalePronouns#",
+        "Teferi#malePronouns#",
+        "Urza#malePronouns#"
+    ],
+    "nonPlaneswalkerCharacter": [
+        "Adun Oakenshield#malePronouns#",
+        "Avacyn#femalePronouns#",
+        "Borborygmos#malePronouns#",
+        "Elesh Norn#femalePronouns#",
+        "Emrakul#femalePronouns#",
+        "Fblthp#malePronouns#",
+        "Gaddock Teeg#malePronouns#",
+        "Griselbrand#malePronouns#",
+        "Hans#malePronouns#",
+        "Kiki-Jiki#malePronouns#",
+        "Momir Vig#malePronouns#",
+        "Saffi Eriksdotter#femalePronouns#",
+        "Squee#malePronouns#",
+        "Tasigur#malePronouns#",
+        "Thassa#femalePronouns#",
+        "Yawgmoth#malePronouns#"
+    ],
+    "malePronouns": [
+        "[they:he][theirs:his][their:his][them:him]"
+    ],
+    "femalePronouns": [
+        "[they:she][theirs:hers][their:her][them:her]"
+    ],
+    "pluralPronouns": [
+        "[they:they][theirs:theirs][their:their][them:them]"
     ],
     "broadCardClassification": ["#cardModifier##cardBase#"],
     "cardModifier": ["#basicColors# ","#format# ","#cardSet# ",""],
