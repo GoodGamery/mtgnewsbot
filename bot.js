@@ -3,10 +3,12 @@ const Twit = require('twit');
 const tracery = require(`tracery-grammar`);
 const the_pros = require(`./grammar.json`);
 
+// Create tweet from grammar
 const grammar = tracery.createGrammar(the_pros);
 grammar.addModifiers(tracery.baseEngModifiers); 
 const tweet = grammar.flatten("#origin#");
 
+// Create twitter client
 var T = new Twit(
     { consumer_key:         process.env.TWITTER_CONSUMER_KEY
     , consumer_secret:      process.env.TWITTER_CONSUMER_SECRET
@@ -15,6 +17,8 @@ var T = new Twit(
     }
 );
 
-T.post('statuses/update', { status: tweet }, function(err, data, response) {
-    console.log(data)
-})
+console.log(`Tweeting tweet:\n${tweet}`);
+
+// T.post('statuses/update', { status: tweet }, function(err, data, response) {
+//     console.log(data)
+// })
