@@ -118,7 +118,7 @@
         "\"Ach! #character#, #verb#! It's the #creatureTypes#!\" —#character# #planeswalkerFirstName#sdotter, last words",
         "\"Sorry I #verbPastTense# your #concreteNoun#. Here's some #pluralNoun#.\"",
         "\"[_v1:#verbPastTense#]He #_v1# at the #placeNoun#, at his #noun#, at his #noun#. But mostly he just #_v1#.\"",
-        "\"One #concreteNoun# #verbPastTense# for every #concreteNoun# #verbPastTense# underfoot.\" —#plane# penalty for trespassing",
+        "\"One #concreteNoun# #verbPastTense# for every #concreteNoun# #verbPastTense# underfoot.\" —#storyLocation# penalty for trespassing",
         "\"Its diet consists of #pluralNoun#, [_place1:#placeNoun#][_thing:#pluralNoun#]#adj# #_place1# #_thing#, #adj# #_place1# #_thing#, and #_place1.s#.\"",
         "\"‘[_who:#character#]#_who.capitalize#, #verb# those #itemOrCreatureType.s#.’ ‘#_who#, #verb# those #itemOrCreatureType.s#.’ No one cares that today is #occasion#.\"",
         "\"[#character#][_first:#pluralNounOrMassMoun#][_second:#pluralNounOrMassMoun#][_third:#pluralNounOrMassMoun#][_fourth:#pluralNounOrMassMoun#]#they.capitalize# traded #_first# for #_second#, #_second# for #_third#, #_third# for #_fourth#. In the end, #they# traded #_fourth# for #_first#.\""
@@ -321,7 +321,8 @@
         "tepid",
         "clammy",
         "sweaty",
-        "ordinary"
+        "ordinary",
+        "goofy"
     ],
     "tipTitle": [
         "MTG TIPS",
@@ -1745,6 +1746,7 @@
                         "cyborg", "ambassador", "agent", "mercenary", "cowboy", "mime", "architect", "inventor", "guardian", "groundskeeper", "farmer",
                         "doctor", "thief", "judge", "juror", "executioner"],
     "plane": ["Rath", "Shandalar", "Mirrodin", "Kamigawa", "Alara", "Zendikar", "Innistrad", "Kaladesh", "Amonkhet", "Muruganda", "Mirrodin", "Ravnica", "Lorwyn", "Tarkir", "Vryn"],
+    "storyLocation": ["#plane#"],
     "cardCopyCount": [
         "1",
         "2",
