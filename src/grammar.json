@@ -493,8 +493,8 @@
         "kitchenette", "churchyard", "mortuary", "abattoir", "art studio", "pet store", "armory", "gazebo", "playground", "animal shelter"
     ],
     "irregularPluralNoun": [
-        "teeth", "feet", "pants", "geese", "fish", "children", "men", "women", "potatoes", "knives", "ashes", "riches"
-    ],    
+        "teeth", "feet", "pants", "geese", "fish", "children", "fungi", "stimuli", "potatoes", "knives", "ashes", "riches", "hypotheses", "neuroses", "crises", "appendices", "indices", "sheep", "wolves", "thieves"
+    ],   
     "massNoun": [
       "land", "ichor", "water", "sand", "mana", "wood", "fire", "ice", "lightning", "phyrexian oil", "snow", "lunch", "treasure", "guacamole", "butterscotch"
     ],
