@@ -3,16 +3,27 @@
         "#headline#"
     ],
     "headline": [
+        "#tip#",
+        "#tipMoney#",
+        "#classifieds#",
+        "#realization#",
+        "#tournamentNews#",
+        "#playguide#",
+        "#decktech#",
+        "#announcement#",
+        "#clickbait#",
         "BEHIND THE FLAVOR: #flavorText#"
-    ],  
+    ],
     "clickbait": [
+        "Are you [_verbing:overrating,underrating]#_verbing# [_thing:#gameConcept#,#card#,#deckArch#,#creatureTypes.s#,#cardSet#]#_thing#?",
         "[interrogative:Why,How]#interrogative# #pro# is #verbDefeating.capitalize# #nouns.capitalize#",
-        "#count.capitalize# [_thing:#cardCategory.s#,#creatureTypes.s#,#cardSet# Cards,#format# Cards]#_thing# [reprinted:That Need to be Reprinted,We'd Love to See Reprinted in #teaserCardSet#]#reprinted#",
+        "#count.capitalize# [_thing:#cardCategory.s#,#creatureTypes.s#,#cardSet# Cards,#format# Cards]#_thing.capitalize# [reprinted:That Need to be Reprinted,We'd Love to See Reprinted in #teaserCardSet#]#reprinted#",
         "#count.capitalize# #cardCategory.s# from #teaserCardSet# leaked",
         "#format# Banwatch: #card#",
         "Have You Considered? [_consider:#card# in #format#,#deck#]#_consider.capitalize#",
-        "#pro# [_picked:First Picked,Last Picked,Wheeled,Drafted,Morphed]#_picked# #card#[_challenge: and You Won't Believe,. You'll Be Floored By,. Guess,. Find Out,. #pros.capitalizeAll# are still talking about#]#_challenge# [_what:What Happened Next,What #pro.capitalize# Said Next,What #pro.capitalize# Did Next,Why #pro.capitalize# Called a Judge]#_what#",
-        "[_cardname:#realCard#]We're not wrong: the card you're thinking of is #_cardname# #imgCard#"
+        "#pro# [_picked:First Picked,Last Picked,Wheeled,Drafted,Morphed]#_picked# #card.capitalizeAll#[_challenge: and You Won't Believe,. You'll Be Floored By,. Guess,. Find Out,. #pros.capitalizeAll# are still talking about#]#_challenge# [_what:What Happened Next,What #pro.capitalize# Said Next,What #pro.capitalize# Did Next,Why #pro.capitalize# Called a Judge]#_what#",
+        "[_cardname:#realCard#]We're not wrong: the card you're thinking of is #_cardname# #imgCard#",
+        "PICTURES: #pro#'s amazing cosplay of #cardAlone#"
     ],
     "announcement": [
         "Wizards Announces: Duel Decks: [_one:#nouns.capitalizeAll#,#planeswalkerFirstName#]#_one# vs. [_two:#nouns.capitalizeAll#,#planeswalkerFirstName#]#_two#",
@@ -21,14 +32,20 @@
         "[_nextSet:The next set,The next fall set,#codename.capitalize#][_verbphrase:is actually,is really named,will be named]#_nextSet# #_verbphrase# #novelCardSetName.capitalizeAll#"
     ],
     "realization": [
+        "The Importance of [_thing:#card#,#cardCategory.s#,#creatureTypes.s#,#gameConcept#]#_thing# in [_where:#format#,#recentCardSet#]#_where#",
         "#pros# Don't realize that #tech.s# #verbDefeat# #obstacle.capitalize#",
-        "The Secret to #improvementGoal.capitalizeAll# is #deckChange.capitalize#"
+        "The Secret to #improvementGoal.capitalizeAll# is #deckChange.capitalize#",
+        "In today's Magic Story: #character#'s #adj# history with #character# finally revealed!"
     ],
     "tournamentNews": [
+        "Emergency Banning: #card.capitalize# Banned in #format#",
+        "#card.capitalize# Banned in #format.capitalizeAll# After [winner:#deck#,#pro#]#winner.capitalizeAll# Wins #tournament.capitalizeAll#",
+        "#tournamentRound#: #pro# vs. [_opp:#otherPersonality#,Evil #pro#,Cyborg #pro#,Baby #pro#,Bizarro #pro#,Dr. #pro# M.D.,a Cardboard Cutout of #pro#,#adj.a# #creatureTypes#]#_opp.capitalizeAll#",
         "[winner:#pro#,#deck#]#winner# #winWord# [where:at #tournament#,in #city#]#where#",
         "Pro Tour #teaserCardSet# will be in #city#"
     ],
     "tip": [
+        "The Case for #suggestion.capitalizeAll# [_bannedThing:#card#,#gameConcept#]#_bannedThing.capitalizeAll#[_where: in #format#,]#_where#",
         "#tipTitle#: Improve Your #deckObjective.capitalizeAll# by #deckChange.capitalizeAll#",
         "#tipTitle#: #deckChange.capitalize# is #adj.a# idea, [_says:Says,Reports]#_says# #pro#",
         "[_title:#tipTitle#,#pro#]#_title.capitalize#: [_replacement:#card# can replace #cardAlone#,#cardCategory.s# can replace #cardCategory.s#]#_replacement.capitalize# in #format#",
@@ -36,8 +53,10 @@
     ],
     "tipMoney": [
         "#titleMoney#: Spend more money on #thing#",
-        "#titleMoney#: [_invest:Short,Buy,Hold,Invest In,Sell]#_invest# #card# #investReason#",
-        "#titleMoney#: [_invest:Short,Buy,Hold,Invest In,Sell]#_invest# #card#"
+        "#titleMoney#: #investType# #card# #investReason#",
+        "#titleMoney#: #investType# #card#",
+        "#titleMoney#: #pro# is #investType#ing #broadCardClassification.capitalizeAll#; Should You?",
+        "BREAKING: Prices of #card.capitalizeAll# Spiking; Market Cornered by #pros#"
     ],
     "classifieds": [
         "#titleClassified#: #card#",
@@ -46,15 +65,6 @@
         "#titleClassified#: #broadCardClassification.capitalizeAll# Collection for #priceUSD#",
         "#titleClassified#: Complete #broadCardClassification.capitalizeAll# Set for #priceUSD#"
     ],
-    "titleClassified": [
-        "FOR SALE", "BUYLIST", "LOOKING TO TRADE", "TRADING POST"
-    ],
-    "investReason": [
-        "Before #card# is [_fate:Banned,Restricted][_in: in #cardSet#,]#_fate##_in#",
-        "Before #cardSet# [_fate:Rotates,is Released,Arrives on MTGO]#_fate#"
-    ],
-    "revealVerb": ["reveal", "unveil", "disclose", "uncover", "expose", "explain"],
-    "planNoun": ["plan", "scheme", "strategy", "objective", "stratagem", "tactic"],
     "decktech": [
         "Deck Tech: #deckVariation#",
         "Deck of the Day: #deckVariation#",        
@@ -62,6 +72,10 @@
         "Preparing for #tournament# with #deckVariation#"
     ],
     "playguide": [
+        "CLASSIC STRATEGY: [_prefix:The Philosophy of,It's All About the]#_prefix# [_thing:#massNoun#,#pluralNoun#,#abstractNoun#,#nouns#]#_thing.capitalizeAll#, by #pro.capitalize#",
+        "[_proIs:#pro# is,#pros# are]#_proIs# #creating# #tech.a# to #verbDefeat# #obstacle.capitalize#",
+        "#count.capitalize# #broadCardClassification.capitalizeAll# That Should Never Have Been [_verbed:Printed,Banned,Unbanned,Played,Ignored]#_verbed#",
+        "[_proReveals:Top Pro #revealVerb.s#,#pro# #revealVerb.s#,#pros# #revealVerb#]#_proReveals.capitalizeAll# #planNoun.capitalize# for #event#: Play #card# in #deck# to counter [_what:#card#,#deckArch#]#_what#",
         "#recentCardSet# [_format:Limited,Constucted]#_format# Set Review:[_color: #basicColors#,]#_color# #cardCategory.s.capitalizeAll# and [_other:#cardCategory#,#creatureTypes#]#_other.s.capitalizeAll#",
         "#recentCardSet# #format# Set Review: [_cat:#basicColors#,#cardCategory.s# and #cardCategory.s#]#_cat.capitalizeAll#"        
     ],
@@ -71,19 +85,99 @@
       "#format# Super League [_round:Quarterfinals,Semifinals,Finals]#_round#",
       "MOCS [_round:Quarterfinals,Semifinals,Finals]#_round#"
     ],
+    "titleClassified": [
+        "FOR SALE", "BUYLIST", "LOOKING TO TRADE", "TRADING POST"
+    ],
+    "investType": [
+        "Short","Buy","Hold","Hoard","Sell"
+    ],
+    "investReason": [
+        "Before #card# is [_fate:Banned,Restricted][_in: in #cardSet#,]#_fate##_in#",
+        "Before #cardSet# [_fate:Rotates,is Released,Arrives on MTGO]#_fate#"
+    ],
+    "revealVerb": ["reveal", "unveil", "disclose", "uncover", "expose", "explain"],
+    "planNoun": ["plan", "scheme", "strategy", "objective", "stratagem", "tactic"],
     "jayaText": [
         "\"Of course you should fight #_thing1# with #_thing2#. You should fight everything with #_thing2#.\" — Jaya Ballard, [_otherThing:#abstractNoun#,#emotion#,#itemNoun#,#massNoun#][_magic:Task,#_thing2#,#_otherThing#]#_magic.capitalizeAll# Mage"
     ],    
     "flavorText": [
-      "\"Its diet consists of #pluralNoun#, [_place1:#placeNoun#][_thing:#pluralNoun#]#adj# #_place1# #_thing#, #adj# #_place1# #_thing#, and #_place1.s#.\""
+        "\"I want [_thing:#aNoun#,#massNoun#,#pluralNoun#,#abstractNoun#]#_thing# THIS #adj#!\"",
+        "\"[_wisher:He,She,They,It]#_wisher# wished for [#objectNounPronoun#]#_noun#, but not for the #noun# to #verb# #_pronoun#.\"",
+        "\"Only a madman could create such [#objectNounPronoun#]#_noun#. Only an imbecile would #verb# #_pronoun#.\"",
+        "\"There's a thin line between [_thing1:#aNoun#,#pluralNoun#]#_thing1# and [_thing2:#aNoun#,#pluralNoun#]#_thing2#. Allow me to #verb# it.\" — Liliana Vess",
+        "#[#twoObjects#]jayaText#",
+        "\"I've got the [_n1:#noun#]#_n1#\", #planeswalkerFirstName# said as the #noun# came to life. \"I've got the #_n1#!\"",
+        "\"From nothing came [_thing:#aNoun#,#massNoun#,#pluralNoun#]#_thing#.\"",
+        "\"The #covering# of [_thing:#emotion#,#abstractNoun#]#_thing# #outVerb.ed# from the [_who:#characterClass#,#creatureTypes#]#_who#, revealing the #emotion# and [_otherThing:#emotion#,#pluralNoun#]#_otherThing# beneath.\"",
+        "\"Your patheitc #pluralNoun# lie in shambles, Planeswalker. Where is your #adj# #singularNoun# now?\" — Nicol Bolas",
+        "\"If there's anything #creatureTypes.a# hates, it's [_n1:#concreteNoun#]#_n1.a#—especially #character#'s #_n1.capitalizeAll#, the symbol of #their# #noun#.\"",
+        "\"Ach! #character#, #verb#! It's the #creatureTypes#!\" —#character# #planeswalkerFirstName#sdotter, last words",
+        "\"Sorry I #verbPastTense# your #concreteNoun#. Here's some #pluralNoun#.\"",
+        "\"[_v1:#verbPastTense#]He #_v1# at the #placeNoun#, at his #noun#, at his #noun#. But mostly he just #_v1#.\"",
+        "\"One #concreteNoun# #verbPastTense# for every #concreteNoun# #verbPastTense# underfoot.\"—#plane# penalty for trespassing",
+        "\"Its diet consists of #pluralNoun#, [_place1:#placeNoun#][_thing:#pluralNoun#]#adj# #_place1# #_thing#, #adj# #_place1# #_thing#, and #_place1.s#.\"",
+        "\"‘#character#, #verb# those #creatureTypes.s#.’ ‘#character#, #verb# those #creatureTypes.s#.’ No one cares that today #occasion#.”\""
     ],
+    "occasion": ["my birthday", "my anniversary", "my first day on the job", "my last day on the job", "my bar mitzvah", "my unbirthday", "my cake day",
+                 "my inauguration", "Durin's Day", "Robanukah", "Festivus", "Wednesday", "Guy Fawkes' Day", "Boxing Day", "Shrove Tuesday", "National Corndog Day",
+                 "Ice Cream for Breakfast Day", "World Kindness Day", "Take Your Dog to Work Day", "Leg Day", "Casual Friday", "April Fools' Day", "CAPS LOCK DAY", 
+                 "International Talk Like a Pirate Day", "the Kentucky Derby", "Christmas in July"],
     "covering": [ "veneer", "facade", "aura", "layer", "mask", "veil", "blanket", "curtain", "girdle", "thin film", "cloud", "light dusting", "thick coating", "membrane"],
-    "outVerb": [ "peel", "dissolve", "evaporate", "melt", "erode",  "crumble"],    
+    "outVerb": [ "peel", "dissolve", "evaporate", "melt", "erode",  "crumble"],   
     "winWord": [
         "wins","triumphs","victorious","crushes","dominates","absolutely destroys"
     ],
+    "character": [
+        "#planeswalkerFirstName#",
+        "#nonPlaneswalkerCharacter#"
+    ],
     "planeswalkerFirstName": [
-        "Jace","Liliana","Ajani","Dack","Gideon","Karn","Koth","Garruk","Chandra","Nissa","Sorin","Tamiyo","Teferi","Jaya","Urza","Freyalise"
+        "Ajani#malePronouns#",
+        "Ashiok#pluralPronouns#",
+        "Chandra#femalePronouns#",
+        "Dack#malePronouns#",
+        "Freyalise#femalePronouns#",
+        "Garruk#malePronouns#",
+        "Gideon#malePronouns#",
+        "Jace#malePronouns#",
+        "Jaya#femalePronouns#",
+        "Karn#malePronouns#",
+        "Koth#malePronouns#",
+        "Liliana#femalePronouns#",
+        "Nissa#femalePronouns#",
+        "Sorin#malePronouns#",
+        "Tamiyo#femalePronouns#",
+        "Teferi#malePronouns#",
+        "Urza#malePronouns#"
+    ],
+    "nonPlaneswalkerCharacter": [
+        "Adun Oakenshield#malePronouns#",
+        "Avacyn#femalePronouns#",
+        "Borborygmos#malePronouns#",
+        "Elesh Norn#femalePronouns#",
+        "Emrakul#femalePronouns#",
+        "Fblthp#malePronouns#",
+        "Gaddock Teeg#malePronouns#",
+        "Griselbrand#malePronouns#",
+        "Hans#malePronouns#",
+        "Kiki-Jiki#malePronouns#",
+        "Momir Vig#malePronouns#",
+        "Saffi Eriksdotter#femalePronouns#",
+        "Squee#malePronouns#",
+        "Tasigur#malePronouns#",
+        "Thassa#femalePronouns#",
+        "Yawgmoth#malePronouns#",
+        "Davvol#malePronouns#",
+        "Grak#malePronouns#"
+    ],
+    "malePronouns": [
+        "[they:he][theirs:his][their:his][them:him]"
+    ],
+    "femalePronouns": [
+        "[they:she][theirs:hers][their:her][them:her]"
+    ],
+    "pluralPronouns": [
+        "[they:they][theirs:theirs][their:their][them:them]"
     ],
     "broadCardClassification": ["#cardModifier##cardBase#"],
     "cardModifier": ["#basicColors# ","#format# ","#cardSet# ",""],
@@ -370,11 +464,19 @@
         "[_challenge:using,winning with,understanding,answering,#verbDefeating#]#_challenge# #cardCategory.s#"
     ],
     "verb": [
-        "control", "defeat", "hold", "capture", "handle", "understand", "wield", "observe", "abuse", "carry", "shuffle",
+        "control", "defeat", "hold", "capture", "handle", "understand", "wield", "observe", "carry", "shuffle",
         "perceive", "realize", "grow", "water", "nourish", "swallow", "question", "cradle", "cherish", "despise", "summon",
         "transform", "explain", "forget", "remember", "ignore", "adorn", "study", "capture", "release", "misunderstand",
         "sacrifice", "destroy", "collect", "dismiss", "praise", "scrutinize", "celebrate", "minimize", "exaggerate", "quantify",
-        "trivialize", "renounce", "abhor", "dispute", "pantomime", "advertise", "lie about", "deep-fry", "decorate", "brandish"
+        "trivialize", "renounce", "abhor", "dispute", "pantomime", "advertise", "lie about", "deep-fry", "decorate", "run", "brandish"
+    ],
+    "verbPastTense": [
+        "controlled", "defeated", "held", "captured", "handled", "understood", "wielded", "observed", "carried", "shuffled",
+        "perceived", "realized", "watered", "nourished", "swallowed", "questioned", "cradled", "cherished", "despised", "summoned",
+        "transformed", "explained", "forgot", "remembered", "ignored", "adorned", "studied", "captured", "released", "misunderstood",
+        "sacrificed", "destroyed", "collected", "dismissed", "praised", "scrutinized", "celebrated", "minimized", "exaggerated", "quantified",
+        "trivialized", "renounced", "abhorred", "disputed", "pantomimed", "advertised", "deep-fried", "decorated", "ran",
+        "burned down", "raged"
     ],
     "noun": [
         "#singularNoun#",
@@ -399,6 +501,10 @@
         "#creatureTypes.a#",    
         "#itemNoun.a#"
     ],
+    "concreteNoun": [
+        "#itemNoun#",
+        "#placeNoun#"
+    ],
     "abstractNoun": [
         "knowledge", "will", "skill", "power", "longevity", "strength", "nobility", "honor", "growth", "information", "nerve",
         "strength", "energy", "control", "technology", "rationality", "fear", "glory", "whimsy", "balance", "truth", "lies",
@@ -414,7 +520,7 @@
         "weapon", "card", "wand", "spellbook", "staff", "orb", "tree", "plant", "crown", "jewel", "amulet", "egg", "banner", "boot",
         "aegis", "hedron", "altar", "portal", "door", "cluestone", "flask", "bident", "scepter", "idol", "mask", "sword", "longbow",
         "grimoire", "chalice", "blade", "gift", "signet", "monolith", "gemstone", "clue", "scroll", "lantern", "collar", "talisman",
-        "doodad", "vuvuzela", "handlebar moustache", "horseshoe", "sweater vest"
+        "doodad", "bone", "vuvuzela", "handlebar moustache", "horseshoe", "sweater vest"
     ],
     "placeNoun": [
         "temple", "palace", "castle", "garden", "market", "dungeon", "sanctuary", "mansion", "kingdom", "colony", "vacation rental", "graveyard",
@@ -426,8 +532,8 @@
         "kitchenette", "churchyard", "mortuary", "abattoir", "art studio", "pet store", "armory", "gazebo", "playground", "animal shelter"
     ],
     "irregularPluralNoun": [
-        "teeth", "feet", "pants", "geese", "fish", "children", "men", "women", "potatoes", "knives", "ashes", "riches"
-    ],    
+        "teeth", "feet", "pants", "geese", "fish", "children", "fungi", "stimuli", "potatoes", "knives", "ashes", "riches", "hypotheses", "neuroses", "crises", "appendices", "indices", "sheep", "wolves", "thieves"
+    ],   
     "massNoun": [
       "land", "ichor", "water", "sand", "mana", "wood", "fire", "ice", "lightning", "phyrexian oil", "snow", "lunch", "treasure", "guacamole", "butterscotch"
     ],
@@ -569,6 +675,8 @@
         "dwarf",
         "elephant",
         "elemental",
+        "hippo",
+        "lhurgoyf",
         "elf",
         "faerie",
         "fungus",
@@ -642,17 +750,28 @@
         "FNM",
         "your local draft league"
     ],
-    "event": ["#tournament#"],
+    "event": [
+        "#tournament#",
+        "#tournament#",
+        "#nonTournamentEvent#"
+    ],
     "tournament": [
         "Pro Tour #recentCardSet#",
         "GP #city#",
         "Grand Prix #city#",
         "SCG #city#"
     ],
+    "nonTournamentEvent": [
+        "the next team draft",
+        "casual Commander night",
+        "a drunk kitchen-table game",
+        "a 24-hour MTGO stream"
+    ],
     "city": [
         "Abu Dhabi",
         "Aleppo",
         "Antwerp",
+        "Atlantis",
         "Beersheeba",
         "Beirut",
         "Belfast",
@@ -686,6 +805,7 @@
         "Pyongyang",
         "Quito",
         "Reykjavík",
+        "Scott Larabee's basement",
         "Tehran",
         "Winnipeg",
         "Yonkers"
