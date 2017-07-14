@@ -20,5 +20,8 @@ var T = new Twit(
 console.log(`Tweeting tweet:\n${tweet}`);
 
 T.post('statuses/update', { status: tweet }, function(err, data, response) {
-    console.log(data)
+    if (err) {
+        console.log(err);
+        console.log(data);
+    }
 })

@@ -5,4 +5,8 @@ set -a
 . ./.env
 set +a
 
+# update source
+git pull
+
+# tweet
 node bot.js
