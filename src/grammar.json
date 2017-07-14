@@ -3,27 +3,8 @@
         "#headline#"
     ],
     "headline": [
-        "#tip#",
-        "#tipMoney#",
-        "#classifieds#",
-        "#realization#",
-        "#tournamentNews#",
-        "#playguide#",
-        "#decktech#",
-        "#announcement#",
-        "#clickbait#",
-        "[_proIs:#pro# is,#pros# are]#_proIs# #creating# #tech.a# to #verbDefeat# #obstacle.capitalize#",
-        "#count.capitalize# #broadCardClassification.capitalizeAll# That Should Never Have Been [_verbed:Printed,Banned,Unbanned,Played,Ignored]#_verbed#",
-        "The Case for #suggestion.capitalizeAll# [_bannedThing:#card#,#gameConcept#]#_bannedThing.capitalizeAll#[_where: in #format#,]#_where#",
-        "[_proReveals:Top Pro #revealVerb.s#,#pro# #revealVerb.s#,#pros# #revealVerb#]#_proReveals.capitalizeAll# #planNoun.capitalize# for #event#: Play #card# in #deck# to counter [_what:#card#,#deckArch#]#_what#",
-        "Emergency Banning: #card.capitalize# Banned in #format#",
-        "#card.capitalize# Banned in #format.capitalizeAll# After [winner:#deck#,#pro#]#winner.capitalizeAll# Wins #tournament.capitalizeAll#",
-        "BEHIND THE FLAVOR: #flavorText#",
-        "The Importance of [_thing:#card#,#cardCategory.s#,#creatureTypes.s#,#gameConcept#]#_thing# in [_where:#format#,#recentCardSet#]#_where#",
-        "CLASSIC STRATEGY: [_prefix:The Philosophy of,It's All About the]#_prefix# [_thing:#massNoun#,#pluralNoun#,#abstractNoun#,#nouns#]#_thing.capitalizeAll#, by #pro.capitalize#",
-        "Are you [_verbing:overrating,underrating]#_verbing# [_thing:#gameConcept#,#card#,#deckArch#,#creatureTypes.s#,#cardSet#]#_thing#?",
-        "#tournamentRound#: #pro# vs. [_opp:#otherPersonality#,Evil #pro#,Cyborg #pro#,Baby #pro#,Bizarro #pro#,Dr. #pro# M.D.,a Cardboard Cutout of #pro#,#adj.a# #creatureTypes#]#_opp.capitalizeAll#"
-    ],
+        "BEHIND THE FLAVOR: #flavorText#"
+    ],  
     "clickbait": [
         "[interrogative:Why,How]#interrogative# #pro# is #verbDefeating.capitalize# #nouns.capitalize#",
         "#count.capitalize# [_thing:#cardCategory.s#,#creatureTypes.s#,#cardSet# Cards,#format# Cards]#_thing# [reprinted:That Need to be Reprinted,We'd Love to See Reprinted in #teaserCardSet#]#reprinted#",
@@ -94,16 +75,7 @@
         "\"Of course you should fight #_thing1# with #_thing2#. You should fight everything with #_thing2#.\" — Jaya Ballard, [_otherThing:#abstractNoun#,#emotion#,#itemNoun#,#massNoun#][_magic:Task,#_thing2#,#_otherThing#]#_magic.capitalizeAll# Mage"
     ],    
     "flavorText": [
-        "\"I want [_thing:#aNoun#,#massNoun#,#pluralNoun#,#abstractNoun#]#_thing# THIS #adj#!\"",
-        "\"[_wisher:He,She,They,It]#_wisher# wished for [#objectNounPronoun#]#_noun#, but not for the #noun# to #verb# #_pronoun#.\"",
-        "\"Only a madman could create such [#objectNounPronoun#]#_noun#. Only an imbecile would #verb# #_pronoun#.\"",
-        "\"There's a thin line between [_thing1:#aNoun#,#pluralNoun#]#_thing1# and [_thing2:#aNoun#,#pluralNoun#]#_thing2#. Allow me to #verb# it.\" — Liliana Vess",
-        "#[#twoObjects#]jayaText#",
-        "\"I've got the [_n1:#noun#]#_n1#\", #planeswalkerFirstName# said as the #noun# came to life. \"I've got the #_n1#!\"",
-        "\"From nothing came [_thing:#aNoun#,#massNoun#,#pluralNoun#]#_thing#.\"",
-        "\"The #covering# of [_thing:#emotion#,#abstractNoun#]#_thing# #outVerb.ed# from the [_who:#characterClass#,#creatureTypes#]#_who#, revealing the #emotion# and [_otherThing:#emotion#,#pluralNoun#]#_otherThing# beneath.\"",
-        "\"Your patheitc #pluralNoun# lie in shambles, Planeswalker. Where is your #adj# #singularNoun# now?\" — Nicol Bolas",
-        "\"Its diet consists of #pluralNoun#, #pluralNoun#, [_place1:#placeNoun#] [_thing:#pluralNoun#] #adj# #_place1# #_thing#, #adj# #_place1# #_thing#,#_place1.s#, [_adj1:#adj#,#singularNoun#] [_place2:#placeNoun#,#singularNoun#] #_adj1# #_place2#, #_adj1# #characterClass#, and #adj# #placeNoun.s#.\""
+      "\"Its diet consists of #pluralNoun#, #pluralNoun#, [_place1:#placeNoun#][_thing:#pluralNoun#]#adj# #_place1# #_thing#, #adj# #_place1# #_thing#, #_place1.s#, [_adj1:#adj#,#singularNoun#][_place2:#placeNoun#,#singularNoun#]#_adj1# #_place2.s#, #_adj1# #characterClass.s#, and #adj# #placeNoun.s#.\""
     ],
     "covering": [ "veneer", "facade", "aura", "layer", "mask", "veil", "blanket", "curtain", "girdle", "thin film", "cloud", "light dusting", "thick coating", "membrane"],
     "outVerb": [ "peel", "dissolve", "evaporate", "melt", "erode",  "crumble"],    
