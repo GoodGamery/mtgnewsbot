@@ -31,3 +31,6 @@ node_modules/
 
 # Output of 'npm pack'
 *.tgz
+
+# environment file
+.env
