@@ -2,10 +2,12 @@
   "name": "mtgnewsbot",
   "version": "1.0.0",
   "description": "MTG News Robot",
-  "main": "src/mtgnewsbot.js",
+  "main": "src/news-engine.js",
   "scripts": {
-    "start": "node src/index.js",
-    "test": "jsonlint -q src/grammar.json"
+    "start": "npm run print",
+    "test": "npm run lint && npm run print",
+    "print": "node src/index.js ",
+    "lint": "jsonlint -q src/grammar.json"
   },
   "repository": {
     "type": "git",
@@ -23,7 +25,7 @@
   "homepage": "https://github.com/mdiehr/mtgnewsbot#readme",
   "devDependencies": {},
   "dependencies": {
-    "chalk": "^2.0.1",
-    "tracery-grammar": "^2.7.3"
+    "tracery-grammar": "2.7.3",
+    "twit": "2.2.9"
   }
 }

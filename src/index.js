@@ -1,8 +1,9 @@
 'use strict';
-const MtgNewsBot = require('./mtgnewsbot');
+
+const NewsEngine = require('./news-engine');
 
 const numExamples = process.argv[2] || 30;
-const headlines = MtgNewsBot.generateHeadlines(numExamples);
+const headlines = NewsEngine.generateHeadlines(numExamples);
 headlines.forEach(headline => {
 	console.log("\n * " + headline);
 });
