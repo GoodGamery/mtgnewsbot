@@ -1,11 +1,9 @@
 'use strict';
-const tracery = require(`tracery-grammar`);
-const the_pros = require(`./grammar.json`);
-const grammar = tracery.createGrammar(the_pros);
 
-grammar.addModifiers(tracery.baseEngModifiers); 
+const NewsEngine = require('./news-engine');
 
 const numExamples = process.argv[2] || 30;
-for (let i = 0; i < numExamples; ++i) {
-    console.log("\n * " + grammar.flatten('#origin#'));
-}
+const headlines = NewsEngine.generateHeadlines(numExamples);
+headlines.forEach(headline => {
+	console.log("\n * " + headline);
+});

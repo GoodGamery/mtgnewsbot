@@ -2,7 +2,7 @@
   "name": "mtgnewsbot",
   "version": "1.0.0",
   "description": "MTG News Robot",
-  "main": "src/index.js",
+  "main": "src/news-engine.js",
   "scripts": {
     "start": "npm run print",
     "test": "npm run lint && npm run print",
