@@ -1,5 +1,8 @@
 #!/bin/bash
-while read line; do export "$line";
-done < .env
+
+# Export env vars for twitter tokens
+set -a
+. .env
+set +a
 
 node bot.js
