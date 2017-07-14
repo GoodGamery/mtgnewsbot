@@ -3,15 +3,6 @@
         "#headline#"
     ],
     "headline": [
-        "#tip#",
-        "#tipMoney#",
-        "#classifieds#",
-        "#realization#",
-        "#tournamentNews#",
-        "#playguide#",
-        "#decktech#",
-        "#announcement#",
-        "#clickbait#",
         "#flavorArcana#"
     ],
     "flavorArcana": [
@@ -122,7 +113,7 @@
         "\"Its diet consists of #pluralNoun#, [_place1:#placeNoun#][_thing:#pluralNoun#]#adj# #_place1# #_thing#, #adj# #_place1# #_thing#, and #_place1.s#.\"",
         "\"‘[_who:#character#]#_who.capitalize#, #verb# those #itemOrCreatureType.s#.’ ‘#_who#, #verb# those #itemOrCreatureType.s#.’ No one cares that today is #occasion#.\"",
         "\"[#character#][_first:#pluralNounOrMassMoun#][_second:#pluralNounOrMassMoun#][_third:#pluralNounOrMassMoun#][_fourth:#pluralNounOrMassMoun#]#they.capitalize# traded #_first# for #_second#, #_second# for #_third#, #_third# for #_fourth#. In the end, #they# traded #_fourth# for #_first#.\"",
-        "\"[#character#]#they.capitalize# #are# #creatureTypeOrCharacterClass#, #creatureTypeOrCharacterClass#, and #creatureTypeOrCharacterClass# because #they# killed them all.\" —Bishop Cawle of Elgaud" 
+        "\"[#character#]#they.capitalize# #are# #creatureTypeOrCharacterClass#, #creatureTypeOrCharacterClass#, and #creatureTypeOrCharacterClass# because #they# #verbPastTense# them all.\" —Bishop Cawle of Elgaud" 
     ],
     "occasion": ["my birthday", "my anniversary", "my first day on the job", "my last day on the job", "my bar mitzvah", "my unbirthday", "my cake day",
                  "my inauguration", "Durin's Day", "Robanukah", "Festivus", "Wednesday", "Guy Fawkes' Day", "Boxing Day", "Shrove Tuesday", "National Corndog Day",
