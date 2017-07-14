@@ -3,15 +3,6 @@
         "#headline#"
     ],
     "headline": [
-        "#tip#",
-        "#tipMoney#",
-        "#classifieds#",
-        "#realization#",
-        "#tournamentNews#",
-        "#playguide#",
-        "#decktech#",
-        "#announcement#",
-        "#clickbait#",
         "#flavorArcana#"
     ],
     "flavorArcana": [
@@ -310,7 +301,6 @@
         "ramshackle",
         "tacky",
         "delightful",
-        "vuvuzela",
         "glorious",
         "vainglorious",
         "surly",
