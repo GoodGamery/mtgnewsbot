@@ -27,5 +27,8 @@
   "dependencies": {
     "tracery-grammar": "2.7.3",
     "twit": "2.2.9"
+  },
+  "publishConfig": {
+    "access": "public"
   }
 }
