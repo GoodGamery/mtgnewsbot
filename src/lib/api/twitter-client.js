@@ -1,3 +1,5 @@
+'use strict';
+
 const Twit = require('twit');
 const fs = require('fs');
 
@@ -16,7 +18,7 @@ class TwitterClient {
   postTweet(message) {
     return new Promise((resolve, reject) => {
       console.log('posting tweet...');
-      this.twit.post('statuses/update', { status: tweet }, (err, data, response) => {
+      this.twit.post('statuses/update', { status: message }, (err, data, response) => {
         if (!err) {
           console.log('tweet posted.');
           resolve(data);

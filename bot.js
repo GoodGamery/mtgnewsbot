@@ -1,5 +1,6 @@
 'use strict';
-const Twit = require('twit');
+
+const TwitterClient = require('./src/lib/api/twitter-client');
 const tracery = require(`tracery-grammar`);
 const the_pros = require(`./src/grammar.json`);
 const fs =  require(`fs`);
@@ -28,17 +29,6 @@ while (tweet.length > TWEET_LENGTH) {
 fileLogger(`${tweet}`);
 
 // Create twitter client
-var T = new Twit(
-    { consumer_key:         process.env.TWITTER_CONSUMER_KEY
-    , consumer_secret:      process.env.TWITTER_CONSUMER_SECRET
-    , access_token:         process.env.TWITTER_ACCESS_TOKEN
-    , access_token_secret:  process.env.TWITTER_ACCESS_TOKEN_SECRET
-    }
-);
+const twitter = new TwitterClient();
 
-T.post('statuses/update', { status: tweet }, function(err, data, response) {
-    if (err) {
-        console.log(err);
-        console.log(data);
-    }
-})
+twitter.postTweet(tweet);
