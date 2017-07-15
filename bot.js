@@ -2,7 +2,7 @@
 const Twit = require('twit');
 const tracery = require(`tracery-grammar`);
 const the_pros = require(`./src/grammar.json`);
-const fs = require(`fs`);
+const fs =  require(`fs`);
 const logFile = `./debug.log`;
 const TWEET_LENGTH = 140;
 
