@@ -2,6 +2,7 @@
   "name": "mtgnewsbot",
   "version": "1.0.0",
   "description": "MTG News Robot",
+  "author": "Mark Diehr <mdiehr@gmail.com> (https://www.goodgamery.com)",
   "main": "src/news-engine.js",
   "scripts": {
     "start": "npm run print",
@@ -17,7 +18,6 @@
     "Robot",
     "Twitter"
   ],
-  "author": "Mark Diehr",
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/mdiehr/mtgnewsbot/issues"
