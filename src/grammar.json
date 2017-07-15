@@ -25,9 +25,9 @@
         "#count.capitalize# #cardCategory.s# from #teaserCardSet# leaked",
         "#format# Banwatch: #card#",
         "Have You Considered? [_consider:#card# in #format#,#deck#]#_consider.capitalize#",
-        "#pro# [_picked:First Picked,Last Picked,Wheeled,Drafted,Morphed]#_picked# #card.capitalizeAll#[_challenge: and You Won't Believe,. You'll Be Floored By,. Guess,. Find Out,. #pros.capitalizeAll# are still talking about#]#_challenge# [_what:What Happened Next,What #pro.capitalize# Said Next,What #pro.capitalize# Did Next,Why #pro.capitalize# Called a Judge]#_what#",
+        "#pro# [_picked:First Picked,Last Picked,Wheeled,Drafted,Topdecked,Morphed]#_picked# #card.capitalizeAll#[_challenge: and You Won't Believe,. You'll Be Floored By,. Guess,. Find Out,. #pros.capitalizeAll# are still talking about#]#_challenge# [_what:What Happened Next,What #pro.capitalize# Said Next,What #pro.capitalize# Did Next,Why #pro.capitalize# Called a Judge]#_what#",
         "[_cardname:#realCard#]We're not wrong: the card you're thinking of is #_cardname# #imgCard#",
-        "PICTURES: [_who:#pro#,#otherPersonality#]#_who.capitalize#'s [_cosplayAdj:amazing,convincing,elaborate,unconventional]#_cosplayAdj# cosplay of [_who#cardAlone#"
+        "PICTURES: #pro.capitalize#'s [_cosplayAdj:amazing,convincing,elaborate,unconventional]#_cosplayAdj# cosplay of [_who:#cardAlone#,#character#]#_who#"
     ],
     "announcement": [
         "Wizards Announces: Duel Decks: [_one:#nouns.capitalizeAll#,#planeswalkerFirstName#]#_one# vs. [_two:#nouns.capitalizeAll#,#planeswalkerFirstName#]#_two#",
@@ -125,7 +125,7 @@
     ],
     "occasion": ["my birthday", "my anniversary", "my first day on the job", "my last day on the job", "my bar mitzvah", "my unbirthday", "my cake day",
                  "my inauguration", "Durin's Day", "Robanukah", "Festivus", "Wednesday", "Guy Fawkes' Day", "Boxing Day", "Shrove Tuesday", "National Corndog Day",
-                 "Ice Cream for Breakfast Day", "World Kindness Day", "Take Your Dog to Work Day", "Leg Day", "Casual Friday", "April Fools' Day", "CAPS LOCK DAY",
+                 "Ice Cream for Breakfast Day", "World Kindness Day", "Take Your #creatureTypes# to Work Day", "Leg Day", "Casual Friday", "April Fools' Day", "CAPS LOCK DAY",
                  "International Talk Like a Pirate Day", "the Kentucky Derby", "Christmas in July"],
     "covering": [ "veneer", "facade", "aura", "layer", "mask", "veil", "blanket", "curtain", "girdle", "thin film", "cloud", "light dusting", "thick coating", "membrane", "halo"],
     "itemOrCreatureType": ["#itemNoun#","#creatureTypes#"],
@@ -393,26 +393,29 @@
         "GLEEMAX",
         "Mike Flores",
         "Rich Hagon",
+        "Conley Woods",
         "Urza",
         "RoboRosewater"
     ],
     "otherPersonality": [
-      "Bram Snepvangers",
-      "Balki Bartokomous",
-      "Young Victor Frankenstein",
-      "Ants-In-My-Eyes Johnson",
-      "a monkey in a business suit",
-      "some guy in a horse mask",
-      "a gaggle of angry geese",
-      "two dwarves in a trenchcoat",
-      "144 delicious hardboiled eggs",
-      "the 1979 Toronto Blue Jays",
-      "Fblthp",
-      "Evan Erwin",
-      "Jamie Wakefield",
-      "Sheldon Mennery",
-      "John Friggin' Rizzo",
-      "McGruff the Crime Dog"
+        "Bram Snepvangers",
+        "Evan Erwin",
+        "Jamie Wakefield",
+        "Sheldon Mennery",
+        "John Friggin' Rizzo",
+        "#jokePersonality#"
+    ],
+    "jokePersonality": [
+        "Balki Bartokomous",
+        "Young Victor Frankenstein",
+        "Ants-In-My-Eyes Johnson",
+        "a monkey in a business suit",
+        "some guy in a horse mask",
+        "a gaggle of angry geese",
+        "two dwarves in a trenchcoat",
+        "144 delicious hardboiled eggs",
+        "the 1979 Toronto Blue Jays",
+        "McGruff the Crime Dog"
     ],
     "pros": [
         "Magic players",
@@ -961,6 +964,7 @@
         "#creatureTypes.capitalize# in a Blender",
         "#creatureTypes.capitalize#vantage",
         "#creatureTypes.capitalize# Dad",
+        "[_prefix:#creatureTypes#,#deckPrefix#] Breakfast",
         "#deckNameCompoundPrefix##deckNameCompoundSuffix#"
     ],
     "deckVariation" : [
@@ -1108,6 +1112,7 @@
         "Lee Sin Jungle",
         "Two Explores",
         "Throat Wolf",
+        "Rage Mage",
         "Horrorcane",
         "Octopus Token",
         "the [_cardCount:ace,two,three,four,five,ten]#_cardCount# of [_cardSuit:spades,hearts,clubs,diamonds]#_cardSuit#",
