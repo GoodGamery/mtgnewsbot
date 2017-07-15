@@ -33,7 +33,8 @@
         "Wizards Announces: Duel Decks: [_one:#nouns.capitalizeAll#,#planeswalkerFirstName#]#_one# vs. [_two:#nouns.capitalizeAll#,#planeswalkerFirstName#]#_two#",
         "Wizards Announces: From the Vault: [_contents:#nouns#,#pluralNoun#,#massNoun#]#_contents.capitalize#",
         "Wizards Announces: #novelCardSetName.capitalizeAll#",
-        "[_nextSet:The next set,The next fall set,#codename.capitalize#][_verbphrase:is actually,is really named,will be named]#_nextSet# #_verbphrase# #novelCardSetName.capitalizeAll#"
+        "[_nextSet:The next set,The next fall set,#codename.capitalize#][_verbphrase:is actually,is really named,will be named]#_nextSet# #_verbphrase# #novelCardSetName.capitalizeAll#",
+        "Announcement: #pro# has joined Team #team#"
     ],
     "realization": [
         "The Importance of [_thing:#card#,#cardCategory.s#,#creatureTypes.s#,#gameConcept#]#_thing# in [_where:#format#,#recentCardSet#]#_where#",
@@ -46,7 +47,8 @@
         "#card.capitalize# Banned in #format.capitalizeAll# After [winner:#deck#,#pro#]#winner.capitalizeAll# Wins #tournament.capitalizeAll#",
         "#tournamentRound#: #pro# vs. [_opp:#otherPersonality#,Evil #pro#,Cyborg #pro#,Baby #pro#,Bizarro #pro#,Dr. #pro# M.D.,a Cardboard Cutout of #pro#,#adj.a# #creatureTypes#]#_opp.capitalizeAll#",
         "[winner:#pro#,#deck#]#winner# #winWord# [where:at #tournament#,in #city#]#where#",
-        "Pro Tour #teaserCardSet# will be in #city#"
+        "Pro Tour #teaserCardSet# will be in #city#",
+        "Team Series clinched by #team# at Pro Tour #recentCardSet# in #city#"
     ],
     "tip": [
         "The Case for #suggestion.capitalizeAll# [_bannedThing:#card#,#gameConcept#]#_bannedThing.capitalizeAll#[_where: in #format#,]#_where#",
@@ -60,7 +62,8 @@
         "#titleMoney#: #investType# #card# #investReason#",
         "#titleMoney#: #investType# #card#",
         "#titleMoney#: #pro# is #investType#ing #broadCardClassification.capitalizeAll#; Should You?",
-        "BREAKING: Prices of #card.capitalizeAll# Spiking; Market Cornered by #pros#"
+        "BREAKING: Prices of #card.capitalizeAll# Spiking; Market Cornered by #pros#",
+        "Leaked: Team #team#'s new deck #deckLocation#s #card#, invest now"
     ],
     "classifieds": [
         "#titleClassified#: #card#",
@@ -780,6 +783,33 @@
         "casual Commander night",
         "a drunk kitchen-table game",
         "a 24-hour MTGO stream"
+    ],
+    "team": [
+        "#teamSite# #teamDescriptor#"
+    ],
+    "teamSite": [
+        "ChannelFireball",
+        "StarCityGames",
+        "MTGMintCard",
+        "Ultra PRO",
+        "Phoenix",
+        "Puzzle Quest",
+        "Pojo Dot Com"
+    ],
+    "teamDescriptor": [
+        "Gold",
+        "Platinum",
+        "Foundation",
+        "#basicColors#",
+        "#direction.capitalizeAll#",
+        "#massNoun.capitalizeAll#"
+    ],
+    "direction": [
+        "east",
+        "west",
+        "north",
+        "south",
+        "west-northwest"
     ],
     "city": [
         "Abu Dhabi",
