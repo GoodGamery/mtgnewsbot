@@ -1,6 +1,6 @@
 'use strict';
 const tracery = require(`tracery-grammar`);
-const the_pros = require(`./grammar.json`);
+const the_pros = require(`./data/grammar.json`);
 const grammar = tracery.createGrammar(the_pros);
 
 grammar.addModifiers(tracery.baseEngModifiers);
