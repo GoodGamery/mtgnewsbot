@@ -2,8 +2,8 @@
 
 const fs =  require(`fs`);
 const uuid = require(`uuid`);
-//const grammar = require(`./src/data/grammar.json`);
-const grammar = require(`./scratch/cardimg-only-grammar.json`);
+const grammar = require(`./src/data/grammar.json`);
+
 const HeadlineMaker = require('./src/headline-maker');
 const TwitterClient = require('./src/lib/api/twitter-client');
 const mtgCardFinder = require('./src/lib/api/mtg-cardfinder');
@@ -22,7 +22,6 @@ const fileLogger = (msg, isErr) => {
         if (err) throw err;
     });
 };
-
 const logError = (msg, error) => fileLogger(`ERROR: ${msg}`, true);
 
 function postCardImageTweet(status, cardName) {
