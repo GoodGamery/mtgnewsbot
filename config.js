@@ -1,5 +1,5 @@
 'use strict';
-const merge = require('lodash.merge');
+const merge = require('lodash').merge;
 
 const CONFIG_OVERRIDE_PATH = './config-override.js';
 
