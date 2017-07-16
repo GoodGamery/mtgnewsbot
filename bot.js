@@ -93,5 +93,3 @@ if (tweet.tags && tweet.tags.imgCard && tweet.tags.imgCard.cardName) {
 } else {
 	twitter.postTweet(tweet.status);
 }
-
-

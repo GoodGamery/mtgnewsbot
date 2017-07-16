@@ -78,6 +78,3 @@ class TwitterClient {
 }
 
 module.exports = TwitterClient;
-
-
-
