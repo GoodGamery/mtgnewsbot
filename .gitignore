@@ -37,3 +37,6 @@ node_modules/
 
 # logging
 *.log
+
+# local config overrides
+config-override.js

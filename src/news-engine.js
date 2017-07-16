@@ -1,9 +1,9 @@
 'use strict';
 
 const HeadlineMaker = require('./headline-maker');
-const grammar = require('./data/grammar.json');
+const config = require('../config');
 
-const headlineMaker = new HeadlineMaker(grammar);
+const headlineMaker = new HeadlineMaker(config.defaultGrammar);
 
 function generateHeadlines (numHeadlines) {
 	const headlines = [];

@@ -1,3 +1,5 @@
+'use strict';
+
 const tracery = require(`tracery-grammar`);
 
 class HeadlineMaker {
