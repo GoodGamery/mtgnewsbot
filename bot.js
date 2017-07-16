@@ -13,16 +13,21 @@ const TWEET_LENGTH = 140;
 
 // Create tweet from grammar
 const grammar = tracery.createGrammar(the_pros);
-grammar.addModifiers(tracery.baseEngModifiers); 
+grammar.addModifiers(tracery.baseEngModifiers);
 const ORIGIN = `#origin#`;
 const generate = () => grammar.flatten(ORIGIN);
 
-let fileLogger = (msg) => {
-    console.log(`${msg}`);
+let fileLogger = (msg, isErr) => {
+	const logToConsole = isErr ? console.error : console.log;
+
+    logToConsole(`${msg}`);
+
     fs.appendFile(logFile, `${msg}\n`, (err) => {
         if (err) throw err;
     });
 };
+
+let logError = (msg, error) => fileLogger(`ERROR: ${msg}`, true);
 
 function parseMessage(message) {
 	let tags = undefined;
@@ -33,17 +38,17 @@ function parseMessage(message) {
 		match.forEach(match => {
 			const tag = match.match(/\{(\w+)\s/)[1];
 			if (!tags[tag]) {
-				tags[tag] = match.match(/(\w+=".*?")/g).reduce((result, next) => { 
-					let key = next.match(/(\w+)=/)[1]; 
-					let value = next.match(/="(.*)"/)[1]; 
+				tags[tag] = match.match(/(\w+=".*?")/g).reduce((result, next) => {
+					let key = next.match(/(\w+)=/)[1];
+					let value = next.match(/="(.*)"/)[1];
 					result[key] = value;
-					return result; 
+					return result;
 				}, {});
 			}
 			status = message.replace(match,'');
 		});	
 	}
-	return { 
+	return {
 		status: status.trim().replace(/\s+/g,' '),
 		tags: tags
 	};
@@ -55,32 +60,30 @@ function postCardImageTweet(status, cardName) {
 	const outputPath = outputDir + '/' + outputfile;	
 
 	mtgCardFinder.downloadCardImage(cardName, outputPath)
-		.then(localFilePath => twitter.uploadTwitterImage(localFilePath), e => console.error('Failed to upload image: ' + e))
-		.then(twitterImage => {
-		return twitter.postImageTweet(twitterImage, cardName, status)
-		  .then(() => { 
-		    console.log('posted tweet.'); 
-		  }, e => console.error('Failed to post tweet: ' + e))
-		  .then(() => {
+		.then(localFilePath => twitter.uploadTwitterImage(localFilePath))
+		.catch(e => logError('Failed to upload image: ' + e))
+		.then(twitterImage => twitter.postImageTweet(twitterImage, cardName, status))
+		.catch(e => logError('Failed to post tweet: ' + e))
+		.then(() => {
 		    return fs.unlink(outputPath, (err) => {
-		      if (!err) { 
-		        console.log('Deleted ' + outputPath);           
+		      if (!err) {
+		        console.log('Deleted ' + outputPath);
 		      } else {
-		        console.error('Unable to delete local image file: ' + err);            
+		        logError('Unable to delete local image file: ' + err);
 		      }
-		    });   
-		  });    
-		}, e => console.error('Failed to download image: ' + e));
+			});
+		})
+		.catch(e => logError('Failed to download image: ' + e));
 }
 
 let tweet = parseMessage(generate());
 
 while (tweet.status.length > TWEET_LENGTH) {
-    fileLogger(`ERROR: TWEET LENGTH ${tweet.length} GREATER THAN MAX ${TWEET_LENGTH}:\n${tweet}`);
+    logError(`TWEET LENGTH ${tweet.length} GREATER THAN MAX ${TWEET_LENGTH}:\n${tweet}`);
 	tweet = parseMessage(generate());
 }
 
-fileLogger(`${JSON.stringify(tweet)}`);
+fileLogger(`tweet: ${JSON.stringify(tweet)}`);
 
 // Create twitter client
 const twitter = new TwitterClient();

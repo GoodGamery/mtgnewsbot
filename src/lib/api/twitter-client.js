@@ -3,7 +3,7 @@
 const Twit = require('twit');
 const fs = require('fs');
 
-const TWIT_CONFIG =  { 
+const TWIT_CONFIG =  {
     consumer_key:         process.env.TWITTER_CONSUMER_KEY,
     consumer_secret:      process.env.TWITTER_CONSUMER_SECRET,
     access_token:         process.env.TWITTER_ACCESS_TOKEN,
@@ -18,29 +18,33 @@ class TwitterClient {
   postTweet(message) {
     return new Promise((resolve, reject) => {
       console.log('posting tweet...');
-      this.twit.post('statuses/update', { status: message }, (err, data, response) => {
-        if (!err) {
+      try {
+        this.twit.post('statuses/update', { status: message }, (err, data, response) => {
+          if (err) {
+            throw(err);
+          }
           console.log('tweet posted.');
           resolve(data);
-        } else {
-          reject(err);
-        }
-      });
+        });
+      } catch (e) {
+        reject(e);
+      }
     });
   }
 
   postImageTweet(data, altText, message) {
     return new Promise((resolve, reject) => {
-      // now we can assign alt text to the media, for use by screen readers and
-      // other text-based presentations and interpreters
-      let mediaIdStr = data.media_id_string;
-      let meta_params = { media_id: mediaIdStr, alt_text: { text: altText } }
+      try {
+        let mediaIdStr = data.media_id_string;
 
-      console.log('setting media metadata');
+        let meta_params = { media_id: mediaIdStr, alt_text: { text: altText } }
 
-      this.twit.post('media/metadata/create', meta_params, (err, data, response) => {
-        if (!err) {
-          // now we can reference the media and post a tweet (media will attach to the tweet)
+        console.log('setting media metadata');
+
+        this.twit.post('media/metadata/create', meta_params, (err, data, response) => {
+          if (err) {
+            throw err;
+          }
           let params = { status: message, media_ids: [mediaIdStr] }
 
           console.log('posting tweet...');
@@ -48,10 +52,10 @@ class TwitterClient {
           this.twit.post('statuses/update', params, (err, data, response) => {
             resolve();
           });
-        } else {
-          reject(err);
-        }
-      });
+        });
+      } catch (e) {
+        reject(e);
+      }
     });
   }
 
@@ -63,18 +67,17 @@ class TwitterClient {
         console.log('uploading image file to twitter...');
 
         this.twit.post('media/upload', { media_data: base64Data }, function (err, data, response) {
-          if (!err) { 
-            console.log(' image uploaded.');            
-            resolve(data);
-          } else {
-            reject(err);
+          if (err) {
+            throw err;
           }
-        });          
+          console.log(' image uploaded.');
+          resolve(data);
+        });
       } catch(e) {
         reject(e);
       }
      });
-  }  
+  }
 }
 
 module.exports = TwitterClient;
