@@ -1,23 +1,19 @@
 'use strict';
 
-const tracery = require(`tracery-grammar`);
 const fs =  require(`fs`);
 const uuid = require(`uuid`);
+const grammar = require(`./src/data/grammar.json`);
 
+const HeadlineMaker = require('./src/headline-maker');
 const TwitterClient = require('./src/lib/api/twitter-client');
 const mtgCardFinder = require('./src/lib/api/mtg-cardfinder');
-const the_pros = require(`./src/grammar.json`);
 
 const logFile = `./debug.log`;
 const TWEET_LENGTH = 140;
 
-// Create tweet from grammar
-const grammar = tracery.createGrammar(the_pros);
-grammar.addModifiers(tracery.baseEngModifiers);
-const ORIGIN = `#origin#`;
-const generate = () => grammar.flatten(ORIGIN);
+const headlines = new HeadlineMaker(grammar);
 
-let fileLogger = (msg, isErr) => {
+const fileLogger = (msg, isErr) => {
 	const logToConsole = isErr ? console.error : console.log;
 
     logToConsole(`${msg}`);
@@ -26,33 +22,7 @@ let fileLogger = (msg, isErr) => {
         if (err) throw err;
     });
 };
-
-let logError = (msg, error) => fileLogger(`ERROR: ${msg}`, true);
-
-function parseMessage(message) {
-	let tags = undefined;
-	let status = message;
-	let match = message.match(/\{\w+?\s+?.*?\}/g);
-	if (match) {
-		tags = {};
-		match.forEach(match => {
-			const tag = match.match(/\{(\w+)\s/)[1];
-			if (!tags[tag]) {
-				tags[tag] = match.match(/(\w+=".*?")/g).reduce((result, next) => {
-					let key = next.match(/(\w+)=/)[1];
-					let value = next.match(/="(.*)"/)[1];
-					result[key] = value;
-					return result;
-				}, {});
-			}
-			status = message.replace(match,'');
-		});	
-	}
-	return {
-		status: status.trim().replace(/\s+/g,' '),
-		tags: tags
-	};
-}
+const logError = (msg, error) => fileLogger(`ERROR: ${msg}`, true);
 
 function postCardImageTweet(status, cardName) {
 	const outputfile = cardName.replace(/\s+/g, '-').toLowerCase() + '-' + uuid() + '.png';
@@ -76,20 +46,21 @@ function postCardImageTweet(status, cardName) {
 		.catch(e => logError('Failed to download image: ' + e));
 }
 
-let tweet = parseMessage(generate());
+// Create tweet from grammar
+let headline = headlines.generateHeadline();
 
-while (tweet.status.length > TWEET_LENGTH) {
-    logError(`TWEET LENGTH ${tweet.length} GREATER THAN MAX ${TWEET_LENGTH}:\n${tweet}`);
-	tweet = parseMessage(generate());
+while (headline.text.length > TWEET_LENGTH) {
+    logError(`TWEET LENGTH ${headline.text.length} GREATER THAN MAX ${TWEET_LENGTH}:\n${headline.text}`);
+	headline = headlines.generateHeadline();
 }
 
-fileLogger(`tweet: ${JSON.stringify(tweet)}`);
+fileLogger(`tweet: ${JSON.stringify(headline)}`);
 
 // Create twitter client
 const twitter = new TwitterClient();
 
-if (tweet.tags && tweet.tags.imgCard && tweet.tags.imgCard.cardName) {
-	postCardImageTweet(tweet.status, tweet.tags.imgCard.cardName);
+if (headline.tags && headline.tags.imgCard && headline.tags.imgCard.cardName) {
+	postCardImageTweet(headline.text, headline.tags.imgCard.cardName);
 } else {
-	twitter.postTweet(tweet.status);
+	twitter.postTweet(headline.text);
 }

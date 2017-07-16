@@ -8,7 +8,7 @@
     "start": "npm run print",
     "test": "npm run lint && npm run print",
     "print": "node src/index.js ",
-    "lint": "jsonlint -q src/grammar.json"
+    "lint": "jsonlint -q src/data/grammar.json"
   },
   "repository": {
     "type": "git",
