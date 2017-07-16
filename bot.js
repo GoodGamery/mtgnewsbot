@@ -2,6 +2,7 @@
 
 const tracery = require(`tracery-grammar`);
 const fs =  require(`fs`);
+const uuid = require(`uuid`);
 
 const TwitterClient = require('./src/lib/api/twitter-client');
 const mtgCardFinder = require('./src/lib/api/mtg-cardfinder');
@@ -49,13 +50,9 @@ function parseMessage(message) {
 }
 
 function postCardImageTweet(status, cardName) {
-	const outputfile = cardName.replace(/\s+/g, '-').toLowerCase() + '-' + lazyGuid() + '.png';
+	const outputfile = cardName.replace(/\s+/g, '-').toLowerCase() + '-' + uuid() + '.png';
 	const outputDir = '/tmp';
 	const outputPath = outputDir + '/' + outputfile;	
-
-	function lazyGuid() {
-	  return  Math.round(Math.random() * 100000000) + '-' + Math.round(Math.random() * 100000000);
-	}
 
 	mtgCardFinder.downloadCardImage(cardName, outputPath)
 		.then(localFilePath => twitter.uploadTwitterImage(localFilePath), e => console.error('Failed to upload image: ' + e))
