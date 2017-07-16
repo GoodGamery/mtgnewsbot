@@ -33,15 +33,15 @@ class TwitterClient {
     return new Promise((resolve, reject) => {
       // now we can assign alt text to the media, for use by screen readers and
       // other text-based presentations and interpreters
-      var mediaIdStr = data.media_id_string;
-      var meta_params = { media_id: mediaIdStr, alt_text: { text: altText } }
+      let mediaIdStr = data.media_id_string;
+      let meta_params = { media_id: mediaIdStr, alt_text: { text: altText } }
 
       console.log('setting media metadata');
 
       this.twit.post('media/metadata/create', meta_params, (err, data, response) => {
         if (!err) {
           // now we can reference the media and post a tweet (media will attach to the tweet)
-          var params = { status: message, media_ids: [mediaIdStr] }
+          let params = { status: message, media_ids: [mediaIdStr] }
 
           console.log('posting tweet...');
 
@@ -58,11 +58,11 @@ class TwitterClient {
   uploadTwitterImage(filepath) {
     return new Promise((resolve, reject) => {
       try {
-        var b64content = fs.readFileSync(filepath, { encoding: 'base64' });
+        let base64Data = fs.readFileSync(filepath, { encoding: 'base64' });
 
         console.log('uploading image file to twitter...');
 
-        this.twit.post('media/upload', { media_data: b64content }, function (err, data, response) {
+        this.twit.post('media/upload', { media_data: base64Data }, function (err, data, response) {
           if (!err) { 
             console.log(' image uploaded.');            
             resolve(data);

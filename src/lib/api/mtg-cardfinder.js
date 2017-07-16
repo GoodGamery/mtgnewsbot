@@ -12,7 +12,7 @@ function downloadCardImage(cardname, outputPath) {
     try {
       console.log('Downloading image data from ' + imgurl);
       https.request(imgurl, function(response) {                                        
-        var data = new Stream();
+        let data = new Stream();
 
         response.on('data', function(chunk) {                                       
           data.push(chunk);                                                         
