@@ -1,13 +1,14 @@
 {
   "name": "mtgnewsbot",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "MTG News Robot",
+  "author": "Mark Diehr <mdiehr@gmail.com> (https://www.goodgamery.com)",
   "main": "src/news-engine.js",
   "scripts": {
     "start": "npm run print",
     "test": "npm run lint && npm run print",
     "print": "node src/index.js ",
-    "lint": "jsonlint -q src/grammar.json"
+    "lint": "jsonlint -q src/data/grammar.json"
   },
   "repository": {
     "type": "git",
@@ -17,7 +18,6 @@
     "Robot",
     "Twitter"
   ],
-  "author": "Mark Diehr",
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/mdiehr/mtgnewsbot/issues"
@@ -27,5 +27,8 @@
   "dependencies": {
     "tracery-grammar": "2.7.3",
     "twit": "2.2.9"
+  },
+  "publishConfig": {
+    "access": "public"
   }
 }

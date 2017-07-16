@@ -1,44 +1,66 @@
 'use strict';
-const Twit = require('twit');
-const tracery = require(`tracery-grammar`);
-const the_pros = require(`./src/grammar.json`);
-const fs = require(`fs`);
+
+const fs =  require(`fs`);
+const uuid = require(`uuid`);
+const grammar = require(`./src/data/grammar.json`);
+
+const HeadlineMaker = require('./src/headline-maker');
+const TwitterClient = require('./src/lib/api/twitter-client');
+const mtgCardFinder = require('./src/lib/api/mtg-cardfinder');
+
 const logFile = `./debug.log`;
 const TWEET_LENGTH = 140;
 
-// Create tweet from grammar
-const grammar = tracery.createGrammar(the_pros);
-grammar.addModifiers(tracery.baseEngModifiers); 
-const ORIGIN = `#origin#`;
-const generate = () => grammar.flatten(ORIGIN);
+const headlines = new HeadlineMaker(grammar);
 
-let fileLogger = (msg) => {
-    console.log(`${msg}`);
+const fileLogger = (msg, isErr) => {
+	const logToConsole = isErr ? console.error : console.log;
+
+    logToConsole(`${msg}`);
+
     fs.appendFile(logFile, `${msg}\n`, (err) => {
         if (err) throw err;
     });
 };
+const logError = (msg, error) => fileLogger(`ERROR: ${msg}`, true);
 
-let tweet = generate();
-while (tweet.length > TWEET_LENGTH) {
-    fileLogger(`ERROR: TWEET LENGTH ${tweet.length} GREATER THAN MAX ${TWEET_LENGTH}:\n${tweet}`);
-    tweet = generate()
+function postCardImageTweet(status, cardName) {
+	const outputfile = cardName.replace(/\s+/g, '-').toLowerCase() + '-' + uuid() + '.png';
+	const outputDir = '/tmp';
+	const outputPath = outputDir + '/' + outputfile;	
+
+	mtgCardFinder.downloadCardImage(cardName, outputPath)
+		.then(localFilePath => twitter.uploadTwitterImage(localFilePath))
+		.catch(e => logError('Failed to upload image: ' + e))
+		.then(twitterImage => twitter.postImageTweet(twitterImage, cardName, status))
+		.catch(e => logError('Failed to post tweet: ' + e))
+		.then(() => {
+		    return fs.unlink(outputPath, (err) => {
+		      if (!err) {
+		        console.log('Deleted ' + outputPath);
+		      } else {
+		        logError('Unable to delete local image file: ' + err);
+		      }
+			});
+		})
+		.catch(e => logError('Failed to download image: ' + e));
 }
 
-fileLogger(`${tweet}`);
+// Create tweet from grammar
+let headline = headlines.generateHeadline();
+
+while (headline.text.length > TWEET_LENGTH) {
+    logError(`TWEET LENGTH ${headline.text.length} GREATER THAN MAX ${TWEET_LENGTH}:\n${headline.text}`);
+	headline = headlines.generateHeadline();
+}
+
+fileLogger(`tweet: ${JSON.stringify(headline)}`);
 
 // Create twitter client
-var T = new Twit(
-    { consumer_key:         process.env.TWITTER_CONSUMER_KEY
-    , consumer_secret:      process.env.TWITTER_CONSUMER_SECRET
-    , access_token:         process.env.TWITTER_ACCESS_TOKEN
-    , access_token_secret:  process.env.TWITTER_ACCESS_TOKEN_SECRET
-    }
-);
+const twitter = new TwitterClient();
 
-T.post('statuses/update', { status: tweet }, function(err, data, response) {
-    if (err) {
-        console.log(err);
-        console.log(data);
-    }
-})
+if (headline.tags && headline.tags.imgCard && headline.tags.imgCard.cardName) {
+	postCardImageTweet(headline.text, headline.tags.imgCard.cardName);
+} else {
+	twitter.postTweet(headline.text);
+}

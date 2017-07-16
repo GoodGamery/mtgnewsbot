@@ -1717,7 +1717,7 @@
         "Wrath of God",
         "Zombie Master"
     ],
-    "imgCard": "{svg <svg xmlns=\"http://www.w3.org/2000/svg\" xmlns:xlink=\"http://www.w3.org/1999/xlink\" width=\"233\" height=\"311\"><image width=\"233\" height=\"311\" xlink:href=\"https://forums.goodgamery.com/includes/mtg/mtg_helper_cardfinder_v3.php?img&amp;find=#_cardname#\" /></svg>}",
+    "imgCard": "{imgCard cardName=\"#_cardname#\"}",
     "cardSet": [
         "#recentCardSet#",
         "Arabian Nights",
