@@ -2,7 +2,7 @@ const tracery = require(`tracery-grammar`);
 
 class HeadlineMaker {
 
-	constructor(grammar, maxLength) {
+	constructor(grammar) {
 		this.grammar = tracery.createGrammar(grammar);
 		this.grammar.addModifiers(tracery.baseEngModifiers);
 		this.origin = `#origin#`;
