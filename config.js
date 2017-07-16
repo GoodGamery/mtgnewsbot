@@ -10,6 +10,7 @@ const LOGFILE_PATH = `./debug.log`;
 
 let config = {
 	defaultGrammarPath:  DEFAULT_GRAMMAR_PATH,
+	defaultGrammar: undefined,
 	tweetLength: TWEET_LENGTH,
 	paths: {
 		tempDirectory: TEMPFILE_PATH,
@@ -22,7 +23,10 @@ let override;
 try { override = require(CONFIG_OVERRIDE_PATH); } catch(e) { console.log('override file not found: ' + e); }
 config = merge(config, override);
 
+// load the default grammar after applying overrides
 config.defaultGrammar = require(config.defaultGrammarPath);
+
+config = Object.freeze(config);
 
 global.mtgnewsbot = global.mtgnewsbot || {};
 global.mtgnewsbot.config = config;
