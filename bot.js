@@ -2,23 +2,18 @@
 
 const fs =  require(`fs`);
 const uuid = require(`uuid`);
-const grammar = require(`./src/data/grammar.json`);
 
 const HeadlineMaker = require('./src/headline-maker');
 const TwitterClient = require('./src/lib/api/twitter-client');
 const mtgCardFinder = require('./src/lib/api/mtg-cardfinder');
-
-const logFile = `./debug.log`;
-const TWEET_LENGTH = 140;
-
-const headlines = new HeadlineMaker(grammar);
+const config = require('./config');
 
 const fileLogger = (msg, isErr) => {
 	const logToConsole = isErr ? console.error : console.log;
 
     logToConsole(`${msg}`);
 
-    fs.appendFile(logFile, `${msg}\n`, (err) => {
+    fs.appendFile(config.paths.logFile, `${msg}\n`, (err) => {
         if (err) throw err;
     });
 };
@@ -26,8 +21,7 @@ const logError = (msg, error) => fileLogger(`ERROR: ${msg}`, true);
 
 function postCardImageTweet(status, cardName) {
 	const outputfile = cardName.replace(/\s+/g, '-').toLowerCase() + '-' + uuid() + '.jpg';
-	const outputDir = '/tmp';
-	const outputPath = outputDir + '/' + outputfile;	
+	const outputPath = config.paths.tempDirectory + '/' + outputfile;
 
 	mtgCardFinder.downloadCardImage(cardName, outputPath)
 		.then(localFilePath => twitter.uploadTwitterImage(localFilePath))
@@ -47,10 +41,11 @@ function postCardImageTweet(status, cardName) {
 }
 
 // Create tweet from grammar
+const headlines = new HeadlineMaker(config.defaultGrammar);
 let headline = headlines.generateHeadline();
 
-while (headline.text.length > TWEET_LENGTH) {
-    logError(`TWEET LENGTH ${headline.text.length} GREATER THAN MAX ${TWEET_LENGTH}:\n${headline.text}`);
+while (headline.text.length > config.tweetLength) {
+    logError(`TWEET LENGTH ${headline.text.length} GREATER THAN MAX ${config.tweetLength}:\n${headline.text}`);
 	headline = headlines.generateHeadline();
 }
 

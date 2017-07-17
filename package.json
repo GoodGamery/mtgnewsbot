@@ -25,6 +25,7 @@
   "homepage": "https://github.com/mdiehr/mtgnewsbot#readme",
   "devDependencies": {},
   "dependencies": {
+    "lodash.merge": "4.6.0",
     "tracery-grammar": "2.7.3",
     "twit": "2.2.9"
   },

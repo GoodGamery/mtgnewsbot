@@ -1,16 +1,27 @@
 'use strict';
-const tracery = require(`tracery-grammar`);
-const the_pros = require(`./data/grammar.json`);
-const grammar = tracery.createGrammar(the_pros);
 
-grammar.addModifiers(tracery.baseEngModifiers);
+const HeadlineMaker = require('./headline-maker');
+const config = require('../config');
+
+const headlineMaker = new HeadlineMaker(config.defaultGrammar);
 
 function generateHeadlines (numHeadlines) {
 	const headlines = [];
 	for (let i = 0; i < numHeadlines; ++i) {
-		headlines.push(grammar.flatten('#origin#'));
+		headlines.push(headlineMaker.generateHeadline());
 	}
 	return headlines;
 }
 
-module.exports = { generateHeadlines: generateHeadlines };
+function generateTextHeadlines (numHeadlines) {
+	const headlines = [];
+	for (let i = 0; i < numHeadlines; ++i) {
+		headlines.push(headlineMaker.generateTextHeadline());
+	}
+	return headlines;
+}
+
+module.exports = { 
+	generateHeadlines: generateHeadlines,
+	generateTextHeadlines: generateTextHeadlines
+};
