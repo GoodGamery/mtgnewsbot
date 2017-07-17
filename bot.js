@@ -25,7 +25,7 @@ const fileLogger = (msg, isErr) => {
 const logError = (msg, error) => fileLogger(`ERROR: ${msg}`, true);
 
 function postCardImageTweet(status, cardName) {
-	const outputfile = cardName.replace(/\s+/g, '-').toLowerCase() + '-' + uuid() + '.png';
+	const outputfile = cardName.replace(/\s+/g, '-').toLowerCase() + '-' + uuid() + '.jpg';
 	const outputDir = '/tmp';
 	const outputPath = outputDir + '/' + outputfile;	
 

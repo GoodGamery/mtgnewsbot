@@ -9,5 +9,11 @@ set +a
 git fetch
 git pull
 
+#### DEBUGGING
+# print out version of node
+node -v
+# print out current user
+echo "$USER"
+
 # tweet
-node bot.js
+node --use_strict bot.js
