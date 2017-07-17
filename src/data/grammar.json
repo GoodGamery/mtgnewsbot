@@ -43,7 +43,7 @@
         "The Secret to #improvementGoal.capitalizeAll# is #deckChange.capitalize#",
         "In today's Magic Story: #character#'s #adj# history with #character# finally revealed",
         "Video: MTG – How I would improve #thing# in Magic: the Gathering, Part #num2-9#",
-        "Preview of #teaserCardSet# #normalFormat#: is #deckVariation# #deckDescription#?"
+        "Preview of #teaserCardSet# #normalFormat#: will #deckVariation# be #deckDescription#?"
     ],
     "tournamentNews": [
         "Emergency Banning: #card.capitalize# Banned in #format#",
