@@ -51,7 +51,8 @@
         "#tournamentRound#: #pro# vs. [_opp:#otherPersonality#,Evil #pro#,Cyborg #pro#,Baby #pro#,Bizarro #pro#,Dr. #pro# M.D.,a Cardboard Cutout of #pro#,#adj.a# #creatureTypes#]#_opp.capitalizeAll#",
         "[winner:#pro#,#deck#]#winner# #winWord# [where:at #tournament#,in #city#]#where#",
         "Pro Tour #teaserCardSet# will be in #city#",
-        "Team Series clinched by #team# at Pro Tour #recentCardSet# in #city#"
+        "Team Series clinched by #team# at Pro Tour #recentCardSet# in #city#",
+        "#pro# after winning #event# with #deck#: \"It's #deckDescription#.\""
     ],
     "tip": [
         "The Case for #suggestion.capitalizeAll# [_bannedThing:#card#,#gameConcept#]#_bannedThing.capitalizeAll#[_where: in #format#,]#_where#",
