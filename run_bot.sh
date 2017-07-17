@@ -10,4 +10,4 @@ git fetch
 git pull
 
 # tweet
-node bot.js
+node --use_strict bot.js
