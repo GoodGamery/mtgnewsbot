@@ -2,10 +2,42 @@
   "name": "mtgnewsbot",
   "version": "1.0.1",
   "dependencies": {
+    "acorn": {
+      "version": "5.1.1",
+      "from": "acorn@>=5.0.1 <6.0.0",
+      "resolved": "http://registry.npmjs.org/acorn/-/acorn-5.1.1.tgz",
+      "dev": true
+    },
+    "acorn-jsx": {
+      "version": "3.0.1",
+      "from": "acorn-jsx@>=3.0.0 <4.0.0",
+      "resolved": "http://artifacts.netflix.com/api/npm/npm-netflix/acorn-jsx/-/acorn-jsx-3.0.1.tgz",
+      "dev": true,
+      "dependencies": {
+        "acorn": {
+          "version": "3.3.0",
+          "from": "acorn@>=3.0.4 <4.0.0",
+          "resolved": "http://artifacts.netflix.com/api/npm/npm-netflix/acorn/-/acorn-3.3.0.tgz",
+          "dev": true
+        }
+      }
+    },
     "ajv": {
       "version": "4.11.8",
       "from": "ajv@>=4.9.1 <5.0.0",
       "resolved": "https://registry.npmjs.org/ajv/-/ajv-4.11.8.tgz"
+    },
+    "ajv-keywords": {
+      "version": "1.5.1",
+      "from": "ajv-keywords@>=1.0.0 <2.0.0",
+      "resolved": "http://registry.npmjs.org/ajv-keywords/-/ajv-keywords-1.5.1.tgz",
+      "dev": true
+    },
+    "ansi-escapes": {
+      "version": "2.0.0",
+      "from": "ansi-escapes@>=2.0.0 <3.0.0",
+      "resolved": "http://registry.npmjs.org/ansi-escapes/-/ansi-escapes-2.0.0.tgz",
+      "dev": true
     },
     "ansi-regex": {
       "version": "2.1.1",
@@ -23,6 +55,12 @@
       "version": "1.0.0",
       "from": "archy@>=1.0.0 <2.0.0",
       "resolved": "https://registry.npmjs.org/archy/-/archy-1.0.0.tgz",
+      "dev": true
+    },
+    "argparse": {
+      "version": "1.0.9",
+      "from": "argparse@>=1.0.7 <2.0.0",
+      "resolved": "http://artifacts.netflix.com/api/npm/npm-netflix/argparse/-/argparse-1.0.9.tgz",
       "dev": true
     },
     "arr-diff": {
@@ -61,6 +99,12 @@
       "resolved": "http://registry.npmjs.org/array-slice/-/array-slice-1.0.0.tgz",
       "dev": true
     },
+    "array-union": {
+      "version": "1.0.2",
+      "from": "array-union@>=1.0.1 <2.0.0",
+      "resolved": "http://artifacts.netflix.com/api/npm/npm-netflix/array-union/-/array-union-1.0.2.tgz",
+      "dev": true
+    },
     "array-uniq": {
       "version": "1.0.3",
       "from": "array-uniq@>=1.0.2 <2.0.0",
@@ -71,6 +115,12 @@
       "version": "0.2.1",
       "from": "array-unique@>=0.2.1 <0.3.0",
       "resolved": "https://registry.npmjs.org/array-unique/-/array-unique-0.2.1.tgz",
+      "dev": true
+    },
+    "arrify": {
+      "version": "1.0.1",
+      "from": "arrify@>=1.0.0 <2.0.0",
+      "resolved": "https://registry.npmjs.org/arrify/-/arrify-1.0.1.tgz",
       "dev": true
     },
     "asn1": {
@@ -97,6 +147,12 @@
       "version": "1.6.0",
       "from": "aws4@>=1.2.1 <2.0.0",
       "resolved": "https://registry.npmjs.org/aws4/-/aws4-1.6.0.tgz"
+    },
+    "babel-code-frame": {
+      "version": "6.22.0",
+      "from": "babel-code-frame@>=6.22.0 <7.0.0",
+      "resolved": "http://registry.npmjs.org/babel-code-frame/-/babel-code-frame-6.22.0.tgz",
+      "dev": true
     },
     "balanced-match": {
       "version": "1.0.0",
@@ -144,6 +200,18 @@
       "resolved": "https://registry.npmjs.org/builtin-modules/-/builtin-modules-1.1.1.tgz",
       "dev": true
     },
+    "caller-path": {
+      "version": "0.1.0",
+      "from": "caller-path@>=0.1.0 <0.2.0",
+      "resolved": "http://artifacts.netflix.com/api/npm/npm-netflix/caller-path/-/caller-path-0.1.0.tgz",
+      "dev": true
+    },
+    "callsites": {
+      "version": "0.2.0",
+      "from": "callsites@>=0.2.0 <0.3.0",
+      "resolved": "http://artifacts.netflix.com/api/npm/npm-netflix/callsites/-/callsites-0.2.0.tgz",
+      "dev": true
+    },
     "camelcase": {
       "version": "2.1.1",
       "from": "camelcase@>=2.0.0 <3.0.0",
@@ -167,6 +235,24 @@
       "resolved": "http://artifacts.netflix.com/api/npm/npm-netflix/chalk/-/chalk-1.1.3.tgz",
       "dev": true
     },
+    "circular-json": {
+      "version": "0.3.1",
+      "from": "circular-json@>=0.3.1 <0.4.0",
+      "resolved": "http://artifacts.netflix.com/api/npm/npm-netflix/circular-json/-/circular-json-0.3.1.tgz",
+      "dev": true
+    },
+    "cli-cursor": {
+      "version": "2.1.0",
+      "from": "cli-cursor@>=2.1.0 <3.0.0",
+      "resolved": "http://artifacts.netflix.com/api/npm/npm-netflix/cli-cursor/-/cli-cursor-2.1.0.tgz",
+      "dev": true
+    },
+    "cli-width": {
+      "version": "2.1.0",
+      "from": "cli-width@>=2.0.0 <3.0.0",
+      "resolved": "http://artifacts.netflix.com/api/npm/npm-netflix/cli-width/-/cli-width-2.1.0.tgz",
+      "dev": true
+    },
     "clone": {
       "version": "1.0.2",
       "from": "clone@>=1.0.0 <2.0.0",
@@ -184,6 +270,18 @@
       "from": "co@>=4.6.0 <5.0.0",
       "resolved": "https://registry.npmjs.org/co/-/co-4.6.0.tgz"
     },
+    "color-convert": {
+      "version": "1.9.0",
+      "from": "color-convert@>=1.0.0 <2.0.0",
+      "resolved": "http://artifacts.netflix.com/api/npm/npm-netflix/color-convert/-/color-convert-1.9.0.tgz",
+      "dev": true
+    },
+    "color-name": {
+      "version": "1.1.3",
+      "from": "color-name@>=1.1.1 <2.0.0",
+      "resolved": "http://registry.npmjs.org/color-name/-/color-name-1.1.3.tgz",
+      "dev": true
+    },
     "combined-stream": {
       "version": "1.0.5",
       "from": "combined-stream@>=1.0.5 <1.1.0",
@@ -193,6 +291,12 @@
       "version": "0.0.1",
       "from": "concat-map@0.0.1",
       "resolved": "http://artifacts.netflix.com/api/npm/npm-netflix/concat-map/-/concat-map-0.0.1.tgz",
+      "dev": true
+    },
+    "concat-stream": {
+      "version": "1.6.0",
+      "from": "concat-stream@>=1.6.0 <2.0.0",
+      "resolved": "http://artifacts.netflix.com/api/npm/npm-netflix/concat-stream/-/concat-stream-1.6.0.tgz",
       "dev": true
     },
     "core-util-is": {
@@ -230,10 +334,22 @@
       "resolved": "http://artifacts.netflix.com/api/npm/npm-netflix/dateformat/-/dateformat-2.0.0.tgz",
       "dev": true
     },
+    "debug": {
+      "version": "2.6.8",
+      "from": "debug@>=2.6.8 <3.0.0",
+      "resolved": "http://artifacts.netflix.com/api/npm/npm-netflix/debug/-/debug-2.6.8.tgz",
+      "dev": true
+    },
     "decamelize": {
       "version": "1.2.0",
       "from": "decamelize@>=1.1.2 <2.0.0",
       "resolved": "http://artifacts.netflix.com/api/npm/npm-netflix/decamelize/-/decamelize-1.2.0.tgz",
+      "dev": true
+    },
+    "deep-is": {
+      "version": "0.1.3",
+      "from": "deep-is@>=0.1.3 <0.2.0",
+      "resolved": "http://artifacts.netflix.com/api/npm/npm-netflix/deep-is/-/deep-is-0.1.3.tgz",
       "dev": true
     },
     "defaults": {
@@ -241,6 +357,20 @@
       "from": "defaults@>=1.0.0 <2.0.0",
       "resolved": "http://artifacts.netflix.com/api/npm/npm-netflix/defaults/-/defaults-1.0.3.tgz",
       "dev": true
+    },
+    "del": {
+      "version": "2.2.2",
+      "from": "del@>=2.0.2 <3.0.0",
+      "resolved": "http://artifacts.netflix.com/api/npm/npm-netflix/del/-/del-2.2.2.tgz",
+      "dev": true,
+      "dependencies": {
+        "object-assign": {
+          "version": "4.1.1",
+          "from": "object-assign@^4.0.1",
+          "resolved": "https://registry.npmjs.org/object-assign/-/object-assign-4.1.1.tgz",
+          "dev": true
+        }
+      }
     },
     "delayed-stream": {
       "version": "1.0.0",
@@ -257,6 +387,12 @@
       "version": "0.1.0",
       "from": "detect-file@>=0.1.0 <0.2.0",
       "resolved": "http://artifacts.netflix.com/api/npm/npm-netflix/detect-file/-/detect-file-0.1.0.tgz",
+      "dev": true
+    },
+    "doctrine": {
+      "version": "2.0.0",
+      "from": "doctrine@>=2.0.0 <3.0.0",
+      "resolved": "http://registry.npmjs.org/doctrine/-/doctrine-2.0.0.tgz",
       "dev": true
     },
     "duplexer2": {
@@ -309,6 +445,82 @@
       "resolved": "https://registry.npmjs.org/escape-string-regexp/-/escape-string-regexp-1.0.5.tgz",
       "dev": true
     },
+    "eslint": {
+      "version": "4.2.0",
+      "from": "eslint@latest",
+      "resolved": "http://registry.npmjs.org/eslint/-/eslint-4.2.0.tgz",
+      "dev": true,
+      "dependencies": {
+        "ajv": {
+          "version": "5.2.2",
+          "from": "ajv@>=5.2.0 <6.0.0",
+          "resolved": "http://registry.npmjs.org/ajv/-/ajv-5.2.2.tgz",
+          "dev": true
+        },
+        "glob": {
+          "version": "7.1.2",
+          "from": "glob@>=7.1.2 <8.0.0",
+          "resolved": "http://artifacts.netflix.com/api/npm/npm-netflix/glob/-/glob-7.1.2.tgz",
+          "dev": true
+        },
+        "lodash": {
+          "version": "4.17.4",
+          "from": "lodash@>=4.17.4 <5.0.0",
+          "resolved": "https://registry.npmjs.org/lodash/-/lodash-4.17.4.tgz",
+          "dev": true
+        }
+      }
+    },
+    "eslint-scope": {
+      "version": "3.7.1",
+      "from": "eslint-scope@>=3.7.1 <4.0.0",
+      "resolved": "http://registry.npmjs.org/eslint-scope/-/eslint-scope-3.7.1.tgz",
+      "dev": true
+    },
+    "espree": {
+      "version": "3.4.3",
+      "from": "espree@>=3.4.3 <4.0.0",
+      "resolved": "http://registry.npmjs.org/espree/-/espree-3.4.3.tgz",
+      "dev": true
+    },
+    "esprima": {
+      "version": "4.0.0",
+      "from": "esprima@>=4.0.0 <5.0.0",
+      "resolved": "http://registry.npmjs.org/esprima/-/esprima-4.0.0.tgz",
+      "dev": true
+    },
+    "esquery": {
+      "version": "1.0.0",
+      "from": "esquery@>=1.0.0 <2.0.0",
+      "resolved": "http://registry.npmjs.org/esquery/-/esquery-1.0.0.tgz",
+      "dev": true
+    },
+    "esrecurse": {
+      "version": "4.2.0",
+      "from": "esrecurse@>=4.1.0 <5.0.0",
+      "resolved": "http://registry.npmjs.org/esrecurse/-/esrecurse-4.2.0.tgz",
+      "dev": true,
+      "dependencies": {
+        "object-assign": {
+          "version": "4.1.1",
+          "from": "object-assign@>=4.0.1 <5.0.0",
+          "resolved": "https://registry.npmjs.org/object-assign/-/object-assign-4.1.1.tgz",
+          "dev": true
+        }
+      }
+    },
+    "estraverse": {
+      "version": "4.2.0",
+      "from": "estraverse@>=4.2.0 <5.0.0",
+      "resolved": "http://artifacts.netflix.com/api/npm/npm-netflix/estraverse/-/estraverse-4.2.0.tgz",
+      "dev": true
+    },
+    "esutils": {
+      "version": "2.0.2",
+      "from": "esutils@>=2.0.2 <3.0.0",
+      "resolved": "https://registry.npmjs.org/esutils/-/esutils-2.0.2.tgz",
+      "dev": true
+    },
     "expand-brackets": {
       "version": "0.1.5",
       "from": "expand-brackets@>=0.1.4 <0.2.0",
@@ -332,6 +544,12 @@
       "from": "extend@>=3.0.0 <3.1.0",
       "resolved": "https://registry.npmjs.org/extend/-/extend-3.0.1.tgz"
     },
+    "external-editor": {
+      "version": "2.0.4",
+      "from": "external-editor@>=2.0.4 <3.0.0",
+      "resolved": "http://registry.npmjs.org/external-editor/-/external-editor-2.0.4.tgz",
+      "dev": true
+    },
     "extglob": {
       "version": "0.3.2",
       "from": "extglob@>=0.3.1 <0.4.0",
@@ -348,6 +566,38 @@
       "from": "fancy-log@>=1.1.0 <2.0.0",
       "resolved": "http://registry.npmjs.org/fancy-log/-/fancy-log-1.3.0.tgz",
       "dev": true
+    },
+    "fast-deep-equal": {
+      "version": "1.0.0",
+      "from": "fast-deep-equal@>=1.0.0 <2.0.0",
+      "resolved": "http://registry.npmjs.org/fast-deep-equal/-/fast-deep-equal-1.0.0.tgz",
+      "dev": true
+    },
+    "fast-levenshtein": {
+      "version": "2.0.6",
+      "from": "fast-levenshtein@>=2.0.4 <2.1.0",
+      "resolved": "http://registry.npmjs.org/fast-levenshtein/-/fast-levenshtein-2.0.6.tgz",
+      "dev": true
+    },
+    "figures": {
+      "version": "2.0.0",
+      "from": "figures@>=2.0.0 <3.0.0",
+      "resolved": "http://registry.npmjs.org/figures/-/figures-2.0.0.tgz",
+      "dev": true
+    },
+    "file-entry-cache": {
+      "version": "2.0.0",
+      "from": "file-entry-cache@>=2.0.0 <3.0.0",
+      "resolved": "http://artifacts.netflix.com/api/npm/npm-netflix/file-entry-cache/-/file-entry-cache-2.0.0.tgz",
+      "dev": true,
+      "dependencies": {
+        "object-assign": {
+          "version": "4.1.1",
+          "from": "object-assign@^4.0.1",
+          "resolved": "https://registry.npmjs.org/object-assign/-/object-assign-4.1.1.tgz",
+          "dev": true
+        }
+      }
     },
     "filename-regex": {
       "version": "2.0.1",
@@ -399,6 +649,12 @@
       "resolved": "http://artifacts.netflix.com/api/npm/npm-netflix/flagged-respawn/-/flagged-respawn-0.3.2.tgz",
       "dev": true
     },
+    "flat-cache": {
+      "version": "1.2.2",
+      "from": "flat-cache@>=1.2.1 <2.0.0",
+      "resolved": "http://registry.npmjs.org/flat-cache/-/flat-cache-1.2.2.tgz",
+      "dev": true
+    },
     "for-in": {
       "version": "1.0.2",
       "from": "for-in@>=1.0.1 <2.0.0",
@@ -425,6 +681,12 @@
       "version": "0.1.0",
       "from": "fs-exists-sync@>=0.1.0 <0.2.0",
       "resolved": "http://artifacts.netflix.com/api/npm/npm-netflix/fs-exists-sync/-/fs-exists-sync-0.1.0.tgz",
+      "dev": true
+    },
+    "fs.realpath": {
+      "version": "1.0.0",
+      "from": "fs.realpath@>=1.0.0 <2.0.0",
+      "resolved": "http://artifacts.netflix.com/api/npm/npm-netflix/fs.realpath/-/fs.realpath-1.0.0.tgz",
       "dev": true
     },
     "gaze": {
@@ -547,6 +809,32 @@
       "resolved": "http://registry.npmjs.org/global-prefix/-/global-prefix-0.1.5.tgz",
       "dev": true
     },
+    "globals": {
+      "version": "9.18.0",
+      "from": "globals@>=9.17.0 <10.0.0",
+      "resolved": "http://registry.npmjs.org/globals/-/globals-9.18.0.tgz",
+      "dev": true
+    },
+    "globby": {
+      "version": "5.0.0",
+      "from": "globby@>=5.0.0 <6.0.0",
+      "resolved": "http://artifacts.netflix.com/api/npm/npm-netflix/globby/-/globby-5.0.0.tgz",
+      "dev": true,
+      "dependencies": {
+        "glob": {
+          "version": "7.1.2",
+          "from": "glob@^7.0.3",
+          "resolved": "https://registry.npmjs.org/glob/-/glob-7.1.2.tgz",
+          "dev": true
+        },
+        "object-assign": {
+          "version": "4.1.1",
+          "from": "object-assign@^4.0.1",
+          "resolved": "https://registry.npmjs.org/object-assign/-/object-assign-4.1.1.tgz",
+          "dev": true
+        }
+      }
+    },
     "globule": {
       "version": "0.1.0",
       "from": "globule@>=0.1.0 <0.2.0",
@@ -603,6 +891,12 @@
       "resolved": "http://registry.npmjs.org/gulp-debug/-/gulp-debug-3.1.0.tgz",
       "dev": true
     },
+    "gulp-eslint": {
+      "version": "4.0.0",
+      "from": "gulp-eslint@latest",
+      "resolved": "http://registry.npmjs.org/gulp-eslint/-/gulp-eslint-4.0.0.tgz",
+      "dev": true
+    },
     "gulp-jsonlint": {
       "version": "1.2.0",
       "from": "gulp-jsonlint@latest",
@@ -657,6 +951,12 @@
       "resolved": "http://artifacts.netflix.com/api/npm/npm-netflix/has-color/-/has-color-0.1.7.tgz",
       "dev": true
     },
+    "has-flag": {
+      "version": "2.0.0",
+      "from": "has-flag@>=2.0.0 <3.0.0",
+      "resolved": "http://artifacts.netflix.com/api/npm/npm-netflix/has-flag/-/has-flag-2.0.0.tgz",
+      "dev": true
+    },
     "has-gulplog": {
       "version": "0.1.0",
       "from": "has-gulplog@>=0.1.0 <0.2.0",
@@ -690,6 +990,24 @@
       "from": "http-signature@>=1.1.0 <1.2.0",
       "resolved": "https://registry.npmjs.org/http-signature/-/http-signature-1.1.1.tgz"
     },
+    "iconv-lite": {
+      "version": "0.4.18",
+      "from": "iconv-lite@>=0.4.17 <0.5.0",
+      "resolved": "http://registry.npmjs.org/iconv-lite/-/iconv-lite-0.4.18.tgz",
+      "dev": true
+    },
+    "ignore": {
+      "version": "3.3.3",
+      "from": "ignore@>=3.3.3 <4.0.0",
+      "resolved": "http://registry.npmjs.org/ignore/-/ignore-3.3.3.tgz",
+      "dev": true
+    },
+    "imurmurhash": {
+      "version": "0.1.4",
+      "from": "imurmurhash@>=0.1.4 <0.2.0",
+      "resolved": "http://artifacts.netflix.com/api/npm/npm-netflix/imurmurhash/-/imurmurhash-0.1.4.tgz",
+      "dev": true
+    },
     "indent-string": {
       "version": "2.1.0",
       "from": "indent-string@>=2.1.0 <3.0.0",
@@ -713,6 +1031,50 @@
       "from": "ini@>=1.3.4 <2.0.0",
       "resolved": "https://registry.npmjs.org/ini/-/ini-1.3.4.tgz",
       "dev": true
+    },
+    "inquirer": {
+      "version": "3.2.0",
+      "from": "inquirer@>=3.0.6 <4.0.0",
+      "resolved": "http://registry.npmjs.org/inquirer/-/inquirer-3.2.0.tgz",
+      "dev": true,
+      "dependencies": {
+        "ansi-regex": {
+          "version": "3.0.0",
+          "from": "ansi-regex@^3.0.0",
+          "resolved": "https://registry.npmjs.org/ansi-regex/-/ansi-regex-3.0.0.tgz",
+          "dev": true
+        },
+        "ansi-styles": {
+          "version": "3.1.0",
+          "from": "ansi-styles@>=3.1.0 <4.0.0",
+          "resolved": "http://artifacts.netflix.com/api/npm/npm-netflix/ansi-styles/-/ansi-styles-3.1.0.tgz",
+          "dev": true
+        },
+        "chalk": {
+          "version": "2.0.1",
+          "from": "chalk@>=2.0.0 <3.0.0",
+          "resolved": "http://artifacts.netflix.com/api/npm/npm-netflix/chalk/-/chalk-2.0.1.tgz",
+          "dev": true
+        },
+        "lodash": {
+          "version": "4.17.4",
+          "from": "lodash@^4.3.0",
+          "resolved": "https://registry.npmjs.org/lodash/-/lodash-4.17.4.tgz",
+          "dev": true
+        },
+        "strip-ansi": {
+          "version": "4.0.0",
+          "from": "strip-ansi@>=4.0.0 <5.0.0",
+          "resolved": "http://registry.npmjs.org/strip-ansi/-/strip-ansi-4.0.0.tgz",
+          "dev": true
+        },
+        "supports-color": {
+          "version": "4.2.0",
+          "from": "supports-color@>=4.0.0 <5.0.0",
+          "resolved": "http://artifacts.netflix.com/api/npm/npm-netflix/supports-color/-/supports-color-4.2.0.tgz",
+          "dev": true
+        }
+      }
     },
     "interpret": {
       "version": "1.0.3",
@@ -780,6 +1142,12 @@
       "resolved": "http://artifacts.netflix.com/api/npm/npm-netflix/is-finite/-/is-finite-1.0.2.tgz",
       "dev": true
     },
+    "is-fullwidth-code-point": {
+      "version": "2.0.0",
+      "from": "is-fullwidth-code-point@>=2.0.0 <3.0.0",
+      "resolved": "http://artifacts.netflix.com/api/npm/npm-netflix/is-fullwidth-code-point/-/is-fullwidth-code-point-2.0.0.tgz",
+      "dev": true
+    },
     "is-glob": {
       "version": "2.0.1",
       "from": "is-glob@>=2.0.1 <3.0.0",
@@ -796,6 +1164,24 @@
       "version": "1.0.1",
       "from": "is-obj@>=1.0.1 <2.0.0",
       "resolved": "http://artifacts.netflix.com/api/npm/npm-netflix/is-obj/-/is-obj-1.0.1.tgz",
+      "dev": true
+    },
+    "is-path-cwd": {
+      "version": "1.0.0",
+      "from": "is-path-cwd@>=1.0.0 <2.0.0",
+      "resolved": "http://artifacts.netflix.com/api/npm/npm-netflix/is-path-cwd/-/is-path-cwd-1.0.0.tgz",
+      "dev": true
+    },
+    "is-path-in-cwd": {
+      "version": "1.0.0",
+      "from": "is-path-in-cwd@>=1.0.0 <2.0.0",
+      "resolved": "http://artifacts.netflix.com/api/npm/npm-netflix/is-path-in-cwd/-/is-path-in-cwd-1.0.0.tgz",
+      "dev": true
+    },
+    "is-path-inside": {
+      "version": "1.0.0",
+      "from": "is-path-inside@>=1.0.0 <2.0.0",
+      "resolved": "http://artifacts.netflix.com/api/npm/npm-netflix/is-path-inside/-/is-path-inside-1.0.0.tgz",
       "dev": true
     },
     "is-plain-object": {
@@ -824,6 +1210,12 @@
       "resolved": "https://registry.npmjs.org/is-primitive/-/is-primitive-2.0.0.tgz",
       "dev": true
     },
+    "is-promise": {
+      "version": "2.1.0",
+      "from": "is-promise@>=2.1.0 <3.0.0",
+      "resolved": "http://artifacts.netflix.com/api/npm/npm-netflix/is-promise/-/is-promise-2.1.0.tgz",
+      "dev": true
+    },
     "is-regexp": {
       "version": "1.0.0",
       "from": "is-regexp@>=1.0.0 <2.0.0",
@@ -834,6 +1226,12 @@
       "version": "0.2.1",
       "from": "is-relative@>=0.2.1 <0.3.0",
       "resolved": "http://artifacts.netflix.com/api/npm/npm-netflix/is-relative/-/is-relative-0.2.1.tgz",
+      "dev": true
+    },
+    "is-resolvable": {
+      "version": "1.0.0",
+      "from": "is-resolvable@>=1.0.0 <2.0.0",
+      "resolved": "http://artifacts.netflix.com/api/npm/npm-netflix/is-resolvable/-/is-resolvable-1.0.0.tgz",
       "dev": true
     },
     "is-typedarray": {
@@ -882,16 +1280,40 @@
       "from": "isstream@>=0.1.2 <0.2.0",
       "resolved": "https://registry.npmjs.org/isstream/-/isstream-0.1.2.tgz"
     },
+    "js-tokens": {
+      "version": "3.0.2",
+      "from": "js-tokens@>=3.0.0 <4.0.0",
+      "resolved": "http://registry.npmjs.org/js-tokens/-/js-tokens-3.0.2.tgz",
+      "dev": true
+    },
+    "js-yaml": {
+      "version": "3.9.0",
+      "from": "js-yaml@>=3.8.4 <4.0.0",
+      "resolved": "http://registry.npmjs.org/js-yaml/-/js-yaml-3.9.0.tgz",
+      "dev": true
+    },
     "jsbn": {
       "version": "0.1.1",
       "from": "jsbn@>=0.1.0 <0.2.0",
       "resolved": "https://registry.npmjs.org/jsbn/-/jsbn-0.1.1.tgz",
       "optional": true
     },
+    "jschardet": {
+      "version": "1.5.0",
+      "from": "jschardet@>=1.4.2 <2.0.0",
+      "resolved": "http://registry.npmjs.org/jschardet/-/jschardet-1.5.0.tgz",
+      "dev": true
+    },
     "json-schema": {
       "version": "0.2.3",
       "from": "json-schema@0.2.3",
       "resolved": "https://registry.npmjs.org/json-schema/-/json-schema-0.2.3.tgz"
+    },
+    "json-schema-traverse": {
+      "version": "0.3.1",
+      "from": "json-schema-traverse@>=0.3.0 <0.4.0",
+      "resolved": "http://registry.npmjs.org/json-schema-traverse/-/json-schema-traverse-0.3.1.tgz",
+      "dev": true
     },
     "json-stable-stringify": {
       "version": "1.0.1",
@@ -936,6 +1358,12 @@
       "version": "3.2.2",
       "from": "kind-of@>=3.0.2 <4.0.0",
       "resolved": "http://registry.npmjs.org/kind-of/-/kind-of-3.2.2.tgz",
+      "dev": true
+    },
+    "levn": {
+      "version": "0.3.0",
+      "from": "levn@>=0.3.0 <0.4.0",
+      "resolved": "http://artifacts.netflix.com/api/npm/npm-netflix/levn/-/levn-0.3.0.tgz",
       "dev": true
     },
     "liftoff": {
@@ -1140,6 +1568,18 @@
       "from": "mime-types@>=2.1.7 <2.2.0",
       "resolved": "https://registry.npmjs.org/mime-types/-/mime-types-2.1.15.tgz"
     },
+    "mimic-fn": {
+      "version": "1.1.0",
+      "from": "mimic-fn@>=1.0.0 <2.0.0",
+      "resolved": "http://artifacts.netflix.com/api/npm/npm-netflix/mimic-fn/-/mimic-fn-1.1.0.tgz",
+      "dev": true
+    },
+    "minimatch": {
+      "version": "3.0.4",
+      "from": "minimatch@>=3.0.2 <4.0.0",
+      "resolved": "http://artifacts.netflix.com/api/npm/npm-netflix/minimatch/-/minimatch-3.0.4.tgz",
+      "dev": true
+    },
     "minimist": {
       "version": "1.2.0",
       "from": "minimist@>=1.1.0 <2.0.0",
@@ -1160,16 +1600,34 @@
         }
       }
     },
+    "ms": {
+      "version": "2.0.0",
+      "from": "ms@2.0.0",
+      "resolved": "http://artifacts.netflix.com/api/npm/npm-netflix/ms/-/ms-2.0.0.tgz",
+      "dev": true
+    },
     "multipipe": {
       "version": "0.1.2",
       "from": "multipipe@>=0.1.2 <0.2.0",
       "resolved": "https://registry.npmjs.org/multipipe/-/multipipe-0.1.2.tgz",
       "dev": true
     },
+    "mute-stream": {
+      "version": "0.0.7",
+      "from": "mute-stream@0.0.7",
+      "resolved": "http://artifacts.netflix.com/api/npm/npm-netflix/mute-stream/-/mute-stream-0.0.7.tgz",
+      "dev": true
+    },
     "natives": {
       "version": "1.1.0",
       "from": "natives@>=1.1.0 <2.0.0",
       "resolved": "http://artifacts.netflix.com/api/npm/npm-netflix/natives/-/natives-1.1.0.tgz",
+      "dev": true
+    },
+    "natural-compare": {
+      "version": "1.4.0",
+      "from": "natural-compare@>=1.4.0 <2.0.0",
+      "resolved": "http://artifacts.netflix.com/api/npm/npm-netflix/natural-compare/-/natural-compare-1.4.0.tgz",
       "dev": true
     },
     "nomnom": {
@@ -1265,6 +1723,18 @@
       "resolved": "http://artifacts.netflix.com/api/npm/npm-netflix/once/-/once-1.3.3.tgz",
       "dev": true
     },
+    "onetime": {
+      "version": "2.0.1",
+      "from": "onetime@>=2.0.0 <3.0.0",
+      "resolved": "http://artifacts.netflix.com/api/npm/npm-netflix/onetime/-/onetime-2.0.1.tgz",
+      "dev": true
+    },
+    "optionator": {
+      "version": "0.8.2",
+      "from": "optionator@>=0.8.2 <0.9.0",
+      "resolved": "http://artifacts.netflix.com/api/npm/npm-netflix/optionator/-/optionator-0.8.2.tgz",
+      "dev": true
+    },
     "orchestrator": {
       "version": "0.3.8",
       "from": "orchestrator@>=0.3.0 <0.4.0",
@@ -1281,6 +1751,12 @@
       "version": "1.0.2",
       "from": "os-homedir@>=1.0.1 <2.0.0",
       "resolved": "http://artifacts.netflix.com/api/npm/npm-netflix/os-homedir/-/os-homedir-1.0.2.tgz",
+      "dev": true
+    },
+    "os-tmpdir": {
+      "version": "1.0.2",
+      "from": "os-tmpdir@>=1.0.1 <1.1.0",
+      "resolved": "http://artifacts.netflix.com/api/npm/npm-netflix/os-tmpdir/-/os-tmpdir-1.0.2.tgz",
       "dev": true
     },
     "parse-filepath": {
@@ -1311,6 +1787,18 @@
       "version": "2.1.0",
       "from": "path-exists@>=2.0.0 <3.0.0",
       "resolved": "http://artifacts.netflix.com/api/npm/npm-netflix/path-exists/-/path-exists-2.1.0.tgz",
+      "dev": true
+    },
+    "path-is-absolute": {
+      "version": "1.0.1",
+      "from": "path-is-absolute@>=1.0.0 <2.0.0",
+      "resolved": "http://artifacts.netflix.com/api/npm/npm-netflix/path-is-absolute/-/path-is-absolute-1.0.1.tgz",
+      "dev": true
+    },
+    "path-is-inside": {
+      "version": "1.0.2",
+      "from": "path-is-inside@>=1.0.2 <2.0.0",
+      "resolved": "http://artifacts.netflix.com/api/npm/npm-netflix/path-is-inside/-/path-is-inside-1.0.2.tgz",
       "dev": true
     },
     "path-parse": {
@@ -1366,6 +1854,18 @@
       "resolved": "http://artifacts.netflix.com/api/npm/npm-netflix/plur/-/plur-2.1.2.tgz",
       "dev": true
     },
+    "pluralize": {
+      "version": "4.0.0",
+      "from": "pluralize@>=4.0.0 <5.0.0",
+      "resolved": "http://registry.npmjs.org/pluralize/-/pluralize-4.0.0.tgz",
+      "dev": true
+    },
+    "prelude-ls": {
+      "version": "1.1.2",
+      "from": "prelude-ls@>=1.1.2 <1.2.0",
+      "resolved": "http://artifacts.netflix.com/api/npm/npm-netflix/prelude-ls/-/prelude-ls-1.1.2.tgz",
+      "dev": true
+    },
     "preserve": {
       "version": "0.2.0",
       "from": "preserve@>=0.2.0 <0.3.0",
@@ -1382,6 +1882,12 @@
       "version": "1.0.7",
       "from": "process-nextick-args@>=1.0.6 <1.1.0",
       "resolved": "http://artifacts.netflix.com/api/npm/npm-netflix/process-nextick-args/-/process-nextick-args-1.0.7.tgz",
+      "dev": true
+    },
+    "progress": {
+      "version": "2.0.0",
+      "from": "progress@>=2.0.0 <3.0.0",
+      "resolved": "http://registry.npmjs.org/progress/-/progress-2.0.0.tgz",
       "dev": true
     },
     "punycode": {
@@ -1493,6 +1999,12 @@
       "from": "request@>=2.68.0 <3.0.0",
       "resolved": "https://registry.npmjs.org/request/-/request-2.81.0.tgz"
     },
+    "require-uncached": {
+      "version": "1.0.3",
+      "from": "require-uncached@>=1.0.3 <2.0.0",
+      "resolved": "http://registry.npmjs.org/require-uncached/-/require-uncached-1.0.3.tgz",
+      "dev": true
+    },
     "resolve": {
       "version": "1.3.3",
       "from": "resolve@>=1.1.7 <2.0.0",
@@ -1503,6 +2015,50 @@
       "version": "0.1.1",
       "from": "resolve-dir@>=0.1.0 <0.2.0",
       "resolved": "http://artifacts.netflix.com/api/npm/npm-netflix/resolve-dir/-/resolve-dir-0.1.1.tgz",
+      "dev": true
+    },
+    "resolve-from": {
+      "version": "1.0.1",
+      "from": "resolve-from@>=1.0.0 <2.0.0",
+      "resolved": "http://artifacts.netflix.com/api/npm/npm-netflix/resolve-from/-/resolve-from-1.0.1.tgz",
+      "dev": true
+    },
+    "restore-cursor": {
+      "version": "2.0.0",
+      "from": "restore-cursor@>=2.0.0 <3.0.0",
+      "resolved": "http://artifacts.netflix.com/api/npm/npm-netflix/restore-cursor/-/restore-cursor-2.0.0.tgz",
+      "dev": true
+    },
+    "rimraf": {
+      "version": "2.6.1",
+      "from": "rimraf@>=2.2.8 <3.0.0",
+      "resolved": "http://artifacts.netflix.com/api/npm/npm-netflix/rimraf/-/rimraf-2.6.1.tgz",
+      "dev": true,
+      "dependencies": {
+        "glob": {
+          "version": "7.1.2",
+          "from": "glob@^7.0.5",
+          "resolved": "https://registry.npmjs.org/glob/-/glob-7.1.2.tgz",
+          "dev": true
+        }
+      }
+    },
+    "run-async": {
+      "version": "2.3.0",
+      "from": "run-async@>=2.2.0 <3.0.0",
+      "resolved": "https://registry.npmjs.org/run-async/-/run-async-2.3.0.tgz",
+      "dev": true
+    },
+    "rx-lite": {
+      "version": "4.0.8",
+      "from": "rx-lite@>=4.0.8 <5.0.0",
+      "resolved": "http://registry.npmjs.org/rx-lite/-/rx-lite-4.0.8.tgz",
+      "dev": true
+    },
+    "rx-lite-aggregates": {
+      "version": "4.0.8",
+      "from": "rx-lite-aggregates@>=4.0.8 <5.0.0",
+      "resolved": "http://registry.npmjs.org/rx-lite-aggregates/-/rx-lite-aggregates-4.0.8.tgz",
       "dev": true
     },
     "safe-buffer": {
@@ -1534,6 +2090,12 @@
       "resolved": "http://artifacts.netflix.com/api/npm/npm-netflix/signal-exit/-/signal-exit-3.0.2.tgz",
       "dev": true
     },
+    "slice-ansi": {
+      "version": "0.0.4",
+      "from": "slice-ansi@0.0.4",
+      "resolved": "http://artifacts.netflix.com/api/npm/npm-netflix/slice-ansi/-/slice-ansi-0.0.4.tgz",
+      "dev": true
+    },
     "sntp": {
       "version": "1.0.9",
       "from": "sntp@>=1.0.0 <2.0.0",
@@ -1563,6 +2125,12 @@
       "resolved": "http://artifacts.netflix.com/api/npm/npm-netflix/spdx-license-ids/-/spdx-license-ids-1.2.2.tgz",
       "dev": true
     },
+    "sprintf-js": {
+      "version": "1.0.3",
+      "from": "sprintf-js@>=1.0.2 <1.1.0",
+      "resolved": "http://artifacts.netflix.com/api/npm/npm-netflix/sprintf-js/-/sprintf-js-1.0.3.tgz",
+      "dev": true
+    },
     "sshpk": {
       "version": "1.13.1",
       "from": "sshpk@>=1.7.0 <2.0.0",
@@ -1586,6 +2154,26 @@
       "from": "string_decoder@>=1.0.3 <1.1.0",
       "resolved": "http://registry.npmjs.org/string_decoder/-/string_decoder-1.0.3.tgz",
       "dev": true
+    },
+    "string-width": {
+      "version": "2.1.0",
+      "from": "string-width@>=2.1.0 <3.0.0",
+      "resolved": "http://registry.npmjs.org/string-width/-/string-width-2.1.0.tgz",
+      "dev": true,
+      "dependencies": {
+        "ansi-regex": {
+          "version": "3.0.0",
+          "from": "ansi-regex@>=3.0.0 <4.0.0",
+          "resolved": "http://registry.npmjs.org/ansi-regex/-/ansi-regex-3.0.0.tgz",
+          "dev": true
+        },
+        "strip-ansi": {
+          "version": "4.0.0",
+          "from": "strip-ansi@^4.0.0",
+          "resolved": "https://registry.npmjs.org/strip-ansi/-/strip-ansi-4.0.0.tgz",
+          "dev": true
+        }
+      }
     },
     "stringify-object": {
       "version": "3.2.0",
@@ -1616,10 +2204,42 @@
       "resolved": "http://artifacts.netflix.com/api/npm/npm-netflix/strip-indent/-/strip-indent-1.0.1.tgz",
       "dev": true
     },
+    "strip-json-comments": {
+      "version": "2.0.1",
+      "from": "strip-json-comments@>=2.0.1 <2.1.0",
+      "resolved": "http://artifacts.netflix.com/api/npm/npm-netflix/strip-json-comments/-/strip-json-comments-2.0.1.tgz",
+      "dev": true
+    },
     "supports-color": {
       "version": "2.0.0",
       "from": "supports-color@>=2.0.0 <3.0.0",
       "resolved": "https://registry.npmjs.org/supports-color/-/supports-color-2.0.0.tgz",
+      "dev": true
+    },
+    "table": {
+      "version": "4.0.1",
+      "from": "table@>=4.0.1 <5.0.0",
+      "resolved": "http://registry.npmjs.org/table/-/table-4.0.1.tgz",
+      "dev": true,
+      "dependencies": {
+        "lodash": {
+          "version": "4.17.4",
+          "from": "lodash@^4.0.0",
+          "resolved": "https://registry.npmjs.org/lodash/-/lodash-4.17.4.tgz",
+          "dev": true
+        }
+      }
+    },
+    "text-table": {
+      "version": "0.2.0",
+      "from": "text-table@>=0.2.0 <0.3.0",
+      "resolved": "http://artifacts.netflix.com/api/npm/npm-netflix/text-table/-/text-table-0.2.0.tgz",
+      "dev": true
+    },
+    "through": {
+      "version": "2.3.8",
+      "from": "through@>=2.3.6 <3.0.0",
+      "resolved": "https://registry.npmjs.org/through/-/through-2.3.8.tgz",
       "dev": true
     },
     "through2": {
@@ -1640,6 +2260,12 @@
       "resolved": "http://registry.npmjs.org/time-stamp/-/time-stamp-1.1.0.tgz",
       "dev": true
     },
+    "tmp": {
+      "version": "0.0.31",
+      "from": "tmp@>=0.0.31 <0.0.32",
+      "resolved": "http://artifacts.netflix.com/api/npm/npm-netflix/tmp/-/tmp-0.0.31.tgz",
+      "dev": true
+    },
     "tough-cookie": {
       "version": "2.3.2",
       "from": "tough-cookie@>=2.3.0 <2.4.0",
@@ -1654,6 +2280,12 @@
       "version": "1.0.0",
       "from": "trim-newlines@>=1.0.0 <2.0.0",
       "resolved": "http://artifacts.netflix.com/api/npm/npm-netflix/trim-newlines/-/trim-newlines-1.0.0.tgz",
+      "dev": true
+    },
+    "tryit": {
+      "version": "1.0.3",
+      "from": "tryit@>=1.0.1 <2.0.0",
+      "resolved": "http://artifacts.netflix.com/api/npm/npm-netflix/tryit/-/tryit-1.0.3.tgz",
       "dev": true
     },
     "tunnel-agent": {
@@ -1671,6 +2303,18 @@
       "version": "2.2.9",
       "from": "twit@>=2.2.9 <3.0.0",
       "resolved": "https://registry.npmjs.org/twit/-/twit-2.2.9.tgz"
+    },
+    "type-check": {
+      "version": "0.3.2",
+      "from": "type-check@>=0.3.2 <0.4.0",
+      "resolved": "http://artifacts.netflix.com/api/npm/npm-netflix/type-check/-/type-check-0.3.2.tgz",
+      "dev": true
+    },
+    "typedarray": {
+      "version": "0.0.6",
+      "from": "typedarray@>=0.0.6 <0.0.7",
+      "resolved": "http://artifacts.netflix.com/api/npm/npm-netflix/typedarray/-/typedarray-0.0.6.tgz",
+      "dev": true
     },
     "unc-path-regex": {
       "version": "0.1.2",
@@ -1798,10 +2442,22 @@
       "resolved": "http://artifacts.netflix.com/api/npm/npm-netflix/which/-/which-1.2.14.tgz",
       "dev": true
     },
+    "wordwrap": {
+      "version": "1.0.0",
+      "from": "wordwrap@>=1.0.0 <1.1.0",
+      "resolved": "http://artifacts.netflix.com/api/npm/npm-netflix/wordwrap/-/wordwrap-1.0.0.tgz",
+      "dev": true
+    },
     "wrappy": {
       "version": "1.0.2",
       "from": "wrappy@>=1.0.0 <2.0.0",
       "resolved": "http://artifacts.netflix.com/api/npm/npm-netflix/wrappy/-/wrappy-1.0.2.tgz",
+      "dev": true
+    },
+    "write": {
+      "version": "0.2.1",
+      "from": "write@>=0.2.1 <0.3.0",
+      "resolved": "http://artifacts.netflix.com/api/npm/npm-netflix/write/-/write-0.2.1.tgz",
       "dev": true
     },
     "xtend": {

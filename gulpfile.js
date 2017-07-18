@@ -2,6 +2,7 @@ const gulp = require('gulp');
 const gutil = require('gulp-util');
 const debug = require('gulp-debug');
 const jsonlint = require('gulp-jsonlint');
+const eslint = require('gulp-eslint');
 
 
 gulp.task('jsonlint', function() {
@@ -30,8 +31,15 @@ gulp.task('jsonlint', function() {
 
 });
 
-gulp.task('watch', function() {
-  return gulp.watch('src/**/*.json', ['jsonlint']);
+gulp.task('lint', function() {
+  return gulp.src('src/**/*.js')
+    .pipe(debug({title: 'Linting'}))
+    .pipe(eslint({ useEslintrc: true }))
+    .pipe(eslint.format('codeframe'));
 });
 
-gulp.task('default', ['jsonlint', 'watch']);
+gulp.task('watch', function() {
+  return gulp.watch(['src/**/*.json','src/**/*.js'], ['jsonlint', 'lint']);
+});
+
+gulp.task('default', ['jsonlint', 'lint', 'watch']);
