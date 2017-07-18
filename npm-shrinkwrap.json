@@ -238,7 +238,7 @@
     },
     "request": {
       "version": "2.81.0",
-      "from": "request@2.81.0",
+      "from": "request@>=2.68.0 <3.0.0",
       "resolved": "https://registry.npmjs.org/request/-/request-2.81.0.tgz"
     },
     "safe-buffer": {
@@ -275,7 +275,7 @@
     },
     "tracery-grammar": {
       "version": "2.7.3",
-      "from": "tracery-grammar@2.7.3",
+      "from": "tracery-grammar@>=2.7.3 <3.0.0",
       "resolved": "https://registry.npmjs.org/tracery-grammar/-/tracery-grammar-2.7.3.tgz"
     },
     "tunnel-agent": {
@@ -291,7 +291,7 @@
     },
     "twit": {
       "version": "2.2.9",
-      "from": "twit@2.2.9",
+      "from": "twit@>=2.2.9 <3.0.0",
       "resolved": "https://registry.npmjs.org/twit/-/twit-2.2.9.tgz"
     },
     "uuid": {
