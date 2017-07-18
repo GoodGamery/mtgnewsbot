@@ -48,6 +48,7 @@
     },
     "rules": {
       "no-console": 0,
+      "no-mixed-spaces-and-tabs": 1,
       "no-unused-expressions": 1,
       "no-unused-vars": [
         1,
