@@ -27,7 +27,8 @@
         "Have You Considered? [_consider:#card# in #format#,#deck#]#_consider.capitalize#",
         "#pro# [_picked:First Picked,Last Picked,Wheeled,Drafted,Topdecked,Morphed]#_picked# #card.capitalizeAll#[_challenge: and You Won't Believe,. You'll Be Floored By,. Guess,. Find Out,. #pros.capitalizeAll# are still talking about#]#_challenge# [_what:What Happened Next,What #pro.capitalize# Said Next,What #pro.capitalize# Did Next,Why #pro.capitalize# Called a Judge]#_what#",
         "[_cardname:#realCard#]We're not wrong: the card you're thinking of is #_cardname# #imgCard#",
-        "PICTURES: #pro.capitalize#'s [_cosplayAdj:amazing,convincing,elaborate,unconventional]#_cosplayAdj# cosplay of [_who:#cardAlone#,#character#]#_who#"
+        "PICTURES: #pro.capitalize#'s [_cosplayAdj:amazing,convincing,elaborate,unconventional]#_cosplayAdj# cosplay of [_who:#cardAlone#,#character#]#_who#",
+        "New preview card from #teaserCardSet#! Is it a #descriptor# #realPowerfulCard#?"
     ],
     "announcement": [
         "Wizards Announces: Duel Decks: [_one:#nouns.capitalizeAll#,#planeswalkerFirstName#]#_one# vs. [_two:#nouns.capitalizeAll#,#planeswalkerFirstName#]#_two#",
@@ -40,7 +41,9 @@
         "The Importance of [_thing:#card#,#cardCategory.s#,#creatureTypes.s#,#gameConcept#]#_thing# in [_where:#format#,#recentCardSet#]#_where#",
         "#pros# Don't realize that #tech.s# #verbDefeat# #obstacle.capitalize#",
         "The Secret to #improvementGoal.capitalizeAll# is #deckChange.capitalize#",
-        "In today's Magic Story: #character#'s #adj# history with #character# finally revealed"
+        "In today's Magic Story: #character#'s #adj# history with #character# finally revealed",
+        "#pro# Video Series: How I would improve #thing# in Magic: the Gathering, Part #num2-9#",
+        "Preview of #teaserCardSet# #normalFormat#: will the new #deckVariation# deck be #deckDescription#?"
     ],
     "tournamentNews": [
         "Emergency Banning: #card.capitalize# Banned in #format#",
@@ -48,7 +51,8 @@
         "#tournamentRound#: #pro# vs. [_opp:#otherPersonality#,Evil #pro#,Cyborg #pro#,Baby #pro#,Bizarro #pro#,Dr. #pro# M.D.,a Cardboard Cutout of #pro#,#adj.a# #creatureTypes#]#_opp.capitalizeAll#",
         "[winner:#pro#,#deck#]#winner# #winWord# [where:at #tournament#,in #city#]#where#",
         "Pro Tour #teaserCardSet# will be in #city#",
-        "Team Series clinched by #team# at Pro Tour #recentCardSet# in #city#"
+        "Team Series clinched by #team# at Pro Tour #recentCardSet# in #city#",
+        "#pro# after winning #event# with #deck#: \"It's #deckDescription#.\""
     ],
     "tip": [
         "The Case for #suggestion.capitalizeAll# [_bannedThing:#card#,#gameConcept#]#_bannedThing.capitalizeAll#[_where: in #format#,]#_where#",
@@ -914,6 +918,12 @@
         "Two-Headed Giant",
         "Kitchen Table Magic"
     ],
+    "normalFormat": [
+        "Standard",
+        "Modern",
+        "Draft",
+        "Sealed"
+    ],
     "colors": [
         "#basicColors#",
         "Mono-Black",
@@ -987,6 +997,7 @@
         "Pebbles",
         "Superfriends",
         "Survival",
+        "Devotion",
         "#deckNameNumber#-Rack",
         "#deckNameNumber#-Post",
         "#colors# Deck Wins",
@@ -1030,7 +1041,10 @@
       "Dragon",
       "Eldrazi",
       "Seething",
-      "Oops! All #definingCardname.s#"
+      "Oops! All #definingCardname.s#",
+      "Canadian",
+      "Cat",
+      "Budget"
     ],
     "deckSuffix" : [
       "& Taxes",
@@ -1079,6 +1093,22 @@
       "Moon",
       "Vial",
       "Necro"
+    ],
+    "deckDescription": [
+        "the deck to beat",
+        "completely broken",
+        "totally dominant",
+        "the stone nuts",
+        "the only valid choice",
+        "completely unplayable",
+        "pure garbage",
+        "Tier 1.5",
+        "ban-worthy",
+        "WotC's biggest mistake yet",
+        "a trap",
+        "positioned perfectly in the meta",
+        "overhyped by singles retailers",
+        "illegal under tournament rules"
     ],
     "card": [
         "#cardAlone#",
