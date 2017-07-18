@@ -4,22 +4,22 @@ const tracery = require(`tracery-grammar`);
 
 class HeadlineMaker {
 
-	constructor(grammar) {
-		this.grammar = tracery.createGrammar(grammar);
-		this.grammar.addModifiers(tracery.baseEngModifiers);
-		this.origin = `#origin#`;
-	}
+  constructor(grammar) {
+    this.grammar = tracery.createGrammar(grammar);
+    this.grammar.addModifiers(tracery.baseEngModifiers);
+    this.origin = `#origin#`;
+  }
 
- 	/**
-	 * Generates a headline and returns a headline object in the following format:	 
-	 */
-	generateHeadline() {
-		return parseMessage(this.grammar.flatten(this.origin));	
-	}
+  /**
+  * Generates a headline and returns a headline object in the following format:	 
+  */
+  generateHeadline() {
+    return parseMessage(this.grammar.flatten(this.origin));	
+  }
 
- 	/**
-	 * Generates a headline and returns its text contents, with any tags stripped out
-	 */
+  /**
+	* Generates a headline and returns its text contents, with any tags stripped out
+	*/
 	generateTextHeadline() {
 		return this.generateHeadline().text;
 	}
