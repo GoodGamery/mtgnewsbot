@@ -9,11 +9,8 @@ set +a
 git fetch
 git pull
 
-#### DEBUGGING
-# print out version of node
-node -v
-# print out current user
-echo "$USER"
+# install dependencies
+npm install
 
 # tweet
 node --use_strict bot.js
