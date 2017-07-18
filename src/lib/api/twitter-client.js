@@ -19,7 +19,7 @@ class TwitterClient {
     return new Promise((resolve, reject) => {
       console.log('posting tweet...');
       try {
-        this.twit.post('statuses/update', { status: message }, (err, data, response) => {
+        this.twit.post('statuses/update', { status: message }, (err, data) => {
           if (err) {
             throw(err);
           }
@@ -37,19 +37,19 @@ class TwitterClient {
       try {
         let mediaIdStr = data.media_id_string;
 
-        let meta_params = { media_id: mediaIdStr, alt_text: { text: altText } }
+        let meta_params = { media_id: mediaIdStr, alt_text: { text: altText } };
 
         console.log('setting media metadata');
 
-        this.twit.post('media/metadata/create', meta_params, (err, data, response) => {
+        this.twit.post('media/metadata/create', meta_params, (err) => {
           if (err) {
             throw err;
           }
-          let params = { status: message, media_ids: [mediaIdStr] }
+          let params = { status: message, media_ids: [mediaIdStr] };
 
           console.log('posting tweet...');
 
-          this.twit.post('statuses/update', params, (err, data, response) => {
+          this.twit.post('statuses/update', params, () => {
             resolve();
           });
         });
@@ -66,7 +66,7 @@ class TwitterClient {
 
         console.log('uploading image file to twitter...');
 
-        this.twit.post('media/upload', { media_data: base64Data }, function (err, data, response) {
+        this.twit.post('media/upload', { media_data: base64Data }, function (err, data) {
           if (err) {
             throw err;
           }

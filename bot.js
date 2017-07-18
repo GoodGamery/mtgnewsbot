@@ -17,7 +17,7 @@ const fileLogger = (msg, isErr) => {
         if (err) throw err;
     });
 };
-const logError = (msg, error) => fileLogger(`ERROR: ${msg}`, true);
+const logError = msg => fileLogger(`ERROR: ${msg}`, true);
 
 function postCardImageTweet(status, cardName) {
 	const outputfile = cardName.replace(/\s+/g, '-').toLowerCase() + '-' + uuid() + '.jpg';
@@ -29,12 +29,12 @@ function postCardImageTweet(status, cardName) {
 		.then(twitterImage => twitter.postImageTweet(twitterImage, cardName, status))
 		.catch(e => logError('Failed to post tweet: ' + e))
 		.then(() => {
-		    return fs.unlink(outputPath, (err) => {
-		      if (!err) {
-		        console.log('Deleted ' + outputPath);
-		      } else {
-		        logError('Unable to delete local image file: ' + err);
-		      }
+      return fs.unlink(outputPath, (err) => {
+        if (!err) {
+          console.log('Deleted ' + outputPath);
+        } else {
+          logError('Unable to delete local image file: ' + err);
+        }
 			});
 		})
 		.catch(e => logError('Failed to download image: ' + e));
@@ -45,7 +45,7 @@ const headlines = new HeadlineMaker(config.defaultGrammar);
 let headline = headlines.generateHeadline();
 
 while (headline.text.length > config.tweetLength) {
-    logError(`TWEET LENGTH ${headline.text.length} GREATER THAN MAX ${config.tweetLength}:\n${headline.text}`);
+  logError(`TWEET LENGTH ${headline.text.length} GREATER THAN MAX ${config.tweetLength}:\n${headline.text}`);
 	headline = headlines.generateHeadline();
 }
 

@@ -20,7 +20,12 @@ let config = {
 
 // apply overrides from config overrides file
 let override;
-try { override = require(CONFIG_OVERRIDE_PATH); } catch(e) { console.log('override file not found: ' + e); }
+try { 
+  override = require(CONFIG_OVERRIDE_PATH); 
+  console.info('Applying config overrides.');
+} catch(e) { 
+  /* use default config */ 
+}
 config = merge(config, override);
 
 // load the default grammar after applying overrides
