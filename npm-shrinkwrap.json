@@ -2049,6 +2049,12 @@
       "resolved": "https://registry.npmjs.org/run-async/-/run-async-2.3.0.tgz",
       "dev": true
     },
+    "run-sequence": {
+      "version": "2.0.0",
+      "from": "run-sequence@latest",
+      "resolved": "http://registry.npmjs.org/run-sequence/-/run-sequence-2.0.0.tgz",
+      "dev": true
+    },
     "rx-lite": {
       "version": "4.0.8",
       "from": "rx-lite@>=4.0.8 <5.0.0",

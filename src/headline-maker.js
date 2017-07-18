@@ -14,7 +14,7 @@ class HeadlineMaker {
   * Generates a headline and returns a headline object in the following format:	 
   */
   generateHeadline() {
-    return parseMessage(this.grammar.flatten(this.origin));	
+    return parseMessage(this.grammara.flatten(this.origin));	
   }
 
   /**
