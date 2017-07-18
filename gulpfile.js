@@ -35,7 +35,8 @@ gulp.task('lint', function() {
   return gulp.src('src/**/*.js')
     .pipe(debug({title: 'Linting'}))
     .pipe(eslint({ useEslintrc: true }))
-    .pipe(eslint.format('codeframe'));
+    .pipe(eslint.format('codeframe')) 
+    .pipe(eslint.format());
 });
 
 gulp.task('watch', function() {
