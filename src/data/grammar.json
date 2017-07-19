@@ -12,7 +12,11 @@
         "#decktech#",
         "#announcement#",
         "#clickbait#",
-        "#flavorArcana#"
+        "#flavorArcana#",
+        "#inGraphics#"
+    ],
+    "inGraphics": [
+        "[_card1:#realCard#][_card2:#realCard#][_headline:#inGraphicsHeadline#]#inGraphicsText#{svg svgString=\"#inGraphicsImage#\"}"
     ],
     "flavorArcana": [
         "BEHIND THE FLAVOR: #flavorText#",
@@ -255,6 +259,10 @@
         "unconventional", "unorthodox", "vainglorious", "volumetric", "well-dressed", "wonderful", "world-weary",
         "worthless"
     ],
+    "adv": [
+         "adoringly", "awkwardly", "beautifully", "cheerfully", "effortlessly", "hungrily", "intently", "quickly", 
+         "recklessly", "reluctantly", "savagely", "thoughtfully", "triumphantly", "vivaciously"
+    ],
     "tipTitle": [
         "MTG TIPS",
         "MTG ADVICE",
@@ -427,7 +435,7 @@
         "raged", "killed"
     ],
     "verbGerund": [
-        "approaching", "controlling", "defeating", "holding", "capturing", "handling", "understaning", "wielding", "observing", "carrying", "shuffling", "killing",
+        "approaching", "controlling", "defeating", "holding", "capturing", "handling", "understanding", "wielding", "observing", "carrying", "shuffling", "killing",
         "perceiving", "realizing", "growing", "watering", "nourishing", "swallowing", "questioning", "cradling", "cherishing", "despising", "summoning",
         "transforming", "explaining", "forgeting", "remembering", "ignoreing", "adorning", "studying", "capturing", "releasing", "misunderstanding",
         "sacrificing", "destroying", "collecting", "dismissing", "praising", "scrutinizing", "celebrating", "minimizing", "exaggerating", "quantifying",
@@ -465,7 +473,7 @@
         "strength", "energy", "control", "technology", "rationality", "fear", "glory", "whimsy", "balance", "truth", "lies",
         "gloom", "misery", "indigestion", "shirtlessness", "prize eligibility", "strong fashion sense", "bootlicking", "intellect",
         "snobbery", "megalomania", "pathos", "foresight", "fortitude", "charisma", "constitution", "dexterity", "self-control",
-        "illiteracy", "responsibility", ""
+        "illiteracy", "responsibility"
     ],
     "emotion": [
         "anticipation", "discomfort",  "disgust", "envy", "confusion", "giddiness", "fear", "consternation", "squeamishness", "hatred",
@@ -1100,6 +1108,7 @@
         "the [_cardCount:ace,two,three,four,five,ten]#_cardCount# of [_cardSuit:spades,hearts,clubs,diamonds]#_cardSuit#",
         "a saltine with a Magic card back",
         "Jace's #realCard#",
+        "M #realCard# EX",
         "Magus of the #realCard#",
         "Mons's #realCard#",
         "Mox #realCard#",
@@ -1323,7 +1332,6 @@
       "Hot Soup",
       "Hubris",
       "Hundroog",
-      "Illusionary Pet",
       "It That Betrays",
       "Jungle Barrier",
       "Krark's Thumb",
@@ -1344,7 +1352,6 @@
     "realNotableCard": [
       "Amulet of Quoz",
       "Arc-Slogger",
-      "Ass Whuppin'",
       "Barbed Lightning",
       "Blacker Lotus",
       "Bonfire of the Damned",
@@ -1389,6 +1396,7 @@
       "Shahrazad",
       "Shoving Match",
       "Sneaky Homonculus",
+      "Steamflogger Boss",
       "Tectonic Edge",
       "The Cheese Stands Alone",
       "Totally Lost",
@@ -1849,6 +1857,53 @@
         "Wirewood"
     ],
     "storyLocation": ["#plane#", "#nonPlaneLocation"],
+    "inGraphicsText": [
+        "IN GRAPHICS: #_headline#",
+        "Infographic: #_headline#"
+    ],
+    "inGraphicsHeadline": [
+        "A Surprising Combination",
+        "Rogue Strategies",
+        "A New Use for #_card1#",
+        "#_card2#'s New Partner",
+        "Overcoming #obstacle.capitalize#"
+    ],
+    "inGraphicsStep": [
+        "Cast #_card1#",
+        "Cast #_card2#",
+        "Return #_card1# to your hand with #_card2#",
+        "During your opponent's upkeep, use #_card1#",
+        "At end of turn, use #_card2# on #_card1#",
+        "Attach #_card2# to #_card1#",
+        "Protect your #cardCategory.s# with #_card1#",
+        "Cast #_card2# with #_card1# on the stack",
+        "Shuffle #_card1# into your library",
+        "Slam #_card2# onto #_card1# with #emotion#",
+        "Attach both cards to a #gameAccesory#",
+        "Place #_card2# into #_card1#'s sleeve",
+        "Write #realPowerfulCard#'s name on #_card2# with a sharpie",
+        "Transform #_card1# to flip #_card2# to unmorph #_card1#",
+        "Throw #_card1# across the table while shouting about #gameConcept#",
+        "Ask a judge how #_card1# and #_card2# interact",
+        "Look extremely puzzled for #num2-9# minutes",
+        "Gesture to the collection of PTQ Top 8 pins on your playmat",
+        "Reveal the Cheatyface hidden underneath #_card1#",
+        "Draw #_card2# and gaze #adv# at it",
+        "Tear #_card1# into pieces and eat it",
+        "Move to the beginning of combat step",
+        "Ask your opponent, “How many cards in hand?”",
+        "Tap too much mana",
+        "“Accidentally” reveal #_card2# while shuffling",
+        "Tutor for #_card2#",
+        "Cast Pithing Needle naming #_card1#",
+        "Discard #_card2# to Pack Rat",
+        "Make three copies of #_card1#",
+        "Cast #_card1#, immediately say “Oops”, pick it back up, and cast #_card2#",
+        "Pitch #_card2# to #verbGerund.capitalizeAll# Shoal"
+    ],
+    "inGraphicsImage": [
+        "<svg xmlns=`http://www.w3.org/2000/svg` xmlns:xlink=`http://www.w3.org/1999/xlink` height=`559` width=`700`><defs><mask id=`myMask`><rect width=`700` height=`387` fill=`white`/></mask></defs><image width=`100%` height=`100%` xlink:href=`https://compnode.net/images/after-56-shrink-[_a:e,f,g,h]#_a#.png` /><image width=`223` height=`310` xlink:href=`https://forums.goodgamery.com/includes/mtg/mtg_helper_cardfinder_v3.php?img=true&find=#_card1#` x=`127` y=`86` mask=`url(\\#myMask)`/><image width=`223` height=`310` xlink:href=`https://forums.goodgamery.com/includes/mtg/mtg_helper_cardfinder_v3.php?img=true&find=#_card2#` x=`360` y=`86` mask=`url(\\#myMask)`/><foreignObject y=`30` width=`700` height=`100`><p xmlns=`http://www.w3.org/1999/xhtml` style=`color: white; font: 36px Georgia; font-weight: 900; text-shadow: 2px 2px 2px black; text-align:center`>#_headline#</p></foreignObject><foreignObject x=`58` y=`456` width=`170` height=`400`><p xmlns=`http://www.w3.org/1999/xhtml` style=`font: 16px Arial; text-align:left`>#inGraphicsStep#</p></foreignObject><foreignObject x=`271` y=`456` width=`170` height=`400`><p xmlns=`http://www.w3.org/1999/xhtml` style=`font: 16px Arial; text-align:left`>#inGraphicsStep#</p></foreignObject><foreignObject x=`487` y=`456` width=`170` height=`400`><p xmlns=`http://www.w3.org/1999/xhtml` style=`font: 16px Arial; text-align:left`>#inGraphicsStep#</p></foreignObject></svg>"
+    ],
     "cardCopyCount": [
         "1",
         "2",

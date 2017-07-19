@@ -62,9 +62,22 @@ class TwitterClient {
   uploadTwitterImage(filepath) {
     return new Promise((resolve, reject) => {
       try {
-        let base64Data = fs.readFileSync(filepath, { encoding: 'base64' });
-
         console.log('uploading image file to twitter...');
+
+        let base64Data = fs.readFileSync(filepath, { encoding: 'base64' });
+        this.uploadTwitterImageData(base64Data).then(data => {
+          resolve(data);
+        });
+      } catch(e) {
+        reject(e);
+      }
+     });
+  }
+
+  uploadTwitterImageData(base64Data) {
+    return new Promise((resolve, reject) => {
+      try {
+        console.log('uploading image data to twitter...');
 
         this.twit.post('media/upload', { media_data: base64Data }, function (err, data) {
           if (err) {
