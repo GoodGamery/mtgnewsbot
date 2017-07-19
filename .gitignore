@@ -38,5 +38,8 @@ node_modules/
 # logging
 *.log
 
+# Visual Studio Code configuration
+.vscode
+
 # local config overrides
 config-override.js
