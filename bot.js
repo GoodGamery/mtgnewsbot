@@ -2,6 +2,7 @@
 
 const fs =  require(`fs`);
 const uuid = require(`uuid`);
+const svg2png = require(`svg2png`);
 
 const HeadlineMaker = require('./src/headline-maker');
 const TwitterClient = require('./src/lib/api/twitter-client');
@@ -40,6 +41,15 @@ function postCardImageTweet(status, cardName) {
 		.catch(e => logError('Failed to download image: ' + e));
 }
 
+function postSvgTweet(status, svgString, altText = "Rendered image") {
+	svg2png(new Buffer(svgString))
+		.catch(e => logError('Failed to create png: ' + e))
+		.then(data => twitter.uploadTwitterImageData(data.toString('base64')))
+		.catch(e => logError('Failed to upload image: ' + e))
+		.then(twitterImage => twitter.postImageTweet(twitterImage, altText, status))
+		.catch(e => logError('Failed to post tweet: ' + e));
+}
+
 // Create tweet from grammar
 const headlines = new HeadlineMaker(config.defaultGrammar);
 let headline = headlines.generateHeadline();
@@ -56,6 +66,8 @@ const twitter = new TwitterClient();
 
 if (headline.tags && headline.tags.imgCard && headline.tags.imgCard.cardName) {
 	postCardImageTweet(headline.text, headline.tags.imgCard.cardName);
+} else if (headline.tags && headline.tags.svg && headline.tags.svg.svgString) {
+	postSvgTweet(headline.text, headline.tags.svg.svgString, headline.tags.svg.altText);
 } else {
 	twitter.postTweet(headline.text);
 }
