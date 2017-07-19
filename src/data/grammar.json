@@ -465,7 +465,7 @@
         "strength", "energy", "control", "technology", "rationality", "fear", "glory", "whimsy", "balance", "truth", "lies",
         "gloom", "misery", "indigestion", "shirtlessness", "prize eligibility", "strong fashion sense", "bootlicking", "intellect",
         "snobbery", "megalomania", "pathos", "foresight", "fortitude", "charisma", "constitution", "dexterity", "self-control",
-        "illiteracy", "responsibility", ""
+        "illiteracy", "responsibility"
     ],
     "emotion": [
         "anticipation", "discomfort",  "disgust", "envy", "confusion", "giddiness", "fear", "consternation", "squeamishness", "hatred",
@@ -1389,6 +1389,7 @@
       "Shahrazad",
       "Shoving Match",
       "Sneaky Homonculus",
+      "Steamflogger Boss",
       "Tectonic Edge",
       "The Cheese Stands Alone",
       "Totally Lost",
