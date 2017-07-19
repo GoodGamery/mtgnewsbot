@@ -12,7 +12,7 @@ deploy:
     provider: npm
     email: harshinvective@gmail.com
     on:
-        branch: master
+        branch: release
     api_key:
         secure: KRGG783KwHJJfaIRTAeBZ1TxvF8eGnKIpToCAcQcOjcrPuql/+KWWVlYoH2N+esj6E5G5akH6wyA3wzYHXVEoEmIeLa/VqFnoGR8O2gGEDkgqnTGsr5EB8R1aVDe7y164PTlCYN5rs85X4xWWh5mAMoaR8GxRsTbLxvP/z6//mhN2sv2tbDyJp0/cGUqdM3P0fE9H71jSI+iUWPyjaXXkd8RSfMlV4J9ZZiU52BZgF3PWdtQIg99qp8KgIsFUZ7f1d9qoGAsCZxIBLH+0/A5TvWqFm3iFi/LhYtRzDgxhbu8He2cK7RELQ+1AuhtoSfq7jaWz8c1HHO7pd6sNc42CkqnhcpnolVd+HQMQmz1DTn3iSmY2+oyI/MSfrQANpf2UxecdeorJfI9pEDr7hUvZUqkpCgK0RJSx43R5b70SRFuDohDu2U1K9BVxv5E88qf/ZoYuCbRm/7nrVWUHPQbx7+SrYWKtNXAJb6Sn0GOIhXn96IKGxstX1DlqfVPDK6kg/ns9wg+ooU85zvhKLwmkF7gAg5XKG0VGwWLYF/QTl55nKemX1JWGQFGEruGbx0xej7/d7JzIzLvTryZ8lgKKlQ4mHPxdqqxi4kmYGH+bBIgmypDwNpayYgHVJLRETAd7eeQW1U5sl9V5T21YhdaN1TGnDqmV78F30xhnkK7JXQ=
     tag: next
