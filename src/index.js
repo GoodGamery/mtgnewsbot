@@ -15,7 +15,7 @@ headlines.forEach(headline => {
 		const outputfile = uuid() + '.png';
 		const outputPath = config.paths.tempDirectory + '/' + outputfile;
 
-		svg2png(new Buffer(headline.tags.svg.svgString))
+		svg2png(new Buffer(headline.tags.svg.svgString.replace(/`/g, '"')))
 			.catch(e => console.log('\n *** Failed to create png: ' + e))
 			.then(data => {
 				fs.writeFileSync(outputPath, data);
