@@ -12,7 +12,11 @@
         "#decktech#",
         "#announcement#",
         "#clickbait#",
-        "#flavorArcana#"
+        "#flavorArcana#",
+        "#inGraphics#"
+    ],
+    "inGraphics": [
+        "[_card1:#realCard#][_card2:#realCard#][_headline:#inGraphicsHeadline#]#inGraphicsText#{svg svgString=\"#inGraphicsImage#\"}"
     ],
     "flavorArcana": [
         "BEHIND THE FLAVOR: #flavorText#",
@@ -1323,7 +1327,6 @@
       "Hot Soup",
       "Hubris",
       "Hundroog",
-      "Illusionary Pet",
       "It That Betrays",
       "Jungle Barrier",
       "Krark's Thumb",
@@ -1344,7 +1347,6 @@
     "realNotableCard": [
       "Amulet of Quoz",
       "Arc-Slogger",
-      "Ass Whuppin'",
       "Barbed Lightning",
       "Blacker Lotus",
       "Bonfire of the Damned",
@@ -1849,6 +1851,38 @@
         "Wirewood"
     ],
     "storyLocation": ["#plane#", "#nonPlaneLocation"],
+    "inGraphicsText": [
+        "IN GRAPHICS: #_headline#",
+        "Infographic: #_headline#"
+    ],
+    "inGraphicsHeadline": [
+        "A Surprising Combination",
+        "Rogue Strategies",
+        "A New Use for #_card1#",
+        "#_card2#'s New Partner",
+        "Overcoming #obstacle.capitalize#"
+    ],
+    "inGraphicsStep": [
+        "Cast #_card1#",
+        "Return #_card1# with #_card2#",
+        "During your opponent's upkeep, use #_card1#",
+        "At end of turn, use #_card2# on #_card1#",
+        "Attach #_card2# to #_card1#",
+        "Protect your #cardCategory.s# with #_card1#",
+        "Cast #_card2# with #_card1# on the stack",
+        "Shuffle #_card1# into your library",
+        "Slam #_card2# onto #_card1# with #emotion#",
+        "Attach both cards to a #gameAccesory#",
+        "Place #_card2# into #_card1#'s sleeve",
+        "Write #realPowerfulCard#'s name on #_card2# with a sharpie",
+        "Tap #_card2# to transform #_card1# to flip #_card2# to unmorph #_card1#",
+        "Throw #_card1# across the table while shouting about #gameConcept#",
+        "Ask a judge how #_card1# and #_card2# interact",
+        "Look extremely puzzled for #num2-9# minutes"
+    ],
+    "inGraphicsImage": [
+        "<svg xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' height='559' width='700'><defs><mask id='myMask'><rect width='700' height='387' fill='white'/></mask></defs><image width='100%' height='100%' xlink:href='https://compnode.net/images/after-56-shrink-[_a:e,f,g,h]#_a#.png' /><image width='223' height='310' xlink:href='https://forums.goodgamery.com/includes/mtg/mtg_helper_cardfinder_v3.php?img=true&find=#_card1#' x='127' y='86' mask='url(\\#myMask)'/><image width='223' height='310' xlink:href='https://forums.goodgamery.com/includes/mtg/mtg_helper_cardfinder_v3.php?img=true&find=#_card2#' x='360' y='86' mask='url(\\#myMask)'/><foreignObject y='30' width='700' height='100'><p xmlns='http://www.w3.org/1999/xhtml' style='color: white; font: 36px Georgia; font-weight: 900; text-shadow: 2px 2px 2px black; text-align:center'>#_headline#</p></foreignObject><foreignObject x='58' y='456' width='170' height='400'><p xmlns='http://www.w3.org/1999/xhtml' style='font: 16px Arial; text-align:left'>#inGraphicsStep#</p></foreignObject><foreignObject x='271' y='456' width='170' height='400'><p xmlns='http://www.w3.org/1999/xhtml' style='font: 16px Arial; text-align:left'>#inGraphicsStep#</p></foreignObject><foreignObject x='487' y='456' width='170' height='400'><p xmlns='http://www.w3.org/1999/xhtml' style='font: 16px Arial; text-align:left'>#inGraphicsStep#</p></foreignObject></svg>"
+    ],
     "cardCopyCount": [
         "1",
         "2",
