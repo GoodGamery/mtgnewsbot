@@ -1,0 +1,76 @@
+{
+  "cardSet": [
+      "#recentCardSet#",
+      "Arabian Nights",
+      "Archenemy",
+      "Avacyn Restored",
+      "Chronicles",
+      "Eldritch Moon",
+      "Fallen Empires",
+      "Fifth Edition",
+      "Homelands",
+      "Ice Age",
+      "Innistrad",
+      "Invasion",
+      "Legends",
+      "Mercadian Masques",
+      "Planechase",
+      "Portal Three Kingdoms",
+      "Ravnica",
+      "Revised",
+      "Shards of Alara",
+      "Shadowmoor",
+      "Time Spiral",
+      "Unglued",
+      "Unhinged",
+      "Urza's Legacy",
+      "Weatherlight",
+      "Zendikar"
+  ],
+  "recentCardSet": [
+      "Amonkhet",
+      "Hour of Devastation",
+      "Modern Masters",
+      "Eternal Masters"
+  ],
+  "teaserCardSet": [
+      "Commander 2017",
+      "Ixalan",
+      "Masters 25",
+      "Rivals of Ixalan",
+      "Explorers of Ixalan",
+      "Dominaria",
+      "Unstable",
+      "#codename#",
+      "#novelCardSetName.capitalizeAll#"
+  ],
+  "codename": [
+      "Spaghetti",
+      "Meatballs"
+  ],
+  "novelCardSetName": [
+      "#cardSetPrefix# #plane#",
+      "#plane# #cardSetSuffix#"
+  ],
+  "cardSetPrefix": [
+      "#creatureTypes.s# of",
+      "#characterClass.s# of",
+      "#things2# of",
+      "escape from",
+      "return to",
+      "shadows over",
+      "fires of",
+      "echoes of",
+      "streets of",
+      "legends of",
+      "ruins of",
+      "battle for",
+      "jungles of",
+      "assault on",
+      "queens of",
+      "mists of",
+      "wonders of",
+      "seas of"
+  ],
+  "cardSetSuffix": ["reborn", "revisited", "unleashed", "dawn", "ascendant"]
+}

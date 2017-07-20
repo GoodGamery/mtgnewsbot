@@ -1,0 +1,72 @@
+{
+  "inGraphicsText": [
+      "IN GRAPHICS: #_headline#",
+      "Infographic: #_headline#"
+  ],
+  "inGraphicsHeadline": [
+      "A Surprising Combination",
+      "Rogue Strategies",
+      "A New Use for #_card1#",
+      "#_card2#'s New Partner",
+      "Overcoming #obstacle.capitalize#",
+      "How to #_card1# — In Graphics",
+      "#cardCategory.capitalizeAll.s# Everywhere",
+      "Infinite #creatureTypes.capitalizeAll.s#",
+      "Break the Game Open with #_card1#",
+      "The Hidden Power of #_card1#"
+  ],
+  "inGraphicsStep": [
+      "Cast #_card1#",
+      "Cast #_card2#",
+      "Return #_card1# to your hand with #_card2#",
+      "During your opponent's upkeep, use #_card1#",
+      "At end of turn, use #_card2# on #_card1#",
+      "Attach #_card2# to #_card1#",
+      "Protect your #cardCategory.s# with #_card1#",
+      "Cast #_card2# with #_card1# on the stack",
+      "Shuffle #_card1# into your library",
+      "Slam #_card2# onto #_card1# with #emotion#",
+      "Attach both cards to #gameAccesory.a#",
+      "Place #_card2# into #_card1#'s sleeve",
+      "Write &quot;#realPowerfulCard#&quot; on #_card2# with a sharpie",
+      "Transform #_card1# to flip #_card2# to unmorph #_card1#",
+      "Throw #_card1# across the table while shouting about #gameConcept#",
+      "Ask a judge how #_card1# and #_card2# interact",
+      "Look extremely puzzled for #num2-9# minutes",
+      "Gesture to the collection of PTQ Top 8 pins on your playmat",
+      "Reveal the Cheatyface hidden underneath #_card1#",
+      "Draw #_card2# and gaze #adv# at it",
+      "Tear #_card1# into pieces and eat it",
+      "Move to the beginning of combat step",
+      "Ask your opponent, “How many cards in hand?”",
+      "Tap too much mana",
+      "“Accidentally” reveal #_card2# while shuffling",
+      "Tutor for #_card2#",
+      "Cast Pithing Needle naming #_card1#",
+      "Discard #_card2# to Pack Rat",
+      "Make #count# copies of #_card1#",
+      "Cast #_card1#, immediately say “Oops”, pick it back up, and cast #_card2#",
+      "Pitch #_card2# to #verbGerund.capitalizeAll# Shoal",
+      "Hold #_card2# to your face and pretend to study the rules text",
+      "Drop #_card1# into your lap",
+      "Tap emphatically on #_card2# while staring your opponent straight in the eyes",
+      "Drop your cards on the table and give your opponent a puzzled smile",
+      "Imprint #_card2# on [_card3:Isochron Scepter,Spellbinder,Soul Foundry,Panoptic Mirror,Mimic Vat]#_card3#",
+      "Suspend #_card1# with Jhoira of the Ghitu",
+      "Tap exactly [_lands:one land,#count# lands]#_lands#",
+      "Retrieve #_card2# from your sideboard with #wishCard#",
+      "Flip the table",
+      "Play Three-Card Monte with #_card1#, #_card2#, and a morphed #realCard#",
+      "Toss #_card2# into the air and shrug"
+  ],
+  "inGraphicsCardMask": ["http://i.imgur.com/AKqp4qU.png"],
+  "inGraphicsBacksplash": [
+      "http://i.imgur.com/abEHYGx.png",
+      "http://i.imgur.com/HKYlPNQ.png",
+      "http://i.imgur.com/y82DUBQ.png",
+      "http://i.imgur.com/NgTlbrm.png"
+  ],
+  "inGraphicsImage": [
+      "<svg xmlns=`http://www.w3.org/2000/svg` xmlns:xlink=`http://www.w3.org/1999/xlink` height=`580` width=`700`><defs><mask id=`cardMask` maskUnits=`userSpaceOnUse` mask-type=`alpha`><image x=`0` y=`0` width=`100%` height=`100%` xlink:href=`#inGraphicsCardMask#` /></mask></defs><image width=`100%` height=`100%` xlink:href=`#inGraphicsBacksplash#` /><image width=`223` height=`310` xlink:href=`https://forums.goodgamery.com/includes/mtg/mtg_helper_cardfinder_v3.php?img=true&amp;find=#_card1#` x=`127` y=`86` mask=`url(\\#cardMask)` /><image width=`223` height=`310` xlink:href=`https://forums.goodgamery.com/includes/mtg/mtg_helper_cardfinder_v3.php?img=true&amp;find=#_card2#` x=`360` y=`86` mask=`url(\\#cardMask)` /><foreignObject y=`30` width=`700` height=`100`><p xmlns=`http://www.w3.org/1999/xhtml` style=`color: white; font: 36px Georgia; font-weight: 900; text-shadow: 2px 2px 2px black; text-align:center`>#_headline#</p></foreignObject><foreignObject x=`58` y=`456` width=`170` height=`400`><p xmlns=`http://www.w3.org/1999/xhtml` style=`font: 16px Arial; text-align:left`>#inGraphicsStep#</p></foreignObject><foreignObject x=`271` y=`456` width=`170` height=`400`><p xmlns=`http://www.w3.org/1999/xhtml` style=`font: 16px Arial; text-align:left`>#inGraphicsStep#</p></foreignObject><foreignObject x=`487` y=`456` width=`170` height=`400`><p xmlns=`http://www.w3.org/1999/xhtml` style=`font: 16px Arial; text-align:left`>#inGraphicsStep#</p></foreignObject></svg>"
+  ]
+}
