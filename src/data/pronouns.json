@@ -1,0 +1,11 @@
+{
+  "malePronouns": [
+      "[they:he][theirs:his][their:his][them:him][are:is]"
+  ],
+  "femalePronouns": [
+      "[they:she][theirs:hers][their:her][them:her][are:is]"
+  ],
+  "pluralPronouns": [
+      "[they:they][theirs:theirs][their:their][them:them][are:are]"
+  ]
+}

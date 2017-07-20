@@ -1,0 +1,142 @@
+{
+  "concreteNounOrPluralNoun": ["#concreteNoun#","#pluralNoun#"],
+  "pluralNounOrMassMoun": ["#pluralNoun#","#massNoun#"],
+  "noun": [
+      "#singularNoun#",
+      "[_other:#pluralNoun#,#massNoun#]#_other#"
+  ],
+  "singularNoun": [
+      "#cardCategory#",
+      "#creatureTypes#",
+      "#itemNoun#",
+      "#placeNoun#",
+      "#abstractNoun#",
+      "#massNoun#"
+  ],
+  "pluralNoun": [
+      "#cardCategory.s#",
+      "#creatureTypes.s#",
+      "#itemNoun.s#",
+      "#irregularPluralNoun#"
+  ],
+  "aNoun": [
+      "#cardCategory.a#",
+      "#creatureTypes.a#",
+      "#itemNoun.a#"
+  ],
+  "concreteNoun": [
+      "#itemNoun#",
+      "#placeNoun#"
+  ],
+  "abstractNoun": [
+      "knowledge", "will", "skill", "power", "longevity", "strength", "nobility", "honor", "growth", "information", "nerve",
+      "strength", "energy", "control", "technology", "rationality", "fear", "glory", "whimsy", "balance", "truth", "lies",
+      "gloom", "misery", "indigestion", "shirtlessness", "prize eligibility", "strong fashion sense", "bootlicking", "intellect",
+      "snobbery", "megalomania", "pathos", "foresight", "fortitude", "charisma", "constitution", "dexterity", "self-control",
+      "illiteracy", "responsibility"
+  ],
+  "emotion": [
+      "anticipation", "discomfort",  "disgust", "envy", "confusion", "giddiness", "fear", "consternation", "squeamishness", "hatred",
+      "panic", "glee", "rage", "insecurity", "self-consciousness", "abject terror", "cautious optimism", "boredom", "cowardice",
+      "lust", "near-fanatical devotion", "arrogance", "pluckiness", "indifference", "unwillingness", "begrudging admiration"
+  ],
+  "itemNoun": [
+      "weapon", "card", "wand", "spellbook", "staff", "orb", "tree", "plant", "crown", "jewel", "amulet", "egg", "banner", "boot",
+      "aegis", "hedron", "altar", "portal", "door", "cluestone", "flask", "bident", "scepter", "idol", "mask", "sword", "longbow",
+      "grimoire", "chalice", "blade", "gift", "signet", "monolith", "gemstone", "clue", "scroll", "lantern", "collar", "talisman",
+      "doodad", "bone", "vuvuzela", "handlebar moustache", "horseshoe", "sweater vest", "prawn"
+  ],
+  "placeNoun": [
+      "temple", "palace", "castle", "garden", "market", "dungeon", "sanctuary", "mansion", "kingdom", "colony", "vacation rental", "graveyard",
+      "oasis", "metropolis", "village", "hamlet", "carnival", "closet", "guildhouse", "amphitheater", "lighthouse", "hovel", "guildgate",
+      "cathedral", "church", "catacomb", "coliseum", "wharf", "tower", "mineshaft", "necropolis", "citadel", "encampment", "valley", "planet",
+      "hedge maze", "ball pit", "orchard", "watchtower", "sanitarium", "ballroom", "schoolyard", "university", "harbor", "library", "plane",
+      "factory", "greenhouse", "basement", "monastery", "academy", "farmstead", "petting zoo", "ghost town", "secret lair", "laboratory",
+      "portal", "hair salon", "shipwreck", "pasture", "circus tent", "fortress", "junkyard", "pillow fort", "mausoleum", "sepulcher",
+      "kitchenette", "churchyard", "mortuary", "abattoir", "art studio", "pet store", "armory", "gazebo", "playground", "animal shelter"
+  ],
+  "irregularPluralNoun": [
+      "teeth", "feet", "pants", "geese", "fish", "children", "fungi", "stimuli", "potatoes", "knives", "ashes", "riches", "hypotheses", "neuroses", "crises", "appendices", "indices", "sheep", "wolves", "thieves"
+  ],
+  "massNoun": [
+    "land", "ichor", "water", "sand", "mana", "wood", "fire", "ice", "lightning", "phyrexian oil", "snow", "lunch", "treasure", "guacamole",
+    "butterscotch", "gas", "mud", "muck", "dirt", "mildew", "gloom", "mist", "steam", "vapor", "magma", "lava", "bedrock", "topiary", "viscera", "murk"
+  ],
+  "objectNounPronoun": ["[_noun:#aNoun#,#abstractNoun#,#abstractNoun#,#massNoun#,#adj.a# #itemNoun#][_pronoun:it]","[_noun:#pluralNoun#][_pronoun:them]"],
+  "twoObjects": [
+      "[_thing1:#pluralNoun#][_thing2:#pluralNoun#]","[_thing1:#pluralNoun#][_thing2:#massNoun#]","[_thing1:#pluralNoun#][_thing2:#abstractNoun#]",
+      "[_thing1:#massNoun#][_thing2:#massNoun#]","[_thing1:#massNoun#][_thing2:#abstractNoun#]","[_thing1:#abstractNoun#][_thing2:#abstractNoun#]"
+  ],
+  "nouns": [
+      "#cardCategory.s#",
+      "#things2#",
+      "#creatureTypesPlural#"
+  ],
+  "things2": [
+      "speed",
+      "cunning",
+      "might",
+      "trickery",
+      "riddles",
+      "growth",
+      "death",
+      "law",
+      "order",
+      "chaos",
+      "capitalism",
+      "vaults",
+      "caves",
+      "weather",
+      "anger",
+      "blessings",
+      "volcanoes"
+  ],
+  "gameConcept": [
+      "bad draws",
+      "mana screw",
+      "poor play",
+      "slow play",
+      "connection problems",
+      "the shuffler",
+      "bugs",
+      "bad cards",
+      "counter's",
+      "land destruction",
+      "discard",
+      "two-card combos",
+      "three-card combos",
+      "nonbos",
+      "#card#",
+      "bad cards, like #card#",
+      "swiss pairings",
+      "collusion",
+      "scouting",
+      "manabases",
+      "mulliganing",
+      "scrying",
+      "playing first",
+      "drawing first",
+      "shuffling",
+      "topdecks",
+      "combat tricks",
+      "tapping out",
+      "chump blocking",
+      "milling",
+      "jedi mind tricks",
+      "tight play",
+      "getting lucky",
+      "the storm scale",
+      "#gameAccesory.s#"
+  ],
+  "gameAccesory" :[
+      "UltraPro sleeve",
+      "perfect-fit sleeve",
+      "playmat",
+      "spindown counter",
+      "deckbox",
+      "treasure chest",
+      "event ticket",
+      "play point",
+      "untradeable war mark"
+  ]
+}

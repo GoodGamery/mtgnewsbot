@@ -1,0 +1,92 @@
+{
+  "people": ["#pros#","#pro#"],
+  "pro": [
+      "Kai Budde",
+      "The DCI",
+      "Hasbro",
+      "WOTC",
+      "Jarvis Yu",
+      "Mark Rosewater",
+      "Jon Finkel",
+      "LSV",
+      "Kibler",
+      "Nassif",
+      "Raphaël Lévy",
+      "PVDDR",
+      "Watanabe",
+      "Randy Buehler",
+      "Ruel",
+      "Saitou",
+      "Reid Duke",
+      "William Jensen",
+      "Frank Karsten",
+      "Wrapter",
+      "Patrick Chapin",
+      "Jůza",
+      "Richard Garfield",
+      "GLEEMAX",
+      "Mike Flores",
+      "Rich Hagon",
+      "Conley Woods",
+      "Urza",
+      "RoboRosewater"
+  ],
+  "otherPersonality": [
+      "Bram Snepvangers",
+      "Evan Erwin",
+      "Jamie Wakefield",
+      "Sheldon Mennery",
+      "John Friggin' Rizzo",
+      "#jokePersonality#"
+  ],
+  "jokePersonality": [
+      "Balki Bartokomous",
+      "Young Victor Frankenstein",
+      "Ants-In-My-Eyes Johnson",
+      "a monkey in a business suit",
+      "some guy in a horse mask",
+      "a gaggle of angry geese",
+      "two dwarves in a trenchcoat",
+      "144 delicious hardboiled eggs",
+      "the 1979 Toronto Blue Jays",
+      "McGruff the Crime Dog"
+  ],
+  "pros": [
+      "Magic players",
+      "Wizards",
+      "Sorcerers",
+      "MODO players",
+      "MTGO Developers",
+      "Judges",
+      "Grinders",
+      "Casual players",
+      "Forum posters",
+      "Facebook Commenters",
+      "'You Make The Card' participants",
+      "The Future Future League",
+      "The pro's",
+      "Barns",
+      "Scrubs",
+      "Hall of Famers"
+  ],
+  "team": [
+      "#teamSite# #teamDescriptor#"
+  ],
+  "teamSite": [
+      "ChannelFireball",
+      "StarCityGames",
+      "MTGMintCard",
+      "Ultra PRO",
+      "Phoenix",
+      "Puzzle Quest",
+      "Pojo Dot Com"
+  ],
+  "teamDescriptor": [
+      "Gold",
+      "Platinum",
+      "Foundation",
+      "#basicColors#",
+      "#direction.capitalizeAll#",
+      "#massNoun.capitalizeAll#"
+  ]
+}
