@@ -59,16 +59,17 @@
       "Play Three-Card Monte with #_card1#, #_card2#, and a morphed #realCard#",
       "Toss #_card2# into the air and shrug"
   ],
-  "inGraphicsCardMask": ["http://i.imgur.com/AKqp4qU.png"],
+  "inGraphicsCardMask": "http://i.imgur.com/AKqp4qU.png",
   "inGraphicsBacksplash": [
       "http://i.imgur.com/abEHYGx.png",
       "http://i.imgur.com/HKYlPNQ.png",
       "http://i.imgur.com/y82DUBQ.png",
       "http://i.imgur.com/NgTlbrm.png"
   ],
-  "fontHeader": "font: 36px 'Liberation Serif' serif; font-weight: 900; text-shadow: 2px 2px 2px black",
-  "fontBody": "font: 16px 'Liberation Sans Narrow' sans-serif",
+  "fontHeader": "font: 36px `Liberation Serif` serif; font-weight: 900; text-shadow: 2px 2px 2px black",
+  "fontBody": "font: 16px `Liberation Sans` sans-serif",
+  "xhtml": "xmlns=`http://www.w3.org/1999/xhtml`"
   "inGraphicsImage": [
-      "<svg xmlns=`http://www.w3.org/2000/svg` xmlns:xlink=`http://www.w3.org/1999/xlink` height=`580` width=`700`><defs><mask id=`cardMask` maskUnits=`userSpaceOnUse` mask-type=`alpha`><image x=`0` y=`0` width=`100%` height=`100%` xlink:href=`#inGraphicsCardMask#` /></mask></defs><image width=`100%` height=`100%` xlink:href=`#inGraphicsBacksplash#` /><image width=`223` height=`310` xlink:href=`https://forums.goodgamery.com/includes/mtg/mtg_helper_cardfinder_v3.php?img=true&amp;find=#_card1#` x=`127` y=`86` mask=`url(\\#cardMask)` /><image width=`223` height=`310` xlink:href=`https://forums.goodgamery.com/includes/mtg/mtg_helper_cardfinder_v3.php?img=true&amp;find=#_card2#` x=`360` y=`86` mask=`url(\\#cardMask)` /><foreignObject y=`30` width=`700` height=`100`><p xmlns=`http://www.w3.org/1999/xhtml` style=`color: white; #fontHeader#; text-align:center`>#_headline#</p></foreignObject><foreignObject x=`58` y=`456` width=`170` height=`400`><p xmlns=`http://www.w3.org/1999/xhtml` style=`#fontBody#; text-align:left`>#inGraphicsStep#</p></foreignObject><foreignObject x=`271` y=`456` width=`170` height=`400`><p xmlns=`http://www.w3.org/1999/xhtml` style=`#fontBody#; text-align:left`>#inGraphicsStep#</p></foreignObject><foreignObject x=`487` y=`456` width=`170` height=`400`><p xmlns=`http://www.w3.org/1999/xhtml` style=`#fontBody#; text-align:left`>#inGraphicsStep#</p></foreignObject></svg>"
+      "<svg xmlns=`http://www.w3.org/2000/svg` xmlns:xlink=`http://www.w3.org/1999/xlink` height=`580` width=`700`><defs><mask id=`cardMask` maskUnits=`userSpaceOnUse` mask-type=`alpha`><image x=`0` y=`0` width=`100%` height=`100%` xlink:href=`#inGraphicsCardMask#` /></mask></defs><image width=`100%` height=`100%` xlink:href=`#inGraphicsBacksplash#` /><image width=`223` height=`310` xlink:href=`https://forums.goodgamery.com/includes/mtg/mtg_helper_cardfinder_v3.php?img=true&amp;find=#_card1#` x=`127` y=`86` mask=`url(\\#cardMask)` /><image width=`223` height=`310` xlink:href=`https://forums.goodgamery.com/includes/mtg/mtg_helper_cardfinder_v3.php?img=true&amp;find=#_card2#` x=`360` y=`86` mask=`url(\\#cardMask)` /><foreignObject y=`30` width=`700` height=`100`><p #xhtml# style=`color: white; #fontHeader#; text-align:center`>#_headline#</p></foreignObject><foreignObject x=`58` y=`456` width=`170` height=`400`><p #xhtml# style=`#fontBody#; text-align:left`>#inGraphicsStep#</p></foreignObject><foreignObject x=`271` y=`456` width=`170` height=`400`><p #xhtml# style=`#fontBody#; text-align:left`>#inGraphicsStep#</p></foreignObject><foreignObject x=`487` y=`456` width=`170` height=`400`><p #xhtml# style=`#fontBody#; text-align:left`>#inGraphicsStep#</p></foreignObject></svg>"
   ]
 }
