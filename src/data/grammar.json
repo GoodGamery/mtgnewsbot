@@ -88,7 +88,7 @@
     ],
     "playguide": [
         "CLASSIC STRATEGY: [_prefix:The Philosophy of,It's All About the]#_prefix# [_thing:#massNoun#,#pluralNoun#,#abstractNoun#,#nouns#]#_thing.capitalizeAll#, by #pro.capitalize#",
-        "[_proIs:#pro# is,#pros# are]#_proIs# #creating# #tech.a# to #verbDefeat# #obstacle.capitalize#",
+        "[_proIs:#pro# is,#pros# are]#_proIs# #verbCreating# #tech.a# to #verbDefeat# #obstacle.capitalize#",
         "#count.capitalize# #broadCardClassification.capitalizeAll# That Should Never Have Been [_verbed:Printed,Banned,Unbanned,Played,Ignored]#_verbed#",
         "[_proReveals:Top Pro #revealVerb.s#,#pro# #revealVerb.s#,#pros# #revealVerb#]#_proReveals.capitalizeAll# #planNoun.capitalize# for #event#: Play #card# in #deck# to counter [_what:#card#,#deckArch#]#_what#",
         "#recentCardSet# [_format:Limited,Constucted]#_format# Set Review:[_color: #basicColors#,]#_color# #cardCategory.s.capitalizeAll# and [_other:#cardCategory#,#creatureTypes#]#_other.s.capitalizeAll#",
@@ -138,32 +138,14 @@
                  "Ice Cream for Breakfast Day", "World Kindness Day", "Take Your #creatureTypes.capitalize# to Work Day", "Leg Day", "Casual Friday", "April Fools' Day", "CAPS LOCK DAY",
                  "International Talk Like a Pirate Day", "the Kentucky Derby", "Christmas in July"],
     "covering": [ "veneer", "facade", "aura", "layer", "mask", "veil", "blanket", "curtain", "girdle", "thin film", "cloud", "light dusting", "thick coating", "membrane", "halo"],
-    "crime": ["tresspassing", "jaywalking", "impersonating a #creatureTypes#", "slow play", "disturbing the peace", "loitering", "shoplifting", "public indecency"],
     "itemOrCreatureType": ["#itemNoun#","#creatureTypes#"],
     "creatureTypeOrCharacterClass": ["#creatureTypes#", "#characterClass#"],
-    "concreteNounOrPluralNoun": ["#concreteNoun#","#pluralNoun#"],
-    "pluralNounOrMassMoun": ["#pluralNoun#","#massNoun#"],
-
-    "malePronouns": [
-        "[they:he][theirs:his][their:his][them:him][are:is]"
-    ],
-    "femalePronouns": [
-        "[they:she][theirs:hers][their:her][them:her][are:is]"
-    ],
-    "pluralPronouns": [
-        "[they:they][theirs:theirs][their:their][them:them][are:are]"
-    ],
     "broadCardClassification": ["#cardModifier##cardBase#"],
     "cardModifier": ["#basicColors# ","#format# ","#cardSet# ",""],
     "cardBase": ["cards","#cardCategory.s#","#creatureTypes.s#"],
     "tipTitle": [
-        "MTG TIPS",
-        "MTG ADVICE",
-        "DECKBUILDING TIPS",
-        "TIPS FROM THE PROS",
-        "BREAKING NEWS",
-        "DATING ADVICE",
-        "MAGIC ARCANA"
+        "MTG TIPS", "MTG ADVICE", "DECKBUILDING TIPS", "TIPS FROM THE PROS",
+        "BREAKING NEWS", "DATING ADVICE", "MAGIC ARCANA"
     ],
     "titleMoney": [
         "INVESTOR REPORT",
@@ -185,86 +167,6 @@
         "maindeck",
         "sideboard"
     ],
-    "people": ["#pros#","#pro#"],
-    "pro": [
-        "Kai Budde",
-        "The DCI",
-        "Hasbro",
-        "WOTC",
-        "Jarvis Yu",
-        "Mark Rosewater",
-        "Jon Finkel",
-        "LSV",
-        "Kibler",
-        "Nassif",
-        "Raphaël Lévy",
-        "PVDDR",
-        "Watanabe",
-        "Randy Buehler",
-        "Ruel",
-        "Saitou",
-        "Reid Duke",
-        "William Jensen",
-        "Frank Karsten",
-        "Wrapter",
-        "Patrick Chapin",
-        "Jůza",
-        "Richard Garfield",
-        "GLEEMAX",
-        "Mike Flores",
-        "Rich Hagon",
-        "Conley Woods",
-        "Urza",
-        "RoboRosewater"
-    ],
-    "otherPersonality": [
-        "Bram Snepvangers",
-        "Evan Erwin",
-        "Jamie Wakefield",
-        "Sheldon Mennery",
-        "John Friggin' Rizzo",
-        "#jokePersonality#"
-    ],
-    "jokePersonality": [
-        "Balki Bartokomous",
-        "Young Victor Frankenstein",
-        "Ants-In-My-Eyes Johnson",
-        "a monkey in a business suit",
-        "some guy in a horse mask",
-        "a gaggle of angry geese",
-        "two dwarves in a trenchcoat",
-        "144 delicious hardboiled eggs",
-        "the 1979 Toronto Blue Jays",
-        "McGruff the Crime Dog"
-    ],
-    "pros": [
-        "Magic players",
-        "Wizards",
-        "Sorcerers",
-        "MODO players",
-        "MTGO Developers",
-        "Judges",
-        "Grinders",
-        "Casual players",
-        "Forum posters",
-        "Facebook Commenters",
-        "'You Make The Card' participants",
-        "The Future Future League",
-        "The pro's",
-        "Barns",
-        "Scrubs",
-        "Hall of Famers"
-    ],
-    "creating": [
-        "designing",
-        "making",
-        "creating",
-        "brewing up",
-        "developing",
-        "stewing up",
-        "mashing together",
-        "shuffling up"
-    ],
     "tech": [
         "deck",
         "card",
@@ -273,29 +175,6 @@
         "large set",
         "sideboard",
         "spicy new tech"
-    ],
-    "verbDefeat": [
-        "control",
-        "defeat",
-        "beat",
-        "overcome",
-        "lock down",
-        "fix",
-        "take down"
-    ],
-    "verbDefeating": [
-        "controlling",
-        "defeating",
-        "beating",
-        "overcoming",
-        "dealing with",
-        "handling",
-        "becoming",
-        "truly knowing",
-        "locking down",
-        "fixing",
-        "taking down",
-        "mastering"
     ],
     "obstacle": [
         "#tournamentType.s#",
@@ -311,166 +190,6 @@
         "[_challenge:winning against,defeating,outplaying,#verbDefeating#]#_challenge# #people#",
         "[_challenge:understanding,exploiting,getting the most out of,#verbDefeating#]#_challenge# #gameConcept#",
         "[_challenge:using,winning with,understanding,answering,#verbDefeating#]#_challenge# #cardCategory.s#"
-    ],
-    "verb": [
-        "approach", "control", "defeat", "hold", "capture", "handle", "understand", "wield", "observe", "carry", "shuffle", "kill",
-        "perceive", "realize", "grow", "water", "nourish", "swallow", "question", "cradle", "cherish", "despise", "summon",
-        "transform", "explain", "forget", "remember", "ignore", "adorn", "study", "capture", "release", "misunderstand",
-        "sacrifice", "destroy", "collect", "dismiss", "praise", "scrutinize", "celebrate", "minimize", "exaggerate", "quantify",
-        "trivialize", "renounce", "abhor", "dispute", "pantomime", "advertise", "lie about", "deep-fry", "decorate", "run", "brandish"
-    ],
-    "verbPastTense": [
-        "approached", "controlled", "defeated", "held", "captured", "handled", "understood", "wielded", "observed", "carried", "shuffled",
-        "perceived", "realized", "watered", "nourished", "swallowed", "questioned", "cradled", "cherished", "despised", "summoned",
-        "transformed", "explained", "forgot", "remembered", "ignored", "adorned", "studied", "captured", "released", "misunderstood",
-        "sacrificed", "destroyed", "collected", "dismissed", "praised", "scrutinized", "celebrated", "minimized", "exaggerated", "quantified",
-        "trivialized", "renounced", "abhorred", "disputed", "pantomimed", "advertised", "deep-fried", "decorated", "ran", "burned down",
-        "raged", "killed"
-    ],
-    "verbGerund": [
-        "approaching", "controlling", "defeating", "holding", "capturing", "handling", "understanding", "wielding", "observing", "carrying", "shuffling", "killing",
-        "perceiving", "realizing", "growing", "watering", "nourishing", "swallowing", "questioning", "cradling", "cherishing", "despising", "summoning",
-        "transforming", "explaining", "forgeting", "remembering", "ignoreing", "adorning", "studying", "capturing", "releasing", "misunderstanding",
-        "sacrificing", "destroying", "collecting", "dismissing", "praising", "scrutinizing", "celebrating", "minimizing", "exaggerating", "quantifying",
-        "trivializing", "renouncing", "abhoring", "disputing", "pantomiming", "advertising", "lying about", "deep-frying", "decorating", "running", "brandishing"
-    ],
-    "noun": [
-        "#singularNoun#",
-        "[_other:#pluralNoun#,#massNoun#]#_other#"
-    ],
-    "singularNoun": [
-        "#cardCategory#",
-        "#creatureTypes#",
-        "#itemNoun#",
-        "#placeNoun#",
-        "#abstractNoun#",
-        "#massNoun#"
-    ],
-    "pluralNoun": [
-        "#cardCategory.s#",
-        "#creatureTypes.s#",
-        "#itemNoun.s#",
-        "#irregularPluralNoun#"
-    ],
-    "aNoun": [
-        "#cardCategory.a#",
-        "#creatureTypes.a#",
-        "#itemNoun.a#"
-    ],
-    "concreteNoun": [
-        "#itemNoun#",
-        "#placeNoun#"
-    ],
-    "abstractNoun": [
-        "knowledge", "will", "skill", "power", "longevity", "strength", "nobility", "honor", "growth", "information", "nerve",
-        "strength", "energy", "control", "technology", "rationality", "fear", "glory", "whimsy", "balance", "truth", "lies",
-        "gloom", "misery", "indigestion", "shirtlessness", "prize eligibility", "strong fashion sense", "bootlicking", "intellect",
-        "snobbery", "megalomania", "pathos", "foresight", "fortitude", "charisma", "constitution", "dexterity", "self-control",
-        "illiteracy", "responsibility"
-    ],
-    "emotion": [
-        "anticipation", "discomfort",  "disgust", "envy", "confusion", "giddiness", "fear", "consternation", "squeamishness", "hatred",
-        "panic", "glee", "rage", "insecurity", "self-consciousness", "abject terror", "cautious optimism", "boredom", "cowardice",
-        "lust", "near-fanatical devotion", "arrogance", "pluckiness", "indifference", "unwillingness", "begrudging admiration"
-    ],
-    "itemNoun": [
-        "weapon", "card", "wand", "spellbook", "staff", "orb", "tree", "plant", "crown", "jewel", "amulet", "egg", "banner", "boot",
-        "aegis", "hedron", "altar", "portal", "door", "cluestone", "flask", "bident", "scepter", "idol", "mask", "sword", "longbow",
-        "grimoire", "chalice", "blade", "gift", "signet", "monolith", "gemstone", "clue", "scroll", "lantern", "collar", "talisman",
-        "doodad", "bone", "vuvuzela", "handlebar moustache", "horseshoe", "sweater vest", "prawn"
-    ],
-    "placeNoun": [
-        "temple", "palace", "castle", "garden", "market", "dungeon", "sanctuary", "mansion", "kingdom", "colony", "vacation rental", "graveyard",
-        "oasis", "metropolis", "village", "hamlet", "carnival", "closet", "guildhouse", "amphitheater", "lighthouse", "hovel", "guildgate",
-        "cathedral", "church", "catacomb", "coliseum", "wharf", "tower", "mineshaft", "necropolis", "citadel", "encampment", "valley", "planet",
-        "hedge maze", "ball pit", "orchard", "watchtower", "sanitarium", "ballroom", "schoolyard", "university", "harbor", "library", "plane",
-        "factory", "greenhouse", "basement", "monastery", "academy", "farmstead", "petting zoo", "ghost town", "secret lair", "laboratory",
-        "portal", "hair salon", "shipwreck", "pasture", "circus tent", "fortress", "junkyard", "pillow fort", "mausoleum", "sepulcher",
-        "kitchenette", "churchyard", "mortuary", "abattoir", "art studio", "pet store", "armory", "gazebo", "playground", "animal shelter"
-    ],
-    "irregularPluralNoun": [
-        "teeth", "feet", "pants", "geese", "fish", "children", "fungi", "stimuli", "potatoes", "knives", "ashes", "riches", "hypotheses", "neuroses", "crises", "appendices", "indices", "sheep", "wolves", "thieves"
-    ],
-    "massNoun": [
-      "land", "ichor", "water", "sand", "mana", "wood", "fire", "ice", "lightning", "phyrexian oil", "snow", "lunch", "treasure", "guacamole",
-      "butterscotch", "gas", "mud", "muck", "dirt", "mildew", "gloom", "mist", "steam", "vapor", "magma", "lava", "bedrock", "topiary", "viscera", "murk"
-    ],
-    "objectNounPronoun": ["[_noun:#aNoun#,#abstractNoun#,#abstractNoun#,#massNoun#,#adj.a# #itemNoun#][_pronoun:it]","[_noun:#pluralNoun#][_pronoun:them]"],
-    "twoObjects": [
-        "[_thing1:#pluralNoun#][_thing2:#pluralNoun#]","[_thing1:#pluralNoun#][_thing2:#massNoun#]","[_thing1:#pluralNoun#][_thing2:#abstractNoun#]",
-        "[_thing1:#massNoun#][_thing2:#massNoun#]","[_thing1:#massNoun#][_thing2:#abstractNoun#]","[_thing1:#abstractNoun#][_thing2:#abstractNoun#]"
-    ],
-    "nouns": [
-        "#cardCategory.s#",
-        "#things2#",
-        "#creatureTypesPlural#"
-    ],
-    "things2": [
-        "speed",
-        "cunning",
-        "might",
-        "trickery",
-        "riddles",
-        "growth",
-        "death",
-        "law",
-        "order",
-        "chaos",
-        "capitalism",
-        "vaults",
-        "caves",
-        "weather",
-        "anger",
-        "blessings",
-        "volcanoes"
-    ],
-    "gameConcept": [
-        "bad draws",
-        "mana screw",
-        "poor play",
-        "slow play",
-        "connection problems",
-        "the shuffler",
-        "bugs",
-        "bad cards",
-        "counter's",
-        "land destruction",
-        "discard",
-        "two-card combos",
-        "three-card combos",
-        "nonbos",
-        "#card#",
-        "bad cards, like #card#",
-        "swiss pairings",
-        "collusion",
-        "scouting",
-        "manabases",
-        "mulliganing",
-        "scrying",
-        "playing first",
-        "drawing first",
-        "shuffling",
-        "topdecks",
-        "combat tricks",
-        "tapping out",
-        "chump blocking",
-        "milling",
-        "jedi mind tricks",
-        "tight play",
-        "getting lucky",
-        "the storm scale",
-        "#gameAccesory.s#"
-    ],
-    "gameAccesory" :[
-        "UltraPro sleeve",
-        "perfect-fit sleeve",
-        "playmat",
-        "spindown counter",
-        "deckbox",
-        "treasure chest",
-        "event ticket",
-        "play point",
-        "untradeable war mark"
     ],
     "cardCategory": [
         "attacker",
@@ -511,51 +230,6 @@
         "rare",
         "mythic"
     ],
-    "tournamentType": [
-        "Pro Tour",
-        "Invitational",
-        "GP",
-        "Grand Prix",
-        "FNM",
-        "your local draft league"
-    ],
-    "event": [
-        "#tournament#",
-        "#tournament#",
-        "#nonTournamentEvent#"
-    ],
-    "tournament": [
-        "Pro Tour #recentCardSet#",
-        "GP #city#",
-        "Grand Prix #city#",
-        "SCG #city#"
-    ],
-    "nonTournamentEvent": [
-        "the next team draft",
-        "casual Commander night",
-        "a drunk kitchen-table game",
-        "a 24-hour MTGO stream"
-    ],
-    "team": [
-        "#teamSite# #teamDescriptor#"
-    ],
-    "teamSite": [
-        "ChannelFireball",
-        "StarCityGames",
-        "MTGMintCard",
-        "Ultra PRO",
-        "Phoenix",
-        "Puzzle Quest",
-        "Pojo Dot Com"
-    ],
-    "teamDescriptor": [
-        "Gold",
-        "Platinum",
-        "Foundation",
-        "#basicColors#",
-        "#direction.capitalizeAll#",
-        "#massNoun.capitalizeAll#"
-    ],
     "direction": [
         "east",
         "west",
@@ -569,17 +243,6 @@
         "#format#",
         "#cardCategory.s#"
     ],
-    "deckArch": [
-        "#deck#",
-        "#deckVariation#",
-        "decks with #card#",
-        "#creatureTypes.capitalize# Tribal",
-        "#format# #creatureTypesPlural.capitalize#",
-        "#deck# matchups",
-        "#format# #deck#",
-        "#format# #deckVariation#",
-        "#colors.capitalize# #deck#"
-    ],
     "deckObjective": [
         "#deck# decks",
         "#deck# lists",
@@ -588,27 +251,6 @@
         "#deckArch# [_m:matchup,matchups]#_m#",
         "#cardAlone# decks",
         "#creatureTypes.capitalize# decks"
-    ],
-    "format": [
-        "Legacy",
-        "Modern",
-        "Commander",
-        "EDH",
-        "Vintage",
-        "Standard",
-        "Pauper",
-        "Momir",
-        "Onslaught Block Constructed",
-        "Holiday Cube",
-        "Type 4",
-        "Two-Headed Giant",
-        "Kitchen Table Magic"
-    ],
-    "normalFormat": [
-        "Standard",
-        "Modern",
-        "Draft",
-        "Sealed"
     ],
     "colors": [
         "#basicColors#",

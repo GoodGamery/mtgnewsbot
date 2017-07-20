@@ -1,0 +1,23 @@
+{
+  "format": [
+      "Legacy",
+      "Modern",
+      "Commander",
+      "EDH",
+      "Vintage",
+      "Standard",
+      "Pauper",
+      "Momir",
+      "Onslaught Block Constructed",
+      "Holiday Cube",
+      "Type 4",
+      "Two-Headed Giant",
+      "Kitchen Table Magic"
+  ],
+  "normalFormat": [
+      "Standard",
+      "Modern",
+      "Draft",
+      "Sealed"
+  ]
+}

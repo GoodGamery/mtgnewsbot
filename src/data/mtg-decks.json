@@ -1,4 +1,15 @@
 {
+  "deckArch": [
+      "#deck#",
+      "#deckVariation#",
+      "decks with #card#",
+      "#creatureTypes.capitalize# Tribal",
+      "#format# #creatureTypesPlural.capitalize#",
+      "#deck# matchups",
+      "#format# #deck#",
+      "#format# #deckVariation#",
+      "#colors.capitalize# #deck#"
+  ],
   "deck": [
       "Draw-Go",
       "Dredge",
