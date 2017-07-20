@@ -1116,6 +1116,8 @@
         "#realCard# Elemental Blast",
         "#realCard# of the Pearl Trident",
         "#realCard# (Not the #cardSet# One)",
+        "#adj.capitalizeAll# Wish",
+        "#verbGerund.capitalizeAll Shoal",
         "#realCard# (Not the #novelCardSetName.capitalizeAll# One)",
         "Circle of Protection: [_someNoun:#abstractNoun#,#emotion#,#massNoun#,#pluralNoun#,#things2#][_what:#creatureTypes.s#,#cardCategory.s#,#_someNoun#]#_what.capitalizeAll#"
     ],
@@ -1680,6 +1682,7 @@
         "Wrath of God",
         "Zombie Master"
     ],
+    "wishCard": ["Death Wish","Glittering Wish","Cunning Wish","Living Wish","Golden Wish","#adj.capitalizeAll# Wish","Ring of Ma'rûf","Coax from the Blind Eternities"],    
     "imgCard": "{imgCard cardName=\"#_cardname#\"}",
     "cardSet": [
         "#recentCardSet#",
@@ -1866,7 +1869,12 @@
         "Rogue Strategies",
         "A New Use for #_card1#",
         "#_card2#'s New Partner",
-        "Overcoming #obstacle.capitalize#"
+        "Overcoming #obstacle.capitalize#",
+        "How to #_card1# — In Graphics",
+        "#cardCategory.capitalizeAll.s# Everywhere",
+        "Infinite #creatureTypes.capitalizeAll.s#",
+        "Break the Game Open with #_card1#",
+        "The Hidden Power of #_card1#"
     ],
     "inGraphicsStep": [
         "Cast #_card1#",
@@ -1897,9 +1905,20 @@
         "Tutor for #_card2#",
         "Cast Pithing Needle naming #_card1#",
         "Discard #_card2# to Pack Rat",
-        "Make three copies of #_card1#",
+        "Make #count# copies of #_card1#",
         "Cast #_card1#, immediately say “Oops”, pick it back up, and cast #_card2#",
-        "Pitch #_card2# to #verbGerund.capitalizeAll# Shoal"
+        "Pitch #_card2# to #verbGerund.capitalizeAll# Shoal",
+        "Hold #_card2# to your face and pretend to study the rules text",
+        "Drop #_card1# into your lap",
+        "Tap emphatically on #_card2# while staring your opponent straight in the eyes",
+        "Drop your cards on the table and give your opponent a puzzled smile",
+        "Imprint #_card2# on [_card3:Isochron Scepter,Spellbinder,Soul Foundry,Panoptic Mirror,Mimic Vat]#_card3#",
+        "Suspend #_card1# with Jhoira of the Ghitu",
+        "Tap exactly [_lands:one land,#count# lands]#_lands#",
+        "Retrieve #_card2# from your sideboard with #wishCard#",
+        "Flip the table",
+        "Play Three-Card Monte with #_card1#, #_card2#, and a morphed #realCard#",
+        "Toss #_card2# into the air and shrug"
     ],
     "inGraphicsCardMask": ["http://i.imgur.com/AKqp4qU.png"],
     "inGraphicsBacksplash": [
