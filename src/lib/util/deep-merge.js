@@ -5,6 +5,8 @@
        Object properties with no conflict are taken
        Object properties with a conflict are recursively merged
 */
+'use strict';
+
 function deepMerge(a, b) {
     // If b is undefined, assume that we want a
     if (b === undefined) {
