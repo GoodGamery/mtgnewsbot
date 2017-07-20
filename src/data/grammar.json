@@ -1879,7 +1879,7 @@
         "Cast #_card2# with #_card1# on the stack",
         "Shuffle #_card1# into your library",
         "Slam #_card2# onto #_card1# with #emotion#",
-        "Attach both cards to a #gameAccesory#",
+        "Attach both cards to #gameAccesory.a#",
         "Place #_card2# into #_card1#'s sleeve",
         "Write #realPowerfulCard#'s name on #_card2# with a sharpie",
         "Transform #_card1# to flip #_card2# to unmorph #_card1#",
@@ -1901,8 +1901,15 @@
         "Cast #_card1#, immediately say “Oops”, pick it back up, and cast #_card2#",
         "Pitch #_card2# to #verbGerund.capitalizeAll# Shoal"
     ],
+    "inGraphicsCardMask": ["http://i.imgur.com/AKqp4qU.png"],
+    "inGraphicsBacksplash": [
+        "http://i.imgur.com/abEHYGx.png",
+        "http://i.imgur.com/HKYlPNQ.png",
+        "http://i.imgur.com/y82DUBQ.png",
+        "http://i.imgur.com/NgTlbrm.png"
+    ],    
     "inGraphicsImage": [
-        "<svg xmlns=`http://www.w3.org/2000/svg` xmlns:xlink=`http://www.w3.org/1999/xlink` height=`559` width=`700`><defs><mask id=`myMask`><rect width=`700` height=`387` fill=`white`/></mask></defs><image width=`100%` height=`100%` xlink:href=`https://compnode.net/images/after-56-shrink-[_a:e,f,g,h]#_a#.png` /><image width=`223` height=`310` xlink:href=`https://forums.goodgamery.com/includes/mtg/mtg_helper_cardfinder_v3.php?img=true&find=#_card1#` x=`127` y=`86` mask=`url(\\#myMask)`/><image width=`223` height=`310` xlink:href=`https://forums.goodgamery.com/includes/mtg/mtg_helper_cardfinder_v3.php?img=true&find=#_card2#` x=`360` y=`86` mask=`url(\\#myMask)`/><foreignObject y=`30` width=`700` height=`100`><p xmlns=`http://www.w3.org/1999/xhtml` style=`color: white; font: 36px Georgia; font-weight: 900; text-shadow: 2px 2px 2px black; text-align:center`>#_headline#</p></foreignObject><foreignObject x=`58` y=`456` width=`170` height=`400`><p xmlns=`http://www.w3.org/1999/xhtml` style=`font: 16px Arial; text-align:left`>#inGraphicsStep#</p></foreignObject><foreignObject x=`271` y=`456` width=`170` height=`400`><p xmlns=`http://www.w3.org/1999/xhtml` style=`font: 16px Arial; text-align:left`>#inGraphicsStep#</p></foreignObject><foreignObject x=`487` y=`456` width=`170` height=`400`><p xmlns=`http://www.w3.org/1999/xhtml` style=`font: 16px Arial; text-align:left`>#inGraphicsStep#</p></foreignObject></svg>"
+        "<svg xmlns=`http://www.w3.org/2000/svg` xmlns:xlink=`http://www.w3.org/1999/xlink` height=`580` width=`700`><defs><mask id=`cardMask` maskUnits=`userSpaceOnUse` mask-type=`alpha`><image x=`0` y=`0` width=`100%` height=`100%` xlink:href=`#inGraphicsCardMask#` /></mask></defs><image width=`100%` height=`100%` xlink:href=`#inGraphicsBacksplash#` /><image width=`223` height=`310` xlink:href=`https://forums.goodgamery.com/includes/mtg/mtg_helper_cardfinder_v3.php?img=true&amp;find=#_card1#` x=`127` y=`86` mask=`url(\\#cardMask)` /><image width=`223` height=`310` xlink:href=`https://forums.goodgamery.com/includes/mtg/mtg_helper_cardfinder_v3.php?img=true&amp;find=#_card2#` x=`360` y=`86` mask=`url(\\#cardMask)` /><foreignObject y=`30` width=`700` height=`100`><p xmlns=`http://www.w3.org/1999/xhtml` style=`color: white; font: 36px Georgia; font-weight: 900; text-shadow: 2px 2px 2px black; text-align:center`>#_headline#</p></foreignObject><foreignObject x=`58` y=`456` width=`170` height=`400`><p xmlns=`http://www.w3.org/1999/xhtml` style=`font: 16px Arial; text-align:left`>#inGraphicsStep#</p></foreignObject><foreignObject x=`271` y=`456` width=`170` height=`400`><p xmlns=`http://www.w3.org/1999/xhtml` style=`font: 16px Arial; text-align:left`>#inGraphicsStep#</p></foreignObject><foreignObject x=`487` y=`456` width=`170` height=`400`><p xmlns=`http://www.w3.org/1999/xhtml` style=`font: 16px Arial; text-align:left`>#inGraphicsStep#</p></foreignObject></svg>"
     ],
     "cardCopyCount": [
         "1",
