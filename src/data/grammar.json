@@ -1889,7 +1889,7 @@
         "Slam #_card2# onto #_card1# with #emotion#",
         "Attach both cards to #gameAccesory.a#",
         "Place #_card2# into #_card1#'s sleeve",
-        "Write #realPowerfulCard#'s name on #_card2# with a sharpie",
+        "Write &quot;#realPowerfulCard#&quot; on #_card2# with a sharpie",
         "Transform #_card1# to flip #_card2# to unmorph #_card1#",
         "Throw #_card1# across the table while shouting about #gameConcept#",
         "Ask a judge how #_card1# and #_card2# interact",
