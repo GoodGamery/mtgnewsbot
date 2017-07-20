@@ -10,7 +10,7 @@ git fetch
 git pull
 
 # install dependencies
-npm install
+npm install --production
 
 # tweet
 node --use_strict bot.js

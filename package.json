@@ -7,9 +7,10 @@
   "scripts": {
     "start": "npm run print",
     "print": "node src/index.js ",
-    "lint": "gulp lint",        
+    "lint": "gulp lint",
     "test": "gulp lint && npm run print",
-    "watch": "gulp"
+    "watch": "gulp",
+    "build-grammar": "node build.js"
   },
   "repository": {
     "type": "git",
