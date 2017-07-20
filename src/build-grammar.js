@@ -1,40 +1,27 @@
 // Combines grammar files together using a deep merge
+"use strict";
 
 const fs = require(`fs`);
 const deepMerge = require(`./lib/util/deep-merge.js`);
 
 
+// This is synchronous
+function buildGrammar(directory) {
 
-function buildGrammar(directory, callback) {
-  let numFilesToLoad = 0;
+  const files = fs.readdirSync(directory);
+  console.log(`Loading ${files.length} files:\n - ${files.join('\n - ')}`);
+
   let fileData = [];
-
-  // Stores data and counts down until complete
-  let handleFileRead = function(err, data) {
-    if (err)
-      throw new Error(err);
+  files.forEach(fileName => {
+    let data = fs.readFileSync(`${directory}/${fileName}`);
     fileData.push(JSON.parse(data));
-    numFilesToLoad--;
-    if (numFilesToLoad === 0)
-      handleAllDataLoaded(fileData);
-  };
-
-  // Merge all data together and invoke callback
-  let handleAllDataLoaded = function(dataArray) {
-    let destObj = {};
-    dataArray.forEach(data => {
-      destObj = deepMerge(destObj, data);
-    })
-    callback(JSON.stringify(destObj));
-  }
-
-  fs.readdir(directory, (err, files) => {
-    numFilesToLoad = files.length;
-    console.log(`Loading ${numFilesToLoad} files:\n - ${files.join('\n - ')}`);
-    files.forEach(fileName => {
-      fs.readFile(`${directory}/${fileName}`, handleFileRead);
-    })
   });
+
+  let destObj = {};
+  fileData.forEach(data => {
+    destObj = deepMerge(destObj, data);
+  });
+  return destObj;
 }
 
 module.exports = buildGrammar;

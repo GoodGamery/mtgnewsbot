@@ -1,7 +1,0 @@
-{
-    ".": ["#origin#"],
-    "origin": [
-        "Have You Considered [_consider:#card# in #format#,#deckVariation#]#_consider#?",
-        "I will never reveal my [_secret:#format#,#deckVariation#]#_secret# secrets."
-    ]
-}
