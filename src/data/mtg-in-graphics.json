@@ -12,8 +12,7 @@
       "#_card2#'s New Partner",
       "Overcoming #obstacle.capitalize#",
       "#cardCategory.capitalizeAll.s# Everywhere",
-      "Infinite #creatureTypes.capitalizeAll.s#",
-      "The Hidden Power of #_card1#"
+      "Infinite #creatureTypes.capitalizeAll.s#"
   ],
   "inGraphicsStep": [
       "Cast #_card1#",
