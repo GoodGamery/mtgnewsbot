@@ -41,7 +41,8 @@ function postCardImageTweet(status, cardName) {
 		.catch(e => logError('Failed to download image: ' + e));
 }
 
-function postSvgTweet(status, svgString, altText = "Rendered image") {
+function postSvgTweet(status, svgString, altText) {
+	altText = altText || "Rendered Image";
 	svg2png(new Buffer(svgString))
 		.catch(e => logError('Failed to create png: ' + e))
 		.then(data => twitter.uploadTwitterImageData(data.toString('base64')))
