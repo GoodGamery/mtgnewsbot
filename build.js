@@ -3,7 +3,7 @@
 const buildGrammar = require(`./src/build-grammar.js`);
 const fs = require(`fs`);
 
-const inDir = `./src/data/`;
+const inDir = `./src/data/grammar`;
 const outDir = `./out/`;
 const outFileName = `grammar.json`;
 

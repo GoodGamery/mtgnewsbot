@@ -6,11 +6,23 @@ const debug = require('gulp-debug');
 const jsonlint = require('gulp-jsonlint');
 const eslint = require('gulp-eslint');
 const runSequence = require('run-sequence');
+const exec = require('child_process').exec;
 
-const LINT_FILES = {
+const SRC_FILES = {
   JS: ['./*.js', 'src/**/*.js'],
   JSON: ['src/**/*.json']
 };
+
+gulp.task('build-grammar', function(callback) {
+  gutil.log(gutil.colors.yellow('>>> Building grammar...'));
+  exec('npm run build-grammar', function (err, stdout, stderr) {
+    gutil.log(stdout);
+    gutil.log(stderr);
+
+    const cb = err => gutil.log(gutil.colors.green('>>> Building grammar ' + gutil.colors.underline('COMPLETED') + '.')) && callback(err);
+    cb(err);
+  });
+});
 
 gulp.task('jslint', function() {
   const completionTracker = function(results) {
@@ -31,7 +43,7 @@ gulp.task('jslint', function() {
     }
   };
 
-  return gulp.src(LINT_FILES.JS)
+  return gulp.src(SRC_FILES.JS)
     .pipe(debug({title: 'Linting'}))
     .pipe(eslint({ useEslintrc: true }))
     .pipe(eslint.format('codeframe')) 
@@ -49,7 +61,7 @@ gulp.task('jsonlint', function() {
     };
   };
 
-  return gulp.src(LINT_FILES.JSON)
+  return gulp.src(SRC_FILES.JSON)
     .pipe(debug({title: 'Linting'}))
     .pipe(jsonlint())     
     .pipe(jsonlint.reporter())
@@ -69,7 +81,8 @@ gulp.task('lint', function(callback) {
 });
 
 gulp.task('watch', function() {
-  return gulp.watch([LINT_FILES.JS, LINT_FILES.JSON], ['lint']);
+  gulp.watch(SRC_FILES.JSON, ['build-grammar']);
+  gulp.watch([SRC_FILES.JS, SRC_FILES.JSON], ['lint']);
 });
 
-gulp.task('default', ['lint', 'watch']);
+gulp.task('default', ['build-grammar', 'lint', 'watch']);
