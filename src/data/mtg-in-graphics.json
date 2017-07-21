@@ -68,7 +68,7 @@
       "http://i.imgur.com/y82DUBQ.png",
       "http://i.imgur.com/NgTlbrm.png"
   ],
-  "fontHeader": "font-size: 36px; font-family: Beleren, Georgia, 'Liberation Serif', 'DejaVu Serif', serif; font-weight: 900; text-shadow: 2px 2px 2px black",
+  "fontHeader": "font-size: 36px; font-family: Beleren, Georgia, 'Liberation Serif', 'DejaVu Serif', serif; font-weight: 700; text-shadow: 2px 2px 2px black",
   "fontBody": "font-size: 16px; font-family: Arial, 'Liberation Sans', 'DejaVu Sans', sans-serif",
   "xhtml": "xmlns=`http://www.w3.org/1999/xhtml`",
   "inGraphicsImage": [
