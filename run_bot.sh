@@ -12,5 +12,8 @@ git pull
 # install dependencies
 npm install --production
 
+#log node version
+node -v
+
 # tweet
-node --use_strict bot.js
+node --harmony --use_strict bot.js
