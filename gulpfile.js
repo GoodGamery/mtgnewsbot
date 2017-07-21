@@ -6,23 +6,11 @@ const debug = require('gulp-debug');
 const jsonlint = require('gulp-jsonlint');
 const eslint = require('gulp-eslint');
 const runSequence = require('run-sequence');
-const exec = require('child_process').exec;
 
 const SRC_FILES = {
   JS: ['./*.js', 'src/**/*.js'],
   JSON: ['src/**/*.json']
 };
-
-gulp.task('build-grammar', function(callback) {
-  gutil.log(gutil.colors.yellow('>>> Building grammar...'));
-  exec('npm run build-grammar', function (err, stdout, stderr) {
-    gutil.log(stdout);
-    gutil.log(stderr);
-
-    const cb = err => gutil.log(gutil.colors.green('>>> Building grammar ' + gutil.colors.underline('COMPLETED') + '.')) && callback(err);
-    cb(err);
-  });
-});
 
 gulp.task('jslint', function() {
   const completionTracker = function(results) {
@@ -81,8 +69,7 @@ gulp.task('lint', function(callback) {
 });
 
 gulp.task('watch', function() {
-  gulp.watch(SRC_FILES.JSON, ['build-grammar']);
   gulp.watch([SRC_FILES.JS, SRC_FILES.JSON], ['lint']);
 });
 
-gulp.task('default', ['build-grammar', 'lint', 'watch']);
+gulp.task('default', ['lint', 'watch']);

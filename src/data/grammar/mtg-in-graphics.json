@@ -21,7 +21,7 @@
       "Cast #_card1#",
       "Cast #_card2#",
       "Return #_card1# to your hand with #_card2#",
-      "During your opponent's upkeep, use #_card1#",
+      "During [_whose:your,your opponent's]#_whose# #gameStep#, use #_card1#",
       "At end of turn, use #_card2# on #_card1#",
       "Attach #_card2# to #_card1#",
       "Protect your #cardCategory.s# with #_card1#",
@@ -59,14 +59,19 @@
       "Retrieve #_card2# from your sideboard with #wishCard#",
       "Flip the table",
       "Play Three-Card Monte with #_card1#, #_card2#, and a morphed #realCard#",
-      "Toss #_card2# into the air and shrug"
+      "Toss #_card2# into the air and shrug",
+      "Explain to your opponent that #_card1# is strictly better than #card#",
+      "Reveal #hiddenAgenda# naming #_card2#",
+      "Offer to sell #_card1# to your opponent for #priceUSD#"
   ],
   "inGraphicsCardMask": "http://i.imgur.com/AKqp4qU.png",
   "inGraphicsBacksplash": [
       "http://i.imgur.com/IuVXZFz.png",
       "http://i.imgur.com/PmUheQA.png",
       "http://i.imgur.com/ZPzm2l9.png",
-      "http://i.imgur.com/s9mXgcf.png"
+      "http://i.imgur.com/s9mXgcf.png",
+      "http://i.imgur.com/XYIzMAh.png",
+      "http://i.imgur.com/APp3oTH.png"
   ],
   "fontHeader": "font-size: 36px; font-family: Beleren, Georgia, 'Liberation Serif', 'DejaVu Serif', serif; font-weight: 700; text-shadow: 2px 2px 2px black",
   "fontBody": "font-size: 16px; font-family: Arial, 'Liberation Sans', 'DejaVu Sans', sans-serif",

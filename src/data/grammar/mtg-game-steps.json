@@ -1,0 +1,10 @@
+  {
+  	"gameStep": [
+  	"Untap Step",
+    "Upkeep",
+    "Draw Step",
+    "first Main Phase",
+    "second Main Phase",
+    "Cleanup Step"
+  ]
+}
