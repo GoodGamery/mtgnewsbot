@@ -321,7 +321,7 @@
     "Searing Flesh",
     "Shahrazad",
     "Shoving Match",
-    "Sneaky Homonculus",
+    "Sneaky Homunculus",
     "Steamflogger Boss",
     "Tectonic Edge",
     "The Cheese Stands Alone",
@@ -329,7 +329,7 @@
     "Turn to Frog",
     "Vial Smasher the Fierce",
     "Werebear",
-    "Whipgrass Entagler",
+    "Whipgrass Entangler",
     "Zzzyxas's Abyss"
   ],
   "realNormalCard":
@@ -614,6 +614,14 @@
     "#adj.capitalizeAll# Wish",
     "Ring of Ma'rûf",
     "Coax from the Blind Eternities"
+  ],
+  "hiddenAgenda": [
+    "Assemble the Rank and Vile",
+    "Brogo's Favor",
+    "Double Stroke",
+    "Muzzio's Preparations",
+    "Secret Summoning",
+    "Unexpected Potential"
   ],
   "fakeCard": [
       "Every Last Vestige Shall Rot",

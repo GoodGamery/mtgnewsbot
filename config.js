@@ -3,7 +3,7 @@ const merge = require('lodash.merge');
 const buildGrammar = require('./src/build-grammar.js');
 
 const CONFIG_OVERRIDE_PATH = './config-override.js';
-const DEFAULT_GRAMMAR_PATH = './src/data/';
+const DEFAULT_GRAMMAR_PATH = './src/data/grammar';
 const TWEET_LENGTH = 140;
 const TEMPFILE_PATH = '/tmp';
 const LOGFILE_PATH = './debug.log';
