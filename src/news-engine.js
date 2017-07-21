@@ -8,6 +8,10 @@ grammar["origin"] = config.origin || grammar["origin"];
 
 const headlineMaker = new HeadlineMaker(grammar);
 
+function generateHeadline () {
+	return headlineMaker.generateHeadline();
+}
+
 function generateHeadlines (numHeadlines) {
 	const headlines = [];
 	for (let i = 0; i < numHeadlines; ++i) {
@@ -25,6 +29,7 @@ function generateTextHeadlines (numHeadlines) {
 }
 
 module.exports = { 
+	generateHeadline: generateHeadline,
 	generateHeadlines: generateHeadlines,
 	generateTextHeadlines: generateTextHeadlines
 };

@@ -1,10 +1,11 @@
 'use strict';
 
 const fs =  require(`fs`);
+const path = require('path');
 const uuid = require(`uuid`);
 const svg2png = require(`svg2png`);
 
-const HeadlineMaker = require('./src/headline-maker');
+const NewsEngine = require('./src/news-engine');
 const TwitterClient = require('./src/lib/api/twitter-client');
 const mtgCardFinder = require('./src/lib/api/mtg-cardfinder');
 const config = require('./config');
@@ -43,7 +44,7 @@ function postCardImageTweet(status, cardName) {
 
 function postSvgTweet(status, svgString, altText) {
 	altText = altText || "Rendered Image";
-	svg2png(new Buffer(svgString))
+	svg2png(new Buffer(svgString), { filename: path.resolve(__dirname, 'src') })
 		.catch(e => logError('Failed to create png: ' + e))
 		.then(data => twitter.uploadTwitterImageData(data.toString('base64')))
 		.catch(e => logError('Failed to upload image: ' + e))
@@ -52,12 +53,11 @@ function postSvgTweet(status, svgString, altText) {
 }
 
 // Create tweet from grammar
-const headlines = new HeadlineMaker(config.defaultGrammar);
-let headline = headlines.generateHeadline();
+let headline = NewsEngine.generateHeadline();
 
 while (headline.text.length > config.tweetLength) {
   logError(`TWEET LENGTH ${headline.text.length} GREATER THAN MAX ${config.tweetLength}:\n${headline.text}`);
-	headline = headlines.generateHeadline();
+	headline = NewsEngine.generateHeadline();
 }
 
 fileLogger(`tweet: ${JSON.stringify(headline)}`);
