@@ -15,6 +15,9 @@ git pull
 # install dependencies
 npm install --production
 
+#log the path
+echo $PATH
+
 #log node version
 node -v
 
