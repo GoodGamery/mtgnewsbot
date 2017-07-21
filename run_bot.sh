@@ -6,20 +6,20 @@ set -a
 set +a
 
 #noisy
-
 set -x
-# update source
-git fetch
-git pull
-
-# install dependencies
-npm install --production
 
 #log the path
 echo $PATH
 
 #log node version
 node -v
+
+# update source
+git fetch
+git pull
+
+# install dependencies
+npm install --production
 
 # tweet
 node --harmony --use_strict bot.js
