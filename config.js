@@ -11,6 +11,7 @@ const LOGFILE_PATH = './debug.log';
 let config = {
 	defaultGrammarPath:  DEFAULT_GRAMMAR_PATH,
 	defaultGrammar: undefined,
+	origin: undefined,
 	tweetLength: TWEET_LENGTH,
 	paths: {
 		tempDirectory: TEMPFILE_PATH,
