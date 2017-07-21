@@ -3,7 +3,10 @@
 const HeadlineMaker = require('./headline-maker');
 const config = require('../config');
 
-const headlineMaker = new HeadlineMaker(config.defaultGrammar);
+const grammar = config.defaultGrammar;
+grammar["origin"] = config.origin || grammar["origin"];
+
+const headlineMaker = new HeadlineMaker(grammar);
 
 function generateHeadlines (numHeadlines) {
 	const headlines = [];
