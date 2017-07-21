@@ -64,16 +64,16 @@
       "Reveal #hiddenAgenda# naming #_card2#",
       "Offer to sell #_card1# to your opponent for #priceUSD#"
   ],
-  "inGraphicsCardMask": "http://i.imgur.com/AKqp4qU.png",
+  "inGraphicsCardMask": "https://goodgamery.com/img/twitter/cardmask-double.png",
   "inGraphicsBacksplash": [
-      "http://i.imgur.com/IuVXZFz.png",
-      "http://i.imgur.com/PmUheQA.png",
-      "http://i.imgur.com/ZPzm2l9.png",
-      "http://i.imgur.com/s9mXgcf.png",
-      "http://i.imgur.com/XYIzMAh.png",
-      "http://i.imgur.com/APp3oTH.png",
-      "http://i.imgur.com/aKGoqdO.png",
-      "http://i.imgur.com/WVXh97V.png"
+      "https://goodgamery.com/img/twitter/backsplash_a.png",
+      "https://goodgamery.com/img/twitter/backsplash_b.png",
+      "https://goodgamery.com/img/twitter/backsplash_c.png",
+      "https://goodgamery.com/img/twitter/backsplash_d.png",
+      "https://goodgamery.com/img/twitter/backsplash_e.png",
+      "https://goodgamery.com/img/twitter/backsplash_f.png",
+      "https://goodgamery.com/img/twitter/backsplash_g.png",
+      "https://goodgamery.com/img/twitter/backsplash_h.png"
   ],
   "fontHeader": "font-size: 36px; font-family: Beleren, Georgia, 'Liberation Serif', 'DejaVu Serif', serif; font-weight: 700; text-shadow: 2px 2px 2px black",
   "fontBody": "font-size: 16px; font-family: Arial, 'Liberation Sans', 'DejaVu Sans', sans-serif",
