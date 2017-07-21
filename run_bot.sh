@@ -5,6 +5,9 @@ set -a
 . ./.env
 set +a
 
+#noisy
+
+set -x
 # update source
 git fetch
 git pull
@@ -17,3 +20,6 @@ node -v
 
 # tweet
 node --harmony --use_strict bot.js
+
+#silent
+set +x

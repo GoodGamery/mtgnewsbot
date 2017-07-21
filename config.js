@@ -20,13 +20,14 @@ let config = {
 };
 
 // apply overrides from config overrides file
-let override;
+let override = {};
 try { 
   override = require(CONFIG_OVERRIDE_PATH); 
-  console.info('Applying config overrides.');
+  console.log('Applying config overrides.');
 } catch(e) { 
   /* use default config */ 
 }
+
 config = merge(config, override);
 
 // load the default grammar after applying overrides
