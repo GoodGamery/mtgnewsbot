@@ -15,9 +15,6 @@
         "#flavorArcana#",
         "#inGraphics#"
     ],
-    "inGraphics": [
-        "[_card1:#realCard#][_card2:#realCard#][_headline:#inGraphicsHeadline#]#inGraphicsText#{svg svgString=\"#inGraphicsImage#\"}"
-    ],
     "flavorArcana": [
         "BEHIND THE FLAVOR: #flavorText#",
         "FLAVOR FLASHBACK: #flavorText#"
