@@ -259,8 +259,6 @@
     "deckObjective": [
         "#deck# decks",
         "#deck# lists",
-        "#deckArch# decks",
-        "#deckArch# lists",
         "#deckArch# [_m:matchup,matchups]#_m#",
         "#cardAlone# decks",
         "#creatureTypes.capitalize# decks"
