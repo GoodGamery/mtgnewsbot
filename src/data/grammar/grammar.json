@@ -1,6 +1,12 @@
 {
     "origin": [
-        "#headline#"
+        "[_fruit:#fruit#]#_fruit.s# are #_color#"
+    ],
+    "resolver": [
+        "[_fruit:#fruit#]"
+    ],
+    "fruit": [
+        "Orange[_color:orange]", "Apple[_color:red]", "Banana[_color:yellow]"
     ],
     "headline": [
         "#tip#",
@@ -13,10 +19,14 @@
         "#announcement#",
         "#clickbait#",
         "#flavorArcana#",
-        "#inGraphics#"
+        "#inGraphics#",
+        "#fakeSetLogo#"
     ],
     "inGraphics": [
         "[_card1:#realCard#][_card2:#realCard#][_headline:#inGraphicsHeadline#]#inGraphicsText#{svg svgString=\"#inGraphicsImage#\"}"
+    ],
+    "fakeSetLogo": [
+        "[_cardset:#novelCardSetName.capitalizeAll#][_headline:Announcing...]Announcing: #_cardset#{svg svgString=\"#setLogoImage#\"}"
     ],
     "flavorArcana": [
         "BEHIND THE FLAVOR: #flavorText#",

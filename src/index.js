@@ -18,6 +18,7 @@ headlines.forEach(headline => {
 		svg2png(new Buffer(headline.tags.svg.svgString.replace(/`/g, '"')), { filename: __dirname })
 			.catch(e => console.log('\n *** Failed to create png: ' + e))
 			.then(data => {
+				console.log('SVG:'); console.log(headline.tags.svg.svgString.replace(/`/g, '"'));
 				fs.writeFileSync(outputPath, data);
 				console.log('\n *** Image saved to ' + outputPath);
 			})
