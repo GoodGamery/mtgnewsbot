@@ -1,14 +1,24 @@
 {
-  "setLogoColor": ["DarkOliveGreen", "NavajoWhite", "DarkGoldenrod", "SaddleBrown", "OliveDrab", "DarkGreen", "LimeGreen", "Cornsilk", "MidnightBlue", "DarkSlateGray",
-   					"SteelBlue", "SlateGray", "DimGrey", "Gainsboro", "Ivory", "OldLace", "WhiteSmoke", "Azure", "SteelBlue", "DarkSlateBlue", "DarkKhaki", "LemonChiffon", 
-   					"Indigo", "DarkBlue", "OrangeRed", "Gold", "Chocolate", "Snow", "DarkOliveGreen", "LightSeaGreen", "DarkOrange", "RebeccaPurple", "MediumSeaGreen","Khaki", 
-   					"DarkRed", "OrangeRed", "SkyBlue", "DeepSkyBlue", "DodgerBlue", "CornflowerBlue", "PaleGreen", "MistyRose", "BlueViolet", "FireBrick", "BurlyWood", "Black"],
+  "setLogoColorLight": ["NavajoWhite", "LimeGreen", "Cornsilk", "Gainsboro", "Ivory", "OldLace", "WhiteSmoke", "Azure","LemonChiffon", "Snow","Khaki", "PaleGreen",
+                        "MistyRose", "MediumAquamarine", "SkyBlue"],  
+  "setLogoColorMedium": ["DarkGoldenrod", "OliveDrab", "SteelBlue", "SlateGray","DarkKhaki", "OrangeRed", "Gold", "Chocolate", "LightSeaGreen", "DarkOrange", 
+                         "RebeccaPurple", "MediumSeaGreen", "OrangeRed",  "DeepSkyBlue", "DodgerBlue", "CornflowerBlue", "BlueViolet", "FireBrick", "BurlyWood"],
+  "setLogoColorDark": ["DarkOliveGreen", "SaddleBrown", "DarkGreen", "MidnightBlue", "DarkSlateGray", "DimGrey", "DarkSlateBlue", "Indigo", "DarkBlue","DarkRed",
+                       "Black"],              
   "setLogoFont": [
   	"Drift Wood[_setLogoFontSize:72][_setLogoStrokeWidth:2][_setLogoFontWeight:normal][_setLogoFontStyle:normal][_setLogoLineHeight:75][_setLogoBaseline:middle][_setLogoAdditionalStyles:]", 
   	"Beleren[_setLogoFontSize:90][_setLogoStrokeWidth:4,5,6][_setLogoFontWeight:bold][_setLogoFontStyle:italic][_setLogoLineHeight:80][_setLogoBaseline:bottom][_setLogoAdditionalStyles:]",
   	"Fiendish[_setLogoFontSize:60][_setLogoStrokeWidth:3,4,5][_setLogoFontWeight:normal][_setLogoFontStyle:normal][_setLogoLineHeight:180][_setLogoBaseline:middle][_setLogoAdditionalStyles:]"
   ],
-  "_setLogoFont": "[_setLogoFontFace:#setLogoFont#][_setLogoFontColor:#setLogoColor#][_setLogoStrokeColor:#setLogoColor#]",
+  "_setLogoFontColorSet": [
+    "[_setLogoFontColor:#setLogoColorLight#][_setLogoStrokeColor:#setLogoColorMedium#]",
+    "[_setLogoFontColor:#setLogoColorLight#][_setLogoStrokeColor:#setLogoColorDark#]",
+    "[_setLogoFontColor:#setLogoColorMedium#][_setLogoStrokeColor:#setLogoColorLight#]",
+    "[_setLogoFontColor:#setLogoColorMedium#][_setLogoStrokeColor:#setLogoColorDark#]",
+    "[_setLogoFontColor:#setLogoColorDark#][_setLogoStrokeColor:#setLogoColorLight#]",
+    "[_setLogoFontColor:#setLogoColorDark#][_setLogoStrokeColor:#setLogoColorMedium#]"                           
+  ],
+  "_setLogoFont": "[#_setLogoFontColorSet#][_setLogoFontFace:#setLogoFont#]",
   "_setLogoStyles": [
     "text-align: center;line-height: #_setLogoLineHeight#%;"
   ],
