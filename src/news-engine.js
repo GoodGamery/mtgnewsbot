@@ -5,6 +5,7 @@ const config = require('../config');
 
 const grammar = config.defaultGrammar;
 grammar["origin"] = config.origin || grammar["origin"];
+console.info(`New origin is ${JSON.stringify(grammar.origin)}`);
 
 const headlineMaker = new HeadlineMaker(grammar);
 
