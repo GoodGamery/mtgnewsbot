@@ -4,11 +4,11 @@
    					"Indigo", "DarkBlue", "OrangeRed", "Gold", "Chocolate", "Snow", "DarkOliveGreen", "LightSeaGreen", "DarkOrange", "RebeccaPurple", "MediumSeaGreen","Khaki", 
    					"DarkRed", "OrangeRed", "SkyBlue", "DeepSkyBlue", "DodgerBlue", "CornflowerBlue", "PaleGreen", "MistyRose", "BlueViolet", "FireBrick", "BurlyWood", "Black"],
   "setLogoFont": [
-  	"Drift Wood[_setLogoFontSize:72][_setLogoStrokeWidth:2][_setLogoFontWeight:normal][_setLogoLineHeight:90][_setLogoFontStyle:normal][_setLogoLineHeight:90][_setLogoBaseline:middle][_setLogoBaselineShift:0%]", 
-  	"Beleren[_setLogoFontSize:80][_setLogoStrokeWidth:4][_setLogoFontWeight:bold][_setLogoLineHeight:90][_setLogoFontStyle:italic][_setLogoLineHeight:80][_setLogoBaseline:middle][_setLogoBaselineShift:0%]", 
-  	"Fiendish[_setLogoFontSize:60][_setLogoStrokeWidth:2][_setLogoFontWeight:normal][_setLogoLineHeight:150][_setLogoFontStyle:normal[_setLogoLineHeight:140]][_setLogoBaseline:middle][_setLogoBaselineShift:25px]"
+  	"Drift Wood[_setLogoFontSize:72][_setLogoStrokeWidth:2][_setLogoFontWeight:normal][_setLogoFontStyle:normal][_setLogoLineHeight:75][_setLogoBaseline:middle]", 
+  	"Beleren[_setLogoFontSize:90][_setLogoStrokeWidth:4,5,6][_setLogoFontWeight:bold][_setLogoFontStyle:italic][_setLogoLineHeight:80][_setLogoBaseline:bottom]", 
+  	"Fiendish[_setLogoFontSize:60][_setLogoStrokeWidth:2,3][_setLogoFontWeight:normal][_setLogoFontStyle:normal][_setLogoLineHeight:180][_setLogoBaseline:middle]"
   ],
   "setLogoImage": [
- 	"[_setLogoFont:#setLogoFont#]<svg width=`700` height=`400`><foreignObject width=`700` height=`400`><div style=`display: table; height: 200px; width: 100%; text-align: center; border: 2px dashed red;`><span style=`-webkit-text-fill-color: #setLogoColor#; -webkit-text-stroke-width: #_setLogoStrokeWidth#px; -webkit-text-stroke-color: #setLogoColor#; font-size: #_setLogoFontSize#px; font-family: #_setLogoFont#;font-weight: #_setLogoFontWeight#;text-align: center;line-height: #_setLogoLineHeight#%;dominant-baseline: #_setLogoBaseline#; baseline-shift: #_setLogoBaselineShift#;font-style: #_setLogoFontStyle#; display: table-cell; vertical-align: middle;`>#_cardset#</span></div></foreignObject></svg>"  
+ 	"[_setLogoFont:#setLogoFont#]<svg width=`700` height=`250`><foreignObject width=`680` height=`250` y=5><div style=`display:table;width:100%;height:98%`><div style=`height:250px; display:table-cell; text-align: center;  padding:20px`><span style=`-webkit-text-fill-color: #setLogoColor#; -webkit-text-stroke-width: #_setLogoStrokeWidth#px; -webkit-text-stroke-color: #setLogoColor#; font-size: #_setLogoFontSize#px; font-family: #_setLogoFont#;font-weight: #_setLogoFontWeight#;text-align: center;line-height: #_setLogoLineHeight#%; font-style: #_setLogoFontStyle#;`>#_cardset#</span></div></div></foreignObject></svg>"
   ]
 }
