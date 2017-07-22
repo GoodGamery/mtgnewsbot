@@ -8,7 +8,7 @@
     "start": "npm run print",
     "print": "node src/index.js ",
     "lint": "gulp lint",
-    "test": "gulp lint && npm run print",
+    "test": "gulp lint && npm run print 15",
     "watch": "gulp",
     "build-grammar": "node build.js"
   },
