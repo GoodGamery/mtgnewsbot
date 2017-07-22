@@ -42,13 +42,14 @@
         "Announcement: #pro# has joined Team #team#"
     ],
     "realization": [
+        "#realize#",
         "The Importance of [_thing:#card#,#cardCategory.s#,#creatureTypes.s#,#gameConcept#]#_thing# in [_where:#format#,#recentCardSet#]#_where#",
-        "#pros# Don't realize that #tech.s# #verbDefeat# #obstacle.capitalize#",
         "The Secret to #improvementGoal.capitalizeAll# is #deckChange.capitalize#",
         "In today's Magic Story: #character#'s #adj# history with #character# finally revealed",
         "#pro# Video Series: How I would [_change:improve,fix]#_change# Magic: the Gathering by #suggestion# #thing#, Part #num2-9#",
         "Preview of #teaserCardSet# #normalFormat#: will the new #deckVariation# deck be #deckDescription#?"
     ],
+    "realize": "#pros# don't realize that #techPlural# #verbDefeat# #obstacle#",
     "tournamentNews": [
         "Emergency Banning: #card.capitalize# Banned in #format#",
         "#card.capitalize# Banned in #format.capitalizeAll# After [winner:#deck#,#pro#]#winner.capitalizeAll# Wins #tournament.capitalizeAll#",
@@ -74,7 +75,7 @@
         "Leaked: Team #team#'s new deck #deckLocation#s #card#, invest now"
     ],
     "classifieds": [
-        "#titleClassified#: #card#",
+        "#titleClassified#: #card#, #card#, and #card#",
         "#titleClassified#: #card# playset for #priceUSD#",
         "#titleClassified#: #num2-99#x #cardAlone# @ #priceUSD# ea.",
         "#titleClassified#: #broadCardClassification.capitalizeAll# Collection for #priceUSD#",
@@ -174,6 +175,18 @@
         "rules change",
         "large set",
         "sideboard",
+        "spicy new tech"
+    ],
+    "techPlural": [
+        "#adj# decks",
+        "#adj# cards",
+        "rotating formats",
+        "rules changes",
+        "floor rulings",
+        "power-level errata",
+        "large sets",
+        "small sets",
+        "sideboards",
         "spicy new tech"
     ],
     "obstacle": [

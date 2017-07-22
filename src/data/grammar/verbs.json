@@ -22,7 +22,6 @@
       "trivializing", "renouncing", "abhoring", "disputing", "pantomiming", "advertising", "lying about", "deep-frying", "decorating", "running", "brandishing"
   ],
   "verbDefeat": [
-      "control",
       "defeat",
       "beat",
       "overcome",
@@ -31,14 +30,10 @@
       "take down"
   ],
   "verbDefeating": [
-      "controlling",
       "defeating",
       "beating",
       "overcoming",
-      "dealing with",
-      "handling",
       "becoming",
-      "truly knowing",
       "locking down",
       "fixing",
       "taking down",
@@ -50,8 +45,17 @@
       "creating",
       "brewing up",
       "developing",
-      "stewing up",
       "mashing together",
       "shuffling up"
+  ],
+  "revealVerb": [
+      "reveal", "unveil", "disclose", "uncover", "expose", "explain"
+  ],
+  "outVerb": [
+      "peel", "dissolve", "evaporate", "melt", "erode",  "crumble"
+  ],
+  "adv": [
+      "adoringly", "awkwardly", "beautifully", "cheerfully", "effortlessly", "hungrily", "intently", "quickly",
+      "recklessly", "reluctantly", "savagely", "thoughtfully", "triumphantly", "vivaciously"
   ]
 }
