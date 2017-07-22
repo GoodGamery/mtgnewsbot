@@ -14,7 +14,11 @@
     "Becker[_setLogoFontSize:90][_setLogoStrokeWidth:4][_setLogoFontWeight:bold][_setLogoLineHeight:80][_setLogoBaseline:bottom][_setLogoAdditionalStyles:#_setLogoCustomStyleTextured#,#_setLogoCustomStyleItalicized#]",
     "Beleren[_setLogoFontSize:90][_setLogoStrokeWidth:4,5,6][_setLogoFontWeight:bold][_setLogoLineHeight:80][_setLogoBaseline:bottom][_setLogoAdditionalStyles:#_setLogoCustomStyleTextured#,#_setLogoCustomStyleItalicized#]",
     "Empire State NF[_setLogoFontSize:90][_setLogoStrokeWidth:4][_setLogoFontWeight:normal][_setLogoLineHeight:99][_setLogoBaseline:bottom][_setLogoAdditionalStyles:#_setLogoCustomStyleTextured#,#_setLogoCustomStyleItalicized#]",    
-    "Fiendish[_setLogoFontSize:60][_setLogoStrokeWidth:3,4,5][_setLogoFontWeight:normal][_setLogoLineHeight:180][_setLogoBaseline:middle][_setLogoAdditionalStyles:#_setLogoCustomStyleTextured#]"
+    "Feast of Flesh BB[_setLogoFontSize:90][_setLogoStrokeWidth:4][_setLogoFontWeight:bold][_setLogoLineHeight:80][_setLogoBaseline:bottom][_setLogoAdditionalStyles:,#_setLogoCustomStyleTextured#,#_setLogoCustomStyleItalicized#]",    
+    "Fiendish[_setLogoFontSize:60][_setLogoStrokeWidth:3,4,5][_setLogoFontWeight:normal][_setLogoLineHeight:180][_setLogoBaseline:middle][_setLogoAdditionalStyles:#_setLogoCustomStyleTextured#]",
+    "Jungle Fever NF[_setLogoFontSize:100][_setLogoStrokeWidth:4][_setLogoFontWeight:normal][_setLogoLineHeight:70][_setLogoBaseline:bottom][_setLogoAdditionalStyles:#_setLogoCustomStyleTextured#,#_setLogoCustomStyleItalicized#]",    
+    "Kulkeuma[_setLogoFontSize:72][_setLogoStrokeWidth:4][_setLogoFontWeight:normal][_setLogoLineHeight:80][_setLogoBaseline:bottom][_setLogoAdditionalStyles:#_setLogoCustomStyleTextured#,#_setLogoCustomStyleItalicized#]",    
+    "MEDICINE SHOW CAPS[_setLogoFontSize:90][_setLogoStrokeWidth:4][_setLogoFontWeight:normal][_setLogoLineHeight:80][_setLogoBaseline:bottom][_setLogoAdditionalStyles:#_setLogoCustomStyleTextured# text-transform#colon# uppercase;,#_setLogoCustomStyleItalicized# text-transform#colon# uppercase;]"
   ],  
   "_setLogoFontColorSet": [
     "[_setLogoFontColor:#setLogoColorLight#][_setLogoStrokeColor:#setLogoColorMedium#]",
@@ -25,12 +29,12 @@
     "[_setLogoFontColor:#setLogoColorDark#][_setLogoStrokeColor:#setLogoColorMedium#]"                           
   ],
   "_setLogoCustomStyleTextured": ["-webkit-mask-image:url(./scratch/images/grit.png);"],
-  "_setLogoCustomStyleItalicized": ["font-style: italic"],
+  "_setLogoCustomStyleItalicized": ["font-style: italic;"],
   "_setLogoFont": "[#_setLogoFontColorSet#][_setLogoFontFace:#setLogoFont#]",
   "_setLogoStyles": [
     "text-align: center;line-height: #_setLogoLineHeight#%;"
   ],
-  "_cardsetDebug": ["#_cardset#","Escape from Innistrad", "Battle for Kamigawa"],
+  "_cardsetDebug": ["#_cardset#"],
   "_setLogoTextStyles": [
     "-webkit-mask-origin: fill-box; -webkit-text-fill-color: #_setLogoFontColor#; -webkit-text-stroke-width: #_setLogoStrokeWidth#px; -webkit-text-stroke-color: #_setLogoStrokeColor#; font-size: #_setLogoFontSize#px; font-family: #_setLogoFontFace#;font-weight: #_setLogoFontWeight#; #_setLogoAdditionalStyles#"
   ],
