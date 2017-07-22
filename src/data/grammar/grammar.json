@@ -13,7 +13,8 @@
         "#announcement#",
         "#clickbait#",
         "#flavorArcana#",
-        "#inGraphics#"
+        "#inGraphics#",
+        "#headlineKeepOrMulligan#"
     ],
     "flavorArcana": [
         "BEHIND THE FLAVOR: #flavorText#",

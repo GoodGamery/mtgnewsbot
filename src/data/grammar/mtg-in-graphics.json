@@ -1,4 +1,7 @@
 {
+  "inGraphics": [
+      "[_card1:#realCard#][_card2:#realCard#][_headline:#inGraphicsHeadline#]#inGraphicsText#{svg svgString=\"#inGraphicsImage#\"}"
+  ],
   "inGraphicsText": [
       "IN GRAPHICS: #_headline#",
       "Infographic: #_headline#"

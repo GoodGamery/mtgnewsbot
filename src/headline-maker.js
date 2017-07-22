@@ -68,8 +68,16 @@ function parseMessage(message) {
 				}, {});
 			}
 			text = message.replace(match,'');
-		});	
+		});
+
+        // Further process svg tags
+        if (tags.svg && tags.svg.svgString) {
+            tags.svg.svgString = tags.svg.svgString
+                .replace(/`/g, '"');    // This gets quotes working
+        }
 	}
+
+
 
 	return new Headline(text.trim().replace(/\s+/g,' '), tags);
 }
