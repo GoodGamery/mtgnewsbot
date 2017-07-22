@@ -5,11 +5,17 @@
                          "RebeccaPurple", "MediumSeaGreen", "OrangeRed",  "DeepSkyBlue", "DodgerBlue", "CornflowerBlue", "BlueViolet", "FireBrick", "BurlyWood"],
   "setLogoColorDark": ["DarkOliveGreen", "SaddleBrown", "DarkGreen", "MidnightBlue", "DarkSlateGray", "DimGrey", "DarkSlateBlue", "Indigo", "DarkBlue","DarkRed",
                        "Black"],              
-  "setLogoFont": [
-    "Drift Wood[_setLogoFontSize:72][_setLogoStrokeWidth:2][_setLogoFontWeight:normal][_setLogoFontStyle:normal][_setLogoLineHeight:75][_setLogoBaseline:middle]", 
-    "Beleren[_setLogoFontSize:90][_setLogoStrokeWidth:4,5,6][_setLogoFontWeight:bold][_setLogoFontStyle:italic][_setLogoLineHeight:80][_setLogoBaseline:bottom][_setLogoAdditionalStyles:][_setLogoAdditionalStyles:#_setLogoCustomStyleTextured#,#_setLogoCustomStyleItalicized#]",
-    "Fiendish[_setLogoFontSize:60][_setLogoStrokeWidth:3,4,5][_setLogoFontWeight:normal][_setLogoFontStyle:normal][_setLogoLineHeight:180][_setLogoBaseline:middle][_setLogoAdditionalStyles:#_setLogoCustomStyleTextured#]"
+  "setLogoFontUnused": [
+   "Drift Wood[_setLogoFontSize:72][_setLogoStrokeWidth:2][_setLogoFontWeight:normal][_setLogoLineHeight:75][_setLogoBaseline:middle]"  
   ],
+  "setLogoFont": [
+    "Abandon[_setLogoFontSize:72][_setLogoStrokeWidth:3][_setLogoFontWeight:normal][_setLogoLineHeight:100][_setLogoBaseline:middle][_setLogoAdditionalStyles:letter-spacing#colon# 0.025em;]",  
+    "Action Is[_setLogoFontSize:100][_setLogoStrokeWidth:4][_setLogoFontWeight:bold][_setLogoLineHeight:85][_setLogoBaseline:bottom][_setLogoAdditionalStyles:,#_setLogoCustomStyleTextured#]",
+    "Becker[_setLogoFontSize:90][_setLogoStrokeWidth:4][_setLogoFontWeight:bold][_setLogoLineHeight:80][_setLogoBaseline:bottom][_setLogoAdditionalStyles:#_setLogoCustomStyleTextured#,#_setLogoCustomStyleItalicized#]",
+    "Beleren[_setLogoFontSize:90][_setLogoStrokeWidth:4,5,6][_setLogoFontWeight:bold][_setLogoLineHeight:80][_setLogoBaseline:bottom][_setLogoAdditionalStyles:#_setLogoCustomStyleTextured#,#_setLogoCustomStyleItalicized#]",
+    "Empire State NF[_setLogoFontSize:90][_setLogoStrokeWidth:4][_setLogoFontWeight:normal][_setLogoLineHeight:99][_setLogoBaseline:bottom][_setLogoAdditionalStyles:#_setLogoCustomStyleTextured#,#_setLogoCustomStyleItalicized#]",    
+    "Fiendish[_setLogoFontSize:60][_setLogoStrokeWidth:3,4,5][_setLogoFontWeight:normal][_setLogoLineHeight:180][_setLogoBaseline:middle][_setLogoAdditionalStyles:#_setLogoCustomStyleTextured#]"
+  ],  
   "_setLogoFontColorSet": [
     "[_setLogoFontColor:#setLogoColorLight#][_setLogoStrokeColor:#setLogoColorMedium#]",
     "[_setLogoFontColor:#setLogoColorLight#][_setLogoStrokeColor:#setLogoColorDark#]",
@@ -24,11 +30,11 @@
   "_setLogoStyles": [
     "text-align: center;line-height: #_setLogoLineHeight#%;"
   ],
-  "_cardsetDebug": ["Mirrodin Revisited"],
+  "_cardsetDebug": ["#_cardset#","Escape from Innistrad", "Battle for Kamigawa"],
   "_setLogoTextStyles": [
     "-webkit-mask-origin: fill-box; -webkit-text-fill-color: #_setLogoFontColor#; -webkit-text-stroke-width: #_setLogoStrokeWidth#px; -webkit-text-stroke-color: #_setLogoStrokeColor#; font-size: #_setLogoFontSize#px; font-family: #_setLogoFontFace#;font-weight: #_setLogoFontWeight#; #_setLogoAdditionalStyles#"
   ],
   "setLogoImage": [
-  "[#_setLogoFont#]<svg width=`700` height=`250`><foreignObject width=`680` height=`250` y=5><div style=`display:table;width:100%;height:98%`><div style=`height:250px; display:table-cell; text-align: center;  padding:20px`><span style=`#_setLogoStyles# #_setLogoTextStyles#`>#_cardsetDebug#</span></div></div></foreignObject></svg>"
+  "[#_setLogoFont#]<svg width=`700` height=`300`><foreignObject width=`680` height=`300` y=5><div style=`display:table;width:100%;height:98%`><div style=`height:250px; display:table-cell; text-align: center;  padding:20px`><span style=`#_setLogoStyles# #_setLogoTextStyles#`>#_cardsetDebug#</span></div></div></foreignObject></svg>"
   ]
 }
