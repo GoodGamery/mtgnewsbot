@@ -18,6 +18,7 @@
       "#cardCategory.capitalizeAll.s# Everywhere",
       "Infinite #creatureTypes.capitalizeAll.s#",
       "Break the Game Open with #_card1#",
+      "#_card1# goes on the offensive",
       "The Hidden Power of #_card1#"
   ],
   "inGraphicsStep": [
