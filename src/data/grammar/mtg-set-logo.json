@@ -38,7 +38,7 @@
   "_setLogoTextStyles": [
     "-webkit-mask-origin: fill-box; -webkit-text-fill-color: #_setLogoFontColor#; -webkit-text-stroke-width: #_setLogoStrokeWidth#px; -webkit-text-stroke-color: #_setLogoStrokeColor#; font-size: #_setLogoFontSize#px; font-family: #_setLogoFontFace#;font-weight: #_setLogoFontWeight#; #_setLogoAdditionalStyles#"
   ],
-  "setLogoImage": [
-  "[#_setLogoFont#]<svg width=`750` height=`380` viewBox=`0 0 750 380`><svg width=`750` height=`380` viewBox=`0 0 750 380` preserveAspectRatio=`meet`><foreignObject width=`750` height=`380` viewBox=`0 0 750 380` preserveAspectRatio=`meety=5><div style=`display:table;width:100%;height:98%;`><div style=`height:380px; width:700px; display:table-cell; text-align: center; align:center; padding:20px; margin: 0 auto;`><span style=`#_setLogoStyles# #_setLogoTextStyles#`>#_cardsetDebug#</span></div></div></foreignObject></svg>"
+  "mtgSetLogoImage": [
+  "[#_setLogoFont#]<div style=`display:table;`><div style=`height:380px; width:700px; display:table-cell; text-align: center; align:center; padding:20px; margin: 0 auto;`><span style=`#_setLogoStyles# #_setLogoTextStyles#`>#_cardsetDebug#</span></div></div>"
   ]
 }

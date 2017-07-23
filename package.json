@@ -26,6 +26,8 @@
   },
   "homepage": "https://github.com/mdiehr/mtgnewsbot#readme",
   "dependencies": {
+    "gm": "^1.23.0",
+    "html2png": "^1.1.2",
     "lodash.merge": "4.6.0",
     "svg2png": "4.1.1",
     "tracery-grammar": "2.7.3",
