@@ -38,8 +38,8 @@ headlines.forEach(headline => {
 			if (err) { console.log('\n *** Failed to create png: ' + err); return; }
 			gm(data).trim()
 			.write(outputPath,  err => {	
-				if (err) {  console.error('ERROR: ' + err); return err; }		
-				console.log('\n *** Image saved to ' + outputPath);
+				if (err) {  console.error('ERROR: ' + err); return err; }	
+        console.log('wrote image data file to ' + outputPath);
 				screenshot.close();
 			});
 		});	  

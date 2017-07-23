@@ -28,7 +28,7 @@
     "[_setLogoFontColor:#setLogoColorDark#][_setLogoStrokeColor:#setLogoColorLight#]",
     "[_setLogoFontColor:#setLogoColorDark#][_setLogoStrokeColor:#setLogoColorMedium#]"                           
   ],
-  "_setLogoCustomStyleTextured": ["-webkit-mask-image:url(./scratch/images/grit.png);"],
+  "_setLogoCustomStyleTextured": ["-webkit-mask-image:url(./src/data/images/textures/grit.png);"],
   "_setLogoCustomStyleItalicized": ["font-style: italic;"],
   "_setLogoFont": "[#_setLogoFontColorSet#][_setLogoFontFace:#setLogoFont#]",
   "_setLogoStyles": [
@@ -36,7 +36,7 @@
   ],
   "_cardsetDebug": ["#_cardset#"],
   "_setLogoTextStyles": [
-    "-webkit-mask-origin: fill-box; -webkit-text-fill-color: #_setLogoFontColor#; -webkit-text-stroke-width: #_setLogoStrokeWidth#px; -webkit-text-stroke-color: #_setLogoStrokeColor#; font-size: #_setLogoFontSize#px; font-family: #_setLogoFontFace#;font-weight: #_setLogoFontWeight#; #_setLogoAdditionalStyles#"
+    "-webkit-text-fill-color: #_setLogoFontColor#; -webkit-text-stroke-width: #_setLogoStrokeWidth#px; -webkit-text-stroke-color: #_setLogoStrokeColor#; font-size: #_setLogoFontSize#px; font-family: #_setLogoFontFace#;font-weight: #_setLogoFontWeight#; #_setLogoAdditionalStyles#"
   ],
   "mtgSetLogoImage": [
   "[#_setLogoFont#]<div style=`display:table;`><div style=`height:380px; width:700px; display:table-cell; text-align: center; align:center; padding:20px; margin: 0 auto;`><span style=`#_setLogoStyles# #_setLogoTextStyles#`>#_cardsetDebug#</span></div></div>"
