@@ -38,6 +38,13 @@
       "#realCard#",
       "#fakeCard#"
   ],
+  "realHandCard": [
+    "#realCard#",
+    "#realCard#",
+    "#realCard#",
+    "#realLandCard#",
+    "#realLandCard#"
+  ],
   "realCard": [
       "#realNormalCard#",
       "#realNormalCard#",
@@ -45,6 +52,30 @@
       "#realObscureCard#",
       "#realPowerfulCard#",
       "#realBadCard#"
+  ],
+  "realLandCard": [
+    "#basicLands#",
+    "#dualLands#",
+    "#utilityLands#"
+  ],
+  "dualLands": [
+    "Tundra", "Underground Sea", "Badlands", "Taiga", "Savannah",
+    "Scrubland", "Volcanic Island", "Bayou", "Plateau", "Tropical Island",
+    "Flooded Strand", "Polluted Delta", "Bloodstained Mire", "Wooded Foothills", "Windswept Heath",
+    "Marsh Flats", "Scalding Tarn", "Verdant Catacombs", "Arid Mesa", "Misty Rainforest",
+    "Azorius Chancery", "Dimir Aqueduct", "Rakdos Carnarium", "Gruul Turf", "Selesnya Sanctuary",
+    "Orzhov Basilica", "Izzet Boilerworks", "Golgari Rot Farm", "Boros Garrison", "Simic Growth Chamber",
+    "Hallowed Fountain", "Watery Grave", "Blood Crypt", "Stomping Ground", "Temple Garden",
+    "Godless Shrine", "Steam Vents", "Overgrown Tomb", "Sacred Foundry", "Breeding Pool",
+    "Mystic Gate", "Sunken Ruins", "Graven Cairns", "Fire-lit Thicket", "Wooded Bastion",
+    "Fetid Heath", "Cascade Bluffs", "Twilight Mire", "Rugged Prairie", "Flooded Grove",
+    "Graven Cairns", "Grove of the Burnwillows", "Horizon Canopy", "Nimbus Maze", "River of Tears"
+  ],
+  "basicLands": [
+    "Plains", "Island", "Swamp", "Mountain", "Forest"
+  ],
+  "utilityLands":[
+    "Dryad Arbor", "Dark Depths", "Serra's Sanctum", "Tomb of Urami", "Eye of Ugin", "Paliano, the High City", "Tolarian Academy", "R&D's Secret Lair", "The Tabernacle at Pendrell Vale", "Urborg, Tomb of Yawgmoth", "Teferi's Isle", "Urza's Tower", "Urza's Power Plant", "Urza's Mine", "Urza's Factory", "Cloudpost", "Mistveil Plains", "Madblind Mountain", "Desert", "Hostile Desert", "Wasteland", "Soldevi Excavations", "Tectonic Edge", "Cathedral of War", "Moorland Haunt", "Encroaching Wastes", "Strip Mine", "Command Beacon", "Dust Bowl", "Kjeldoran Outpost", "Emeria, the Sky Ruin", "Inkmoth Nexus", "Shelldock Isle", "Arena", "Vault of the Archangel", "Mishra's Toy Workshop", "Cathedral of Serra", "Mirrorpool", "Maze's End", "Gavony Township", "Mishra's Factory", "Lotus Vale", "Gargoyle Castle", "Rishadan Port", "Flamekin Village", "Opal Palace", "Hanweir Battlements", "Arcane Lighthouse", "Phyrexia's Core", "City of Ass", "Mage-Ring Network", "Starlit Sanctum", "Safe Haven", "Riptide Laboratory", "Contested Cliffs", "Crypt of Agadeem", "Sliver Hive", "Grove of the Guardian", "Svogthos, the Restless Tomb", "Mishra's Workshop", "Nantuko Monastery", "Westvale Abbey", "Krosan Verge", "Ghost Quarter", "Riftstone Portal", "Thawing Glaciers", "Thespian's Stage", "Zoetic Cavern", "Lake of the Dead", "Island of Wak-Wak", "Cephalid Coliseum", "Command Tower", "Kessig Wolf Run", "Library of Alexandria", "Swarmyard", "Glacial Chasm", "Cavern of Souls", "Springjack Pasture", "Griffin Canyon", "Mutavault", "Vesuva", "Adventurers' Guildhouse", "Maze of Ith"
   ],
   "realPowerfulCard": [
       "Abrupt Decay",

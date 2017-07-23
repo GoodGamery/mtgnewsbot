@@ -1,4 +1,7 @@
 {
+  "inGraphics": [
+      "[_card1:#realCard#][_card2:#realCard#][_headline:#inGraphicsHeadline#]#inGraphicsText#{svg svgString=\"#inGraphicsImage#\"}"
+  ],
   "inGraphicsText": [
       "IN GRAPHICS: #_headline#",
       "Infographic: #_headline#"
@@ -15,6 +18,7 @@
       "#cardCategory.capitalizeAll.s# Everywhere",
       "Infinite #creatureTypes.capitalizeAll.s#",
       "Break the Game Open with #_card1#",
+      "#_card1# goes on the offensive",
       "The Hidden Power of #_card1#"
   ],
   "inGraphicsStep": [
