@@ -31,8 +31,8 @@ function postImageTweet(imageFilePath, status, cardName) {
 }
 
 function postCardImageTweet(status, cardName) {
-	const outputPath = config.paths.tempDirectory + '/' + outputfile;	
 	const outputfile = cardName.replace(/\s+/g, '-').toLowerCase() + '-' + uuid() + '.jpg';
+	const outputPath = config.paths.tempDirectory + '/' + outputfile;	
 
 	mtgCardFinder.downloadCardImage(cardName, outputPath)
 		.then(localFilePath => postImageTweet(localFilePath, status, cardName))
