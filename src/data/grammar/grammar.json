@@ -34,11 +34,11 @@
     ],
     "announcement": [
         "Wizards Announces: Duel Decks: [_one:#nouns.capitalizeAll#,#planeswalkerFirstName#]#_one# vs. [_two:#nouns.capitalizeAll#,#planeswalkerFirstName#]#_two#",
-        "Wizards Announces: From the Vault: [_contents:#nouns#,#pluralNoun#,#massNoun#]#_contents.capitalize#",
-        "Wizards Announces: #novelCardSetName.capitalizeAll#",
-        "[_nextSet:The next set,The next fall set,#codename.capitalize#][_verbphrase:is actually,is really named,will be named]#_nextSet# #_verbphrase# #novelCardSetName.capitalizeAll#",
-        "Announcement: #pro# has joined Team #team#"
-    ],
+        "Wizards Announces: From the Vault: [_contents:#nouns#,#pluralNoun#,#massNoun#]#_contents.capitalize#",         
+        "Wizards Announces: [_cardset:#novelCardSetName.capitalizeAll#]#_cardset#{htmlImg htmlImgString=\"#mtgSetLogoImage#\"}",
+        "[_nextSet:The next set,The next fall set,#codename.capitalize#][_verbphrase:is actually,is really named,will be named]#_nextSet# #_verbphrase# [_cardset:#novelCardSetName.capitalizeAll#]#_cardset#{htmlImg htmlImgString=\"#mtgSetLogoImage#\"}",
+        "Announcement: #pro# has joined Team #team#"      
+    ],    
     "realization": [
         "#realize#",
         "The Importance of [_thing:#card#,#cardCategory.s#,#creatureTypes.s#,#gameConcept#]#_thing# in [_where:#format#,#recentCardSet#]#_where#",
@@ -129,7 +129,7 @@
         "\"[_cost:One #concreteNoun#,#count.capitalize# #concreteNoun.s#]#_cost# #verbPastTense# for every #concreteNoun# #verbPastTense#[_where:, underfoot, overhead, abroad]#_where#.\" —#demonym# penalty for #crime#",
         "\"Its diet consists of #pluralNoun#, [_place1:#placeNoun#][_thing:#pluralNoun#]#adj# #_place1# #_thing#, #adj# #_place1# #_thing#, and #_place1.s#.\"",
         "\"‘[_who:#character#]#_who.capitalize#, #verb# those #itemOrCreatureType.s#.’ ‘#_who#, #verb# those #itemOrCreatureType.s#.’ No one cares that today is #occasion#.\"",
-        "\"[#character#][_first:#pluralNounOrMassMoun#][_second:#pluralNounOrMassMoun#][_third:#pluralNounOrMassMoun#][_fourth:#pluralNounOrMassMoun#]#they.capitalize# traded #_first# for #_second#, #_second# for #_third#, #_third# for #_fourth#. In the end, #they# traded #_fourth# for #_first#.\"",
+        "\"[#character#][_first:#pluralNounOrMassNoun#][_second:#pluralNounOrMassNoun#][_third:#pluralNounOrMassNoun#][_fourth:#pluralNounOrMassNoun#]#they.capitalize# traded #_first# for #_second#, #_second# for #_third#, #_third# for #_fourth#. In the end, #they# traded #_fourth# for #_first#.\"",
         "The #massNoun# didn't kill #nonPlaneswalkerCharacter#. But as #they# lay [_prep:in,on,beside,under]#_prep# it, watching #creatureTypes.s#[_second:, and #creatureTypes.s#]#_second# #verbGerund# #them#, #they# wished it had."
     ],
     "occasion": ["my birthday", "my anniversary", "my first day on the job", "my last day on the job", "my bar mitzvah", "my unbirthday", "my cake day",
@@ -300,6 +300,6 @@
     "characterClass": ["master", "warlord", "avenger", "champion", "explorer", "pirate", "chieftain", "conqueror", "god", "assassin", "oracle", "ghost",
                         "knave", "defender","ancient", "master", "prisoner", "buffoon", "baby", "clown", "villain", "freak", "fiend", "titan", "horror",
                         "cyborg", "ambassador", "agent", "mercenary", "cowboy", "mime", "architect", "inventor", "guardian", "groundskeeper", "farmer",
-                        "doctor", "thief", "judge", "juror", "executioner"],
+                        "doctor", "thief", "judge", "juror", "executioner", "herald", "betrayer", "savior"],
     "colon": ":"
 }
