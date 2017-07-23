@@ -1,0 +1,30 @@
+{
+    "gatherer": [
+        "[_cardname:#realCard#]#gathererIntro# #gathererText# #imgCard#"
+    ],
+    "gathererIntro": [
+        "GATHERER RULING #gathererTimestamp#:",
+        "From Gatherer, #gathererTimestamp#:",
+        "Judge Ruling #gathererTimestamp#:",
+        "New ruling announced:"
+    ],
+    "gathererTimestamp": [
+        "#num1-12#/1#num1-9#/[_year:1993,1996,1998,2004,2009,2012,2014,2015,2016,2017,2018]#_year#"
+    ],
+    "gathererText": [
+        "The #singularNoun# continues to #verb# after #_cardname# has left the battlefield.",
+        "The artist is actually #person#.",
+        "This is the timeshifted version of #realCard#.",
+        "When the #xth# ability resolves, the #cardCategory# you [_put:put, don’t put]#_put# #cardLocation# stays #cardLocation#.",
+        "…finally, #_cardname# is placed #cardLocation#. This is a state-based action.",
+        "#_cardname.# are #cardLocation# regardless of whether they're #cardState# or #cardState#",
+        "Cards not actually #cardLocation# can't be affected by #_cardname#.",
+        "Does not animate itself. But can be animated by another #_cardname#.",
+        "This is the current interaction between #_cardname# and #realCard#: The type-changing effect applies at layer #num1-9#.",
+        "#gathererTextRare#"
+    ],
+    "gathererTextRare": [
+        "Yes, this is a bit weird.",
+        "You can’t interfere in any physical way with the casting of this card."
+    ]
+}
