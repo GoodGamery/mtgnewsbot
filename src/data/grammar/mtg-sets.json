@@ -59,19 +59,18 @@
     "#characterClass.s# of #creatureTypes#town",
     "#collective# of #beings#",
     "hour of #abstractNoun#",
-    "#adj# masters"
+    "#adj# masters [_year:,2017,2018]#_year#",
+    "[_desc:#adj#,#massNoun#]#_desc.capitalizeAll# #omenOrEventNoun#"
   ],
   "planeBasedSet": [
     "#cardSetPrefix# #plane#",
-    "#cardSetPrefix# #plane#",
-    "#cardSetPrefix# #plane#",        
+    "#cardSetPrefix# #plane#",      
     "#plane# #cardSetSuffix#",
-    "#plane# #cardSetSuffix#",
-    "#plane# #cardSetSuffix#",        
+    "#plane# #cardSetSuffix#",       
     "#plane# #omenOrEventNoun#"
   ],
   "omenOrEventNoun": [
-    "dawn", "revolt", "assault", "omen", "moon", "apocalypse"
+    "dawn", "revolt", "assault", "omen", "moon", "apocalypse", "rising"
   ],  
   "cardSetPrefix": [
       "#beings# of",
