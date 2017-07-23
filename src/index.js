@@ -6,7 +6,7 @@ const fs =  require(`fs`);
 const uuid = require(`uuid`);
 const svg2png = require('svg2png');
 const html2png = require('html2png');
-const gm = require('gm');
+const Jimp = require('jimp');
 
 const numExamples = process.argv[2] || 1;
 const headlines = NewsEngine.generateHeadlines(numExamples);
@@ -38,13 +38,17 @@ headlines.forEach(headline => {
 		console.log('HTML:'); console.log(html);
 
 		screenshot.render(html, function (err, data) { 
-			if (err) { console.log('\n *** Failed to create png: ' + err); return; }
-			gm(data).trim()
-			.write(outputPath,  err => {	
-				if (err) {  console.error('ERROR: ' + err); return err; }	
-        console.log('wrote image data file to ' + outputPath);
-				screenshot.close();
-			});
+			if (err) { console.log('\n *** Failed to create png: ' + err); }
+			else {
+				Jimp.read(data).then(image => image.autocrop().write(outputPath))
+		      .then(() => { 
+						console.log('\n *** Trimmed image saved to ' + outputPath);
+		      })
+		      .catch(err => { 
+		      	console.log('\n *** Failed to create trimmed png:');
+		      	console.log(err);
+		      });
+			}
 		});	  
 	}
 });

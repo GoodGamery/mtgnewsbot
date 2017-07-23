@@ -63,7 +63,7 @@ class TwitterClient {
     return new Promise((resolve, reject) => {
       try {
         console.log('uploading image file to twitter...');
-
+        
         let base64Data = fs.readFileSync(filepath, { encoding: 'base64' });
         this.uploadTwitterImageData(base64Data).then(data => {
           resolve(data);

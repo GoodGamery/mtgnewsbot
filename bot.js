@@ -5,7 +5,7 @@ const path = require('path');
 const uuid = require(`uuid`);
 const svg2png = require(`svg2png`);
 const html2png = require('html2png');
-const gm = require('gm');
+const Jimp = require('jimp');
 
 const NewsEngine = require('./src/news-engine');
 const TwitterClient = require('./src/lib/api/twitter-client');
@@ -87,19 +87,22 @@ function renderImageFromHtml(html, outputPath) {
 		console.log('HTML:'); console.log(html);
 
 		screenshot.render(html, function (err, data) { 
-			if (err) { console.log('\n *** Failed to create png:'); reject(err); return; }
-
-			gm(data).trim()
-			.write(outputPath,  err => {	
-				if (!err) {
-					console.log('\n *** Image saved to ' + outputPath);					
-					resolve(outputPath);							
-				}	else {
-					console.error('\n *** Failed to write to trimmed png:');
-					reject(err);
-				}
-				screenshot.close();				
-			});
+			if (err) { 
+				console.log('\n *** Failed to create png:');
+				reject(err);
+			}
+			return Jimp.read(data).then(image => image.autocrop().write(outputPath))
+      .then(() => { 
+				console.log('\n *** Trimmed image saved to ' + outputPath);
+				setTimeout(() => resolve(outputPath), 1000);      	
+      })
+      .catch(err => { 
+      	console.log('\n *** Failed to create trimmed png:');
+      	console.log(err);
+      	console.log(err.stack);
+      	reject(err);
+      });	
+			screenshot.close();				
 		});
 	});
 }
