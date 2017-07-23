@@ -1,10 +1,8 @@
 {
-  "people": ["#pros#","#pro#"],
+  "people": ["#pros#","#pros#","#pro#","#pro#","#otherPersonality#"],
+  "person": ["#pro#","#pro#","#otherPersonality#"],
   "pro": [
       "Kai Budde",
-      "The DCI",
-      "Hasbro",
-      "WOTC",
       "Jarvis Yu",
       "Mark Rosewater",
       "Jon Finkel",
@@ -52,6 +50,9 @@
       "McGruff the Crime Dog"
   ],
   "pros": [
+      "The DCI",
+      "Hasbro",
+      "WOTC",
       "Magic players",
       "Wizards",
       "Sorcerers",
