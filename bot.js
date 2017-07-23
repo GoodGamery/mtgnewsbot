@@ -58,16 +58,36 @@ function postSvgTweet(status, svgString, altText) {
 		.catch(e => logError('Failed to post tweet: ' + e));
 }
 
+function resolveCssUrls(html) {
+	var newHtml = html.toString();
+
+	function fileUrl(url) { 
+    var pathName = path.resolve(url).replace(/\\/g, '/');
+    // windows drive letters must be prefixed with a slash
+    if (pathName[0] !== '/') {
+        pathName = '/' + pathName;
+    }
+    return encodeURI('file://' + pathName);
+	}
+
+	const matches = newHtml.match(/url\(\..*?\)/g);
+	if (!matches) { 
+		return html;
+	}
+	matches.forEach(match => {
+		newHtml = newHtml.replace(match, 'url('+ fileUrl(match.match(/url\((\..*?)\)/)[1])  + ')');  	
+	});
+	return newHtml;
+}
+
 function renderImageFromHtml(html, outputPath) {
 	return new Promise((resolve, reject) => {
 		const screenshot = html2png({ width: 1024, height: 768, browser: 'phantomjs'});
 		
-		html = headline.tags.htmlImg.htmlImgString.replace(/`/g, '"');
 		console.log('HTML:'); console.log(html);
 
 		screenshot.render(html, function (err, data) { 
 			if (err) { console.log('\n *** Failed to create png:'); reject(err); return; }
-			console.log('\n *** Raw image saved to ' + outputPath + '. Trimming extra whitespace from image...');
 
 			gm(data).trim()
 			.write(outputPath,  err => {	
@@ -88,16 +108,18 @@ function postHtmlImageTweet(status, htmlString, altText) {
 	const outputfile = uuid() + '.png';	
 	const outputPath = config.paths.tempDirectory + '/' + outputfile;	
 
+	console.log('postHtmlImageTweet | html:\n' + htmlString);
+
 	renderImageFromHtml(htmlString, outputPath)
 		.then(localFilePath => postImageTweet(localFilePath, status, altText))
 		.then(() => {
-   //    return fs.unlink(outputPath, (err) => {
-			// 	if (!err) {
-			// 		console.log('Deleted ' + outputPath);
-			// 	} else {
-			// 		logError('Unable to delete local image file: ' + err);
-			// 	}
-			// });
+      return fs.unlink(outputPath, (err) => {
+				if (!err) {
+					console.log('Deleted ' + outputPath);
+				} else {
+					logError('Unable to delete local image file: ' + err);
+				}
+			});
 		})
 		.catch(e => logError('Failed to download image: ' + e));
 }
@@ -118,7 +140,8 @@ const twitter = new TwitterClient();
 if (headline.tags && headline.tags.imgCard && headline.tags.imgCard.cardName) {
 	postCardImageTweet(headline.text, headline.tags.imgCard.cardName);
 } else if (headline.tags && headline.tags.htmlImg && headline.tags.htmlImg.htmlImgString) {
-	postHtmlImageTweet(headline.text, headline.tags.htmlImg.htmlImgString.replace(/`/g, '"'), headline.tags.htmlImg.altText || 'image');
+	const html = resolveCssUrls(headline.tags.htmlImg.htmlImgString.replace(/`/g, '"'));
+	postHtmlImageTweet(headline.text, html, headline.tags.htmlImg.altText || 'image');
 } else if (headline.tags && headline.tags.svg && headline.tags.svg.svgString) {
 	postSvgTweet(headline.text, headline.tags.svg.svgString.replace(/`/g, '"'), headline.tags.svg.altText || 'image');
 } else {

@@ -59,7 +59,7 @@
     "#characterClass.s# of #creatureTypes#town",
     "#collective# of #beings#",
     "hour of #abstractNoun#",
-    "#adj# masters [_year:,2017,2018]#_year#",
+    "[_mastery:#format#,#adj#]#_mastery# masters [_year:,2017,2018]#_year#",
     "[_desc:#adj#,#massNoun#]#_desc.capitalizeAll# #omenOrEventNoun#"
   ],
   "planeBasedSet": [

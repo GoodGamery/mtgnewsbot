@@ -19,7 +19,13 @@
     "Jungle Fever NF[_setLogoFontSize:100][_setLogoStrokeWidth:4][_setLogoFontWeight:normal][_setLogoLineHeight:70][_setLogoBaseline:bottom][_setLogoAdditionalStyles:#_setLogoCustomStyleTextured#,#_setLogoCustomStyleItalicized#]",    
     "Kulkeuma[_setLogoFontSize:72][_setLogoStrokeWidth:4][_setLogoFontWeight:normal][_setLogoLineHeight:80][_setLogoBaseline:bottom][_setLogoAdditionalStyles:#_setLogoCustomStyleTextured#,#_setLogoCustomStyleItalicized#]",    
     "MEDICINE SHOW CAPS[_setLogoFontSize:90][_setLogoStrokeWidth:4][_setLogoFontWeight:normal][_setLogoLineHeight:80][_setLogoBaseline:bottom][_setLogoAdditionalStyles:#_setLogoCustomStyleTextured# text-transform#colon# uppercase;,#_setLogoCustomStyleItalicized# text-transform#colon# uppercase;]"
-  ],  
+  ],
+  "fontTextureDirectoryUrl": [
+    "http://pseudochaos.org/goodgamery/mtgnewsbot/images/textures/"
+  ],
+  "fontTexture": [
+    "grit.png"
+  ],
   "_setLogoFontColorSet": [
     "[_setLogoFontColor:#setLogoColorLight#][_setLogoStrokeColor:#setLogoColorMedium#]",
     "[_setLogoFontColor:#setLogoColorLight#][_setLogoStrokeColor:#setLogoColorDark#]",
@@ -28,7 +34,8 @@
     "[_setLogoFontColor:#setLogoColorDark#][_setLogoStrokeColor:#setLogoColorLight#]",
     "[_setLogoFontColor:#setLogoColorDark#][_setLogoStrokeColor:#setLogoColorMedium#]"                           
   ],
-  "_setLogoCustomStyleTextured": ["-webkit-mask-image:url(./src/data/images/textures/grit.png);"],
+  "_setLogoCustomStyleTexturedLocal": ["-webkit-mask-image:url(./src/data/images/textures/grit.png);"],
+  "_setLogoCustomStyleTextured": ["-webkit-mask-image:url(#fontTextureDirectoryUrl##fontTexture#);"],  
   "_setLogoCustomStyleItalicized": ["font-style: italic;"],
   "_setLogoFont": "[#_setLogoFontColorSet#][_setLogoFontFace:#setLogoFont#]",
   "_setLogoStyles": [
