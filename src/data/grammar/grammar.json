@@ -1,14 +1,5 @@
 {
     "origin": [
-        "[_fruit:#fruit#]#_fruit.s# are #_color#"
-    ],
-    "resolver": [
-        "[_fruit:#fruit#]"
-    ],
-    "fruit": [
-        "Orange[_color:orange]", "Apple[_color:red]", "Banana[_color:yellow]"
-    ],
-    "headline": [
         "#tip#",
         "#tipMoney#",
         "#classifieds#",
@@ -20,7 +11,12 @@
         "#clickbait#",
         "#flavorArcana#",
         "#inGraphics#",
+        "#headlineKeepOrMulligan#",
         "#fakeSetLogo#"
+    ],
+    "headline": [
+        "Wizards Announces: #novelCardSetName.capitalizeAll#",
+        "[_nextSet:The next set,The next fall set,#codename.capitalize#][_verbphrase:is actually,is really named,will be named]#_nextSet# #_verbphrase# #novelCardSetName.capitalizeAll#"
     ],
     "inGraphics": [
         "[_card1:#realCard#][_card2:#realCard#][_headline:#inGraphicsHeadline#]#inGraphicsText#{svg svgString=\"#inGraphicsImage#\"}"
@@ -312,6 +308,6 @@
     "characterClass": ["master", "warlord", "avenger", "champion", "explorer", "pirate", "chieftain", "conqueror", "god", "assassin", "oracle", "ghost",
                         "knave", "defender","ancient", "master", "prisoner", "buffoon", "baby", "clown", "villain", "freak", "fiend", "titan", "horror",
                         "cyborg", "ambassador", "agent", "mercenary", "cowboy", "mime", "architect", "inventor", "guardian", "groundskeeper", "farmer",
-                        "doctor", "thief", "judge", "juror", "executioner"],
+                        "doctor", "thief", "judge", "juror", "executioner", "herald", "betrayer", "savior"],
     "colon": ":"
 }

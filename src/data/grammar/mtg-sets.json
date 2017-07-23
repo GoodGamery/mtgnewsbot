@@ -49,13 +49,38 @@
       "Meatballs"
   ],
   "novelCardSetName": [
-      "#cardSetPrefix# #plane#",
-      "#plane# #cardSetSuffix#"
+    "#planeBasedSet#",
+    "#planeBasedSet#",  
+    "#miscNovelCardSetName#"
   ],
+
+  "miscNovelCardSetName": [
+    "#collectiveActionOrRealm# of the #beings#",
+    "#characterClass.s# of #creatureTypes#town",
+    "#collective# of #beings#",
+    "hour of #abstractNoun#",
+    "#adj# masters"
+  ],
+  "planeBasedSet": [
+    "#cardSetPrefix# #plane#",
+    "#cardSetPrefix# #plane#",
+    "#cardSetPrefix# #plane#",        
+    "#plane# #cardSetSuffix#",
+    "#plane# #cardSetSuffix#",
+    "#plane# #cardSetSuffix#",        
+    "#plane# #omenOrEventNoun#"
+  ],
+  "omenOrEventNoun": [
+    "dawn", "revolt", "assault", "omen", "moon", "apocalypse"
+  ],  
   "cardSetPrefix": [
-      "#creatureTypes.s# of",
-      "#characterClass.s# of",
+      "#beings# of",
+      "#beings# of",
+      "#beings# of",      
+      "#itemNoun.s# of",
+      "#massNoun# of",
       "#things2# of",
+      "#placeNoun.s# of",
       "escape from",
       "return to",
       "shadows over",
@@ -70,7 +95,21 @@
       "queens of",
       "mists of",
       "wonders of",
-      "seas of"
+      "seas of",
+      "mysteries of",
+      "tales of",
+      "#pluralNounOrMassNoun# over",
+      "new"
+  ],
+  "beings": [
+    "#creatureTypes.s#",
+    "#characterClass.s#"
+  ],
+  "collectiveActionOrRealm": [
+    "rise", "revenge", "clash", "realm", "call", "sphere", "tales", "flight", "festival", "cult", "order", "ruin"
+  ],
+  "collective": [
+    "league", "guild", "tournament", "city",  "kingdom", "ruin"
   ],
   "cardSetSuffix": ["reborn", "revisited", "unleashed", "dawn", "ascendant"]
 }

@@ -1,6 +1,6 @@
 {
   "concreteNounOrPluralNoun": ["#concreteNoun#","#pluralNoun#"],
-  "pluralNounOrMassMoun": ["#pluralNoun#","#massNoun#"],
+  "pluralNounOrMassNoun": ["#pluralNoun#","#massNoun#"],
   "noun": [
       "#singularNoun#",
       "[_other:#pluralNoun#,#massNoun#]#_other#"
