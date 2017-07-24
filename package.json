@@ -1,6 +1,6 @@
 {
   "name": "mtgnewsbot",
-  "version": "1.0.2",
+  "version": "1.0.1",
   "description": "MTG News Robot",
   "author": "Mark Diehr <mdiehr@gmail.com> (https://www.goodgamery.com)",
   "main": "src/news-engine.js",
