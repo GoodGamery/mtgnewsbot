@@ -7,7 +7,7 @@ const jsonlint = require('gulp-jsonlint');
 const eslint = require('gulp-eslint');
 const runSequence = require('run-sequence');
 
-const LINT_FILES = {
+const SRC_FILES = {
   JS: ['./*.js', 'src/**/*.js'],
   JSON: ['src/**/*.json']
 };
@@ -31,7 +31,7 @@ gulp.task('jslint', function() {
     }
   };
 
-  return gulp.src(LINT_FILES.JS)
+  return gulp.src(SRC_FILES.JS)
     .pipe(debug({title: 'Linting'}))
     .pipe(eslint({ useEslintrc: true }))
     .pipe(eslint.format('codeframe')) 
@@ -49,7 +49,7 @@ gulp.task('jsonlint', function() {
     };
   };
 
-  return gulp.src(LINT_FILES.JSON)
+  return gulp.src(SRC_FILES.JSON)
     .pipe(debug({title: 'Linting'}))
     .pipe(jsonlint())     
     .pipe(jsonlint.reporter())
@@ -69,7 +69,7 @@ gulp.task('lint', function(callback) {
 });
 
 gulp.task('watch', function() {
-  return gulp.watch([LINT_FILES.JS, LINT_FILES.JSON], ['lint']);
+  gulp.watch([SRC_FILES.JS, SRC_FILES.JSON], ['lint']);
 });
 
 gulp.task('default', ['lint', 'watch']);

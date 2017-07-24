@@ -1,0 +1,114 @@
+{
+  "cardSet": [
+      "#recentCardSet#",
+      "Arabian Nights",
+      "Archenemy",
+      "Avacyn Restored",
+      "Chronicles",
+      "Eldritch Moon",
+      "Fallen Empires",
+      "Fifth Edition",
+      "Homelands",
+      "Ice Age",
+      "Innistrad",
+      "Invasion",
+      "Legends",
+      "Mercadian Masques",
+      "Planechase",
+      "Portal Three Kingdoms",
+      "Ravnica",
+      "Revised",
+      "Shards of Alara",
+      "Shadowmoor",
+      "Time Spiral",
+      "Unglued",
+      "Unhinged",
+      "Urza's Legacy",
+      "Weatherlight",
+      "Zendikar"
+  ],
+  "recentCardSet": [
+      "Amonkhet",
+      "Hour of Devastation",
+      "Modern Masters",
+      "Eternal Masters"
+  ],
+  "teaserCardSet": [
+      "Commander 2017",
+      "Ixalan",
+      "Masters 25",
+      "Rivals of Ixalan",
+      "Explorers of Ixalan",
+      "Dominaria",
+      "Unstable",
+      "#codename#",
+      "#novelCardSetName.capitalizeAll#"
+  ],
+  "codename": [
+      "Spaghetti",
+      "Meatballs"
+  ],
+  "novelCardSetName": [
+    "#planeBasedSet#",
+    "#planeBasedSet#",  
+    "#miscNovelCardSetName#"
+  ],
+
+  "miscNovelCardSetName": [
+    "#collectiveActionOrRealm# of the #beings#",
+    "#characterClass.s# of #creatureTypes#town",
+    "#collective# of #beings#",
+    "hour of #abstractNoun#",
+    "[_mastery:#format#,#adj#]#_mastery# masters [_year:,2017,2018]#_year#",
+    "[_desc:#adj#,#massNoun#]#_desc.capitalizeAll# #omenOrEventNoun#"
+  ],
+  "planeBasedSet": [
+    "#cardSetPrefix# #plane#",
+    "#cardSetPrefix# #plane#",      
+    "#plane# #cardSetSuffix#",
+    "#plane# #cardSetSuffix#",       
+    "#plane# #omenOrEventNoun#"
+  ],
+  "omenOrEventNoun": [
+    "dawn", "revolt", "assault", "omen", "moon", "apocalypse", "rising"
+  ],  
+  "cardSetPrefix": [
+      "#beings# of",
+      "#beings# of",
+      "#beings# of",      
+      "#itemNoun.s# of",
+      "#massNoun# of",
+      "#things2# of",
+      "#placeNoun.s# of",
+      "escape from",
+      "return to",
+      "shadows over",
+      "fires of",
+      "echoes of",
+      "streets of",
+      "legends of",
+      "ruins of",
+      "battle for",
+      "jungles of",
+      "assault on",
+      "queens of",
+      "mists of",
+      "wonders of",
+      "seas of",
+      "mysteries of",
+      "tales of",
+      "#pluralNounOrMassNoun# over",
+      "new"
+  ],
+  "beings": [
+    "#creatureTypes.s#",
+    "#characterClass.s#"
+  ],
+  "collectiveActionOrRealm": [
+    "rise", "revenge", "clash", "realm", "call", "sphere", "tales", "flight", "festival", "cult", "order", "ruin"
+  ],
+  "collective": [
+    "league", "guild", "tournament", "city",  "kingdom", "ruin"
+  ],
+  "cardSetSuffix": ["reborn", "revisited", "unleashed", "dawn", "ascendant"]
+}

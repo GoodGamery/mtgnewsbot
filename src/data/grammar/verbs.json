@@ -1,0 +1,61 @@
+{
+  "verb": [
+      "approach", "control", "defeat", "hold", "capture", "handle", "understand", "wield", "observe", "carry", "shuffle", "kill",
+      "perceive", "realize", "grow", "water", "nourish", "swallow", "question", "cradle", "cherish", "despise", "summon",
+      "transform", "explain", "forget", "remember", "ignore", "adorn", "study", "capture", "release", "misunderstand",
+      "sacrifice", "destroy", "collect", "dismiss", "praise", "scrutinize", "celebrate", "minimize", "exaggerate", "quantify",
+      "trivialize", "renounce", "abhor", "dispute", "pantomime", "advertise", "lie about", "deep-fry", "decorate", "run", "brandish"
+  ],
+  "verbPastTense": [
+      "approached", "controlled", "defeated", "held", "captured", "handled", "understood", "wielded", "observed", "carried", "shuffled",
+      "perceived", "realized", "watered", "nourished", "swallowed", "questioned", "cradled", "cherished", "despised", "summoned",
+      "transformed", "explained", "forgot", "remembered", "ignored", "adorned", "studied", "captured", "released", "misunderstood",
+      "sacrificed", "destroyed", "collected", "dismissed", "praised", "scrutinized", "celebrated", "minimized", "exaggerated", "quantified",
+      "trivialized", "renounced", "abhorred", "disputed", "pantomimed", "advertised", "deep-fried", "decorated", "ran", "burned down",
+      "raged", "killed"
+  ],
+  "verbGerund": [
+      "approaching", "controlling", "defeating", "holding", "capturing", "handling", "understanding", "wielding", "observing", "carrying", "shuffling", "killing",
+      "perceiving", "realizing", "growing", "watering", "nourishing", "swallowing", "questioning", "cradling", "cherishing", "despising", "summoning",
+      "transforming", "explaining", "forgeting", "remembering", "ignoring", "adorning", "studying", "capturing", "releasing", "misunderstanding",
+      "sacrificing", "destroying", "collecting", "dismissing", "praising", "scrutinizing", "celebrating", "minimizing", "exaggerating", "quantifying",
+      "trivializing", "renouncing", "abhoring", "disputing", "pantomiming", "advertising", "lying about", "deep-frying", "decorating", "running", "brandishing"
+  ],
+  "verbDefeat": [
+      "defeat",
+      "beat",
+      "overcome",
+      "lock down",
+      "fix",
+      "take down"
+  ],
+  "verbDefeating": [
+      "defeating",
+      "beating",
+      "overcoming",
+      "becoming",
+      "locking down",
+      "fixing",
+      "taking down",
+      "mastering"
+  ],
+  "verbCreating": [
+      "designing",
+      "making",
+      "creating",
+      "brewing up",
+      "developing",
+      "mashing together",
+      "shuffling up"
+  ],
+  "revealVerb": [
+      "reveal", "unveil", "disclose", "uncover", "expose", "explain"
+  ],
+  "outVerb": [
+      "peel", "dissolve", "evaporate", "melt", "erode",  "crumble"
+  ],
+  "adv": [
+      "adoringly", "awkwardly", "beautifully", "cheerfully", "effortlessly", "hungrily", "intently", "quickly",
+      "recklessly", "reluctantly", "savagely", "thoughtfully", "triumphantly", "vivaciously"
+  ]
+}

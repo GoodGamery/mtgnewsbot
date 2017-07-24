@@ -7,9 +7,10 @@
   "scripts": {
     "start": "npm run print",
     "print": "node src/index.js ",
-    "lint": "gulp lint",        
-    "test": "gulp lint && npm run print",
-    "watch": "gulp"
+    "lint": "gulp lint",
+    "test": "gulp lint && npm run print 15",
+    "watch": "gulp",
+    "build-grammar": "node build.js"
   },
   "repository": {
     "type": "git",
@@ -25,10 +26,12 @@
   },
   "homepage": "https://github.com/mdiehr/mtgnewsbot#readme",
   "dependencies": {
+    "html2png": "1.1.2",
+    "jimp": "0.2.28",
     "lodash.merge": "4.6.0",
+    "svg2png": "4.1.1",
     "tracery-grammar": "2.7.3",
-    "twit": "2.2.9",
-    "svg2png": "4.1.1"
+    "twit": "2.2.9"
   },
   "devDependencies": {
     "eslint": "^4.2.0",

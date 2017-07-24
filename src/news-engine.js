@@ -3,7 +3,15 @@
 const HeadlineMaker = require('./headline-maker');
 const config = require('../config');
 
-const headlineMaker = new HeadlineMaker(config.defaultGrammar);
+const grammar = config.defaultGrammar;
+grammar["origin"] = config.origin || grammar["origin"];
+console.info(`New origin is ${JSON.stringify(grammar.origin)}`);
+
+const headlineMaker = new HeadlineMaker(grammar);
+
+function generateHeadline () {
+	return headlineMaker.generateHeadline();
+}
 
 function generateHeadlines (numHeadlines) {
 	const headlines = [];
@@ -22,6 +30,7 @@ function generateTextHeadlines (numHeadlines) {
 }
 
 module.exports = { 
+	generateHeadline: generateHeadline,
 	generateHeadlines: generateHeadlines,
 	generateTextHeadlines: generateTextHeadlines
 };

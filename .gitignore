@@ -43,3 +43,8 @@ node_modules/
 
 # local config overrides
 config-override.js
+
+# output folders
+build/
+out/
+tmp/

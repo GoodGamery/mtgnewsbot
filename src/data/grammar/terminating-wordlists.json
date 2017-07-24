@@ -1,0 +1,31 @@
+{
+  "planNoun": ["plan", "scheme", "strategy", "objective", "stratagem", "tactic"],
+  "winWord": [
+      "wins","triumphs","victorious","crushes","dominates","absolutely destroys"
+  ],
+  "suggestion": ["banning","improving","reconsidering", "nerfing"],
+  "descriptor": [
+      "more powerful",
+      "better",
+      "sleeker",
+      "cheaper",
+      "more explosive",
+      "deadlier",
+      "quicker",
+      "more reliable",
+      "more impressive",
+      "bad",
+      "worse",
+      "more expensive",
+      "more streamlined",
+      "more fun",
+      "more flexible",
+      "less random",
+      "sexier",
+      "competetive",
+      "great again",
+      "unqiue",
+      "weaker",
+      "stronger"
+  ]
+}
