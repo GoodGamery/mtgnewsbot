@@ -3,6 +3,7 @@ const merge = require('lodash.merge');
 const buildGrammar = require('./src/build-grammar.js');
 
 const CONFIG_OVERRIDE_PATH = './config-override.js';
+const LOCAL_CONFIG_OVERRIDE_PATH = './local-config-override.js';
 const DEFAULT_GRAMMAR_PATH = './src/data/grammar';
 const TWEET_LENGTH = 140;
 const TEMPFILE_PATH = '/tmp';
@@ -23,12 +24,20 @@ let config = {
 let override = {};
 try { 
   override = require(CONFIG_OVERRIDE_PATH); 
-  console.log('Applying config overrides.');
-} catch(e) { 
-  /* use default config */ 
-}
+  console.log('Reading server config overrides.');
+} catch(e) {  console.warn('Server override not loaded: ' + e.message); }
+
+let localOverride = {};
+try { 
+  localOverride = require(LOCAL_CONFIG_OVERRIDE_PATH); 
+  console.log('Reading local config overrides.');
+} catch(e) {  console.warn('Local override not loaded: ' + e.message); }
 
 config = merge(config, override);
+config = merge(config, localOverride);
+
+console.log('CONFIG:');
+console.log(JSON.stringify(config));
 
 // load the default grammar after applying overrides
 config.defaultGrammar = buildGrammar(config.defaultGrammarPath);
