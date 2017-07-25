@@ -53,7 +53,8 @@
       "hedge maze", "ball pit", "orchard", "watchtower", "sanitarium", "ballroom", "schoolyard", "university", "harbor", "library", "plane",
       "factory", "greenhouse", "basement", "monastery", "academy", "farmstead", "petting zoo", "ghost town", "secret lair", "laboratory",
       "portal", "hair salon", "shipwreck", "pasture", "circus tent", "fortress", "junkyard", "pillow fort", "mausoleum", "sepulcher",
-      "kitchenette", "churchyard", "mortuary", "abattoir", "art studio", "pet store", "armory", "gazebo", "playground", "animal shelter"
+      "kitchenette", "churchyard", "mortuary", "abattoir", "art studio", "pet store", "armory", "gazebo", "playground", "animal shelter",
+      "gazebo", "taco stand"
   ],
   "irregularPluralNoun": [
       "teeth", "feet", "pants", "geese", "fish", "children", "fungi", "stimuli", "potatoes", "knives", "ashes", "riches", "hypotheses", "neuroses", "crises", "appendices", "indices", "sheep", "wolves", "thieves"

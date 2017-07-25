@@ -14,12 +14,25 @@
       "trivialized", "renounced", "abhorred", "disputed", "pantomimed", "advertised", "deep-fried", "decorated", "ran", "burned down",
       "raged", "killed"
   ],
-  "verbGerund": [
-      "approaching", "controlling", "defeating", "holding", "capturing", "handling", "understanding", "wielding", "observing", "carrying", "shuffling", "killing",
-      "perceiving", "realizing", "growing", "watering", "nourishing", "swallowing", "questioning", "cradling", "cherishing", "despising", "summoning",
-      "transforming", "explaining", "forgeting", "remembering", "ignoring", "adorning", "studying", "capturing", "releasing", "misunderstanding",
-      "sacrificing", "destroying", "collecting", "dismissing", "praising", "scrutinizing", "celebrating", "minimizing", "exaggerating", "quantifying",
-      "trivializing", "renouncing", "abhoring", "disputing", "pantomiming", "advertising", "lying about", "deep-frying", "decorating", "running", "brandishing"
+  "verbGerund": [ "#verbTransitiveGerund#", "#verbStrictlyTransitiveGerund#", "#verbStrictlyTransitiveGerund#" ],
+  "verbTransitiveGerund": [ "#verbStrictlyTransitiveGerund#", "#verbBothtransitiveGerund#" ],
+  "verbStrictlyTransitiveGerund": [
+    "controlling", "defeating", "holding", "capturing", "handling", "understanding", "wielding", "carrying", "watering", "nourishing", "questioning", "cradling",
+    "cherishing", "despising", "summoning", "perceiving", "realizing", "explaining", "ignoring", "adorning", "capturing", "releasing", "destroying", "realizing",
+    "dismissing", "praising", "scrutinizing","minimizing", "quantifying", "trivializing",  "renouncing", "abhoring", "disputing", "deceiving", "brandishing",
+    "simulating", "immortalizing", "subduing", "pigeonholing", "despoiling", "enhancing", "glamorizing", "marketing", "recognizing"
+  ],  
+  "verbIntransitiveGerund": [ "#verbStrictlyIntransitiveGerund#", "#verbBothtransitiveGerund#" ],  
+  "verbStrictlyIntransitiveGerund": [
+    "hesitating", "wondering", "snorting", "chuckling", "weeping", "running", "sleeping", "brooding", "occuring", "materializing", "complaining", "yawning",
+    "belching", "emerging", "embroidering", "screaming", "dancing", "collapsing", "appearing", "disappearing", "sneezing", "arriving", "existing", "falling",
+    "rising", "revolting", "smiling", "smirking", "scowling", "awakening", "prevailing", "descending", "retreating", "negotiating", "staring", "howling",
+    "snickering", "groaning", "coughing", "listening", "leaving", "condescending"
+  ],
+
+  "verbBothtransitiveGerund": [
+    "approaching","shuffling", "killing", "observing", "growing", "swallowing", "transforming", "forgetting", "remembering", "studying", "misunderstanding",
+    "sacrificing", "collecting", "celebrating", "exaggerating", "pantomiming", "advertising", "deep-frying", "decorating", "fighting"
   ],
   "verbDefeat": [
       "defeat",

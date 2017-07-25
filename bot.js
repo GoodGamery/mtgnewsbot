@@ -91,16 +91,16 @@ function renderImageFromHtml(html, outputPath) {
 				console.log('\n *** Failed to create png:');
 				reject(err);
 			}
-			return Jimp.read(data).then(image => image.autocrop().write(outputPath))
+			Jimp.read(data).then(image => image.autocrop().write(outputPath))
       .then(() => { 
 				console.log('\n *** Trimmed image saved to ' + outputPath);
 				setTimeout(() => resolve(outputPath), 1000);      	
       })
       .catch(err => { 
-      	console.log('\n *** Failed to create trimmed png:');
-      	console.log(err);
-      	console.log(err.stack);
-      	reject(err);
+				console.log('\n *** Failed to create trimmed png:');
+				console.log(err);
+				console.log(err.stack);
+				reject(err);
       });	
 			screenshot.close();				
 		});

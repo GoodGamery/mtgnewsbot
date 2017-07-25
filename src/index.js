@@ -41,13 +41,13 @@ headlines.forEach(headline => {
 			if (err) { console.log('\n *** Failed to create png: ' + err); }
 			else {
 				Jimp.read(data).then(image => image.autocrop().write(outputPath))
-		      .then(() => { 
+					.then(() => { 
 						console.log('\n *** Trimmed image saved to ' + outputPath);
-		      })
-		      .catch(err => { 
-		      	console.log('\n *** Failed to create trimmed png:');
-		      	console.log(err);
-		      });
+					})
+					.catch(err => { 
+						console.log('\n *** Failed to create trimmed png:');
+						console.log(err);
+					});
 			}
 		});	  
 	}
