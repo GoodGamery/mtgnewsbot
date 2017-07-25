@@ -12,9 +12,11 @@
         "#decktech#",
         "#announcement#",
         "#clickbait#",
-        "#flavorArcana#",
-        "#inGraphics#",
-        "#headlineKeepOrMulligan#"
+        "#flavorArcana#"
+    ],
+    "disabledHeadline": [
+      "#inGraphics#",
+      "#headlineKeepOrMulligan#"    
     ],
     "flavorArcana": [
         "BEHIND THE FLAVOR: #flavorText#",
@@ -28,7 +30,7 @@
         "#format# Banwatch: #card#",
         "Have You Considered? [_consider:#card# in #format#,#deck#]#_consider.capitalize#",
         "#pro# [_picked:First Picked,Last Picked,Wheeled,Drafted,Topdecked,Morphed]#_picked# #card.capitalizeAll#[_challenge: and You Won't Believe,. You'll Be Floored By,. Guess,. Find Out,. #pros.capitalizeAll# are still talking about#]#_challenge# [_what:What Happened Next,What #pro.capitalize# Said Next,What #pro.capitalize# Did Next,Why #pro.capitalize# Called a Judge]#_what#",
-        "[_cardname:#realCard#]We're not wrong: the card you're thinking of is #_cardname# #imgCard#",
+        "[_cardname:#realCard#]We're not wrong: the card you're thinking of is #_cardname#",
         "PICTURES: #pro.capitalize#'s [_cosplayAdj:amazing,convincing,elaborate,unconventional]#_cosplayAdj# cosplay of [_who:#cardAlone#,#character#]#_who#",
         "New preview card from #teaserCardSet#! Is it a #descriptor# #realPowerfulCard#?"
     ],

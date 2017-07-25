@@ -1,6 +1,6 @@
 {
     "gatherer": [
-        "[_cardname:#realCard#]#gathererIntro# #gathererText# #imgCard#"
+        "[_cardname:#realCard#]#gathererIntro# #_cardname# — #gathererText#"    
     ],
     "gathererIntro": [
         "GATHERER RULING #gathererTimestamp#:",
@@ -17,7 +17,7 @@
         "This is the timeshifted version of #realCard#.",
         "When the #xth# ability resolves, the #cardCategory# you [_put:put, don’t put]#_put# #cardLocation# stays #cardLocation#.",
         "…finally, #_cardname# is placed #cardLocation#. This is a state-based action.",
-        "#_cardname.# are #cardLocation# regardless of whether they're #cardState# or #cardState#",
+        "#_cardname.s# are #cardLocation# regardless of whether they're #cardState# or #cardState#.",
         "Cards not actually #cardLocation# can't be affected by #_cardname#.",
         "Does not animate itself. But can be animated by another #_cardname#.",
         "This is the current interaction between #_cardname# and #realCard#: The type-changing effect applies at layer #num1-9#.",
