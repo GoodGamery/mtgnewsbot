@@ -50,7 +50,7 @@
   ],
   "novelCardSetName": [
     "#planeBasedSet#",
-    "#planeBasedSet#",  
+    "#planeBasedSet#",
     "#miscNovelCardSetName#"
   ],
 
@@ -58,16 +58,18 @@
     "#collectiveActionOrRealm# of the #beings#",
     "#characterClass.s# of #creatureTypes#town",
     "#collective# of #beings#",
-    "hour of #abstractNoun#",
+    "#beings# #verbIntransitiveGerund#",
+    "[_time:Hour,Day,Age,Dawn]#_time# of #abstractNoun#",
     "[_mastery:#format#,#adj#]#_mastery# masters [_year:,2017,2018]#_year#",
-    "[_desc:#adj#,#massNoun#]#_desc.capitalizeAll# #omenOrEventNoun#"
+    "[_desc:#adj#,#massNoun#,#creatureTypes#]#_desc.capitalizeAll# #omenOrEventNoun#"
   ],
   "planeBasedSet": [
     "#cardSetPrefix# #plane#",
     "#cardSetPrefix# #plane#",      
     "#plane# #cardSetSuffix#",
     "#plane# #cardSetSuffix#",       
-    "#plane# #omenOrEventNoun#"
+    "#plane# #omenOrEventNoun#",
+    "#plane# #verbIntransitiveGerund#"    
   ],
   "omenOrEventNoun": [
     "dawn", "revolt", "assault", "omen", "moon", "apocalypse", "rising"

@@ -11,6 +11,7 @@
         "#playguide#",
         "#decktech#",
         "#announcement#",
+        "#graphicAnnouncement#",
         "#clickbait#",
         "#flavorArcana#"
     ],
@@ -37,11 +38,13 @@
     "announcement": [
         "Wizards Announces: Duel Decks: [_one:#nouns.capitalizeAll#,#planeswalkerFirstName#]#_one# vs. [_two:#nouns.capitalizeAll#,#planeswalkerFirstName#]#_two#",
         "Wizards Announces: From the Vault: [_contents:#nouns#,#pluralNoun#,#massNoun#]#_contents.capitalize#",         
-        "Wizards Announces: [_cardset:#novelCardSetName.capitalizeAll#]#_cardset#{htmlImg htmlImgString=\"#mtgSetLogoImage#\"}",
-        "[_nextSet:The next set,The next fall set,#codename.capitalize#][_verbphrase:is actually,is really named,will be named]#_nextSet# #_verbphrase# [_cardset:#novelCardSetName.capitalizeAll#]#_cardset#{htmlImg htmlImgString=\"#mtgSetLogoImage#\"}",
         "Announcement: #pro# has joined Team #team#",
         "#gatherer#"      
-    ],    
+    ],
+    "graphicAnnouncement"    : [
+        "Wizards Announces: [_cardset:#novelCardSetName.capitalizeAll#]#_cardset#{htmlImg htmlImgString=\"#mtgSetLogoImage#\"}",
+        "[_nextSet:The next set,The next fall set,#codename.capitalize#][_verbphrase:is actually,is really named,will be named]#_nextSet# #_verbphrase# [_cardset:#novelCardSetName.capitalizeAll#]#_cardset#{htmlImg htmlImgString=\"#mtgSetLogoImage#\"}"
+    ],
     "realization": [
         "#realize#",
         "The Importance of [_thing:#card#,#cardCategory.s#,#creatureTypes.s#,#gameConcept#]#_thing# in [_where:#format#,#recentCardSet#]#_where#",
@@ -117,23 +120,23 @@
     ],
     "flavorText": [
         "\"I want [_thing:#aNoun#,#massNoun#,#pluralNoun#]#_thing# THIS #adj#!\"",
-        "\"[_wisher:He,She,They,It]#_wisher# wished for [#objectNounPronoun#]#_noun#, but not for the #noun# to #verb# #_pronoun#.\"",
-        "\"Only a madman could create such [#objectNounPronoun#]#_noun#. Only an imbecile would #verb# #_pronoun#.\"",
-        "\"There's a thin line between [_thing1:#aNoun#,#pluralNoun#]#_thing1# and [_thing2:#aNoun#,#pluralNoun#]#_thing2#. Allow me to #verb# it.\" — Liliana Vess",
+        "\"[_wisher:He,She,They,It]#_wisher# wished for [#objectNounPronoun#]#_noun#, but not for the #noun# to #verbTransitive# #_pronoun#.\"",
+        "\"Only a madman could create such [#objectNounPronoun#]#_noun#. Only an imbecile would #verbTransitive# #_pronoun#.\"",
+        "\"There's a thin line between [_thing1:#aNoun#,#pluralNoun#]#_thing1# and [_thing2:#aNoun#,#pluralNoun#]#_thing2#. Allow me to #verbTransitive# it.\" — Liliana Vess",
         "#[#twoObjects#]jayaText#",
         "\"I've got the [_n1:#noun#]#_n1#\", #planeswalkerFirstName# said as the #noun# came to life. \"I've got the #_n1#!\"",
         "\"From nothing came [_thing:#aNoun#,#massNoun#,#pluralNoun#]#_thing#.\"",
         "\"The #covering# of [_thing:#emotion#,#abstractNoun#]#_thing# #outVerb.ed# from the [_who:#characterClass#,#creatureTypes#]#_who#, revealing the #emotion# and [_otherThing:#emotion#,#pluralNoun#]#_otherThing# beneath.\"",
         "\"Your patheitc #pluralNoun# lie in shambles, Planeswalker. Where is your #adj# #singularNoun# now?\" — Nicol Bolas",
         "\"If there's anything #creatureTypes.a# hates, it's [_n1:#concreteNoun#]#_n1.a#—especially #character#'s #_n1.capitalizeAll#, the symbol of #their# #noun#.\"",
-        "\"Ach! #character#, #verb#! It's the #creatureTypes#!\" —#character# #planeswalkerFirstName#sdotter, last words",
-        "\"Sorry I #verbPastTense# your #concreteNoun#. Here's some #pluralNoun#.\"",
-        "\"[_v1:#verbPastTense#]He #_v1# at the #placeNoun#, at his #noun#, at his #noun#. But mostly he just #_v1#.\"",
-        "\"[_cost:One #concreteNoun#,#count.capitalize# #concreteNoun.s#]#_cost# #verbPastTense# for every #concreteNoun# #verbPastTense#[_where:, underfoot, overhead, abroad]#_where#.\" —#demonym# penalty for #crime#",
+        "\"Ach! #character#, #verbIntransitive#! It's the #creatureTypes#!\" —#character# #planeswalkerFirstName#sdotter, last words",
+        "\"Sorry I #verbTransitivePastTense# your #concreteNoun#. Here's some #pluralNoun#.\"",
+        "\"[_v1:#verbIntransitivePastTense#]He #_v1# at the #placeNoun#, at his #noun#, at his #noun#. But mostly he just #_v1#.\"",
+        "\"[_cost:One #concreteNoun#,#count.capitalize# #concreteNoun.s#]#_cost# #verbTransitivePastTense# for every #concreteNoun# #verbTransitivePastTense#[_where:, underfoot, overhead, abroad]#_where#.\" —#demonym# penalty for #crime#",
         "\"Its diet consists of #pluralNoun#, [_place1:#placeNoun#][_thing:#pluralNoun#]#adj# #_place1# #_thing#, #adj# #_place1# #_thing#, and #_place1.s#.\"",
-        "\"‘[_who:#character#]#_who.capitalize#, #verb# those #itemOrCreatureType.s#.’ ‘#_who#, #verb# those #itemOrCreatureType.s#.’ No one cares that today is #occasion#.\"",
+        "\"‘[_who:#character#]#_who.capitalize#, #verbTransitive# those #itemOrCreatureType.s#.’ ‘#_who#, #verbTransitive# those #itemOrCreatureType.s#.’ No one cares that today is #occasion#.\"",
         "\"[#character#][_first:#pluralNounOrMassNoun#][_second:#pluralNounOrMassNoun#][_third:#pluralNounOrMassNoun#][_fourth:#pluralNounOrMassNoun#]#they.capitalize# traded #_first# for #_second#, #_second# for #_third#, #_third# for #_fourth#. In the end, #they# traded #_fourth# for #_first#.\"",
-        "The #massNoun# didn't kill #nonPlaneswalkerCharacter#. But as #they# lay [_prep:in,on,beside,under]#_prep# it, watching #creatureTypes.s#[_second:, and #creatureTypes.s#]#_second# #verbGerund# #them#, #they# wished it had."
+        "The #massNoun# didn't kill #nonPlaneswalkerCharacter#. But as #they# lay [_prep:in,on,beside,under]#_prep# it, watching #creatureTypes.s#[_second:, and #creatureTypes.s#]#_second# #verbTransitiveGerund# #them#, #they# wished it had."
     ],
     "occasion": ["my birthday", "my anniversary", "my first day on the job", "my last day on the job", "my bar mitzvah", "my unbirthday", "my cake day",
                  "my inauguration", "Durin's Day", "Robanukah", "Festivus", "Wednesday", "Guy Fawkes' Day", "Boxing Day", "Shrove Tuesday", "National Corndog Day",
@@ -342,6 +345,7 @@
     "characterClass": ["master", "warlord", "avenger", "champion", "explorer", "pirate", "chieftain", "conqueror", "god", "assassin", "oracle", "ghost",
                         "knave", "defender","ancient", "master", "prisoner", "buffoon", "baby", "clown", "villain", "freak", "fiend", "titan", "horror",
                         "cyborg", "ambassador", "agent", "mercenary", "cowboy", "mime", "architect", "inventor", "guardian", "groundskeeper", "farmer",
-                        "doctor", "thief", "judge", "juror", "executioner", "herald", "betrayer", "savior"],
+                        "doctor", "thief", "judge", "juror", "executioner", "herald", "betrayer", "savior", "disciple", "rebel", "crybaby", "grinch",
+                        "barrista", "charlatan", "imposter", "bandit"],
     "colon": ":"
 }
