@@ -49,6 +49,8 @@
       "Meatballs"
   ],
   "novelCardSetName": [
+    "#planeBasedSet#",
+    "#planeBasedSet#",    
     "#miscNovelCardSetName#"
   ],
 
@@ -57,7 +59,7 @@
     "#characterClass.s# of #creatureTypes#town",
     "#collective# of #beings#",
     "#beings# #verbIntransitiveGerund#",
-    "hour of #abstractNoun#",
+    "[_time:Hour,Day,Age,Dawn] of #abstractNoun#",
     "[_mastery:#format#,#adj#]#_mastery# masters [_year:,2017,2018]#_year#",
     "[_desc:#adj#,#massNoun#]#_desc.capitalizeAll# #omenOrEventNoun#"
   ],
