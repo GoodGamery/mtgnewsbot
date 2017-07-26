@@ -59,7 +59,7 @@
     "#characterClass.s# of #creatureTypes#town",
     "#collective# of #beings#",
     "#beings# #verbIntransitiveGerund#",
-    "[_time:Hour,Day,Age,Dawn] of #abstractNoun#",
+    "[_time:Hour,Day,Age,Dawn]#_time# of #abstractNoun#",
     "[_mastery:#format#,#adj#]#_mastery# masters [_year:,2017,2018]#_year#",
     "[_desc:#adj#,#massNoun#,#creatureTypes#]#_desc.capitalizeAll# #omenOrEventNoun#"
   ],
