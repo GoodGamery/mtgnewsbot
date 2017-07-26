@@ -61,7 +61,7 @@
     "#beings# #verbIntransitiveGerund#",
     "[_time:Hour,Day,Age,Dawn] of #abstractNoun#",
     "[_mastery:#format#,#adj#]#_mastery# masters [_year:,2017,2018]#_year#",
-    "[_desc:#adj#,#massNoun#]#_desc.capitalizeAll# #omenOrEventNoun#"
+    "[_desc:#adj#,#massNoun#,#creatureTypes#]#_desc.capitalizeAll# #omenOrEventNoun#"
   ],
   "planeBasedSet": [
     "#cardSetPrefix# #plane#",
