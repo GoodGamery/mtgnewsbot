@@ -86,13 +86,13 @@ function renderImageFromHtml(html, outputPath) {
 		
 		console.log('HTML:'); console.log(html);
 
-		return screenshot.render(html, function (err, data) { 
+		screenshot.render(html, function (err, data) { 
 			if (err) { 
 				console.log('\n *** Failed to create png:');
 				reject(err);
         screenshot.close();
 			}
-			Jimp.read(data).then(image => image.autocrop().write(outputPath))
+			return Jimp.read(data).then(image => image.autocrop().write(outputPath))
       .then(() => { 
 				console.log('\n *** Trimmed image saved to ' + outputPath);
 				setTimeout(() => resolve(outputPath), 1000);      	
