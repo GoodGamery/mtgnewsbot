@@ -81,30 +81,30 @@ function resolveCssUrls(html) {
 }
 
 function renderImageFromHtml(html, outputPath) {
-	return new Promise((resolve, reject) => {
-		const screenshot = html2png({ width: 1024, height: 768, browser: 'phantomjs'});
-		
-		console.log('HTML:'); console.log(html);
+  return new Promise((resolve, reject) => {
+    const screenshot = html2png({ width: 1024, height: 768, browser: 'phantomjs'});
+    
+    console.log('HTML:'); console.log(html);
 
-		screenshot.render(html, function (err, data) { 
-			if (err) { 
-				console.log('\n *** Failed to create png:');
-				reject(err);
-        screenshot.close();
-			}
-			return Jimp.read(data).then(image => image.autocrop().write(outputPath))
+    screenshot.render(html, function (err, data) { 
+      if (err) { 
+        console.log('\n *** Failed to create png:');
+        reject(err);
+      }
+      return Jimp.read(data).then(image => image.autocrop().write(outputPath))
       .then(() => { 
-				console.log('\n *** Trimmed image saved to ' + outputPath);
-				setTimeout(() => resolve(outputPath), 1000);      	
+        console.log('\n *** Trimmed image saved to ' + outputPath);
+        setTimeout(() => resolve(outputPath), 1000);        
       })
       .catch(err => { 
         console.log('\n *** Failed to create trimmed png:');
         console.log(err);
         console.log(err.stack);
         reject(err);
-      }).then(() => screenshot.close());							
-		});
-	});
+      }); 
+      screenshot.close();       
+    });
+  });
 }
 
 function postHtmlImageTweet(status, htmlString, altText) {
