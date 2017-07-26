@@ -12,9 +12,11 @@
         "#decktech#",
         "#announcement#",
         "#clickbait#",
-        "#flavorArcana#",
-        "#inGraphics#",
-        "#headlineKeepOrMulligan#"
+        "#flavorArcana#"
+    ],
+    "disabledHeadline": [
+      "#inGraphics#",
+      "#headlineKeepOrMulligan#"    
     ],
     "flavorArcana": [
         "BEHIND THE FLAVOR: #flavorText#",
@@ -28,13 +30,17 @@
         "#format# Banwatch: #card#",
         "Have You Considered? [_consider:#card# in #format#,#deck#]#_consider.capitalize#",
         "#pro# [_picked:First Picked,Last Picked,Wheeled,Drafted,Topdecked,Morphed]#_picked# #card.capitalizeAll#[_challenge: and You Won't Believe,. You'll Be Floored By,. Guess,. Find Out,. #pros.capitalizeAll# are still talking about#]#_challenge# [_what:What Happened Next,What #pro.capitalize# Said Next,What #pro.capitalize# Did Next,Why #pro.capitalize# Called a Judge]#_what#",
-        "[_cardname:#realCard#]We're not wrong: the card you're thinking of is #_cardname# #imgCard#",
+        "[_cardname:#realCard#]We're not wrong: the card you're thinking of is #_cardname#",
         "PICTURES: #pro.capitalize#'s [_cosplayAdj:amazing,convincing,elaborate,unconventional]#_cosplayAdj# cosplay of [_who:#cardAlone#,#character#]#_who#",
         "New preview card from #teaserCardSet#! Is it a #descriptor# #realPowerfulCard#?"
     ],
     "announcement": [
-       "Wizards Announces: [_cardset:#novelCardSetName.capitalizeAll#]#_cardset#{htmlImg htmlImgString=\"#mtgSetLogoImage#\"}",
-        "[_nextSet:The next set,The next fall set,#codename.capitalize#][_verbphrase:is actually,is really named,will be named]#_nextSet# #_verbphrase# [_cardset:#novelCardSetName.capitalizeAll#]#_cardset#{htmlImg htmlImgString=\"#mtgSetLogoImage#\"}"
+        "Wizards Announces: Duel Decks: [_one:#nouns.capitalizeAll#,#planeswalkerFirstName#]#_one# vs. [_two:#nouns.capitalizeAll#,#planeswalkerFirstName#]#_two#",
+        "Wizards Announces: From the Vault: [_contents:#nouns#,#pluralNoun#,#massNoun#]#_contents.capitalize#",         
+        "Wizards Announces: [_cardset:#novelCardSetName.capitalizeAll#]#_cardset#{htmlImg htmlImgString=\"#mtgSetLogoImage#\"}",
+        "[_nextSet:The next set,The next fall set,#codename.capitalize#][_verbphrase:is actually,is really named,will be named]#_nextSet# #_verbphrase# [_cardset:#novelCardSetName.capitalizeAll#]#_cardset#{htmlImg htmlImgString=\"#mtgSetLogoImage#\"}",
+        "Announcement: #pro# has joined Team #team#",
+        "#gatherer#"      
     ],    
     "realization": [
         "#realize#",
@@ -231,6 +237,45 @@
         "mana dork",
         "cantrip",
         "#rarity#"
+    ],
+    "cardLocation": [
+        "in your hand",
+        "in your hand",
+        "on the battlefield",
+        "on the battlefield",
+        "in your graveyard",
+        "in your graveyard",
+        "in your library",
+        "in your library",
+        "in exile",
+        "in exile",
+        "on the stack",
+        "in your opponent's graveyard",
+        "on top of your library",
+        "on the bottom of your library",
+        "in your sideboard",
+        "in your opponent's sideboard",
+        "in the command zone",
+        "in the ante zone",
+        "phased out",
+        "in a “Temporary Zone” dialog box",
+        "completely removed from the game",
+        "on top of a Cheatyface",
+        "in the Prize Card zone",
+        "at a height of at least one foot"
+    ],
+    "cardState":[
+        "tapped",
+        "untapped",
+        "flipped",
+        "unflipped",
+        "morphed",
+        "unmorphed",
+        "transformed",
+        "face-up",
+        "faced-down",
+        "phased in",
+        "phased out"
     ],
     "rarity": [
         "common",

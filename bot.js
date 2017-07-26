@@ -31,8 +31,8 @@ function postImageTweet(imageFilePath, status, cardName) {
 }
 
 function postCardImageTweet(status, cardName) {
-	const outputPath = config.paths.tempDirectory + '/' + outputfile;	
 	const outputfile = cardName.replace(/\s+/g, '-').toLowerCase() + '-' + uuid() + '.jpg';
+	const outputPath = config.paths.tempDirectory + '/' + outputfile;	
 
 	mtgCardFinder.downloadCardImage(cardName, outputPath)
 		.then(localFilePath => postImageTweet(localFilePath, status, cardName))
@@ -43,9 +43,9 @@ function postCardImageTweet(status, cardName) {
 				} else {
 					logError('Unable to delete local image file: ' + err);
 				}
-			});
-		})
-		.catch(e => logError('Failed to download image: ' + e));
+      });
+    })
+    .catch(e => logError('Failed to download image: ' + e));
 }
 
 function postSvgTweet(status, svgString, altText) {
@@ -90,6 +90,7 @@ function renderImageFromHtml(html, outputPath) {
 			if (err) { 
 				console.log('\n *** Failed to create png:');
 				reject(err);
+        screenshot.close();
 			}
 			Jimp.read(data).then(image => image.autocrop().write(outputPath))
       .then(() => { 
@@ -97,12 +98,11 @@ function renderImageFromHtml(html, outputPath) {
 				setTimeout(() => resolve(outputPath), 1000);      	
       })
       .catch(err => { 
-				console.log('\n *** Failed to create trimmed png:');
-				console.log(err);
-				console.log(err.stack);
-				reject(err);
-      });	
-			screenshot.close();				
+        console.log('\n *** Failed to create trimmed png:');
+        console.log(err);
+        console.log(err.stack);
+        reject(err);
+      }).then(() => screenshot.close());							
 		});
 	});
 }

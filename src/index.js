@@ -40,14 +40,14 @@ headlines.forEach(headline => {
 		screenshot.render(html, function (err, data) { 
 			if (err) { console.log('\n *** Failed to create png: ' + err); }
 			else {
-				Jimp.read(data).then(image => image.autocrop().write(outputPath))
-					.then(() => { 
-						console.log('\n *** Trimmed image saved to ' + outputPath);
-					})
-					.catch(err => { 
-						console.log('\n *** Failed to create trimmed png:');
-						console.log(err);
-					});
+        Jimp.read(data).then(image => image.autocrop().write(outputPath))
+          .then(() => {
+              console.log('\n *** Trimmed image saved to ' + outputPath);
+            })
+          .catch(err => { 
+            console.log('\n *** Failed to create trimmed png:');
+            console.log(err);
+          });
 			}
 		});	  
 	}

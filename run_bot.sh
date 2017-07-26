@@ -22,7 +22,7 @@ git pull
 npm install --production
 
 # tweet
-node --harmony --use_strict bot.js
+node --harmony bot.js
 
 #silent
 set +x
