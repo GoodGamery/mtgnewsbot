@@ -86,7 +86,7 @@ function renderImageFromHtml(html, outputPath) {
 		
 		console.log('HTML:'); console.log(html);
 
-		screenshot.render(html, function (err, data) { 
+		return screenshot.render(html, function (err, data) { 
 			if (err) { 
 				console.log('\n *** Failed to create png:');
 				reject(err);
