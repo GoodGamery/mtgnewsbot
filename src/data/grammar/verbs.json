@@ -1,39 +1,64 @@
 {
-  "verb": [
-      "approach", "control", "defeat", "hold", "capture", "handle", "understand", "wield", "observe", "carry", "shuffle", "kill",
-      "perceive", "realize", "grow", "water", "nourish", "swallow", "question", "cradle", "cherish", "despise", "summon",
-      "transform", "explain", "forget", "remember", "ignore", "adorn", "study", "capture", "release", "misunderstand",
-      "sacrifice", "destroy", "collect", "dismiss", "praise", "scrutinize", "celebrate", "minimize", "exaggerate", "quantify",
-      "trivialize", "renounce", "abhor", "dispute", "pantomime", "advertise", "lie about", "deep-fry", "decorate", "run", "brandish"
+  "verb": [ "#verbStrictlyTransitive#", "#verbStrictlyIntransitive#", "#verbBothTransitive#" ],
+  "verbTransitive": [ "#verbStrictlyTransitive#", "#verbBothTransitive#" ],  
+  "verbStrictlyTransitive": [
+    "control", "defeat", "hold", "capture", "handle", "understand", "wield", "carry", "water", "nourish", "question", "cradle",
+    "cherish", "despise", "summon", "perceive", "realize", "explain", "ignore", "adorn", "capture", "release", "destroy", "realize",
+    "dismiss", "praise", "scrutinize","minimize", "quantify", "trivialize",  "renounce", "abhor", "dispute", "deceive", "brandish",
+    "simulate", "immortalize", "subdue", "pigeonhole", "despoil", "enhance", "glamorize", "market", "recognize"
+  ],  
+  "verbIntransitive": [ "#verbStrictlyTransitive#", "#verbBothTransitive#" ],  
+  "verbStrictlyIntransitive": [
+    "hesitate", "wonder", "snort", "chuckle", "weep", "run", "sleep", "brood", "occur", "materialize", "complain", "yawn",
+    "belch", "emerge", "embroider", "scream", "dance", "collapse", "appear", "disappear", "sneeze", "arrive", "exist", "fall",
+    "rise", "revolt", "smile", "smirk", "scowl", "awaken", "prevail", "descend", "retreat", "negotiate", "stare", "howl",
+    "snicker", "groan", "cough", "listen", "leave", "condescend"
   ],
-  "verbPastTense": [
-      "approached", "controlled", "defeated", "held", "captured", "handled", "understood", "wielded", "observed", "carried", "shuffled",
-      "perceived", "realized", "watered", "nourished", "swallowed", "questioned", "cradled", "cherished", "despised", "summoned",
-      "transformed", "explained", "forgot", "remembered", "ignored", "adorned", "studied", "captured", "released", "misunderstood",
-      "sacrificed", "destroyed", "collected", "dismissed", "praised", "scrutinized", "celebrated", "minimized", "exaggerated", "quantified",
-      "trivialized", "renounced", "abhorred", "disputed", "pantomimed", "advertised", "deep-fried", "decorated", "ran", "burned down",
-      "raged", "killed"
+  "verbBothTransitive": [
+    "approach","shuffle", "kill", "observe", "grow", "swallow", "transform", "forget", "remember", "study", "misunderstand",
+    "sacrifice", "collect", "celebrate", "exaggerate", "pantomime", "advertise", "deep-fry", "decorate", "fight"
   ],
-  "verbGerund": [ "#verbTransitiveGerund#", "#verbStrictlyTransitiveGerund#", "#verbStrictlyTransitiveGerund#" ],
-  "verbTransitiveGerund": [ "#verbStrictlyTransitiveGerund#", "#verbBothtransitiveGerund#" ],
+
+  "verbPastTense": [ "#verbStrictlyTransitivePastTense#", "#verbStrictlyIntransitivePastTense#", "#verbBothTransitivePastTense#" ],
+  "verbTransitivePastTense": [ "#verbStrictlyTransitivePastTense#", "#verbBothTransitivePastTense#" ],
+  "verbStrictlyTransitivePastTense": [
+    "controlled", "defeated", "held", "captured", "handled", "understood", "wielded", "carried", "watered", "nourished", "questioned", "cradled",
+    "cherished", "despised", "summoned", "perceived", "realized", "explained", "ignored", "adorned", "captured", "released", "destroyed", "realized",
+    "dismissed", "praised", "scrutinized","minimized", "quantified", "trivialized",  "renounced", "abhored", "disputed", "deceived", "brandished",
+    "simulated", "immortalized", "subdued", "pigeonholed", "despoiled", "enhanced", "glamorizeed", "marketed", "recognized"
+  ],  
+  "verbIntransitivePastTense": [ "#verbStrictlyIntransitivePastTense#", "#verbBothTransitivePastTense#" ],  
+  "verbStrictlyIntransitivePastTense": [
+    "hesitated", "wondered", "snorted", "chuckled", "wept", "ran", "slept", "brooded", "occured", "materialized", "complained", "yawned",
+    "belched", "emerged", "embroidered", "screamed", "danced", "collapsed", "appeared", "disappeared", "sneezed", "arrived", "existed", "fell",
+    "rose", "revolted", "smiled", "smirked", "scowled", "awakened", "prevailed", "descended", "retreated", "negotiated", "stared", "howled",
+    "snickered", "groaned", "coughed", "listened", "left", "condescended"
+  ],
+  "verbBothTransitivePastTense": [
+    "approached","shuffled", "killed", "observed", "grew", "swallowed", "transformed", "forgot", "remembered", "studied", "misunderstood",
+    "sacrificed", "collected", "celebrate", "exaggerated", "pantomimed", "advertised", "deep-fried", "decorated", "fought"
+  ],  
+
+  "verbGerund": [ "#verbStrictlyTransitiveGerund#", "#verbStrictlyIntransitiveGerund#", "#verbBothTransitiveGerund#" ],
+  "verbTransitiveGerund": [ "#verbStrictlyTransitiveGerund#", "#verbBothTransitiveGerund#" ],
   "verbStrictlyTransitiveGerund": [
     "controlling", "defeating", "holding", "capturing", "handling", "understanding", "wielding", "carrying", "watering", "nourishing", "questioning", "cradling",
     "cherishing", "despising", "summoning", "perceiving", "realizing", "explaining", "ignoring", "adorning", "capturing", "releasing", "destroying", "realizing",
     "dismissing", "praising", "scrutinizing","minimizing", "quantifying", "trivializing",  "renouncing", "abhoring", "disputing", "deceiving", "brandishing",
     "simulating", "immortalizing", "subduing", "pigeonholing", "despoiling", "enhancing", "glamorizing", "marketing", "recognizing"
   ],  
-  "verbIntransitiveGerund": [ "#verbStrictlyIntransitiveGerund#", "#verbBothtransitiveGerund#" ],  
+  "verbIntransitiveGerund": [ "#verbStrictlyIntransitiveGerund#", "#verbBothTransitiveGerund#" ],  
   "verbStrictlyIntransitiveGerund": [
     "hesitating", "wondering", "snorting", "chuckling", "weeping", "running", "sleeping", "brooding", "occuring", "materializing", "complaining", "yawning",
     "belching", "emerging", "embroidering", "screaming", "dancing", "collapsing", "appearing", "disappearing", "sneezing", "arriving", "existing", "falling",
     "rising", "revolting", "smiling", "smirking", "scowling", "awakening", "prevailing", "descending", "retreating", "negotiating", "staring", "howling",
     "snickering", "groaning", "coughing", "listening", "leaving", "condescending"
   ],
-
-  "verbBothtransitiveGerund": [
+  "verbBothTransitiveGerund": [
     "approaching","shuffling", "killing", "observing", "growing", "swallowing", "transforming", "forgetting", "remembering", "studying", "misunderstanding",
     "sacrificing", "collecting", "celebrating", "exaggerating", "pantomiming", "advertising", "deep-frying", "decorating", "fighting"
   ],
+
   "verbDefeat": [
       "defeat",
       "beat",
