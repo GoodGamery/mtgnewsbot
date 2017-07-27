@@ -25,9 +25,10 @@
 		"When the third ability resolves, the good card you put on top of Cheatyface stays in your opponent's graveyard.",
 		"If the ability does trigger, but you don't control four or more creatures named Biovisionary when the ability tries to resolve, the ability will do nothing.",
 		"The walrus continues to sneeze. Yes, this is weird.",
-		"For more information on [_topic:#gameConcept#,#cardCategory.s#]#_topic#, see the [_set:#cardSet#,#teaserCardSet#]#_set# mechanics article at <a href=``>#_gathererRulingImageArticleUrl#</a>."
+		"For more information on [_topic:#gameConcept#,#cardCategory.s#,#_randomTopic#]#_topic#, see the [_set:#cardSet#,#teaserCardSet#]#_set# mechanics article at <a href=``>#_gathererRulingImageArticleUrl#</a>."
 	],
 	"_gathererRulingImageArticleUrl": [
 		"http://magic.wizards.com/en/articles/archive/"
-	]
+	],
+	"_randomTopic": ["#character#", "the #gameStep#", "#person#" , "#pluralNounOrMassNoun#", "#format#", "#deckArch#"]
 }
