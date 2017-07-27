@@ -13,10 +13,8 @@
         "#announcement#",
         "#graphicAnnouncement#",
         "#clickbait#",
-        "#flavorArcana#"
-    ],
-    "gathererRuling": [
-        "RULES CORNER{htmlImg htmlImgString=\"#mtgGathererRulingImage#\"}"    
+        "#flavorArcana#",
+        "#gathererRuling#"        
     ],
     "disabledHeadline": [
       "#inGraphics#",

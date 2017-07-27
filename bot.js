@@ -143,7 +143,7 @@ const twitter = new TwitterClient();
 if (headline.tags && headline.tags.imgCard && headline.tags.imgCard.cardName) {
 	postCardImageTweet(headline.text, headline.tags.imgCard.cardName);
 } else if (headline.tags && headline.tags.htmlImg && headline.tags.htmlImg.htmlImgString) {
-	const html = resolveCssUrls(headline.tags.htmlImg.htmlImgString.replace(/`/g, '"'));
+	const html = resolveCssUrls(headline.tags.htmlImg.htmlImgString.replace(/`/g, '"').replace(/<</g, '{').replace(/>>/g, '}'));
 	postHtmlImageTweet(headline.text, html, headline.tags.htmlImg.altText || 'image');
 } else if (headline.tags && headline.tags.svg && headline.tags.svg.svgString) {
 	postSvgTweet(headline.text, headline.tags.svg.svgString.replace(/`/g, '"'), headline.tags.svg.altText || 'image');
