@@ -5,17 +5,17 @@
 
 	"_gathererRulingImageTable": "<body><div class=`container`><table><tbody>#_gathererRulingImageTableContents#</tbody></table></div></body>",
 
-	"_gathererRulingImageTableContents": "#_gathererRulingImageHeader# #_gathererRulingImageRowOdd# #_gathererRulingImageRowEven#",
+	"_gathererRulingImageTableContents": "#_gathererRulingImageHeader# #_gathererRulingImageRowOdd# #_gathererRulingImageRowEven# [_rest:, #_gathererRulingImageRowOdd#,  #_gathererRulingImageRowOdd# #_gathererRulingImageRowEven#, #_gathererRulingImageRowOdd# #_gathererRulingImageRowEven#,#_gathererRulingImageRowOdd#]#_rest#",
 
 	"_gathererRulingImageHeader": "<tr class=`rulingsHeader`><td class=`rulingsHeader` colspan=`2`><div class=`rulingsHeader`>Rulings</div></td></tr>",
 
-	"_gathererRulingImageRowOdd": "<tr>#_gathererRulingImageDateOdd# #_gathererRulingImageTextOdd#</tr>",		
-	"_gathererRulingImageDateOdd": "<td class=`rulingDate oddItem`>#_exampleDate#</td>",	
-	"_gathererRulingImageTextOdd": "<td class=`rulingText oddItem`>#_exampleText#</td>",
+	"_gathererRulingImageRowOdd": "[_parityClass:oddItem]#_gathererRulingImageRow#",		
+	"_gathererRulingImageRowEven": "[_parityClass:evenItem]#_gathererRulingImageRow#",	
 
-	"_gathererRulingImageRowEven": "<tr>#_gathererRulingImageDateEven# #_gathererRulingImageTextEven#</tr>",		
-	"_gathererRulingImageDateEven": "<td class=`rulingDate evenItem`>#_exampleDate#</td>",		
-	"_gathererRulingImageTextEven": "<td class=`rulingText evenItem`>#_exampleText#</td>",	
+	"_gathererRulingImageRow": "<tr>#_gathererRulingImageDate# #_gathererRulingImageText#</tr>",				
+	"_gathererRulingImageDate": "<td class=`rulingDate #_parityClass#`>#_exampleDate#</td>",	
+	"_gathererRulingImageText": "<td class=`rulingText #_parityClass#`>#_exampleText#</td>",
+
 	"_exampleDate": ["2/07/2009", "10/4/2004", "11/20/1998"],
 	"_exampleText": [
 		"When the third ability resolves, the good card you put on top of Cheatyface stays in your opponent's graveyard.",
