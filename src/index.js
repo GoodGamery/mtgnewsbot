@@ -33,8 +33,8 @@ headlines.forEach(headline => {
 	if(headline.tags && headline.tags.htmlImg && headline.tags.htmlImg.htmlImgString) {
 		const outputfile = uuid() + '.png';
 		const outputPath = config.paths.tempDirectory + '/' + outputfile;
-		const screenshot = html2png({ width: 1024, height: 768, browser: 'phantomjs'});
-		const html = headline.tags.htmlImg.htmlImgString.replace(/`/g, '"');
+		const screenshot = html2png({ width: 450, height: 768, browser: 'phantomjs'});
+		const html = headline.tags.htmlImg.htmlImgString.replace(/`/g, '"').replace(/<</g, '{').replace(/>>/g, '}');
 		console.log('HTML:'); console.log(html);
 
 		screenshot.render(html, function (err, data) { 

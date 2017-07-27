@@ -15,6 +15,9 @@
         "#clickbait#",
         "#flavorArcana#"
     ],
+    "gathererRuling": [
+        "RULES CORNER{htmlImg htmlImgString=\"#mtgGathererRulingImage#\"}"    
+    ],
     "disabledHeadline": [
       "#inGraphics#",
       "#headlineKeepOrMulligan#"    
@@ -40,7 +43,7 @@
         "Wizards Announces: From the Vault: [_contents:#nouns#,#pluralNoun#,#massNoun#]#_contents.capitalize#",         
         "Announcement: #pro# has joined Team #team#",
         "#gatherer#"      
-    ],
+    ],    
     "graphicAnnouncement"    : [
         "Wizards Announces: [_cardset:#novelCardSetName.capitalizeAll#]#_cardset#{htmlImg htmlImgString=\"#mtgSetLogoImage#\"}",
         "[_nextSet:The next set,The next fall set,#codename.capitalize#][_verbphrase:is actually,is really named,will be named]#_nextSet# #_verbphrase# [_cardset:#novelCardSetName.capitalizeAll#]#_cardset#{htmlImg htmlImgString=\"#mtgSetLogoImage#\"}"

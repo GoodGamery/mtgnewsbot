@@ -1,0 +1,25 @@
+{
+	"_gathererRulingImageStyle": "<head><style> body << background: url(./background.jpg) >> div.container << background: rgb(47,47,47); >> table << display: table; border-collapse: separate; border-spacing: 1px; text-align: center; vertical-align: middle margin: 0; >> tbody << display: table-row-group; color: rgb(197,197,197); >> tr << vertical-align: inherit; border-color: inherit; display: table-row; background-color: rgba(255,255,366, 0.08); >> td << border-collapse: separate; border-spacing: 2px; text-align: center; vertical-align: middle padding: 5px; margin: 0; background: rgb(61,61,61); >> td.rulingsHeader << background: rgb(31,30,30); >> div.rulingsHeader << font-family: Open Sans Semibold; font-size: 19px; padding: 6px; background: rgb(31,30,30); >> td.rulingDate << width: 70px; font-size: .9em; padding-left: 10px; padding-right: 8px; font-weight: bold; text-align: right; border-spacing: 1px; font-family: Open Sans; >> td.rulingText << width: 475px; font-size: .9em; padding: 6px 8px 6px 8px; line-height: 1.3em; font-weight: 500; text-align: left; border-spacing: 1px; font-family: Open Sans; margin-top: 6px; margin-bottom: 6px; -webkit-text-stroke: 0.5px; >> td.oddItem << background-color: rgba(10, 10, 10, .2); >> td.evenItem << background-color: rgb(58,57,57); >></style></head>",
+
+	"mtgGathererRulingImage": "#_gathererRulingImageStyle# #_gathererRulingImageTable#",
+
+	"_gathererRulingImageTable": "<body><div class=`container`><table><tbody>#_gathererRulingImageTableContents#</tbody></table></div></body>",
+
+	"_gathererRulingImageTableContents": "#_gathererRulingImageHeader# #_gathererRulingImageRowOdd# #_gathererRulingImageRowEven#",
+
+	"_gathererRulingImageHeader": "<tr class=`rulingsHeader`><td class=`rulingsHeader` colspan=`2`><div class=`rulingsHeader`>Rulings</div></td></tr>",
+
+	"_gathererRulingImageRowOdd": "<tr>#_gathererRulingImageDateOdd# #_gathererRulingImageTextOdd#</tr>",		
+	"_gathererRulingImageDateOdd": "<td class=`rulingDate oddItem`>#_exampleDate#</td>",	
+	"_gathererRulingImageTextOdd": "<td class=`rulingText oddItem`>#_exampleText#</td>",
+
+	"_gathererRulingImageRowEven": "<tr>#_gathererRulingImageDateEven# #_gathererRulingImageTextEven#</tr>",		
+	"_gathererRulingImageDateEven": "<td class=`rulingDate evenItem`>#_exampleDate#</td>",		
+	"_gathererRulingImageTextEven": "<td class=`rulingText evenItem`>#_exampleText#</td>",	
+	"_exampleDate": ["2/07/2009", "10/4/2004", "11/20/1998"],
+	"_exampleText": [
+		"When the third ability resolves, the good card you put on top of Cheatyface stays in your opponent's graveyard.",
+		"If the ability does trigger, but you don't control four or more creatures named Biovisionary when the ability tries to resolve, the ability will do nothing.",
+		"The walrus continues to sneeze. Yes, this is weird."	
+	]
+}
