@@ -1,12 +1,12 @@
 {
+    "testGatherer": "[#gatherer#]gathererCardname: #_cardname#, gathererTimestamp: #gathererTimestamp#, gathererHeadline: #gathererHeadline#, gathererRuling: #gathererRuling#",
     "gatherer": [
-        "[_cardname:#realCard#]#gathererIntro# #_cardname# — #gathererText#"    
+        "[_cardname:#cardAlone#][gathererTimestamp:#gathererTimestamp#][gathererHeadline:#gathererIntro# #_cardname#][gathererRuling:#gathererText#]"
     ],
     "gathererIntro": [
-        "GATHERER RULING #gathererTimestamp#:",
-        "From Gatherer, #gathererTimestamp#:",
-        "Judge Ruling #gathererTimestamp#:",
-        "New ruling announced:"
+        "GATHERER RULINGS:",
+        "RULES CORNER:",
+        "FROM THE JUDGES:"
     ],
     "gathererTimestamp": [
         "#num1-12#/1#num1-9#/[_year:1993,1996,1998,2004,2009,2012,2014,2015,2016,2017,2018]#_year#"
@@ -21,10 +21,15 @@
         "Cards not actually #cardLocation# can't be affected by #_cardname#.",
         "Does not animate itself. But can be animated by another #_cardname#.",
         "This is the current interaction between #_cardname# and #realCard#: The type-changing effect applies at layer #num1-9#.",
+        "For more information on [_topic:#gameConcept#,#cardCategory.s#,#_randomTopic#]#_topic#, see the [_set:#cardSet#,#teaserCardSet#]#_set# mechanics article at <a href=``>#_gathererRulingImageArticleUrl#</a>.",        
         "#gathererTextRare#"
     ],
     "gathererTextRare": [
         "Yes, this is a bit weird.",
         "You can’t interfere in any physical way with the casting of this card."
-    ]
+    ],
+    "_gathererRulingImageArticleUrl": [
+        "http://magic.wizards.com/en/articles/archive/"
+    ],
+    "_randomTopic": ["#character#", "the #gameStep#", "#person#" , "#pluralNounOrMassNoun#", "#format#", "#deckArch#"]
 }

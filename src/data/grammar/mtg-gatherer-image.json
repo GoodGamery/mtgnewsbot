@@ -1,7 +1,5 @@
 {
-  "gathererRuling": [
-		"GATHERER RULINGS: #cardAlone# {htmlImg htmlImgString=\"#mtgGathererRulingImage#\"}"    
- 	],
+  "gathererRuling": "[#gatherer#]#gathererHeadline# {htmlImg htmlImgString=\"#mtgGathererRulingImage#\"}",
 
 	"mtgGathererRulingImage": "#_gathererRulingImageStyle# #_gathererRulingImageTable#",
 
@@ -17,18 +15,6 @@
 	"_gathererRulingImageRowEven": "[_parityClass:evenItem]#_gathererRulingImageRow#",	
 
 	"_gathererRulingImageRow": "<tr>#_gathererRulingImageDate# #_gathererRulingImageText#</tr>",				
-	"_gathererRulingImageDate": "<td class=`rulingDate #_parityClass#`>#_exampleDate#</td>",	
-	"_gathererRulingImageText": "<td class=`rulingText #_parityClass#`>#_exampleText#</td>",
-
-	"_exampleDate": ["2/07/2009", "10/4/2004", "11/20/1998"],
-	"_exampleText": [
-		"When the third ability resolves, the good card you put on top of Cheatyface stays in your opponent's graveyard.",
-		"If the ability does trigger, but you don't control four or more creatures named Biovisionary when the ability tries to resolve, the ability will do nothing.",
-		"The walrus continues to sneeze. Yes, this is weird.",
-		"For more information on [_topic:#gameConcept#,#cardCategory.s#,#_randomTopic#]#_topic#, see the [_set:#cardSet#,#teaserCardSet#]#_set# mechanics article at <a href=``>#_gathererRulingImageArticleUrl#</a>."
-	],
-	"_gathererRulingImageArticleUrl": [
-		"http://magic.wizards.com/en/articles/archive/"
-	],
-	"_randomTopic": ["#character#", "the #gameStep#", "#person#" , "#pluralNounOrMassNoun#", "#format#", "#deckArch#"]
+	"_gathererRulingImageDate": "<td class=`rulingDate #_parityClass#`>#gathererTimestamp#</td>",	
+	"_gathererRulingImageText": "<td class=`rulingText #_parityClass#`>#gathererRuling#</td>"
 }
