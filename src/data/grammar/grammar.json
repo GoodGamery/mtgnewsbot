@@ -38,8 +38,7 @@
     "announcement": [
         "Wizards Announces: Duel Decks: [_one:#nouns.capitalizeAll#,#planeswalkerFirstName#]#_one# vs. [_two:#nouns.capitalizeAll#,#planeswalkerFirstName#]#_two#",
         "Wizards Announces: From the Vault: [_contents:#nouns#,#pluralNoun#,#massNoun#]#_contents.capitalize#",         
-        "Announcement: #pro# has joined Team #team#",
-        "#gatherer#"      
+        "Announcement: #pro# has joined Team #team#"
     ],    
     "graphicAnnouncement"    : [
         "Wizards Announces: [_cardset:#novelCardSetName.capitalizeAll#]#_cardset#{htmlImg htmlImgString=\"#mtgSetLogoImage#\"}",
@@ -239,6 +238,8 @@
         "weenie",
         "mana dork",
         "cantrip",
+        "permanent",
+        "non-land permanent",
         "#rarity#"
     ],
     "cardLocation": [

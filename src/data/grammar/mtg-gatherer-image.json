@@ -16,5 +16,5 @@
 
 	"_gathererRulingImageRow": "<tr>#_gathererRulingImageDate# #_gathererRulingImageText#</tr>",				
 	"_gathererRulingImageDate": "<td class=`rulingDate #_parityClass#`>#gathererTimestamp#</td>",	
-	"_gathererRulingImageText": "<td class=`rulingText #_parityClass#`>#gathererText#</td>"
+	"_gathererRulingImageText": "<td class=`rulingText #_parityClass#`>#gathererText.capitalize#</td>"
 }

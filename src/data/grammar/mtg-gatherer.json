@@ -1,35 +1,70 @@
 {
     "gatherer": [
-         "[_cardname:#realCard#]#gathererIntro# #_cardname# — #gathererText#"
+         "[_cardname:#realCard#]#gathererIntro# #gathererTimestamp# #_cardname# — #gathererText.capitalize#"
     ],
     "gathererIntro": [
         "GATHERER RULINGS:",
         "RULES CORNER:",
-        "FROM THE JUDGES:"
+        "FROM THE JUDGES:",
+        "From Gatherer:"
     ],
     "gathererTimestamp": [
         "#num1-12#/1#num1-9#/[_year:1993,1996,1998,2004,2009,2012,2014,2015,2016,2017,2018]#_year#"
     ],
     "gathererText": [
-        "The #singularNoun# continues to #verbIntransitive# after #_cardname# has left the battlefield.",
-        "The artist is actually #person#.",
-        "This is the [_shift:time,color]#_shift#shifted version of #realCard#.",
-        "When the #xth# ability resolves, the #cardCategory# you [_put:put, don’t put]#_put# #cardLocation# stays #cardLocation#.",
+        "#gathererRuling#","#gathererRuling#","#gathererRuling#","#gathererRuling#","#gathererRuling#","#gathererRuling#",
+        "#gathererRuling#","#gathererRuling#","#gathererRuling#","#gathererRuling#","#gathererRuling#","#embellishedGathererText#"
+    ],
+    "gathererRuling": [
+        "the #singularNoun# continues to #verbIntransitive# after #_cardname# has left the battlefield.",
+        "the artist is actually #person#.",
+        "this is the [_shift:timeshifted,colorshifted,Space#colon# the Convergence]#_shift# version of #realCard#.",
+        "when the #xth# ability resolves, the #cardCategory# you [_put:put, don't put]#_put# #cardLocation# stays #cardLocation#.",
         "…finally, #_cardname# is placed #cardLocation#. This is a state-based action.",
         "#_cardname.s# are #cardLocation# regardless of whether they're #cardState# or #cardState#.",
-        "Cards not actually #cardLocation# can't be affected by #_cardname#.",
-        "Does not animate itself. But can be animated by another #_cardname#.",
-        "This is the current interaction between #_cardname# and #realCard#: The type-changing effect applies at layer #num1-9#.",
-        "Only cards touched when #_cardnamed# stops moving are affected. Not ones touched while it is moving.",
-        "For more information on [_topic:#gameConcept#,#cardCategory.s#,#_randomTopic#]#_topic#, see the [_set:#cardSet#,#teaserCardSet#]#_set# mechanics article at <a href=``>#_gathererRulingImageArticleUrl#</a>.",        
+        "cards not actually #cardLocation# can't be affected by #_cardname#.",
+        "does not #gameEffectAction# itself. But can be #_actionPastTense# by another #_cardname#.",
+        "#_cardname# can't be countered except by spells and abilities.",
+        "Yes, you're allowed to have a deck consisting of sixty #_cardname.s# and nothing else.",
+        "this is the current interaction between #_cardname# and #realCard#: the type-changing effect applies at layer #num1-9#.",
+        "only cards touched when #_cardname# stops moving are affected. Not ones touched while it is moving.",
+        "this card can be used to put [_what:two copies of #cardAlone#,#cardAlone# and #cardAlone#,both sides of #cardAlone#]#_what# onto the battlefield at once.",
+        "if an ability (from #cardAlone#, for example) causes you to #gameAction#, nothing happens.",
+        "#_cardname# can't be used to force a player to play a card that isn't in his or her hand.",
+        "#_cardname# won't necessarily end the game when its ability resolves.",
+        "#_cardname#'s first and third abilities are linked. Similarly, #_cardname#'s second and third abilities are linked.",
+        "the #creatureTypes# tokens are created even if the target isn't [#gameEffectAction#]#_actionPastTense# by #_cardname#'s ability.",
+        "for more information on [_topic:#gameConcept#,#cardCategory.s#,#_randomTopic#]#_topic#, see the [_set:#cardSet#,#teaserCardSet#]#_set# mechanics article at <a href=``>#_gathererRulingImageArticleUrl#</a>.",
         "#gathererTextRare#"
     ],
+
     "gathererTextRare": [
-        "Yes, this is a bit weird.",
-        "You can’t interfere in any physical way with the casting of this card."
+        "you can't interfere in any physical way with the casting of this card.",
+        "you can't make any decisions that aren't called for or allowed by the game rules, or by any cards, permanents, spells, abilities, and so on.",
+        "if one player has fewer #cardCategory.s# than required, that player loses. If both have fewer than required, both players lose.",
+        "[_items:#itemNouns#]when it comes to choice of #_items#, use common sense. #_items.ca# should be small enough to hide but large enough to count.",
+        "there's no current game meaning of \"[_what:assemble,#noun#,#gameConcept#]#_what#.\"",
+        "the effect is cumulative."
+    ],
+    "embellishedGathererText": [
+        "#gathererRuling# Yes, this is a bit weird.",
+        "Unless something weird happens, #gathererRuling#",
+        "Yes, #gathererRuling# It's not optional."
     ],
     "_gathererRulingImageArticleUrl": [
         "http://magic.wizards.com/en/articles/archive/"
     ],
-    "_randomTopic": ["#character#", "the #gameStep#", "#person#" , "#pluralNounOrMassNoun#", "#format#", "#deckArch#"]
+    "_randomTopic": ["#character#", "the #gameStep#", "#person#" , "#pluralNounOrMassNoun#", "#format#", "#deckArch#"],
+    "gameAction": ["look at the top card of your library", "shuffle your library", "reorder your graveyard", "search your library", "untap one or more permanents",
+                    "lose the game", "win the game", "draw the game", "mulligan"],
+    "gameEffectAction": [ 
+        "counter[_actionPastTense:countered]",
+        "destroy[_actionPastTense:destroyed]",
+        "regenerate[_actionPastTense:regenerated]",
+        "exile[_actionPastTense:exiled]",
+        "transform[_actionPastTense:transformed]",
+        "deal damage[_actionPastTense:dealt damage]",
+        "target[_actionPastTense:targeted]",
+        "affect[_actionPastTense:affected]"
+    ]
 }
