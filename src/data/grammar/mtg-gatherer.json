@@ -28,7 +28,7 @@
         "Yes, you're allowed to have a deck consisting of sixty #_cardname.s# and nothing else.",
         "this is the current interaction between #_cardname# and #realCard#: the type-changing effect applies at layer #num1-9#.",
         "only cards touched when #_cardname# stops moving are affected. Not ones touched while it is moving.",
-        "this card can be used to put [_what:two copies of #cardAlone#,#cardAlone# and #cardAlone#,both sides of #cardAlone#]#_what# onto the battlefield at once.",
+        "this card can be used to put [_what:two copies of #cardAlone#,both #cardAlone# and #cardAlone#,both sides of #cardAlone#]#_what# onto the battlefield at once.",
         "if an ability (from #cardAlone#, for example) causes you to #gameAction#, nothing happens.",
         "#_cardname# can't be used to force a player to play a card that isn't in his or her hand.",
         "#_cardname# won't necessarily end the game when its ability resolves.",
@@ -42,8 +42,8 @@
         "you can't interfere in any physical way with the casting of this card.",
         "you can't make any decisions that aren't called for or allowed by the game rules, or by any cards, permanents, spells, abilities, and so on.",
         "if one player has fewer #cardCategory.s# than required, that player loses. If both have fewer than required, both players lose.",
-        "[_items:#itemNouns#]when it comes to choice of #_items#, use common sense. #_items.ca# should be small enough to hide but large enough to count.",
-        "there's no current game meaning of \"[_what:assemble,#noun#,#gameConcept#]#_what#.\"",
+        "when it comes to choice of items, use common sense. items should be small enough to hide but large enough to count.",
+        "there's no current game meaning of \"[_what:assemble,#pluralNounOrMassNoun#,#gameConcept#]#_what#\".",
         "the effect is cumulative."
     ],
     "embellishedGathererText": [
