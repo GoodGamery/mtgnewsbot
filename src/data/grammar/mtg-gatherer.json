@@ -15,6 +15,9 @@
         "#gathererRuling#","#gathererRuling#","#gathererRuling#","#gathererRuling#","#gathererRuling#","#gathererRuling#",
         "#gathererRuling#","#gathererRuling#","#gathererRuling#","#gathererRuling#","#gathererRuling#","#embellishedGathererText#"
     ],
+
+    "gathererRuling": [ "[_cardname:#cardAlone#]#opalPart1#","#gathererTextRare#" ],
+
     "gathererRuling": [
         "the #singularNoun# continues to #verbIntransitive# after #_cardname# has left the battlefield.",
         "the artist is actually #person#.",
@@ -26,7 +29,6 @@
         "does not #gameEffectAction# itself. But can be #_actionPastTense# by another #_cardname#.",
         "#_cardname# can't be countered except by spells and abilities.",
         "Yes, you're allowed to have a deck consisting of sixty #_cardname.s# and nothing else.",
-        "this is the current interaction between #_cardname# and #realCard#: the type-changing effect applies at layer #num1-9#.",
         "only cards touched when #_cardname# stops moving are affected. Not ones touched while it is moving.",
         "this card can be used to put [_what:two copies of #cardAlone#,both #cardAlone# and #cardAlone#,both sides of #cardAlone#]#_what# onto the battlefield at once.",
         "if an ability (from #cardAlone#, for example) causes you to #gameAction#, nothing happens.",
@@ -35,33 +37,55 @@
         "#_cardname#'s first and third abilities are linked. Similarly, #_cardname#'s second and third abilities are linked.",
         "the #creatureTypes# tokens are created even if the target isn't [#gameEffectAction#]#_actionPastTense# by #_cardname#'s ability.",
         "for more information on [_topic:#gameConcept#,#cardCategory.s#,#_randomTopic#]#_topic#, see the [_set:#cardSet#,#teaserCardSet#]#_set# mechanics article at <a href=``>#_gathererRulingImageArticleUrl#</a>.",
+        "[_cardname:#cardAlone#]#opalPart1#",
         "#gathererTextRare#"
     ],
-
-    "gathererRuling": [ "[_cardname:#cardAlone#]#opalPart1#","#gathererTextRare#" ],
-
-    "opalPart1": "[_card2:#realCard#][_card3:#cardAlone#]this is the current interaction between #_cardname# and #_card2#: The type-changing effect applies at layer #num1-9#[_part2:.,#opalPart2#]#_part2#",
-
-    "opalPart2": "[_optional1:, but the rest happens in the applicable layers]#_optional1#.[_optional2: The rest of it will apply even if the #cardCategory# loses its ability before it’s finished applying.]#_optional2# So if #_cardname#, #_card2#, and #_card3# are #cardLocation#, the following is true: [_part3:#gathererRuling#,#opalPart3#]#_part3#",
-
-    "opalPart3": "#_cardname# and #_card2# each become [_became:creatures,#cardCategory.s#,#pluralNoun#]#_became# that are still #cardCategory.s# (#_card2#).[_part4:,#opalPart4#]#_part4#",
-
-    "opalPart4": "",    
 
     "gathererTextRare": [
         "you can't interfere in any physical way with the casting of this card.",
         "you can't make any decisions that aren't called for or allowed by the game rules, or by any cards, permanents, spells, abilities, and so on.",
         "if one player has fewer #cardCategory.s# than required, that player loses. If both have fewer than required, both players lose.",
         "when it comes to choice of items, use common sense. items should be small enough to hide but large enough to count.",
-        "there's no current game meaning of \"[_what:assemble,#pluralNounOrMassNoun#,#gameConcept#]#_what#\".",
+        "there's no current game meaning of “[_what:assemble,#pluralNounOrMassNoun#,#gameConcept#]#_what#”.",
         "the effect is cumulative.",
         "Magic isn't real, you idiot. Read a book."
     ],
     "embellishedGathererText": [
         "#gathererRuling# Yes, this is a bit weird.",
         "Unless something weird happens, #gathererRuling#",
-        "Yes, #gathererRuling# It's not optional."
+        "Yes, #gathererRuling# It's not optional.",
+        "#gathererRuling# This is known as #informalRule#."
+    ],    
+
+    "opalPart1": "[_card2:#realCard#][_card3:#cardAlone#]this is the current interaction between #_cardname# and #_card2#: The type-changing effect applies at #rulesLayer#[_part2:.,#opalPart2#]#_part2#",
+
+    "opalPart2": "[_optional1:, but the rest happens in the applicable layers]#_optional1#.[_optional2: The rest of it will apply even if the #cardCategory# loses its ability before it’s finished applying.]#_optional2# So if #_cardname#, #_card2#, and #_card3# are [_opalZone:#cardLocation#]#_opalZone# [_optional3: and #_cardname# was #_opalZone# before #_card2#]#_optional3#, the following is true: [_part3:#gathererRuling#,#opalPart3#]#_part3#",
+
+    "opalPart3": "#opalLayerEffectStack#[_part4:, #opalPart4#]#_part4#",
+
+    "opalPart4": "But if #_card2# was #_opalZone# before #_cardname#, the following is true: #opalLayerEffectStack#", 
+
+    "opalCardOrdering": [
+      "[_cardA:#_cardname#][_cardB:#_card2#][_cardC:#_card3#]",
+      "[_cardA:#_card2#][_cardB:#_cardname#][_cardC:#_card3#]",
+      "[_cardA:#_card3#][_cardB:#_cardname#][_cardC:#_card2#]]"
     ],
+
+    "opalLayerEffect": [
+      "[#opalCardOrdering#]#rulesLayer.capitalize#: #_cardB# and #_cardC# each become [_became:creatures,#cardCategory.s#,#pluralNoun#]#_became# that are still #cardCategory.s# (#_cardA#).",
+      "[#opalCardOrdering#][_stats:#opalPT#]#rulesLayer.capitalize#: #_cardB# becomes #_stats# and #_cardC# becomes #_stats# (#_cardA#)."
+    ],
+
+    "opalLayerEffectStack": [
+      "#opalLayerEffect#[_addtionaLayerEffects:, #opalLayerEffect#, #opalLayerEffect# #opalLayerEffect#]#_addtionaLayerEffects#"
+    ],
+
+    "opalPT": "[_pt:#num1-12#]#_pt#/#_pt#",
+
+    "rulesLayer": ["layer #num1-9#", "layer #num1-9#", "layer #num1-9#a", "layer #num1-9#b", "layer #num1-9#c"],
+
+    "fullOpal": "Layer 4: Humility and Worship each become creatures that are still enchantments. (Opalescence). Layer 6: Humility and Worship each lose their abilities. (Humility) Layer 7b: Humility becomes 4/4 and Worship becomes 4/4. (Opalescence). Humility becomes 1/1 and Worship becomes 1/1 (Humility). But if Humility entered the battlefield before Opalescence, the following is true: Layer 4: Humility and Worship each become creatures that are still enchantments (Opalescence). Layer 6: Humility and Worship each lose their abilities (Humility). Layer 7b: Humility becomes 1/1 and Worship becomes 1/1 (Humility). Humility becomes 4/4 and Worship becomes 4/4 (Opalescence).",
+
     "_gathererRulingImageArticleUrl": [
         "http://magic.wizards.com/en/articles/archive/"
     ],
@@ -77,5 +101,13 @@
         "deal damage to[_actionPastTense:dealt damage]",
         "target[_actionPastTense:targeted]",
         "affect[_actionPastTense:affected]"
+    ],
+    "informalRule": [
+      "the legend rule",
+      "the tuck rule",
+      "the #singularNoun# rule",
+      "last known information",
+      "summoning sickness",
+      "#verbStrictlyIntransitiveGerund# sickness"
     ]
 }
