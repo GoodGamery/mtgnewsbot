@@ -1,7 +1,6 @@
 {
-    "testGatherer": "[#gatherer#]gathererCardname: #_cardname#, gathererTimestamp: #gathererTimestamp#, gathererHeadline: #gathererHeadline#, gathererRuling: #gathererRuling#",
     "gatherer": [
-        "[_cardname:#cardAlone#][gathererTimestamp:#gathererTimestamp#][gathererHeadline:#gathererIntro# #_cardname#][gathererRuling:#gathererText#]"
+         "[_cardname:#realCard#]#gathererIntro# #_cardname# — #gathererText#"
     ],
     "gathererIntro": [
         "GATHERER RULINGS:",
@@ -14,13 +13,14 @@
     "gathererText": [
         "The #singularNoun# continues to #verbIntransitive# after #_cardname# has left the battlefield.",
         "The artist is actually #person#.",
-        "This is the timeshifted version of #realCard#.",
+        "This is the [_shift:time,color]#_shift#shifted version of #realCard#.",
         "When the #xth# ability resolves, the #cardCategory# you [_put:put, don’t put]#_put# #cardLocation# stays #cardLocation#.",
         "…finally, #_cardname# is placed #cardLocation#. This is a state-based action.",
         "#_cardname.s# are #cardLocation# regardless of whether they're #cardState# or #cardState#.",
         "Cards not actually #cardLocation# can't be affected by #_cardname#.",
         "Does not animate itself. But can be animated by another #_cardname#.",
         "This is the current interaction between #_cardname# and #realCard#: The type-changing effect applies at layer #num1-9#.",
+        "Only cards touched when #_cardnamed# stops moving are affected. Not ones touched while it is moving.",
         "For more information on [_topic:#gameConcept#,#cardCategory.s#,#_randomTopic#]#_topic#, see the [_set:#cardSet#,#teaserCardSet#]#_set# mechanics article at <a href=``>#_gathererRulingImageArticleUrl#</a>.",        
         "#gathererTextRare#"
     ],
