@@ -18,7 +18,7 @@
     "gathererRuling": [
         "the #singularNoun# continues to #verbIntransitive# after #_cardname# has left the battlefield.",
         "the artist is actually #person#.",
-        "this is the [_shift:timeshifted,colorshifted,Space#colon# the Convergence]#_shift# version of #realCard#.",
+        "this is the [_shift:timeshifted,colorshifted,playtest,Space#colon# the Convergence]#_shift# version of #realCard#.",
         "when the #xth# ability resolves, the #cardCategory# you [_put:put, don't put]#_put# #cardLocation# stays #cardLocation#.",
         "…finally, #_cardname# is placed #cardLocation#. This is a state-based action.",
         "#_cardname.s# are #cardLocation# regardless of whether they're #cardState# or #cardState#.",
@@ -38,13 +38,24 @@
         "#gathererTextRare#"
     ],
 
+    "gathererRuling": [ "[_cardname:#cardAlone#]#opalPart1#","#gathererTextRare#" ],
+
+    "opalPart1": "[_card2:#realCard#][_card3:#cardAlone#]this is the current interaction between #_cardname# and #_card2#: The type-changing effect applies at layer #num1-9#[_part2:.,#opalPart2#]#_part2#",
+
+    "opalPart2": "[_optional1:, but the rest happens in the applicable layers]#_optional1#.[_optional2: The rest of it will apply even if the #cardCategory# loses its ability before it’s finished applying.]#_optional2# So if #_cardname#, #_card2#, and #_card3# are #cardLocation#, the following is true: [_part3:#gathererRuling#,#opalPart3#]#_part3#",
+
+    "opalPart3": "#_cardname# and #_card2# each become [_became:creatures,#cardCategory.s#,#pluralNoun#]#_became# that are still #cardCategory.s# (#_card2#).[_part4:,#opalPart4#]#_part4#",
+
+    "opalPart4": "",    
+
     "gathererTextRare": [
         "you can't interfere in any physical way with the casting of this card.",
         "you can't make any decisions that aren't called for or allowed by the game rules, or by any cards, permanents, spells, abilities, and so on.",
         "if one player has fewer #cardCategory.s# than required, that player loses. If both have fewer than required, both players lose.",
         "when it comes to choice of items, use common sense. items should be small enough to hide but large enough to count.",
         "there's no current game meaning of \"[_what:assemble,#pluralNounOrMassNoun#,#gameConcept#]#_what#\".",
-        "the effect is cumulative."
+        "the effect is cumulative.",
+        "Magic isn't real, you idiot. Read a book."
     ],
     "embellishedGathererText": [
         "#gathererRuling# Yes, this is a bit weird.",
@@ -56,14 +67,14 @@
     ],
     "_randomTopic": ["#character#", "the #gameStep#", "#person#" , "#pluralNounOrMassNoun#", "#format#", "#deckArch#"],
     "gameAction": ["look at the top card of your library", "shuffle your library", "reorder your graveyard", "search your library", "untap one or more permanents",
-                    "lose the game", "win the game", "draw the game", "mulligan"],
+                    "lose the game", "win the game", "draw the game", "mulligan", "flip a coin", "ignore this ability"],
     "gameEffectAction": [ 
         "counter[_actionPastTense:countered]",
         "destroy[_actionPastTense:destroyed]",
         "regenerate[_actionPastTense:regenerated]",
         "exile[_actionPastTense:exiled]",
         "transform[_actionPastTense:transformed]",
-        "deal damage[_actionPastTense:dealt damage]",
+        "deal damage to[_actionPastTense:dealt damage]",
         "target[_actionPastTense:targeted]",
         "affect[_actionPastTense:affected]"
     ]
