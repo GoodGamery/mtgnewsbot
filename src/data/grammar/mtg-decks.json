@@ -165,13 +165,22 @@
   	"midrange",
   	"control",
   	"goodstuff",
-  	"trainwreck",
-  	"pile",
   	"converge",
   	"domain",
   	"devoid",
   	"delerium",
   	"mill",
   	"ramp"
-  ]
+  ],
+  "limitedDeckDescription": [
+		"a #colors# #deckLimitedArchetype# deck",
+		"a #colors# #deckLimitedArchetype# deck",
+		"a #colors# #deckLimitedArchetype# deck",
+		"#colors# #deckLimitedArchetype#",
+		"#colors# #deckLimitedArchetype#",
+		"#colors# #deckLimitedArchetype#",
+		"a #colors# trainwreck",
+		"a #colors# pile",
+		"a 6#num1-9#-card special"
+	]
 }
