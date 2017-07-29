@@ -159,5 +159,19 @@
       "positioned perfectly in the meta",
       "overhyped by singles retailers",
       "illegal under tournament rules"
+  ],
+  "deckLimitedArchetype": [
+  	"aggro",
+  	"midrange",
+  	"control",
+  	"goodstuff",
+  	"trainwreck",
+  	"pile",
+  	"converge",
+  	"domain",
+  	"devoid",
+  	"delerium",
+  	"mill",
+  	"ramp"
   ]
 }
