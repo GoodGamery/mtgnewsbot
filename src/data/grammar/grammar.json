@@ -38,7 +38,8 @@
     "announcement": [
         "Wizards Announces: Duel Decks: [_one:#nouns.capitalizeAll#,#planeswalkerFirstName#]#_one# vs. [_two:#nouns.capitalizeAll#,#planeswalkerFirstName#]#_two#",
         "Wizards Announces: From the Vault: [_contents:#nouns#,#pluralNoun#,#massNoun#]#_contents.capitalize#",         
-        "Announcement: #pro# has joined Team #team#"
+        "Announcement: #pro# has joined Team #team#",
+        "#gatherer#"
     ],    
     "graphicAnnouncement"    : [
         "Wizards Announces: [_cardset:#novelCardSetName.capitalizeAll#]#_cardset#{htmlImg htmlImgString=\"#mtgSetLogoImage#\"}",
