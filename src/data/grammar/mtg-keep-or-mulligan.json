@@ -4,13 +4,17 @@
     "Keep or Mulligan? With #pro#",
     "Keep or Mulligan? #_format# Edition",    
     "What's the Play? With #pro#",
-    "What's the Play? #_format# Edition"    
+    "What's the Play? #_format# Edition",
+    "You Make the Play: Keep or Mulligan?"  
 	],
 	"svgMulliganHeaderText": [
     "Beautiful hand.",
     "Don't be greedy!",
     "What's your play?",
-    "This is gonna be good."
+    "This is gonna be good.",
+    "Choose wisely.",
+    "Try not to fumble this.",
+    "It's decision time."
 	],
 	"svgMulliganBodyText": [
 	    "[_beforeText:#keepOrMulliganBeforeText#][_afterText:#keepOrMulliganAfterText#]"
@@ -23,29 +27,38 @@
     "Would you keep this?",
 		"Would you mulligan this?",		
 		"Would you mulligan?",
-		"Do you keep and gamble, or mulligan and play it safe?",
-		"What exactly are you supposed to do with this?"
+		"Do you gamble and keep, or mulligan and play it safe?",
+		"What do you do with this?"
 	],	
 	"keepOrMulliganBeforeText": [
 		"It's game #gameNumber# and you're on the #playOrDraw#. You mulligan your first hand but draw another 7 cards anyway. Your new hand is:",
-		"You’re playing against #deckArch#, game #gameNumber#, on the draw. Your hand is:",
+		"You’re playing against #opposingDeck#, game #gameNumber#, on the draw. Your hand is:",
 		"[_aboveTextSize:19px]You're playing Team Limited with #limitedDeckDescription#. Your deck is not very aggressive, but your opponent’s deck is better than yours and you feel that [#somePronoun#]#theirs# has more late-game power, so you side in cards like #cardAlone# and try to go aggressive game 2. Your mana is OK but not great: you have a #landCategory# and two [_land:#landCategory#,#realLandCard#]#_land.s#, you think. For game 3, on the draw, this is your hand:",
-		"You’re playing #_format# #deck#. It's game #gameNumber# on the draw against #deck#. This is your hand:",
-		"You’re on the #playOrDraw# against #deck#, and it’s game #gameNumber#. This is your draw:",
-		"You’re playing #deckVariation# against #deck# at #event# (old #_format#). Your opener:",
+		"You’re playing #_format# #deck#. It's game #gameNumber# on the draw against #opposingDeck#. This is your hand:",
+		"You’re on the #playOrDraw# against #opposingDeck#, and it’s game #gameNumber#. This is your draw:",
+		"It's the start of [_round:Round #num1-9#,day two]#_round# at #tournament#, and you're matched against #opposingDeck#. Your hand is:",		
+		"You’re playing #deckVariation# against #opposingDeck# at #event# (old #_format#). Your opener:",
 		"You’re playing #deck# in #_format# and you know your opponent is playing #deckVariation#. It’s game 1. You're on the #playOrDraw#, and your hand is:",
-		"You’re playing #_format# with #deckVariation# (basically a #deck# deck but with #cardAlone#). You’re on the #playOrDraw# against an unknown opponent. Your hand is:",
+		"You’re playing #_format# with #deckVariation# (basically a #deck# deck but with #cardAlone#). You’re on the #playOrDraw# against #opposingDeck#. Your hand is:",
 		"You’re playing #deckVariation# in #_format# and you’re on the  #playOrDraw#. You don’t know what your opponent is playing, but you’re currently in the #bracket# bracket (you [_outcome:won,lost,drew,conceded,got a game loss,got a match loss,lost your #gameAccessory#,took a nap,broke a sleeve]#_outcome# last round and so did [#somePronoun#]#they#). Your opening hand is:",
-		"[_aboveTextSize:18px]You’re playing a #multicolor# #creatureTypes#-based deck in #cardSet# Draft. [_baseColor:#basicColors#]Your deck is base-#_baseColor# and your mana is 1#num0-9# #basicLands#, #num1-5# [_otherLands:#basicLands#,#limitedLands#]#_otherLands#, [_n:1,1,2]#_n# #realLandCard#. 1#num0-9# of your cards are #_baseColor#, with two of those being [_multiplier:double,double,triple]#_multiplier#-#_baseColor#. Your deck is [_rating:above average,below average,average,amazing,good,bad,a trainwreck,a steaming pile of garbage]#_rating# (a #num0-9#-#num0-9# deck). You’re on the #playOrDraw# against an unknown opponent. Your opening hand is:"
+		"[_aboveTextSize:18px]You’re playing a #multicolor# #creatureTypes#-based deck in #cardSet# Draft. [_baseColor:#basicColors#]Your deck is base-#_baseColor# and your mana is 1#num0-9# #basicLands#, #num1-5# [_otherLands:#basicLands#,#limitedLands#]#_otherLands#, [_n:1,1,2]#_n# #realLandCard#. 1#num0-9# of your cards are #_baseColor#, with two of those being [_multiplier:double,double,triple]#_multiplier#-#_baseColor#. Your deck is [_rating:above average,below average,average,amazing,good,bad,a trainwreck,a steaming pile of garbage]#_rating# (a #num0-9#-#num0-9# deck). You’re on the #playOrDraw# against #opposingDeck#. Your opening hand is:"
 	],
 	"playOrDraw": [ "play", "draw"],
 	"gameNumber": ["1", "one", "2", "two", "3", "three"],
 
-	"bracket": ["#num0-9#-0", "0-#num0-9#", "#num0-9#-X", "X-#num0-9#","draw", "winners", "losers"],
+	"opposingDeck": [
+		"#deck#",
+		"#deckArch#",
+		"an unknown opponent",
+		"the mirror",
+		"#person#"
+	],
+
+	"bracket": ["#num0-9#-0", "0-#num0-9#", "#num0-9#-X", "#num0-9#-X-#num1-5#","X-#num0-9#","draw", "winners", "losers"],
 	"_aboveTextSize": "24px",
 	"keepOrMulliganHeaderTextStyle": "color: white; font-size: 72px; line-height: 92px; font-family: Beleren, Georgia, 'Liberation Serif', 'DejaVu Serif', serif; font-weight: 900; text-shadow: 2px 2px 2px black; text-align:center",
-	"keepOrMulliganBeforeTextStyle": "color: rgb(254,255,248); font-size: #_aboveTextSize#; font-family: Lato, Sans-Serif; font-weight: 500; text-shadow: 1px 1px 1px gray; ",
-	"keepOrMulliganAfterTextStyle": "color: rgb(254,255,248); font-size: 32px; font-family: Lato, Sans-Serif; font-weight: 600; text-shadow: 1px 1px 1px rgb(60,60,60); text-align:center ",
+	"keepOrMulliganBeforeTextStyle": "color: rgb(254,255,250); font-size: #_aboveTextSize#; font-family: Lato, Sans-Serif; font-weight: 500; text-shadow: 1px 1px 1px gray; ",
+	"keepOrMulliganAfterTextStyle": "color: rgb(254,255,250); font-size: 32px; font-family: Lato, Sans-Serif; font-weight: 600; text-shadow: 1px 1px 1px rgb(60,60,60); text-align:center ",
 
 	"cardfinderUrl": "https://forums.goodgamery.com/includes/mtg/mtg_helper_cardfinder_v3.php?img=true&amp;find=#_cardname#",
 	"cardFinderMultiverseId": [
