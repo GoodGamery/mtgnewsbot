@@ -199,6 +199,7 @@
       "Grim Monolith",
       "Griselbrand",
       "Go for the Throat",
+      "Goblin Charbelcher",
       "Goblin Guide",
       "Golgari Grave-Troll",
       "Grave Titan",
@@ -340,6 +341,7 @@
       "Stangg",
       "Stream of Life",
       "Suntail Hawk",
+      "Unbender Tine",
       "Wood Elemental"
   ],
   "realObscureCard": [
@@ -358,16 +360,20 @@
     "It That Betrays",
     "Jungle Barrier",
     "Krark's Thumb",
+    "Marble Titan",
     "Mindstab Thrull",
     "Mundungu",
     "Ogre Slumlord",
     "Outrage Shaman",
+    "Predatory Advantage",
     "Phytotitan",
+    "Rites of Initiation",
     "Royal Trooper",
     "Serrated Biskelion",
     "Scalpelexis",
     "Scrambleverse",
     "Sengir Autocrat",
+		"Sosuke's Summons",
     "Spinal Villain",
     "Takklemaggot",
     "That Which Was Taken"
@@ -375,6 +381,7 @@
   "realNotableCard": [
     "Amulet of Quoz",
     "Arc-Slogger",
+    "Ass Whuppin'",
     "Barbed Lightning",
     "Blacker Lotus",
     "Bonfire of the Damned",
@@ -394,6 +401,7 @@
     "Gilder Bairn",
     "Gleemax",
     "Gravelgill Axeshark",
+    "Hidetsugu's Second Rite",
     "Hurloon Wrangler",
     "Incite",
     "Island of Wak-Wak",
@@ -406,9 +414,11 @@
     "Lost in the Woods",
     "Magmaw",
     "Mogg Fanatic",
+    "Mox Lotus",
     "Nantuko Vigilante",
     "Noggle Bridgebreaker",
     "Nosy Goblin",
+    "Pointy Finger of Doom",
     "Poultrygeist",
     "Phyrexian Tribute",
     "Pillage",
@@ -421,6 +431,7 @@
     "Shoving Match",
     "Sneaky Homunculus",
     "Steamflogger Boss",
+    "Storm Cauldron",
     "Tectonic Edge",
     "The Cheese Stands Alone",
     "Totally Lost",
@@ -429,6 +440,7 @@
     "Vizzerdrix",
     "Werebear",
     "Whipgrass Entangler",
+    "Yet Another Æther Vortex",
     "Zzzyxas's Abyss"
   ],
   "realNormalCard":
@@ -705,6 +717,13 @@
       "Wrath of God",
       "Zombie Master"
   ],
+  "realLimitedFillerCard": [
+  	"Bronze Sable",
+  	"Crookclaw Transmuter",
+  	"Instigator Gang",
+  	"Kozilek's Pathfinder",
+  	"Spreading Flames"
+  ],
   "wishCard": ["Death Wish",
     "Glittering Wish",
     "Cunning Wish",
@@ -755,6 +774,7 @@
       "#adj.capitalizeAll# Wish",
       "#verbGerund.capitalizeAll# Shoal",
       "#realCard# (Not the #novelCardSetName.capitalizeAll# One)",
+      "Snow-Covered #realCard#",
       "Circle of Protection: [_someNoun:#abstractNoun#,#emotion#,#massNoun#,#pluralNoun#,#things2#][_what:#creatureTypes.s#,#cardCategory.s#,#_someNoun#]#_what.capitalizeAll#"
   ]
 }
