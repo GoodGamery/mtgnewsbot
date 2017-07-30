@@ -46,15 +46,19 @@
 	],
 
 	"_aboveTextSize": "24px",
-	
+
 	"svgMulliganHeaderTextStyle": "color: white; font-size: 72px; line-height: 84px; font-family: Beleren, Georgia, 'Liberation Serif', 'DejaVu Serif', serif; font-weight: 900; text-shadow: 2px 2px 2px black; text-align:center",
 	"svgMulliganBeforeTextStyle": "color: rgb(254,255,250); font-size: #_aboveTextSize#; font-family: Lato, Sans-Serif; font-weight: 500; text-shadow: 1px 1px 1px gray; ",
 	"svgMulliganAfterTextStyle": "color: rgb(254,255,250); font-size: 32px; font-family: Lato, Sans-Serif; font-weight: 600; text-shadow: 1px 1px 1px rgb(60,60,60); text-align:center ",
 
 	"svgMulliganCardFinderUrl": "https://forums.goodgamery.com/includes/mtg/mtg_helper_cardfinder_v3.php?img=true&amp;find=#_cardname#",
 
+	"svgMulliganCardId": [
+		"#cardFinderMultiverseId#",	"#cardFinderMultiverseId#",	"#cardFinderMultiverseId#",	"#cardFinderLandMultiverseId#",	"#cardFinderLandMultiverseId#"
+	],
+	
 	"svgMulliganCardFinderUrl": [
-		"http://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=#cardFinderMultiverseId#&type=card&name=#_cardname#"
+		"http://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=#svgMulliganCardId#&type=card&name=#_cardname#"
 	],
 
 	"svgMulliganResetStyles": ["[_aboveTextSize:24px]"],
