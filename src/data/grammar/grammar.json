@@ -95,7 +95,7 @@
         "[_proIs:#pro# is,#pros# are]#_proIs# #verbCreating# #tech.a# to #verbDefeat# #obstacle.capitalize#",
         "#count.capitalize# #broadCardClassification.capitalizeAll# That Should Never Have Been [_verbed:Printed,Banned,Unbanned,Played,Ignored]#_verbed#",
         "[_proReveals:Top Pro #revealVerb.s#,#pro# #revealVerb.s#,#pros# #revealVerb#]#_proReveals.capitalizeAll# #planNoun.capitalize# for #event#: Play #card# in #deck# to counter [_what:#card#,#deckArch#]#_what#",
-        "#recentCardSet# [_format:Limited,Constucted]#_format# Set Review:[_color: #basicColors#,]#_color# #cardCategory.s.capitalizeAll# and [_other:#cardCategory#,#creatureTypes#]#_other.s.capitalizeAll#",
+        "#recentCardSet# [_format:Limited,Constucted]#_format# Set Review:[_color: #basicColors.capitalize#,]#_color# #cardCategory.s.capitalizeAll# and [_other:#cardCategory#,#creatureTypes#]#_other.s.capitalizeAll#",
         "#recentCardSet# #format# Set Review: [_cat:#basicColors#,#cardCategory.s# and #cardCategory.s#]#_cat.capitalizeAll#"
     ],
     "tournamentRound": [
@@ -306,7 +306,7 @@
         "#creatureTypes.capitalize# decks"
     ],
     "colors": [
-        "#basicColors#",
+        "#basicColors.capitalize#",
         "Mono-Black",
         "Mono-White",
         "Mono-Brown",
@@ -324,13 +324,30 @@
         "Five-Color",
         "#colorComboNickname#"
     ],
+    "multicolor": [ 
+    		"#colorComboNickname#",
+        "RUG",
+        "BUG",
+        "UG",
+        "UR",
+        "UW",
+        "BG",
+        "Red-Green",
+        "Green-White",
+        "Black-White",        
+        "Blue-Black",
+        "Blue-Red",
+        "Green-Black",
+        "Four-Color",
+        "Five-Color"
+    ],
     "basicColors": [
-        "Red",
-        "Green",
-        "White",
-        "Blue",
-        "Black",
-        "Colorless"
+        "red",
+        "green",
+        "white",
+        "blue",
+        "black",
+        "colorless"
     ],
     "colorComboNickname": [
         "Bant",
@@ -339,7 +356,8 @@
         "Esper",
         "Jeskai",
         "Orzhov",
-        "Boros"
+        "Boros",
+        "Jund"
     ],
     "characterClass": ["master", "warlord", "avenger", "champion", "explorer", "pirate", "chieftain", "conqueror", "god", "assassin", "oracle", "ghost",
                         "knave", "defender","ancient", "master", "prisoner", "buffoon", "baby", "clown", "villain", "freak", "fiend", "titan", "horror",

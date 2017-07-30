@@ -86,7 +86,7 @@
       "Gold",
       "Platinum",
       "Foundation",
-      "#basicColors#",
+      "#basicColors.capitalize#",
       "#direction.capitalizeAll#",
       "#massNoun.capitalizeAll#",
       "#creatureTypes.capitalize#"
