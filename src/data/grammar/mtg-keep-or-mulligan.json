@@ -17,9 +17,9 @@
     "It's decision time."
 	],
 	"svgMulliganBodyText": [
-	    "[_beforeText:#keepOrMulliganBeforeText#][_afterText:#keepOrMulliganAfterText#]"
+	    "[_beforeText:#svgMulliganBeforeText#][_afterText:#svgMulliganAfterText#]"
 	],
-	"keepOrMulliganAfterText": [
+	"svgMulliganAfterText": [
     "Keep or mulligan?",
     "Do you keep this?",    
     "Do you keep or mulligan?",
@@ -31,7 +31,7 @@
 		"What do you do with this?"
 	],	
 
-	"keepOrMulliganBeforeText": [
+	"svgMulliganBeforeText": [
 		"It's game #gameNumber# and you're on the #playOrDraw#. You mulligan your first hand but draw another 7 cards anyway. Your new hand is:",
 		"[_aboveTextSize:26px]You’re playing against #opposingDeck#, game #gameNumber#, on the draw. Your hand is:",
 		"[_aboveTextSize:22px]You're playing Team Limited with #limitedDeckDescription#. Your deck is not very aggressive, but your opponent’s deck is better than yours and you feel that [#somePronoun#]#theirs# has more late-game power, so you side in cards like #cardAlone# and try to go aggressive game 2. Your mana is OK but not great: you have a #landCategory# and two [_land:#landCategory#,#realLandCard#]#_land.s#, you think. For game 3, on the draw, this is your hand:",		
@@ -45,35 +45,19 @@
 		"[_aboveTextSize:22px]You’re playing a #multicolor# #creatureTypes#-based deck in #cardSet# Draft. [_baseColor:#basicColors#]Your deck is base-#_baseColor# and your mana is 1#num0-9# #basicLands#, #num1-5# [_otherLands:#basicLands#,#limitedLands#]#_otherLands#, [_n:1,1,2]#_n# #realLandCard#. 1#num0-9# of your cards are #_baseColor#, with two of those being [_multiplier:double,double,triple]#_multiplier#-#_baseColor#. Your deck is [_rating:above average,below average,average,amazing,good,bad,a trainwreck,a steaming pile of garbage]#_rating# (a #num0-9#-#num0-9# deck). You’re on the #playOrDraw# against #opposingDeck#. Your opening hand is:"
 	],
 
-	"playOrDraw": [ "play", "draw"],
-	"gameNumber": ["1", "one", "2", "two", "3", "three"],
-
-	"opposingDeck": [
-		"#deck#",
-		"#deckArch#",
-		"an unknown opponent",
-		"the mirror",
-		"#person#"
-	],
-
-	"bracket": ["#num0-9#-0", "0-#num0-9#", "#num0-9#-X", "#num0-9#-X-#num1-5#","X-#num0-9#","draw", "winners", "losers"],
 	"_aboveTextSize": "24px",
-	"keepOrMulliganHeaderTextStyle": "color: white; font-size: 72px; line-height: 84px; font-family: Beleren, Georgia, 'Liberation Serif', 'DejaVu Serif', serif; font-weight: 900; text-shadow: 2px 2px 2px black; text-align:center",
-	"keepOrMulliganBeforeTextStyle": "color: rgb(254,255,250); font-size: #_aboveTextSize#; font-family: Lato, Sans-Serif; font-weight: 500; text-shadow: 1px 1px 1px gray; ",
-	"keepOrMulliganAfterTextStyle": "color: rgb(254,255,250); font-size: 32px; font-family: Lato, Sans-Serif; font-weight: 600; text-shadow: 1px 1px 1px rgb(60,60,60); text-align:center ",
+	
+	"svgMulliganHeaderTextStyle": "color: white; font-size: 72px; line-height: 84px; font-family: Beleren, Georgia, 'Liberation Serif', 'DejaVu Serif', serif; font-weight: 900; text-shadow: 2px 2px 2px black; text-align:center",
+	"svgMulliganBeforeTextStyle": "color: rgb(254,255,250); font-size: #_aboveTextSize#; font-family: Lato, Sans-Serif; font-weight: 500; text-shadow: 1px 1px 1px gray; ",
+	"svgMulliganAfterTextStyle": "color: rgb(254,255,250); font-size: 32px; font-family: Lato, Sans-Serif; font-weight: 600; text-shadow: 1px 1px 1px rgb(60,60,60); text-align:center ",
 
-	"cardfinderUrl": "https://forums.goodgamery.com/includes/mtg/mtg_helper_cardfinder_v3.php?img=true&amp;find=#_cardname#",
-	"cardFinderMultiverseId": [
-		"397547", "3048", "380508", "430813", "383253","414481","394551","233051","227","111259","4436","22998","420849","430757","289156","129584","183025", "89015", "386294",
-		"159402", "4452", "368499", "280223", "378411", "129716", "271119", "413756", "15142", "423784", "88995", "15194", "409624", "46728", "152588", "130339", "1274",
-		"284495", "284499", "249733", "430875", "386565", "430512", "2742", "376534", "398421", "31627", "417816", "31763", "241980", "389471", "209408" ,"430631",
-		"391812", "423543", "429674", "405146", "430866", "157882", "221297", "405273", "276473"
-	],	
-	"cardFinderUrl": [
+	"svgMulliganCardFinderUrl": "https://forums.goodgamery.com/includes/mtg/mtg_helper_cardfinder_v3.php?img=true&amp;find=#_cardname#",
+
+	"svgMulliganCardFinderUrl": [
 		"http://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=#cardFinderMultiverseId#&type=card&name=#_cardname#"
 	],
 
 	"svgMulliganResetStyles": ["[_aboveTextSize:24px]"],
 
-	"svgMulligan": "<svg xmlns=`http://www.w3.org/2000/svg` xmlns:xlink=`http://www.w3.org/1999/xlink` width=`1849` height=`840`><defs><mask id=`cardMask` maskUnits=`userSpaceOnUse` mask-type=`alpha`><image x=`0` y=`0` width=`223` height=`310` xlink:href=`./src/data/images/cardmask.png` /></mask><svg id=`Card1` #svgMulliganCardDef#><image xlink:href=`[_cardname:#realHandCard#]#cardFinderUrl#` x=`0` y=`0` mask=`url(\\#cardMask)` width=`223` height=`310` /></svg><svg id=`Card2` #svgMulliganCardDef#><image xlink:href=`[_cardname:#realHandCard#]#cardFinderUrl#` x=`0` y=`0` mask=`url(\\#cardMask)` width=`223` height=`310` /></svg><svg id=`Card3` #svgMulliganCardDef#><image xlink:href=`[_cardname:#realHandCard#]#cardFinderUrl#` x=`0` y=`0` mask=`url(\\#cardMask)` width=`223` height=`310` /></svg><svg id=`Card4` #svgMulliganCardDef#><image xlink:href=`[_cardname:#realHandCard#]#cardFinderUrl#` x=`0` y=`0` mask=`url(\\#cardMask)` width=`223` height=`310` /></svg><svg id=`Card5` #svgMulliganCardDef#><image xlink:href=`[_cardname:#realHandCard#]#cardFinderUrl#` x=`0` y=`0` mask=`url(\\#cardMask)` width=`223` height=`310` /></svg><svg id=`Card6` #svgMulliganCardDef#><image xlink:href=`[_cardname:#realHandCard#]#cardFinderUrl#` x=`0` y=`0` mask=`url(\\#cardMask)` width=`223` height=`310` /></svg><svg id=`Card7` #svgMulliganCardDef#><image xlink:href=`[_cardname:#realHandCard#]#cardFinderUrl#` x=`0` y=`0` mask=`url(\\#cardMask)` width=`223` height=`310` /></svg></defs><image width=`100%` height=`100%` xlink:href=`./src/data/images/mulligan.png` /><use xlink:href=`\\#Card1`  x=`2%` y=`330` /><use xlink:href=`\\#Card2` x=`16%` y=`330` /><use xlink:href=`\\#Card3` x=`30%` y=`330` /><use xlink:href=`\\#Card4` x=`44%` y=`330` /><use xlink:href=`\\#Card5` x=`58%` y=`330` /><use xlink:href=`\\#Card6` x=`72%` y=`330` /><use xlink:href=`\\#Card7` x=`86%` y=`330` /><foreignObject x=`0` y=`22` width=`1849` height=`84`><p xmlns=`http://www.w3.org/1999/xhtml` style=`#keepOrMulliganHeaderTextStyle#`>#_headerText#</p></foreignObject><foreignObject x=`29%` y=`100` width=`800` height=`160px`><div style=`width: 800px; height: 160px;  display:table;`><div style=`[_bftxt:#_beforeText#]#keepOrMulliganBeforeTextStyle# width : 100%; height : 100%; display:table-cell; vertical-align:middle; padding: 4px; margin: auto;`>#_bftxt#</div></div></foreignObject><foreignObject x=`0%` y=`735` width=`1849` height=`50`><div xmlns=`http://www.w3.org/1999/xhtml` style=`width: 1849px; height: 50px; text-align: center;`><div style=`#keepOrMulliganAfterTextStyle# width: 300px; height : 100%; display:inline-block; vertical-align:middle; padding: 4px; margin: auto;`>#_afterText#</div></foreignObject></svg>#svgMulliganResetStyles#"
+	"svgMulligan": "<svg xmlns=`http://www.w3.org/2000/svg` xmlns:xlink=`http://www.w3.org/1999/xlink` width=`1849` height=`840`><defs><mask id=`cardMask` maskUnits=`userSpaceOnUse` mask-type=`alpha`><image x=`0` y=`0` width=`223` height=`310` xlink:href=`./src/data/images/cardmask.png` /></mask><svg id=`Card1` #svgMulliganCardDef#><image xlink:href=`[_cardname:#realHandCard#]#svgMulliganCardFinderUrl#` x=`0` y=`0` mask=`url(\\#cardMask)` width=`223` height=`310` /></svg><svg id=`Card2` #svgMulliganCardDef#><image xlink:href=`[_cardname:#realHandCard#]#svgMulliganCardFinderUrl#` x=`0` y=`0` mask=`url(\\#cardMask)` width=`223` height=`310` /></svg><svg id=`Card3` #svgMulliganCardDef#><image xlink:href=`[_cardname:#realHandCard#]#svgMulliganCardFinderUrl#` x=`0` y=`0` mask=`url(\\#cardMask)` width=`223` height=`310` /></svg><svg id=`Card4` #svgMulliganCardDef#><image xlink:href=`[_cardname:#realHandCard#]#svgMulliganCardFinderUrl#` x=`0` y=`0` mask=`url(\\#cardMask)` width=`223` height=`310` /></svg><svg id=`Card5` #svgMulliganCardDef#><image xlink:href=`[_cardname:#realHandCard#]#svgMulliganCardFinderUrl#` x=`0` y=`0` mask=`url(\\#cardMask)` width=`223` height=`310` /></svg><svg id=`Card6` #svgMulliganCardDef#><image xlink:href=`[_cardname:#realHandCard#]#svgMulliganCardFinderUrl#` x=`0` y=`0` mask=`url(\\#cardMask)` width=`223` height=`310` /></svg><svg id=`Card7` #svgMulliganCardDef#><image xlink:href=`[_cardname:#realHandCard#]#svgMulliganCardFinderUrl#` x=`0` y=`0` mask=`url(\\#cardMask)` width=`223` height=`310` /></svg></defs><image width=`100%` height=`100%` xlink:href=`./src/data/images/mulligan.png` /><use xlink:href=`\\#Card1`  x=`2%` y=`330` /><use xlink:href=`\\#Card2` x=`16%` y=`330` /><use xlink:href=`\\#Card3` x=`30%` y=`330` /><use xlink:href=`\\#Card4` x=`44%` y=`330` /><use xlink:href=`\\#Card5` x=`58%` y=`330` /><use xlink:href=`\\#Card6` x=`72%` y=`330` /><use xlink:href=`\\#Card7` x=`86%` y=`330` /><foreignObject x=`0` y=`22` width=`1849` height=`84`><p xmlns=`http://www.w3.org/1999/xhtml` style=`#svgMulliganHeaderTextStyle#`>#_headerText#</p></foreignObject><foreignObject x=`29%` y=`100` width=`800` height=`160px`><div style=`width: 800px; height: 160px;  display:table;`><div style=`[_bftxt:#_beforeText#]#svgMulliganBeforeTextStyle# width : 100%; height : 100%; display:table-cell; vertical-align:middle; padding: 4px; margin: auto;`>#_bftxt#</div></div></foreignObject><foreignObject x=`0%` y=`735` width=`1849` height=`50`><div xmlns=`http://www.w3.org/1999/xhtml` style=`width: 1849px; height: 50px; text-align: center;`><div style=`#svgMulliganAfterTextStyle# width: 300px; height : 100%; display:inline-block; vertical-align:middle; padding: 4px; margin: auto;`>#_afterText#</div></foreignObject></svg>#svgMulliganResetStyles#"
 }
