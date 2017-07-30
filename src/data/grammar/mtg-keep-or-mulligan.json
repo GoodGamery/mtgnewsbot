@@ -1,5 +1,11 @@
 {
-	"headlineKeepOrMulligan": "[_headerText:#svgMulliganHeaderText#][#svgMulliganBodyText#]#_headerText# {svg svgString=\"#svgMulligan#\"}",
+	"headlineKeepOrMulligan": "[_format:#format#][_headerText:#svgMulliganHeaderText#][#svgMulliganBodyText#]#svgMulliganStatusText# {svg svgString=\"#svgMulligan#\"}",
+	"svgMulliganStatusText": [
+    "Keep or Mulligan? With #pro#",
+    "Keep or Mulligan? #_format# Edition",    
+    "What's the Play? With #pro#",
+    "What's the Play? #_format# Edition"    
+	],
 	"svgMulliganHeaderText": [
     "Beautiful hand.",
     "Don't be greedy!",
@@ -17,18 +23,19 @@
     "Would you keep this?",
 		"Would you mulligan this?",		
 		"Would you mulligan?",
-		"Do you gamble, or mulligan and play it safe?"
+		"Do you keep and gamble, or mulligan and play it safe?",
+		"What exactly are you supposed to do with this?"
 	],	
 	"keepOrMulliganBeforeText": [
 		"It's game #gameNumber# and you're on the #playOrDraw#. You mulligan your first hand but draw another 7 cards anyway. Your new hand is:",
 		"You’re playing against #deckArch#, game #gameNumber#, on the draw. Your hand is:",
-		"[_aboveTextSize:18px]You're playing Team Limited with #limitedDeckDescription#. Your deck is not very aggressive, but your opponent’s deck is better than yours and you feel that [#somePronoun#]#theirs# has more late-game power, so you side in cards like #cardAlone# and try to go aggressive game 2. Your mana is OK but not great: you have a #landCategory# and two [_land:#landCategory#,#realLandCard#]#_land.s#, you think. For game 3, on the draw, this is your hand:",
-		"You’re playing #format# #deck#. It's game #gameNumber# on the draw against #deck#. This is your hand:",
+		"[_aboveTextSize:19px]You're playing Team Limited with #limitedDeckDescription#. Your deck is not very aggressive, but your opponent’s deck is better than yours and you feel that [#somePronoun#]#theirs# has more late-game power, so you side in cards like #cardAlone# and try to go aggressive game 2. Your mana is OK but not great: you have a #landCategory# and two [_land:#landCategory#,#realLandCard#]#_land.s#, you think. For game 3, on the draw, this is your hand:",
+		"You’re playing #_format# #deck#. It's game #gameNumber# on the draw against #deck#. This is your hand:",
 		"You’re on the #playOrDraw# against #deck#, and it’s game #gameNumber#. This is your draw:",
-		"You’re playing #deckVariation# against #deck# at #event# (old #format#). Your opener:",
-		"You’re playing #deck# in #format# and you know your opponent is playing #deckVariation#. It’s game 1. You're on the #playOrDraw#, and your hand is:",
-		"You’re playing #format# with #deckVariation# (basically a #deck# deck but with #cardAlone#). You’re on the #playOrDraw# against an unknown opponent. Your hand is:",
-		"You’re playing #deckVariation# in #format# and you’re on the  #playOrDraw#. You don’t know what your opponent is playing, but you’re currently in the #bracket# bracket (you [_outcome:won,lost,drew,conceded,got a game loss,got a match loss,lost your #gameAccessory#,took a nap,broke a sleeve]#_outcome# last round and so did [#somePronoun#]#they#). Your opening hand is:",
+		"You’re playing #deckVariation# against #deck# at #event# (old #_format#). Your opener:",
+		"You’re playing #deck# in #_format# and you know your opponent is playing #deckVariation#. It’s game 1. You're on the #playOrDraw#, and your hand is:",
+		"You’re playing #_format# with #deckVariation# (basically a #deck# deck but with #cardAlone#). You’re on the #playOrDraw# against an unknown opponent. Your hand is:",
+		"You’re playing #deckVariation# in #_format# and you’re on the  #playOrDraw#. You don’t know what your opponent is playing, but you’re currently in the #bracket# bracket (you [_outcome:won,lost,drew,conceded,got a game loss,got a match loss,lost your #gameAccessory#,took a nap,broke a sleeve]#_outcome# last round and so did [#somePronoun#]#they#). Your opening hand is:",
 		"[_aboveTextSize:18px]You’re playing a #multicolor# #creatureTypes#-based deck in #cardSet# Draft. [_baseColor:#basicColors#]Your deck is base-#_baseColor# and your mana is 1#num0-9# #basicLands#, #num1-5# [_otherLands:#basicLands#,#limitedLands#]#_otherLands#, [_n:1,1,2]#_n# #realLandCard#. 1#num0-9# of your cards are #_baseColor#, with two of those being [_multiplier:double,double,triple]#_multiplier#-#_baseColor#. Your deck is [_rating:above average,below average,average,amazing,good,bad,a trainwreck,a steaming pile of garbage]#_rating# (a #num0-9#-#num0-9# deck). You’re on the #playOrDraw# against an unknown opponent. Your opening hand is:"
 	],
 	"playOrDraw": [ "play", "draw"],
