@@ -98,6 +98,7 @@ function postHtmlImageTweet(status, htmlString, altText) {
 		.then(localFilePath => postImageTweet(localFilePath, status, altText))
 		.then(() => cleanupFile(outputPath))
 		.catch(e => logError('Failed to download image: ' + e));
+}
 
 // Create tweet from grammar
 let headline = NewsEngine.generateHeadline();

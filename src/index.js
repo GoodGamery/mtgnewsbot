@@ -5,8 +5,6 @@ const config = require('../config');
 const fs =  require(`fs`);
 const uuid = require(`uuid`);
 const svg2png = require('svg2png');
-const webshot = require('webshot');
-const Jimp = require('jimp');
 const RenderImage = require('./lib/render-image');
 
 const numExamples = process.argv[2] || 1;
@@ -39,6 +37,6 @@ headlines.forEach(headline => {
 
 		RenderImage.fromHtml(html, outputPath)
 			.then(localFilePath => console.info('\n *** Image saved to ' + localFilePath))
-			.catch(e => logError('Failed to download image: ' + e));
+			.catch(e => console.error('Failed to download image: ' + e));
 	}
 });

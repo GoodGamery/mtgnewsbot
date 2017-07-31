@@ -1,4 +1,5 @@
 // Utility for rendering html images to files
+'use strict';
 const webshot = require('webshot');
 const Jimp = require('jimp');
 const fs =  require(`fs`);
@@ -45,4 +46,4 @@ function renderImageFromHtml(html, outputPath) {
 
 module.exports = {
   fromHtml: renderImageFromHtml
-}
+};
