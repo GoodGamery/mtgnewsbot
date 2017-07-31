@@ -126,7 +126,7 @@ try {
 		twitter.postTweet(headline.text);
 	}
 	// Notify about tweet
-	Discord.sendText(`${headline.text}`);
+	Discord.sendEmbed(`${headline.text}`);
 } catch (exception) {
 	// Notify about error
 	Discord.sendText(`There was an error: ${exception}`);
