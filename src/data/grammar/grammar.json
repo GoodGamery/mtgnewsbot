@@ -11,13 +11,19 @@
         "#playguide#",
         "#decktech#",
         "#announcement#",
+        "#graphicAnnouncement#",
         "#clickbait#",
         "#flavorArcana#"
     ],
     "disabledHeadline": [
+<<<<<<< HEAD
       "#inGraphics#",
       "#headlineKeepOrMulligan#",
       "#gathererRulingImage#" 
+=======
+        "#inGraphics#",
+        "#headlineKeepOrMulligan#"
+>>>>>>> 82f793a85a993ce1d38f285ca25b5eb1916f6d9e
     ],
     "flavorArcana": [
         "BEHIND THE FLAVOR: #flavorText#",
