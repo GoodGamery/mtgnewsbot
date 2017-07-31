@@ -16,7 +16,8 @@ let config = {
 	paths: {
 		tempDirectory: TEMPFILE_PATH,
 		logFile: LOGFILE_PATH
-	}
+	},
+	webookUrl: null
 };
 
 // apply overrides from config overrides file
