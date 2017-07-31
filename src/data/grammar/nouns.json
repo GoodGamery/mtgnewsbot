@@ -140,5 +140,13 @@
       "event ticket",
       "play point",
       "untradeable war mark"
+  ],
+  "liquid": [
+    "coffee",
+    "tea",
+    "coke",
+    "pepsi",
+    "water",
+    "paint"
   ]
 }
