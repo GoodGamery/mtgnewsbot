@@ -23,7 +23,7 @@ headlines.forEach(headline => {
 		svg2png(new Buffer(headline.tags.svg.svgString), { filename: __dirname })
 			.catch(e => console.log('\n *** Failed to create png: ' + e))
 			.then(data => {
-				console.log('SVG:'); console.log(headline.tags.svg.svgString.replace(/`/g, '"'));
+				console.log('SVG:'); console.log(headline.tags.svg.svgString);
 				fs.writeFileSync(outputPath, data);
 				console.log('\n *** Image saved to ' + outputPath);
 			})
@@ -34,7 +34,7 @@ headlines.forEach(headline => {
 		const outputfile = uuid() + '.png';
 		const outputPath = config.paths.tempDirectory + '/' + outputfile;
 		const screenshot = html2png({ width: 1024, height: 768, browser: 'phantomjs'});
-		const html = headline.tags.htmlImg.htmlImgString.replace(/`/g, '"').replace(/<</g, '{').replace(/>>/g, '}');
+		const html = headline.tags.htmlImg.htmlImgString;
 		console.log('HTML:'); console.log(html);
 
 		screenshot.render(html, function (err, data) { 
