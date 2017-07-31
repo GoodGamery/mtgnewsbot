@@ -775,6 +775,7 @@
       "Jace's #realCard#",
       "M #realCard# EX",
       "Magus of the #realCard#",
+    	"Magus of the #concreteNoun.capitalize#",      
       "Mons's #realCard#",
       "Mox #realCard#",
       "Robo#realCard#",

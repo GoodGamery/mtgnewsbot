@@ -11,9 +11,10 @@
 
   "_gathererRulingImageTableRulings": [
     "#_gathererRulingImageRowOdd# #_gathererRulingImageRowEven#",
+    "#_gathererRulingImageRowOdd# #_gathererRulingImageRowEven#",    
     "#_gathererRulingImageRowOdd# #_gathererRulingImageRowEven# #_gathererRulingImageRowOdd#",
-    "#_gathererRulingImageRowOdd# #_gathererRulingImageRowEven# #_gathererRulingImageRowOdd# #_gathererRulingImageRowEven#",
-    "#_gathererRulingImageRowOdd# #_gathererRulingImageRowEven# #_gathererRulingImageRowOdd# #_gathererRulingImageRowEven# #_gathererRulingImageRowOdd#"
+    "#_gathererRulingImageRowOdd# #_gathererRulingImageRowEven# #_gathererRulingImageRowOdd#",  
+    "#_gathererRulingImageRowOdd# #_gathererRulingImageRowEven# #_gathererRulingImageRowOdd# #_gathererRulingImageRowEven#"
   ],
 
 	"_gathererRulingImageHeader": "<tr class=`rulingsHeader`><td class=`rulingsHeader` colspan=`2`><div class=`rulingsHeader`>Rulings</div></td></tr>",

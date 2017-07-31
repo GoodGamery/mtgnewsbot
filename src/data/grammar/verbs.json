@@ -7,14 +7,14 @@
     "dismiss", "praise", "scrutinize","minimize", "quantify", "trivialize",  "renounce", "abhor", "dispute", "deceive", "brandish",
     "simulate", "immortalize", "subdue", "pigeonhole", "despoil", "enhance", "glamorize", "market", "recognize", "smash"
   ],  
-  "verbIntransitive": [ "#verbStrictlyIntransitive#", "#verbBothIntransitive#" ],  
+  "verbIntransitive": [ "#verbStrictlyIntransitive#", "#verbBothTransitive#" ],  
   "verbStrictlyIntransitive": [
     "hesitate", "wonder", "snort", "chuckle", "weep", "run", "sleep", "brood", "occur", "materialize", "complain", "yawn",
     "belch", "emerge", "embroider", "scream", "dance", "collapse", "appear", "disappear", "sneeze", "arrive", "exist", "fall",
     "rise", "revolt", "smile", "smirk", "scowl", "awaken", "prevail", "descend", "retreat", "negotiate", "stare", "howl",
     "snicker", "groan", "cough", "listen", "leave", "condescend", "wish", "shiver", "juggle"
   ],
-  "verbBothIntransitive": [
+  "verbBothTransitive": [
     "approach","shuffle", "kill", "observe", "grow", "swallow", "transform", "forget", "remember", "study", "misunderstand",
     "sacrifice", "collect", "celebrate", "exaggerate", "pantomime", "advertise", "deep-fry", "decorate", "fight", "burn"
   ],
