@@ -5,10 +5,14 @@ const uuid = require(`uuid`);
 const svg2png = require(`svg2png`);
 
 const RenderImage = require('./src/lib/render-image');
+const Discord = require('./src/lib/discord');
 const NewsEngine = require('./src/news-engine');
 const TwitterClient = require('./src/lib/api/twitter-client');
 const mtgCardFinder = require('./src/lib/api/mtg-cardfinder');
 const config = require('./config');
+
+// Create twitter client
+const twitter = new TwitterClient();
 
 const fileLogger = (msg, isErr) => {
 	const logToConsole = isErr ? console.error : console.log;
@@ -100,26 +104,30 @@ function postHtmlImageTweet(status, htmlString, altText) {
 		.catch(e => logError('Failed to download image: ' + e));
 }
 
-// Create tweet from grammar
-let headline = NewsEngine.generateHeadline();
+try {
+	// Create tweet from grammar
+	let headline = NewsEngine.generateHeadline();
 
-while (headline.text.length > config.tweetLength) {
-  logError(`TWEET LENGTH ${headline.text.length} GREATER THAN MAX ${config.tweetLength}:\n${headline.text}`);
-	headline = NewsEngine.generateHeadline();
-}
+	while (headline.text.length > config.tweetLength) {
+		logError(`TWEET LENGTH ${headline.text.length} GREATER THAN MAX ${config.tweetLength}:\n${headline.text}`);
+		headline = NewsEngine.generateHeadline();
+	}
 
-fileLogger(`tweet: ${JSON.stringify(headline)}`);
+	fileLogger(`tweet: ${JSON.stringify(headline)}`);
 
-// Create twitter client
-const twitter = new TwitterClient();
-
-if (headline.tags && headline.tags.imgCard && headline.tags.imgCard.cardName) {
-	postCardImageTweet(headline.text, headline.tags.imgCard.cardName);
-} else if (headline.tags && headline.tags.htmlImg && headline.tags.htmlImg.htmlImgString) {
-	const html = resolveCssUrls(headline.tags.htmlImg.htmlImgString);
-	postHtmlImageTweet(headline.text, html, headline.tags.htmlImg.altText || 'image');
-} else if (headline.tags && headline.tags.svg && headline.tags.svg.svgString) {
-	postSvgTweet(headline.text, headline.tags.svg.svgString, headline.tags.svg.altText || 'image');
-} else {
-	twitter.postTweet(headline.text);
+	if (headline.tags && headline.tags.imgCard && headline.tags.imgCard.cardName) {
+		postCardImageTweet(headline.text, headline.tags.imgCard.cardName);
+	} else if (headline.tags && headline.tags.htmlImg && headline.tags.htmlImg.htmlImgString) {
+		const html = resolveCssUrls(headline.tags.htmlImg.htmlImgString);
+		postHtmlImageTweet(headline.text, html, headline.tags.htmlImg.altText || 'image');
+	} else if (headline.tags && headline.tags.svg && headline.tags.svg.svgString) {
+		postSvgTweet(headline.text, headline.tags.svg.svgString, headline.tags.svg.altText || 'image');
+	} else {
+		twitter.postTweet(headline.text);
+	}
+	// Notify about tweet
+	Discord.sendWebhookText(`${headline.text}`);
+} catch (exception) {
+	// Notify about error
+	Discord.sendWebhookText(`There was an error: ${exception}`);
 }
