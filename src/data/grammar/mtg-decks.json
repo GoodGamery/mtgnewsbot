@@ -5,10 +5,10 @@
       "decks with #card#",
       "#creatureTypes.capitalize# Tribal",
       "#format# #creatureTypesPlural.capitalize#",
-      "#deck# matchups",
       "#format# #deck#",
       "#format# #deckVariation#",
-      "#colors.capitalize# #deck#"
+      "#colors.capitalize# #deck#",
+      "[_deck:#deckArch#,#preconDeck#]#_deck#"
   ],
   "deck": [
       "Draw-Go",
@@ -45,6 +45,7 @@
       "Eggs",
       "Junk",
       "Pebbles",
+      "Solar Flare",
       "Superfriends",
       "Survival",
       "#colors# Devotion",
@@ -52,6 +53,7 @@
       "#deckNameNumber#-Post",
       "#colors# Deck Wins",
       "#definingCardname#-Go",
+      "Big #basicColors.capitalize#",
       "#creatureTypes.capitalize# in a Blender",
       "#creatureTypes.capitalize#vantage",
       "#creatureTypes.capitalize# Dad",
@@ -82,7 +84,7 @@
     "Sped",
     "Wet #colorComboNickname#",
     "Dark #colorComboNickname#",
-    "Light #colorComboNickname#",
+    "Pale #colorComboNickname#",
     "Hot #colorComboNickname#",
     "Tooth &",
     "All-in",
@@ -94,6 +96,7 @@
     "Oops! All #definingCardname.s#",
     "Canadian",
     "Cat",
+    "Deadguy",
     "Budget"
   ],
   "deckSuffix" : [
@@ -142,7 +145,8 @@
     "Workshop",
     "Moon",
     "Vial",
-    "Necro"
+    "Necro",
+    "Teachings"
   ],
   "deckDescription": [
       "the deck to beat",
@@ -159,5 +163,56 @@
       "positioned perfectly in the meta",
       "overhyped by singles retailers",
       "illegal under tournament rules"
-  ]
+  ],
+  "deckLimitedArchetype": [
+  	"aggro",
+  	"midrange",
+  	"control",
+  	"goodstuff",
+  	"converge",
+  	"domain",
+  	"devoid",
+  	"delerium",
+  	"mill",
+  	"ramp"
+  ],
+  "limitedDeckDescription": [
+		"a #colors# #deckLimitedArchetype# deck",
+		"a #colors# #deckLimitedArchetype# deck",
+		"a #colors# #deckLimitedArchetype# deck",
+		"#colors# #deckLimitedArchetype#",
+		"#colors# #deckLimitedArchetype#",
+		"#colors# #deckLimitedArchetype#",
+		"a #colors# trainwreck",
+		"a #colors# pile",
+		"a 4#num1-9#-card special"
+	],
+	"preconDeck": [
+		"Assemble the Doomsday Machine",
+		"Blazing Beasts of Myth",
+		"Esper Air Assault",
+		"Fun With Fungus",
+		"Future Shock",
+		"Grave Danger",
+		"Grixis Shambling Army",
+		"Izzet Gizmometry",
+		"Jungle Jam",
+		"Kjeldoran Cunning",
+		"Manipulative Monstrosities",
+		"Max Attax",
+		"Monstrous Surprise",
+		"Morph Mayhem",
+		"Psychic Labyrinth",
+		"Political Puppets",
+		"Rats' Nest",
+		"Sizzle Blizzard",
+		"Spectral Slam",
+		"Swell the Host",
+		"The Sparkler",
+		"Trounce-o-Matic",
+		"White Heat",
+		"Wicked Big",
+		"Widowmaker",
+		"Wrack and Rage"
+	]
 }

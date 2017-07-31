@@ -7,5 +7,10 @@
   ],
   "pluralPronouns": [
       "[they:they][theirs:theirs][their:their][them:them][are:are]"
+  ],
+  "somePronoun": [
+		"#malePronouns#",
+		"#femalePronouns#",
+		"#pluralPronouns#"
   ]
 }

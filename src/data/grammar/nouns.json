@@ -128,9 +128,9 @@
       "tight play",
       "getting lucky",
       "the storm scale",
-      "#gameAccesory.s#"
+      "#gameAccessory.s#"
   ],
-  "gameAccesory" :[
+  "gameAccessory" :[
       "UltraPro sleeve",
       "perfect-fit sleeve",
       "playmat",
@@ -140,5 +140,13 @@
       "event ticket",
       "play point",
       "untradeable war mark"
+  ],
+  "liquid": [
+    "coffee",
+    "tea",
+    "coke",
+    "pepsi",
+    "water",
+    "paint"
   ]
 }

@@ -72,20 +72,18 @@ function parseMessage(message) {
 
     // Further process svg tags
     if (tags.svg && tags.svg.svgString) {
-        tags.svg.svgString = tags.svg.svgString
-            .replace(/`/g, '"');    // This gets quotes working
+      tags.svg.svgString = tags.svg.svgString
+          .replace(/`/g, '"')													// This gets quotes working
+          .replace(/<</g, '{').replace(/>>/g, '}');
     }
 
-    // Further process html tags
-    if(tags && tags.htmlImg && tags.htmlImg.htmlImgString) {
-      tags.htmlImg.htmlImgString = tags.htmlImg.htmlImgString
-        .replace(/`/g, '"')
-        .replace(/<</g, '{')
-        .replace(/>>/g, '}');
+    // Further process htmlimg tags
+		if (tags.htmlImg && tags.htmlImg.htmlImgString) {
+			tags.htmlImg.htmlImgString = tags.htmlImg.htmlImgString
+				.replace(/`/g, '"')																		// This gets quotes working
+				.replace(/<</g, '{').replace(/>>/g, '}');     	 			// This gets curly braces working
     }
 	}
-
-
 
 	return new Headline(text.trim().replace(/\s+/g,' '), tags);
 }
