@@ -126,8 +126,8 @@ try {
 		twitter.postTweet(headline.text);
 	}
 	// Notify about tweet
-	Discord.sendWebhookText(`${headline.text}`);
+	Discord.sendText(`${headline.text}`);
 } catch (exception) {
 	// Notify about error
-	Discord.sendWebhookText(`There was an error: ${exception}`);
+	Discord.sendText(`There was an error: ${exception}`);
 }
