@@ -1,12 +1,10 @@
 'use strict';
-
 const fs =  require(`fs`);
 const path = require('path');
 const uuid = require(`uuid`);
 const svg2png = require(`svg2png`);
-const html2png = require('html2png');
-const Jimp = require('jimp');
 
+const RenderImage = require('./src/lib/render-image');
 const NewsEngine = require('./src/news-engine');
 const TwitterClient = require('./src/lib/api/twitter-client');
 const mtgCardFinder = require('./src/lib/api/mtg-cardfinder');
@@ -32,7 +30,7 @@ function postImageTweet(imageFilePath, status, cardName) {
 
 function postCardImageTweet(status, cardName) {
 	const outputfile = cardName.replace(/\s+/g, '-').toLowerCase() + '-' + uuid() + '.jpg';
-	const outputPath = config.paths.tempDirectory + '/' + outputfile;	
+	const outputPath = config.paths.tempDirectory + '/' + outputfile;
 
 	mtgCardFinder.downloadCardImage(cardName, outputPath)
 		.then(localFilePath => postImageTweet(localFilePath, status, cardName))
@@ -61,7 +59,7 @@ function postSvgTweet(status, svgString, altText) {
 function resolveCssUrls(html) {
 	var newHtml = html.toString();
 
-	function fileUrl(url) { 
+	function fileUrl(url) {
     var pathName = path.resolve(url).replace(/\\/g, '/');
     // windows drive letters must be prefixed with a slash
     if (pathName[0] !== '/') {
@@ -71,61 +69,35 @@ function resolveCssUrls(html) {
 	}
 
 	const matches = newHtml.match(/url\(\..*?\)/g);
-	if (!matches) { 
+	if (!matches) {
 		return html;
 	}
 	matches.forEach(match => {
-		newHtml = newHtml.replace(match, 'url('+ fileUrl(match.match(/url\((\..*?)\)/)[1])  + ')');  	
+		newHtml = newHtml.replace(match, 'url('+ fileUrl(match.match(/url\((\..*?)\)/)[1])  + ')');
 	});
 	return newHtml;
 }
 
-function renderImageFromHtml(html, outputPath) {
-  return new Promise((resolve, reject) => {
-    const screenshot = html2png({ width: 1024, height: 768, browser: 'phantomjs'});
-    
-    console.log('HTML:'); console.log(html);
-
-    screenshot.render(html, function (err, data) { 
-      if (err) { 
-        console.log('\n *** Failed to create png:');
-        reject(err);
-      }
-      return Jimp.read(data).then(image => image.autocrop().write(outputPath))
-      .then(() => { 
-        console.log('\n *** Trimmed image saved to ' + outputPath);
-        setTimeout(() => resolve(outputPath), 1000);        
-      })
-      .catch(err => { 
-        console.log('\n *** Failed to create trimmed png:');
-        console.log(err);
-        console.log(err.stack);
-        reject(err);
-      }); 
-      screenshot.close();       
-    });
-  });
+function cleanupFile(outputPath) {
+	return fs.unlink(outputPath, (err) => {
+		if (!err) {
+			console.log('Deleted ' + outputPath);
+		} else {
+			logError('Unable to delete local image file: ' + err);
+		}
+	});
 }
 
 function postHtmlImageTweet(status, htmlString, altText) {
-	const outputfile = uuid() + '.png';	
-	const outputPath = config.paths.tempDirectory + '/' + outputfile;	
+	const outputfile = uuid() + '.png';
+	const outputPath = config.paths.tempDirectory + '/' + outputfile;
 
 	console.log('postHtmlImageTweet | html:\n' + htmlString);
 
-	renderImageFromHtml(htmlString, outputPath)
+	RenderImage.fromHtml(htmlString, outputPath)
 		.then(localFilePath => postImageTweet(localFilePath, status, altText))
-		.then(() => {
-      return fs.unlink(outputPath, (err) => {
-				if (!err) {
-					console.log('Deleted ' + outputPath);
-				} else {
-					logError('Unable to delete local image file: ' + err);
-				}
-			});
-		})
+		.then(() => cleanupFile(outputPath))
 		.catch(e => logError('Failed to download image: ' + e));
-}
 
 // Create tweet from grammar
 let headline = NewsEngine.generateHeadline();

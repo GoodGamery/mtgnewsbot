@@ -33,11 +33,11 @@ module.exports = HeadlineMaker;
  *		text {string}: text of the headline, with any tags stripped out, as a string
  * 		tags {Object}: a map of tags and their attributes, if the headline contains any. otherwise undefined.
  * }
- *	
+ *
  * Expected tag format is {tagname attr1="one" attr2="two"} and is parsed as
- *	tagname: { 
+ *	tagname: {
  *		attr1: "one",
- * 		attr2 = "two" 
+ * 		attr2 = "two"
  *  }
  */
 class Headline {
