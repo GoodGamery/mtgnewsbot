@@ -11,7 +11,7 @@ class HeadlineMaker {
   }
 
   /**
-  * Generates a headline and returns a headline object in the following format:	 
+  * Generates a headline and returns a headline object in the following format:
   */
   generateHeadline() {
     return parseMessage(this.grammar.flatten(this.origin));
@@ -70,11 +70,19 @@ function parseMessage(message) {
 			text = message.replace(match,'');
 		});
 
-        // Further process svg tags
-        if (tags.svg && tags.svg.svgString) {
-            tags.svg.svgString = tags.svg.svgString
-                .replace(/`/g, '"');    // This gets quotes working
-        }
+    // Further process svg tags
+    if (tags.svg && tags.svg.svgString) {
+        tags.svg.svgString = tags.svg.svgString
+            .replace(/`/g, '"');    // This gets quotes working
+    }
+
+    // Further process html tags
+    if(tags && tags.htmlImg && tags.htmlImg.htmlImgString) {
+      tags.htmlImg.htmlImgString = tags.htmlImg.htmlImgString
+        .replace(/`/g, '"')
+        .replace(/<</g, '{')
+        .replace(/>>/g, '}');
+    }
 	}
 
 

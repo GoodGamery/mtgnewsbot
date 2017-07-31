@@ -34,7 +34,7 @@ headlines.forEach(headline => {
 	if(headline.tags && headline.tags.htmlImg && headline.tags.htmlImg.htmlImgString) {
 		const outputfile = uuid() + '.png';
 		const outputPath = config.paths.tempDirectory + '/' + outputfile;
-		const html = headline.tags.htmlImg.htmlImgString.replace(/`/g, '"').replace(/<</g, '{').replace(/>>/g, '}');
+		const html = headline.tags.htmlImg.htmlImgString;
 		console.log('HTML:'); console.log(html);
 
 		RenderImage.fromHtml(html, outputPath)
