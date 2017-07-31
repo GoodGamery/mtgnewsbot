@@ -3,24 +3,28 @@
 const request = require('request');
 const config = require('../../config');
 
-function sendWebhookText(text) {
+function sendText(text) {
   executeWebhook({ content: text });
 }
 
-function sendWebhookEmbed(headlineText, url, imgUrl, imgHeight, imgWidth) {
-  const payload = {
+function sendEmbed(headlineText, url, imgUrl, imgHeight, imgWidth) {
+  let payload = {
     content: headlineText,
     embeds: [{
       title: `MTG Newsbot`,
-      url: url,
       description: headlineText,
-      image: {
+    }]
+  };
+  if (url) {
+    payload.embeds[0].url = url;
+  }
+  if (imgUrl) {
+    payload.embeds[0].image = {
         url: imgUrl,
         height: imgHeight,
         width: imgWidth
-      }
-    }]
-  };
+      };
+  }
   executeWebhook(payload);
 }
 
@@ -45,6 +49,6 @@ function handleResponse(error, response, body) {
 }
 
 module.exports = {
-  sendText: sendWebhookText,
-  sendEmbed: sendWebhookEmbed
+  sendText: sendText,
+  sendEmbed: sendEmbed
 };

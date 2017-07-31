@@ -9,7 +9,7 @@ const deepMerge = require(`./lib/util/deep-merge.js`);
 function buildGrammar(directory) {
 
   const files = fs.readdirSync(directory);
-  console.log(`Loading ${files.length} files:\n - ${files.join('\n - ')}`);
+  console.log(`Loading ${files.length} files:\n${files.join(', ')}`);
 
   let fileData = [];
   files.forEach(fileName => {
