@@ -68,7 +68,15 @@
       "The pro's",
       "Barns",
       "Scrubs",
-      "Hall of Famers"
+      "Hall of Famers",
+      "#psychographics#"
+  ],
+  "psychographics": [
+      "Timmies",
+      "Johnnies",
+      "Spikes",
+      "Melvins",
+      "Vorthoses"  
   ],
   "team": [
       "#teamSite# #teamDescriptor#"

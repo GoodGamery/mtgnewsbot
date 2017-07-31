@@ -54,6 +54,12 @@
     "#miscNovelCardSetName#"
   ],
 
+  "fakeCardSetName": [
+  	"Mirrodin Pure",
+  	"Endless Sands",
+  	"Grimneath"
+  ],
+
   "miscNovelCardSetName": [
     "#collectiveActionOrRealm# of the #beings#",
     "#characterClass.s# of #creatureTypes#town",
@@ -61,7 +67,8 @@
     "#beings# #verbIntransitiveGerund#",
     "[_time:Hour,Day,Age,Dawn]#_time# of #abstractNoun#",
     "[_mastery:#format#,#adj#]#_mastery# masters [_year:,2017,2018]#_year#",
-    "[_desc:#adj#,#massNoun#,#creatureTypes#]#_desc.capitalizeAll# #omenOrEventNoun#"
+    "[_desc:#adj#,#massNoun#,#creatureTypes#]#_desc.capitalizeAll# #omenOrEventNoun#",
+    "#fakeCardSetName#"
   ],
   "planeBasedSet": [
     "#cardSetPrefix# #plane#",
