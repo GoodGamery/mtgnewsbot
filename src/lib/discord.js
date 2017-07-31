@@ -1,7 +1,7 @@
 // Util for posting to a webhook
 'use strict';
 const request = require('request');
-const config = require('../config');
+const config = require('../../config');
 
 function sendWebhookText(text) {
   executeWebhook({ content: text });
