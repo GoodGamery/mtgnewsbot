@@ -11,12 +11,13 @@
         "#playguide#",
         "#decktech#",
         "#announcement#",
+        "#graphicAnnouncement#",
+        "#inGraphics#",
+        "#headlineKeepOrMulligan#",
         "#clickbait#",
         "#flavorArcana#"
     ],
-    "disabledHeadline": [
-      "#inGraphics#",
-      "#headlineKeepOrMulligan#"    
+    "disabledHeadline": [  
     ],
     "flavorArcana": [
         "BEHIND THE FLAVOR: #flavorText#",
