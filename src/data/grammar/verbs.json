@@ -7,14 +7,14 @@
     "dismiss", "praise", "scrutinize","minimize", "quantify", "trivialize",  "renounce", "abhor", "dispute", "deceive", "brandish",
     "simulate", "immortalize", "subdue", "pigeonhole", "despoil", "enhance", "glamorize", "market", "recognize", "smash"
   ],  
-  "verbIntransitive": [ "#verbStrictlyTransitive#", "#verbBothTransitive#" ],  
+  "verbIntransitive": [ "#verbStrictlyIntransitive#", "#verbBothIntransitive#" ],  
   "verbStrictlyIntransitive": [
     "hesitate", "wonder", "snort", "chuckle", "weep", "run", "sleep", "brood", "occur", "materialize", "complain", "yawn",
     "belch", "emerge", "embroider", "scream", "dance", "collapse", "appear", "disappear", "sneeze", "arrive", "exist", "fall",
     "rise", "revolt", "smile", "smirk", "scowl", "awaken", "prevail", "descend", "retreat", "negotiate", "stare", "howl",
-    "snicker", "groan", "cough", "listen", "leave", "condescend", "wish"
+    "snicker", "groan", "cough", "listen", "leave", "condescend", "wish", "shiver", "juggle"
   ],
-  "verbBothTransitive": [
+  "verbBothIntransitive": [
     "approach","shuffle", "kill", "observe", "grow", "swallow", "transform", "forget", "remember", "study", "misunderstand",
     "sacrifice", "collect", "celebrate", "exaggerate", "pantomime", "advertise", "deep-fry", "decorate", "fight", "burn"
   ],
@@ -32,7 +32,7 @@
     "hesitated", "wondered", "snorted", "chuckled", "wept", "ran", "slept", "brooded", "occured", "materialized", "complained", "yawned",
     "belched", "emerged", "embroidered", "screamed", "danced", "collapsed", "appeared", "disappeared", "sneezed", "arrived", "existed", "fell",
     "rose", "revolted", "smiled", "smirked", "scowled", "awakened", "prevailed", "descended", "retreated", "negotiated", "stared", "howled",
-    "snickered", "groaned", "coughed", "listened", "left", "condescended", "wished"
+    "snickered", "groaned", "coughed", "listened", "left", "condescended", "wished", "shivered", "juggled"
   ],
   "verbBothTransitivePastTense": [
     "approached","shuffled", "killed", "observed", "grew", "swallowed", "transformed", "forgot", "remembered", "studied", "misunderstood",
@@ -52,7 +52,7 @@
     "hesitating", "wondering", "snorting", "chuckling", "weeping", "running", "sleeping", "brooding", "occuring", "materializing", "complaining", "yawning",
     "belching", "emerging", "embroidering", "screaming", "dancing", "collapsing", "appearing", "disappearing", "sneezing", "arriving", "existing", "falling",
     "rising", "revolting", "smiling", "smirking", "scowling", "awakening", "prevailing", "descending", "retreating", "negotiating", "staring", "howling",
-    "snickering", "groaning", "coughing", "listening", "leaving", "condescending", "wishing"
+    "snickering", "groaning", "coughing", "listening", "leaving", "condescending", "wishing", "shivering", "juggling"
   ],
   "verbBothTransitiveGerund": [
     "approaching","shuffling", "killing", "observing", "growing", "swallowing", "transforming", "forgetting", "remembering", "studying", "misunderstanding",
