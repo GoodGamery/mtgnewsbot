@@ -26,7 +26,7 @@ headlines.forEach(headline => {
 				fs.writeFileSync(outputPath, data);
 				console.log('\n *** Image saved to ' + outputPath);
 			})
-			.catch(e => console.log('\n *** Failed to save image: ' + e));
+			.catch(e => console.log('*** Failed to render image: ' + e));
 	}
 
 	if(headline.tags && headline.tags.htmlImg && headline.tags.htmlImg.htmlImgString) {
@@ -36,7 +36,7 @@ headlines.forEach(headline => {
 		console.log('HTML:'); console.log(html);
 
 		RenderImage.fromHtml(html, outputPath)
-			.then(localFilePath => console.info('\n *** Image saved to ' + localFilePath))
-			.catch(e => console.error('Failed to download image: ' + e));
+			.then(localFilePath => console.info('*** Image saved to ' + localFilePath))
+			.catch(e => console.error('Failed to render image: ' + e));
 	}
 });

@@ -31,7 +31,7 @@
     "svg2png": "4.1.1",
     "tracery-grammar": "2.7.3",
     "twit": "2.2.9",
-    "webshot": "^0.18.0"
+    "webshot": "0.18.0"
   },
   "devDependencies": {
     "eslint": "^4.2.0",
