@@ -8,8 +8,15 @@ const svg2png = require('svg2png');
 const html2png = require('html2png');
 const Jimp = require('jimp');
 
+// Command line arguments, eg. npm start 5 #realCard#
 const numExamples = process.argv[2] || 1;
-const headlines = NewsEngine.generateHeadlines(numExamples);
+const customOrigin = process.argv[3] || "#origin#";
+
+if (process.argv[3])
+	console.info(`Custom string to flatten is ${customOrigin}`);
+
+const headlines = NewsEngine.generateHeadlines(customOrigin, numExamples);
+
 headlines.forEach(headline => {
 	console.log("\n * " + headline.text);
 	if (headline.tags && headline.tags.svg && headline.tags.svg.svgString) {

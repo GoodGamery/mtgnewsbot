@@ -11,17 +11,17 @@ class HeadlineMaker {
   }
 
   /**
-  * Generates a headline and returns a headline object in the following format:	 
+  * Generates a headline and returns a headline object in the following format:
   */
-  generateHeadline() {
-    return parseMessage(this.grammar.flatten(this.origin));
+  generateHeadline(customOrigin) {
+    return parseMessage(this.grammar.flatten(customOrigin || this.origin));
   }
 
   /**
 	* Generates a headline and returns its text contents, with any tags stripped out
 	*/
-	generateTextHeadline() {
-		return this.generateHeadline().text;
+	generateTextHeadline(customOrigin) {
+		return this.generateHeadline(customOrigin).text;
 	}
 }
 
