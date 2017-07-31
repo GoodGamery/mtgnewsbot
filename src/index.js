@@ -34,7 +34,7 @@ headlines.forEach(headline => {
 		const outputfile = uuid() + '.png';
 		const outputPath = config.paths.tempDirectory + '/' + outputfile;
 		const screenshot = html2png({ width: 1024, height: 768, browser: 'phantomjs'});
-		const html = headline.tags.htmlImg.htmlImgString.replace(/`/g, '"');
+		const html = headline.tags.htmlImg.htmlImgString.replace(/`/g, '"').replace(/<</g, '{').replace(/>>/g, '}');
 		console.log('HTML:'); console.log(html);
 
 		screenshot.render(html, function (err, data) { 
