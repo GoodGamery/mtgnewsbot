@@ -17,7 +17,8 @@ let config = {
 		tempDirectory: TEMPFILE_PATH,
 		logFile: LOGFILE_PATH
 	},
-	webookUrl: null
+	webookUrl: null,
+	twitterLink: `https://twitter.com/MTGnewsbot`
 };
 
 // apply overrides from config overrides file

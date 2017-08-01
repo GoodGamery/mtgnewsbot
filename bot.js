@@ -126,7 +126,7 @@ try {
 		twitter.postTweet(headline.text);
 	}
 	// Notify about tweet
-	Discord.sendEmbed(`${headline.text}`, `https://twitter.com/MTGnewsbot`);
+	Discord.sendEmbed(`${headline.text}`, config.twitterLink);
 } catch (exception) {
 	// Notify about error
 	Discord.sendError(`Error: ${exception}`);
