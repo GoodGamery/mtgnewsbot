@@ -44,7 +44,7 @@
       "weapon", "card", "wand", "spellbook", "staff", "orb", "tree", "plant", "crown", "jewel", "amulet", "egg", "banner", "boot",
       "aegis", "hedron", "altar", "portal", "door", "cluestone", "flask", "bident", "scepter", "idol", "mask", "sword", "longbow",
       "grimoire", "chalice", "blade", "gift", "signet", "monolith", "gemstone", "clue", "scroll", "lantern", "collar", "talisman",
-      "doodad", "bone", "vuvuzela", "handlebar moustache", "horseshoe", "sweater vest", "prawn", "#gameAccesory#"
+      "doodad", "bone", "vuvuzela", "handlebar moustache", "horseshoe", "sweater vest", "prawn", "#gameAccesory#", "veil"
   ],
   "placeNoun": [
       "temple", "palace", "castle", "garden", "market", "dungeon", "sanctuary", "mansion", "kingdom", "colony", "vacation rental", "graveyard",
