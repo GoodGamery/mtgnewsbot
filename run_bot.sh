@@ -21,6 +21,9 @@ git pull
 # install dependencies
 npm install --production
 
+# install fonts
+cp ./src/data/fonts/*.ttf /usr/local/share/fonts
+
 # tweet
 node --harmony bot.js
 

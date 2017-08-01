@@ -2,17 +2,22 @@
 'use strict';
 const request = require('request');
 const config = require('../../config');
+const COLOR_RED = 14370336;
+const COLOR_BLUE = 4347636;
 
+// Sends a simple text message to the Discord channel
 function sendText(text) {
   executeWebhook({ content: text });
 }
 
-function sendEmbed(headlineText, url, imgUrl, imgHeight, imgWidth) {
+// Sends a content embed to the Discord channel
+function sendEmbed(text, url, imgUrl, imgHeight, imgWidth) {
   let payload = {
-    content: headlineText,
+    content: ``,
     embeds: [{
-      title: `MTG Newsbot`,
-      description: headlineText,
+      title: `The Latest News`,
+      description: text,
+      color: COLOR_BLUE
     }]
   };
   if (url) {
@@ -28,27 +33,39 @@ function sendEmbed(headlineText, url, imgUrl, imgHeight, imgWidth) {
   executeWebhook(payload);
 }
 
-function executeWebhook(payload) {
-  // Silently fail if the webook url isn't registered
-  if (!config.webookUrl)
+// Sends an error message to the error Discord channel
+function sendError(text) {
+  let payload = {
+    content: `The bot had an error:`,
+    embeds: [{
+      title: `ERROR`,
+      description: text,
+      color: COLOR_RED
+    }]
+  };
+  executeWebhook(payload, true);
+}
+
+function executeWebhook(payload, isError) {
+  const url = isError ? config.webhookUrlErr : config.webhookUrl;
+  
+  // Silently fail if the webhook url isn't registered
+  if (!url)
     return;
 
-  request.post(
-    config.webookUrl,
-    { json: payload },
-    handleResponse
-  );
+  request.post(url, { json: payload }, handleResponse);
 }
 
 function handleResponse(error, response, body) {
-    if (!error && response.statusCode == 200) {
-        console.log(body);
-    } else {
-      console.error(error);
-    }
+  if (!error && response.statusCode == 200) {
+    console.log(body);
+  } else {
+    console.error(error);
+  }
 }
 
 module.exports = {
   sendText: sendText,
-  sendEmbed: sendEmbed
+  sendEmbed: sendEmbed,
+  sendError: sendError
 };
