@@ -11,6 +11,9 @@ const RenderImage = require('./lib/render-image');
 const numExamples = process.argv[2] || 1;
 const customOrigin = process.argv[3] || "#origin#";
 
+console.log('process.argv[2]: ' + process.argv[2]);
+console.log('process.argv[3]: ' + process.argv[3]);
+
 if (process.argv[3])
 	console.info(`Custom string to flatten is ${customOrigin}`);
 

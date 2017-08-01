@@ -97,5 +97,5 @@
       "Vodalian",
       "Wirewood"
   ],
-  "storyLocation": ["#plane#", "#nonPlaneLocation"]
+  "storyLocation": ["#plane#", "#nonPlaneLocation#"]
 }
