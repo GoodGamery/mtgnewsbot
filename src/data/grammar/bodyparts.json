@@ -1,0 +1,18 @@
+{
+  "bodypart":
+    [ "eye"
+    , "head"
+    , "nose"
+    , "ear"
+    , "mouth"
+    , "neck"
+    , "shoulder"
+    , "arm"
+    , "hand"
+    , "stomach"
+    , "leg"
+    , "knee"
+    , "foot"
+    , "toe"
+    ]
+}
