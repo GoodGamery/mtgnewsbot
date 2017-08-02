@@ -15,7 +15,8 @@
         "#clickbait#",
         "#flavorArcana#",
 	      "#headlineKeepOrMulligan#",
-      	"#gathererRulingImage#" 	      
+      	"#gathererRulingImage#",
+      	"#mtgComic#" 	      
     ],
     "disabledHeadline": [
       "#inGraphics#"

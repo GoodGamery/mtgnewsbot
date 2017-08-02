@@ -9,7 +9,7 @@ let config = {
 	// origin: "#gathererRulingImage#",
 	//origin: "#gatherer#",	
 	// origin: "#headlineKeepOrMulligan#"
-	// origin: "#deckArch#"	
+	origin: "#mtgComic#"	
 };
 
 module.exports = config;
