@@ -17,21 +17,20 @@ let config = {
 		tempDirectory: TEMPFILE_PATH,
 		logFile: LOGFILE_PATH
 	},
-	webookUrl: null,
+	webhookUrl: null,
+	webhookUrlErr: null,
 	twitterLink: `https://twitter.com/MTGnewsbot`
 };
 
 // apply overrides from config overrides file
-let override = {};
 try {
-  override = require(CONFIG_OVERRIDE_PATH);
-  console.log('Reading server config overrides.');
-} catch(e) {  console.warn('Config override not loaded: ' + e.message); }
+  let override = require(CONFIG_OVERRIDE_PATH);
+  console.info(`Loading config overrides from ${CONFIG_OVERRIDE_PATH}`);
+  config = merge(config, override);
+} catch(e) {
+	console.info(`No config overrides located at ${CONFIG_OVERRIDE_PATH}`);
+}
 
-config = merge(config, override);
-
-console.log('CONFIG:');
-console.log(JSON.stringify(config));
 
 // load the default grammar after applying overrides
 config.defaultGrammar = buildGrammar(config.defaultGrammarPath);

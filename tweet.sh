@@ -21,7 +21,7 @@ cp ./src/data/fonts/*.ttf /usr/local/share/fonts
 npm install --production
 
 # tweet
-node bot.js
+node ./src/bot.js
 
 #silent
 set +x

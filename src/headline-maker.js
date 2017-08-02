@@ -1,6 +1,7 @@
 'use strict';
 
 const tracery = require(`tracery-grammar`);
+const path = require('path');
 
 class HeadlineMaker {
 
@@ -82,8 +83,33 @@ function parseMessage(message) {
 			tags.htmlImg.htmlImgString = tags.htmlImg.htmlImgString
 				.replace(/`/g, '"')																		// This gets quotes working
 				.replace(/<</g, '{').replace(/>>/g, '}');     	 			// This gets curly braces working
+
+      // Patch up CSS file paths
+      tags.htmlImg.htmlImgString = resolveCssUrls(tags.htmlImg.htmlImgString);
     }
 	}
 
 	return new Headline(text.trim().replace(/\s+/g,' '), tags);
+}
+
+function resolveCssUrls(html) {
+	var newHtml = html.toString();
+
+	function fileUrl(url) {
+    var pathName = path.resolve(url).replace(/\\/g, '/');
+    // windows drive letters must be prefixed with a slash
+    if (pathName[0] !== '/') {
+        pathName = '/' + pathName;
+    }
+    return encodeURI('file://' + pathName);
+	}
+
+	const matches = newHtml.match(/url\(\..*?\)/g);
+	if (!matches) {
+		return html;
+	}
+	matches.forEach(match => {
+		newHtml = newHtml.replace(match, 'url('+ fileUrl(match.match(/url\((\..*?)\)/)[1])  + ')');
+	});
+	return newHtml;
 }

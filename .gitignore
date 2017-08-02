@@ -48,3 +48,6 @@ local-config-override.js
 build/
 out/
 tmp/
+
+# intellij
+.idea/
