@@ -50,7 +50,7 @@
 
 	"svgComicPunctuation": ["!","?","...","."],
 	"svgComicExclamation": ["what", "yeah","wha","um","haha","lol","you","no","get real"],
-	"svgComicQuestionResponse": ["That's for me to know.", "I'll never tell.", "That's a long story.", "I lost track of #at#.", "I have no clue."],
+	"svgComicQuestionResponse": ["That's for me to know.", "I'll never tell.", "That's a long story.", "I lost track of #them#.", "I have no clue."],
 
 	"svgComicDialogCouplet": [
 		"[_line1:Where's #_text1OtherPerson#?][_line2:At the #placeNoun#.,in #nonPlaneLocation#.,#svgComicQuestionResponse#]",
@@ -66,7 +66,7 @@
 		"streets of #nonPlaneLocation#[_subLocPrep:in,beneath]",
 		"the heart of #storyLocation#[_subLocPrep:in]",
 		"the Crypts of #storyLocation#[_subLocPrep:beneath]",
-		"#storyLocation# Harbor[_subLocPrep:beside]",
+		"#storyLocation# Harbor[_subLocPrep:at]",
 		"the Ruins of #nonPlaneLocation#[_subLocPrep:admidst]",
 		"the Temple of #storyLocation#[_subLocPrep:inside]"
 	],
