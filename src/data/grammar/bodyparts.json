@@ -1,18 +1,42 @@
 {
-  "bodypart":
-    [ "eye"
-    , "head"
-    , "nose"
-    , "ear"
-    , "mouth"
-    , "neck"
-    , "shoulder"
-    , "arm"
-    , "hand"
-    , "stomach"
-    , "leg"
-    , "knee"
-    , "foot"
-    , "toe"
-    ]
+  "bodypart": [
+  	"eye",
+    "head",
+    "nose",
+    "ear",
+    "mouth",
+    "neck",
+    "shoulder",
+    "arm",
+    "hand",
+    "stomach",
+    "leg",
+    "knee",
+    "foot",
+    "toe",
+    "gut",
+    "belly",
+    "hair",
+    "throat"
+   ],
+  "bodypartsInPairs": [
+  	"eyes",
+    "head",
+    "nose",
+    "ears",
+    "mouth",
+    "neck",
+    "shoulders",
+    "arms",
+    "hands",
+    "stomach",
+    "legs",
+    "knees",
+    "feet",
+    "toes",
+    "gut",
+    "belly",
+    "hair",
+    "throat"
+  ]
 }

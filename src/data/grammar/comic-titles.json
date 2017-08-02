@@ -1,7 +1,7 @@
 {
   "comicTitle":
     [ "#planeswalkerFirstName#'s Ultimate"
-    , "Flight of the #basicColors.capitalize# Cat"
+    , "Flight of the #basicColors.capitalize# [_flyer:Cat,Goat,Snake,Turkey]#_flyer#"
     , "Fuel for the #massNoun.capitalize#"
     , "The #creatureTypes.capitalize#'s Fall"
     , "#abstractNoun.capitalize# Bound"
@@ -12,7 +12,7 @@
     , "Gathering Forces"
     , "Scarred"
     , "#adj.capitalize# Discoveries"
-    , "The #adj.capitalize# Son"
+    , "The #adj.capitalizeAll# [_who:Son,Stranger]#_who#"
     , "#verbStrictlyIntransitiveGerund.capitalize.s#"
   ]
 }
