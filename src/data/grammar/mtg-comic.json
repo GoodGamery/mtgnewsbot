@@ -1,22 +1,8 @@
 {
-	"svgComicHeadline": "#svgMtgComicTitle# {svg svgString=\"#svgComicImage#\"}",
-	"svgComicStatusText": [
-    "Keep or Mulligan? With #pro#",
-    "Keep or Mulligan? #_format# Edition",    
-    "What's the Play? With #pro#",
-    "What's the Play? #_format# Edition",
-    "You Make the Play: Keep or Mulligan?"  
-	],
+	"svgComicHeadline": "#comicTitle# {svg svgString=\"#svgComicImage#\"}",
 
-	"svgMtgComicTitle": [
-		"#verbStrictlyIntransitiveGerund.capitalize.s#"
-	],
 
 	"_svgComicDefaultTextSize": "18px",
-
-	"svgComicHeaderTextStyle": "color: white; font-size: 72px; line-height: 84px; font-family: Beleren, Georgia, 'Liberation Serif', 'DejaVu Serif', serif; font-weight: 900; text-shadow: 2px 2px 2px black; text-align:center",
-	"svgComicBeforeTextStyle": "color: rgb(254,255,250); font-size: #_aboveTextSize#; font-family: Sans-Serif; font-weight: 500; text-shadow: 1px 1px 1px gray; ",
-	"svgComicAfterTextStyle": "color: rgb(254,255,250); font-size: 32px; font-family: Sans-Serif; font-weight: 600; text-shadow: 1px 1px 1px rgb(60,60,60); text-align:center ",
 
 	"svgComicTemplate1NarrativeStyle":  "color: rgb(71,26,65); font-size: #_svgComicDefaultTextSize#px; font-family: Anime Ace, Comic Sans, Sans-Serif; font-weight: 600;",
 	"svgComicTemplate1Text2Style":  "color: black; font-size:15px; font-family: Anime Ace, Comic Sans, Sans-Serif; font-weight: 600;",
@@ -34,16 +20,22 @@
 	],
 
 	"svgComicTemplate": [
-			"[svgComicTemplateImageUrl:./src/data/images/comics/comic_template_1.jpg][svgComicTemplateWidth:810][svgComicTemplateHeight:1245][_textLocation:#svgComicLocation#][_textCharacter1:Garruk][_textCharacter2:Liliana][_text1x:38][_text1y:274][_text1w:314][_text1h:63][_text1Style:#svgComicTemplate1NarrativeStyle#][_text1OtherPerson:#svgComicPerson#][_text1Content:#_subLocPrep# #_textLocation#‚ #_textCharacter1# confronts #_textCharacter2# about #_text1OtherPerson#...][_text2x:279][_text2y:416][_text2w:133][_text2h:32][_text2Style:#svgComicTemplate1Text2Style#][_text2Content:#_textCharacter2##svgComicPunctuation#][_text3x:430][_text3y:445][_text3w:72][_text3h:25][_text3Style:#svgComicTemplate1Text2Style#][_text3Content:#svgComicExclamation##svgComicPunctuation#][_text4x:276][_text4y:679][_text4w:170][_text4h:32][_text4Style:#svgComicTemplate1Text2Style#][_text4Content:Where's #_text1OtherPerson#?][_text5x:465][_text5y:718][_text5w:158][_text5h:37][_text5Style:#svgComicTemplate1Text3Style#][_text5Content:You're so #adj#...,I dunno,At the #placeNoun#.][_text6x:502][_text6y:829][_text6w:240][_text6h:49][_text6Style:#svgComicTemplate1Text2Style#][_text6Content:But #_text1OtherPerson# thinks you're #adj#.,But I took your #concreteNounOrPluralNoun#.,But you're no match for my #abstractNoun#.,But I have your #pluralNounOrMassNoun#.,Now yell “HRAAUGH!” and flail your arms around.]"
+			"[svgComicTemplateImageUrl:./src/data/images/comics/comic_template_1.jpg][svgComicTemplateWidth:810][svgComicTemplateHeight:1245][_textLocation:#svgComicLocation#][_textCharacter1:Garruk][_textCharacter2:Liliana][_text1x:38][_text1y:274][_text1w:314][_text1h:63][_text1Style:#svgComicTemplate1NarrativeStyle#][_text1OtherPerson:#svgComicPerson#][_text1Content:#_subLocPrep# #_textLocation#‚ #_textCharacter1# confronts #_textCharacter2# about #_text1OtherPerson#...,The #itemNoun# is #verbStrictlyTransitivePastTense#. Finally‚ it has begun.,The #creatureTypes.s# had no anwsers for me. But the she-#creatureTypes# will talk.][_text2x:272][_text2y:409][_text2w:144][_text2h:44][_text2Style:#svgComicTemplate1Text2Style#][_text2Content:#_textCharacter2##svgComicPunctuation#,#_text1OtherPerson#?][_text3x:430][_text3y:439][_text3w:72][_text3h:36][_text3Style:#svgComicTemplate1Text2Style#][_text3Content:#svgComicExclamation##svgComicPunctuation#][_text4x:276][_text4y:679][_text4w:170][_text4h:33][_text4Style:#svgComicTemplate1Text2Style#][#svgComicDialogCouplet#][_text4Content:#_line1#][_text5x:465][_text5y:717][_text5w:158][_text5h:39][_text5Style:#svgComicTemplate1Text3Style#][_text5Content:#_line2#][_text6x:502][_text6y:826][_text6w:240][_text6h:52][_text6Style:#svgComicTemplate1Text2Style#][_text6Content:But #_text1OtherPerson# thinks you're #adj#.,But I took your #concreteNounOrPluralNoun#.,But you're no match for my #abstractNoun#.,But I have your #pluralNounOrMassNoun#.,Now yell “HRAAUGH!” and flail your arms around.,There's a spider in your hair though.,...Your #emotion# erodes my #emotion#.]"
 	],
 
-	"testestst": "[_txt3:#svgComicExclamation#,#adj#]",
-
 	"svgComicPunctuation": ["!","?","...","."],
-	"svgComicExclamation": ["what", "yeah","wha","um","haha","lol","you"],
+	"svgComicExclamation": ["what", "yeah","wha","um","haha","lol","you","no","get real"],
+
+	"svgComicDialogCouplet": [
+		"[_line1:Where's #_text1OtherPerson#?][_line2:At the #placeNoun#.]",
+		"[_line1:I'm #adj#.][_line2:So am I.,#svgComicDialogShortResponse#]",
+		"[_line1:You reek of #massNoun#.][_line2:So do you.,#svgComicDialogShortResponse#]"
+	],
+
+	"svgComicDialogShortResponse": ["Says you.","Doubtful.","If you say so.", "You're so #adj#."],
 
 	"svgComicPerson": ["#character#","#person#"],
-	"svgComicLocation": ["#nonPlaneLocation# Bay,[_subLocPrep:at]","streets of #nonPlaneLocation#[_subLocPrep:in]","the heart of #storyLocation#,[_subLocPrep:in]"],
+	"svgComicLocation": ["#nonPlaneLocation# Bay[_subLocPrep:at]","streets of #nonPlaneLocation#[_subLocPrep:in]","the heart of #storyLocation#,[_subLocPrep:in]"],
 
 	"svgComicImage": "#svgComicTemplate#<svg xmlns=`http://www.w3.org/2000/svg` xmlns:xlink:href=`http://www.w3.org/1999/xlink` width=`#svgComicTemplateWidth#` height=`#svgComicTemplateHeight#`><image width=`100%` height=`100%` xlink:href=`#svgComicTemplateImageUrl#`/><foreignObject x=`#_text1x#` y=`#_text1y#` width=`#_text1w#` height=`#_text1h#`><div style=`width: #_text1w#px; height: #_text1h#px; overflow: hidden; display:table;`><div xmlns=`http://www.w3.org/1999/xhtml` style=`#_text1Style# display: table-cell; vertical-align: middle;  text-align: center; padding: 2px;`>#_text1Content#</div></div></foreignObject><foreignObject x=`#_text2x#` y=`#_text2y#` width=`#_text2w#` height=`#_text2h#`><div style=`width: #_text2w#px; height: #_text2h#px; overflow: hidden; display:table;`><div xmlns=`http://www.w3.org/1999/xhtml` style=`#_text2Style# display: table-cell; vertical-align: middle;  text-align: center; padding: 2px;`>#_text2Content#</div></div></foreignObject><foreignObject x=`#_text3x#` y=`#_text3y#` width=`#_text3w#` height=`#_text3h#`><div style=`width: #_text3w#px; height: #_text3h#px; overflow: hidden; display:table;`><div xmlns=`http://www.w3.org/1999/xhtml` style=`#_text3Style# display: table-cell; vertical-align: middle;  text-align: center; padding: 2px;`>#_text3Content#</div></div></foreignObject><foreignObject x=`#_text4x#` y=`#_text4y#` width=`#_text4w#` height=`#_text4h#`><div style=`width: #_text4w#px; height: #_text4h#px; overflow: hidden; display:table;`><div xmlns=`http://www.w3.org/1999/xhtml` style=`#_text4Style# display: table-cell; vertical-align: middle;  text-align: center; padding: 2px;`>#_text4Content#</div></div></foreignObject><foreignObject x=`#_text5x#` y=`#_text5y#` width=`#_text5w#` height=`#_text5h#`><div style=`width: #_text5w#px; height: #_text5h#px; overflow: hidden; display:table;`><div xmlns=`http://www.w3.org/1999/xhtml` style=`#_text5Style# display: table-cell; vertical-align: middle;  text-align: center; padding: 2px;`>#_text5Content#</div></div></foreignObject><foreignObject x=`#_text6x#` y=`#_text6y#` width=`#_text6w#` height=`#_text6h#`><div style=`width: #_text6w#px; height: #_text6h#px; overflow: hidden; display:table;`><div xmlns=`http://www.w3.org/1999/xhtml` style=`#_text6Style# display: table-cell; vertical-align: middle;  text-align: center; padding: 2px;`>#_text6Content#</div></div></foreignObject>#svgComicResetStyles#</svg>"	
 }
