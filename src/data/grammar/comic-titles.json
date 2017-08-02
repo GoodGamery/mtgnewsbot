@@ -5,7 +5,7 @@
     , "Fuel for the #massNoun.capitalize#"
     , "The #creatureTypes.capitalize#'s Fall"
     , "#abstractNoun.capitalize# Bound"
-    , "The #itemNoun.capitalize#'s Curse"
+    , "The #itemNoun.capitalizeAll#'s Curse"
     , "Journey to the #bodypart.capitalize#"
     , "Enter the #creatureTypesPlural.capitalize#"
     , "The #creatureTypes.capitalize#'s #bodypart.capitalize#"
