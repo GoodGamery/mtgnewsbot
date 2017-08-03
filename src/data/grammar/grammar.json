@@ -16,11 +16,13 @@
         "#flavorArcana#",
         "#headlineKeepOrMulligan#",
       	"#gathererRulingImage#",
-        "#inGraphics#"
+        "#inGraphics#",
+        "#mtgComic#"
     ],
     "disabledHeadline": [],
     "testSvg": "#headlineKeepOrMulligan#",
     "testHtml": "#gathererRulingImage#",
+    "disabledHeadline": ["none"],
     "flavorArcana": [
         "BEHIND THE FLAVOR: #flavorText#",
         "FLAVOR FLASHBACK: #flavorText#"

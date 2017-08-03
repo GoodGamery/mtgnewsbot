@@ -8,6 +8,9 @@
   "pluralPronouns": [
       "[they:they][theirs:theirs][their:their][them:them][are:are]"
   ],
+  "neutralPronouns": [
+      "[they:it][theirs:theirs][their:its][them:it][are:is]"
+  ],  
   "somePronoun": [
 		"#malePronouns#",
 		"#femalePronouns#",
