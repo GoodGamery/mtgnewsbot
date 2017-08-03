@@ -27,7 +27,7 @@ function renderImageFromHtml(html, outputPath) {
       Jimp.read(tempFile)
         .then(image => image.autocrop().write(outputPath))
         .then(() => {
-          setTimeout(() => resolve(outputPath), 50);
+          setTimeout(() => resolve(outputPath), 1000);
         })
         .then(() => fs.unlink(tempFile, (err) => {
           if (err) {

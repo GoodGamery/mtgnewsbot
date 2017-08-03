@@ -18,9 +18,7 @@
       	"#gathererRulingImage#",
       	"#mtgComic#"
     ],
-    "disabledHeadline": [
-      "#inGraphics#"
-    ],
+    "disabledHeadline": ["none"],
     "flavorArcana": [
         "BEHIND THE FLAVOR: #flavorText#",
         "FLAVOR FLASHBACK: #flavorText#"
