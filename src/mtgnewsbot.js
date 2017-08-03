@@ -26,8 +26,6 @@ class MtgNewsbot {
       console.log(` - Verbose: ${this.options.verbose}`);
       console.log(` - Tweet: ${this.options.tweet}`);
       console.log(` - Discord: ${this.options.discord}`);
-
-      config.debugLog();
     }
 
     const headlines = NewsEngine.generateHeadlines(this.options.origin, this.options.count);
