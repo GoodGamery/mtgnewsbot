@@ -15,13 +15,12 @@
         "#clickbait#",
         "#flavorArcana#",
         "#headlineKeepOrMulligan#",
-      	"#gathererRulingImage#"
+      	"#gathererRulingImage#",
+        "#inGraphics#"
     ],
+    "disabledHeadline": [],
     "testSvg": "#headlineKeepOrMulligan#",
     "testHtml": "#gathererRulingImage#",
-    "disabledHeadline": [
-      "#inGraphics#"
-    ],
     "flavorArcana": [
         "BEHIND THE FLAVOR: #flavorText#",
         "FLAVOR FLASHBACK: #flavorText#"
