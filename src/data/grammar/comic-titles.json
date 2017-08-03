@@ -1,0 +1,18 @@
+{
+  "comicTitle":
+    [ "#planeswalkerFirstName#'s Ultimate"
+    , "Flight of the #basicColors.capitalize# [_flyer:Cat,Goat,Snake,Turkey]#_flyer#"
+    , "Fuel for the #massNoun.capitalize#"
+    , "The #creatureTypes.capitalize#'s Fall"
+    , "#abstractNoun.capitalize# Bound"
+    , "The #itemNoun.capitalizeAll#'s Curse"
+    , "Journey to the #bodypart.capitalize#"
+    , "Enter the #creatureTypesPlural.capitalize#"
+    , "The #creatureTypes.capitalize#'s #bodypart.capitalize#"
+    , "Gathering Forces"
+    , "Scarred"
+    , "#adj.capitalize# Discoveries"
+    , "The #adj.capitalizeAll# [_who:Son,Stranger]#_who#"
+    , "#verbStrictlyIntransitiveGerund.capitalize.s#"
+  ]
+}

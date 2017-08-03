@@ -68,7 +68,8 @@
       "werewolf",
       "wizard",
       "yeti",
-      "zombie"
+      "zombie",
+      "eldrazi"
   ],
   "creatureTypesPlural": [
       "ants",
@@ -88,6 +89,8 @@
       "crocodiles",
       "demons",
       "devils",
-      "spirits"
+      "spirits",
+      "eldrazi",
+      "thran"
   ]
 }
