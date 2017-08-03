@@ -14,12 +14,11 @@
         "#graphicAnnouncement#",
         "#clickbait#",
         "#flavorArcana#",
-	      "#headlineKeepOrMulligan#",
-      	"#gathererRulingImage#" 	      
+        "#headlineKeepOrMulligan#",
+        "#gathererRulingImage#",
+        "#inGraphics#"
     ],
-    "disabledHeadline": [
-      "#inGraphics#"
-    ],
+    "disabledHeadline": ["none"],
     "flavorArcana": [
         "BEHIND THE FLAVOR: #flavorText#",
         "FLAVOR FLASHBACK: #flavorText#"
