@@ -42,7 +42,7 @@ node_modules/
 .vscode
 
 # local config overrides
-local-config-override.js
+config-override.js
 
 # output folders
 build/
