@@ -51,7 +51,7 @@
       "grimoire", "chalice", "blade", "gift", "signet", "monolith", "gemstone", "clue", "scroll", "lantern", "collar", "talisman",
       "doodad", "bone", "vuvuzela", "handlebar moustache", "horseshoe", "sweater vest", "prawn", "#gameAccessory#", "veil", "shrubbery",
       "apron", "bow tie", "glove", "fanny pack", "loincloth", "#bodypart#", "saxophone", "birdcage", "balloon", "weathervane", "backpack",
-      "cactus", "spellbomb", "chair", "stepladder", "gravy boat", "memorial", "statue", "game", "relic", "ring"
+      "cactus", "spellbomb", "chair", "stepladder", "gravy boat", "memorial", "statue", "game", "relic", "ring", "appendage"
   ],
   "placeNoun": [
       "temple", "palace", "castle", "garden", "market", "dungeon", "sanctuary", "mansion", "kingdom", "colony", "vacation rental", "graveyard",
@@ -75,7 +75,8 @@
     "milk", "#creatureTypes# milk", "mustard", "cologne", "vape juice", "jewlery", "gasoline", "homework", "luggage", "soup", "tinfoil", "bitcoins", "bacon",
     "bread", "cardboard", "jelly", "livestock", "mayonnaise", "music", "paper", "smoke", "sugar", "underwear", "electricity", "equipment", "art supplies", "gravy",
     "furniture", "laughter", "rubbish", "junk mail", "meat", "dietary suppliments", "pasta", "pollution", "salad", "seafood", "soap", "shampoo", "stuff", "valuables",
-    "sunshine", "foliage", "cutlery", "signage", "bacteria", "electronics", "popcorn", "glue", "facial tissue", "poison", "venom", "bubbles", "algae", "fungus"
+    "sunshine", "foliage", "cutlery", "signage", "bacteria", "electronics", "popcorn", "glue", "facial tissue", "poison", "venom", "bubbles", "algae", "fungus",
+    "carpeting", "wallpaper", "baby powder"
   ],
   "objectNounPronoun": ["[_noun:#aNoun#,#abstractNoun#,#abstractNoun#,#massNoun#,#adj.a# #itemNoun#][_pronoun:it]","[_noun:#pluralNoun#][_pronoun:them]"],
   "twoObjects": [

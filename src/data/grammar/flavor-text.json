@@ -25,12 +25,12 @@
         "The #massNoun# didn't kill #nonPlaneswalkerCharacter#. But as #they# lay [_prep:in,on,beside,under]#_prep# it, watching #creatureTypes.s#[_second:, and #creatureTypes.s#]#_second# #verbTransitiveGerund# #them#, #they# wished it had.",
         "\"As #adj# as #creatureTypes.a#'s [_thingy:#itemNoun#,#abstractNoun#,#bodypart#]#_thingy#.\"",
         "\"As the #adj# #creatureTypeOrCharacterClass# #verbStrictlyIntransitivePastTense#, #adj# #pluralNounOrMassNoun# #verbStrictlyIntransitivePastTense# around it.\"",
-        "\"#storyLocation.capitalize#'s #adj# [_role:#characterClass#]#_role.s# are the #creatureTypes.s#, yet more #adj# #_role.s# were created by #storyLocation# itself.\"",
+        "\"#storyLocation.capitalize#'s #adj# [_role:#characterClass#]#_role.s# are the #creatureTypes.s#, yet more #adj# #_role.s# were created by [_creator:#storyLocation# itself,#character# #them#self.]#_creator#\"",
         "\"#creatureTypeOrCharacterClass.capitalize.s#! They #verbTransitivePastTense# my favorite #itemNoun#! We'll #verbTransitive# them all!\"",
         "\"No wonder where you find them, #creatureTypes.s# love #pluralNounOrMassNoun#.\"",
         "\"We hold sacred the powers of #abstractNoun# and #abstractNoun#. #abstractNounMassNounOrEmotion.capitalize# and #abstractNounMassNounOrEmotion# are our greatest weapons.\" —#characterFactionOrRace.capitalize# #motto#",
-        "\"#verbTransitive.capitalize# that which was never #verbTransitivePastTense#.\" —#itemNoun.capitalize# inscription",        
-        "\"No #abstractNoun#. No #abstractNoun#. No matter what.\" —#itemNoun.capitalize# inscription",
+        "\"#verbTransitive.capitalize# that which was never #verbTransitivePastTense#.\" —#itemNoun.capitalize# #inscription#",        
+        "\"No #abstractNoun#. No #abstractNoun#. No matter what.\" —#itemNoun.capitalize# #inscription#",
         "\"The #placeNoun# will surround you with its #abstractNoun# if you are #adj# and #adj#.\"",
         "\"#adj.capitalize#.\" —#anyCharacter.capitalize#"
     ],
@@ -39,5 +39,6 @@
                  "Ice Cream for Breakfast Day", "World Kindness Day", "Take Your #creatureTypes.capitalize# to Work Day", "Leg Day", "Casual Friday", "April Fools' Day", "CAPS LOCK DAY",
                  "International Talk Like a Pirate Day", "the Kentucky Derby", "Christmas in July"],
     "covering": [ "veneer", "facade", "aura", "layer", "mask", "veil", "blanket", "curtain", "girdle", "thin film", "cloud", "light dusting", "thick coating", "membrane", "halo"],
-    "motto": ["motto", "creed", "axiom", "platitude", "maxim", "epithet", "truism", "dictum", "aphorism", "adage", "prayer", "teaching"]
+    "motto": ["motto", "creed", "axiom", "platitude", "maxim", "epithet", "truism", "dictum", "aphorism", "adage", "prayer", "teaching"],
+    "inscription": ["inscription", "engraving"]
   }
