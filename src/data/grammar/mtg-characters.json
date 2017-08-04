@@ -14,13 +14,16 @@
       "Gideon#malePronouns#",
       "Jace#malePronouns#",
       "Jaya#femalePronouns#",
+      "Kaervek#malePronouns#",
       "Karn#malePronouns#",
       "Kiora#femalePronouns#",
       "Koth#malePronouns#",
       "Liliana#femalePronouns#",
+      "Mangara#malePronouns#",
       "Mishra#malePronouns#",
       "Nahiri#femalePronouns#",
       "Nissa#femalePronouns#",
+      "Sarkhan#malePronouns#",
       "Serra#femalePronouns#",
       "Sorin#malePronouns#",
       "Tamiyo#femalePronouns#",
@@ -33,13 +36,22 @@
   ],
   "nonPlaneswalkerCharacter": [
       "Adun Oakenshield#malePronouns#",
+      "Alesha#femalePronouns#",
+      "Akroma#femalePronouns#",
+      "Ambassador Laquatus#malePronouns#",
       "Avacyn#femalePronouns#",
       "Borborygmos#malePronouns#",
+      "Commander Eesha#femalePronouns#",
+      "Crovax#malePronouns#",
+      "Davvol#malePronouns#",      
       "Elesh Norn#femalePronouns#",
       "Emrakul#femalePronouns#",
+      "Ertai#malePronouns#",
       "Farbid#malePronouns#",
       "Fblthp#malePronouns#",
       "Gaddock Teeg#malePronouns#",
+      "General Varchild#malePronouns#",      
+      "Grakk#malePronouns#",
       "Griselbrand#malePronouns#",
       "Hans#malePronouns#",
       "Hidetsugu#malePronouns#",
@@ -47,13 +59,80 @@
       "Isamaru#malePronouns#",
       "Kiki-Jiki#malePronouns#",
       "Momir Vig#malePronouns#",
+      "Norin#malePronouns#",
       "Saffi Eriksdotter#femalePronouns#",
       "Squee#malePronouns#",
       "Tasigur#malePronouns#",
+      "Tawnos#malePronouns#",
       "Thassa#femalePronouns#",
-      "Yawgmoth#malePronouns#",
-      "Davvol#malePronouns#",
-      "Grakk#malePronouns#"
+      "Volrath#malePronouns#",
+      "Yawgmoth#malePronouns#"
   ],
-  "mashupCharacter": "#person#‚ #demonym.capitalize# #characterClass.capitalize#"
+  "commonCharacterFirstName": [
+  	"Chadir",
+  	"Devin",
+  	"Galanda",
+  	"Higa",
+  	"Ikarov",
+  	"Javad",
+  	"Joskun",
+  	"Ola",
+  	"Uta",
+  	"Varrik",
+  	"Vervamon",  	
+		"Zaliki"
+  ],
+  "commonCharacterLastName": [
+  	"Falkenrath",
+  	"Feudkiller",
+  	"Muldrak",
+  	"Nasrin",
+  	"Wauki"
+  ],
+  "npcCharacter": [
+  	"#commonCharacterFirstName# the #adj.capitalize#",
+  	"#commonCharacterFirstName# [_lastName:,#commonCharacterLastName#]#_lastName#,  [_home:#minorStoryLocation#,#demonym#,#characterFactionOrRace#]#_home# #characterClass#",
+  	"#commonCharacterFirstName# [_lastName:,#commonCharacterLastName#]#_lastName#, [_title:#characterTitle#]#_title# of [_home:#minorStoryLocation#,#nonPlaneLocation#]#_home#"	
+  ],
+  "characterTitle": [
+  	"#characterClass#",
+  	"#characterClass#",
+  	"#characterClass#",
+  	"#characterClass#",
+  	"archangel",
+  	"archmage",
+  	"elder",
+  	"noble",
+  	"slayer-captain",
+  	"#creatureTypes# whisperer"
+  ],
+  "characterRace": [
+  	"akki",
+  	"amphin",
+  	"anaba",
+  	"aven",
+  	"kami",
+  	"leonin"
+  ],
+  "characterFaction": [
+  	"Abzan",
+  	"Cabal",
+  	"D'Avenant",
+  	"Jeskai",
+  	"Mardu",
+  	"Samite",
+  	"Sultai",
+  	"Temur"
+  ],
+  "characterFactionOrRace": [
+  	"#characterRace#",
+  	"#characterFaction#"
+  ],
+  "mashupCharacter": "#person#‚ #demonym.capitalize# #characterClass.capitalize#",
+  "anyCharacter": [
+  	"#planeswalkerFirstName#",
+  	"#nonPlaneswalkerCharacter#",
+  	"#npcCharacter#",  	
+  	"#mashupCharacter#"
+  ]
 }

@@ -1,6 +1,7 @@
 {
   "concreteNounOrPluralNoun": ["#concreteNoun#","#pluralNoun#"],
   "pluralNounOrMassNoun": ["#pluralNoun#","#massNoun#"],
+  "abstractNounMassNounOrEmotion": ["#abstractNoun#","#massNoun#","#emotion#"],
   "noun": [
       "#singularNoun#",
       "[_other:#pluralNoun#,#massNoun#]#_other#"
@@ -29,20 +30,20 @@
       "#placeNoun#"
   ],
   "abstractNoun": [
-      "knowledge", "will", "skill", "power", "longevity", "strength", "nobility", "honor", "growth", "information", "nerve",
+      "knowledge", "will", "skill", "power", "longevity", "strength", "nobility", "honor", "growth", "information", "nerve", "disaster",
       "strength", "energy", "control", "technology", "rationality", "fear", "glory", "whimsy", "balance", "truth", "lies",
       "gloom", "misery", "indigestion", "shirtlessness", "prize eligibility", "strong fashion sense", "bootlicking", "intellect",
       "snobbery", "megalomania", "pathos", "foresight", "fortitude", "charisma", "constitution", "dexterity", "self-control",
       "illiteracy", "responsibility", "decay", "mutation", "magnetism", "harmony", "unrest", "immortality", "betrayal", "blasphemy",
       "lack of self-control", "publicity", "vengeance", "violence", "advice", "appluase", "innocence", "corruption", "dignity", "education", 
       "fame",  "freedom", "poor health", "hospitality", "hunger", "karate", "logic", "luck", "nonsense", "recreation", "pleasure", "pain",
-      "leisure", "revenge", "time", "traffic", "damage"
+      "leisure", "revenge", "time", "traffic", "damage", "imbalance", "wrath", "illusion", "madness", "gravity", "brinksmanship"
   ],
   "emotion": [
       "anticipation", "discomfort",  "disgust", "envy", "confusion", "giddiness", "fear", "consternation", "squeamishness", "hatred",
       "panic", "glee", "rage", "insecurity", "self-consciousness", "abject terror", "cautious optimism", "boredom", "cowardice",
       "lust", "near-fanatical devotion", "arrogance", "pluckiness", "indifference", "unwillingness", "begrudging admiration", "fury",
-      "lonliness", "angst", "mistrust", "shame"
+      "lonliness", "angst", "mistrust", "shame", "loyalty", "chivalry", "memory", "duty"
   ],
   "itemNoun": [
       "weapon", "card", "wand", "spellbook", "staff", "orb", "tree", "plant", "crown", "jewel", "amulet", "egg", "banner", "boot",
@@ -50,7 +51,7 @@
       "grimoire", "chalice", "blade", "gift", "signet", "monolith", "gemstone", "clue", "scroll", "lantern", "collar", "talisman",
       "doodad", "bone", "vuvuzela", "handlebar moustache", "horseshoe", "sweater vest", "prawn", "#gameAccessory#", "veil", "shrubbery",
       "apron", "bow tie", "glove", "fanny pack", "loincloth", "#bodypart#", "saxophone", "birdcage", "balloon", "weathervane", "backpack",
-      "cactus"
+      "cactus", "spellbomb", "chair", "stepladder", "gravy boat", "memorial", "statue", "game", "relic"
   ],
   "placeNoun": [
       "temple", "palace", "castle", "garden", "market", "dungeon", "sanctuary", "mansion", "kingdom", "colony", "vacation rental", "graveyard",
@@ -61,19 +62,19 @@
       "portal", "hair salon", "shipwreck", "pasture", "circus tent", "fortress", "junkyard", "pillow fort", "mausoleum", "sepulcher",
       "kitchenette", "churchyard", "mortuary", "abattoir", "art studio", "pet store", "armory", "gazebo", "playground", "animal shelter",
       "gazebo", "taco stand", "pyramid", "igloo", "dude ranch", "cabin", "gas station", "tattoo parlor", "tavern", "vineyard", "drawbridge",
-      "pantry", "stairwell", "petting zoo", "supermarket", "bayou"
+      "pantry", "stairwell", "petting zoo", "supermarket", "bayou", "ziggurat"
   ],
   "irregularPluralNoun": [
       "teeth", "feet", "pants", "geese", "fish", "children", "stimuli", "potatoes", "knives", "ashes", "riches", "hypotheses", "neuroses",
       "crises", "appendices", "indices", "sheep", "wolves", "thieves", "knickers", "sunglasses"
   ],
   "massNoun": [
-    "land", "ichor", "water", "sand", "mana", "wood", "fire", "ice", "lightning", "phyrexian oil", "snow", "lunch", "treasure", "guacamole", "aether",
-    "butterscotch", "gas", "mud", "muck", "dirt", "mildew", "gloom", "mist", "steam", "vapor", "magma", "lava", "bedrock", "topiary", "viscera", "murk",
+    "land", "ichor", "water", "sand", "mana", "wood", "fire", "ice", "lightning", "phyrexian oil", "snow", "lunch", "treasure", "guacamole", "aether", "spiderwebs",
+    "butterscotch", "gas", "mud", "muck", "dirt", "mildew", "gloom", "mist", "steam", "vapor", "magma", "lava", "bedrock", "topiary", "viscera", "murk", "coal",
     "garbage", "broccoli", "whiskey", "glitter", "dust", "soil", "rain", "butter", "blood", "bile", "concrete", "earwax", "lobster meat", "#creatureTypes# meat", 
     "milk", "#creatureTypes# milk", "mustard", "cologne", "vape juice", "jewlery", "gasoline", "homework", "luggage", "soup", "tinfoil", "bitcoins", "bacon",
-    "bread", "cardboard", "jelly", "livestock", "mayonnaise", "music", "paper", "smoke", "sugar", "underwear", "electricity", "equipment", "art supplies",
-    "furniture", "laughter", "rubbish", "junk mail", "meat", "dietary suppliments", "pasta", "pollution", "salad", "seafood", "soap", "shampoo", "stuff",
+    "bread", "cardboard", "jelly", "livestock", "mayonnaise", "music", "paper", "smoke", "sugar", "underwear", "electricity", "equipment", "art supplies", "gravy",
+    "furniture", "laughter", "rubbish", "junk mail", "meat", "dietary suppliments", "pasta", "pollution", "salad", "seafood", "soap", "shampoo", "stuff", "valuables",
     "sunshine", "foliage", "cutlery", "signage", "bacteria", "electronics", "popcorn", "glue", "facial tissue", "poison", "venom", "bubbles", "algae", "fungus"
   ],
   "objectNounPronoun": ["[_noun:#aNoun#,#abstractNoun#,#abstractNoun#,#massNoun#,#adj.a# #itemNoun#][_pronoun:it]","[_noun:#pluralNoun#][_pronoun:them]"],
