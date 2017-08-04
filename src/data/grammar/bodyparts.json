@@ -17,7 +17,17 @@
     "gut",
     "belly",
     "hair",
-    "throat"
+    "throat",
+    "tooth",
+    "eyeball",
+    "skull",
+    "moustache",
+    "fingernail",
+    "elbow",
+    "spine",
+    "brain",
+    "skeleton",
+    "thumb"
    ],
   "bodypartsInPairs": [
   	"eyes",
@@ -37,6 +47,17 @@
     "gut",
     "belly",
     "hair",
-    "throat"
+    "throat",
+    "teeth",
+    "eyeballs",
+    "skulls",
+    "moustaches",
+    "fingernails",
+    "elbows",
+    "spine",
+    "brain",
+    "skeleton",
+    "pinkie toes",
+    "thumbs"    
   ]
 }

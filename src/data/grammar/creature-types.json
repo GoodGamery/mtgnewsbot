@@ -1,11 +1,13 @@
 {
   "creatureTypes": [
+  		"aetherborn",
       "angel",
       "ant",
       "archer",
       "ape",
       "aurochs",
       "badger",
+      "barbarian",
       "basilisk",
       "beast",
       "bird",
@@ -19,6 +21,7 @@
       "demon",
       "devil",
       "dinosaur",
+      "djinn",
       "dwarf",
       "elephant",
       "elemental",
