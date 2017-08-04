@@ -340,6 +340,6 @@
                         "doctor", "thief", "judge", "juror", "executioner", "herald", "betrayer", "savior", "disciple", "rebel", "crybaby", "grinch",
                         "barrista", "charlatan", "imposter", "bandit", "governor", "teenager", "prince", "princess", "artist", "warlock", "servant",
                         "minion", "nomad", "protector", "navigator", "houndmaster", "alchemist", "commander", "leader", "predator", "constable", "merchant",
-                        "priest", "ancestor", "martyr", "monarch", "voyager"],
+                        "priest", "ancestor", "martyr", "monarch", "voyager", "general", "victim", "customer", "seeker", "automaton"],
     "colon": ":"
 }

@@ -31,7 +31,7 @@
   ],
   "abstractNoun": [
       "knowledge", "will", "skill", "power", "longevity", "strength", "nobility", "honor", "growth", "information", "nerve", "disaster",
-      "strength", "energy", "control", "technology", "rationality", "fear", "glory", "whimsy", "balance", "truth", "lies",
+      "strength", "energy", "control", "technology", "rationality", "fear", "glory", "whimsy", "balance", "truth", "lies", "artifice",
       "gloom", "misery", "indigestion", "shirtlessness", "prize eligibility", "strong fashion sense", "bootlicking", "intellect",
       "snobbery", "megalomania", "pathos", "foresight", "fortitude", "charisma", "constitution", "dexterity", "self-control",
       "illiteracy", "responsibility", "decay", "mutation", "magnetism", "harmony", "unrest", "immortality", "betrayal", "blasphemy",
@@ -41,9 +41,9 @@
   ],
   "emotion": [
       "anticipation", "discomfort",  "disgust", "envy", "confusion", "giddiness", "fear", "consternation", "squeamishness", "hatred",
-      "panic", "glee", "rage", "insecurity", "self-consciousness", "abject terror", "cautious optimism", "boredom", "cowardice",
+      "panic", "glee", "rage", "insecurity", "self-consciousness", "abject terror", "cautious optimism", "boredom", "cowardice", "sorrow",
       "lust", "near-fanatical devotion", "arrogance", "pluckiness", "indifference", "unwillingness", "begrudging admiration", "fury",
-      "lonliness", "angst", "mistrust", "shame", "loyalty", "chivalry", "memory", "duty"
+      "lonliness", "angst", "mistrust", "shame", "loyalty", "chivalry", "memory", "duty", "regret"
   ],
   "itemNoun": [
       "weapon", "card", "wand", "spellbook", "staff", "orb", "tree", "plant", "crown", "jewel", "amulet", "egg", "banner", "boot",
@@ -51,7 +51,7 @@
       "grimoire", "chalice", "blade", "gift", "signet", "monolith", "gemstone", "clue", "scroll", "lantern", "collar", "talisman",
       "doodad", "bone", "vuvuzela", "handlebar moustache", "horseshoe", "sweater vest", "prawn", "#gameAccessory#", "veil", "shrubbery",
       "apron", "bow tie", "glove", "fanny pack", "loincloth", "#bodypart#", "saxophone", "birdcage", "balloon", "weathervane", "backpack",
-      "cactus", "spellbomb", "chair", "stepladder", "gravy boat", "memorial", "statue", "game", "relic"
+      "cactus", "spellbomb", "chair", "stepladder", "gravy boat", "memorial", "statue", "game", "relic", "ring"
   ],
   "placeNoun": [
       "temple", "palace", "castle", "garden", "market", "dungeon", "sanctuary", "mansion", "kingdom", "colony", "vacation rental", "graveyard",
