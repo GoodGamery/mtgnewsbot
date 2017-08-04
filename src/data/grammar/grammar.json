@@ -334,12 +334,5 @@
         "Boros",
         "Jund"
     ],
-    "characterClass": ["master", "warlord", "avenger", "champion", "explorer", "pirate", "chieftain", "conqueror", "god", "assassin", "oracle", "ghost",
-                        "knave", "defender","ancient", "master", "prisoner", "buffoon", "baby", "clown", "villain", "freak", "fiend", "titan", "horror",
-                        "cyborg", "ambassador", "agent", "mercenary", "cowboy", "mime", "architect", "inventor", "guardian", "groundskeeper", "farmer",
-                        "doctor", "thief", "judge", "juror", "executioner", "herald", "betrayer", "savior", "disciple", "rebel", "crybaby", "grinch",
-                        "barrista", "charlatan", "imposter", "bandit", "governor", "teenager", "prince", "princess", "artist", "warlock", "servant",
-                        "minion", "nomad", "protector", "navigator", "houndmaster", "alchemist", "commander", "leader", "predator", "constable", "merchant",
-                        "priest", "ancestor", "martyr", "monarch", "voyager", "general", "victim", "customer", "seeker", "automaton"],
     "colon": ":"
 }

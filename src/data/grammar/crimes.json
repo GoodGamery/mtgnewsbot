@@ -2,11 +2,12 @@
   "crime": [
     "tresspassing",
     "jaywalking",
-    "impersonating #creatureTypes.a#",
+    "impersonating [_being:#creatureTypes#,#characterClass#]#_being.a#",
     "slow play",
     "disturbing the peace",
     "loitering",
     "shoplifting",
-    "public indecency"
+    "public indecency",
+    "leaving the scene of an accident"
   ]
 }
