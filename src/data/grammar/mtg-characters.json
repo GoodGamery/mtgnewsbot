@@ -54,5 +54,6 @@
       "Yawgmoth#malePronouns#",
       "Davvol#malePronouns#",
       "Grakk#malePronouns#"
-  ]
+  ],
+  "mashupCharacter": "#person#‚ #demonym.capitalize# #characterClass.capitalize#"
 }

@@ -36,7 +36,7 @@
   ],
   "verbBothTransitivePastTense": [
     "approached","shuffled", "killed", "observed", "grew", "swallowed", "transformed", "forgot", "remembered", "studied", "misunderstood",
-    "sacrificed", "collected", "celebrate", "exaggerated", "pantomimed", "advertised", "deep-fried", "decorated", "fought", "burned"
+    "sacrificed", "collected", "celebrated", "exaggerated", "pantomimed", "advertised", "deep-fried", "decorated", "fought", "burned"
   ],  
 
   "verbGerund": [ "#verbStrictlyTransitiveGerund#", "#verbStrictlyIntransitiveGerund#", "#verbBothTransitiveGerund#" ],

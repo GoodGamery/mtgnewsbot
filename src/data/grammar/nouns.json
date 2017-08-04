@@ -33,7 +33,8 @@
       "strength", "energy", "control", "technology", "rationality", "fear", "glory", "whimsy", "balance", "truth", "lies",
       "gloom", "misery", "indigestion", "shirtlessness", "prize eligibility", "strong fashion sense", "bootlicking", "intellect",
       "snobbery", "megalomania", "pathos", "foresight", "fortitude", "charisma", "constitution", "dexterity", "self-control",
-      "illiteracy", "responsibility", "decay", "mutation", "magnetism", "harmony", "unrest", "immortality", "betrayal", "blasphemy"
+      "illiteracy", "responsibility", "decay", "mutation", "magnetism", "harmony", "unrest", "immortality", "betrayal", "blasphemy",
+      "lack of self-control"
   ],
   "emotion": [
       "anticipation", "discomfort",  "disgust", "envy", "confusion", "giddiness", "fear", "consternation", "squeamishness", "hatred",
