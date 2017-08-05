@@ -86,12 +86,6 @@ svgMulliganBeforeTextStyle: >
 svgMulliganAfterTextStyle: >
   color: rgb(254,255,250); font-size: 32px; font-family: Sans-Serif; font-weight: 600;
   text-shadow: 1px 1px 1px rgb(60,60,60); text-align:center;
-svgMulliganCardId:
-- #cardFinderMultiverseId#
-- #cardFinderMultiverseId#
-- #cardFinderMultiverseId#
-- #cardFinderLandMultiverseId#
-- #cardFinderLandMultiverseId#
 svgMulliganCardFinderUrl: https://goodgamery.com/api/mtg/image?card=#_cardname#
 svgMulliganResetStyles: "[_aboveTextSize:24px]"
 svgMulligan: |
