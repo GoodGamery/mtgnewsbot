@@ -41,7 +41,7 @@
 		"129699", "417691", "423807"
 	],
 
-	"cardFinderBasicLandMultiverseId": ["#cardFinderBasicLandMultiverseId#", "#cardFinderNonBasicLandMultiverseId#"],
+	"cardFinderLandMultiverseId": ["#cardFinderBasicLandMultiverseId#", "#cardFinderNonBasicLandMultiverseId#"],
 
 	"cardFinderBasicLandMultiverseId": [
 		"376340", "243460", "206069", "204966", "269636", "383244", "79062","4595",
