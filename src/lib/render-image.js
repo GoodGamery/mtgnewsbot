@@ -64,7 +64,6 @@ function renderImageFromSvg(svg, outputPath) {
   return svg2png(new Buffer(svg), { filename: __dirname })
     .catch(e => console.log('\n *** Failed to create png: ' + e))
     .then(data => {
-      console.log('SVG:'); console.log(svg);
       fs.writeFileSync(outputPath, data);
       console.log('\n *** Image saved to ' + outputPath);
       return {

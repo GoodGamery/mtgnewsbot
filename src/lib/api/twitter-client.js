@@ -3,19 +3,28 @@
 const Twit = require('twit');
 const fs = require('fs');
 
-const TWIT_CONFIG =  {
-    consumer_key:         process.env.TWITTER_CONSUMER_KEY,
-    consumer_secret:      process.env.TWITTER_CONSUMER_SECRET,
-    access_token:         process.env.TWITTER_ACCESS_TOKEN,
-    access_token_secret:  process.env.TWITTER_ACCESS_TOKEN_SECRET
-};
-
 class TwitterClient {
-  constructor() {
-    this.twit = new Twit(TWIT_CONFIG);
+  constructor(config) {
+    const twitterConfig = {
+      consumer_key: config.TWITTER_CONSUMER_KEY,
+      consumer_secret: config.TWITTER_CONSUMER_SECRET,
+      access_token: config.TWITTER_ACCESS_TOKEN,
+      access_token_secret: config.TWITTER_ACCESS_TOKEN_SECRET
+    };
+    this.twit = new Twit(twitterConfig);
   }
 
-  postTweet(message) {
+  postTweet(message, imagePath, altText) {
+    if (imagePath) {
+      const postTheTweet = this.postImageTweet.bind(this, message, altText);
+      return this.uploadTwitterImage(imagePath)
+        .then(postTheTweet);
+    }
+    // Plain text tweet
+    return this.postTextTweet(message);
+  }
+
+  postTextTweet(message) {
     return new Promise((resolve, reject) => {
       console.log('posting tweet...');
       try {
@@ -32,12 +41,12 @@ class TwitterClient {
     });
   }
 
-  postImageTweet(data, altText, message) {
+  postImageTweet(message, altText, data) {
     return new Promise((resolve, reject) => {
       try {
-        let mediaIdStr = data.media_id_string;
+        const mediaIdStr = data.media_id_string;
 
-        let meta_params = { media_id: mediaIdStr, alt_text: { text: altText } };
+        const meta_params = { media_id: mediaIdStr, alt_text: { text: altText } };
 
         console.log('setting media metadata');
 
@@ -49,8 +58,8 @@ class TwitterClient {
 
           console.log('posting tweet...');
 
-          this.twit.post('statuses/update', params, () => {
-            resolve();
+          this.twit.post('statuses/update', params, (err, data) => {
+            resolve(data);
           });
         });
       } catch (e) {

@@ -1,18 +1,19 @@
 {
   "name": "mtgnewsbot",
-  "version": "1.0.1",
+  "version": "1.1.0",
   "description": "MTG News Robot",
   "author": "Mark Diehr <mdiehr@gmail.com> (https://www.goodgamery.com)",
   "main": "src/news-engine.js",
   "scripts": {
-    "start": "node mtgnews",
-    "print": "node mtgnews",
+    "start": "node --harmony mtgnews",
+    "print": "node --harmony mtgnews",
     "lint": "gulp lint",
-    "test": "gulp lint && node mtgnews -c 15",
+    "test": "gulp lint && node --harmony mtgnews -c 10",
     "watch": "gulp"
   },
   "dependencies": {
     "commander": "2.11.0",
+    "fs-extra": "4.0.1",
     "jimp": "0.2.28",
     "lodash.merge": "4.6.0",
     "request": "2.81.0",
@@ -22,13 +23,16 @@
     "webshot": "0.18.0"
   },
   "devDependencies": {
-    "eslint": "^4.2.0",
-    "gulp": "^3.9.1",
-    "gulp-debug": "^3.1.0",
-    "gulp-eslint": "^4.0.0",
-    "gulp-jsonlint": "^1.2.0",
+    "co": "4.6.0",
+    "eslint": "4.2.0",
+    "fast-deep-equal": "1.0.0",
+    "gulp": "3.9.1",
+    "gulp-debug": "3.1.0",
+    "gulp-eslint": "4.0.0",
+    "gulp-jsonlint": "1.2.0",
     "gulp-util": "3.0.8",
-    "run-sequence": "^2.0.0"
+    "json-schema-traverse": "0.3.1",
+    "run-sequence": "2.0.0"
   },
   "repository": {
     "type": "git",
@@ -46,7 +50,7 @@
   "eslintConfig": {
     "extends": "eslint:recommended",
     "parserOptions": {
-      "ecmaVersion": 6
+      "ecmaVersion": 8
     },
     "env": {
       "node": true,

@@ -42,8 +42,9 @@ module.exports = HeadlineMaker;
  *  }
  */
 class Headline {
-	constructor(text, tags) {
+	constructor(text, tags, altText) {
 		this.text = text;
+		this.altText = altText;
 		if (tags) {
 			this.tags = tags;
 		}
@@ -52,12 +53,12 @@ class Headline {
 }
 
 function parseMessage(message) {
-	let tags = undefined;
+	let tags = {};
+	let altText = `MTG Image`;
 	let text = message;
 
 	let match = message.match(/\{\w+?\s+?.*?\}/g);
 	if (match) {
-		tags = {};
 		match.forEach(match => {
 			const tag = match.match(/\{(\w+)\s/)[1];
 			if (!tags[tag]) {
@@ -86,10 +87,14 @@ function parseMessage(message) {
 
       // Patch up CSS file paths
       tags.htmlImg.htmlImgString = resolveCssUrls(tags.htmlImg.htmlImgString);
+			// Get the alt text out of it
+			altText = tags.htmlImg.altText || altText;
     }
 	}
 
-	return new Headline(text.trim().replace(/\s+/g,' '), tags);
+	text = text.trim().replace(/\s+/g,' ');
+
+	return new Headline(text, tags, altText);
 }
 
 function resolveCssUrls(html) {

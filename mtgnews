@@ -1,4 +1,4 @@
-#!/usr/bin/env node
+#!/usr/bin/env node --harmony
 'use strict';
 
 // Command processor
@@ -8,12 +8,13 @@ let MtgNewsbot = require('./src/mtgnewsbot.js');
 commander
     .version('1.0.0')
     .usage('[options]')
-    .arguments(``)
     .option(`-c --count <n>`, `Count of news articles to generate`)
     .option(`-o --origin [string]`, `Origin string to flatten. Defaults to "#origin#"`)
     .option('-v --verbose', "Verbose logging")
     .option('-t --tweet', "Tweet the result. Overrides count to 1.")
     .option('-d --discord', "Post the result on discord")
+    .option('--debug', "Post the result on debugging discord channel")
     .parse(process.argv);
 
-MtgNewsbot.run(commander);
+let bot = new MtgNewsbot(commander);
+bot.run();
