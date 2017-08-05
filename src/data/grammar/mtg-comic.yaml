@@ -5,19 +5,19 @@
 
 	"_svgComicDefaultTextSize": "18px",
 
-	"svgComicTemplate1NarrativeStyle":  "color: rgb(71,26,65); font-size: #_svgComicDefaultTextSize#px; font-family: Anime Ace, Comic Sans, Sans-Serif; font-weight: 600;  word-wrap:break-all;",
-	"svgComicTemplate1Text2Style":  "color: black; font-size:15px; font-family: Anime Ace, Comic Sans, Sans-Serif; font-weight: 600; word-wrap:break-all;",
-	"svgComicTemplate1Text3Style":  "color: black; font-size:14px; font-family: Anime Ace, Comic Sans, Sans-Serif; font-weight: 600;  word-wrap:break-all;",
+  "svgComicTemplate1NarrativeStyle":  "color: rgb(71,26,65); font-size: #_svgComicDefaultTextSize#px; font-family: Anime Ace, Comic Sans, Sans-Serif; font-weight: 600;  word-wrap:break-all;",
+  "svgComicTemplate1Text2Style":  "color: black; font-size:14px; font-family: Anime Ace, Comic Sans, Sans-Serif; font-weight: 600; word-wrap:break-all;",
+  "svgComicTemplate1Text3Style":  "color: black; font-size:13px; font-family: Anime Ace, Comic Sans, Sans-Serif; font-weight: 600;  word-wrap:break-all;",
 
 	"svgComicTextTemplate": [
 		"[_text000x:40][_text000y:274][_text000w:310][_text000h:63][_text000Style:#svgComicSTYLE#][_text000Content:CONTENT]"
 	],
 
-	"svgComicTemplate2Text1Style":  "color: black; font-size:15px; font-family: Anime Ace, Comic Sans, Sans-Serif; font-weight: 600; word-wrap:break-all;",
-	"svgComicTemplate2Text2Style":  "color: black; font-size:14px; font-family: Anime Ace, Comic Sans, Sans-Serif; font-weight: 600; word-wrap:break-all;",
-	"svgComicTemplate2Text3Style":  "color: black; font-size:12px; font-family: Anime Ace, Comic Sans, Sans-Serif; font-weight: 600; word-wrap:break-all;",
-	"svgComicTemplate2Text4Style":  "color: black; font-size:11px; font-family: Anime Ace, Comic Sans, Sans-Serif; font-weight: 600; word-wrap:break-all;",
-	"svgComicTemplate2Text5Style":  "color: black; font-size:9px; font-family: Anime Ace, Comic Sans, Sans-Serif; font-weight: 600; word-wrap:break-all;",
+	"svgComicTemplate2Text1Style":  "color: black; font-size:14px; font-family: Anime Ace, Comic Sans, Sans-Serif; font-weight: 600; word-wrap:break-all;",
+	"svgComicTemplate2Text2Style":  "color: black; font-size:13px; font-family: Anime Ace, Comic Sans, Sans-Serif; font-weight: 600; word-wrap:break-all;",
+	"svgComicTemplate2Text3Style":  "color: black; font-size:11px; font-family: Anime Ace, Comic Sans, Sans-Serif; font-weight: 600; word-wrap:break-all;",
+	"svgComicTemplate2Text4Style":  "color: black; font-size:10px; font-family: Anime Ace, Comic Sans, Sans-Serif; font-weight: 600; word-wrap:break-all;",
+	"svgComicTemplate2Text5Style":  "color: black; font-size:8px; font-family: Anime Ace, Comic Sans, Sans-Serif; font-weight: 600; word-wrap:break-all;",
 
 	"svgComicTemplate": ["#svgComicTemplate1#", "#svgComicTemplate2#"],
 

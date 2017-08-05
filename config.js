@@ -30,7 +30,11 @@ try {
   console.info(`Loading config overrides from ${CONFIG_OVERRIDE_PATH}`);
   config = merge(config, override);
 } catch(e) {
-  console.info(`No config overrides located at ${CONFIG_OVERRIDE_PATH}`);
+  if (e.code === 'MODULE_NOT_FOUND') { 
+    console.info(`No config overrides located at ${CONFIG_OVERRIDE_PATH}`);
+  } else {
+    console.warn(`Unable to load config override: ${e}`);
+  }
 }
 
 // load the default grammar after applying overrides
