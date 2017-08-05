@@ -68,16 +68,16 @@
       "Reveal #hiddenAgenda# naming #_card2#",
       "Offer to sell #_card1# to your opponent for #priceUSD#"
   ],
-  "inGraphicsCardMask": "./src/data/images/cardmask-double.png",
+  "inGraphicsCardMask": "./data/images/cardmask-double.png",
   "inGraphicsBacksplash": [
-      "./src/data/images/backsplash_a.png",
-      "./src/data/images/backsplash_b.png",
-      "./src/data/images/backsplash_c.png",
-      "./src/data/images/backsplash_d.png",
-      "./src/data/images/backsplash_e.png",
-      "./src/data/images/backsplash_f.png",
-      "./src/data/images/backsplash_g.png",
-      "./src/data/images/backsplash_h.png"
+      "./data/images/backsplash_a.png",
+      "./data/images/backsplash_b.png",
+      "./data/images/backsplash_c.png",
+      "./data/images/backsplash_d.png",
+      "./data/images/backsplash_e.png",
+      "./data/images/backsplash_f.png",
+      "./data/images/backsplash_g.png",
+      "./data/images/backsplash_h.png"
   ],
   "fontHeader": "font-size: 36px; font-family: Beleren, Georgia, 'Liberation Serif', 'DejaVu Serif', serif; font-weight: 700; text-shadow: 2px 2px 2px black",
   "fontBody": "font-size: 16px; font-family: Arial, 'Liberation Sans', 'DejaVu Sans', sans-serif",

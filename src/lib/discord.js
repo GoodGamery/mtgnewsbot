@@ -46,6 +46,19 @@ function sendError(text) {
   executeWebhook(payload, true);
 }
 
+// Sends an debug message to the error Discord channel
+function sendDebug(text) {
+  let payload = {
+    content: `The bot is sending a debug message:`,
+    embeds: [{
+      title: `DEBUG`,
+      description: text,
+      color: COLOR_BLUE
+    }]
+  };
+  executeWebhook(payload, true);
+}
+
 function executeWebhook(payload, isError) {
   const url = isError ? config.webhookUrlErr : config.webhookUrl;
   
@@ -67,5 +80,6 @@ function handleResponse(error, response, body) {
 module.exports = {
   sendText: sendText,
   sendEmbed: sendEmbed,
-  sendError: sendError
+  sendError: sendError,
+  sendDebug: sendDebug
 };

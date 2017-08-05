@@ -42,9 +42,12 @@ node_modules/
 .vscode
 
 # local config overrides
-config-override.js
+config-override.json
 
 # output folders
 build/
 out/
 tmp/
+
+# intellij
+.idea/
