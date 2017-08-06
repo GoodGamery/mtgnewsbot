@@ -32,6 +32,7 @@
     "gulp-eslint": "4.0.0",
     "gulp-jsonlint": "1.2.0",
     "gulp-util": "3.0.8",
+    "gulp-yaml-validate": "^1.0.2",
     "json-schema-traverse": "0.3.1",
     "run-sequence": "2.0.0",
     "gulp-yaml-validate": "^1.0.2"    

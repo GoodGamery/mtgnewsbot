@@ -2,11 +2,21 @@
   "deckArch": [
       "#deck#",
       "#deckVariation#",
+      "#creatureTypes.capitalize# Tribal",
+      "[_format:#format#]#_format# #creatureTypesPlural.capitalize#",
+      "[_format:#format#]#_format# #deck#",
+      "[_format:#format#]#_format# #deckVariation#",
+      "#colors.capitalize# #deck#",
+      "[_deck:#deckArch#,#preconDeck#]#_deck#"
+  ],
+  "deckArchOrCategory": [
+      "#deck#",
+      "#deckVariation#",
       "decks with #card#",
       "#creatureTypes.capitalize# Tribal",
-      "#format# #creatureTypesPlural.capitalize#",
-      "#format# #deck#",
-      "#format# #deckVariation#",
+      "[_format:#format#]#_format# #creatureTypesPlural.capitalize#",
+      "[_format:#format#]#_format# #deck#",
+      "[_format:#format#]#_format# #deckVariation#",
       "#colors.capitalize# #deck#",
       "[_deck:#deckArch#,#preconDeck#]#_deck#"
   ],

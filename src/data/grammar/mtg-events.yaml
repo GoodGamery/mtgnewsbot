@@ -30,12 +30,12 @@
 	"gameNumber": ["1", "one", "2", "two", "3", "three"],
 
 	"opposingDeck": [
-		"#deck#",
+		"#deckArch#",
 		"#deckArch#",
 		"an unknown opponent",
 		"the mirror",
 		"#person#"
 	],
 
-	"bracket": ["#num0-9#-0", "0-#num0-9#", "#num0-9#-X", "#num0-9#-X-#num1-5#","X-#num0-9#","draw", "winners", "losers"] 
+	"bracket": ["#num0-9#-0", "0-#num0-9#", "#num0-9#-X", "#num0-9#-X-#num1-5#","X-#num0-9#","draw", "winners", "losers"]
 }

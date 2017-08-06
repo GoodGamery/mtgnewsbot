@@ -1,0 +1,51 @@
+---
+styleColorLight:
+- NavajoWhite
+- LimeGreen
+- Cornsilk
+- Gainsboro
+- Ivory
+- OldLace
+- WhiteSmoke
+- Azure
+- LemonChiffon
+- Snow
+- Khaki
+- PaleGreen
+- MistyRose
+- MediumAquamarine
+- SkyBlue
+
+styleColorMedium:
+- DarkGoldenrod
+- OliveDrab
+- SteelBlue
+- SlateGray
+- DarkKhaki
+- OrangeRed
+- Gold
+- Chocolate
+- LightSeaGreen
+- DarkOrange
+- RebeccaPurple
+- MediumSeaGreen
+- OrangeRed
+- DeepSkyBlue
+- DodgerBlue
+- CornflowerBlue
+- BlueViolet
+- FireBrick
+- BurlyWood
+
+styleColorDark:
+- DarkOliveGreen
+- SaddleBrown
+- DarkGreen
+- MidnightBlue
+- DarkSlateGray
+- DimGrey
+- DarkSlateBlue
+- Indigo
+- DarkBlue
+- DarkRed
+- Black

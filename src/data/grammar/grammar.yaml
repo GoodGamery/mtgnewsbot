@@ -17,7 +17,8 @@
         "#headlineKeepOrMulligan#",
       	"#gathererRulingImage#",
         "#inGraphics#",
-        "#mtgComic#"
+        "#mtgComic#",
+        "#mtgDeckTechGraphic#"
     ],
     "disabledHeadline": [],
     "testSvg": "#headlineKeepOrMulligan#",
@@ -27,7 +28,7 @@
         "FLAVOR FLASHBACK: #flavorText#"
     ],
     "clickbait": [
-        "Are you [_verbing:overrating,underrating]#_verbing# [_thing:#gameConcept#,#card#,#deckArch#,#creatureTypes.s#,#cardSet#]#_thing#?",
+        "Are you [_verbing:overrating,underrating]#_verbing# [_thing:#gameConcept#,#card#,#deckArchOrCategory#,#creatureTypes.s#,#cardSet#]#_thing#?",
         "[interrogative:Why,How]#interrogative# #pro# is #verbDefeating.capitalize# #nouns.capitalize#",
         "#count.capitalize# [_thing:#cardCategory.s#,#creatureTypes.s#,#cardSet# Cards,#format# Cards]#_thing.capitalize# [reprinted:That Need to be Reprinted,We'd Love to See Reprinted in #teaserCardSet#]#reprinted#",
         "#count.capitalize# #cardCategory.s# from #teaserCardSet# leaked",
@@ -98,7 +99,7 @@
         "CLASSIC STRATEGY: [_prefix:The Philosophy of,It's All About the]#_prefix# [_thing:#massNoun#,#pluralNoun#,#abstractNoun#,#nouns#]#_thing.capitalizeAll#, by #pro.capitalize#",
         "[_proIs:#pro# is,#pros# are]#_proIs# #verbCreating# #tech.a# to #verbDefeat# #obstacle.capitalize#",
         "#count.capitalize# #broadCardClassification.capitalizeAll# That Should Never Have Been [_verbed:Printed,Banned,Unbanned,Played,Ignored]#_verbed#",
-        "[_proReveals:Top Pro #revealVerb.s#,#pro# #revealVerb.s#,#pros# #revealVerb#]#_proReveals.capitalizeAll# #planNoun.capitalize# for #event#: Play #card# in #deck# to counter [_what:#card#,#deckArch#]#_what#",
+        "[_proReveals:Top Pro #revealVerb.s#,#pro# #revealVerb.s#,#pros# #revealVerb#]#_proReveals.capitalizeAll# #planNoun.capitalize# for #event#: Play #card# in #deck# to counter [_what:#card#,#deckArchOrCategory#]#_what#",
         "#recentCardSet# [_format:Limited,Constucted]#_format# Set Review:[_color: #basicColors.capitalize#,]#_color# #cardCategory.s.capitalizeAll# and [_other:#cardCategory#,#creatureTypes#]#_other.s.capitalizeAll#",
         "#recentCardSet# #format# Set Review: [_cat:#basicColors#,#cardCategory.s# and #cardCategory.s#]#_cat.capitalizeAll#"
     ],
@@ -170,7 +171,7 @@
     ],
     "obstacle": [
         "#tournamentType.s#",
-        "#deckArch#",
+        "#deckArchOrCategory#",
         "#deckObjective#",
         "#people#",
         "#gameConcept#",
@@ -178,7 +179,7 @@
     ],
     "improvementGoal": [
         "[_challenge:winning,placing at,preparing for,#verbDefeating#]#_challenge# #tournamentType.s#",
-        "[_challenge:winning with,battling with,#verbDefeating#]#_challenge# #deckArch#",
+        "[_challenge:winning with,battling with,#verbDefeating#]#_challenge# #deckArchOrCategory#",
         "[_challenge:winning against,defeating,outplaying,#verbDefeating#]#_challenge# #people#",
         "[_challenge:understanding,exploiting,getting the most out of,#verbDefeating#]#_challenge# #gameConcept#",
         "[_challenge:using,winning with,understanding,answering,#verbDefeating#]#_challenge# #cardCategory.s#"
@@ -271,7 +272,7 @@
         "west-northwest"
     ],
     "thing": [
-        "#deckArch#",
+        "#deckArchOrCategory#",
         "#card#",
         "#format#",
         "#cardCategory.s#"
@@ -279,7 +280,7 @@
     "deckObjective": [
         "#deck# decks",
         "#deck# lists",
-        "#deckArch# [_m:matchup,matchups]#_m#",
+        "#deckArch# matchups",
         "#cardAlone# decks",
         "#creatureTypes.capitalize# decks"
     ],

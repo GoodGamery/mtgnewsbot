@@ -1,0 +1,32 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="1024" height="560">
+  <defs>
+    <mask id="cardMask" maskUnits="userSpaceOnUse" mask-type="alpha">
+      <image x="0" y="0" width="223" height="310" xlink:href="./data/images/cardmask.png" />
+    </mask>
+    <svg id="Card1">
+      <image xlink:href="https://goodgamery.com/api/mtg/image?card=Terramorphic Expanse" x="0" y="0" mask="url(#cardMask)" width="223" height="310" />
+    </svg>
+    <svg id="Card2">
+      <image xlink:href="https://goodgamery.com/api/mtg/image?card=Island" x="0" y="0" mask="url(#cardMask)" width="223" height="310" />
+    </svg>
+    <svg id="Card3">
+      <image xlink:href="https://goodgamery.com/api/mtg/image?card=Desert of the Glorified" x="0" y="0" mask="url(#cardMask)" width="223" height="310" />
+    </svg>
+    <svg id="Card4">
+      <image xlink:href="https://goodgamery.com/api/mtg/image?card=Numai Outcast" x="0" y="0" mask="url(#cardMask)" width="223" height="310" />
+    </svg>
+  </defs>
+  <image width="100%" height="100%" xlink:href="../src/data/images/decktech/backgrounds/alchemists-vial.jpg"/>
+  <text x="25" y="80" style="font-size: 64px; font-family:  Verdana, Sans Serif; font-weight: bolder; letter-spacing: -0.01em; stroke-width:2; fill: white; stroke: DimGrey;">DECK TECH
+    <tspan style="font-size: 48px; font-family:  Verdana, 'Sans Serif'; font-weight: bolder; letter-spacing:  -0.01em; stroke: rgb(144,16,16); stroke-width:2; fill: white; stroke: DimGrey;">with Urza</tspan>
+  </text>
+  <foreignObject x="30" y="92" width="994" height="180">
+    <div x="0" y="0" style="width: 95%; font-size: 50px; font-family:  Verdana; font-weight: bold; line-height: 1.1em; -webkit-text-stroke-width:4px; -webkit-text-stroke-color: rgb(10,20,20); -webkit-text-fill-color: SlateGray;">Kitchen Table Magic Mentor Taxes</div>
+    <div x="0" y="0" style="width: 400px; font-size: 34px; font-family:  Verdana; font-weight: bold; font-style:italic; -webkit-text-stroke-width:3px; -webkit-text-stroke-color: rgb(10,20,20); line-height: 1.1em; -webkit-text-fill-color: SlateGray;">Kitchen Table Magic</div>
+  </foreignObject>
+  <image xlink:href="../src/data/images/decktech/overlays/decktech-candyfinder-1.png" x="0" y="301" width="424" height="259"/>
+  <use xlink:href="#Card1" x="467" y="222" />
+  <use xlink:href="#Card2" x="567" y="222" />
+  <use xlink:href="#Card3" x="667" y="222" />
+  <use xlink:href="#Card4" x="767" y="222" />
+</svg>
