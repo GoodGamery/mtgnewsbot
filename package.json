@@ -48,6 +48,25 @@
     "url": "https://github.com/mdiehr/mtgnewsbot/issues"
   },
   "homepage": "https://github.com/mdiehr/mtgnewsbot#readme",
+  "dependencies": {
+    "jimp": "0.2.28",
+    "lodash.merge": "4.6.0",
+    "request": "2.81.0",
+    "svg2png": "4.1.1",
+    "tracery-grammar": "2.7.3",
+    "twit": "2.2.9",
+    "webshot": "0.18.0"
+  },
+  "devDependencies": {
+    "eslint": "^4.2.0",
+    "gulp": "^3.9.1",
+    "gulp-debug": "^3.1.0",
+    "gulp-eslint": "^4.0.0",
+    "gulp-jsonlint": "^1.2.0",
+    "gulp-util": "3.0.8",
+    "gulp-yaml-validate": "^1.0.2",
+    "run-sequence": "^2.0.0"
+  },
   "eslintConfig": {
     "extends": "eslint:recommended",
     "parserOptions": {
