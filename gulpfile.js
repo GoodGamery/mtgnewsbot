@@ -5,11 +5,13 @@ const gutil = require('gulp-util');
 const debug = require('gulp-debug');
 const jsonlint = require('gulp-jsonlint');
 const eslint = require('gulp-eslint');
+const yamllint = require('gulp-yaml-validate');
 const runSequence = require('run-sequence');
 
 const SRC_FILES = {
   JS: ['./*.js', 'src/**/*.js'],
-  JSON: ['src/**/*.json']
+  JSON: ['src/**/*.json'],
+  YAML: ['src/**/*.yaml']
 };
 
 gulp.task('jslint', function() {
@@ -64,12 +66,36 @@ gulp.task('jsonlint', function() {
 
 });
 
+gulp.task('yamllint', function() {
+	let success;
+  const completionTracker = function() {
+    success = true;
+
+    return function (file) {
+      success = success && file.jsonlint.success;
+    };
+  };
+
+  return gulp.src(SRC_FILES.YAML)
+    .pipe(debug({title: 'Linting'}))
+    .pipe(yamllint())  	
+    .pipe(jsonlint.reporter())
+    .pipe(jsonlint.reporter(completionTracker()))
+    .on('end', function() {
+      if (success) {
+        gutil.log(gutil.colors.green('>>> YAML linting ' + gutil.colors.underline('COMPLETED') + '.'));
+      } else {
+        gutil.log(gutil.colors.red('>>> YAML linting ' + gutil.colors.underline('FAILED.') + '.'));
+      }
+    }); 
+});
+
 gulp.task('lint', function(callback) {
-  runSequence('jslint', 'jsonlint', callback);
+  runSequence('jslint', 'jsonlint', 'yamllint', callback);
 });
 
 gulp.task('watch', function() {
-  gulp.watch([SRC_FILES.JS, SRC_FILES.JSON], ['lint']);
+  gulp.watch([SRC_FILES.JS, SRC_FILES.JSON, SRC_FILES.YAML], ['lint']);
 });
 
 gulp.task('default', ['lint', 'watch']);
