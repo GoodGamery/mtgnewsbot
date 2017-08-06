@@ -1,53 +1,41 @@
-{
-	"mtgDeckTech": "#decktech# {svg svgString=\"#svgDeckTechImage#\"}",
+--- 
+# mtgDeckTech: >
+#   #decktech# {svg svgString="#svgDeckTechImage#"}
 
-	"_svgDeckTechDefaultTextSize": "72px",
+mtgDeckTech: >
+  #decktech# {svg svgString="#svgDeckTechImage#"}
 
-	"svgDeckTechTemplateTitleStyle": "font-size: #_svgDeckTechDefaultTextSize#; font-family: Tahoma, Verdana, Sans Serif; font-weight: bolder; stroke: rgb(144,16,16); stroke-width:2; fill: white;",
+svgDeckTechBackgroundImageUrl: 
+  - ../scratch/decktech/test/cardart/agent-of-erebos.jpg
+  - ../scratch/decktech/test/cardart/agent-of-horizons.jpg
+  - ../scratch/decktech/test/cardart/alchemists-vial.jpg
+  - ../scratch/decktech/test/cardart/anger-of-the-gods.jpg
+  - ../scratch/decktech/test/cardart/ramunap-ruins.jpg
+svgDeckTechAccessoriesImageUrl: 
+  - ../scratch/decktech/test/decktech-candyfinder-1.png
+  - ../scratch/decktech/test/decktech-candyfinder-2.png
+  - ../scratch/decktech/test/decktech-candyfinder-3.png
+  - ../scratch/decktech/test/decktech-candyfinder-4.png 
 
-	"svgDeckTechTemplateSubtitleStyle":  "font-size: 50px; font-family: Tahoma, Verdana, Sans Serif;  font-weight: bolder; stroke: rgb(144,16,16); stroke-width:2;  fill: white;",
+svgDeckTechTemplateWidth: "1024"
+svgDeckTechTemplateHeight: "560"
+svgDeckTechAccessoriesImageWidth: "424"
+svgDeckTechAccessoriesImageHeight: "259"
+svgDeckTechAccessoriesImageXPos: "0"
+svgDeckTechAccessoriesImageYPos: "301"
 
+svgDeckTechTemplate: "[svgDeckTechTemplateWidth:1024][svgDeckTechTemplateHeight:560][_textTitle:DECK TECH][_textSubtitle:with #pro#][_textDeckName:#deckArch.capitalize#]\n"
+svgDeckTechTemplateDeckNameStyle: "font-size: 50px; font-family: Tahoma, Verdana, 'Sans Serif'; font-weight: bold; stroke: rgb(10,10,10); stroke-width:2;  fill: rgb(28,216,46);\n"
+svgDeckTechTemplateSubtitleStyle: "font-size: 48px; font-family: Tahoma, Verdana, 'Sans Serif'; font-weight: bolder; stroke: rgb(144,16,16); stroke-width:2; fill: white;\n"
+svgDeckTechTemplateTitleStyle: "font-size: 64px; font-family: Tahoma, Verdana, Sans Serif; font-weight: bolder; stroke: rgb(144,16,16); stroke-width:2; fill: white;\n"
 
-	"svgDeckTechTemplateDeckNameStyle":  "font-size: 62px; font-family: Tahoma, Verdana, Sans Serif;  font-weight: bold; stroke: rgb(10,10,10); stroke-width:2;  fill: rgb(28,216,46);",
-
-	"svgDeckTechTemplate1Text2Style":  "color: black; font-size:15px; font-family: Anime Ace, Comic Sans, Sans-Serif; font-weight: 600; word-wrap:break-all;",
-	"svgDeckTechTemplate1Text3Style":  "color: black; font-size:14px; font-family: Anime Ace, Comic Sans, Sans-Serif; font-weight: 600;  word-wrap:break-all;",
-
-	"svgDeckTechTemplate2Text1Style":  "color: black; font-size:15px; font-family: Anime Ace, Comic Sans, Sans-Serif; font-weight: 600; word-wrap:break-all;",
-	"svgDeckTechTemplate2Style":  "color: black; font-size:14px; font-family: Anime Ace, Comic Sans, Sans-Serif; font-weight: 600; word-wrap:break-all;",
-	"svgDeckTechTemplate3Style":  "color: black; font-size:12px; font-family: Anime Ace, Comic Sans, Sans-Serif; font-weight: 600; word-wrap:break-all;",
-	"svgDeckTechTemplate4Style":  "color: black; font-size:11px; font-family: Anime Ace, Comic Sans, Sans-Serif; font-weight: 600; word-wrap:break-all;",
-	"svgDeckTechTemplate5Style":  "color: black; font-size:9px; font-family: Anime Ace, Comic Sans, Sans-Serif; font-weight: 600; word-wrap:break-all;",
-
-	"svgDeckTechTemplate": [
-			"[_backgroundImageUrl:][svgDeckTechTemplateWidth:1024][svgDeckTechTemplateHeight:560][_textTitle:DECK TECH][_textSubtitle:with #pro#][_textDeckName:#deckVariation#]"
-	],
-
-	# "svgDeckTechBackgroundImageUrl": [
-	# 	"../scratch/decktech/test/deck-tech-test-template.jpg"
-	# ],
-
-	"svgDeckTechAccessoriesImageUrl": [
-		"../scratch/decktech/test/decktech-candyfinder-1.png",
-		"../scratch/decktech/test/decktech-candyfinder-2.png",
-		"../scratch/decktech/test/decktech-candyfinder-3.png",
-		"../scratch/decktech/test/decktech-candyfinder-4.png"
-	],
-
-	"svgDeckTechBackgroundImageUrl": [
-		"../scratch/decktech/test/cardart/agent-of-erebos.jpg",
-		"../scratch/decktech/test/cardart/agent-of-horizons.jpg",
-		"../scratch/decktech/test/cardart/alchemists-vial.jpg",
-		"../scratch/decktech/test/cardart/anger-of-the-gods.jpg",
-		"../scratch/decktech/test/cardart/ramunap-ruins.jpg"
-	],
-
-	"svgDeckTechTemplateWidth": "1024",
-	"svgDeckTechTemplateHeight": "560",
-	"svgDeckTechAccessoriesImageXPos": "0",
-	"svgDeckTechAccessoriesImageYPos": "301",
-	"svgDeckTechAccessoriesImageWidth": "424",
-	"svgDeckTechAccessoriesImageHeight": "259",
-
-	"svgDeckTechImage": "#svgDeckTechTemplate#<svg xmlns=`http://www.w3.org/2000/svg` xmlns:xlink=`http://www.w3.org/1999/xlink` width=`#svgDeckTechTemplateWidth#` height=`#svgDeckTechTemplateHeight#`><image width=`100%` height=`100%` xlink:href=`#svgDeckTechBackgroundImageUrl#`/><text x=`25` y=`80` style=`#svgDeckTechTemplateTitleStyle#`>#_textTitle#<tspan style=`#svgDeckTechTemplateSubtitleStyle#`> #_textSubtitle#</tspan></text><text x=`30` y=`140` style=`#svgDeckTechTemplateDeckNameStyle#`>#_textDeckName#</text><image xlink:href=`#svgDeckTechAccessoriesImageUrl#` x=`#svgDeckTechAccessoriesImageXPos#` y=`#svgDeckTechAccessoriesImageYPos#` width=`#svgDeckTechAccessoriesImageWidth#` height=`#svgDeckTechAccessoriesImageHeight#`/></svg>"
-}
+svgDeckTechImage: |
+    #svgDeckTechTemplate#
+    <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="#svgDeckTechTemplateWidth#" height="#svgDeckTechTemplateHeight#">
+      <image width="100%" height="100%" xlink:href="#svgDeckTechBackgroundImageUrl#"/>
+      <text x="25" y="80" style="#svgDeckTechTemplateTitleStyle#">#_textTitle#
+        <tspan style="#svgDeckTechTemplateSubtitleStyle#"> #_textSubtitle#</tspan>
+      </text>
+      <text x="30" y="132" style="#svgDeckTechTemplateDeckNameStyle#">#_textDeckName#</text>
+      <image xlink:href="#svgDeckTechAccessoriesImageUrl#" x="#svgDeckTechAccessoriesImageXPos#" y="#svgDeckTechAccessoriesImageYPos#" width="#svgDeckTechAccessoriesImageWidth#" height="#svgDeckTechAccessoriesImageHeight#"/>
+    </svg>
