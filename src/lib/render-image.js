@@ -14,8 +14,6 @@ const webshotOptions = {
 , renderDelay: 0
 };
 
-const fileOutputDelayMS = 1000;
-
 // Handles both types of images to render
 function renderImageFromHeadline(headline, outputPath) {
   if(headline.tags && headline.tags.svg && headline.tags.svg.svgString) {
@@ -42,21 +40,32 @@ function renderImageFromHtml(html, outputPath) {
       }
 
       Jimp.read(tempFile)
-        .then(image => image.autocrop().write(outputPath))
+        .then(cropAndWriteFile.bind(null, outputPath))
         .then(() => {
-            setTimeout(() => resolve({
+            resolve({
                 rendered: true,
                 path: outputPath,
                 msg: `Image rendered to ${outputPath}`
-            }), fileOutputDelayMS);
+            });
         })
-          .then(() => fs.unlink(tempFile, (err) => {
-              if (err) {
-                  reject(err);
-              }
-          }))
+        .then(() => fs.unlink(tempFile, (err) => {
+            if (err) {
+                reject(err);
+            }
+        }))
         .catch(err => reject(err));
     });
+  });
+}
+
+function cropAndWriteFile(path, image) {
+  return new Promise((resolve, reject) => {
+    image.autocrop().write(path, (err) => {
+      if (err)
+        reject(err);
+      else
+        resolve(path);
+    })
   });
 }
 
