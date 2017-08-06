@@ -1,6 +1,7 @@
 'use strict';
 
 const tracery = require(`tracery-grammar`);
+const path = require('path');
 
 class HeadlineMaker {
 
@@ -11,18 +12,18 @@ class HeadlineMaker {
   }
 
   /**
-  * Generates a headline and returns a headline object in the following format:
-  */
+   * Generates a headline and returns a headline object in the following format:
+   */
   generateHeadline(customOrigin) {
     return parseMessage(this.grammar.flatten(customOrigin || this.origin));
   }
 
   /**
-	* Generates a headline and returns its text contents, with any tags stripped out
-	*/
-	generateTextHeadline(customOrigin) {
-		return this.generateHeadline(customOrigin).text;
-	}
+   * Generates a headline and returns its text contents, with any tags stripped out
+   */
+  generateTextHeadline(customOrigin) {
+    return this.generateHeadline(customOrigin).text;
+  }
 }
 
 module.exports = HeadlineMaker;
@@ -41,49 +42,82 @@ module.exports = HeadlineMaker;
  *  }
  */
 class Headline {
-	constructor(text, tags) {
-		this.text = text;
-		if (tags) {
-			this.tags = tags;
-		}
-		Object.freeze(this);
-	}
+  constructor(text, tags, altText) {
+    this.text = text;
+    this.altText = altText;
+    if (tags) {
+      this.tags = tags;
+    }
+    Object.freeze(this);
+  }
 }
 
 function parseMessage(message) {
-	let tags = undefined;
-	let text = message;
+  let tags = {};
+  let altText = `MTG Image`;
+  const ENDL_MARKER = `|`;
+  message = message.split('\n').join(ENDL_MARKER);  // Support multiline strings from YAML
+  let text = message;
 
-	let match = message.match(/\{\w+?\s+?.*?\}/g);
-	if (match) {
-		tags = {};
-		match.forEach(match => {
-			const tag = match.match(/\{(\w+)\s/)[1];
-			if (!tags[tag]) {
-				tags[tag] = match.match(/(\w+=".*?")/g).reduce((result, next) => {
-					let key = next.match(/(\w+)=/)[1];
-					let value = next.match(/="(.*)"/)[1];
-					result[key] = value;
-					return result;
-				}, {});
-			}
-			text = message.replace(match,'');
-		});
+  let match = message.match(/\{\w+?\s+?.*\}/g);
+  if (match) {
+    match.forEach(match => {
+      const tag = match.match(/\{(\w+)\s/)[1];
+      if (!tags[tag]) {
+        tags[tag] = match.match(/(\w+=".*")/g).reduce((result, next) => {
+          let key = next.match(/(\w+)=/)[1];
+          let value = next.match(/="(.*)"/)[1];
+          result[key] = value;
+          return result;
+        }, {});
+      }
+      text = message.replace(match, '').replace(ENDL_MARKER, '').trim();
+    });
 
     // Further process svg tags
     if (tags.svg && tags.svg.svgString) {
       tags.svg.svgString = tags.svg.svgString
-          .replace(/`/g, '"')													// This gets quotes working
-          .replace(/<</g, '{').replace(/>>/g, '}');
+        .split(ENDL_MARKER).join('\n') // Restore endlines from before
+        .replace(/`/g, '"')													// This gets quotes working
+        .replace(/<</g, '{').replace(/>>/g, '}');
     }
 
     // Further process htmlimg tags
-		if (tags.htmlImg && tags.htmlImg.htmlImgString) {
-			tags.htmlImg.htmlImgString = tags.htmlImg.htmlImgString
-				.replace(/`/g, '"')																		// This gets quotes working
-				.replace(/<</g, '{').replace(/>>/g, '}');     	 			// This gets curly braces working
-    }
-	}
+    if (tags.htmlImg && tags.htmlImg.htmlImgString) {
+      tags.htmlImg.htmlImgString = tags.htmlImg.htmlImgString
+        .replace(/`/g, '"')																		// This gets quotes working
+        .replace(/<</g, '{').replace(/>>/g, '}');     	 			// This gets curly braces working
 
-	return new Headline(text.trim().replace(/\s+/g,' '), tags);
+      // Patch up CSS file paths
+      tags.htmlImg.htmlImgString = resolveCssUrls(tags.htmlImg.htmlImgString);
+      // Get the alt text out of it
+      altText = tags.htmlImg.altText || altText;
+    }
+  }
+
+  text = text.trim().replace(/\s+/g,' ');
+
+  return new Headline(text, tags, altText);
+}
+
+function resolveCssUrls(html) {
+  var newHtml = html.toString();
+
+  function fileUrl(url) {
+    var pathName = path.resolve(url).replace(/\\/g, '/');
+    // windows drive letters must be prefixed with a slash
+    if (pathName[0] !== '/') {
+      pathName = '/' + pathName;
+    }
+    return encodeURI('file://' + pathName);
+  }
+
+  const matches = newHtml.match(/url\(\..*?\)/g);
+  if (!matches) {
+    return html;
+  }
+  matches.forEach(match => {
+    newHtml = newHtml.replace(match, 'url('+ fileUrl(match.match(/url\((\..*?)\)/)[1])  + ')');
+  });
+  return newHtml;
 }

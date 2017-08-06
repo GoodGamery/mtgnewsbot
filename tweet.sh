@@ -1,10 +1,5 @@
 #!/bin/bash
 
-# Export env vars for twitter tokens
-set -a
-. ./.env
-set +a
-
 #noisy
 set -x
 
@@ -21,7 +16,7 @@ cp ./src/data/fonts/*.ttf /usr/local/share/fonts
 npm install --production
 
 # tweet
-node bot.js
+node --harmony mtgnews --tweet --discord
 
 #silent
 set +x

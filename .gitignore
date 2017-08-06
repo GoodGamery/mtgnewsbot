@@ -5,6 +5,9 @@ npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
 
+# NPM!!!!
+package-lock.json
+
 # Runtime data
 pids
 *.pid
@@ -42,9 +45,12 @@ node_modules/
 .vscode
 
 # local config overrides
-config-override.js
+config-override.json
 
 # output folders
 build/
 out/
 tmp/
+
+# intellij
+.idea/

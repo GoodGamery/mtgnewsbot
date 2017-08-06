@@ -5,33 +5,28 @@
 
 	"_svgComicDefaultTextSize": "18px",
 
-	"svgComicTemplate1NarrativeStyle":  "color: rgb(71,26,65); font-size: #_svgComicDefaultTextSize#px; font-family: Anime Ace, Comic Sans, Sans-Serif; font-weight: 600;  word-wrap:break-all;",
-	"svgComicTemplate1Text2Style":  "color: black; font-size:15px; font-family: Anime Ace, Comic Sans, Sans-Serif; font-weight: 600; word-wrap:break-all;",
-	"svgComicTemplate1Text3Style":  "color: black; font-size:14px; font-family: Anime Ace, Comic Sans, Sans-Serif; font-weight: 600;  word-wrap:break-all;",
-
-
-	"svgComicCardFinderUrl": 
-[		"http://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=#svgComicCardId#&type=card&name=#_cardname#"
-	],
+  "svgComicTemplate1NarrativeStyle":  "color: rgb(71,26,65); font-size: #_svgComicDefaultTextSize#px; font-family: Anime Ace, Comic Sans, Sans-Serif; font-weight: 600;  word-wrap:break-all;",
+  "svgComicTemplate1Text2Style":  "color: black; font-size:14px; font-family: Anime Ace, Comic Sans, Sans-Serif; font-weight: 600; word-wrap:break-all;",
+  "svgComicTemplate1Text3Style":  "color: black; font-size:13px; font-family: Anime Ace, Comic Sans, Sans-Serif; font-weight: 600;  word-wrap:break-all;",
 
 	"svgComicTextTemplate": [
 		"[_text000x:40][_text000y:274][_text000w:310][_text000h:63][_text000Style:#svgComicSTYLE#][_text000Content:CONTENT]"
 	],
 
-	"svgComicTemplate2Text1Style":  "color: black; font-size:15px; font-family: Anime Ace, Comic Sans, Sans-Serif; font-weight: 600; word-wrap:break-all;",
-	"svgComicTemplate2Text2Style":  "color: black; font-size:14px; font-family: Anime Ace, Comic Sans, Sans-Serif; font-weight: 600; word-wrap:break-all;",
-	"svgComicTemplate2Text3Style":  "color: black; font-size:12px; font-family: Anime Ace, Comic Sans, Sans-Serif; font-weight: 600; word-wrap:break-all;",
-	"svgComicTemplate2Text4Style":  "color: black; font-size:11px; font-family: Anime Ace, Comic Sans, Sans-Serif; font-weight: 600; word-wrap:break-all;",
-	"svgComicTemplate2Text5Style":  "color: black; font-size:9px; font-family: Anime Ace, Comic Sans, Sans-Serif; font-weight: 600; word-wrap:break-all;",
+	"svgComicTemplate2Text1Style":  "color: black; font-size:14px; font-family: Anime Ace, Comic Sans, Sans-Serif; font-weight: 600; word-wrap:break-all;",
+	"svgComicTemplate2Text2Style":  "color: black; font-size:13px; font-family: Anime Ace, Comic Sans, Sans-Serif; font-weight: 600; word-wrap:break-all;",
+	"svgComicTemplate2Text3Style":  "color: black; font-size:11px; font-family: Anime Ace, Comic Sans, Sans-Serif; font-weight: 600; word-wrap:break-all;",
+	"svgComicTemplate2Text4Style":  "color: black; font-size:10px; font-family: Anime Ace, Comic Sans, Sans-Serif; font-weight: 600; word-wrap:break-all;",
+	"svgComicTemplate2Text5Style":  "color: black; font-size:8px; font-family: Anime Ace, Comic Sans, Sans-Serif; font-weight: 600; word-wrap:break-all;",
 
 	"svgComicTemplate": ["#svgComicTemplate1#", "#svgComicTemplate2#"],
 
 	"svgComicTemplate1": [
-			"[svgComicTemplateImageUrl:./src/data/images/comics/comic_template_1.jpg][svgComicTemplateWidth:810][svgComicTemplateHeight:1245][_textLocation:#svgComicLocation#][_textCharacter1:Garruk][_textCharacter2:Liliana][_text1x:38][_text1y:269][_text1w:314][_text1h:76][_text1Style:#svgComicTemplate1NarrativeStyle#][_char1Verb:confronts,questions][_text1OtherPerson:#svgComicPerson#][_char2Nickname:she-#creatureTypes#,#massNoun# witch][_text1Content:#_subLocPrep# #_textLocation#‚ #_textCharacter1# #_char1Verb# #_textCharacter2# about #_text1OtherPerson#...,The #itemNoun# is #verbStrictlyTransitivePastTense#. Finally‚ it has begun.,The #creatureTypes.s# had no answers for me. But the #_char2Nickname# will talk., #emotion# burns in my #bodypartsInPairs#. The #_char2Nickname# eludes me no longer.][_text2x:266][_text2y:407][_text2w:151][_text2h:50][_text2Style:#svgComicTemplate1Text2Style#][_text2Content:#_textCharacter2##svgComicPunctuation#,#_textCharacter2##svgComicPunctuation#,#_char2Nickname##svgComicPunctuation#,#_text1OtherPerson#?][_text3x:430][_text3y:439][_text3w:72][_text3h:36][_text3Style:#svgComicTemplate1Text2Style#][_text3Content:#svgComicExclamation##svgComicPunctuation#][_text4x:277][_text4y:680][_text4w:180][_text4h:33][_text4Style:#svgComicTemplate1Text2Style#][#svgComicDialogCouplet#][_text4Content:#_line1#][_text5x:463][_text5y:715][_text5w:162][_text5h:44][_text5Style:#svgComicTemplate1Text3Style#][_text5Content:#_line2#][_text6x:502][_text6y:828][_text6w:240][_text6h:52][_text6Style:#svgComicTemplate1Text2Style#][_lesson:#gameConcept#,#pluralNounOrMassNoun#,#abstractNoun#][_text6Verb:took,destroyed,have defiled][_text6Content:But #_text1OtherPerson# thinks you're #adj#.,#_andOrBut.capitalize# I #_text6Verb# your #concreteNounOrPluralNoun#.,But you're no match for my #_lesson#.,But I have your #pluralNounOrMassNoun#.,Now it's time to teach you about #_lesson#.,Now yell “HRAAUGH!” and flail your arms around.,There's a spider in your hair though.,Now let's see how you like my #massNoun# magic.]"
+			"[svgComicTemplateImageUrl:./data/images/comics/comic_template_1.jpg][svgComicTemplateWidth:810][svgComicTemplateHeight:1245][_textLocation:#svgComicLocation#][_textCharacter1:Garruk][_textCharacter2:Liliana][_text1x:38][_text1y:269][_text1w:314][_text1h:76][_text1Style:#svgComicTemplate1NarrativeStyle#][_char1Verb:confronts,questions][_text1OtherPerson:#svgComicPerson#][_char2Nickname:she-#creatureTypes#,#massNoun# witch][_text1Content:#_subLocPrep# #_textLocation#‚ #_textCharacter1# #_char1Verb# #_textCharacter2# about #_text1OtherPerson#...,The #itemNoun# is #verbStrictlyTransitivePastTense#. Finally‚ it has begun.,The #creatureTypes.s# had no answers for me. But the #_char2Nickname# will talk., #emotion# burns in my #bodypartsInPairs#. The #_char2Nickname# eludes me no longer.][_text2x:266][_text2y:407][_text2w:151][_text2h:50][_text2Style:#svgComicTemplate1Text2Style#][_text2Content:#_textCharacter2##svgComicPunctuation#,#_textCharacter2##svgComicPunctuation#,#_char2Nickname##svgComicPunctuation#,#_text1OtherPerson#?][_text3x:430][_text3y:439][_text3w:72][_text3h:36][_text3Style:#svgComicTemplate1Text2Style#][_text3Content:#svgComicExclamation##svgComicPunctuation#][_text4x:277][_text4y:680][_text4w:180][_text4h:33][_text4Style:#svgComicTemplate1Text2Style#][#svgComicDialogCouplet#][_text4Content:#_line1#][_text5x:463][_text5y:715][_text5w:162][_text5h:44][_text5Style:#svgComicTemplate1Text3Style#][_text5Content:#_line2#][_text6x:502][_text6y:828][_text6w:240][_text6h:52][_text6Style:#svgComicTemplate1Text2Style#][_lesson:#gameConcept#,#pluralNounOrMassNoun#,#abstractNoun#][_text6Verb:took,destroyed,have defiled][_text6Content:But #_text1OtherPerson# thinks you're #adj#.,#_andOrBut.capitalize# I #_text6Verb# your #concreteNounOrPluralNoun#.,But you're no match for my #_lesson#.,But I have your #pluralNounOrMassNoun#.,Now it's time to teach you about #_lesson#.,Now yell “HRAAUGH!” and flail your arms around.,There's a spider in your hair though.,Now let's see how you like my #massNoun# magic.]"
 	],
 
 	"svgComicTemplate2": [
-			"[svgComicTemplateImageUrl:./src/data/images/comics/comic_template_2.jpg][svgComicTemplateWidth:800][svgComicTemplateHeight:747][#svgComicTemplate2Content#][_text1x:144][_text1y:48][_text1w:131][_text1h:62][_text1Style:#_style1#][_text1Content:#_text1#][_text2x:603][_text2y:75][_text2w:165][_text2h:72][_text2Style:#_style2#][_text2Content:#_text2#][_text3x:654][_text3y:157][_text3w:113][_text3h:64][_text3Style:#_style3#][_text3Content:#_text3#][_text4x:341][_text4y:640][_text4w:128][_text4h:54][_text4Style:#_style4#][_text4Content:#_text4#][_text5Content:][_text6Content:]"
+			"[svgComicTemplateImageUrl:./data/images/comics/comic_template_2.jpg][svgComicTemplateWidth:800][svgComicTemplateHeight:747][#svgComicTemplate2Content#][_text1x:144][_text1y:48][_text1w:131][_text1h:62][_text1Style:#_style1#][_text1Content:#_text1#][_text2x:603][_text2y:75][_text2w:165][_text2h:72][_text2Style:#_style2#][_text2Content:#_text2#][_text3x:654][_text3y:157][_text3w:113][_text3h:64][_text3Style:#_style3#][_text3Content:#_text3#][_text4x:341][_text4y:640][_text4w:128][_text4h:54][_text4Style:#_style4#][_text4Content:#_text4#][_text5Content:][_text6Content:]"
 	],
 
 	"svgComicTemplate2Content": [

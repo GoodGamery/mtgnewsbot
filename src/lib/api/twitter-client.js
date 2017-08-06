@@ -3,28 +3,38 @@
 const Twit = require('twit');
 const fs = require('fs');
 
-const TWIT_CONFIG =  {
-    consumer_key:         process.env.TWITTER_CONSUMER_KEY,
-    consumer_secret:      process.env.TWITTER_CONSUMER_SECRET,
-    access_token:         process.env.TWITTER_ACCESS_TOKEN,
-    access_token_secret:  process.env.TWITTER_ACCESS_TOKEN_SECRET
-};
-
 class TwitterClient {
-  constructor() {
-    this.twit = new Twit(TWIT_CONFIG);
+  constructor(config) {
+    const twitterConfig = {
+      consumer_key: config.TWITTER_CONSUMER_KEY,
+      consumer_secret: config.TWITTER_CONSUMER_SECRET,
+      access_token: config.TWITTER_ACCESS_TOKEN,
+      access_token_secret: config.TWITTER_ACCESS_TOKEN_SECRET
+    };
+    this.twit = new Twit(twitterConfig);
   }
 
-  postTweet(message) {
+  postTweet(message, imagePath, altText) {
+    if (imagePath) {
+      const postTheTweet = this.postImageTweet.bind(this, message, altText);
+      return this.uploadTwitterImage(imagePath)
+        .then(postTheTweet);
+    }
+    // Plain text tweet
+    return this.postTextTweet(message);
+  }
+
+  postTextTweet(message) {
     return new Promise((resolve, reject) => {
       console.log('posting tweet...');
       try {
         this.twit.post('statuses/update', { status: message }, (err, data) => {
           if (err) {
-            throw(err);
+            reject(err);
+          } else {
+            console.log('tweet posted.');
+            resolve(data);
           }
-          console.log('tweet posted.');
-          resolve(data);
         });
       } catch (e) {
         reject(e);
@@ -32,26 +42,27 @@ class TwitterClient {
     });
   }
 
-  postImageTweet(data, altText, message) {
+  postImageTweet(message, altText, data) {
     return new Promise((resolve, reject) => {
       try {
-        let mediaIdStr = data.media_id_string;
+        const mediaIdStr = data.media_id_string;
 
-        let meta_params = { media_id: mediaIdStr, alt_text: { text: altText } };
+        const meta_params = { media_id: mediaIdStr, alt_text: { text: altText } };
 
         console.log('setting media metadata');
 
         this.twit.post('media/metadata/create', meta_params, (err) => {
           if (err) {
-            throw err;
+            reject(err);
+          } else {
+            let params = { status: message, media_ids: [mediaIdStr] };
+
+            console.log('posting tweet...');
+
+            this.twit.post('statuses/update', params, (err, data) => {
+              resolve(data);
+            });
           }
-          let params = { status: message, media_ids: [mediaIdStr] };
-
-          console.log('posting tweet...');
-
-          this.twit.post('statuses/update', params, () => {
-            resolve();
-          });
         });
       } catch (e) {
         reject(e);
@@ -81,10 +92,11 @@ class TwitterClient {
 
         this.twit.post('media/upload', { media_data: base64Data }, function (err, data) {
           if (err) {
-            throw err;
+            reject(err);
+          } else {
+            console.log(' image uploaded.');
+            resolve(data);
           }
-          console.log(' image uploaded.');
-          resolve(data);
         });
       } catch(e) {
         reject(e);
