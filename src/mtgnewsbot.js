@@ -63,7 +63,8 @@ class MtgNewsbot {
         })
         .catch(err => {
           console.error(err);
-          Discord.sendError(`${err}`);
+          if (this.options.discord || this.options.tweet)
+            Discord.sendError(`${err}`);
         })
     );
   }
