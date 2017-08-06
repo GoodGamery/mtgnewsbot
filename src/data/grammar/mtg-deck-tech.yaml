@@ -17,6 +17,13 @@ svgDeckTechAccessoriesImageUrl:
   - ../scratch/decktech/test/decktech-candyfinder-3.png
   - ../scratch/decktech/test/decktech-candyfinder-4.png 
 
+svgDeckTechDeckName: >
+  [format:#format#]#deckArch#
+
+svgDeckTechTitle:
+- "[format:#format#]#format# #dynamicDayOfWeek.capitalize#"
+- "DECK TECH[_textSubtitle:with #pro#]"
+
 svgDeckTechTemplateWidth: "1024"
 svgDeckTechTemplateHeight: "560"
 svgDeckTechAccessoriesImageWidth: "424"
@@ -24,10 +31,10 @@ svgDeckTechAccessoriesImageHeight: "259"
 svgDeckTechAccessoriesImageXPos: "0"
 svgDeckTechAccessoriesImageYPos: "301"
 
-svgDeckTechTemplate: "[svgDeckTechTemplateWidth:1024][svgDeckTechTemplateHeight:560][_textTitle:DECK TECH][_textSubtitle:with #pro#][_textDeckName:#deckArch.capitalize#]\n"
-svgDeckTechTemplateDeckNameStyle: "font-size: 50px; font-family: Tahoma, Verdana, 'Sans Serif'; font-weight: bold; stroke: rgb(10,10,10); stroke-width:2;  fill: rgb(28,216,46);\n"
-svgDeckTechTemplateSubtitleStyle: "font-size: 48px; font-family: Tahoma, Verdana, 'Sans Serif'; font-weight: bolder; stroke: rgb(144,16,16); stroke-width:2; fill: white;\n"
+svgDeckTechTemplate: "[svgDeckTechTemplateWidth:1024][svgDeckTechTemplateHeight:560][_textTitle:#svgDeckTechTitle#][_textDeckName:#svgDeckTechDeckName.capitalize#]\n"
 svgDeckTechTemplateTitleStyle: "font-size: 64px; font-family: Tahoma, Verdana, Sans Serif; font-weight: bolder; stroke: rgb(144,16,16); stroke-width:2; fill: white;\n"
+svgDeckTechTemplateSubtitleStyle: "font-size: 48px; font-family: Tahoma, Verdana, 'Sans Serif'; font-weight: bolder; stroke: rgb(144,16,16); stroke-width:2; fill: white;\n"
+svgDeckTechTemplateDeckNameStyle: "font-size: 50px; font-family: Tahoma, Verdana; font-weight: bold; -webkit-text-stroke-color: rgb(10,20,20); -webkit-text-stroke-width:4px; line-height: 1.1em; -webkit-text-fill-color: rgb(28,216,46);\n"
 
 svgDeckTechImage: |
     #svgDeckTechTemplate#
@@ -36,6 +43,8 @@ svgDeckTechImage: |
       <text x="25" y="80" style="#svgDeckTechTemplateTitleStyle#">#_textTitle#
         <tspan style="#svgDeckTechTemplateSubtitleStyle#"> #_textSubtitle#</tspan>
       </text>
-      <text x="30" y="132" style="#svgDeckTechTemplateDeckNameStyle#">#_textDeckName#</text>
+      <foreignObject x="30" y="92" width="994" height="170">
+        <div x="0" y="0" style="width: 95%; height: 170; #svgDeckTechTemplateDeckNameStyle#">#_textDeckName# (#format#)</div>
+      </foreignObject>
       <image xlink:href="#svgDeckTechAccessoriesImageUrl#" x="#svgDeckTechAccessoriesImageXPos#" y="#svgDeckTechAccessoriesImageYPos#" width="#svgDeckTechAccessoriesImageWidth#" height="#svgDeckTechAccessoriesImageHeight#"/>
     </svg>
