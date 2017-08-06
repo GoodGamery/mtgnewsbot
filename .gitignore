@@ -38,9 +38,6 @@ node_modules/
 # environment file
 .env
 
-# logging
-*.log
-
 # Visual Studio Code configuration
 .vscode
 
