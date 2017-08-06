@@ -53,7 +53,7 @@ gulp.task('jsonlint', function() {
 
   return gulp.src(SRC_FILES.JSON)
     .pipe(debug({title: 'Linting'}))
-    .pipe(jsonlint())     
+    .pipe(jsonlint())
     .pipe(jsonlint.reporter())
     .pipe(jsonlint.reporter(completionTracker()))
     .on('end', function() {
@@ -72,13 +72,19 @@ gulp.task('yamllint', function() {
     success = true;
 
     return function (file) {
-      success = success && file.jsonlint.success;
+      success = success && file.yamllint.success;
     };
   };
 
+  const yaml = yamllint({});
+  yaml.on('error', function(err) {
+  	gutil.log(gutil.colors.red('YAML validation error: ' + err.message));
+  	yaml.end();
+  });
+
   return gulp.src(SRC_FILES.YAML)
     .pipe(debug({title: 'Linting'}))
-    .pipe(yamllint())  	
+    .pipe(yaml)   
     .pipe(jsonlint.reporter())
     .pipe(jsonlint.reporter(completionTracker()))
     .on('end', function() {
