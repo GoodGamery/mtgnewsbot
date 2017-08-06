@@ -40,7 +40,20 @@ class MtgNewsbot {
   }
 
   run() {
-    const headlines = NewsEngine.generateHeadlines(this.options.origin, this.options.count);
+    // Keep running until we have headlines of the correct text length for twitter
+    let headlines = [];
+    let maxTries = 10;  // Don't spin forever, ever
+    while (headlines.length < this.options.count && (maxTries-- > 0)) {
+      const moreHeadlines = NewsEngine.generateHeadlines(this.options.origin, this.options.count - headlines.length);
+      headlines = headlines.concat(moreHeadlines.filter(s => s.text.length <= config.tweetLength));
+    }
+
+    if (headlines.length === 0) {
+      console.error(`\nERR: No headlines were generated.`);
+      if(this.options.tweet || this.options.discord) {
+        Discord.sendError(`No headlines were generated.`);
+      }
+    }
 
     headlines.forEach(headline =>
       this.processHeadline(headline)
