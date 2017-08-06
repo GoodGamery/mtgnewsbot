@@ -1,9 +1,9 @@
 ---
 mtgDeckTechGraphic: >
-  [_format:#format#][_textDeckName:#deckArch#]#svgDeckTechStatusText# {svg svgString="#svgDeckTechImage#"} 
+  [_format:#format#][#svgDeckDeckName#]#svgDeckTechStatusText# {svg svgString="#svgDeckTechImage#"} 
 
 svgDeckTechStatusText:
-- "DECK TECH: #_textDeckName#"
+- "DECK TECH: #_deckName#"
 # - "DECK TECH: #_format# #dynamicDayOfWeek#"
 
 svgDeckTechBackgroundImageUrl: 
@@ -20,8 +20,9 @@ svgDeckTechAccessoriesImageUrl:
 
 svgDeckTechTitle: "DECK TECH[_textSubtitle:with #pro#]"
 svgDeckDeckName:
-  - "[_featuredCard:#realHandCard#][_deckName:#_textDeckName#]"
-  - "[_featuredCard:#realHandCard#][_deckName:#_textDeckName# with #_featuredCard#]"
+  - "[_featuredCard:#realHandCard#][_deckName:#deckArch#]"
+  - "[_featuredCard:#realHandCard#][_deckName:#deckArch#]"
+  - "[_featuredCard:#realHandCard#][_deckName:#deckArch# with #_featuredCard#]"
 
 svgDeckTechTemplateWidth: "1024"
 svgDeckTechTemplateHeight: "560"
@@ -64,7 +65,6 @@ svgDeckTechTextColorFill:
 
 svgDeckTechImage: |
     #svgDeckTechTemplate#
-    #svgDeckDeckName#
     [_titleOutlineColor:#svgDeckTechTextColorOutline#]
     [_deckNameTextColor:#svgDeckTechTextColorFill#]
     [_deckNameOutlineColor:#styleColorDark#]
