@@ -1,28 +1,23 @@
 --- 
-# mtgDeckTech: >
-#   #decktech# {svg svgString="#svgDeckTechImage#"}
-
 mtgDeckTech: >
-  #decktech# {svg svgString="#svgDeckTechImage#"}
+  [_format:#format#]#decktech# {svg svgString="#svgDeckTechImage#"} 
 
 svgDeckTechBackgroundImageUrl: 
-  - ../scratch/decktech/test/cardart/agent-of-erebos.jpg
-  - ../scratch/decktech/test/cardart/agent-of-horizons.jpg
-  - ../scratch/decktech/test/cardart/alchemists-vial.jpg
-  - ../scratch/decktech/test/cardart/anger-of-the-gods.jpg
-  - ../scratch/decktech/test/cardart/ramunap-ruins.jpg
+  - ../src/data/images/decktech/backgrounds/agent-of-erebos.jpg
+  - ../src/data/images/decktech/backgrounds/agent-of-horizons.jpg
+  - ../src/data/images/decktech/backgrounds/alchemists-vial.jpg
+  - ../src/data/images/decktech/backgrounds/anger-of-the-gods.jpg
+  - ../src/data/images/decktech/backgrounds/ramunap-ruins.jpg
 svgDeckTechAccessoriesImageUrl: 
-  - ../scratch/decktech/test/decktech-candyfinder-1.png
-  - ../scratch/decktech/test/decktech-candyfinder-2.png
-  - ../scratch/decktech/test/decktech-candyfinder-3.png
-  - ../scratch/decktech/test/decktech-candyfinder-4.png 
+  - ../src/data/images/decktech/overlays/decktech-candyfinder-1.png
+  - ../src/data/images/decktech/overlays/decktech-candyfinder-2.png
+  - ../src/data/images/decktech/overlays/decktech-candyfinder-3.png
+  - ../src/data/images/decktech/overlays/decktech-candyfinder-4.png 
 
-svgDeckTechDeckName: >
-  [format:#format#]#deckArch#
-
-svgDeckTechTitle:
-- "[format:#format#]#format# #dynamicDayOfWeek.capitalize#"
-- "DECK TECH[_textSubtitle:with #pro#]"
+svgDeckTechTitle: "DECK TECH[_textSubtitle:with #pro#]"
+svgDeckDeckName:
+  - "[_featuredCard:#realHandCard#][_deckName:#deckArch#]"
+  - "[_featuredCard:#realHandCard#][_deckName:#deckArch# with #_featuredCard#]"
 
 svgDeckTechTemplateWidth: "1024"
 svgDeckTechTemplateHeight: "560"
@@ -31,20 +26,46 @@ svgDeckTechAccessoriesImageHeight: "259"
 svgDeckTechAccessoriesImageXPos: "0"
 svgDeckTechAccessoriesImageYPos: "301"
 
-svgDeckTechTemplate: "[svgDeckTechTemplateWidth:1024][svgDeckTechTemplateHeight:560][_textTitle:#svgDeckTechTitle#][_textDeckName:#svgDeckTechDeckName.capitalize#]\n"
-svgDeckTechTemplateTitleStyle: "font-size: 64px; font-family: Tahoma, Verdana, Sans Serif; font-weight: bolder; stroke: rgb(144,16,16); stroke-width:2; fill: white;\n"
-svgDeckTechTemplateSubtitleStyle: "font-size: 48px; font-family: Tahoma, Verdana, 'Sans Serif'; font-weight: bolder; stroke: rgb(144,16,16); stroke-width:2; fill: white;\n"
-svgDeckTechTemplateDeckNameStyle: "font-size: 50px; font-family: Tahoma, Verdana; font-weight: bold; -webkit-text-stroke-color: rgb(10,20,20); -webkit-text-stroke-width:4px; line-height: 1.1em; -webkit-text-fill-color: rgb(28,216,46);\n"
+svgDeckTechTemplate: "[svgDeckTechTemplateWidth:1024][svgDeckTechTemplateHeight:560][_textTitle:#svgDeckTechTitle#][_textDeckName:#deckArch#]\n"
+svgDeckTechTemplateTitleStyle: "font-size: 64px; font-family:  Verdana, Sans Serif; font-weight: bolder; letter-spacing: -0.01em; stroke: rgb(144,16,16); stroke-width:2; fill: white;\n"
+svgDeckTechTemplateSubtitleStyle: "font-size: 48px; font-family:  Verdana, 'Sans Serif'; font-weight: bolder; letter-spacing:  -0.01em; stroke: rgb(144,16,16); stroke-width:2; fill: white;\n"
+svgDeckTechTemplateDeckNameStyle: "font-size: 50px; font-family:  Verdana; font-weight: bold; -webkit-text-stroke-color: rgb(10,20,20); -webkit-text-stroke-width:4px; line-height: 1.1em; -webkit-text-fill-color: rgb(28,216,46);\n"
+svgDeckTechTemplateDeckFormatStyle: "font-size: 34px; font-family:  Verdana; font-weight: bold; font-style:italic; -webkit-text-stroke-color: rgb(10,20,20); -webkit-text-stroke-width:3px; line-height: 1.1em; -webkit-text-fill-color: rgb(28,216,46);\n"
+
+svgDeckTechCardFinderUrl: https://goodgamery.com/api/mtg/image?card=#_cardname#
 
 svgDeckTechImage: |
     #svgDeckTechTemplate#
+    #svgDeckDeckName#
     <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="#svgDeckTechTemplateWidth#" height="#svgDeckTechTemplateHeight#">
+      <defs>
+        <mask id="cardMask" maskUnits="userSpaceOnUse" mask-type="alpha">
+          <image x="0" y="0" width="223" height="310" xlink:href="./data/images/cardmask.png" />
+        </mask>
+        <svg id="Card1">
+          <image xlink:href="[_cardname:#realHandCard#]#svgDeckTechCardFinderUrl#" x="0" y="0" mask="url(\#cardMask)" width="223" height="310" />
+        </svg>
+        <svg id="Card2">
+          <image xlink:href="[_cardname:#realHandCard#]#svgDeckTechCardFinderUrl#" x="0" y="0" mask="url(\#cardMask)" width="223" height="310" />
+        </svg>
+        <svg id="Card3">
+          <image xlink:href="[_cardname:#realHandCard#]#svgDeckTechCardFinderUrl#" x="0" y="0" mask="url(\#cardMask)" width="223" height="310" />
+        </svg>
+        <svg id="Card4">
+          <image xlink:href="[_cardname:#_featuredCard#]#svgDeckTechCardFinderUrl#" x="0" y="0" mask="url(\#cardMask)" width="223" height="310" />
+        </svg>
+      </defs>
       <image width="100%" height="100%" xlink:href="#svgDeckTechBackgroundImageUrl#"/>
       <text x="25" y="80" style="#svgDeckTechTemplateTitleStyle#">#_textTitle#
-        <tspan style="#svgDeckTechTemplateSubtitleStyle#"> #_textSubtitle#</tspan>
+        <tspan style="#svgDeckTechTemplateSubtitleStyle#">#_textSubtitle#</tspan>
       </text>
-      <foreignObject x="30" y="92" width="994" height="170">
-        <div x="0" y="0" style="width: 95%; height: 170; #svgDeckTechTemplateDeckNameStyle#">#_textDeckName# (#format#)</div>
+      <foreignObject x="30" y="92" width="994" height="180">
+        <div x="0" y="0" style="width: 95%; #svgDeckTechTemplateDeckNameStyle#">#_deckName#</div>
+        <div x="0" y="0" style="width: 400px; #svgDeckTechTemplateDeckFormatStyle#">#_format#</div>
       </foreignObject>
       <image xlink:href="#svgDeckTechAccessoriesImageUrl#" x="#svgDeckTechAccessoriesImageXPos#" y="#svgDeckTechAccessoriesImageYPos#" width="#svgDeckTechAccessoriesImageWidth#" height="#svgDeckTechAccessoriesImageHeight#"/>
+      <use xlink:href="\#Card1" x="467" y="222" />
+      <use xlink:href="\#Card2" x="567" y="222" />
+      <use xlink:href="\#Card3" x="667" y="222" />
+      <use xlink:href="\#Card4" x="767" y="222" />      
     </svg>
