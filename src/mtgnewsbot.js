@@ -50,7 +50,7 @@ class MtgNewsbot {
         })
         .catch(err => {
           console.error(err);
-          Discord.sendError(`Error:\n${err}`);
+          Discord.sendError(`${err}`);
         })
     );
   }
