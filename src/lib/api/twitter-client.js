@@ -30,10 +30,11 @@ class TwitterClient {
       try {
         this.twit.post('statuses/update', { status: message }, (err, data) => {
           if (err) {
-            throw(err);
+            reject(err);
+          } else {
+            console.log('tweet posted.');
+            resolve(data);
           }
-          console.log('tweet posted.');
-          resolve(data);
         });
       } catch (e) {
         reject(e);
@@ -52,15 +53,16 @@ class TwitterClient {
 
         this.twit.post('media/metadata/create', meta_params, (err) => {
           if (err) {
-            throw err;
+            reject(err);
+          } else {
+            let params = { status: message, media_ids: [mediaIdStr] };
+
+            console.log('posting tweet...');
+
+            this.twit.post('statuses/update', params, (err, data) => {
+              resolve(data);
+            });
           }
-          let params = { status: message, media_ids: [mediaIdStr] };
-
-          console.log('posting tweet...');
-
-          this.twit.post('statuses/update', params, (err, data) => {
-            resolve(data);
-          });
         });
       } catch (e) {
         reject(e);
@@ -90,10 +92,11 @@ class TwitterClient {
 
         this.twit.post('media/upload', { media_data: base64Data }, function (err, data) {
           if (err) {
-            throw err;
+            reject(err);
+          } else {
+            console.log(' image uploaded.');
+            resolve(data);
           }
-          console.log(' image uploaded.');
-          resolve(data);
         });
       } catch(e) {
         reject(e);

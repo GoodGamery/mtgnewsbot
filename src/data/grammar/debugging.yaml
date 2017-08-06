@@ -1,0 +1,12 @@
+---
+# This one should always fail when posting to twitter.
+dbg142:
+  - "#dbgLong71##dbgLong71#"
+# This one should fail half of the time.
+dbgMaybeLong:
+  - "#dbgLong70##dbgLong#"
+dbgLong:
+  - "#dbgLong70#"
+  - "#dbgLong71#"
+dbgLong71: =========-=========-=========-=========-=========-=========-=========-O
+dbgLong70: =========-=========-=========-=========-=========-=========-=========-
