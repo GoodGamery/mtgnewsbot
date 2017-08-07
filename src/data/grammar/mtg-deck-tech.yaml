@@ -54,12 +54,7 @@ svgDeckTechGenerateName:
   - "[_featuredCard:#realHandCard#][_deckName:#deckArch#]"
   - "[_featuredCard:#realHandCard#][_deckName:#deckArch# with #_featuredCard#]"
 
-# svgDeckTechDeckName:
-#   - "#deckArch#"
-#   - "#deckArch#"
-#   - "#deckArch# with #_featuredCard#"
-
-# svgDeckTechTemplateWidth: "1024"
+svgDeckTechTemplateWidth: "1024"
 svgDeckTechTemplateHeight: "560"
 svgDeckTechAccessoriesImageWidth: "424"
 svgDeckTechAccessoriesImageHeight: "259"
@@ -67,8 +62,6 @@ svgDeckTechAccessoriesImageXPos: "0"
 svgDeckTechAccessoriesImageYPos: "301"
 
 svgDeckTechTemplate: "[svgDeckTechTemplateWidth:1024][svgDeckTechTemplateHeight:560][_textTitle:#svgDeckTechTitle#]"
-# svgDeckTechTemplateTitleStyle: "font-size: 64px; font-family:  Verdana, Sans Serif; font-weight: bolder; letter-spacing: -0.01em; stroke-width:2; fill: white;"
-# svgDeckTechTemplateSubtitleStyle: "font-size: 48px; font-family:  Verdana, 'Sans Serif'; font-weight: bolder; letter-spacing:  -0.01em; stroke: rgb(144,16,16); stroke-width:2; fill: white;"
 
 svgDeckTechTemplateTitleStyle: "font-size: 64px; font-family:  Verdana, Sans Serif; font-weight: bolder; line-height: 1em; letter-spacing: -0.01em; -webkit-text-fill-color: white; -webkit-text-stroke-width:4px;"
 svgDeckTechTemplateSubtitleStyle: "font-size: 48px; font-family:  Verdana, 'Sans Serif'; font-weight: bolder; letter-spacing: -0.01em; -webkit-text-fill-color: white; -webkit-text-stroke-width:3px;"
