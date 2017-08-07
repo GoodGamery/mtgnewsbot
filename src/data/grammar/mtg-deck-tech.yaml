@@ -1,7 +1,7 @@
 ---
 mtgDeckTechGraphic: >
   [_format:#format#][_pro:#pro#][#svgDeckTechGenerateName#]#_statusText# {svg svgString="#svgDeckTechImage#"} 
-  
+
 _statusText:
  - "DECK TECH: #_deckName#"
  - "#_format# Brews with #_pro#"
@@ -67,8 +67,12 @@ svgDeckTechAccessoriesImageXPos: "0"
 svgDeckTechAccessoriesImageYPos: "301"
 
 svgDeckTechTemplate: "[svgDeckTechTemplateWidth:1024][svgDeckTechTemplateHeight:560][_textTitle:#svgDeckTechTitle#]"
-svgDeckTechTemplateTitleStyle: "font-size: 64px; font-family:  Verdana, Sans Serif; font-weight: bolder; letter-spacing: -0.01em; stroke-width:2; fill: white;"
-svgDeckTechTemplateSubtitleStyle: "font-size: 48px; font-family:  Verdana, 'Sans Serif'; font-weight: bolder; letter-spacing:  -0.01em; stroke: rgb(144,16,16); stroke-width:2; fill: white;"
+# svgDeckTechTemplateTitleStyle: "font-size: 64px; font-family:  Verdana, Sans Serif; font-weight: bolder; letter-spacing: -0.01em; stroke-width:2; fill: white;"
+# svgDeckTechTemplateSubtitleStyle: "font-size: 48px; font-family:  Verdana, 'Sans Serif'; font-weight: bolder; letter-spacing:  -0.01em; stroke: rgb(144,16,16); stroke-width:2; fill: white;"
+
+svgDeckTechTemplateTitleStyle: "font-size: 64px; font-family:  Verdana, Sans Serif; font-weight: bolder; line-height: 1em; letter-spacing: -0.01em; -webkit-text-fill-color: white; -webkit-text-stroke-width:4px;"
+svgDeckTechTemplateSubtitleStyle: "font-size: 48px; font-family:  Verdana, 'Sans Serif'; font-weight: bolder; letter-spacing: -0.01em; -webkit-text-fill-color: white; -webkit-text-stroke-width:3px;"
+
 svgDeckTechTemplateDeckNameStyle: "font-size: 50px; font-family:  Verdana; font-weight: bold; line-height: 1.1em; -webkit-text-stroke-width:4px; -webkit-text-stroke-color: rgb(10,20,20);"
 svgDeckTechTemplateDeckFormatStyle: "font-size: 34px; font-family:  Verdana; font-weight: bold; font-style:italic; -webkit-text-stroke-width:3px; -webkit-text-stroke-color: rgb(10,20,20); line-height: 1.1em;"
 
@@ -100,9 +104,8 @@ svgDeckTechTextColorFill:
 
 svgDeckTechImage: |
     #svgDeckTechTemplate#
-    [_titleOutlineColor:#svgDeckTechTextColorOutline#]
-    [_deckNameTextColor:#svgDeckTechTextColorFill#]
-    [_deckNameOutlineColor:#styleColorDark#]
+    [_deckTechTextColor:#svgDeckTechTextColorFill#]
+    [_deckTechTitleOutlineColor:#styleColorDark#]
     <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="#svgDeckTechTemplateWidth#" height="#svgDeckTechTemplateHeight#">
       <defs>
         <mask id="cardMask" maskUnits="userSpaceOnUse" mask-type="alpha">
@@ -122,16 +125,20 @@ svgDeckTechImage: |
         </svg>
       </defs>
       <image width="100%" height="100%" xlink:href="#svgDeckTechBackgroundImageUrl#"/>
-      <text x="25" y="80" style="#svgDeckTechTemplateTitleStyle# stroke: #_titleOutlineColor#;">#_textTitle#
-        <tspan style="#svgDeckTechTemplateSubtitleStyle# stroke: #_titleOutlineColor#;"> #_textSubtitle#</tspan>
-      </text>
-      <foreignObject x="30" y="92" width="994" height="180">
-        <div x="0" y="0" style="width: 95%; #svgDeckTechTemplateDeckNameStyle# -webkit-text-fill-color: #_deckNameTextColor#;">#_deckName#</div>
-        <div x="0" y="0" style="width: 400px; #svgDeckTechTemplateDeckFormatStyle# -webkit-text-fill-color: #_deckNameTextColor#;">#_postScript#</div>
-      </foreignObject>
       <image xlink:href="#svgDeckTechAccessoriesImageUrl#" x="#svgDeckTechAccessoriesImageXPos#" y="#svgDeckTechAccessoriesImageYPos#" width="#svgDeckTechAccessoriesImageWidth#" height="#svgDeckTechAccessoriesImageHeight#"/>
       <use xlink:href="\#Card1" x="467" y="222" />
       <use xlink:href="\#Card2" x="567" y="222" />
       <use xlink:href="\#Card3" x="667" y="222" />
       <use xlink:href="\#Card4" x="767" y="222" />      
+
+      <foreignObject x="25" y="10" width="994" height="480">
+        <div x="0" y="0"style="width: 95%; #svgDeckTechTemplateTitleStyle# -webkit-text-stroke-color: #_deckTechTitleOutlineColor#;">
+          #_textTitle# <span style="#svgDeckTechTemplateSubtitleStyle# -webkit-text-stroke-color: #_deckTechTitleOutlineColor#;">#_textSubtitle#</span>
+        </div>
+        <div style="padding-top:16px">
+          <div x="0" y="0" style="width: 95%; #svgDeckTechTemplateDeckNameStyle# -webkit-text-fill-color: #_deckTechTextColor#;">#_deckName#</div>
+          <div x="0" y="0" style="width: 800px; #svgDeckTechTemplateDeckFormatStyle# -webkit-text-fill-color: #_deckTechTextColor#;">#_postScript#</div>
+        </div>
+      </foreignObject>
+
     </svg>
