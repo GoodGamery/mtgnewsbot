@@ -1,7 +1,5 @@
 {
-  "imgCard": "{htmlImg htmlImgString=\"<img src=`#cardFinderUrl##_cardname#`>\"}",
-  "cardFinderUrl": "https://goodgamery.com/api/mtg/image?card=",
-
+  "imgCard": "{imgCard cardName=\"#_cardname#\"}",
   "card": [
       "#cardAlone#",
       "#cardAlone#",
