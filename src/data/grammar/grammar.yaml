@@ -19,7 +19,7 @@
         "#inGraphics#",
         "#mtgComic#",
         "#mtgDeckTechGraphic#",
-        "cardCallout"
+        "#cardCallout#"
     ],
     "disabledHeadline": [],
     "testSvg": "#headlineKeepOrMulligan#",
