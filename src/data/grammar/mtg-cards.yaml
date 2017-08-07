@@ -1,5 +1,7 @@
 {
-  "imgCard": "{imgCard cardName=\"#_cardname#\"}",
+  "imgCard": "{htmlImg htmlImgString=\"<img src=`#cardFinderUrl##_cardname#`>\"}",
+  "cardFinderUrl": "https://goodgamery.com/api/mtg/image?card=",
+
   "card": [
       "#cardAlone#",
       "#cardAlone#",
@@ -445,7 +447,7 @@
     "Vizzerdrix",
     "Werebear",
     "Whipgrass Entangler",
-    "Yet Another Æther Vortex",
+    "Yet Another Aether Vortex",
     "Zzzyxas's Abyss"
   ],
   "realNormalCard":
