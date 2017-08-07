@@ -1,30 +1,65 @@
 ---
 mtgDeckTechGraphic: >
-  [_format:#format#][#svgDeckDeckName#]#svgDeckTechStatusText# {svg svgString="#svgDeckTechImage#"} 
+  [_format:#format#][_pro:#pro#][#svgDeckTechGenerateName#]#_statusText# {svg svgString="#svgDeckTechImage#"} 
 
-svgDeckTechStatusText:
-- "DECK TECH: #_deckName#"
-# - "DECK TECH: #_format# #dynamicDayOfWeek#"
+_statusText:
+ - "DECK TECH: #_deckName#"
+ - "#_format# Brews with #_pro#"
 
 svgDeckTechBackgroundImageUrl: 
   - ../src/data/images/decktech/backgrounds/agent-of-erebos.jpg
   - ../src/data/images/decktech/backgrounds/agent-of-horizons.jpg
   - ../src/data/images/decktech/backgrounds/alchemists-vial.jpg
   - ../src/data/images/decktech/backgrounds/anger-of-the-gods.jpg
+  - ../src/data/images/decktech/backgrounds/appetite-for-brains.jpg
+  - ../src/data/images/decktech/backgrounds/cathartic-reunion.jpg
+  - ../src/data/images/decktech/backgrounds/cranial-archive.jpg
+  - ../src/data/images/decktech/backgrounds/deathmark.jpg
+  - ../src/data/images/decktech/backgrounds/doomgape.jpg
+  - ../src/data/images/decktech/backgrounds/eldritch-evolution.jpg
+  - ../src/data/images/decktech/backgrounds/emrakuls-evangel.jpg
+  - ../src/data/images/decktech/backgrounds/epic-confrontation.jpg
+  - ../src/data/images/decktech/backgrounds/geistcatchers-rig.jpg
+  - ../src/data/images/decktech/backgrounds/geralfs-mindcrusher.jpg
+  - ../src/data/images/decktech/backgrounds/goblin-diplomats.jpg
+  - ../src/data/images/decktech/backgrounds/harmless-offering.jpg
+  - ../src/data/images/decktech/backgrounds/jeering-homunculus.jpg
+  - ../src/data/images/decktech/backgrounds/loathsome-catoblepas.jpg
+  - ../src/data/images/decktech/backgrounds/mad-prophet.jpg
+  - ../src/data/images/decktech/backgrounds/master-chef-tahm-kench.jpg
+  - ../src/data/images/decktech/backgrounds/odric-lunarch-marshal.jpg
+  - ../src/data/images/decktech/backgrounds/olivia-voldaren.jpg
+  - ../src/data/images/decktech/backgrounds/pensive-minotaur.jpg
   - ../src/data/images/decktech/backgrounds/ramunap-ruins.jpg
+  - ../src/data/images/decktech/backgrounds/ravenous-leucrocota.jpg
+  - ../src/data/images/decktech/backgrounds/sanitarium-skeleton.jpg
+  - ../src/data/images/decktech/backgrounds/shambleshark.jpg
+  - ../src/data/images/decktech/backgrounds/slippery-bogle.jpg
+  - ../src/data/images/decktech/backgrounds/soul-swallower.jpg
+  - ../src/data/images/decktech/backgrounds/totally-lost.jpg
+  - ../src/data/images/decktech/backgrounds/trecherous-urge.jpg
+  - ../src/data/images/decktech/backgrounds/ultimate-price.jpg
 svgDeckTechAccessoriesImageUrl: 
   - ../src/data/images/decktech/overlays/decktech-candyfinder-1.png
   - ../src/data/images/decktech/overlays/decktech-candyfinder-2.png
   - ../src/data/images/decktech/overlays/decktech-candyfinder-3.png
   - ../src/data/images/decktech/overlays/decktech-candyfinder-4.png 
 
-svgDeckTechTitle: "DECK TECH[_textSubtitle:with #pro#]"
-svgDeckDeckName:
+svgDeckTechTitle:
+  - "DECK TECH[_textSubtitle:with #_pro#][_postScript:#_format#]"
+  - "#_format# Brews[_textSubtitle:][_pro:#pro#][_postScript:#_pro#]"
+
+svgDeckTechGenerateName:
   - "[_featuredCard:#realHandCard#][_deckName:#deckArch#]"
   - "[_featuredCard:#realHandCard#][_deckName:#deckArch#]"
   - "[_featuredCard:#realHandCard#][_deckName:#deckArch# with #_featuredCard#]"
 
-svgDeckTechTemplateWidth: "1024"
+# svgDeckTechDeckName:
+#   - "#deckArch#"
+#   - "#deckArch#"
+#   - "#deckArch# with #_featuredCard#"
+
+# svgDeckTechTemplateWidth: "1024"
 svgDeckTechTemplateHeight: "560"
 svgDeckTechAccessoriesImageWidth: "424"
 svgDeckTechAccessoriesImageHeight: "259"
@@ -32,8 +67,12 @@ svgDeckTechAccessoriesImageXPos: "0"
 svgDeckTechAccessoriesImageYPos: "301"
 
 svgDeckTechTemplate: "[svgDeckTechTemplateWidth:1024][svgDeckTechTemplateHeight:560][_textTitle:#svgDeckTechTitle#]"
-svgDeckTechTemplateTitleStyle: "font-size: 64px; font-family:  Verdana, Sans Serif; font-weight: bolder; letter-spacing: -0.01em; stroke-width:2; fill: white;"
-svgDeckTechTemplateSubtitleStyle: "font-size: 48px; font-family:  Verdana, 'Sans Serif'; font-weight: bolder; letter-spacing:  -0.01em; stroke: rgb(144,16,16); stroke-width:2; fill: white;"
+# svgDeckTechTemplateTitleStyle: "font-size: 64px; font-family:  Verdana, Sans Serif; font-weight: bolder; letter-spacing: -0.01em; stroke-width:2; fill: white;"
+# svgDeckTechTemplateSubtitleStyle: "font-size: 48px; font-family:  Verdana, 'Sans Serif'; font-weight: bolder; letter-spacing:  -0.01em; stroke: rgb(144,16,16); stroke-width:2; fill: white;"
+
+svgDeckTechTemplateTitleStyle: "font-size: 64px; font-family:  Verdana, Sans Serif; font-weight: bolder; line-height: 1em; letter-spacing: -0.01em; -webkit-text-fill-color: white; -webkit-text-stroke-width:4px;"
+svgDeckTechTemplateSubtitleStyle: "font-size: 48px; font-family:  Verdana, 'Sans Serif'; font-weight: bolder; letter-spacing: -0.01em; -webkit-text-fill-color: white; -webkit-text-stroke-width:3px;"
+
 svgDeckTechTemplateDeckNameStyle: "font-size: 50px; font-family:  Verdana; font-weight: bold; line-height: 1.1em; -webkit-text-stroke-width:4px; -webkit-text-stroke-color: rgb(10,20,20);"
 svgDeckTechTemplateDeckFormatStyle: "font-size: 34px; font-family:  Verdana; font-weight: bold; font-style:italic; -webkit-text-stroke-width:3px; -webkit-text-stroke-color: rgb(10,20,20); line-height: 1.1em;"
 
@@ -65,9 +104,8 @@ svgDeckTechTextColorFill:
 
 svgDeckTechImage: |
     #svgDeckTechTemplate#
-    [_titleOutlineColor:#svgDeckTechTextColorOutline#]
-    [_deckNameTextColor:#svgDeckTechTextColorFill#]
-    [_deckNameOutlineColor:#styleColorDark#]
+    [_deckTechTextColor:#svgDeckTechTextColorFill#]
+    [_deckTechTitleOutlineColor:#styleColorDark#]
     <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="#svgDeckTechTemplateWidth#" height="#svgDeckTechTemplateHeight#">
       <defs>
         <mask id="cardMask" maskUnits="userSpaceOnUse" mask-type="alpha">
@@ -87,16 +125,20 @@ svgDeckTechImage: |
         </svg>
       </defs>
       <image width="100%" height="100%" xlink:href="#svgDeckTechBackgroundImageUrl#"/>
-      <text x="25" y="80" style="#svgDeckTechTemplateTitleStyle# stroke: #_titleOutlineColor#;">#_textTitle#
-        <tspan style="#svgDeckTechTemplateSubtitleStyle# stroke: #_titleOutlineColor#;">#_textSubtitle#</tspan>
-      </text>
-      <foreignObject x="30" y="92" width="994" height="180">
-        <div x="0" y="0" style="width: 95%; #svgDeckTechTemplateDeckNameStyle# -webkit-text-fill-color: #_deckNameTextColor#;">#_deckName#</div>
-        <div x="0" y="0" style="width: 400px; #svgDeckTechTemplateDeckFormatStyle# -webkit-text-fill-color: #_deckNameTextColor#;">#_format#</div>
-      </foreignObject>
       <image xlink:href="#svgDeckTechAccessoriesImageUrl#" x="#svgDeckTechAccessoriesImageXPos#" y="#svgDeckTechAccessoriesImageYPos#" width="#svgDeckTechAccessoriesImageWidth#" height="#svgDeckTechAccessoriesImageHeight#"/>
       <use xlink:href="\#Card1" x="467" y="222" />
       <use xlink:href="\#Card2" x="567" y="222" />
       <use xlink:href="\#Card3" x="667" y="222" />
       <use xlink:href="\#Card4" x="767" y="222" />      
+
+      <foreignObject x="25" y="10" width="994" height="480">
+        <div x="0" y="0"style="width: 95%; #svgDeckTechTemplateTitleStyle# -webkit-text-stroke-color: #_deckTechTitleOutlineColor#;">
+          #_textTitle# <span style="#svgDeckTechTemplateSubtitleStyle# -webkit-text-stroke-color: #_deckTechTitleOutlineColor#;">#_textSubtitle#</span>
+        </div>
+        <div style="padding-top:16px">
+          <div x="0" y="0" style="width: 95%; #svgDeckTechTemplateDeckNameStyle# -webkit-text-fill-color: #_deckTechTextColor#;">#_deckName#</div>
+          <div x="0" y="0" style="width: 800px; #svgDeckTechTemplateDeckFormatStyle# -webkit-text-fill-color: #_deckTechTextColor#;">#_postScript#</div>
+        </div>
+      </foreignObject>
+
     </svg>
