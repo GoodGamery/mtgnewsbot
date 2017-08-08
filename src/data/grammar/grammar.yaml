@@ -69,13 +69,13 @@
         "Pro Tour #teaserCardSet# will be in #city#",
         "Team Series clinched by #team# at Pro Tour #recentCardSet# in #city#",
         "#pro#, after winning #event# with #deckVariation#: \"It's #deckDescription#.\"",
-	"#pro# has been disqualified from Pro Tour: #city# for #disqualifyingAction#."
+	"#pro# has been disqualified from #event# for #disqualifyingAction#."
     ],
      "disqualifyingAction": [
        	"reading every card's flavor text out loud",
 	"smirking",
 	"refusing to wear a shirt",
-	"slowly encroaching their cards into their opponent's play area",
+	"slowly encroaching their #gameAccessory# into their opponent's play area",
         "using baseball hand signals to communicate with a teammate",
 	"getting a bit too close to the truth",
 	"using 'dive bombing' sounds while casting removal on their opponent's creatures",
