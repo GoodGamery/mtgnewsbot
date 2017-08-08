@@ -1,6 +1,6 @@
 ---
 headlineKeepOrMulligan: >
-  [_format:#format#][_headerText:#svgMulliganHeaderText#][#svgMulliganBodyText#]#svgMulliganStatusText# {svg svgString="#svgMulligan#"}
+  [_format:#format#][_headerText:#svgMulliganHeaderText#][#svgMulliganBodyText#]#svgMulliganStatusText# {svg svgString=`#svgMulligan#`}
 svgMulliganStatusText:
 - "Keep or Mulligan? With #pro#"
 - "Keep or Mulligan? #_format# Edition"
