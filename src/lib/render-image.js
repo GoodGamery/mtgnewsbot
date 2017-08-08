@@ -60,7 +60,7 @@ function renderImageFromHtml(html, outputPath) {
 
 function cropAndWriteFile(path, image) {
   return new Promise((resolve, reject) => {
-    image.autocrop().write(path, (err) => {
+    image.autocrop().contain(500,250).write(path, (err) => {
       if (err)
         reject(err);
       else
