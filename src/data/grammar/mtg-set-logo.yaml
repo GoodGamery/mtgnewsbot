@@ -1,51 +1,94 @@
-{
-  "setLogoColorLight": ["NavajoWhite", "LimeGreen", "Cornsilk", "Gainsboro", "Ivory", "OldLace", "WhiteSmoke", "Azure","LemonChiffon", "Snow","Khaki", "PaleGreen",
-                        "MistyRose", "MediumAquamarine", "SkyBlue"],  
-  "setLogoColorMedium": ["DarkGoldenrod", "OliveDrab", "SteelBlue", "SlateGray","DarkKhaki", "OrangeRed", "Gold", "Chocolate", "LightSeaGreen", "DarkOrange", 
-                         "RebeccaPurple", "MediumSeaGreen", "OrangeRed",  "DeepSkyBlue", "DodgerBlue", "CornflowerBlue", "BlueViolet", "FireBrick", "BurlyWood"],
-  "setLogoColorDark": ["DarkOliveGreen", "SaddleBrown", "DarkGreen", "MidnightBlue", "DarkSlateGray", "DimGrey", "DarkSlateBlue", "Indigo", "DarkBlue","DarkRed",
-                       "Black"],              
-  "setLogoFontUnused": [
-   "Drift Wood[_setLogoFontSize:72][_setLogoStrokeWidth:2][_setLogoFontWeight:normal][_setLogoLineHeight:75][_setLogoBaseline:middle]"
-  ],
-  "setLogoFont": [
-    "Abandon[_setLogoFontSize:72][_setLogoStrokeWidth:4][_setLogoFontWeight:normal][_setLogoLineHeight:100][_setLogoBaseline:middle][_setLogoAdditionalStyles:letter-spacing#colon# 0.025em;]",  
-    "Action Is[_setLogoFontSize:100][_setLogoStrokeWidth:4][_setLogoFontWeight:bold][_setLogoLineHeight:85][_setLogoBaseline:bottom][_setLogoAdditionalStyles:,#_setLogoCustomStyleTextured#]",
-    "Becker[_setLogoFontSize:90][_setLogoStrokeWidth:4][_setLogoFontWeight:bold][_setLogoLineHeight:80][_setLogoBaseline:bottom][_setLogoAdditionalStyles:#_setLogoCustomStyleTextured#,#_setLogoCustomStyleItalicized#]",
-    "Beleren[_setLogoFontSize:90][_setLogoStrokeWidth:4,5,6][_setLogoFontWeight:bold][_setLogoLineHeight:80][_setLogoBaseline:bottom][_setLogoAdditionalStyles:#_setLogoCustomStyleTextured#,#_setLogoCustomStyleItalicized#]",
-    "Empire State NF[_setLogoFontSize:90][_setLogoStrokeWidth:4][_setLogoFontWeight:normal][_setLogoLineHeight:99][_setLogoBaseline:bottom][_setLogoAdditionalStyles:#_setLogoCustomStyleTextured#,#_setLogoCustomStyleItalicized#]",    
-    "Feast of Flesh BB[_setLogoFontSize:90][_setLogoStrokeWidth:4][_setLogoFontWeight:bold][_setLogoLineHeight:80][_setLogoBaseline:bottom][_setLogoAdditionalStyles:,#_setLogoCustomStyleTextured#,#_setLogoCustomStyleItalicized#]",    
-    "Fiendish[_setLogoFontSize:60][_setLogoStrokeWidth:3,4,5][_setLogoFontWeight:normal][_setLogoLineHeight:180][_setLogoBaseline:middle][_setLogoAdditionalStyles:#_setLogoCustomStyleTextured#]",
-    "Jungle Fever NF[_setLogoFontSize:100][_setLogoStrokeWidth:4][_setLogoFontWeight:normal][_setLogoLineHeight:70][_setLogoBaseline:bottom][_setLogoAdditionalStyles:#_setLogoCustomStyleTextured#,#_setLogoCustomStyleItalicized#]",    
-    "Kulkeuma[_setLogoFontSize:72][_setLogoStrokeWidth:4][_setLogoFontWeight:normal][_setLogoLineHeight:80][_setLogoBaseline:bottom][_setLogoAdditionalStyles:#_setLogoCustomStyleTextured#,#_setLogoCustomStyleItalicized#]",    
-    "MEDICINE SHOW CAPS[_setLogoFontSize:90][_setLogoStrokeWidth:4][_setLogoFontWeight:normal][_setLogoLineHeight:80][_setLogoBaseline:bottom][_setLogoAdditionalStyles:#_setLogoCustomStyleTextured# text-transform#colon# uppercase;,#_setLogoCustomStyleItalicized# text-transform#colon# uppercase;]"
-  ],
-  "fontTextureDirectoryUrl": [
-    "http://pseudochaos.org/goodgamery/mtgnewsbot/images/textures/"
-  ],
-  "fontTexture": [
-    "grit.png"
-  ],
-  "_setLogoFontColorSet": [
-    "[_setLogoFontColor:#setLogoColorLight#][_setLogoStrokeColor:#setLogoColorMedium#]",
-    "[_setLogoFontColor:#setLogoColorLight#][_setLogoStrokeColor:#setLogoColorDark#]",
-    "[_setLogoFontColor:#setLogoColorMedium#][_setLogoStrokeColor:#setLogoColorLight#]",
-    "[_setLogoFontColor:#setLogoColorMedium#][_setLogoStrokeColor:#setLogoColorDark#]",
-    "[_setLogoFontColor:#setLogoColorDark#][_setLogoStrokeColor:#setLogoColorLight#]",
-    "[_setLogoFontColor:#setLogoColorDark#][_setLogoStrokeColor:#setLogoColorMedium#]"                           
-  ],
-  "_setLogoCustomStyleTexturedLocal": ["-webkit-mask-image:url(./src/data/images/textures/grit.png);"],
-  "_setLogoCustomStyleTextured": ["-webkit-mask-image:url(#fontTextureDirectoryUrl##fontTexture#);"],  
-  "_setLogoCustomStyleItalicized": ["font-style: italic;"],
-  "_setLogoFont": "[#_setLogoFontColorSet#][_setLogoFontFace:#setLogoFont#]",
-  "_setLogoStyles": [
-    "text-align: center;line-height: #_setLogoLineHeight#%;"
-  ],
-  "_cardsetDebug": ["#_cardset#"],
-  "_setLogoTextStyles": [
-    "-webkit-text-fill-color: #_setLogoFontColor#; -webkit-text-stroke-width: #_setLogoStrokeWidth#px; -webkit-text-stroke-color: #_setLogoStrokeColor#; font-size: #_setLogoFontSize#px; font-family: #_setLogoFontFace#;font-weight: #_setLogoFontWeight#; #_setLogoAdditionalStyles#"
-  ],
-  "mtgSetLogoImage": [
-  "[#_setLogoFont#]<div style=`display:table;`><div style=`height:380px; width:700px; display:table-cell; text-align: center; align:center; padding:20px; margin: 0 auto;`><span style=`#_setLogoStyles# #_setLogoTextStyles#`>#_cardsetDebug#</span></div></div>"
-  ]
-}
+---
+setLogoColorLight:
+  - "NavajoWhite"
+  - "LimeGreen"
+  - "Cornsilk"
+  - "Gainsboro"
+  - "Ivory"
+  - "OldLace"
+  - "WhiteSmoke"
+  - "Azure"
+  - "LemonChiffon"
+  - "Snow"
+  - "Khaki"
+  - "PaleGreen"
+  - "MistyRose"
+  - "MediumAquamarine"
+  - "SkyBlue"
+setLogoColorMedium:
+  - "DarkGoldenrod"
+  - "OliveDrab"
+  - "SteelBlue"
+  - "SlateGray"
+  - "DarkKhaki"
+  - "OrangeRed"
+  - "Gold"
+  - "Chocolate"
+  - "LightSeaGreen"
+  - "DarkOrange"
+  - "RebeccaPurple"
+  - "MediumSeaGreen"
+  - "OrangeRed"
+  -  "DeepSkyBlue"
+  - "DodgerBlue"
+  - "CornflowerBlue"
+  - "BlueViolet"
+  - "FireBrick"
+  - "BurlyWood"
+setLogoColorDark:
+  - "DarkOliveGreen"
+  - "SaddleBrown"
+  - "DarkGreen"
+  - "MidnightBlue"
+  - "DarkSlateGray"
+  - "DimGrey"
+  - "DarkSlateBlue"
+  - "Indigo"
+  - "DarkBlue"
+  - "DarkRed"
+  - "Black"
+setLogoFontUnused:
+ - "Drift Wood[_setLogoFontSize:72][_setLogoStrokeWidth:2][_setLogoFontWeight:normal][_setLogoLineHeight:75][_setLogoBaseline:middle]"
+setLogoFont:
+  - "Abandon[_setLogoFontSize:72][_setLogoStrokeWidth:4][_setLogoFontWeight:normal][_setLogoLineHeight:100][_setLogoBaseline:middle][_setLogoAdditionalStyles:letter-spacing#colon# 0.025em;]"
+  - "Action Is[_setLogoFontSize:100][_setLogoStrokeWidth:4][_setLogoFontWeight:bold][_setLogoLineHeight:85][_setLogoBaseline:bottom][_setLogoAdditionalStyles:,#_setLogoCustomStyleTextured#]"
+  - "Becker[_setLogoFontSize:90][_setLogoStrokeWidth:4][_setLogoFontWeight:bold][_setLogoLineHeight:80][_setLogoBaseline:bottom][_setLogoAdditionalStyles:#_setLogoCustomStyleTextured#,#_setLogoCustomStyleItalicized#]"
+  - "Beleren[_setLogoFontSize:90][_setLogoStrokeWidth:4,5,6][_setLogoFontWeight:bold][_setLogoLineHeight:80][_setLogoBaseline:bottom][_setLogoAdditionalStyles:#_setLogoCustomStyleTextured#,#_setLogoCustomStyleItalicized#]"
+  - "Empire State NF[_setLogoFontSize:90][_setLogoStrokeWidth:4][_setLogoFontWeight:normal][_setLogoLineHeight:99][_setLogoBaseline:bottom][_setLogoAdditionalStyles:#_setLogoCustomStyleTextured#,#_setLogoCustomStyleItalicized#]"
+  - "Feast of Flesh BB[_setLogoFontSize:90][_setLogoStrokeWidth:4][_setLogoFontWeight:bold][_setLogoLineHeight:80][_setLogoBaseline:bottom][_setLogoAdditionalStyles:,#_setLogoCustomStyleTextured#,#_setLogoCustomStyleItalicized#]"
+  - "Fiendish[_setLogoFontSize:60][_setLogoStrokeWidth:3,4,5][_setLogoFontWeight:normal][_setLogoLineHeight:180][_setLogoBaseline:middle][_setLogoAdditionalStyles:#_setLogoCustomStyleTextured#]"
+  - "Jungle Fever NF[_setLogoFontSize:100][_setLogoStrokeWidth:4][_setLogoFontWeight:normal][_setLogoLineHeight:70][_setLogoBaseline:bottom][_setLogoAdditionalStyles:#_setLogoCustomStyleTextured#,#_setLogoCustomStyleItalicized#]"
+  - "Kulkeuma[_setLogoFontSize:72][_setLogoStrokeWidth:4][_setLogoFontWeight:normal][_setLogoLineHeight:80][_setLogoBaseline:bottom][_setLogoAdditionalStyles:#_setLogoCustomStyleTextured#,#_setLogoCustomStyleItalicized#]"
+  - "MEDICINE SHOW CAPS[_setLogoFontSize:90][_setLogoStrokeWidth:4][_setLogoFontWeight:normal][_setLogoLineHeight:80][_setLogoBaseline:bottom][_setLogoAdditionalStyles:#_setLogoCustomStyleTextured# text-transform#colon# uppercase;,#_setLogoCustomStyleItalicized# text-transform#colon# uppercase;]"
+fontTextureDirectoryUrl:
+  - "http://pseudochaos.org/goodgamery/mtgnewsbot/images/textures/"
+fontTexture:
+  - "grit.png"
+_setLogoFontColorSet:
+  - "[_setLogoFontColor:#setLogoColorLight#][_setLogoStrokeColor:#setLogoColorMedium#]"
+  - "[_setLogoFontColor:#setLogoColorLight#][_setLogoStrokeColor:#setLogoColorDark#]"
+  - "[_setLogoFontColor:#setLogoColorMedium#][_setLogoStrokeColor:#setLogoColorLight#]"
+  - "[_setLogoFontColor:#setLogoColorMedium#][_setLogoStrokeColor:#setLogoColorDark#]"
+  - "[_setLogoFontColor:#setLogoColorDark#][_setLogoStrokeColor:#setLogoColorLight#]"
+  - "[_setLogoFontColor:#setLogoColorDark#][_setLogoStrokeColor:#setLogoColorMedium#]"
+_setLogoCustomStyleTexturedLocal:
+  - "-webkit-mask-image:url(./src/data/images/textures/grit.png);"
+_setLogoCustomStyleTextured:
+  - "-webkit-mask-image:url(#fontTextureDirectoryUrl##fontTexture#);"
+_setLogoCustomStyleItalicized:
+  - "font-style: italic;"
+_setLogoFont:
+  - "[#_setLogoFontColorSet#][_setLogoFontFace:#setLogoFont#]"
+_setLogoStyles:
+  - "text-align: center;line-height: #_setLogoLineHeight#%;"
+_cardsetDebug:
+  - "#_cardset#"
+_setLogoTextStyles:
+  - "-webkit-text-fill-color: #_setLogoFontColor#; -webkit-text-stroke-width: #_setLogoStrokeWidth#px; -webkit-text-stroke-color: #_setLogoStrokeColor#; font-size: #_setLogoFontSize#px; font-family: #_setLogoFontFace#;font-weight: #_setLogoFontWeight#; #_setLogoAdditionalStyles#"
+mtgSetLogoImage: |
+  [#_setLogoFont#]
+  <div style="display:table;">
+    <div style="height:340px; width:680px; display:table-cell; text-align: center; align:center; padding:20px; margin: 0 auto; vertical-align: middle; background-color: black;">
+        <span style="border-radius: 10px; #_setLogoStyles# #_setLogoTextStyles#">#_cardsetDebug#</span>
+    </div>
+  </div>
