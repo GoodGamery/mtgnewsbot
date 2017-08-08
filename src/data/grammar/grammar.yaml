@@ -40,7 +40,31 @@
         "Have You Considered? [_consider:#card# in #format#,#deck#]#_consider.capitalize#",
         "#pro# [_picked:First Picked,Last Picked,Wheeled,Drafted,Topdecked,Morphed]#_picked# #card.capitalizeAll#[_challenge: and You Won't Believe,. You'll Be Floored By,. Guess,. Find Out,. #pros.capitalizeAll# are still talking about#]#_challenge# [_what:What Happened Next,What #pro.capitalize# Said Next,What #pro.capitalize# Did Next,Why #pro.capitalize# Called a Judge]#_what#",
         "PICTURES: #pro.capitalize#'s [_cosplayAdj:amazing,convincing,elaborate,unconventional]#_cosplayAdj# cosplay of [_who:#cardAlone#,#character#]#_who#",
-        "New preview card from #teaserCardSet#! Is it #descriptor.a# #realPowerfulCard#?"
+        "New preview card from #teaserCardSet#! Is it #descriptor.a# #realPowerfulCard#?",
+	"[_rule:SHOCKER!,Unbelievable!,Rumor#colon#,BREAKING#colon#,It's true#colon#,UPDATE#colon#]#_rule# #pro# approached by #wackyCharacter# to #dumbScenario#!"
+    ],
+    "wackyCharacter": [
+	"Chinese investors",
+	"a future version of themselves",
+	"a boy with #count# months to live",
+	"a swarm of sentient [_rule:gnats,moths,bees,mosquitoes]#_rule#",
+	"[_rule:Stinky,Big,Corduroy,Teflon,Rodeo,Three Finger]#_rule# [_rule:Pete,Jeff,Craig,Jimmy,Jack]#_rule#"
+	"their own grandfather",
+	"a woman trying to remember where she parked her car",
+	"a shadowy man holding a beige envelope",
+	"local law enforcement",
+	"a wise rastafarian",
+	"a group of wisecracking hoodlums"
+    ],
+    "dumbScenario": [
+	"attempt to roll back the damage-on-stack rules"
+	"join the development team of their fantasy CCG [_rule:\"Goblinfort\",\"Zoxelorn #count.capitalize#\",\"Rage Mage\",\"Panty Heist\",\"Geek Squad#colon# The Game\"]#_rule#"
+	"join their [_rule:\"Fist Bump,\"Get Completely Loaded,\"Drive With Your Eyes Closed,\"Watch Anime,\"Don't Pay Your Taxes,\"Wander Aimlessly]#_rule# For Charity\" initiative
+	"participate in their [_rule:Two-Headed Giant,Pauper EDH,Vintage Singleton,No LD/No Counters/No Burn]#_rule# invitational tournament"
+	"covertly collect information on #pro# in order to [_rule:learn their shuffling routine,get a better idea of what they look like naked,know what hate cards to board in against them]#_rule#
+	"infiltrate WOTC headquarters and destroy the reserved list"
+	"teach them how to beat #deck#"
+	"fix MTGO so that it works properly"
     ],
     "announcement": [
         "Wizards Announces: Duel Decks: [_one:#nouns.capitalizeAll#,#planeswalkerFirstName#]#_one# vs. [_two:#nouns.capitalizeAll#,#planeswalkerFirstName#]#_two#",
