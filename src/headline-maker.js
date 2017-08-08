@@ -62,11 +62,12 @@ function parseMessage(message) {
   let match = message.match(/\{\w+?\s+?.*\}/g);
   if (match) {
     match.forEach(match => {
-      const tag = match.match(/\{(\w+)\s/)[1];
+    	const tag = match.match(/\{(\w+)\s/)[1];
+
       if (!tags[tag]) {
-        tags[tag] = match.match(/(\w+=".*")/g).reduce((result, next) => {
+        tags[tag] = match.match(/(\w+=`.*?`)/g).reduce((result, next) => {
           let key = next.match(/(\w+)=/)[1];
-          let value = next.match(/="(.*)"/)[1];
+          let value = next.match(/=`(.*?)`/)[1];          
           result[key] = value;
           return result;
         }, {});

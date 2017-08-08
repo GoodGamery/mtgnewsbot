@@ -1,28 +1,42 @@
-{
-  "gathererRulingImage": "[_cardname:#cardAlone#][gathererHeadline:#gathererIntro# #_cardname#]#gathererHeadline# {htmlImg htmlImgString=\"#_gathererRulingImage#\"}",
+---
+gathererRulingImage: |
+  [_cardname:#cardAlone#][gathererHeadline:#gathererIntro# #_cardname#]#gathererHeadline# {htmlImg htmlImgString=`#_gathererRulingImage#`}
 
-	"_gathererRulingImage": "#_gathererRulingImageStyle# #_gathererRulingImageTable#",
+_gathererRulingImage: "#_gathererRulingImageStyle# #_gathererRulingImageTable#"
 
-	"_gathererRulingImageStyle": "<head><style> div.container << background: rgb(47,47,47); width: 505px; >> table << display: table; width: 100%; border-collapse: separate; border-spacing: 1px; text-align: center; vertical-align: middle margin: 0; background: rgb(20,20,20); >> tbody << display: table-row-group; color: rgb(197,197,197); >> tr << vertical-align: inherit; border-color: inherit; display: table-row; background-color: rgba(255,255,366, 0.08); >> td << border-collapse: separate; border-spacing: 2px; text-align: center; vertical-align: middle padding: 5px; margin: 0; background: rgb(61,61,61); >> td.rulingsHeader << background: rgb(31,30,30); >> div.rulingsHeader << font-family: Open Sans Semibold; font-size: 19px; padding: 6px; background: rgb(31,30,30); >> td.rulingDate << width: 70px; font-size: .9em; padding-left: 10px; padding-right: 8px; font-weight: bold; text-align: right; border-spacing: 1px; font-family: Open Sans; >> td.rulingText << width: auto; font-size: .9em; padding: 6px 8px 6px 8px; line-height: 1.3em; font-weight: 500; text-align: left; border-spacing: 1px; font-family: Open Sans; margin-top: 6px; margin-bottom: 6px; -webkit-text-stroke: 0.5px; >> td.oddItem << background-color: rgb(61,61,61); >> td.evenItem << background-color: rgb(58,57,57); >> a:link << color: rgb(120,120,120); visited font-size: .8em; >> a:visited << color: rgb(120,120,120); font-size: .8em; >> </style></head>",
+_gathererRulingImageStyle: |
+  <head><style>div.container << background: rgb(47,47,47); width: 505px; >> table << display: table; width: 100%; border-collapse: separate; border-spacing: 1px; text-align: center; vertical-align: middle margin: 0; background: rgb(20,20,20); >> tbody << display: table-row-group; color: rgb(197,197,197); >> tr << vertical-align: inherit; border-color: inherit; display: table-row; background-color: rgba(255,255,366, 0.08); >> td << border-collapse: separate; border-spacing: 2px; text-align: center; vertical-align: middle padding: 5px; margin: 0; background: rgb(61,61,61); >> td.rulingsHeader << background: rgb(31,30,30); >> div.rulingsHeader << font-family: Open Sans Semibold; font-size: 19px; padding: 6px; background: rgb(31,30,30); >> td.rulingDate << width: 70px; font-size: .9em; padding-left: 10px; padding-right: 8px; font-weight: bold; text-align: right; border-spacing: 1px; font-family: Open Sans; >> td.rulingText << width: auto; font-size: .9em; padding: 6px 8px 6px 8px; line-height: 1.3em; font-weight: 500; text-align: left; border-spacing: 1px; font-family: Open Sans; margin-top: 6px; margin-bottom: 6px; -webkit-text-stroke: 0.5px; >> td.oddItem << background-color: rgb(61,61,61); >> td.evenItem << background-color: rgb(58,57,57); >> a:link << color: rgb(120,120,120); visited font-size: .8em; >> a:visited << color: rgb(120,120,120); font-size: .8em; >>    </style></head>
 
-	"_gathererRulingImageTable": "<body><div class=`container`><table><tbody>#_gathererRulingImageTableContents#</tbody></table></div></body>",
+_gathererRulingImageTable: |
+  <body>
+    <div class="container">
+      <table>
+        <tbody>#_gathererRulingImageTableContents#</tbody>
+      </table>
+    </div>
+  </body>
 
-	"_gathererRulingImageTableContents": "#_gathererRulingImageHeader# #_gathererRulingImageTableRulings#",
+_gathererRulingImageTableContents: "#_gathererRulingImageHeader# #_gathererRulingImageTableRulings#"
 
-  "_gathererRulingImageTableRulings": [
-    "#_gathererRulingImageRowOdd# #_gathererRulingImageRowEven#",
-    "#_gathererRulingImageRowOdd# #_gathererRulingImageRowEven#",    
-    "#_gathererRulingImageRowOdd# #_gathererRulingImageRowEven# #_gathererRulingImageRowOdd#",
-    "#_gathererRulingImageRowOdd# #_gathererRulingImageRowEven# #_gathererRulingImageRowOdd#",  
-    "#_gathererRulingImageRowOdd# #_gathererRulingImageRowEven# #_gathererRulingImageRowOdd# #_gathererRulingImageRowEven#"
-  ],
+_gathererRulingImageTableRulings:
+  - "#_gathererRulingImageRowOdd# #_gathererRulingImageRowEven#"
+  - "#_gathererRulingImageRowOdd# #_gathererRulingImageRowEven#"
+  - "#_gathererRulingImageRowOdd# #_gathererRulingImageRowEven# #_gathererRulingImageRowOdd#"
+  - "#_gathererRulingImageRowOdd# #_gathererRulingImageRowEven# #_gathererRulingImageRowOdd#"
+  - "#_gathererRulingImageRowOdd# #_gathererRulingImageRowEven# #_gathererRulingImageRowOdd# #_gathererRulingImageRowEven#"
 
-	"_gathererRulingImageHeader": "<tr class=`rulingsHeader`><td class=`rulingsHeader` colspan=`2`><div class=`rulingsHeader`>Rulings</div></td></tr>",
+_gathererRulingImageHeader: |
+  <tr class="rulingsHeader">
+    <td class="rulingsHeader" colspan="2">
+      <div class="rulingsHeader">Rulings</div>
+    </td>
+  </tr>
 
-	"_gathererRulingImageRowOdd": "[_parityClass:oddItem]#_gathererRulingImageRow#",		
-	"_gathererRulingImageRowEven": "[_parityClass:evenItem]#_gathererRulingImageRow#",	
+_gathererRulingImageRowOdd: "[_parityClass:oddItem]#_gathererRulingImageRow#"
+_gathererRulingImageRowEven: "[_parityClass:evenItem]#_gathererRulingImageRow#"
 
-	"_gathererRulingImageRow": "<tr>#_gathererRulingImageDate# #_gathererRulingImageText#</tr>",				
-	"_gathererRulingImageDate": "<td class=`rulingDate #_parityClass#`>#gathererTimestamp#</td>",	
-	"_gathererRulingImageText": "<td class=`rulingText #_parityClass#`>#gathererText.capitalize#</td>"
-}
+_gathererRulingImageRow: "<tr>#_gathererRulingImageDate# #_gathererRulingImageText#</tr>"
+_gathererRulingImageDate: |
+  <td class="rulingDate #_parityClass#">#gathererTimestamp#</td>
+_gathererRulingImageText: |
+  <td class="rulingText #_parityClass#">#gathererText.capitalize#</td>

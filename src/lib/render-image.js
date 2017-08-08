@@ -21,15 +21,21 @@ function renderImageFromHeadline(headline, outputPath) {
 		console.log(`\nRendering SVG:\n\n ${svg}`);
 		return renderImageFromSvg(svg, outputPath);
 	} else if(headline.tags && headline.tags.htmlImg && headline.tags.htmlImg.htmlImgString) {
-		const html = headline.tags.htmlImg.htmlImgString;
+		const html = headline.tags.htmlImg.htmlImgString;	
 		console.log(`\nRendering HTML:\n\n ${html}`);
-		return renderImageFromHtml(html, outputPath);
+		const cropOptions = {
+			width: 		parseInt(headline.tags.htmlImg.width),
+			height: 	parseInt(headline.tags.htmlImg.height),
+			padding: 	parseInt(headline.tags.htmlImg.padding),
+			backgroundColor: 	parseInt(headline.tags.htmlImg.backgroundColor)
+		};
+		return renderImageFromHtml(html, outputPath, cropOptions);
 	} else {
     return Promise.resolve({ rendered: false, msg: `No image was required.`});
   }
 }
 
-function renderImageFromHtml(html, outputPath) {
+function renderImageFromHtml(html, outputPath, cropOptions) {
   return new Promise((resolve, reject) => {
     const tempFile = `${outputPath}.tmp.png`;
 
@@ -40,7 +46,7 @@ function renderImageFromHtml(html, outputPath) {
       }
 
       Jimp.read(tempFile)
-        .then(cropAndWriteFile.bind(null, outputPath))
+        .then(cropAndWriteFile.bind(null, outputPath, cropOptions))
         .then(() => {
             resolve({
                 rendered: true,
@@ -58,21 +64,38 @@ function renderImageFromHtml(html, outputPath) {
   });
 }
 
-function cropAndWriteFile(path, image) {
-  return new Promise((resolve, reject) => {
-  	const croppedImage = image.autocrop();
-  	const logoWidth = croppedImage.bitmap.width;
-  	const logoHeight =  croppedImage.bitmap.height;
-  	const padding = 8;
-  	new Jimp(logoWidth + padding, croppedImage.bitmap.height + padding, 0x000000FF, (err, background) => {
-  		background.composite(croppedImage, padding/2, padding/2).contain(500,250).write(path, (err) => {
+function cropAndWriteFile(path, cropOptions, sourceImage) {
+
+	const writeImage = image => {
+		return new Promise((resolve, reject) => {
+	  	image.write(path, (err) => {
 	      if (err)
 	        reject(err);
 	      else
 	        resolve(path);
-    	})
-  	});
-  });
+	    });
+	  });
+	};
+
+	if (cropOptions.width && cropOptions.height) {
+		return sourceImage.autocrop((err, image) => {
+	 		const logoWidth = image.bitmap.width;
+	  	const logoHeight =  image.bitmap.height;
+	  	const padding = cropOptions.padding;
+			const backgroundColor = cropOptions.backgroundColor || 0xFFFFFFFF;
+	  	image = new Jimp(logoWidth + padding, logoHeight + padding, backgroundColor, (err, background) => {
+	  		background.composite(image, padding/2, padding/2).contain(cropOptions.width, cropOptions.height, (err, image) => {
+					return writeImage(image);
+				});
+	  	});
+		});
+	} else {
+		return sourceImage.autocrop((err, image) => {
+			return writeImage(image);
+		});
+	}
+
+  
 }
 
 function renderImageFromSvg(svg, outputPath) {
