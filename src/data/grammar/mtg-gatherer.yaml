@@ -29,7 +29,7 @@
         "if an ability (from #cardAlone#, for example) causes you to #gameAction#, nothing happens.",
         "#_cardname#'s first and third abilities are linked. Similarly, #_cardname#'s second and third abilities are linked.",
         "the #creatureTypes# tokens are created even if [_circumstance:the target isn't,no #cardCategory.s# are]#_circumstance# [#gameEffectAction#]#_actionPastTense# by #_cardname#'s ability.",
-        "for more information on [_topic:#gameConcept#,#cardCategory.s#,#_randomTopic#]#_topic#, see the [_set:#cardSet#,#teaserCardSet#]#_set# mechanics article at <a href=``>#_gathererRulingImageArticleUrl#</a>.",
+        "for more information on [_topic:#gameConcept#,#cardCategory.s#,#_randomTopic#]#_topic#, see the [_set:#cardSet#,#teaserCardSet#]#_set# mechanics article at <a href=\"\">#_gathererRulingImageArticleUrl#</a>.",
         "[_card2:#realCard#][_card3:#cardAlone#]In a Commander game, your commander may be #_cardname# or #_card2#, and the other may be in your deck. If they meld into #_card3#, #_card3# will also be your commander.",
         "#opalPart1#",
         "#gathererTextRare#"
