@@ -67,7 +67,7 @@ function parseMessage(message) {
       if (!tags[tag]) {
         tags[tag] = match.match(/(\w+=`.*?`)/g).reduce((result, next) => {
           let key = next.match(/(\w+)=/)[1];
-          let value = next.match(/=`(.*?)`/)[1];          
+          let value = next.match(/=`(.*?)`/)[1];
           result[key] = value;
           return result;
         }, {});

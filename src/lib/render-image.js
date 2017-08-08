@@ -21,7 +21,7 @@ function renderImageFromHeadline(headline, outputPath) {
 		console.log(`\nRendering SVG:\n\n ${svg}`);
 		return renderImageFromSvg(svg, outputPath);
 	} else if(headline.tags && headline.tags.htmlImg && headline.tags.htmlImg.htmlImgString) {
-		const html = headline.tags.htmlImg.htmlImgString;	
+		const html = headline.tags.htmlImg.htmlImgString;
 		console.log(`\nRendering HTML:\n\n ${html}`);
 		const cropOptions = {
 			width: 		parseInt(headline.tags.htmlImg.width),
@@ -65,14 +65,14 @@ function renderImageFromHtml(html, outputPath, cropOptions) {
 }
 
 function cropAndWriteFile(path, cropOptions, sourceImage) {
-
 	const writeImage = image => {
 		return new Promise((resolve, reject) => {
-	  	image.write(path, (err) => {
-	      if (err)
+	  	image.write(path, err => {
+	      if (err) {
 	        reject(err);
-	      else
+	      } else {
 	        resolve(path);
+	      }
 	    });
 	  });
 	};
@@ -94,8 +94,6 @@ function cropAndWriteFile(path, cropOptions, sourceImage) {
 			return writeImage(image);
 		});
 	}
-
-  
 }
 
 function renderImageFromSvg(svg, outputPath) {
