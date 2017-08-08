@@ -60,12 +60,18 @@ function renderImageFromHtml(html, outputPath) {
 
 function cropAndWriteFile(path, image) {
   return new Promise((resolve, reject) => {
-    image.autocrop().contain(500,250).write(path, (err) => {
-      if (err)
-        reject(err);
-      else
-        resolve(path);
-    })
+  	const croppedImage = image.autocrop();
+  	const logoWidth = croppedImage.bitmap.width;
+  	const logoHeight =  croppedImage.bitmap.height;
+  	const padding = 8;
+  	new Jimp(logoWidth + padding, croppedImage.bitmap.height + padding, 0x000000FF, (err, background) => {
+  		background.composite(croppedImage, padding/2, padding/2).contain(500,250).write(path, (err) => {
+	      if (err)
+	        reject(err);
+	      else
+	        resolve(path);
+    	})
+  	});
   });
 }
 
