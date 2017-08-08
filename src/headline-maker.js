@@ -77,7 +77,7 @@ function parseMessage(message) {
     // Further process svg tags
     if (tags.svg && tags.svg.svgString) {
       tags.svg.svgString = tags.svg.svgString
-        .split(ENDL_MARKER).join('\n') // Restore endlines from before
+        .split(ENDL_MARKER).join('\n')              // Restore endlines from before
         .replace(/`/g, '"')													// This gets quotes working
         .replace(/<</g, '{').replace(/>>/g, '}');
     }
@@ -85,6 +85,7 @@ function parseMessage(message) {
     // Further process htmlimg tags
     if (tags.htmlImg && tags.htmlImg.htmlImgString) {
       tags.htmlImg.htmlImgString = tags.htmlImg.htmlImgString
+        .split(ENDL_MARKER).join('\n')                        // Restore endlines from before
         .replace(/`/g, '"')																		// This gets quotes working
         .replace(/<</g, '{').replace(/>>/g, '}');     	 			// This gets curly braces working
 
