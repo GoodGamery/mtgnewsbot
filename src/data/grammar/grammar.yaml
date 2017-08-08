@@ -75,7 +75,7 @@
        	"reading every card's flavor text out loud",
 	"smirking",
 	"refusing to wear a shirt",
-	"slowly encroaching their cards into their opponent's play area",
+	"slowly encroaching their [_rule:cards,spindown dice,playmat,rat tokens]#_rule# into their opponent's play area",
         "using baseball hand signals to communicate with a teammate",
 	"getting a bit too close to the truth",
 	"using 'dive bombing' sounds while casting removal on their opponent's creatures",
