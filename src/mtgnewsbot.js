@@ -69,10 +69,20 @@ class MtgNewsbot {
     );
   }
 
+  static createFileName(headline) {
+    const prefix = headline.text
+      .toLowerCase()
+      .replace(/ /g, `_`)
+      .replace(/\W+/g, ``)
+      .slice(0, 50);
+    const suffix = uuid().slice(0, 13);
+    return `${prefix}-${suffix}`;
+  }
+
   async processHeadline(headline) {
     let postedMessage = headline.text;
     console.log(`\n* ${headline.text}`);
-    const outputPath = `${config.paths.tempDirectory}/${uuid()}.png`;
+    const outputPath = `${config.paths.tempDirectory}/${MtgNewsbot.createFileName(headline)}.png`;
     const renderResult = await RenderImage.fromHeadline(headline, outputPath);
     if (renderResult.rendered) {
       console.log("Render result: " + renderResult.msg);

@@ -34,8 +34,7 @@
     "gulp-util": "3.0.8",
     "gulp-yaml-validate": "^1.0.2",
     "json-schema-traverse": "0.3.1",
-    "run-sequence": "2.0.0",
-    "gulp-yaml-validate": "^1.0.2"    
+    "run-sequence": "2.0.0"
   },
   "repository": {
     "type": "git",

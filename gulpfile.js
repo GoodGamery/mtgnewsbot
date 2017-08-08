@@ -36,7 +36,7 @@ gulp.task('jslint', function() {
   return gulp.src(SRC_FILES.JS)
     .pipe(debug({title: 'Linting'}))
     .pipe(eslint({ useEslintrc: true }))
-    .pipe(eslint.format('codeframe')) 
+    .pipe(eslint.format('codeframe'))
     .pipe(eslint.format())
     .pipe(eslint.format(completionTracker));
 });
@@ -62,12 +62,12 @@ gulp.task('jsonlint', function() {
       } else {
         gutil.log(gutil.colors.red('>>> JSON linting ' + gutil.colors.underline('FAILED.') + '.'));
       }
-    });     
+    });
 
 });
 
 gulp.task('yamllint', function() {
-	let success;
+  let success;
   const completionTracker = function() {
     success = true;
 
@@ -78,13 +78,13 @@ gulp.task('yamllint', function() {
 
   const yaml = yamllint({});
   yaml.on('error', function(err) {
-  	gutil.log(gutil.colors.red('YAML validation error: ' + err.message));
-  	yaml.end();
+    gutil.log(gutil.colors.red('YAML validation error: ' + err.message));
+    yaml.end();
   });
 
   return gulp.src(SRC_FILES.YAML)
     .pipe(debug({title: 'Linting'}))
-    .pipe(yaml)   
+    .pipe(yaml)
     .pipe(jsonlint.reporter())
     .pipe(jsonlint.reporter(completionTracker()))
     .on('end', function() {
@@ -93,7 +93,7 @@ gulp.task('yamllint', function() {
       } else {
         gutil.log(gutil.colors.red('>>> YAML linting ' + gutil.colors.underline('FAILED.') + '.'));
       }
-    }); 
+    });
 });
 
 gulp.task('lint', function(callback) {
