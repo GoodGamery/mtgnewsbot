@@ -65,7 +65,7 @@
       "#definingCardname#-Go",
       "#creatureTypes.capitalize# in a Blender",
       "#creatureTypes.capitalize#vantage",
-      "#creatureTypes.capitalize# Dad",
+      "#creatureTypes.capitalize# [_parent:Dad,Dad,Dad,Mom]#_parent#",
       "[_prefix:#creatureTypes#,#deckPrefix#] Breakfast",
       "#deckNameCompoundPrefix##deckNameCompoundSuffix#"
   ],
