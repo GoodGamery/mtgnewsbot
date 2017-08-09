@@ -83,7 +83,7 @@ function cropAndWriteFile(path, cropOptions, sourceImage) {
       const logoHeight =  image.bitmap.height;
       const padding = cropOptions.padding;
       const backgroundColor = cropOptions.backgroundColor || 0xFFFFFFFF;
-      image = new Jimp(logoWidth + padding, logoHeight + padding, backgroundColor, (err, background) => {
+      return new Jimp(logoWidth + padding, logoHeight + padding, backgroundColor, (err, background) => {
         background.composite(image, padding/2, padding/2).contain(cropOptions.width, cropOptions.height, (err, image) => {
           return writeImage(image);
         });
