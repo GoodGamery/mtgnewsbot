@@ -56,6 +56,7 @@ clickbait:
 - "[_opener:SHOCKER!,Unbelievable!,Rumor#colon#,BREAKING#colon#,It's true#colon#,UPDATE#colon#]#_opener#
   #pro# [_rule:petitioned,solicited,approached,contacted,called out]#_rule# by #wackyCharacter#
   to #dumbScenario#"
+- "How #verbSolutionGerund# helped #pro# #verbDesireableOutcomeIntransitive#"
 
 wackyCharacter:
 - Chinese investors
