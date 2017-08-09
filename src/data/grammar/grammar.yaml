@@ -29,7 +29,7 @@
         "FLAVOR FLASHBACK: #flavorText#"
     ],
     "cardCallout": [
-      "[_cardname:#realCard#]WE'RE NOT WRONG: The card you're thinking of is #_cardname#.#imgCard#",
+      "[_cardname:#realCard#]WE'RE NOT WRONG: The card you're thinking of is #_cardname#.#imgCard#"
     ],
     "clickbait": [
         "Are you [_verbing:overrating,underrating]#_verbing# [_thing:#gameConcept#,#card#,#deckArchOrCategory#,#creatureTypes.s#,#cardSet#]#_thing#?",
