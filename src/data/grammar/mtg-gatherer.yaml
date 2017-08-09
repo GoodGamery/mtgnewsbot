@@ -19,7 +19,7 @@
     "gathererRuling": [
         "the #singularNoun# continues to #verbIntransitive# after #_cardname# has left the battlefield.",
         "the artist is actually #person#.",
-        "this is the [_shift:timeshifted,colorshifted,playtest,Space#colon# the Convergence]#_shift# version of #realCard#.",
+        "this is the [_shift:timeshifted,colorshifted,playtest,Space#colon# the Convergence,good]#_shift# version of #realCard#.",
         "when the #xth# ability resolves, the #cardCategory# you [_put:put, don't put]#_put# #cardLocation# stays #cardLocation#.",
         "…finally, #_cardname# is placed #cardLocation#. This is a state-based action.",
         "#_cardname.s# are #cardLocation# regardless of whether they're #cardState# or #cardState#.",
@@ -32,11 +32,12 @@
         "for more information on [_topic:#gameConcept#,#cardCategory.s#,#_randomTopic#]#_topic#, see the [_set:#cardSet#,#teaserCardSet#]#_set# mechanics article at <a href=\"\">#_gathererRulingImageArticleUrl#</a>.",
         "[_card2:#realCard#][_card3:#cardAlone#]In a Commander game, your commander may be #_cardname# or #_card2#, and the other may be in your deck. If they meld into #_card3#, #_card3# will also be your commander.",
         "#opalPart1#",
+        "your #cardCategory.s# can help cast this spell",
         "#gathererTextRare#"
     ],
 
     "gathererTextRare": [
-        "the effect is cumulative.",    
+        "the effect is cumulative.",
         "you can't interfere in any physical way with the casting of this card.",
         "you can't make any decisions that aren't called for or allowed by the game rules, or by any cards, permanents, spells, abilities, and so on.",
         "if one player has fewer #cardCategory.s# than required, that player loses. If both have fewer than required, both players lose.",
@@ -44,11 +45,11 @@
         "there's no current game meaning of [_what:assemble,#pluralNounOrMassNoun#,#gameConcept#]“#_what#”.",
         "#_cardname# can't be countered except by spells and abilities.",
         "#_cardname# can't be used to force a player to play a card that isn't in his or her hand.",
-        "#_cardname# won't necessarily end the game when its ability resolves.",        
+        "#_cardname# won't necessarily end the game when its ability resolves.",
         "yes, you're allowed to have a deck consisting of sixty #_cardname.s# and nothing else.",
         "only cards touched when #_cardname# stops moving are affected. Not ones touched while it is moving.",
         "The card you're thinking of is #_cardname#.",
-        "Magic isn't real, you idiot. Read a book."        
+        "Magic isn't real, you idiot. Read a book."
     ],
 
     "embellishedGathererText": [
@@ -58,7 +59,7 @@
         "#gathererRuling# This is known as #informalRule#.",
         "Actually, #gathererRuling#",
         "#gathererRuling# This may be wrong."
-    ],    
+    ],
 
     "opalPart1": "[_card2:#realCard#][_card3:#cardAlone#]this is the current interaction between #_cardname# and #_card2#: The type-changing effect applies at #rulesLayer#[_part2:.,#opalPart2#]#_part2#",
     "opalPart2": "[_optional1:, but the rest happens in the applicable layers]#_optional1#.[_optional2: The rest of it will apply even if the #cardCategory# loses its ability before it’s finished applying.]#_optional2# So if #_cardname#, #_card2#, and #_card3# are [_opalZone:#cardLocation#]#_opalZone# [_optional3: and #_cardname# was #_opalZone# before #_card2#]#_optional3#, [_part3:#gathererRuling#,the following is true#colon# #opalPart3#]#_part3#",
@@ -86,7 +87,7 @@
     "_randomTopic": ["#character#", "the #gameStep#", "#person#" , "#pluralNounOrMassNoun#", "#format#", "#deckArch#"],
     "gameAction": ["look at the top card of your library", "shuffle your library", "reorder your graveyard", "search your library", "untap one or more permanents",
                     "lose the game", "win the game", "draw the game", "mulligan", "flip a coin", "ignore this ability"],
-    "gameEffectAction": [ 
+    "gameEffectAction": [
         "counter[_actionPastTense:countered]",
         "destroy[_actionPastTense:destroyed]",
         "regenerate[_actionPastTense:regenerated]",

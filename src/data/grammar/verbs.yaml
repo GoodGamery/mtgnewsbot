@@ -1,6 +1,6 @@
 {
   "verb": [ "#verbStrictlyTransitive#", "#verbStrictlyIntransitive#", "#verbBothTransitive#" ],
-  "verbTransitive": [ "#verbStrictlyTransitive#", "#verbBothTransitive#" ],
+  "verbTransitive": [ "#verbStrictlyTransitive#", "#verbStrictlyTransitive#", "#verbBothTransitive#" ],
   "verbStrictlyTransitive": [
     "control", "defeat", "hold", "capture", "handle", "understand", "wield", "carry", "water", "nourish", "question", "cradle",
     "cherish", "despise", "summon", "perceive", "realize", "explain", "ignore", "adorn", "capture", "release", "destroy", "realize",
@@ -8,7 +8,7 @@
     "simulate", "immortalize", "subdue", "pigeonhole", "despoil", "enhance", "glamorize", "market", "recognize", "smash", "kiss",
     "cleanse", "corrupt", "punch", "kick", "slap", "pinch", "tickle", "devour", "lick", "poke"
   ],
-  "verbIntransitive": [ "#verbStrictlyIntransitive#", "#verbBothTransitive#" ],
+  "verbIntransitive": [ "#verbStrictlyIntransitive#", "#verbStrictlyIntransitive#", "#verbBothTransitive#" ],
   "verbStrictlyIntransitive": [
     "hesitate", "wonder", "snort", "chuckle", "weep", "run", "sleep", "brood", "occur", "materialize", "complain", "yawn",
     "belch", "emerge", "embroider", "scream", "dance", "collapse", "appear", "disappear", "sneeze", "arrive", "exist", "fall",
@@ -21,7 +21,7 @@
     "worship"
   ],
   "verbPastTense": [ "#verbStrictlyTransitivePastTense#", "#verbStrictlyIntransitivePastTense#", "#verbBothTransitivePastTense#" ],
-  "verbTransitivePastTense": [ "#verbStrictlyTransitivePastTense#", "#verbBothTransitivePastTense#" ],
+  "verbTransitivePastTense": [ "#verbStrictlyTransitivePastTense#", "#verbStrictlyTransitivePastTense#", "#verbBothTransitivePastTense#" ],
   "verbStrictlyTransitivePastTense": [
     "controlled", "defeated", "held", "captured", "handled", "understood", "wielded", "carried", "watered", "nourished", "questioned", "cradled",
     "cherished", "despised", "summoned", "perceived", "realized", "explained", "ignored", "adorned", "captured", "released", "destroyed", "realized",
@@ -29,7 +29,7 @@
     "simulated", "immortalized", "subdued", "pigeonholed", "despoiled", "enhanced", "glamorized", "marketed", "recognized", "smashed", "kissed",
     "cleansed", "corrupted", "punched", "kicked", "slapped", "pinched", "tickled", "devoured", "licked", "poked"
   ],
-  "verbIntransitivePastTense": [ "#verbStrictlyIntransitivePastTense#", "#verbBothTransitivePastTense#" ],
+  "verbIntransitivePastTense": [ "#verbStrictlyIntransitivePastTense#","#verbStrictlyIntransitivePastTense#", "#verbBothTransitivePastTense#" ],
   "verbStrictlyIntransitivePastTense": [
     "hesitated", "wondered", "snorted", "chuckled", "wept", "ran", "slept", "brooded", "occured", "materialized", "complained", "yawned",
     "belched", "emerged", "embroidered", "screamed", "danced", "collapsed", "appeared", "disappeared", "sneezed", "arrived", "existed", "fell",
@@ -42,7 +42,7 @@
   	"worshipped"
   ],
   "verbGerund": [ "#verbStrictlyTransitiveGerund#", "#verbStrictlyIntransitiveGerund#", "#verbBothTransitiveGerund#" ],
-  "verbTransitiveGerund": [ "#verbStrictlyTransitiveGerund#", "#verbBothTransitiveGerund#" ],
+  "verbTransitiveGerund": [ "#verbStrictlyTransitiveGerund#", "#verbStrictlyTransitiveGerund#", "#verbBothTransitiveGerund#" ],
   "verbStrictlyTransitiveGerund": [
     "controlling", "defeating", "holding", "capturing", "handling", "understanding", "wielding", "carrying", "watering", "nourishing", "questioning", "cradling",
     "cherishing", "despising", "summoning", "perceiving", "realizing", "explaining", "ignoring", "adorning", "capturing", "releasing", "destroying", "realizing",
@@ -50,7 +50,7 @@
     "simulating", "immortalizing", "subduing", "pigeonholing", "despoiling", "enhancing", "glamorizing", "marketing", "recognizing", "smashing", "kissing",
     "cleansing", "corrupting", "punching", "kicking", "slapping", "pinching", "tickling", "devouring", "licking", "poking"
   ],
-  "verbIntransitiveGerund": [ "#verbStrictlyIntransitiveGerund#", "#verbBothTransitiveGerund#" ],
+  "verbIntransitiveGerund": [ "#verbStrictlyIntransitiveGerund#", "#verbStrictlyIntransitiveGerund#", "#verbBothTransitiveGerund#" ],
   "verbStrictlyIntransitiveGerund": [
     "hesitating", "wondering", "snorting", "chuckling", "weeping", "running", "sleeping", "brooding", "occuring", "materializing", "complaining", "yawning",
     "belching", "emerging", "embroidering", "screaming", "dancing", "collapsing", "appearing", "disappearing", "sneezing", "arriving", "existing", "falling",

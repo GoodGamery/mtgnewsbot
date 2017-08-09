@@ -58,6 +58,7 @@
       "Griselbrand#malePronouns#",
       "Hanna#femalePronouns#",
       "Hans#malePronouns#",
+      "Hazdur the Abbot#malePronouns#",
       "Hidetsugu#malePronouns#",
       "Ink-Eyes#femalePronouns#",
       "Isamaru#malePronouns#",
@@ -73,8 +74,10 @@
       "Tawnos#malePronouns#",
       "Thassa#femalePronouns#",
       "Tsabo Tavoc#femalePronouns#",
+      "Vinz Clortho#malePronouns#",
       "Volrath#malePronouns#",
-      "Yawgmoth#malePronouns#"
+      "Yawgmoth#malePronouns#",
+      "Zuul#femalePronouns#"
   ],
   "commonCharacterFirstName": [
   	"Agathe",
@@ -127,8 +130,12 @@
   ],
   "npcCharacter": [
   	"#commonCharacterFirstName# the #adj.capitalize#",
-  	"#commonCharacterFirstName# [_lastName:,#commonCharacterLastName#]#_lastName#, [_home:#minorStoryLocation#,#demonym#,#characterFactionOrRace#]#_home# #characterClass#",
-  	"#commonCharacterFirstName# [_lastName:,#commonCharacterLastName#]#_lastName#, [_title:#characterTitle#]#_title# of [_home:#minorStoryLocation#,#nonPlaneLocation#]#_home#"	
+  	"#commonCharacterFirstName#[_lastName:, #commonCharacterLastName#]#_lastName#, [_home:#minorStoryLocation#,#demonym#,#characterFactionOrRace#]#_home.capitalize# #characterClass.capitalize#",
+  	"#commonCharacterFirstName#[_lastName:, #commonCharacterLastName#]#_lastName#, [_title:#characterTitle.capitalizeAll#]#_title# of [_home:#minorStoryLocation#,#nonPlaneLocation#]#_home.capitalize#",
+    "#commonCharacterFirstName#, the #characterTitleObjectNoun.capitalizeAll# #characterTitleManipulatorNoun.capitalize#",
+    "#commonCharacterFirstName# the #adj.capitalizeAll#",
+    "#commonCharacterFirstName#, #characterTitleObjectNoun.capitalizeAll# [_role:adept,avenger,guardian,hero,master,tyrant,witch]#_role.capitalize#",
+    "#commonCharacterFirstName#, [_how:First,Last]#_how# to #verbIntransitive.capitalize#"
   ],
   "characterClass": [
   	"master", "warlord", "avenger", "champion", "explorer", "pirate", "chieftain", "conqueror", "god", "assassin", "oracle", "ghost",
@@ -137,9 +144,10 @@
     "doctor", "thief", "judge", "juror", "executioner", "herald", "betrayer", "savior", "disciple", "rebel", "crybaby", "grinch",
     "barrista", "charlatan", "imposter", "bandit", "governor", "teenager", "prince", "princess", "artist", "warlock", "servant",
     "minion", "nomad", "protector", "navigator", "houndmaster", "alchemist", "commander", "leader", "predator", "constable", "merchant",
-    "priest", "ancestor", "martyr", "monarch", "voyager", "general", "victim", "customer", "seeker", "automaton", "keeper"
+    "priest", "ancestor", "martyr", "monarch", "voyager", "general", "victim", "customer", "seeker", "automaton", "keeper", "genius",
+    "gymnast", "demagogue", "malcontent", "maniac", "bookworm", "egghead", "ringleader", "ringmaster",  "gatekeeper", "keymaster",
+    "survivor", "vegan", "renegade"
  	],
-
   "characterTitle": [
   	"#characterClass#",
   	"#characterClass#",
@@ -149,6 +157,7 @@
   	"apothecary",
   	"archangel",
   	"archmage",
+    "destructor",
   	"elder",
   	"evincar",
   	"lunarch",
@@ -159,6 +168,30 @@
   	"#creatureTypes# whisperer",
   	"#creatureTypes# exterminator"
   ],
+  "characterTitleObjectNoun": [
+    "#massNoun#",
+    "#abstractNounMassNounOrEmotion#",
+    "#singularNoun#",
+    "#characterFactionOrRace#"
+  ],
+  "characterTitleManipulatorNoun": [
+    "baron",
+    "caller",
+    "chief",
+    "crafter",
+    "hunter",
+    "keeper",
+    "master",
+    "prophet",
+    "sage",
+    "sculptor",
+    "seer",
+    "seeker",
+    "sower",
+    "stalker",
+    "warden",
+    "walker"
+  ],
   "characterRace": [
   	"akki",
   	"amphin",
@@ -168,7 +201,7 @@
   	"kami",
   	"leonin",
   	"merrow",
-  	"nezumi"  	
+  	"nezumi"
   ],
   "characterFaction": [
   	"Abzan",
@@ -193,7 +226,7 @@
   "anyCharacter": [
   	"#planeswalkerFirstName#",
   	"#nonPlaneswalkerCharacter#",
-  	"#npcCharacter#",  	
+  	"#npcCharacter#",
   	"#mashupCharacter#"
   ]
 }
