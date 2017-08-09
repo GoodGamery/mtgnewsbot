@@ -41,14 +41,14 @@
         "#pro# [_picked:First Picked,Last Picked,Wheeled,Drafted,Topdecked,Morphed]#_picked# #card.capitalizeAll#[_challenge: and You Won't Believe,. You'll Be Floored By,. Guess,. Find Out,. #pros.capitalizeAll# are still talking about#]#_challenge# [_what:What Happened Next,What #pro.capitalize# Said Next,What #pro.capitalize# Did Next,Why #pro.capitalize# Called a Judge]#_what#",
         "PICTURES: #pro.capitalize#'s [_cosplayAdj:amazing,convincing,elaborate,unconventional]#_cosplayAdj# cosplay of [_who:#cardAlone#,#character#]#_who#",
         "New preview card from #teaserCardSet#! Is it #descriptor.a# #realPowerfulCard#?",
-	"[_opener:SHOCKER!,Unbelievable!,Rumor#colon#,BREAKING#colon#,It's true#colon#,UPDATE#colon#]#_opener# #pro# [_rule:petitioned,approached,contacted,called out]#_rule# by #wackyCharacter# to #dumbScenario#"
+	"[_opener:SHOCKER!,Unbelievable!,Rumor#colon#,BREAKING#colon#,It's true#colon#,UPDATE#colon#]#_opener# #pro# [_rule:petitioned,solicited,approached,contacted,called out]#_rule# by #wackyCharacter# to #dumbScenario#"
     ],
     "wackyCharacter": [
 	"Chinese investors",
 	"a future version of themselves",
 	"a boy with #count# months to live",
-	"a swarm of sentient [_flyingInsects:gnats,moths,bees,mosquitoes]#_flyingInsects#",
-	"[_maleAdjective:Stinky,Big,Corduroy,Teflon,Rodeo,Three Finger]#_maleAdjective# [_maleName:Pete,Jeff,Craig,Jimmy,Jack]#_maleName#"
+	"a swarm of [_insectAdjective:sentient,psychic,intelligent,cartoon]#_insectAdjective# [_flyingInsects:gnats,moths,bees,mosquitoes]#_flyingInsects#",
+	"[_maleAdjective:Stinky,Big,Corduroy,Teflon,Rodeo,Three Finger]#_maleAdjective# [_maleName:Pete,Jeff,Craig,Jimmy,Jack]#_maleName#",
 	"#their# own grandfather",
 	"a woman who can't recall where she parked her car",
 	"a shadowy man holding a beige envelope",
