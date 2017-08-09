@@ -56,10 +56,12 @@ function parseMessage(message) {
   let tags = {};
   let altText = `MTG Image`;
   const ENDL_MARKER = `|`;
-  message = message.split('\n').join(ENDL_MARKER);  // Support multiline strings from YAML
-  let text = message;
+  let text = message
+    .trim()
+    .split('\n')
+    .join(ENDL_MARKER);  // Support multiline strings from YAML;
 
-  let match = message.match(/\{\w+?\s+?.*\}/g);
+  let match = text.match(/\{\w+?\s+?.*\}/g);
   if (match) {
     match.forEach(match => {
       const tag = match.match(/\{(\w+)\s/)[1];
@@ -72,7 +74,7 @@ function parseMessage(message) {
           return result;
         }, {});
       }
-      text = message.replace(match, '').replace(ENDL_MARKER, '').trim();
+      text = text.replace(match, '').replace(ENDL_MARKER, '').trim();
     });
 
     // Further process svg tags

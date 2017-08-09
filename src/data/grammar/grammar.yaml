@@ -5,7 +5,7 @@
     "headline": [
         "#tip#",
         "#tipMoney#",
-        "#classifieds#",
+        "#imgClassifieds#",
         "#realization#",
         "#tournamentNews#",
         "#playguide#",
@@ -100,13 +100,6 @@
         "BREAKING: Prices of #card# Spiking; Market Cornered by #pros#",
         "Leaked: Team #team#'s new deck #deckLocation#s #card#, invest now"
     ],
-    "classifieds": [
-        "#titleClassified#: #card#, #card#, and #card#",
-        "#titleClassified#: #card# playset for #priceUSD#",
-        "#titleClassified#: #num2-99#x #cardAlone# @ #priceUSD# ea.",
-        "#titleClassified#: #broadCardClassification.capitalizeAll# Collection for #priceUSD#",
-        "#titleClassified#: Complete #broadCardClassification.capitalizeAll# Set for #priceUSD#"
-    ],
     "decktech": [
         "Deck Tech: #deckVariation#",
         "Deck of the Day: #deckVariation#",
@@ -126,9 +119,6 @@
       "Grudge Match",
       "#format# Super League [_round:Quarterfinals,Semifinals,Finals]#_round#",
       "MOCS [_round:Quarterfinals,Semifinals,Finals]#_round#"
-    ],
-    "titleClassified": [
-        "FOR SALE", "BUYLIST", "LOOKING TO TRADE", "TRADING POST"
     ],
     "investType": [
         "Short","Buy","Hold","Hoard","Sell"
