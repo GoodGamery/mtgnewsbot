@@ -57,14 +57,14 @@
 	"a group of wisecracking hoodlums"
     ],
     "dumbScenario": [
-	"attempt to roll back the damage-on-stack rules"
-	"join the development team of their fantasy CCG [_gameName:\"Goblinfort\",\"Zoxelorn #count.capitalize#\",\"Rage Mage\",\"Panty Heist\",\"#characterClass# Squad#colon# The Game\",\"#creatureTypes# War: the #abstractNoun#\"]#_gameName#"
-	"join their [_rule:\"Fist Bump,\"Get Completely Loaded,\"Drive With Your Eyes Closed,\"Watch Anime,\"Don't Pay Your Taxes,\"Wander Aimlessly]#_rule# For Charity\" initiative
-	"participate in their [_magicType:Two-Headed Giant,Pauper EDH,Vintage Singleton,No LD/No Counters/No Burn]#_magicType# invitational tournament"
-	"covertly collect information on #pro# in order to [_rule:learn their shuffling routine,get a better idea of what they look like naked,know what hate cards to board in against them]#_rule#
-	"infiltrate WOTC headquarters and destroy the reserved list"
-	"teach them how to beat #deck#"
-	"fix MTGO so that it works properly"
+	"attempt to roll back the damage-on-stack rules",
+	"join the development team of their fantasy CCG [_gameName:\"Goblinfort\",\"Zoxelorn #count.capitalize#\",\"Rage Mage\",\"Panty Heist\",\"#characterClass# Squad#colon# The Game\",\"#creatureTypes# War: the #abstractNoun#\"]#_gameName#",
+	"join their [_rule:\"Fist Bump,\"Get Completely Loaded,\"Drive With Your Eyes Closed,\"Watch Anime,\"Don't Pay Your Taxes,\"Wander Aimlessly]#_rule# For Charity\" initiative",
+	"participate in their [_magicType:Two-Headed Giant,Pauper EDH,Vintage Singleton,No LD/No Counters/No Burn]#_magicType# invitational tournament",
+	"covertly collect information on #pro# in order to [_rule:learn their shuffling routine,get a better idea of what they look like naked,know what hate cards to board in against them]#_rule#",
+	"infiltrate WOTC headquarters and destroy the reserved list",
+	"teach them how to beat #deck#",
+	"fix MTGO so that it works properly",
 	"help them complete their #realbadcard# playset"
     ],
     "announcement": [
