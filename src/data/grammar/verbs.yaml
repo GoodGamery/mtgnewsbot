@@ -96,9 +96,24 @@
       "doing pushups",
       "hibernating",
       "using the power of prayer",
-      "talking to a therapist",
       "doing hard drugs",
-      "lying face down and giving up"
+      "running head first into a wall",
+      "barfing into a hat",
+      "living inside an animal carcass",
+      "refusing to shake people's hands"
+  ],
+  "verbDesireableOutcomeIntransitive": [
+      "win the Pro Tour",
+      "secure a job with WOTC",
+      "open a thriving LGS",
+      "build a sideboard for the burn matchup",
+      "crush noobs on MTGO",
+      "cast a 15/15 with haste",
+      "gain enough pro points to travel to #city#",
+      "finally beat Shandalar on hard mode",
+      "secretly draw an extra card when using a fetchland",
+      "discover the secrets of the MTGO shuffler",
+      "get MaRo to step down as Lead Magic Designer"
   ],
   "revealVerb": [
       "reveal", "unveil", "disclose", "uncover", "expose", "explain"
