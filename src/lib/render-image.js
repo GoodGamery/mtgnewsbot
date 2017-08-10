@@ -46,7 +46,7 @@ function renderImageFromHtml(html, outputPath, cropOptions) {
       }
 
       Jimp.read(tempFile)
-        .then(cropAndWriteFile.bind(null, outputPath, cropOptions))
+        .then(tempFile => cropAndWriteFile(outputPath, cropOptions, tempFile))
         .then(() => {
           resolve({
             rendered: true,
@@ -65,6 +65,7 @@ function renderImageFromHtml(html, outputPath, cropOptions) {
 }
 
 function cropAndWriteFile(path, cropOptions, sourceImage) {
+
   const writeImage = image => {
     return new Promise((resolve, reject) => {
       image.write(path, err => {
@@ -77,23 +78,25 @@ function cropAndWriteFile(path, cropOptions, sourceImage) {
     });
   };
 
-  if (cropOptions.width && cropOptions.height) {
-    return sourceImage.autocrop((err, image) => {
-      const logoWidth = image.bitmap.width;
-      const logoHeight =  image.bitmap.height;
-      const padding = cropOptions.padding;
-      const backgroundColor = cropOptions.backgroundColor || 0xFFFFFFFF;
-      return new Jimp(logoWidth + padding, logoHeight + padding, backgroundColor, (err, background) => {
-        background.composite(image, padding/2, padding/2).contain(cropOptions.width, cropOptions.height, (err, image) => {
-          return writeImage(image);
+	return new Promise(resolve => {
+    if (cropOptions.width && cropOptions.height) {
+      return sourceImage.autocrop((err, image) => {
+        const logoWidth = image.bitmap.width;
+        const logoHeight =  image.bitmap.height;
+        const padding = cropOptions.padding;
+        const backgroundColor = cropOptions.backgroundColor || 0xFFFFFFFF;
+        return new Jimp(logoWidth + padding, logoHeight + padding, backgroundColor, (err, background) => {
+          background.composite(image, padding/2, padding/2).contain(cropOptions.width, cropOptions.height, (err, image) => {
+            return writeImage(image).then(resolve);
+          });
         });
       });
-    });
-  } else {
-    return sourceImage.autocrop((err, image) => {
-      return writeImage(image);
-    });
-  }
+    } else {
+      return sourceImage.autocrop((err, image) => {
+        return writeImage(image).then(resolve);
+      });
+    }
+  });
 }
 
 function renderImageFromSvg(svg, outputPath) {
