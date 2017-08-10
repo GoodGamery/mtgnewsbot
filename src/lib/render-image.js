@@ -65,7 +65,6 @@ function renderImageFromHtml(html, outputPath, cropOptions) {
 }
 
 function cropAndWriteFile(path, cropOptions, sourceImage) {
-
   const writeImage = image => {
     return new Promise((resolve, reject) => {
       image.write(path, err => {
