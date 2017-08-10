@@ -47,7 +47,7 @@ svgDeckTechAccessoriesImageUrl:
 
 svgDeckTechTitle:
   - "DECK TECH[_textSubtitle:with #_pro#][_postScript:#_format#]"
-  - "#_format# Brews[_textSubtitle:][_pro:#pro#][_postScript:#_pro#]"
+  - "#_format# Brews[_textSubtitle:][_pro:#_pro#][_postScript:#_pro#]"
 
 svgDeckTechGenerateName:
   - "[_featuredCard:#realHandCard#][_deckName:#deckArch#]"
