@@ -71,19 +71,18 @@
   ],
   "planeBasedSet": [
     "#cardSetPrefix# #plane#",
-    "#cardSetPrefix# #plane#",      
+    "#cardSetPrefix# #plane#",
     "#plane# #cardSetSuffix#",
-    "#plane# #cardSetSuffix#",       
+    "#plane# #cardSetSuffix#",
     "#plane# #omenOrEventNoun#",
-    "#plane# #verbIntransitiveGerund#"    
+    "#plane# #verbIntransitiveGerund#"
   ],
   "omenOrEventNoun": [
     "dawn", "revolt", "assault", "omen", "moon", "apocalypse", "rising"
-  ],  
-  "cardSetPrefix": [
+  ],  "cardSetPrefix": [
       "#beings# of",
       "#beings# of",
-      "#beings# of",      
+      "#beings# of",
       "#itemNoun.s# of",
       "#massNoun# of",
       "#things2# of",

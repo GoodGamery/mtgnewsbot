@@ -12,7 +12,7 @@ imgClassifieds:
 svgImgClassifieds: >
   #_header# #_body# {svg svgString=`#svgFourCards#`}
 pickBigHeader: >
-  [_header:#titleClassified##colon#]
+  [_header:#titleClassified#]
 titleClassified:
 - FOR SALE
 - BUYLIST

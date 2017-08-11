@@ -154,7 +154,7 @@ tip:
   in #format#"
 - "#tipTitle#: #improvementGoal.capitalize# by #deckChange#"
 - "[_improve:Improve,Increase,Pump up,Raise,Augment]#_improve# your collection's resale
-  value by #stupidSolution#."
+  value by #stupidSolution#"
 
 stupidSolution:
 - 'adding subtle grillmarks to your #dualLands# playset'
