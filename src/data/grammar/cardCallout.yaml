@@ -1,0 +1,12 @@
+---
+cardCallout:
+- "[_cardname:#realCard#]#cardCalloutText# #_cardname#.#imgCard#"
+
+cardCalloutText:
+- "WE'RE NOT WRONG: The card you're thinking of is"
+- "DON'T DENY IT: The card you're thinking of is"
+- "HOW DID WE KNOW? The card you're thinking of is"
+- "WE'RE RIGHT: The card you're thinking of is"
+- "DID YOU KNOW? The card you're thinking of is"
+- "GET A LOAD OF THIS FRIGGIN' CARD:"
+- "IS THIS YOUR CARD? The card you're thinking of is"
