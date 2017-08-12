@@ -50,7 +50,7 @@
   ],
   "novelCardSetName": [
     "#planeBasedSet#",
-    "#planeBasedSet#",
+    "#miscNovelCardSetName#",
     "#miscNovelCardSetName#"
   ],
 
@@ -61,7 +61,7 @@
 
   "miscNovelCardSetName": [
     "#collectiveActionOrRealm# of the #beings#",
-    "#characterClass.s# of #creatureTypes#town",
+    "#characterClass.s# of [_realm:[_prefix:#creatureTypes#,#characterClass#]#_prefix##shortRealmSuffix#][_realm:#creatureTypes##shortRealmSuffix#]#_realm#",
     "#collective# of #beings#",
     "#beings# #verbIntransitiveGerund#",
     "[_time:Hour,Day,Age,Dawn]#_time# of #abstractNoun#",
@@ -69,6 +69,32 @@
     "[_desc:#adj#,#massNoun#,#creatureTypes#]#_desc.capitalizeAll# #omenOrEventNoun#",
     "#fakeCardSetName#"
   ],
+
+  "shortRealmSuffix": [
+    "town",
+    "dale",
+    "gate",
+    "fall",
+    "world",
+    "home",
+    "heim",
+    "ville",
+    "moor",
+    "port",
+    "shire",
+    "blight",
+    "glade",
+    "gard"
+  ],
+
+  "longRealmSuffix": [
+    "abad",
+    "hammer",
+    "mantle",
+    "opolis",
+    "topia"
+  ],
+
   "planeBasedSet": [
     "#cardSetPrefix# #plane#",
     "#cardSetPrefix# #plane#",
