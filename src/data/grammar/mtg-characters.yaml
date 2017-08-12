@@ -45,7 +45,7 @@
       "Borborygmos#malePronouns#",
       "Commander Eesha#femalePronouns#",
       "Crovax#malePronouns#",
-      "Davvol#malePronouns#",      
+      "Davvol#malePronouns#",
       "Elesh Norn#femalePronouns#",
       "Emrakul#femalePronouns#",
       "Ertai#malePronouns#",
@@ -53,7 +53,7 @@
       "Fblthp#malePronouns#",
       "Gaddock Teeg#malePronouns#",
       "Gerrard#malePronouns#",
-      "General Varchild#malePronouns#",      
+      "General Varchild#malePronouns#",
       "Grakk#malePronouns#",
       "Griselbrand#malePronouns#",
       "Hanna#femalePronouns#",
@@ -146,7 +146,7 @@
     "minion", "nomad", "protector", "navigator", "houndmaster", "alchemist", "commander", "leader", "predator", "constable", "merchant",
     "priest", "ancestor", "martyr", "monarch", "voyager", "general", "victim", "customer", "seeker", "automaton", "keeper", "genius",
     "gymnast", "demagogue", "malcontent", "maniac", "bookworm", "egghead", "ringleader", "ringmaster",  "gatekeeper", "keymaster",
-    "survivor", "vegan", "renegade"
+    "survivor", "vegan", "renegade", "flunky", "henchman", "emissary", "orphan", "enemy"
  	],
   "characterTitle": [
   	"#characterClass#",
@@ -166,7 +166,11 @@
   	"slayer-captain",
   	"vizier",
   	"#creatureTypes# whisperer",
-  	"#creatureTypes# exterminator"
+  	"#creatureTypes# exterminator",
+    "#itemNounOrMassNoun# merchant",
+    "#creatureTypes# hunter",
+    "#nonPlaneLocation# emissary",
+    "#massNoun#mancer"
   ],
   "characterTitleObjectNoun": [
     "#massNoun#",
