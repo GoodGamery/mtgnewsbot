@@ -8,16 +8,58 @@
       "Standard",
       "Pauper",
       "Momir",
-      "Onslaught Block Constructed",
+      "#expansionBlock# Block Constructed",
       "Holiday Cube",
       "Type 4",
       "Two-Headed Giant",
-      "Kitchen Table Magic"
+      "Kitchen Table Magic",
+      "#alternativeConstructedFormat#",
+      "#alternativeDraftFormat# draft"
   ],
   "normalFormat": [
       "Standard",
       "Modern",
       "Draft",
       "Sealed"
+  ],
+  "alternativeConstructedFormat": [
+    "DC10",
+    "Emporer",
+    "Five-Color",
+    "Flip it or Rip it",
+    "Frontier",
+    "Mental Magic",
+    "Peasant",
+    "Tiny Masters",
+    "Three-Card Blind",
+    "Tribal Wars",
+    "Type Dan Gray"
+  ],
+  "alternativeDraftFormat": [
+    "Backdraft",
+    "Mini-master",
+    "Rotisserie",
+    "Rochester",
+    "Solomon",
+    "Winston"
+  ],
+  "expansionBlock": [
+    "Ice Age",
+    "Mirage",
+    "Tempest",
+    "Urza",
+    "Masques",
+    "Invasion",
+    "Odyssey",
+    "Onslaught",
+    "Mirrodin",
+    "Kamigawa",
+    "Ravnica",
+    "Time Spiral",
+    "Lorwyn",
+    "Shadowmoor",
+    "Alara",
+    "Zendikar",
+    "Innistrad"
   ]
 }

@@ -61,13 +61,15 @@
 
   "miscNovelCardSetName": [
     "#collectiveActionOrRealm# of the #beings#",
-    "#characterClass.s# of [_realm:[_prefix:#creatureTypes#,#characterClass#]#_prefix##shortRealmSuffix#][_realm:#creatureTypes##shortRealmSuffix#]#_realm#",
+    "#characterClass.s# of [_prefix:#creatureTypes#,#characterClass#]#_prefix##shortRealmSuffix#",
+    "#characterClass.s# of #creatureTypes#[_place:#shortRealmSuffix#,#longRealmSuffix#]#_place#",
     "#collective# of #beings#",
     "#beings# #verbIntransitiveGerund#",
     "[_time:Hour,Day,Age,Dawn]#_time# of #abstractNoun#",
     "[_mastery:#format#,#adj#]#_mastery# masters [_year:,2017,2018]#_year#",
     "[_desc:#adj#,#massNoun#,#creatureTypes#]#_desc.capitalizeAll# #omenOrEventNoun#",
-    "#fakeCardSetName#"
+    "[_desc:#adj#,#massNoun#,#creatureTypes#]#_desc.capitalizeAll# #fableLocationNoun#",
+    "[_setting:Theater of,Curse of][_adjOrSetting:#adj#,#_setting#]#_adjOrSetting# #abstractNoun#"
   ],
 
   "shortRealmSuffix": [
@@ -84,17 +86,25 @@
     "shire",
     "blight",
     "glade",
-    "gard"
+    "gard",
+    "land"
   ],
 
   "longRealmSuffix": [
-    "abad",
     "hammer",
     "mantle",
     "opolis",
     "topia"
   ],
 
+  "fableLocationNoun": [
+    "isle",
+    "keep",
+    "mountain",
+    "ridge",
+    "valley"
+  ]
+,
   "planeBasedSet": [
     "#cardSetPrefix# #plane#",
     "#cardSetPrefix# #plane#",
@@ -104,8 +114,9 @@
     "#plane# #verbIntransitiveGerund#"
   ],
   "omenOrEventNoun": [
-    "dawn", "revolt", "assault", "omen", "moon", "apocalypse", "rising"
-  ],  "cardSetPrefix": [
+    "dawn", "revolt", "assault", "omen", "moon", "apocalypse", "rising", "age", "awakening", "invasion", "uprising"
+  ],
+  "cardSetPrefix": [
       "#beings# of",
       "#beings# of",
       "#beings# of",
@@ -138,10 +149,11 @@
     "#characterClass.s#"
   ],
   "collectiveActionOrRealm": [
-    "rise", "revenge", "clash", "realm", "call", "sphere", "tales", "flight", "festival", "cult", "order", "ruin"
+    "rise", "revenge", "clash", "realm", "call", "sphere", "tales", "flight", "festival", "cult", "order", "ruin", "empire", "conclave",
+    "council", "mutiny", "decline", "fall", "fate", "scourge", "legacy"
   ],
   "collective": [
-    "league", "guild", "tournament", "city",  "kingdom", "ruin"
+    "league", "guild", "tournament", "city",  "kingdom", "fellowship", "clan", "ruin"
   ],
   "cardSetSuffix": ["reborn", "revisited", "unleashed", "dawn", "ascendant"]
 }

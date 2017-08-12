@@ -77,21 +77,33 @@ function cropAndWriteFile(path, cropOptions, sourceImage) {
     });
   };
 
-	return new Promise(resolve => {
+	return new Promise((resolve, reject) => {
     if (cropOptions.width && cropOptions.height) {
       return sourceImage.autocrop((err, image) => {
+        if (err) {
+          reject(err);
+        }         
         const logoWidth = image.bitmap.width;
         const logoHeight =  image.bitmap.height;
         const padding = cropOptions.padding;
         const backgroundColor = cropOptions.backgroundColor || 0xFFFFFFFF;
         return new Jimp(logoWidth + padding, logoHeight + padding, backgroundColor, (err, background) => {
+          if (err) {
+            reject(err);
+          }    
           background.composite(image, padding/2, padding/2).contain(cropOptions.width, cropOptions.height, (err, image) => {
+            if (err) {
+              reject(err);
+            }            
             return writeImage(image).then(resolve);
           });
         });
       });
     } else {
       return sourceImage.autocrop((err, image) => {
+        if (err) {
+          reject(err);
+        }        
         return writeImage(image).then(resolve);
       });
     }

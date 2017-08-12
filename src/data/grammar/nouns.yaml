@@ -2,6 +2,7 @@
   "concreteNounOrPluralNoun": ["#concreteNoun#","#pluralNoun#"],
   "pluralNounOrMassNoun": ["#pluralNoun#","#massNoun#"],
   "abstractNounMassNounOrEmotion": ["#abstractNoun#","#massNoun#","#emotion#"],
+  "itemNounOrMassNoun": ["#itemNoun#","#massNoun#"],
   "noun": [
       "#singularNoun#",
       "[_other:#pluralNoun#,#massNoun#]#_other#"
@@ -38,7 +39,7 @@
       "lack of self-control", "publicity", "vengeance", "violence", "advice", "applause", "innocence", "corruption", "dignity", "education",
       "fame",  "freedom", "poor health", "hospitality", "hunger", "karate", "logic", "luck", "nonsense", "recreation", "pleasure", "pain",
       "leisure", "revenge", "time", "traffic", "damage", "imbalance", "wrath", "illusion", "madness", "gravity", "brinksmanship", "vacation",
-      "anxiety"
+      "anxiety", "destiny"
   ],
   "emotion": [
       "anticipation", "discomfort",  "disgust", "envy", "confusion", "giddiness", "fear", "consternation", "squeamishness", "hatred",
@@ -63,7 +64,7 @@
       "portal", "hair salon", "shipwreck", "pasture", "circus tent", "fortress", "junkyard", "pillow fort", "mausoleum", "sepulcher",
       "kitchenette", "churchyard", "mortuary", "abattoir", "art studio", "pet store", "armory", "gazebo", "playground", "animal shelter",
       "gazebo", "taco stand", "pyramid", "igloo", "dude ranch", "cabin", "gas station", "tattoo parlor", "tavern", "vineyard", "drawbridge",
-      "pantry", "stairwell", "petting zoo", "supermarket", "bayou", "ziggurat", "clocktower"
+      "pantry", "stairwell", "petting zoo", "supermarket", "bayou", "ziggurat", "clocktower", "lair", "void", "quarry"
   ],
   "irregularPluralNoun": [
       "teeth", "feet", "pants", "geese", "fish", "children", "stimuli", "potatoes", "knives", "ashes", "riches", "hypotheses", "neuroses",
@@ -77,7 +78,7 @@
     "bread", "cardboard", "jelly", "livestock", "mayonnaise", "music", "paper", "smoke", "sugar", "underwear", "electricity", "equipment", "art supplies", "gravy",
     "furniture", "laughter", "rubbish", "junk mail", "meat", "dietary suppliments", "pasta", "pollution", "salad", "seafood", "soap", "shampoo", "stuff", "valuables",
     "sunshine", "foliage", "cutlery", "signage", "bacteria", "electronics", "popcorn", "glue", "facial tissue", "poison", "venom", "bubbles", "algae", "fungus",
-    "carpeting", "wallpaper", "baby powder"
+    "carpeting", "wallpaper", "baby powder", "taffy", "pudding", "confetti", "saliva", "leather", "sawdust"
   ],
   "objectNounPronoun": ["[_noun:#aNoun#,#abstractNoun#,#abstractNoun#,#massNoun#,#adj.a# #itemNoun#][_pronoun:it]","[_noun:#pluralNoun#][_pronoun:them]"],
   "twoObjects": [
