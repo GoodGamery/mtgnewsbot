@@ -35,6 +35,7 @@ function renderImageFromHeadline(headline, outputPath) {
   }
 }
 
+
 function renderImageFromHtml(html, outputPath, cropOptions) {
   return new Promise((resolve, reject) => {
     const tempFile = `${outputPath}.tmp.png`;

@@ -1,0 +1,42 @@
+---
+fromTheVaultLogoImage: "Wizards Announces: From the Vault: [_contents:#nouns#,#pluralNoun#,#massNoun#]#_contents.capitalize# {htmlImg htmlImgString=`#_fromTheVaultLogo#`}"
+
+_fromTheVaultLogo: |
+  <div><img src="src/data/images/ftv/mtg-ftv-logo.png"/></div>  
+# _gathererRulingImageStyle: |
+#   <head>
+#     <style>
+#       div.container
+#         << background: rgb(47,47,47); width: 505px; >>
+#       table
+#         << display: table; width: 100%; border-collapse: separate; border-spacing: 1px; text-align: center; vertical-align: middle margin: 0; background: rgb(20,20,20); >>
+#       tbody
+#         << display: table-row-group; color: rgb(197,197,197); >> tr << vertical-align: inherit; border-color: inherit; display: table-row; background-color: rgba(255,255,366, 0.08); >>
+#       td
+#         << border-collapse: separate; border-spacing: 2px; text-align: center; vertical-align: middle padding: 5px; margin: 0; background: rgb(61,61,61); >>
+#       td.rulingsHeader
+#         << background: rgb(31,30,30); >> div.rulingsHeader << font-family: Open Sans Semibold; font-size: 19px; padding: 6px; background: rgb(31,30,30); >>
+#       td.rulingDate
+#         << width: 70px; font-size: .9em; padding-left: 10px; padding-right: 8px; font-weight: bold; text-align: right; border-spacing: 1px; font-family: Open Sans; >>
+#       td.rulingText
+#         << width: auto; font-size: .9em; padding: 6px 8px 6px 8px; line-height: 1.3em; font-weight: 500; text-align: left; border-spacing: 1px; font-family: Open Sans; margin-top: 6px; margin-bottom: 6px; -webkit-text-stroke: 0.5px; >>
+#       td.oddItem
+#         << background-color: rgb(61,61,61); >> td.evenItem << background-color: rgb(58,57,57); >> a:link << color: rgb(120,120,120); visited font-size: .8em; >>
+#       a:visited
+#         << color: rgb(120,120,120); font-size: .8em; >>
+#     </style>
+#   </head>
+
+# _fromTheVaultLogo: |
+# <div style="text-align: center;">
+#   <div style="border-width: 1px; left: 50%;">
+#   <div style="height: 153px; left: 50%;"><img src="./mtg-ftv-logo.png"></div>
+#   </div>
+#   <div style="display: flex; flex-direction: row; justify-content: center; font-size:28px;">
+#     <div style="flex-grow: 3;"></div>
+#     <div style="flex-grow: 1; text-align:right;"><img src="./mtg-ftv-banner-cap-left.png"/></div>
+#     <div style="font-size:28px; min-width: 530px; padding-top: 6px; color:#006EAD; font-family:Beleren; background-image: url(./mtg-ftv-banner-pattern-pixel.png); background-repeat: repeat-x;"><span>FROM THE VAULT: CRABS</span></div>
+#     <div style=" flex-grow: 1; text-align:left;"> <img src="./mtg-ftv-banner-cap-right.png"/> </div>  
+#     <div style="flex-grow: 3;"></div>
+#   </div>  
+# </div>

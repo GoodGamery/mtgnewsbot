@@ -52,6 +52,22 @@ class Headline {
   }
 }
 
+function pathToFileUrl(str) {
+  var path = require('path');
+  if (typeof str !== 'string') {
+      throw new Error('Expected a string');
+  }
+
+  var pathName = path.resolve(str).replace(/\\/g, '/');
+
+  // Windows drive letter must be prefixed with a slash
+  if (pathName[0] !== '/') {
+      pathName = '/' + pathName;
+  }
+
+  return encodeURI('file://' + pathName);
+}
+
 function parseMessage(message) {
   let tags = {};
   let altText = `MTG Image`;
@@ -100,6 +116,18 @@ function parseMessage(message) {
   }
 
   text = text.trim().replace(/\s+/g,' ');
+
+  var imgMatch = tags.htmlImg.htmlImgString && tags.htmlImg.htmlImgString.match(/\ssrc=".*?"/g);
+
+  if (imgMatch) {
+    const htmlBaseTag = '<base href="/"/>';    
+    tags.htmlImg.htmlImgString = htmlBaseTag + tags.htmlImg.htmlImgString;
+    imgMatch.forEach(match => {
+      const _match = match.match(/"(.*)?"/);
+      const _adjustedPath =  pathToFileUrl(process.cwd()) + '/' + _match[1];
+      tags.htmlImg.htmlImgString = tags.htmlImg.htmlImgString.replace(_match[1], _adjustedPath);
+    });    
+  }
 
   return new Headline(text, tags, altText);
 }
