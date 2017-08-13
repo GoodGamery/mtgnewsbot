@@ -2,12 +2,15 @@
 
 const tracery = require(`tracery-grammar`);
 const path = require('path');
+const customTraceryModifiers = require(`./lib/plugins/tracery/custom-modifiers`);
+const pathToFileUrl = require(`./lib/util/path-to-file-url`);
 
 class HeadlineMaker {
 
   constructor(grammar) {
     this.grammar = tracery.createGrammar(grammar);
     this.grammar.addModifiers(tracery.baseEngModifiers);
+    this.grammar.addModifiers(customTraceryModifiers);    
     this.origin = `#origin#`;
   }
 
@@ -94,6 +97,10 @@ function parseMessage(message) {
 
       // Patch up CSS file paths
       tags.htmlImg.htmlImgString = resolveCssUrls(tags.htmlImg.htmlImgString);
+
+      // Patch up HTML file paths
+      tags.htmlImg.htmlImgString = resolveHtmlUrls(tags.htmlImg.htmlImgString);
+
       // Get the alt text out of it
       altText = tags.htmlImg.altText || altText;
     }
@@ -124,4 +131,33 @@ function resolveCssUrls(html) {
     newHtml = newHtml.replace(match, 'url('+ fileUrl(match.match(/url\((\..*?)\)/)[1])  + ')');
   });
   return newHtml;
+}
+
+function resolveHtmlUrls(html) {
+  const matchRegexes = [
+    { matchRegex: /\ssrc="\..*?"/g, replacementRegex: /"(\.?\/.*)"/ }
+  ];
+
+  var htmlImgHasLocalPaths = false;
+  matchRegexes.forEach(regex => {
+    htmlImgHasLocalPaths = true;
+
+    var imgMatch = html.match(regex.matchRegex);
+    if (imgMatch) {
+      imgMatch.forEach(match => {
+        const _match = match.match(regex.replacementRegex);
+        if (_match) {
+          const _adjustedPath =  pathToFileUrl(process.cwd()) + (_match[1].charAt(0) === '.' ? _match[1].substr(1) : _match[1]);
+          const updatedString =  html.replace(_match[1], _adjustedPath);
+          html = html.replace(_match[1], _adjustedPath);
+        }
+      });      
+    }  
+  });
+
+  if (htmlImgHasLocalPaths) {
+    const htmlBaseTag = '<base href="/"/>';    
+    html = htmlBaseTag + html;
+  }
+  return html;
 }

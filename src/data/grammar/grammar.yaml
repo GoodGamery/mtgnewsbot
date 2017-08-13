@@ -88,13 +88,23 @@ dumbScenario:
 - 'help them complete their #realbadcard# playset'
 
 announcement:
+- "#textAnnouncement#"
+- "#graphicAnnouncement#"
+
+textAnnouncement:
 - 'Wizards Announces: Duel Decks: [_one:#nouns.capitalizeAll#,#planeswalkerFirstName#]#_one#
   vs. [_two:#nouns.capitalizeAll#,#planeswalkerFirstName#]#_two#'
-- 'Wizards Announces: From the Vault: [_contents:#nouns#,#pluralNoun#,#massNoun#]#_contents.capitalize#'
 - 'Announcement: #pro# has joined Team #team#'
 - "#gatherer#"
 
 graphicAnnouncement:
+- "#fromTheVaultGraphicAnnouncement#"
+- "#novelSetGraphicAnnouncement#"
+
+fromTheVaultGraphicAnnouncement:
+- "Wizards Announces: From the Vault: [_vaultContents:#_fromTheVaultVaultContents#]#_vaultContents.capitalize# {htmlImg htmlImgString=`#fromTheVaultLogoImage#`}"
+
+novelSetGraphicAnnouncement:
 - 'Wizards Announces: [_cardset:#novelCardSetName.capitalizeAll#]#_cardset#{htmlImg
   htmlImgString=`#mtgSetLogoImage#` width=`600` height=`300` padding=`12` backgroundColor=`0x000000FF`}'
 - "[_nextSet:The next set,The next fall set,#codename.capitalize#][_verbphrase:is
