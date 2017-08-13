@@ -5,6 +5,12 @@ _fromTheVaultVaultContents:
 - "#nouns#"
 - "#pluralNoun#"
 - "#massNoun#"
+- "#characterClass.s#"
+- "#creatureTypes.s#"
+- "#abstractNoun#"
+- "#emotion#"
+- "#gameConcept#"
+- "#adj#"
 
 _fromTheVaultLogoHtml: "#_fromTheVaultLogoStyle# #_fromTheVaultLogo#"
 
