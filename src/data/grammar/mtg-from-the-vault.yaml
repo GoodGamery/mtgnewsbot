@@ -2,7 +2,7 @@
 fromTheVaultLogoImage: "Wizards Announces: From the Vault: [_contents:#nouns#,#pluralNoun#,#massNoun#]#_contents.capitalize# {htmlImg htmlImgString=`#_fromTheVaultLogo#`}"
 
 _fromTheVaultLogo: |
-  <div><img src="src/data/images/ftv/mtg-ftv-logo.png"/></div>  
+  <div><img src="http://pseudochaos.org/goodgamery/mtgnewsbot/images/textures/grit.png"/><img src="/src/data/images/ftv/mtg-ftv-logo.png"/></div>  
 # _gathererRulingImageStyle: |
 #   <head>
 #     <style>

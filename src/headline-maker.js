@@ -123,9 +123,12 @@ function parseMessage(message) {
     const htmlBaseTag = '<base href="/"/>';    
     tags.htmlImg.htmlImgString = htmlBaseTag + tags.htmlImg.htmlImgString;
     imgMatch.forEach(match => {
-      const _match = match.match(/"(.*)?"/);
-      const _adjustedPath =  pathToFileUrl(process.cwd()) + '/' + _match[1];
-      tags.htmlImg.htmlImgString = tags.htmlImg.htmlImgString.replace(_match[1], _adjustedPath);
+      const _match = match.match(/"(\/.*)?"/);
+      if (_match) {
+        console.log('_match: ' + _match[1]);
+        const _adjustedPath =  pathToFileUrl(process.cwd()) +  _match[1];
+        tags.htmlImg.htmlImgString = tags.htmlImg.htmlImgString.replace(_match[1], _adjustedPath);
+      }
     });    
   }
 
