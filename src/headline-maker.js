@@ -2,6 +2,7 @@
 
 const tracery = require(`tracery-grammar`);
 const path = require('path');
+const pathToFileUrl = require(`./lib/util/path-to-file-url.js`);
 
 class HeadlineMaker {
 
@@ -50,22 +51,6 @@ class Headline {
     }
     Object.freeze(this);
   }
-}
-
-function pathToFileUrl(str) {
-  var path = require('path');
-  if (typeof str !== 'string') {
-      throw new Error('Expected a string');
-  }
-
-  var pathName = path.resolve(str).replace(/\\/g, '/');
-
-  // Windows drive letter must be prefixed with a slash
-  if (pathName[0] !== '/') {
-      pathName = '/' + pathName;
-  }
-
-  return encodeURI('file://' + pathName);
 }
 
 function parseMessage(message) {
@@ -117,7 +102,7 @@ function parseMessage(message) {
 
   text = text.trim().replace(/\s+/g,' ');
 
-  var imgMatch = tags.htmlImg.htmlImgString && tags.htmlImg.htmlImgString.match(/\ssrc=".*?"/g);
+  var imgMatch = tags.htmlImg && tags.htmlImg.htmlImgString && tags.htmlImg.htmlImgString.match(/\ssrc=".*?"/g);
 
   if (imgMatch) {
     const htmlBaseTag = '<base href="/"/>';    
