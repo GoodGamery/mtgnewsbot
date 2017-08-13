@@ -97,27 +97,16 @@ function parseMessage(message) {
 
       // Patch up CSS file paths
       tags.htmlImg.htmlImgString = resolveCssUrls(tags.htmlImg.htmlImgString);
+
+      // Patch up HTML file paths
+      tags.htmlImg.htmlImgString = resolveHtmlUrls(tags.htmlImg.htmlImgString);
+
       // Get the alt text out of it
       altText = tags.htmlImg.altText || altText;
     }
   }
 
   text = text.trim().replace(/\s+/g,' ');
-
-  var imgMatch = tags.htmlImg && tags.htmlImg.htmlImgString && tags.htmlImg.htmlImgString.match(/\ssrc=".*?"/g);
-
-  if (imgMatch) {
-    const htmlBaseTag = '<base href="/"/>';    
-    tags.htmlImg.htmlImgString = htmlBaseTag + tags.htmlImg.htmlImgString;
-    imgMatch.forEach(match => {
-      const _match = match.match(/"(\/.*)?"/);
-      if (_match) {
-        console.log('_match: ' + _match[1]);
-        const _adjustedPath =  pathToFileUrl(process.cwd()) +  _match[1];
-        tags.htmlImg.htmlImgString = tags.htmlImg.htmlImgString.replace(_match[1], _adjustedPath);
-      }
-    });    
-  }
 
   return new Headline(text, tags, altText);
 }
@@ -142,4 +131,33 @@ function resolveCssUrls(html) {
     newHtml = newHtml.replace(match, 'url('+ fileUrl(match.match(/url\((\..*?)\)/)[1])  + ')');
   });
   return newHtml;
+}
+
+function resolveHtmlUrls(html) {
+  const matchRegexes = [
+    { matchRegex: /\ssrc="\..*?"/g, replacementRegex: /"(\.?\/.*)"/ }
+  ];
+
+  var htmlImgHasLocalPaths = false;
+  matchRegexes.forEach(regex => {
+    htmlImgHasLocalPaths = true;
+
+    var imgMatch = html.match(regex.matchRegex);
+    if (imgMatch) {
+      imgMatch.forEach(match => {
+        const _match = match.match(regex.replacementRegex);
+        if (_match) {
+          const _adjustedPath =  pathToFileUrl(process.cwd()) + (_match[1].charAt(0) === '.' ? _match[1].substr(1) : _match[1]);
+          const updatedString =  html.replace(_match[1], _adjustedPath);
+          html = html.replace(_match[1], _adjustedPath);
+        }
+      });      
+    }  
+  });
+
+  if (htmlImgHasLocalPaths) {
+    const htmlBaseTag = '<base href="/"/>';    
+    html = htmlBaseTag + html;
+  }
+  return html;
 }

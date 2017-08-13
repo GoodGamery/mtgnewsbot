@@ -1,5 +1,5 @@
 ---
-fromTheVaultLogoImage: "Wizards Announces: From the Vault: [_vaultContents:#_fromTheVaultVaultContents#]#_vaultContents.capitalize# {htmlImg htmlImgString=`#_fromTheVaultLogoHtml#`}"
+fromTheVaultLogoImage: "#_fromTheVaultLogoStyle# #_fromTheVaultLogo#"
 
 _fromTheVaultVaultContents:
 - "#nouns#"
@@ -12,9 +12,7 @@ _fromTheVaultVaultContents:
 - "#gameConcept#"
 - "#adj#"
 
-_fromTheVaultLogoHtml: "#_fromTheVaultLogoStyle# #_fromTheVaultLogo#"
-
-_fromTheVaultImageDirectory: "/src/data/images/ftv"
+_fromTheVaultImageDirectory: "./src/data/images/ftv"
 
 _fromTheVaultLogoStyle: |
   <head>
@@ -22,7 +20,7 @@ _fromTheVaultLogoStyle: |
       td
         << text-align: center; background: -webkit-linear-gradient(#eee, #333)  -webkit-text-fill-color: transparent;>>
       td.title-text
-        << background-color:rgb(0, 0, 12); font-size:32px; min-width: 530px; white-space: nowrap; color:rgb(0, 110, 173); font-family:Beleren; background-image: url(./mtg-ftv-banner-pattern-pixel.png); background-repeat: repeat-x;  padding: 0; >>
+        << background-color:rgb(0, 0, 12); font-size:32px; min-width: 530px; white-space: nowrap; color:rgb(0, 110, 173); font-family:Beleren; background-image: url(./#_fromTheVaultImageDirectory#/mtg-ftv-banner-pattern-pixel.png); background-repeat: repeat-x;  padding: 0; >>
       span.title-text
         <<  padding: 0 10px 0 10px; >>
     </style>
@@ -35,7 +33,7 @@ _fromTheVaultLogo: |
     </tr>
     <tr>
       <td><img src="#_fromTheVaultImageDirectory#/mtg-ftv-banner-cap-left.png"></td>
-      <td class="title-text"><span  class="title-text">FROM THE VAULT#colon# #_vaultContents.allCaps#</span></td>
+      <td class="title-text"><span class="title-text">FROM THE VAULT#colon# #_vaultContents.allCaps#</span></td>
       <td><img src="#_fromTheVaultImageDirectory#/mtg-ftv-banner-cap-right.png"></td>
     </tr>
   </table>
