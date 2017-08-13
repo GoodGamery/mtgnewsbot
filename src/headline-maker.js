@@ -2,13 +2,15 @@
 
 const tracery = require(`tracery-grammar`);
 const path = require('path');
-const pathToFileUrl = require(`./lib/util/path-to-file-url.js`);
+const customTraceryModifiers = require(`./lib/plugins/tracery/custom-modifiers`);
+const pathToFileUrl = require(`./lib/util/path-to-file-url`);
 
 class HeadlineMaker {
 
   constructor(grammar) {
     this.grammar = tracery.createGrammar(grammar);
     this.grammar.addModifiers(tracery.baseEngModifiers);
+    this.grammar.addModifiers(customTraceryModifiers);    
     this.origin = `#origin#`;
   }
 

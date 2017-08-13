@@ -14,9 +14,11 @@ _fromTheVaultLogoStyle: |
   <head>
     <style> 
       td
-        << text-align: center; >>
+        << text-align: center; background: -webkit-linear-gradient(#eee, #333)  -webkit-text-fill-color: transparent;>>
       td.title-text
-        << background-color:rgb(0, 0, 12); font-size:32px; min-width: 530px; color:rgb(0, 110, 173); font-family:Beleren; background-image: url(./mtg-ftv-banner-pattern-pixel.png); background-repeat: repeat-x;  padding: 0; >>
+        << background-color:rgb(0, 0, 12); font-size:32px; min-width: 530px; white-space: nowrap; color:rgb(0, 110, 173); font-family:Beleren; background-image: url(./mtg-ftv-banner-pattern-pixel.png); background-repeat: repeat-x;  padding: 0; >>
+      span.title-text
+        <<  padding: 0 10px 0 10px; >>
     </style>
   </head>
 
@@ -27,7 +29,7 @@ _fromTheVaultLogo: |
     </tr>
     <tr>
       <td><img src="#_fromTheVaultImageDirectory#/mtg-ftv-banner-cap-left.png"></td>
-      <td class="title-text">FROM THE VAULT#colon# #_vaultContents.capitalizeAll#</td>
+      <td class="title-text"><span  class="title-text">FROM THE VAULT#colon# #_vaultContents.allCaps#</span></td>
       <td><img src="#_fromTheVaultImageDirectory#/mtg-ftv-banner-cap-right.png"></td>
     </tr>
   </table>
