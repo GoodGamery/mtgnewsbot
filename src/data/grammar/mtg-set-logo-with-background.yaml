@@ -88,7 +88,10 @@ _setLogoTextStyles:
 mtgSetLogoImage: |
   [#_setLogoFont#]
   <div style="display:table;">
-    <div style="height:180px; width:720px; display:table-cell; text-align: center; align:center; padding:20px; margin: 0 auto; vertical-align: middle;">
+    <div style="height: 480px; width:720px; display:table-cell; text-align: center; align:center; padding:20px; margin: 0 auto; vertical-align: middle;">
         <span style="border-radius: 10px; #_setLogoStyles# #_setLogoTextStyles#">#_cardsetDebug#</span>
     </div>
   </div>
+
+veryNovelSetGraphicAnnouncement:
+- "Wizards Announces: [_cardset:#novelCardSetName.capitalizeAll#]#_cardset#{htmlImg htmlImgString=`#mtgSetLogoImage#` backgroundImage=`./src/data/images/setlogo/backgrounds/setlogo-background-1.jpg` }"

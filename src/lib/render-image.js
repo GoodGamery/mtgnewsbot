@@ -26,16 +26,19 @@ function renderImageFromHeadline(headline, outputPath) {
     const cropOptions = {
       width: 		parseInt(headline.tags.htmlImg.width),
       height: 	parseInt(headline.tags.htmlImg.height),
-      padding: 	parseInt(headline.tags.htmlImg.padding),
-      backgroundColor: 	parseInt(headline.tags.htmlImg.backgroundColor)
+      padding: 	parseInt(headline.tags.htmlImg.padding)
     };
-    return renderImageFromHtml(html, outputPath, cropOptions);
+    const backgroundOptions = {
+      color:  parseInt(headline.tags.htmlImg.backgroundColor),
+      image:  headline.tags.htmlImg.backgroundImage
+    };
+    return renderImageFromHtml(html, outputPath, { crop: cropOptions, background: backgroundOptions });
   } else {
     return Promise.resolve({ rendered: false, msg: `No image was required.`});
   }
 }
 
-function renderImageFromHtml(html, outputPath, cropOptions) {
+function renderImageFromHtml(html, outputPath, imageOptions) {
   return new Promise((resolve, reject) => {
     const tempFile = `${outputPath}.tmp.png`;
 
@@ -46,7 +49,7 @@ function renderImageFromHtml(html, outputPath, cropOptions) {
       }
 
       Jimp.read(tempFile)
-        .then(tempFile => cropAndWriteFile(outputPath, cropOptions, tempFile))
+        .then(tempFile => cropAndWriteFile(outputPath, imageOptions, tempFile))
         .then(() => {
           resolve({
             rendered: true,
@@ -64,7 +67,7 @@ function renderImageFromHtml(html, outputPath, cropOptions) {
   });
 }
 
-function cropAndWriteFile(path, cropOptions, sourceImage) {
+function cropAndWriteFile(path, imageOptions, sourceImage) {
   const writeImage = image => {
     return new Promise((resolve, reject) => {
       image.write(path, err => {
@@ -77,36 +80,63 @@ function cropAndWriteFile(path, cropOptions, sourceImage) {
     });
   };
 
+  const cropOptions = imageOptions.crop;
+  const backgroundOptions = imageOptions.background;
+
 	return new Promise((resolve, reject) => {
-    if (cropOptions.width && cropOptions.height) {
-      return sourceImage.autocrop((err, image) => {
-        if (err) {
-          reject(err);
-        }         
-        const logoWidth = image.bitmap.width;
-        const logoHeight =  image.bitmap.height;
-        const padding = cropOptions.padding;
-        const backgroundColor = cropOptions.backgroundColor || 0xFFFFFFFF;
-        return new Jimp(logoWidth + padding, logoHeight + padding, backgroundColor, (err, background) => {
+    let cropPromise = new Promise((resolve, reject) => {
+
+      if (cropOptions.width && cropOptions.height) {
+        return sourceImage.autocrop((err, image) => {
           if (err) {
             reject(err);
-          }    
-          background.composite(image, padding/2, padding/2).contain(cropOptions.width, cropOptions.height, (err, image) => {
+          }
+
+          const logoWidth = sourceImage.bitmap.width;
+          const logoHeight =  sourceImage.bitmap.height;
+          const padding = cropOptions.padding;
+          const backgroundColor = backgroundOptions.color || 0xFFFFFFFF;
+
+          return new Jimp(logoWidth + padding, logoHeight + padding, backgroundColor, (err, background) => {
             if (err) {
               reject(err);
-            }            
-            return writeImage(image).then(resolve);
+            }    
+            background.composite(image, padding/2, padding/2).contain(cropOptions.width, cropOptions.height, (err, image) => {
+              if (err) {
+                reject(err);
+              }            
+                resolve(image);
+            });
           });
         });
-      });
-    } else {
-      return sourceImage.autocrop((err, image) => {
+      } else {
+        return sourceImage.autocrop((err, image) => {
+          if (err) {
+            reject(err);
+          }        
+          resolve(image);
+        });
+      }
+    });
+
+    return cropPromise.then(logoImage => {
+      if (!backgroundOptions.image) {
+        return writeImage(image).then(resolve);
+      }
+      return Jimp.read(backgroundOptions.image, (err, backgroundImage) => {
         if (err) {
           reject(err);
-        }        
-        return writeImage(image).then(resolve);
+        }
+        const logoWidth = logoImage.bitmap.width;
+        const logoHeight = logoImage.bitmap.height;         
+        const backgroundWidth = backgroundImage.bitmap.width;
+        const backgroundHeight = backgroundImage.bitmap.height;
+
+        backgroundImage.composite(logoImage, (backgroundWidth - logoWidth)/2, (backgroundHeight - logoHeight)/2, err => {
+          return writeImage(backgroundImage).then(resolve);
+        });
       });
-    }
+    });
   });
 }
 
