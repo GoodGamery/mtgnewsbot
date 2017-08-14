@@ -121,7 +121,7 @@ function cropAndWriteFile(path, imageOptions, sourceImage) {
 
     return cropPromise.then(logoImage => {
       if (!backgroundOptions.image) {
-        return writeImage(image).then(resolve);
+        return writeImage(logoImage).then(resolve);
       }
       return Jimp.read(backgroundOptions.image, (err, backgroundImage) => {
         if (err) {
@@ -133,6 +133,9 @@ function cropAndWriteFile(path, imageOptions, sourceImage) {
         const backgroundHeight = backgroundImage.bitmap.height;
 
         backgroundImage.composite(logoImage, (backgroundWidth - logoWidth)/2, (backgroundHeight - logoHeight)/2, err => {
+          if (err) {
+            reject(err);
+          }          
           return writeImage(backgroundImage).then(resolve);
         });
       });
