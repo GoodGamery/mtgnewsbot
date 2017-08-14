@@ -32,7 +32,11 @@ function renderImageFromHeadline(headline, outputPath) {
       color:  parseInt(headline.tags.htmlImg.backgroundColor),
       image:  headline.tags.htmlImg.backgroundImage
     };
-    return renderImageFromHtml(html, outputPath, { crop: cropOptions, background: backgroundOptions });
+    const screenOptions = {
+      width:  parseInt(headline.tags.htmlImg.screenWidth),
+      height:  parseInt(headline.tags.htmlImg.screenHeight)
+    };    
+    return renderImageFromHtml(html, outputPath, { crop: cropOptions, background: backgroundOptions, screen: screenOptions });
   } else {
     return Promise.resolve({ rendered: false, msg: `No image was required.`});
   }
@@ -41,6 +45,14 @@ function renderImageFromHeadline(headline, outputPath) {
 function renderImageFromHtml(html, outputPath, imageOptions) {
   return new Promise((resolve, reject) => {
     const tempFile = `${outputPath}.tmp.png`;
+
+    if (imageOptions.screen.width) {      
+      webshotOptions.windowSize.width = imageOptions.screen.width;
+      webshotOptions.shotSize.width = imageOptions.screen.width;    
+    }
+    if (imageOptions.screen.height) {
+      webshotOptions.windowSize.height = imageOptions.screen.height;
+    }
 
     webshot(html, tempFile, webshotOptions, (err) => {
       if (err) {
@@ -127,17 +139,31 @@ function cropAndWriteFile(path, imageOptions, sourceImage) {
         if (err) {
           reject(err);
         }
-        const logoWidth = logoImage.bitmap.width;
-        const logoHeight = logoImage.bitmap.height;         
+     
         const backgroundWidth = backgroundImage.bitmap.width;
         const backgroundHeight = backgroundImage.bitmap.height;
+        const padding = 8;
 
-        backgroundImage.composite(logoImage, (backgroundWidth - logoWidth)/2, (backgroundHeight - logoHeight)/2, err => {
-          if (err) {
-            reject(err);
-          }          
-          return writeImage(backgroundImage).then(resolve);
-        });
+        var logoWidth = logoImage.bitmap.width;
+        var logoHeight = logoImage.bitmap.height;
+
+        const compositeCallback = (err, image) => {          
+          logoWidth = image.bitmap.width;
+          logoHeight = image.bitmap.height;
+
+          backgroundImage.composite(image, (backgroundWidth - logoWidth)/2, (backgroundHeight - logoHeight)/2, err => {
+            if (err) {
+              reject(err);
+            }          
+            return writeImage(backgroundImage).then(resolve);
+          });          
+        };
+
+        if (logoWidth > backgroundWidth - 2 * padding || logoHeight > backgroundHeight - 2 * padding) {
+          logoImage.scaleToFit(backgroundWidth - 2 * padding, backgroundHeight - 2 * padding, compositeCallback);
+        } else {
+          compositeCallback(null, logoImage);
+        }
       });
     });
   });
