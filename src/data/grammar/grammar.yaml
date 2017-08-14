@@ -105,11 +105,9 @@ fromTheVaultGraphicAnnouncement:
 - "Wizards Announces: From the Vault: [_vaultContents:#_fromTheVaultVaultContents#]#_vaultContents.capitalize# {htmlImg htmlImgString=`#fromTheVaultLogoImage#`}"
 
 novelSetGraphicAnnouncement:
-- 'Wizards Announces: [_cardset:#novelCardSetName.capitalizeAll#]#_cardset#{htmlImg
-  htmlImgString=`#mtgSetLogoImage#` width=`600` height=`300` padding=`12` backgroundColor=`0x000000FF`}'
+- 'Wizards Announces: [_cardset:#novelCardSetName.capitalizeAll#]#_cardset# #mtgSetLogoSplash#'
 - "[_nextSet:The next set,The next fall set,#codename.capitalize#][_verbphrase:is
-  actually,is really named,will be named]#_nextSet# #_verbphrase# [_cardset:#novelCardSetName.capitalizeAll#]#_cardset#{htmlImg
-  htmlImgString=`#mtgSetLogoImage#` width=`600`, height=`300` padding=`12` backgroundColor=`0x000000FF`}"
+  actually,is really named,will be named]#_nextSet# #_verbphrase# [_cardset:#novelCardSetName.capitalizeAll#]#_cardset#  #mtgSetLogoSplash#"
 
 realization:
 - "#realize#"

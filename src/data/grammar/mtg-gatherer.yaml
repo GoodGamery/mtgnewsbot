@@ -32,7 +32,7 @@
         "for more information on [_topic:#gameConcept#,#cardCategory.s#,#_randomTopic#]#_topic#, see the [_set:#cardSet#,#teaserCardSet#]#_set# mechanics article at <a href=\"\">#_gathererRulingImageArticleUrl#</a>.",
         "[_card2:#realCard#][_card3:#cardAlone#]In a Commander game, your commander may be #_cardname# or #_card2#, and the other may be in your deck. If they meld into #_card3#, #_card3# will also be your commander.",
         "#opalPart1#",
-        "your #cardCategory.s# can help cast this spell",
+        "your #cardCategory.s# can help cast this spell.",
         "#gathererTextRare#"
     ],
 

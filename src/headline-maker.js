@@ -148,7 +148,6 @@ function resolveHtmlUrls(html) {
         const _match = match.match(regex.replacementRegex);
         if (_match) {
           const _adjustedPath =  pathToFileUrl(process.cwd()) + (_match[1].charAt(0) === '.' ? _match[1].substr(1) : _match[1]);
-          const updatedString =  html.replace(_match[1], _adjustedPath);
           html = html.replace(_match[1], _adjustedPath);
         }
       });      
