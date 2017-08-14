@@ -84,13 +84,37 @@ _setLogoStyles:
 _setLogoTextStyles:
   - "-webkit-text-fill-color: #_setLogoFontColor#; -webkit-text-stroke-width: #_setLogoStrokeWidth#px; -webkit-text-stroke-color: #_setLogoStrokeColor#; font-size: #_setLogoFontSize#px; font-family: #_setLogoFontFace#;font-weight: #_setLogoFontWeight#; #_setLogoAdditionalStyles#"
 
-_mtgSetLogoImageLogoImage:
+_mtgSetLogoImageLogoImagePath: "./src/data/images/mtg-logos/"
+
+mtgSetLogoImageMtgLogoImage:
 - "./src/data/images/mtg-logos/mtg-small-logo-1.png"
 - "./src/data/images/mtg-logos/mtg-small-logo-2.png"
 - "./src/data/images/mtg-logos/mtg-small-logo-3.png"
 - "./src/data/images/mtg-logos/mtg-small-logo-4.png"
 - "./src/data/images/mtg-logos/mtg-small-logo-5.png"
 - "./src/data/images/mtg-logos/mtg-small-logo-6.png"
+
+mtgSetLogoBackgroundImage:
+- "./src/data/images/setlogo/backgrounds/setlogo-background-1.jpg"
+- "./src/data/images/setlogo/backgrounds/setlogo-background-2.jpg"
+- "./src/data/images/setlogo/backgrounds/setlogo-background-3.jpg"
+- "./src/data/images/setlogo/backgrounds/setlogo-background-4.jpg"
+- "./src/data/images/setlogo/backgrounds/setlogo-background-5.jpg"
+- "./src/data/images/setlogo/backgrounds/setlogo-background-6.jpg"
+- "./src/data/images/setlogo/backgrounds/setlogo-background-7.jpg"
+- "./src/data/images/setlogo/backgrounds/setlogo-background-8.jpg"
+- "./src/data/images/setlogo/backgrounds/setlogo-background-9.jpg"
+- "./src/data/images/setlogo/backgrounds/setlogo-background-10.jpg"
+- "./src/data/images/setlogo/backgrounds/setlogo-background-11.jpg"
+- "./src/data/images/setlogo/backgrounds/setlogo-background-12.jpg"
+- "./src/data/images/setlogo/backgrounds/setlogo-background-13.jpg"
+- "./src/data/images/setlogo/backgrounds/setlogo-background-14.jpg"
+- "./src/data/images/setlogo/backgrounds/setlogo-background-15.jpg"
+- "./src/data/images/setlogo/backgrounds/setlogo-background-16.jpg"
+- "./src/data/images/setlogo/backgrounds/setlogo-background-17.jpg"
+- "./src/data/images/setlogo/backgrounds/setlogo-background-18.jpg"
+- "./src/data/images/setlogo/backgrounds/setlogo-background-19.jpg"
+- "./src/data/images/setlogo/backgrounds/setlogo-background-20.jpg"
 
 mtgSetLogoResetStyle: "[_mtgSetLogoWidth:760px][_mtgSetLogoMaxWidth:1024px][_mtgSetLogoPaddingTop: 0px]"
 
@@ -104,7 +128,7 @@ mtgSetLogoImage: |
 mtgSetLogoSplashImage: |
   <table cellspacing="0" cellpadding="1">
     <tr><td align="center" style="vertical-align: bottom;">  
-      <img src="#_mtgSetLogoImageLogoImage#"/>
+      <img src="#mtgSetLogoImageMtgLogoImage#"/>
     </td></tr>
     <tr><td align="center" style="vertical-align: top; overflow: visible; width: #_mtgSetLogoWidth#; height: 500px; max-width: #_mtgSetLogoMaxWidth#">
     #mtgSetLogoImage#
@@ -114,6 +138,5 @@ mtgSetLogoSplashImage: |
 # logo image only | expects "_cardset" to be defined
 mtgSetLogo: "{htmlImg htmlImgString=`#mtgSetLogoImage#` screenWidth=`1200` screenHeight=`900`}"
 
-
 # logo image with background image | expects "_cardset" to be defined
-mtgSetLogoSplash: "{htmlImg htmlImgString=`#mtgSetLogoSplashImage#` backgroundImage=`./src/data/images/setlogo/backgrounds/setlogo-background-1.jpg` screenWidth=`1200` screenHeight=`900`}"
+mtgSetLogoSplash: "{htmlImg htmlImgString=`#mtgSetLogoSplashImage#` backgroundImage=`#mtgSetLogoBackgroundImage#` screenWidth=`1200` screenHeight=`900`}"
