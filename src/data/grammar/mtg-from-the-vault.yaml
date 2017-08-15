@@ -14,13 +14,20 @@ _fromTheVaultVaultContents:
 
 _fromTheVaultImageDirectory: "./src/data/images/ftv"
 
+_fromTheVaultImageSet:
+- "[_index:1]color: rgb(0, 110, 173);"
+- "[_index:2]color: rgb(173, 25, 25);"
+- "[_index:3]color: rgb(45, 163, 0);"
+- "[_index:4]color: rgb(173, 173, 0);"
+- "[_index:5]color: rgb(210, 210, 210);"
+
 _fromTheVaultLogoStyle: |
   <head>
     <style> 
       td
         << text-align: center; background: -webkit-linear-gradient(#eee, #333)  -webkit-text-fill-color: transparent;>>
       td.title-text
-        << background-color:rgb(0, 0, 12); font-size:32px; min-width: 530px; white-space: nowrap; color:rgb(0, 110, 173); font-family:Beleren; background-image: url(./#_fromTheVaultImageDirectory#/mtg-ftv-banner-pattern-pixel.png); background-repeat: repeat-x;  padding: 0; >>
+        << #_fromTheVaultImageSet# background-color:rgb(0, 0, 12); font-size:32px; min-width: 530px; white-space: nowrap; font-family:Beleren; background-image: url(./#_fromTheVaultImageDirectory#/mtg-ftv-banner-pattern-pixel-#_index#.png); background-repeat: repeat-x;  padding: 0; >>
       span.title-text
         <<  padding: 0 10px 0 10px; >>
     </style>
@@ -29,11 +36,11 @@ _fromTheVaultLogoStyle: |
 _fromTheVaultLogo: |
   <table cellspacing="0" cellpadding="0">
     <tr>
-      <td class="logo-row" colspan="3" cellspacing="0"><img src="#_fromTheVaultImageDirectory#/mtg-ftv-logo.png"></td>
+      <td class="logo-row" colspan="3" cellspacing="0"><img src="#_fromTheVaultImageDirectory#/mtg-ftv-logo-#_index#.png"></td>
     </tr>
     <tr>
-      <td><img src="#_fromTheVaultImageDirectory#/mtg-ftv-banner-cap-left.png"></td>
+      <td><img src="#_fromTheVaultImageDirectory#/mtg-ftv-banner-cap-left-#_index#.png"></td>
       <td class="title-text"><span class="title-text">FROM THE VAULT#colon# #_vaultContents.allCaps#</span></td>
-      <td><img src="#_fromTheVaultImageDirectory#/mtg-ftv-banner-cap-right.png"></td>
+      <td><img src="#_fromTheVaultImageDirectory#/mtg-ftv-banner-cap-right-#_index#.png"></td>
     </tr>
   </table>
