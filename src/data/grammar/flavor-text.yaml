@@ -29,10 +29,12 @@
         "\"#creatureTypeOrCharacterClass.capitalize.s#! They #verbTransitivePastTense# my favorite #itemNoun#! We'll #verbTransitive# them all!\"",
         "\"No wonder where you find them, #creatureTypes.s# love #pluralNounOrMassNoun#.\"",
         "\"We hold sacred the powers of #abstractNoun# and #abstractNoun#. #abstractNounMassNounOrEmotion.capitalize# and #abstractNounMassNounOrEmotion# are our greatest weapons.\" —#characterFactionOrRace.capitalize# #motto#",
-        "\"#verbTransitive.capitalize# that which was never #verbTransitivePastTense#.\" —#itemNoun.capitalize# #inscription#",        
+        "\"#verbTransitive.capitalize# that which was never #verbTransitivePastTense#.\" —#itemNoun.capitalize# #inscription#",
         "\"No #abstractNoun#. No #abstractNoun#. No matter what.\" —#itemNoun.capitalize# #inscription#",
         "\"The #placeNoun# will surround you with its #abstractNoun# if you are #adj# and #adj#.\"",
-        "\"#adj.capitalize#.\" —#anyCharacter.capitalize#"
+        "\"#adj.capitalize#.\" —#anyCharacter.capitalize#",
+        "\"After #timePeriod.a# in the #placeNoun#, #character# [_adverb:seriously,nervously,foolishly,wisely,soberly,dispassionately.feverishly][_verbed:pondered,considered,examined,reviewed,weighed]#_adverb# #_verbed# the advantages of #abstractMassOrPluralNounGameConceptOrEmotion# over #abstractMassOrPluralNounGameConceptOrEmotion#.\"",
+        "\"#minorStoryLocation#, [_placeType:site,home,heart]#_placeType# of the #abstractNounOrMassNoun.capitalizeAll# #placeNoun.capitalizeAll#, source of #demonym# #abstractMassOrPluralNounGameConceptOrEmotion#.\""
     ],
     "occasion": ["my birthday", "my anniversary", "my first day on the job", "my last day on the job", "my bar mitzvah", "my unbirthday", "my cake day",
                  "my inauguration", "Durin's Day", "Robanukah", "Festivus", "Wednesday", "Guy Fawkes' Day", "Boxing Day", "Shrove Tuesday", "National Corndog Day",
