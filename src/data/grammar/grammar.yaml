@@ -135,7 +135,7 @@ tournamentNews:
 - '#pro#, after winning #event# with #deckVariation#: "It''s #deckDescription#."'
 - "[_rule:SHOCKER!,BREAKING#colon#,TOURNAMENT UPDATE#colon#,,,,]#_rule# #pro# has
   been [_rule:DQ'd,suspended,disqualified]#_rule# from #event# for #disqualifyingAction#."
-- "Match highlight: #pro# [_defeats:edges out,beats,defeats,routs]#_defeats# #pro# with #realfakecard# in round #count# to [_getAhead:lock up,advance in,take down]#getAhead# #event#"
+- "Match highlight: #pro# [_defeats:edges out,beats,defeats,routs]#_defeats# #pro# with #card# in round #count# to [_getAhead:lock up,advance in,take down]#_getAhead# #event#"
 
 disqualifyingAction:
 - reading every card's flavor text out loud
