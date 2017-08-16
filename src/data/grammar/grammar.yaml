@@ -23,6 +23,9 @@ headline:
 - "#mtgDeckTechGraphic#"
 - "#cardCallout#"
 
+oncePerDay:
+  - "#cotdImage#"
+
 disabledHeadline: []
 
 testSvg: "#headlineKeepOrMulligan#"

@@ -114,8 +114,8 @@
   	"Varrik",
   	"Vervamon",
   	"Yurin",
-		"Zaliki",
-		"Zilan"
+    "Zaliki",
+    "Zilan"
   ],
   "commonCharacterLastName": [
   	"Arenson",
@@ -146,7 +146,7 @@
     "minion", "nomad", "protector", "navigator", "houndmaster", "alchemist", "commander", "leader", "predator", "constable", "merchant",
     "priest", "ancestor", "martyr", "monarch", "voyager", "general", "victim", "customer", "seeker", "automaton", "keeper", "genius",
     "gymnast", "demagogue", "malcontent", "maniac", "bookworm", "egghead", "ringleader", "ringmaster",  "gatekeeper", "keymaster",
-    "survivor", "vegan", "renegade", "flunky", "henchman", "emissary", "orphan", "enemy"
+    "survivor", "vegan", "renegade", "flunky", "henchman", "emissary", "orphan", "enemy", "commander"
  	],
   "characterTitle": [
   	"#characterClass#",

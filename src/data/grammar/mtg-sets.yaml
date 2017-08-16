@@ -27,6 +27,12 @@
       "Weatherlight",
       "Zendikar"
   ],
+  "randomCardSet": [
+    "#cardSet#",
+    "#cardSet#",
+    "#novelCardSetName#",
+    "#teaserCardSet#"
+  ],
   "recentCardSet": [
       "Amonkhet",
       "Hour of Devastation",

@@ -27,7 +27,8 @@
     "spine",
     "brain",
     "skeleton",
-    "thumb"
+    "thumb",
+    "shin"
    ],
   "bodypartsInPairs": [
   	"eyes",
@@ -58,6 +59,7 @@
     "brain",
     "skeleton",
     "pinkie toes",
-    "thumbs"
+    "thumbs",
+    "shins"
   ]
 }
