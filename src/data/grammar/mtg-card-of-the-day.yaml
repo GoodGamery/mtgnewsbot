@@ -1,0 +1,174 @@
+---
+cotdImage: |
+  [_cardname:#realCard#][_title:#cotdTitle#]#_title#: #_cardname# {htmlImg htmlImgString=`#_cotdHtml#` screenWidth=`1000` screenHeight=`500`}
+cotdTitle:
+  - CARD OF THE DAY
+cotdDescription:
+  - "If you're looking to beef up #character#'s tribal support next [_date:business day,weekend,week,month,week,month,year,year,decade,century]#_date#, make sure to look at the #creatureTypes.capitalize# tribal pushes we made back in #randomCardSet.capitalize# and #randomCardSet.capitalize#."
+  - "This blast from the [_time:future,past,future,past,present,distant future,distant past]#_time# is back, and it's still the only way for a player to #marginalThingToDo#! Although with #keyword# coming back, I don't think any keyword is off the menu moving forward."
+  - "When your opponent plays #kindaGood.a# spell, your first #cardWhichDrawsCards# is probably to try to cause them to have #cardWhichCountersSpells.a#."
+  - "This versatile #cardCategory# has already shown itself as an all-star of the new metagame. Check out the Pro Tour this weekend to see if the #deckArchOrCategory# dominance continues!"
+  - "This card seems #kindaGood#...until you realize that it means there's a legendary #creatureTypes.capitalize# token to be had. Then it becomes #reallyGood#."
+  - "It's no surprise that #basicColors.capitalize#'s most versatile removal spell finds its way into almost every #deckArchOrCategory# deck that can host it. Plus it offers some of the most hilarious flavor plays the game has ever seen."
+  - "Long ago, some #creatureTypes# decided to stick #massNoun#-infused #bodypart# armor onto what appears to be a pair of #itemNoun.s#. Today, almost every #characterClass# has donned a pair to dodge removal as they dash into battle."
+  - "Every player aspires to have as many #_cardname.s# as they have #colors# #deckArchOrCategory# decks."
+  - "#multicolor# #deckLimitedArchetype.capitalize# may be the favored deck for this color combo, but that doesn't mean #multicolor# #keyword# isn't always happy to have another tool in its back pocket!"
+
+kindaGood:
+  - good
+  - great
+  - ok
+  - spicy
+
+reallyGood:
+  - wonderful
+  - awesome
+  - amazing
+  - superlative
+  - literally the best
+  - spicy, but more so
+
+marginalThingToDo:
+  - gain protection from a single color
+  - band two creatures together
+  - combine two cards together in one sleeve
+  - rotate cards through space and time to reveal their secret third side
+  - conditionally gain one life
+  - swap the order of layer 3 and 5
+  - draw one card, then put it back
+  - "reveal the [_where:top,bottom,first,last,middle]#_where# card #cardLocation#"
+  - continue drawing cards after losing the game
+  - reduce the casting cost of red enchantments by 1 generic mana
+  - delay combo kills by precisely 2 turns
+  - "destroy #cardCategory.s# in #colors#"
+
+cardWhichDrawsCards:
+  - Impulse
+  - Ancestral Vision
+  - Attunement
+  - Braingeyser
+  - Brainstorm
+  - Breakthrough
+  - Brilliant Plan
+  - Careful Consideration
+  - Careful Study
+  - Coastal Discovery
+  - Compelling Argument
+  - Counsel of the Soratami
+  - Covenant of Minds
+  - Deep Analysis
+  - Words of Wisdom
+  - Treasure Cruise
+  - Windfall
+  - Think Twice
+
+cardWhichCountersSpells:
+  - Mana Leak
+  - Arcane Denial
+  - Absorb
+  - Annul
+  - Blue Elemental Blast
+  - Broken Ambitions
+  - Burnout
+  - Cancel
+  - Counterspell
+  - Force Spike
+  - Circular Logic
+  - Condescend
+  - Complicate
+  - Confound
+  - Convolute
+
+_cotdHtml: |
+  <head>
+    <style>
+      body {
+        padding: 0;
+        margin: 0;
+      }
+      .mtg-card {
+        mask-image: url(./src/data/images/cardmask.png);
+        -webkit-mask-image: url(./src/data/images/cardmask.png);
+        -webkit-mask-position: center center;
+        mask-position: center center;
+        -webkit-mask-repeat: no-repeat;
+        mask-repeat: no-repeat;
+      }
+      .cotd {
+        height: 500px;
+        width: 1000px;
+        border: 1px solid black;
+        padding: 10px 25px 10px;
+        margin: 0;
+        background-image: url(./src/data/images/cotd/card-of-day-bg.jpg);
+        background-position: 50% 0;
+        line-height: 1.3em;
+        font-size: 66%;
+      }
+      .wrap {
+        text-align: center;
+        color: white;
+        font-family: 'Open Sans', sans-serif;
+        vertical-align: middle;
+        width: 43%;
+        margin-left: auto;
+        margin-right: auto;
+      }
+      .title {
+        font-size: 19px;
+        text-transform: uppercase;
+        font-weight: 300;
+        text-shadow: 0px 0px 5px rgba(0, 0, 3, 1);
+      }
+      .sub-title {
+        font-size: 22px;
+        text-transform: uppercase;
+        font-weight: 700;
+        top: -5px;
+        text-shadow: 0px 0px 5px rgba(0, 0, 3, 1);
+        margin: 0 0 12px;
+        position: relative;
+        padding: 8px;
+      }
+      .sub-title:before {
+        bottom: -5px;
+      }
+      .sub-title:after {
+        top: -5px;
+      }
+      .sub-title:before, .sub-title:after {
+        box-sizing: border-box;
+        content: "";
+        width: 50px;
+        height: 1px;
+        margin-left: -25px;
+        background: rgba(255, 255, 255, 1);
+        display: block;
+        left: 50%;
+        position: absolute;
+        box-shadow: 0 0 5px rgba(0, 0, 0, 1);
+      }
+      .description {
+        text-shadow: 0px 0px 5px rgba(0, 0, 3, 1);
+        font-size: 13.5px;
+        text-align: left;
+        font-weight: 400;
+        line-height: 1.3em;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="cotd">
+      <div class="wrap">
+        <div style="margin-left: auto; margin-right: auto;">
+          <img class="mtg-card" src="https://goodgamery.com/api/mtg/image?card=#_cardname#" >
+        </div>
+        <p class="title"><span>#_title#</span></p>
+        <p class="sub-title">#_cardname#</p>
+        <div class="description">
+          <p>#cotdDescription#</p>
+        </div>
+        <img src="./src/data/images/cotd/cotd-archive-link-button.png" />
+      </div>
+    </div>
+  </body>
