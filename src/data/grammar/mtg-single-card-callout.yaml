@@ -1,0 +1,149 @@
+---
+singleCardImageTest: >
+  [_cardname:#realCard#]
+  Your card is #_cardname#.
+  Debug: #_debug#
+  #cotdImage#
+
+# Include this in other headlines that set a single _cardname variable
+singleCardImage: >
+  #pickRandomBGText#
+  #pickFgBgColors#
+  #pickRandomDegree#
+  {htmlImg htmlImgString=`#singleCardHtml#` screenWidth=`660` screenHeight=`330`}
+
+pickFgBgColors:
+  - "[_setFgColor:#rgbOverlay#][_setBgColor:#rgbDark#]"
+
+pickRandomBGText: >
+  [_bgText:#randomBgText#]
+
+rgbOverlay:
+  - "rgba(255, 255, 255, 0.1)"
+  - "rgba(0, 0, 0, 0.4)"
+
+rgbDark:
+  - "rgb(#num11-99#, #num11-99#, #num11-99#)"
+
+randomBgText:
+  - "Hasbro ©2017 Hasbro ©2017 Hasbro ©2017 [_lineHeight:.9em][_debug:hasbro]"
+  - "© DO NOT STEAL © DO NOT STEAL © DO NOT STEAL [_lineHeight:.9em][_debug:dns]"
+  - "$$$$$$$$$$$$$$$$$$$$$$$$$$$$$[_lineHeight:.8em][_debug:dollar]"
+  - "?????????????????????????????[_lineHeight:.8em][_debug:ques]"
+  - "! ! ! ! ! ! ! ! ! ! ! ! ! ! ! [_lineHeight:.8em][_debug:bang]"
+  - "MTG MTG MTG MTG MTG MTG [_lineHeight:.9em][_debug:mtg]"
+  - "@@@@@@@@@@@@@@@@@@@@@@@@@@@@@[_lineHeight:1em][_debug:at]"
+  - "😈😈😈😈😈😈😈😈😈😈😈😈😈😈😈😈😈😈😈😈😈[_lineHeight:1.3em][_debug:demon]"
+  - "👀👀👀👀👀👀👀👀👀👀👀👀👀👀👀👀👀👀👀👀👀[_lineHeight:1.3em][_debug:eyes]"
+  - "🤔🤔🤔🤔🤔🤔🤔🤔🤔🤔🤔🤔🤔🤔🤔🤔🤔🤔🤔🤔🤔[_lineHeight:1.3em][_debug:thinking]"
+  - "🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥[_lineHeight:1.3em][_debug:fire]"
+  - "❤❤❤❤❤❤❤❤❤❤❤❤❤❤❤❤❤❤❤❤❤[_lineHeight:1.3em][_debug:heart]"
+  - "😎😎😎😎😎😎😎😎😎😎😎😎😎😎😎😎😎😎😎😎😎[_lineHeight:1.3em][_debug:cool]"
+  - "😂😂😂😂😂😂😂😂😂😂😂😂😂😂😂😂😂😂😂😂😂[_lineHeight:1.3em][_debug:laugh]"
+  - "💩💩💩💩💩💩💩💩💩💩💩💩💩💩💩💩💩💩💩💩💩[_lineHeight:1.3em][_debug:shit]"
+  - "🌸🌸🌸🌸🌸🌸🌸🌸🌸🌸🌸🌸🌸🌸🌸🌸🌸🌸🌸🌸🌸[_lineHeight:1.3em][_debug:blossom]"
+  - "💖💖💖💖💖💖💖💖💖💖💖💖💖💖💖💖💖💖💖💖💖[_lineHeight:1.3em][_debug:starheart]"
+  - "💯💯💯💯💯💯💯💯💯💯💯💯💯💯💯💯💯💯💯💯💯[_lineHeight:1.3em][_debug:100]"
+  - "⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐[_lineHeight:1.3em][_debug:medium-star]"
+
+pickRandomDegree: >
+  [_rotationDeg:#_randomDegree#deg]
+
+# Range from -39 to 39
+_randomDegree:
+  -  "2#num1-9#[_origin:45% -15%]"
+  - "-2#num1-9#[_origin:0% 50%]"
+
+bgTextBlock: |
+  #_bgText##_bgText#<br/>
+  &nbsp;#_bgText##_bgText#<br/>
+  &nbsp;&nbsp;#_bgText##_bgText#<br/>
+  &nbsp;&nbsp;&nbsp;#_bgText##_bgText#<br/>
+  &nbsp;&nbsp;&nbsp;&nbsp;#_bgText##_bgText#<br/>
+  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;#_bgText##_bgText#<br/>
+  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;#_bgText##_bgText#<br/>
+  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;#_bgText##_bgText#<br/>
+  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;#_bgText##_bgText#<br/>
+  #_bgText##_bgText#<br/>
+  &nbsp;#_bgText##_bgText#<br/>
+  &nbsp;&nbsp;#_bgText##_bgText#<br/>
+  &nbsp;&nbsp;&nbsp;#_bgText##_bgText#<br/>
+  &nbsp;&nbsp;&nbsp;&nbsp;#_bgText##_bgText#<br/>
+  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;#_bgText##_bgText#<br/>
+  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;#_bgText##_bgText#<br/>
+  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;#_bgText##_bgText#<br/>
+  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;#_bgText##_bgText#<br/>
+
+singleCardHtml: |
+  <head>
+    <style>
+      body, div {
+        padding: 0;
+        margin: 0;
+      }
+      .color-bg {
+        background-color: #_setBgColor#;
+      }
+      .color-fg {
+        color: #_setFgColor#;
+      }
+      .text-bg {
+        white-space: nowrap;
+        line-height: #_lineHeight#;
+        font-size: 72px;
+        position: absolute;
+        font-family: 'Open Sans', sans-serif;
+        font-weight: 700;
+        transform-origin: #_origin#;
+        -webkit-transform-origin: #_origin#;
+        transform: rotate(#_rotationDeg#);
+        -webkit-transform: rotate(#_rotationDeg#);
+      }
+      .mtg-card {
+        mask-image: url(./src/data/images/cardmask.png);
+        -webkit-mask-image: url(./src/data/images/cardmask.png);
+        -webkit-mask-position: center center;
+        mask-position: center center;
+        -webkit-mask-repeat: no-repeat;
+        mask-repeat: no-repeat;
+        padding: 9px;
+      }
+      .single-card {
+        background-color: black;
+        height: 330px;
+        width: 660px;
+        overflow: hidden;
+        border: 0px;
+        line-height: 1.3em;
+        font-size: 66%;
+        border: 1px solid black;
+      }
+      .text-container {
+        height: 330px;
+        width: 660px;
+        position: absolute;
+        overflow: hidden;
+      }
+      .image-wrap {
+        width: 100%;
+        position: relative;
+      }
+      .col-100 { width: 100%; }
+    </style>
+  </head>
+  <body>
+    <div class="single-card">
+      <div class="color-bg">
+        <div class="text-container">
+          <div class="text-bg color-fg">
+            #bgTextBlock#
+          </div>
+        </div>
+        <div class="image-wrap">
+          <center>
+            <img class="mtg-card" src="https://goodgamery.com/api/mtg/image?card=#_cardname#" />
+          </center>
+        </div>
+      </div>
+    </div>
+  </body>
