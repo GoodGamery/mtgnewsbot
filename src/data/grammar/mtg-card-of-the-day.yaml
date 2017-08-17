@@ -95,8 +95,8 @@ _cotdHtml: |
         mask-repeat: no-repeat;
       }
       .cotd {
-        height: 500px;
-        width: 1000px;
+        height: 330px;
+        width: 660px;
         border: 1px solid black;
         padding: 10px 25px 10px;
         margin: 0;
@@ -105,43 +105,51 @@ _cotdHtml: |
         line-height: 1.3em;
         font-size: 66%;
       }
-      .wrap {
+      .col {
         text-align: center;
         color: white;
         font-family: 'Open Sans', sans-serif;
         vertical-align: middle;
-        width: 43%;
+        width: 50%;
+        float: left;
+      }
+      .col-60 { width: 60%; }
+      .col-40 { width: 40%; }
+      .text-wrap {
         margin-left: auto;
         margin-right: auto;
+        width: 100%;
+        font-size: 13px;
       }
       .title {
-        font-size: 19px;
+        font-size: 1.9em;
         text-transform: uppercase;
         font-weight: 300;
         text-shadow: 0px 0px 5px rgba(0, 0, 3, 1);
       }
       .sub-title {
-        font-size: 22px;
+        font-size: 2.2em;
         text-transform: uppercase;
         font-weight: 700;
-        top: -5px;
+        top: -.5em;
         text-shadow: 0px 0px 5px rgba(0, 0, 3, 1);
         margin: 0 0 12px;
         position: relative;
         padding: 8px;
+        line-height: 1.0em;
       }
       .sub-title:before {
-        bottom: -5px;
+        bottom: 0px;
       }
       .sub-title:after {
-        top: -5px;
+        top: 0px;
       }
       .sub-title:before, .sub-title:after {
         box-sizing: border-box;
         content: "";
-        width: 50px;
+        width: 80px;
         height: 1px;
-        margin-left: -25px;
+        margin-left: -40px;
         background: rgba(255, 255, 255, 1);
         display: block;
         left: 50%;
@@ -149,8 +157,9 @@ _cotdHtml: |
         box-shadow: 0 0 5px rgba(0, 0, 0, 1);
       }
       .description {
+        margin-top: 0;
         text-shadow: 0px 0px 5px rgba(0, 0, 3, 1);
-        font-size: 13.5px;
+        font-size: 1.35em;
         text-align: left;
         font-weight: 400;
         line-height: 1.3em;
@@ -159,16 +168,20 @@ _cotdHtml: |
   </head>
   <body>
     <div class="cotd">
-      <div class="wrap">
+      <div class="col col-40">
         <div style="margin-left: auto; margin-right: auto;">
           <img class="mtg-card" src="https://goodgamery.com/api/mtg/image?card=#_cardname#" >
         </div>
-        <p class="title"><span>#_title#</span></p>
-        <p class="sub-title">#_cardname#</p>
-        <div class="description">
-          <p>#cotdDescription#</p>
+      </div>
+      <div class="col col-60">
+        <div class="text-wrap">
+          <p class="title"><span>#_title#</span></p>
+          <p class="sub-title">#_cardname#</p>
+          <div class="description">
+            <p>#cotdDescription#</p>
+          </div>
+          <img src="./src/data/images/cotd/cotd-archive-link-button.png" />
         </div>
-        <img src="./src/data/images/cotd/cotd-archive-link-button.png" />
       </div>
     </div>
   </body>
