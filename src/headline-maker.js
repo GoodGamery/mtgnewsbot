@@ -66,6 +66,7 @@ function parseMessage(message) {
 
   let match = text.match(/\{\w+?\s+?.*\}/g);
   if (match) {
+    const removeEndlRegex = new RegExp(`\\${ENDL_MARKER}`, `g`);
     match.forEach(match => {
       const tag = match.match(/\{(\w+)\s/)[1];
 
@@ -77,7 +78,10 @@ function parseMessage(message) {
           return result;
         }, {});
       }
-      text = text.replace(match, '').replace(ENDL_MARKER, '').trim();
+      text = text
+        .replace(match, ``)
+        .replace(removeEndlRegex, ``)
+        .trim();
     });
 
     // Further process svg tags
