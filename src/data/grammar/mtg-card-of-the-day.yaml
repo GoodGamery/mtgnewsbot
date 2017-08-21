@@ -1,6 +1,10 @@
 ---
 cotdImage: |
   [_cardname:#realCard#][_title:#cotdTitle#]#_title#: #_cardname# {htmlImg htmlImgString=`#_cotdHtml#` screenWidth=`1000` screenHeight=`500`}
+
+#This requires _cardname to be set already
+cotdImageCustom: |
+  [_title:#cotdTitle#]#_title#: #_cardname# {htmlImg htmlImgString=`#_cotdHtml#` screenWidth=`1000` screenHeight=`500`}
 cotdTitle:
   - CARD OF THE DAY
 cotdDescription:
