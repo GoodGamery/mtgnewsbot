@@ -61,12 +61,12 @@ setLogoFont:
   - "Empire State NF[_setLogoFontSize:90][_setLogoStrokeWidth:4][_setLogoFontWeight:normal][_setLogoLineHeight:95][_setLogoBaseline:bottom][_setLogoAdditionalStyles:#_setLogoCustomStyleTextured#,#_setLogoCustomStyleItalicized#][_mtgSetLogoWidth:760px][_mtgSetLogoMaxWidth:950px]"
   - "Feast of Flesh BB[_setLogoFontSize:96][_setLogoStrokeWidth:4][_setLogoFontWeight:bold][_setLogoLineHeight:86][_setLogoBaseline:bottom][_setLogoAdditionalStyles:,#_setLogoCustomStyleTextured#,#_setLogoCustomStyleItalicized#][_mtgSetLogoMaxWidth:950px]"
   - "Fiendish[_setLogoFontSize:60][_setLogoStrokeWidth:6][_setLogoFontWeight:normal][_setLogoLineHeight:118][_setLogoBaseline:middle][_setLogoAdditionalStyles:#_setLogoCustomStyleTextured#]"
-  - "Gelio Retsina[_setLogoFontSize:108][_setLogoStrokeWidth:4][_setLogoFontWeight:bold][_setLogoLineHeight:94][_setLogoBaseline:middle][_setLogoAdditionalStyles:#_setLogoCustomStyleTexturedGradient#]"
+  - "Gelio Retsina[_setLogoFontSize:96][_setLogoStrokeWidth:4][_setLogoFontWeight:bold][_setLogoLineHeight:82][_setLogoBaseline:middle][_setLogoAdditionalStyles:#_setLogoCustomStyleTexturedGradient#]"
   - "Jungle Fever NF[_setLogoFontSize:100][_setLogoStrokeWidth:4][_setLogoFontWeight:normal][_setLogoLineHeight:80][_setLogoBaseline:bottom][_setLogoAdditionalStyles:#_setLogoCustomStyleTextured#,#_setLogoCustomStyleItalicized#][_mtgSetLogoMaxWidth:950px]"
-  - "Magda[_setLogoFontSize:92][_setLogoStrokeWidth:4][_setLogoFontWeight:bold][_setLogoLineHeight:84][_setLogoBaseline:middle]"
+  - "Magda[_setLogoFontSize:86][_setLogoStrokeWidth:4][_setLogoFontWeight:bold][_setLogoLineHeight:78][_setLogoBaseline:middle]"
   - "MEDICINE SHOW CAPS[_setLogoFontSize:90][_setLogoStrokeWidth:4][_setLogoFontWeight:normal][_setLogoLineHeight:76][_setLogoBaseline:bottom][_setLogoAdditionalStyles:#_setLogoCustomStyleTextured# text-transform#colon# uppercase;,#_setLogoCustomStyleItalicized# text-transform#colon# uppercase;][_mtgSetLogoWidth:700px][_mtgSetLogoMaxWidth:780px]"
   - "Ringbearer[_setLogoFontSize:84][_setLogoStrokeWidth:5][_setLogoFontWeight:bold][_setLogoLineHeight:96][_setLogoBaseline:top][_mtgSetLogoMaxWidth:800px][_mtgSetLogoPaddingTop:10px]"
-  - "TOXIA[_cardset:#_cardset.allCaps#][_setLogoFontSize:100][_setLogoStrokeWidth:4][_setLogoFontWeight:normal][_setLogoLineHeight:86][_setLogoBaseline:middle][_mtgSetLogoPaddingTop:8px][_setLogoAdditionalStyles:#_setLogoCustomStyleTexturedGradient#]"
+  - "TOXIA[_cardset:#_cardset.allCaps#][_setLogoFontSize:96][_setLogoStrokeWidth:4][_setLogoFontWeight:normal][_setLogoLineHeight:82][_setLogoBaseline:middle][_mtgSetLogoWidth:760px][_mtgSetLogoPaddingTop:8px][_setLogoAdditionalStyles:#_setLogoCustomStyleTexturedGradient#]"
 fontTextureDirectoryUrl:
   - "http://pseudochaos.org/goodgamery/mtgnewsbot/images/textures/"
 fontTexture:
