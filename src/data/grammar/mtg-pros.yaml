@@ -77,27 +77,86 @@
       "Johnnies",
       "Spikes",
       "Melvins",
-      "Vorthoses"  
+      "Vorthoses"
   ],
   "team": [
-      "#teamSite# #teamDescriptor#"
+      "[teamSuffix:#teamDescriptor#]#teamPrefix# #teamSuffix#"
   ],
-  "teamSite": [
-      "ChannelFireball",
-      "StarCityGames",
-      "MTGMintCard",
-      "Ultra PRO",
-      "Phoenix",
-      "Puzzle Quest",
-      "Pojo Dot Com"
+  "teamPrefix": [
+    "#realTeam#",
+    "[teamSuffix:#normalTeamDescriptor#]#jokeTeam#",
+    "#otherTeamPrefix#"
   ],
   "teamDescriptor": [
-      "Gold",
-      "Platinum",
-      "Foundation",
-      "#basicColors.capitalize#",
-      "#direction.capitalizeAll#",
-      "#massNoun.capitalizeAll#",
-      "#creatureTypes.capitalize#"
+    "#normalTeamDescriptor#",
+    "#unusualTeamDescriptor#"
+  ],
+
+  "normalTeamDescriptor": [
+    "Gold",
+    "Platinum",
+    "Foundation",
+    "Unlimited",
+    "#basicColors.capitalize#",
+    "#direction.capitalizeAll#"
+  ],
+
+  "unusualTeamDescriptor": [
+    "#massNoun.capitalizeAll#",
+    "#creatureTypes.capitalize#",
+    "#keyword#",
+    "#jokeTeamDescriptor#"
+  ],
+
+  "realTeam": [
+    "ChannelFireball",
+    "StarCityGames",
+    "MTGMintCard",
+    "Ultra PRO",
+    "Phoenix",
+    "Puzzle Quest",
+    "Pojo Dot Com"
+  ],
+  "jokeTeam":  [
+    "#creatureTypes.capitalize#",
+    "#cardAlone.noPunctuation.capitalizeAll.noSpaces#",
+    "#website#",
+    "#adj.capitalizeAll.noPunctuation.noSpaces#Card",
+  ],
+  "website": [
+    "Pojo Dot [_tld:Org,Net,Gov]#_tld#",
+    "[_domain:#creatureTypes#,#itemNoun#]#_domain.capitalizeAll# Dot Com"
+  ],
+  "otherTeamPrefix": [
+    "#cardCategory.capitalizeAll#",
+    "#adj.capitalizeAll#",
+    "#adj.capitalizeAll# [teamSuffix:#characterClass.capitalize.s#]",
+    "#adj.capitalizeAll# [teamSuffix:#bodypart.capitalize#]",
+    "#direction.capitalizeAll# Coast [teamSuffix:Legends,Warriors,#characterClass.capitalizeAll.s#]",
+    "#basicColors.capitalize# #placeNoun.capitalizeAll# [teamSuffix:Legends,Warriors,#characterClass.capitalizeAll.s#]"
+  ],
+ "jokeTeamDescriptor": [
+    "All-Stars",
+    "Autocomplete",
+    "Babylegs",
+    "Benchwarmers",
+    "Carpetbaggers",
+    "Cobra Style",
+    "Deep Web",
+    "Fidget Spinner",
+    "Goofball",
+    "Leftovers",
+    "Low Ball",
+    "Minesweeper",
+    "Phone It In",
+    "Trivial Pursuit",
+    "Tryhard",
+    "Wienerdog",
+    "Whirlybird"
+  ],
+  "variantJokeTeamDescriptor": [
+    "#massNoun.capitalizeAll# Force",
+    "#itemNoun.capitalizeAll# Squad",
+    "#creatureTypes.capitalizeAll# Friends"
   ]
 }

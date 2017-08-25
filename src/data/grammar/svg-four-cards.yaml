@@ -21,6 +21,8 @@ titleClassified:
 - I LOVE THESE CARDS
 - YOU'LL LOVE THESE CARDS
 - GREAT VALUE
+- LOOK AT THESE CARDS
+- PREPARE YOUR BINDER
 headlineFourCardsForSale:
 - "#_card1#, #_card2#, #_card3#, and #_card4#"
 - "#_card1#, #_card2#, #_card3#, & #_card4#"
@@ -45,7 +47,7 @@ headlineAnything:
 - "#_card4# plus some other cards I found on the floor"
 - "#deck.capitalize# Shell for #format.capitalize#"
 - "Key cards for #deck.capitalize#"
-- "Some of the combo pieces for #deck.capitalize#"
+- "Some combo pieces for #deck.capitalize#"
 - "Your favorite cards"
 - "Repacked boosters that might contain the Power 9"
 - "#format.capitalize# Staples"

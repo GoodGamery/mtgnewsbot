@@ -52,7 +52,8 @@
   ],
   "codename": [
       "Spaghetti",
-      "Meatballs"
+      "Meatballs",
+      "[_futureSet:Milk,Archery,Baseball]#_futureSet#"
   ],
   "novelCardSetName": [
     "#planeBasedSet#",
@@ -156,7 +157,8 @@
   ],
   "collectiveActionOrRealm": [
     "rise", "revenge", "clash", "realm", "call", "sphere", "tales", "flight", "festival", "cult", "order", "ruin", "empire", "conclave",
-    "council", "mutiny", "decline", "fall", "fate", "scourge", "legacy"
+    "council", "mutiny", "decline", "fall", "fate", "scourge", "legacy", "whispers", "way", "triumph", "season", "secrets", "retribution",
+    "reign", "rebellion", "oath", "might", "kiss", "dance", "howl", "moan", "feast", "hunger", "footsteps"
   ],
   "collective": [
     "league", "guild", "tournament", "city",  "kingdom", "fellowship", "clan", "ruin"

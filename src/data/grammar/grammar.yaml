@@ -95,10 +95,10 @@ announcement:
 - "#graphicAnnouncement#"
 
 textAnnouncement:
-- 'Wizards Announces: Duel Decks: [_one:#nouns.capitalizeAll#,#planeswalkerFirstName#]#_one#
-  vs. [_two:#nouns.capitalizeAll#,#planeswalkerFirstName#]#_two#'
-- 'Announcement: #pro# has joined Team #team#'
-- "#gatherer#"
+# - 'Wizards Announces: Duel Decks: [_one:#nouns.capitalizeAll#,#planeswalkerFirstName#]#_one#
+#   vs. [_two:#nouns.capitalizeAll#,#planeswalkerFirstName#]#_two#'
+- '[_leadIn:ANNOUNCEMENT,BREAKING,UPDATE]#_leadIn#: #pro# [_team: ,Team ][_leavesVerb:leaves,quits,abandons][_resultVerbPhrase:for,to join][_action:has joined,#_leavesVerb# #_team##team# #_resultVerbPhrase#]#_action# Team #team#'
+# - "#gatherer#"
 
 graphicAnnouncement:
 - "#fromTheVaultGraphicAnnouncement#"
@@ -109,7 +109,7 @@ fromTheVaultGraphicAnnouncement:
 
 novelSetGraphicAnnouncement:
 - 'Wizards Announces: [_cardset:#novelCardSetName.capitalizeAll#]#_cardset# #mtgSetLogoSplash#'
-- "[_nextSet:The next set,The next fall set,#codename.capitalize#][_verbphrase:is
+- "[_nextSet:The next set,The next fall set,The next spring set,#codename.capitalize#][_verbphrase:is
   actually,is really named,will be named]#_nextSet# #_verbphrase# [_cardset:#novelCardSetName.capitalizeAll#]#_cardset#  #mtgSetLogoSplash#"
 
 realization:
@@ -137,7 +137,7 @@ tournamentNews:
 - 'Team Series clinched by #team# at Pro Tour #recentCardSet# in #city#'
 - '#pro#, after winning #event# with #deckVariation#: "It''s #deckDescription#."'
 - "[_rule:SHOCKER!,BREAKING#colon#,TOURNAMENT UPDATE#colon#,,,,]#_rule# #pro# has
-  been [_rule:DQ'd,suspended,disqualified]#_rule# from #event# for #disqualifyingAction#."
+  been [_rule:DQ'd,suspended,disqualified]#_rule# from #event# for #disqualifyingAction#"
 - "Match highlight: #pro# [_defeats:edges out,beats,defeats,routs]#_defeats# #pro# with #card# in round #count# to [_getAhead:lock up,advance in,take down]#_getAhead# #event#"
 
 disqualifyingAction:

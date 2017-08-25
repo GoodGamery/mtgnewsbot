@@ -142,11 +142,12 @@
     "knave", "defender","ancient", "master", "prisoner", "buffoon", "baby", "clown", "villain", "freak", "fiend", "titan", "horror",
     "cyborg", "ambassador", "agent", "mercenary", "cowboy", "mime", "architect", "inventor", "guardian", "groundskeeper", "farmer",
     "doctor", "thief", "judge", "juror", "executioner", "herald", "betrayer", "savior", "disciple", "rebel", "crybaby", "grinch",
-    "barrista", "charlatan", "imposter", "bandit", "governor", "teenager", "prince", "princess", "artist", "warlock", "servant",
+    "barrista", "charlatan", "imposter", "bandit", "governor", "teenager", "prince", "princess", "artist", "warlock", "servant", "chef",
     "minion", "nomad", "protector", "navigator", "houndmaster", "alchemist", "commander", "leader", "predator", "constable", "merchant",
     "priest", "ancestor", "martyr", "monarch", "voyager", "general", "victim", "customer", "seeker", "automaton", "keeper", "genius",
     "gymnast", "demagogue", "malcontent", "maniac", "bookworm", "egghead", "ringleader", "ringmaster",  "gatekeeper", "keymaster",
-    "survivor", "vegan", "renegade", "flunky", "henchman", "emissary", "orphan", "enemy", "commander"
+    "survivor", "vegan", "renegade", "flunky", "henchman", "emissary", "orphan", "enemy", "commander", "vagrant", "vagabond", "puppet",
+    "dog catcher"
  	],
   "characterTitle": [
   	"#characterClass#",
