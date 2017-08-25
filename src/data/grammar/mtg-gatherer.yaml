@@ -68,7 +68,7 @@
     "opalCardOrdering": [
       "[_cardA:#_cardname#][_cardB:#_card2#][_cardC:#_card3#]",
       "[_cardA:#_card2#][_cardB:#_cardname#][_cardC:#_card3#]",
-      "[_cardA:#_card3#][_cardB:#_cardname#][_cardC:#_card2#]]"
+      "[_cardA:#_card3#][_cardB:#_cardname#][_cardC:#_card2#]"
     ],
     "opalLayerEffect": [
       "[#opalCardOrdering#]#rulesLayer.capitalize#: #_cardB# and #_cardC# each become [_became:creatures,#cardCategory.s#,#pluralNoun#]#_became# that are still #cardCategory.s# (#_cardA#).",
