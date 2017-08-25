@@ -98,7 +98,7 @@
     "Foundation",
     "Unlimited",
     "#basicColors.capitalize#",
-    "#direction.capitalizeAll#",
+    "#direction.capitalizeAll#"
   ],
 
   "unusualTeamDescriptor": [
@@ -119,9 +119,9 @@
   ],
   "jokeTeam":  [
     "#creatureTypes.capitalize#",
-    "#cardAlone.alphaOnly.capitalizeAll#",
+    "#cardAlone.noPunctuation.capitalizeAll.noSpaces#",
     "#website#",
-    "MTG#adj.alphaOnly.capitalizeAll#Card",
+    "#adj.capitalizeAll.noPunctuation.noSpaces#Card",
   ],
   "website": [
     "Pojo Dot [_tld:Org,Net,Gov]#_tld#",
@@ -135,21 +135,28 @@
     "#direction.capitalizeAll# Coast [teamSuffix:Legends,Warriors,#characterClass.capitalizeAll.s#]",
     "#basicColors.capitalize# #placeNoun.capitalizeAll# [teamSuffix:Legends,Warriors,#characterClass.capitalizeAll.s#]"
   ],
-  "jokeTeamDescriptor": [
+ "jokeTeamDescriptor": [
     "All-Stars",
     "Autocomplete",
     "Babylegs",
     "Benchwarmers",
     "Carpetbaggers",
     "Cobra Style",
+    "Deep Web",
+    "Fidget Spinner",
     "Goofball",
+    "Leftovers",
     "Low Ball",
     "Minesweeper",
-    "Mob",
     "Phone It In",
     "Trivial Pursuit",
     "Tryhard",
     "Wienerdog",
     "Whirlybird"
+  ],
+  "variantJokeTeamDescriptor": [
+    "#massNoun.capitalizeAll# Force",
+    "#itemNoun.capitalizeAll# Squad",
+    "#creatureTypes.capitalizeAll# Friends"
   ]
 }

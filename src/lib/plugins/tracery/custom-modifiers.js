@@ -4,8 +4,8 @@ function allCaps(s) {
   return s.toUpperCase();
 }
 
-function alphaOnly(s) {
-  return s.replace(/\W+/g, '');
+function noPunctuation(s) {
+  return s.replace(/[()',"-:\[\].?!:;=+_&*%^`~{}\\/|]/g, '');
 }
 
 function noSpaces(s) {
@@ -14,6 +14,6 @@ function noSpaces(s) {
 
 module.exports = { 
   allCaps: allCaps,
-  alphaOnly: alphaOnly,
+  noPunctuation: noPunctuation,
   noSpaces: noSpaces
 };

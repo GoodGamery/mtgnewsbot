@@ -376,7 +376,7 @@
     "Hundroog",
     "It That Betrays",
     "Jungle Barrier",
-    "Kami of the Pale Moon",
+    "Kami of the Waning Moon",
     "Kezzerdrix",
     "Krark's Thumb",
     "Marble Titan",
@@ -392,9 +392,10 @@
     "Rites of Initiation",
     "Royal Trooper",
     "Saprazzan Breaker",
-    "Serrated Biskelion",
     "Scalpelexis",
+    "Scalding Tongs",
     "Scrambleverse",
+    "Serrated Biskelion",
     "Seizures",
     "Sengir Autocrat",
     "Sivitri Scarzam",
@@ -403,6 +404,7 @@
     "Squeeze",
     "Takklemaggot",
     "That Which Was Taken",
+    "Uktabi Efreet",
     "Undertow",
     "Urza's Guilt"
   ],
@@ -814,7 +816,7 @@
       "Jace's #realCard#",
       "M #realCard# EX",
       "Magus of the #realCard#",
-    	"Magus of the #concreteNoun.capitalize#",      
+    	"Magus of the #concreteNoun.capitalize#",
       "Mons's #realCard#",
       "Mox #realCard#",
       "Robo#realCard#",
@@ -825,6 +827,7 @@
       "#verbGerund.capitalizeAll# Shoal",
       "#realCard# (Not the #novelCardSetName.capitalizeAll# One)",
       "Snow-Covered #realCard#",
+      "#bodypart.capitalize# in a Jar",
       "Circle of Protection: [_someNoun:#abstractNoun#,#emotion#,#massNoun#,#pluralNoun#,#things2#][_what:#creatureTypes.s#,#cardCategory.s#,#_someNoun#]#_what.capitalizeAll#"
   ]
 

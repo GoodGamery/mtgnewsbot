@@ -55,7 +55,7 @@
       "doodad", "bone", "vuvuzela", "handlebar moustache", "horseshoe", "sweater vest", "prawn", "#gameAccessory#", "veil", "shrubbery",
       "apron", "bow tie", "glove", "fanny pack", "loincloth", "#bodypart#", "saxophone", "birdcage", "balloon", "weathervane", "backpack",
       "cactus", "spellbomb", "chair", "stepladder", "gravy boat", "memorial", "statue", "game", "relic", "ring", "appendage", "#bodypart#",
-      "clog", "shoe"
+      "clog", "shoe", "rubber ducky", "rubber chicken"
   ],
   "placeNoun": [
       "temple", "palace", "castle", "garden", "market", "dungeon", "sanctuary", "mansion", "kingdom", "colony", "vacation rental", "graveyard",
@@ -80,7 +80,7 @@
     "bread", "cardboard", "jelly", "livestock", "mayonnaise", "music", "paper", "smoke", "sugar", "underwear", "electricity", "equipment", "art supplies", "gravy",
     "furniture", "laughter", "rubbish", "junk mail", "meat", "dietary suppliments", "pasta", "pollution", "salad", "seafood", "soap", "shampoo", "stuff", "valuables",
     "sunshine", "foliage", "cutlery", "signage", "bacteria", "electronics", "popcorn", "glue", "facial tissue", "poison", "venom", "bubbles", "algae", "fungus",
-    "carpeting", "wallpaper", "baby powder", "taffy", "pudding", "confetti", "saliva", "leather", "sawdust"
+    "carpeting", "wallpaper", "baby powder", "taffy", "pudding", "confetti", "saliva", "leather", "sawdust", "pizza"
   ],
   "objectNounPronoun": ["[_noun:#aNoun#,#abstractNoun#,#abstractNoun#,#massNoun#,#adj.a# #itemNoun#][_pronoun:it]","[_noun:#pluralNoun#][_pronoun:them]"],
   "twoObjects": [

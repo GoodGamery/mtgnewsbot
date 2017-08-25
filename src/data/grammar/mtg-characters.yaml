@@ -146,7 +146,8 @@
     "minion", "nomad", "protector", "navigator", "houndmaster", "alchemist", "commander", "leader", "predator", "constable", "merchant",
     "priest", "ancestor", "martyr", "monarch", "voyager", "general", "victim", "customer", "seeker", "automaton", "keeper", "genius",
     "gymnast", "demagogue", "malcontent", "maniac", "bookworm", "egghead", "ringleader", "ringmaster",  "gatekeeper", "keymaster",
-    "survivor", "vegan", "renegade", "flunky", "henchman", "emissary", "orphan", "enemy", "commander", "vagrant", "vagabond", "puppet"
+    "survivor", "vegan", "renegade", "flunky", "henchman", "emissary", "orphan", "enemy", "commander", "vagrant", "vagabond", "puppet",
+    "dog catcher"
  	],
   "characterTitle": [
   	"#characterClass#",
