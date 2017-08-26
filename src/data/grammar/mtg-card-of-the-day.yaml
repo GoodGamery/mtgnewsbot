@@ -1,6 +1,8 @@
 ---
 cotdImage: |
-  [_cardname:#realCard#][_title:#cotdTitle#]#_title#: #_cardname# {htmlImg htmlImgString=`#_cotdHtml#` screenWidth=`1000` screenHeight=`500`}
+  [_cardname:#realCard#][_title:#cotdTitle#][_cotdImgUrl:https#colon#//goodgamery.com/api/mtg/image?card=#_cardname#]#_title#: #_cardname# {htmlImg htmlImgString=`#_cotdHtml#` screenWidth=`1000` screenHeight=`500`}
+  [_creatureType:#creatureTypes#][#_creatureType.cardSearchByType#][_title:#cotdTitle#][_cardname:#_cardName1#][_cotdImgUrl:#_cardImgUrl1#][cotdDescription:#cotdCardTypeDescription#]#_title#: #_cardname# {htmlImg htmlImgString=`#_cotdHtml#` screenWidth=`1000` screenHeight=`500`}
+
 
 #This requires _cardname to be set already
 cotdImageCustom: |
@@ -8,6 +10,7 @@ cotdImageCustom: |
 cotdTitle:
   - CARD OF THE DAY
 cotdDescription:
+  - "If you're looking to beef up #character#'s tribal support next [_date:business day,weekend,week,month,week,month,year,year,decade,century]#_date#, make sure to look at the #creatureTypes.capitalize# tribal pushes we made back in #randomCardSet.capitalize# and #randomCardSet.capitalize#."
   - "If you're looking to beef up #character#'s tribal support next [_date:business day,weekend,week,month,week,month,year,year,decade,century]#_date#, make sure to look at the #creatureTypes.capitalize# tribal pushes we made back in #randomCardSet.capitalize# and #randomCardSet.capitalize#."
   - "This blast from the [_time:future,past,future,past,present,distant future,distant past]#_time# is back, and it's still the only way for a player to #marginalThingToDo#! Although with #keyword# coming back, I don't think any keyword is off the menu moving forward."
   - "When your opponent plays #kindaGood.a# spell, your first #cardWhichDrawsCards# is probably to try to cause them to have #cardWhichCountersSpells.a#."
@@ -17,6 +20,59 @@ cotdDescription:
   - "Long ago, some #creatureTypes# decided to stick #massNoun#-infused #bodypart# armor onto what appears to be a pair of #itemNoun.s#. Today, almost every #characterClass# has donned a pair to dodge removal as they dash into battle."
   - "Every player aspires to have as many #_cardname.s# as they have #colors# #deckArchOrCategory# decks."
   - "#multicolor# #deckLimitedArchetype.capitalize# may be the favored deck for this color combo, but that doesn't mean #multicolor# #keyword# isn't always happy to have another tool in its back pocket!"
+
+cotdCardTypeDescriptionGood:
+ - "Only on #plane# would people see this #adjImpressive# #_creatureType# and nickname it [_nickname:The #adj.capitalizeAll.hyphenate# #characterClass.capitalizeAll#,#planeswalkerFirstName#'s #characterClass.capitalizeAll#]“#_nickname#”."
+ - "Now that we know that this #_creatureType# is the [_source:creator,progenitor,source]#_source# of all #_creatureType#kind across the multiverse (even #tribalCreature#), does that mean that every #_creatureType# is a Scion of the #_cardname#?"
+ - "#_creatureType.capitalize.s# may not ascend to #characterClass.hyphenate#hood very often, but when they do, the results tend to be #adj#."
+ - "If you're looking for an impressive bomb in #teaserCardSet# limited, look no further than this #adj# #_creatureType#."
+ - "Things took a dark turn [_where:at the #storyLocation# #placeNoun#,in #minorStoryLocation#,in #nonPlaneLocation#]#_where# after this #_creatureType# learned they had run out of [_item:#itemNoun.s#,#massNoun#]#_item#."
+ - "#_creatureType.capitalize# tribal, meet #format#. We've wanted to introduce you two for a while, and we thought [_adj:loving,friendly,abundant,populated,inhabited][_where:the #_creatureType#-#_adj# plane of #plane#,#teaserCardSet#]#_where# would be the perfect place for you to meet."
+
+cotdCardTypeNeedsWork:
+  - "Finally, #_creatureType# tribal has the [_key:lord,crucial piece]#_key# it needs to be [_adj:viable,constructed playable,competetive]#_adj#."
+
+cotdCardTypeDescription:
+ - "Only on #plane# would people see this #adjImpressive# #_creatureType# and nickname it [_nickname:The #adj.capitalizeAll.hyphenate# #characterClass.capitalizeAll#,#planeswalkerFirstName#'s #characterClass.capitalizeAll#]“#_nickname#”."
+ - "Now that we know that this #_creatureType# is the [_source:creator,progenitor,source]#_source# of all #_creatureType#kind across the multiverse (even #tribalCreature#), does that mean that every #_creatureType# is a Scion of the #_cardname#?"
+ - "#_creatureType.capitalize.s# may not ascend to #characterClass.hyphenate#hood very often, but when they do, the results tend to be #adj#."
+ - "If you're looking for an impressive bomb in #teaserCardSet# limited, look no further than this #adj# #_creatureType#."
+ - "Things took a dark turn [_where:at the #storyLocation# #placeNoun#,in #minorStoryLocation#,in #nonPlaneLocation#]#_where# after this #_creatureType# learned they had run out of [_item:#itemNoun.s#,#massNoun#]#_item#."
+ - "#_creatureType.capitalize# tribal, meet #format#. We've wanted to introduce you two for a while, and we thought [_adj:loving,friendly,abundant,populated,inhabited][_where:the #_creatureType#-#_adj# plane of #plane#,#teaserCardSet#]#_where# would be the perfect place for you to meet."
+
+adjImpressive:
+ - benevolent
+ - colossal
+ - deadly
+ - exotic
+ - extraordinary
+ - fearsome
+ - humble
+ - imposing
+ - magnificent
+ - majestic
+ - malevolent 
+ - modest
+ - noble
+ - peculiar
+ - sinister
+
+tribalCreature:
+ - "#adj.capitalizeAll# #_creatureType.capitalizeAll#"
+ - "#_creatureType.capitalizeAll# Champion"
+ - "#_creatureType.capitalizeAll# Egg"
+ - "#_creatureType.capitalizeAll# Exemplar" 
+ - "#_creatureType.capitalizeAll# Hatchling"
+ - "#_creatureType.capitalizeAll# Sovereign" 
+ - "#_creatureType.capitalizeAll# Tyrant"
+ - "#_creatureType.capitalizeAll# Ultimus"
+ - "#_creatureType.capitalizeAll# Warchief"
+ - "#_creatureType.capitalizeAll# Whelp"
+ - "#planeswalkerFirstName#'s #_creatureType.capitalizeAll#"
+ - "#_creatureType.capitalizeAll#lord #commonCharacterFirstName#"
+ - "#commonCharacterFirstName#, the #abstractNounMassNounOrEmotion.capitalize# #_creatureType.capitalizeAll#"
+ - "#commonCharacterFirstName#, #_creatureType.capitalizeAll# #characterClass.capitalize#"
+ - "#commonCharacterFirstName#, #characterClass.capitalizeAll# of the #placeNoun.capitalizeAll#"
 
 kindaGood:
   - good
@@ -174,7 +230,7 @@ _cotdHtml: |
     <div class="cotd">
       <div class="col col-40">
         <div style="margin-left: auto; margin-right: auto;">
-          <img class="mtg-card" src="https://goodgamery.com/api/mtg/image?card=#_cardname#" >
+          <img class="mtg-card" src="#_cotdImgUrl#">
         </div>
       </div>
       <div class="col col-60">

@@ -14,7 +14,7 @@
       "Two-Headed Giant",
       "Kitchen Table Magic",
       "#alternativeConstructedFormat#",
-      "#alternativeDraftFormat# draft"
+      "#alternativeDraftFormat#"
   ],
   "normalFormat": [
       "Standard",
@@ -37,11 +37,12 @@
   ],
   "alternativeDraftFormat": [
     "Backdraft",
-    "Mini-master",
-    "Rotisserie",
-    "Rochester",
-    "Solomon",
-    "Winston"
+    "Flip It or Rip It",
+    "Mini-Master",
+    "Rotisserie Draft",
+    "Rochester Draft",
+    "Solomon Draft",
+    "Winston Draft"
   ],
   "expansionBlock": [
     "Ice Age",

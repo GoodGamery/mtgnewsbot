@@ -5,6 +5,8 @@
       "Archenemy",
       "Avacyn Restored",
       "Chronicles",
+      "Conspiracy",
+      "Conspiracy#colon# Take the Crown",
       "Eldritch Moon",
       "Fallen Empires",
       "Fifth Edition",
@@ -14,12 +16,14 @@
       "Invasion",
       "Legends",
       "Mercadian Masques",
+      "Mirage",
       "Planechase",
       "Portal Three Kingdoms",
       "Ravnica",
       "Revised",
       "Shards of Alara",
       "Shadowmoor",
+      "Tempest",
       "Time Spiral",
       "Unglued",
       "Unhinged",
@@ -158,10 +162,10 @@
   "collectiveActionOrRealm": [
     "rise", "revenge", "clash", "realm", "call", "sphere", "tales", "flight", "festival", "cult", "order", "ruin", "empire", "conclave",
     "council", "mutiny", "decline", "fall", "fate", "scourge", "legacy", "whispers", "way", "triumph", "season", "secrets", "retribution",
-    "reign", "rebellion", "oath", "might", "kiss", "dance", "howl", "moan", "feast", "hunger", "footsteps"
+    "reign", "rebellion", "oath", "might", "kiss", "dance", "howl", "moan", "feast", "hunger", "footsteps", "clan"
   ],
   "collective": [
-    "league", "guild", "tournament", "city",  "kingdom", "fellowship", "clan", "ruin"
+    "league", "guild", "tournament", "city",  "kingdom", "fellowship", "ruin"
   ],
   "cardSetSuffix": ["reborn", "revisited", "unleashed", "dawn", "ascendant"]
 }
