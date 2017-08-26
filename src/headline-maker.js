@@ -17,15 +17,15 @@ class HeadlineMaker {
   /**
    * Generates a headline and returns a headline object in the following format:
    */
-  generateHeadline(customOrigin) {
-    return parseMessage(this.grammar.flatten(customOrigin || this.origin));
+  async generateHeadline(customOrigin) {
+    return parseMessage(await this.grammar.flatten(customOrigin || this.origin));
   }
 
   /**
    * Generates a headline and returns its text contents, with any tags stripped out
    */
-  generateTextHeadline(customOrigin) {
-    return this.generateHeadline(customOrigin).text;
+  async generateTextHeadline(customOrigin) {
+    return await this.generateHeadline(customOrigin).text;
   }
 }
 

@@ -19,7 +19,6 @@
     "lodash.merge": "4.6.0",
     "request": "2.81.0",
     "svg2png": "4.1.1",
-    "tracery-grammar": "2.7.3",
     "twit": "2.2.9",
     "webshot": "0.18.0"
   },
