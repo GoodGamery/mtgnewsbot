@@ -1,4 +1,3 @@
 [submodule "submodules/tracery"]
 	path = submodules/tracery
 	url = git@github.com:GoodGamery/tracery.git
-  branch = promisify
