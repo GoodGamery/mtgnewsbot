@@ -2,9 +2,9 @@
 'use strict';
 
 const uuid = require(`uuid`);
+const config = require('../config');
 const NewsEngine = require('./news-engine');
 const RenderImage = require('./lib/render-image');
-const config = require('../config');
 const TwitterClient = require('./lib/api/twitter-client');
 const Discord = require('./lib/discord');
 

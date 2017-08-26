@@ -12,18 +12,19 @@ function noSpaces(s) {
   return s.replace(/\s+/g, '');
 }
 
+// TODO: replace this with a good example
 async function allCapsAsyncTest(s) {
   return new Promise(resolve => {
-    console.log('waiting 2000ms...');
+    console.log('waiting 1000ms...');
     setTimeout(() => {
       resolve(s.toUpperCase());
-    }, 2000);
+    }, 1000);
   });
 }
 
 module.exports = { 
   allCaps: allCaps,
-  allCapsAsyncTest: allCapsAsyncTest,
   noPunctuation: noPunctuation,
-  noSpaces: noSpaces
+  noSpaces: noSpaces,
+  allCapsAsyncTest: allCapsAsyncTest
 };
