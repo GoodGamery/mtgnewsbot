@@ -27,6 +27,8 @@ async function cardSearchByType(s) {
     sort: 'random'
   };
 
+  console.log('[cardSearchByType] searching for card with type ' + s);
+
   return new Promise(resolve => {
     request.get({ url: SEARCH_API_JSON_URL, qs: query }, (err, data, body) => {
       if (err) {
@@ -35,8 +37,8 @@ async function cardSearchByType(s) {
       }
 
       try {
-        console.log('[cardSearchByType] response:\n' + JSON.stringify(data));
-        console.log('[cardSearchByType] body:\n' + JSON.stringify(body));
+        // console.log('[cardSearchByType] response:\n' + JSON.stringify(data));
+        // console.log('[cardSearchByType] body:\n' + JSON.stringify(body));
         const result = JSON.parse(body);
         const name = result[0].name;
         const imgUrl = result[0].imageUrl.replace(/:/g,'#colon#');
