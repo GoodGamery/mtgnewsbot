@@ -10,22 +10,22 @@ console.info(`Grammar origin object is ${JSON.stringify(grammar.origin)}`);
 
 const headlineMaker = new HeadlineMaker(grammar);
 
-function generateHeadline (customOrigin) {
-	return headlineMaker.generateHeadline(customOrigin || DEFAULT_ORIGIN_STRING);
+async function generateHeadline (customOrigin) {
+	return await headlineMaker.generateHeadline(customOrigin || DEFAULT_ORIGIN_STRING);
 }
 
-function generateHeadlines (customOrigin, numHeadlines) {
+async function generateHeadlines (customOrigin, numHeadlines) {
 	const headlines = [];
 	for (let i = 0; i < numHeadlines; ++i) {
-		headlines.push(headlineMaker.generateHeadline(customOrigin || DEFAULT_ORIGIN_STRING));
+		headlines.push(await headlineMaker.generateHeadline(customOrigin || DEFAULT_ORIGIN_STRING));
 	}
 	return headlines;
 }
 
-function generateTextHeadlines (customOrigin, numHeadlines) {
+async function generateTextHeadlines (customOrigin, numHeadlines) {
 	const headlines = [];
 	for (let i = 0; i < numHeadlines; ++i) {
-		headlines.push(headlineMaker.generateTextHeadline(customOrigin || DEFAULT_ORIGIN_STRING));
+		await headlines.push(headlineMaker.generateTextHeadline(customOrigin || DEFAULT_ORIGIN_STRING));
 	}
 	return headlines;
 }

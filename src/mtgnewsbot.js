@@ -2,9 +2,9 @@
 'use strict';
 
 const uuid = require(`uuid`);
+const config = require('../config');
 const NewsEngine = require('./news-engine');
 const RenderImage = require('./lib/render-image');
-const config = require('../config');
 const TwitterClient = require('./lib/api/twitter-client');
 const Discord = require('./lib/discord');
 
@@ -39,12 +39,12 @@ class MtgNewsbot {
     }
   }
 
-  run() {
+  async run() {
     // Keep running until we have headlines of the correct text length for twitter
     let headlines = [];
     let maxTries = 10;  // Don't spin forever, ever
     while (headlines.length < this.options.count && (maxTries-- > 0)) {
-      const moreHeadlines = NewsEngine.generateHeadlines(this.options.origin, this.options.count - headlines.length);
+      const moreHeadlines = await NewsEngine.generateHeadlines(this.options.origin, this.options.count - headlines.length);
       headlines = headlines.concat(moreHeadlines.filter(s => s.text.length <= config.tweetLength));
     }
 
