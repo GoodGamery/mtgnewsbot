@@ -1,21 +1,22 @@
 ---
 cotdImage:
   - "[_cardname:#realCard#][_cotdDescription:#cotdDescription#][_cotdImgUrl:https#colon#//goodgamery.com/api/mtg/image?card=#_cardname#][_title:#cotdTitle#]#_title#: #_cardname##cotdImageHtml#"
-  - "[_creatureType:#creatureTypes#][#_creatureType.cardSearchByType#][_cardname:#_cardName1#][_cotdDescription:#cotdCreatureTypeDescription#][_cotdImgUrl:#_cardImgUrl1#][_title:#cotdTitle#]#_title#: #_cardname##cotdImageHtml#"
+  - "[_creatureType:#creatureTypes#][#_creatureType.cardSearchByType#][_cardname:#_cardName1#][_cotdImgUrl:#_cardImgUrl1#][_cotdDescription:#cotdCreatureTypeDescription#][_title:#cotdTitle#]#_title#: #_cardname##cotdImageHtml#"
   - "[_cardType:aura,equipment][#_cardType.cardSearchByType#][_cardname:#_cardName1#][_cotdDescription:#cotdAuraOrEquipmentDescription#][_cotdImgUrl:#_cardImgUrl1#][_title:#cotdTitle#]#_title#: #_cardname##cotdImageHtml#"
   - "[#searchableCardCategory#][_cardText:#_cardCategorySearchTerm#][#_cardText.cardSearchByText#][_cardname:#_cardName1#][_cardcolor:#_cardColor1#][_cotdDescription:#cotdTextDescription#][_cotdImgUrl:#_cardImgUrl1#][_title:#cotdTitle#]#_title#: #_cardname##cotdImageHtml#"
 
 searchableCardCategory:
-  - "[_cardCategory:removal spell][_toughness:1,2,3,4,5,X][_cardCategorySearchTerm:\"destroy target creature\",\"exile target creature\",\"enchanted creature can't attack or block\",\"fights target\",\"damage to target creature\",\"sacrifices a creature\",\"/-#_toughness# until\"]"
+  - "[_cardCategory:removal spell][_toughness:1,2,3,4,5,X][_cardCategorySearchTerm:\"destroy target creature\",\"exile target creature\",\"enchanted creature can't attack\",\"fights target\",\"damage to target creature\",\"sacrifices a creature\",\"/-#_toughness# until\",\"enchanted creature doesn't\"]"
   - "[_cardCategory:land destruction spell][_cardCategorySearchTerm:\"destroy target land\",\"sacrifices a land\"]"
   - "[_cardCategory:pump spell,combat trick][_cardCategorySearchTerm:\"target creature gets +\",\"target creature gains\"]"
   - "[_cardCategory:discard spell][_cardCategorySearchTerm:\"discards a card\",\"discards that card\"]"
-  - "[_cardCategory:counterspell][_cardCategorySearchTerm:\"counter target spell\"]"
+  - "[_cardCategory:counterspell][_cardCategorySearchTerm:\"counter target\"]"
   - "[_cardCategory:direct damage spell,burn spell][_cardCategorySearchTerm:\"damage to target\"]"
   - "[_cardCategory:ramp spell][_cardCategorySearchTerm:\"land card and put that card onto\",\"put them onto\",\"land card and put it onto\",\"#basicLands# card and put it onto\",\"#basicLands# card and put that card onto\"]"
   - "[_cardCategory:lifegain spell][_amount:1,2,3,4,5,6,7,8,10,20,X][_cardCategorySearchTerm:\"gain life\",\"gain #_amount# life\"]"
   - "[_cardCategory:cantrip][_cardCategorySearchTerm:\"draw a card.\"]"
   - "[_cardCategory:slowtrip][_cardCategorySearchTerm:\"draw a card at the beginning\"]"
+  - "[_cardCategory:bounce spell][_targetCardType:creature,permanent,nonland permanent][_cardCategorySearchTerm:\"return target #_targetCardType# to\"]"
 
 #This requires _cardname to be set already
 cotdImageHtml: "{htmlImg htmlImgString=`#_cotdHtml#` screenWidth=`1000` screenHeight=`500`}"
@@ -25,10 +26,8 @@ cotdImageCustom: "#cotdImageHtml#"
 cotdTitle:
   - CARD OF THE DAY
 cotdDescription:
-  - "If you're looking to beef up #character#'s tribal support next [_date:business day,weekend,week,month,week,month,year,year,decade,century]#_date#, make sure to look at the #creatureTypes.capitalize# tribal pushes [_futureSet:#teaserCardSet#,#novelCardSetName#][_madeOrAreMaking:we made back in #cardSet# and #cardSet#,we're making in #_futureSet#]#_madeOrAreMaking#."
   - "This blast from the [_time:future,past,future,past,present,distant future,distant past]#_time# is back, and it's still the only way for a player to #marginalThingToDo#! Although with #keyword# coming back, I don't think any keyword is off the menu moving forward."
   - "When your opponent plays #kindaGood.a# spell, your first #cardWhichDrawsCards# is probably to try to cause them to have #cardWhichCountersSpells.a#."
-  - "This versatile #cardCategory# has already shown itself as an all-star of the new metagame. Check out the Pro Tour this weekend to see if the #deckArchOrCategory# dominance continues!"
   - "This card seems [_kindaGood:#kindaGood#]#_kindaGood#...until you realize that it means there's a legendary #creatureTypes.capitalize# token to be had. Then it becomes [_reallyGood:#reallyGood#,really #_kindaGood#]#_reallyGood#."
   - "Every player aspires to have as many #_cardname.s# as they have #colors# #deckArchOrCategory# decks."
   - "#multicolor# #deckLimitedArchetype.capitalize# may be the favored deck for this color combo, but that doesn't mean #multicolor# #keyword# isn't always happy to have another tool in its [_toolbox:back pocket,arsenal,toolbox,kit,playbook]#_toolbox#!"
@@ -38,17 +37,19 @@ cotdCreatureTypeNeedsWork:
 
 cotdTextDescription:
   - "It's no surprise that #_cardcolor.capitalize#'s [_superlative:#cardSuperlative#,second-#cardSuperlative#]#_superlative# #_cardCategory# finds its way into almost every [_decktype:#format#,#deckArchOrCategory#]#_decktype# deck that can host it. Plus it [_verbs:offers,enables,makes possible]#_verbs# some of the most #interestingPlay# the game has ever seen."
+  - "[_cardCategory:#_cardCategory#,]This versatile #_cardCategory# has already shown itself as an all-star of the new metagame. Check out the Pro Tour this weekend to see if the #deckArchOrCategory# dominance continues!"
 
 cotdAuraOrEquipmentDescription:
-  - "Long ago, a #creatureTypes# decided to stick some #massNoun#-infused #bodypart# armor onto what appears to be a pair of #itemNoun.s#. Today, almost every #characterClass# has [_worn:donned,worn,sported,brandished]#_worn# [_theArmor:one of these,a pair]#_theArmor# to #creatureActionVerb# as they [_verb:dash,rumble,rush,roll]#_verb# into battle."
+  - "Long ago, [_adj:inventive,resourceful,desparate,clever,crafty,beleagured]#_adj.a# #creatureTypes# decided to stick some #massNoun#-infused [_equipmentPart:#bodypart# armor,blades,spikes]#_equipmentPart# onto what appears to be a [_surface:#itemNoun#,pair of #itemNoun.s#]#_surface#. Today, almost every #characterClass# [_worn:has donned,has worn,wields,sports]#_worn# [_theArmor:one of these,a pair]#_theArmor# to #creatureActionVerb# as they [_verb:dash,rumble,rush,roll]#_verb# into battle."
 
 cotdCreatureTypeDescription:
  - "Only on #plane# would people see this #adjImpressive# #_creatureType# and nickname it [_nickname:The #adj.capitalizeAll.hyphenate# #characterClass.capitalizeAll#,#planeswalkerFirstName#'s #characterClass.capitalizeAll#]“#_nickname#”."
  - "Now that we know that this #_creatureType# is the [_source:creator,progenitor,source]#_source# of all #_creatureType#kind across the multiverse (even #tribalCreature#), does that mean that every #_creatureType# is a [_minionTitle:Scion of the #_cardname#,Spawn of #_cardname#,Minion of #_cardname#, #_cardname.hyphenate#'s Faithful']#_minionTitle#?"
- - "#_creatureType.capitalize.s# may not ascend to #characterClass.hyphenate#hood very often, but when they do, the results tend to be #adj#."
+ - "#_creatureType.capitalize.s# may not ascend to #characterClass.hyphenate#hood very often, but when they do, the results tend to be[_adv:, really, pretty, extremely, surprisingly] #adj#."
  - "If you're looking for an impressive bomb in #teaserCardSet# limited, look no further than this #adj# #_creatureType#."
  - "Things took a dark turn [_where:at the #storyLocation# #placeNoun#,in #minorStoryLocation#,in #nonPlaneLocation#]#_where# after this #_creatureType# learned they had run out of [_item:#itemNoun.s#,#massNoun#]#_item#."
  - "#_creatureType.capitalize# tribal, meet #format#. We've wanted to introduce you two for a while, and we thought [_adj:loving,friendly,abundant,populated,inhabited][_where:the #_creatureType#-#_adj# plane of #plane#,#teaserCardSet#]#_where# would be the perfect place for you to meet."
+ - "If you're looking to beef up #character#'s tribal support next [_date:business day,weekend,week,month,week,month,year,year,decade,century]#_date#, make sure to look at the #_creatureType.capitalizeAll# tribal pushes [_futureSet:#teaserCardSet#,#novelCardSetName#][_madeOrAreMaking:we made back in #cardSet# and #cardSet#,we're making in #_futureSet#]#_madeOrAreMaking#."
 
 cardSuperlative:
 - most versatile
@@ -114,11 +115,11 @@ adjImpressive:
 
 creatureActionVerb:
  - dodge removal
- - "[_what:inspire,rally,encourage,mobilize,impress]#_what# their [_who:comrades,their fellow #creatureType.s#]#_who#"
+ - "[_what:inspire,rally,encourage,mobilize,impress]#_what# their comrades"
  - make a fool of themselves
- - take their chances
- - look their best
+ - look respectable
  - stay in character
+ - "really go [_crazy:wild,crazy,nuts]#_crazy"
 
 tribalCreature:
  - "#adj.capitalizeAll# #_creatureType.capitalizeAll#"
