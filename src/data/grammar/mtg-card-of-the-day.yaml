@@ -1,14 +1,18 @@
 ---
 cotdImage:
   - "[_cardname:#realCard#][_cotdDescription:#cotdDescription#][_cotdImgUrl:https#colon#//goodgamery.com/api/mtg/image?card=#_cardname#][_title:#cotdTitle#]#_title#: #_cardname##cotdImageHtml#"
-  - "[_creatureType:#creatureTypes#][#_creatureType.cardSearchByType#][_cardname:#_cardName1#][_cotdImgUrl:#_cardImgUrl1#][_cotdDescription:#cotdCreatureTypeDescription#][_title:#cotdTitle#]#_title#: #_cardname##cotdImageHtml#"
+  - "[#cotdCreatureTypeSearch#][_cotdDescription:#cotdCreatureTypeDescription#][_title:#cotdTitle#]#_title#: #_cardname##cotdImageHtml#"
   - "[_cardType:aura,equipment][#_cardType.cardSearchByType#][_cardname:#_cardName1#][_cotdDescription:#cotdAuraOrEquipmentDescription#][_cotdImgUrl:#_cardImgUrl1#][_title:#cotdTitle#]#_title#: #_cardname##cotdImageHtml#"
-  - "[#searchableCardCategory#][_cardText:#_cardCategorySearchTerm#][#_cardText.cardSearchByText#][_cardname:#_cardName1#][_cardcolor:#_cardColor1#][_cotdDescription:#cotdTextDescription#][_cotdImgUrl:#_cardImgUrl1#][_title:#cotdTitle#]#_title#: #_cardname##cotdImageHtml#"
+  - "[#searchableCardCategory#][#cotdCardCategorySearch#][_cotdDescription:#cotdTextDescription#][_title:#cotdTitle#]#_title#: #_cardname##cotdImageHtml#"
+
+cotdCreatureTypeSearch: "[_creatureType:#creatureTypes#][#_creatureType.cardSearchByType#][_cardname:#_cardName1#][_cardcolor:#_cardColor1#][_cotdImgUrl:#_cardImgUrl1#]"
+cotdCardCategorySearch: "[_cardText:#_cardCategorySearchTerm#][#_cardText.cardSearchByText#][_cardname:#_cardName1#][_cardcolor:#_cardColor1#][_cotdImgUrl:#_cardImgUrl1#]"
 
 searchableCardCategory:
   - "[_cardCategory:removal spell][_toughness:1,2,3,4,5,X][_cardCategorySearchTerm:\"destroy target creature\",\"exile target creature\",\"enchanted creature can't attack\",\"fights target\",\"damage to target creature\",\"sacrifices a creature\",\"/-#_toughness# until\",\"enchanted creature doesn't\"]"
   - "[_cardCategory:land destruction spell][_cardCategorySearchTerm:\"destroy target land\",\"sacrifices a land\"]"
-  - "[_cardCategory:pump spell,combat trick][_cardCategorySearchTerm:\"target creature gets +\",\"target creature gains\"]"
+  - "[_cardCategory:pump spell][_cardCategorySearchTerm:\"target creature gets +\",\"creatures you control get +\"]"
+  - "[_cardCategory:combat trick][_cardCategorySearchTerm:\"target creature gets +\",\"target creature gains\"]"
   - "[_cardCategory:discard spell][_cardCategorySearchTerm:\"discards a card\",\"discards that card\"]"
   - "[_cardCategory:counterspell][_cardCategorySearchTerm:\"counter target\"]"
   - "[_cardCategory:direct damage spell,burn spell][_cardCategorySearchTerm:\"damage to target\"]"
@@ -26,9 +30,9 @@ cotdImageCustom: "#cotdImageHtml#"
 cotdTitle:
   - CARD OF THE DAY
 cotdDescription:
-  - "This blast from the [_time:future,past,future,past,present,distant future,distant past]#_time# is back, and it's still the only way for a player to #marginalThingToDo#! Although with #keyword# coming back, I don't think any keyword is off the menu moving forward."
+  - "This blast from the [_time:future,past,future,past,present,distant future,distant past]#_time# is back, and it's still the only way for a player to #marginalThingToDo#! Although with #keyword# coming back, we can't really promise that any keyword is off the menu moving forward."
   - "When your opponent plays #kindaGood.a# spell, your first #cardWhichDrawsCards# is probably to try to cause them to have #cardWhichCountersSpells.a#."
-  - "This card seems [_kindaGood:#kindaGood#]#_kindaGood#...until you realize that it means there's a legendary #creatureTypes.capitalize# token to be had. Then it becomes [_reallyGood:#reallyGood#,really #_kindaGood#]#_reallyGood#."
+  - "This card seems [_kindaGood:#kindaGood#]#_kindaGood#...until you realize that it means there's a legendary #creatureTypes.capitalize# token to be had. Then it [_result:becomes #reallyGood#,seems really #_kindaGood#]#_result#."
   - "Every player aspires to have as many #_cardname.s# as they have #colors# #deckArchOrCategory# decks."
   - "#multicolor# #deckLimitedArchetype.capitalize# may be the favored deck for this color combo, but that doesn't mean #multicolor# #keyword# isn't always happy to have another tool in its [_toolbox:back pocket,arsenal,toolbox,kit,playbook]#_toolbox#!"
 
@@ -37,7 +41,7 @@ cotdCreatureTypeNeedsWork:
 
 cotdTextDescription:
   - "It's no surprise that #_cardcolor.capitalize#'s [_superlative:#cardSuperlative#,second-#cardSuperlative#]#_superlative# #_cardCategory# finds its way into almost every [_decktype:#format#,#deckArchOrCategory#]#_decktype# deck that can host it. Plus it [_verbs:offers,enables,makes possible]#_verbs# some of the most #interestingPlay# the game has ever seen."
-  - "[_cardCategory:#_cardCategory#,]This versatile #_cardCategory# has already shown itself as an all-star of the new metagame. Check out the Pro Tour this weekend to see if the #deckArchOrCategory# dominance continues!"
+  - "[_search:[#cotdCreatureTypeSearch#][_cardDesc:#_creatureType#],[#cotdCardCategorySearch#][_cardDesc:#_cardCategory#]][#_search#]This versatile #_cardDesc# has already shown itself as an all-star of the new metagame. Check out the Pro Tour this weekend to see if the #deckArchOrCategory# dominance continues!"
 
 cotdAuraOrEquipmentDescription:
   - "Long ago, [_adj:inventive,resourceful,desparate,clever,crafty,beleagured]#_adj.a# #creatureTypes# decided to stick some #massNoun#-infused [_equipmentPart:#bodypart# armor,blades,spikes]#_equipmentPart# onto what appears to be a [_surface:#itemNoun#,pair of #itemNoun.s#]#_surface#. Today, almost every #characterClass# [_worn:has donned,has worn,wields,sports]#_worn# [_theArmor:one of these,a pair]#_theArmor# to #creatureActionVerb# as they [_verb:dash,rumble,rush,roll]#_verb# into battle."
@@ -119,7 +123,7 @@ creatureActionVerb:
  - make a fool of themselves
  - look respectable
  - stay in character
- - "really go [_crazy:wild,crazy,nuts]#_crazy"
+ - "really go [_crazy:wild,crazy,nuts]#_crazy#"
 
 tribalCreature:
  - "#adj.capitalizeAll# #_creatureType.capitalizeAll#"
