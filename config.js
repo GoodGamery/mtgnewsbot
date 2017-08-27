@@ -1,15 +1,25 @@
 'use strict';
 const merge = require('lodash.merge');
 const buildGrammar = require('./src/build-grammar.js');
-
 const CONFIG_OVERRIDE_PATH = './config-override.json';
 const DEFAULT_GRAMMAR_PATH = './src/data/grammar';
 const TWEET_LENGTH = 140;
 const TEMPFILE_PATH = '/tmp';
 
+const loggers = {
+
+};
+
+const logPrefs = {
+  cardfinder: true,
+  html: true
+};
+
 let config = {
   defaultGrammarPath:  DEFAULT_GRAMMAR_PATH,
   defaultGrammar: undefined,
+  loggers: loggers,
+  logPrefs: logPrefs,
   origin: undefined,
   tweetLength: TWEET_LENGTH,
   paths: {
@@ -27,6 +37,8 @@ let config = {
 const submodules = {
   tracery: require('./submodules/tracery')
 };
+
+
 
 // apply overrides from config overrides file
 try {
@@ -49,5 +61,9 @@ Object.freeze(config);
 global.mtgnewsbot = global.mtgnewsbot || {};
 global.mtgnewsbot.config = config;
 global.submodules = submodules;
+
+const Logger = require('./src/lib/util/logger');
+loggers.cardfinder  = new Logger('cardfinder'),
+loggers.html        = new Logger('html'), 
 
 module.exports = config;

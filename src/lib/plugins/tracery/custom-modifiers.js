@@ -1,5 +1,6 @@
 'use strict';
 const request = require('request');
+const config = global.mtgnewsbot.config;
 
 function allCaps(s) {
   return s.toUpperCase();
@@ -76,17 +77,16 @@ async function cardFinderSearch(query) {
         resolve('NO RESULTS');
       }
 
+      const logger = config.loggers.cardfinder;
+
       try {
-        console.log('[cardFinderSearch] reqdata:\n' + JSON.stringify(data));
-        // console.log('[cardFinderSearch] result:\n' + JSON.stringify(JSON.parse(body)[0], null, '\t'));
+        logger.log('[cardFinderSearch] data:\n' + JSON.stringify(data));
+        logger.log('[cardFinderSearch] result:\n' + JSON.stringify(JSON.parse(body)[0], null, '\t'));
         const result = JSON.parse(body);
         const name = result[0].name;
         const imgUrl = result[0].imageUrl.replace(/:/g,'#colon#');
         const color = getColorDescription(result[0].colorIdentity);
 
-        console.log('name: ' + name);
-        console.log('imageUrl: ' + imgUrl);
-        console.log('color: ' + color);
         resolve(`[_cardName1:${name}][_cardImgUrl1:${imgUrl}][_cardColor1:${color}]`);
       } catch (e) {
         console.warn('Error parsing card data: ' + e);
