@@ -26,7 +26,6 @@ let config = {
 
 const submodules = {
   tracery: require('./submodules/tracery')
-  //tracery: require('./scratch/submodules/tracery/tracery.js')  
 };
 
 // apply overrides from config overrides file
