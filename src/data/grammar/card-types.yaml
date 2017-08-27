@@ -1,0 +1,9 @@
+---
+cardTypes:
+- artifact
+- creature
+- enchantment
+- land
+- instant
+- planeswalker
+- sorcery

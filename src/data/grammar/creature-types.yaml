@@ -17,7 +17,6 @@
       "beast",
       "beeble",
       "bird",
-      "blinkmoth",
       "boar",
       "brushwagg",
       "camel",
@@ -25,7 +24,6 @@
       "centaur",
       "cephalid",
       "cleric",
-      "coward",
       "crab",
       "crocodile",
       "cyclops",
@@ -87,7 +85,6 @@
       "moonfolk",
       "monger",
       "monkey",
-      "moonfolk",
       "mutant",
       "nightmare",
       "ninja",
@@ -109,7 +106,6 @@
       "saproling",
       "satyr",
       "scarecrow",
-      "serf",
       "serpent",
       "shaman",
       "shapeshifter",
@@ -141,6 +137,12 @@
       "wurm",
       "yeti",
       "zombie"
+  ],
+  "nonCardCreatureTypes": [
+    "blinkmoth",
+    "citizen",
+    "coward",
+    "serf"
   ],
   "creatureTypesPlural": [
       "ants",
