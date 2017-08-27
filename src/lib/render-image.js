@@ -4,6 +4,7 @@ const webshot = require('webshot');
 const svg2png = require('svg2png');
 const Jimp = require('jimp');
 const fs =  require('fs');
+const config = global.mtgnewsbot.config;
 
 const webshotOptions = {
   windowSize: { width: 1024, height: 768 }
@@ -22,7 +23,9 @@ function renderImageFromHeadline(headline, outputPath) {
     return renderImageFromSvg(svg, outputPath);
   } else if(headline.tags && headline.tags.htmlImg && headline.tags.htmlImg.htmlImgString) {
     const html = headline.tags.htmlImg.htmlImgString;
-    console.log(`\nRendering HTML:\n\n ${html}`);
+    if (config.logPrefs.html) {
+      console.log(`\nRendering HTML:\n\n ${html}`);
+    }
     const cropOptions = {
       width: 		parseInt(headline.tags.htmlImg.width),
       height: 	parseInt(headline.tags.htmlImg.height),

@@ -147,7 +147,7 @@
     "priest", "ancestor", "martyr", "monarch", "voyager", "general", "victim", "customer", "seeker", "automaton", "keeper", "genius",
     "gymnast", "demagogue", "malcontent", "maniac", "bookworm", "egghead", "ringleader", "ringmaster",  "gatekeeper", "keymaster",
     "survivor", "vegan", "renegade", "flunky", "henchman", "emissary", "orphan", "enemy", "commander", "vagrant", "vagabond", "puppet",
-    "dog catcher"
+    "dog catcher", "coward", "citizen", "heretic", "fugitive", "outlaw"
  	],
   "characterTitle": [
   	"#characterClass#",

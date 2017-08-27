@@ -57,7 +57,7 @@
       "doodad", "bone", "vuvuzela", "handlebar moustache", "horseshoe", "sweater vest", "prawn", "#gameAccessory#", "veil", "shrubbery",
       "apron", "bow tie", "glove", "fanny pack", "loincloth", "#bodypart#", "saxophone", "birdcage", "balloon", "weathervane", "backpack",
       "cactus", "spellbomb", "chair", "stepladder", "gravy boat", "memorial", "statue", "game", "relic", "ring", "appendage", "#bodypart#",
-      "clog", "shoe", "rubber ducky", "rubber chicken"
+      "clog", "shoe", "rubber ducky", "rubber chicken", "egg", "trinket"
   ],
   "placeNoun": [
       "temple", "palace", "castle", "garden", "market", "dungeon", "sanctuary", "mansion", "kingdom", "colony", "vacation rental", "graveyard",
@@ -68,7 +68,8 @@
       "portal", "hair salon", "shipwreck", "pasture", "circus tent", "fortress", "junkyard", "pillow fort", "mausoleum", "sepulcher",
       "kitchenette", "churchyard", "mortuary", "abattoir", "art studio", "pet store", "armory", "gazebo", "playground", "animal shelter",
       "gazebo", "taco stand", "pyramid", "igloo", "dude ranch", "cabin", "gas station", "tattoo parlor", "tavern", "vineyard", "drawbridge",
-      "pantry", "stairwell", "petting zoo", "supermarket", "bayou", "ziggurat", "clocktower", "lair", "void", "quarry", "hidey-hole", "pool"
+      "pantry", "stairwell", "petting zoo", "supermarket", "bayou", "ziggurat", "clocktower", "lair", "void", "quarry", "farmer's market", 
+      "hidey-hole", "pool"
   ],
   "irregularPluralNoun": [
       "teeth", "feet", "pants", "geese", "fish", "children", "stimuli", "potatoes", "knives", "ashes", "riches", "hypotheses", "neuroses",
