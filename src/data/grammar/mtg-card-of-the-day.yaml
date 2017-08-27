@@ -1,10 +1,21 @@
 ---
 cotdImage:
   - "[_cardname:#realCard#][_cotdDescription:#cotdDescription#][_cotdImgUrl:https#colon#//goodgamery.com/api/mtg/image?card=#_cardname#][_title:#cotdTitle#]#_title#: #_cardname##cotdImageHtml#"
-
   - "[_creatureType:#creatureTypes#][#_creatureType.cardSearchByType#][_cardname:#_cardName1#][_cotdDescription:#cotdCreatureTypeDescription#][_cotdImgUrl:#_cardImgUrl1#][_title:#cotdTitle#]#_title#: #_cardname##cotdImageHtml#"
-
   - "[_cardType:aura,equipment][#_cardType.cardSearchByType#][_cardname:#_cardName1#][_cotdDescription:#cotdAuraOrEquipmentDescription#][_cotdImgUrl:#_cardImgUrl1#][_title:#cotdTitle#]#_title#: #_cardname##cotdImageHtml#"
+  - "[#searchableCardCategory#][_cardText:#_cardCategorySearchTerm#][#_cardText.cardSearchByText#][_cardname:#_cardName1#][_cardcolor:#_cardColor1#][_cotdDescription:#cotdTextDescription#][_cotdImgUrl:#_cardImgUrl1#][_title:#cotdTitle#]#_title#: #_cardname##cotdImageHtml#"
+
+searchableCardCategory:
+  - "[_cardCategory:removal spell][_toughness:1,2,3,4,5,X][_cardCategorySearchTerm:\"destroy target creature\",\"exile target creature\",\"enchanted creature can't attack or block\",\"fights target\",\"damage to target creature\",\"sacrifices a creature\",\"/-#_toughness# until\"]"
+  - "[_cardCategory:land destruction spell][_cardCategorySearchTerm:\"destroy target land\",\"sacrifices a land\"]"
+  - "[_cardCategory:pump spell,combat trick][_cardCategorySearchTerm:\"target creature gets +\",\"target creature gains\"]"
+  - "[_cardCategory:discard spell][_cardCategorySearchTerm:\"discards a card\",\"discards that card\"]"
+  - "[_cardCategory:counterspell][_cardCategorySearchTerm:\"counter target spell\"]"
+  - "[_cardCategory:direct damage spell,burn spell][_cardCategorySearchTerm:\"damage to target\"]"
+  - "[_cardCategory:ramp spell][_cardCategorySearchTerm:\"land card and put that card onto\",\"put them onto\",\"land card and put it onto\",\"#basicLands# card and put it onto\",\"#basicLands# card and put that card onto\"]"
+  - "[_cardCategory:lifegain spell][_amount:1,2,3,4,5,6,7,8,10,20,X][_cardCategorySearchTerm:\"gain life\",\"gain #_amount# life\"]"
+  - "[_cardCategory:cantrip][_cardCategorySearchTerm:\"draw a card.\"]"
+  - "[_cardCategory:slowtrip][_cardCategorySearchTerm:\"draw a card at the beginning\"]"
 
 #This requires _cardname to be set already
 cotdImageHtml: "{htmlImg htmlImgString=`#_cotdHtml#` screenWidth=`1000` screenHeight=`500`}"
@@ -14,20 +25,22 @@ cotdImageCustom: "#cotdImageHtml#"
 cotdTitle:
   - CARD OF THE DAY
 cotdDescription:
-  - "If you're looking to beef up #character#'s tribal support next [_date:business day,weekend,week,month,week,month,year,year,decade,century]#_date#, make sure to look at the #creatureTypes.capitalize# tribal pushes we made back in #randomCardSet.capitalize# and #randomCardSet.capitalize#."
+  - "If you're looking to beef up #character#'s tribal support next [_date:business day,weekend,week,month,week,month,year,year,decade,century]#_date#, make sure to look at the #creatureTypes.capitalize# tribal pushes [_futureSet:#teaserCardSet#,#novelCardSetName#][_madeOrAreMaking:we made back in #cardSet# and #cardSet#,we're making in #_futureSet#]#_madeOrAreMaking#."
   - "This blast from the [_time:future,past,future,past,present,distant future,distant past]#_time# is back, and it's still the only way for a player to #marginalThingToDo#! Although with #keyword# coming back, I don't think any keyword is off the menu moving forward."
   - "When your opponent plays #kindaGood.a# spell, your first #cardWhichDrawsCards# is probably to try to cause them to have #cardWhichCountersSpells.a#."
   - "This versatile #cardCategory# has already shown itself as an all-star of the new metagame. Check out the Pro Tour this weekend to see if the #deckArchOrCategory# dominance continues!"
-  - "This card seems #kindaGood#...until you realize that it means there's a legendary #creatureTypes.capitalize# token to be had. Then it becomes #reallyGood#."
-  - "It's no surprise that #basicColors.capitalize#'s most versatile removal spell finds its way into almost every #deckArchOrCategory# deck that can host it. Plus it offers some of the most hilarious flavor plays the game has ever seen."
+  - "This card seems [_kindaGood:#kindaGood#]#_kindaGood#...until you realize that it means there's a legendary #creatureTypes.capitalize# token to be had. Then it becomes [_reallyGood:#reallyGood#,really #_kindaGood#]#_reallyGood#."
   - "Every player aspires to have as many #_cardname.s# as they have #colors# #deckArchOrCategory# decks."
-  - "#multicolor# #deckLimitedArchetype.capitalize# may be the favored deck for this color combo, but that doesn't mean #multicolor# #keyword# isn't always happy to have another tool in its back pocket!"
+  - "#multicolor# #deckLimitedArchetype.capitalize# may be the favored deck for this color combo, but that doesn't mean #multicolor# #keyword# isn't always happy to have another tool in its [_toolbox:back pocket,arsenal,toolbox,kit,playbook]#_toolbox#!"
 
 cotdCreatureTypeNeedsWork:
   - "Finally, #_creatureType# tribal has the [_key:lord,crucial piece]#_key# it needs to be [_adj:viable,constructed playable,competetive]#_adj#."
 
+cotdTextDescription:
+  - "It's no surprise that #_cardcolor.capitalize#'s [_superlative:#cardSuperlative#,second-#cardSuperlative#]#_superlative# #_cardCategory# finds its way into almost every [_decktype:#format#,#deckArchOrCategory#]#_decktype# deck that can host it. Plus it [_verbs:offers,enables,makes possible]#_verbs# some of the most #interestingPlay# the game has ever seen."
+
 cotdAuraOrEquipmentDescription:
-  - "Long ago, some #creatureTypes# decided to stick #massNoun#-infused #bodypart# armor onto what appears to be a pair of #itemNoun.s#. Today, almost every #characterClass# has donned a pair to #creatureActionVerb# as they [_verb:dash,rumble,rush,roll]#_verb# into battle."
+  - "Long ago, a #creatureTypes# decided to stick some #massNoun#-infused #bodypart# armor onto what appears to be a pair of #itemNoun.s#. Today, almost every #characterClass# has [_worn:donned,worn,sported,brandished]#_worn# [_theArmor:one of these,a pair]#_theArmor# to #creatureActionVerb# as they [_verb:dash,rumble,rush,roll]#_verb# into battle."
 
 cotdCreatureTypeDescription:
  - "Only on #plane# would people see this #adjImpressive# #_creatureType# and nickname it [_nickname:The #adj.capitalizeAll.hyphenate# #characterClass.capitalizeAll#,#planeswalkerFirstName#'s #characterClass.capitalizeAll#]“#_nickname#”."
@@ -36,6 +49,51 @@ cotdCreatureTypeDescription:
  - "If you're looking for an impressive bomb in #teaserCardSet# limited, look no further than this #adj# #_creatureType#."
  - "Things took a dark turn [_where:at the #storyLocation# #placeNoun#,in #minorStoryLocation#,in #nonPlaneLocation#]#_where# after this #_creatureType# learned they had run out of [_item:#itemNoun.s#,#massNoun#]#_item#."
  - "#_creatureType.capitalize# tribal, meet #format#. We've wanted to introduce you two for a while, and we thought [_adj:loving,friendly,abundant,populated,inhabited][_where:the #_creatureType#-#_adj# plane of #plane#,#teaserCardSet#]#_where# would be the perfect place for you to meet."
+
+cardSuperlative:
+- most versatile
+- most flexible
+- most powerful
+- most underrated
+- most popular
+- most undercosted
+- most reprinted
+- most underestimated
+- most frequently sideboarded
+- most draftable
+- most iconic
+- least balanced
+- most conditional
+- most overrated
+- most overpriced
+- most underwhelming
+- most proxied
+- most counterfeited
+- least powerful
+- best-designed
+- narrowest
+- best
+- worst
+
+interestingPlayAdj:
+  - hilarious
+  - impressive
+  - memorable
+  - amazing
+  - over-the-top
+  - incredible
+  - ridiculous
+  - unbelievable
+
+interestingPlay:
+  - "#interestingPlayAdj# flavor plays"
+  - "#interestingPlayAdj# topdecks"
+  - "#interestingPlayAdj# bluffing opportunities"
+  - "#interestingPlayAdj# potential combos"
+  - "#interestingPlayAdj# windmill slams"
+  - "#interestingPlayAdj# blowouts"
+  - "#interestingPlayAdj# misplay opportunities"
+  - "#interestingPlayAdj# punts"
 
 adjImpressive:
  - benevolent
@@ -60,7 +118,7 @@ creatureActionVerb:
  - make a fool of themselves
  - take their chances
  - look their best
- - "#verbStrictlyIntransitive#"
+ - stay in character
 
 tribalCreature:
  - "#adj.capitalizeAll# #_creatureType.capitalizeAll#"
@@ -110,7 +168,7 @@ marginalThingToDo:
   - swap the order of layer 3 and 5
   - draw one card, then put it back
   - "reveal the [_where:top,bottom,first,last,middle]#_where# card #cardLocation#"
-  - continue drawing cards after losing the game
+  - "continue [_acting:drawing cards,gaining life,playing lands,talking,shuffling,blocking,searching their library]#_acting# after losing the game"
   - reduce the casting cost of red enchantments by 1 generic mana
   - delay combo kills by precisely 2 turns
   - "destroy #cardCategory.s# in #colors#"
