@@ -23,9 +23,9 @@ function renderImageFromHeadline(headline, outputPath) {
     return renderImageFromSvg(svg, outputPath);
   } else if(headline.tags && headline.tags.htmlImg && headline.tags.htmlImg.htmlImgString) {
     const html = headline.tags.htmlImg.htmlImgString;
-    if (config.logPrefs.html) {
-      console.log(`\nRendering HTML:\n\n ${html}`);
-    }
+    
+    config.loggers.html.log(`\nRendering HTML:\n\n ${html}`);
+
     const cropOptions = {
       width: 		parseInt(headline.tags.htmlImg.width),
       height: 	parseInt(headline.tags.htmlImg.height),

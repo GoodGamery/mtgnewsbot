@@ -2,7 +2,7 @@
 
 const path = require('path');
 const tracery = global.submodules.tracery;
-const customTraceryModifiers = require(`./lib/plugins/tracery/custom-modifiers`);
+const customTraceryModifiers = require(`./lib/plugins/tracery/modifiers`);
 const pathToFileUrl = require(`./lib/util/path-to-file-url`);
 
 class HeadlineMaker {
