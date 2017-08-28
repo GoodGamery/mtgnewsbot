@@ -1,6 +1,10 @@
 'use strict';
 const request = require('request');
 const config = global.mtgnewsbot.config;
+const readJsonFile = require('../../../util/read-json-file.js');
+const staticCardDataFile = './src/data/cards/example-cards.json';
+
+const logger = config.loggers.cardfinder;
 
 function getColorDescription(colorIdentity) {
   const colorNames = {
@@ -23,6 +27,20 @@ function getColorDescription(colorIdentity) {
 
   const colorDescription = colorIdentity.join('');
   return colorNames[colorDescription] || colorDescription;
+}
+
+async function randomCard() {
+  const query = { 
+    q: 'cmc >= 0',
+    limit: 1,
+    sort: 'random'
+  };
+  return searchCardFinder(query);
+}
+
+function randomStaticCard() {
+  const cardData = readJsonFile(staticCardDataFile);
+  return cardData[Math.floor(Math.random() * cardData.length)];
 }
 
 async function cardSearchBySet(s) {
@@ -52,36 +70,58 @@ async function cardSearchByType(s) {
   return cardFinderSearch(query);
 }
 
-async function cardFinderSearch(query) {
+async function searchCardFinder(query) {
   const SEARCH_API_JSON_URL = 'https://goodgamery.com/api/mtg/card/json';
-  return new Promise(resolve => {
+
+  return new Promise((resolve, reject) => {
     request.get({ url: SEARCH_API_JSON_URL, qs: query }, (err, data, body) => {
       if (err) {
-        console.warn('Error fetching card data: ' + err);        
-        resolve('NO RESULTS');
-      }
-
-      const logger = config.loggers.cardfinder;
-
-      try {
-        logger.log('[cardFinderSearch] data:\n' + JSON.stringify(data));
-        logger.log('[cardFinderSearch] result:\n' + JSON.stringify(JSON.parse(body)[0], null, '\t'));
-        const result = JSON.parse(body);
-        const name = result[0].name;
-        const imgUrl = result[0].imageUrl.replace(/:/g,'#colon#');
-        const color = getColorDescription(result[0].colorIdentity);
-
-        resolve(`[_cardName1:${name}][_cardImgUrl1:${imgUrl}][_cardColor1:${color}]`);
-      } catch (e) {
-        console.warn('Error parsing card data: ' + e);
-        resolve('NO RESULTS');
+        reject(err);
+      } else {
+        resolve(body);
       }
     });
-  });  
+  });
 }
 
-module.exports = { 
+async function cardFinderSearch(query) {
+  let resultData;
+  let result;
+  try {
+    try {
+     resultData = await searchCardFinder(query);
+      try {
+        result = JSON.parse(resultData);     
+        if (result.length === 0) {
+          console.warn('No results returned from card search. Fetching random card.')
+          resultData = await randomCard();
+          result = JSON.parse(resultData);
+        }
+      } catch (e) {
+        throw new Error('Error parsing card data: ' + e);    
+      }        
+    } catch (e) {
+      throw new Error('Failed to fetch card data: ' + e);
+    }      
+  } catch (e) {
+    logger.warn(e);    
+    result = [randomStaticCard()];
+  }
+    
+  try {
+    const name = result[0].name;
+    const imgUrl = result[0].imageUrl.replace(/:/g,'#colon#');
+    const color = getColorDescription(result[0].colorIdentity);
+
+    return `[_cardName1:${name}][_cardImgUrl1:${imgUrl}][_cardColor1:${color}]`;
+  } catch (e) {
+    return 'SEARCH_FAILED_NO_RESULT';
+  }
+}
+
+module.exports = {
   cardSearchBySet,
   cardSearchByText,
-  cardSearchByType
+  cardSearchByType,
+  randomStaticCard  
 };
