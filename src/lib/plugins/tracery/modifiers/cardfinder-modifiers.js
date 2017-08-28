@@ -2,20 +2,27 @@
 const request = require('request');
 const config = global.mtgnewsbot.config;
 
-function allCaps(s) {
-  return s.toUpperCase();
-}
+function getColorDescription(colorIdentity) {
+  const colorNames = {
+    W: 'white',
+    U: 'blue',
+    B: 'black',
+    R: 'red',
+    G: 'green',
+    WU: 'UW',
+    WR: 'RW',
+    WG: 'GW',
+    BR: 'RB',
+    UBG: 'BUG',
+    URG: 'RUG'
+  };
 
-function noPunctuation(s) {
-  return s.replace(/[()',"-:[\].?!:;=+_&*%^`~{}\\/|]/g, '');
-}
+  if (!colorIdentity) {
+    return 'colorless';
+  }
 
-function noSpaces(s) {
-  return s.replace(/\s+/g, '');
-}
-
-function hyphenate(s) {
-  return s.replace(/\s+/g, '-');
+  const colorDescription = colorIdentity.join('');
+  return colorNames[colorDescription] || colorDescription;
 }
 
 async function cardSearchBySet(s) {
@@ -43,29 +50,6 @@ async function cardSearchByType(s) {
     sort: 'random'
   };
   return cardFinderSearch(query);
-}
-
-function getColorDescription(colorIdentity) {
-  const colorNames = {
-    W: 'white',
-    U: 'blue',
-    B: 'black',
-    R: 'red',
-    G: 'green',
-    WU: 'UW',
-    WR: 'RW',
-    WG: 'GW',
-    BR: 'RB',
-    UBG: 'BUG',
-    URG: 'RUG'
-  };
-
-  if (!colorIdentity) {
-    return 'colorless';
-  }
-
-  const colorDescription = colorIdentity.join('');
-  return colorNames[colorDescription] || colorDescription;
 }
 
 async function cardFinderSearch(query) {
@@ -97,11 +81,7 @@ async function cardFinderSearch(query) {
 }
 
 module.exports = { 
-  allCaps: allCaps,
-  hyphenate: hyphenate,
-  noPunctuation: noPunctuation,
-  noSpaces: noSpaces,
-  cardSearchBySet: cardSearchBySet,  
-  cardSearchByText: cardSearchByText,
-  cardSearchByType: cardSearchByType  
+  cardSearchBySet,
+  cardSearchByText,
+  cardSearchByType
 };

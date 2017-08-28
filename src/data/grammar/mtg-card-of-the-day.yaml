@@ -178,7 +178,7 @@ marginalThingToDo:
   - swap the order of layers 3 and 5
   - draw one card, then put it back
   - "reveal the [_where:top,bottom,first,last,middle]#_where# card #cardLocation#"
-  - "continue [_acting:drawing cards,gaining life,playing lands,talking,shuffling,blocking,searching their library]#_acting# after losing the game"
+  - "continue [_acting:drawing cards,gaining life,playing lands,talking,shuffling,blocking,searching your library]#_acting# after losing the game"
   - reduce the casting cost of red enchantments by 1 generic mana
   - delay combo kills by precisely #count# turns
   - "destroy #cardCategory.s# in #colors#"
