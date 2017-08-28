@@ -68,7 +68,7 @@
       "portal", "hair salon", "shipwreck", "pasture", "circus tent", "fortress", "junkyard", "pillow fort", "mausoleum", "sepulcher",
       "kitchenette", "churchyard", "mortuary", "abattoir", "art studio", "pet store", "armory", "gazebo", "playground", "animal shelter",
       "gazebo", "taco stand", "pyramid", "igloo", "dude ranch", "cabin", "gas station", "tattoo parlor", "tavern", "vineyard", "drawbridge",
-      "pantry", "stairwell", "petting zoo", "supermarket", "bayou", "ziggurat", "clocktower", "lair", "void", "quarry", "farmer's market", 
+      "pantry", "stairwell", "petting zoo", "supermarket", "bayou", "ziggurat", "clocktower", "lair", "void", "quarry", "farmer's market",
       "hidey-hole", "pool"
   ],
   "irregularPluralNoun": [
@@ -83,7 +83,7 @@
     "bread", "cardboard", "jelly", "livestock", "mayonnaise", "music", "paper", "smoke", "sugar", "underwear", "electricity", "equipment", "art supplies", "gravy",
     "furniture", "laughter", "rubbish", "junk mail", "meat", "dietary suppliments", "pasta", "pollution", "salad", "seafood", "soap", "shampoo", "stuff", "valuables",
     "sunshine", "foliage", "cutlery", "signage", "bacteria", "electronics", "popcorn", "glue", "facial tissue", "poison", "venom", "bubbles", "algae", "fungus",
-    "carpeting", "wallpaper", "baby powder", "taffy", "pudding", "confetti", "saliva", "leather", "sawdust", "pizza"
+    "carpeting", "wallpaper", "baby powder", "taffy", "pudding", "confetti", "saliva", "leather", "sawdust", "pizza", "papier-mâché"
   ],
   "objectNounPronoun": ["[_noun:#aNoun#,#abstractNoun#,#abstractNoun#,#massNoun#,#adj.a# #itemNoun#][_pronoun:it]","[_noun:#pluralNoun#][_pronoun:them]"],
   "twoObjects": [

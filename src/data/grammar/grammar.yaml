@@ -472,3 +472,5 @@ colorComboNickname:
 - Jund
 # This is for use inside inlined-rules in tracery
 colon: ":"
+comma: ","
+fakecomma: "‚"

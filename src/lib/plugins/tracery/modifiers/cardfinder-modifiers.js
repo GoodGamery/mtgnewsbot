@@ -6,27 +6,67 @@ const staticCardDataFile = './src/data/cards/example-cards.json';
 
 const logger = config.loggers.cardfinder;
 
-function getColorDescription(colorIdentity) {
-  const colorNames = {
-    W: 'white',
-    U: 'blue',
-    B: 'black',
-    R: 'red',
-    G: 'green',
-    WU: 'UW',
-    WR: 'RW',
-    WG: 'GW',
-    BR: 'RB',
-    UBG: 'BUG',
-    URG: 'RUG'
-  };
+function randomElement(array) {
+  return array && array[Math.floor(Math.random() * array.length)];
+}
 
+const colorNames = {
+  W: 'white',
+  U: 'blue',
+  B: 'black',
+  R: 'red',
+  G: 'green',
+  WU: 'UW',
+  WR: 'RW',
+  WG: 'GW',
+  BR: 'RB',
+  UBG: 'BUG',
+  URG: 'RUG'
+};
+
+function getColorDescription(colorIdentity) {
   if (!colorIdentity) {
     return 'colorless';
+  } else if (colorIdentity.length == 5) {
+    return 'WUBRG';
   }
 
   const colorDescription = colorIdentity.join('');
   return colorNames[colorDescription] || colorDescription;
+}
+
+function getColorFullDescription(colorIdentity) {
+  if (!colorIdentity) {
+    return 'colorless';
+  }
+
+  return colorIdentity.map(color => colorNames[color]).join('-');
+}
+
+function getColorCategory(colorIdentity) {
+  if (!colorIdentity) {
+    return 'colorless';
+  }
+
+  if (colorIdentity.length === 1) {
+    return colorNames[colorIdentity[0]];
+  } else {
+    return 'multicolored';
+  }
+}
+
+function getSomeColor(colorIdentity) {
+  if (!colorIdentity) {
+    return 'colorless';
+  }
+
+  return colorNames[randomElement(colorIdentity)];
+}
+
+
+function getSomeCardTypeOrSubtype(types, subtypes) {
+  const typesAndSubtypes = types.concat(subtypes ? subtypes : []);
+  return randomElement(typesAndSubtypes);
 }
 
 async function randomCard() {
@@ -40,7 +80,7 @@ async function randomCard() {
 
 function randomStaticCard() {
   const cardData = readJsonFile(staticCardDataFile);
-  return cardData[Math.floor(Math.random() * cardData.length)];
+  return randomElement(cardData);
 }
 
 async function cardSearchBySet(s) {
@@ -84,6 +124,10 @@ async function searchCardFinder(query) {
   });
 }
 
+function traceryEscape(string) {
+  return string.replace(/:/g,'#colon#').replace(/,/g,"#comma#");
+}
+
 async function cardFinderSearch(query) {
   let resultData;
   let result;
@@ -93,7 +137,7 @@ async function cardFinderSearch(query) {
       try {
         result = JSON.parse(resultData);     
         if (result.length === 0) {
-          console.warn('No results returned from card search. Fetching random card.')
+          console.warn('No results returned from card search. Fetching random card.');
           resultData = await randomCard();
           result = JSON.parse(resultData);
         }
@@ -108,13 +152,41 @@ async function cardFinderSearch(query) {
     result = [randomStaticCard()];
   }
     
-  try {
-    const name = result[0].name;
-    const imgUrl = result[0].imageUrl.replace(/:/g,'#colon#');
-    const color = getColorDescription(result[0].colorIdentity);
 
-    return `[_cardName1:${name}][_cardImgUrl1:${imgUrl}][_cardColor1:${color}]`;
+  try {
+    const card = result[0];
+
+    const name = traceryEscape(card.name);
+    const set = traceryEscape(card.set);
+    const rarity = traceryEscape(card.rarity);      
+    const type = randomElement(card.types);
+    const subtype = randomElement(card.subtypes);
+    const fullType = card.types.join(' ');
+    const fullSubtype = card.subtypes && card.types.join(' ');    
+    const someTypeOrSubtype = getSomeCardTypeOrSubtype(card.types, card.subtypes);
+    const imgUrl = traceryEscape(card.imageUrl);
+    const color = getColorDescription(card.colorIdentity);
+    const colorDescriptive = getColorFullDescription(card.colorIdentity);
+    const colorClass = getColorCategory(card.colorIdentity);    
+    const someColor = getSomeColor(card.colorIdentity);
+
+    return ''.concat(
+      `[_cardName1:${name}]`,
+      `[_cardSet1:${set}]`,
+      `[_cardRarity1:${rarity}]`,      
+      `[_cardType1:${type}]`,     
+      `[_cardSubtype1:${subtype}]`,
+      `[_cardFullType1:${fullType}]`,
+      `[_cardFullSubtype1:${fullSubtype}]`,
+      `[_cardSomeTypeOrSubtype1:${someTypeOrSubtype}]`,                              
+      `[_cardImgUrl1:${imgUrl}]`,
+      `[_cardColor1:${color}]`,
+      `[_cardDescriptive1:${colorDescriptive}]`,
+      `[_cardColorClass1:${colorClass}]`,
+      `[_cardSomeColor1:${someColor}]`      
+    );
   } catch (e) {
+    logger.warn(e);
     return 'SEARCH_FAILED_NO_RESULT';
   }
 }
