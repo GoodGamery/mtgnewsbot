@@ -1,27 +1,27 @@
 'use strict';
 
-const config = global.mtgnewsbot.config;
+const logPreferences = {};
 
 class Logger {
-
-  constructor(name) {
+  constructor(name, enabled) {
     this.name = name;
+    logPreferences[name] = enabled === false ? false : true;
   }
 
   log(message) {
-    if (config.logPrefs[this.name]) {
+    if (logPreferences[this.name]) {
       console.log(message);
     }
   }
 
   warn(message) {
-    if (config.logPrefs[this.name]) {
+    if (logPreferences[this.name]) {
       console.warn(message);
     }
   }
 
   error(message) {
-    if (config.logPrefs[this.name]) {
+    if (logPreferences[this.name]) {
       console.error(message);
     }
   }
