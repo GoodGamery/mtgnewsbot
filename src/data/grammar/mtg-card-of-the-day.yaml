@@ -238,7 +238,7 @@ surprisingResult:
   - "it's the only card in Magic that lets you #marginalThingToDo#"
   - "it can let you take up to #count# extra turns"
   - "you get to return it to your hand"
-  - "you can combo it with #cardAlone#."
+  - "you can combo it with #cardAlone#"
   - "it's going to be #rarity.a# in [_italicText:#teaserCardSet.capitalizeAll#]#_italicize#"
 
 cardWhichDrawsCards:
