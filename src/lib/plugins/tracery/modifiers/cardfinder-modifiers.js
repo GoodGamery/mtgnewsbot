@@ -178,7 +178,7 @@ async function cardFinderSearch(query, params) {
     for (let i = 1; i <= queryLimit; i++) {
       const card = result[i - 1];
 
-      const name = traceryEscape(card.name);
+      let name = traceryEscape(card.name);
       const set = traceryEscape(card.set);
       const rarity = traceryEscape(card.rarity);      
       const type = randomElement(card.types);
@@ -191,6 +191,12 @@ async function cardFinderSearch(query, params) {
       const colorDescriptive = getColorFullDescription(card.colorIdentity);
       const colorClass = getColorCategory(card.colorIdentity);    
       const someColor = getSomeColor(card.colorIdentity);
+
+      if (card.layout === 'token') {
+        name += ' Token';
+      } else if (card.layout === 'vanguard') {
+        name += ' Avatar';
+      }
 
       finalResult = finalResult.concat(
         `[_cardName${i}:${name}]`,

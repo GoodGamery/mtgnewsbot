@@ -28,8 +28,10 @@
     "brain",
     "skeleton",
     "thumb",
-    "shin"
+    "shin",
+    "bellybutton"
    ],
+
   "bodypartsInPairs": [
   	"eyes",
     "head",
@@ -51,8 +53,8 @@
     "throat",
     "teeth",
     "eyeballs",
-    "skulls",
-    "moustaches",
+    "skull",
+    "moustache",
     "fingernails",
     "elbows",
     "spine",
@@ -60,6 +62,48 @@
     "skeleton",
     "pinkie toes",
     "thumbs",
-    "shins"
+    "shins",
+    "bellybutton"
+  ],
+
+  "bodypartsInternal": [
+    "eyes",
+    "stomach",,
+    "hair",
+    "teeth",
+    "eyeballs",
+    "fingernails",
+    "toenails",
+    "spine",
+    "brain",
+    "skeleton",
+    "intestines"
+  ],
+
+  "bodypartsExternal": [
+    "head",
+    "nose",
+    "ears",
+    "mouth",
+    "neck",
+    "shoulders",
+    "arms",
+    "hands",
+    "legs",
+    "knees",
+    "feet",
+    "toes",
+    "gut",
+    "belly",
+    "throat",
+    "skull",
+    "moustache",
+    "elbows",
+    "pinkie toes",
+    "thumbs",
+    "shins",
+    "skin",
+    "lips",
+    "bellybutton"
   ]
 }
