@@ -78,7 +78,7 @@ async function randomCards(limit) {
   return searchCardFinder(query);
 }
 
-function randomStaticCard(limit) {
+function randomStaticCards(limit) {
   const cardData = readJsonFile(staticCardDataFile);
   const cards = [];
   for (let i = 0; i < limit || 1; i++) {
@@ -108,7 +108,7 @@ async function cardSearchByType(s, params) {
   return cardFinderSearch(query, params);
 }
 
-async function searchCardFinder(query, params) {
+async function searchCardFinder(query) {
   const SEARCH_API_JSON_URL = 'https://goodgamery.com/api/mtg/card/json';
 
   return new Promise((resolve, reject) => {
@@ -135,7 +135,7 @@ async function cardFinderSearch(query, params) {
     if (parseInt(params[0]) > 0) {
       queryLimit = parseInt(params[0]);
     } else {
-      logger.warn(`Invalid query limit specified for query ${JSON.stringify(query)}: '${params[0]}' is not a valid positive integer.`)
+      logger.warn(`Invalid query limit specified for query ${JSON.stringify(query)}: '${params[0]}' is not a valid positive integer.`);
     }
   }
 
