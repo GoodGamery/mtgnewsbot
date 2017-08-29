@@ -1,9 +1,9 @@
 ---
 cotdImage:
   - "[_cardname:#realCard#][_cotdDescription:#cotdDescription#][_cotdImgUrl:https#colon#//goodgamery.com/api/mtg/image?card=#_cardname#][_title:#cotdTitle#]#_title#: #_cardname##cotdImageHtml#"
+  - "[#cotdCreatureTypeSearch#][_cotdDescription:#cotdCreatureTypeDescription#][_title:#cotdTitle#]#_title#: #_cardname##cotdImageHtml#"
   - "[_cardType:aura,equipment][#_cardType.cardSearchByType(5)#][_cardname:#_cardName1#][_cardset:#_cardSet1#][_cotdDescription:#cotdAuraOrEquipmentDescription#][_cotdImgUrl:#_cardImgUrl1#][_title:#cotdTitle#]#_title#: #_cardname##cotdImageHtml#"
   - "[#searchableCardCategory#][#cotdCardCategorySearch#][_cotdDescription:#cotdTextDescription#][_title:#cotdTitle#]#_title#: #_cardname##cotdImageHtml#"
-  - "[#cotdCreatureTypeSearch#][_cotdDescription:#cotdCreatureTypeDescription#][_title:#cotdTitle#]#_title#: #_cardname##cotdImageHtml#"
 
 cotdCardTypeSearch: "[_cardType:#cardTypes#][#_cardType.cardSearchByType(5)#][_cardname:#_cardName1#][_cardset:#_cardSet1#][_cardtype:#_cardSomeTypeOrSubtype1#][_cardcolor:#_cardColor1#][_cotdImgUrl:#_cardImgUrl1#][_cardDesc:#_cardType#][_cardDescCategory:#_cardDesc.s#]"
 cotdCreatureTypeSearch: "[_creatureType:#creatureTypes#][#_creatureType.cardSearchByType(5)#][_cardname:#_cardName1#][_cardset:#_cardSet1#][_cardtype:#_cardSomeTypeOrSubtype1#][_cardcolor:#_cardColor1#][_cotdImgUrl:#_cardImgUrl1#][_cardDesc:#_creatureType#][_cardDescCategory:#_cardDesc.s#]"
