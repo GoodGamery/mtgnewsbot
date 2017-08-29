@@ -4,6 +4,10 @@ function allCaps(s) {
   return s.toUpperCase();
 }
 
+function lowercase(s) {
+  return s.toLowerCase();
+}
+
 function noPunctuation(s) {
   return s.replace(/[()',"-:[\].?!:;=+_&*%^`~{}\\/|]/g, '');
 }
@@ -18,6 +22,7 @@ function hyphenate(s) {
 
 module.exports = { 
   allCaps,
+  lowercase,
   hyphenate,
   noPunctuation,
   noSpaces

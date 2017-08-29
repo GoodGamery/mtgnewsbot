@@ -147,7 +147,7 @@
     "priest", "ancestor", "martyr", "monarch", "voyager", "general", "victim", "customer", "seeker", "automaton", "keeper", "genius",
     "gymnast", "demagogue", "malcontent", "maniac", "bookworm", "egghead", "ringleader", "ringmaster",  "gatekeeper", "keymaster",
     "survivor", "vegan", "renegade", "flunky", "henchman", "emissary", "orphan", "enemy", "commander", "vagrant", "vagabond", "puppet",
-    "dog catcher", "coward", "citizen", "heretic", "fugitive", "outlaw"
+    "dog catcher", "coward", "citizen", "heretic", "fugitive", "outlaw", "pharaoh", "emperor", "empress"
  	],
   "characterTitle": [
   	"#characterClass#",
@@ -227,7 +227,7 @@
   	"#characterRace#",
   	"#characterFaction#"
   ],
-  "mashupCharacter": "#person#‚ #demonym.capitalize# #characterClass.capitalize#",
+  "mashupCharacter": "#person##fakecomma# #demonym.capitalize# #characterClass.capitalize#",
   "anyCharacter": [
   	"#planeswalkerFirstName#",
   	"#nonPlaneswalkerCharacter#",

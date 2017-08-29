@@ -22,9 +22,22 @@
       "Draft",
       "Sealed"
   ],
+  "popularFormat": [
+      "Standard",
+      "Modern",
+      "Vintage",
+      "Legacy",
+      "Commander",
+      "Draft",
+      "Sealed",
+      "Pauper",
+      "Two-Headed Giant",
+      "Constructed",
+      "Limited"
+  ],
   "alternativeConstructedFormat": [
     "DC10",
-    "Emporer",
+    "Emperor",
     "Five-Color",
     "Flip it or Rip it",
     "Frontier",
