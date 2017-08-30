@@ -1,6 +1,5 @@
 'use strict';
 const merge = require('lodash.merge');
-const buildGrammar = require('./src/build-grammar.js');
 const Logger = require('./src/lib/util/logger');
 
 const CONFIG_OVERRIDE_PATH = './config-override.json';
@@ -10,7 +9,6 @@ const TEMPFILE_PATH = '/tmp';
 
 let config = {
   defaultGrammarPath:  DEFAULT_GRAMMAR_PATH,
-  defaultGrammar: undefined,
   loggers: { },
   logPrefs:  { cardfinder: true, html: true },
   origin: undefined,
@@ -43,9 +41,6 @@ try {
     console.warn(`Unable to load config override: ${e}`);
   }
 }
-
-// load the default grammar after applying overrides
-config.defaultGrammar = buildGrammar(config.defaultGrammarPath);
 
 // create loggers and enable or disable based on preferences
 config.loggers.cardfinder  = new Logger('cardfinder', config.logPrefs.cardfinder);
