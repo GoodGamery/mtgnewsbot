@@ -88,6 +88,7 @@ svgMulliganAfterTextStyle: >
   text-shadow: 1px 1px 1px rgb(60,60,60); text-align:center;
 svgMulliganCardFinderUrl: https://goodgamery.com/api/mtg/image?card=#_cardname#
 svgMulliganResetStyles: "[_aboveTextSize:24px]"
+svbBackgroundIndex: ["1", "2", "3", "4", "5", "6", "7", "8", "9", "10"]
 svgMulligan: |
     <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="1849" height="840">
         <defs>
@@ -116,7 +117,7 @@ svgMulligan: |
                 <image xlink:href="[_cardname:#realHandCard#]#svgMulliganCardFinderUrl#" x="0" y="0" mask="url(\#cardMask)" width="223" height="310" />
             </svg>
         </defs>
-        <image width="100%" height="100%" xlink:href="./data/images/mulligan.png" />
+        <image width="100%" height="100%" xlink:href="./data/images/keepormull/background#svbBackgroundIndex#.png" />
         <use xlink:href="\#Card1" x="2%" y="330" />
         <use xlink:href="\#Card2" x="16%" y="330" />
         <use xlink:href="\#Card3" x="30%" y="330" />
