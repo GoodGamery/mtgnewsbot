@@ -10,7 +10,7 @@ imgClassifieds:
   #pickFourCards#[_body:#headlineAnything##priceOffer#]
   #pickBigHeader##svgImgClassifieds#
 svgImgClassifieds: >
-  #_header# #_body# {svg svgString=`#svgFourCards#`}
+  [#svgThemeColors#]#_header# #_body# {svg svgString=`#svgFourCards#`}
 pickBigHeader: >
   [_header:#titleClassified#]
 titleClassified:
@@ -24,19 +24,19 @@ titleClassified:
 - LOOK AT THESE CARDS
 - PREPARE YOUR BINDER
 headlineFourCardsForSale:
-- "#_card1#, #_card2#, #_card3#, and #_card4#"
-- "#_card1#, #_card2#, #_card3#, & #_card4#"
+- "#_card1#, #_card2#, and #_card3#"
+- "#_card1#, #_card2#, & #_card3#"
 - "#headlineAnything#"
 - "#headlineAnything#"
 headlineOneCardForSale:
 - "#_card1# playset"
 - "Complete playset of #_card1#"
-- "Exactly four copies of #_card1#"
-- "4x #_card1#"
+- "Exactly three copies of #_card1#"
+- "3x #_card1#"
 - "#headlineAnything#"
 - "#headlineAnything#"
 headlineAnything:
-- "#_card4# and friends"
+- "#_card3# and friends"
 - "The good stuff"
 - "Prizes curated to meet your high standards"
 - "A deadly combo"
@@ -44,7 +44,7 @@ headlineAnything:
 - "Your heart's desire"
 - "You won't find these anywhere else"
 - "All four good cards that come in #cardSet# boosters"
-- "#_card4# plus some other cards I found on the floor"
+- "#_card3# plus some other cards I found on the floor"
 - "#deck.capitalize# Shell for #format.capitalize#"
 - "Key cards for #deck.capitalize#"
 - "Some combo pieces for #deck.capitalize#"
@@ -72,9 +72,24 @@ pickFourCards:
 - "#pickFourDiffCards#"
 - "#pickFourSameCard#"
 pickFourDiffCards: >
-  [_card1:#realCard#][_card2:#realCard#][_card3:#realCard#][_card4:#realCard#]
+  [_card1:#realCard#][_card2:#realCard#][_card3:#realCard#]
 pickFourSameCard: >
-  [_card:#realCard#][_card1:#_card#][_card2:#_card#][_card3:#_card#][_card4:#_card#]
+  [_card:#realCard#][_card1:#_card#][_card2:#_card#][_card3:#_card#]
+
+callToAction:
+- "ORDER NOW"
+- "SAVE $$$"
+- "CRAZY DEAL"
+- "HECK YES"
+- "BEST PRICE"
+- "BEST DEAL"
+- "LESS THAN CFB!"
+- "SO CHEAP"
+- "WE'RE SERIOUS"
+- "100% REAL"
+- "DON'T MISS OUT"
+- "LOOK 4 OUR BOT"
+
 cardFinder: https://goodgamery.com/api/mtg/image?card=
 svgHeaderTextStyle: >
   color: white; font-size: 50px; line-height: 42px;
@@ -82,35 +97,52 @@ svgHeaderTextStyle: >
   font-family: Beleren, Georgia, 'Liberation Serif', 'DejaVu Serif', serif;
   font-weight: 900; text-shadow: 2px 2px 2px black; text-align:center;
 svgBodyTextStyle: >
-  color: white; font-size: 32px; line-height: 32px;
+  color: white; font-size: 36px; line-height: 36px;
   padding: 5px;
   font-family: Arial, 'Liberation Sans', 'DejaVu Sans', sans-serif;
   font-weight: 900; text-shadow: 2px 2px 2px black; text-align:center;
+svgCallToActionTextStyle: >
+  color: gold; font-size: 32px; line-height: 32px;
+  padding: 5px;
+  font-family: Beleren, Georgia, 'Liberation Serif', 'DejaVu Serif', serif; 
+  font-weight: 900; text-shadow: 2px 2px 2px black; text-align:center;
+
+svgThemeColors:
+  - "[_themeColor1:indigo][_themeColor2:goldenrod][_themeColor3:rgba(33,13,36,0.8)]"
+  - "[_themeColor1:steelblue][_themeColor2:lightsteelblue][_themeColor3:rgba(33,13,36,0.8)]"
+  - "[_themeColor1:darkred][_themeColor2:maroon][_themeColor3:rgba(33,13,36,0.8)]"
+
 svgFourCards: |
-  <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="700" height="508">
+  <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="700" height="420">
     <defs>
       <mask id="cardMask" maskUnits="userSpaceOnUse" mask-type="alpha">
-        <image x="0" y="0" width="223" height="310" xlink:href="./data/images/cardmask.png" />
+        <image x="0" y="0" width="182" height="256" xlink:href="./data/images/cardmask.png" />
       </mask>
-      <svg id="Card1">
-        <image xlink:href="#cardFinder##_card1#" x="0" y="0" mask="url(\#cardMask)" width="223" height="310" />
-      </svg>
-      <svg id="Card2">
-        <image xlink:href="#cardFinder##_card2#" x="0" y="0" mask="url(\#cardMask)" width="223" height="310" />
-      </svg>
-      <svg id="Card3">
-        <image xlink:href="#cardFinder##_card3#" x="0" y="0" mask="url(\#cardMask)" width="223" height="310" />
-      </svg>
-      <svg id="Card4">
-        <image xlink:href="#cardFinder##_card4#" x="0" y="0" mask="url(\#cardMask)" width="223" height="310" />
-      </svg>
+      <mask id="cardMaskLarger" maskUnits="userSpaceOnUse" mask-type="alpha">
+        <image x="0" y="0" width="189" height="264" xlink:href="./data/images/cardmask.png" />
+      </mask>            
+      <g id="Card1">
+        <rect x="-2" y="-2" width="189" height="260"  rx="12" ry="12" style="fill:#_themeColor1#;"/>                    
+        <image xlink:href="#cardFinder##_card1#" x="0" y="0" mask="url(\#cardMask)" width="183" height="256" />
+      </g>
+      <g id="Card2">
+        <rect x="-2" y="-2" width="189" height="260"  rx="12" ry="12" style="fill:#_themeColor1#; stroke-width:3; stroke-opactity:0.9; stroke-color:red;"/>                         
+        <image xlink:href="#cardFinder##_card2#" x="0" y="0" mask="url(\#cardMask)" width="183" height="256" />
+      </g>
+      <g id="Card3">
+        <rect x="-2" y="-2" width="193" height="268"  rx="12" ry="12" style="fill:#_themeColor1#; stroke-width:3; stroke-opactity:0.9; stroke-color:red;"/>                          
+        <image xlink:href="#cardFinder##_card3#" x="0" y="0" mask="url(\#cardMaskLarger)" width="189" height="264" />
+      </g>
     </defs>
-    <image width="100%" height="100%" xlink:href="#art700x508#" />
-    <g transform="translate(160 140)">
-      <use xlink:href="\#Card1" x="0" y="0" transform="rotate(-17 111 155) translate(0 0)" />
-      <use xlink:href="\#Card2" x="0" y="0" transform="rotate(-7 111 155) translate(50 -4)" />
-      <use xlink:href="\#Card3" x="0" y="0" transform="rotate(3 111 155) translate(100 -8)" />
-      <use xlink:href="\#Card4" x="0" y="0" transform="rotate(13 111 155) translate(150 -12)" />
+    <image width="100%" height="100%" xlink:href="#art700x420#" />
+    <rect x="0" y="234" width="700" height="100" style="fill:#_themeColor2#;"/>                          
+    <rect x="0" y="236" width="700" height="96" style="fill:#_themeColor1#;"/>                          
+    <rect x="415" y="244" width="275" height="81" rx="42" ry="42" style="fill:#_themeColor3#;"/>                          
+
+    <g transform="translate(20 155)">
+      <use xlink:href="\#Card1" x="0" y="0" transform="rotate(-3 111 155) translate(0 -12)" />
+      <use xlink:href="\#Card2" x="0" y="0" transform="rotate(3 111 155) translate(188 -24)" />
+      <use xlink:href="\#Card3" x="0" y="-10" transform="rotate(0 111 155) translate(90 -10)" />
     </g>
     <foreignObject x="0" y="11" width="700" height="300">
       <p xmlns="http://www.w3.org/1999/xhtml" style="#svgHeaderTextStyle#">#_header#</p>
@@ -120,5 +152,8 @@ svgFourCards: |
         #_body#
       </p>
     </foreignObject>
+    <foreignObject x="415" y="264" width="275" height="81">
+      <p xmlns="http://www.w3.org/1999/xhtml" style="#svgCallToActionTextStyle#">#callToAction#</p>
+    </foreignObject>    
   </svg>
   #svgMulliganResetStyles#

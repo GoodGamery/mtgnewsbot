@@ -22,3 +22,6 @@ art700x508:
 - ./data/images/700x508/art_20.jpg
 - ./data/images/700x508/art_21.jpg
 - ./data/images/700x508/art_22.jpg
+
+art700x420:
+- ./data/images/700x420/art_01.jpg
