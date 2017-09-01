@@ -1,14 +1,18 @@
 ---
 imgClassifieds:
 - >
+  [#randomCardStrategy#]
   #pickFourDiffCards#[_body:#headlineFourCardsForSale##priceOffer#]
   #pickBigHeader##svgImgClassifieds#
 - >
+  [#randomCardStrategy#]
   #pickFourSameCard#[_body:#headlineOneCardForSale##priceOffer#]
   #pickBigHeader##svgImgClassifieds#
 - >
+  [#randomCardStrategy#]
   #pickFourCards#[_body:#headlineAnything##priceOffer#]
   #pickBigHeader##svgImgClassifieds#
+
 svgImgClassifieds: >
   [#svgThemeColors#]#_header# #_body# {svg svgString=`#svgFourCards#`}
 pickBigHeader: >
@@ -26,6 +30,11 @@ titleClassified:
 headlineFourCardsForSale:
 - "#_card1#, #_card2#, and #_card3#"
 - "#_card1#, #_card2#, & #_card3#"
+- "#_card3# plus some other cards I found on the floor"
+- "#deck.capitalize# combo pieces"
+- "Repacked boosters that might contain the Power 9"
+- "#_card3# and friends"
+- "A deadly combo"
 - "#headlineAnything#"
 - "#headlineAnything#"
 headlineOneCardForSale:
@@ -36,25 +45,23 @@ headlineOneCardForSale:
 - "#headlineAnything#"
 - "#headlineAnything#"
 headlineAnything:
-- "#_card3# and friends"
-- "The good stuff"
-- "Prizes curated to meet your high standards"
-- "A deadly combo"
+- "Just the good stuff"
+- "Curated to meet your high standards"
 - "Digital cards"
 - "Your heart's desire"
 - "You won't find these anywhere else"
-- "All four good cards that come in #cardSet# boosters"
-- "#_card3# plus some other cards I found on the floor"
 - "#deck.capitalize# Shell for #format.capitalize#"
 - "Key cards for #deck.capitalize#"
-- "Some combo pieces for #deck.capitalize#"
 - "Your favorite cards"
-- "Repacked boosters that might contain the Power 9"
 - "#format.capitalize# Staples"
-- "Draft leftovers from #cardSet#"
-- "#cardSet# Draft leftovers"
 - "#broadCardClassification.capitalizeAll# Collection#"
 - "Complete #broadCardClassification.capitalizeAll# Set#"
+
+headlineCardfinder:
+- "Draft leftovers from #_cardSet#"
+- "#_cardSet# Draft leftovers"
+- "All three good cards that come in #_cardSet# boosters"
+
 priceOffer:
 - ""
 - ""
@@ -68,49 +75,249 @@ priceOffer:
 - " for #priceTix#"
 - " @ #priceUSD# ea."
 - " @ #priceTix# ea."
-pickFourCards:
-- "#pickFourDiffCards#"
-- "#pickFourSameCard#"
-pickFourDiffCards: >
-  [_card1:#realCard#][_card2:#realCard#][_card3:#realCard#]
-pickFourSameCard: >
-  [_card:#realCard#][_card1:#_card#][_card2:#_card#][_card3:#_card#]
 
-callToAction:
+randomCardStrategy:
+- "[#pickFourCardsFromList#]"
+- "[#pickFourCardsFromFinder#]"
+- "[#pickFourCardsFromEither#]"
+
+pickFourDiffCards: >
+  #_pickFourDiffCards#[_card1:#_card1Diff#][_card2:#_card2Diff#][_card3:#_card3Diff#]
+
+pickFourSameCard: >
+  #_pickFourSameCard#[_card1:#_cardSame#][_card2:#_cardSame#][_card3:#_cardSame#]
+
+pickFourCardsFromList: >
+  [_pickFourDiffCards:#pickFourDiffCardsFromCardlist#]
+  [_pickFourSameCard:#pickFourSameCardFromList#]
+
+pickFourCardsFromFinder: >
+  [_pickFourDiffCards:#pickFourDiffCardsFromFinder#]
+  [_pickFourSameCard:#pickFourSameCardFromFinder#]
+
+pickFourCardsFromEither: >
+  [_pickFourDiffCards:#pickFourDiffCardsFromEither#]
+  [_pickFourSameCard:#pickFourSameCardFromEither#]
+
+pickFourCards:
+ - "#pickFourDiffCards#"
+ - "#pickFourSameCard#"
+
+TODO_TODO_TODO: 
+  - "============ PRE-LOAD imgurls from cardfinder results ============"
+  - Use cardfinder to do color-based searches once implemened
+
+pickFourSameCardFromList: >
+  [_cardSame:#realCard#]
+pickFourDiffCardsFromCardlist: >
+  [_card1Diff:#realCard#][_card2Diff:#realCard#][_card3Diff:#realCard#]
+
+pickFourSameCardFromFinder: > 
+  [#CARDFINDER.randomCard()#][_cardSame:#_cardName1#]
+pickFourDiffCardsFromFinder: >
+  [#CARDFINDER.randomCards(3)#][_card1Diff:#_cardName1#][_card2Diff:#_cardName2#][_card3Diff:#_cardName3#]
+
+pickFourSameCardFromEither:
+ - "#pickFourSameCardFromList#"
+ - "#pickFourSameCardFromFinder#"
+pickFourDiffCardsFromEither: >
+  [#CARDFINDER.randomCards(3)#]
+  [_card1Diff:#_cardName1#,#realCard#]
+  [_card2Diff:#_cardName2#,#realCard#]
+  [_card3Diff:#_cardName3#,#realCard#]
+
+
+ComeOn: "[_svgComeOnTextSize:42px][_svgComeOnLineHeight:31px][_ComeOnYPos:264][_ComeOnText:#ComeOnText#][_ComeOnTextStyle:#svgComeOnTextStyle#]"
+
+ComeOnText:
+ - "#ComeOnTextCallToAction#"
+ - "#ComeOnTextCallToAction#"
+ - "#ComeOnTextCallToAction#"
+ - "#ComeOnTextCallToAction#"
+ - "#ComeOnFreebie#"
+
+ComeOnTextCallToAction:
 - "ORDER NOW"
 - "SAVE $$$"
 - "CRAZY DEAL"
 - "HECK YES"
 - "BEST PRICE"
 - "BEST DEAL"
-- "LESS THAN CFB!"
 - "SO CHEAP"
-- "WE'RE SERIOUS"
 - "100% REAL"
-- "DON'T MISS OUT"
-- "LOOK 4 OUR BOT"
+- "[_svgComeOnTextSize:34px][_svgComeOnLineHeight:32px][_ComeOnYPos:248]DON'T<br/>MISS OUT"
+- "[_svgComeOnTextSize:34px][_svgComeOnLineHeight:34px][_ComeOnYPos:246]LOOK F0R<br/>OUR BOT"
+- "[_svgComeOnTextSize:34px][_svgComeOnLineHeight:32px][_ComeOnYPos:247]CHEAPER<br/>THAN [_store:CFB,SCG,TCGMID]#_store#!"
+- "[_svgComeOnTextSize:34px][_svgComeOnLineHeight:32px][_ComeOnYPos:247]ACCEPT NO<br/>IMITATIONS"
+- "[_svgComeOnTextSize:34px][_svgComeOnLineHeight:32px][_ComeOnYPos:247]COMPLETELY<br/>LEGITIMATE"
+- "[_svgComeOnTextSize:34px][_svgComeOnLineHeight:32px][_ComeOnYPos:247]YES, WE'RE<br/>SERIOUS"
+- "[_svgComeOnTextSize:34px][_svgComeOnLineHeight:32px][_ComeOnYPos:247]IN PERFECT-<br/>FIT SLEEVES"
+- "[_svgComeOnTextSize:34px][_svgComeOnLineHeight:32px][_ComeOnYPos:247]YOU<br/>DESERVE THIS"
+- "[_svgComeOnTextSize:34px][_svgComeOnLineHeight:32px][_ComeOnYPos:247]ONE-DAY<br/>SALE"
+- "[_svgComeOnTextSize:34px][_svgComeOnLineHeight:32px][_ComeOnYPos:247]REAL FAKE<br/>CARDS"
+- "[_svgComeOnTextSize:34px][_svgComeOnLineHeight:32px][_ComeOnYPos:247]CLEARANCE<br/>SALE"
+- "[_svgComeOnTextSize:34px][_svgComeOnLineHeight:32px][_ComeOnYPos:247]TREAT<br/>YOURSELF"
+- "[_svgComeOnTextSize:34px][_svgComeOnLineHeight:32px][_ComeOnYPos:247]ACCEPTING<br/>BITCOIN"
+- "[_svgComeOnTextSize:34px][_svgComeOnLineHeight:32px][_ComeOnYPos:247]WE ACCEPT<br/>BRAPPLES"
+- "[_svgComeOnTextSize:34px][_svgComeOnLineHeight:32px][_ComeOnYPos:247]POSSIBLY<br/>A GLITCH"
+- "[_svgComeOnTextSize:34px][_svgComeOnLineHeight:32px][_ComeOnYPos:247]1-DAY DRONE<br/>SHIPPING"
+- "[_svgComeOnTextSize:34px][_svgComeOnLineHeight:32px][_ComeOnYPos:247]SATISFACTION<br/>LIKELY"
+- "[_svgComeOnTextSize:32px][_svgComeOnLineHeight:30px][_ComeOnYPos:249]ALL CARDS<br/>[_grade:SP,MP]#_grade# OR BETTER"
+
+ComeOnFreebie:
+- "[_svgComeOnTextSize:28px][_svgComeOnLineHeight:28px][_ComeOnYPos:252]FREE #ComeOnFreebieDesign#<br/>#ComeOnFreebieItem#"
+
+
+ComeOnFreebieItem:
+- CARD SLEEVES
+- DECKBOX
+- LIFE COUNTER
+- PLAYMAT
+- TOKEN
+- STICKER
+
+ComeOnFreebieDesign:
+- "#ComeOnFreebieDesignCreatureType#"
+- "#ComeOnFreebieDesignCardReference#"
+
+ComeOnFreebieDesignCreatureType:
+- APE
+- BEEBLE
+- CAMEL
+- CRAB
+- DONKEY
+- DWARF
+- ELF
+- FISH
+- FUNGUS
+- GNOME
+- GOAT
+- GOLEM
+- GORGON
+- HARPY
+- HIPPO
+- HORSE
+- KOBOLD
+- KRAKEN
+- LEECH
+- LIZARD
+- NEPHILIM
+- NINJA
+- NOGGLE
+- NOMAD
+- OYSTER
+- PIRATE
+- RHINO
+- SHEEP
+- SPONGE
+- SQUID
+- WEIRD
+- WHALE
+- WIZARD
+- WURM
+- YETI
+- BRUSHWAGG
+- FLAGBEARER
+- ANTELOPE
+- CEPHALID
+- CROCODILE
+- ELEPHANT
+- BASILISK
+- DINOSAUR
+- GARGOYLE
+- HOMARID
+- HOMUNCULUS
+- JELLYFISH
+- LHURGOYF
+- MANTICORE
+- MERFOLK
+- MINOTAUR
+- OCTOPUS
+- SCARECROW
+- SKELETON
+- SQUIRREL
+- WEREWOLF
+
+ComeOnFreebieDesignCardReference:
+- ANURID
+- ASSQUATCH
+- AXESHARK
+- B.F.M.
+- BROODSTAR
+- CHEATYFACE
+- DINGUS EGG
+- DOOMGAPE
+- EL-HAJJAJ
+- EMRAKUL
+- FBLTHP 
+- GLEEMAX
+- HALFDANE
+- HELVAULT
+- HIDETSUGU
+- HOT SOUP
+- HUNDROOG
+- INCITE
+- KOOKUS
+- MAGMAW
+- MEGATOG
+- MINDBLAZE
+- MUDHOLE
+- OFFALSNOUT
+- OMNIBIAN
+- PONGIFY
+- POPPET
+- PYKNITE
+- RAGE MAGE
+- SCRAGNOTH
+- STANGG
+- SNIDD
+- S.N.O.T.
+- SPITEMARE
+- SQUEE
+- VORSTCLAW
+- VEBULID
+- WEREBEAR
+- TROLL
+- CHICKEN
+- ORGANIC
+- USED
 
 cardFinder: https://goodgamery.com/api/mtg/image?card=
+
 svgHeaderTextStyle: >
   color: white; font-size: 50px; line-height: 42px;
   padding: 5px;
   font-family: Beleren, Georgia, 'Liberation Serif', 'DejaVu Serif', serif;
-  font-weight: 900; text-shadow: 2px 2px 2px black; text-align:center;
+  font-weight: 900; text-align:center;
+  #svgFourCardsHeaderTextStyleGradient#
 svgBodyTextStyle: >
-  color: white; font-size: 36px; line-height: 36px;
+  color: white;
   padding: 5px;
   font-family: Arial, 'Liberation Sans', 'DejaVu Sans', sans-serif;
-  font-weight: 900; text-shadow: 2px 2px 2px black; text-align:center;
-svgCallToActionTextStyle: >
-  color: gold; font-size: 32px; line-height: 32px;
+  font-weight: 600; text-shadow: 1px 1px 1px black; text-align:center;
+  font-size: 32px; line-height: 30px;  
+svgComeOnTextStyle: >
+  color: gold; font-size:#_svgComeOnTextSize#; line-height: #_svgComeOnLineHeight#;
   padding: 5px;
   font-family: Beleren, Georgia, 'Liberation Serif', 'DejaVu Serif', serif; 
-  font-weight: 900; text-shadow: 2px 2px 2px black; text-align:center;
+  font-weight: 900; text-align:center;
+  #svgFourCardsComeOnTextStyleGradient#
+
+svgFourCardsHeaderTextStyleGradient:
+- "background: -webkit-linear-gradient(white, white 50%, gold 100%); -webkit-background-clip: text; -webkit-text-fill-color: transparent;"
+
+svgFourCardsComeOnTextStyleGradient: 
+- "background: -webkit-linear-gradient(white, rgb(224, 190, 36) 50%, white 50%, rgb(224, 190, 36)); -webkit-background-clip: text; -webkit-text-fill-color: transparent;"
 
 svgThemeColors:
-  - "[_themeColor1:indigo][_themeColor2:goldenrod][_themeColor3:rgba(33,13,36,0.8)]"
-  - "[_themeColor1:steelblue][_themeColor2:lightsteelblue][_themeColor3:rgba(33,13,36,0.8)]"
-  - "[_themeColor1:darkred][_themeColor2:maroon][_themeColor3:rgba(33,13,36,0.8)]"
+  - "[_themeColor1:indigo][_themeColor2:goldenrod][_svgComeOnStrokeColor:gold][_svgComeOnOpacity:0.2]"
+  - "[_themeColor1:steelblue][_themeColor2:lightsteelblue][_svgComeOnStrokeColor:gold][_svgComeOnOpacity:0.2]"
+  - "[_themeColor1:darkred][_themeColor2:papayawhip][_svgComeOnStrokeColor:gold][_svgComeOnOpacity:0.4]"
+  - "[_themeColor1:seagreen][_themeColor2:darkseagreen][_svgComeOnStrokeColor:gold][_svgComeOnOpacity:0.2]"
+  - "[_themeColor1:oldlace][_themeColor2:white][_svgComeOnStrokeColor:gold][_svgComeOnOpacity:0.2]"
+  - "[_themeColor1:#d27f19][_themeColor2:#dbeeff][_svgComeOnStrokeColor:gold][_svgComeOnOpacity:0.2]"
+
+
 
 svgFourCards: |
   <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="700" height="420">
@@ -122,7 +329,7 @@ svgFourCards: |
         <image x="0" y="0" width="189" height="264" xlink:href="./data/images/cardmask.png" />
       </mask>            
       <g id="Card1">
-        <rect x="-2" y="-2" width="189" height="260"  rx="12" ry="12" style="fill:#_themeColor1#;"/>                    
+        <rect x="-2" y="-2" width="189" height="260"  rx="12" ry="12" style="fill:#_themeColor1#; stroke-width:3; stroke-opactity:0.9; stroke-color:red;""/>                    
         <image xlink:href="#cardFinder##_card1#" x="0" y="0" mask="url(\#cardMask)" width="183" height="256" />
       </g>
       <g id="Card2">
@@ -135,9 +342,12 @@ svgFourCards: |
       </g>
     </defs>
     <image width="100%" height="100%" xlink:href="#art700x420#" />
-    <rect x="0" y="234" width="700" height="100" style="fill:#_themeColor2#;"/>                          
-    <rect x="0" y="236" width="700" height="96" style="fill:#_themeColor1#;"/>                          
-    <rect x="415" y="244" width="275" height="81" rx="42" ry="42" style="fill:#_themeColor3#;"/>                          
+    <rect x="0" y="234" width="700" height="4" style="fill:#_themeColor2#;"/>
+    <rect x="0" y="330" width="700" height="4" style="fill:#_themeColor2#;"/>                          
+
+    <rect x="0" y="236" width="700" height="96" style="fill:#_themeColor1#; fill-opacity:0.85"/>
+
+    <rect x="415" y="243" width="275" height="82" rx="42" ry="42" style="fill:black; stroke:#_svgComeOnStrokeColor#; stroke-width:2; stroke-opacity:#_svgComeOnOpacity#;"/>                          
 
     <g transform="translate(20 155)">
       <use xlink:href="\#Card1" x="0" y="0" transform="rotate(-3 111 155) translate(0 -12)" />
@@ -152,8 +362,9 @@ svgFourCards: |
         #_body#
       </p>
     </foreignObject>
-    <foreignObject x="415" y="264" width="275" height="81">
-      <p xmlns="http://www.w3.org/1999/xhtml" style="#svgCallToActionTextStyle#">#callToAction#</p>
+    [#ComeOn#]
+    <foreignObject x="415" y="#_ComeOnYPos#" width="275" height="81">
+      <p xmlns="http://www.w3.org/1999/xhtml" style="#_ComeOnTextStyle#">#_ComeOnText#</p>
     </foreignObject>    
   </svg>
   #svgMulliganResetStyles#

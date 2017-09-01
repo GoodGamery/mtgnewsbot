@@ -70,6 +70,8 @@ function getSomeCardTypeOrSubtype(types, subtypes) {
 }
 
 async function randomCards(limit) {
+    logger.log(`Finding ${limit} random cards`);
+
   const query = { 
     q: 'cmc >= 0',
     limit: limit || 1,
@@ -85,6 +87,13 @@ function randomStaticCards(limit) {
     cards.push(randomElement(cardData));
   }
   return cards;
+}
+
+async function cardSearchRandom(undefined, params) {
+  const query = { 
+    q: 'cmc >= 0'
+  };
+  return cardFinderSearch(query, params);    
 }
 
 async function cardSearchBySet(s, params) {
@@ -227,5 +236,7 @@ async function cardFinderSearch(query, params) {
 module.exports = {
   cardSearchBySet,
   cardSearchByText,
-  cardSearchByType
+  cardSearchByType,
+  randomCard:   () => cardSearchRandom(1),
+  randomCards:  cardSearchRandom
 };

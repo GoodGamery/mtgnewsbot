@@ -19,7 +19,9 @@ const webshotOptions = {
 function renderImageFromHeadline(headline, outputPath) {
   if(headline.tags && headline.tags.svg && headline.tags.svg.svgString) {
     const svg = headline.tags.svg.svgString;
-    console.log(`\nRendering SVG:\n\n ${svg}`);
+
+    config.loggers.svg.log(`\nRendering SVG:\n\n ${svg}`);
+
     return renderImageFromSvg(svg, outputPath);
   } else if(headline.tags && headline.tags.htmlImg && headline.tags.htmlImg.htmlImgString) {
     const html = headline.tags.htmlImg.htmlImgString;
