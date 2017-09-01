@@ -1,16 +1,20 @@
 ---
 imgClassifieds:
+# - >
+#   [#randomCardStrategy#]
+#   #pickFourDiffCards#[_body:#headlineFourCardsForSale##priceOffer#]
+#   #pickBigHeader##svgImgClassifieds#
+# - >
+#   [#randomCardStrategy#]
+#   #pickFourSameCard#[_body:#headlineOneCardForSale##priceOffer#]
+#   #pickBigHeader##svgImgClassifieds#
+# - >
+#   [#randomCardStrategy#]
+#   #pickFourCards#[_body:#headlineAnything##priceOffer#]
+#   #pickBigHeader##svgImgClassifieds#
 - >
-  [#randomCardStrategy#]
-  #pickFourDiffCards#[_body:#headlineFourCardsForSale##priceOffer#]
-  #pickBigHeader##svgImgClassifieds#
-- >
-  [#randomCardStrategy#]
-  #pickFourSameCard#[_body:#headlineOneCardForSale##priceOffer#]
-  #pickBigHeader##svgImgClassifieds#
-- >
-  [#randomCardStrategy#]
-  #pickFourCards#[_body:#headlineAnything##priceOffer#]
+  [#pickFourCardsFromFinderSearchSet#]
+  [_body:#headlineCardfinder##priceOffer#]
   #pickBigHeader##svgImgClassifieds#
 
 svgImgClassifieds: >
@@ -58,9 +62,9 @@ headlineAnything:
 - "Complete #broadCardClassification.capitalizeAll# Set#"
 
 headlineCardfinder:
-- "Draft leftovers from #_cardSet#"
-- "#_cardSet# Draft leftovers"
-- "All three good cards that come in #_cardSet# boosters"
+- "#pickFourCardsFromFinderSearchBlock# Draft leftovers from #_cardSet#"
+- "#pickFourCardsFromFinderSearchBlock# #_cardSet# Draft leftovers"
+- "#pickFourCardsFromFinderSearchSet# All three good cards that come in #_cardSet# boosters"
 
 priceOffer:
 - ""
@@ -103,6 +107,12 @@ pickFourCards:
  - "#pickFourDiffCards#"
  - "#pickFourSameCard#"
 
+pickFourCardsFromFinderSearchSet:
+ - "[_cardSet:#cardSet#][#_cardSet.cardSearchBySet(3)#][_card1:#_cardName1#][_card2:#_cardName2#][_card3:#_cardName3#]"
+
+pickFourCardsFromFinderSearchBlock:
+ - "[#cardBlock#][_cardSet:#cardBlockName#][#cardBlockSet.cardSearchBySet(1)#][_card1:#_cardName1#][#cardBlockSet.cardSearchBySet(1)#][_card2:#_cardName1#][#cardBlockSet.cardSearchBySet(1)#][_card3:#_cardName1#]"
+
 TODO_TODO_TODO: 
   - "============ PRE-LOAD imgurls from cardfinder results ============"
   - Use cardfinder to do color-based searches once implemened
@@ -113,7 +123,7 @@ pickFourDiffCardsFromCardlist: >
   [_card1Diff:#realCard#][_card2Diff:#realCard#][_card3Diff:#realCard#]
 
 pickFourSameCardFromFinder: > 
-  [#CARDFINDER.randomCard()#][_cardSame:#_cardName1#]
+  [#CARDFINDER.randomCard#][_cardSame:#_cardName1#]
 pickFourDiffCardsFromFinder: >
   [#CARDFINDER.randomCards(3)#][_card1Diff:#_cardName1#][_card2Diff:#_cardName2#][_card3Diff:#_cardName3#]
 

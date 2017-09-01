@@ -237,6 +237,6 @@ module.exports = {
   cardSearchBySet,
   cardSearchByText,
   cardSearchByType,
-  randomCard:   () => cardSearchRandom(1),
+  randomCard:   () => cardSearchRandom(undefined, 1),
   randomCards:  cardSearchRandom
 };
