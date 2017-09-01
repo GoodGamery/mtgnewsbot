@@ -97,7 +97,7 @@ ComeOnTextCallToAction:
 - "100% REAL"
 - "[_svgComeOnTextSize:34px][_svgComeOnLineHeight:32px][_ComeOnYPos:248]DON'T<br/>MISS OUT"
 - "[_svgComeOnTextSize:34px][_svgComeOnLineHeight:34px][_ComeOnYPos:246]LOOK F0R<br/>OUR BOT"
-- "[_svgComeOnTextSize:34px][_svgComeOnLineHeight:32px][_ComeOnYPos:247]CHEAPER<br/>THAN CFB!"
+- "[_svgComeOnTextSize:34px][_svgComeOnLineHeight:32px][_ComeOnYPos:247]CHEAPER<br/>THAN [_store:CFB,SCG,TCGMID]#_store#!"
 - "[_svgComeOnTextSize:34px][_svgComeOnLineHeight:32px][_ComeOnYPos:247]ACCEPT NO<br/>IMITATIONS"
 - "[_svgComeOnTextSize:34px][_svgComeOnLineHeight:32px][_ComeOnYPos:247]COMPLETELY<br/>LEGITIMATE"
 - "[_svgComeOnTextSize:34px][_svgComeOnLineHeight:32px][_ComeOnYPos:247]YES, WE'RE<br/>SERIOUS"
@@ -110,6 +110,9 @@ ComeOnTextCallToAction:
 - "[_svgComeOnTextSize:34px][_svgComeOnLineHeight:32px][_ComeOnYPos:247]ACCEPTING<br/>BITCOIN"
 - "[_svgComeOnTextSize:34px][_svgComeOnLineHeight:32px][_ComeOnYPos:247]WE ACCEPT<br/>BRAPPLES"
 - "[_svgComeOnTextSize:34px][_svgComeOnLineHeight:32px][_ComeOnYPos:247]POSSIBLY<br/>A GLITCH"
+- "[_svgComeOnTextSize:34px][_svgComeOnLineHeight:32px][_ComeOnYPos:247]1-DAY DRONE<br/>SHIPPING"
+- "[_svgComeOnTextSize:34px][_svgComeOnLineHeight:32px][_ComeOnYPos:247]SATISFACTION<br/>LIKELY"
+- "[_svgComeOnTextSize:32px][_svgComeOnLineHeight:30px][_ComeOnYPos:249]ALL CARDS<br/>[_grade:SP,MP]#_grade# OR BETTER"
 
 ComeOnFreebie:
 - "[_svgComeOnTextSize:28px][_svgComeOnLineHeight:28px][_ComeOnYPos:252]FREE #ComeOnFreebieDesign#<br/>#ComeOnFreebieItem#"
@@ -237,7 +240,6 @@ svgHeaderTextStyle: >
   font-family: Beleren, Georgia, 'Liberation Serif', 'DejaVu Serif', serif;
   font-weight: 900; text-align:center;
   #svgFourCardsHeaderTextStyleGradient#
-
 svgBodyTextStyle: >
   color: white;
   padding: 5px;
@@ -261,6 +263,11 @@ svgThemeColors:
   - "[_themeColor1:indigo][_themeColor2:goldenrod][_svgComeOnStrokeColor:gold][_svgComeOnOpacity:0.2]"
   - "[_themeColor1:steelblue][_themeColor2:lightsteelblue][_svgComeOnStrokeColor:gold][_svgComeOnOpacity:0.2]"
   - "[_themeColor1:darkred][_themeColor2:papayawhip][_svgComeOnStrokeColor:gold][_svgComeOnOpacity:0.4]"
+  - "[_themeColor1:seagreen][_themeColor2:darkseagreen][_svgComeOnStrokeColor:gold][_svgComeOnOpacity:0.2]"
+  - "[_themeColor1:oldlace][_themeColor2:white][_svgComeOnStrokeColor:gold][_svgComeOnOpacity:0.2]"
+  - "[_themeColor1:#d27f19][_themeColor2:#dbeeff][_svgComeOnStrokeColor:gold][_svgComeOnOpacity:0.2]"
+
+
 
 svgFourCards: |
   <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="700" height="420">
