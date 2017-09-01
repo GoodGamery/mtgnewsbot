@@ -235,7 +235,9 @@ svgHeaderTextStyle: >
   color: white; font-size: 50px; line-height: 42px;
   padding: 5px;
   font-family: Beleren, Georgia, 'Liberation Serif', 'DejaVu Serif', serif;
-  font-weight: 900; text-shadow: 2px 2px 2px black; text-align:center;
+  font-weight: 900; text-align:center;
+  #svgFourCardsHeaderTextStyleGradient#
+
 svgBodyTextStyle: >
   color: white;
   padding: 5px;
@@ -247,12 +249,14 @@ svgComeOnTextStyle: >
   padding: 5px;
   font-family: Beleren, Georgia, 'Liberation Serif', 'DejaVu Serif', serif; 
   font-weight: 900; text-align:center;
-  #svgComeOnTextStyleGradient#
+  #svgFourCardsComeOnTextStyleGradient#
 
-svgComeOnTextStyleGradient: 
-# - "-webkit-linear-gradient(top, gold 0%,lemonchiffon 37%,white 100%);"
+svgFourCardsHeaderTextStyleGradient:
+- "background: -webkit-linear-gradient(white, white 50%, gold 100%); -webkit-background-clip: text; -webkit-text-fill-color: transparent;"
+
+svgFourCardsComeOnTextStyleGradient: 
 - "background: -webkit-linear-gradient(white, rgb(224, 190, 36) 50%, white 50%, rgb(224, 190, 36)); -webkit-background-clip: text; -webkit-text-fill-color: transparent;"
- # -webkit-linear-gradient(#fff, #eea);-webkit-background-clip: text; -webkit-text-fill-color: transparent;
+
 svgThemeColors:
   - "[_themeColor1:indigo][_themeColor2:goldenrod][_svgComeOnStrokeColor:gold][_svgComeOnOpacity:0.2]"
   - "[_themeColor1:steelblue][_themeColor2:lightsteelblue][_svgComeOnStrokeColor:gold][_svgComeOnOpacity:0.2]"
