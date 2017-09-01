@@ -76,41 +76,183 @@ pickFourDiffCards: >
 pickFourSameCard: >
   [_card:#realCard#][_card1:#_card#][_card2:#_card#][_card3:#_card#]
 
-callToAction:
+
+callToAction: "[_svgCallToActionTextSize:42px][_svgCallToActionLineHeight:31px][_callToActionYPos:264][_callToActionText:#callToActionText#][_callToActionTextStyle:#svgCallToActionTextStyle#]"
+
+callToActionText:
+ - "#callToActionTextComeOn#"
+ - "#callToActionTextComeOn#"
+ - "#callToActionTextComeOn#"
+ - "#callToActionTextComeOn#"
+ - "#callToActionFreebie#"
+
+callToActionTextComeOn:
 - "ORDER NOW"
 - "SAVE $$$"
 - "CRAZY DEAL"
 - "HECK YES"
 - "BEST PRICE"
 - "BEST DEAL"
-- "LESS THAN CFB!"
 - "SO CHEAP"
-- "WE'RE SERIOUS"
 - "100% REAL"
-- "DON'T MISS OUT"
-- "LOOK 4 OUR BOT"
+- "[_svgCallToActionTextSize:34px][_svgCallToActionLineHeight:32px][_callToActionYPos:248]DON'T<br/>MISS OUT"
+- "[_svgCallToActionTextSize:34px][_svgCallToActionLineHeight:34px][_callToActionYPos:246]LOOK F0R<br/>OUR BOT"
+- "[_svgCallToActionTextSize:34px][_svgCallToActionLineHeight:32px][_callToActionYPos:247]CHEAPER<br/>THAN CFB!"
+- "[_svgCallToActionTextSize:34px][_svgCallToActionLineHeight:32px][_callToActionYPos:247]ACCEPT NO<br/>IMITATIONS"
+- "[_svgCallToActionTextSize:34px][_svgCallToActionLineHeight:32px][_callToActionYPos:247]COMPLETELY<br/>LEGITIMATE"
+- "[_svgCallToActionTextSize:34px][_svgCallToActionLineHeight:32px][_callToActionYPos:247]YES, WE'RE<br/>SERIOUS"
+- "[_svgCallToActionTextSize:34px][_svgCallToActionLineHeight:32px][_callToActionYPos:247]IN PERFECT-<br/>FIT SLEEVES"
+- "[_svgCallToActionTextSize:34px][_svgCallToActionLineHeight:32px][_callToActionYPos:247]YOU<br/>DESERVE THIS"
+- "[_svgCallToActionTextSize:34px][_svgCallToActionLineHeight:32px][_callToActionYPos:247]ONE-DAY<br/>SALE"
+- "[_svgCallToActionTextSize:34px][_svgCallToActionLineHeight:32px][_callToActionYPos:247]REAL FAKE<br/>CARDS"
+- "[_svgCallToActionTextSize:34px][_svgCallToActionLineHeight:32px][_callToActionYPos:247]CLEARANCE<br/>SALE"
+- "[_svgCallToActionTextSize:34px][_svgCallToActionLineHeight:32px][_callToActionYPos:247]TREAT<br/>OURSELF"
+- "[_svgCallToActionTextSize:34px][_svgCallToActionLineHeight:32px][_callToActionYPos:247]ACCEPTING<br/>BITCOIN"
+- "[_svgCallToActionTextSize:34px][_svgCallToActionLineHeight:32px][_callToActionYPos:247]WE ACCEPT<br/>BRAPPLES"
+- "[_svgCallToActionTextSize:34px][_svgCallToActionLineHeight:32px][_callToActionYPos:247]POSSIBLY<br/>A GLITCH"
+
+callToActionFreebie:
+- "[_svgCallToActionTextSize:28px][_svgCallToActionLineHeight:28px][_callToActionYPos:252]FREE #callToActionFreebieDesign#<br/>#callToActionFreebieItem#"
+
+
+callToActionFreebieItem:
+- CARD SLEEVES
+- DECKBOX
+- LIFE COUNTER
+- PLAYMAT
+- TOKEN
+- STICKER
+
+callToActionFreebieDesign:
+- "#callToActionFreebieDesignCreatureType#"
+- "#callToActionFreebieDesignCardReference#"
+
+callToActionFreebieDesignCreatureType:
+- APE
+- BEEBLE
+- CAMEL
+- CRAB
+- DONKEY
+- DWARF
+- ELF
+- FISH
+- FUNGUS
+- GNOME
+- GOAT
+- GOLEM
+- GORGON
+- HARPY
+- HIPPO
+- HORSE
+- KOBOLD
+- KRAKEN
+- LEECH
+- LIZARD
+- NEPHILIM
+- NINJA
+- NOGGLE
+- NOMAD
+- OOZE
+- OYSTER
+- PIRATE
+- RHINO
+- SHEEP
+- SPONGE
+- SQUID
+- WEIRD
+- WHALE
+- WIZARD
+- WURM
+- YETI
+- BRUSHWAGG
+- FLAGBEARER
+- ANTELOPE
+- CEPHALID
+- CROCODILE
+- ELEPHANT
+- BASILISK
+- DINOSAUR
+- GARGOYLE
+- HOMARID
+- HOMUNCULUS
+- JELLYFISH
+- LHURGOYF
+- MANTICORE
+- MERFOLK
+- MINOTAUR
+- OCTOPUS
+- SCARECROW
+- SKELETON
+- SQUIRREL
+- WEREWOLF
+
+callToActionFreebieDesignCardReference:
+- ANURID
+- ASSQUATCH
+- AXESHARK
+- B.F.M.
+- BROODSTAR
+- CHEATYFACE
+- DINGUS EGG
+- DOOMGAPE
+- EL-HAJJAJ
+- EMRAKUL
+- FBLTHP 
+- GLEEMAX
+- HALFDANE
+- HELVAULT
+- HIDETSUGU
+- HOT SOUP
+- HUNDROOG
+- INCITE
+- KOOKUS
+- MAGMAW
+- MEGATOG
+- MINDBLAZE
+- MUDHOLE
+- OFFALSNOUT
+- OMNIBIAN
+- PONGIFY
+- POPPET
+- PYKNITE
+- RAGE MAGE
+- SCRAGNOTH
+- STANGG
+- SNIDD
+- S.N.O.T.
+- SPITEMARE
+- SQUEE
+- VORSTCLAW
+- VEBULID
+- WEREBEAR
+- TROLL
+- CHICKEN
+- ORGANIC
+- USED
 
 cardFinder: https://goodgamery.com/api/mtg/image?card=
+
 svgHeaderTextStyle: >
   color: white; font-size: 50px; line-height: 42px;
   padding: 5px;
   font-family: Beleren, Georgia, 'Liberation Serif', 'DejaVu Serif', serif;
   font-weight: 900; text-shadow: 2px 2px 2px black; text-align:center;
 svgBodyTextStyle: >
-  color: white; font-size: 36px; line-height: 36px;
+  color: white;
   padding: 5px;
   font-family: Arial, 'Liberation Sans', 'DejaVu Sans', sans-serif;
   font-weight: 900; text-shadow: 2px 2px 2px black; text-align:center;
+  font-size: 36px; line-height: 36px;  
 svgCallToActionTextStyle: >
-  color: gold; font-size: 32px; line-height: 32px;
+  color: gold; font-size:#_svgCallToActionTextSize#; line-height: #_svgCallToActionLineHeight#;
   padding: 5px;
   font-family: Beleren, Georgia, 'Liberation Serif', 'DejaVu Serif', serif; 
   font-weight: 900; text-shadow: 2px 2px 2px black; text-align:center;
 
 svgThemeColors:
-  - "[_themeColor1:indigo][_themeColor2:goldenrod][_themeColor3:rgba(33,13,36,0.8)]"
-  - "[_themeColor1:steelblue][_themeColor2:lightsteelblue][_themeColor3:rgba(33,13,36,0.8)]"
-  - "[_themeColor1:darkred][_themeColor2:maroon][_themeColor3:rgba(33,13,36,0.8)]"
+  - "[_themeColor1:indigo][_themeColor2:goldenrod][_svgCallToActionStrokeColor:gold][_svgCallToActionOpacity:0.2]"
+  - "[_themeColor1:steelblue][_themeColor2:lightsteelblue][_svgCallToActionStrokeColor:gold][_svgCallToActionOpacity:0.2]"
+  - "[_themeColor1:darkred][_themeColor2:papayawhip][_svgCallToActionStrokeColor:gold][_svgCallToActionOpacity:0.4]"
 
 svgFourCards: |
   <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="700" height="420">
@@ -135,9 +277,12 @@ svgFourCards: |
       </g>
     </defs>
     <image width="100%" height="100%" xlink:href="#art700x420#" />
-    <rect x="0" y="234" width="700" height="100" style="fill:#_themeColor2#;"/>                          
-    <rect x="0" y="236" width="700" height="96" style="fill:#_themeColor1#;"/>                          
-    <rect x="415" y="244" width="275" height="81" rx="42" ry="42" style="fill:#_themeColor3#;"/>                          
+    <rect x="0" y="234" width="700" height="4" style="fill:#_themeColor2#;"/>
+    <rect x="0" y="330" width="700" height="4" style="fill:#_themeColor2#;"/>                          
+
+    <rect x="0" y="236" width="700" height="96" style="fill:#_themeColor1#; fill-opacity:0.85"/>
+
+    <rect x="415" y="243" width="275" height="82" rx="42" ry="42" style="fill:black; stroke:#_svgCallToActionStrokeColor#; stroke-width:2; stroke-opacity:#_svgCallToActionOpacity#;"/>                          
 
     <g transform="translate(20 155)">
       <use xlink:href="\#Card1" x="0" y="0" transform="rotate(-3 111 155) translate(0 -12)" />
@@ -152,8 +297,9 @@ svgFourCards: |
         #_body#
       </p>
     </foreignObject>
-    <foreignObject x="415" y="264" width="275" height="81">
-      <p xmlns="http://www.w3.org/1999/xhtml" style="#svgCallToActionTextStyle#">#callToAction#</p>
+    [#callToAction#]
+    <foreignObject x="415" y="#_callToActionYPos#" width="275" height="81">
+      <p xmlns="http://www.w3.org/1999/xhtml" style="#_callToActionTextStyle#">#_callToActionText#</p>
     </foreignObject>    
   </svg>
   #svgMulliganResetStyles#
