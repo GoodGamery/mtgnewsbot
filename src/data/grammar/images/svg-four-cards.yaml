@@ -77,16 +77,16 @@ pickFourSameCard: >
   [_card:#realCard#][_card1:#_card#][_card2:#_card#][_card3:#_card#]
 
 
-callToAction: "[_svgCallToActionTextSize:42px][_svgCallToActionLineHeight:31px][_callToActionYPos:264][_callToActionText:#callToActionText#][_callToActionTextStyle:#svgCallToActionTextStyle#]"
+ComeOn: "[_svgComeOnTextSize:42px][_svgComeOnLineHeight:31px][_ComeOnYPos:264][_ComeOnText:#ComeOnText#][_ComeOnTextStyle:#svgComeOnTextStyle#]"
 
-callToActionText:
- - "#callToActionTextComeOn#"
- - "#callToActionTextComeOn#"
- - "#callToActionTextComeOn#"
- - "#callToActionTextComeOn#"
- - "#callToActionFreebie#"
+ComeOnText:
+ - "#ComeOnTextCallToAction#"
+ - "#ComeOnTextCallToAction#"
+ - "#ComeOnTextCallToAction#"
+ - "#ComeOnTextCallToAction#"
+ - "#ComeOnFreebie#"
 
-callToActionTextComeOn:
+ComeOnTextCallToAction:
 - "ORDER NOW"
 - "SAVE $$$"
 - "CRAZY DEAL"
@@ -95,27 +95,27 @@ callToActionTextComeOn:
 - "BEST DEAL"
 - "SO CHEAP"
 - "100% REAL"
-- "[_svgCallToActionTextSize:34px][_svgCallToActionLineHeight:32px][_callToActionYPos:248]DON'T<br/>MISS OUT"
-- "[_svgCallToActionTextSize:34px][_svgCallToActionLineHeight:34px][_callToActionYPos:246]LOOK F0R<br/>OUR BOT"
-- "[_svgCallToActionTextSize:34px][_svgCallToActionLineHeight:32px][_callToActionYPos:247]CHEAPER<br/>THAN CFB!"
-- "[_svgCallToActionTextSize:34px][_svgCallToActionLineHeight:32px][_callToActionYPos:247]ACCEPT NO<br/>IMITATIONS"
-- "[_svgCallToActionTextSize:34px][_svgCallToActionLineHeight:32px][_callToActionYPos:247]COMPLETELY<br/>LEGITIMATE"
-- "[_svgCallToActionTextSize:34px][_svgCallToActionLineHeight:32px][_callToActionYPos:247]YES, WE'RE<br/>SERIOUS"
-- "[_svgCallToActionTextSize:34px][_svgCallToActionLineHeight:32px][_callToActionYPos:247]IN PERFECT-<br/>FIT SLEEVES"
-- "[_svgCallToActionTextSize:34px][_svgCallToActionLineHeight:32px][_callToActionYPos:247]YOU<br/>DESERVE THIS"
-- "[_svgCallToActionTextSize:34px][_svgCallToActionLineHeight:32px][_callToActionYPos:247]ONE-DAY<br/>SALE"
-- "[_svgCallToActionTextSize:34px][_svgCallToActionLineHeight:32px][_callToActionYPos:247]REAL FAKE<br/>CARDS"
-- "[_svgCallToActionTextSize:34px][_svgCallToActionLineHeight:32px][_callToActionYPos:247]CLEARANCE<br/>SALE"
-- "[_svgCallToActionTextSize:34px][_svgCallToActionLineHeight:32px][_callToActionYPos:247]TREAT<br/>OURSELF"
-- "[_svgCallToActionTextSize:34px][_svgCallToActionLineHeight:32px][_callToActionYPos:247]ACCEPTING<br/>BITCOIN"
-- "[_svgCallToActionTextSize:34px][_svgCallToActionLineHeight:32px][_callToActionYPos:247]WE ACCEPT<br/>BRAPPLES"
-- "[_svgCallToActionTextSize:34px][_svgCallToActionLineHeight:32px][_callToActionYPos:247]POSSIBLY<br/>A GLITCH"
+- "[_svgComeOnTextSize:34px][_svgComeOnLineHeight:32px][_ComeOnYPos:248]DON'T<br/>MISS OUT"
+- "[_svgComeOnTextSize:34px][_svgComeOnLineHeight:34px][_ComeOnYPos:246]LOOK F0R<br/>OUR BOT"
+- "[_svgComeOnTextSize:34px][_svgComeOnLineHeight:32px][_ComeOnYPos:247]CHEAPER<br/>THAN CFB!"
+- "[_svgComeOnTextSize:34px][_svgComeOnLineHeight:32px][_ComeOnYPos:247]ACCEPT NO<br/>IMITATIONS"
+- "[_svgComeOnTextSize:34px][_svgComeOnLineHeight:32px][_ComeOnYPos:247]COMPLETELY<br/>LEGITIMATE"
+- "[_svgComeOnTextSize:34px][_svgComeOnLineHeight:32px][_ComeOnYPos:247]YES, WE'RE<br/>SERIOUS"
+- "[_svgComeOnTextSize:34px][_svgComeOnLineHeight:32px][_ComeOnYPos:247]IN PERFECT-<br/>FIT SLEEVES"
+- "[_svgComeOnTextSize:34px][_svgComeOnLineHeight:32px][_ComeOnYPos:247]YOU<br/>DESERVE THIS"
+- "[_svgComeOnTextSize:34px][_svgComeOnLineHeight:32px][_ComeOnYPos:247]ONE-DAY<br/>SALE"
+- "[_svgComeOnTextSize:34px][_svgComeOnLineHeight:32px][_ComeOnYPos:247]REAL FAKE<br/>CARDS"
+- "[_svgComeOnTextSize:34px][_svgComeOnLineHeight:32px][_ComeOnYPos:247]CLEARANCE<br/>SALE"
+- "[_svgComeOnTextSize:34px][_svgComeOnLineHeight:32px][_ComeOnYPos:247]TREAT<br/>YOURSELF"
+- "[_svgComeOnTextSize:34px][_svgComeOnLineHeight:32px][_ComeOnYPos:247]ACCEPTING<br/>BITCOIN"
+- "[_svgComeOnTextSize:34px][_svgComeOnLineHeight:32px][_ComeOnYPos:247]WE ACCEPT<br/>BRAPPLES"
+- "[_svgComeOnTextSize:34px][_svgComeOnLineHeight:32px][_ComeOnYPos:247]POSSIBLY<br/>A GLITCH"
 
-callToActionFreebie:
-- "[_svgCallToActionTextSize:28px][_svgCallToActionLineHeight:28px][_callToActionYPos:252]FREE #callToActionFreebieDesign#<br/>#callToActionFreebieItem#"
+ComeOnFreebie:
+- "[_svgComeOnTextSize:28px][_svgComeOnLineHeight:28px][_ComeOnYPos:252]FREE #ComeOnFreebieDesign#<br/>#ComeOnFreebieItem#"
 
 
-callToActionFreebieItem:
+ComeOnFreebieItem:
 - CARD SLEEVES
 - DECKBOX
 - LIFE COUNTER
@@ -123,11 +123,11 @@ callToActionFreebieItem:
 - TOKEN
 - STICKER
 
-callToActionFreebieDesign:
-- "#callToActionFreebieDesignCreatureType#"
-- "#callToActionFreebieDesignCardReference#"
+ComeOnFreebieDesign:
+- "#ComeOnFreebieDesignCreatureType#"
+- "#ComeOnFreebieDesignCardReference#"
 
-callToActionFreebieDesignCreatureType:
+ComeOnFreebieDesignCreatureType:
 - APE
 - BEEBLE
 - CAMEL
@@ -152,7 +152,6 @@ callToActionFreebieDesignCreatureType:
 - NINJA
 - NOGGLE
 - NOMAD
-- OOZE
 - OYSTER
 - PIRATE
 - RHINO
@@ -186,7 +185,7 @@ callToActionFreebieDesignCreatureType:
 - SQUIRREL
 - WEREWOLF
 
-callToActionFreebieDesignCardReference:
+ComeOnFreebieDesignCardReference:
 - ANURID
 - ASSQUATCH
 - AXESHARK
@@ -241,18 +240,23 @@ svgBodyTextStyle: >
   color: white;
   padding: 5px;
   font-family: Arial, 'Liberation Sans', 'DejaVu Sans', sans-serif;
-  font-weight: 900; text-shadow: 2px 2px 2px black; text-align:center;
-  font-size: 36px; line-height: 36px;  
-svgCallToActionTextStyle: >
-  color: gold; font-size:#_svgCallToActionTextSize#; line-height: #_svgCallToActionLineHeight#;
+  font-weight: 600; text-shadow: 1px 1px 1px black; text-align:center;
+  font-size: 32px; line-height: 30px;  
+svgComeOnTextStyle: >
+  color: gold; font-size:#_svgComeOnTextSize#; line-height: #_svgComeOnLineHeight#;
   padding: 5px;
   font-family: Beleren, Georgia, 'Liberation Serif', 'DejaVu Serif', serif; 
-  font-weight: 900; text-shadow: 2px 2px 2px black; text-align:center;
+  font-weight: 900; text-align:center;
+  #svgComeOnTextStyleGradient#
 
+svgComeOnTextStyleGradient: 
+# - "-webkit-linear-gradient(top, gold 0%,lemonchiffon 37%,white 100%);"
+- "background: -webkit-linear-gradient(white, rgb(224, 190, 36) 50%, white 50%, rgb(224, 190, 36)); -webkit-background-clip: text; -webkit-text-fill-color: transparent;"
+ # -webkit-linear-gradient(#fff, #eea);-webkit-background-clip: text; -webkit-text-fill-color: transparent;
 svgThemeColors:
-  - "[_themeColor1:indigo][_themeColor2:goldenrod][_svgCallToActionStrokeColor:gold][_svgCallToActionOpacity:0.2]"
-  - "[_themeColor1:steelblue][_themeColor2:lightsteelblue][_svgCallToActionStrokeColor:gold][_svgCallToActionOpacity:0.2]"
-  - "[_themeColor1:darkred][_themeColor2:papayawhip][_svgCallToActionStrokeColor:gold][_svgCallToActionOpacity:0.4]"
+  - "[_themeColor1:indigo][_themeColor2:goldenrod][_svgComeOnStrokeColor:gold][_svgComeOnOpacity:0.2]"
+  - "[_themeColor1:steelblue][_themeColor2:lightsteelblue][_svgComeOnStrokeColor:gold][_svgComeOnOpacity:0.2]"
+  - "[_themeColor1:darkred][_themeColor2:papayawhip][_svgComeOnStrokeColor:gold][_svgComeOnOpacity:0.4]"
 
 svgFourCards: |
   <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="700" height="420">
@@ -272,7 +276,7 @@ svgFourCards: |
         <image xlink:href="#cardFinder##_card2#" x="0" y="0" mask="url(\#cardMask)" width="183" height="256" />
       </g>
       <g id="Card3">
-        <rect x="-2" y="-2" width="193" height="268"  rx="12" ry="12" style="fill:#_themeColor1#; stroke-width:2; stroke-opactity:0.9; stroke-color:red;"/>                          
+        <rect x="-2" y="-2" width="193" height="268"  rx="12" ry="12" style="fill:#_themeColor1#; stroke-width:3; stroke-opactity:0.9; stroke-color:red;"/>                          
         <image xlink:href="#cardFinder##_card3#" x="0" y="0" mask="url(\#cardMaskLarger)" width="189" height="264" />
       </g>
     </defs>
@@ -282,7 +286,7 @@ svgFourCards: |
 
     <rect x="0" y="236" width="700" height="96" style="fill:#_themeColor1#; fill-opacity:0.85"/>
 
-    <rect x="415" y="243" width="275" height="82" rx="42" ry="42" style="fill:black; stroke:#_svgCallToActionStrokeColor#; stroke-width:2; stroke-opacity:#_svgCallToActionOpacity#;"/>                          
+    <rect x="415" y="243" width="275" height="82" rx="42" ry="42" style="fill:black; stroke:#_svgComeOnStrokeColor#; stroke-width:2; stroke-opacity:#_svgComeOnOpacity#;"/>                          
 
     <g transform="translate(20 155)">
       <use xlink:href="\#Card1" x="0" y="0" transform="rotate(-3 111 155) translate(0 -12)" />
@@ -297,9 +301,9 @@ svgFourCards: |
         #_body#
       </p>
     </foreignObject>
-    [#callToAction#]
-    <foreignObject x="415" y="#_callToActionYPos#" width="275" height="81">
-      <p xmlns="http://www.w3.org/1999/xhtml" style="#_callToActionTextStyle#">#_callToActionText#</p>
+    [#ComeOn#]
+    <foreignObject x="415" y="#_ComeOnYPos#" width="275" height="81">
+      <p xmlns="http://www.w3.org/1999/xhtml" style="#_ComeOnTextStyle#">#_ComeOnText#</p>
     </foreignObject>    
   </svg>
   #svgMulliganResetStyles#
