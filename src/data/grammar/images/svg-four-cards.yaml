@@ -1,17 +1,17 @@
 ---
 imgClassifieds:
-# - >
-#   [#randomCardStrategy#]
-#   #pickFourDiffCards#[_body:#headlineFourCardsForSale##priceOffer#]
-#   #pickBigHeader##svgImgClassifieds#
-# - >
-#   [#randomCardStrategy#]
-#   #pickFourSameCard#[_body:#headlineOneCardForSale##priceOffer#]
-#   #pickBigHeader##svgImgClassifieds#
-# - >
-#   [#randomCardStrategy#]
-#   #pickFourCards#[_body:#headlineAnything##priceOffer#]
-#   #pickBigHeader##svgImgClassifieds#
+- >
+  [#randomCardStrategy#]
+  #pickFourDiffCards#[_body:#headlineFourCardsForSale##priceOffer#]
+  #pickBigHeader##svgImgClassifieds#
+- >
+  [#randomCardStrategy#]
+  #pickFourSameCard#[_body:#headlineOneCardForSale##priceOffer#]
+  #pickBigHeader##svgImgClassifieds#
+- >
+  [#randomCardStrategy#]
+  #pickFourCards#[_body:#headlineAnything##priceOffer#]
+  #pickBigHeader##svgImgClassifieds#
 - >
   [#pickFourCardsFromFinderSearchSet#]
   [_body:#headlineCardfinder##priceOffer#]
@@ -64,7 +64,7 @@ headlineAnything:
 headlineCardfinder:
 - "#pickFourCardsFromFinderSearchBlock# Draft leftovers from #_cardSet#"
 - "#pickFourCardsFromFinderSearchBlock# #_cardSet# Draft leftovers"
-- "#pickFourCardsFromFinderSearchSet# All three good cards that come in #_cardSet# boosters"
+- "#pickFourCardsFromFinderSearchSet# [_count:All three,The only]#_count# [_desc:good,playable,money]#_desc# cards from #_cardSet#"
 
 priceOffer:
 - ""
@@ -108,10 +108,10 @@ pickFourCards:
  - "#pickFourSameCard#"
 
 pickFourCardsFromFinderSearchSet:
- - "[_cardSet:#cardSet#][#_cardSet.cardSearchBySet(3)#][_card1:#_cardName1#][_card2:#_cardName2#][_card3:#_cardName3#]"
+ - "[_cardSet:#cardSet#][_searchTerm:\"#_cardSet#\"][#_searchTerm.cardSearchBySet(3)#][_card1:#_cardName1#][_card2:#_cardName2#][_card3:#_cardName3#]"
 
 pickFourCardsFromFinderSearchBlock:
- - "[#cardBlock#][_cardSet:#cardBlockName#][#cardBlockSet.cardSearchBySet(1)#][_card1:#_cardName1#][#cardBlockSet.cardSearchBySet(1)#][_card2:#_cardName1#][#cardBlockSet.cardSearchBySet(1)#][_card3:#_cardName1#]"
+ - "[#cardBlock#][_cardSet:#cardBlockName#][_searchTerm:\"#cardBlockSet#\"][#_searchTerm.cardSearchBySet(1)#][_card1:#_cardName1#][_searchTerm:\"#cardBlockSet#\"][#_searchTerm.cardSearchBySet(1)#][_card2:#_cardName1#][_searchTerm:\"#cardBlockSet#\"][#_searchTerm.cardSearchBySet(1)#][_card3:#_cardName1#]"
 
 TODO_TODO_TODO: 
   - "============ PRE-LOAD imgurls from cardfinder results ============"
@@ -172,7 +172,7 @@ ComeOnTextCallToAction:
 - "[_svgComeOnTextSize:34px][_svgComeOnLineHeight:32px][_ComeOnYPos:247]POSSIBLY<br/>A GLITCH"
 - "[_svgComeOnTextSize:34px][_svgComeOnLineHeight:32px][_ComeOnYPos:247]1-DAY DRONE<br/>SHIPPING"
 - "[_svgComeOnTextSize:34px][_svgComeOnLineHeight:32px][_ComeOnYPos:247]SATISFACTION<br/>LIKELY"
-- "[_svgComeOnTextSize:32px][_svgComeOnLineHeight:30px][_ComeOnYPos:249]ALL CARDS<br/>[_grade:SP,MP]#_grade# OR BETTER"
+- "[_svgComeOnTextSize:32px][_svgComeOnLineHeight:30px][_ComeOnYPos:249]ALL CARDS<br/>[_grade:NM,SP,MP]#_grade# OR BETTER"
 
 ComeOnFreebie:
 - "[_svgComeOnTextSize:28px][_svgComeOnLineHeight:28px][_ComeOnYPos:252]FREE #ComeOnFreebieDesign#<br/>#ComeOnFreebieItem#"

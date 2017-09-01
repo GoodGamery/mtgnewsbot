@@ -31,8 +31,49 @@
       "Weatherlight",
       "Zendikar"
   ],
+
+  cardSetStandalone: [
+    "[standAloneSet:Alpha][cardBlockName:#standAloneSet#]",
+    "[standAloneSet:Beta][cardBlockName:#standAloneSet#]",
+    "[standAloneSet:Unlimited][cardBlockName:#standAloneSet#]",
+    "[standAloneSet:Revised][cardBlockName:#standAloneSet#]",
+    "[standAloneSet:Arabian Nights][cardBlockName:#standAloneSet#]",
+    "[standAloneSet:Anqtiquties][cardBlockName:#standAloneSet#]",
+    "[standAloneSet:Legends][cardBlockName:#standAloneSet#]",
+    "[standAloneSet:The Dark][cardBlockName:#standAloneSet#]",
+    "[standAloneSet:Fallen Empires][cardBlockName:#standAloneSet#]",
+    "[standAloneSet:Rise of the Eldrazi][cardBlockName:Rise,ROE]",
+    "[standAloneSet:Avacyn Restored][cardBlockName:#standAloneSet#]"
+  ],
+
   "cardBlock": [
-    "[cardBlockName:Invasion][cardBlockSet:Invasion,Planeshift,Apocalypse]"
+    "[cardBlockName:Ice Age][cardBlockSet:#cardBlockName#,Homelands,Alliances,Coldsnap]",
+    "[cardBlockName:Mirage][cardBlockSet:#cardBlockName#,Visions,Weatherlight]",
+    "[cardBlockName:Tempest][cardBlockSet:#cardBlockName#,Stronghold,Exodus]",
+    "[cardBlockName:Urza's Block][cardBlockSet:Urza's Saga,Urza's Legacy,Urza's Destiny]",
+    "[cardBlockName:Masques][cardBlockSet:Mercadian Masques,Nemesis,Prophecy]",
+    "[cardBlockName:Invasion][cardBlockSet:#cardBlockName#,Planeshift,Apocalypse]",
+    "[cardBlockName:Odyssey][cardBlockSet:#cardBlockName#,Torment,Judgment]",
+    "[cardBlockName:Onslaught][cardBlockSet:#cardBlockName#,Legions,Scourge]",
+    "[cardBlockName:Mirrodin][cardBlockSet:#cardBlockName#,Darksteel,Fifth Dawn]",
+    "[cardBlockName:Champions,COK Block][cardBlockSet:Champions of Kamigawa,Betrayers of Kamigawa,Saviors of Kamigawa]",
+    "[cardBlockName:Ravnica][cardBlockSet:Ravnica#colon# City of Guilds,Guildpact,Dissension]",
+    "[cardBlockName:Time Spiral][cardBlockSet:#cardBlockName#,Planar Chaos,Future Sight]",
+    "[cardBlockName:Lorwyn][cardBlockSet:#cardBlockName#,Morningtide]",
+    "[cardBlockName:Shadowmoor][cardBlockSet:#cardBlockName#,Eventide]",
+    "[cardBlockName:Shards][cardBlockSet:Shards of Alara,Conflux,Alara Reborn]",
+    "[cardBlockName:Zendikar][cardBlockSet:#cardBlockName#,Worldwake]",
+    "[cardBlockName:Scars of Mirrodin,Scars][cardBlockSet:Scars of Mirrodin,Mirrodin Besieged,New Phyrexia]",
+    "[cardBlockName:Innistrad][cardBlockSet:#cardBlockName#,Dark Ascension]",
+    "[cardBlockName:Shards][cardBlockSet:Shards of Alara,Conflux,Alara Reborn]",
+    "[cardBlockName:Return to Ravnica,RTR][cardBlockSet:#cardBlockName#,Gatecrash,Dragon's Maze]",
+    "[cardBlockName:Theros][cardBlockSet:#cardBlockName#,Born of the Gods,Journey into Nyx]",
+    "[cardBlockName:Khans][cardBlockSet:Khans of Tarkir,Fate Reforged]",
+    "[cardBlockName:Dragons of Tarkir][cardBlockSet:#cardBlockName#,Fate Reforged]",
+    "[cardBlockName:Battle for Zendikar,BFZ][cardBlockSet:#cardBlockName#,Oath of the Gatewatch]",
+    "[cardBlockName:Shadows over Innistrad,Shadows][cardBlockSet:#cardBlockName#,Eldritch Moon]",
+    "[cardBlockName:Kaladesh][cardBlockSet:Aether Revolt]",
+    "[cardBlockName:Amonkhet][cardBlockSet:#cardBlockName#,Hour of Devastation]"
   ],
   "randomCardSet": [
     "#cardSet#",
