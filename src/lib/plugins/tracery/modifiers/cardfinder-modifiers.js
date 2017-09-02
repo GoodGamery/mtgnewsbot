@@ -112,7 +112,7 @@ async function cardSearchByText(s, params) {
 
 async function cardSearchByType(s, params) {
   const query = { 
-    q: 't:' + set
+    q: 't:' + s
   };
   return cardFinderSearch(query, params);
 }
