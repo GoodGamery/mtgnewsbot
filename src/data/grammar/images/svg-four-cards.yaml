@@ -1,19 +1,18 @@
 ---
 imgClassifieds:
+# - >
+#   [#randomCardStrategy#]
+#   #pickFourDiffCards#[_body:#headlineFourCardsForSale##priceOffer#]
+#   #pickBigHeader##svgImgClassifieds#
+# - >
+#   [#randomCardStrategy#]
+#   #pickFourSameCard#[_body:#headlineOneCardForSale##priceOffer#]
+#   #pickBigHeader##svgImgClassifieds#
+# - >
+#   [#randomCardStrategy#]
+#   #pickFourCards#[_body:#headlineAnything##priceOffer#]
+#   #pickBigHeader##svgImgClassifieds#
 - >
-  [#randomCardStrategy#]
-  #pickFourDiffCards#[_body:#headlineFourCardsForSale##priceOffer#]
-  #pickBigHeader##svgImgClassifieds#
-- >
-  [#randomCardStrategy#]
-  #pickFourSameCard#[_body:#headlineOneCardForSale##priceOffer#]
-  #pickBigHeader##svgImgClassifieds#
-- >
-  [#randomCardStrategy#]
-  #pickFourCards#[_body:#headlineAnything##priceOffer#]
-  #pickBigHeader##svgImgClassifieds#
-- >
-  [#pickFourCardsFromFinderSearchSet#]
   [_body:#headlineCardfinder##priceOffer#]
   #pickBigHeader##svgImgClassifieds#
 
@@ -62,9 +61,18 @@ headlineAnything:
 - "Complete #broadCardClassification.capitalizeAll# Set#"
 
 headlineCardfinder:
-- "#pickFourCardsFromFinderSearchBlock# Draft leftovers from #_cardSet#"
-- "#pickFourCardsFromFinderSearchBlock# #_cardSet# Draft leftovers"
-- "#pickFourCardsFromFinderSearchSet# [_count:All three,The only]#_count# [_desc:good,playable,money]#_desc# cards from #_cardSet#"
+# - "[#pickFourCardsFromFinderSearchBlock#]Draft leftovers from #_cardSet#"
+# - "[#pickFourCardsFromFinderSearchBlock#]#_cardSet# Draft leftovers"
+# - "[#pickFourCardsFromFinderSearchSet#][_count:All three,The only,Some]#_count# [_desc:good,playable,money]#_desc# cards from #_cardSet#"
+# - "[#pickFourCardsFromFinderSearchCreatureType#]#_creatureType.capitalize# Tribal staples"
+# - "[#pickFourCardsFromFinderSearchCardOrCreatureType#][_adj:classic,#cardQuality#][_desc:Three #_adj#,#_adj.capitalize#]#_desc# #_cardType.s#"
+# - "[#pickFourCardsFromFinderSearchCardOrCreatureType#]#_cardType.capitalize.s# collection"
+# - "[#pickFourCardsFromFinderSearchCardOrCreatureType#]#_cardType.capitalize# [_saleType:flash,two-fer,bundle,member] sale"
+ - "[#pickFourCardsFromFinderSearchCategory#][_adj:classic,#cardQuality#][_desc:Three #_adj#,#_adj.capitalize#]#_desc# #_cardCategory.s#"
+
+TODO_TODO_TODO: 
+  - "============ PRE-LOAD imgurls from cardfinder results ============"
+  - Use cardfinder to do color-based searches once implemened
 
 priceOffer:
 - ""
@@ -107,15 +115,24 @@ pickFourCards:
  - "#pickFourDiffCards#"
  - "#pickFourSameCard#"
 
+pickFourCardsFromFinderSearchCardOrCreatureType:
+ - "[#pickFourCardsFromFinderSearchCardType#]"
+ - "[#pickFourCardsFromFinderSearchCreatureType#][_cardType:#_creatureType#]"
+
+pickFourCardsFromFinderSearchCreatureType:
+ - "[_creatureType:#creatureTypes#][_searchTerm:\"#_creatureType#\"][#_searchTerm.cardSearchByType(3)#][_card1:#_cardRawName1#][_card2:#_cardRawName2#][_card3:#_cardRawName3#]"
+
+pickFourCardsFromFinderSearchCardType:
+ - "[_cardType:#cardTypes#][_searchTerm:\"#_cardType#\"][#_searchTerm.cardSearchByType(3)#][_card1:#_cardRawName1#][_card2:#_cardRawName2#][_card3:#_cardRawName3#]"
+
 pickFourCardsFromFinderSearchSet:
- - "[_cardSet:#cardSet#][_searchTerm:\"#_cardSet#\"][#_searchTerm.cardSearchBySet(3)#][_card1:#_cardName1#][_card2:#_cardName2#][_card3:#_cardName3#]"
+ - "[_cardSet:#cardSet#][_searchTerm:\"#_cardSet#\"][#_searchTerm.cardSearchBySet(3)#][_card1:#_cardRawName1#][_card2:#_cardRawName2#][_card3:#_cardRawName3#]"
 
 pickFourCardsFromFinderSearchBlock:
- - "[_block:#cardBlock#,#cardSetStandalone#][#_block#][_cardSet:#cardBlockName#][_searchTerm:\"#cardBlockSet#\"][#_searchTerm.cardSearchBySet(1)#][_card1:#_cardName1#][_searchTerm:\"#cardBlockSet#\"][#_searchTerm.cardSearchBySet(1)#][_card2:#_cardName1#][_searchTerm:\"#cardBlockSet#\"][#_searchTerm.cardSearchBySet(1)#][_card3:#_cardName1#]"
+ - "[_block:#cardBlock#,#cardSetStandalone#][#_block#][_cardSet:#cardBlockName#][_searchTerm:\"#cardBlockSet#\"][#_searchTerm.cardSearchBySet(1)#][_card1:#_cardRawName1#][_searchTerm:\"#cardBlockSet#\"][#_searchTerm.cardSearchBySet(1)#][_card2:#_cardRawName1#][_searchTerm:\"#cardBlockSet#\"][#_searchTerm.cardSearchBySet(1)#][_card3:#_cardRawName1#]"
 
-TODO_TODO_TODO: 
-  - "============ PRE-LOAD imgurls from cardfinder results ============"
-  - Use cardfinder to do color-based searches once implemened
+pickFourCardsFromFinderSearchCategory:
+- "[#searchableCardCategory#][#cotdCardCategorySearch#][_cardCategory:#_cardCategory#][_card1:#_cardRawName1#][_card2:#_cardRawName2#][_card3:#_cardRawName3#]"
 
 pickFourSameCardFromList: >
   [_cardSame:#realCard#]
@@ -123,18 +140,18 @@ pickFourDiffCardsFromCardlist: >
   [_card1Diff:#realCard#][_card2Diff:#realCard#][_card3Diff:#realCard#]
 
 pickFourSameCardFromFinder: > 
-  [#CARDFINDER.randomCard#][_cardSame:#_cardName1#]
+  [#CARDFINDER.randomCard#][_cardSame:#_cardRawName1#]
 pickFourDiffCardsFromFinder: >
-  [#CARDFINDER.randomCards(3)#][_card1Diff:#_cardName1#][_card2Diff:#_cardName2#][_card3Diff:#_cardName3#]
+  [#CARDFINDER.randomCards(3)#][_card1Diff:#_cardRawName1#][_card2Diff:#_cardRawName2#][_card3Diff:#_cardRawName3#]
 
 pickFourSameCardFromEither:
  - "#pickFourSameCardFromList#"
  - "#pickFourSameCardFromFinder#"
 pickFourDiffCardsFromEither: >
   [#CARDFINDER.randomCards(3)#]
-  [_card1Diff:#_cardName1#,#realCard#]
-  [_card2Diff:#_cardName2#,#realCard#]
-  [_card3Diff:#_cardName3#,#realCard#]
+  [_card1Diff:#_cardRawName1#,#realCard#]
+  [_card2Diff:#_cardRawName2#,#realCard#]
+  [_card3Diff:#_cardRawName3#,#realCard#]
 
 ComeOn: "[_svgComeOnTextSize:42px][_svgComeOnLineHeight:31px][_ComeOnYPos:264][_ComeOnText:#ComeOnText#][_ComeOnTextStyle:#svgComeOnTextStyle#]"
 

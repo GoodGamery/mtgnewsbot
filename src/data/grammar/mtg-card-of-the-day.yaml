@@ -103,7 +103,7 @@ sweepSpellMove:
   - through the Blind Eternities
 
 cardQuality:
-- verstatile
+- versatile
 - flexible
 - overpowered
 - underpowered
@@ -130,7 +130,9 @@ cardQuality:
 - ridiculous
 - whimsical
 - interesting
-- unconvetional
+- unconventional
+- first-class
+- classic
 
 interestingPlayAdj:
   - hilarious

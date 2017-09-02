@@ -50,14 +50,14 @@
   ],
 
   "cardSetStandaloneExcluded": [
-    # "[standAloneSet:Alpha][cardBlockName:#standAloneSet#][cardBlockSet:#standAloneSet#]",
-    # "[standAloneSet:Beta][cardBlockName:#standAloneSet#][cardBlockSet:#standAloneSet#]",
-    # "[standAloneSet:Modern Masters][cardBlockName:#standAloneSet#][cardBlockSet:#standAloneSet#]",
-    # "[standAloneSet:Modern Masters 2015,MM15][cardBlockName:#standAloneSet#][cardBlockSet:#standAloneSet#]",
-    # "[standAloneSet:Modern Masters 2017,MM17][cardBlockName:#standAloneSet#][cardBlockSet:#standAloneSet#]",
-    # "[_magicEdYear:2010,2011,2012,2013,2014,2015][standAloneSet:Magic #_magicEdYear#,Core Set][cardBlockName:#standAloneSet#][cardBlockSet:#standAloneSet#]",
-    # "[standAloneSet:Conspiracy][cardBlockName:#standAloneSet#][cardBlockSet:#standAloneSet#]",
-    # "[standAloneSet:Conspiracy#colon# Take the Crown][cardBlockName:#standAloneSet#][cardBlockSet:#standAloneSet#]"
+    "[standAloneSet:Alpha][cardBlockName:#standAloneSet#][cardBlockSet:#standAloneSet#]",
+    "[standAloneSet:Beta][cardBlockName:#standAloneSet#][cardBlockSet:#standAloneSet#]",
+    "[standAloneSet:Modern Masters][cardBlockName:#standAloneSet#][cardBlockSet:#standAloneSet#]",
+    "[standAloneSet:Modern Masters 2015,MM15][cardBlockName:#standAloneSet#][cardBlockSet:#standAloneSet#]",
+    "[standAloneSet:Modern Masters 2017,MM17][cardBlockName:#standAloneSet#][cardBlockSet:#standAloneSet#]",
+    "[_magicEdYear:2010,2011,2012,2013,2014,2015][standAloneSet:Magic #_magicEdYear#,Core Set][cardBlockName:#standAloneSet#][cardBlockSet:#standAloneSet#]",
+    "[standAloneSet:Conspiracy][cardBlockName:#standAloneSet#][cardBlockSet:#standAloneSet#]",
+    "[standAloneSet:Conspiracy#colon# Take the Crown][cardBlockName:#standAloneSet#][cardBlockSet:#standAloneSet#]"
   ],
 
   "cardBlock": [

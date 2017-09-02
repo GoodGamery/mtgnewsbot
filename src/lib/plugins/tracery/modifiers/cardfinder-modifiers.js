@@ -189,7 +189,9 @@ async function cardFinderSearch(query, params) {
     for (let i = 1; i <= queryLimit; i++) {
       const card = result[i - 1];
 
-      let name = traceryEscape(card.name);
+      const rawName = traceryEscape(card.name);
+
+      let name = rawName;
       const set = traceryEscape(card.set);
       const rarity = traceryEscape(card.rarity);      
       const type = randomElement(card.types);
@@ -211,6 +213,7 @@ async function cardFinderSearch(query, params) {
 
       finalResult = finalResult.concat(
         `[_cardName${i}:${name}]`,
+        `[_cardRawName${i}:${name}]`,
         `[_cardSet${i}:${set}]`,
         `[_cardRarity${i}:${rarity}]`,      
         `[_cardType${i}:${type}]`,     
