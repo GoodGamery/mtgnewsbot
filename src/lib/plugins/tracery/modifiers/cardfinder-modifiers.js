@@ -120,15 +120,28 @@ async function cardSearchByType(s, params) {
 async function cardSearchCustomQuery(s, params) {
   if (s) {
     logger.log('parsing query argument: ' + s);    
+
+    // replace spaces in quotes strings with +s
+    const quotedSubstrings = s.match(/".*?"/g);
+    if (quotedSubstrings) {
+      quotedSubstrings.forEach(match => {
+        s = s.replace(match, match.replace(/\s+/g, '+'));
+      });
+    }
+
     const terms = s.trim().split(/\s+/)
     try {
       let query = terms.reduce((query, term) => {        
         let key = term.split('=')[0];
-        let value = term.split('=')[1];
+        let value = term.split('=')[1].replace(/\++/g, ' ');
 
         if (key.endsWith('!')) {
           key = 'not ' + key.substring(0, key.length - 1);
         }
+
+        if (key.endsWith('|')) {
+          key = 'or ' + key.substring(0, key.length - 1);
+        }       
 
         if (query.length > 0) {
           query += ' ';
