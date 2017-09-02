@@ -12,3 +12,21 @@ searchableCardCategory:
   - "[_cardCategory:cantrip][_cardCategoryClass:cantrips][_cardCategorySearchTerm:\"draw a card.\"]"
   - "[_cardCategory:slowtrip][_cardCategoryClass:slowtrips][_cardCategorySearchTerm:\"draw a card at the beginning\"]"
   - "[_cardCategory:bounce spell][_cardCategoryClass:bounce][_targetCardType:creature,permanent,nonland permanent][_cardCategorySearchTerm:\"return target #_targetCardType# to\"]"
+
+searchableCardCategoryCustomQuery:
+ - >
+  [_cardCategory:mana dork][_cardCategoryClass:mana dorks][_customQuery:text=pool t=creature cmc=<3]
+ - >
+  [_cardCategory:weenie][cardCategoryClass:weenies][_customQuery:pow=1 tou=1]
+  - >
+  [_cardCategory:fatty][cardCategoryClass:fatties][_customQuery:pow=>4 tou=>4 text!=flying]
+ - >
+  [_cardCategory:finisher][cardCategoryClass:finishers][_customQuery:pow=>5 tou=>5 text=flying pow|=>5 tou=>5 text=enters]
+ - >
+  "[_cardCategory:coinflip card][cardCategoryClass:coinflip cards][_customQuery:text=coin text|=coins]"
+ - > 
+  [_cardCategory:sweeper][cardCategoryClass:sweepers][_customQuery:text="destroy all creatures" text|="exile all creatures" text|="damage to each creature" text|="creatures get" text!=%2B text!="0 until"]
+ - >
+  [_cardCategory:accelerator,mana accelerator][cardCategoryClass:acceleration,mana acceleration][_customQuery:text=add text=pool text=sacrifice text|=add text=pool text!={T}]
+ - >
+  [_cardCategory:engine piece,combo piece][cardCategoryClass:combo pieces,engine pieces][_customQuery:t=enchantment t!=aura text=whenever t|=artifact t!=equipment text=whenever]

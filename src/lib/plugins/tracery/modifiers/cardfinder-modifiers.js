@@ -117,6 +117,48 @@ async function cardSearchByType(s, params) {
   return cardFinderSearch(query, params);
 }
 
+async function cardSearchCustomQuery(s, params) {
+  if (s) {
+    logger.log('parsing query argument: ' + s);    
+
+    // replace spaces in quotes strings with +s
+    const quotedSubstrings = s.match(/".*?"/g);
+    if (quotedSubstrings) {
+      quotedSubstrings.forEach(match => {
+        s = s.replace(match, match.replace(/\s+/g, '+'));
+      });
+    }
+
+    const terms = s.trim().split(/\s+/)
+    try {
+      let query = terms.reduce((query, term) => {        
+        let key = term.split('=')[0];
+        let value = term.split('=')[1].replace(/\++/g, ' ');
+
+        if (key.endsWith('!')) {
+          key = 'not ' + key.substring(0, key.length - 1);
+        }
+
+        if (key.endsWith('|')) {
+          key = 'or ' + key.substring(0, key.length - 1);
+        }       
+
+        if (query.length > 0) {
+          query += ' ';
+        }
+        return query += `${key}:${value}`;
+      }, '');
+      logger.log('parsed query argument: ' + query);
+      return cardFinderSearch({ q: query }, params);
+    } catch (e) {
+      logger.warn(e);
+    }    
+  } else {
+    logger.log('query argument not specified.');        
+  }
+  return cardSearchRandom(undefined, params);
+}
+
 async function searchCardFinder(query) {
   const SEARCH_API_JSON_URL = 'https://goodgamery.com/api/mtg/card/json';
 
@@ -247,6 +289,8 @@ module.exports = {
   cardSearchBySet,
   cardSearchByText,
   cardSearchByType,
+  cardSearchCustomQuery,
   randomCard:   () => cardSearchRandom(undefined, 1),
-  randomCards:  cardSearchRandom
+  randomCards:  cardSearchRandom,
+  sanityCheck: (s) => console.log(s)
 };
