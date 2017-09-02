@@ -118,13 +118,18 @@ async function cardSearchByType(s, params) {
 }
 
 async function cardSearchCustomQuery(s, params) {
-  if (params[1]) {
-    logger.log('parsing query argument: ' + params[1]);    
-    const terms = params[1].trim().split(/\s+/)
+  if (s) {
+    logger.log('parsing query argument: ' + s);    
+    const terms = s.trim().split(/\s+/)
     try {
       let query = terms.reduce((query, term) => {        
         let key = term.split('=')[0];
         let value = term.split('=')[1];
+
+        if (key.endsWith('!')) {
+          key = 'not ' + key.substring(0, key.length - 1);
+        }
+
         if (query.length > 0) {
           query += ' ';
         }
@@ -273,5 +278,6 @@ module.exports = {
   cardSearchByType,
   cardSearchCustomQuery,
   randomCard:   () => cardSearchRandom(undefined, 1),
-  randomCards:  cardSearchRandom
+  randomCards:  cardSearchRandom,
+  sanityCheck: (s) => console.log(s)
 };

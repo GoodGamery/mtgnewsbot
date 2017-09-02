@@ -12,3 +12,7 @@ searchableCardCategory:
   - "[_cardCategory:cantrip][_cardCategoryClass:cantrips][_cardCategorySearchTerm:\"draw a card.\"]"
   - "[_cardCategory:slowtrip][_cardCategoryClass:slowtrips][_cardCategorySearchTerm:\"draw a card at the beginning\"]"
   - "[_cardCategory:bounce spell][_cardCategoryClass:bounce][_targetCardType:creature,permanent,nonland permanent][_cardCategorySearchTerm:\"return target #_targetCardType# to\"]"
+
+searchableCardCategoryCustomQuery:
+  - "[_cardCategory:mana dork][_cardCategoryClass:mana dorks][_customQuery:text=pool t=creature cmc=<3]"
+  - "[_cardCategory:fatty][cardCategoryClass:fatties][_customQuery:pow=>4 tou=>4 text!=flying]"

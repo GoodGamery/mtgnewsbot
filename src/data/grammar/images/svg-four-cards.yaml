@@ -1,17 +1,17 @@
 ---
 imgClassifieds:
-- >
-  [#randomCardStrategy#]
-  #pickFourDiffCards#[_body:#headlineFourCardsForSale##priceOffer#]
-  #pickBigHeader##svgImgClassifieds#
-- >
-  [#randomCardStrategy#]
-  #pickFourSameCard#[_body:#headlineOneCardForSale##priceOffer#]
-  #pickBigHeader##svgImgClassifieds#
-- >
-  [#randomCardStrategy#]
-  #pickFourCards#[_body:#headlineAnything##priceOffer#]
-  #pickBigHeader##svgImgClassifieds#
+# - >
+#   [#randomCardStrategy#]
+#   #pickFourDiffCards#[_body:#headlineFourCardsForSale##priceOffer#]
+#   #pickBigHeader##svgImgClassifieds#
+# - >
+#   [#randomCardStrategy#]
+#   #pickFourSameCard#[_body:#headlineOneCardForSale##priceOffer#]
+#   #pickBigHeader##svgImgClassifieds#
+# - >
+#   [#randomCardStrategy#]
+#   #pickFourCards#[_body:#headlineAnything##priceOffer#]
+#   #pickBigHeader##svgImgClassifieds#
 - >
   [_body:#headlineCardfinder##priceOffer#]
   #pickBigHeader##svgImgClassifieds#
@@ -61,14 +61,15 @@ headlineAnything:
 - "#format.capitalize# Staples"
 
 headlineCardfinder:
-- "[#pickFourCardsFromFinderSearchBlock#]Draft leftovers from #_cardSet#"
-- "[#pickFourCardsFromFinderSearchBlock#]#_cardSet# Draft leftovers"
-- "[#pickFourCardsFromFinderSearchSet#][_count:All three,The only,Some]#_count# [_desc:good,playable,money]#_desc# cards from #_cardSet#"
-- "[#pickFourCardsFromFinderSearchCreatureType#]#_creatureType.capitalize# Tribal staples"
-- "[#pickFourCardsFromFinderSearchCardOrCreatureType#][_adj:classic,#cardQuality#][_desc:Three #_adj#,#_adj.capitalize#]#_desc# #_cardType.s#"
-- "[#pickFourCardsFromFinderSearchCardOrCreatureType#]#_cardType.capitalize.s# collection"
-- "[#pickFourCardsFromFinderSearchCardOrCreatureType#]#_cardType.capitalize# [_saleType:flash,two-fer,bundle,member] sale"
-- "[#pickFourCardsFromFinderSearchCategory#][_adj:classic,#cardQuality#][_desc:Three #_adj#,#_adj.capitalize#]#_desc# #_cardCategory.s#"
+# - "[#pickFourCardsFromFinderSearchBlock#]Draft leftovers from #_cardSet#"
+# - "[#pickFourCardsFromFinderSearchBlock#]#_cardSet# Draft leftovers"
+# - "[#pickFourCardsFromFinderSearchSet#][_count:All three,The only,Some]#_count# [_desc:good,playable,money]#_desc# cards from #_cardSet#"
+# - "[#pickFourCardsFromFinderSearchCreatureType#]#_creatureType.capitalize# Tribal staples"
+# - "[#pickFourCardsFromFinderSearchCardOrCreatureType#][_adj:classic,#cardQuality#][_desc:Three #_adj#,#_adj.capitalize#]#_desc# #_cardType.s#"
+# - "[#pickFourCardsFromFinderSearchCardOrCreatureType#]#_cardType.capitalize.s# collection"
+# - "[#pickFourCardsFromFinderSearchCardOrCreatureType#]#_cardType.capitalize# [_saleType:flash,two-fer,bundle,member] sale"
+# - "[#pickFourCardsFromFinderSearchCategory#][_adj:classic,#cardQuality#][_desc:Three #_adj#,#_adj.capitalize#]#_desc# #_cardCategory.s#"
+- "[#pickFourCardsFromFinderSearchCustomCategory#][_adj:classic,#cardQuality#][_desc:Three #_adj#,#_adj.capitalize#]#_desc# #_cardCategory.s#"
 
 priceOffer:
 - ""
@@ -145,6 +146,13 @@ pickFourCardsFromFinderSearchBlock: >
 
 pickFourCardsFromFinderSearchCategory: >
   [#searchableCardCategory#][#cotdCardCategorySearch#]
+  [_cardCategory:#_cardCategory#]
+  [_card1:#_cardRawName1#]
+  [_card2:#_cardRawName2#]
+  [_card3:#_cardRawName3#]
+
+pickFourCardsFromFinderSearchCustomCategory: >
+  [#searchableCardCategoryCustomQuery#][#_customQuery.cardSearchCustomQuery(3)#]
   [_cardCategory:#_cardCategory#]
   [_card1:#_cardRawName1#]
   [_card2:#_cardRawName2#]
