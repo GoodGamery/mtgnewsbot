@@ -1,17 +1,17 @@
 ---
 imgClassifieds:
-# - >
-#   [#randomCardStrategy#]
-#   #pickFourDiffCards#[_body:#headlineFourCardsForSale##priceOffer#]
-#   #pickBigHeader##svgImgClassifieds#
-# - >
-#   [#randomCardStrategy#]
-#   #pickFourSameCard#[_body:#headlineOneCardForSale##priceOffer#]
-#   #pickBigHeader##svgImgClassifieds#
-# - >
-#   [#randomCardStrategy#]
-#   #pickFourCards#[_body:#headlineAnything##priceOffer#]
-#   #pickBigHeader##svgImgClassifieds#
+- >
+  [#randomCardStrategy#]
+  #pickFourDiffCards#[_body:#headlineFourCardsForSale##priceOffer#]
+  #pickBigHeader##svgImgClassifieds#
+- >
+  [#randomCardStrategy#]
+  #pickFourSameCard#[_body:#headlineOneCardForSale##priceOffer#]
+  #pickBigHeader##svgImgClassifieds#
+- >
+  [#randomCardStrategy#]
+  #pickFourCards#[_body:#headlineAnything##priceOffer#]
+  #pickBigHeader##svgImgClassifieds#
 - >
   [_body:#headlineCardfinder##priceOffer#]
   #pickBigHeader##svgImgClassifieds#
@@ -38,6 +38,8 @@ headlineFourCardsForSale:
 - "Repacked boosters that might contain the Power 9"
 - "#_card3# and friends"
 - "A deadly combo"
+- "#broadCardClassification.capitalizeAll# Collection#"
+- "Complete #broadCardClassification.capitalizeAll# Set#"
 - "#headlineAnything#"
 - "#headlineAnything#"
 headlineOneCardForSale:
@@ -57,22 +59,16 @@ headlineAnything:
 - "Key cards for #deck.capitalize#"
 - "Your favorite cards"
 - "#format.capitalize# Staples"
-- "#broadCardClassification.capitalizeAll# Collection#"
-- "Complete #broadCardClassification.capitalizeAll# Set#"
 
 headlineCardfinder:
-# - "[#pickFourCardsFromFinderSearchBlock#]Draft leftovers from #_cardSet#"
-# - "[#pickFourCardsFromFinderSearchBlock#]#_cardSet# Draft leftovers"
-# - "[#pickFourCardsFromFinderSearchSet#][_count:All three,The only,Some]#_count# [_desc:good,playable,money]#_desc# cards from #_cardSet#"
-# - "[#pickFourCardsFromFinderSearchCreatureType#]#_creatureType.capitalize# Tribal staples"
-# - "[#pickFourCardsFromFinderSearchCardOrCreatureType#][_adj:classic,#cardQuality#][_desc:Three #_adj#,#_adj.capitalize#]#_desc# #_cardType.s#"
-# - "[#pickFourCardsFromFinderSearchCardOrCreatureType#]#_cardType.capitalize.s# collection"
-# - "[#pickFourCardsFromFinderSearchCardOrCreatureType#]#_cardType.capitalize# [_saleType:flash,two-fer,bundle,member] sale"
- - "[#pickFourCardsFromFinderSearchCategory#][_adj:classic,#cardQuality#][_desc:Three #_adj#,#_adj.capitalize#]#_desc# #_cardCategory.s#"
-
-TODO_TODO_TODO: 
-  - "============ PRE-LOAD imgurls from cardfinder results ============"
-  - Use cardfinder to do color-based searches once implemened
+- "[#pickFourCardsFromFinderSearchBlock#]Draft leftovers from #_cardSet#"
+- "[#pickFourCardsFromFinderSearchBlock#]#_cardSet# Draft leftovers"
+- "[#pickFourCardsFromFinderSearchSet#][_count:All three,The only,Some]#_count# [_desc:good,playable,money]#_desc# cards from #_cardSet#"
+- "[#pickFourCardsFromFinderSearchCreatureType#]#_creatureType.capitalize# Tribal staples"
+- "[#pickFourCardsFromFinderSearchCardOrCreatureType#][_adj:classic,#cardQuality#][_desc:Three #_adj#,#_adj.capitalize#]#_desc# #_cardType.s#"
+- "[#pickFourCardsFromFinderSearchCardOrCreatureType#]#_cardType.capitalize.s# collection"
+- "[#pickFourCardsFromFinderSearchCardOrCreatureType#]#_cardType.capitalize# [_saleType:flash,two-fer,bundle,member] sale"
+- "[#pickFourCardsFromFinderSearchCategory#][_adj:classic,#cardQuality#][_desc:Three #_adj#,#_adj.capitalize#]#_desc# #_cardCategory.s#"
 
 priceOffer:
 - ""
@@ -119,20 +115,40 @@ pickFourCardsFromFinderSearchCardOrCreatureType:
  - "[#pickFourCardsFromFinderSearchCardType#]"
  - "[#pickFourCardsFromFinderSearchCreatureType#][_cardType:#_creatureType#]"
 
-pickFourCardsFromFinderSearchCreatureType:
- - "[_creatureType:#creatureTypes#][_searchTerm:\"#_creatureType#\"][#_searchTerm.cardSearchByType(3)#][_card1:#_cardRawName1#][_card2:#_cardRawName2#][_card3:#_cardRawName3#]"
+pickFourCardsFromFinderSearchCreatureType: >
+  [_creatureType:#creatureTypes#]
+  [_searchTerm:"#_creatureType#"][#_searchTerm.cardSearchByType(3)#]
+  [_card1:#_cardRawName1#]
+  [_card2:#_cardRawName2#]
+  [_card3:#_cardRawName3#]
 
-pickFourCardsFromFinderSearchCardType:
- - "[_cardType:#cardTypes#][_searchTerm:\"#_cardType#\"][#_searchTerm.cardSearchByType(3)#][_card1:#_cardRawName1#][_card2:#_cardRawName2#][_card3:#_cardRawName3#]"
+pickFourCardsFromFinderSearchCardType: >
+  [_cardType:#cardTypes#]
+  [_searchTerm:"#_cardType#"][#_searchTerm.cardSearchByType(3)#]
+  [_card1:#_cardRawName1#]
+  [_card2:#_cardRawName2#]
+  [_card3:#_cardRawName3#]
 
-pickFourCardsFromFinderSearchSet:
- - "[_cardSet:#cardSet#][_searchTerm:\"#_cardSet#\"][#_searchTerm.cardSearchBySet(3)#][_card1:#_cardRawName1#][_card2:#_cardRawName2#][_card3:#_cardRawName3#]"
+pickFourCardsFromFinderSearchSet: >
+  [_cardSet:#cardSet#]
+  [_searchTerm:"#_cardSet#"][#_searchTerm.cardSearchBySet(3)#]
+  [_card1:#_cardRawName1#]
+  [_card2:#_cardRawName2#]
+  [_card3:#_cardRawName3#]
 
-pickFourCardsFromFinderSearchBlock:
- - "[_block:#cardBlock#,#cardSetStandalone#][#_block#][_cardSet:#cardBlockName#][_searchTerm:\"#cardBlockSet#\"][#_searchTerm.cardSearchBySet(1)#][_card1:#_cardRawName1#][_searchTerm:\"#cardBlockSet#\"][#_searchTerm.cardSearchBySet(1)#][_card2:#_cardRawName1#][_searchTerm:\"#cardBlockSet#\"][#_searchTerm.cardSearchBySet(1)#][_card3:#_cardRawName1#]"
+pickFourCardsFromFinderSearchBlock: >
+  [_block:#cardBlock#,#cardSetStandalone#][#_block#]
+  [_cardSet:#cardBlockName#]
+  [_searchTerm:"#cardBlockSet#"][#_searchTerm.cardSearchBySet(1)#][_card1:#_cardRawName1#]
+  [_searchTerm:"#cardBlockSet#"][#_searchTerm.cardSearchBySet(1)#][_card2:#_cardRawName1#]
+  [_searchTerm:"#cardBlockSet#"][#_searchTerm.cardSearchBySet(1)#][_card3:#_cardRawName1#]
 
-pickFourCardsFromFinderSearchCategory:
-- "[#searchableCardCategory#][#cotdCardCategorySearch#][_cardCategory:#_cardCategory#][_card1:#_cardRawName1#][_card2:#_cardRawName2#][_card3:#_cardRawName3#]"
+pickFourCardsFromFinderSearchCategory: >
+  [#searchableCardCategory#][#cotdCardCategorySearch#]
+  [_cardCategory:#_cardCategory#]
+  [_card1:#_cardRawName1#]
+  [_card2:#_cardRawName2#]
+  [_card3:#_cardRawName3#]
 
 pickFourSameCardFromList: >
   [_cardSame:#realCard#]
@@ -343,8 +359,6 @@ svgThemeColors:
   - "[_themeColor1:oldlace][_themeColor2:white][_svgComeOnStrokeColor:gold][_svgComeOnOpacity:0.2]"
   - "[_themeColor1:#d27f19][_themeColor2:#dbeeff][_svgComeOnStrokeColor:gold][_svgComeOnOpacity:0.2]"
 
-
-
 svgFourCards: |
   <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="700" height="420">
     <defs>
@@ -374,7 +388,6 @@ svgFourCards: |
     <rect x="0" y="236" width="700" height="96" style="fill:#_themeColor1#; fill-opacity:0.85"/>
 
     <rect x="415" y="243" width="275" height="82" rx="42" ry="42" style="fill:black; stroke:#_svgComeOnStrokeColor#; stroke-width:2; stroke-opacity:#_svgComeOnOpacity#;"/>                          
-
     <g transform="translate(20 155)">
       <use xlink:href="\#Card1" x="0" y="0" transform="rotate(-3 111 155) translate(0 -12)" />
       <use xlink:href="\#Card2" x="0" y="0" transform="rotate(3 111 155) translate(188 -24)" />

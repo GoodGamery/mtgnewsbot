@@ -158,8 +158,13 @@ async function cardFinderSearch(query, params) {
     try {      
       resultData = await searchCardFinder(query);
       try {
-        result = JSON.parse(resultData);     
+        result = JSON.parse(resultData);
+
         logger.log('Retrieved ' + result.length + ' cards.');
+
+        if (result.error) {
+          result = [];
+        }
 
         if (result.length < queryLimit) {          
           logger.warn(`Zero or insufficient results returned from card search: expected ${queryLimit} but received ${result.length}.`);
@@ -213,7 +218,7 @@ async function cardFinderSearch(query, params) {
 
       finalResult = finalResult.concat(
         `[_cardName${i}:${name}]`,
-        `[_cardRawName${i}:${name}]`,
+        `[_cardRawName${i}:${rawName}]`,
         `[_cardSet${i}:${set}]`,
         `[_cardRarity${i}:${rarity}]`,      
         `[_cardType${i}:${type}]`,     
