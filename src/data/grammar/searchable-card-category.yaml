@@ -14,5 +14,11 @@ searchableCardCategory:
   - "[_cardCategory:bounce spell][_cardCategoryClass:bounce][_targetCardType:creature,permanent,nonland permanent][_cardCategorySearchTerm:\"return target #_targetCardType# to\"]"
 
 searchableCardCategoryCustomQuery:
-  - "[_cardCategory:mana dork][_cardCategoryClass:mana dorks][_customQuery:text=pool t=creature cmc=<3]"
-  - "[_cardCategory:fatty][cardCategoryClass:fatties][_customQuery:pow=>4 tou=>4 text!=flying]"
+ - >
+  [_cardCategory:mana dork][_cardCategoryClass:mana dorks][_customQuery:text=pool t=creature cmc=<3]
+ - >
+  [_cardCategory:fatty][cardCategoryClass:fatties][_customQuery:pow=>4 tou=>4 text!=flying]
+ - >
+  "[_cardCategory:coinflip card][cardCategoryClass:coinflip cards][_customQuery:text=coin text|=coins]"
+ - > 
+  [_cardCategory:sweeper][cardCategoryClass:sweepers][_customQuery:text="destroy all creatures" text|="exile all creatures" text|="damage to each creature" text|="creatures get" text!=%2B text!="0 until"]
