@@ -112,9 +112,33 @@ async function cardSearchByText(s, params) {
 
 async function cardSearchByType(s, params) {
   const query = { 
-    q: 't:' + s
+    q: 't:' + set
   };
   return cardFinderSearch(query, params);
+}
+
+async function cardSearchCustomQuery(s, params) {
+  if (params[1]) {
+    logger.log('parsing query argument: ' + params[1]);    
+    const terms = params[1].trim().split(/\s+/)
+    try {
+      let query = terms.reduce((query, term) => {        
+        let key = term.split('=')[0];
+        let value = term.split('=')[1];
+        if (query.length > 0) {
+          query += ' ';
+        }
+        return query += `${key}:${value}`;
+      }, '');
+      logger.log('parsed query argument: ' + query);
+      return cardFinderSearch({ q: query }, params);
+    } catch (e) {
+      logger.warn(e);
+    }    
+  } else {
+    logger.log('query argument not specified.');        
+  }
+  return cardSearchRandom(undefined, params);
 }
 
 async function searchCardFinder(query) {
@@ -247,6 +271,7 @@ module.exports = {
   cardSearchBySet,
   cardSearchByText,
   cardSearchByType,
+  cardSearchCustomQuery,
   randomCard:   () => cardSearchRandom(undefined, 1),
   randomCards:  cardSearchRandom
 };
