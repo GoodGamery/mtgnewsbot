@@ -14,20 +14,6 @@ cotdParameterizedCardSearch:
   - "#cotdCreatureTypeSearch#"
   - "#cotdCardCategorySearch#"
 
-searchableCardCategory:
-  - "[_cardCategory:removal spell][_cardCategoryClass:removal][_toughness:1,2,3,4,5,X][_cardCategorySearchTerm:\"destroy target creature\",\"exile target creature\",\"enchanted creature can't attack\",\"fights target\",\"damage to target creature\",\"sacrifices a creature\",\"/-#_toughness# until\",\"enchanted creature doesn't\"]"
-  - "[_cardCategory:land destruction spell][_cardCategoryClass:land destruction][_cardCategorySearchTerm:\"destroy target land\",\"sacrifices a land\"]"
-  - "[_cardCategory:pump spell][_cardCategoryClass:pump spells][_cardCategorySearchTerm:\"target creature gets +\",\"creatures you control get +\"]"
-  - "[_cardCategory:combat trick][_cardCategoryClass:combat tricks][_cardCategorySearchTerm:\"target creature gets +\",\"target creature gains\"]"
-  - "[_cardCategory:discard spell][_cardCategoryClass:discard][_cardCategorySearchTerm:\"discards a card\",\"discards that card\"]"
-  - "[_cardCategory:counterspell][_cardCategoryClass:countermagic][_cardCategorySearchTerm:\"counter target\"]"
-  - "[_cardCategory:direct damage spell,burn spell][_cardCategoryClass:burn][_cardCategorySearchTerm:\"damage to target\"]"
-  - "[_cardCategory:ramp spell][_cardCategoryClass:ramp][_cardCategorySearchTerm:\"land card and put that card onto\",\"put them onto\",\"land card and put it onto\",\"forest card and put it onto\",\"forest card and put that card onto\"]"
-  - "[_cardCategory:lifegain spell][_cardCategoryClass:lifegain][_amount:1,2,3,4,5,6,7,8,10,20,X][_cardCategorySearchTerm:\"gain life\",\"gain #_amount# life\"]"
-  - "[_cardCategory:cantrip][_cardCategoryClass:cantrips][_cardCategorySearchTerm:\"draw a card.\"]"
-  - "[_cardCategory:slowtrip][_cardCategoryClass:slowtrips][_cardCategorySearchTerm:\"draw a card at the beginning\"]"
-  - "[_cardCategory:bounce spell][_cardCategoryClass:bounce][_targetCardType:creature,permanent,nonland permanent][_cardCategorySearchTerm:\"return target #_targetCardType# to\"]"
-
 #This requires _cardname to be set already
 cotdImageHtml: "{htmlImg htmlImgString=`#_cotdHtml#` screenWidth=`1000` screenHeight=`500`}"
 
@@ -101,36 +87,6 @@ sweepSpellMove:
   - into Takenuma
   - through Reito
   - through the Blind Eternities
-
-cardQuality:
-- verstatile
-- flexible
-- overpowered
-- underpowered
-- undercosted
-- broken
-- playable
-- unplayable
-- draftable
-- "#format.hyphenate#-playable"
-- balanced
-- conditional
-- unconditional
-- unrestricted
-- underwhelming
-- well-designed
-- poorly-designed
-- forgettable
-- terrible
-- spicy
-- mildly interesting
-- confusing
-- unimpressive
-- unreasonable
-- ridiculous
-- whimsical
-- interesting
-- unconvetional
 
 interestingPlayAdj:
   - hilarious

@@ -70,6 +70,8 @@ function getSomeCardTypeOrSubtype(types, subtypes) {
 }
 
 async function randomCards(limit) {
+    logger.log(`Finding ${limit} random cards`);
+
   const query = { 
     q: 'cmc >= 0',
     limit: limit || 1,
@@ -85,6 +87,13 @@ function randomStaticCards(limit) {
     cards.push(randomElement(cardData));
   }
   return cards;
+}
+
+async function cardSearchRandom(undefined, params) {
+  const query = { 
+    q: 'cmc >= 0'
+  };
+  return cardFinderSearch(query, params);    
 }
 
 async function cardSearchBySet(s, params) {
@@ -113,6 +122,8 @@ async function searchCardFinder(query) {
 
   return new Promise((resolve, reject) => {
     request.get({ url: SEARCH_API_JSON_URL, qs: query }, (err, data, body) => {
+      logger.log('REQUEST DATA '); logger.log(JSON.stringify(data));
+
       if (err) {
         reject(err);
       } else {
@@ -147,8 +158,13 @@ async function cardFinderSearch(query, params) {
     try {      
       resultData = await searchCardFinder(query);
       try {
-        result = JSON.parse(resultData);     
+        result = JSON.parse(resultData);
+
         logger.log('Retrieved ' + result.length + ' cards.');
+
+        if (result.error) {
+          result = [];
+        }
 
         if (result.length < queryLimit) {          
           logger.warn(`Zero or insufficient results returned from card search: expected ${queryLimit} but received ${result.length}.`);
@@ -178,7 +194,9 @@ async function cardFinderSearch(query, params) {
     for (let i = 1; i <= queryLimit; i++) {
       const card = result[i - 1];
 
-      let name = traceryEscape(card.name);
+      const rawName = traceryEscape(card.name);
+
+      let name = rawName;
       const set = traceryEscape(card.set);
       const rarity = traceryEscape(card.rarity);      
       const type = randomElement(card.types);
@@ -200,6 +218,7 @@ async function cardFinderSearch(query, params) {
 
       finalResult = finalResult.concat(
         `[_cardName${i}:${name}]`,
+        `[_cardRawName${i}:${rawName}]`,
         `[_cardSet${i}:${set}]`,
         `[_cardRarity${i}:${rarity}]`,      
         `[_cardType${i}:${type}]`,     
@@ -227,5 +246,7 @@ async function cardFinderSearch(query, params) {
 module.exports = {
   cardSearchBySet,
   cardSearchByText,
-  cardSearchByType
+  cardSearchByType,
+  randomCard:   () => cardSearchRandom(undefined, 1),
+  randomCards:  cardSearchRandom
 };

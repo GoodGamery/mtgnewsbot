@@ -60,7 +60,16 @@
         "#num1-9##num0-9#"
     ],
     "priceUSD": [
-        "$#num1-999#", "$#num1-999#.#num0-9##num0-9#"
+        "$#num1-9#",
+        "$#num1-9#",
+        "$#num1-99#",
+        "$#num1-99#",
+        "$#num1-999#",
+        "$#num1-9#.#num0-9##num0-9#",
+        "$#num1-9#.#num0-9##num0-9#",
+        "$#num1-99#.#num0-9##num0-9#",
+        "$#num1-99#.#num0-9##num0-9#",
+        "$#num1-999#.#num0-9##num0-9#"
     ],
     "priceTix": [
         "#num1-9# event tickets", "#num1-9##num0-9# event tickets"
