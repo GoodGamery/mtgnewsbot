@@ -122,6 +122,8 @@ async function searchCardFinder(query) {
 
   return new Promise((resolve, reject) => {
     request.get({ url: SEARCH_API_JSON_URL, qs: query }, (err, data, body) => {
+      logger.log('REQUEST DATA '); logger.log(JSON.stringify(data));
+
       if (err) {
         reject(err);
       } else {

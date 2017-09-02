@@ -111,7 +111,7 @@ pickFourCardsFromFinderSearchSet:
  - "[_cardSet:#cardSet#][_searchTerm:\"#_cardSet#\"][#_searchTerm.cardSearchBySet(3)#][_card1:#_cardName1#][_card2:#_cardName2#][_card3:#_cardName3#]"
 
 pickFourCardsFromFinderSearchBlock:
- - "[#cardBlock#][_cardSet:#cardBlockName#][_searchTerm:\"#cardBlockSet#\"][#_searchTerm.cardSearchBySet(1)#][_card1:#_cardName1#][_searchTerm:\"#cardBlockSet#\"][#_searchTerm.cardSearchBySet(1)#][_card2:#_cardName1#][_searchTerm:\"#cardBlockSet#\"][#_searchTerm.cardSearchBySet(1)#][_card3:#_cardName1#]"
+ - "[_block:#cardBlock#,#cardSetStandalone#][#_block#][_cardSet:#cardBlockName#][_searchTerm:\"#cardBlockSet#\"][#_searchTerm.cardSearchBySet(1)#][_card1:#_cardName1#][_searchTerm:\"#cardBlockSet#\"][#_searchTerm.cardSearchBySet(1)#][_card2:#_cardName1#][_searchTerm:\"#cardBlockSet#\"][#_searchTerm.cardSearchBySet(1)#][_card3:#_cardName1#]"
 
 TODO_TODO_TODO: 
   - "============ PRE-LOAD imgurls from cardfinder results ============"
@@ -135,7 +135,6 @@ pickFourDiffCardsFromEither: >
   [_card1Diff:#_cardName1#,#realCard#]
   [_card2Diff:#_cardName2#,#realCard#]
   [_card3Diff:#_cardName3#,#realCard#]
-
 
 ComeOn: "[_svgComeOnTextSize:42px][_svgComeOnLineHeight:31px][_ComeOnYPos:264][_ComeOnText:#ComeOnText#][_ComeOnTextStyle:#svgComeOnTextStyle#]"
 

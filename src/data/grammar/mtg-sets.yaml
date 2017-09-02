@@ -32,18 +32,32 @@
       "Zendikar"
   ],
 
-  cardSetStandalone: [
-    "[standAloneSet:Alpha][cardBlockName:#standAloneSet#]",
-    "[standAloneSet:Beta][cardBlockName:#standAloneSet#]",
-    "[standAloneSet:Unlimited][cardBlockName:#standAloneSet#]",
-    "[standAloneSet:Revised][cardBlockName:#standAloneSet#]",
-    "[standAloneSet:Arabian Nights][cardBlockName:#standAloneSet#]",
-    "[standAloneSet:Anqtiquties][cardBlockName:#standAloneSet#]",
-    "[standAloneSet:Legends][cardBlockName:#standAloneSet#]",
-    "[standAloneSet:The Dark][cardBlockName:#standAloneSet#]",
-    "[standAloneSet:Fallen Empires][cardBlockName:#standAloneSet#]",
-    "[standAloneSet:Rise of the Eldrazi][cardBlockName:Rise,ROE]",
-    "[standAloneSet:Avacyn Restored][cardBlockName:#standAloneSet#]"
+  "cardSetStandalone": [
+    "[standAloneSet:Unlimited][cardBlockName:#standAloneSet#][cardBlockSet:#standAloneSet#]",
+    "[standAloneSet:Revised][cardBlockName:#standAloneSet#][cardBlockSet:#standAloneSet#]",
+    "[standAloneSet:Arabian Nights][cardBlockName:#standAloneSet#][cardBlockSet:#standAloneSet#]",
+    "[standAloneSet:Antiquities][cardBlockName:#standAloneSet#][cardBlockSet:#standAloneSet#]",
+    "[standAloneSet:Legends][cardBlockName:#standAloneSet#][cardBlockSet:#standAloneSet#]",
+    "[standAloneSet:The Dark][cardBlockName:#standAloneSet#][cardBlockSet:#standAloneSet#]",
+    "[standAloneSet:Fallen Empires][cardBlockName:#standAloneSet#][cardBlockSet:#standAloneSet#]",
+    "[standAloneSet:Rise of the Eldrazi][cardBlockName:Rise,ROE][cardBlockSet:#standAloneSet#]",
+    "[standAloneSet:Avacyn Restored][cardBlockName:#standAloneSet#][cardBlockSet:#standAloneSet#]",
+    "[_nthEd:Fourth,Fifth,Sixth,Seventh,Eighth,Ninth,Tenth][standAloneSet:#_nthEd# Edition][cardBlockName:#standAloneSet#][cardBlockSet:#standAloneSet#]",
+    "[standAloneSet:Origins][cardBlockName:#standAloneSet#][cardBlockSet:#standAloneSet#]",
+    "[standAloneSet:Eternal Masters][cardBlockName:#standAloneSet#][cardBlockSet:Eternal]",
+    "[standAloneSet:Conspiracy][cardBlockName:#standAloneSet#][cardBlockSet:#standAloneSet#]",
+    "[standAloneSet:Modern Masters][cardBlockName:#standAloneSet#][cardBlockSet:Modern]"
+  ],
+
+  "cardSetStandaloneExcluded": [
+    # "[standAloneSet:Alpha][cardBlockName:#standAloneSet#][cardBlockSet:#standAloneSet#]",
+    # "[standAloneSet:Beta][cardBlockName:#standAloneSet#][cardBlockSet:#standAloneSet#]",
+    # "[standAloneSet:Modern Masters][cardBlockName:#standAloneSet#][cardBlockSet:#standAloneSet#]",
+    # "[standAloneSet:Modern Masters 2015,MM15][cardBlockName:#standAloneSet#][cardBlockSet:#standAloneSet#]",
+    # "[standAloneSet:Modern Masters 2017,MM17][cardBlockName:#standAloneSet#][cardBlockSet:#standAloneSet#]",
+    # "[_magicEdYear:2010,2011,2012,2013,2014,2015][standAloneSet:Magic #_magicEdYear#,Core Set][cardBlockName:#standAloneSet#][cardBlockSet:#standAloneSet#]",
+    # "[standAloneSet:Conspiracy][cardBlockName:#standAloneSet#][cardBlockSet:#standAloneSet#]",
+    # "[standAloneSet:Conspiracy#colon# Take the Crown][cardBlockName:#standAloneSet#][cardBlockSet:#standAloneSet#]"
   ],
 
   "cardBlock": [
@@ -75,6 +89,7 @@
     "[cardBlockName:Kaladesh][cardBlockSet:Aether Revolt]",
     "[cardBlockName:Amonkhet][cardBlockSet:#cardBlockName#,Hour of Devastation]"
   ],
+
   "randomCardSet": [
     "#cardSet#",
     "#cardSet#",
