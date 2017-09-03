@@ -1,17 +1,17 @@
 ---
 imgClassifieds:
-# - >
-#   [#randomCardStrategy#]
-#   #pickFourDiffCards#[_body:#headlineFourCardsForSale##priceOffer#]
-#   #pickBigHeader##svgImgClassifieds#
-# - >
-#   [#randomCardStrategy#]
-#   #pickFourSameCard#[_body:#headlineOneCardForSale##priceOffer#]
-#   #pickBigHeader##svgImgClassifieds#
-# - >
-#   [#randomCardStrategy#]
-#   #pickFourCards#[_body:#headlineAnything##priceOffer#]
-#   #pickBigHeader##svgImgClassifieds#
+- >
+  [#randomCardStrategy#]
+  #pickFourDiffCards#[_body:#headlineFourCardsForSale##priceOffer#]
+  #pickBigHeader##svgImgClassifieds#
+- >
+  [#randomCardStrategy#]
+  #pickFourSameCard#[_body:#headlineOneCardForSale##priceOffer#]
+  #pickBigHeader##svgImgClassifieds#
+- >
+  [#randomCardStrategy#]
+  #pickFourCards#[_body:#headlineAnything##priceOffer#]
+  #pickBigHeader##svgImgClassifieds#
 - >
   [_body:#headlineCardfinder##priceOffer#]
   #pickBigHeader##svgImgClassifieds#
@@ -117,8 +117,9 @@ pickFourCardsFromFinderSearchTypeOrCategory:
  - "[#pickFourCardsFromFinderSearchCreatureType#][_cardType:#_creatureType#]"
 
 pickFourCardsFromFinderSearchCardBroadCategory:
- # - "[#pickFourCardsFromFinderSearchCardType#][_cardCategory:#_cardType#]"
- # - "[#pickFourCardsFromFinderSearchCreatureType#][_cardCategory:#_creatureType#]"
+ - "[#pickFourCardsFromFinderSearchCardType#][_cardCategory:#_cardType#]"
+ - "[#pickFourCardsFromFinderSearchCreatureType#][_cardCategory:#_creatureType#]"
+ - "[#pickFourCardsFromFinderSearchCategory#][_cardCategory:#_cardCategory#]"
  - "[#pickFourCardsFromFinderSearchCustomCategory#][_cardCategory:#_cardCategory#]"
 
 pickFourCardsFromFinderSearchCreatureType: >
@@ -150,7 +151,7 @@ pickFourCardsFromFinderSearchBlock: >
   [_searchTerm:"#cardBlockSet#"][#_searchTerm.cardSearchBySet(1)#][_card3:#_cardRawName1#]
 
 pickFourCardsFromFinderSearchCategory: >
-  [#searchableCardCategory#][#cotdCardCategorySearch#]
+  [#searchableCardCategory#][#_cardCategorySearchTerm.cardSearchByText(3)#]
   [_cardCategory:#_cardCategory#]
   [_card1:#_cardRawName1#]
   [_card2:#_cardRawName2#]
