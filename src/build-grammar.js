@@ -50,9 +50,9 @@ const walk = function(dir) {
     if (stat && stat.isDirectory())
       results = results.concat(walk(file));
     else
-      results.push(file)
+      results.push(file);
   });
-  return results
+  return results;
 };
 
 module.exports = buildGrammar;

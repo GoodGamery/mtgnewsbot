@@ -30,3 +30,5 @@ searchableCardCategoryCustomQuery:
   [_cardCategory:accelerator,mana accelerator][cardCategoryClass:acceleration,mana acceleration][_customQuery:text=add text=pool text=sacrifice text|=add text=pool text!={T}]
  - >
   [_cardCategory:engine piece,combo piece][cardCategoryClass:combo pieces,engine pieces][_customQuery:t=enchantment t!=aura text=whenever t|=artifact t!=equipment text=whenever]
+ - >
+  [_cardCategory:hatebear][_cardCategoryClass:hatebears][_bearClause:cmc=>1 cmc=<4 pow=>1][_customQuery:text="more to cast" text|="can't search" text|="players can't" text|="can't cast" text|="be cast" text|="chosen name"  text|="reveals his" text|="counter target" text|="?destroy target non" #_bearClause# text!="you cast" text!="you can't" text!="nonblack"]

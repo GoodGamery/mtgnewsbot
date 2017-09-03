@@ -1,17 +1,17 @@
 ---
 imgClassifieds:
-- >
-  [#randomCardStrategy#]
-  #pickFourDiffCards#[_body:#headlineFourCardsForSale##priceOffer#]
-  #pickBigHeader##svgImgClassifieds#
-- >
-  [#randomCardStrategy#]
-  #pickFourSameCard#[_body:#headlineOneCardForSale##priceOffer#]
-  #pickBigHeader##svgImgClassifieds#
-- >
-  [#randomCardStrategy#]
-  #pickFourCards#[_body:#headlineAnything##priceOffer#]
-  #pickBigHeader##svgImgClassifieds#
+# - >
+#   [#randomCardStrategy#]
+#   #pickFourDiffCards#[_body:#headlineFourCardsForSale##priceOffer#]
+#   #pickBigHeader##svgImgClassifieds#
+# - >
+#   [#randomCardStrategy#]
+#   #pickFourSameCard#[_body:#headlineOneCardForSale##priceOffer#]
+#   #pickBigHeader##svgImgClassifieds#
+# - >
+#   [#randomCardStrategy#]
+#   #pickFourCards#[_body:#headlineAnything##priceOffer#]
+#   #pickBigHeader##svgImgClassifieds#
 - >
   [_body:#headlineCardfinder##priceOffer#]
   #pickBigHeader##svgImgClassifieds#
@@ -61,15 +61,15 @@ headlineAnything:
 - "#format.capitalize# Staples"
 
 headlineCardfinder:
-- "[#pickFourCardsFromFinderSearchBlock#]Draft leftovers from #_cardSet#"
-- "[#pickFourCardsFromFinderSearchBlock#]#_cardSet# Draft leftovers"
-- "[#pickFourCardsFromFinderSearchSet#][_count:All three,The only,Some]#_count# [_desc:good,playable,money]#_desc# cards from #_cardSet#"
-- "[#pickFourCardsFromFinderSearchCreatureType#]#_creatureType.capitalize# Tribal staples"
+# - "[#pickFourCardsFromFinderSearchBlock#]Draft leftovers from #_cardSet#"
+# - "[#pickFourCardsFromFinderSearchBlock#]#_cardSet# Draft leftovers"
+# - "[#pickFourCardsFromFinderSearchSet#][_count:All three,The only,Some]#_count# [_desc:good,playable,money]#_desc# cards from #_cardSet#"
+# - "[#pickFourCardsFromFinderSearchCreatureType#]#_creatureType.capitalize# Tribal staples"
 - "[#pickFourCardsFromFinderSearchCardBroadCategory#][_adj:classic,#cardQuality#][_desc:Three #_adj#,#_adj.capitalize#]#_desc# #_cardCategory.s#"
 - "[#pickFourCardsFromFinderSearchCardBroadCategory#]#_cardCategory.capitalize.s# collection"
-- "[#pickFourCardsFromFinderSearchCardBroadCategory#]#_cardCategory.capitalize# [_saleType:flash,two-fer,bundle,member] sale"
+- "[#pickFourCardsFromFinderSearchCardBroadCategory#]#_cardCategory.capitalize#[_saleType:flash,two-fer,bundle,member] sale"
 - "[#pickFourCardsFromFinderSearchCardBroadCategory#][_adj:classic,#cardQuality#][_desc:Three #_adj#,#_adj.capitalize#]#_desc# #_cardCategory.s#"
-- "#pickFourCardsFromFinderSearchCardBroadCategory#[_adj:classic,#cardQuality#][_desc:Three #_adj#,#_adj.capitalize#]#_desc# #_cardCategory.s#"
+- "[#pickFourCardsFromFinderSearchCardBroadCategory#][_adj:classic,#cardQuality#][_desc:Three #_adj#,#_adj.capitalize#]#_desc# #_cardCategory.s#"
 
 priceOffer:
 - ""
@@ -117,8 +117,8 @@ pickFourCardsFromFinderSearchTypeOrCategory:
  - "[#pickFourCardsFromFinderSearchCreatureType#][_cardType:#_creatureType#]"
 
 pickFourCardsFromFinderSearchCardBroadCategory:
- - "[#pickFourCardsFromFinderSearchCardType#][_cardCategory:#_cardType#]"
- - "[#pickFourCardsFromFinderSearchCreatureType#][_cardCategory:#_creatureType#]"
+ # - "[#pickFourCardsFromFinderSearchCardType#][_cardCategory:#_cardType#]"
+ # - "[#pickFourCardsFromFinderSearchCreatureType#][_cardCategory:#_creatureType#]"
  - "[#pickFourCardsFromFinderSearchCustomCategory#][_cardCategory:#_cardCategory#]"
 
 pickFourCardsFromFinderSearchCreatureType: >

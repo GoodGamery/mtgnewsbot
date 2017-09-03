@@ -129,22 +129,22 @@ async function cardSearchCustomQuery(s, params) {
       });
     }
 
-    const terms = s.trim().split(/\s+/)
+    const terms = s.trim().split(/\s+/);
     try {
       let query = terms.reduce((query, term) => {        
         let key = term.split('=')[0];
         let value = term.split('=')[1].replace(/\++/g, ' ');
 
-        if (key.endsWith('!')) {
-          key = 'not ' + key.substring(0, key.length - 1);
-        }
-
-        if (key.endsWith('|')) {
-          key = 'or ' + key.substring(0, key.length - 1);
-        }       
-
         if (query.length > 0) {
           query += ' ';
+        }
+
+        if (key.endsWith('!')) {
+          key = 'not ' + key.substring(0, key.length - 1);
+        }  else if (key.endsWith('|')) {
+          key = 'or ' + key.substring(0, key.length - 1);
+        } else if (query.length > 0) {
+          key = 'and ' + key;
         }
         return query += `${key}:${value}`;
       }, '');

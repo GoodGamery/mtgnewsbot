@@ -1,3 +1,5 @@
+'use strict';
+
 const config = require('../config');
 const HeadlineMaker = require('./headline-maker');
 const buildGrammar = require('./build-grammar');
