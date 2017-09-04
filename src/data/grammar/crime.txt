@@ -1,0 +1,9 @@
+trespassing
+jaywalking
+impersonating [_being:#creatureTypes#,#characterClass#]#_being.a#
+slow play
+disturbing the peace
+loitering
+shoplifting
+public indecency
+corporate malfeasance
