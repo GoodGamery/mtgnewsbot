@@ -42,25 +42,22 @@ class CardSearchResultField {
 }
 
 function getFamiliarName(entityName) {
-    var firstName = entityName.split(',')[0];
-    if (firstName.length < entityName.length) {
-      return firstName;
-    }
+  var firstName = entityName.split(',')[0];
+  if (firstName.length < entityName.length) {
+    return firstName;
+  }
 
-    firstName = entityName.split(' of the ')[0];
-    if (firstName.length < entityName.length) {
-      return firstName;
-    }
+  firstName = entityName.split(' of the ')[0];
+  if (firstName.length < entityName.length) {
+    return firstName;
+  }
 
-    firstName = entityName.split(' of ')[0];
-    if (firstName.length < entityName.length) {
-      return firstName;
-    }
+  firstName = entityName.split(' of ')[0];
+  if (firstName.length < entityName.length) {
+    return firstName;
+  }
 
-    return entityName.split(' the ')[0];
-  });
-
-  return familiarName;
+  return entityName.split(' the ')[0];
 }
 
 function getColorDescription(colorIdentity) {
@@ -241,7 +238,7 @@ function traceryEscape(string) {
   return string.replace(/:/g,'#colon#').replace(/,/g,"#comma#");
 }
 
-async function cardFinderSearch(query, params) {
+async function cardFinderSearch(query, params, additionalFields) {
   let resultData;
   let result;
   let queryLimit = 1;
@@ -275,7 +272,7 @@ async function cardFinderSearch(query, params) {
           logger.warn('Fetching random cards.');
 
           resultData = await randomCards(queryLimit - result.length);
-          logger.log('Retrieved ' + JSON.parse(resultData).length + ' addtional cards.');
+          logger.log('Retrieved ' + JSON.parse(resultData).length + ' additional cards.');
 
           result = result.concat(JSON.parse(resultData));
         }
@@ -320,22 +317,33 @@ async function cardFinderSearch(query, params) {
         name += ' Avatar';
       }
 
+      const prefix = TRACERY_LABEL_PREFIX;
+
       finalResult = finalResult.concat(
-        `[_cardName${i}:${name}]`,
-        `[_cardRawName${i}:${rawName}]`,
-        `[_cardSet${i}:${set}]`,
-        `[_cardRarity${i}:${rarity}]`,      
-        `[_cardType${i}:${type}]`,     
-        `[_cardSubtype${i}:${subtype}]`,
-        `[_cardFullType${i}:${fullType}]`,
-        `[_cardFullSubtype${i}:${fullSubtype}]`,
-        `[_cardSomeTypeOrSubtype${i}:${someTypeOrSubtype}]`,                              
-        `[_cardImgUrl${i}:${imgUrl}]`,
-        `[_cardColor${i}:${color}]`,
-        `[_cardDescriptive${i}:${colorDescriptive}]`,
-        `[_cardColorClass${i}:${colorClass}]`,
-        `[_cardSomeColor${i}:${someColor}]`      
+        `[${prefix}Name${i}:${name}]`,
+        `[${prefix}RawName${i}:${rawName}]`,
+        `[${prefix}FamiliName${i}:${getFamiliarName(rawName)}]`,        
+        `[${prefix}Set${i}:${set}]`,
+        `[${prefix}Rarity${i}:${rarity}]`,      
+        `[${prefix}Type${i}:${type}]`,     
+        `[${prefix}Subtype${i}:${subtype}]`,
+        `[${prefix}FullType${i}:${fullType}]`,
+        `[${prefix}FullSubtype${i}:${fullSubtype}]`,
+        `[${prefix}SomeTypeOrSubtype${i}:${someTypeOrSubtype}]`,                              
+        `[${prefix}ImgUrl${i}:${imgUrl}]`,
+        `[${prefix}Color${i}:${color}]`,
+        `[${prefix}Descriptive${i}:${colorDescriptive}]`,
+        `[${prefix}ColorClass${i}:${colorClass}]`,
+        `[${prefix}SomeColor${i}:${someColor}]`      
       );
+
+      if (additionalFields) {
+        additionalFields.forEach(field => {
+          const label = `${field.getLabel()}${i}`;
+          const value = field.parseField(card);
+          finalResult = finalResult.concat(`[${label}:${value}]`);
+        });
+      }      
     }
 
     logger.log('Constructed cardsearch result: ' + finalResult);
@@ -350,6 +358,7 @@ async function cardFinderSearch(query, params) {
 module.exports = {
   cardSearchBySet,
   cardSearchByText,
+  cardSearchTwoParter,
   cardSearchByType,
   cardSearchCustomQuery,
   randomCard:   () => cardSearchRandom(undefined, 1),

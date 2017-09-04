@@ -54,7 +54,7 @@ cotdCreatureTypeDescription:
 cotdCustomQueryDecscription:
   - >
     [_customQuery:t=legendary t=creature][#cotdCustomSearch#]
-    [_preposition:by][_cause:#causeOfDeath#][_adj:fabled,fateful,infamous,notorious,historical]This top-down #historicalFigure.hyphenate#-inspired card turns #_their# fabled death #_preposition# #_cause# on #_their# enemies—#_punct#and yours.
+    [_preposition:by][_cause:#causeOfDeath#][_adj:fabled,fateful,infamous,notorious,historical]This top-down #historicalFigure.hyphenate#-inspired card turns #_their# fabled death #_preposition# #_cause# on #_their# enemies—and yours.
 
 _badDream:
 - "[_discovery:getting lost at,being naked at,being late to,being teased at,#verbIntransitiveGerund# in,flunking out of][_schoolType:#_creatureType#,#characterClass#][_italicText:#_discovery# #_schoolType# school]#_italicize#"
