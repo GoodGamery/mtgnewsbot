@@ -188,7 +188,7 @@ async function cardFinderSearch(query, params) {
     if (parseInt(params[0]) > 0) {
       queryLimit = parseInt(params[0]);
     } else {
-      logger.warn(`Invalid query limit specified for query ${JSON.stringify(query)}: '${params[0]}' is not a valid positive integer.`);
+      logger.warn(`Invalid query limit specified for query ${JSON.stringify(query)}: '${params[0]}' is not a positive integer.`);
     }
   }
 
