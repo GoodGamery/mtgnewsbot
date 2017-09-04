@@ -107,19 +107,22 @@ function getSomeCardTypeOrSubtype(types, subtypes) {
 
 async function cardSearchTwoParter(separator, params) {
   const query = { 
-    q: `name: " ${separator} "`
+    q: `name: "${separator}"`
   };
 
   // optional string prefix to remove before parsing
   var ignorePrefix = params[1];
 
   const firstPart = new CardSearchResultField('NameFirstPart', card => {
+    logger.log('[ FIRST PART - CARD NAME ]: ' + card.name);
+
     var name = card.name.replace(new RegExp(`^${ignorePrefix}`), '').trim();
-    return name.split(` ${separator} `)[0].trim();
+    return traceryEscape(name.split(` ${separator} `)[0]).trim();
   });
 
   const secondPart = new CardSearchResultField('NameSecondPart', card => {
-    return card.name.split(` ${separator} `)[1].trim();
+    logger.log('[ SECOND PART - CARD NAME ]: ' + card.name);    
+    return traceryEscape(card.name.split(` ${separator} `)[1]).trim();
   });
 
   const additionalFields = [];
@@ -296,6 +299,7 @@ async function cardFinderSearch(query, params, additionalFields) {
       const card = result[i - 1];
 
       const rawName = traceryEscape(card.name);
+      const familiarName = traceryEscape(getFamiliarName(card.name));
 
       let name = rawName;
       const set = traceryEscape(card.set);
@@ -322,7 +326,7 @@ async function cardFinderSearch(query, params, additionalFields) {
       finalResult = finalResult.concat(
         `[${prefix}Name${i}:${name}]`,
         `[${prefix}RawName${i}:${rawName}]`,
-        `[${prefix}FamiliName${i}:${getFamiliarName(rawName)}]`,        
+        `[${prefix}FamiliarName${i}:${familiarName}]`,        
         `[${prefix}Set${i}:${set}]`,
         `[${prefix}Rarity${i}:${rarity}]`,      
         `[${prefix}Type${i}:${type}]`,     

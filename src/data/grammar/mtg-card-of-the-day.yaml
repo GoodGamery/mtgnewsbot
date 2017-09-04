@@ -2,13 +2,13 @@
 cotdImage:
   - "[_cardname:#realCard#][_cotdDescription:#cotdDescription#][_cotdImgUrl:https#colon#//goodgamery.com/api/mtg/image?card=#_cardname#][_title:#cotdTitle#]#_title#: #_cardname##cotdImageHtml#"
   - "[#cotdCreatureTypeSearch#][_cotdDescription:#cotdCreatureTypeDescription#][_title:#cotdTitle#]#_title#: #_cardname##cotdImageHtml#"
-  - "[_cardType:aura,equipment][#_cardType.cardSearchByType(5)#][_cardname:#_cardName1#][_cardset:#_cardSet1#][_cotdDescription:#cotdAuraOrEquipmentDescription#][_cotdImgUrl:#_cardImgUrl1#][_title:#cotdTitle#]#_title#: #_cardname##cotdImageHtml#"
   - "[#searchableCardCategory#][#cotdCardCategorySearch#][_cotdDescription:#cotdTextDescription#][_title:#cotdTitle#]#_title#: #_cardname##cotdImageHtml#"
   - "[_cotdDescription:#cotdCustomQueryDecscription#][_title:#cotdTitle#]#_title#: #_cardname##cotdImageHtml#"
 
 cotdCardTypeSearch: "[_cardType:#cardTypes#][#_cardType.cardSearchByType(5)#][_cardname:#_cardName1#][_cardset:#_cardSet1#][_cardtype:#_cardSomeTypeOrSubtype1#][_cardcolor:#_cardColor1#][_cotdImgUrl:#_cardImgUrl1#][_cardDesc:#_cardType#][_cardDescCategory:#_cardDesc.s#]"
 cotdCreatureTypeSearch: "[_creatureType:#creatureTypes#][#_creatureType.cardSearchByType(5)#][_cardname:#_cardName1#][_cardset:#_cardSet1#][_cardtype:#_cardSomeTypeOrSubtype1#][_cardcolor:#_cardColor1#][_cotdImgUrl:#_cardImgUrl1#][_cardDesc:#_creatureType#][_cardDescCategory:#_cardDesc.s#]"
 cotdCardCategorySearch: "[_cardText:#_cardCategorySearchTerm#][#_cardText.cardSearchByText(5)#][_cardname:#_cardName1#][_cardset:#_cardSet1#][_cardtype:#_cardSomeTypeOrSubtype1#][_cardcolor:#_cardColor1#][_cotdImgUrl:#_cardImgUrl1#][_cardDesc:#_cardCategory#][_cardDescCategory:#_cardCategoryClass#]"
+cotdLegendaryCreatureSearch: "[_customQuery:t=legendary t=creature][#cotdCustomSearch#][_legendName:#_cardFamiliarName1#]"
 cotdCustomSearch: "[#_customQuery.cardSearchCustomQuery(5)#][_cardname:#_cardName1#][_cardset:#_cardSet1#][_cardtype:#_cardSomeTypeOrSubtype1#][_cardcolor:#_cardColor1#][_cotdImgUrl:#_cardImgUrl1#][_cardDesc:#_cardCategory#][_cardDescCategory:#_cardCategoryClass#]"
 
 cotdParameterizedCardSearch:
@@ -37,8 +37,6 @@ cotdTextDescription:
   - "If you think this #cardQuality# #_cardDesc# only fits into [_deckType:#_cardColor1#,#deckLimitedArchetype#,#deck#]#_deckType# decks, you may need to reconsider your #format# strategies."
   - "[#cotdCardCategorySearch#]One of the best [_kindOfCard:#_cardRarity1#,#_cardType1#,#_cardDesc#]#_kindOfCard.lowercase.s# in [_italicText:#_cardSet1#]#_italicize# Limited right here. Turns out  [_cardlinkName:#cardAlone#]#_cotdHtmlCardLink# is still one of #_cardColor1#'s #cardSuperlative# [_otherKindOfCard:#cardCategory#,#_cardDesc#]#_otherKindOfCard.s#."
   - "[#cotdCardCategorySearch#]#_cardColorClass1.capitalize#, #cardQuality# #_cardDescCategory# will always be [_position:an unavoidable part of,a necessary evil in,at a premium in,a commodity in,#kindaGood# in]#_position# #popularFormat#, [_authority:Development,Mark Rosewater,Hasbro,the Future-Future League][_rigid:extremely rigid,militant,inconsistent,incomprehensible,ludicrous,unreasonably firm][_qualifier:unfortunately,like it or not,thanks to #_authority#'s #_rigid# stance on #_cardDescCategory#,regardless of the cost,thanks to the New World Order,because of reasons,because of the Reserved List,and always has been]#_qualifier#. Though sticking it on [_cardlinkName:#cardAlone#][_surface:#_cardtype.lowercase.a#,#cardCategory.lowercase.a#,#_cotdHtmlCardLink.a# variant]#_surface# [_result:certainly helps,certainly helps,doesn't help,really changes things,makes no sense,makes a certain kind of sense,certainly might make you resonsider it,is a clumsy approach to fixing this, is a feeble way to remedy this]#_result#."
-cotdAuraOrEquipmentDescription:
-  - "Long ago, [_adj:inventive,resourceful,desparate,clever,crafty,beleagured]#_adj.a# #creatureTypes# decided to [_adhere:stick,slap,affix]#_adhere# some #massNoun.hyphenate#-infused [_equipmentPart:#bodypart# armor,blades,spikes,bracers,pauldrons,gauntlets,rivets,ribbons,pinstripes,toothpicks,pipe cleaners,pom poms,rhinestones]#_equipmentPart# onto what appears to be [_surface:#itemNoun#,pair of #itemNoun.s#]#_surface.a#. Today, almost every #characterClass# [_worn:has donned,has worn,wields,sports]#_worn# [_theArmor:one of these,a pair]#_theArmor# to #creatureActionVerb# as they [_verb:dash,rumble,rush,roll,charge,barrel,plow]#_verb# [_intoBattle:into battle,into the fray,into combat,into the red zone,through the breach,into the kill zone,into the night,#sweepSpellMove#]#_intoBattle#."
 
 cotdCreatureTypeDescription:
  - "Only on #plane# would people see this #adjImpressive# #_creatureType# and nickname it [_nickname:The #adj.capitalizeAll.hyphenate# #characterClass.capitalizeAll#,#planeswalkerFirstName#'s #characterClass.capitalizeAll#]“#_nickname#”."
@@ -51,10 +49,35 @@ cotdCreatureTypeDescription:
  - "Finally, after months of staring at [_cardlinkName:#cardAlone#]#_cotdHtmlCardLink#, we finally know what gift awaits the [_adj:chosen,devoted,devout,faithful,pious,righteous,worthy,#adj#]#_adj# [_beings:inhabitants,denizens,disciples]#_beings# of #plane#: eternal servitude to the #_creatureType.capitalizeAll.hyphenate#-#characterClass.capitalizeAll.hyphenate# [_cardlinkName:#_cardname#]#_cotdHtmlCardLink#!"
  - "#_creatureType.capitalizeAll# [_doctors:psychologists,behaviorists,therapists]#_doctors# will tell you that [_dreams:dreams,nightmares]#_dreams# about #_badDream# are very common. Unfortunately for this #_creatureType#, it isn't a dream. How [_dreamFeeling:embarrassing,distressing,terrifying,heartbreaking,awful,unfortunate,ominous,disturbing,hilarious,disastrous,appalling,awkward]#_dreamFeeling#."
 
+cotdCardNameWordPair_And:
+  - "[separator:and][#separator.cardSearchTwoParter(1,\\w+ of)#][_pairWord1:#_cardNameFirstPart1#][_pairWord2:#_cardNameSecondPart1#]"
+cotdCardNameWordPair_Or: 
+  - "[separator:or][#separator.cardSearchTwoParter#][_pairWord1:#_cardNameFirstPart1#][_pairWord2:#_cardNameSecondPart1#]"
+cotdCardNameWordPair_OfThe:
+  - "[separator:of the][#separator.cardSearchTwoParter#][_pairWord1:#_cardNameFirstPart1#][_pairWord2:#_cardNameSecondPart1#]"
+
+cotdCardNameWordPair:
+  - "#cotdCardNameWordPair_And#"
+  - "#cotdCardNameWordPair_Or#"
+  - "#cotdCardNameWordPair_OfThe#"
+
+cotdWordPairPonderable:
+  - "[#cotdCardNameWordPair_OfThe#]which came first, the [_italicText:#_pairWord1.lowercase#]#_italicize# or the [_italicText:#_pairWord2.lowercase#]#_italicize#"
+  - "[#cotdCardNameWordPair#]whether \"#_pairWord1.lowercase#\" is more important than \"#_pairWord2.lowercase#\""
+  - "[#cotdCardNameWordPair_And#]if you can ever really separate the [_italicText:#_pairWord1.lowercase#]#_italicize# from the [_italicText:#_pairWord2.lowercase#]#_italicize#"
+  - "[#cotdCardNameWordPair#]whether #_legendSubtype.s.lowercase# are more \"#_pairWord1.lowercase#\" than \"#_pairWord2.lowercase#\""
+  - "[#cotdCardNameWordPair#]whether #creatureTypes.s# prefer \"#_pairWord1.lowercase#\" to \"#_pairWord2.lowercase#\""
+
 cotdCustomQueryDecscription:
-  - >
-    [_customQuery:t=legendary t=creature][#cotdCustomSearch#]
-    [_preposition:by][_cause:#causeOfDeath#][_adj:fabled,fateful,infamous,notorious,historical]This top-down #historicalFigure.hyphenate#-inspired card turns #_their# fabled death #_preposition# #_cause# on #_their# enemies—and yours.
+ - >
+    [#cotdLegendaryCreatureSearch#]
+    [_preposition:by][_cause:#causeOfDeath#][_deathAdj:fabled,fateful,infamous,notorious,historical]This top-down card inspired by #historicalFigure# turns #_their# #_deathAdj# death #_preposition# #_cause# on #_their# enemies—[_andYours:and yours,and your opponents,lucky you,fortunately for you]#_andYours#.
+ - >
+  [#cotdLegendaryCreatureSearch#]
+  [_legendImgUrl:#_cardImgUrl1#][_legendSubtype:#_cardSubtype1#]#_legendName# has [_agenda:a plan,an agenda,a bright idea,a mission in life,a puzzle to solve,a philosophical question to ponder,homework to do,a survey to conduct,dispute to settle,a bee in their bonnet]#_agenda#. They're going to [_solve:decide,answer the question of,find out,finally determine,ask #planeswalkerFirstName#]#_solve# #cotdWordPairPonderable#.[_cardImgUrl1:#_legendImgUrl#]
+ - >  
+  [_customQuery:t=aura t|=artifact][#cotdCustomSearch#]
+  Long ago, [_adj:inventive,resourceful,desparate,clever,crafty,beleagured]#_adj.a# #creatureTypes# decided to [_adhere:stick,slap,affix]#_adhere# some #massNoun.hyphenate#-infused [_equipmentPart:#bodypart# armor,blades,spikes,bracers,pauldrons,gauntlets,rivets,ribbons,pinstripes,toothpicks,pipe cleaners,pom poms,rhinestones]#_equipmentPart# onto what appears to be [_surface:#itemNoun#,pair of #itemNoun.s#]#_surface.a#. Today, almost every #characterClass# [_worn:has donned,has worn,wields,sports]#_worn# [_theArmor:one of these,a pair]#_theArmor# to #creatureActionVerb# as they [_verb:dash,rumble,rush,roll,charge,barrel,plow]#_verb# [_intoBattle:into battle,into the fray,into combat,into the red zone,through the breach,into the kill zone,into the night,#sweepSpellMove#]#_intoBattle#.
 
 _badDream:
 - "[_discovery:getting lost at,being naked at,being late to,being teased at,#verbIntransitiveGerund# in,flunking out of][_schoolType:#_creatureType#,#characterClass#][_italicText:#_discovery# #_schoolType# school]#_italicize#"
@@ -187,7 +210,7 @@ marginalThingToDo:
   - rotate cards through space and time to reveal their secret third sides
   - conditionally gain one life
   - swap the order of layers 3 and 5
-  - draw one card, then put it back
+  - "draw one card#comma# then put it back"
   - "reveal the [_where:top,bottom,first,last,middle]#_where# card #cardLocation#"
   - "continue [_acting:drawing cards,gaining life,playing lands,talking,shuffling,blocking,searching your library]#_acting# after losing the game"
   - reduce the casting cost of red enchantments by 1 generic mana
@@ -274,31 +297,47 @@ historicalFigure:
   - Trotsky[_their:his]
   - Galileo[_their:his]
   - Jane Austen[_their:her]
+  - Alfred Hitchcock[_their:his]
+  - Captain Cook[_their:his]
+  - Catherine the Great[_their:her]
+  - Al-Khwarizmi[_their:his]
+  - Voltaire[_their:his]
+  - Attila the Hun[_their:his]
+  - Amelia Earhart[_their:her]
+  - Marco Polo[_their:his]
+  - Shakespeare[_their:his]
+  - Sir Walter Raleigh[_their:his]
+  - Marie Curie[_their:her]
   - Truman Capote[_their:his]
-  - \"Hacksaw\" Jim Duggan[_their:his]
+  - Andre the Giant[_their:his]
   - Kermit the Frog[_their:his]
-  - Statler and Waldorf[_their:their]
-  - Max Headroom[_their:his]
   - Carl Sagan[_their:his]
   - Pagliacci[_their:his]
-  - Gorgon Shumway[_their:his]
+  - Orville Redenbacher[_their:his]
 
 causeOfDeath:
 - defenstration
 - drawing-and-quartering
-- heart disease
 - guillotine
 - asphyxiation
 - drowning
-- hypothermia
 - heatstroke
+- exhaustion
 - spontaneous combustion
 - keelhauling
-- overeating
+- crossbow bolt
+- starvation
 - "#creatureTypes#-bite"
 - "#creatureTypes# attack"
+- "[_preposition:from]heart disease"
+- "[_preposition:from]hypothermia"
+- "[_preposition:from]black plague"
 - "[_preposition:from]#massNoun.hyphenate# poisoning"
 - "[_preposition:from]an untreated #bodypart# infection"
+- "[_preposition:from]choking on #itemNoun.a#"
+- "[_preposition:in]a volcanic eruption"
+- "[_preposition:in]#placeNoun.a# collapse"
+- "[_preposition:in]a duel with #historicalFigure#"
 - "[_tragic:tragic,freak,disastrous]#_tragic# #typeOfAccident# accident"
 
 typeOfAccident:
@@ -308,6 +347,7 @@ typeOfAccident:
   - spelunking
   - hangliding
   - figure skating
+  - tickle torture
   - "#creatureTypes#-wrestling"
   - gasoline fight
   - cake decorating
@@ -322,7 +362,6 @@ typeOfAccident:
 
 _cotdHtmlCardLink: "<a name=\".\" class=\"card-link\">#_cardlinkName#</a>"
 _italicize: "<span class=\"italicized\">#_italicText#</span>"
-
 
 _cotdHtml: |
   <head>
