@@ -1,46 +1,133 @@
-  {
-    "jayaText": [
-        "\"Of course you should fight #_thing1# with #_thing2#. You should fight everything with #_thing2#.\" — Jaya Ballard, [_otherThing:#abstractNoun#,#emotion#,#itemNoun#,#massNoun#][_magic:Task,#_thing2#,#_otherThing#]#_magic.capitalizeAll# Mage"
-    ],
-    "flavorText": [
-        "\"I want [_thing:#aNoun#,#massNoun#,#pluralNoun#]#_thing# THIS #adj#!\"",
-        "\"[_wisher:He,She,They,It]#_wisher# wished for [#objectNounPronoun#]#_noun#, but not for the #noun# to #verbTransitive# #_pronoun#.\"",
-        "\"Only a madman could create such [#objectNounPronoun#]#_noun#. Only an imbecile would #verbTransitive# #_pronoun#.\"",
-        "\"There's a thin line between [_thing1:#aNoun#,#pluralNoun#]#_thing1# and [_thing2:#aNoun#,#pluralNoun#]#_thing2#. Allow me to #verbTransitive# it.\" — Liliana Vess",
-        "#[#twoObjects#]jayaText#",
-        "\"I've got the [_n1:#noun#]#_n1#\", #planeswalkerFirstName# said as the #noun# came to life. \"I've got the #_n1#!\"",
-        "\"From nothing came [_thing:#aNoun#,#massNoun#,#pluralNoun#]#_thing#.\"",
-        "\"The #covering# of [_thing:#emotion#,#abstractNoun#]#_thing# #outVerb.ed# from the [_who:#characterClass#,#creatureTypes#]#_who#, revealing the #emotion# and [_otherThing:#emotion#,#pluralNoun#]#_otherThing# beneath.\"",
-        "\"Your patheitc #pluralNoun# lie in shambles, Planeswalker. Where is your #adj# #singularNoun# now?\" — Nicol Bolas",
-        "\"If there's anything #creatureTypes.a# hates, it's [_n1:#concreteNoun#]#_n1.a#—especially #character#'s #_n1.capitalizeAll#, the symbol of #their# #noun#.\"",
-        "\"Ach! #character#, #verbIntransitive#! It's the #creatureTypes#!\" —[_firstName:#character#,#commonCharacterFirstName#]#_firstName# #planeswalkerFirstName#sdotter, last words",
-        "\"Sorry I #verbTransitivePastTense# your #concreteNoun#. Here's some #pluralNoun#.\"",
-        "\"Your [_thingBecoming:#abstractNoun# has,#massNoun# has,#abstractNoun# has,#massNoun# has,#pluralNoun# have]#_thingBecoming# become your #abstractNoun#.\" —[_coiner:#character#,#mashupCharacter#]#_coiner.capitalize#",
-        "\"It doesn't [_doVerb:#verbTransitive#]#_doVerb# #pluralNounOrMassNoun#. It #_doVerb.s# #pluralNounOrMassNoun#.\"",
-        "\"[_v1:#verbIntransitivePastTense#]He #_v1# at the #placeNoun#, at his #noun#, at his #noun#. But mostly he just #_v1#.\"",
-        "\"[_cost:One #concreteNoun#,#count.capitalize# #concreteNoun.s#]#_cost# #verbTransitivePastTense# for every #concreteNoun# #verbTransitivePastTense#[_where:, underfoot, overhead, abroad]#_where#.\" —#demonym# penalty for #crime#",
-        "\"Its diet consists of #pluralNoun#, [_place1:#placeNoun#][_thing:#pluralNoun#]#adj# #_place1# #_thing#, #adj# #_place1# #_thing#, and #_place1.s#.\"",
-        "\"‘[_who:#character#]#_who.capitalize#, #verbTransitive# those #itemOrCreatureType.s#.’ ‘#_who#, #verbTransitive# those #itemOrCreatureType.s#.’ No one cares that today is #occasion#.\"",
-        "\"[#character#][_first:#pluralNounOrMassNoun#][_second:#pluralNounOrMassNoun#][_third:#pluralNounOrMassNoun#][_fourth:#pluralNounOrMassNoun#]#they.capitalize# traded #_first# for #_second#, #_second# for #_third#, #_third# for #_fourth#. In the end, #they# traded #_fourth# for #_first#.\"",
-        "The #massNoun# didn't kill #nonPlaneswalkerCharacter#. But as #they# lay [_prep:in,on,beside,under]#_prep# it, watching #creatureTypes.s#[_second:, and #creatureTypes.s#]#_second# #verbTransitiveGerund# #them#, #they# wished it had.",
-        "\"As #adj# as #creatureTypes.a#'s [_thingy:#itemNoun#,#abstractNoun#,#bodypart#]#_thingy#.\"",
-        "\"As the #adj# #creatureTypeOrCharacterClass# #verbStrictlyIntransitivePastTense#, #adj# #pluralNounOrMassNoun# #verbStrictlyIntransitivePastTense# around it.\"",
-        "\"#storyLocation.capitalize#'s #adj# [_role:#characterClass#]#_role.s# are the #creatureTypes.s#, yet more #adj# #_role.s# were created by [_creator:#storyLocation# itself,#character# #them#self.]#_creator#\"",
-        "\"#creatureTypeOrCharacterClass.capitalize.s#! They #verbTransitivePastTense# my favorite #itemNoun#! We'll #verbTransitive# them all!\"",
-        "\"No wonder where you find them, #creatureTypes.s# love #pluralNounOrMassNoun#.\"",
-        "\"We hold sacred the powers of #abstractNoun# and #abstractNoun#. #abstractNounMassNounOrEmotion.capitalize# and #abstractNounMassNounOrEmotion# are our greatest weapons.\" —#characterFactionOrRace.capitalize# #motto#",
-        "\"#verbTransitive.capitalize# that which was never #verbTransitivePastTense#.\" —#itemNoun.capitalize# #inscription#",
-        "\"No #abstractNoun#. No #abstractNoun#. No matter what.\" —#itemNoun.capitalize# #inscription#",
-        "\"The #placeNoun# will surround you with its #abstractNoun# if you are #adj# and #adj#.\"",
-        "\"#adj.capitalize#.\" —#anyCharacter.capitalize#",
-        "\"After #timePeriod.a# in the #placeNoun#, #character# [_adverb:seriously,nervously,foolishly,wisely,soberly,dispassionately.feverishly][_verbed:pondered,considered,examined,reviewed,weighed]#_adverb# #_verbed# the advantages of #abstractMassOrPluralNounGameConceptOrEmotion# over #abstractMassOrPluralNounGameConceptOrEmotion#.\"",
-        "\"#minorStoryLocation#, [_placeType:site,home,heart]#_placeType# of the #abstractNounOrMassNoun.capitalizeAll# #placeNoun.capitalizeAll#, source of #demonym# #abstractMassOrPluralNounGameConceptOrEmotion#.\""
-    ],
-    "occasion": ["my birthday", "my anniversary", "my first day on the job", "my last day on the job", "my bar mitzvah", "my unbirthday", "my cake day",
-                 "my inauguration", "Durin's Day", "Robanukah", "Festivus", "Wednesday", "Guy Fawkes' Day", "Boxing Day", "Shrove Tuesday", "National Corndog Day",
-                 "Ice Cream for Breakfast Day", "World Kindness Day", "Take Your #creatureTypes.capitalize# to Work Day", "Leg Day", "Casual Friday", "April Fools' Day", "CAPS LOCK DAY",
-                 "International Talk Like a Pirate Day", "the Kentucky Derby", "Christmas in July"],
-    "covering": [ "veneer", "facade", "aura", "layer", "mask", "veil", "blanket", "curtain", "girdle", "thin film", "cloud", "light dusting", "thick coating", "membrane", "halo"],
-    "motto": ["motto", "creed", "axiom", "platitude", "maxim", "epithet", "truism", "dictum", "aphorism", "adage", "prayer", "teaching"],
-    "inscription": ["inscription", "engraving"]
-  }
+---
+flavorText:
+  - >
+    "I want [_thing:#aNoun#,#massNoun#,#pluralNoun#]#_thing# THIS #adj#!"
+  - >
+    "[_wisher:He,She,They,It]#_wisher# wished for [#objectNounPronoun#]#_noun#, but not for the #noun# to #verbTransitive# #_pronoun#."
+  - >
+    "Only a madman could create such [#objectNounPronoun#]#_noun#. Only an imbecile would #verbTransitive# #_pronoun#."
+  - >
+    "There's a thin line between [_thing1:#aNoun#,#pluralNoun#]#_thing1# and [_thing2:#aNoun#,#pluralNoun#]#_thing2#. Allow me to #verbTransitive# it." — Liliana Vess
+  - >
+    [#twoObjects#]#jayaText#
+  - >
+    "I've got the [_n1:#noun#]#_n1#", #planeswalkerFirstName# said as the #noun# came to life. "I've got the #_n1#!"
+  - >
+    "From nothing came [_thing:#aNoun#,#massNoun#,#pluralNoun#]#_thing#."
+  - >
+    "The #covering# of [_thing:#emotion#,#abstractNoun#]#_thing# #outVerb.ed# from the [_who:#characterClass#,#creatureTypes#]#_who#, revealing the #emotion# and [_otherThing:#emotion#,#pluralNoun#]#_otherThing# beneath."
+  - >
+    "Your patheitc #pluralNoun# lie in shambles, Planeswalker. Where is your #adj# #singularNoun# now?" — Nicol Bolas
+  - >
+    "If there's anything #creatureTypes.a# hates, it's [_n1:#concreteNoun#]#_n1.a#—especially #character#'s #_n1.capitalizeAll#, the symbol of #their# #noun#."
+  - >
+    "Ach! #character#, #verbIntransitive#! It's the #creatureTypes#!" —[_firstName:#character#,#commonCharacterFirstName#]#_firstName# #planeswalkerFirstName#sdotter, last words
+  - >
+    "Sorry I #verbTransitivePastTense# your #concreteNoun#. Here's some #pluralNoun#."
+  - >
+    "Your [_thingBecoming:#abstractNoun# has,#massNoun# has,#abstractNoun# has,#massNoun# has,#pluralNoun# have]#_thingBecoming# become your #abstractNoun#." —[_coiner:#character#,#mashupCharacter#]#_coiner.capitalize#
+  - >
+    "It doesn't [_doVerb:#verbTransitive#]#_doVerb# #pluralNounOrMassNoun#. It #_doVerb.s# #pluralNounOrMassNoun#."
+  - >
+    "[_v1:#verbIntransitivePastTense#]He #_v1# at the #placeNoun#, at his #noun#, at his #noun#. But mostly he just #_v1#."
+  - >
+    "[_cost:One #concreteNoun#,#count.capitalize# #concreteNoun.s#]#_cost# #verbTransitivePastTense# for every #concreteNoun# #verbTransitivePastTense#[_where:, underfoot, overhead, abroad]#_where#." —#demonym# penalty for #crime#
+  - >
+    "Its diet consists of #pluralNoun#, [_place1:#placeNoun#][_thing:#pluralNoun#]#adj# #_place1# #_thing#, #adj# #_place1# #_thing#, and #_place1.s#."
+  - >
+    "‘[_who:#character#]#_who.capitalize#, #verbTransitive# those #itemOrCreatureType.s#.’ ‘#_who#, #verbTransitive# those #itemOrCreatureType.s#.’ No one cares that today is #occasion#."
+  - >
+    "[#character#][_first:#pluralNounOrMassNoun#][_second:#pluralNounOrMassNoun#][_third:#pluralNounOrMassNoun#][_fourth:#pluralNounOrMassNoun#]#they.capitalize# traded #_first# for #_second#, #_second# for #_third#, #_third# for #_fourth#. In the end, #they# traded #_fourth# for #_first#."
+  - >
+    "The #massNoun# didn't kill #nonPlaneswalkerCharacter#. But as #they# lay [_prep:in,on,beside,under]#_prep# it, watching #creatureTypes.s#[_second:, and #creatureTypes.s#]#_second# #verbTransitiveGerund# #them#, #they# wished it had."
+  - >
+    "As #adj# as #creatureTypes.a#'s [_thingy:#itemNoun#,#abstractNoun#,#bodypart#]#_thingy#."
+  - >
+    "As the #adj# #creatureTypeOrCharacterClass# #verbStrictlyIntransitivePastTense#, #adj# #pluralNounOrMassNoun# #verbStrictlyIntransitivePastTense# around it."
+  - >
+    "#storyLocation.capitalize#'s #adj# [_role:#characterClass#]#_role.s# are the #creatureTypes.s#, yet more #adj# #_role.s# were created by [_creator:#storyLocation# itself,#character# #them#self.]#_creator#"
+  - >
+    "#creatureTypeOrCharacterClass.capitalize.s#! They #verbTransitivePastTense# my favorite #itemNoun#! We'll #verbTransitive# them all!"
+  - >
+    "No wonder where you find them, #creatureTypes.s# love #pluralNounOrMassNoun#."
+  - >
+    "We hold sacred the powers of #abstractNoun# and #abstractNoun#. #abstractNounMassNounOrEmotion.capitalize# and #abstractNounMassNounOrEmotion# are our greatest weapons." —#characterFactionOrRace.capitalize# #motto#
+  - >
+    "#verbTransitive.capitalize# that which was never #verbTransitivePastTense#." —#itemNoun.capitalize# #inscription#
+  - >
+    "No #abstractNoun#. No #abstractNoun#. No matter what." —#itemNoun.capitalize# #inscription#
+  - >
+    "The #placeNoun# will surround you with its #abstractNoun# if you are #adj# and #adj#."
+  - >
+    "#adj.capitalize#." —#anyCharacter.capitalize#
+  - >
+    "After #timePeriod.a# in the #placeNoun#, #character# [_adverb:seriously,nervously,foolishly,wisely,soberly,dispassionately.feverishly][_verbed:pondered,considered,examined,reviewed,weighed]#_adverb# #_verbed# the advantages of #abstractMassOrPluralNounGameConceptOrEmotion# over #abstractMassOrPluralNounGameConceptOrEmotion#."
+  - >
+    "#minorStoryLocation#, [_placeType:site,home,heart]#_placeType# of the #abstractNounOrMassNoun.capitalizeAll# #placeNoun.capitalizeAll#, source of #demonym# #abstractMassOrPluralNounGameConceptOrEmotion#."
+  
+occasion:
+- my birthday
+- my anniversary
+- my first day on the job
+- my last day on the job
+- my bar mitzvah
+- my unbirthday
+- my cake day
+- my inauguration
+- Durin's Day
+- Robanukah
+- Festivus
+- Wednesday
+- Guy Fawkes' Day
+- Boxing Day
+- Shrove Tuesday
+- National Corndog Day
+- Ice Cream for Breakfast Day
+- World Kindness Day
+- "Take Your #creatureTypes.capitalize# to Work Day"
+- Leg Day
+- Casual Friday
+- April Fools' Day
+- CAPS LOCK DAY
+- International Talk Like a Pirate Day
+- the Kentucky Derby
+- Christmas in July
+
+covering:
+- veneer
+- facade
+- aura
+- layer
+- mask
+- veil
+- blanket
+- curtain
+- girdle
+- thin film
+- cloud
+- light dusting
+- thick coating
+- membrane
+- halo
+
+motto:
+- motto
+- creed
+- axiom
+- platitude
+- maxim
+- epithet
+- truism
+- dictum
+- aphorism
+- adage
+- prayer
+- teaching
+
+inscription:
+- inscription
+- engraving
+
+jayaText:
+  - >
+    "Of course you should fight #_thing1# with #_thing2#. You should fight everything with #_thing2#." — Jaya Ballard, [_otherThing:#abstractNoun#,#emotion#,#itemNoun#,#massNoun#][_magic:Task,#_thing2#,#_otherThing#]#_magic.capitalizeAll# Mage
