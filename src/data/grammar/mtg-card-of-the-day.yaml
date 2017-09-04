@@ -49,6 +49,10 @@ cotdCreatureTypeDescription:
  - "Finally, after months of staring at [_cardlinkName:#cardAlone#]#_cotdHtmlCardLink#, we finally know what gift awaits the [_adj:chosen,devoted,devout,faithful,pious,righteous,worthy,#adj#]#_adj# [_beings:inhabitants,denizens,disciples]#_beings# of #plane#: eternal servitude to the #_creatureType.capitalizeAll.hyphenate#-#characterClass.capitalizeAll.hyphenate# [_cardlinkName:#_cardname#]#_cotdHtmlCardLink#!"
  - "#_creatureType.capitalizeAll# [_doctors:psychologists,behaviorists,therapists]#_doctors# will tell you that [_dreams:dreams,nightmares]#_dreams# about #_badDream# are very common. Unfortunately for this #_creatureType#, it isn't a dream. How [_dreamFeeling:embarrassing,distressing,terrifying,heartbreaking,awful,unfortunate,ominous,disturbing,hilarious,disastrous,appalling,awkward]#_dreamFeeling#."
 
+cotdCustomQueryDecscription:
+  - "[_preposition:by][_cause:#causeOfDeath#][_adj:fabled,fateful,infamous,notorious,historical]This top-down #historicalFigure.hyphenate#-inspired card turns #_their# fabled death #_preposition# #_cause# on #_their# enemies... and yours."
+
+
 _badDream:
 - "[_discovery:getting lost at,being naked at,being late to,being teased at,#verbIntransitiveGerund# in,flunking out of][_schoolType:#_creatureType#,#characterClass#][_italicText:#_discovery# #_schoolType# school]#_italicize#"
 - "[_fate:suffocating in a pool of,getting stuck hip-deep in,becoming permanently trapped beneath a mound of,getting lost in a cloud of,drowning in a sea of]#_fate# [_italicText:#massNoun#]#_italicize#"
@@ -233,6 +237,85 @@ cardWhichCountersSpells:
   - Complicate
   - Confound
   - Convolute
+
+historicalFigure:
+  - Cleopatra[_their:her]
+  - Napoleon[_their:his]
+  - Abraham Lincoln[_their:his]
+  - Joan of Arc[_their:her]
+  - Socrates[_their:his]
+  - Genghis Khan[_their:his]
+  - Sigmund Freud[_their:his]
+  - Beethoven[_their:his]
+  - Billy the Kid[_their:his]
+  - Alexander the Great[_their:his]
+  - Julius Caesar[_their:his]
+  - Henry VIII[_their:his]
+  - Bonny and Clyde[_their:their]
+  - Ivan the Terrible[_their:his]
+  - Simón Bolívar[_their:his]
+  - Marie Antoinette[_their:her]
+  - Mark Twain[_their:his]
+  - Da Vinci[_their:his]
+  - Oscar Wilde[_their:his]
+  - Descartes[_their:his]
+  - Florence Nightingale[_their:her]
+  - Thomas Edison[_their:his]
+  - Kublai Khan[_their:his]
+  - Samuel Coleridge[_their:his]
+  - Orville and Wilbur Wright[_their:their]
+  - Andrew Carnegie[_their:his]
+  - Tolstoy[_their:his]
+  - Queen Victoria[_their:her]
+  - Otto von Bismarck[_their:his]
+  - Trotsky[_their:his]
+  - Galileo[_their:his]
+  - Jane Austen[_their:her]
+  - Truman Capote[_their:his]
+  - \"Hacksaw\" Jim Duggan[_their:his]
+  - Kermit the Frog[_their:his]
+  - Statler and Waldorf[_their:their]
+  - Max Headroom[_their:his]
+  - Carl Sagan[_their:his]
+  - Pagliacci[_their:his]
+  - Gorgon Shumway[_their:his]
+
+causeOfDeath:
+- defenstration
+- drawing-and-quartering
+- heart disease
+- guillotine
+- asphyxiation
+- drowning
+- hypothermia
+- heatstroke
+- spontaneous combustion
+- keelhauling
+- overeating
+- "#creatureTypes#-bite"
+- "#creatureTypes# attack"
+- "[_preposition:from]#massNoun.hyphenate# poisoning"
+- "[_preposition:from]an untreated #bodypart# infection"
+- "[_tragic:tragic,freak,disastrous]#_tragic# #typeOfAccident# accident"
+
+typeOfAccident:
+  - hunting
+  - horseback
+  - sword-swallowing
+  - spelunking
+  - hangliding
+  - figure skating
+  - "#creatureTypes#-wrestling"
+  - gasoline fight
+  - cake decorating
+  - kitesurfing
+  - bullfighting
+  - bellydancing
+  - water-balloon fight
+  - laser tag
+  - competitive eating
+  - sewing
+  - "#itemNounOrMassNoun#"
 
 _cotdHtmlCardLink: "<a name=\".\" class=\"card-link\">#_cardlinkName#</a>"
 _italicize: "<span class=\"italicized\">#_italicText#</span>"

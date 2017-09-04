@@ -54,11 +54,11 @@ searchableCardCategoryCustomQuery:
   [_cardCategory:engine piece,combo piece][cardCategoryClass:combo pieces,engine pieces][_customQuery:t=enchantment t|=artifact text=whenever t!=creature text=whenever text|=upkeep text|=instead text|="are the chosen" t!=aura t!=equipment]
  - >
   [_cardCategory:hatebear][_cardCategoryClass:hatebears][_bearClause:cmc=>1 cmc=<4 pow=>1][_customQuery:text="more to cast" text|="can't search" text|="players can't" text|="can't cast" text|="be cast" text|="chosen name"  text|="reveals his" text|="counter target" text|="?destroy target non" #_bearClause# text!="you cast" text!="you can't" text!="nonblack"]
-  - >
-    [_cardCategory:mana rock][_cardCategoryClass:mana rocks][_customQuery:text={T} text=pool text!=sacrifice t=artifact t!=creature t!=land]
-  - >
-    [_cardCategory:mill card][_cardCategoryClass:milling][_customQuery:text="library into his or her graveyard"]
-  - >
-    [_cardCategory:draw seven][_cardCategoryClass:draw sevens][_customQuery:text="draw seven" text|="draws seven"]
-  - >
-    [_cardCategory:manland][_cardCategoryClass:manlands][_customQuery:t=land text="becomes a" text=creature]
+ - >
+  [_cardCategory:mana rock][_cardCategoryClass:mana rocks][_customQuery:text={T} text=pool text!=sacrifice t=artifact t!=creature t!=land]
+ - >
+  [_cardCategory:mill card][_cardCategoryClass:milling][_customQuery:text="library into his or her graveyard"]
+ - >
+  [_cardCategory:draw seven][_cardCategoryClass:draw sevens][_customQuery:text="draw seven" text|="draws seven"]
+ - >
+  [_cardCategory:manland][_cardCategoryClass:manlands][_customQuery:t=land text="becomes a" text=creature]
