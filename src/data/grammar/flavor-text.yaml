@@ -61,7 +61,7 @@ flavorText:
   - >
     "#adj.capitalize#." —#anyCharacter.capitalize#
   - >
-    "After #timePeriod.a# in the #placeNoun#, #character# [_adverb:seriously,nervously,foolishly,wisely,soberly,dispassionately.feverishly][_verbed:pondered,considered,examined,reviewed,weighed]#_adverb# #_verbed# the advantages of #abstractMassOrPluralNounGameConceptOrEmotion# over #abstractMassOrPluralNounGameConceptOrEmotion#."
+    "After #timePeriod.a# in the #placeNoun#, #character# [_adverb:seriously,nervously,foolishly,wisely,soberly,dispassionately,feverishly][_verbed:pondered,considered,examined,reviewed,weighed]#_adverb# #_verbed# the advantages of #abstractMassOrPluralNounGameConceptOrEmotion# over #abstractMassOrPluralNounGameConceptOrEmotion#."
   - >
     "#minorStoryLocation#, [_placeType:site,home,heart]#_placeType# of the #abstractNounOrMassNoun.capitalizeAll# #placeNoun.capitalizeAll#, source of #demonym# #abstractMassOrPluralNounGameConceptOrEmotion#."
   

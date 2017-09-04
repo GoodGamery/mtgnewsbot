@@ -22,11 +22,15 @@ function buildGrammar(directory) {
     .filter(flatType)
     .map(fileName => {
       const fileData = fs.readFileSync(`${fileName}`);
+
       const dataArray = fileData.toString()
-        .split(/\r\n/)
+        .split(/[\r\n]+/)
         .filter(s => s !== ``);
       let doc = {};
-      const key = fileName.slice(0, -4);
+
+      let key = fileName.match(/(.*\/)?(.+)\.txt/)[2];
+      key = key.split('-').reduce((reduced, word) => reduced += word.charAt(0).toUpperCase() + word.substring(1));
+
       doc[key] = dataArray;
       return doc;
     })
