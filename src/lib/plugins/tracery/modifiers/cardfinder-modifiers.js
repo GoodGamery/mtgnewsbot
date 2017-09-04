@@ -24,6 +24,45 @@ const colorNames = {
   URG: 'RUG'
 };
 
+const TRACERY_LABEL_PREFIX = '_card';
+
+class CardSearchResultField {
+  constructor(traceryLabel, parser) {
+    this.traceryLabel = traceryLabel;
+    this.parser = parser;
+  }
+
+  parseField(card) {
+    return this.parser(card);
+  }
+
+  getLabel() {
+    return TRACERY_LABEL_PREFIX + this.traceryLabel.charAt(0).toUpperCase() + this.traceryLabel.slice(1);
+  }
+}
+
+function getFamiliarName(entityName) {
+    var firstName = entityName.split(',')[0];
+    if (firstName.length < entityName.length) {
+      return firstName;
+    }
+
+    firstName = entityName.split(' of the ')[0];
+    if (firstName.length < entityName.length) {
+      return firstName;
+    }
+
+    firstName = entityName.split(' of ')[0];
+    if (firstName.length < entityName.length) {
+      return firstName;
+    }
+
+    return entityName.split(' the ')[0];
+  });
+
+  return familiarName;
+}
+
 function getColorDescription(colorIdentity) {
   if (!colorIdentity) {
     return 'colorless';
@@ -67,6 +106,29 @@ function getSomeColor(colorIdentity) {
 function getSomeCardTypeOrSubtype(types, subtypes) {
   const typesAndSubtypes = types.concat(subtypes ? subtypes : []);
   return randomElement(typesAndSubtypes);
+}
+
+async function cardSearchTwoParter(separator, params) {
+  const query = { 
+    q: `name: " ${separator} "`
+  };
+
+  // optional string prefix to remove before parsing
+  var ignorePrefix = params[1];
+
+  const firstPart = new CardSearchResultField('NameFirstPart', card => {
+    var name = card.name.replace(new RegExp(`^${ignorePrefix}`), '').trim();
+    return name.split(` ${separator} `)[0].trim();
+  });
+
+  const secondPart = new CardSearchResultField('NameSecondPart', card => {
+    return card.name.split(` ${separator} `)[1].trim();
+  });
+
+  const additionalFields = [];
+  additionalFields.push(firstPart, secondPart);
+
+  return cardFinderSearch(query, params, additionalFields);
 }
 
 async function randomCards(limit) {
