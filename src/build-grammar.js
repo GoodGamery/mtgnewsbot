@@ -28,7 +28,7 @@ function buildGrammar(directory) {
         .filter(s => s !== ``);
       let doc = {};
 
-      let key = fileName.match(/(.*\/)?(.+)\.txt/)[2];
+      let key = path.basename(fileName, path.extname(fileName));
       key = key.split('-').reduce((reduced, word) => reduced += word.charAt(0).toUpperCase() + word.substring(1));
 
       doc[key] = dataArray;
