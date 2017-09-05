@@ -124,7 +124,7 @@ realization:
 - 'Preview of #teaserCardSet# #normalFormat#: will the new #deckVariation# deck be
   #deckDescription#?'
 
-realize: "#pros.capitalizeAll# don't realize that #techPlural# #verbDefeat# #obstacle#"
+realize: "#pros.capitalize# don't realize that #techPlural# #verbDefeat# #obstacle#"
 
 tournamentNews:
 - 'Emergency Banning: #card.capitalize# Banned in #format#'
