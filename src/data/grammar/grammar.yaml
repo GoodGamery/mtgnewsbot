@@ -124,7 +124,7 @@ realization:
 - 'Preview of #teaserCardSet# #normalFormat#: will the new #deckVariation# deck be
   #deckDescription#?'
 
-realize: "#pros# don't realize that #techPlural# #verbDefeat# #obstacle#"
+realize: "#pros.capitalizeAll# don't realize that #techPlural# #verbDefeat# #obstacle#"
 
 tournamentNews:
 - 'Emergency Banning: #card.capitalize# Banned in #format#'
@@ -202,7 +202,7 @@ decktech:
 playguide:
 - 'CLASSIC STRATEGY: [_prefix:The Philosophy of,It''s All About the]#_prefix# [_thing:#massNoun#,#pluralNoun#,#abstractNoun#,#nouns#]#_thing.capitalizeAll#,
   by #pro.capitalize#'
-- "[_proIs:#pro# is,#pros# are]#_proIs# #verbCreating# #tech.a# to #verbDefeat# #obstacle.capitalize#"
+- "[_proIs:#pro# is,#pros# are]#_proIs.capitalize# #verbCreating# #tech.a# to #verbDefeat# #obstacle.capitalize#"
 - "#count.capitalize# #broadCardClassification.capitalizeAll# That Should Never Have
   Been [_verbed:Printed,Banned,Unbanned,Played,Ignored]#_verbed#"
 - "[_proReveals:Top Pro #revealVerb.s#,#pro# #revealVerb.s#,#pros# #revealVerb#]#_proReveals.capitalizeAll#

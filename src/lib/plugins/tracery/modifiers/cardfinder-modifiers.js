@@ -158,6 +158,14 @@ async function cardSearchRandom(undefined, params) {
   return cardFinderSearch(query, params);    
 }
 
+async function cardSearchByName(s, params) {
+  logger.log('Searching for ' + s);
+  const query = { 
+    q: `name:"${s}"`
+  };
+  return cardFinderSearch(query, params);    
+}
+
 async function cardSearchBySet(s, params) {
   const query = { 
     q: 'set:' + s
@@ -360,10 +368,11 @@ async function cardFinderSearch(query, params, additionalFields) {
 }
 
 module.exports = {
+  cardSearchByName: (name) => cardSearchByName(name, 1),
   cardSearchBySet,
   cardSearchByText,
+  cardSearchByType,  
   cardSearchTwoParter,
-  cardSearchByType,
   cardSearchCustomQuery,
   randomCard:   () => cardSearchRandom(undefined, 1),
   randomCards:  cardSearchRandom,

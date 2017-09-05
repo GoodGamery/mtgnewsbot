@@ -13,7 +13,8 @@
     "hesitate", "wonder", "snort", "chuckle", "weep", "run", "sleep", "brood", "occur", "materialize", "complain", "yawn",
     "belch", "emerge", "embroider", "scream", "dance", "collapse", "appear", "disappear", "sneeze", "arrive", "exist", "fall",
     "rise", "revolt", "smile", "smirk", "scowl", "awaken", "prevail", "descend", "retreat", "negotiate", "stare", "howl", "skulk",
-    "snicker", "groan", "cough", "listen", "leave", "condescend", "wish", "shiver", "juggle", "crackle", "drip", "explode"
+    "snicker", "groan", "cough", "listen", "leave", "condescend", "wish", "shiver", "juggle", "crackle", "drip", "explode", "drool",
+    "snore"
   ],
   "verbBothTransitive": [
     "approach","shuffle", "kill", "observe", "grow", "swallow", "transform", "forget", "remember", "study", "misunderstand",
@@ -34,7 +35,7 @@
     "hesitated", "wondered", "snorted", "chuckled", "wept", "ran", "slept", "brooded", "occurred", "materialized", "complained", "yawned",
     "belched", "emerged", "embroidered", "screamed", "danced", "collapsed", "appeared", "disappeared", "sneezed", "arrived", "existed", "fell",
     "rose", "revolted", "smiled", "smirked", "scowled", "awakened", "prevailed", "descended", "retreated", "negotiated", "stared", "howled",  "skulked",
-    "snickered", "groaned", "coughed", "listened", "left", "condescended", "wished", "shivered", "juggled", "dripped", "exploded"
+    "snickered", "groaned", "coughed", "listened", "left", "condescended", "wished", "shivered", "juggled", "dripped", "exploded", "drooled", "snored"
   ],
   "verbBothTransitivePastTense": [
     "approached","shuffled", "killed", "observed", "grew", "swallowed", "transformed", "forgot", "remembered", "studied", "misunderstood",
@@ -55,7 +56,7 @@
     "hesitating", "wondering", "snorting", "chuckling", "weeping", "running", "sleeping", "brooding", "occurring", "materializing", "complaining", "yawning",
     "belching", "emerging", "embroidering", "screaming", "dancing", "collapsing", "appearing", "disappearing", "sneezing", "arriving", "existing", "falling",
     "rising", "revolting", "smiling", "smirking", "scowling", "awakening", "prevailing", "descending", "retreating", "negotiating", "staring", "howling", "skulking",
-    "snickering", "groaning", "coughing", "listening", "leaving", "condescending", "wishing", "shivering", "juggling", "dripping", "exploding"
+    "snickering", "groaning", "coughing", "listening", "leaving", "condescending", "wishing", "shivering", "juggling", "dripping", "exploding", "drooling", "snoring"
   ],
   "verbBothTransitiveGerund": [
     "approaching","shuffling", "killing", "observing", "growing", "swallowing", "transforming", "forgetting", "remembering", "studying", "misunderstanding",
