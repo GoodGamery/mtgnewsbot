@@ -117,9 +117,9 @@ pickFourCardsFromFinderSearchTypeOrCategory:
  - "[#pickFourCardsFromFinderSearchCreatureType#][_cardType:#_creatureType#]"
 
 pickFourCardsFromFinderSearchCardBroadCategory:
- # - "[#pickFourCardsFromFinderSearchCardType#][_cardCategory:#_cardType#]"
- # - "[#pickFourCardsFromFinderSearchCreatureType#][_cardCategory:#_creatureType#]"
- # - "[#pickFourCardsFromFinderSearchCategory#][_cardCategory:#_cardCategory#]"
+ - "[#pickFourCardsFromFinderSearchCardType#][_cardCategory:#_cardType#]"
+ - "[#pickFourCardsFromFinderSearchCreatureType#][_cardCategory:#_creatureType#]"
+ - "[#pickFourCardsFromFinderSearchCategory#][_cardCategory:#_cardCategory#]"
  - "[#pickFourCardsFromFinderSearchCustomCategory#][_cardCategory:#_cardCategory#]"
 
 pickFourCardsFromFinderSearchCreatureType: >
