@@ -24,6 +24,42 @@ const colorNames = {
   URG: 'RUG'
 };
 
+const TRACERY_LABEL_PREFIX = '_card';
+
+class CardSearchResultField {
+  constructor(traceryLabel, parser) {
+    this.traceryLabel = traceryLabel;
+    this.parser = parser;
+  }
+
+  parseField(card) {
+    return this.parser(card);
+  }
+
+  getLabel() {
+    return TRACERY_LABEL_PREFIX + this.traceryLabel.charAt(0).toUpperCase() + this.traceryLabel.slice(1);
+  }
+}
+
+function getFamiliarName(entityName) {
+  var firstName = entityName.split(',')[0];
+  if (firstName.length < entityName.length) {
+    return firstName;
+  }
+
+  firstName = entityName.split(' of the ')[0];
+  if (firstName.length < entityName.length) {
+    return firstName;
+  }
+
+  firstName = entityName.split(' of ')[0];
+  if (firstName.length < entityName.length) {
+    return firstName;
+  }
+
+  return entityName.split(' the ')[0];
+}
+
 function getColorDescription(colorIdentity) {
   if (!colorIdentity) {
     return 'colorless';
@@ -69,6 +105,30 @@ function getSomeCardTypeOrSubtype(types, subtypes) {
   return randomElement(typesAndSubtypes);
 }
 
+async function cardSearchTwoParter(separator, params) {
+  const query = { 
+    q: `name:"${separator}"`
+  };
+
+  // optional string prefix to remove before parsing
+  var ignorePrefix = params[1];
+
+  const firstPart = new CardSearchResultField('NameFirstPart', card => {
+    var name = card.name.replace(new RegExp(`^${ignorePrefix}`), '').trim();
+    return traceryEscape(name.split(` ${separator} `)[0]).trim();
+  });
+
+  const secondPart = new CardSearchResultField('NameSecondPart', card => {
+    let secondPart = card.name.split(` ${separator} `)[1];
+    return traceryEscape(secondPart ? secondPart : '').trim();
+  });
+
+  const additionalFields = [];
+  additionalFields.push(firstPart, secondPart);
+
+  return cardFinderSearch(query, params, additionalFields);
+}
+
 async function randomCards(limit) {
     logger.log(`Finding ${limit} random cards`);
 
@@ -92,6 +152,13 @@ function randomStaticCards(limit) {
 async function cardSearchRandom(undefined, params) {
   const query = { 
     q: 'cmc >= 0'
+  };
+  return cardFinderSearch(query, params);    
+}
+
+async function cardSearchByName(s, params) {
+  const query = { 
+    q: `name:"${s}"`
   };
   return cardFinderSearch(query, params);    
 }
@@ -129,22 +196,22 @@ async function cardSearchCustomQuery(s, params) {
       });
     }
 
-    const terms = s.trim().split(/\s+/)
+    const terms = s.trim().split(/\s+/);
     try {
       let query = terms.reduce((query, term) => {        
         let key = term.split('=')[0];
         let value = term.split('=')[1].replace(/\++/g, ' ');
 
-        if (key.endsWith('!')) {
-          key = 'not ' + key.substring(0, key.length - 1);
-        }
-
-        if (key.endsWith('|')) {
-          key = 'or ' + key.substring(0, key.length - 1);
-        }       
-
         if (query.length > 0) {
           query += ' ';
+        }
+
+        if (key.endsWith('!')) {
+          key = 'not ' + key.substring(0, key.length - 1);
+        }  else if (key.endsWith('|')) {
+          key = 'or ' + key.substring(0, key.length - 1);
+        } else if (query.length > 0) {
+          key = 'and ' + key;
         }
         return query += `${key}:${value}`;
       }, '');
@@ -179,7 +246,7 @@ function traceryEscape(string) {
   return string.replace(/:/g,'#colon#').replace(/,/g,"#comma#");
 }
 
-async function cardFinderSearch(query, params) {
+async function cardFinderSearch(query, params, additionalFields) {
   let resultData;
   let result;
   let queryLimit = 1;
@@ -188,7 +255,7 @@ async function cardFinderSearch(query, params) {
     if (parseInt(params[0]) > 0) {
       queryLimit = parseInt(params[0]);
     } else {
-      logger.warn(`Invalid query limit specified for query ${JSON.stringify(query)}: '${params[0]}' is not a valid positive integer.`);
+      logger.warn(`Invalid query limit specified for query ${JSON.stringify(query)}: '${params[0]}' is not a positive integer.`);
     }
   }
 
@@ -213,7 +280,7 @@ async function cardFinderSearch(query, params) {
           logger.warn('Fetching random cards.');
 
           resultData = await randomCards(queryLimit - result.length);
-          logger.log('Retrieved ' + JSON.parse(resultData).length + ' addtional cards.');
+          logger.log('Retrieved ' + JSON.parse(resultData).length + ' additional cards.');
 
           result = result.concat(JSON.parse(resultData));
         }
@@ -237,6 +304,7 @@ async function cardFinderSearch(query, params) {
       const card = result[i - 1];
 
       const rawName = traceryEscape(card.name);
+      const familiarName = traceryEscape(getFamiliarName(card.name));
 
       let name = rawName;
       const set = traceryEscape(card.set);
@@ -258,22 +326,37 @@ async function cardFinderSearch(query, params) {
         name += ' Avatar';
       }
 
+      const prefix = TRACERY_LABEL_PREFIX;
+
       finalResult = finalResult.concat(
-        `[_cardName${i}:${name}]`,
-        `[_cardRawName${i}:${rawName}]`,
-        `[_cardSet${i}:${set}]`,
-        `[_cardRarity${i}:${rarity}]`,      
-        `[_cardType${i}:${type}]`,     
-        `[_cardSubtype${i}:${subtype}]`,
-        `[_cardFullType${i}:${fullType}]`,
-        `[_cardFullSubtype${i}:${fullSubtype}]`,
-        `[_cardSomeTypeOrSubtype${i}:${someTypeOrSubtype}]`,                              
-        `[_cardImgUrl${i}:${imgUrl}]`,
-        `[_cardColor${i}:${color}]`,
-        `[_cardDescriptive${i}:${colorDescriptive}]`,
-        `[_cardColorClass${i}:${colorClass}]`,
-        `[_cardSomeColor${i}:${someColor}]`      
+        `[${prefix}Name${i}:${name}]`,
+        `[${prefix}RawName${i}:${rawName}]`,
+        `[${prefix}FamiliarName${i}:${familiarName}]`,        
+        `[${prefix}Set${i}:${set}]`,
+        `[${prefix}Rarity${i}:${rarity}]`,      
+        `[${prefix}Type${i}:${type}]`,     
+        `[${prefix}Subtype${i}:${subtype}]`,
+        `[${prefix}FullType${i}:${fullType}]`,
+        `[${prefix}FullSubtype${i}:${fullSubtype}]`,
+        `[${prefix}SomeTypeOrSubtype${i}:${someTypeOrSubtype}]`,                              
+        `[${prefix}ImgUrl${i}:${imgUrl}]`,
+        `[${prefix}Color${i}:${color}]`,
+        `[${prefix}Descriptive${i}:${colorDescriptive}]`,
+        `[${prefix}ColorClass${i}:${colorClass}]`,
+        `[${prefix}SomeColor${i}:${someColor}]`      
       );
+
+      if (additionalFields) {
+        additionalFields.forEach(field => {
+          try {
+            const label = `${field.getLabel()}${i}`;
+            const value = field.parseField(card);
+            finalResult = finalResult.concat(`[${label}:${value}]`);
+          } catch (e) {
+            logger.warn(`Unable to parse additional field ${field.getLabel()}: ${e}`);
+          }
+        });
+      }      
     }
 
     logger.log('Constructed cardsearch result: ' + finalResult);
@@ -286,9 +369,11 @@ async function cardFinderSearch(query, params) {
 }
 
 module.exports = {
+  cardSearchByName: (name) => cardSearchByName(name, 1),
   cardSearchBySet,
   cardSearchByText,
-  cardSearchByType,
+  cardSearchByType,  
+  cardSearchTwoParter,
   cardSearchCustomQuery,
   randomCard:   () => cardSearchRandom(undefined, 1),
   randomCards:  cardSearchRandom,
