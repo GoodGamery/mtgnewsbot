@@ -107,7 +107,7 @@ function getSomeCardTypeOrSubtype(types, subtypes) {
 
 async function cardSearchTwoParter(separator, params) {
   const query = { 
-    q: `name: "${separator}"`
+    q: `name:"${separator}"`
   };
 
   // optional string prefix to remove before parsing
@@ -119,7 +119,8 @@ async function cardSearchTwoParter(separator, params) {
   });
 
   const secondPart = new CardSearchResultField('NameSecondPart', card => {
-    return traceryEscape(card.name.split(` ${separator} `)[1]).trim();
+    let secondPart = card.name.split(` ${separator} `)[1];
+    return traceryEscape(secondPart ? secondPart : '').trim();
   });
 
   const additionalFields = [];
@@ -347,9 +348,13 @@ async function cardFinderSearch(query, params, additionalFields) {
 
       if (additionalFields) {
         additionalFields.forEach(field => {
-          const label = `${field.getLabel()}${i}`;
-          const value = field.parseField(card);
-          finalResult = finalResult.concat(`[${label}:${value}]`);
+          try {
+            const label = `${field.getLabel()}${i}`;
+            const value = field.parseField(card);
+            finalResult = finalResult.concat(`[${label}:${value}]`);
+          } catch (e) {
+            logger.warn(`Unable to parse additional field ${field.getLabel()}: ${e}`);
+          }
         });
       }      
     }

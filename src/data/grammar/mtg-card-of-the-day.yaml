@@ -73,19 +73,19 @@ cotdWordPairPonderable:
   - "[#cotdCardNameWordPair#]whether #creatureTypes.s# prefer \"#_pairWord1.lowercase#\" to \"#_pairWord2.lowercase#\""
 
 cotdCustomQueryDecscription:
- - >
-    [#cotdLegendaryCreatureSearch#]
-    [_preposition:by][_cause:#causeOfDeath#][_deathAdj:fabled,fateful,infamous,notorious,historical]This top-down card inspired by #historicalFigure# turns #_their# #_deathAdj# death #_preposition# #_cause# on #_their# enemies—[_andYours:and yours,and your opponents,lucky you,fortunately for you]#_andYours#.
- - >
+- >
+  [#cotdLegendaryCreatureSearch#]
+  [_preposition:by][_cause:#causeOfDeath#][_deathAdj:fabled,fateful,infamous,notorious,historical]This top-down card inspired by #historicalFigure# turns #_their# #_deathAdj# death #_preposition# #_cause# on #_their# enemies—[_andYours:and yours,and your opponents,lucky you,fortunately for you]#_andYours#.
+- >
   [#cotdLegendaryCreatureSearch#]
   [_legendImgUrl:#_cardImgUrl1#][_legendSubtype:#_cardSubtype1#]#_legendName# has [_agenda:a plan,an agenda,a bright idea,a mission in life,a puzzle to solve,a philosophical question to ponder,homework to do,a survey to conduct,dispute to settle,a bee in their bonnet]#_agenda#. They're going to [_solve:decide,answer the question of,find out,finally determine,ask #planeswalkerFirstName#]#_solve# #cotdWordPairPonderable#.[_cardImgUrl1:#_legendImgUrl#]
- - >  
+- >  
   [_customQuery:t=aura t|=equipment t|=artifact][#cotdCustomSearch#]
   Long ago, [_adj:inventive,resourceful,desparate,clever,crafty,beleagured]#_adj.a# #creatureTypes# decided to [_adhere:stick,slap,affix]#_adhere# some #massNoun.hyphenate#-infused [_equipmentPart:#bodypart# armor,blades,spikes,bracers,pauldrons,gauntlets,rivets,ribbons,pinstripes,toothpicks,pipe cleaners,pom poms,rhinestones]#_equipmentPart# onto what appears to be [_surface:#itemNoun#,pair of #itemNoun.s#]#_surface.a#. Today, almost every #characterClass# [_worn:has donned,has worn,wields,sports]#_worn# [_theArmor:one of these,a pair]#_theArmor# to #creatureActionVerb# as they [_verb:dash,rumble,rush,roll,charge,barrel,plow]#_verb# [_intoBattle:into battle,into the fray,into combat,into the red zone,through the breach,into the kill zone,into the night]#_intoBattle#.
- - >
-   [#cotdLegendaryCreatureSearch#][_cardlinkName:#_cardName1#][_petOwner:#_cotdHtmlCardLink#,#character#]
-   [#cotdCreatureTypeSearch#]
-   #_petOwner#'s [_adj:loyal,faithful,trusty,obedient,frisky,adopted,beloved,pampered,favorite,well-trained,ill-tempered,housebroken]#_adj# pet #_cardSubtype1.capitalize# is a bit #adjComparative# than they are, but it's still #adj#.
+- >
+  [#cotdLegendaryCreatureSearch#][_cardlinkName:#_cardName1#][_petOwner:#_cotdHtmlCardLink#,#character#]
+  [#cotdCreatureTypeSearch#]
+  #_petOwner#'s [_adj:loyal,faithful,trusty,obedient,frisky,adopted,beloved,pampered,favorite,well-trained,ill-tempered,housebroken]#_adj# pet #_cardSubtype1.capitalize# is a bit #adjComparative# than they are, but it's still #adj#.
 _badDream:
 - "[_discovery:getting lost at,being naked at,being late to,being teased at,#verbIntransitiveGerund# in,flunking out of][_schoolType:#_creatureType#,#characterClass#][_italicText:#_discovery# #_schoolType# school]#_italicize#"
 - "[_fate:suffocating in a pool of,getting stuck hip-deep in,becoming permanently trapped beneath a mound of,getting lost in a cloud of,drowning in a sea of]#_fate# [_italicText:#massNoun#]#_italicize#"
