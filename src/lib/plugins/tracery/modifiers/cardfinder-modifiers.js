@@ -114,14 +114,11 @@ async function cardSearchTwoParter(separator, params) {
   var ignorePrefix = params[1];
 
   const firstPart = new CardSearchResultField('NameFirstPart', card => {
-    logger.log('[ FIRST PART - CARD NAME ]: ' + card.name);
-
     var name = card.name.replace(new RegExp(`^${ignorePrefix}`), '').trim();
     return traceryEscape(name.split(` ${separator} `)[0]).trim();
   });
 
   const secondPart = new CardSearchResultField('NameSecondPart', card => {
-    logger.log('[ SECOND PART - CARD NAME ]: ' + card.name);    
     return traceryEscape(card.name.split(` ${separator} `)[1]).trim();
   });
 
@@ -159,7 +156,6 @@ async function cardSearchRandom(undefined, params) {
 }
 
 async function cardSearchByName(s, params) {
-  logger.log('Searching for ' + s);
   const query = { 
     q: `name:"${s}"`
   };
