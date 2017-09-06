@@ -17,7 +17,7 @@ flavorText:
   - >
     "The #covering# of [_thing:#emotion#,#abstractNoun#]#_thing# #outVerb.ed# from the [_who:#characterClass#,#creatureTypes#]#_who#, revealing the #emotion# and [_otherThing:#emotion#,#pluralNoun#]#_otherThing# beneath."
   - >
-    "Your patheitc #pluralNoun# lie in shambles, Planeswalker. Where is your #adj# #singularNoun# now?" — Nicol Bolas
+    "Your patheitc #pluralNoun# lie in shambles, Planeswalker. Where is your #adj# #singularNoun# now?" —Nicol Bolas
   - >
     "If there's anything #creatureTypes.a# hates, it's [_n1:#concreteNoun#]#_n1.a#—especially #character#'s #_n1.capitalizeAll#, the symbol of #their# #noun#."
   - >
@@ -64,7 +64,33 @@ flavorText:
     "After #timePeriod.a# in the #placeNoun#, #character# [_adverb:seriously,nervously,foolishly,wisely,soberly,dispassionately,feverishly][_verbed:pondered,considered,examined,reviewed,weighed]#_adverb# #_verbed# the advantages of #abstractMassOrPluralNounGameConceptOrEmotion# over #abstractMassOrPluralNounGameConceptOrEmotion#."
   - >
     "#minorStoryLocation#, [_placeType:site,home,heart]#_placeType# of the #abstractNounOrMassNoun.capitalizeAll# #placeNoun.capitalizeAll#, source of #demonym# #abstractMassOrPluralNounGameConceptOrEmotion#."
-  
+  - >
+    "[_customQuery:t=elemental][#cotdCustomSearch#]The #philosophicalPursuit# is [_adj:simple,obvious,known,indisputable]#_adj#. Everything is #massNoun# for the #_cardName1#." —#commonCharacterFirstName#, #_cardName1# #follower#
+  - >
+    "I am the #abstractNoun# of the [_desc:#verbTransitiveGerund#,#adj#][_celestialBody:sun,moon,sea,wind,earth,sky,star,beyond,realm]#_desc.capitalizeAll# #_celestialBody.capitalizeAll#. I am [_pair1:#bodypart# and #bodypart#,#singularNoun# and #singularNoun#]#_pair1#, [_pair2:#bodypart# and #bodypart#,#bodypart# and #bodypartsInPairs#,#singularNoun# and #singularNoun#]#_pair2#."
+
+follower:
+- worshipper
+- acolyte
+- fanatic
+- zealot
+- supplicant
+- disciple
+- extremist
+- admirer
+- enthusiast
+- believer
+- priest
+
+philosophicalPursuit:
+- purpose of existence
+- secret to life
+- hard truth
+- meaning of the universe
+- "purpose of #abstractNoun#"
+- "destiny of #plane#"
+- "cause of all #emotion#"
+
 occasion:
 - my birthday
 - my anniversary
