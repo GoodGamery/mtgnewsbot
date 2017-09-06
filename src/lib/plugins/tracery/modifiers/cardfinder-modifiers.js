@@ -188,6 +188,9 @@ async function cardSearchCustomQuery(s, params) {
   if (s) {
     logger.log('parsing query argument: ' + s);    
 
+    logger.log('[cardSearchCustomQuery.s]: ' + s);
+
+
     // replace spaces in quotes strings with +s
     const quotedSubstrings = s.match(/".*?"/g);
     if (quotedSubstrings) {
@@ -196,7 +199,12 @@ async function cardSearchCustomQuery(s, params) {
       });
     }
 
+    logger.log('[cardSearchCustomQuery.s (post space-replace)]: ' + s);
+
     const terms = s.trim().split(/\s+/);
+
+    logger.log('[cardSearchCustomQuery.terms]: ' + terms);
+
     try {
       let query = terms.reduce((query, term) => {        
         let key = term.split('=')[0];
