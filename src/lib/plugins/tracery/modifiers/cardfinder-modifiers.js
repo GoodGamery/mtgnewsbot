@@ -107,7 +107,7 @@ function getSomeCardTypeOrSubtype(types, subtypes) {
 
 async function cardSearchTwoParter(separator, params) {
   const query = { 
-    q: `name:"${separator}"`
+    q: `name:"? ${separator} "`
   };
 
   // optional string prefix to remove before parsing
