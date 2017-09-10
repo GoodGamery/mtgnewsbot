@@ -48,7 +48,7 @@
       "anticipation", "discomfort",  "disgust", "envy", "confusion", "giddiness", "fear", "consternation", "squeamishness", "hatred",
       "panic", "glee", "rage", "insecurity", "self-consciousness", "abject terror", "cautious optimism", "boredom", "cowardice", "sorrow",
       "lust", "near-fanatical devotion", "arrogance", "pluckiness", "indifference", "unwillingness", "begrudging admiration", "fury",
-      "loneliness", "angst", "mistrust", "shame", "loyalty","memory", "duty", "regret"
+      "loneliness", "angst", "mistrust", "shame", "loyalty","memory", "duty", "regret", "respect"
   ],
   "itemNoun": [
       "weapon", "card", "wand", "spellbook", "staff", "orb", "tree", "plant", "crown", "jewel", "amulet", "egg", "banner", "boot",
@@ -57,7 +57,7 @@
       "doodad", "bone", "vuvuzela", "handlebar moustache", "horseshoe", "sweater vest", "prawn", "#gameAccessory#", "veil", "shrubbery",
       "apron", "bow tie", "glove", "fanny pack", "loincloth", "#bodypart#", "saxophone", "birdcage", "balloon", "weathervane", "backpack",
       "cactus", "spellbomb", "chair", "stepladder", "gravy boat", "memorial", "statue", "game", "relic", "ring", "appendage", "#bodypart#",
-      "clog", "shoe", "rubber ducky", "rubber chicken", "egg", "trinket"
+      "clog", "shoe", "rubber ducky", "rubber chicken", "egg", "trinket", "seedcone"
   ],
   "placeNoun": [
       "temple", "palace", "castle", "garden", "market", "dungeon", "sanctuary", "mansion", "kingdom", "colony", "vacation rental", "graveyard",
