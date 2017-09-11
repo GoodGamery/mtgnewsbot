@@ -46,6 +46,7 @@ _duelDecksCombatantsEntities:
   - "[_duelDecksCombatant2:#character#,#person#][_duelDecksCombatant1:#planeswalkerFirstName#]"
   - "[_duelDecksCombatant2:#characterRace#][_duelDecksCombatant1:#characterRace#]"
   - "[_duelDecksCombatant2:#characterFaction#][_duelDecksCombatant1:#characterFaction#]"
+  - "[_duelDecksCombatant2:#historicalFigure#][_duelDecksCombatant1:#historicalFigure#]"
 
 _duelDecksCombatantsThings:
   - "[_duelDecksCombatant2:#itemNoun.s#][_duelDecksCombatant1:#itemNoun.s#]"
@@ -58,6 +59,8 @@ _duelDecksCombatantsThings:
   - "[_duelDecksCombatant2:#abstractNounMassNounOrEmotion#][_duelDecksCombatant1:#abstractNounMassNounOrEmotion#]"
   - "[_duelDecksCombatant2:#gameConcept#][_duelDecksCombatant1:#gameConcept#]"
   - "[_duelDecksCombatant2:#_duelDecksCombatantAnything#][_duelDecksCombatant1:#_duelDecksCombatantAnything#]"
+  - "[#notablePairs#][_duelDecksCombatant2:#pairPart2#][_duelDecksCombatant1:#pairPart1#]"
+  - "[#notablePairs#][_duelDecksCombatant2:#pairPart2#][_duelDecksCombatant1:#pairPart1#]"
 
 _duelDecksCombatantAnything:
 - "#abstractNounMassNounOrEmotion#"
@@ -71,6 +74,8 @@ _duelDecksCombatantAnything:
 - "#gameConcept#"
 - "#verbGerund#"
 - "#bodypartsInPairs#"
+- "#historicalFigure#"
+- "[#notablePairs#][_half:#pairPart1#,#pairPart2#]#_half#"
 
 _duelDecksCardfinder:
   - >
