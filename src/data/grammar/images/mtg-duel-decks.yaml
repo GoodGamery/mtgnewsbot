@@ -1,5 +1,5 @@
 ---
-duelDecksLogoImage: "#_duelDecksStyleText##_duelDecksLogoHtml#"
+duelDecksLogoImage: "#_duelDecksStyleText##_duelDecksLogoStyle##_duelDecksLogoHtml#"
 
 _duelDecksImageDirectory: "./src/data/images/duel-decks"
 
@@ -28,7 +28,14 @@ _duelDecksNeutralLogo:
  - "16[_baseColor:rgb(136#comma# 152#comma# 170)]"
 
 _duelDecksStyleText:
-  - "[_combatant1:#_duelDecksCombatant1.allCaps#][_combatant2:#_duelDecksCombatant2.allCaps#][_logoIndex:#_duelDecksLogo#]#_duelDecksLogoStyle#"
+  - "#_duelDecksStyleTextAllCaps#"
+
+_duelDecksStyleTextAllCaps:
+  - "[_combatant1:#_duelDecksCombatant1.allCaps#][_combatant2:#_duelDecksCombatant2.allCaps#][_logoIndex:#_duelDecksLogo#]"
+
+_duelDecksStyleTextCapitalize:
+  - "[_combatant1:#_duelDecksCombatant1.capitalizeAll#][_combatant2:#_duelDecksCombatant2.capitalizeAll#][_logoIndex:#_duelDecksLogo#]"
+
 
 _duelDecksCombatants:
 - "#_duelDecksCombatantsEntities#"
@@ -87,6 +94,19 @@ _duelDecksCardfinder:
 
 _duelDecksFontStyle:
   - >
+    [#_duelDecksStyleTextAllCaps#]
+    font-size:84px; white-space: nowrap; font-family:"FTY SKRADJHUWN NCV 1"; font-weight: bold; padding: 0;  line-height: 0.9em;  
+  - >
+    [#_duelDecksStyleTextAllCaps#]
+    font-size:108px; white-space: nowrap; font-family:"Ravenscroft"; font-weight: bold; padding: 0;  line-height: 0.95em;  
+  - >
+    [#_duelDecksStyleTextAllCaps#]  
+    font-size:72px; white-space: nowrap; font-family:Beleren; font-weight: bold; padding: 0;  line-height: 1.1em;
+  - >
+    [#_duelDecksStyleTextAllCaps#]  
+    font-size:72px; white-space: nowrap; font-family:Beleren; font-weight: bold; padding: 0;  line-height: 1.1em;
+  - >
+    [#_duelDecksStyleTextAllCaps#]  
     font-size:72px; white-space: nowrap; font-family:Beleren; font-weight: bold; padding: 0;  line-height: 1.1em;
 
 _duelDecksLogoStyle: |
@@ -97,7 +117,7 @@ _duelDecksLogoStyle: |
       td.title-text
         << #_duelDecksFontStyle# >>
       span.combatant-one-text
-        <<  padding: 0 0 20px 20px; >>       
+        <<  padding: 0 0 40px 20px; >>       
       span.vs-text
         << font-size:56px; >>
       span.combatant-two-text

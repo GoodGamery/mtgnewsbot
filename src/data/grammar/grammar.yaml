@@ -106,10 +106,10 @@ graphicAnnouncement:
 - "#duelDecksGraphicAnnouncement#"
 
 fromTheVaultGraphicAnnouncement:
-- "Wizards Announces: From the Vault: [_vaultContents:#_fromTheVaultVaultContents#]#_vaultContents.capitalize# {htmlImg htmlImgString=`#fromTheVaultLogoImage#`}"
+- "Wizards Announces: From the Vault: [_vaultContents:#_fromTheVaultVaultContents#]#_vaultContents.capitalizeAll# {htmlImg htmlImgString=`#fromTheVaultLogoImage#`}"
 
 duelDecksGraphicAnnouncement:
-- "[#_duelDecksCombatants#]Wizards Announces: Duel Decks: #_duelDecksCombatant1.capitalize# vs. #_duelDecksCombatant2.capitalize# {htmlImg htmlImgString=`#duelDecksLogoImage#` screenWidth=`2048` screenHeight=`400`}"
+- "[#_duelDecksCombatants#]Wizards Announces: Duel Decks: #_duelDecksCombatant1.capitalizeAll# vs. #_duelDecksCombatant2.capitalizeAll# {htmlImg htmlImgString=`#duelDecksLogoImage#` screenWidth=`2048` screenHeight=`400`}"
 
 novelSetGraphicAnnouncement:
 - 'Wizards Announces: [_cardset:#novelCardSetName.capitalizeAll#]#_cardset# #mtgSetLogoSplash#'
