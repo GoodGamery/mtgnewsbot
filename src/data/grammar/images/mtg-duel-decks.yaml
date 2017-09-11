@@ -32,10 +32,10 @@ _duelDecksStyleText:
   - "[_combatant1:#_duelDecksCombatant1.capitalizeAll#][_combatant2:#_duelDecksCombatant2.capitalizeAll#][_logoIndex:#_duelDecksLogo#]#_duelDecksLogoStyle#"
 
 _duelDecksCombatants:
-- "#_duelDecksCombatantsEntities#"
-- "#_duelDecksCombatantsEntities#"
-- "#_duelDecksCombatantsThings#"
-- "#_duelDecksCombatantsThings#"
+# - "#_duelDecksCombatantsEntities#"
+# - "#_duelDecksCombatantsEntities#"
+# - "#_duelDecksCombatantsThings#"
+# - "#_duelDecksCombatantsThings#"
 - "#_duelDecksCardfinder#"
 
 _duelDecksCombatantsEntities:
@@ -55,8 +55,12 @@ _duelDecksCombatantsThings:
   - "[_duelDecksCombatant2:#abstractNounMassNounOrEmotion#][_duelDecksCombatant1:#abstractNounMassNounOrEmotion#]"
 
 _duelDecksCardfinder:
-  - "[#cotdCardNameWordPair#][_duelDecksCombatant2:#_pairWord2#][_duelDecksCombatant1:#_pairWord1#]"
-  - "[#cotdLegendaryCreatureSearch#][_duelDecksCombatant2:#_cardFamiliarName1#][#cotdLegendaryCreatureSearch#][_duelDecksCombatant1:#_cardFamiliarName1#]"
+  # - >
+  #   [#cotdCardNameWordPair#][_duelDecksCombatant2:#_pairWord2#][_duelDecksCombatant1:#_pairWord1#]"
+  # - >
+  #   [#cotdLegendaryCreatureSearch#][_duelDecksCombatant2:#_cardFamiliarName1#][#cotdLegendaryCreatureSearch#][_duelDecksCombatant1:#_cardFamiliarName1#]"
+  - >
+    [_customQuery:name!="? "][#cotdCustomSearch#][_duelDecksCombatant2:#_cardName1#][_customQuery:name!="? "][#cotdCustomSearch#][_duelDecksCombatant1:#_cardName1#]
 
 _duelDecksLogoStyle: |
   <head>
