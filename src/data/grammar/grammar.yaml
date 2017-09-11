@@ -103,6 +103,7 @@ textAnnouncement:
 graphicAnnouncement:
 - "#fromTheVaultGraphicAnnouncement#"
 - "#novelSetGraphicAnnouncement#"
+- "#duelDecksGraphicAnnouncement#"
 
 fromTheVaultGraphicAnnouncement:
 - "Wizards Announces: From the Vault: [_vaultContents:#_fromTheVaultVaultContents#]#_vaultContents.capitalize# {htmlImg htmlImgString=`#fromTheVaultLogoImage#`}"
