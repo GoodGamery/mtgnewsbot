@@ -1,15 +1,35 @@
 ---
-duelDecksLogoImage: "#_duelDecksStyleText##_duelDecksLogo#"
+duelDecksLogoImage: "#_duelDecksStyleText##_duelDecksLogoHtml#"
 
 _duelDecksImageDirectory: "./src/data/images/duel-decks"
 
-_duelDecksLogoIndex:
- - "1[_baseColor:rgb(70#comma# 55#comma# 48)]"
- - "2[_baseColor:rgb(70#comma# 55#comma# 48)]"
+_duelDecksLogo:
+ - "1[_baseColor:rgb(197#comma# 206#comma# 212)]"
+ - "2[_baseColor:rgb(107#comma# 99#comma# 148)]"
+ - "3[_baseColor:rgb(142#comma# 165#comma# 156)]"
+ - "4[_baseColor:rgb(166#comma# 152#comma# 143)]"
+ - "5[_baseColor:rgb(109#comma# 161#comma# 166)]"
+ - "6[_baseColor:rgb(100#comma# 141#comma# 95)]"
+ - "7[_baseColor:rgb(144#comma# 76#comma# 79)]"
+ - "8[_baseColor:rgb(92#comma# 138#comma# 118)]"
+ - "9[_baseColor:rgb(120#comma# 135#comma# 90)]"
+ - "10[_baseColor:rgb(118#comma# 117#comma# 115)]"
+ - "11[_baseColor:rgb(132#comma# 93#comma# 114)]"
+ - "12[_baseColor:rgb(93#comma# 123#comma# 133)]" 
+ - "13[_baseColor:rgb(106#comma# 137#comma# 110)]"
+ - "14[_baseColor:rgb(160#comma# 155#comma# 101)]"
+ - "15[_baseColor:rgb(123#comma# 129#comma# 174)]" 
+ - "16[_baseColor:rgb(136#comma# 152#comma# 170)]"
+
+_duelDecksNeutralLogo:
+ - "1[_baseColor:rgb(197#comma# 206#comma# 212)]"
+ - "4[_baseColor:rgb(166#comma# 152#comma# 143)]"
+ - "10[_baseColor:rgb(118#comma# 117#comma# 115)]"
+ - "16[_baseColor:rgb(136#comma# 152#comma# 170)]"
 
 _duelDecksStyleText:
-  - "[_combatant1:#_duelDecksCombatant1.allCaps#][_combatant2:#_duelDecksCombatant2.allCaps#]#_duelDecksLogoStyle#"
-  - "[_combatant1:#_duelDecksCombatant1.capitalizeAll#][_combatant2:#_duelDecksCombatant2.capitalizeAll#]#_duelDecksLogoStyle#"
+  - "[_combatant1:#_duelDecksCombatant1.allCaps#][_combatant2:#_duelDecksCombatant2.allCaps#][_logoIndex:#_duelDecksLogo#]#_duelDecksLogoStyle#"
+  - "[_combatant1:#_duelDecksCombatant1.capitalizeAll#][_combatant2:#_duelDecksCombatant2.capitalizeAll#][_logoIndex:#_duelDecksLogo#]#_duelDecksLogoStyle#"
 
 _duelDecksCombatants:
   - "[_duelDecksCombatant2:#characterClass.s#][_duelDecksCombatant1:#characterClass.s#]"
@@ -19,8 +39,11 @@ _duelDecksCombatants:
   - "[_duelDecksCombatant2:#placeNoun.s#][_duelDecksCombatant1:#placeNoun.s#]"  
   - "[_duelDecksCombatant2:#abstractNoun#][_duelDecksCombatant1:#abstractNoun#]"
   - "[_duelDecksCombatant2:#emotion#][_duelDecksCombatant1:#emotion#]"
+  - "[_duelDecksCombatant2:#verbGerund#][_duelDecksCombatant1:#verbGerund#]"
+  - "[_duelDecksCombatant2:#adj#][_duelDecksCombatant1:#adj#]"
   - "[_duelDecksCombatant2:#abstractNounMassNounOrEmotion#][_duelDecksCombatant1:#abstractNounMassNounOrEmotion#]"
   - "[_personality:#character#][_duelDecksCombatant2:#alternativePersonality#,#character#][_duelDecksCombatant1:#_personality#]"
+
 
 _duelDecksLogoStyle: |
   <head>
@@ -65,6 +88,9 @@ _duelDecksLogoColorDarkRgb:
  - "rgb(47,79,79)" 
  - "rgb(0,0,128)"
 
+_duelDecksDarkNeutral:
+ - "rgb(40,43,40)"
+
 _duelDecksLogoColorVeryLight:
 - AliceBlue
 - Azure
@@ -84,36 +110,36 @@ _duelDecksLogoStyleEmbellished:
         << background: -webkit-linear-gradient(#_logoColor1#, #_logoColor1# 50%, #_logoColor2# 100%); -webkit-background-clip: text; -webkit-text-fill-color: transparent; >>
 
   - |
-      [_logoColorTop1:#_duelDecksLogoColorMediumOrDark#][_logoColorTop2:#_duelDecksLogoColorMediumOrDark#]
+      [_logoIndex:#_duelDecksNeutralLogo#][_logoColorTop1:#_duelDecksLogoColorMediumOrDark#][_logoColorTop2:#_duelDecksLogoColorMediumOrDark#]
       [_logoColorBottom:AliceBlue]      
       span.combatant-one-text-embellished
-        << background: -webkit-linear-gradient(#_logoColorTop1#, #_logoColorTop1# 30%, #_logoColorBottom# 100%); -webkit-background-clip: text; -webkit-text-fill-color: transparent; text-align:right; >>
+        << background: -webkit-linear-gradient(#_logoColorTop1#, #_logoColorTop1# 30%, #_logoColorBottom# 110%); -webkit-background-clip: text; -webkit-text-fill-color: transparent; text-align:right; -webkit-text-stroke-width:1px; -webkit-text-stroke-color: #_baseColor#;>>
       span.combatant-two-text-embellished      
-        << background: -webkit-linear-gradient(#_logoColorTop2#, #_logoColorTop2# 30%, #_logoColorBottom# 100%); -webkit-background-clip: text; -webkit-text-fill-color: transparent; text-align:left;>>
+        << background: -webkit-linear-gradient(#_logoColorTop2#, #_logoColorTop2# 30%, #_logoColorBottom# 110%); -webkit-background-clip: text; -webkit-text-fill-color: transparent; text-align:left; -webkit-text-stroke-width:1px; -webkit-text-stroke-color: #_baseColor#;>>
       span.vs-text-embellished
-        [_vsTextColor1:#_baseColor#]<< background: -webkit-linear-gradient(#_vsTextColor1#, #_vsTextColor1# 50%, #_logoColorBottom# 100%); -webkit-background-clip: text; -webkit-text-fill-color: transparent; >>
+        [_vsTextColor1:#_baseColor#]<< background: -webkit-linear-gradient(#_vsTextColor1#, #_vsTextColor1# 50%, #_logoColorBottom# 100%); -webkit-background-clip: text; -webkit-text-fill-color: transparent; -webkit-filter: brightness(75%); >>
 
   - |
       [_logoColor1:#styleColorMedium#][_logoColor2:#styleColorMedium#,#styleColorDark#]
       td.title-text-embellished
-        << background: -webkit-linear-gradient(#_logoColor1#, #_logoColor1# 50%, #_logoColor2# 100%); -webkit-background-clip: text; -webkit-text-fill-color: transparent;  -webkit-text-stroke-width:1px; -webkit-text-stroke-color: rgb(10,20,20);">>
+        << background: -webkit-linear-gradient(#_logoColor1#, #_logoColor1# 50%, #_logoColor2# 110%); -webkit-background-clip: text; -webkit-text-fill-color: transparent;  -webkit-text-stroke-width:1px; -webkit-text-stroke-color: rgb(10,20,20);">>
 
   - |
-      [_logoColor1:#_duelDecksLogoColorVeryLight#][_logoColor2:#_duelDecksLogoColorVeryLight#][_logoColorOutline:#_duelDecksLogoColorDarkRgb#]
+      [_logoColor1:#_duelDecksLogoColorVeryLight#][_logoColor2:#_duelDecksLogoColorVeryLight#][_logoColorOutline:#_baseColor#]
       td.title-text-embellished
         << >>
       span.combatant-one-text-embellished
-        << background: -webkit-linear-gradient(#_logoColorOutline#, #_logoColor1# 30%, #_logoColor1# 100%); -webkit-background-clip: text; -webkit-text-fill-color: transparent; -webkit-text-stroke-width:1px; -webkit-text-stroke-color: #_logoColorOutline#; >>
+        << background: -webkit-linear-gradient(#_logoColorOutline#, #_logoColor1# 30%, #_logoColor1# 110%); -webkit-background-clip: text; -webkit-text-fill-color: transparent; -webkit-text-stroke-width:1px; -webkit-text-stroke-color: #_logoColorOutline#; >>
       span.combatant-two-text-embellished      
-        << background: -webkit-linear-gradient(#_logoColorOutline#, #_logoColor2# 30%, #_logoColor2# 100%); -webkit-background-clip: text; -webkit-text-fill-color: transparent;  -webkit-text-stroke-width:1px; -webkit-text-stroke-color: #_logoColorOutline#;>>
+        << background: -webkit-linear-gradient(#_logoColorOutline#, #_logoColor2# 30%, #_logoColor2# 110%); -webkit-background-clip: text; -webkit-text-fill-color: transparent;  -webkit-text-stroke-width:1px; -webkit-text-stroke-color: #_logoColorOutline#;>>
       span.vs-text-embellished
-        [_vsTextColor1:#_logoColorOutline#]<< background: -webkit-linear-gradient(#_vsTextColor1#, #_vsTextColor1# 45%, snow 100%); -webkit-background-clip: text; -webkit-text-fill-color: transparent; >>
+        [_vsTextColor1:#_baseColor#]<< background: -webkit-linear-gradient(#_vsTextColor1#, #_vsTextColor1# 45%, snow 100%); -webkit-background-clip: text; -webkit-text-fill-color: transparent; -webkit-filter: brightness(75%);>>
 
 
-_duelDecksLogo: |
+_duelDecksLogoHtml: |
   <table cellspacing="0" cellpadding="0" min-width="2000">
     <tr>
-      <td class="logo-row" colspan="3" cellspacing="0"><img src="#_duelDecksImageDirectory#/mtg-duel-decks-logo-#_duelDecksLogoIndex#.png"></td>
+      <td class="logo-row" colspan="3" cellspacing="0"><img src="#_duelDecksImageDirectory#/mtg-duel-decks-logo-#_logoIndex#.png"></td>
     </tr>
     <tr>    
       <td class="title-text title-text-embellished"><span class="combatant-one-text combatant-one-text-embellished">#_combatant1#</span></td><td style="vertical-align:middle;" class="title-text title-text-embellished"><span class="vs-text vs-text-embellished">&nbsp;vs.&nbsp;</span></td><td class="title-text title-text-embellished"><span class="combatant-two-text combatant-two-text-embellished">#_combatant2#</span></td>
