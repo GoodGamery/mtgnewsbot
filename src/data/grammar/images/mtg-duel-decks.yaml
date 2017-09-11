@@ -95,19 +95,19 @@ _duelDecksCardfinder:
 _duelDecksFontStyle:
   - >
     [#_duelDecksStyleTextAllCaps#]
-    font-size:84px; white-space: nowrap; font-family:"FTY SKRADJHUWN NCV 1"; font-weight: bold; padding: 0;  line-height: 0.9em;  
+    font-size:84px; white-space: nowrap; font-family:"FTY SKRADJHUWN NCV 1"; font-weight: bold; padding: 0;  line-height: 1.1em;  
   - >
     [#_duelDecksStyleTextAllCaps#]
-    font-size:108px; white-space: nowrap; font-family:"Ravenscroft"; font-weight: bold; padding: 0;  line-height: 0.95em;  
+    font-size:108px; white-space: nowrap; font-family:"Ravenscroft"; font-weight: bold; padding: 0;  line-height: 0.9em;  
   - >
     [#_duelDecksStyleTextAllCaps#]  
-    font-size:72px; white-space: nowrap; font-family:Beleren; font-weight: bold; padding: 0;  line-height: 1.1em;
+    font-size:72px; white-space: nowrap; font-family:Beleren; font-weight: bold; padding: 0;  line-height: 1em;
   - >
     [#_duelDecksStyleTextAllCaps#]  
-    font-size:72px; white-space: nowrap; font-family:Beleren; font-weight: bold; padding: 0;  line-height: 1.1em;
+    font-size:72px; white-space: nowrap; font-family:Beleren; font-weight: bold; padding: 0;  line-height: 1em;
   - >
     [#_duelDecksStyleTextAllCaps#]  
-    font-size:72px; white-space: nowrap; font-family:Beleren; font-weight: bold; padding: 0;  line-height: 1.1em;
+    font-size:72px; white-space: nowrap; font-family:Beleren; font-weight: bold; padding: 0;  line-height: 1em;
 
 _duelDecksLogoStyle: |
   <head>
