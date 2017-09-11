@@ -37,6 +37,16 @@
       "John Friggin' Rizzo#malePronouns#",
       "#jokePersonality#"
   ],
+
+  # requires "_personality" to be defined
+  "alternativePersonality": [
+    "Evil #_personality#",
+    "Baby #_personality#",
+    "Bizarro #_personality#",
+    "Compleat #_personality#",
+    "#_personality#, Jr."
+  ],
+
   "jokePersonality": [
       "Balki Bartokomous#malePronouns#",
       "Young Victor Frankenstein#malePronouns#",
