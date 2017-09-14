@@ -12,4 +12,4 @@ Blue-Red
 Green-Black
 Four-Color
 Five-Color
-#colorComboNickname#"
+#colorComboNickname#

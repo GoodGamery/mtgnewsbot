@@ -1,4 +1,4 @@
-#basicColors.capitalize#"
+#basicColors.capitalize#
 Mono-Black
 Mono-White
 Mono-Brown
@@ -14,4 +14,4 @@ Green-White
 Red-Green
 Four-Color
 Five-Color
-#colorComboNickname#"
+#colorComboNickname#

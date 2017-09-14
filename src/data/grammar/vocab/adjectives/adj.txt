@@ -58,7 +58,6 @@ ludicrous
 unspeakable
 mortal
 lukewarm
-madcap
 marvelous
 menacing
 mental
@@ -159,3 +158,4 @@ jaunty
 irresponsible
 wasteful
 iconic
+zany

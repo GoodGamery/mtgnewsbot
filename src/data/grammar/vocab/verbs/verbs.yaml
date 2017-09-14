@@ -19,7 +19,7 @@
   ],
   "verbBothTransitive": [
     "approach","shuffle", "kill", "observe", "grow", "swallow", "transform", "forget", "remember", "study", "misunderstand",
-    "sacrifice", "collect", "celebrate", "exaggerate", "pantomime", "advertise", "deep-fry", "decorate", "fight", "burn", "gargle", "flee",
+    "sacrifice", "collect", "celebrate", "exaggerate", "pantomime", "advertize", "deep-fry", "decorate", "fight", "burn", "gargle", "flee",
     "worship", "sniff"
   ],
   "verbPastTense": [ "#verbStrictlyTransitivePastTense#", "#verbStrictlyIntransitivePastTense#", "#verbBothTransitivePastTense#" ],
@@ -42,7 +42,7 @@
   ],
   "verbBothTransitivePastTense": [
     "approached","shuffled", "killed", "observed", "grew", "swallowed", "transformed", "forgot", "remembered", "studied", "misunderstood",
-    "sacrificed", "collected", "celebrated", "exaggerated", "pantomimed", "advertised", "deep-fried", "decorated", "fought", "burned", "gargled", "fled",
+    "sacrificed", "collected", "celebrated", "exaggerated", "pantomimed", "advertized", "deep-fried", "decorated", "fought", "burned", "gargled", "fled",
   	"worshipped", "sniffed"
   ],
   "verbGerund": [ "#verbStrictlyTransitiveGerund#", "#verbStrictlyIntransitiveGerund#", "#verbBothTransitiveGerund#" ],
@@ -65,7 +65,7 @@
   ],
   "verbBothTransitiveGerund": [
     "approaching","shuffling", "killing", "observing", "growing", "swallowing", "transforming", "forgetting", "remembering", "studying", "misunderstanding",
-    "sacrificing", "collecting", "celebrating", "exaggerating", "pantomiming", "advertising", "deep-frying", "decorating", "fighting", "burning", "gargling",
+    "sacrificing", "collecting", "celebrating", "exaggerating", "pantomiming", "advertizing", "deep-frying", "decorating", "fighting", "burning", "gargling",
     "sniffing", "fleeing", "worshipping"
   ],
   "verbDefeat": [
