@@ -1,0 +1,100 @@
+temple
+palace
+castle
+garden
+market
+dungeon
+sanctuary
+mansion
+kingdom
+colony
+vacation rental
+graveyard
+oasis
+metropolis
+village
+hamlet
+carnival
+closet
+guildhouse
+amphitheater
+lighthouse
+hovel
+guildgate
+cathedral
+church
+catacomb
+coliseum
+wharf
+tower
+mineshaft
+necropolis
+citadel
+encampment
+valley
+planet
+hedge maze
+ball pit
+orchard
+watchtower
+sanitarium
+ballroom
+schoolyard
+university
+harbor
+library
+plane
+factory
+greenhouse
+basement
+monastery
+academy
+farmstead
+petting zoo
+ghost town
+secret lair
+laboratory
+portal
+hair salon
+shipwreck
+pasture
+circus tent
+fortress
+junkyard
+pillow fort
+mausoleum
+sepulcher
+kitchenette
+churchyard
+mortuary
+abattoir
+art studio
+pet store
+armory
+gazebo
+playground
+animal shelter
+gazebo
+taco stand
+pyramid
+igloo
+dude ranch
+cabin
+gas station
+tattoo parlor
+tavern
+vineyard
+drawbridge
+pantry
+stairwell
+petting zoo
+supermarket
+bayou
+ziggurat
+clocktower
+lair
+void
+quarry
+farmer's market
+hidey-hole
+pool

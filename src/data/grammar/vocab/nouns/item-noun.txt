@@ -1,0 +1,78 @@
+weapon
+card
+wand
+spellbook
+staff
+orb
+tree
+plant
+crown
+jewel
+amulet
+egg
+banner
+boot
+aegis
+hedron
+altar
+portal
+door
+cluestone
+flask
+bident
+scepter
+idol
+mask
+sword
+longbow
+grimoire
+chalice
+blade
+gift
+signet
+monolith
+gemstone
+clue
+scroll
+lantern
+collar
+talisman
+doodad
+bone
+vuvuzela
+handlebar moustache
+horseshoe
+sweater vest
+prawn
+veil
+shrubbery
+apron
+bow tie
+glove
+fanny pack
+loincloth
+saxophone
+birdcage
+balloon
+weathervane
+backpack
+cactus
+spellbomb
+chair
+stepladder
+gravy boat
+memorial
+statue
+game
+relic
+ring
+appendage
+clog
+shoe
+rubber ducky
+rubber chicken
+egg
+trinket
+seedcone
+#bodypart#
+#gameAccessory#
