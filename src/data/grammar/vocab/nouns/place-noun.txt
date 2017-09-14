@@ -98,3 +98,6 @@ quarry
 farmer's market
 hidey-hole
 pool
+vault
+volcano
+cave

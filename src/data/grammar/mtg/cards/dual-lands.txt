@@ -1,0 +1,55 @@
+Tundra
+Underground Sea
+Badlands
+Taiga
+Savannah
+Scrubland
+Volcanic Island
+Bayou
+Plateau
+Tropical Island
+Flooded Strand
+Polluted Delta
+Bloodstained Mire
+Wooded Foothills
+Windswept Heath
+Marsh Flats
+Scalding Tarn
+Verdant Catacombs
+Arid Mesa
+Misty Rainforest
+Azorius Chancery
+Dimir Aqueduct
+Rakdos Carnarium
+Gruul Turf
+Selesnya Sanctuary
+Orzhov Basilica
+Izzet Boilerworks
+Golgari Rot Farm
+Boros Garrison
+Simic Growth Chamber
+Hallowed Fountain
+Watery Grave
+Blood Crypt
+Stomping Ground
+Temple Garden
+Godless Shrine
+Steam Vents
+Overgrown Tomb
+Sacred Foundry
+Breeding Pool
+Mystic Gate
+Sunken Ruins
+Graven Cairns
+Fire-lit Thicket
+Wooded Bastion
+Fetid Heath
+Cascade Bluffs
+Twilight Mire
+Rugged Prairie
+Flooded Grove
+Graven Cairns
+Grove of the Burnwillows
+Horizon Canopy
+Nimbus Maze
+River of Tears
