@@ -1,0 +1,20 @@
+desert
+moon
+sun
+horizon
+forest
+woods
+sea
+ocean
+mountains
+plains
+swamp
+bayou
+sky
+ground
+earth
+wilderness
+wilds
+city
+supermarket
+flea market

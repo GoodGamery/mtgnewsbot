@@ -5,7 +5,7 @@ flavorText:
   - >
     "[_wisher:He,She,They,It]#_wisher# wished for [#objectNounPronoun#]#_noun#, but not for the #noun# to #verbTransitive# #_pronoun#."
   - >
-    "Only a madman could create such [#objectNounPronoun#]#_noun#. Only an imbecile would #verbTransitive# #_pronoun#."
+    "Only #characterClass.a# could create such [#objectNounPronoun#]#_noun#. Only an imbecile would #verbTransitive# #_pronoun#."
   - >
     "There's a thin line between [_thing1:#aNoun#,#pluralNoun#]#_thing1# and [_thing2:#aNoun#,#pluralNoun#]#_thing2#. Allow me to #verbTransitive# it." — Liliana Vess
   - >
@@ -39,13 +39,13 @@ flavorText:
   - >
     "[#character#][_first:#pluralNounOrMassNoun#][_second:#pluralNounOrMassNoun#][_third:#pluralNounOrMassNoun#][_fourth:#pluralNounOrMassNoun#]#they.capitalize# traded #_first# for #_second#, #_second# for #_third#, #_third# for #_fourth#. In the end, #they# traded #_fourth# for #_first#."
   - >
-    "The #massNoun# didn't kill #nonPlaneswalkerCharacter#. But as #they# lay [_prep:in,on,beside,under]#_prep# it, watching #creatureTypes.s#[_second:, and #creatureTypes.s#]#_second# #verbTransitiveGerund# #them#, #they# wished it had."
+    "The #massNoun# didn't [_verb:kill,#verbTransitive#]#_verb# #nonPlaneswalkerCharacter#. But as #they# lay [_prep:in,on,beside,under]#_prep# it, watching #creatureTypes.s#[_second:, and #creatureTypes.s#]#_second# #verbTransitiveGerund# #them#, #they# wished it had."
   - >
     "As #adj# as #creatureTypes.a#'s [_thingy:#itemNoun#,#abstractNoun#,#bodypart#]#_thingy#."
   - >
     "As the #adj# #creatureTypeOrCharacterClass# #verbStrictlyIntransitivePastTense#, #adj# #pluralNounOrMassNoun# #verbStrictlyIntransitivePastTense# around it."
   - >
-    "#storyLocation.capitalize#'s #adj# [_role:#characterClass#]#_role.s# are the #creatureTypes.s#, yet more #adj# #_role.s# were created by [_creator:#storyLocation# itself,#character# #them#self.]#_creator#"
+    "#storyLocation.capitalize#'s #adj# [_role:#characterClass#]#_role.s# are the #creatureTypes.s#, yet #adjComparative# #_role.s# were created by [_creator:#storyLocation# itself,#character# #them#self.]#_creator#"
   - >
     "#creatureTypeOrCharacterClass.capitalize.s#! They #verbTransitivePastTense# my favorite #itemNoun#! We'll #verbTransitive# them all!"
   - >
@@ -63,70 +63,63 @@ flavorText:
   - >
     "After #timePeriod.a# in the #placeNoun#, #character# [_adverb:seriously,nervously,foolishly,wisely,soberly,dispassionately,feverishly][_verbed:pondered,considered,examined,reviewed,weighed]#_adverb# #_verbed# the advantages of #abstractMassOrPluralNounGameConceptOrEmotion# over #abstractMassOrPluralNounGameConceptOrEmotion#."
   - >
+    [_customQuery:t=elemental t!=incarnation name!="? "][#cotdCustomSearch#][cardName:#_cardName1#]"The #philosophicalPursuit# is [_adj:simple,obvious,known,indisputable]#_adj#. Everything is #massNoun# for the #cardName#." —#commonCharacterFirstName#, #_cardName1# #follower#
+  - >
     "#minorStoryLocation#, [_placeType:site,home,heart]#_placeType# of the #abstractNounOrMassNoun.capitalizeAll# #placeNoun.capitalizeAll#, source of #demonym# #abstractMassOrPluralNounGameConceptOrEmotion#."
-  
-occasion:
-- my birthday
-- my anniversary
-- my first day on the job
-- my last day on the job
-- my bar mitzvah
-- my unbirthday
-- my cake day
-- my inauguration
-- Durin's Day
-- Robanukah
-- Festivus
-- Wednesday
-- Guy Fawkes' Day
-- Boxing Day
-- Shrove Tuesday
-- National Corndog Day
-- Ice Cream for Breakfast Day
-- World Kindness Day
-- "Take Your #creatureTypes.capitalize# to Work Day"
-- Leg Day
-- Casual Friday
-- April Fools' Day
-- CAPS LOCK DAY
-- International Talk Like a Pirate Day
-- the Kentucky Derby
-- Christmas in July
+  - >
+    "The #creatureTypes# #verbIntransitivePastTense# #relativePreposition# me, and in that moment [_myName:#commonCharacterFirstName#]#_myName# the #adj.capitalizeAll# died, and I was born." —#_myName# the #adj.capitalizeAll#
+  - >
+    "[_sound:#nounActionSound#,#soundEmanation#]#_sound.capitalizeAll# of [_noisyThing:#creatureTypes#,#characterClass#,#concreteNoun#]#_noisyThing# and #soundEmanation# of #creatureTypes# [_getQuiet:fall mute,fall silent,are struck dumb]#_getQuiet# when #creatureTypes.s# [_rally:sound the Call to,sing the Hymn to,recite the Prayer to,quote the Book of,hum the tune of,sing the praises of,sing the Song of][_theRevered:#character#,#abstractMassOrPluralNounGameConceptOrEmotion#]#_rally# #_theRevered.capitalizeAll#."
+  - >
+    "[_hypothetically:Maybe,Perhaps,I bet,I doubt,Let's hope,I wonder if]#_hypothetically# we can #verbInceptiveTransitive# them with #pluralNounOrMassNoun#," thought #character#, #verbTransitiveGerund# #character#.
+  - >
+    "[_firstVerb:#verbInceptiveIntransitive#][_verb:#_firstVerb#][_secondVerb:#verbInceptiveTransitive#][#placeOrPeopleVerbPluralAgreement#][_object:#_placeOrPeople#]Some days you #_firstVerb# to #_secondVerb# the #_object#. Other days the #_object# #_verbs# to #_secondVerb# you."
+  - >
+   "When the #placeNoun.s# are #adj# and the [_thing:#itemNoun#,#characterClass#,#creatureTypes#]#_thing.s# are #verbTransitivePastTense#, [#somePronoun#]#they# will take #their# rightful place as #characterClass# of the #placeNounCanonical#." —#npcCharacter#
+  - >
+    "Only #adj.a# few are [_allowed:allowed,permitted,invited,welcome]#_allowed# within the #adj# [_place:#placeNoun#,#placeNounCanonical#]#_place# known as [_place:#minorStoryLocation#,#nonPlaneLocation#]#_place#."
+  - >
+    "I [_forge:forge,shape,fashion,fabricate]#_forge# my #itemNoun.s# from the #abstractNoun# of my enemies." —#npcCharacter#
 
-covering:
-- veneer
-- facade
-- aura
-- layer
-- mask
-- veil
-- blanket
-- curtain
-- girdle
-- thin film
-- cloud
-- light dusting
-- thick coating
-- membrane
-- halo
+newFlavorText:
+  - >
+    "The #creatureTypeOrCharacterClass.s# of [_place:#minorStoryLocation#,#nonPlaneLocation#]#_place# treat each #itemNoun# with #emotion# for the #creatureTypeOrCharacterClass# it will become."
 
-motto:
-- motto
-- creed
-- axiom
-- platitude
-- maxim
-- epithet
-- truism
-- dictum
-- aphorism
-- adage
-- prayer
-- teaching
+placeOrPeopleVerbPluralAgreement:
+- "[_placeOrPeople:#placeNoun#][_verbs:#_verb.s#]"
+- "[_placeOrPeople:#placeNounCanonical#][_verbs:#_verb.s#]"
+- "[_placeOrPeople:#creatureTypeOrCharacterClass.s#][_verbs:#_verb#]"
 
-inscription:
-- inscription
-- engraving
+
+philosophicalPursuit:
+- purpose of existence
+- meaning of life
+- reason we're here
+- answer to everything
+- hard truth
+- "reason I'm #verbIntransitiveGerund#"
+- "secret to understanding the #cardName#"
+
+follower:
+- believer
+- worshipper
+- zealot
+- fanatic
+- devoted
+- admirer
+- enthusiast
+- disciple
+- Fan Club President
+
+
+verbLifestyleAction:
+- fight
+- serve
+- act
+- perform
+- lead
+- "defend [_place:#minorStoryLocation#,#nonPlaneLocation#,their #placeNoun.s#] #_place#"
+- "live in [_place:#minorStoryLocation#,#nonPlaneLocation#,their #placeNoun.s#] #_place#"
 
 jayaText:
   - >

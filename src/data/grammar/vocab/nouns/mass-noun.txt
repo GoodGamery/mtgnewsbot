@@ -1,0 +1,116 @@
+land
+ichor
+water
+sand
+mana
+wood
+fire
+ice
+lightning
+phyrexian oil
+snow
+lunch
+treasure
+guacamole
+aether
+spiderwebs
+butterscotch
+gas
+mud
+muck
+dirt
+mildew
+gloom
+mist
+steam
+vapor
+magma
+lava
+bedrock
+topiary
+viscera
+murk
+coal
+garbage
+broccoli
+whiskey
+glitter
+dust
+soil
+rain
+butter
+blood
+bile
+concrete
+earwax
+lobster meat
+milk
+mustard
+cologne
+vape juice
+jewlery
+gasoline
+homework
+luggage
+soup
+tinfoil
+bitcoins
+bacon
+bread
+cardboard
+jelly
+livestock
+mayonnaise
+music
+paper
+smoke
+sugar
+underwear
+electricity
+equipment
+art supplies
+gravy
+furniture
+laughter
+rubbish
+junk mail
+meat
+dietary suppliments
+pasta
+pollution
+salad
+seafood
+soap
+shampoo
+stuff
+valuables
+sunshine
+foliage
+cutlery
+signage
+bacteria
+electronics
+popcorn
+glue
+facial tissue
+poison
+venom
+bubbles
+algae
+fungus
+carpeting
+wallpaper
+baby powder
+taffy
+pudding
+confetti
+saliva
+leather
+sawdust
+pizza
+paper-mâché
+camping gear
+spaghetti
+birdseed
+#creatureTypes# meat
+#creatureTypes# milk

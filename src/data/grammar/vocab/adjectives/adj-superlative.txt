@@ -24,7 +24,7 @@ darkest
 most delightful
 most dreadful
 dimmest
-dirties
+dirtiess
 most enormous
 most exciting
 fanciest
@@ -58,7 +58,6 @@ most ludicrous
 most unspeakable
 most mortal
 lukewarmest
-most madcap
 most marvelous
 most menacing
 most mental
@@ -104,7 +103,7 @@ slimiest
 smallest
 smelliest
 most smoking
-most smooth
+smoothest
 most snow-covered
 most impractical
 stickiest
@@ -158,3 +157,4 @@ most loathsome
 jauntiest
 most irresponsible
 most wasteful
+zaniest

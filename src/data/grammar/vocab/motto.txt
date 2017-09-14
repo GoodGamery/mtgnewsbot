@@ -1,0 +1,12 @@
+motto
+creed
+axiom
+platitude
+maxim
+epithet
+truism
+dictum
+aphorism
+adage
+prayer
+teaching

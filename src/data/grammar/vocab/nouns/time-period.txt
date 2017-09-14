@@ -1,0 +1,7 @@
+moment
+minute
+hour
+afternoon
+week
+year
+eternity

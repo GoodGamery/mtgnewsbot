@@ -1,0 +1,14 @@
+dual
+dual land
+tri-land
+fetch
+guildgate
+bounce land
+desert
+manland
+painland
+basic land
+snow-covered land
+hideaway land
+lair
+filter land
