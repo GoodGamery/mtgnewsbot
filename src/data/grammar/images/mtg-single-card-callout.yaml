@@ -9,7 +9,6 @@ singleCardImage: >
   #pickRandomBGText# #pickFgBgColors# #pickRandomDegree# #pickOrientation#
   {htmlImg htmlImgString=`#singleCardHtml#` screenWidth=`580` screenHeight=`330`}
 
-
 _overlayImageDirPath: "./src/data/images/cardcallout"
 
 _overlayImageIndex:
