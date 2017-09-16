@@ -7,7 +7,17 @@ singleCardImageTest: >
 # Include this in other headlines that set a single _cardname variable
 singleCardImage: >
   #pickRandomBGText# #pickFgBgColors# #pickRandomDegree#
-  {htmlImg htmlImgString=`#singleCardHtml#` screenWidth=`660` screenHeight=`330`}
+  {htmlImg htmlImgString=`#singleCardHtml#` screenHeight=`330`}
+
+
+_overlayImageDirPath: "./src/data/images/cardcallout"
+
+_overlayImageIndex:
+- "1"
+- "2"
+- "3"
+- "4"
+- "5"
 
 pickFgBgColors:
   - "[_setFgColor:#rgbOverlay#][_setBgColor:#rgbDark#]"
@@ -20,11 +30,19 @@ rgbOverlay:
   - "rgba(0, 0, 0, 0.4)"
 
 rgbDark:
-  - "rgb(#num11-99#, #num11-99#, #num11-99#)"
+  - "rgb(1#num0-9#, #num11-99#, #num40-99#)"
+  - "rgb(1#num0-9#, #num40-99#, #num11-99#)"
+  - "rgb(1#num0-9#, #num40-99#, #num40-99#)"
+  - "rgb(#num11-99#, 1#num0-9#, #num40-99#)"
+  - "rgb(#num40-99#, 1#num0-9#, #num11-99#)"
+  - "rgb(#num40-99#, 1#num0-9#, #num40-99#)"
+  - "rgb(#num11-99#, #num40-99#, 1#num0-9#)"
+  - "rgb(#num40-99#, #num11-99#, 1#num0-9#)"
+  - "rgb(#num40-99#, #num40-99#, 1#num0-9#)"
 
 randomBgText:
   - "Hasbro ©2017 Hasbro ©2017 Hasbro ©2017 [_lineHeight:.9em][_debug:hasbro]"
-  - "© DO NOT STEAL © DO NOT STEAL © DO NOT STEAL [_lineHeight:.9em][_debug:dns]"
+  - "© DO NOT STEAL © DO NOT STEAL © DO NOT STEAL [_lineHeight:.9em][_debug:dns][_works:yes]"
   - "$$$$$$$$$$$$$$$$$$$$$$$$$$$$$[_lineHeight:.8em][_debug:dollar]"
   - "?????????????????????????????[_lineHeight:.8em][_debug:ques]"
   - "! ! ! ! ! ! ! ! ! ! ! ! ! ! ! [_lineHeight:.8em][_debug:bang]"
@@ -32,7 +50,6 @@ randomBgText:
   - "@@@@@@@@@@@@@@@@@@@@@@@@@@@@@[_lineHeight:1em][_debug:at]"
   - "😈😈😈😈😈😈😈😈😈😈😈😈😈😈😈😈😈😈😈😈😈[_lineHeight:1.3em][_debug:demon]"
   - "👀👀👀👀👀👀👀👀👀👀👀👀👀👀👀👀👀👀👀👀👀[_lineHeight:1.3em][_debug:eyes]"
-  - "🤔🤔🤔🤔🤔🤔🤔🤔🤔🤔🤔🤔🤔🤔🤔🤔🤔🤔🤔🤔🤔[_lineHeight:1.3em][_debug:thinking]"
   - "🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥[_lineHeight:1.3em][_debug:fire]"
   - "❤❤❤❤❤❤❤❤❤❤❤❤❤❤❤❤❤❤❤❤❤[_lineHeight:1.3em][_debug:heart]"
   - "😎😎😎😎😎😎😎😎😎😎😎😎😎😎😎😎😎😎😎😎😎[_lineHeight:1.3em][_debug:cool]"
@@ -42,6 +59,7 @@ randomBgText:
   - "💖💖💖💖💖💖💖💖💖💖💖💖💖💖💖💖💖💖💖💖💖[_lineHeight:1.3em][_debug:starheart]"
   - "💯💯💯💯💯💯💯💯💯💯💯💯💯💯💯💯💯💯💯💯💯[_lineHeight:1.3em][_debug:100]"
   - "⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐[_lineHeight:1.3em][_debug:medium-star]"
+  # - "🤔🤔🤔🤔🤔🤔🤔🤔🤔🤔🤔🤔🤔🤔🤔🤔🤔🤔🤔🤔🤔[_lineHeight:1.3em][_debug:thinking]"
 
 pickRandomDegree: >
   [_rotationDeg:#_randomDegree#deg]
@@ -80,6 +98,8 @@ singleCardHtml: |
       }
       .color-bg {
         background-color: #_setBgColor#;
+        width:100%;
+        height:100%;
       }
       .color-fg {
         color: #_setFgColor#;
@@ -108,7 +128,7 @@ singleCardHtml: |
       .single-card {
         background-color: black;
         height: 330px;
-        width: 660px;
+        width: 530px;
         overflow: hidden;
         border: 0px;
         line-height: 1.3em;
@@ -117,14 +137,26 @@ singleCardHtml: |
       }
       .text-container {
         height: 330px;
-        width: 660px;
+        width: 530px;
         position: absolute;
         overflow: hidden;
       }
       .image-wrap {
         width: 100%;
         position: relative;
+        float: left;
+        margin-left: 25px;
       }
+      div.image-overlay {
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: 10;
+      }
+      img.image-overlay {
+        -webkit-transform: scaleX(1);
+        opacity: 0.75;
+      }    
       .col-100 { width: 100%; }
     </style>
   </head>
@@ -137,10 +169,11 @@ singleCardHtml: |
           </div>
         </div>
         <div class="image-wrap">
-          <center>
-            <img class="mtg-card" src="https://goodgamery.com/api/mtg/image?card=#_cardname#" />
-          </center>
+          <img class="mtg-card" src="https://goodgamery.com/api/mtg/image?card=#_cardname#" />
         </div>
+        <div class="image-overlay">
+          <img class="image-overlay" src="#_overlayImageDirPath#/overlay#_overlayImageIndex#.png"/>
+        </div>        
       </div>
     </div>
   </body>
