@@ -1,4 +1,9 @@
 {
+  randomAnyCard: [
+    "#card#",
+    "[#CARDFINDER.randomCard#]#_cardName1#"
+  ],
+
   randomRealCard: [
     "#realCard#",
     "[#CARDFINDER.randomCard#]#_cardName1#"

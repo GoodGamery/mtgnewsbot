@@ -1,6 +1,6 @@
 ---
 singleCardImageTest: >
-  [_cardname:#realCard#]
+  [_cardname:#card#]
   Your card is #_cardname#.
   #singleCardImage#
 
