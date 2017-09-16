@@ -185,7 +185,7 @@ singleCardHtml: |
       }
       img.image-overlay {
         -webkit-transform: #_overlayFlipTransform#;
-        opacity: 0.8;
+        opacity: 0.9;
       }    
       .col-100 { width: 100%; }
     </style>
