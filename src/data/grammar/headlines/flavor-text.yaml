@@ -80,6 +80,8 @@ flavorText:
     "Only #adj.a# few are [_allowed:allowed,permitted,invited,welcome]#_allowed# within the #adj# [_place:#placeNoun#,#placeNounCanonical#]#_place# known as [_place:#minorStoryLocation#,#nonPlaneLocation#]#_place#."
   - >
     "I [_forge:forge,shape,fashion,fabricate]#_forge# my #itemNoun.s# from the #abstractNoun# of my enemies." —#npcCharacter#
+  - >
+    "It is #adjComparative# than all but the #adjSuperlative# #pluralNoun#, and #adjComparative# than all but the #adjSuperlative#."
 
 newFlavorText:
   - >
