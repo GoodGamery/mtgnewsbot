@@ -38,7 +38,7 @@ svgMulliganBeforeText:
   [_aboveTextSize:22px]You're playing Team Limited with #limitedDeckDescription#.
   Your deck is not very aggressive, but your opponent’s deck is better than yours
   and you feel that [#somePronoun#]#theirs# has more late-game power, so you side
-  in cards like #cardAlone# and try to go aggressive game 2. Your mana is OK but not
+  in cards like #randomCardAlone# and try to go aggressive game 2. Your mana is OK but not
   great: you have #landCategory.a# and two [_land:#landCategory#,#realLandCard#]#_land.s#,
   you think. For game 3, on the draw, this is your hand:
 - >
@@ -58,7 +58,7 @@ svgMulliganBeforeText:
   It’s game 1. You're on the #playOrDraw#, and your hand is:
 - >
   You’re playing #_format# with #deckVariation# (basically #deck.a# deck but with
-  #cardAlone#). You’re on the #playOrDraw# against #opposingDeck#. Your hand is:
+  #randomCardAlone#). You’re on the #playOrDraw# against #opposingDeck#. Your hand is:
 - >
   You’re playing #deckVariation# in #_format# and you’re on the  #playOrDraw#. You
   don’t know what your opponent is playing, but you’re currently in the #bracket#

@@ -25,12 +25,12 @@
         "#_cardname.s# are #cardLocation# regardless of whether they're #cardState# or #cardState#.",
         "cards not actually #cardLocation# can't be affected by #_cardname#.",
         "does not #gameEffectAction# itself. But can be #_actionPastTense# by another #_cardname#.",
-        "this card can be used to put [_what:two copies of #cardAlone#,both #cardAlone# and #cardAlone#,both sides of #cardAlone#]#_what# onto the battlefield at once.",
-        "if an ability (from #cardAlone#, for example) causes you to #gameAction#, nothing happens.",
+        "this card can be used to put [_what:two copies of #randomCardAlone#,both #randomCardAlone# and #randomCardAlone#,both sides of #randomCardAlone#]#_what# onto the battlefield at once.",
+        "if an ability (from #randomCardAlone#, for example) causes you to #gameAction#, nothing happens.",
         "#_cardname#'s first and third abilities are linked. Similarly, #_cardname#'s second and third abilities are linked.",
         "the #creatureTypes# tokens are created even if [_circumstance:the target isn't,no #cardCategory.s# are]#_circumstance# [#gameEffectAction#]#_actionPastTense# by #_cardname#'s ability.",
         "for more information on [_topic:#gameConcept#,#cardCategory.s#,#_randomTopic#]#_topic#, see the [_set:#cardSet#,#teaserCardSet#]#_set# mechanics article at <a href=\"\">#_gathererRulingImageArticleUrl#</a>.",
-        "[_card2:#randomRealCard#][_card3:#cardAlone#]In a Commander game, your commander may be #_cardname# or #_card2#, and the other may be in your deck. If they meld into #_card3#, #_card3# will also be your commander.",
+        "[_card2:#randomRealCard#][_card3:#randomCardAlone#]In a Commander game, your commander may be #_cardname# or #_card2#, and the other may be in your deck. If they meld into #_card3#, #_card3# will also be your commander.",
         "#opalPart1#",
         "your #cardCategory.s# can help cast this spell.",
         "#gathererTextRare#"
@@ -61,7 +61,7 @@
         "#gathererRuling# This may be wrong."
     ],
 
-    "opalPart1": "[_card2:#randomRealCard#][_card3:#cardAlone#]this is the current interaction between #_cardname# and #_card2#: The type-changing effect applies at #rulesLayer#[_part2:.,#opalPart2#]#_part2#",
+    "opalPart1": "[_card2:#randomRealCard#][_card3:#randomCardAlone#]this is the current interaction between #_cardname# and #_card2#: The type-changing effect applies at #rulesLayer#[_part2:.,#opalPart2#]#_part2#",
     "opalPart2": "[_optional1:, but the rest happens in the applicable layers]#_optional1#.[_optional2: The rest of it will apply even if the #cardCategory# loses its ability before it’s finished applying.]#_optional2# So if #_cardname#, #_card2#, and #_card3# are [_opalZone:#cardLocation#]#_opalZone# [_optional3: and #_cardname# was #_opalZone# before #_card2#]#_optional3#, [_part3:#gathererRuling#,the following is true#colon# #opalPart3#]#_part3#",
     "opalPart3": "#opalLayerEffectStack#[_part4:, #opalPart4#]#_part4#",
     "opalPart4": "But if #_card2# was #_opalZone# before #_cardname#, the following is true: #opalLayerEffectStack#", 

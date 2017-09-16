@@ -31,5 +31,5 @@ tight play
 getting lucky
 the storm scale
 #gameAccessory.s#
-#card#
-bad cards, like #card#
+#randomAnyCard#
+bad cards, like #randomAnyCard#
