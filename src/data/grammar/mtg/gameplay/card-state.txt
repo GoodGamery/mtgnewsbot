@@ -9,3 +9,4 @@ face-up
 faced-down
 phased in
 phased out
+revealed
