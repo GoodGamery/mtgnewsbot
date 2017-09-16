@@ -6,7 +6,7 @@ singleCardImageTest: >
 
 # Include this in other headlines that set a single _cardname variable
 singleCardImage: >
-  #pickRandomBGText# #pickFgBgColors# #pickRandomDegree#
+  #pickRandomBGText# #pickFgBgColors# #pickRandomDegree# #pickOrientation#
   {htmlImg htmlImgString=`#singleCardHtml#` screenHeight=`330`}
 
 
@@ -24,6 +24,10 @@ pickFgBgColors:
 
 pickRandomBGText: >
   [_bgText:#randomBgText#]
+
+pickOrientation:
+- "[_cardImgFloat: left][_overlayFlipTransform: scaleX(1)]"
+- "[_cardImgFloat: right][_overlayFlipTransform:  scaleX(-1)]"
 
 rgbOverlay:
   - "rgba(255, 255, 255, 0.1)"
@@ -128,7 +132,7 @@ singleCardHtml: |
       .single-card {
         background-color: black;
         height: 330px;
-        width: 530px;
+        width: 570px;
         overflow: hidden;
         border: 0px;
         line-height: 1.3em;
@@ -137,24 +141,23 @@ singleCardHtml: |
       }
       .text-container {
         height: 330px;
-        width: 530px;
+        width: 570px;
         position: absolute;
         overflow: hidden;
       }
       .image-wrap {
-        width: 100%;
         position: relative;
-        float: left;
-        margin-left: 25px;
+        margin-left: 15px;
+        margin-right: 15px;
+        float: #_cardImgFloat#;  
       }
       div.image-overlay {
         position: absolute;
         top: 0;
         left: 0;
-        z-index: 10;
       }
       img.image-overlay {
-        -webkit-transform: scaleX(1);
+        -webkit-transform: #_overlayFlipTransform#;
         opacity: 0.75;
       }    
       .col-100 { width: 100%; }
@@ -168,11 +171,11 @@ singleCardHtml: |
             #bgTextBlock#
           </div>
         </div>
-        <div class="image-wrap">
-          <img class="mtg-card" src="https://goodgamery.com/api/mtg/image?card=#_cardname#" />
-        </div>
         <div class="image-overlay">
           <img class="image-overlay" src="#_overlayImageDirPath#/overlay#_overlayImageIndex#.png"/>
+        </div>        
+        <div class="image-wrap">
+          <img class="mtg-card" src="https://goodgamery.com/api/mtg/image?card=#_cardname#" />
         </div>        
       </div>
     </div>
