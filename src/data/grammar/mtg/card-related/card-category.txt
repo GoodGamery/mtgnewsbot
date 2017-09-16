@@ -1,0 +1,33 @@
+attacker
+blocker
+wall
+flyer
+bad card
+good card
+expensive card
+banned card
+hoser
+counterfeit card
+fake card
+dexterity card
+tips and tricks card
+foil
+burn spell
+counterspell
+land destruction spell
+sorcery
+instant
+planeswalker
+artifact
+enchantment
+land
+vehicle
+equipment
+sweeper
+fatty
+weenie
+mana dork
+cantrip
+permanent
+nonland permanent
+#rarity#

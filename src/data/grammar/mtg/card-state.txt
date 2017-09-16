@@ -1,0 +1,11 @@
+tapped
+untapped
+flipped
+unflipped
+morphed
+unmorphed
+transformed
+face-up
+faced-down
+phased in
+phased out

@@ -1,0 +1,8 @@
+Bant
+Grixis
+Mardu
+Esper
+Jeskai
+Orzhov
+Boros
+Jund

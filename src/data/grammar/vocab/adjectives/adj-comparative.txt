@@ -58,7 +58,6 @@ more ludicrous
 more unspeakable
 more mortal
 lukewarmer
-more madcap
 more marvelous
 more menacing
 more mental
@@ -104,7 +103,7 @@ slimier
 smaller
 smellier
 more smoking
-more smooth
+smoother
 more snow-covered
 more impractical
 stickier
@@ -158,3 +157,4 @@ more loathsome
 jauntier
 more irresponsible
 more wasteful
+zanier

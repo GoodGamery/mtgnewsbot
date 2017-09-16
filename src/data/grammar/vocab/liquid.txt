@@ -1,0 +1,6 @@
+coffee
+tea
+coke
+pepsi
+water
+paint

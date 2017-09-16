@@ -6,7 +6,7 @@
       "[_format:#format#]#_format# #creatureTypesPlural.capitalize#",
       "[_format:#format#]#_format# #deck#",
       "[_format:#format#]#_format# #deckVariation#",
-      "#colors.capitalize# #deck#",
+      "#mtgColors.capitalize# #deck#",
       "[_deck:#deckArch#,#preconDeck#]#_deck#"
   ],
   "deckArchOrCategory": [
@@ -17,7 +17,7 @@
       "[_format:#format#]#_format# #creatureTypesPlural.capitalize#",
       "[_format:#format#]#_format# #deck#",
       "[_format:#format#]#_format# #deckVariation#",
-      "#colors.capitalize# #deck#",
+      "#mtgColors.capitalize# #deck#",
       "[_deck:#deckArch#,#preconDeck#]#_deck#"
   ],
   "deck": [
@@ -58,10 +58,10 @@
       "Solar Flare",
       "Superfriends",
       "Survival",
-      "#colors# Devotion",
+      "#mtgColors# Devotion",
       "#deckNameNumber#-Rack",
       "#deckNameNumber#-Post",
-      "#colors# Deck Wins",
+      "#mtgColors# Deck Wins",
       "#definingCardname#-Go",
       "#creatureTypes.capitalize# in a Blender",
       "#creatureTypes.capitalize#vantage",
@@ -187,14 +187,14 @@
   	"ramp"
   ],
   "limitedDeckDescription": [
-		"a #colors# #deckLimitedArchetype# deck",
-		"a #colors# #deckLimitedArchetype# deck",
-		"a #colors# #deckLimitedArchetype# deck",
-		"#colors# #deckLimitedArchetype#",
-		"#colors# #deckLimitedArchetype#",
-		"#colors# #deckLimitedArchetype#",
-		"a #colors# trainwreck",
-		"a #colors# pile",
+		"a #mtgColors# #deckLimitedArchetype# deck",
+		"a #mtgColors# #deckLimitedArchetype# deck",
+		"a #mtgColors# #deckLimitedArchetype# deck",
+		"#mtgColors# #deckLimitedArchetype#",
+		"#mtgColors# #deckLimitedArchetype#",
+		"#mtgColors# #deckLimitedArchetype#",
+		"a #mtgColors# trainwreck",
+		"a #mtgColors# pile",
 		"a 4#num1-9#-card special"
 	],
 	"preconDeck": [

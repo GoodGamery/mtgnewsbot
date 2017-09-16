@@ -1,0 +1,167 @@
+Abrupt Decay
+Aetherworks Marvel
+Aether Vial
+Academy Rector
+Agony Warp
+Arcbound Ravager
+Ancestral Recall
+Anger of the Gods
+Bazaar of Baghdad
+Birthing Pod
+Black Lotus
+Blade Splicer
+Blightsteel Colossus
+Bloodbraid Elf
+Bonesplitter
+Boros Reckoner
+Brainstorm
+Breeding Pool
+Bribery
+Cabal Coffers
+Cabal Therapy
+Chains of Mephistopheles
+Chaos Orb
+Chaos Warp
+Channel
+Contract from Below
+Counterbalance
+Craterhoof Behemoth
+Cryptic Command
+Cursed Scroll
+Dark Confidant
+Dark Ritual
+Daze
+Death's Shadow
+Deathrite Shaman
+Deranged Hermit
+Disciple of the Vault
+Disenchant
+Dragonlord Silumgar
+Dreadbore
+Emrakul, the Promised End
+Entomb
+Fact or Fiction
+Felidar Guardian
+Fireblast
+Force of Will
+Gavony Township
+Geist of Saint Traft
+Ghost Quarter
+Gifts Ungiven
+Gilded Lotus
+Glorybringer
+Grim Monolith
+Griselbrand
+Go for the Throat
+Goblin Charbelcher
+Goblin Guide
+Golgari Grave-Troll
+Grave Titan
+Gush
+Harnessed Lightning
+Heartbeat of Spring
+Jace, the Mind Sculptor
+Karn Liberated
+Kitchen Finks
+Land Tax
+Life from the Loam
+Lightning Bolt
+Lightning Helix
+Liliana of the Veil
+Lion's Eye Diamond
+Lotus Cobra
+Mana Crypt
+Mana Drain
+Mana Vault
+Maze of Ith
+Merfolk Looter
+Metalworker
+Mindslaver
+Mirari's Wake
+Mishra's Workshop
+Moat
+Monastery Mentor
+Morphling
+Mother of Runes
+Mox Emerald
+Mox Jet
+Mox Pearl
+Mox Ruby
+Mox Sapphire
+Mulldrifter
+Mystic Snake
+Nekrataal
+Nevinyrral's Disk
+Noble Hierarch
+Opposition
+Pack Rat
+Painter's Servant
+Path to Exile
+Pernicious Deed
+Phantasmal Image
+Pithing Needle
+Ponder
+Primal Command
+Primeval Titan
+Prophetic Bolt
+Psychatog
+Qasali Pridemage
+Reality Smasher
+Recurring Nightmare
+Reflector Mage
+Sakura-Tribe Elder
+Scalding Tarn
+Scroll Rack
+Sensei's Divining Top
+Shadowmage Infiltrator
+Shambling Vent
+Siege-Gang Commander
+Signal Pest
+Simic Sky Swallower
+Skullclamp
+Smuggler's Copter
+Snapcaster Mage
+Sneak Attack
+Sol Ring
+Spell Pierce
+Spell Queller
+Spellskite
+Squandered Resources
+Stoneforge Mystic
+Strip Mine
+Sundering Titan
+Supreme Verdict
+Sword of Body and Mind
+Taiga
+Tainted Pact
+Tarmogoyf
+Tendrils of Agony
+Thing in the Ice
+Thoughtseize
+Thought-Knot Seer
+Thragtusk
+Thran Dynamo
+Time Vault
+Time Walk
+Timetwister
+Tinker
+Tireless Tracker
+Tolarian Academy
+True-Name Nemesis
+Treachery
+Ugin, the Spirit Dragon
+Ulamog, the Ceaseless Hunger
+Umezawa's Jitte
+Urza's Tower
+Urza's Mine
+Urza's Power Plant
+Vindicate
+Walking Ballista
+Wasteland
+Wheel of Fortune
+Wildfire
+Winter Orb
+Wurmcoil Engine
+Yawgmoth's Will
+Young Pyromancer
+Zuran Orb

@@ -40,10 +40,10 @@ svgDeckTechBackgroundImageUrl:
   - ../src/data/images/decktech/backgrounds/trecherous-urge.jpg
   - ../src/data/images/decktech/backgrounds/ultimate-price.jpg
 svgDeckTechAccessoriesImageUrl: 
+  - ../src/data/images/decktech/overlays/decktech-candyfinder-basic.png
+  - ../src/data/images/decktech/overlays/decktech-candyfinder-basic.png
+  - ../src/data/images/decktech/overlays/decktech-candyfinder-basic.png 
   - ../src/data/images/decktech/overlays/decktech-candyfinder-1.png
-  - ../src/data/images/decktech/overlays/decktech-candyfinder-2.png
-  - ../src/data/images/decktech/overlays/decktech-candyfinder-3.png
-  - ../src/data/images/decktech/overlays/decktech-candyfinder-4.png 
 
 svgDeckTechTitle:
   - "DECK TECH[_textSubtitle:with #_pro#][_postScript:#_format#]"

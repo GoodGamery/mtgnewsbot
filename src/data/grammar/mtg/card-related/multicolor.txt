@@ -1,0 +1,15 @@
+RUG
+BUG
+UG
+UR
+UW
+BG
+Red-Green
+Green-White
+Black-White
+Blue-Black
+Blue-Red
+Green-Black
+Four-Color
+Five-Color
+#colorComboNickname#

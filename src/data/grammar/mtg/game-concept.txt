@@ -1,0 +1,35 @@
+bad draws
+mana screw
+poor play
+slow play
+connection problems
+the shuffler
+bugs
+bad cards
+counter's
+land destruction
+discard
+two-card combos
+three-card combos
+nonbos
+swiss pairings
+collusion
+scouting
+manabases
+mulliganing
+scrying
+playing first
+drawing first
+shuffling
+topdecks
+combat tricks
+tapping out
+chump blocking
+milling
+jedi mind tricks
+tight play
+getting lucky
+the storm scale
+#gameAccessory.s#
+#card#
+bad cards, like #card#
