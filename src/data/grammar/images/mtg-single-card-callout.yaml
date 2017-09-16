@@ -36,13 +36,15 @@ _overlayImageIndex:
 - "21"
 - "22"
 - "23"
-# - "24"
-# - "25"
-# - "26"
-# - "27"
-# - "28"
-# - "29"
-# - "30"
+- "24"
+- "25"
+- "26"
+- "27"
+- "28"
+- "29"
+- "30"
+- "31"
+- "32"
 
 pickFgBgColors:
   - "[_setFgColor:#rgbOverlay#][_setBgColor:#rgbDark#]"
@@ -71,7 +73,7 @@ rgbDark:
 
 randomBgText:
   - "Hasbro ©2017 Hasbro ©2017 Hasbro ©2017 [_lineHeight:.9em][_debug:hasbro]"
-  - "© DO NOT STEAL © DO NOT STEAL © DO NOT STEAL [_lineHeight:.9em][_debug:dns][_works:yes]"
+  - "© DO NOT STEAL © DO NOT STEAL © DO NOT STEAL [_lineHeight:.9em][_debug:dns]"
   - "$$$$$$$$$$$$$$$$$$$$$$$$$$$$$[_lineHeight:.8em][_debug:dollar]"
   - "?????????????????????????????[_lineHeight:.8em][_debug:ques]"
   - "! ! ! ! ! ! ! ! ! ! ! ! ! ! ! [_lineHeight:.8em][_debug:bang]"
@@ -195,6 +197,7 @@ singleCardHtml: |
           <div class="text-bg color-fg">
             #bgTextBlock#
           </div>
+          <div class="bgtext-debug-key" hidden>#_debug#</div>          
         </div>
         <div class="image-overlay">
           <img class="image-overlay" src="#_overlayImageDirPath#/overlay#_overlayImageIndex#.png"/>
