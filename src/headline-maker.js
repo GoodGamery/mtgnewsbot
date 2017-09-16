@@ -64,11 +64,11 @@ function parseMessage(message) {
     .split('\n')
     .join(ENDL_MARKER);  // Support multiline strings from YAML;
 
-  let match = text.match(/\{\w+?\s+?.*\}/g);
+  let match = text.match(/\{\s*\w+?\s+?.*\}/g);
   if (match) {
     const removeEndlRegex = new RegExp(`\\${ENDL_MARKER}`, `g`);
     match.forEach(match => {
-      const tag = match.match(/\{(\w+)\s/)[1];
+      const tag = match.match(/\{\s*(\w+)\s/)[1];
 
       if (!tags[tag]) {
         tags[tag] = match.match(/(\w+=`.*?`)/g).reduce((result, next) => {
