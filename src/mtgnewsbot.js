@@ -116,7 +116,7 @@ class MtgNewsbot {
       if (renderResult.rendered) {
         tootResult = await this.mastodon.toot(headline.text, renderResult.path);
       } else {
-        tootResult = await this.twitter.toot(headline.text);
+        tootResult = await this.mastodon.toot(headline.text);
       }
       console.log(`Tooted: ${JSON.stringify(tootResult)}`);
     }
