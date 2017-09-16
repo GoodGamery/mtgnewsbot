@@ -41,14 +41,6 @@ cotdTextDescription:
   - "This [_preDesc:,#cardQuality# ]#_preDesc##_cardDesc# has had [_who:#pros#,#psychographics#,#pro#,#person#][_reactionVerb:salivating,drooling,giggling,dancing,cartwheeling,rejoicing,grumbling,talking,confused,making predictions,trying to break it,calling for its banning][_verbing:#_reactionVerb#,#verbIntransitiveGerund#]#_who# #_verbing# since it was [_verbed:first revealed,first spoiled,first unbanned,first printed,reprinted]#_verbed#."
   - "#adjOrCardQuality.capitalize#, #adjOrCardQuality#, and #adjOrCardQuality#—one of the #adjSuperlativeOrCardSuperlative# and #adjSuperlativeOrCardSuperlative# #_cardCategory.s# ever printed returns!"
 
-adjOrCardQuality:
-- "#adj#"
-- "#cardQuality#"
-
-adjSuperlativeOrCardSuperlative:
-- "#adjSuperlative#"
-- "#cardSuperlative#"
-
 cotdCreatureTypeDescription:
  - "Only on #plane# would people see this #adjImpressive# #_creatureType# and nickname it [_nickname:The #adj.capitalizeAll.hyphenate# #characterClass.capitalizeAll#,#planeswalkerFirstName#'s #characterClass.capitalizeAll#]“#_nickname#”."
  - "Now that we know that this #_creatureType# is the [_source:creator,progenitor,source]#_source# of all #_creatureType#kind across the multiverse (even [_cardlinkName:#tribalCreature#]#_cotdHtmlCardLink#), does that mean that every #_creatureType# is a [_minionTitle:Scion of the #_cardname#,Spawn of #_cardname#,Minion of #_cardname#, #_cardname.hyphenate#'s Faithful][_cardlinkName:#_minionTitle#]#_cotdHtmlCardLink#?"
@@ -105,6 +97,14 @@ _badDream:
 - "being [_tormented:tormented,crushed,chased,mocked,strangled,seduced,interrogated,tickled to death,spanked,stalked,given a wedgie,cuddled,scolded][_italicText:#_tormented#]#_italicize# by [_adj:giant,enormous,faceless,murderous,tiny,#adj#,#count#-foot-tall,#count#-legged][_italicText:#_adj.a# #creatureTypes#]#_italicize#"
 - "[_italicText:your #bodypartsExternal# falling off,your #bodypartsInternal# falling out,losing your #bodypartsInPairs#,forgetting your #itemNoun#]#_italicize# at [_where:house,party,wedding,graduation][_italicText:#planeswalkerFirstName#'s #_where#]#_italicize#"
 - "turning into a giant [_italicText:#creatureTypes#]#_italicize#"
+
+adjOrCardQuality:
+- "#adj#"
+- "#cardQuality#"
+
+adjSuperlativeOrCardSuperlative:
+- "#adjSuperlative#"
+- "#cardSuperlative#"
 
 cardSuperlative:
 - most versatile
@@ -242,7 +242,6 @@ surprisingResult:
   - "it's going to be #rarity.a# in [_italicText:#teaserCardSet.capitalizeAll#]#_italicize#"
   - "it's #_cardRarity1.lowercase.a#"
   - "it's #_cardtype.lowercase.a#"
-
 
 cardWhichDrawsCards:
   - Ancestral Vision
