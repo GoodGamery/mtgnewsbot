@@ -22,7 +22,9 @@ let config = {
   TWITTER_CONSUMER_KEY: null,
   TWITTER_CONSUMER_SECRET: null,
   TWITTER_ACCESS_TOKEN: null,
-  TWITTER_ACCESS_TOKEN_SECRET: null
+  TWITTER_ACCESS_TOKEN_SECRET: null,
+  MASTODON_API_TOKEN: null,
+  MASTODON_API_URL: null
 };
 
 const submodules = {
