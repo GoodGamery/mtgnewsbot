@@ -1,9 +1,9 @@
 ---
 cotdImage:
-  - "[_cardname:#realCard#][#cotdCardNameSearch#][_cotdDescription:#cotdDescription#][_cotdImgUrl:https#colon#//goodgamery.com/api/mtg/image?card=#_cardname#][_title:#cotdTitle#]#_title#: #_cardname##cotdImageHtml#"
-  - "[#cotdCreatureTypeSearch#][_cotdDescription:#cotdCreatureTypeDescription#][_title:#cotdTitle#]#_title#: #_cardname##cotdImageHtml#"
-  - "[#searchableCardCategory#][#cotdCardCategorySearch#][_cotdDescription:#cotdTextDescription#][_title:#cotdTitle#]#_title#: #_cardname##cotdImageHtml#"
-  - "[_cotdDescription:#cotdCustomQueryDecscription#][_title:#cotdTitle#]#_title#: #_cardname##cotdImageHtml#"
+  - "[_cardname:#randomRealCard#][#cotdCardNameSearch#][_cotdDescription:#cotdDescription#][_cotdImgUrl:https#colon#//goodgamery.com/api/mtg/image?card=#_cardname#][_title:#cotdTitle#]#_title#: #_cardname##cotdImageHtml#"
+  # - "[#cotdCreatureTypeSearch#][_cotdDescription:#cotdCreatureTypeDescription#][_title:#cotdTitle#]#_title#: #_cardname##cotdImageHtml#"
+  # - "[#searchableCardCategory#][#cotdCardCategorySearch#][_cotdDescription:#cotdTextDescription#][_title:#cotdTitle#]#_title#: #_cardname##cotdImageHtml#"
+  # - "[_cotdDescription:#cotdCustomQueryDecscription#][_title:#cotdTitle#]#_title#: #_cardname##cotdImageHtml#"
 
 cotdCardNameSearch: "#_cardName#[#_cardname.cardSearchByName(1)#][_cardname:#_cardName1#][_cardset:#_cardSet1#][_cardtype:#_cardSomeTypeOrSubtype1#][_cardcolor:#_cardColor1#][_cotdImgUrl:#_cardImgUrl1#][_cardDesc:#_cardType#][_cardDescCategory:#_cardDesc.s#]"
 cotdCardTypeSearch: "[_cardType:#cardTypes#][#_cardType.cardSearchByType(5)#][_cardname:#_cardName1#][_cardset:#_cardSet1#][_cardtype:#_cardSomeTypeOrSubtype1#][_cardcolor:#_cardColor1#][_cotdImgUrl:#_cardImgUrl1#][_cardDesc:#_cardType#][_cardDescCategory:#_cardDesc.s#]"
