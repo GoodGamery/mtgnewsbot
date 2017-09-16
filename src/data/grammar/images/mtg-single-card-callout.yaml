@@ -7,7 +7,7 @@ singleCardImageTest: >
 # Include this in other headlines that set a single _cardname variable
 singleCardImage: >
   #pickRandomBGText# #pickFgBgColors# #pickRandomDegree# #pickOrientation#
-  {htmlImg htmlImgString=`#singleCardHtml#` screenHeight=`330`}
+  { htmlImg htmlImgString=`#singleCardHtml#` screenWidth=`580` screenHeight=`330` }
 
 
 _overlayImageDirPath: "./src/data/images/cardcallout"
