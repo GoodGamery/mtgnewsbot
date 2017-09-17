@@ -1,16 +1,13 @@
 ---
 imgClassifieds:
 - >
-  [#randomCardStrategy#]
-  #pickFourDiffCards#[_body:#headlineFourCardsForSale##priceOffer#]
+  #pickThreeDiffCards#[_body:#headlineFourCardsForSale##priceOffer#]
   #pickBigHeader##svgImgClassifieds#
 - >
-  [#randomCardStrategy#]
-  #pickFourSameCard#[_body:#headlineOneCardForSale##priceOffer#]
+  #pickThreeSameCard#[_body:#headlineOneCardForSale##priceOffer#]
   #pickBigHeader##svgImgClassifieds#
 - >
-  [#randomCardStrategy#]
-  #pickFourCards#[_body:#headlineAnything##priceOffer#]
+  #pickThreeCards#[_body:#headlineAnything##priceOffer#]
   #pickBigHeader##svgImgClassifieds#
 - >
   [_body:#headlineCardfinder##priceOffer#]
@@ -61,15 +58,15 @@ headlineAnything:
 - "#format.capitalize# Staples"
 
 headlineCardfinder:
-- "[#pickFourCardsFromFinderSearchBlock#]Draft [_chaff:leftovers,chaff]#_chaff# from #_cardSet#"
-- "[#pickFourCardsFromFinderSearchBlock#]#_cardSet# Draft [_chaff:leftovers,chaff]#_chaff#"
-- "[#pickFourCardsFromFinderSearchSet#][_count:All three,The only,Some]#_count# [_desc:good,playable,money]#_desc# cards from #_cardSet#"
-- "[#pickFourCardsFromFinderSearchCreatureType#]#_creatureType.capitalize# Tribal staples"
-- "[#pickFourCardsFromFinderSearchCardBroadCategory#][_adj:classic,#cardQuality#][_desc:Three #_adj#,#_adj.capitalize#]#_desc# #_cardCategory.s#"
-- "[#pickFourCardsFromFinderSearchCardBroadCategory#]#_cardCategory.capitalize.s# collection"
-- "[#pickFourCardsFromFinderSearchCardBroadCategory#]#_cardCategory.capitalize#[_saleType:flash,two-fer,bundle,member] sale"
-- "[#pickFourCardsFromFinderSearchCardBroadCategory#][_adj:classic,#cardQuality#][_desc:Three #_adj#,#_adj.capitalize#]#_desc# #_cardCategory.s#"
-- "[#pickFourCardsFromFinderSearchCardBroadCategory#][_adj:classic,#cardQuality#][_desc:Three #_adj#,#_adj.capitalize#]#_desc# #_cardCategory.s#"
+- "[#pickThreeCardsFromFinderSearchBlock#]Draft [_chaff:leftovers,chaff]#_chaff# from #_cardSet#"
+- "[#pickThreeCardsFromFinderSearchBlock#]#_cardSet# Draft [_chaff:leftovers,chaff]#_chaff#"
+- "[#pickThreeCardsFromFinderSearchSet#][_count:All three,The only,Some]#_count# [_desc:good,playable,money]#_desc# cards from #_cardSet#"
+- "[#pickThreeCardsFromFinderSearchCreatureType#]#_creatureType.capitalize# Tribal staples"
+- "[#pickThreeCardsFromFinderSearchCardBroadCategory#][_adj:classic,#cardQuality#][_desc:Three #_adj#,#_adj.capitalize#]#_desc# #_cardCategory.s#"
+- "[#pickThreeCardsFromFinderSearchCardBroadCategory#]#_cardCategory.capitalize.s# collection"
+- "[#pickThreeCardsFromFinderSearchCardBroadCategory#]#_cardCategory.capitalize#[_saleType:flash,two-fer,bundle,member] sale"
+- "[#pickThreeCardsFromFinderSearchCardBroadCategory#][_adj:classic,#cardQuality#][_desc:Three #_adj#,#_adj.capitalize#]#_desc# #_cardCategory.s#"
+- "[#pickThreeCardsFromFinderSearchCardBroadCategory#][_adj:classic,#cardQuality#][_desc:Three #_adj#,#_adj.capitalize#]#_desc# #_cardCategory.s#"
 
 priceOffer:
 - ""
@@ -85,103 +82,100 @@ priceOffer:
 - " @ #priceUSD# ea."
 - " @ #priceTix# ea."
 
-randomCardStrategy:
-- "[#pickFourCardsFromList#]"
-- "[#pickFourCardsFromFinder#]"
-- "[#pickFourCardsFromEither#]"
+pickThreeCards:
+ - "#pickThreeDiffCards#"
+ - "#pickThreeSameCard#"
 
-pickFourDiffCards: >
-  #_pickFourDiffCards#[_card1:#_card1Diff#][_card2:#_card2Diff#][_card3:#_card3Diff#]
+pickThreeDiffCards: >
+  [_card1:#randomRealCard#][_card2:#randomRealCard#][_card3:#randomRealCard#]
 
-pickFourSameCard: >
-  #_pickFourSameCard#[_card1:#_cardSame#][_card2:#_cardSame#][_card3:#_cardSame#]
+pickThreeSameCard: >
+  [_cardSame:#randomRealCard#][_card1:#_cardSame#][_card2:#_cardSame#][_card3:#_cardSame#]
 
-pickFourCardsFromList: >
-  [_pickFourDiffCards:#pickFourDiffCardsFromCardlist#]
-  [_pickFourSameCard:#pickFourSameCardFromList#]
+pickThreeCardsFromList: >
+  [_pickThreeDiffCards:#pickThreeDiffCardsFromCardlist#]
+  [_pickThreeSameCard:#pickThreeSameCardFromList#]
 
-pickFourCardsFromFinder: >
-  [_pickFourDiffCards:#pickFourDiffCardsFromFinder#]
-  [_pickFourSameCard:#pickFourSameCardFromFinder#]
+pickThreeCardsFromFinder: >
+  [_pickThreeDiffCards:#pickThreeDiffCardsFromFinder#]
+  [_pickThreeSameCard:#pickThreeSameCardFromFinder#]
 
-pickFourCardsFromEither: >
-  [_pickFourDiffCards:#pickFourDiffCardsFromEither#]
-  [_pickFourSameCard:#pickFourSameCardFromEither#]
+pickThreeCardsFromEither: >
+  [_pickThreeDiffCards:#pickThreeDiffCardsFromEither#]
+  [_pickThreeSameCard:#pickThreeSameCardFromEither#]
 
-pickFourCards:
- - "#pickFourDiffCards#"
- - "#pickFourSameCard#"
 
-pickFourCardsFromFinderSearchTypeOrCategory:
- - "[#pickFourCardsFromFinderSearchCardType#]"
- - "[#pickFourCardsFromFinderSearchCreatureType#][_cardType:#_creatureType#]"
 
-pickFourCardsFromFinderSearchCardBroadCategory:
- - "[#pickFourCardsFromFinderSearchCardType#][_cardCategory:#_cardType#]"
- - "[#pickFourCardsFromFinderSearchCreatureType#][_cardCategory:#_creatureType#]"
- - "[#pickFourCardsFromFinderSearchCategory#][_cardCategory:#_cardCategory#]"
- - "[#pickFourCardsFromFinderSearchCustomCategory#][_cardCategory:#_cardCategory#]"
+pickThreeCardsFromFinderSearchTypeOrCategory:
+ - "[#pickThreeCardsFromFinderSearchCardType#]"
+ - "[#pickThreeCardsFromFinderSearchCreatureType#][_cardType:#_creatureType#]"
 
-pickFourCardsFromFinderSearchCreatureType: >
+pickThreeCardsFromFinderSearchCardBroadCategory:
+ - "[#pickThreeCardsFromFinderSearchCardType#][_cardCategory:#_cardType#]"
+ - "[#pickThreeCardsFromFinderSearchCreatureType#][_cardCategory:#_creatureType#]"
+ - "[#pickThreeCardsFromFinderSearchCategory#][_cardCategory:#_cardCategory#]"
+ - "[#pickThreeCardsFromFinderSearchCustomCategory#][_cardCategory:#_cardCategory#]"
+
+pickThreeCardsFromFinderSearchCreatureType: >
   [_creatureType:#creatureTypes#]
   [_searchTerm:"#_creatureType#"][#_searchTerm.cardSearchByType(3)#]
   [_card1:#_cardRawName1#]
   [_card2:#_cardRawName2#]
   [_card3:#_cardRawName3#]
 
-pickFourCardsFromFinderSearchCardType: >
+pickThreeCardsFromFinderSearchCardType: >
   [_cardType:#cardTypes#]
   [_searchTerm:"#_cardType#"][#_searchTerm.cardSearchByType(3)#]
   [_card1:#_cardRawName1#]
   [_card2:#_cardRawName2#]
   [_card3:#_cardRawName3#]
 
-pickFourCardsFromFinderSearchSet: >
+pickThreeCardsFromFinderSearchSet: >
   [_cardSet:#cardSet#]
   [_searchTerm:"#_cardSet#"][#_searchTerm.cardSearchBySet(3)#]
   [_card1:#_cardRawName1#]
   [_card2:#_cardRawName2#]
   [_card3:#_cardRawName3#]
 
-pickFourCardsFromFinderSearchBlock: >
+pickThreeCardsFromFinderSearchBlock: >
   [_block:#cardBlock#,#cardSetStandalone#][#_block#]
   [_cardSet:#cardBlockName#]
   [_searchTerm:"#cardBlockSet#"][#_searchTerm.cardSearchBySet(1)#][_card1:#_cardRawName1#]
   [_searchTerm:"#cardBlockSet#"][#_searchTerm.cardSearchBySet(1)#][_card2:#_cardRawName1#]
   [_searchTerm:"#cardBlockSet#"][#_searchTerm.cardSearchBySet(1)#][_card3:#_cardRawName1#]
 
-pickFourCardsFromFinderSearchCategory: >
+pickThreeCardsFromFinderSearchCategory: >
   [#searchableCardCategory#][#_cardCategorySearchTerm.cardSearchByText(3)#]
   [_cardCategory:#_cardCategory#]
   [_card1:#_cardRawName1#]
   [_card2:#_cardRawName2#]
   [_card3:#_cardRawName3#]
 
-pickFourCardsFromFinderSearchCustomCategory: >
+pickThreeCardsFromFinderSearchCustomCategory: >
   [#searchableCardCategoryCustomQuery#][#_customQuery.cardSearchCustomQuery(3)#]
   [_cardCategory:#_cardCategory#]
   [_card1:#_cardRawName1#]
   [_card2:#_cardRawName2#]
   [_card3:#_cardRawName3#]
 
-pickFourSameCardFromList: >
-  [_cardSame:#randomRealCard#]
-pickFourDiffCardsFromCardlist: >
-  [_card1Diff:#randomRealCard#][_card2Diff:#randomRealCard#][_card3Diff:#randomRealCard#]
+pickThreeSameCardFromList: >
+  [_cardSame:#realCard#]
+pickThreeDiffCardsFromCardlist: >
+  [_card1Diff:#realCard#][_card2Diff:#realCard#][_card3Diff:#realCard#]
 
-pickFourSameCardFromFinder: > 
+pickThreeSameCardFromFinder: > 
   [#CARDFINDER.randomCard#][_cardSame:#_cardRawName1#]
-pickFourDiffCardsFromFinder: >
+pickThreeDiffCardsFromFinder: >
   [#CARDFINDER.randomCards(3)#][_card1Diff:#_cardRawName1#][_card2Diff:#_cardRawName2#][_card3Diff:#_cardRawName3#]
 
-pickFourSameCardFromEither:
- - "#pickFourSameCardFromList#"
- - "#pickFourSameCardFromFinder#"
-pickFourDiffCardsFromEither: >
+pickThreeSameCardFromEither:
+ - "#pickThreeSameCardFromList#"
+ - "#pickThreeSameCardFromFinder#"
+pickThreeDiffCardsFromEither: >
   [#CARDFINDER.randomCards(3)#]
-  [_card1Diff:#_cardRawName1#,#randomRealCard#]
-  [_card2Diff:#_cardRawName2#,#randomRealCard#]
-  [_card3Diff:#_cardRawName3#,#randomRealCard#]
+  [_card1Diff:#_cardRawName1#,#realCard#]
+  [_card2Diff:#_cardRawName2#,#realCard#]
+  [_card3Diff:#_cardRawName3#,#realCard#]
 
 ComeOn: "[_svgComeOnTextSize:42px][_svgComeOnLineHeight:31px][_ComeOnYPos:264][_ComeOnText:#ComeOnText#][_ComeOnTextStyle:#svgComeOnTextStyle#]"
 
@@ -330,6 +324,7 @@ ComeOnFreebieDesignCardReference:
 - S.N.O.T.
 - SPITEMARE
 - SQUEE
+- SQUIRE
 - VORSTCLAW
 - VEBULID
 - WEREBEAR
