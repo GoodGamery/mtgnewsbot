@@ -23,19 +23,19 @@ Dominator Bleb
 Octopus Token
 the [_cardCount:ace,two,three,four,five,ten]#_cardCount# of [_cardSuit:spades,hearts,clubs,diamonds]#_cardSuit#
 a saltine with a Magic card back
-Jace's #realCard#
-M #realCard# EX
-Magus of the #realCard#
+Jace's #randomRealCard#
+M #randomRealCard# EX
+Magus of the #randomRealCard#
 Magus of the #concreteNoun.capitalize#
-Mons's #realCard#
-Mox #realCard#
-Robo#realCard#
-#realCard# Elemental Blast
-#realCard# of the Pearl Trident
-#realCard# (Not the #cardSet# One)
+Mons's #randomRealCard#
+Mox #randomRealCard#
+Robo#randomRealCard#
+#randomRealCard# Elemental Blast
+#randomRealCard# of the Pearl Trident
+#randomRealCard# (Not the #cardSet# One)
 #adj.capitalizeAll# Wish
 #verbGerund.capitalizeAll# Shoal
-#realCard# (Not the #novelCardSetName.capitalizeAll# One)
-Snow-Covered #realCard#
+#randomRealCard# (Not the #novelCardSetName.capitalizeAll# One)
+Snow-Covered #randomRealCard#
 #bodypart.capitalize# in a Jar
 Circle of Protection: [_someNoun:#abstractNoun#,#emotion#,#massNoun#,#pluralNoun#][_what:#creatureTypes.s#,#cardCategory.s#,#_someNoun#]#_what.capitalizeAll#

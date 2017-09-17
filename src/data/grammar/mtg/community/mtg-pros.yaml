@@ -130,7 +130,7 @@
   ],
   "jokeTeam":  [
     "#creatureTypes.capitalize#",
-    "#cardAlone.noPunctuation.capitalizeAll.noSpaces#",
+    "#randomCardAlone.noPunctuation.capitalizeAll.noSpaces#",
     "#website#",
     "#adj.capitalizeAll.noPunctuation.noSpaces#Card",
   ],

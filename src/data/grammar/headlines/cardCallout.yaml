@@ -1,10 +1,6 @@
 ---
 cardCallout:
-- "[#cardCalloutCard#]#cardCalloutText# #_cardname#.#singleCardImage#"
-
-cardCalloutCard:
-- "[_realCard:#realCard#][_cardname:#_realCard#]"
-- "[#CARDFINDER.randomCard#][_cardname:#_cardName1#]"
+- "[_cardname:#randomRealCard#]#cardCalloutText# #_cardname#.#singleCardImage#"
 
 cardCalloutText:
 - "WE'RE NOT WRONG: The card you're thinking of is"

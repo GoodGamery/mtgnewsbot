@@ -1,7 +1,24 @@
 {
-  "imgCard": "{htmlImg htmlImgString=`<img src=\"#cardFinderUrl##_cardname#\">`}",
-  "cardFinderUrl": "https://goodgamery.com/api/mtg/image?card=",
-  "card": [
+  randomAnyCard: [
+    "#card#",
+    "[#CARDFINDER.randomCard#]#_cardName1#"
+  ],
+
+  randomRealCard: [
+    "#realCard#",
+    "[#CARDFINDER.randomCard#]#_cardName1#"
+  ],
+
+  randomCardAlone: [
+    "#cardAlone#",
+    "[#CARDFINDER.randomCard#]#_cardName1#"
+  ],
+
+  imgCard: "{htmlImg htmlImgString=`<img src=\"#cardFinderUrl##_cardname#\">`}",
+
+  cardFinderUrl: "https://goodgamery.com/api/mtg/image?card=",
+
+  card: [
       "#cardAlone#",
       "#cardAlone#",
       "#cardAlone#",
@@ -12,7 +29,8 @@
       "#cardAlone#",
       "#descriptiveCard#"
   ],
-  "cardAlone": [
+
+  cardAlone: [
       "#realCard#",
       "#realCard#",
       "#realCard#",
@@ -25,14 +43,16 @@
       "#realCard#",
       "#fakeCard#"
   ],
-  "realHandCard": [
+
+  realHandCard: [
     "#realCard#",
     "#realCard#",
     "#realCard#",
     "#realLandCard#",
     "#realLandCard#"
   ],
-  "realCard": [
+
+  realCard: [
       "#realNormalCard#",
       "#realNormalCard#",
       "#realNotableCard#",
@@ -40,13 +60,15 @@
       "#realPowerfulCard#",
       "#realBadCard#"
   ],
-  "realLandCard": [
+
+  realLandCard: [
     "#basicLands#",
     "#dualLands#",
     "#utilityLands#",
     "#limitedLands#"
   ],
-  "descriptiveCard": [
+
+  descriptiveCard: [
     "an altered #realCard#",
     "an artist-signed #realCard#",
     "an #card-grade# #liquid#-stained #realCard#",

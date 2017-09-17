@@ -1,5 +1,5 @@
 #deck# decks
 #deck# lists
 #deckArch# matchups
-#cardAlone# decks
+#randomCardAlone# decks
 #creatureTypes.capitalize# decks

@@ -1,6 +1,6 @@
 ---
 inGraphics: |
-  [_card1:#realCard#][_card2:#realCard#][_headline:#inGraphicsHeadline#]#inGraphicsText#{svg svgString=`#inGraphicsImage#`}
+  [_card1:#randomRealCard#][_card2:#randomRealCard#][_headline:#inGraphicsHeadline#]#inGraphicsText#{svg svgString=`#inGraphicsImage#`}
 inGraphicsText:
 - 'IN GRAPHICS: #_headline#'
 - 'Infographic: #_headline#'
@@ -60,9 +60,9 @@ inGraphicsStep:
 - Tap exactly [_lands:one land,#count# lands]#_lands#
 - 'Retrieve #_card2# from your sideboard with #wishCard#'
 - Flip the table
-- 'Play Three-Card Monte with #_card1#, #_card2#, and a morphed #cardAlone#'
+- 'Play Three-Card Monte with #_card1#, #_card2#, and a morphed #randomCardAlone#'
 - 'Toss #_card2# into the air and shrug'
-- 'Explain to your opponent that #_card1# is strictly better than #card#'
+- 'Explain to your opponent that #_card1# is strictly better than #randomCardAlone#'
 - 'Reveal #hiddenAgendaCard# naming #_card2#'
 - 'Offer to sell #_card1# to your opponent for #priceUSD#'
 inGraphicsCardMask: "./data/images/cardmask-double.png"
