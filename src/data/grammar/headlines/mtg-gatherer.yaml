@@ -1,6 +1,6 @@
 {
     "gatherer": [
-         "[_cardname:#realCard#]#gathererIntro# #gathererTimestamp# #_cardname# — #gathererText.capitalize#"
+         "[_cardname:#randomRealCard#]#gathererIntro# #gathererTimestamp# #_cardname.capitalize# — #gathererText.capitalize#"
     ],
     "gathererIntro": [
         "GATHERER RULINGS:",
@@ -17,40 +17,56 @@
     ],
 
     "gathererRuling": [
-        "the #singularNoun# continues to #verbIntransitive# after #_cardname# has left the battlefield.",
-        "the artist is actually #person#.",
-        "this is the [_shift:timeshifted,colorshifted,playtest,Space#colon# the Convergence,good]#_shift# version of #realCard#.",
+        "the #singularNoun# continues to #verbIntransitive# after #_cardname# [_zoneChange:has left the battlefield,has entered the battlefield,untaps,is placed #cardLocation#]#_zoneChange#.",
+        "the artist is actually [_artist:#person#,#person#,#historicalFigure#]#_artist#.",
+        "this is the [_shift:timeshifted,colorshifted,playtest,Space#colon# the Convergence,good]#_shift# version of #randomRealCard#.",
         "when the #xth# ability resolves, the #cardCategory# you [_put:put, don't put]#_put# #cardLocation# stays #cardLocation#.",
         "…finally, #_cardname# is placed #cardLocation#. This is a state-based action.",
         "#_cardname.s# are #cardLocation# regardless of whether they're #cardState# or #cardState#.",
         "cards not actually #cardLocation# can't be affected by #_cardname#.",
         "does not #gameEffectAction# itself. But can be #_actionPastTense# by another #_cardname#.",
-        "this card can be used to put [_what:two copies of #cardAlone#,both #cardAlone# and #cardAlone#,both sides of #cardAlone#]#_what# onto the battlefield at once.",
-        "if an ability (from #cardAlone#, for example) causes you to #gameAction#, nothing happens.",
-        "#_cardname#'s first and third abilities are linked. Similarly, #_cardname#'s second and third abilities are linked.",
+        "this card can be used to put [_what:two copies of #randomCardAlone#,both #randomCardAlone# and #randomCardAlone#,both sides of #randomCardAlone#]#_what# onto the battlefield at once.",
+        "if an ability (from #randomCardAlone#, for example) causes you to #gameAction#, nothing happens.",
+        "#_cardname#'s first and third abilities are linked. [_also:Also,Similarly,Believe it or not,For some reason,Inexplicably,Surprisingly,Apparently]#_also#, #_cardname.capitalize#'s [_linkedAbilities:second and third abilities,first and last abilities,#keyword# and #keyword# abilities,#cardAttribute# and #cardAttribute#]#_linkedAbilities# are also [_linked:linked,#reallyGood#]#_linked#.",
         "the #creatureTypes# tokens are created even if [_circumstance:the target isn't,no #cardCategory.s# are]#_circumstance# [#gameEffectAction#]#_actionPastTense# by #_cardname#'s ability.",
         "for more information on [_topic:#gameConcept#,#cardCategory.s#,#_randomTopic#]#_topic#, see the [_set:#cardSet#,#teaserCardSet#]#_set# mechanics article at <a href=\"\">#_gathererRulingImageArticleUrl#</a>.",
-        "[_card2:#realCard#][_card3:#cardAlone#]In a Commander game, your commander may be #_cardname# or #_card2#, and the other may be in your deck. If they meld into #_card3#, #_card3# will also be your commander.",
-        "#opalPart1#",
+        "[_card2:#randomRealCard#][_card3:#randomCardAlone#]In a Commander game, your commander may be #_cardname# or #_card2#, and the other may be in your deck. If they meld into #_card3#, #_card3# will also be your commander.",
+        "#opalRuling#",
         "your #cardCategory.s# can help cast this spell.",
         "#gathererTextRare#"
     ],
 
     "gathererTextRare": [
-        "the effect is cumulative.",
+        "the effect [_verb:is,isn't,might be,is probably]#_verb# [_description:cumulative,uncounterable,#cardOrEffectAdj#]#_description#.",
         "you can't interfere in any physical way with the casting of this card.",
-        "you can't make any decisions that aren't called for or allowed by the game rules, or by any cards, permanents, spells, abilities, and so on.",
-        "if one player has fewer #cardCategory.s# than required, that player loses. If both have fewer than required, both players lose.",
-        "when it comes to choice of items, use common sense. items should be small enough to hide but large enough to count.",
-        "there's no current game meaning of [_what:assemble,#pluralNounOrMassNoun#,#gameConcept#]“#_what#”.",
-        "#_cardname# can't be countered except by spells and abilities.",
-        "#_cardname# can't be used to force a player to play a card that isn't in his or her hand.",
-        "#_cardname# won't necessarily end the game when its ability resolves.",
-        "yes, you're allowed to have a deck consisting of sixty #_cardname.s# and nothing else.",
-        "only cards touched when #_cardname# stops moving are affected. Not ones touched while it is moving.",
-        "The card you're thinking of is #_cardname#.",
-        "Magic isn't real, you idiot. Read a book."
+        "you can't make any decisions that aren't called for or allowed by  [_allower:the game rules,#person#]#_allower# or by any cards, permanents, spells, abilities, and so on.",
+        "if one player has fewer #cardCategory.s# than required, that player [_result:wins,lose,concede,forfeit]#_result.s#. If both have fewer than required, both players #_result#.",
+        "there's no current game meaning of [_what:#pluralNounOrMassNoun#,#gameConcept#]“#_what#”.",
+        "#_cardname# can't be countered except by [_counterer:spells and abilities,#cardCategory.s#,#randomAnyCard#]#_counterer#.",
+        "#_cardname# [_can:can,can't,may,should,shouldn't]#_can# be used to force a player to play a card that isn't [_where:in his or her hand,#cardLocation#]#_where#.",
+        "#_cardname# won't necessarily [_result:end the game,end the turn,remain #cardLocation#,restart the game,require you to actually tear it into pieces,have any effect,do what you expect]#_result# when its ability resolves.",
+        "yes, you're allowed to have a deck consisting of sixty [_copies:#_cardname.s#,#cardCategory.s#]#_copies# and nothing else.",
+        "only [_objects:cards,#cardCategory.s#,#creatureTypes.s#]#_objects# touched [_when:when,before,after]#_when# #_cardname# stops moving are affected. Not ones touched while it is moving.",
+        "the card you're thinking of is #_cardname#.",
+        "magic isn't real, you idiot. Read a book.",
+        "#gathererTextRareChoiceOfItems#"
     ],
+
+    "movingOrVerbing":  [
+      "moving",
+      "#verbIntransitiveGerund#"
+    ],
+
+    "cardOrEffectAdj": [
+      "#kindaGood#",
+      "#reallyGood#",
+      "#cardQuality#"
+    ],
+
+    "gathererTextRareChoiceOfItems": [
+        "when it comes to choice of items, use common sense. Items should be small enough to [_hide:hide,#verbTransitive#]#_hide# but large enough to [_count:count,#verbTransitive#]#_count#.",
+        "when it comes to choice of items, use #itemNoun.s#.",
+   ],
 
     "embellishedGathererText": [
         "#gathererRuling# Yes, this is a bit weird.",
@@ -61,10 +77,10 @@
         "#gathererRuling# This may be wrong."
     ],
 
-    "opalPart1": "[_card2:#realCard#][_card3:#cardAlone#]this is the current interaction between #_cardname# and #_card2#: The type-changing effect applies at #rulesLayer#[_part2:.,#opalPart2#]#_part2#",
+    "opalRuling": "[_card2:#randomRealCard#][_card3:#randomCardAlone#]this is the current interaction between #_cardname# and #_card2#: The type-changing effect applies at #rulesLayer#[_part2:.,#opalPart2#]#_part2#",
     "opalPart2": "[_optional1:, but the rest happens in the applicable layers]#_optional1#.[_optional2: The rest of it will apply even if the #cardCategory# loses its ability before it’s finished applying.]#_optional2# So if #_cardname#, #_card2#, and #_card3# are [_opalZone:#cardLocation#]#_opalZone# [_optional3: and #_cardname# was #_opalZone# before #_card2#]#_optional3#, [_part3:#gathererRuling#,the following is true#colon# #opalPart3#]#_part3#",
     "opalPart3": "#opalLayerEffectStack#[_part4:, #opalPart4#]#_part4#",
-    "opalPart4": "But if #_card2# was #_opalZone# before #_cardname#, the following is true: #opalLayerEffectStack#", 
+    "opalPart4": "But if #_card2# was #_opalZone# before #_cardname#, the following is true: #opalLayerEffectStack#",
     "opalCardOrdering": [
       "[_cardA:#_cardname#][_cardB:#_card2#][_cardC:#_card3#]",
       "[_cardA:#_card2#][_cardB:#_cardname#][_cardC:#_card3#]",

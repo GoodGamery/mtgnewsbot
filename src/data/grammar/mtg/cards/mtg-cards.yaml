@@ -1,7 +1,17 @@
 {
-  randomCard: [
-    "[_realCard:#realCard#][_cardname:#_realCard#]",
-    "[#CARDFINDER.randomCard#][_cardname:#_cardName1#]"
+  randomAnyCard: [
+    "#card#",
+    "[#CARDFINDER.randomCard#]#_cardName1#"
+  ],
+
+  randomRealCard: [
+    "#realCard#",
+    "[#CARDFINDER.randomCard#]#_cardName1#"
+  ],
+
+  randomCardAlone: [
+    "#cardAlone#",
+    "[#CARDFINDER.randomCard#]#_cardName1#"
   ],
 
   imgCard: "{htmlImg htmlImgString=`<img src=\"#cardFinderUrl##_cardname#\">`}",

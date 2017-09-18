@@ -11,7 +11,8 @@ commander
     .option(`-c --count <n>`, `Count of news articles to generate`)
     .option(`-o --origin [string]`, `Origin string to flatten. Defaults to "#origin#"`)
     .option('-v --verbose', "Verbose logging")
-    .option('-t --tweet', "Tweet the result. Overrides count to 1.")
+    .option('-t --tweet', "Tweet the result to Twitter. Overrides count to 1.")
+    .option('-m --toot', "Toot the result to Mastodon. Overrides count to 1.")
     .option('-d --discord', "Post the result on discord")
     .option('--debug', "Post the result on debugging discord channel")
     .parse(process.argv);

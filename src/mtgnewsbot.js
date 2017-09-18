@@ -6,11 +6,13 @@ const config = require('../config');
 const NewsEngine = require('./news-engine');
 const RenderImage = require('./lib/render-image');
 const TwitterClient = require('./lib/api/twitter-client');
+const MastodonClient = require('./lib/api/mastodon-client');
 const Discord = require('./lib/discord');
 
 class MtgNewsbot {
   constructor(options) {
     this.twitter = null;
+    this.mastodon = null;
 
     this.newsEngine = new NewsEngine();
 
@@ -20,24 +22,29 @@ class MtgNewsbot {
       origin: '#origin#',
       verbose: false,
       tweet: false,
+      toot: false,
       discord: false
     }, options);
 
     // Time to log
     if (this.options.verbose) {
       console.log(`Options:`);
-      console.log(` - Count: ${this.options.count}`);
+      console.log(` - Count:   ${this.options.count}`);
       console.log(` - Origin: "${this.options.origin}"`);
       console.log(` - Verbose: ${this.options.verbose}`);
-      console.log(` - Tweet: ${this.options.tweet}`);
+      console.log(` - Tweet:   ${this.options.tweet}`);
+      console.log(` - Toot:    ${this.options.toot}`);
       console.log(` - Discord: ${this.options.discord}`);
     }
 
     if (this.options.tweet) {
-      // Restrict to a single tweet
-      this.options.count = 1;
-      // Create twitter client
+      this.options.count = 1; // Restrict to a single tweet
       this.twitter = new TwitterClient(config);
+    }
+
+    if (this.options.toot) {
+      this.options.count = 1; // Restrict to a single toot
+      this.mastodon = new MastodonClient(config);
     }
   }
 
@@ -52,7 +59,7 @@ class MtgNewsbot {
 
     if (headlines.length === 0) {
       console.error(`\nERR: No headlines were generated.`);
-      if(this.options.tweet || this.options.discord) {
+      if(this.options.tweet || this.options.toot || this.options.discord) {
         Discord.sendError(`No headlines were generated.`);
       }
     }
@@ -65,7 +72,7 @@ class MtgNewsbot {
         })
         .catch(err => {
           console.error(err);
-          if (this.options.discord || this.options.tweet)
+          if (this.options.discord || this.options.tweet || this.options.toot)
             Discord.sendError(`${err}`);
         })
     );
@@ -101,6 +108,17 @@ class MtgNewsbot {
       const tweetId = tweetResult.id_str;
       const tweetUser = tweetResult.user.screen_name;
       postedMessage = `https://twitter.com/${tweetUser}/status/${tweetId}`;
+    }
+
+    // Mastodon
+    if (this.options.toot && !this.options.debug) {
+      let tootResult = null;
+      if (renderResult.rendered) {
+        tootResult = await this.mastodon.toot(headline.text, renderResult.path);
+      } else {
+        tootResult = await this.mastodon.toot(headline.text);
+      }
+      console.log(`Tooted: ${tootResult.data.uri}`);
     }
 
     // Discord

@@ -165,9 +165,9 @@ pickFourCardsFromFinderSearchCustomCategory: >
   [_card3:#_cardRawName3#]
 
 pickFourSameCardFromList: >
-  [_cardSame:#realCard#]
+  [_cardSame:#randomRealCard#]
 pickFourDiffCardsFromCardlist: >
-  [_card1Diff:#realCard#][_card2Diff:#realCard#][_card3Diff:#realCard#]
+  [_card1Diff:#randomRealCard#][_card2Diff:#randomRealCard#][_card3Diff:#randomRealCard#]
 
 pickFourSameCardFromFinder: > 
   [#CARDFINDER.randomCard#][_cardSame:#_cardRawName1#]
@@ -179,9 +179,9 @@ pickFourSameCardFromEither:
  - "#pickFourSameCardFromFinder#"
 pickFourDiffCardsFromEither: >
   [#CARDFINDER.randomCards(3)#]
-  [_card1Diff:#_cardRawName1#,#realCard#]
-  [_card2Diff:#_cardRawName2#,#realCard#]
-  [_card3Diff:#_cardRawName3#,#realCard#]
+  [_card1Diff:#_cardRawName1#,#randomRealCard#]
+  [_card2Diff:#_cardRawName2#,#randomRealCard#]
+  [_card3Diff:#_cardRawName3#,#randomRealCard#]
 
 ComeOn: "[_svgComeOnTextSize:42px][_svgComeOnLineHeight:31px][_ComeOnYPos:264][_ComeOnText:#ComeOnText#][_ComeOnTextStyle:#svgComeOnTextStyle#]"
 

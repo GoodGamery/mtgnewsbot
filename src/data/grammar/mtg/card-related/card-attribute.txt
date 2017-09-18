@@ -1,0 +1,20 @@
+name
+mana cost
+converted mana cost
+types
+subtypes
+supertypes
+type line
+expansion symbol
+rules text
+oracle rules text
+printed rules text
+reminder text
+flavor text
+power
+toughness
+starting loyalty
+collector number
+artist credit
+copyright line
+holofoil stamp

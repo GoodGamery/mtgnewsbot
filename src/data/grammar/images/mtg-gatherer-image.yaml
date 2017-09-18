@@ -1,6 +1,6 @@
 ---
 gathererRulingImage: |
-  [_cardname:#cardAlone#][gathererHeadline:#gathererIntro# #_cardname#]#gathererHeadline# {htmlImg htmlImgString=`#_gathererRulingImage#`}
+  [_cardname:#randomCardAlone#][gathererHeadline:#gathererIntro# #_cardname#]#gathererHeadline# {htmlImg htmlImgString=`#_gathererRulingImage#`}
 
 _gathererRulingImage: "#_gathererRulingImageStyle# #_gathererRulingImageTable#"
 
