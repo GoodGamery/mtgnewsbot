@@ -86,6 +86,7 @@
       "taking down",
       "mastering"
   ],
+
   "verbCreating": [
       "designing",
       "making",
@@ -95,6 +96,16 @@
       "mashing together",
       "shuffling up"
   ],
+
+  "verbDeveloping": [
+      "designing",
+      "making",
+      "creating",
+      "brewing up",
+      "designing",
+      "developing"
+  ],
+
   "verbSolutionGerund": [
       "screaming",
       "throwing a tantrum",

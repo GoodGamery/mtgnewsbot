@@ -3,7 +3,7 @@
   "winWord": [
       "wins","triumphs","victorious","crushes","dominates","absolutely destroys"
   ],
-  "suggestion": ["banning","improving","reconsidering", "nerfing"],
+  "mtgOpinionSuggestion": ["banning", "improving", "reconsidering", "nerfing", "bolstering", "strengthening", "weakening", "questioning", "ignoring", "disregarding", "doubling-down on", "reevaluating", "reconceptualizing"],
   "descriptor": [
       "more powerful",
       "better",

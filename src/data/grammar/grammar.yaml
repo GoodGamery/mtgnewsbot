@@ -118,13 +118,12 @@ novelSetGraphicAnnouncement:
 
 realization:
 - "#realize#"
-- The Importance of [_thing:#randomAnyCard#,#cardCategory.s#,#creatureTypes.s#,#gameConcept#]#_thing#
+- The Importance of [_thing:#randomAnyCard#,#cardCategory.s#,#creatureTypes.capitalize.s#,#gameConcept#]#_thing#
   in [_where:#format#,#recentCardSet#]#_where#
 - 'The Secret to #improvementGoal.capitalizeAll# is #deckChange.capitalize#'
-- 'In today''s Magic Story: #character#''s #adj# history with #character# finally
-  revealed'
-- "#pro# Video Series: How I would [_change:improve,fix]#_change# Magic: the Gathering
-  by #suggestion# #thing#, Part #num2-9#"
+- "In today's Magic Story: #character#'s #adj# [_past:past,history,backstory,rivalry,partnership]#_past# with #character# finally
+  [_verbed:revealed,explained,uncovered,divulged]#_verbed#"
+- "#pro# Video Series: How I would [_change:improve,fix]#_change# [_improvable:Magic#colon# the Gathering,Magic Online,#format#,competitive Magic,#tournamentType# attendance]#_improvable# by #mtgOpinionSuggestion# #thing#, Part #num2-9#"
 - 'Preview of #teaserCardSet# #normalFormat#: will the new #deckVariation# deck be
   #deckDescription#?'
 
@@ -159,7 +158,7 @@ disqualifyingAction:
 - repeatedly using the phrase "Now THAT'S what I call Magic!"
 
 tip:
-- 'The Case for #suggestion.capitalizeAll# [_bannedThing:#randomAnyCard#,#gameConcept#]#_bannedThing.capitalizeAll#[_where:
+- 'The Case for #cardOpinionSuggestion.capitalizeAll# [_bannedThing:#randomAnyCard#,#gameConcept#]#_bannedThing.capitalizeAll#[_where:
   in #format#,]#_where#'
 - "#tipTitle#: Improve Your #deckObjective.capitalizeAll# by #deckChange.capitalizeAll#"
 - "#tipTitle#: #deckChange.capitalize# is #adj.a# idea, [_says:Says,Reports]#_says#
@@ -206,7 +205,7 @@ decktech:
 playguide:
 - 'CLASSIC STRATEGY: [_prefix:The Philosophy of,It''s All About the]#_prefix# [_thing:#massNoun#,#pluralNoun#,#abstractNoun#,#nouns#]#_thing.capitalizeAll#,
   by #pro.capitalize#'
-- "[_proIs:#pro# is,#pros# are]#_proIs.capitalize# #verbCreating# #tech.a# to #verbDefeat# #obstacle.capitalize#"
+- "[_proIs:#pro# is,#pros# are,#team# is]#_proIs.capitalize# #verbCreating# #tech.a# to #verbDefeat# #obstacle.capitalize#"
 - "#count.capitalize# #broadCardClassification.capitalizeAll# That Should Never Have
   Been [_verbed:Printed,Banned,Unbanned,Played,Ignored]#_verbed#"
 - "[_proReveals:Top Pro #revealVerb.s#,#pro# #revealVerb.s#,#pros# #revealVerb#]#_proReveals.capitalizeAll#
