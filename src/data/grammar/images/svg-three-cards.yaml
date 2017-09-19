@@ -77,8 +77,8 @@ priceOffer:
 - ""
 - ", only #priceUSD#"
 - ", only #priceTix#"
-- " for #priceUSD#"
-- " for #priceTix#"
+- " for [_qualifier:,just,only]#_qualifier# #priceUSD#"
+- " for [_qualifier:,just,only]#_qualifier# #priceTix#"
 - " @ #priceUSD# ea."
 - " @ #priceTix# ea."
 
