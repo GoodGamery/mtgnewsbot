@@ -16,7 +16,7 @@ cp ./src/data/fonts/*.ttf /usr/local/share/fonts
 npm install --production
 
 # tweet
-node --harmony mtgnews --tweet --discord
+node --harmony mtgnews --tweet --toot --discord
 
 #silent
 set +x

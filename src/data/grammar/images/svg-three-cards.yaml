@@ -1,7 +1,7 @@
 ---
 imgClassifieds:
 - >
-  #pickThreeDiffCards#[_body:#headlineFourCardsForSale##priceOffer#]
+  #pickThreeDiffCards#[_body:#headlineForSale##priceOffer#]
   #pickBigHeader##svgImgClassifieds#
 - >
   #pickThreeSameCard#[_body:#headlineOneCardForSale##priceOffer#]
@@ -14,7 +14,7 @@ imgClassifieds:
   #pickBigHeader##svgImgClassifieds#
 
 svgImgClassifieds: >
-  [#svgThemeColors#]#_header# #_body# {svg svgString=`#svgFourCards#`}
+  [#svgThemeColors#]#_header# #_body# {svg svgString=`#svg#`}
 pickBigHeader: >
   [_header:#titleClassified#]
 titleClassified:
@@ -27,7 +27,7 @@ titleClassified:
 - GREAT VALUE
 - LOOK AT THESE CARDS
 - PREPARE YOUR BINDER
-headlineFourCardsForSale:
+headlineForSale:
 - "#_card1#, #_card2#, and #_card3#"
 - "#_card1#, #_card2#, & #_card3#"
 - "#_card3# plus some other cards I found on the floor"
@@ -105,7 +105,6 @@ pickThreeCardsFromEither: >
   [_pickThreeSameCard:#pickThreeSameCardFromEither#]
 
 
-
 pickThreeCardsFromFinderSearchTypeOrCategory:
  - "[#pickThreeCardsFromFinderSearchCardType#]"
  - "[#pickThreeCardsFromFinderSearchCreatureType#][_cardType:#_creatureType#]"
@@ -158,10 +157,10 @@ pickThreeCardsFromFinderSearchCustomCategory: >
   [_card2:#_cardRawName2#]
   [_card3:#_cardRawName3#]
 
-pickThreeSameCardFromList: >
-  [_cardSame:#realCard#]
-pickThreeDiffCardsFromCardlist: >
-  [_card1Diff:#realCard#][_card2Diff:#realCard#][_card3Diff:#realCard#]
+pickFourSameCardFromList: >
+  [_cardSame:#randomRealCard#]
+pickFourDiffCardsFromCardlist: >
+  [_card1Diff:#randomRealCard#][_card2Diff:#randomRealCard#][_card3Diff:#randomRealCard#]
 
 pickThreeSameCardFromFinder: > 
   [#CARDFINDER.randomCard#][_cardSame:#_cardRawName1#]
@@ -173,9 +172,9 @@ pickThreeSameCardFromEither:
  - "#pickThreeSameCardFromFinder#"
 pickThreeDiffCardsFromEither: >
   [#CARDFINDER.randomCards(3)#]
-  [_card1Diff:#_cardRawName1#,#realCard#]
-  [_card2Diff:#_cardRawName2#,#realCard#]
-  [_card3Diff:#_cardRawName3#,#realCard#]
+  [_card1Diff:#_cardRawName1#,#randomRealCard#]
+  [_card2Diff:#_cardRawName2#,#randomRealCard#]
+  [_card3Diff:#_cardRawName3#,#randomRealCard#]
 
 ComeOn: "[_svgComeOnTextSize:42px][_svgComeOnLineHeight:31px][_ComeOnYPos:264][_ComeOnText:#ComeOnText#][_ComeOnTextStyle:#svgComeOnTextStyle#]"
 
@@ -340,7 +339,7 @@ svgHeaderTextStyle: >
   padding: 5px;
   font-family: Beleren, Georgia, 'Liberation Serif', 'DejaVu Serif', serif;
   font-weight: 900; text-align:center;
-  #svgFourCardsHeaderTextStyleGradient#
+  #svgHeaderTextStyleGradient#
 svgBodyTextStyle: >
   color: white;
   padding: 5px;
@@ -352,12 +351,12 @@ svgComeOnTextStyle: >
   padding: 5px;
   font-family: Beleren, Georgia, 'Liberation Serif', 'DejaVu Serif', serif; 
   font-weight: 900; text-align:center;
-  #svgFourCardsComeOnTextStyleGradient#
+  #svgComeOnTextStyleGradient#
 
-svgFourCardsHeaderTextStyleGradient:
+svgHeaderTextStyleGradient:
 - "background: -webkit-linear-gradient(white, white 50%, gold 100%); -webkit-background-clip: text; -webkit-text-fill-color: transparent;"
 
-svgFourCardsComeOnTextStyleGradient: 
+svgComeOnTextStyleGradient: 
 - "background: -webkit-linear-gradient(white, rgb(224, 190, 36) 50%, white 50%, rgb(224, 190, 36)); -webkit-background-clip: text; -webkit-text-fill-color: transparent;"
 
 svgThemeColors:
@@ -368,7 +367,7 @@ svgThemeColors:
   - "[_themeColor1:oldlace][_themeColor2:white][_svgComeOnStrokeColor:gold][_svgComeOnOpacity:0.2]"
   - "[_themeColor1:#d27f19][_themeColor2:#dbeeff][_svgComeOnStrokeColor:gold][_svgComeOnOpacity:0.2]"
 
-svgFourCards: |
+svg: |
   <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="700" height="420">
     <defs>
       <mask id="cardMask" maskUnits="userSpaceOnUse" mask-type="alpha">
