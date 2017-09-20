@@ -74,7 +74,7 @@ armory
 gazebo
 playground
 animal shelter
-gazebo
+labyrinth
 taco stand
 pyramid
 igloo
@@ -101,3 +101,7 @@ pool
 vault
 volcano
 cave
+sanctum
+monastery
+castle
+keep

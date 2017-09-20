@@ -1,4 +1,5 @@
 // Mastodon is like twitter, but you toot instead of tweet, and the character limit is 500 instead of 140.
+'use strict';
 const Masto = require('mastodon-api');
 const fs = require('fs');
 

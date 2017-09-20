@@ -1,23 +1,20 @@
 ---
 imgClassifieds:
 - >
-  [#randomCardStrategy#]
-  #pickFourDiffCards#[_body:#headlineFourCardsForSale##priceOffer#]
+  #pickThreeDiffCards#[_body:#headlineThreeCardsForSale##priceOffer#]
   #pickBigHeader##svgImgClassifieds#
 - >
-  [#randomCardStrategy#]
-  #pickFourSameCard#[_body:#headlineOneCardForSale##priceOffer#]
+  #pickThreeSameCard#[_body:#headlineOneCardForSale##priceOffer#]
   #pickBigHeader##svgImgClassifieds#
 - >
-  [#randomCardStrategy#]
-  #pickFourCards#[_body:#headlineAnything##priceOffer#]
+  #pickThreeCards#[_body:#headlineAnything##priceOffer#]
   #pickBigHeader##svgImgClassifieds#
 - >
   [_body:#headlineCardfinder##priceOffer#]
   #pickBigHeader##svgImgClassifieds#
 
 svgImgClassifieds: >
-  [#svgThemeColors#]#_header# #_body# {svg svgString=`#svgFourCards#`}
+  [#svgThemeColors#]#_header# #_body# {svg svgString=`#svgThreeCards#`}
 pickBigHeader: >
   [_header:#titleClassified#]
 titleClassified:
@@ -30,7 +27,7 @@ titleClassified:
 - GREAT VALUE
 - LOOK AT THESE CARDS
 - PREPARE YOUR BINDER
-headlineFourCardsForSale:
+headlineThreeCardsForSale:
 - "#_card1#, #_card2#, and #_card3#"
 - "#_card1#, #_card2#, & #_card3#"
 - "#_card3# plus some other cards I found on the floor"
@@ -61,15 +58,15 @@ headlineAnything:
 - "#format.capitalize# Staples"
 
 headlineCardfinder:
-- "[#pickFourCardsFromFinderSearchBlock#]Draft [_chaff:leftovers,chaff]#_chaff# from #_cardSet#"
-- "[#pickFourCardsFromFinderSearchBlock#]#_cardSet# Draft [_chaff:leftovers,chaff]#_chaff#"
-- "[#pickFourCardsFromFinderSearchSet#][_count:All three,The only,Some]#_count# [_desc:good,playable,money]#_desc# cards from #_cardSet#"
-- "[#pickFourCardsFromFinderSearchCreatureType#]#_creatureType.capitalize# Tribal staples"
-- "[#pickFourCardsFromFinderSearchCardBroadCategory#][_adj:classic,#cardQuality#][_desc:Three #_adj#,#_adj.capitalize#]#_desc# #_cardCategory.s#"
-- "[#pickFourCardsFromFinderSearchCardBroadCategory#]#_cardCategory.capitalize.s# collection"
-- "[#pickFourCardsFromFinderSearchCardBroadCategory#]#_cardCategory.capitalize#[_saleType:flash,two-fer,bundle,member] sale"
-- "[#pickFourCardsFromFinderSearchCardBroadCategory#][_adj:classic,#cardQuality#][_desc:Three #_adj#,#_adj.capitalize#]#_desc# #_cardCategory.s#"
-- "[#pickFourCardsFromFinderSearchCardBroadCategory#][_adj:classic,#cardQuality#][_desc:Three #_adj#,#_adj.capitalize#]#_desc# #_cardCategory.s#"
+- "[#pickThreeCardsFromFinderSearchBlock#]Draft [_chaff:leftovers,chaff]#_chaff# from #_cardSet#"
+- "[#pickThreeCardsFromFinderSearchBlock#]#_cardSet# Draft [_chaff:leftovers,chaff]#_chaff#"
+- "[#pickThreeCardsFromFinderSearchSet#][_count:All three,The only,Some]#_count# [_desc:good,playable,money]#_desc# cards from #_cardSet#"
+- "[#pickThreeCardsFromFinderSearchCreatureType#]#_creatureType.capitalize# Tribal staples"
+- "[#pickThreeCardsFromFinderSearchCardBroadCategory#][_adj:classic,#cardQuality#][_desc:Three #_adj#,#_adj.capitalize#]#_desc# #_cardCategory.s#"
+- "[#pickThreeCardsFromFinderSearchCardBroadCategory#]#_cardCategory.capitalize.s# collection"
+- "[#pickThreeCardsFromFinderSearchCardBroadCategory#]#_cardCategory.capitalize#[_saleType:flash,two-fer,bundle,member] sale"
+- "[#pickThreeCardsFromFinderSearchCardBroadCategory#][_adj:classic,#cardQuality#][_desc:Three #_adj#,#_adj.capitalize#]#_desc# #_cardCategory.s#"
+- "[#pickThreeCardsFromFinderSearchCardBroadCategory#][_adj:classic,#cardQuality#][_desc:Three #_adj#,#_adj.capitalize#]#_desc# #_cardCategory.s#"
 
 priceOffer:
 - ""
@@ -80,108 +77,72 @@ priceOffer:
 - ""
 - ", only #priceUSD#"
 - ", only #priceTix#"
-- " for #priceUSD#"
-- " for #priceTix#"
+- " for [_qualifier:,just,only]#_qualifier# #priceUSD#"
+- " for [_qualifier:,just,only]#_qualifier# #priceTix#"
 - " @ #priceUSD# ea."
 - " @ #priceTix# ea."
 
-randomCardStrategy:
-- "[#pickFourCardsFromList#]"
-- "[#pickFourCardsFromFinder#]"
-- "[#pickFourCardsFromEither#]"
+pickThreeCards:
+ - "#pickThreeDiffCards#"
+ - "#pickThreeSameCard#"
 
-pickFourDiffCards: >
-  #_pickFourDiffCards#[_card1:#_card1Diff#][_card2:#_card2Diff#][_card3:#_card3Diff#]
+pickThreeDiffCards: >
+  [_card1:#randomRealCard#][_card2:#randomRealCard#][_card3:#randomRealCard#]
 
-pickFourSameCard: >
-  #_pickFourSameCard#[_card1:#_cardSame#][_card2:#_cardSame#][_card3:#_cardSame#]
+pickThreeSameCard: >
+  [_cardSame:#randomRealCard#][_card1:#_cardSame#][_card2:#_cardSame#][_card3:#_cardSame#]
 
-pickFourCardsFromList: >
-  [_pickFourDiffCards:#pickFourDiffCardsFromCardlist#]
-  [_pickFourSameCard:#pickFourSameCardFromList#]
+pickThreeCardsFromFinderSearchTypeOrCategory:
+ - "[#pickThreeCardsFromFinderSearchCardType#]"
+ - "[#pickThreeCardsFromFinderSearchCreatureType#][_cardType:#_creatureType#]"
 
-pickFourCardsFromFinder: >
-  [_pickFourDiffCards:#pickFourDiffCardsFromFinder#]
-  [_pickFourSameCard:#pickFourSameCardFromFinder#]
+pickThreeCardsFromFinderSearchCardBroadCategory:
+ - "[#pickThreeCardsFromFinderSearchCardType#][_cardCategory:#_cardType#]"
+ - "[#pickThreeCardsFromFinderSearchCreatureType#][_cardCategory:#_creatureType#]"
+ - "[#pickThreeCardsFromFinderSearchCategory#][_cardCategory:#_cardCategory#]"
+ - "[#pickThreeCardsFromFinderSearchCustomCategory#][_cardCategory:#_cardCategory#]"
 
-pickFourCardsFromEither: >
-  [_pickFourDiffCards:#pickFourDiffCardsFromEither#]
-  [_pickFourSameCard:#pickFourSameCardFromEither#]
-
-pickFourCards:
- - "#pickFourDiffCards#"
- - "#pickFourSameCard#"
-
-pickFourCardsFromFinderSearchTypeOrCategory:
- - "[#pickFourCardsFromFinderSearchCardType#]"
- - "[#pickFourCardsFromFinderSearchCreatureType#][_cardType:#_creatureType#]"
-
-pickFourCardsFromFinderSearchCardBroadCategory:
- - "[#pickFourCardsFromFinderSearchCardType#][_cardCategory:#_cardType#]"
- - "[#pickFourCardsFromFinderSearchCreatureType#][_cardCategory:#_creatureType#]"
- - "[#pickFourCardsFromFinderSearchCategory#][_cardCategory:#_cardCategory#]"
- - "[#pickFourCardsFromFinderSearchCustomCategory#][_cardCategory:#_cardCategory#]"
-
-pickFourCardsFromFinderSearchCreatureType: >
+pickThreeCardsFromFinderSearchCreatureType: >
   [_creatureType:#creatureTypes#]
   [_searchTerm:"#_creatureType#"][#_searchTerm.cardSearchByType(3)#]
   [_card1:#_cardRawName1#]
   [_card2:#_cardRawName2#]
   [_card3:#_cardRawName3#]
 
-pickFourCardsFromFinderSearchCardType: >
+pickThreeCardsFromFinderSearchCardType: >
   [_cardType:#cardTypes#]
   [_searchTerm:"#_cardType#"][#_searchTerm.cardSearchByType(3)#]
   [_card1:#_cardRawName1#]
   [_card2:#_cardRawName2#]
   [_card3:#_cardRawName3#]
 
-pickFourCardsFromFinderSearchSet: >
+pickThreeCardsFromFinderSearchSet: >
   [_cardSet:#cardSet#]
   [_searchTerm:"#_cardSet#"][#_searchTerm.cardSearchBySet(3)#]
   [_card1:#_cardRawName1#]
   [_card2:#_cardRawName2#]
   [_card3:#_cardRawName3#]
 
-pickFourCardsFromFinderSearchBlock: >
+pickThreeCardsFromFinderSearchBlock: >
   [_block:#cardBlock#,#cardSetStandalone#][#_block#]
   [_cardSet:#cardBlockName#]
   [_searchTerm:"#cardBlockSet#"][#_searchTerm.cardSearchBySet(1)#][_card1:#_cardRawName1#]
   [_searchTerm:"#cardBlockSet#"][#_searchTerm.cardSearchBySet(1)#][_card2:#_cardRawName1#]
   [_searchTerm:"#cardBlockSet#"][#_searchTerm.cardSearchBySet(1)#][_card3:#_cardRawName1#]
 
-pickFourCardsFromFinderSearchCategory: >
+pickThreeCardsFromFinderSearchCategory: >
   [#searchableCardCategory#][#_cardCategorySearchTerm.cardSearchByText(3)#]
   [_cardCategory:#_cardCategory#]
   [_card1:#_cardRawName1#]
   [_card2:#_cardRawName2#]
   [_card3:#_cardRawName3#]
 
-pickFourCardsFromFinderSearchCustomCategory: >
+pickThreeCardsFromFinderSearchCustomCategory: >
   [#searchableCardCategoryCustomQuery#][#_customQuery.cardSearchCustomQuery(3)#]
   [_cardCategory:#_cardCategory#]
   [_card1:#_cardRawName1#]
   [_card2:#_cardRawName2#]
   [_card3:#_cardRawName3#]
-
-pickFourSameCardFromList: >
-  [_cardSame:#randomRealCard#]
-pickFourDiffCardsFromCardlist: >
-  [_card1Diff:#randomRealCard#][_card2Diff:#randomRealCard#][_card3Diff:#randomRealCard#]
-
-pickFourSameCardFromFinder: > 
-  [#CARDFINDER.randomCard#][_cardSame:#_cardRawName1#]
-pickFourDiffCardsFromFinder: >
-  [#CARDFINDER.randomCards(3)#][_card1Diff:#_cardRawName1#][_card2Diff:#_cardRawName2#][_card3Diff:#_cardRawName3#]
-
-pickFourSameCardFromEither:
- - "#pickFourSameCardFromList#"
- - "#pickFourSameCardFromFinder#"
-pickFourDiffCardsFromEither: >
-  [#CARDFINDER.randomCards(3)#]
-  [_card1Diff:#_cardRawName1#,#randomRealCard#]
-  [_card2Diff:#_cardRawName2#,#randomRealCard#]
-  [_card3Diff:#_cardRawName3#,#randomRealCard#]
 
 ComeOn: "[_svgComeOnTextSize:42px][_svgComeOnLineHeight:31px][_ComeOnYPos:264][_ComeOnText:#ComeOnText#][_ComeOnTextStyle:#svgComeOnTextStyle#]"
 
@@ -330,6 +291,7 @@ ComeOnFreebieDesignCardReference:
 - S.N.O.T.
 - SPITEMARE
 - SQUEE
+- SQUIRE
 - VORSTCLAW
 - VEBULID
 - WEREBEAR
@@ -345,7 +307,7 @@ svgHeaderTextStyle: >
   padding: 5px;
   font-family: Beleren, Georgia, 'Liberation Serif', 'DejaVu Serif', serif;
   font-weight: 900; text-align:center;
-  #svgFourCardsHeaderTextStyleGradient#
+  #svgHeaderTextStyleGradient#
 svgBodyTextStyle: >
   color: white;
   padding: 5px;
@@ -357,12 +319,12 @@ svgComeOnTextStyle: >
   padding: 5px;
   font-family: Beleren, Georgia, 'Liberation Serif', 'DejaVu Serif', serif; 
   font-weight: 900; text-align:center;
-  #svgFourCardsComeOnTextStyleGradient#
+  #svgComeOnTextStyleGradient#
 
-svgFourCardsHeaderTextStyleGradient:
+svgHeaderTextStyleGradient:
 - "background: -webkit-linear-gradient(white, white 50%, gold 100%); -webkit-background-clip: text; -webkit-text-fill-color: transparent;"
 
-svgFourCardsComeOnTextStyleGradient: 
+svgComeOnTextStyleGradient: 
 - "background: -webkit-linear-gradient(white, rgb(224, 190, 36) 50%, white 50%, rgb(224, 190, 36)); -webkit-background-clip: text; -webkit-text-fill-color: transparent;"
 
 svgThemeColors:
@@ -373,7 +335,7 @@ svgThemeColors:
   - "[_themeColor1:oldlace][_themeColor2:white][_svgComeOnStrokeColor:gold][_svgComeOnOpacity:0.2]"
   - "[_themeColor1:#d27f19][_themeColor2:#dbeeff][_svgComeOnStrokeColor:gold][_svgComeOnOpacity:0.2]"
 
-svgFourCards: |
+svgThreeCards: |
   <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="700" height="420">
     <defs>
       <mask id="cardMask" maskUnits="userSpaceOnUse" mask-type="alpha">

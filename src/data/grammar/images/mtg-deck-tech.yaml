@@ -39,6 +39,41 @@ svgDeckTechBackgroundImageUrl:
   - ../src/data/images/decktech/backgrounds/totally-lost.jpg
   - ../src/data/images/decktech/backgrounds/trecherous-urge.jpg
   - ../src/data/images/decktech/backgrounds/ultimate-price.jpg
+  - ../src/data/images/decktech/backgrounds/ancient-carp.jpg
+  - ../src/data/images/decktech/backgrounds/bishop-of-rebirth.jpg
+  - ../src/data/images/decktech/backgrounds/blessed-spirits.jpg
+  - ../src/data/images/decktech/backgrounds/browbeat.jpg
+  - ../src/data/images/decktech/backgrounds/charging-monstrosaur.jpg
+  - ../src/data/images/decktech/backgrounds/cloudform.jpg
+  - ../src/data/images/decktech/backgrounds/curse-of-verbosity.jpg
+  - ../src/data/images/decktech/backgrounds/dinrova-horror.jpg
+  - ../src/data/images/decktech/backgrounds/drown-in-sorrow.jpg
+  - ../src/data/images/decktech/backgrounds/dryad-arbor.jpg
+  - ../src/data/images/decktech/backgrounds/erdwal-illuminator.jpg
+  - ../src/data/images/decktech/backgrounds/gift-of-orzhova.jpg
+  - ../src/data/images/decktech/backgrounds/hubris.jpg
+  - ../src/data/images/decktech/backgrounds/hulking-devil.jpg
+  - ../src/data/images/decktech/backgrounds/hundred-handed-one.jpg
+  - ../src/data/images/decktech/backgrounds/khalni-heart-exhibition.jpg
+  - ../src/data/images/decktech/backgrounds/lore-seeker.jpg
+  - ../src/data/images/decktech/backgrounds/millstone.jpg
+  - ../src/data/images/decktech/backgrounds/murder.jpg
+  - ../src/data/images/decktech/backgrounds/nykthos-shrine-to-nyx.jpg
+  - ../src/data/images/decktech/backgrounds/obzedat-the-ghost-council.jpg
+  - ../src/data/images/decktech/backgrounds/putrid-leech.jpg
+  - ../src/data/images/decktech/backgrounds/quest-for-ancient-secrets.jpg
+  - ../src/data/images/decktech/backgrounds/secure-the-wastes.jpg
+  - ../src/data/images/decktech/backgrounds/shadow-of-the-grave.jpg
+  - ../src/data/images/decktech/backgrounds/stitch-in-time.jpg
+  - ../src/data/images/decktech/backgrounds/strangleroot-geist.jpg
+  - ../src/data/images/decktech/backgrounds/swan-song.jpg
+  - ../src/data/images/decktech/backgrounds/sword-of-dungeons-and-dragons.jpg
+  - ../src/data/images/decktech/backgrounds/terminate.jpg
+  - ../src/data/images/decktech/backgrounds/vampire-nighthawk.jpg
+  - ../src/data/images/decktech/backgrounds/wall-of-stone.jpg
+  - ../src/data/images/decktech/backgrounds/wirewood-elemental.jpg
+  - ../src/data/images/decktech/backgrounds/wits-end.jpg
+
 svgDeckTechAccessoriesImageUrl: 
   - ../src/data/images/decktech/overlays/decktech-candyfinder-basic.png
   - ../src/data/images/decktech/overlays/decktech-candyfinder-basic.png
