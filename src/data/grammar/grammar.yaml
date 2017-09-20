@@ -130,8 +130,6 @@ magicStorylineHighlight:
 - "#character#'s #adj# [_past:past,history,backstory,rivalry,partnership]#_past# with #character# finally  [_verbed:revealed,explained,uncovered,divulged,explored,exposed]#_verbed#"
 - "#character# and the [_encounter:#adjStorybook# #concreteNoun#,#adjStorybook# #characterClass#, #count# #adjStorybook# #characterClass.s#, #count# #adjStorybook# #itemNoun.s#, #adjStorybook# #creatureTypes#, #count# #adjStorybook# #creatureTypes.s#]#_encounter.capitalizeAll#"
 
-
-
 realize: "#pros.capitalize# don't realize that #techPlural# #verbDefeat# #obstacle#"
 
 tournamentNews:
@@ -163,9 +161,9 @@ disqualifyingAction:
 - repeatedly using the phrase "Now THAT'S what I call Magic!"
 
 tip:
-- 'The Case for #cardOpinionSuggestion.capitalizeAll# [_bannedThing:#randomAnyCard#,#gameConcept#]#_bannedThing.capitalizeAll#[_where:
+- 'The Case for #mtgOpinionSuggestion.capitalizeAll# [_bannedThing:#randomAnyCard#,#gameConcept#]#_bannedThing.capitalizeAll#[_where:
   in #format#,]#_where#'
-- "#tipTitle#: Improve Your #deckObjective.capitalizeAll# by #deckChange.capitalizeAll#"
+- "#tipTitle#: [_change:Improve,Upgrade,Evolve,Update,Revise,Revitalize,Enliven,Fine-tune,Level up,Completely transform,Revolutionize,Boost,Freshen up,Revise,Customize,Jazz up,Enliven,Invigorate]#_change# Your #deckObjective# by #deckChange#"
 - "#tipTitle#: #deckChange.capitalize# is #adj.a# idea, [_says:Says,Reports]#_says#
   #pro#"
 - "[_title:#tipTitle#,#pro#]#_title.capitalize#: [_replacement:#randomAnyCard# can replace

@@ -47,7 +47,8 @@
   realHandCard: [
     "#realCard#",
     "#realCard#",
-    "#realCard#",
+    "#randomRealCard#",
+    "#randomRealCard#",
     "#realLandCard#",
     "#realLandCard#"
   ],
