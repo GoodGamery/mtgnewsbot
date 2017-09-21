@@ -1,0 +1,19 @@
+---
+# VSL, Modern Cube, Commander 1v1, Treasure Chest update, MOCS 2018, and IXALAN!
+
+#Need some #MondayMotivation? Nothing a good [Captain] with [Menace] can't handle!
+# {cardimg}
+#Ixalan comes to #MTGO in 1 week! #MTGXLN
+
+# The [Hour of Devastation] [is here|is now|has begun]!
+# hour of, time of, moment of, day of, festival of, dance of, march of, reign of, rise of, wrath of"
+# one-ofs:
+# approach of, era of, carnival of, dawn of, night of, spring of
+# maybe: rain of, rite of, ritual of, test of, trial of, trail of, voice of (Exclude commas) search for
+# {cardimg}
+# Join the Sealed MOCS Open event on #MTGO, beginning in 30 minutes.
+
+mtgoTwitterStyleHeadline:
+  -> 
+  [_customQuery:name="hour of" name|="time of" name|="day of" name|="moment of" name|="festival of" name|="dance of" name|="marce of" name|="reign of" name|="rise of" name|="wrath of" name|="XYZ of"][#cotdCustomSearch#]
+  The #_cardName1#] is here!

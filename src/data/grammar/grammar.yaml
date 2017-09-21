@@ -118,13 +118,11 @@ novelSetGraphicAnnouncement:
 
 realization:
 - "#realize#"
-- The Importance of [_thing:#randomAnyCard#,#cardCategory.s#,#creatureTypes.capitalize.s#,#gameConcept#]#_thing#
-  in [_where:#format#,#recentCardSet#]#_where#
-- 'The Secret to #improvementGoal.capitalizeAll# is #deckChange.capitalize#'
+- "The Importance of [_thing:#randomAnyCard#,#cardCategory.s#,#creatureTypes.capitalize.s#,#gameConcept#]#_thing# in [_where:#format#,#recentCardSet#]#_where#"
+- "The Secret to #improvementGoal.capitalizeAll# is #deckChange.capitalize#"
 - "[_leadIn:In today's Magic Story,Story Arcana,Exploring the Story,Story Time,Story Hour]#_leadIn#: #magicStorylineHighlight#"
 - "#pro# Video Series: How I would [_change:improve,fix]#_change# [_improvable:Magic#colon# the Gathering,Magic Online,#format#,competitive Magic,#tournamentType# attendance]#_improvable# by #mtgOpinionSuggestion# #thing#, Part #num2-9#"
-- 'Preview of #teaserCardSet# #normalFormat#: will the new #deckVariation# deck be
-  #deckDescription#?'
+- "Preview of #teaserCardSet# #normalFormat#: will the new #deckVariation# deck be #deckDescription#?"
 
 magicStorylineHighlight:
 - "#character#'s #adj# [_past:past,history,backstory,rivalry,partnership]#_past# with #character# finally  [_verbed:revealed,explained,uncovered,divulged,explored,exposed]#_verbed#"
@@ -142,8 +140,7 @@ tournamentNews:
 - 'Pro Tour #teaserCardSet# will be in #city#'
 - 'Team Series clinched by #team# at Pro Tour #recentCardSet# in #city#'
 - '#pro#, after winning #event# with #deckVariation#: "It''s #deckDescription#."'
-- "[_rule:SHOCKER!,BREAKING#colon#,TOURNAMENT UPDATE#colon#,,,,]#_rule# #pro# has
-  been [_rule:DQ'd,suspended,disqualified]#_rule# from #event# for #disqualifyingAction#"
+- "[_rule:SHOCKER!,BREAKING#colon#,TOURNAMENT UPDATE#colon#,,,,]#_rule# #pro# has been [_rule:DQ'd,suspended,disqualified]#_rule# from #event# for #disqualifyingAction#"
 - "Match highlight: #pro# [_defeats:edges out,beats,defeats,routs]#_defeats# #pro# with #randomAnyCard# in round #count# to [_getAhead:lock up,advance in,take down]#_getAhead# #event#"
 
 disqualifyingAction:
@@ -233,7 +230,7 @@ investType:
 
 investReason:
 - 'Before #randomCardAlone# is [_fate:Banned,Restricted][_in: in #format#,]#_fate##_in#'
-- 'Before #cardSet# [_fate:Rotates,is Released,Arrives on MTGO]#_fate#'
+- 'Before  [_fate:#cardSet# Rotates,#teaserCardSet# is Released,#teaserCardSet# Arrives on MTGO]#_fate#'
 
 itemOrCreatureType:
 - "#itemNoun#"

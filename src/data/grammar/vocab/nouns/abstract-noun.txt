@@ -101,3 +101,5 @@ capitalism
 weather
 fortune
 blessings
+passion
+ill will
