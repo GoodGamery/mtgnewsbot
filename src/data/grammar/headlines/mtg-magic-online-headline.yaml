@@ -23,7 +23,7 @@ onlineEventTimeStart:
 - "[_mins:5,15,30,60,90,#num2-99#]in #_mins# minutes"
 - "[_hours:1 hour, 2 hours, #num2-9# hours]in #_hours#"
 - "[_daysWeeks:#num2-9#,#num2-9#,#num2-99#][_daysOrWeeks:days,days,weeks]in #_daysWeeks# #_daysOrWeeks#"
-- "[_indeterminateTime:at some point in the near future,whenever we feel like it,sometime this year,probably very soon,at a yet-to-be-determined time]#_indeterminateTime#"
+- "[_indeterminateTime:at some point in the near future,whenever we feel like it,sometime this year,soon#comma# hopefully,on a yet-to-be-determined date]#_indeterminateTime#"
 
 onlineEventFormat:
 - sealed
@@ -49,18 +49,18 @@ onlineEvent:
 eventComeOn:
 - Don't miss it
 - Be there or be square
-- Log on today
-- Go to Magic Online today
-- You won't want to miss this
+- Registration is limited
 - Sign up now
 - Don't forget
 - We're serious this time
-- We've tested most of the cards
+- Most of the cards have even been tested
+- "Prepare to be #verbTransitivePastTense#"
 - "[_cardType:creature][#_cardType.cardSearchByType(1)#]All participants receive a free #_cardName1# avatar"
+# - "[_query:name!=\"? \"][#_query.cardSearchCustomQuery(1)#]The first #num2-9##num1-99# players to type [_code:caw,#planeswalkerFirstName#,#_cardName1#]#_code.allCaps# will [_prize:receive a promo #randomCardAlone#,receive a free treasure chest,receive a free draft set of #randomCardSet#, be entered manually]#_prize#"
 
 onlineEventAnnouncement:
-- "Join [_event:#onlineEvent#]#_aThe# #_event#, #_starting# #onlineEventTimeStart#."
 - "#onlineEvent.capitalize##_s# #_isAre# starting #onlineEventTimeStart#. #eventComeOn#!"
+- "Join [_event:#onlineEvent#]#_aThe# #_event#, #_starting# #onlineEventTimeStart#."
 
 mtgoTwitterStyleHeadline:
 - |
