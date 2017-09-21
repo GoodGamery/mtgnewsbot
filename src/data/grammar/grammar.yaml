@@ -126,7 +126,7 @@ realization:
 - "Preview of #teaserCardSet# #normalFormat#: will the new #deckVariation# deck be #deckDescription#?"
 
 magicStorylineHighlight:
-- "#character#'s #adj# [_past:past,history,backstory,rivalry,partnership]#_past# with #character# finally  [_verbed:revealed,explained,uncovered,divulged,explored,exposed]#_verbed#"
+- "#character#'s #adj# [_past:past,history,backstory,rivalry,partnership]#_past# with #character# finally [_verbed:revealed,explained,uncovered,divulged,explored,exposed]#_verbed#"
 - "#character# and the [_encounter:#adjStorybook# #concreteNoun#,#adjStorybook# #characterClass#, #count# #adjStorybook# #characterClass.s#, #count# #adjStorybook# #itemNoun.s#, #adjStorybook# #creatureTypes#, #count# #adjStorybook# #creatureTypes.s#]#_encounter.capitalizeAll#"
 
 realize: "#pros.capitalize# don't realize that #techPlural# #verbDefeat# #obstacle#"
