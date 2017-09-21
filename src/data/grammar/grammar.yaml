@@ -22,6 +22,7 @@ headline:
 - "#mtgComic#"
 - "#mtgDeckTechGraphic#"
 - "#cardCallout#"
+- "#mtgoTwitterStyleHeadline#"
 
 oncePerDay:
   - "#cotdImage#"

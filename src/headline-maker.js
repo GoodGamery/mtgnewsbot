@@ -64,13 +64,18 @@ function parseMessage(message) {
     .split('\n')
     .join(ENDL_MARKER);  // Support multiline strings from YAML;
 
-  let match = text.match(/\{\s*\w+?\s+?.*\}/g);
+  const replacementTags = {
+    newline: '\n'
+  };
+
+  let match = text.match(/\{\s*\w+?(\s+?.*)?\}/g);
   if (match) {
     const removeEndlRegex = new RegExp(`\\${ENDL_MARKER}`, `g`);
     match.forEach(match => {
-      const tag = match.match(/\{\s*(\w+)\s/)[1];
+      const tagMatch = match.match(/\{\s*(\w+)(\s?)/);
+      const tag = tagMatch[1];
 
-      if (!tags[tag]) {
+      if (!tags[tag] && tagMatch[2]) {
         tags[tag] = match.match(/(\w+=`.*?`)/g).reduce((result, next) => {
           let key = next.match(/(\w+)=/)[1];
           let value = next.match(/=`(.*?)`/)[1];
@@ -78,9 +83,10 @@ function parseMessage(message) {
           return result;
         }, {});
       }
+
       text = text
-        .replace(match, ``)
-        .replace(removeEndlRegex, ``)
+        .replace(match, replacementTags[tag] ? replacementTags[tag] : '')
+        .replace(removeEndlRegex, '')
         .trim();
     });
 
@@ -110,7 +116,7 @@ function parseMessage(message) {
     }
   }
 
-  text = text.trim().replace(/\s+/g,' ');
+  text = text.trim().replace(/ +/g,' ');
 
   return new Headline(text, tags, altText);
 }

@@ -13,7 +13,59 @@
 # {cardimg}
 # Join the Sealed MOCS Open event on #MTGO, beginning in 30 minutes.
 
+
+onlineEventTimeStart:
+- today
+- tomorrow
+- "[_next:this,next]#_next# weekend"
+- "[_next:this,next]#_next# week"
+- "[_next:,this,next]#_next# #dayOfTheWeek#"
+- "[_mins:5,15,30,60,90,#num2-99#]in #_mins# minutes"
+- "[_hours:1 hour, 2 hours, #num2-9# hours]in #_hours#"
+- "[_daysWeeks:#num2-9#,#num2-9#,#num2-99#][_daysOrWeeks:days,days,weeks]in #_daysWeeks# #_daysOrWeeks#"
+- "[_indeterminateTime:at some point in the near future,whenever we feel like it,sometime this year,probably very soon,at a yet-to-be-determined time]#_indeterminateTime#"
+
+onlineEventFormat:
+- sealed
+- limited
+- constructed
+- "#format#"
+
+onlineEventType:
+- open
+- qualifier
+- daily
+- challenge
+- premiere
+
+onlineEvent:
+- "[_aThe:][_isAre:is][_s:]the #onlineEventFormat.capitalize# MOCS #onlineEventType.capitalize#[_event:, event]#_event#"
+- "[_aThe:a][_isAre:are][_s:s]MTGNewsbot-sponsored #onlineEventFormat.capitalize# #onlineEventType.capitalize# event"
+- "[_aThe:a][_isAre:are][_s:s]#teaserCardSet# Online [_type:Release,Premiere]#_type# event"
+- "[_aThe:a][_isAre:are][_s:s][_set:#_cardSet1#,#cardSet#]#_set# [_back:Flashback,Throwback]#_back# [_event:draft,sealed league,standard event]#_event#"
+- "[_aThe:a][_isAre:are][_s:s]#popularFormat# Cube [_event:league,league,queue]#_event#"
+- "[_aThe:a][_isAre:are][_s:s]#alternativeConstructedFormat# online [_event:league, premiere event]#_event#"
+
+eventComeOn:
+- Don't miss it
+- Be there or be square
+- Log on today
+- Go to Magic Online today
+- You won't want to miss this
+- Sign up now
+- Don't forget
+- We're serious this time
+- We've tested most of the cards
+- "[_cardType:creature][#_cardType.cardSearchByType(1)#]All participants receive a free #_cardName1# avatar"
+
+onlineEventAnnouncement:
+- "Join [_event:#onlineEvent#]#_aThe# #_event#, #_starting# #onlineEventTimeStart#."
+- "#onlineEvent.capitalize##_s# #_isAre# starting #onlineEventTimeStart#. #eventComeOn#!"
+
 mtgoTwitterStyleHeadline:
-  -> 
-  [_customQuery:name="hour of" name|="time of" name|="day of" name|="moment of" name|="festival of" name|="dance of" name|="marce of" name|="reign of" name|="rise of" name|="wrath of" name|="XYZ of"][#cotdCustomSearch#]
-  The #_cardName1#] is here!
+- |
+  [_query:t!="legendary" t!="planeswalker" (name="hour of" name|="time of" name|="day of" name|="moment of" name|="festival of" name|="dance of" name|="feast of" name|="march of" name|="reign of" name|="rise of" name|="wrath of" name|="rain of" name|="rite of" name|="ritual of" name|="test of" name|="trial of" name|="approach of" name|="era of" name|="dawn of" name|="night of" name|="spring of" name|="carnival of" name|="lord of" name|="voice of" name|="sire of" name|="avatar of" name|="bane of" name|="bearer of"  name|="brink of" name|="call of" name|="champion of" name|="chancellor of" name|="chorus of" name|="eater of" name|="hand of" name|="harbinger of" name|="magus of"  name|="master of" name|="order of" name|="season of " name|="terror of ")][#_query.cardSearchCustomQuery(1)#][_cardname:#_cardName1#]
+  [_starting:starting,beginning,launching]  
+  The #_cardname# [_here:is here,has arrived,has come,is finally here]#_here#!
+  {newline}{newline}#onlineEventAnnouncement#  
+  {newline}#imgCard#
