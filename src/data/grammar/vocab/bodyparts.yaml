@@ -73,6 +73,7 @@
   ],
 
   "bodypartsInternal": [
+    "heart",
     "eyes",
     "stomach",,
     "hair",
@@ -83,7 +84,8 @@
     "spine",
     "brain",
     "skeleton",
-    "intestines"
+    "intestines",
+    "bellybutton"
   ],
 
   "bodypartsExternal": [
@@ -109,7 +111,6 @@
     "thumbs",
     "shins",
     "skin",
-    "lips",
-    "bellybutton"
+    "lips"
   ]
 }

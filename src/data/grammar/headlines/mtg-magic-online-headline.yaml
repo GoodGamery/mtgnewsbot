@@ -1,18 +1,61 @@
 ---
 # VSL, Modern Cube, Commander 1v1, Treasure Chest update, MOCS 2018, and IXALAN!
 
-#Need some #MondayMotivation? Nothing a good [Captain] with [Menace] can't handle!
+# Need some [MondayMotivation]? Nothing a good [Captain] with [Menace] can't handle!
+# Ixalan comes to #MTGO in 1 week! #MTGXLN
 # {cardimg}
-#Ixalan comes to #MTGO in 1 week! #MTGXLN
 
-# The [Hour of Devastation] [is here|is now|has begun]!
-# hour of, time of, moment of, day of, festival of, dance of, march of, reign of, rise of, wrath of"
-# one-ofs:
-# approach of, era of, carnival of, dawn of, night of, spring of
-# maybe: rain of, rite of, ritual of, test of, trial of, trail of, voice of (Exclude commas) search for
-# {cardimg}
-# Join the Sealed MOCS Open event on #MTGO, beginning in 30 minutes.
+mtgoTwitterStyleHeadline:
+- "#theXOfYHasZ#"
+- "#cardPunEventInvitation#"
 
+##### theXOfYHasZ ######
+
+theXOfYHasZ:
+- |
+  [_query:t!="legendary" t!="planeswalker" (name="hour of" name|="time of" name|="day of" name|="moment of" name|="festival of" name|="dance of" name|="feast of" name|="march of" name|="reign of" name|="rise of" name|="wrath of" name|="rain of" name|="rite of" name|="ritual of" name|="test of" name|="trial of" name|="approach of" name|="era of" name|="dawn of" name|="night of" name|="spring of" name|="carnival of" name|="lord of" name|="voice of" name|="sire of" name|="avatar of" name|="bane of" name|="bearer of"  name|="brink of" name|="call of" name|="champion of" name|="chancellor of" name|="chorus of" name|="eater of" name|="hand of" name|="harbinger of" name|="magus of"  name|="master of" name|="order of" name|="season of " name|="terror of ")][#_query.cardSearchCustomQuery(1)#][_cardname:#_cardName1#]
+  The #_cardname# [_here:is here,has arrived,has come,is finally here]#_here#!
+  {newline}{newline}[_announcement:#onlineEventAnnouncement1#!,#onlineEventAnnouncement2#.]#_announcement.capitalize#
+  {newline}#imgCard#
+
+##### cardPunEventInvitation ######
+
+cardPunEventInvitation:
+- |
+  [#cardPunSetup#]
+  #_cardPunLine1#
+  {newline}{newline}[_cardPunLine2:#_verbPun#—#onlineEventAnnouncement1#,#_verbPun# and #onlineEventAnnouncement2#]#_cardPunLine2.capitalize#!
+  {newline}#imgCard#  
+
+cardPunSetup:
+- |
+  [#cardTextVerbSearch#][_verbPun:#_cardverb# your opponents,#_cardverb# your enemies,#_cardverb# the competition,#_cardverb# yourself]
+  [_verbPun:#_cardverb# your opponents,#_cardverb# your enemies,#_cardverb# the competition,#_cardverb# yourself]
+  [_cardPunLine1:#challengeAppeal#]
+- |
+  [separator:of the][#separator.cardSearchTwoParter(1)#][_cardname:#_cardName1#]
+  [_verbPun:#verbYourself# yourself]
+  [_beOneOf:be one of,be among,fight alongside,answer the call of,fight for,become a champion of,become #_cardNameFirstPart1.a# of,be #follower.a# of]
+  [_willYouBe:#_beOneOf# the #_cardNameSecondPart1#]
+  [_areYouOne:one of the #_cardNameSecondPart1#,a true #_cardNameFirstPart1#,#_cardNameFirstPart1.a# of the #_cardNameSecondPart1#,#_cardNameFirstPart1.a# or #characterClass.capitalize.a#, #follower.a# of the #_cardNameSecondPart1#]
+  [_cardPunLine1:Will you #_willYouBe#?,Are you #_areYouOne#?]
+
+challengeAppeal:
+- "Are you ready [_forThis:for this,to battle,to face the challenge,to spend all day on Magic Online]#_forThis#?"
+- Are you up to the task?
+- Are you as smart as you think you are?
+- Will you step up to the challenge?
+- How serious are you about winning?
+- Do you want treasure chests?
+- "So you think you can [_doThis:battle,win a tournament,#verbStrictlyIntransitive#]#_doThis#?"
+- "[_have:,Have some,Do you have,Extra]#_have# [_currency:event tickets,play points,some extra cash]#_currency# to burn?"
+- "Do you have the #bodypartsInPairs# for this?"
+- "Is there #abstractNounMassNounOrEmotion# [_where:in your #bodypartsInternal#,in your #bodypartsExternal#]#_where#?"
+
+cardTextVerbSearch:
+  "[_cardverb:#cardTextVerb#][_query:text=?#_cardverb#][#_query.cardSearchCustomQuery(1)#][_cardname:#_cardName1#]"
+
+##### (online event rules) #####
 
 onlineEventTimeStart:
 - today
@@ -58,14 +101,5 @@ eventComeOn:
 - "[_cardType:creature][#_cardType.cardSearchByType(1)#]All participants receive a free #_cardName1# avatar"
 # - "[_query:name!=\"? \"][#_query.cardSearchCustomQuery(1)#]The first #num2-9##num1-99# players to type [_code:caw,#planeswalkerFirstName#,#_cardName1#]#_code.allCaps# will [_prize:receive a promo #randomCardAlone#,receive a free treasure chest,receive a free draft set of #randomCardSet#, be entered manually]#_prize#"
 
-onlineEventAnnouncement:
-- "#onlineEvent.capitalize##_s# #_isAre# starting #onlineEventTimeStart#. #eventComeOn#!"
-- "Join [_event:#onlineEvent#]#_aThe# #_event#, #_starting# #onlineEventTimeStart#."
-
-mtgoTwitterStyleHeadline:
-- |
-  [_query:t!="legendary" t!="planeswalker" (name="hour of" name|="time of" name|="day of" name|="moment of" name|="festival of" name|="dance of" name|="feast of" name|="march of" name|="reign of" name|="rise of" name|="wrath of" name|="rain of" name|="rite of" name|="ritual of" name|="test of" name|="trial of" name|="approach of" name|="era of" name|="dawn of" name|="night of" name|="spring of" name|="carnival of" name|="lord of" name|="voice of" name|="sire of" name|="avatar of" name|="bane of" name|="bearer of"  name|="brink of" name|="call of" name|="champion of" name|="chancellor of" name|="chorus of" name|="eater of" name|="hand of" name|="harbinger of" name|="magus of"  name|="master of" name|="order of" name|="season of " name|="terror of ")][#_query.cardSearchCustomQuery(1)#][_cardname:#_cardName1#]
-  [_starting:starting,beginning,launching]  
-  The #_cardname# [_here:is here,has arrived,has come,is finally here]#_here#!
-  {newline}{newline}#onlineEventAnnouncement#  
-  {newline}#imgCard#
+onlineEventAnnouncement1: "[_starting:starting,beginning,launching]#onlineEvent.capitalize##_s# #_isAre# starting #onlineEventTimeStart#. #eventComeOn#"
+onlineEventAnnouncement2: "[_starting:starting,beginning,launching]join [_event:#onlineEvent#]#_aThe# #_event#, #_starting# #onlineEventTimeStart#"
