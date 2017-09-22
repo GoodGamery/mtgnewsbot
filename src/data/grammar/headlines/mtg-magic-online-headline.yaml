@@ -5,6 +5,11 @@
 # Ixalan comes to #MTGO in 1 week! #MTGXLN
 # {cardimg}
 
+# It's [{talk|verb} like a {creatureTypeOrCharacterClass} day! | World#CreatureTypes(or game concept, charclass,etc.)Day!
+# Or for the #creatureTypeOrCharacterClass# of #location#...{EVERYDAY|YESTERDAY|...}!
+
+ #Which card with the word "[thought]" in its name is your fave? #ThursdayThoughts#
+
 mtgoTwitterStyleHeadline:
 - "#theXOfYHasZ#"
 - "#cardPunEventInvitation#"
@@ -23,8 +28,9 @@ theXOfYHasZ:
 cardPunEventInvitation:
 - |
   [#cardPunSetup#]
+  [_leadIn:Get ready to,]
   #_cardPunLine1#
-  {newline}{newline}[_cardPunLine2:#_verbPun#—#onlineEventAnnouncement1#,#_verbPun# and #onlineEventAnnouncement2#]#_cardPunLine2.capitalize#!
+  {newline}{newline}[_cardPunLine2:Get ready to #_verbPun#—#onlineEventAnnouncement1#,#_verbPun# and #onlineEventAnnouncement2#]#_cardPunLine2.capitalize#!
   {newline}#imgCard#  
 
 cardPunSetup:
@@ -84,7 +90,7 @@ onlineEventType:
 onlineEvent:
 - "[_aThe:][_isAre:is][_s:]the #onlineEventFormat.capitalize# MOCS #onlineEventType.capitalize#[_event:, event]#_event#"
 - "[_aThe:a][_isAre:are][_s:s]MTGNewsbot-sponsored #onlineEventFormat.capitalize# #onlineEventType.capitalize# event"
-- "[_aThe:a][_isAre:are][_s:s]#teaserCardSet# Online [_type:Release,Premiere]#_type# event"
+- "[_aThe:a][_isAre:are][_s:s]#teaserCardSet# online [_type:release,premiere]#_type# event"
 - "[_aThe:a][_isAre:are][_s:s][_set:#_cardSet1#,#cardSet#]#_set# [_back:Flashback,Throwback]#_back# [_event:draft,sealed league,standard event]#_event#"
 - "[_aThe:a][_isAre:are][_s:s]#popularFormat# Cube [_event:league,league,queue]#_event#"
 - "[_aThe:a][_isAre:are][_s:s]#alternativeConstructedFormat# online [_event:league, premiere event]#_event#"
