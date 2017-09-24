@@ -8,7 +8,8 @@
 # It's [{talk|verb} like a {creatureTypeOrCharacterClass} day! | World#CreatureTypes(or game concept, charclass,etc.)Day!
 # Or for the #creatureTypeOrCharacterClass# of #location#...{EVERYDAY|YESTERDAY|...}!
 
- #Which card with the word "[thought]" in its name is your fave? #ThursdayThoughts#
+ #Which card with the word "[thought]" in its name is your favorite? #ThursdayThoughts#
+ #Search here: http://gatherer.wizards.com  #MTGO
 
 mtgoTwitterStyleHeadline:
 - "#theXOfYHasZ#"
