@@ -12,7 +12,7 @@ function dayOfWeekOccasion(random=false) {
     'Sunday'    : ['Stompy', 'Suns\'s Zenith', 'Sundering']
   };
 
-  return s.toUpperCase();
+  return undefined;
 }
 
 function dayOfWeekQuantity(random=false) {
@@ -27,7 +27,7 @@ function dayOfWeekQuantity(random=false) {
     'Sunday'    : []
   };
 
-  return s.toUpperCase();
+  return undefined;
 }
 
 function dayOfWeek() {
