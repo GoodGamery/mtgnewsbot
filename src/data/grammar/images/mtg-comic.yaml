@@ -73,7 +73,7 @@ _andOrBut:
 
 svgComicPunctuation: ["!","?","...","."]
 svgComicExclamation: ["what", "yeah","wha","um","haha","lol","you","no","get real"]
-# svgComicQuestionResponse: ["That's for me to know.", "I'll never tell.", "That's a long story.", "I lost track of #them#.", "I have no clue."]
+svgComicQuestionResponse: ["That's for me to know.", "I'll never tell.", "That's a long story.", "I lost track of #them#.", "I have no clue."]
 
 svgComicDialogCouplet:
   - "[_line1:Where's #_text1OtherPerson#?][_line2:At the #placeNoun#.,in #nonPlaneLocation#.,#svgComicQuestionResponse#]"
