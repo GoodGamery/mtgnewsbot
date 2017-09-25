@@ -80,10 +80,15 @@
       "Yawgmoth#malePronouns#",
       "Zuul#femalePronouns#"
   ],
+  "characterFirstName": [
+    "#planeswalkerFirstName#",
+    "#commonCharacterFirstName#"
+  ],
   "commonCharacterFirstName": [
   	"Agathe",
   	"Borzard",
   	"Brigone",
+    "Brint",
     "Chaeska",
   	"Chadir",
   	"Devin",
@@ -100,6 +105,8 @@
   	"Juri",
   	"Maikal",
   	"Matoc",
+    "Maury",
+    "Meekus",
   	"Myznar",
   	"Naxtil",
   	"Nefara",
@@ -232,6 +239,7 @@
     "Boros",
   	"Cabal",
     "Ceta",
+    "Consulate",
   	"D'Avenant",
     "Dega",
     "Dimir",

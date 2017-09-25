@@ -114,3 +114,21 @@ emperor
 empress
 weaponsmith
 madman
+sommelier
+scofflaw
+bellhop
+blackguard
+pickpocket
+handmaiden
+playwright
+chaperone
+bartender
+goaltender
+magistrate
+pretender
+toddler
+bureaucrat
+superstar
+zookeeper
+organ grinder
+superintendant

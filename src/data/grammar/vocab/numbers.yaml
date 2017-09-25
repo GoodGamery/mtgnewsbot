@@ -25,6 +25,20 @@
         "seven",
         "ten"
     ],
+
+    "countFives": [
+      "five",
+      "ten",
+      "fifteen",
+      "twenty",
+      "twenty-five",
+      "thirty",
+      "thirty-five",
+      "forty",
+      "forty-five",
+      "fifty",
+    ],
+
     "xth": [
         "first",
         "second",

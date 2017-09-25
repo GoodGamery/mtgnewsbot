@@ -68,7 +68,6 @@ sugar
 underwear
 electricity
 equipment
-art supplies
 gravy
 furniture
 laughter
@@ -83,19 +82,16 @@ seafood
 soap
 shampoo
 stuff
-valuables
 sunshine
 foliage
 cutlery
 signage
 bacteria
-electronics
 popcorn
 glue
 facial tissue
 poison
 venom
-bubbles
 algae
 fungus
 carpeting
@@ -112,5 +108,11 @@ paper-mâché
 camping gear
 spaghetti
 birdseed
+flesh
+light
+darkness
+hay
+grass
+gravel
 #creatureTypes# meat
 #creatureTypes# milk

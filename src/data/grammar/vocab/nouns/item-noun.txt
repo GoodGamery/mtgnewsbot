@@ -40,7 +40,7 @@ talisman
 doodad
 bone
 vuvuzela
-handlebar moustache
+moustache
 horseshoe
 sweater vest
 prawn
@@ -74,5 +74,12 @@ rubber chicken
 egg
 trinket
 seedcone
+morsel
+candle
+seal
+lollipop
+rubber band
+fidget spinner
+decoder ring
 #bodypart#
 #gameAccessory#
