@@ -52,7 +52,7 @@ class MtgNewsbot {
     // Keep running until we have headlines of the correct text length for twitter
     let headlines = [];
     let maxTries = 10;  // Don't spin forever, ever
-    while (headlines.length < this.options.count && (maxTries-- > 0)) {     
+    while (headlines.length < this.options.count && (maxTries-- > 0)) {
       const moreHeadlines = await this.newsEngine.generateHeadlines(this.options.origin, this.options.count - headlines.length);
       headlines = headlines.concat(moreHeadlines.filter(s => s.text.length <= config.tweetLength));
     }
