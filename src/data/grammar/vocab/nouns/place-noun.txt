@@ -105,3 +105,5 @@ sanctum
 monastery
 castle
 keep
+bathroom
+port-o-potty

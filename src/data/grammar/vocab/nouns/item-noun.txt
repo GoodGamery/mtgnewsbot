@@ -40,7 +40,7 @@ talisman
 doodad
 bone
 vuvuzela
-handlebar moustache
+moustache
 horseshoe
 sweater vest
 prawn
