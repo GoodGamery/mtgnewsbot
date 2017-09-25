@@ -75,7 +75,7 @@
   "bodypartsInternal": [
     "heart[_isAre:is]",
     "eyes[_isAre:are]",
-    "stomach",
+    "stomach[_isAre:is]",
     "hair[_isAre:is]",
     "teeth[_isAre:is]",
     "eyeballs[_isAre:are]",
@@ -85,6 +85,8 @@
     "brain[_isAre:is]",
     "skeleton[_isAre:is]",
     "intestines[_isAre:are]",
+    "kidneys[_isAre:are]",
+    "spleen[_isAre:is]",
     "bellybutton[_isAre:is]"
   ],
 
@@ -94,6 +96,7 @@
     "ears[_isAre:are]",
     "mouth[_isAre:is]",
     "neck[_isAre:is]",
+    "belly[_isAre:is]",
     "shoulders[_isAre:are]",
     "arms[_isAre:are]",
     "hands[_isAre:are]",
@@ -102,7 +105,6 @@
     "feet[_isAre:are]",
     "toes[_isAre:are]",
     "gut[_isAre:are]",
-    "belly[_isAre:are]",
     "throat[_isAre:is][_isAre:are]",
     "skull[_isAre:is][_isAre:are]",
     "moustache[_isAre:is][_isAre:are]",
