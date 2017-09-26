@@ -176,3 +176,5 @@ worthiest
 unworthiest
 seaworthiest
 less redeemable
+least useful
+least useless

@@ -8,7 +8,7 @@
     "simulate", "immortalize", "subdue", "pigeonhole", "despoil", "enhance", "glamorize", "market", "recognize", "smash", "kiss",
     "cleanse", "corrupt", "punch", "kick", "slap", "pinch", "tickle", "devour", "lick", "poke", "contradict", "ridicule", "tease",
     "detect", "assemble", "seduce", "banish", "romance", "purify", "feed", "simplify", "snuff", "clear", "revive", "appraise", "charm",
-    "annoy", "irritate", "perplex", "exasperate"
+    "annoy", "irritate", "perplex", "exasperate", "disrepsect"
   ],
   "verbIntransitive": [ "#verbStrictlyIntransitive#", "#verbStrictlyIntransitive#", "#verbBothTransitive#" ],
   "verbStrictlyIntransitive": [
@@ -16,12 +16,12 @@
     "belch", "emerge", "embroider", "scream", "dance", "collapse", "appear", "disappear", "sneeze", "arrive", "exist", "fall",
     "rise", "revolt", "smile", "smirk", "scowl", "awaken", "prevail", "descend", "retreat", "negotiate", "stare", "howl", "skulk",
     "snicker", "groan", "cough", "listen", "leave", "condescend", "wish", "shiver", "juggle", "crackle", "drip", "explode", "drool",
-    "snore", "equivocate", "starve", "lollygag", "pretend"
+    "snore", "equivocate", "starve", "lollygag", "pretend", "live", "think", "dream", "daydream"
   ],
   "verbBothTransitive": [
     "approach","shuffle", "kill", "observe", "grow", "swallow", "transform", "forget", "remember", "study", "misunderstand",
     "sacrifice", "collect", "celebrate", "exaggerate", "pantomime", "advertize", "deep-fry", "decorate", "fight", "burn", "gargle", "flee",
-    "worship", "sniff", "consume", "snuff", "clear", "revive", "consume"
+    "worship", "sniff", "consume", "snuff", "clear", "revive", "consume", "see", "shave"
   ],
   "verbPastTense": [ "#verbStrictlyTransitivePastTense#", "#verbStrictlyIntransitivePastTense#", "#verbBothTransitivePastTense#" ],
   "verbTransitivePastTense": [ "#verbStrictlyTransitivePastTense#", "#verbStrictlyTransitivePastTense#", "#verbBothTransitivePastTense#" ],
@@ -32,7 +32,7 @@
     "simulated", "immortalized", "subdued", "pigeonholed", "despoiled", "enhanced", "glamorized", "marketed", "recognized", "smashed", "kissed",
     "cleansed", "corrupted", "punched", "kicked", "slapped", "pinched", "tickled", "devoured", "licked", "poked", "contradicted", "ridiculed", "teased",
     "detected", "assembled", "seduced", "banished", "romanced", "purified", "fed", "simplified", "snuffed", "cleared", "revived", "appraised",
-    "charmed", "annoyed", "irritated", "perplexed", "exasperated"
+    "charmed", "annoyed", "irritated", "perplexed", "exasperated", "disrepsected"
   ],
   "verbIntransitivePastTense": [ "#verbStrictlyIntransitivePastTense#","#verbStrictlyIntransitivePastTense#", "#verbBothTransitivePastTense#" ],
   "verbStrictlyIntransitivePastTense": [
@@ -40,12 +40,12 @@
     "belched", "emerged", "embroidered", "screamed", "danced", "collapsed", "appeared", "disappeared", "sneezed", "arrived", "existed", "fell",
     "rose", "revolted", "smiled", "smirked", "scowled", "awakened", "prevailed", "descended", "retreated", "negotiated", "stared", "howled",  "skulked",
     "snickered", "groaned", "coughed", "listened", "left", "condescended", "wished", "shivered", "juggled", "dripped", "exploded", "drooled", "snored",
-    "equivocated", "starved", "lollygagged", "pretended"
+    "equivocated", "starved", "lollygagged", "pretended", "lived", "thought", "dreamed", "daydreamed"
   ],
   "verbBothTransitivePastTense": [
     "approached","shuffled", "killed", "observed", "grew", "swallowed", "transformed", "forgot", "remembered", "studied", "misunderstood",
     "sacrificed", "collected", "celebrated", "exaggerated", "pantomimed", "advertized", "deep-fried", "decorated", "fought", "burned", "gargled", "fled",
-  	"worshipped", "sniffed", "consumed"
+  	"worshipped", "sniffed", "consumed", "saw", "shaved"
   ],
   "verbGerund": [ "#verbStrictlyTransitiveGerund#", "#verbStrictlyIntransitiveGerund#", "#verbBothTransitiveGerund#" ],
   "verbTransitiveGerund": [ "#verbStrictlyTransitiveGerund#", "#verbStrictlyTransitiveGerund#", "#verbBothTransitiveGerund#" ],
@@ -56,7 +56,7 @@
     "simulating", "immortalizing", "subduing", "pigeonholing", "despoiling", "enhancing", "glamorizing", "marketing", "recognizing", "smashing", "kissing",
     "cleansing", "corrupting", "punching", "kicking", "slapping", "pinching", "tickling", "devouring", "licking", "poking",, "contradicting", "ridiculing",
     "teasing", "detecting", "sacrificing", "collecting", "assembling", "seducing", "banishing", "romancing", "purifying", "feeding", "simplifying", "snuffing",
-    "clearing", "reviving", "appraising", "charming", "annoying", "irritating", "perplexing", "exasperating"
+    "clearing", "reviving", "appraising", "charming", "annoying", "irritating", "perplexing", "exasperating", "disrepsecting"
   ],
   "verbIntransitiveGerund": [ "#verbStrictlyIntransitiveGerund#", "#verbStrictlyIntransitiveGerund#", "#verbBothTransitiveGerund#" ],
   "verbStrictlyIntransitiveGerund": [
@@ -64,12 +64,12 @@
     "belching", "emerging", "embroidering", "screaming", "dancing", "collapsing", "appearing", "disappearing", "sneezing", "arriving", "existing", "falling",
     "rising", "revolting", "smiling", "smirking", "scowling", "awakening", "prevailing", "descending", "retreating", "negotiating", "staring", "howling", "skulking",
     "snickering", "groaning", "coughing", "listening", "leaving", "condescending", "wishing", "shivering", "juggling", "dripping", "exploding", "drooling", "snoring",
-    "equivocating", "starving", "lollygagging", "pretending"
+    "equivocating", "starving", "lollygagging", "pretending", "living", "thinking", "dreaming", "daydreaming"
   ],
   "verbBothTransitiveGerund": [
     "approaching","shuffling", "killing", "observing", "growing", "swallowing", "transforming", "forgetting", "remembering", "studying", "misunderstanding",
     "celebrating", "exaggerating", "pantomiming", "advertizing", "deep-frying", "decorating", "fighting", "burning", "gargling", "sniffing", "fleeing",
-    "worshipping", "consuming"
+    "worshipping", "consuming", "seeing", "shaving"
   ],
   "verbDefeat": [
       "defeat",
