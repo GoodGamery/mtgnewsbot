@@ -97,6 +97,11 @@ svgComicTemplate3Content1a:
 - "[_style1:#svgComicTextStyle3#][_question:when are you,why are you,are you,you're][_who:the #creatureTypeOrCharacterClass#,#planeswalkerFirstName#,the #characterFaction#][_what:feeding me,handing me over,taking me to see,taking me,introducing me,tattling on me]So, #_question# #_what# to #_who#?[_reply:#svgComicTemplate3Content2aReply#]"
 - "[_style1:#svgComicTextStyle4#]Put me down [_orElse:before I'm forced to #verbTransitive# you!,and I'll give you all of my #pluralNounOrMassNoun#.,or I'm telling #character#!,or I'll report you to the #characterFaction#!,and I'll lead you to the #_mcguffin#.,this moment! My #bodypart# hurts.]#_orElse#"
 - "[_style1:#svgComicTextStyle4#][_question:Do you know anything about,Aren't you curious about,Can I ask you a question about][_subject:#historicalFigure#,#creatureTypes.s#,#pluralNoun#,#massNoun# magic]#_question# #_subject#?"
+- "[_style1:#svgComicTextStyle3#]#svgComicTemplate3Content1aAproposNothing#"
+
+svgComicTemplate3Content1aAproposNothing:
+- "Am I being detained?"
+- "Give me your fingernails!"
 
 svgComicTemplate3Content2aAnswerYesNo: "[_style2:#svgComicTextStyle2#]#svgComicTemplate3Content2aAnswerYesNoText#"
 svgComicTemplate3Content2aAnswerYesNoText:
@@ -251,6 +256,7 @@ svgComicTemplate3Content5aText:
 - "I think I may have just broken my #bodypart#."
 - "I gotta go pee."
 - "We're lost, aren't we?"
+- "Am I being detained?"
 - "I have a confession to make."
 - "[_style5:#svgComicTextStyle5#]I'm sensing a lot of #emotion# from you right now."
 - "[_style5:#svgComicTextStyle4#]Just a heads up, I can hear what you're thinking."
