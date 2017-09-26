@@ -32,7 +32,12 @@
     "bellybutton",
     "fang",
     "claw",
-    "feather"
+    "feather",
+    "forehead",
+    "pelvis",
+    "sternum",
+    "eyebrows",
+    "tongue"
    ],
 
   "bodypartsInPairs": [
@@ -59,6 +64,7 @@
     "skull",
     "moustache",
     "fingernails",
+    "toenails",
     "elbows",
     "spine",
     "brain",
@@ -69,7 +75,15 @@
     "bellybutton",
     "fangs",
     "claws",
-    "feathers"
+    "feathers",
+    "kidneys",
+    "spleen",
+    "lips",
+    "forehead",
+    "pelvis",
+    "sternum",
+    "eyebrows",
+    "tongue"
   ],
 
   "bodypartsInternal": [
@@ -97,6 +111,8 @@
     "mouth[_isAre:is]",
     "neck[_isAre:is]",
     "belly[_isAre:is]",
+    "forehead[_isAre:is]",
+    "tongue[_isAre:is]",
     "shoulders[_isAre:are]",
     "arms[_isAre:are]",
     "hands[_isAre:are]",
@@ -105,14 +121,15 @@
     "feet[_isAre:are]",
     "toes[_isAre:are]",
     "gut[_isAre:are]",
-    "throat[_isAre:is][_isAre:are]",
-    "skull[_isAre:is][_isAre:are]",
-    "moustache[_isAre:is][_isAre:are]",
+    "throat[_isAre:is]",
+    "skull[_isAre:is]",
+    "moustache[_isAre:is]",
     "elbows[_isAre:are]",
     "pinkie toes[_isAre:are]",
     "thumbs[_isAre:are]",
     "shins[_isAre:are]",
     "skin[_isAre:are]",
-    "lips[_isAre:are]"
+    "lips[_isAre:are]",
+    "eyebrows[_isAre:are]"
   ]
 }

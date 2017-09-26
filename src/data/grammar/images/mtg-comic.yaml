@@ -32,10 +32,11 @@ svgComicTextStyle7:
   - "color: black; font-size:8px; font-family: Anime Ace, Comic Sans, Sans-Serif; font-weight: 600; word-wrap:break-all;"
 svgComicTextStyle8:
   - "color: black; font-size:7px; font-family: Anime Ace, Comic Sans, Sans-Serif; font-weight: 600; word-wrap:break-all;"
-
+svgComicTextStyleLarge1:
+  - "color: black; font-size:20px; font-family: Anime Ace, Comic Sans, Sans-Serif; font-weight: 600; word-wrap:break-all;"
 svgComicTemplate:
-  - "#svgComicTemplate1#"
-  - "#svgComicTemplate2#"
+  # - "#svgComicTemplate1#"
+  # - "#svgComicTemplate2#"
   - "#svgComicTemplate3#"
 
 svgComicTemplate1: >
@@ -71,11 +72,11 @@ svgComicTemplate3: >
   [_text1x:196][_text1y:65][_text1w:159][_text1h:74][_text1Style:#_style1#][_text1Content:#_text1#]
   [_text2x:275][_text2y:167][_text2w:64][_text2h:56][_text2Style:#_style2#][_text2Content:#_text2#]
   [_text3x:395][_text3y:69][_text3w:265][_text3h:69][_text3Style:#_style3#][_text3Content:#_text3#]
-  [_text4x:300][_text4y:569][_text4w:300][_text4h:40][_text4Style:#_style4#][_text4Content:#_text4#]
+  [_text4x:300][_text4y:570][_text4w:300][_text4h:48][_text4Style:#_style4#][_text4Content:#_text4#]
   [_text5x:60][_text5y:759][_text5w:175][_text5h:57][_text5Style:#_style5#][_text5Content:#_text5#]
   [_text6x:399][_text6y:771][_text6w:296][_text6h:57][_text6Style:#_style6#][_text6Content:#_text6#]
   [_text7x:151][_text7y:974][_text7w:147][_text7h:41][_text7Style:#_style7#][_text7Content:#_text7#]
-  [_text8x:450][_text8y:1096][_text8w:118][_text8h:71][_text8Style:#_style8#][_text8Content:#_text8#]
+  [_text8x:417][_text8y:1096][_text8w:153][_text8h:71][_text8Style:#_style8#][_text8Content:#_text8#]
 
 svgComicTemplate2Content:
   - "[_style1:#svgComicTextStyle1#][_text1:I'm pretty sure...][_style2:#svgComicTextStyle2#][_text2:there's a lot more to life than being really‚ really‚][_style3:#svgComicTextStyle3#][_text3:ridiculously #adj#.][_style4:#svgComicTextStyle3#][_text4:And I plan on finding out what that is.]"
@@ -96,7 +97,13 @@ svgComicTemplate3Content1a:
 - "[_style1:#svgComicTextStyle3#][_num:#count#,#countFives#][_what:borrow your #itemNounOrAppliance#,borrow like #_num# bucks,touch your #bodypartsInPairs#,ask you a personal question]Hey, can I #_what#?"
 - "[_style1:#svgComicTextStyle3#][_question:when are you,why are you,are you,you're][_who:the #creatureTypeOrCharacterClass#,#planeswalkerFirstName#,the #characterFaction#][_what:feeding me,handing me over,taking me to see,taking me,introducing me,tattling on me]So, #_question# #_what# to #_who#?[_reply:#svgComicTemplate3Content2aReply#]"
 - "[_style1:#svgComicTextStyle4#]Put me down [_orElse:before I'm forced to #verbTransitive# you!,and I'll give you all of my #pluralNounOrMassNoun#.,or I'm telling #character#!,or I'll report you to the #characterFaction#!,and I'll lead you to the #_mcguffin#.,this moment! My #bodypart# hurts.]#_orElse#"
-- "[_style1:#svgComicTextStyle4#][_question:Do you know anything about,Aren't you curious about,Can I ask you a question about][_subject:#historicalFigure#,#creatureTypes.s#,#pluralNoun#,#massNoun# magic]#_question# #_subject#?"
+- "[_style1:#svgComicTextStyle4#][_question:Do you know anything about,Aren't you curious about,Can I ask you a question about][_subject:#historicalFigure#,#creatureTypes.s#,#pluralNoun#,#itemNounMassNounOrCreatureType# magic]#_question# #_subject#?"
+- "[_style1:#svgComicTextStyle3#]#svgComicTemplate3Content1aAproposNothing#"
+
+svgComicTemplate3Content1aAproposNothing:
+- "[_style1:#svgComicTextStyle2#]Am I being detained?"
+- "[_style1:#svgComicTextStyle2#]Give me your fingernails!"
+- "[_style1:#svgComicTextStyle2#]♫ ... And I ... will always love you ... ♫"
 
 svgComicTemplate3Content2aAnswerYesNo: "[_style2:#svgComicTextStyle2#]#svgComicTemplate3Content2aAnswerYesNoText#"
 svgComicTemplate3Content2aAnswerYesNoText:
@@ -137,6 +144,11 @@ svgComicTemplate3Content2aReplyText:
 - "[_style2:#svgComicTextStyle5#]quiet#comma# you."
 - "[_style2:#svgComicTextStyle6#]whoops."
 - "[_style2:#svgComicTextStyle5#]for real?"
+
+itemNounMassNounOrCreatureType:
+- "#itemNoun#"
+- "#massNoun#"
+- "#creatureTypes#"
 
 exasperatedLeadIn:
 - wow
@@ -182,35 +194,45 @@ svgComicTemplate3Content_a:
 svgComicTemplate3Content3a_annoyed:
 - "This guy is a real pain in my #bodypartsInPairs#."
 - "#exasperatedLeadIn.capitalize#. When is this guy ever going to shut up?"
-- "This friggin guy."
+- "[_style3:#svgComicTextStyle1#]This friggin guy."
 - "We need to get to the #placeNoun#. But I can't tell this guy that we're lost."
 
-comic3Template3Cannned:
+comic3Template3Canned:
 - "I'm on the verge of tears by the time we arrive at #storyLocation#, since I'm positive we won't have a decent table."
-- "There is a moment of sheer panic when I realize that his apartment overlooks the #placeNoun#... and is obviously #adjComparative# than mine."
-- "[_style3:#svgComicTextStyle2#]I feel like the ghost of a total stranger."
+- "[_style3:#svgComicTextStyle5#]There is a moment of sheer panic when I realize that his apartment overlooks the #placeNoun#... and is clearly #adjComparative# than mine."
+- "[_style3:#svgComicTextStyle2#]I feel like the ghost of [_who:a total stranger,#adj.a# #characterClass#,#nonPlaneswalkerCharacter#]#_who#."
 - "[_style3:#svgComicTextStyle2#]Even in the future nothing works."
 - "[_style3:#svgComicTextStyle2#]We're really late to the party."
 - "[_style3:#svgComicTextStyle2#]Boy, the #characterClass# is going to be pissed."
-- "[_style3:#svgComicTextStyle2#]Rule Number Two: the living usually won't see the dead."
-- "A few words here about following people. People know they're being followed when they turn around and see someone following them."
+- "[_style3:#svgComicTextStyle3#]Rule Number #count#: #ruleOfThumb#."
+- "[_style3:#svgComicTextStyle5#]A few words here about following [_whoPeople:people,#creatureTypeOrCharacterClass.s#][_who:#_whoPeople#]#_who#. #_who.capitalize# know they're being followed when they turn around and see someone [_verbing:following,#verbTransitiveGerund#]#_verbing# them."
+
+ruleOfThumb:
+- "the [_blindOnes:living,#characterClass.s#]#_blindOnes# usually won't [_verb:see,#verbTransitive#]#_verb# the [_adj:dead,#adj#,#pluralNoun#]#_adj#"
+- "never #verbTransitive# a #creatureTypeOrCharacterClass#"
+- "always check the #placeNoun# first"
+- "it's always the #creatureTypeOrCharacterClass.s#"
+- "never make a deal with [#character#,#creatureTypeOrCharacterClass.a#]"
+- "always aim for the #bodypartsInPairs#"
 
 svgComicTemplate3Content3a:
 - "[_style3:#svgComicTextStyle2#]#svgComicTemplate3Content3a_annoyed#"
 - "[_style3:#svgComicTextStyle3#][_snacks:#creatureTypeOrCharacterClass# blood,#creatureTypeOrCharacterClass# meat,#creatureTypeOrCharacterClass# chow,#massNoun# snacks][_looking:are looking particularly #adj# #presentTime#,look really #adj# right now,have had a taste of #_snacks# and are looking for more,are not going to let us get to the #placeNoun# without a fight,are hungry for #massNoun# #presentTime#]#exasperatedLeadIn.capitalize##comma# the #creatureTypeOrCharacterClass.s# #_looking#."
-- "[_style3:#svgComicTextStyle4#]#comic3Template3Cannned#"
+- "[_style3:#svgComicTextStyle4#]#comic3Template3Canned#"
 - "[_style3:#svgComicTextStyle2#]#mildEpithet.capitalize#. I think I left the #appliance# on at home."
 
 svgComicTemplate3Content4a:
 - "[_style4:#svgComicTextStyle5#]I should have just let Liliana teach me about #massNoun# magic."
 - "I never should have dropped out of #characterClass# school."
 - "[_leadIn:Now ...,So ..., Hold on a second#comma#,#mildEpithet##comma#]#_leadIn# where is that #placeNoun#?"
-- "[_leadIn:Wait,Hold on,Just a second]#_leadIn#, is that a #placeNoun#?"
+- "[_leadIn:Wait,Hold on,Just a second]#_leadIn#, is that #placeNoun.a#?"
 - "[_style4:#svgComicTextStyle5#]I'd rather be doing anything else right now. Even #alternativeActivity#."
 - "[_style4:#svgComicTextStyle5#]I wonder what #character# is doing right now. Probably just #verbStrictlyIntransitiveGerund#."
 - "[_style4:#svgComicTextStyle4#]I [_shouldHave:never should have promised #planeswalkerFirstName# that I'd take him to #storyLocation#,never should have let my sister go out with him in the first place,never should have agreed to go on vacation with him,never should have signed up for this walking tour,should have let the #creatureTypes.s# #verbTransitive# him,should have stayed home and worked on my #deck# deck]#_shouldHave#."
 - "I need to ask for directions."
 - "Maybe it's not too late to just turn around and go home."
+- "We're really late to this party."
+- "[_style4:#svgComicTextStyle1#]#count# hours later..."
 
 svgComicTemplate3Content5a: "[_svgComicTemplate3Content6a_selected:#svgComicTemplate3Content6a#]#svgComicTemplate3Content5aText#"
 
@@ -231,9 +253,9 @@ exclamationSurprise:
 _setup:
 - "What did the #creatureTypeOrCharacterClass# say to the #creatureTypeOrCharacterClass#"
 - "[_subject:#creatureTypeOrCharacterClass#]What did one #_subject# say to the other #_subject#"
-- "How do you stop a #creatureTypeOrCharacterClass# from #verbIntransitiveGerund#"
+- "How do you stop #creatureTypeOrCharacterClass.a# from #verbIntransitiveGerund#"
 - "[_style5:#svgComicTextStyle3#]Why doesn't #character# like to #verbIntransitive#"
-- "What's the difference between a #creatureTypes#"
+- "What's the difference between #creatureTypes.a#"
 - "What's #character#'s [_fav:favorite,least favorite]#_fav# #cardCategory#[_opinion:loves,hates,detests,adores][_style6:#svgComicTextStyle3#][_punchline:\"#randomRealCard#. Because it costs more than #itemNoun.a# and does half as much\",\"#randomRealCard#. But only because #planeswalkerFirstName# #_opinion# it so much.\"]"
 - "[_style5:#svgComicTextStyle3#]Knock#comma#knock. Who's there[_style6:#svgComicTextStyle2#][_punchline:\"—Interrupting #creatureTypes.capitalize#!\"]"
 
@@ -251,57 +273,74 @@ svgComicTemplate3Content5aText:
 - "I think I may have just broken my #bodypart#."
 - "I gotta go pee."
 - "We're lost, aren't we?"
+- "Am I being detained?"
 - "I have a confession to make."
+- "I'm made up my mind."
+- "Why are you always [_doing:#verbIntransitiveGerund#,so #adj#]#_doing#?"
+- "Did you plan this?"
+- "Is it really your birthday?"
+- "Is your outfit comfortable?"
 - "[_style5:#svgComicTextStyle5#]I'm sensing a lot of #emotion# from you right now."
 - "[_style5:#svgComicTextStyle4#]Just a heads up, I can hear what you're thinking."
-- "You smell really bad. I can't stand it anymore."
-- "[_style5:#svgComicTextStyle5#]You told me that we were going [_where:to the zoo,to the ice cream parlor,to get cotton candy,to ride the carousel,to the haunted #placeNoun#,to the #itemNoun# shop,to be home in time for dinner,#creatureTypes.capitalize#land][_punct:.,...,!]#_where##_punct#"
+- "You smell [_likeWhat:really bad,like #massNoun#]#_likeWhat#. I can't stand it anymore."
+- "[_style5:#svgComicTextStyle5#]You told me that we were going [_where:to the zoo,to the ice cream parlor,to get cotton candy,to ride the carousel,to the haunted #placeNoun#,to the #itemNoun# shop,to be home in time for dinner,to #creatureTypes.capitalize#land][_punct:.,...,!]#_where##_punct#"
 - "[_style5:#svgComicTextStyle5#][_style6:#svgComicTextStyle2#]Here's a joke. [_punchline:#_genericPunchline#]\"#_setup#?\"[_svgComicTemplate3Content6a_selected:#_punchline#]"
 
 svgComicTemplate3Content6a:
 - "I think I'm just going to sit down right here."
 - "Why don't you just go on without me."
+- "Please don't leave me behind."
 - "[_style6:#svgComicTextStyle4#]We should split up. You fight these guys#comma# and I'll go get the #_mcguffin#."
 - "I'm afraid [_fear:my #bodypartsInternal# #_isAre# about to fall out,my #bodypartsExternal# #_isAre# about to fall off]#_fear#."
 - "Please tell #character# that I love #them#."
-- "Garruk, I just want to go home!"
+- "I just want to go home."
 - "I think I'm pregnant."
+- "Let me go. I'm well within my rights."
 - "It's over. Send my regards to [_who:#character#,#anyCharacter#]#_who#."
-- "[_style6:#svgComicTextStyle5#][_oops:Oops,#mildEpithet#]The #_mcguffin# are [_confession:in my backpack,in my back pocket,back at my apartment,something I just made up,are cursed,are worth like #countFives# dollars, tops,all I ever cared about,really #adj#][_apology:I'm sorry I decieved you,I'm sorry I #verbStrictlyTransitivePastTense# you, Please forgive me,Please don't hate me,I regret nothing,you can just bill me for them,#_oops##comma# I wrote on my hand not to mention that]#_confession#. #_apology#."
+- "[_style6:#svgComicTextStyle5#][_oops:Oops,#mildEpithet#]The #_mcguffin# are [_confession:in my backpack,in my back pocket,back at my apartment,something I just made up,cursed,are worth like #countFives# dollars, tops,all I ever cared about,really #adj#][_apology:I'm sorry I decieved you,I'm sorry I #verbStrictlyTransitivePastTense# you, Please forgive me,Please don't hate me,I regret nothing,you can just bill me for them,#_oops##comma# I wrote on my hand not to mention that]#_confession#. #_apology#."
 
 svgComicTemplate3Content7a:
 - "I've got to say something smart."
+- "I need to make a good first impression."
+- "[_style7:#svgComicTextStyle3#]Okay, here goes."
 - "#exasperatedLeadIn#, what is the deal with this guy?"
 - "What am I supposed to do here?"
+- "Is he serious? I can never tell with this guy."
 - "This guy better not think *I'm* a dick."
-- "[_style7:#svgComicTextStyle6#]What is that sound, anyway?"
+- "[_style7:#svgComicTextStyle6#]What is that [_adj:,funny,strange,weird,familiar][_sensation:sound,smell,sensation]#_adj# #_sensation#?"
 - "That guy looks super ripped."
 - "Did I lose my axe somewhere?"
 - "I don't think this is the place."
 - "[_style7:#svgComicTextStyle6#]Man, I really want those #_mcguffin#."
 - "Fuuuuuuuuuudge."
 - "[_style7:#svgComicTextStyle6#]I wonder if these guys can hear my thoughts."
+- "[_style7:#svgComicTextStyle6#]What was it that #planeswalkerFirstName# said[_about: about #pluralNounOrMassNoun#]#_about#?"
 - "My loincloth really itches right now."
+- "[_style7:#svgComicTextStyle6#]I really hope this is the #placeNoun#."
 - "My utility bill is going to be so high."
 - "I hope my skin doesn't look too gross."
 - "I'm getting an intense feeling right now."
 - "I'm forgetting about something."
-- "Time to get serious."
+- "[_style7:#svgComicTextStyle3#]What's this now?"
+- "[_style7:#svgComicTextStyle3#]Time to get serious."
+- "[_style7:#svgComicTextStyle3#]Wait a minute..."
+- "[_style7:#svgComicTextStyleLarge1#]…"
 
 svgComicTemplate3Content8a:
-- "[_style8:#svgComicTextStyle4#]Wait, what did you just say?"
-- "[_style8:#svgComicTextStyle3#][_grumpyAdj:Stupid,Friggin',Flippin',#adj#]#_grumpyAdj# #creatureTypeOrCharacterClass.s#."
-- "[_style8:#svgComicTextStyle3#]Oooooh. I get it now."
-- "[_style8:#svgComicTextStyle4#]Wait. He's a dick."
-- "[_style8:#svgComicTextStyle3#][_ah:It's,Oh! It's,Aha!,Oh snap!]#_ah# #itemNoun.a#!"
-- "[_style8:#svgComicTextStyle4#]OW. Just stepped on a tack."
-- "[_style8:#svgComicTextStyle3#]Now my #bodypart# itches."
-- "Last one out is a rotten [_what:#itemNoun#,#concreteNoun#,#creatureTypeOrCharacterClass#]#_what#!"
-- "[_style8:#svgComicTextStyle4#]♫ Oh, ho, ho, it's magic! ♫"
+- "[_style8:#svgComicTextStyle3#]Wait, what did you just say?"
+- "[_style8:#svgComicTextStyle2#][_grumpyAdj:Stupid,Friggin',Flippin',#adj#]#_grumpyAdj# #creatureTypeOrCharacterClass.s#."
+- "[_style8:#svgComicTextStyle2#]Oooooh. I get it now."
+- "[_style8:#svgComicTextStyle2#]Wait. He's a dick."
+- "[_style8:#svgComicTextStyle2#][_ah:It's,Oh! It's,Aha!,Oh snap!]#_ah# #itemNoun.a#!"
+- "[_style8:#svgComicTextStyle3#]OW. I Just stepped on [_what:tack,#itemNoun#]#_what.a#."
+- "[_style8:#svgComicTextStyle2#]Now my #bodypart# itches."
+- "[_style8:#svgComicTextStyle4#]Last one out is a rotten [_what:#itemNoun#,#concreteNoun#,#creatureTypeOrCharacterClass#]#_what#!"
+- "[_style8:#svgComicTextStyle3#]♫ Oh, ho, ho, it's magic! ♫"
 - "[_style8:#svgComicTextStyle3#]Give me #pluralNounOrMassNoun#!"
-- "[_style8:#svgComicTextStyle5#]Well, this is embarassing."
-- "[_style8:#svgComicTextStyle3#]This place suuuucks."
-- "[_style8:#svgComicTextStyle3#]#planeswalkerFirstName#? Is that you?"
+- "[_style8:#svgComicTextStyle4#]Well, this is embarassing."
+- "[_style8:#svgComicTextStyle2#]This place suuuucks."
+- "[_style8:#svgComicTextStyle3#]That's [_wangstuff:number,#itemNounMassNounOrCreatureType#][_wang:#_wangstuff#wang][_what:#_wang#,a bingo#comma# folks,yahtzee]#_what#!"
+- "[_style8:#svgComicTextStyle2#]#planeswalkerFirstName#? Is that you?"
 - "[_style8:#svgComicTextStyle1#]#svgComicTemplate3Content2aReplyText#"
 
 _andOrBut:
