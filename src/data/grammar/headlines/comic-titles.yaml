@@ -1,7 +1,7 @@
 {
   "comicTitle":
     [ "#planeswalkerFirstName#'s Ultimate"
-    , "Flight of the #basicColors.capitalize# [_flyer:Cat,Goat,Snake,Turkey]#_flyer#"
+    , "Flight of the [_adj:#adj#,#basicColors.capitalize#][_flyer:Cat,Goat,Snake,Turkey,Pony,#creatureTypeOrCharacterClass#]#_adj# #_flyer#"
     , "Fuel for the #massNoun.capitalize#"
     , "The #creatureTypes.capitalize#'s Fall"
     , "#abstractNoun.capitalize# Bound"

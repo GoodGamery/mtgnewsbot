@@ -176,4 +176,6 @@ sophisticated
 earnest
 worthy
 unworthy
-irrredeemable
+useful
+useless
+irredeemable

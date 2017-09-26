@@ -91,7 +91,7 @@
     "eyes[_isAre:are]",
     "stomach[_isAre:is]",
     "hair[_isAre:is]",
-    "teeth[_isAre:is]",
+    "teeth[_isAre:are]",
     "eyeballs[_isAre:are]",
     "fingernails[_isAre:are]",
     "toenails[_isAre:are]",
@@ -128,7 +128,7 @@
     "pinkie toes[_isAre:are]",
     "thumbs[_isAre:are]",
     "shins[_isAre:are]",
-    "skin[_isAre:are]",
+    "skin[_isAre:is]",
     "lips[_isAre:are]",
     "eyebrows[_isAre:are]"
   ]

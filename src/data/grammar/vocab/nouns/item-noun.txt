@@ -89,6 +89,7 @@ accordian
 torch
 boomerang
 finger puppet
+strawberry
 #massNoun# launcher
 #bodypart#
 #gameAccessory#

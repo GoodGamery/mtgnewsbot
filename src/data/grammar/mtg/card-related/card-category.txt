@@ -15,6 +15,12 @@ foil
 burn spell
 counterspell
 land destruction spell
+discard spell
+removal spell
+ramp spell
+finisher
+bounce spell
+combat trick
 sorcery
 instant
 planeswalker
@@ -30,4 +36,7 @@ mana dork
 cantrip
 permanent
 nonland permanent
+combo piece
+mana rock
+tripple-flipple card
 #rarity#

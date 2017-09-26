@@ -8,7 +8,7 @@
     "simulate", "immortalize", "subdue", "pigeonhole", "despoil", "enhance", "glamorize", "market", "recognize", "smash", "kiss",
     "cleanse", "corrupt", "punch", "kick", "slap", "pinch", "tickle", "devour", "lick", "poke", "contradict", "ridicule", "tease",
     "detect", "assemble", "seduce", "banish", "romance", "purify", "feed", "simplify", "snuff", "clear", "revive", "appraise", "charm",
-    "annoy", "irritate", "perplex", "exasperate"
+    "annoy", "irritate", "perplex", "exasperate", "disrepsect"
   ],
   "verbIntransitive": [ "#verbStrictlyIntransitive#", "#verbStrictlyIntransitive#", "#verbBothTransitive#" ],
   "verbStrictlyIntransitive": [
@@ -21,7 +21,7 @@
   "verbBothTransitive": [
     "approach","shuffle", "kill", "observe", "grow", "swallow", "transform", "forget", "remember", "study", "misunderstand",
     "sacrifice", "collect", "celebrate", "exaggerate", "pantomime", "advertize", "deep-fry", "decorate", "fight", "burn", "gargle", "flee",
-    "worship", "sniff", "consume", "snuff", "clear", "revive", "consume", "see"
+    "worship", "sniff", "consume", "snuff", "clear", "revive", "consume", "see", "shave"
   ],
   "verbPastTense": [ "#verbStrictlyTransitivePastTense#", "#verbStrictlyIntransitivePastTense#", "#verbBothTransitivePastTense#" ],
   "verbTransitivePastTense": [ "#verbStrictlyTransitivePastTense#", "#verbStrictlyTransitivePastTense#", "#verbBothTransitivePastTense#" ],
@@ -32,7 +32,7 @@
     "simulated", "immortalized", "subdued", "pigeonholed", "despoiled", "enhanced", "glamorized", "marketed", "recognized", "smashed", "kissed",
     "cleansed", "corrupted", "punched", "kicked", "slapped", "pinched", "tickled", "devoured", "licked", "poked", "contradicted", "ridiculed", "teased",
     "detected", "assembled", "seduced", "banished", "romanced", "purified", "fed", "simplified", "snuffed", "cleared", "revived", "appraised",
-    "charmed", "annoyed", "irritated", "perplexed", "exasperated"
+    "charmed", "annoyed", "irritated", "perplexed", "exasperated", "disrepsected"
   ],
   "verbIntransitivePastTense": [ "#verbStrictlyIntransitivePastTense#","#verbStrictlyIntransitivePastTense#", "#verbBothTransitivePastTense#" ],
   "verbStrictlyIntransitivePastTense": [
@@ -45,7 +45,7 @@
   "verbBothTransitivePastTense": [
     "approached","shuffled", "killed", "observed", "grew", "swallowed", "transformed", "forgot", "remembered", "studied", "misunderstood",
     "sacrificed", "collected", "celebrated", "exaggerated", "pantomimed", "advertized", "deep-fried", "decorated", "fought", "burned", "gargled", "fled",
-  	"worshipped", "sniffed", "consumed", "saw"
+  	"worshipped", "sniffed", "consumed", "saw", "shaved"
   ],
   "verbGerund": [ "#verbStrictlyTransitiveGerund#", "#verbStrictlyIntransitiveGerund#", "#verbBothTransitiveGerund#" ],
   "verbTransitiveGerund": [ "#verbStrictlyTransitiveGerund#", "#verbStrictlyTransitiveGerund#", "#verbBothTransitiveGerund#" ],
@@ -56,7 +56,7 @@
     "simulating", "immortalizing", "subduing", "pigeonholing", "despoiling", "enhancing", "glamorizing", "marketing", "recognizing", "smashing", "kissing",
     "cleansing", "corrupting", "punching", "kicking", "slapping", "pinching", "tickling", "devouring", "licking", "poking",, "contradicting", "ridiculing",
     "teasing", "detecting", "sacrificing", "collecting", "assembling", "seducing", "banishing", "romancing", "purifying", "feeding", "simplifying", "snuffing",
-    "clearing", "reviving", "appraising", "charming", "annoying", "irritating", "perplexing", "exasperating"
+    "clearing", "reviving", "appraising", "charming", "annoying", "irritating", "perplexing", "exasperating", "disrepsecting"
   ],
   "verbIntransitiveGerund": [ "#verbStrictlyIntransitiveGerund#", "#verbStrictlyIntransitiveGerund#", "#verbBothTransitiveGerund#" ],
   "verbStrictlyIntransitiveGerund": [
@@ -69,7 +69,7 @@
   "verbBothTransitiveGerund": [
     "approaching","shuffling", "killing", "observing", "growing", "swallowing", "transforming", "forgetting", "remembering", "studying", "misunderstanding",
     "celebrating", "exaggerating", "pantomiming", "advertizing", "deep-frying", "decorating", "fighting", "burning", "gargling", "sniffing", "fleeing",
-    "worshipping", "consuming", "seeing"
+    "worshipping", "consuming", "seeing", "shaving"
   ],
   "verbDefeat": [
       "defeat",
