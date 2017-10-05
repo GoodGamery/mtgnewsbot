@@ -114,5 +114,51 @@ onlineEventAnnouncement2: "[_starting:starting,beginning,launching]join [_event:
 
 ####### replyWithCard ######
 
-#hashtagDay: "{hashtag}#CONTENT.dayOfTheWeek()#.capitalize##CONTENT.dayOfWeekOccasion.capitalizeAll.noPunctuation.noSpaces#"
+replyWithCard:
+- |
+  [#replyWithCardText#]
+  #replyWithCardTextPart1#
+  {newline}{newline}
+  #replyWithCardTextPart2#
+  {newline}#imgCard#
+
+replyWithCardText:
+- >
+ [#replyCardCategory#]
+ [_whatYouMightKnow:the drill,what to do,what that means][_whatYouKnow:#_whatYouMightKnow#]
+ [replyWithCardTextPart1:It's #hashtagDay##comma# you know #_whatYouKnow#!]
+ [replyWithCardTextPart2:...if you don't know #_whatYouKnow##comma# #replyBackWith# #replyWithCardDescribeCard#.]
+- >
+  [#replyCardCategory#]
+  [_hour:#_replyCardShortDescription#,#_cardname#]
+  [replyWithCardTextPart1:It's #hashtagDay##comma# and you know what time it is...]
+  [replyWithCardTextPart2:It's time for you to #replyBackWith# #replyWithCardDescribeCard#!,It's #_hour.hyphenate# o'clock! #replyBackWith.capitalize# #replyWithCardDescribeCard#.]
+
+replyWithCardDescribeCard:
+- "your favorite #_replyCardDescription#"
+- "your all-time favorite #_replyCardDescription#"
+- "your mom's favorite #_replyCardDescription#"
+- "your go-to #_replyCardDescription#"
+- "your least favorite #_replyCardDescription#"
+- "a completely random #_replyCardDescription#"
+- "the first #_replyCardDescription# you can think of"
+- "your [_pickFor:pick for,vote for,choice for, opinion of]#_pickFor# the most powerful #_replyCardDescription#"
+- "#_replyCardDescription.a# that you think nobody else will think of"
+- "a #_replyCardDescription# that featured in a bad beat story of yours"
+- "the most embarrassing #_replyCardDescription# you've ever played"
+- "the worst #_replyCardDescription# you've ever lost to"
+
+replyBackWith:
+- reply back with
+- reply with
+- respond with
+- share
+- show us
+
+replyCardCategory: "#_replyCardCategory#[_cardname:#_cardName1#]"
+_replyCardCategory: 
+ - "[_keyword:#keyword#][_query:#_keyword#][#_query.cardSearchByText#][_replyCardShortDescription:#_keyword.lowercase#][_replyCardDescription:card with #_keyword.lowercase#]"
+ - "[#searchableCardCategory#][#_cardCategorySearchTerm.cardSearchByText#][_replyCardShortDescription:#_cardCategory#][_replyCardDescription:#_cardCategory#]"
+ - "[#searchableCardCategoryCustomQuery#][#_customQuery.cardSearchCustomQuery#][_replyCardShortDescription:#_cardCategory#][_replyCardDescription:#_cardCategory#]"
+
 hashtagDay: "{hashtag}#CONTENT.dayOfWeekOccasion.capitalizeAll.noPunctuation.noSpaces##CONTENT.dayOfWeek.capitalize#"
