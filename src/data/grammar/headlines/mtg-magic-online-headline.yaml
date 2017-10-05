@@ -132,7 +132,7 @@ replyWithCardText:
   [#replyCardCategory#]
   [_hour:#_replyCardShortDescription#,#_cardname#]
   [replyWithCardTextPart1:It's #hashtagDay##comma# and you know what time it is...]
-  [replyWithCardTextPart2:It's time for you to #replyBackWith# #replyWithCardDescribeCard#!,It's #_hour.hyphenate# o'clock! #replyBackWith.capitalize# #replyWithCardDescribeCard#.]
+  [replyWithCardTextPart2:It's time for you to #replyBackWith# #replyWithCardDescribeCard#!,It's #_hour.noPunctuation.hyphenate# o'clock! #replyBackWith.capitalize# #replyWithCardDescribeCard#.]
 
 replyWithCardDescribeCard:
 - "your favorite #_replyCardDescription#"

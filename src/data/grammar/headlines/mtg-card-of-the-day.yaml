@@ -190,8 +190,8 @@ tribalCreature:
  - "#_creatureType.capitalizeAll# Whelp"
  - "#planeswalkerFirstName#'s #_creatureType.capitalizeAll#"
  - "#_creatureType.capitalizeAll#lord #commonCharacterFirstName#"
- - "#commonCharacterFirstName#, the #abstractNounMassNounOrEmotion.capitalize# #_creatureType.capitalizeAll#"
- - "#commonCharacterFirstName#, #_creatureType.capitalizeAll# #characterClass.capitalize#"
+ - "#commonCharacterFirstName#, the #abstractNounMassNounOrEmotion.capitalizeAll# #_creatureType.capitalizeAll#"
+ - "#commonCharacterFirstName#, #_creatureType.capitalizeAll# #characterClass.capitalizeAll#"
  - "#commonCharacterFirstName#, #characterClass.capitalizeAll# of the #placeNoun.capitalizeAll#"
 
 kindaGood:
