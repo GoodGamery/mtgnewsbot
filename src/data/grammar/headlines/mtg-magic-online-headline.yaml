@@ -14,6 +14,7 @@
 mtgoTwitterStyleHeadline:
 - "#theXOfYHasZ#"
 - "#cardPunEventInvitation#"
+- "#replyWithCard#"
 
 ##### theXOfYHasZ ######
 
@@ -110,3 +111,8 @@ eventComeOn:
 
 onlineEventAnnouncement1: "[_starting:starting,beginning,launching]#onlineEvent.capitalize##_s# #_isAre# starting #onlineEventTimeStart#. #eventComeOn#"
 onlineEventAnnouncement2: "[_starting:starting,beginning,launching]join [_event:#onlineEvent#]#_aThe# #_event#, #_starting# #onlineEventTimeStart#"
+
+####### replyWithCard ######
+
+#hashtagDay: "{hashtag}#CONTENT.dayOfTheWeek()#.capitalize##CONTENT.dayOfWeekOccasion.capitalizeAll.noPunctuation.noSpaces#"
+hashtagDay: "{hashtag}#CONTENT.dayOfWeekOccasion.capitalizeAll.noPunctuation.noSpaces##CONTENT.dayOfWeek.capitalize#"
