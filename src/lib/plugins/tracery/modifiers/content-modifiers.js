@@ -34,5 +34,6 @@ function dayOfWeekMotivation() {
 
 module.exports = { 
   dayOfWeek,
-  dayOfWeekOccasion
+  dayOfWeekOccasion,
+  dayOfWeekMotivation
 };
