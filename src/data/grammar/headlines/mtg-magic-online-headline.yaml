@@ -184,7 +184,8 @@ cardOneOff:
   #imgCard#
 - |
   [#creatureSearch#][_cardname:#_cardName1#]
-  #CONTENT.dayOfWeek.capitalize# is #_cardname#'s [_day:favorite day.,second-favorite day.,day off.,birthday!,day to run the twitter feed.]#_day#
+  [_birthdayWishes:, Wish them well., Remember to sign the card., Maybe get them a present., How special!, Did you bring a gift?, Maybe we can all chip in for #itemNoun.a#.]
+  #CONTENT.dayOfWeek.capitalize# is #_cardname#'s [_day:favorite day.,second-favorite day.,day off.,birthday!#_birthdayWishes#,day to run the twitter feed.]#_day#
   {newline}
   #hashtagDayMotivation#
   {newline}{newline}
@@ -215,7 +216,7 @@ cardOneOff:
 - |
   [_customQuery:t=legendary t=creature][#cotdCustomSearch#][_legendName:#_cardName1#]
   [#creatureSearch#][_cardname:#_cardName1#]
-  [_legendWants:reminds you,wants you,says]
+  [_legendWants:reminds you,wants you,says,invites you]
   [_whatToDo:Don't,Never,Always,Remember to,#_legendName# #_legendWants# to]
   [_verbSuggestion:underestimate,consider,reevaluate,root for,ignore,pay attention to,forget,remember,give a shout out to]
   [_guys:guys,guys,cards,critters,creatures]
