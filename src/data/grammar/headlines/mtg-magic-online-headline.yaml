@@ -60,7 +60,7 @@ challengeAppeal:
 - How serious are you about winning?
 - Do you want treasure chests?
 - "So you think you can [_doThis:battle,win a tournament,#verbStrictlyIntransitive#]#_doThis#?"
-- "[_have:,Have some,Do you have,Extra]#_have# [_currency:event tickets,play points,some extra cash]#_currency# to burn?"
+- "[_have:Have some,Do you have,Extra]#_have# [_currency:event tickets,play points,some extra cash]#_currency# to burn?"
 - "Do you have the #bodypartsInPairs# for this?"
 - "Is there #abstractNounMassNounOrEmotion# [_where:in your #bodypartsInternal#,in your #bodypartsExternal#]#_where#?"
 
@@ -193,10 +193,11 @@ cardOneOff:
   [_customQuery:t=artifact t|=enchantment t!=creature][#_customQuery.cardSearchCustomQuery#][_cardname:#_cardName1#]
   [_noun: #abstractNounMassNounOrEmotion#]
   [_verbers:Lovers,Lovers,#verbTransitiveGerund#]
+  [_its:,It's ]
   [_daySubject:#_cardNameLastWord1.capitalize#]
   [_day:{hashtag}#_daySubject##_verbers.capitalize#Day,{hashtag}#_daySubject##CONTENT.dayOfWeek.capitalize#,{hashtag}National#_daySubject#Day]
   [_nounIsWhat:#_noun# knows no bounds.,#_noun# is in the air.,can you feel the #_noun#?,it's the #_noun# that counts.,remember to stop and smell the #_noun#.]
-  [_itsDayText:When #_day# and #hashtagDayMotivation# fall on the same day#comma# #_nounIsWhat#, It's #_day#. #_nounIsWhat.capitalize# #hashtagDayMotivation#]#_itsDayText#
+  [_itsDayText:When #_day# and #hashtagDayMotivation# fall on the same day#comma# #_nounIsWhat#,#_its##_day#. #_nounIsWhat.capitalize# #hashtagDayMotivation#]#_itsDayText#
   {newline}{newline}
   #imgCard#  
 - |
@@ -215,7 +216,7 @@ cardOneOff:
   [_customQuery:t=legendary t=creature][#cotdCustomSearch#][_legendName:#_cardName1#]
   [#creatureSearch#][_cardname:#_cardName1#]
   [_legendWants:reminds you,wants you,says]
-  [_whatToDo:Don't,Never,Always,Rembember to,#_legendName# #_legendWants# to]
+  [_whatToDo:Don't,Never,Always,Remember to,#_legendName# #_legendWants# to]
   [_verbSuggestion:underestimate,consider,reevaluate,root for,ignore,pay attention to,forget,remember,give a shout out to]
   [_guys:guys,guys,cards,critters,creatures]
   [_who:the little #_guys#,the #cardOrEffectAdj# #_guys#,the #adj# #_guys#,the newest cards,your old favorites,the #_cardSubtype1.s#]
