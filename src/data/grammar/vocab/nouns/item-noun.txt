@@ -81,5 +81,15 @@ lollipop
 rubber band
 fidget spinner
 decoder ring
+rake
+piñata
+toilet brush
+catalog
+accordian
+torch
+boomerang
+finger puppet
+strawberry
+#massNoun# launcher
 #bodypart#
 #gameAccessory#

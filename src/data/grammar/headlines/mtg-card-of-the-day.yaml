@@ -1,9 +1,9 @@
 ---
 cotdImage:
   - "[_cardname:#randomRealCard#][#cotdCardNameSearch#][_cotdDescription:#cotdDescription#][_cotdImgUrl:https#colon#//goodgamery.com/api/mtg/image?card=#_cardname#][_title:#cotdTitle#]#_title#: #_cardname##cotdImageHtml#"
-  # - "[#cotdCreatureTypeSearch#][_cotdDescription:#cotdCreatureTypeDescription#][_title:#cotdTitle#]#_title#: #_cardname##cotdImageHtml#"
-  # - "[#searchableCardCategory#][#cotdCardCategorySearch#][_cotdDescription:#cotdTextDescription#][_title:#cotdTitle#]#_title#: #_cardname##cotdImageHtml#"
-  # - "[_cotdDescription:#cotdCustomQueryDecscription#][_title:#cotdTitle#]#_title#: #_cardname##cotdImageHtml#"
+  - "[#cotdCreatureTypeSearch#][_cotdDescription:#cotdCreatureTypeDescription#][_title:#cotdTitle#]#_title#: #_cardname##cotdImageHtml#"
+  - "[#searchableCardCategory#][#cotdCardCategorySearch#][_cotdDescription:#cotdTextDescription#][_title:#cotdTitle#]#_title#: #_cardname##cotdImageHtml#"
+  - "[_cotdDescription:#cotdCustomQueryDecscription#][_title:#cotdTitle#]#_title#: #_cardname##cotdImageHtml#"
 
 cotdCardNameSearch: "#_cardName#[#_cardname.cardSearchByName(1)#][_cardname:#_cardName1#][_cardset:#_cardSet1#][_cardtype:#_cardSomeTypeOrSubtype1#][_cardcolor:#_cardColor1#][_cotdImgUrl:#_cardImgUrl1#][_cardDesc:#_cardType#][_cardDescCategory:#_cardDesc.s#]"
 cotdCardTypeSearch: "[_cardType:#cardTypes#][#_cardType.cardSearchByType(5)#][_cardname:#_cardName1#][_cardset:#_cardSet1#][_cardtype:#_cardSomeTypeOrSubtype1#][_cardcolor:#_cardColor1#][_cotdImgUrl:#_cardImgUrl1#][_cardDesc:#_cardType#][_cardDescCategory:#_cardDesc.s#]"
@@ -52,7 +52,7 @@ cotdCreatureTypeDescription:
  - "After months of staring at [_cardlinkName:#cardAlone#]#_cotdHtmlCardLink#, we finally know what gift awaits the [_adj:chosen,devoted,devout,faithful,pious,righteous,worthy,#adj#]#_adj# [_beings:inhabitants,denizens,disciples]#_beings# of #plane#: eternal servitude to the #_creatureType.capitalizeAll.hyphenate#-#characterClass.capitalizeAll.hyphenate# [_cardlinkName:#_cardname#]#_cotdHtmlCardLink#!"
  - "#_creatureType.capitalizeAll# [_doctors:psychologists,behaviorists,therapists]#_doctors# will tell you that [_dreams:dreams,nightmares]#_dreams# about #_badDream# are very common. Unfortunately for this #_creatureType#, it isn't a dream. How [_dreamFeeling:embarrassing,distressing,terrifying,heartbreaking,awful,unfortunate,ominous,disturbing,hilarious,disastrous,appalling,awkward]#_dreamFeeling#."
  - "It started with \"How do you give #_cardSubtype1.s# [_italicText:#keyword.lowercase#]#_italicize#?\" and ended with [_italicText:#keyword.lowercase#][_q:How do you give #_cardSubtype1.a# #_italicize#,What would #_cardSubtype1.a# made out of #massNoun# look like,Why bother,Who cares,Why don't you just follow the design file,Can we design #cardCategory.a# instead,What's for lunch]\"#_q#?\" [_obv:Obviously,Suffice it to say,As you can see for yourself]#_obv#, #_cardName1#[_result:'s playtest went well,'s final design doesn't disappoint,'s printed version answers none of these questions, turned out to be a real mess, turned out great]#_result#."
- - "The only thing left to make #_creatureType.capitalize# tribal viable[_where:, now, in #format#]#_where# is...[_what:a lot more #_creatureType.s#,a few #_creatureType# lords,#_creatureType.a# that's actually playable,probably a playable #cardCategory# or two,about #count# more cards,about a million other cards,actually we have no idea,nothing. It's never going to be playable#comma# sorry,nothing. It's already viable!]#_what#."
+ - "The only thing left to make #_creatureType.capitalize# tribal viable[_where:, now, in #format#]#_where# is...[_what:a lot more #_creatureType.s#.,a few #_creatureType# lords.,#_creatureType.a# that's actually playable.,probably a playable #cardCategory# or two.,about #count# more cards.,about a million other cards.,actually we have no idea.,nothing. It's never going to be playable#comma# sorry.,nothing. It's already viable!]#_what#"
 
 cotdCardNameWordPair_And:
   - "[separator:and][#separator.cardSearchTwoParter(1,\\w+ of)#][_pairWord1:#_cardNameFirstPart1#][_pairWord2:#_cardNameSecondPart1#]"
@@ -190,8 +190,8 @@ tribalCreature:
  - "#_creatureType.capitalizeAll# Whelp"
  - "#planeswalkerFirstName#'s #_creatureType.capitalizeAll#"
  - "#_creatureType.capitalizeAll#lord #commonCharacterFirstName#"
- - "#commonCharacterFirstName#, the #abstractNounMassNounOrEmotion.capitalize# #_creatureType.capitalizeAll#"
- - "#commonCharacterFirstName#, #_creatureType.capitalizeAll# #characterClass.capitalize#"
+ - "#commonCharacterFirstName#, the #abstractNounMassNounOrEmotion.capitalizeAll# #_creatureType.capitalizeAll#"
+ - "#commonCharacterFirstName#, #_creatureType.capitalizeAll# #characterClass.capitalizeAll#"
  - "#commonCharacterFirstName#, #characterClass.capitalizeAll# of the #placeNoun.capitalizeAll#"
 
 kindaGood:

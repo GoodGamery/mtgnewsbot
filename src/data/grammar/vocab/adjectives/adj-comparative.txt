@@ -107,7 +107,7 @@ smoother
 more snow-covered
 more impractical
 stickier
-more stinking
+stinkier
 more sullen
 sultrier
 more superb
@@ -176,3 +176,4 @@ worthier
 unworthier
 seaworthier
 less redeemable
+less useful

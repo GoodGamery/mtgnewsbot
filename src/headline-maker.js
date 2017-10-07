@@ -65,7 +65,8 @@ function parseMessage(message) {
     .join(ENDL_MARKER);  // Support multiline strings from YAML;
 
   const replacementTags = {
-    newline: '\n'
+    newline: '\n',
+    hashtag: '#'
   };
 
   let match = text.match(/\{\s*\w+?(\s+?.*)?\}/g);

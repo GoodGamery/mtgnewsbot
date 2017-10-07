@@ -89,7 +89,7 @@ dumbScenario:
 - infiltrate WOTC headquarters and destroy the reserved list
 - 'teach them how to beat #deck#'
 - fix MTGO so that it works properly
-- 'help them complete their #realbadcard# playset'
+- 'help them complete their #realBadCard# playset'
 
 announcement:
 - "#textAnnouncement#"
@@ -331,3 +331,4 @@ thing:
 colon: ":"
 comma: ","
 fakecomma: "‚"
+hashtag: "_hashtag_"
