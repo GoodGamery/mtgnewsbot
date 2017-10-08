@@ -6,8 +6,13 @@ singleCardImageTest: >
 
 # Include this in other headlines that set a single _cardname variable
 singleCardImage: >
-  #pickRandomBGText# #pickBgColor# #pickRandomPattern# #pickOrientation#
+  #pickBgColor# #pickOrientation# #pickBackgroundType#
   {htmlImg htmlImgString=`#singleCardHtml#` screenWidth=`580` screenHeight=`330` width=`580` height=`330`}
+
+
+pickBackgroundType:
+# - "#pickRandomBGText#[_backgroundClass:text-bg][_backgroundTextContent:#bgTextBlock#]"
+- "#pickRandomPattern#[_backgroundClass:pattern-bg][_backgroundTextContent:]"
 
 pickRandomPattern: "#pickRandomPatternImage# #pickRandomPatternDegree# #pickRandomPatternOrientation# #pickRandomPatternOpacity#"
 
@@ -48,27 +53,27 @@ _overlayImageIndex:
 - "32"
 
 pickPatternFileWithOpacity:
-- "[#_patternFileLightOrDark:#_patternFile#][_patternOpacity:0.15]"
+- "[#_patternFileLightOrDark:#_patternFile#][_patternOpacity:0.1]"
 - "[#_patternFileLightOrDark:#_patternFileInverted#][#pickRandomPatternOpacity#]"
 
 pickBgColor:
-# - "[_setBgColor:#rgbDark#][_patternFileLightOrDark:#_patternFileInverted#][#pickRandomPatternOpacity#]"
-- "[_setBgColor:#rgbLight#][#pickPatternFileWithOpacity#]"
+- "[_setBgColor:#rgbDark#][_patternFileLightOrDark:#_patternFileInverted#][#pickRandomPatternOpacity#][_bgTextColor:silver]"
+- "[_setBgColor:#rgbLight#][#pickPatternFileWithOpacity#][_bgTextColor:black]"
 
 pickRandomBGText: >
-  [_sp:#nbspSpacer#][_textXTranslate:-200px][_bgText:#randomBgText#][#pickRandomTextDegree#]
-
-
+  [_sp:#nbspSpacer#][_letterSpacing:normal][_textXTranslate:-200px][_bgText:#randomBgText#][#pickRandomTextDegree#]
 
 randomBgText:
-  - "Hasbro ©2017 Hasbro ©2017 Hasbro ©2017 [_lineHeight:.9em][_textSpacerWidth:75px][_textXTranslate:-800px][_sp:#spanSpacer#][_debug:hasbro]"
-  # - "© DO NOT STEAL © DO NOT STEAL © DO NOT STEAL [_lineHeight:.9em][_debug:dns]"
-  - "$$$$$$$$$$$$$$$$$$$$$$$$$$$$$[_lineHeight:.9em][_sp:#nbspSpacer#][_debug:dollar]"
-  # - "?????????????????????????????[_lineHeight:.8em][_debug:ques]"
-  # - "! ! ! ! ! ! ! ! ! ! ! ! ! ! ! [_lineHeight:.8em][_debug:bang]"
-  # - "MTG MTG MTG MTG MTG MTG [_lineHeight:.9em][_debug:mtg]"
-  # - "@@@@@@@@@@@@@@@@@@@@@@@@@@@@@[_lineHeight:1em][_debug:at]"
-  # - "❤❤❤❤❤❤❤❤❤❤❤❤❤❤❤❤❤❤❤❤❤[_lineHeight:1.3em][_debug:heart]"
+  - "Hasbro ©2017 Hasbro ©2017 Hasbro ©2017 [_lineHeight:.9em][_sp:#spanSpacer#][_textSpacerWidth:75px][_textXTranslate:-800px][_debug:hasbro]"
+  - "© DO NOT STEAL © DO NOT STEAL © DO NOT STEAL [_lineHeight:.9em][_sp:#spanSpacer#][_textSpacerWidth:75px][_textXTranslate:-800px][_debug:dns]"
+  - "$$$$$$$$$$$$$$$$$$$$$$$$$$$$$[_lineHeight:.9em][_debug:dollar]"
+  - "?????????????????????????????[_lineHeight:.8em][_letterSpacing:.08em][_debug:ques]"
+  - "! ! ! ! ! ! ! ! ! ! ! ! ! ! ! [_lineHeight:.8em][_debug:bang]"
+  - "MTG MTG MTG MTG MTG MTG [_lineHeight:.9em][_sp:#spanSpacer#][_textSpacerWidth:50px][_textXTranslate:-550px][_debug:mtg]"
+  - "@@@@@@@@@@@@@@@@@@@@@@@@@@@@@[_lineHeight:1em][_debug:at]"
+  - "[h:❤&nbsp;❤&nbsp;❤&nbsp;❤&nbsp;]#h##h##h##h##h##h#[_lineHeight:.9em][_sp:#spanSpacer#][_textSpacerWidth:16px][_textXTranslate:-200px][_debug:heart]"
+  - "❤❤❤❤❤❤❤❤❤❤❤❤❤❤❤❤❤❤❤❤[_lineHeight:.9em][_letterSpacing:.15em][_sp:#spanSpacer#][_textSpacerWidth:16px][_textXTranslate:-200px][_debug:heart]"
+
 
 bgTextLine: >
   #_bgText##_bgText##_bgText##_bgText##_bgText##_bgText##_bgText##_bgText##_bgText##_bgText#
@@ -118,15 +123,6 @@ rgbLight:
   - "rgb(#num40-99#, #num40-99#, #num75-99#)"
   - "rgb(#num40-99#, #num40-99#, #num75-99#)"
 
-# rgbLight:
-#   - "rgb(#num40-99#, #num40-99#, #num40-99#)"
-#   - "rgb(#num75-99#, #num40-99#, #num11-99#)"
-#   - "rgb(#num75-99#, #num11-99#, #num40-99#)"
-#   - "rgb(#num40-99#, #num75-99#, #num11-99#)"
-#   - "rgb(#num11-99#, #num75-99#, #num40-99#)"
-#   - "rgb(#num11-99#, #num40-99#, #num75-99#)"
-#   - "rgb(#num40-99#, #num11-99#, #num75-99#)"
-
 rgbDark:
   - "rgb(1#num0-9#, #num11-99#, #num40-99#)"
   - "rgb(1#num0-9#, #num40-99#, #num11-99#)"
@@ -141,7 +137,7 @@ rgbDark:
 # Range from -29 to 29
 pickRandomTextDegree: >
   [_textRotationDeg:#_randomTextDegree#deg]
-  
+
 _randomTextDegree:
  -  "2#num1-9#[_textOrigin:45% -15%][_textYTranslate:200px]"
  - "-2#num1-9#[_textOrigin:0% 50%][_textYTranslate:100px]"
@@ -171,14 +167,12 @@ _patternOpacity: "0.1"   # this is the default
 
 _patternFileInverted:
 - anchor-inverted
-- baby-inverted
 - banana-inverted
 - crystal-ball-inverted
 - poultry-leg-inverted
 
 _patternFile:
 - anchor
-- baby
 - banana
 - crystal-ball
 - poultry-leg
@@ -186,8 +180,6 @@ _patternFile:
 _cardImageOrientation: image-wrap-left # this is the default
 _overlayOrientation: image-overlay-left # this is the default
 _patternOrientation: 0deg; # this is the default
-
-
 
 singleCardHtml: |
   <head>
@@ -204,15 +196,16 @@ singleCardHtml: |
     .text-bg {
       white-space: nowrap;
       line-height: #_lineHeight#;
+      letter-spacing: #_letterSpacing#;
       font-size: 72px;
       position: fixed;
       font-family: 'Open Sans', sans-serif;
       font-weight: 700;
+      color: #_bgTextColor#;
       transform-origin: #_textOrigin#;
       -webkit-transform-origin: #_textOrigin#;
       transform: rotate(180deg) translateY(400px);
-      -webkit-transform: rotate(#_textRotationDeg#) translateX(#_textXTranslate#); translateY(#_textYTranslate#);
-    
+      -webkit-transform: rotate(#_textRotationDeg#) translateX(#_textXTranslate#); translateY(#_textYTranslate#);    
       width: 400%;
       height: 400%; 
       opacity: #_patternOpacity#;          
@@ -279,7 +272,7 @@ singleCardHtml: |
     <div class="single-card">
       <div class="color-bg">
         <div class="text-container">
-          <div class="text-bg color-bg">#bgTextBlock#</div>
+          <div class="color-bg #_backgroundClass#">#_backgroundTextContent#</div>
         </div>    
         <div class="image-wrap #_cardImageOrientation#">
           <img class="mtg-card" src="https://goodgamery.com/api/mtg/image?card=#_cardname#" />
