@@ -97,9 +97,6 @@ function cropAndWriteFile(path, imageOptions, sourceImage) {
     });
   };
 
-  console.log('imageOptions:');
-  console.log(JSON.stringify(imageOptions, null, '\t'));
-
   const cropOptions = imageOptions.crop;
 
   const backgroundOptions = imageOptions.background;
@@ -113,21 +110,32 @@ function cropAndWriteFile(path, imageOptions, sourceImage) {
             reject(err);
           }
 
-          const imgWidth = sourceImage.bitmap.width;
-          const imgHeight =  sourceImage.bitmap.height;
           const padding = cropOptions.padding || 0;
+          const needsMatting = sourceImage.bitmap.width + padding < cropOptions.width  || sourceImage.bitmap.height + padding < cropOptions.height;
+          const imgWidth = sourceImage.bitmap.width < cropOptions.width ? sourceImage.bitmap.width : cropOptions.width;
+          const imgHeight =  sourceImage.bitmap.height < cropOptions.height ? sourceImage.bitmap.height : cropOptions.height;
           const backgroundColor = backgroundOptions.color || 0xFFFFFFFF;
 
           return new Jimp(imgWidth + padding, imgHeight + padding, backgroundColor, (err, background) => {
             if (err) {
               reject(err);
             }    
-            background.composite(image, padding/2, padding/2).contain(cropOptions.width, cropOptions.height, (err, image) => {
-              if (err) {
-                reject(err);
-              }            
-                resolve(image);
-            });
+
+            if (needsMatting) {
+              background.composite(image, padding/2, padding/2).contain(cropOptions.width, cropOptions.height, (err, image) => {
+                if (err) {
+                  reject(err);
+                }            
+                  resolve(image);
+              });
+            } else {
+              image.crop(0, 0, cropOptions.width, cropOptions.height, (err, image) => {
+                if (err) {
+                  reject(err);
+                }            
+                  resolve(image);
+              });
+            }
           });
         });
       } else {
