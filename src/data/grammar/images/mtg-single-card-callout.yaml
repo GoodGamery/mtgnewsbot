@@ -7,7 +7,7 @@ singleCardImageTest: >
 # Include this in other headlines that set a single _cardname variable
 singleCardImage: >
   #pickRandomBGText# #pickBgColor# #pickRandomPattern# #pickOrientation#
-  {htmlImg htmlImgString=`#singleCardHtml#` screenWidth=`580` screenHeight=`330`}
+  {htmlImg htmlImgString=`#singleCardHtml#` screenWidth=`580` screenHeight=`330` width=`580` height=`330`}
 
 pickRandomPattern: "#pickRandomPatternImage# #pickRandomPatternDegree# #pickRandomPatternOrientation# #pickRandomPatternOpacity#"
 
@@ -62,35 +62,12 @@ pickOrientation:
 - "[_cardImageOrientation:image-wrap-left][_overlayOrientation:image-overlay-left]"
 - "[_cardImageOrientation:image-wrap-right][_overlayOrientation:image-overlay-right]"
 
-rgbDark:
-  - "rgb(1#num0-9#, #num11-99#, #num40-99#)"
-  - "rgb(1#num0-9#, #num40-99#, #num11-99#)"
-  - "rgb(1#num0-9#, #num40-99#, #num40-99#)"
-  - "rgb(#num11-99#, 1#num0-9#, #num40-99#)"
-  - "rgb(#num40-99#, 1#num0-9#, #num11-99#)"
-  - "rgb(#num40-99#, 1#num0-9#, #num40-99#)"
-  - "rgb(#num11-99#, #num40-99#, 1#num0-9#)"
-  - "rgb(#num40-99#, #num11-99#, 1#num0-9#)"
-  - "rgb(#num40-99#, #num40-99#, 1#num0-9#)"
-
-# rgbLight:
-#   - "rgb(#num40-99#, #num11-99#, #num40-99#)"
-#   - "rgb(#num40-99#, #num40-99#, #num11-99#)"
-#   - "rgb(#num40-99#, #num40-99#, #num40-99#)"
-#   - "rgb(#num11-99#,#num40-99#, #num40-99#)"
-#   - "rgb(#num40-99#, #num40-99#, #num11-99#)"
-#   - "rgb(#num40-99#, #num40-99#, #num40-99#)"
-#   - "rgb(#num11-99#, #num40-99#, #num40-99#)"
-#   - "rgb(#num40-99#, #num11-99#, #num40-99#)"
-#   - "rgb(#num40-99#, #num40-99#, #num40-99#)"
-
 num0-4: 
 - "0"
 - "1"
 - "2"
 - "3"
 - "4"
-
 
 num7-12: 
 - "7"
@@ -112,14 +89,16 @@ rgbLight:
   - "rgb(#num11-99#, #num40-99#, #num75-124#)"
   - "rgb(#num40-99#, #num11-99#, #num75-124#)"
 
-# rgbLight:
-#   - "rgb(#num40-99#, #num40-99#, #num40-99#)"
-#   - "rgb(#num100-149#, #num40-99#, #num11-99#)"
-#   - "rgb(#num100-149#, #num11-99#, #num40-99#)"
-#   - "rgb(#num40-99#, #num100-149#, #num11-99#)"
-#   - "rgb(#num11-99#, #num100-149#, #num40-99#)"
-#   - "rgb(#num11-99#, #num40-99#, #num100-149#)"
-#   - "rgb(#num40-99#, #num11-99#, #num100-149#)"
+rgbDark:
+  - "rgb(1#num0-9#, #num11-99#, #num40-99#)"
+  - "rgb(1#num0-9#, #num40-99#, #num11-99#)"
+  - "rgb(1#num0-9#, #num40-99#, #num40-99#)"
+  - "rgb(#num11-99#, 1#num0-9#, #num40-99#)"
+  - "rgb(#num40-99#, 1#num0-9#, #num11-99#)"
+  - "rgb(#num40-99#, 1#num0-9#, #num40-99#)"
+  - "rgb(#num11-99#, #num40-99#, 1#num0-9#)"
+  - "rgb(#num40-99#, #num11-99#, 1#num0-9#)"
+  - "rgb(#num40-99#, #num40-99#, 1#num0-9#)"
 
 pickRandomPatternImage: >
   [_backgroundPattern:url(#_patternPath##_patternFileLightOrDark##_patternExtension#)]
@@ -145,18 +124,18 @@ _patternFileLightOrDark: "#_patternFile#"  # this is the default
 _patternOpacity: "0.1"   # this is the default
 
 _patternFileInverted:
+- anchor-inverted
+- baby-inverted
+- banana-inverted
 - crystal-ball-inverted
+- poultry-leg-inverted
 
 _patternFile:
-# - anchor
-# - anchor-inverted
-# - baby
-# - baby-inverted
-# - banana
-# - banana-inverted
+- anchor
+- baby
+- banana
 - crystal-ball
-# - poultry-leg
-# - poultry-leg-inverted
+- poultry-leg
 
 _cardImageOrientation: image-wrap-left # this is the default
 _overlayOrientation: image-overlay-left # this is the default

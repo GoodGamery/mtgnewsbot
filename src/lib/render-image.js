@@ -74,11 +74,11 @@ function renderImageFromHtml(html, outputPath, imageOptions) {
             msg: `Image rendered to ${outputPath}`
           });
         })
-        .then(() => fs.unlink(tempFile, (err) => {
+        .then(config.debugOptions.deleteTempImages ? () => fs.unlink(tempFile, (err) => {
           if (err) {
             reject(err);
           }
-        }))
+        }) : undefined)
         .catch(err => reject(err));
     });
   });
@@ -96,6 +96,9 @@ function cropAndWriteFile(path, imageOptions, sourceImage) {
       });
     });
   };
+
+  console.log('imageOptions:');
+  console.log(JSON.stringify(imageOptions, null, '\t'));
 
   const cropOptions = imageOptions.crop;
 

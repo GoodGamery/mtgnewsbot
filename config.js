@@ -9,6 +9,9 @@ const TEMPFILE_PATH = '/tmp';
 
 let config = {
   defaultGrammarPath:  DEFAULT_GRAMMAR_PATH,
+  debugOptions: {
+    deleteTempImages: true
+  },  
   loggers: { },
   logPrefs:  { cardfinder: true, html: true, svg: true },
   origin: undefined,
