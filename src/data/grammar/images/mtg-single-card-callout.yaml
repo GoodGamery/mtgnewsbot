@@ -6,7 +6,7 @@ singleCardImageTest: >
 
 # Include this in other headlines that set a single _cardname variable
 singleCardImage: >
-  #pickRandomBGText# #pickBgColor# #pickRandomTextureDegree# #pickRandomTextureOrientation# #pickOrientation#
+  #pickRandomBGText# #pickBgColor# #pickRandomPattern# #pickRandomPatternDegree# #pickRandomPatternOrientation# #pickOrientation#
   {htmlImg htmlImgString=`#singleCardHtml#` screenWidth=`580` screenHeight=`330`}
 
 _overlayImageDirPath: "./src/data/images/cardcallout"
@@ -47,6 +47,7 @@ _overlayImageIndex:
 
 pickBgColor:
   - "[_setBgColor:#rgbDark#]"
+  - "[_setBgColor:#rgbLight#]"
 
 pickRandomBGText: >
   [_bgText:#randomBgText#]
@@ -66,23 +67,42 @@ rgbDark:
   - "rgb(#num40-99#, #num11-99#, 1#num0-9#)"
   - "rgb(#num40-99#, #num40-99#, 1#num0-9#)"
 
-pickRandomTextureDegree: >
-  [_textureRotationDeg:#_randomDegree#deg]
-pickRandomTextureOrientation: >
-  [_textureOrientation:#_randomTextureOrientation#]
+rgbLight:
+  - "rgb(#num40-99#, #num11-99#, #num40-99#)"
+  - "rgb(#num40-99#, #num40-99#, #num11-99#)"
+  - "rgb(#num40-99#, #num40-99#, #num40-99#)"
+  - "rgb(#num11-99#,#num40-99#, #num40-99#)"
+  - "rgb(#num40-99#, #num40-99#, #num11-99#)"
+  - "rgb(#num40-99#, #num40-99#, #num40-99#)"
+  - "rgb(#num11-99#, #num40-99#, #num40-99#)"
+  - "rgb(#num40-99#, #num11-99#, #num40-99#)"
+  - "rgb(#num40-99#, #num40-99#, #num40-99#)"
+
+pickRandomPatternDegree: >
+  [_patternRotationDeg:#_randomDegree#deg]
+pickRandomPatternOrientation: >
+  [_patternOrientation:#_randomPatternOrientation#]
+pickRandomPattern: >
+  [_backgroundPattern:url(#_patternPath##_patternFile##_patternExtension#)]
 
 # Range from -29 to 29
 _randomDegree:
   -  "2#num1-9#"
   - "-2#num1-9#"
 
-_randomTextureOrientation:
+_randomPatternOrientation:
 - "-1"
 - "1"
 
+_patternPath: "file:///C:/Users/Justin/Desktop/backgrounds/"
+_patternExtension: .png
+_patternFile:
+- banana
+- banana-inverted
+
 _cardImageOrientation: image-wrap-left # this is the default
 _overlayOrientation: image-overlay-left # this is the default
-_textureOrientation: 0deg; # this is the default
+_patternOrientation: 0deg; # this is the default
 
 singleCardHtml: |
   <head>
@@ -96,9 +116,9 @@ singleCardHtml: |
       width:100%;
       height:100%;
     }
-    .texture-bg {
+    .pattern-bg {
       /* background-image: url(file:///C:/Users/Justin/Desktop/backgrounds/banana.png); */
-      background-image: url(file:///C:/Users/Justin/Desktop/backgrounds/banana-inverted.png);
+      background-image: #_backgroundPattern#;
       width: 400%;
       top: -100%;
       left: -100%;
@@ -109,7 +129,7 @@ singleCardHtml: |
       padding: 0;
       margin: 0;
       z-index:0;      
-      -webkit-transform: rotate(#_textureRotationDeg#) scaleX(#_textureOrientation#);     
+      -webkit-transform: rotate(#_patternRotationDeg#) scaleX(#_patternOrientation#);     
     }
     .mtg-card {
       -webkit-mask-image: url(file:///D:/Development/git/mtgnewsbot/src/data/images/cardmask.png);
@@ -156,7 +176,7 @@ singleCardHtml: |
     <div class="single-card">
       <div class="color-bg">
         <div class="text-container">
-          <div class="texture-bg color-bg"></div>
+          <div class="pattern-bg color-bg"></div>
         </div>    
         <div class="image-wrap #_cardImageOrientation#">
           <img class="mtg-card" src="https://goodgamery.com/api/mtg/image?card=#_cardname#" />
