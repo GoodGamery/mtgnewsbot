@@ -6,7 +6,7 @@ singleCardImageTest: >
 
 # Include this in other headlines that set a single _cardname variable
 singleCardImage: >
-  #pickRandomBGText# #pickBgColor# #pickRandomDegree# #pickOrientation#
+  #pickRandomBGText# #pickBgColor# #pickRandomTextureDegree# #pickRandomTextureOrientation# #pickOrientation#
   {htmlImg htmlImgString=`#singleCardHtml#` screenWidth=`580` screenHeight=`330`}
 
 _overlayImageDirPath: "./src/data/images/cardcallout"
@@ -55,11 +55,6 @@ pickOrientation:
 - "[_cardImageOrientation:image-wrap-left][_overlayOrientation:image-overlay-left]"
 - "[_cardImageOrientation:image-wrap-right][_overlayOrientation:image-overlay-right]"
 
-# TODO: choose regular or inverted bg image
-rgbOverlay:
-  - "rgba(255, 255, 255, 0.1)"
-  - "rgba(0, 0, 0, 0.4)"
-
 rgbDark:
   - "rgb(1#num0-9#, #num11-99#, #num40-99#)"
   - "rgb(1#num0-9#, #num40-99#, #num11-99#)"
@@ -71,17 +66,23 @@ rgbDark:
   - "rgb(#num40-99#, #num11-99#, 1#num0-9#)"
   - "rgb(#num40-99#, #num40-99#, 1#num0-9#)"
 
-pickRandomDegree: >
-  [_rotationDeg:#_randomDegree#deg]
+pickRandomTextureDegree: >
+  [_textureRotationDeg:#_randomDegree#deg]
+pickRandomTextureOrientation: >
+  [_textureOrientation:#_randomTextureOrientation#]
 
-# Range from -39 to 39
+# Range from -29 to 29
 _randomDegree:
-  -  "2#num1-9#[_origin:45% -15%]"
-  - "-2#num1-9#[_origin:0% 50%]"
+  -  "2#num1-9#"
+  - "-2#num1-9#"
+
+_randomTextureOrientation:
+- "-1"
+- "1"
 
 _cardImageOrientation: image-wrap-left # this is the default
-
 _overlayOrientation: image-overlay-left # this is the default
+_textureOrientation: 0deg; # this is the default
 
 singleCardHtml: |
   <head>
@@ -97,48 +98,23 @@ singleCardHtml: |
     }
     .texture-bg {
       /* background-image: url(file:///C:/Users/Justin/Desktop/backgrounds/banana.png); */
-      /* background-image: url(file:///C:/Users/Justin/Desktop/backgrounds/banana-inverted.png); */
-      width: 200%;
+      background-image: url(file:///C:/Users/Justin/Desktop/backgrounds/banana-inverted.png);
+      width: 400%;
       top: -100%;
       left: -100%;
-      height:200%; 
+      height: 400%; 
       opacity: 0.1;
       position: fixed;
       background-repeat: repeat-x repeat-y;
       padding: 0;
       margin: 0;
       z-index:0;      
-      -webkit-transform: scaleX(-1);      
-      /*-webkit-transform: scaleX(1);       */
-      /*-webkit-transform: rotate(22deg);      */
-      -webkit-transform: rotate(45deg);     
-      -webkit-transform: rotate(-45deg);      
+      -webkit-transform: rotate(#_textureRotationDeg#) scaleX(#_textureOrientation#);     
     }
-
-    .texture-bg-image {
-      background-image: url(file:///C:/Users/Justin/Desktop/backgrounds/banana-inverted.png);    
-    }
-
-    .text-bg {
-      white-space: nowrap;
-      line-height: #_lineHeight#;
-      font-size: 72px;
-      position: absolute;
-      font-family: 'Open Sans', sans-serif;
-      font-weight: 700;
-      transform-origin: #_origin#;
-      -webkit-transform-origin: #_origin#;
-      transform: rotate(#_rotationDeg#);
-      -webkit-transform: rotate(#_rotationDeg#);
-    }
-
     .mtg-card {
-      /*mask-image: url(file:///D:/Development/git/mtgnewsbot/src/data/images/cardmask.png);*/
       -webkit-mask-image: url(file:///D:/Development/git/mtgnewsbot/src/data/images/cardmask.png);
       -webkit-mask-position: center center;
-      /*mask-position: center center;*/
       -webkit-mask-repeat: no-repeat;
-      /*mask-repeat: no-repeat;*/
       padding: 9px;
     }
     .single-card {
@@ -154,8 +130,6 @@ singleCardHtml: |
     .text-container {
       height: 700px;
       width: 700px;      
-      # height: 330px;
-      # width: 580px;
       position: absolute;
       overflow: hidden;
     }
@@ -182,7 +156,7 @@ singleCardHtml: |
     <div class="single-card">
       <div class="color-bg">
         <div class="text-container">
-          <div class="texture-bg texture-bg-image color-bg"></div>
+          <div class="texture-bg color-bg"></div>
         </div>    
         <div class="image-wrap #_cardImageOrientation#">
           <img class="mtg-card" src="https://goodgamery.com/api/mtg/image?card=#_cardname#" />
