@@ -6,8 +6,10 @@ singleCardImageTest: >
 
 # Include this in other headlines that set a single _cardname variable
 singleCardImage: >
-  #pickRandomBGText# #pickBgColor# #pickRandomPattern# #pickRandomPatternDegree# #pickRandomPatternOrientation# #pickOrientation#
+  #pickRandomBGText# #pickBgColor# #pickRandomPattern# #pickOrientation#
   {htmlImg htmlImgString=`#singleCardHtml#` screenWidth=`580` screenHeight=`330`}
+
+pickRandomPattern: "#pickRandomPatternImage# #pickRandomPatternDegree# #pickRandomPatternOrientation# #pickRandomPatternOpacity#"
 
 _overlayImageDirPath: "./src/data/images/cardcallout"
 
@@ -45,9 +47,13 @@ _overlayImageIndex:
 - "31"
 - "32"
 
+pickPatternFileWithOpacity:
+- "[#_patternFileLightOrDark:#_patternFile#][_patternOpacity:0.15]"
+- "[#_patternFileLightOrDark:#_patternFileInverted#][#pickRandomPatternOpacity#]"
+
 pickBgColor:
-  - "[_setBgColor:#rgbDark#]"
-  - "[_setBgColor:#rgbLight#]"
+- "[_setBgColor:#rgbDark#][_patternFileLightOrDark:#_patternFileInverted#][#pickRandomPatternOpacity#]"
+- "[_setBgColor:#rgbLight#][#pickPatternFileWithOpacity#]"
 
 pickRandomBGText: >
   [_bgText:#randomBgText#]
@@ -67,26 +73,65 @@ rgbDark:
   - "rgb(#num40-99#, #num11-99#, 1#num0-9#)"
   - "rgb(#num40-99#, #num40-99#, 1#num0-9#)"
 
-rgbLight:
-  - "rgb(#num40-99#, #num11-99#, #num40-99#)"
-  - "rgb(#num40-99#, #num40-99#, #num11-99#)"
-  - "rgb(#num40-99#, #num40-99#, #num40-99#)"
-  - "rgb(#num11-99#,#num40-99#, #num40-99#)"
-  - "rgb(#num40-99#, #num40-99#, #num11-99#)"
-  - "rgb(#num40-99#, #num40-99#, #num40-99#)"
-  - "rgb(#num11-99#, #num40-99#, #num40-99#)"
-  - "rgb(#num40-99#, #num11-99#, #num40-99#)"
-  - "rgb(#num40-99#, #num40-99#, #num40-99#)"
+# rgbLight:
+#   - "rgb(#num40-99#, #num11-99#, #num40-99#)"
+#   - "rgb(#num40-99#, #num40-99#, #num11-99#)"
+#   - "rgb(#num40-99#, #num40-99#, #num40-99#)"
+#   - "rgb(#num11-99#,#num40-99#, #num40-99#)"
+#   - "rgb(#num40-99#, #num40-99#, #num11-99#)"
+#   - "rgb(#num40-99#, #num40-99#, #num40-99#)"
+#   - "rgb(#num11-99#, #num40-99#, #num40-99#)"
+#   - "rgb(#num40-99#, #num11-99#, #num40-99#)"
+#   - "rgb(#num40-99#, #num40-99#, #num40-99#)"
 
+num0-4: 
+- "0"
+- "1"
+- "2"
+- "3"
+- "4"
+
+
+num7-12: 
+- "7"
+- "8"
+- "9"
+- "10"
+- "11"
+- "12"
+
+num100-149: "1#num0-4##num0-9#"
+num75-124: "#num7-12##num0-9#"
+
+rgbLight:
+  - "rgb(#num40-99#, #num40-99#, #num40-99#)"
+  - "rgb(#num75-124#, #num40-99#, #num11-99#)"
+  - "rgb(#num75-124#, #num11-99#, #num40-99#)"
+  - "rgb(#num40-99#, #num75-124#, #num11-99#)"
+  - "rgb(#num11-99#, #num75-124#, #num40-99#)"
+  - "rgb(#num11-99#, #num40-99#, #num75-124#)"
+  - "rgb(#num40-99#, #num11-99#, #num75-124#)"
+
+# rgbLight:
+#   - "rgb(#num40-99#, #num40-99#, #num40-99#)"
+#   - "rgb(#num100-149#, #num40-99#, #num11-99#)"
+#   - "rgb(#num100-149#, #num11-99#, #num40-99#)"
+#   - "rgb(#num40-99#, #num100-149#, #num11-99#)"
+#   - "rgb(#num11-99#, #num100-149#, #num40-99#)"
+#   - "rgb(#num11-99#, #num40-99#, #num100-149#)"
+#   - "rgb(#num40-99#, #num11-99#, #num100-149#)"
+
+pickRandomPatternImage: >
+  [_backgroundPattern:url(#_patternPath##_patternFileLightOrDark##_patternExtension#)]
 pickRandomPatternDegree: >
-  [_patternRotationDeg:#_randomDegree#deg]
+  [_patternRotationDeg:#_randomPatternDegree#deg]
 pickRandomPatternOrientation: >
   [_patternOrientation:#_randomPatternOrientation#]
-pickRandomPattern: >
-  [_backgroundPattern:url(#_patternPath##_patternFile##_patternExtension#)]
+pickRandomPatternOpacity: >
+  [_patternOpacity:0.1,0.15]
 
 # Range from -29 to 29
-_randomDegree:
+_randomPatternDegree:
   -  "2#num1-9#"
   - "-2#num1-9#"
 
@@ -94,11 +139,24 @@ _randomPatternOrientation:
 - "-1"
 - "1"
 
-_patternPath: "file:///C:/Users/Justin/Desktop/backgrounds/"
+_patternPath: "./src/data/images/cardcallout/patterns/"
 _patternExtension: .png
+_patternFileLightOrDark: "#_patternFile#"  # this is the default
+_patternOpacity: "0.1"   # this is the default
+
+_patternFileInverted:
+- crystal-ball-inverted
+
 _patternFile:
-- banana
-- banana-inverted
+# - anchor
+# - anchor-inverted
+# - baby
+# - baby-inverted
+# - banana
+# - banana-inverted
+- crystal-ball
+# - poultry-leg
+# - poultry-leg-inverted
 
 _cardImageOrientation: image-wrap-left # this is the default
 _overlayOrientation: image-overlay-left # this is the default
@@ -117,13 +175,12 @@ singleCardHtml: |
       height:100%;
     }
     .pattern-bg {
-      /* background-image: url(file:///C:/Users/Justin/Desktop/backgrounds/banana.png); */
       background-image: #_backgroundPattern#;
       width: 400%;
       top: -100%;
       left: -100%;
       height: 400%; 
-      opacity: 0.1;
+      opacity: #_patternOpacity#;
       position: fixed;
       background-repeat: repeat-x repeat-y;
       padding: 0;
@@ -132,7 +189,7 @@ singleCardHtml: |
       -webkit-transform: rotate(#_patternRotationDeg#) scaleX(#_patternOrientation#);     
     }
     .mtg-card {
-      -webkit-mask-image: url(file:///D:/Development/git/mtgnewsbot/src/data/images/cardmask.png);
+      -webkit-mask-image: url(./src/data/images/cardmask.png);
       -webkit-mask-position: center center;
       -webkit-mask-repeat: no-repeat;
       padding: 9px;
