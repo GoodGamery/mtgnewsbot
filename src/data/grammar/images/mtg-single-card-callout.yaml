@@ -97,7 +97,7 @@ singleCardHtml: |
     }
     .texture-bg {
       /* background-image: url(file:///C:/Users/Justin/Desktop/backgrounds/banana.png); */
-      background-image: url(file:///C:/Users/Justin/Desktop/backgrounds/banana-inverted.png);
+      /* background-image: url(file:///C:/Users/Justin/Desktop/backgrounds/banana-inverted.png); */
       width: 200%;
       top: -100%;
       left: -100%;
@@ -114,6 +114,24 @@ singleCardHtml: |
       -webkit-transform: rotate(45deg);     
       -webkit-transform: rotate(-45deg);      
     }
+
+    .texture-bg-image {
+      background-image: url(file:///C:/Users/Justin/Desktop/backgrounds/banana-inverted.png);    
+    }
+
+    .text-bg {
+      white-space: nowrap;
+      line-height: #_lineHeight#;
+      font-size: 72px;
+      position: absolute;
+      font-family: 'Open Sans', sans-serif;
+      font-weight: 700;
+      transform-origin: #_origin#;
+      -webkit-transform-origin: #_origin#;
+      transform: rotate(#_rotationDeg#);
+      -webkit-transform: rotate(#_rotationDeg#);
+    }
+
     .mtg-card {
       /*mask-image: url(file:///D:/Development/git/mtgnewsbot/src/data/images/cardmask.png);*/
       -webkit-mask-image: url(file:///D:/Development/git/mtgnewsbot/src/data/images/cardmask.png);
@@ -164,7 +182,7 @@ singleCardHtml: |
     <div class="single-card">
       <div class="color-bg">
         <div class="text-container">
-          <div class="texture-bg color-bg"></div>
+          <div class="texture-bg texture-bg-image color-bg"></div>
         </div>    
         <div class="image-wrap #_cardImageOrientation#">
           <img class="mtg-card" src="https://goodgamery.com/api/mtg/image?card=#_cardname#" />
