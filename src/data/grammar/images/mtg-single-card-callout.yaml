@@ -6,7 +6,7 @@ singleCardImageTest: >
 
 # Include this in other headlines that set a single _cardname variable
 singleCardImage: >
-  #pickRandomBGText# #pickFgBgColors# #pickRandomDegree# #pickOrientation#
+  #pickRandomBGText# #pickBgColor# #pickRandomDegree# #pickOrientation#
   {htmlImg htmlImgString=`#singleCardHtml#` screenWidth=`580` screenHeight=`330`}
 
 _overlayImageDirPath: "./src/data/images/cardcallout"
@@ -45,16 +45,17 @@ _overlayImageIndex:
 - "31"
 - "32"
 
-pickFgBgColors:
-  - "[_setFgColor:#rgbOverlay#][_setBgColor:#rgbDark#]"
+pickBgColor:
+  - "[_setBgColor:#rgbDark#]"
 
 pickRandomBGText: >
   [_bgText:#randomBgText#]
 
 pickOrientation:
-- "[_cardImgFloat: left][_overlayFlipTransform: scaleX(1)]"
-- "[_cardImgFloat: right][_overlayFlipTransform:  scaleX(-1)]"
+- "[_cardImageOrientation:image-wrap-left][_overlayOrientation:image-overlay-left]"
+- "[_cardImageOrientation:image-wrap-right][_overlayOrientation:image-overlay-right]"
 
+# TODO: choose regular or inverted bg image
 rgbOverlay:
   - "rgba(255, 255, 255, 0.1)"
   - "rgba(0, 0, 0, 0.4)"
@@ -70,27 +71,6 @@ rgbDark:
   - "rgb(#num40-99#, #num11-99#, 1#num0-9#)"
   - "rgb(#num40-99#, #num40-99#, 1#num0-9#)"
 
-randomBgText:
-  - "Hasbro ©2017 Hasbro ©2017 Hasbro ©2017 [_lineHeight:.9em][_debug:hasbro]"
-  - "© DO NOT STEAL © DO NOT STEAL © DO NOT STEAL [_lineHeight:.9em][_debug:dns]"
-  - "$$$$$$$$$$$$$$$$$$$$$$$$$$$$$[_lineHeight:.8em][_debug:dollar]"
-  - "?????????????????????????????[_lineHeight:.8em][_debug:ques]"
-  - "! ! ! ! ! ! ! ! ! ! ! ! ! ! ! [_lineHeight:.8em][_debug:bang]"
-  - "MTG MTG MTG MTG MTG MTG [_lineHeight:.9em][_debug:mtg]"
-  - "@@@@@@@@@@@@@@@@@@@@@@@@@@@@@[_lineHeight:1em][_debug:at]"
-  - "😈😈😈😈😈😈😈😈😈😈😈😈😈😈😈😈😈😈😈😈😈[_lineHeight:1.3em][_debug:demon]"
-  - "👀👀👀👀👀👀👀👀👀👀👀👀👀👀👀👀👀👀👀👀👀[_lineHeight:1.3em][_debug:eyes]"
-  - "🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥[_lineHeight:1.3em][_debug:fire]"
-  - "❤❤❤❤❤❤❤❤❤❤❤❤❤❤❤❤❤❤❤❤❤[_lineHeight:1.3em][_debug:heart]"
-  - "😎😎😎😎😎😎😎😎😎😎😎😎😎😎😎😎😎😎😎😎😎[_lineHeight:1.3em][_debug:cool]"
-  - "😂😂😂😂😂😂😂😂😂😂😂😂😂😂😂😂😂😂😂😂😂[_lineHeight:1.3em][_debug:laugh]"
-  - "💩💩💩💩💩💩💩💩💩💩💩💩💩💩💩💩💩💩💩💩💩[_lineHeight:1.3em][_debug:shit]"
-  - "🌸🌸🌸🌸🌸🌸🌸🌸🌸🌸🌸🌸🌸🌸🌸🌸🌸🌸🌸🌸🌸[_lineHeight:1.3em][_debug:blossom]"
-  - "💖💖💖💖💖💖💖💖💖💖💖💖💖💖💖💖💖💖💖💖💖[_lineHeight:1.3em][_debug:starheart]"
-  - "💯💯💯💯💯💯💯💯💯💯💯💯💯💯💯💯💯💯💯💯💯[_lineHeight:1.3em][_debug:100]"
-  - "⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐[_lineHeight:1.3em][_debug:medium-star]"
-  - "🤔🤔🤔🤔🤔🤔🤔🤔🤔🤔🤔🤔🤔🤔🤔🤔🤔🤔🤔🤔🤔[_lineHeight:1.3em][_debug:thinking]"
-
 pickRandomDegree: >
   [_rotationDeg:#_randomDegree#deg]
 
@@ -99,111 +79,98 @@ _randomDegree:
   -  "2#num1-9#[_origin:45% -15%]"
   - "-2#num1-9#[_origin:0% 50%]"
 
-bgTextBlock: |
-  #_bgText##_bgText#<br/>
-  &nbsp;#_bgText##_bgText#<br/>
-  &nbsp;&nbsp;#_bgText##_bgText#<br/>
-  &nbsp;&nbsp;&nbsp;#_bgText##_bgText#<br/>
-  &nbsp;&nbsp;&nbsp;&nbsp;#_bgText##_bgText#<br/>
-  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;#_bgText##_bgText#<br/>
-  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;#_bgText##_bgText#<br/>
-  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;#_bgText##_bgText#<br/>
-  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;#_bgText##_bgText#<br/>
-  #_bgText##_bgText#<br/>
-  &nbsp;#_bgText##_bgText#<br/>
-  &nbsp;&nbsp;#_bgText##_bgText#<br/>
-  &nbsp;&nbsp;&nbsp;#_bgText##_bgText#<br/>
-  &nbsp;&nbsp;&nbsp;&nbsp;#_bgText##_bgText#<br/>
-  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;#_bgText##_bgText#<br/>
-  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;#_bgText##_bgText#<br/>
-  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;#_bgText##_bgText#<br/>
-  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;#_bgText##_bgText#<br/>
+_cardImageOrientation: image-wrap-left # this is the default
+
+_overlayOrientation: image-overlay-left # this is the default
 
 singleCardHtml: |
   <head>
     <style>
-      body, div {
-        padding: 0;
-        margin: 0;
-      }
-      .color-bg {
-        background-color: #_setBgColor#;
-        width:100%;
-        height:100%;
-      }
-      .color-fg {
-        color: #_setFgColor#;
-      }
-      .text-bg {
-        white-space: nowrap;
-        line-height: #_lineHeight#;
-        font-size: 72px;
-        position: absolute;
-        font-family: 'Open Sans', sans-serif;
-        font-weight: 700;
-        transform-origin: #_origin#;
-        -webkit-transform-origin: #_origin#;
-        transform: rotate(#_rotationDeg#);
-        -webkit-transform: rotate(#_rotationDeg#);
-      }
-      .mtg-card {
-        mask-image: url(./src/data/images/cardmask.png);
-        -webkit-mask-image: url(./src/data/images/cardmask.png);
-        -webkit-mask-position: center center;
-        mask-position: center center;
-        -webkit-mask-repeat: no-repeat;
-        mask-repeat: no-repeat;
-        padding: 9px;
-      }
-      .single-card {
-        background-color: black;
-        height: 330px;
-        width: 570px;
-        overflow: hidden;
-        border: 0px;
-        line-height: 1.3em;
-        font-size: 66%;
-        border: 1px solid black;
-      }
-      .text-container {
-        height: 330px;
-        width: 570px;
-        position: absolute;
-        overflow: hidden;
-      }
-      .image-wrap {
-        position: relative;
-        margin-left: 10px;
-        margin-right: 10px;
-        float: #_cardImgFloat#;  
-      }
-      div.image-overlay {
-        position: absolute;
-        top: 0;
-        left: 0;
-      }
-      img.image-overlay {
-        -webkit-transform: #_overlayFlipTransform#;
-        opacity: 0.8;
-      }    
-      .col-100 { width: 100%; }
+         body, div {
+      padding: 0;
+      margin: 0;
+    }
+    .color-bg {
+      background-color: #_setBgColor#;
+      width:100%;
+      height:100%;
+    }
+    .texture-bg {
+      /* background-image: url(file:///C:/Users/Justin/Desktop/backgrounds/banana.png); */
+      background-image: url(file:///C:/Users/Justin/Desktop/backgrounds/banana-inverted.png);
+      width: 200%;
+      top: -100%;
+      left: -100%;
+      height:200%; 
+      opacity: 0.1;
+      position: fixed;
+      background-repeat: repeat-x repeat-y;
+      padding: 0;
+      margin: 0;
+      z-index:0;      
+      -webkit-transform: scaleX(-1);      
+      /*-webkit-transform: scaleX(1);       */
+      /*-webkit-transform: rotate(22deg);      */
+      -webkit-transform: rotate(12deg);      
+    }
+    .mtg-card {
+      /*mask-image: url(file:///D:/Development/git/mtgnewsbot/src/data/images/cardmask.png);*/
+      -webkit-mask-image: url(file:///D:/Development/git/mtgnewsbot/src/data/images/cardmask.png);
+      -webkit-mask-position: center center;
+      /*mask-position: center center;*/
+      -webkit-mask-repeat: no-repeat;
+      /*mask-repeat: no-repeat;*/
+      padding: 9px;
+    }
+    .single-card {
+      background-color: black;
+      height: 330px;
+      width: 580px;
+      overflow: hidden;
+      border: 0px;
+      line-height: 1.3em;
+      font-size: 66%;
+      border: 1px solid black;
+    }
+    .text-container {
+      height: 400px;
+      width: 700px;      
+      # height: 330px;
+      # width: 580px;
+      position: absolute;
+      overflow: hidden;
+    }
+    .image-wrap {
+      position: absolute;
+    }
+    div.image-overlay {
+      position: absolute;
+      top: 0;
+      left: 0;
+      z-index: 10;
+    }
+    div.image-overlay-right {
+      -webkit-transform:scaleX(-1);
+    }
+    div.image-wrap-right {
+      position:relative;
+      float:right;
+    }
+    .col-100 { width: 100%; }
     </style>
   </head>
   <body>
     <div class="single-card">
       <div class="color-bg">
         <div class="text-container">
-          <div class="text-bg color-fg">
-            #bgTextBlock#
-          </div>
-          <div class="bgtext-debug-key" hidden>#_debug#</div>          
-        </div>
-        <div class="image-overlay">
-          <img class="image-overlay" src="#_overlayImageDirPath#/overlay#_overlayImageIndex#.png"/>
-        </div>        
-        <div class="image-wrap">
+          <div class="texture-bg color-bg"></div>
+        </div>    
+        <div class="image-wrap #_cardImageOrientation#">
           <img class="mtg-card" src="https://goodgamery.com/api/mtg/image?card=#_cardname#" />
-        </div>        
+        </div>
+        <div class="image-overlay #_overlayOrientation#">
+          <img class="image-overlay" src="#_overlayImageDirPath#/overlay#_overlayImageIndex#.png"/>
+        </div>                
       </div>
     </div>
   </body>
