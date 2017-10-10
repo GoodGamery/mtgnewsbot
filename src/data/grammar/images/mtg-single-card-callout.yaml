@@ -61,19 +61,23 @@ pickBgColor:
 - "[_setBgColor:#rgbLight#][#pickPatternFileWithOpacity#][_bgTextColor:black]"
 
 pickRandomBGText: >
-  [_sp:#nbspSpacer#][_letterSpacing:normal][_textXTranslate:-200px][_bgText:#randomBgText#][#pickRandomTextDegree#]
+  [_sp:#nbspSpacer#][_fontSize:72px][_letterSpacing:normal][_textXTranslate:-200px][_bgText:#randomBgText#][#pickRandomTextDegree#]
 
 randomBgText:
-  - "Hasbro ©2017 Hasbro ©2017 Hasbro ©2017 [_lineHeight:.9em][_sp:#spanSpacer#][_textSpacerWidth:75px][_textXTranslate:-800px][_debug:hasbro]"
-  - "© DO NOT STEAL © DO NOT STEAL © DO NOT STEAL [_lineHeight:.9em][_sp:#spanSpacer#][_textSpacerWidth:75px][_textXTranslate:-800px][_debug:dns]"
+  - "Hasbro ©2017 Hasbro ©2017 Hasbro ©2017 [_fontSize:64px][_lineHeight:.9em][_sp:#spanSpacer#][_textSpacerWidth:75px][_textXTranslate:-800px][_debug:hasbro]"
+  - "© DO NOT STEAL © DO NOT STEAL © DO NOT STEAL [_fontSize:64px][_lineHeight:.9em][_sp:#spanSpacer#][_textSpacerWidth:75px][_textXTranslate:-800px][_debug:dns]"
+  - "MTG MTG MTG MTG MTG MTG [_lineHeight:.9em][_sp:#spanSpacer#][_textSpacerWidth:50px][_textXTranslate:-550px][_debug:mtg]"
+  - "WOW WOW WOW WOW WOW WOW [_lineHeight:.9em][_sp:#spanSpacer#][_textSpacerWidth:50px][_textXTranslate:-550px][_debug:mtg]"
   - "$$$$$$$$$$$$$$$$$$$$$$$$$$$$$[_lineHeight:.9em][_debug:dollar]"
   - "?????????????????????????????[_lineHeight:.8em][_letterSpacing:.08em][_debug:ques]"
   - "! ! ! ! ! ! ! ! ! ! ! ! ! ! ! [_lineHeight:.8em][_debug:bang]"
-  - "MTG MTG MTG MTG MTG MTG [_lineHeight:.9em][_sp:#spanSpacer#][_textSpacerWidth:50px][_textXTranslate:-550px][_debug:mtg]"
   - "@@@@@@@@@@@@@@@@@@@@@@@@@@@@@[_lineHeight:1em][_debug:at]"
+  - "#############################[_lineHeight:.8em][_letterSpacing:.08em][_debug:octothorpe]"
+  - "#$@! #$@! #$@! #$@! #$@! #$@! [_lineHeight:.8em][_letterSpacing:.08em][_debug:profanity]"
+  - "% % % % % % % % % % % % % % % [_lineHeight:.8em][_letterSpacing:.08em][_debug:percentage]"
+  - "® ® ® ® ® ® ® ® ® ® ® ® ® ® ® [_lineHeight:.8em][_letterSpacing:.08em][_debug:registered]"
+  - "§ § § § § § § § § § § § § § § [_lineHeight:.8em][_letterSpacing:.08em][_debug:section]"  
   - "[h:❤&nbsp;❤&nbsp;❤&nbsp;❤&nbsp;]#h##h##h##h##h##h#[_lineHeight:.9em][_sp:#spanSpacer#][_textSpacerWidth:16px][_textXTranslate:-200px][_debug:heart]"
-  - "❤❤❤❤❤❤❤❤❤❤❤❤❤❤❤❤❤❤❤❤[_lineHeight:.9em][_letterSpacing:.15em][_sp:#spanSpacer#][_textSpacerWidth:16px][_textXTranslate:-200px][_debug:heart]"
-
 
 bgTextLine: >
   #_bgText##_bgText##_bgText##_bgText##_bgText##_bgText##_bgText##_bgText##_bgText##_bgText#
@@ -149,7 +153,7 @@ pickRandomPatternDegree: >
 pickRandomPatternOrientation: >
   [_patternOrientation:#_randomPatternOrientation#]
 pickRandomPatternOpacity: >
-  [_patternOpacity:0.1,0.15]
+  [_patternOpacity:0.1,0.125]
 
 # Range from -29 to 29
 _randomPatternDegree:
@@ -165,17 +169,73 @@ _patternExtension: .png
 _patternFileLightOrDark: "#_patternFile#"  # this is the default
 _patternOpacity: "0.1"   # this is the default
 
-_patternFileInverted:
-- anchor-inverted
-- banana-inverted
-- crystal-ball-inverted
-- poultry-leg-inverted
-
 _patternFile:
 - anchor
+- baby
 - banana
+- bathtub
+- beer-mug
+- birthday-cake
+- blossom
+- cactus
+- crescent-moon
+- crown
 - crystal-ball
+- devil
+- dollar-sign
+- dragon
+- eightball
+- flame
+- gemstone
+- ghost
+- hand-wave
+- hankey
+- jack-o-lantern
+- kiss-lips
+- lightbulb
+- monkey
+- ok-hand
+- palm-tree
+- pony
 - poultry-leg
+- prawn
+- saxophone
+- whale-two
+- whale
+
+_patternFileInverted:
+- anchor-inverted
+- baby-inverted
+- banana-inverted 
+- bathtub-inverted
+- beer-mug-inverted
+- birthday-cake-inverted
+- blossom-inverted
+- cactus-inverted
+- crescent-moon-inverted
+- crown-inverted
+- crystal-ball-inverted
+- devil-inverted
+- dollar-sign-inverted
+- dragon-inverted
+- eightball-inverted
+- flame-inverted
+- gemstone-inverted
+- ghost-inverted
+- hand-wave-inverted
+- hankey-inverted
+- jack-o-lantern-inverted
+- kiss-lips-inverted
+- lightbulb-inverted
+- monkey-inverted
+- ok-hand-inverted
+- palm-tree-inverted
+- pony-inverted
+- poultry-leg-inverted
+- prawn-inverted
+- saxophone-inverted
+- whale-two-inverted
+- whale-inverted
 
 _cardImageOrientation: image-wrap-left # this is the default
 _overlayOrientation: image-overlay-left # this is the default
@@ -197,7 +257,7 @@ singleCardHtml: |
       white-space: nowrap;
       line-height: #_lineHeight#;
       letter-spacing: #_letterSpacing#;
-      font-size: 72px;
+      font-size: #_fontSize#;
       position: fixed;
       font-family: 'Open Sans', sans-serif;
       font-weight: 700;
