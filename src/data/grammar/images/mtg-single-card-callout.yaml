@@ -11,7 +11,7 @@ singleCardImage: >
 
 
 pickBackgroundType:
-# - "#pickRandomBGText#[_backgroundClass:text-bg][_backgroundTextContent:#bgTextBlock#]"
+- "#pickRandomBGText#[_backgroundClass:text-bg][_backgroundTextContent:#bgTextBlock#]"
 - "#pickRandomPattern#[_backgroundClass:pattern-bg][_backgroundTextContent:]"
 
 pickRandomPattern: "#pickRandomPatternImage# #pickRandomPatternDegree# #pickRandomPatternOrientation# #pickRandomPatternOpacity#"
@@ -63,21 +63,21 @@ pickBgColor:
 pickRandomBGText: >
   [_sp:#nbspSpacer#][_fontSize:72px][_letterSpacing:normal][_textXTranslate:-200px][_bgText:#randomBgText#][#pickRandomTextDegree#]
 
+year: "#CONTENT.currentYear#" 
+
 randomBgText:
-  - "Hasbro ©2017 Hasbro ©2017 Hasbro ©2017 [_fontSize:64px][_lineHeight:.9em][_sp:#spanSpacer#][_textSpacerWidth:75px][_textXTranslate:-800px][_debug:hasbro]"
-  - "© DO NOT STEAL © DO NOT STEAL © DO NOT STEAL [_fontSize:64px][_lineHeight:.9em][_sp:#spanSpacer#][_textSpacerWidth:75px][_textXTranslate:-800px][_debug:dns]"
-  - "MTG MTG MTG MTG MTG MTG [_lineHeight:.9em][_sp:#spanSpacer#][_textSpacerWidth:50px][_textXTranslate:-550px][_debug:mtg]"
-  - "WOW WOW WOW WOW WOW WOW [_lineHeight:.9em][_sp:#spanSpacer#][_textSpacerWidth:50px][_textXTranslate:-550px][_debug:mtg]"
-  - "$$$$$$$$$$$$$$$$$$$$$$$$$$$$$[_lineHeight:.9em][_debug:dollar]"
-  - "?????????????????????????????[_lineHeight:.8em][_letterSpacing:.08em][_debug:ques]"
-  - "! ! ! ! ! ! ! ! ! ! ! ! ! ! ! [_lineHeight:.8em][_debug:bang]"
-  - "@@@@@@@@@@@@@@@@@@@@@@@@@@@@@[_lineHeight:1em][_debug:at]"
-  - "#############################[_lineHeight:.8em][_letterSpacing:.08em][_debug:octothorpe]"
-  - "#$@! #$@! #$@! #$@! #$@! #$@! [_lineHeight:.8em][_letterSpacing:.08em][_debug:profanity]"
-  - "% % % % % % % % % % % % % % % [_lineHeight:.8em][_letterSpacing:.08em][_debug:percentage]"
-  - "® ® ® ® ® ® ® ® ® ® ® ® ® ® ® [_lineHeight:.8em][_letterSpacing:.08em][_debug:registered]"
-  - "§ § § § § § § § § § § § § § § [_lineHeight:.8em][_letterSpacing:.08em][_debug:section]"  
-  - "[h:❤&nbsp;❤&nbsp;❤&nbsp;❤&nbsp;]#h##h##h##h##h##h#[_lineHeight:.9em][_sp:#spanSpacer#][_textSpacerWidth:16px][_textXTranslate:-200px][_debug:heart]"
+  # - "Hasbro ©#year# Hasbro ©#year# Hasbro ©#year# [_fontSize:56px][_lineHeight:1em][_sp:#spanSpacer#][_textSpacerWidth:75px][_textXTranslate:-800px][_debug:hasbro]"
+  # - "© DO NOT STEAL © DO NOT STEAL © DO NOT STEAL [_fontSize:56px][_lineHeight:1.2em][_sp:#spanSpacer#][_textSpacerWidth:75px][_textXTranslate:-800px][_debug:dns]"
+  # - "newsbot loves you newsbot loves you [_fontSize:56px][_lineHeight:1em][_sp:#spanSpacer#][_textSpacerWidth:75px][_textXTranslate:-800px][_debug:news]"
+  # - "MTG MTG MTG MTG MTG MTG [_lineHeight:.9em][_sp:#spanSpacer#][_textSpacerWidth:50px][_textXTranslate:-550px][_debug:mtg]"
+  # - "WOW  WOW  WOW  WOW  WOW  WOW  [_fontSize:64px][_lineHeight:1.2em][_sp:#spanSpacer#][_textSpacerWidth:50px][_textXTranslate:-550px][_debug:mtg]"
+  # - "$$$$$$$$$$$$$$$$$$$$$$$$$$$$$[_lineHeight:.9em][_debug:dollar]"
+  # - "?????????????????????????????[_lineHeight:.8em][_letterSpacing:.08em][_debug:ques]"
+  # - "! ! ! ! ! ! ! ! ! ! ! ! ! ! ! [_lineHeight:.8em][_debug:bang]"
+  # - "@@@@@@@@@@@@@@@@@@@@@@@@@@@@@[_lineHeight:1em][_debug:at]"
+  # - "%%%%%%%%%%%%%%%[_lineHeight:0.8em][_letterSpacing:.08em][_debug:percentage]"
+  - "§§§§§§§§§§§§§§§[_lineHeight:1em][_letterSpacing:.08em][_debug:section]"  
+  # - "[h:❤&nbsp;❤&nbsp;❤&nbsp;❤&nbsp;]#h##h##h##h##h##h#[_lineHeight:.9em][_sp:#spanSpacer#][_textSpacerWidth:16px][_textXTranslate:-200px][_debug:heart]"
 
 bgTextLine: >
   #_bgText##_bgText##_bgText##_bgText##_bgText##_bgText##_bgText##_bgText##_bgText##_bgText#
@@ -157,8 +157,13 @@ pickRandomPatternOpacity: >
 
 # Range from -29 to 29
 _randomPatternDegree:
-  -  "2#num1-9#"
-  - "-2#num1-9#"
+  - "1#num5-9#"
+  - "2#num0-4#"
+  - "6#num5-9#"
+  - "7#num0-4#"
+
+num0-4: ["1","2","3","3","4"]
+num5-9: ["5","6","7","8","9"]
 
 _randomPatternOrientation:
 - "-1"
@@ -182,7 +187,6 @@ _patternFile:
 - crown
 - crystal-ball
 - devil
-- dollar-sign
 - dragon
 - eightball
 - flame
@@ -191,16 +195,21 @@ _patternFile:
 - hand-wave
 - hankey
 - jack-o-lantern
+- john
 - kiss-lips
+- liberty
 - lightbulb
 - monkey
 - ok-hand
 - palm-tree
-- pony
 - poultry-leg
 - prawn
+- rooster
+- running
 - saxophone
-- whale-two
+- sunflower
+- tropical-fish
+- wave
 - whale
 
 _patternFileInverted:
@@ -216,7 +225,6 @@ _patternFileInverted:
 - crown-inverted
 - crystal-ball-inverted
 - devil-inverted
-- dollar-sign-inverted
 - dragon-inverted
 - eightball-inverted
 - flame-inverted
@@ -225,16 +233,21 @@ _patternFileInverted:
 - hand-wave-inverted
 - hankey-inverted
 - jack-o-lantern-inverted
+- john-inverted
 - kiss-lips-inverted
+- liberty-inverted
 - lightbulb-inverted
 - monkey-inverted
 - ok-hand-inverted
 - palm-tree-inverted
-- pony-inverted
 - poultry-leg-inverted
 - prawn-inverted
+- rooster-inverted
+- running-inverted
 - saxophone-inverted
-- whale-two-inverted
+- sunflower-inverted
+- tropical-fish-inverted
+- wave-inverted
 - whale-inverted
 
 _cardImageOrientation: image-wrap-left # this is the default
@@ -286,7 +299,7 @@ singleCardHtml: |
       padding: 0;
       margin: 0;
       z-index:0;      
-      -webkit-transform: rotate(#_patternRotationDeg#) scaleX(#_patternOrientation#);     
+      -webkit-transform: scaleX(#_patternOrientation#) rotate(#_patternRotationDeg#);     
     }
     .mtg-card {
       -webkit-mask-image: url(./src/data/images/cardmask.png);

@@ -1,5 +1,9 @@
 'use strict';
 
+function currentYear() {
+  return new Date().getFullYear();
+}
+
 function dayOfWeek() {
   return new Date().toLocaleString('en-us', {  weekday: 'long' });
 }
@@ -33,6 +37,7 @@ function dayOfWeekMotivation() {
 }
 
 module.exports = { 
+  currentYear,
   dayOfWeek,
   dayOfWeekOccasion,
   dayOfWeekMotivation
