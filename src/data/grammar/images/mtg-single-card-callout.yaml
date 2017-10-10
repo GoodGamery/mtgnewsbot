@@ -6,10 +6,17 @@ singleCardImageTest: >
 
 # Include this in other headlines that set a single _cardname variable
 singleCardImage: >
-  #pickRandomBGText# #pickFgBgColors# #pickRandomDegree# #pickOrientation#
-  {htmlImg htmlImgString=`#singleCardHtml#` screenWidth=`580` screenHeight=`330`}
+  #pickBgColor# #pickOrientation# #pickBackgroundType#
+  {htmlImg htmlImgString=`#singleCardHtml#` screenWidth=`580` screenHeight=`330` width=`580` height=`330`}
 
-_overlayImageDirPath: "./src/data/images/cardcallout"
+
+pickBackgroundType:
+- "#pickRandomBGText#[_backgroundClass:text-bg][_backgroundTextContent:#bgTextBlock#]"
+- "#pickRandomPattern#[_backgroundClass:pattern-bg][_backgroundTextContent:]"
+
+pickRandomPattern: "#pickRandomPatternImage# #pickRandomPatternDegree# #pickRandomPatternOrientation# #pickRandomPatternOpacity#"
+
+_overlayImageDirPath: "./src/data/images/cardcallout/overlays"
 
 _overlayImageIndex:
 - "1"
@@ -45,19 +52,80 @@ _overlayImageIndex:
 - "31"
 - "32"
 
-pickFgBgColors:
-  - "[_setFgColor:#rgbOverlay#][_setBgColor:#rgbDark#]"
+pickPatternFileWithOpacity:
+- "[#_patternFileLightOrDark:#_patternFile#][_patternOpacity:0.1]"
+- "[#_patternFileLightOrDark:#_patternFileInverted#][#pickRandomPatternOpacity#]"
+
+pickBgColor:
+- "[_setBgColor:#rgbDark#][_patternFileLightOrDark:#_patternFileInverted#][#pickRandomPatternOpacity#][_bgTextColor:silver]"
+- "[_setBgColor:#rgbLight#][#pickPatternFileWithOpacity#][_bgTextColor:black]"
 
 pickRandomBGText: >
-  [_bgText:#randomBgText#]
+  [_sp:#nbspSpacer#][_fontSize:72px][_letterSpacing:normal][_textXTranslate:-200px][_bgText:#randomBgText#][#pickRandomTextDegree#]
 
+year: "#CONTENT.currentYear#" 
+
+randomBgText:
+  # - "Hasbro ©#year# Hasbro ©#year# Hasbro ©#year# [_fontSize:56px][_lineHeight:1em][_sp:#spanSpacer#][_textSpacerWidth:75px][_textXTranslate:-800px][_debug:hasbro]"
+  # - "© DO NOT STEAL © DO NOT STEAL © DO NOT STEAL [_fontSize:56px][_lineHeight:1.2em][_sp:#spanSpacer#][_textSpacerWidth:75px][_textXTranslate:-800px][_debug:dns]"
+  # - "newsbot loves you newsbot loves you [_fontSize:56px][_lineHeight:1em][_sp:#spanSpacer#][_textSpacerWidth:75px][_textXTranslate:-800px][_debug:news]"
+  # - "MTG MTG MTG MTG MTG MTG [_lineHeight:.9em][_sp:#spanSpacer#][_textSpacerWidth:50px][_textXTranslate:-550px][_debug:mtg]"
+  # - "WOW  WOW  WOW  WOW  WOW  WOW  [_fontSize:64px][_lineHeight:1.2em][_sp:#spanSpacer#][_textSpacerWidth:50px][_textXTranslate:-550px][_debug:mtg]"
+  # - "$$$$$$$$$$$$$$$$$$$$$$$$$$$$$[_lineHeight:.9em][_debug:dollar]"
+  # - "?????????????????????????????[_lineHeight:.8em][_letterSpacing:.08em][_debug:ques]"
+  # - "! ! ! ! ! ! ! ! ! ! ! ! ! ! ! [_lineHeight:.8em][_debug:bang]"
+  # - "@@@@@@@@@@@@@@@@@@@@@@@@@@@@@[_lineHeight:1em][_debug:at]"
+  # - "%%%%%%%%%%%%%%%[_lineHeight:0.8em][_letterSpacing:.08em][_debug:percentage]"
+  - "§§§§§§§§§§§§§§§[_lineHeight:1em][_letterSpacing:.08em][_debug:section]"  
+  # - "[h:❤&nbsp;❤&nbsp;❤&nbsp;❤&nbsp;]#h##h##h##h##h##h#[_lineHeight:.9em][_sp:#spanSpacer#][_textSpacerWidth:16px][_textXTranslate:-200px][_debug:heart]"
+
+bgTextLine: >
+  #_bgText##_bgText##_bgText##_bgText##_bgText##_bgText##_bgText##_bgText##_bgText##_bgText#
+
+nbspSpacer: "&nbsp;"
+
+spanSpacer: >
+  <span class="text-bg-spacer"></span>
+
+bgTextBlock: |
+  #_sp##_sp##_sp##_sp##_sp##_sp##_sp##_sp##_sp##_sp##_sp##_sp##_sp##_sp##_sp##_sp##bgTextLine#<br/>  
+  #_sp##_sp##_sp##_sp##_sp##_sp##_sp##_sp##_sp##_sp##_sp##_sp##_sp##_sp##_sp##bgTextLine#<br/>
+  #_sp##_sp##_sp##_sp##_sp##_sp##_sp##_sp##_sp##_sp##_sp##_sp##_sp##_sp##bgTextLine#<br/>  
+  #_sp##_sp##_sp##_sp##_sp##_sp##_sp##_sp##_sp##_sp##_sp##_sp##_sp##bgTextLine#<br/>
+  #_sp##_sp##_sp##_sp##_sp##_sp##_sp##_sp##_sp##_sp##_sp##_sp##bgTextLine#<br/>
+  #_sp##_sp##_sp##_sp##_sp##_sp##_sp##_sp##_sp##_sp##_sp##bgTextLine#<br/>
+  #_sp##_sp##_sp##_sp##_sp##_sp##_sp##_sp##_sp##_sp##bgTextLine#<br/>  
+  #_sp##_sp##_sp##_sp##_sp##_sp##_sp##_sp##_sp##bgTextLine#<br/>
+  #_sp##_sp##_sp##_sp##_sp##_sp##_sp##_sp##bgTextLine#<br/>  
+  #_sp##_sp##_sp##_sp##_sp##_sp##_sp##bgTextLine#<br/>
+  #_sp##_sp##_sp##_sp##_sp##_sp##bgTextLine#<br/>  
+  #_sp##_sp##_sp##_sp##_sp##bgTextLine#<br/>
+  #_sp##_sp##_sp##_sp##bgTextLine#<br/>  
+  #_sp##_sp##_sp##bgTextLine#<br/>
+  #_sp##_sp##bgTextLine#<br/>
+  #_sp##bgTextLine#<br/>
+  #bgTextLine#
+
+              
 pickOrientation:
-- "[_cardImgFloat: left][_overlayFlipTransform: scaleX(1)]"
-- "[_cardImgFloat: right][_overlayFlipTransform:  scaleX(-1)]"
+- "[_cardImageOrientation:image-wrap-left][_overlayOrientation:image-overlay-left]"
+- "[_cardImageOrientation:image-wrap-right][_overlayOrientation:image-overlay-right]"
 
-rgbOverlay:
-  - "rgba(255, 255, 255, 0.1)"
-  - "rgba(0, 0, 0, 0.4)"
+num7-9: 
+- "7"
+- "8"
+- "9"
+
+num75-99: "#num7-9##num0-9#"
+
+rgbLight:
+  - "rgb(#num40-99#, #num40-99#, #num40-99#)"
+  - "rgb(#num75-99#, #num40-99#, #num40-99#)"
+  - "rgb(#num75-99#, #num40-99#, #num40-99#)"
+  - "rgb(#num40-99#, #num75-99#, #num40-99#)"
+  - "rgb(#num40-99#, #num75-99#, #num40-99#)"
+  - "rgb(#num40-99#, #num40-99#, #num75-99#)"
+  - "rgb(#num40-99#, #num40-99#, #num75-99#)"
 
 rgbDark:
   - "rgb(1#num0-9#, #num11-99#, #num40-99#)"
@@ -70,140 +138,221 @@ rgbDark:
   - "rgb(#num40-99#, #num11-99#, 1#num0-9#)"
   - "rgb(#num40-99#, #num40-99#, 1#num0-9#)"
 
-randomBgText:
-  - "Hasbro ©2017 Hasbro ©2017 Hasbro ©2017 [_lineHeight:.9em][_debug:hasbro]"
-  - "© DO NOT STEAL © DO NOT STEAL © DO NOT STEAL [_lineHeight:.9em][_debug:dns]"
-  - "$$$$$$$$$$$$$$$$$$$$$$$$$$$$$[_lineHeight:.8em][_debug:dollar]"
-  - "?????????????????????????????[_lineHeight:.8em][_debug:ques]"
-  - "! ! ! ! ! ! ! ! ! ! ! ! ! ! ! [_lineHeight:.8em][_debug:bang]"
-  - "MTG MTG MTG MTG MTG MTG [_lineHeight:.9em][_debug:mtg]"
-  - "@@@@@@@@@@@@@@@@@@@@@@@@@@@@@[_lineHeight:1em][_debug:at]"
-  - "😈😈😈😈😈😈😈😈😈😈😈😈😈😈😈😈😈😈😈😈😈[_lineHeight:1.3em][_debug:demon]"
-  - "👀👀👀👀👀👀👀👀👀👀👀👀👀👀👀👀👀👀👀👀👀[_lineHeight:1.3em][_debug:eyes]"
-  - "🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥[_lineHeight:1.3em][_debug:fire]"
-  - "❤❤❤❤❤❤❤❤❤❤❤❤❤❤❤❤❤❤❤❤❤[_lineHeight:1.3em][_debug:heart]"
-  - "😎😎😎😎😎😎😎😎😎😎😎😎😎😎😎😎😎😎😎😎😎[_lineHeight:1.3em][_debug:cool]"
-  - "😂😂😂😂😂😂😂😂😂😂😂😂😂😂😂😂😂😂😂😂😂[_lineHeight:1.3em][_debug:laugh]"
-  - "💩💩💩💩💩💩💩💩💩💩💩💩💩💩💩💩💩💩💩💩💩[_lineHeight:1.3em][_debug:shit]"
-  - "🌸🌸🌸🌸🌸🌸🌸🌸🌸🌸🌸🌸🌸🌸🌸🌸🌸🌸🌸🌸🌸[_lineHeight:1.3em][_debug:blossom]"
-  - "💖💖💖💖💖💖💖💖💖💖💖💖💖💖💖💖💖💖💖💖💖[_lineHeight:1.3em][_debug:starheart]"
-  - "💯💯💯💯💯💯💯💯💯💯💯💯💯💯💯💯💯💯💯💯💯[_lineHeight:1.3em][_debug:100]"
-  - "⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐[_lineHeight:1.3em][_debug:medium-star]"
-  - "🤔🤔🤔🤔🤔🤔🤔🤔🤔🤔🤔🤔🤔🤔🤔🤔🤔🤔🤔🤔🤔[_lineHeight:1.3em][_debug:thinking]"
+# Range from -29 to 29
+pickRandomTextDegree: >
+  [_textRotationDeg:#_randomTextDegree#deg]
 
-pickRandomDegree: >
-  [_rotationDeg:#_randomDegree#deg]
+_randomTextDegree:
+ -  "2#num1-9#[_textOrigin:45% -15%][_textYTranslate:200px]"
+ - "-2#num1-9#[_textOrigin:0% 50%][_textYTranslate:100px]"
 
-# Range from -39 to 39
-_randomDegree:
-  -  "2#num1-9#[_origin:45% -15%]"
-  - "-2#num1-9#[_origin:0% 50%]"
+pickRandomPatternImage: >
+  [_backgroundPattern:url(#_patternPath##_patternFileLightOrDark##_patternExtension#)]
+pickRandomPatternDegree: >
+  [_patternRotationDeg:#_randomPatternDegree#deg]
+pickRandomPatternOrientation: >
+  [_patternOrientation:#_randomPatternOrientation#]
+pickRandomPatternOpacity: >
+  [_patternOpacity:0.1,0.125]
 
-bgTextBlock: |
-  #_bgText##_bgText#<br/>
-  &nbsp;#_bgText##_bgText#<br/>
-  &nbsp;&nbsp;#_bgText##_bgText#<br/>
-  &nbsp;&nbsp;&nbsp;#_bgText##_bgText#<br/>
-  &nbsp;&nbsp;&nbsp;&nbsp;#_bgText##_bgText#<br/>
-  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;#_bgText##_bgText#<br/>
-  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;#_bgText##_bgText#<br/>
-  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;#_bgText##_bgText#<br/>
-  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;#_bgText##_bgText#<br/>
-  #_bgText##_bgText#<br/>
-  &nbsp;#_bgText##_bgText#<br/>
-  &nbsp;&nbsp;#_bgText##_bgText#<br/>
-  &nbsp;&nbsp;&nbsp;#_bgText##_bgText#<br/>
-  &nbsp;&nbsp;&nbsp;&nbsp;#_bgText##_bgText#<br/>
-  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;#_bgText##_bgText#<br/>
-  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;#_bgText##_bgText#<br/>
-  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;#_bgText##_bgText#<br/>
-  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;#_bgText##_bgText#<br/>
+# Range from -29 to 29
+_randomPatternDegree:
+  - "1#num5-9#"
+  - "2#num0-4#"
+  - "6#num5-9#"
+  - "7#num0-4#"
+
+num0-4: ["1","2","3","3","4"]
+num5-9: ["5","6","7","8","9"]
+
+_randomPatternOrientation:
+- "-1"
+- "1"
+
+_patternPath: "./src/data/images/cardcallout/patterns/"
+_patternExtension: .png
+_patternFileLightOrDark: "#_patternFile#"  # this is the default
+_patternOpacity: "0.1"   # this is the default
+
+_patternFile:
+- anchor
+- baby
+- banana
+- bathtub
+- beer-mug
+- birthday-cake
+- blossom
+- cactus
+- crescent-moon
+- crown
+- crystal-ball
+- devil
+- dragon
+- eightball
+- flame
+- gemstone
+- ghost
+- hand-wave
+- hankey
+- jack-o-lantern
+- john
+- kiss-lips
+- liberty
+- lightbulb
+- monkey
+- ok-hand
+- palm-tree
+- poultry-leg
+- prawn
+- rooster
+- running
+- saxophone
+- sunflower
+- tropical-fish
+- wave
+- whale
+
+_patternFileInverted:
+- anchor-inverted
+- baby-inverted
+- banana-inverted 
+- bathtub-inverted
+- beer-mug-inverted
+- birthday-cake-inverted
+- blossom-inverted
+- cactus-inverted
+- crescent-moon-inverted
+- crown-inverted
+- crystal-ball-inverted
+- devil-inverted
+- dragon-inverted
+- eightball-inverted
+- flame-inverted
+- gemstone-inverted
+- ghost-inverted
+- hand-wave-inverted
+- hankey-inverted
+- jack-o-lantern-inverted
+- john-inverted
+- kiss-lips-inverted
+- liberty-inverted
+- lightbulb-inverted
+- monkey-inverted
+- ok-hand-inverted
+- palm-tree-inverted
+- poultry-leg-inverted
+- prawn-inverted
+- rooster-inverted
+- running-inverted
+- saxophone-inverted
+- sunflower-inverted
+- tropical-fish-inverted
+- wave-inverted
+- whale-inverted
+
+_cardImageOrientation: image-wrap-left # this is the default
+_overlayOrientation: image-overlay-left # this is the default
+_patternOrientation: 0deg; # this is the default
 
 singleCardHtml: |
   <head>
     <style>
-      body, div {
-        padding: 0;
-        margin: 0;
-      }
-      .color-bg {
-        background-color: #_setBgColor#;
-        width:100%;
-        height:100%;
-      }
-      .color-fg {
-        color: #_setFgColor#;
-      }
-      .text-bg {
-        white-space: nowrap;
-        line-height: #_lineHeight#;
-        font-size: 72px;
-        position: absolute;
-        font-family: 'Open Sans', sans-serif;
-        font-weight: 700;
-        transform-origin: #_origin#;
-        -webkit-transform-origin: #_origin#;
-        transform: rotate(#_rotationDeg#);
-        -webkit-transform: rotate(#_rotationDeg#);
-      }
-      .mtg-card {
-        mask-image: url(./src/data/images/cardmask.png);
-        -webkit-mask-image: url(./src/data/images/cardmask.png);
-        -webkit-mask-position: center center;
-        mask-position: center center;
-        -webkit-mask-repeat: no-repeat;
-        mask-repeat: no-repeat;
-        padding: 9px;
-      }
-      .single-card {
-        background-color: black;
-        height: 330px;
-        width: 570px;
-        overflow: hidden;
-        border: 0px;
-        line-height: 1.3em;
-        font-size: 66%;
-        border: 1px solid black;
-      }
-      .text-container {
-        height: 330px;
-        width: 570px;
-        position: absolute;
-        overflow: hidden;
-      }
-      .image-wrap {
-        position: relative;
-        margin-left: 10px;
-        margin-right: 10px;
-        float: #_cardImgFloat#;  
-      }
-      div.image-overlay {
-        position: absolute;
-        top: 0;
-        left: 0;
-      }
-      img.image-overlay {
-        -webkit-transform: #_overlayFlipTransform#;
-        opacity: 0.8;
-      }    
-      .col-100 { width: 100%; }
+         body, div {
+      padding: 0;
+      margin: 0;
+    }
+    .color-bg {
+      background-color: #_setBgColor#;
+      width:100%;
+      height:100%;
+    }
+    .text-bg {
+      white-space: nowrap;
+      line-height: #_lineHeight#;
+      letter-spacing: #_letterSpacing#;
+      font-size: #_fontSize#;
+      position: fixed;
+      font-family: 'Open Sans', sans-serif;
+      font-weight: 700;
+      color: #_bgTextColor#;
+      transform-origin: #_textOrigin#;
+      -webkit-transform-origin: #_textOrigin#;
+      transform: rotate(180deg) translateY(400px);
+      -webkit-transform: rotate(#_textRotationDeg#) translateX(#_textXTranslate#); translateY(#_textYTranslate#);    
+      width: 400%;
+      height: 400%; 
+      opacity: #_patternOpacity#;          
+    }    
+    .text-bg-spacer {
+      display:inline-block;
+      width: #_textSpacerWidth#;
+    }
+    .pattern-bg {
+      background-image: #_backgroundPattern#;
+      width: 400%;
+      top: -100%;
+      left: -100%;
+      height: 400%; 
+      opacity: #_patternOpacity#;
+      position: fixed;
+      background-repeat: repeat-x repeat-y;
+      padding: 0;
+      margin: 0;
+      z-index:0;      
+      -webkit-transform: scaleX(#_patternOrientation#) rotate(#_patternRotationDeg#);     
+    }
+    .mtg-card {
+      -webkit-mask-image: url(./src/data/images/cardmask.png);
+      -webkit-mask-position: center center;
+      -webkit-mask-repeat: no-repeat;
+      padding: 9px;
+    }
+    .single-card {
+      background-color: black;
+      height: 500px;
+      width: 580px;
+      overflow: hidden;
+      border: 0px;
+      line-height: 1.3em;
+      font-size: 66%;
+      border: 1px solid black;
+    }
+    .text-container {
+      height: 700px;
+      width: 700px;      
+      position: absolute;
+    }
+    .image-wrap {
+      position: absolute;
+    }
+    div.image-overlay {
+      position: absolute;
+      top: 0;
+      left: 0;
+      z-index: 10;
+    }
+    div.image-overlay-right {
+      -webkit-transform:scaleX(-1);
+    }
+    div.image-wrap-right {
+      position:relative;
+      float:right;
+    }
+    .col-100 { width: 100%; }
     </style>
   </head>
   <body>
     <div class="single-card">
       <div class="color-bg">
         <div class="text-container">
-          <div class="text-bg color-fg">
-            #bgTextBlock#
-          </div>
-          <div class="bgtext-debug-key" hidden>#_debug#</div>          
-        </div>
-        <div class="image-overlay">
-          <img class="image-overlay" src="#_overlayImageDirPath#/overlay#_overlayImageIndex#.png"/>
-        </div>        
-        <div class="image-wrap">
+          <div class="color-bg #_backgroundClass#">#_backgroundTextContent#</div>
+        </div>    
+        <div class="image-wrap #_cardImageOrientation#">
           <img class="mtg-card" src="https://goodgamery.com/api/mtg/image?card=#_cardname#" />
-        </div>        
+        </div>
+        <div class="image-overlay #_overlayOrientation#">
+          <img class="image-overlay" src="#_overlayImageDirPath#/overlay#_overlayImageIndex#.png"/>
+        </div>                
       </div>
     </div>
   </body>
