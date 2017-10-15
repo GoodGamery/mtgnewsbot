@@ -55,11 +55,11 @@ cotdCreatureTypeDescription:
  - "The only thing left to make #_creatureType.capitalize# tribal viable[_where:, now, in #format#]#_where# is...[_what:a lot more #_creatureType.s#.,a few #_creatureType# lords.,#_creatureType.a# that's actually playable.,probably a playable #cardCategory# or two.,about #count# more cards.,about a million other cards.,actually we have no idea.,nothing. It's never going to be playable#comma# sorry.,nothing. It's already viable!]#_what#"
 
 cotdCardNameWordPair_And:
-  - "[separator:and][#separator.cardSearchTwoParter(1,\\w+ of)#][_pairWord1:#_cardNameFirstPart1#][_pairWord2:#_cardNameSecondPart1#]"
+  - "[separator:and][#separator.cardSearchTwoParter(1,\\w+ of)#][_pairWord1:#_cardNameFirstPart1#][_pairWord2:#_cardNameSecondPart1#][_pairWordOnly2:#_cardNameSecondPart1#]"
 cotdCardNameWordPair_Or: 
-  - "[separator:or][#separator.cardSearchTwoParter#][_pairWord1:#_cardNameFirstPart1#][_pairWord2:#_cardNameSecondPart1#]"
+  - "[separator:or][#separator.cardSearchTwoParter#][_pairWord1:#_cardNameFirstPart1#][_pairWord2:#_cardNameSecondPart1#][_pairWordOnly2:#_cardNameSecondPart1#]"
 cotdCardNameWordPair_OfThe:
-  - "[separator:of the][#separator.cardSearchTwoParter#][_pairWord1:#_cardNameFirstPart1#][_pairWord2:#_cardNameSecondPart1#]"
+  - "[separator:of the][#separator.cardSearchTwoParter#][_pairWord1:#_cardNameFirstPart1#][_pairWord2:the #_cardNameSecondPart1#][_pairWordOnly2:#_cardNameSecondPart1#]"
 
 cotdCardNameWordPair:
   - "#cotdCardNameWordPair_And#"
@@ -67,9 +67,9 @@ cotdCardNameWordPair:
   - "#cotdCardNameWordPair_OfThe#"
 
 cotdWordPairPonderable:
-  - "[#cotdCardNameWordPair_OfThe#]which came first, the [_italicText:#_pairWord1.lowercase#]#_italicize# or the [_italicText:#_pairWord2.lowercase#]#_italicize#"
+  - "[#cotdCardNameWordPair_OfThe#]which came first, the [_italicText:#_pairWord1.lowercase#]#_italicize# or the [_italicText:#_pairWordOnly2.lowercase#]#_italicize#"
   - "[#cotdCardNameWordPair#]whether \"#_pairWord1.lowercase#\" is more important than \"#_pairWord2.lowercase#\""
-  - "[#cotdCardNameWordPair_And#]if you can ever really separate the [_italicText:#_pairWord1.lowercase#]#_italicize# from the [_italicText:#_pairWord2.lowercase#]#_italicize#"
+  - "[#cotdCardNameWordPair_And#]if you can ever really separate the [_italicText:#_pairWord1.lowercase#]#_italicize# from the [_italicText:#_pairWordOnly2.lowercase#]#_italicize#"
   - "[#cotdCardNameWordPair#]whether #_legendSubtype.s.lowercase# are more \"#_pairWord1.lowercase#\" than \"#_pairWord2.lowercase#\""
   - "[#cotdCardNameWordPair#]whether #creatureTypes.s# prefer \"#_pairWord1.lowercase#\" to \"#_pairWord2.lowercase#\""
 
