@@ -348,7 +348,8 @@ singleCardHtml: |
           <div class="color-bg #_backgroundClass#">#_backgroundTextContent#</div>
         </div>    
         <div class="image-wrap #_cardImageOrientation#">
-          <img class="mtg-card" src="https://goodgamery.com/api/mtg/image?card=#_cardname#" />
+
+          <img class="mtg-card" src="https://goodgamery.com/api/mtg/card/image?q=name:%22!#_cardname#%22&sort=random"/>
         </div>
         <div class="image-overlay #_overlayOrientation#">
           <img class="image-overlay" src="#_overlayImageDirPath#/overlay#_overlayImageIndex#.png"/>
