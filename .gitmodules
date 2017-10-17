@@ -1,3 +1,4 @@
 [submodule "submodules/tracery"]
 	path = submodules/tracery
 	url = https://github.com/GoodGamery/tracery.git
+	branch = master

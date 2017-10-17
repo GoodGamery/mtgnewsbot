@@ -3,7 +3,7 @@
 # update source
 git fetch
 git pull
-git submodule update --init --recursive
+git submodule update --remote
 
 # do a tweet
 sh "./tweet.sh"
