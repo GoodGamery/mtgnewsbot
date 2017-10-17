@@ -10,7 +10,7 @@ cotdCardTypeSearch: "[_cardType:#cardTypes#][#_cardType.cardSearchByType(5)#][_c
 cotdCreatureTypeSearch: "[_creatureType:#creatureTypes#][#_creatureType.cardSearchByType(5)#][_cardname:#_cardName1#][_cardset:#_cardSet1#][_cardtype:#_cardSomeTypeOrSubtype1#][_cardcolor:#_cardColor1#][_cotdImgUrl:#_cardImgUrl1#][_cardDesc:#_creatureType#][_cardDescCategory:#_cardDesc.s#]"
 cotdCardCategorySearch: "[_cardText:#_cardCategorySearchTerm#][#_cardText.cardSearchByText(5)#][_cardname:#_cardName1#][_cardset:#_cardSet1#][_cardtype:#_cardSomeTypeOrSubtype1#][_cardcolor:#_cardColor1#][_cotdImgUrl:#_cardImgUrl1#][_cardDesc:#_cardCategory#][_cardDescCategory:#_cardCategoryClass#]"
 cotdLegendaryCreatureSearch: "[_customQuery:t=legendary t=creature][#cotdCustomSearch#][_legendName:#_cardFamiliarName1#]"
-cotdCustomSearch: "[#_customQuery.cardSearchCustomQuery(5)#][_cardname:#_cardName1#][_cardset:#_cardSet1#][_cardtype:#_cardSomeTypeOrSubtype1#][_cardcolor:#_cardColor1#][_cotdImgUrl:#_cardImgUrl1#][_cardDesc:#_cardCategory#][_cardDescCategory:#_cardCategoryClass#]"
+cotdCustomSearch: "[#_customQuery.cardSearchCustomQuery(1)#][_cardname:#_cardName1#][_cardset:#_cardSet1#][_cardtype:#_cardSomeTypeOrSubtype1#][_cardcolor:#_cardColor1#][_cotdImgUrl:#_cardImgUrl1#][_cardDesc:#_cardCategory#][_cardDescCategory:#_cardCategoryClass#]"
 
 cotdParameterizedCardSearch:
   - "#cotdCardTypeSearch#"
@@ -59,7 +59,7 @@ cotdCardNameWordPair_And:
 cotdCardNameWordPair_Or: 
   - "[separator:or][#separator.cardSearchTwoParter#][_pairWord1:#_cardNameFirstPart1#][_pairWord2:#_cardNameSecondPart1#][_pairWordOnly2:#_cardNameSecondPart1#]"
 cotdCardNameWordPair_OfThe:
-  - "[separator:of the][#separator.cardSearchTwoParter#][_pairWord1:#_cardNameFirstPart1#][_pairWord2:the #_cardNameSecondPart1#][_pairWordOnly2:#_cardNameSecondPart1#]"
+  - "[separator:of the][#separator.cardSearchTwoParter(1,\\w+\\,)#][_pairWord1:#_cardNameFirstPart1#][_pairWord2:the #_cardNameSecondPart1#][_pairWordOnly2:#_cardNameSecondPart1#]"
 
 cotdCardNameWordPair:
   - "#cotdCardNameWordPair_And#"
