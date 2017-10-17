@@ -20,3 +20,10 @@ dbgImgHeadline:
  - "#duelDecksGraphicAnnouncement#"
  - "#duelDecksGraphicAnnouncement#"
  - "#duelDecksGraphicAnnouncement#" 
+
+dbgReplace:
+ - "[word:banana]#word.replace(a,u)#"
+dbgReplaceEscapedComma:
+ - "#dbgStringWithCommas.replace(\\,,!)#"
+dbgStringWithCommas:
+ - "banana\\, apple, and orange"
