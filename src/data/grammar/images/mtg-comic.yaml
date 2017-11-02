@@ -187,8 +187,10 @@ alternativeActivity:
 - "[_who:mom,dad,grandma,sister,little brother,stepdad,girlfriend,nephew,#character#][_where:to the mall,shopping,to #storyLocation#,out for ice cream,to get their hair cut,out to get #pluralNounOrMassNoun#]taking my #_who# #_where#"
 - "[_friendFamily:mom,dad,grandma,sister,little brother,stepdad,girlfriend,nephew][_who:my #_friendFamily#,#character#]#verbStrictlyIntransitiveGerund#[_with: with #_who#]#_with#"
 
+mcGuffin: "#adjStorybook# #itemNoun.s#"
+
 svgComicTemplate3Content_a:
-- "[_mcguffin:#adjStorybook# #itemNoun.s#][_style1:#svgComicTextStyle3#][_reply:#svgComicTemplate3Content2aAnswerYesNo#][_text1:#svgComicTemplate3Content1a#][_text2:#_reply#][_text3:#svgComicTemplate3Content3a#][_style4:#svgComicTextStyle3#][_text4:#svgComicTemplate3Content4a#][_style5:#svgComicTextStyle3#][_style6:#svgComicTextStyle3#][_text5:#svgComicTemplate3Content5a#][_text6:#_svgComicTemplate3Content6a_selected#][_style7:#svgComicTextStyle4#][_text7:#svgComicTemplate3Content7a#][_style8:#svgComicTextStyle5#][_text8:#svgComicTemplate3Content8a#]"
+- "[_mcguffin:#mcGuffin#][_style1:#svgComicTextStyle3#][_reply:#svgComicTemplate3Content2aAnswerYesNo#][_text1:#svgComicTemplate3Content1a#][_text2:#_reply#][_text3:#svgComicTemplate3Content3a#][_style4:#svgComicTextStyle3#][_text4:#svgComicTemplate3Content4a#][_style5:#svgComicTextStyle3#][_style6:#svgComicTextStyle3#][_text5:#svgComicTemplate3Content5a#][_text6:#_svgComicTemplate3Content6a_selected#][_style7:#svgComicTextStyle4#][_text7:#svgComicTemplate3Content7a#][_style8:#svgComicTextStyle5#][_text8:#svgComicTemplate3Content8a#]"
 
 svgComicTemplate3Content3a_annoyed:
 - "This guy is a real pain in my #bodypartsInPairs#."

@@ -142,6 +142,12 @@
     "[_setting:Theater of,Curse of][_adjOrSetting:#adj#,#_setting#]#_adjOrSetting# #abstractNoun#"
   ],
 
+  "realm": [
+    "[_prefix:#creatureTypes#,#characterClass#]#_prefix##shortRealmSuffix#",
+    "#creatureTypes#[_place:#shortRealmSuffix#,#longRealmSuffix#]#_place#",
+    "[_desc:#adj#,#massNoun#,#creatureTypes#]#_desc.capitalizeAll# #fableLocationNoun#"
+  ],
+
   "shortRealmSuffix": [
     "town",
     "dale",
@@ -172,7 +178,10 @@
     "keep",
     "mountain",
     "ridge",
-    "valley"
+    "valley",
+    "grotto",
+    "castle",
+    "manor"
   ]
 ,
   "planeBasedSet": [
