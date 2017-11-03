@@ -5,10 +5,10 @@ origin:
 
 # Top level headlines
 headline:
-- "#tip#"
+- "#tipStrategy#"
 - "#tipMoney#"
 - "#imgClassifieds#"
-- "#realization#"
+- "#strategyRealization#"
 - "#tournamentNews#"
 - "#playguide#"
 - "#decktech#"
@@ -23,6 +23,28 @@ headline:
 - "#mtgDeckTechGraphic#"
 - "#cardCallout#"
 - "#mtgoTwitterStyleHeadline#"
+
+headlineSingleCardGrabBag:
+- "#cardCallout#"
+- "#mtgoTwitterStyleHeadline#"
+
+headlineRichGraphic:
+- "#inGraphics#"
+- "#mtgComic#"
+- "#headlineKeepOrMulligan"
+
+headlineSeveralCardsGraphic:
+- "#mtgDeckTechGraphic#"
+- "#imgClassifieds#"
+
+headlineAnnouncementGraphic:
+- "#graphicAnnouncement#"
+
+headlineCommunityNews:
+- "#tournamentNews#"
+- "#tournamentNews#"
+- "#teamTournamentNews#"
+- "#proTeamAnnouncement#"
 
 oncePerDay:
   - "#cotdImage#"
@@ -95,11 +117,8 @@ announcement:
 - "#textAnnouncement#"
 - "#graphicAnnouncement#"
 
-textAnnouncement:
-# - 'Wizards Announces: Duel Decks: [_one:#nouns.capitalizeAll#,#planeswalkerFirstName#]#_one#
-#   vs. [_two:#nouns.capitalizeAll#,#planeswalkerFirstName#]#_two#'
+proTeamAnnouncement:
 - '[_leadIn:ANNOUNCEMENT,BREAKING,UPDATE]#_leadIn#: #pro# [_team: ,Team ][_leavesVerb:leaves,quits,abandons][_resultVerbPhrase:for,to join][_action:has joined,#_leavesVerb# #_team##team# #_resultVerbPhrase#]#_action# Team #team#'
-# - "#gatherer#"
 
 graphicAnnouncement:
 - "#fromTheVaultGraphicAnnouncement#"
@@ -117,8 +136,8 @@ novelSetGraphicAnnouncement:
 - "[_nextSet:The next set,The next fall set,The next spring set,#codename.capitalize#][_verbphrase:is
   actually,is really named,will be named]#_nextSet# #_verbphrase# [_cardset:#novelCardSetName.capitalizeAll#]#_cardset#  #mtgSetLogoSplash#"
 
-realization:
-- "#realize#"
+strategyrealization:
+- "#pros.capitalize# don't realize that #techPlural# #verbDefeat# #obstacle#"
 - "The Importance of [_thing:#randomAnyCard#,#cardCategory.s#,#creatureTypes.capitalize.s#,#gameConcept#]#_thing# in [_where:#format#,#recentCardSet#]#_where#"
 - "The Secret to #improvementGoal.capitalizeAll# is #deckChange.capitalize#"
 - "[_leadIn:In today's Magic Story,Story Arcana,Exploring the Story,Story Time,Story Hour]#_leadIn.allCaps#: #magicStorylineHighlight#"
@@ -166,36 +185,102 @@ magicStorylineHighlight:
 - "#character#'s #magicStoryPlotAdj# [_quest:quest,ordeal,campaign,odyssey,#planNoun#]#_quest# to [_fate:defeat,rescue,confront,#verbTransitive#]#_fate# #storyCharacter#"
 - "[_originStory:#originStoryOverview##colon# #originStoryDetails#,#originStoryDetails##colon# #originStoryOverview#]#_originStory#"
 
-realize: "#pros.capitalize# don't realize that #techPlural# #verbDefeat# #obstacle#"
-
 tournamentNews:
 - 'Emergency Banning: #randomCardAlone.capitalize# Banned in #format#'
-- "#randomCardAlone.capitalize# Banned in #format.capitalizeAll# After [winner:#deck#,#pro#]#winner.capitalizeAll#
-  Wins #tournament.capitalizeAll#"
-- "#tournamentRound#: #pro# vs. [_opp:#otherPersonality#,Evil #pro#,Cyborg #pro#,Baby
-  #pro#,Bizarro #pro#,Dr. #pro# M.D.,a Cardboard Cutout of #pro#,#adj.a# #creatureTypes#]#_opp.capitalizeAll#"
+- "#randomCardAlone.capitalize# Banned in #format.capitalizeAll# After [winner:#deck#,#pro#]#winner.capitalizeAll# Wins #tournament.capitalizeAll#"
+- "#tournamentRound#: #pro# vs. [_opp:#otherPersonality#,Evil #pro#,Cyborg #pro#,Baby #pro#,Bizarro #pro#,Dr. #pro# M.D.,a Cardboard Cutout of #pro#,#adj.a# #creatureTypes#]#_opp.capitalizeAll#"
 - "[winner:#pro#,#deck#]#winner# #winWord# [where:at #tournament#,in #city#]#where#"
 - 'Pro Tour #teaserCardSet# will be in #city#'
-- 'Team Series clinched by #team# at Pro Tour #recentCardSet# in #city#'
-- '#pro#, after winning #event# with #deckVariation#: "It''s #deckDescription#."'
-- "[_rule:SHOCKER!,BREAKING#colon#,TOURNAMENT UPDATE#colon#,,,,]#_rule# #pro# has been [_rule:DQ'd,suspended,disqualified]#_rule# from #event# for #disqualifyingAction#"
+- '#pro#, after winning #event# with #deckVariation#: [_comment:It''s #deckDescription#.,#magicCatchphrase#]"#_comment#"'
+- "[_rule:SHOCKER!,BREAKING#colon#,TOURNAMENT UPDATE#colon#,,,,]#_rule# #pro# [_rule:has been DQ'd from,has been suspended from,has been disqualified from,sparks controversy at]#_rule# #event# for #disqualifyingAction#"
 - "Match highlight: #pro# [_defeats:edges out,beats,defeats,routs]#_defeats# #pro# with #randomAnyCard# in round #count# to [_getAhead:lock up,advance in,take down]#_getAhead# #event#"
+- "#pro# topdecks #randomAnyCard# to #verbDefeat# [_opponent:#pro#,#person#]#_opponent#[_when:, in the finals, for the win, and win it all]#_when# #atTournamentInCity#"
+
+teamTournamentNews:
+- '[_series:Team Series,#format# team trios]#_series# #tournamentWonWord# by Team #team# #atTournamentInCity#'
+- "BREAKING#colon# Team #team# disqualified from #tournament# for #teamDisqualifyingAction#"
+
+tshirtPhrase:
+- "[_noun1:#noun#][_noun2:#noun#]#_noun1# #_noun2#"
+- "[_noun1:#singularNoun#][_noun2:#singularNoun#]#_noun1# #_noun2#"
+- "Not My #creatureTypeOrCharacterClass#"
+- "Show Me The #pluralNounOrMassNoun#"
+- I'm drafting [_what:#deckLimitedArchetype#,#basicColors#,#mtgColors#,#cardCategory.s#,#cardCategoryClassTerm#]#_what#
+- "[_personality:#historicalFigure#,#pro#,#character#]Free #_personality#"
+- "[_personality:#historicalFigure#,#pro#,#character#]I ❤ #_personality#"
+- "[_noun:#abstractNoun#,#singularNoun#,#emotion#]#_noun# #nounVagueConcept#"
+- "I'm drafting #cardCategoryClassTerm#"
+
+teamDisqualifyingAction:
+- '[#pluralPronouns#][_swapping:swapping,changing]#_swapping# outfits with each other between every round'
+- '[#pluralPronouns#]insisting on being [_called:called,referred to as,addressed as]#_called# "The #adj.capitalizeAll# #creatureTypeOrCharacterClass.capitalizeAll.s#"'
+- '[#pluralPronouns#]communicating through an elaborate system of clicks and whistles'
+- '[#pluralPronouns#][_singularNoun:#singularNoun#]wearing [_matching:matching,custom,hand-made]#_matching# t-shirts that say "#tshirtPhrase.capitalizeAll#"'
+- '[#pluralPronouns#]#disqualifyingAction#'
+
+magicCatchphrase:
+- Now THAT'S what I call Magic!
+- I'm going ham
+- I'M the beatdown
+- Cheese it—the cops!
+- Pip-pip, looks like rain
+- "[_who:Mama,Papa,Daddy]#_who# needs a new pair of [_what:shoes,shoes,#bodypartsPlural#]#_what#!"
+- "#massNoun# on a stick"
+
+magicSlangTerm:
+- medium
+- as-fan
+- bah-roken
+- boltbait
+- wombo combo
+- Frown Town
+- DOBs
+- durdle turtle
+- inevitability
+- lenticular
+- Prime Time
+- "The #planewalkerFirstName#father"
+- Sarnath'd
+- battle lands
+- strictly better
+- tradebait
+- EOTFOFYL
+- Cap'n Tickles
+- Jacetice League
+
 
 disqualifyingAction:
-- reading every card's flavor text out loud
+- "[_reading:reading every card's,repeatedly reading #randomRealCard#'s]#_reading# flavor text out loud"
 - smirking
 - refusing to wear a shirt
-- slowly encroaching their [_rule:cards,spindown dice,playmat,rat tokens]#_rule# into
-  their opponent's play area
+- "slowly encroaching #their# [_thing:cards,spindown dice,playmat,#creatureTypes# tokens,#gameAccessory#]#_thing# into
+  #their# opponent's play area"
 - using baseball hand signals to communicate with a teammate
 - getting a bit too close to the truth
-- using 'dive bombing' sounds while casting removal on their opponent's creatures
+- "making [_sound:'dive bombing',motorcycle,low-pitched wimpering,'karate','car alarm','farting',loud yodeling]#_sound# [_noises:noises,sounds]#_noises# while casting removal on #their# opponents' creatures"
 - flexing
-- failing to use their turn signal when changing lanes
-- breakdancing after a victory
-- repeatedly using the phrase "Now THAT'S what I call Magic!"
+- "failing to use #their# turn signal when changing lanes"
+- "breakdancing after a [_result:victory,victory,loss]#_result#"
+- 'repeatedly using the [_phraseOrTerm:phrase "#magicCatchphrase#",term "#magicSlangTerm#"]#_phraseOrTerm#'
+- failing to file a tax return
+- abusing the hospitality of the judging staff
+- "peeking at #their# opponents' cards with [_what:a telescoping mirror,a tiny camera hidden in #their# #bodypart#,a surveillance monkey,a giant novelty magifying glass]#_what#"
+- "impersonating a #creatureTypeOrCharacterClass#[_how:, without a permit, badly, in poor taste, despite repeated warnings]#_how#"
+- "[_adding:adding,adding #count#,playing]#_adding# [_extra:extra,unregistered]#_extra# copies of #randomAnyCard# to #their# [_where:deck,card pool,#deck# deck]#_where#"
+- "using [_counterfeit:a counterfeit #gameAccessory#,counterfeit #gameAccessory.s#,counterfeit copies of #randomAnyCard#]#_counterfeit#"
+- "carrying a concealed #itemNoun# into the tournament venue"
+- "#verbIntransitiveGerund# like a #creatureTypeOrCharacterClass#"
+- 'repeatedly saying "still had all these" [_circumstance:and revealing #count# copies of #randomRealCard# after every match,to the judges,to everybody within earshot,during the lunch break,and revealing #their# #bodypartsInPairs# after every match]#_circumstance#'
+- "attempting to bribe [_who:a judge,#their# opponent,#person#]#_who# with [_what:a single copy of #randomAnyCard#,#adj.a# #itemNoun#,#largeAmount.a# of #massNoun#]#_what#"
+- "insisting that #randomAnyCard# is playable in #format#"
+- conduct unbecoming an officer and a gentleman
+- unspecified rudeness
+- "#verbStrictlyIntransitiveGerund# in clear violation of the tournament guidelines"
+- "registering a [_count:#num1-9#,#num1-99#,#num1-999#]#_count#-card deck and a #_count#-card sideboard"
+- inciting a very small riot
+- attempting to organize a tontine
 
-tip:
+tipStrategy:
 - 'The Case for #mtgOpinionSuggestion.capitalizeAll# [_bannedThing:#randomAnyCard#,#gameConcept#]#_bannedThing.capitalizeAll#[_where:
   in #format#,]#_where#'
 - "#tipTitle#: [_change:Improve,Upgrade,Evolve,Update,Revise,Revitalize,Enliven,Fine-tune,Level up,Completely transform,Revolutionize,Boost,Freshen up,Revise,Customize,Jazz up,Enliven,Invigorate]#_change# Your #deckObjective# by #deckChange#"

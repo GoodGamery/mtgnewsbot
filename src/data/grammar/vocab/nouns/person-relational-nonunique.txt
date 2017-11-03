@@ -1,0 +1,11 @@
+friend
+enemy
+relative
+neighbor
+coworker
+sibling
+cousin
+twitter follower
+in-law
+collegue
+high-school friend

@@ -1,11 +1,11 @@
 'use strict';
 
 function currentYear() {
-  return new Date().getFullYear();
+  return '' + new Date().getFullYear();
 }
 
 function dayOfWeek() {
-  return new Date().toLocaleString('en-us', {  weekday: 'long' });
+  return '' + new Date().toLocaleString('en-us', {  weekday: 'long' });
 }
 
 function dayOfWeekOccasion() {
@@ -19,7 +19,7 @@ function dayOfWeekOccasion() {
     'sunday'    : ['Stompy', 'Suntail', 'Sun\'s Zenith', 'Sundering', 'Sulfuric', 'Sultai', 'Summoners', 'Spindown', 'Subreddit', 'Slow Play']
   };
   const todayDescriptors = descriptors[dayOfWeek().toLowerCase()];
-  return todayDescriptors[Math.floor(Math.random() * todayDescriptors.length)];
+  return '' + todayDescriptors[Math.floor(Math.random() * todayDescriptors.length)];
 }
 
 function dayOfWeekMotivation() {
@@ -33,7 +33,7 @@ function dayOfWeekMotivation() {
     'sunday'    : ['Sayings', 'Sophistry', 'Stupidity', 'Stories']
   };
   const todayDescriptors = descriptors[dayOfWeek().toLowerCase()];
-  return todayDescriptors[Math.floor(Math.random() * todayDescriptors.length)];
+  return '' + todayDescriptors[Math.floor(Math.random() * todayDescriptors.length)];
 }
 
 module.exports = { 

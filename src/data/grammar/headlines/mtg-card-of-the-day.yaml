@@ -41,6 +41,10 @@ cotdTextDescription:
   - "This [_preDesc:,#cardQuality# ]#_preDesc##_cardDesc# has had [_who:#pros#,#psychographics#,#pro#,#person#][_reactionVerb:salivating,drooling,giggling,dancing,cartwheeling,rejoicing,grumbling,talking,confused,making predictions,trying to break it,calling for its banning][_verbing:#_reactionVerb#,#verbIntransitiveGerund#]#_who# #_verbing# since it was [_verbed:first revealed,first spoiled,first unbanned,first printed,reprinted]#_verbed#."
   - "#adjOrCardQuality.capitalize#, #adjOrCardQuality#, and #adjOrCardQuality#—one of the #adjSuperlativeOrCardSuperlative# and #adjSuperlativeOrCardSuperlative# #_cardCategory.s# ever printed returns!"
 
+cotdPetOwner:
+- "#historicalFigure#"
+- "#character#"
+
 cotdCreatureTypeDescription:
  - "Only on #plane# would people see this #adjImpressive# #_creatureType# and nickname it [_nickname:The #adj.capitalizeAll.hyphenate# #characterClass.capitalizeAll#,#planeswalkerFirstName#'s #characterClass.capitalizeAll#]“#_nickname#”."
  - "Now that we know that this #_creatureType# is the [_source:creator,progenitor,source]#_source# of all #_creatureType#kind across the multiverse (even [_cardlinkName:#tribalCreature#]#_cotdHtmlCardLink#), does that mean that every #_creatureType# is a [_minionTitle:Scion of the #_cardname#,Spawn of #_cardname#,Minion of #_cardname#, #_cardname.hyphenate#'s Faithful][_cardlinkName:#_minionTitle#]#_cotdHtmlCardLink#?"
@@ -53,6 +57,19 @@ cotdCreatureTypeDescription:
  - "#_creatureType.capitalizeAll# [_doctors:psychologists,behaviorists,therapists]#_doctors# will tell you that [_dreams:dreams,nightmares]#_dreams# about #_badDream# are very common. Unfortunately for this #_creatureType#, it isn't a dream. How [_dreamFeeling:embarrassing,distressing,terrifying,heartbreaking,awful,unfortunate,ominous,disturbing,hilarious,disastrous,appalling,awkward]#_dreamFeeling#."
  - "It started with \"How do you give #_cardSubtype1.s# [_italicText:#keyword.lowercase#]#_italicize#?\" and ended with [_italicText:#keyword.lowercase#][_q:How do you give #_cardSubtype1.a# #_italicize#,What would #_cardSubtype1.a# made out of #massNoun# look like,Why bother,Who cares,Why don't you just follow the design file,Can we design #cardCategory.a# instead,What's for lunch]\"#_q#?\" [_obv:Obviously,Suffice it to say,As you can see for yourself]#_obv#, #_cardName1#[_result:'s playtest went well,'s final design doesn't disappoint,'s printed version answers none of these questions, turned out to be a real mess, turned out great]#_result#."
  - "The only thing left to make #_creatureType.capitalize# tribal viable[_where:, now, in #format#]#_where# is...[_what:a lot more #_creatureType.s#.,a few #_creatureType# lords.,#_creatureType.a# that's actually playable.,probably a playable #cardCategory# or two.,about #count# more cards.,about a million other cards.,actually we have no idea.,nothing. It's never going to be playable#comma# sorry.,nothing. It's already viable!]#_what#"
+ - > 
+  [_companions:pets,pets,companions,friends,#characterClass.s#]
+  [_usefulItem:#bodypartsPlural#,#abstractNounPluralItemNounMassNounOrEmotion#]
+  [_undesirableVerb:eat,steal,run away with,hide,hoard,ruin]
+  [_their:their]
+  [_petOwner:#cotdPetOwner#]
+  [_petLocation:on #_their# private #_creatureType# farm,on #_their# private compound,in #_their# private menagerie,for research purposes,for undisclosed reasons,in a secret location]  
+  [_petLocationMoreSpecific:on #plane#,in #nonPlaneLocation#,in #minorStoryLocation#]
+  [_petLocationSpecific:#_petLocation#,#_petLocation# #_petLocationMoreSpecific#]
+  [_andSecondActivity:, and #nounActivity#]
+  [_somePets:#_creatureType.a#,#count# #_creatureType.s#]
+  [_reason3:You can use their #bodypartsPlural# for #nounActivity##_andSecondActivity#,Won't #_undesirableVerb# your #pluralItemNounOrMassNoun#,#_petOwner# once kept #_somePets# #_petLocationSpecific#,Two words#colon# #adj# #abstractMassOrPluralNounGameConceptOrEmotion#]
+  Reasons #_creatureType.s# [_verb:are,make]#_verb# the [_superlative:best,best,most popular,#cardSuperlative#,#adjSuperlative#]#_superlative# #_companions#: (1) Constantly #verbIntransitiveGerund#. (2) #adj.capitalize# #bodypartsPlural#. (3) #_reason3#. (4) [_willOrWont:Will,Won't]#_willOrWont# [_adv:,#adverb# ]#verbTransitive# your [_who:#personRelationalUnique#,#personRelationalNonunique.s#]#_who#.
 
 cotdCardNameWordPair_And:
   - "[separator:and][#separator.cardSearchTwoParter(1,\\w+ of)#][_pairWord1:#_cardNameFirstPart1#][_pairWord2:#_cardNameSecondPart1#][_pairWordOnly2:#_cardNameSecondPart1#]"

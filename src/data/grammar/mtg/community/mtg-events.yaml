@@ -21,9 +21,19 @@
   "nonTournamentEvent": [
       "the next team draft",
       "casual Commander night",
-      "a drunk kitchen-table game",
+      "a drunken kitchen-table game",
       "a 24-hour MTGO stream"
   ],
+
+
+  "atTournamentInCity": [
+    "at Pro Tour #recentCardSet# in #city#",
+    "at GP #city#",
+    "in #city#",
+    "at the #CONTENT.currentYear# World Championship in #city#",
+    "at #tournament#"
+  ],
+
 
 	"playOrDraw": [ "play", "draw"],
 

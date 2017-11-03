@@ -3,6 +3,9 @@
   "winWord": [
       "wins","triumphs","victorious","crushes","dominates","wins big"
   ],
+  "tournamentWonWord": [
+    "won", "clinched", "taken down", "dominated", "swept"
+  ],
   "mtgOpinionSuggestion": ["banning", "improving", "reconsidering", "nerfing", "bolstering", "strengthening", "weakening", "questioning", "ignoring", "disregarding", "doubling-down on", "reevaluating", "reconceptualizing"],
   "descriptor": [
       "more powerful",
