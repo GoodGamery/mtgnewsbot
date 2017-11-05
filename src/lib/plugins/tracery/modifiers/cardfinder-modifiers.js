@@ -187,6 +187,20 @@ async function cardSearchByType(s, params) {
   return cardFinderSearch(query, params);
 }
 
+async function cardSearchOneWordName(undefined, params) {
+  const cardTypes = params.slice(1);
+  const query = {
+    q: 'not name:"? "'
+  };
+  if (cardTypes.length > 0) {
+    query.q += cardTypes.reduce((list, type) => {
+      list = list.length === 0 ? ' ' : list + ' OR ';
+      return list += 't: ' + type;
+    }, '');
+  }
+  return cardFinderSearch(query, params);  
+}
+
 async function cardSearchCustomQuery(s, params) {
   if (s) {
     logger.log('parsing query argument: ' + s);    
@@ -386,6 +400,7 @@ module.exports = {
   cardSearchByText,
   cardSearchByType,  
   cardSearchTwoParter,
+  cardSearchOneWordName,
   cardSearchCustomQuery,
   randomCard:   () => cardSearchRandom(undefined, 1),
   randomCards:  cardSearchRandom,

@@ -30,6 +30,8 @@ jedi mind tricks
 tight play
 getting lucky
 the storm scale
-#gameAccessory.s#
+good cards, like #randomRealCard#
+bad cards, like #randomRealCard#
+#cardQuality# cards, like #randomRealCard#
 #randomAnyCard#
-bad cards, like #randomAnyCard#
+#gameAccessory.s#

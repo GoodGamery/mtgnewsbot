@@ -60,8 +60,10 @@
       "McGruff the Crime Dog#malePronouns#",
       "Jackal Onassis#pluralPronouns#",
       "a goldfish#neutralPronouns#",
-      "Atlee Hammaker#malePronouns#"
+      "Atlee Hammaker#malePronouns#",
+      "Bill Stickers#malePronouns#"
   ],
+
   "pros": [
       "The DCI",
       "Hasbro",
@@ -82,8 +84,30 @@
       "barns",
       "scrubs",
       "hall of famers",
-      "#psychographics#"
+      "#psychographics#",
+      "netdeckers"
   ],
+
+  "playerCategory": [
+    "casual",
+    "dinosaur",
+    "grinder",
+    "grognard",
+    "hall-of-famer",
+    "johnny",
+    "melvin",
+    "netdecker",
+    "playtester",
+    "pro",
+    "scrub",
+    "sorceror",
+    "spike",
+    "timmy",
+    "vorthos",
+    "warrior",
+    "wizard"
+  ],
+
   "psychographics": [
       "Timmies",
       "Johnnies",
