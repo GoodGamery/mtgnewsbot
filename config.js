@@ -4,7 +4,7 @@ const Logger = require('./src/lib/util/logger');
 
 const CONFIG_OVERRIDE_PATH = './config-override.json';
 const DEFAULT_GRAMMAR_PATH = './src/data/grammar';
-const TWEET_LENGTH = 140;
+const TWEET_LENGTH = 280;
 const TEMPFILE_PATH = '/tmp';
 
 let config = {
