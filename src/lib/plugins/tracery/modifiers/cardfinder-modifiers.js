@@ -24,6 +24,10 @@ const colorNames = {
   URG: 'RUG'
 };
 
+const escapedParams = {
+  '_COMMA_': ','
+};
+
 const TRACERY_LABEL_PREFIX = '_card';
 
 class CardSearchResultField {
@@ -115,6 +119,10 @@ async function cardSearchTwoParter(separator, params) {
 
   // optional string prefix to remove before parsing
   var ignorePrefix = params[1];
+
+  Object.keys(escapedParams).forEach(escapeCode => {
+    ignorePrefix = ignorePrefix.replace(new RegExp(escapeCode, 'g'), escapedParams[escapeCode]);
+  });
 
   const firstPart = new CardSearchResultField('NameFirstPart', card => {
     var name = card.name.replace(new RegExp(`^${ignorePrefix}`), '').trim();

@@ -9,13 +9,13 @@ headline:
 - "#tipMoney#"
 - "#imgClassifieds#"
 - "#strategyRealization#"
+- "#flavorRevelation#"
 - "#tournamentNews#"
 - "#playguide#"
 - "#decktech#"
 - "#announcement#"
 - "#graphicAnnouncement#"
 - "#clickbait#"
-- "#flavorArcana#"
 - "#headlineKeepOrMulligan#"
 - "#gathererRulingImage#"
 - "#inGraphics#"
@@ -55,7 +55,7 @@ testSvg: "#headlineKeepOrMulligan#"
 
 testHtml: "#gathererRulingImage#"
 
-flavorArcana:
+flavorTextArcana:
 - 'BEHIND THE FLAVOR: #flavorText#'
 - 'FLAVOR FLASHBACK: #flavorText#'
 
@@ -100,6 +100,9 @@ announcement:
 - "#textAnnouncement#"
 - "#graphicAnnouncement#"
 
+textAnnouncement:
+- "#proTeamAnnouncement#"
+
 proTeamAnnouncement:
 - '[_leadIn:ANNOUNCEMENT,BREAKING,UPDATE]#_leadIn#: #pro# [_team: ,Team ][_leavesVerb:leaves,quits,abandons][_resultVerbPhrase:for,to join][_action:has joined,#_leavesVerb# #_team##team# #_resultVerbPhrase#]#_action# Team #team#'
 
@@ -119,13 +122,22 @@ novelSetGraphicAnnouncement:
 - "[_nextSet:The next set,The next fall set,The next spring set,#codename.capitalize#][_verbphrase:is
   actually,is really named,will be named]#_nextSet# #_verbphrase# [_cardset:#novelCardSetName.capitalizeAll#]#_cardset#  #mtgSetLogoSplash#"
 
-strategyrealization:
+strategyRealization:
 - "#pros.capitalize# don't realize that #techPlural# #verbDefeat# #obstacle#"
 - "The Importance of [_thing:#randomAnyCard#,#cardCategory.s#,#creatureTypes.capitalize.s#,#gameConcept#]#_thing# in [_where:#format#,#recentCardSet#]#_where#"
 - "The Secret to #improvementGoal.capitalizeAll# is #deckChange.capitalize#"
-- "[_leadIn:In today's Magic Story,Story Arcana,Exploring the Story,Story Time,Story Hour]#_leadIn.allCaps#: #magicStorylineHighlight#"
 - "#pro# Video Series: How I would [_change:improve,fix]#_change# [_improvable:Magic#colon# the Gathering,Magic Online,#format#,competitive Magic,#tournamentType# attendance]#_improvable# by #mtgOpinionSuggestion# #thing#, Part #num2-9#"
 - "Preview of #teaserCardSet# #normalFormat#: will the new #deckVariation# deck be #deckDescription#?"
+
+flavorHeadline:
+- "#flavorTextArcana#"
+- "#flavorTextArcana#"
+- "#flavorTextArcana#"
+- "#flavorRevelation#"
+- "#flavorRevelation#"
+
+flavorRevelation:
+- "[_leadIn:In today's Magic Story,Story Arcana,Exploring the Story,Story Time,Story Hour]#_leadIn.allCaps#: #magicStorylineHighlight#"
 
 magicStoryPlotAdj:
 - harrowing

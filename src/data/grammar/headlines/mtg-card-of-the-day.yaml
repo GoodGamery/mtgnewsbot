@@ -76,7 +76,7 @@ cotdCardNameWordPair_And:
 cotdCardNameWordPair_Or: 
   - "[separator:or][#separator.cardSearchTwoParter#][_pairWord1:#_cardNameFirstPart1#][_pairWord2:#_cardNameSecondPart1#][_pairWordOnly2:#_cardNameSecondPart1#]"
 cotdCardNameWordPair_OfThe:
-  - "[separator:of the][#separator.cardSearchTwoParter(1,\\w+\\,)#][_pairWord1:#_cardNameFirstPart1#][_pairWord2:the #_cardNameSecondPart1#][_pairWordOnly2:#_cardNameSecondPart1#]"
+  - "[separator:of the][#separator.cardSearchTwoParter(1,\\w+_COMMA_)#][_pairWord1:#_cardNameFirstPart1#][_pairWord2:the #_cardNameSecondPart1#][_pairWordOnly2:#_cardNameSecondPart1#]"
 
 cotdCardNameWordPair:
   - "#cotdCardNameWordPair_And#"

@@ -12,7 +12,6 @@ lenticular
 geegs
 spin to win
 Prime Time
-[_name:#characterMonosyllabic#,#characterDisyllabic#,#massNoun.capitalize.noSpaces#]The #_name#father
 sarnath'd
 battle lands
 check lands
@@ -52,5 +51,6 @@ MOOBWAP
 magic brain juice
 for the win
 indestructible a minus
+[_name:#characterMonosyllabic#,#characterDisyllabic#,#massNoun.capitalize.noSpaces#]The #_name#father
 P.S. #CARDSEARCH.cardSearchOneWordName(1,instant,sorcery)##_cardName1# Yu
 [_noun:#massNoun#,#creatureTypes#,#CARDSEARCH.cardSearchOneWordName##_cardName1#,#cardCategory#,#mtgSlangTerm.lowercase#]#_noun# on a stick
