@@ -94,9 +94,8 @@ tshirtPhrase:
 
 dumbScenario:
 - attempt to roll back the damage-on-stack rules
-- 'join the development team of their fantasy CCG [_gameName:"Goblinfort","Zoxelorn
-  #count.capitalize#","Rage Mage","Panty Heist","#characterClass# Squad#colon# The
-  Game","#creatureTypes# War: the #abstractNoun#"]#_gameName#'
+- 'join the development team of their fantasy CCG [_gameName:"#creatureTypes# #placeNoun#","Zoxelorn
+  #count#","#abstractMassOrPluralNounOrEmotion# #_fantasyCharacterClass#","#itemNoun# #_scenarioNoun#","#characterClass# #groupNoun##colon# #tabletopGameSuffix#","#creatureTypes# #_scenarioNoun##colon# the #abstractNoun#", "#characterClass.s# of #locationRealOrFantasy#"]#_gameName.capitalizeAll#'
 - join their [_rule:"Fist Bump,"Get Completely Loaded,"Drive With Your Eyes Closed,"Watch
   Anime,"Don't Pay Your Taxes,"Wander Aimlessly]#_rule# For Charity" initiative
 - participate in their [_magicType:Two-Headed Giant,Pauper EDH,Vintage Singleton,No
@@ -108,3 +107,73 @@ dumbScenario:
 - 'teach them how to beat #deck#'
 - fix MTGO so that it works properly
 - 'help them complete their #realBadCard# playset'
+
+_fantasyCharacterClass:
+- "#fantasyCharacterClass#"
+- "#fantasyCharacterPluralClass#"
+
+fantasyCharacterClass:
+- mage
+- warrior
+- fighter
+- knight
+- baron
+
+locationRealOrFantasy:
+- "#nonPlaneStoryLocation#"
+- "#city#"
+
+fantasyCharacterPluralClass:
+- lords
+- tribes
+- farmers
+- summoners
+- kings
+- heroes
+
+groupNoun:
+- squad
+- batallion
+- crew
+- division
+- cult
+- brigade
+- party
+- force
+- patrol
+- bros.
+
+_scenarioNoun:
+- "#collectiveActionOrRealm#"
+- "#_scenarioNoun#"
+
+scenarioNoun:
+- heist
+- attack
+- war
+- battle
+- throwdown
+- smackdown
+- showdown
+- quest
+- legacy
+- age
+- race
+- assault
+- alert
+- clash
+- legacy
+- party
+- corps
+- rally
+- encounter
+- brawl
+
+fateSuffix:
+- cide
+
+tabletopGameSuffix:
+- legacy
+- the game
+- "[_gameType:the board,the card,the adventure card,the living card,a #placeNoun# game]#_gameType# game"
+- "#creatureTypeOrCharacterClass.s# vs. #creatureTypeOrCharacterClass.s#"
