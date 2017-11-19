@@ -12,7 +12,6 @@ headline:
 - "#flavorRevelation#"
 - "#tournamentNews#"
 - "#playguide#"
-- "#decktech#"
 - "#announcement#"
 - "#clickbait#"
 - "#headlineKeepOrMulligan#"
@@ -130,13 +129,6 @@ strategyRealization:
 - "#pro# Video Series: How I would [_change:improve,fix]#_change# [_improvable:Magic#colon# the Gathering,Magic Online,#format#,competitive Magic,#tournamentType# attendance]#_improvable# by #mtgOpinionSuggestion# #thing#, Part #num2-9#"
 - "Preview of #teaserCardSet# #normalFormat#: will the new #deckVariation# deck be #deckDescription#?"
 
-flavorHeadline:
-- "#flavorTextArcana#"
-- "#flavorTextArcana#"
-- "#flavorTextArcana#"
-- "#flavorRevelation#"
-- "#flavorRevelation#"
-
 flavorRevelation:
 - "[_leadIn:In today's Magic Story,Story Arcana,Exploring the Story,Story Time,Story Hour]#_leadIn.allCaps#: #magicStorylineHighlight#"
 
@@ -224,16 +216,46 @@ stupidSolution:
 - 'destroying a copy of #dualLands# in front of the rest of your cards to set an example'
 - storing your cards in an extremely humid environment, like [_wet:a sauna,a wine
   cellar,an enclosed shower,a gym bathroom]#_wet#
-- using the "roll of dollar bills with a hundred on the outside" technique
+- '[_denomination:,one-,five-,ten-,twenty-]using the "roll of #_denomination#dollar bills with a hundred on the outside" technique'
+
+cardOrCardCategory:
+- "#randomCardAlone#"
+- "#randomCardAlone#"
+- "#cardCategory.s#"
+
+financialStakeholders:
+- online retailers
+- casual traders
+- speculators
+- LGS owners
+- counterfeiters
+- "[_mtgo:MODO,MTGO]#_mtgo# bots"
+- collectors
+- hedge fund managers
+- pharma bros
+- day traders
+- box mappers
+- backpack thieves
+- "#pros#"
+- "#pros#"
+- "#pros#"
+
+now:
+- now
+- immediately
+- today
+- ASAP
+- soon
+- aggressively
+- before it's too late
 
 tipMoney:
 - "#titleMoney#: Spend more money on #thing#"
-- "#titleMoney#: #investType# #randomAnyCard# #investReason#"
-- "#titleMoney#: #investType# #randomAnyCard#"
-- "#titleMoney#: #pro# is #investType#ing #broadCardClassification.capitalizeAll#;
-  Should You?"
-- 'BREAKING: Prices of #randomCardAlone# Spiking; Market Cornered by #pros#'
-- 'Leaked: Team #team#''s new deck #deckLocation#s #randomAnyCard#, invest now'
+- "#titleMoney#: #investType.capitalize# #cardOrCardCategory# #investReason#"
+- "#titleMoney#: #investType.capitalize# #cardOrCardCategory#[_secondPosition:,#comma# #investType# #cardOrCardCategory#]#_secondPosition#"
+- "#titleMoney#: [_whoIs:#pro# is,#pros# are]#_whoIs.capitalize# #investType#ing #broadCardClassification#;[_implication:Should you?,Don't get left behind,Act fast] #_implication#"
+- '[_leadin:#titleMoney#,BREAKING]#_leadin#: Price of [_trend:spiking,skyrocketing,rising,plummeting,soaring,spiraling,crashing,dropping,tumbling]#cardOrCardCategory# #_trend#; [_financialPosition:market cornered by #financialStakeholders#,shorted by #financialStakeholders#,#financialStakeholders# cashing out,#financialStakeholders# investing heavily,#financialStakeholders# doubling down]#_financialPosition#'
+- 'Leaked: Team #team#''s new #constuctedFormat# deck #deckLocation#s #cardOrCardCategory#, [_invest:invest #now#,buy in #now#,trade #now#,move #now#,cash out #now#]#_invest#'
 
 decktech:
 - 'Deck Tech: #deckVariation#'
@@ -245,13 +267,14 @@ playguide:
 - 'CLASSIC STRATEGY: [_prefix:The Philosophy of,It''s All About the]#_prefix# [_thing:#massNoun#,#pluralNoun#,#abstractNoun#,#nouns#]#_thing.capitalizeAll#,
   by #pro.capitalize#'
 - "[_proIs:#pro# is,#pros# are,Team #team# is]#_proIs.capitalize# #verbCreating# #tech.a# to #verbDefeat# #obstacle.capitalize#"
-- "#count.capitalize# #broadCardClassification.capitalizeAll# That Should Never Have
-  Been [_verbed:Printed,Banned,Unbanned,Played,Ignored]#_verbed#"
+- "#count.capitalize# #broadCardClassification.capitalizeAll# that should never have
+  Been [_verbed:printed,banned,unbanned,played,ignored]#_verbed#"
 - "[_proReveals:Top Pro #revealVerb.s#,#pro# #revealVerb.s#,#pros# #revealVerb#]#_proReveals.capitalizeAll#
   #planNoun.capitalize# for #event#: Play #randomAnyCard# in #deck# to counter [_what:#randomCardAlone#,#deckArchOrCategory#]#_what#"
 - "#recentCardSet# [_format:Limited,Constucted]#_format# Set Review:[_color: #basicColors.capitalize#,]#_color#
   #cardCategory.s.capitalizeAll# and [_other:#cardCategory#,#creatureTypes#]#_other.s.capitalizeAll#"
 - "#recentCardSet# #format# Set Review: [_cat:#basicColors#,#cardCategory.s# and #cardCategory.s#]#_cat.capitalizeAll#"
+- "#decktech#"
 
 tournamentRound:
 - "[_tournament:#tournament.capitalize# ,]#_tournament#[_round:Round #num2-9#,Quarterfinals,Semifinals,Finals]#_round#
@@ -261,15 +284,15 @@ tournamentRound:
 - MOCS [_round:Quarterfinals,Semifinals,Finals]#_round#
 
 investType:
-- Short
-- Buy
-- Hold
-- Hoard
-- Sell
+- short
+- buy
+- hold
+- hoard
+- sell
 
 investReason:
-- 'Before #randomCardAlone# is [_fate:Banned,Restricted][_in: in #format#,]#_fate##_in#'
-- 'Before  [_fate:#cardSet# Rotates,#teaserCardSet# is Released,#teaserCardSet# Arrives on MTGO]#_fate#'
+- 'Before #randomCardAlone# is [_fate:banned,restricted,unbanned][_in: in #format#,]#_fate##_in#'
+- 'Before  [_rotation:#cardSet# rotates,#cardSet# rotates from #format#][_fate:#_rotation#,#teaserCardSet# is released,#teaserCardSet# arrives on MTGO,#tournament#]#_fate#'
 
 itemOrCreatureType:
 - "#itemNoun#"
@@ -291,7 +314,7 @@ cardModifier:
 cardBase:
 - cards
 - "#cardCategory.s#"
-- "#creatureTypes.s#"
+- "#creatureTypes.s.capitalize#"
 
 tipTitle:
 - MTG TIPS
@@ -307,6 +330,7 @@ titleMoney:
 - MAGIC MONEY
 - TRADING REPORT
 - MAGIC FINANCE
+- MARKET WATCH
 
 deckChange:
 - 'adding [_what:#randomAnyCard#,#randomAnyCard#,#randomAnyCard#,#cardCategory.s#]#_what# to the #deckLocation#'
@@ -370,3 +394,18 @@ colon: ":"
 comma: ","
 fakecomma: "‚"
 hashtag: "_hashtag_"
+
+flavorHeadline:
+- "#flavorTextArcana#"
+- "#flavorTextArcana#"
+- "#flavorTextArcana#"
+- "#flavorRevelation#"
+- "#flavorRevelation#"
+
+randomTextHeadline:
+- "#tipStrategy#"
+- "#strategyRealization#"
+- "#playGuide#"
+- "#tournamentNews#"
+- "#clickbait#"
+- "#proTeamAnnouncement#"

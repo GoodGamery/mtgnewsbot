@@ -35,11 +35,21 @@
       "Constructed",
       "Limited"
   ],
+  "constuctedFormat": [
+    "Standard",
+    "Modern",
+    "Vintage",
+    "Legacy",
+    "Commander",
+    "Pauper",
+    "#alternativeConstructedFormat#",
+    "#alternativeConstructedFormat#"
+  ],
   "alternativeConstructedFormat": [
     "DC10",
     "Emperor",
     "Five-Color",
-    "Flip it or Rip it",
+    "Flip-it-or-Rip-it",
     "Frontier",
     "Mental Magic",
     "Peasant",
@@ -50,7 +60,7 @@
   ],
   "alternativeDraftFormat": [
     "Backdraft",
-    "Flip It or Rip It",
+    "Flip-It-or-Rip-It",
     "Mini-Master",
     "Rotisserie Draft",
     "Rochester Draft",

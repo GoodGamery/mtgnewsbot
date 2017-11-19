@@ -74,7 +74,7 @@
       "MODO players",
       "MTGO developers",
       "judges",
-      "grinders",
+      "[_type:,MTGO,PPTQ]#_type# grinders",
       "casual players",
       "forum posters",
       "Facebook commenters",
@@ -83,9 +83,16 @@
       "the pro's",
       "barns",
       "scrubs",
-      "hall of famers",
+      "Hall-of-Famers",
       "#psychographics#",
-      "netdeckers"
+      "netdeckers",
+      "#deck# players",
+      "#deck# players",,
+      "#format# players",
+      "#format# players",
+      "#playerCategory.s#",
+      "#playerCategory.s#",
+      "#playerCategory.s#"
   ],
 
   "playerCategory": [
@@ -93,7 +100,7 @@
     "dinosaur",
     "grinder",
     "grognard",
-    "hall-of-famer",
+    "Hall-of-Famer",
     "johnny",
     "melvin",
     "netdecker",
@@ -105,7 +112,8 @@
     "timmy",
     "vorthos",
     "warrior",
-    "wizard"
+    "wizard",
+    "[_personality:#character#,#character#,#historicalFigure#]#_personality# cosplayers#"
   ],
 
   "psychographics": [
