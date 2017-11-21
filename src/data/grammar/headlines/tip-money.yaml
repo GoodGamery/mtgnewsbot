@@ -1,0 +1,60 @@
+tipMoney:
+# - "#titleMoney#: Spend more money on #thing#"
+# - "#titleMoney#: #investType.capitalize# #commodity# #investReason#"
+# - "#titleMoney#: #investType.capitalize# #commodity#[_secondPosition:,#comma# #investType# #cardOrCategoryCommodity#]#_secondPosition#"
+- "#titleMoney#: [_whoIs:#pro# is,#pros# are]#_whoIs.capitalize# #investType#ing #broadCardClassification#;[_implication:Should you?,Don't get left behind,Act #actWhenFinancial#] #_implication#"
+# - '[_leadin:#titleMoney#,BREAKING]#_leadin#: Price of [_trend:spiking,skyrocketing,rising,plummeting,soaring,spiraling,crashing,dropping,tumbling]#cardOrCategoryCommodity# #_trend#; [_financialPosition:market cornered by #financialStakeholders#,shorted by #financialStakeholders#,#financialStakeholders# cashing out,#financialStakeholders# investing heavily,#financialStakeholders# doubling down]#_financialPosition#'
+# - 'Leaked: Team #team#''s new #constuctedFormat# deck #deckLocation#s #cardOrCategoryCommodity#, [_invest:invest #whenFinancial#,buy in #whenFinancial#,trade #whenFinancial#,move #whenFinancial#,cash out #whenFinancial#]#_invest#'
+
+cardOrCategoryCommodity:
+- "#randomCardAlone#"
+- "#randomCardAlone#"
+- "#cardCategory.s#"
+
+commodity:
+- "#randomCardAlone#"
+- "#randomCardAlone#"
+- "#cardCategory.s#"
+- "#gameAccessory#"
+
+investType:
+- short
+- buy
+- hold
+- hoard
+- sell
+
+investReason:
+- 'Before #randomCardAlone# is [_fate:banned,restricted,unbanned][_in: in #format#,]#_fate##_in#'
+- 'Before  [_rotation:#cardSet# rotates,#cardSet# rotates from #format#][_fate:#_rotation#,#teaserCardSet# is released,#teaserCardSet# arrives on MTGO,#tournament#]#_fate#'
+
+financialStakeholders:
+- online retailers
+- casual traders
+- speculators
+- LGS owners
+- counterfeiters
+- "[_mtgo:MODO,MTGO]#_mtgo# bots"
+- collectors
+- hedge fund managers
+- pharma bros
+- day traders
+- box mappers
+- backpack thieves
+- "#pros#"
+- "#pros#"
+- "#pros#"
+
+actWhenFinancial:
+- fast
+- "#whenFinancial#"
+
+whenFinancial:
+- now
+- immediately
+- today
+- ASAP
+- soon
+- aggressively
+- "[_when:by,by this,before,before next]#_when# #dayOfTheWeek#"
+- "[_when:by,before]#_when# #occasion#"

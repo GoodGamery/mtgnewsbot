@@ -1,0 +1,96 @@
+
+curatedHeadlineA1:
+- "#tipStrategy#"
+- "#smallImageHeadline1#"
+
+curatedHeadlineA2:
+- "#headlineKeepOrMulligan#"
+- "#randomTextHeadline#"
+
+curatedHeadlineA3:
+- "#clickbait#"
+- "#smallImageHeadline2#"
+
+curatedHeadlineA4:
+- "#mtgComic#"
+- "#randomTextHeadline#"
+
+curatedHeadlineA5:
+- "#imgClassifieds#"
+- "#smallImageHeadline1#"
+
+curatedHeadlineA6:
+- "#inGraphics#"
+- "#randomTextHeadline#"
+- "#randomTextHeadline#"
+
+curatedHeadlineB1:
+- "#mediumImageHeadline1#"
+- "#smallImageHeadline2#"
+
+curatedHeadlineB2:
+- "#mtgComic#"
+- "#randomTextHeadline#"
+- "#randomTextHeadline#"
+
+curatedHeadlineB3:
+- "#mtgDeckTechGraphic#"
+- "#smallImageHeadline1#"
+
+curatedHeadlineB4:
+- "#inGraphics#"
+- "#randomTextHeadline#"
+
+curatedHeadlineB5:
+- "#graphicAnnouncement#"
+- "#smallImageHeadline2#"
+
+curatedHeadlineB6:
+- "#headlineKeepOrMulligan#"
+- "#randomTextHeadline#"
+- "#randomTextHeadline#"
+
+randomTextHeadline:
+- "#tipStrategy#"
+- "#strategyRealization#"
+- "#playGuide#"
+- "#tournamentNews#"
+- "#clickbait#"
+- "#proTeamAnnouncement#"
+
+smallImageHeadline1:
+- "#cardCallout#"
+- "#mtgoTwitterStyleHeadline#"
+
+smallImageHeadline2:
+- "#cardCallout#"
+- "#mtgoTwitterStyleHeadline#"
+- "#gathererRulingImage#"
+
+mediumImageHeadline1:
+- "#graphicAnnouncement#"
+- "#graphicAnnouncement#"
+- "#mtgDeckTechGraphic#"
+- "#imgClassifieds#"
+
+mediumImageHeadline2:
+- "#graphicAnnouncement#"
+- "#mtgDeckTechGraphic#"
+- "#imgClassifieds#"
+- "#imgClassifieds#"
+
+#### ----------
+
+
+_clickbait:
+- "#clickbait#"
+
+strategyHeadline:
+- "#tipStrategy#"
+- "#strategyRealization#"
+
+communityNews:
+- "#tournamentNews#"
+- "#tournamentNews#"
+- "#teamTournamentNews#"
+- "#proTeamAnnouncement#"

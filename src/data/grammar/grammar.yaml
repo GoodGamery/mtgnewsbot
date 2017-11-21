@@ -22,28 +22,6 @@ headline:
 - "#cardCallout#"
 - "#mtgoTwitterStyleHeadline#"
 
-headlineSingleCardGrabBag:
-- "#cardCallout#"
-- "#mtgoTwitterStyleHeadline#"
-
-headlineRichGraphic:
-- "#inGraphics#"
-- "#mtgComic#"
-- "#headlineKeepOrMulligan"
-
-headlineSeveralCardsGraphic:
-- "#mtgDeckTechGraphic#"
-- "#imgClassifieds#"
-
-headlineAnnouncementGraphic:
-- "#graphicAnnouncement#"
-
-headlineCommunityNews:
-- "#tournamentNews#"
-- "#tournamentNews#"
-- "#teamTournamentNews#"
-- "#proTeamAnnouncement#"
-
 oncePerDay:
   - "#cotdImage#"
 
@@ -218,44 +196,6 @@ stupidSolution:
   cellar,an enclosed shower,a gym bathroom]#_wet#
 - '[_denomination:,one-,five-,ten-,twenty-]using the "roll of #_denomination#dollar bills with a hundred on the outside" technique'
 
-cardOrCardCategory:
-- "#randomCardAlone#"
-- "#randomCardAlone#"
-- "#cardCategory.s#"
-
-financialStakeholders:
-- online retailers
-- casual traders
-- speculators
-- LGS owners
-- counterfeiters
-- "[_mtgo:MODO,MTGO]#_mtgo# bots"
-- collectors
-- hedge fund managers
-- pharma bros
-- day traders
-- box mappers
-- backpack thieves
-- "#pros#"
-- "#pros#"
-- "#pros#"
-
-now:
-- now
-- immediately
-- today
-- ASAP
-- soon
-- aggressively
-- before it's too late
-
-tipMoney:
-- "#titleMoney#: Spend more money on #thing#"
-- "#titleMoney#: #investType.capitalize# #cardOrCardCategory# #investReason#"
-- "#titleMoney#: #investType.capitalize# #cardOrCardCategory#[_secondPosition:,#comma# #investType# #cardOrCardCategory#]#_secondPosition#"
-- "#titleMoney#: [_whoIs:#pro# is,#pros# are]#_whoIs.capitalize# #investType#ing #broadCardClassification#;[_implication:Should you?,Don't get left behind,Act fast] #_implication#"
-- '[_leadin:#titleMoney#,BREAKING]#_leadin#: Price of [_trend:spiking,skyrocketing,rising,plummeting,soaring,spiraling,crashing,dropping,tumbling]#cardOrCardCategory# #_trend#; [_financialPosition:market cornered by #financialStakeholders#,shorted by #financialStakeholders#,#financialStakeholders# cashing out,#financialStakeholders# investing heavily,#financialStakeholders# doubling down]#_financialPosition#'
-- 'Leaked: Team #team#''s new #constuctedFormat# deck #deckLocation#s #cardOrCardCategory#, [_invest:invest #now#,buy in #now#,trade #now#,move #now#,cash out #now#]#_invest#'
 
 decktech:
 - 'Deck Tech: #deckVariation#'
@@ -283,17 +223,6 @@ tournamentRound:
 - "#format# Super League [_round:Quarterfinals,Semifinals,Finals]#_round#"
 - MOCS [_round:Quarterfinals,Semifinals,Finals]#_round#
 
-investType:
-- short
-- buy
-- hold
-- hoard
-- sell
-
-investReason:
-- 'Before #randomCardAlone# is [_fate:banned,restricted,unbanned][_in: in #format#,]#_fate##_in#'
-- 'Before  [_rotation:#cardSet# rotates,#cardSet# rotates from #format#][_fate:#_rotation#,#teaserCardSet# is released,#teaserCardSet# arrives on MTGO,#tournament#]#_fate#'
-
 itemOrCreatureType:
 - "#itemNoun#"
 - "#creatureTypes#"
@@ -301,20 +230,6 @@ itemOrCreatureType:
 creatureTypeOrCharacterClass:
 - "#creatureTypes#"
 - "#characterClass#"
-
-broadCardClassification:
-- "#cardModifier##cardBase#"
-
-cardModifier:
-- "#basicColors# "
-- "#format# "
-- "#cardSet# "
-- ''
-
-cardBase:
-- cards
-- "#cardCategory.s#"
-- "#creatureTypes.s.capitalize#"
 
 tipTitle:
 - MTG TIPS
@@ -402,10 +317,3 @@ flavorHeadline:
 - "#flavorRevelation#"
 - "#flavorRevelation#"
 
-randomTextHeadline:
-- "#tipStrategy#"
-- "#strategyRealization#"
-- "#playGuide#"
-- "#tournamentNews#"
-- "#clickbait#"
-- "#proTeamAnnouncement#"
