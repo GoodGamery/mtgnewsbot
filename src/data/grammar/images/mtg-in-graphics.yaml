@@ -37,7 +37,7 @@ inGraphicsStep:
 - 'Ask a judge how #_card1# and #_card2# interact'
 - 'Look extremely puzzled for #num2-9# minutes'
 - Gesture to the collection of PTQ Top 8 pins on your playmat
-- 'Reveal the Cheatyface hidden underneath #_card1#'
+- 'Reveal the [_card:Cheatyface,Cheatyface,Entirely Normal Armchair]#_card# hidden underneath #_card1#'
 - 'Draw #_card2# and gaze #adverb# at it'
 - 'Tear #_card1# into pieces and eat it'
 - Move to the beginning of combat step

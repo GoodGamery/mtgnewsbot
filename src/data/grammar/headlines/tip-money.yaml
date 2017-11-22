@@ -1,10 +1,14 @@
 tipMoney:
-- "#titleMoney#: Spend more money on #thing#"
+- "#titleMoney#: Spend more money on #mtgThing#"
 - "#titleMoney#: #investType.capitalize# #commodity# #investReason#"
 - "#titleMoney#: #investType.capitalize# #commodity#[_secondPosition:,#comma# #investType# #commodity#]#_secondPosition#"
-- "#titleMoney#: [_whoIs:#pro# is,#pros# are]#_whoIs.capitalize# #investingType# #broadCardClassification#;[_implication:should you?,don't get left behind,act #actWhenFinancial#] #_implication#"
+- "#titleMoney#: [_whoIs:#pro# is,#pros# #are#]#_whoIs.capitalize# #investingType# #broadCardClassification#;[_implication:should you?,don't get left behind,act #actWhenFinancial#] #_implication#"
 - '[_leadin:#titleMoney#,BREAKING]#_leadin#: Price of [_trend:spiking,skyrocketing,rising,plummeting,soaring,spiraling,crashing,dropping,tumbling]#commodity# #_trend#; [_financialPosition:market cornered by #financialStakeholders#,shorted by #financialStakeholders#,#financialStakeholders# cashing out,#financialStakeholders# investing heavily,#financialStakeholders# doubling down]#_financialPosition#'
 - '#urgentTitleMoney#: Team #team#''s new #constuctedFormat# deck #deckLocation#s #cardOrCategoryCommodity#, [_invest:invest #whenFinancial#,buy in #whenFinancial#,trade #whenFinancial#,move #whenFinancial#,cash out #whenFinancial#]#_invest#'
+- '#tipMoneyGameChanger#'
+
+tipMoneyGameChanger:
+- "[_improve:Improve,Increase,Pump up,Raise,Augment,Boost][_collection:collection,collection,online collection,binder][_valueType:,resale ,total ,trade ,market ,][_gameChanger:step up your game,make a name for yourself,#_improve# your #_collection#'s #_valueType#value]#_gameChanger.capitalize# by #stupidSolution#"
 
 titleMoney:
 - INVESTOR REPORT
@@ -35,12 +39,12 @@ commodity:
 investType:
 - short
 - buy
-- buy out
 - hold
 - hoard
 - sell
 - dump
 - cash out
+- invest in
 
 investingType:
 - shorting

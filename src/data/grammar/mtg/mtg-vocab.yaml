@@ -5,3 +5,9 @@ itemOrCreatureType:
 creatureTypeOrCharacterClass:
 - "#creatureTypes#"
 - "#characterClass#"
+
+mtgThing:
+- "#deckArchOrCategory#"
+- "#randomAnyCard#"
+- "#format#"
+- "#cardCategory.s#"

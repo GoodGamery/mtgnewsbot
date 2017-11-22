@@ -65,34 +65,34 @@
   ],
 
   "pros": [
-      "The DCI",
-      "Hasbro",
-      "WOTC",
-      "Magic players",
-      "Wizards",
-      "sorcerers",
-      "MODO players",
-      "MTGO developers",
-      "judges",
-      "[_type:,MTGO ,PPTQ ]#_type#grinders",
-      "casual players",
-      "forum posters",
-      "Facebook commenters",
-      "'You Make The Card' participants",
-      "The Future Future League",
-      "the pro's",
-      "barns",
-      "scrubs",
-      "Hall-of-Famers",
-      "#psychographics#",
-      "netdeckers",
-      "#deck# players",
-      "#deck# players",,
-      "#format# players",
-      "#format# players",
-      "#playerCategory.s#",
-      "#playerCategory.s#",
-      "#playerCategory.s#"
+      "The DCI#neutralPronouns#",
+      "Hasbro#neutralPronouns#",
+      "WOTC#neutralPronouns#",
+      "Magic players#pluralPronouns#",
+      "Wizards#neutralPronouns#",
+      "sorcerers#pluralPronouns#",
+      "MODO player#pluralPronouns#s",
+      "MTGO developers#pluralPronouns#",
+      "judges#pluralPronouns#",
+      "[_type:,MTGO ,PPTQ ]#_type#grinders#pluralPronouns#",
+      "casual players#pluralPronouns#",
+      "forum posters#pluralPronouns#",
+      "Facebook commenters#pluralPronouns#",
+      "'You Make The Card' participants#pluralPronouns#",
+      "The Future Future League#neutralPronouns#",
+      "the pro's#pluralPronouns#",
+      "barns#pluralPronouns#",
+      "scrubs#pluralPronouns#",
+      "Hall-of-Famers#pluralPronouns#",
+      "#psychographic.s##pluralPronouns#",
+      "netdeckers#pluralPronouns#",
+      "#deck# players#pluralPronouns#",
+      "#deck# players#pluralPronouns#",
+      "#format# players#pluralPronouns#",
+      "#format# players#pluralPronouns#",
+      "#playerCategory.s##pluralPronouns#",
+      "#playerCategory.s##pluralPronouns#",
+      "#playerCategory.s##pluralPronouns#"
   ],
 
   "playerCategory": [
@@ -116,13 +116,14 @@
     "[_personality:#character#,#character#,#historicalFigure#]#_personality# cosplayers#"
   ],
 
-  "psychographics": [
-      "Timmies",
-      "Johnnies",
-      "Spikes",
-      "Melvins",
-      "Vorthoses"
+  "psychographic": [
+      "Timmy",
+      "Johnny",
+      "Spike",
+      "Melvin",
+      "Vorthos"
   ],
+
   "team": [
       "[teamSuffix:#teamDescriptor#]#teamPrefix# #teamSuffix#"
   ],

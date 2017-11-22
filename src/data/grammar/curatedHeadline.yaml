@@ -89,6 +89,16 @@ strategyHeadline:
 - "#tipStrategy#"
 - "#strategyRealization#"
 
+financeHeadline:
+- "#tipMoney#"
+
+flavorHeadline:
+- "#flavorTextArcana#"
+- "#flavorTextArcana#"
+- "#flavorTextArcana#"
+- "#flavorRevelation#"
+- "#flavorRevelation#"
+
 communityNews:
 - "#tournamentNews#"
 - "#tournamentNews#"
