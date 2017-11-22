@@ -1,12 +1,22 @@
 ---
 cardCallout:
-- "[_cardname:#randomRealCard#]#cardCalloutText# #_cardname#.#singleCardImage#"
+- "[_cardDesc:card][_cardname:#randomOrSearchCard#]#cardCalloutText# #_cardname#.#singleCardImage#"
+
+randomOrSearchCard:
+- "#randomRealCard#"
+- "#randomRealCard#"
+- "#randomRealCard#"
+- "[_customQuery:t=creature][#_customQuery.cardSearchCustomQuery#][_cardDesc:#_cardSubtype1.lowercase#]#_cardName1#"
+- "[#CARDFINDER.randomCard#][_cardDesc:#_cardSomeTypeOrSubtype1.lowercase#]#_cardName1#"
+- "[#searchableCardCategory#][#_cardCategorySearchTerm.cardSearchByText#][_cardDesc:#_cardCategory.lowercase#]#_cardName1#"
 
 cardCalloutText:
-- "WE'RE NOT WRONG: The card you're thinking of is"
-- "DON'T DENY IT: The card you're thinking of is"
-- "HOW DID WE KNOW? The card you're thinking of is"
-- "WE'RE RIGHT: The card you're thinking of is"
-- "DID YOU KNOW? The card you're thinking of is"
-- "GET A LOAD OF THIS FRIGGIN' CARD:"
-- "IS THIS YOUR CARD? The card you're thinking of is"
+- "WE'RE NOT WRONG: The #_cardDesc# you're thinking of is"
+- "DON'T DENY IT: The #_cardDesc# you're thinking of is"
+- "HOW DID WE KNOW? The #_cardDesc# you're thinking of is"
+- "WE'RE RIGHT: The #_cardDesc# you're thinking of is"
+- "DID YOU KNOW? The #_cardDesc# you're thinking of is"
+- "GET A LOAD OF THIS FRIGGIN' #_cardDesc.allCaps#:"
+- "IS THIS YOUR CARD? The #_cardDesc# you're thinking of is"
+- "REMEMBER THIS #_cardDesc.allCaps#? [_comment:We sure do,We bet you do,We don't,We didn't,You do now,It's our favorite,A true classic]#_comment#:"
+- "THE RESULTS ARE IN! The [_superlative:most #cardQuality#,most #cardQuality#,#adjSuperlative#]#_superlative# #_cardDesc# is"

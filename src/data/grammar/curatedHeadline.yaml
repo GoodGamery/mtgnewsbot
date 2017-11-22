@@ -1,0 +1,123 @@
+
+curatedHeadlineA1:
+- "#tipStrategy#"
+- "#smallImageHeadlineOrRandomText1#"
+- "#smallImageHeadlineOrRandomText1#"
+
+curatedHeadlineA2:
+- "#headlineKeepOrMulligan#"
+- "#randomTextHeadline#"
+- "#strategyHeadline#"
+
+curatedHeadlineA3:
+- "#clickbait#"
+- "#smallImageHeadlineOrRandomText2#"
+- "#smallImageHeadlineOrRandomText2#"
+
+curatedHeadlineA4:
+- "#mtgComic#"
+- "#randomTextHeadline#"
+- "#financeHeadline#"
+
+curatedHeadlineA5:
+- "#imgClassifieds#"
+- "#smallImageHeadlineOrRandomText1#"
+- "#smallImageHeadlineOrRandomText1#"
+
+curatedHeadlineA6:
+- "#inGraphics#"
+- "#randomTextHeadline#"
+- "#flavorHeadline#"
+
+curatedHeadlineB1:
+- "#mediumImageHeadline1#"
+- "#smallImageHeadlineOrRandomText2#"
+- "#smallImageHeadlineOrRandomText2#"
+
+curatedHeadlineB2:
+- "#mtgComic#"
+- "#randomTextHeadline#"
+- "#communityNews#"
+
+curatedHeadlineB3:
+- "#mtgDeckTechGraphic#"
+- "#smallImageHeadlineOrRandomText1#"
+- "#smallImageHeadlineOrRandomText1#"
+
+curatedHeadlineB4:
+- "#inGraphics#"
+- "#randomTextHeadline#"
+- "#flavorHeadline#"
+
+curatedHeadlineB5:
+- "#graphicAnnouncement#"
+- "#smallImageHeadlineOrRandomText2#"
+- "#smallImageHeadlineOrRandomText2#"
+
+curatedHeadlineB6:
+- "#headlineKeepOrMulligan#"
+- "#randomTextHeadline#"
+- "#financeHeadline#"
+
+randomTextHeadline:
+- "#tipStrategy#"
+- "#strategyRealization#"
+- "#playGuide#"
+- "#tournamentNews#"
+- "#clickbait#"
+- "#proTeamAnnouncement#"
+
+smallImageHeadline1:
+- "#cardCallout#"
+- "#mtgoTwitterStyleHeadline#"
+
+smallImageHeadline2:
+- "#cardCallout#"
+- "#mtgoTwitterStyleHeadline#"
+- "#gathererRulingImage#"
+
+mediumImageHeadline1:
+- "#graphicAnnouncement#"
+- "#graphicAnnouncement#"
+- "#mtgDeckTechGraphic#"
+- "#imgClassifieds#"
+
+mediumImageHeadline2:
+- "#graphicAnnouncement#"
+- "#mtgDeckTechGraphic#"
+- "#imgClassifieds#"
+- "#imgClassifieds#"
+
+clickbaitHeadline:
+- "#clickbaitHeadline#"
+
+strategyHeadline:
+- "#tipStrategy#"
+- "#strategyRealization#"
+
+financeHeadline:
+- "#tipMoney#"
+
+flavorHeadline:
+- "#flavorTextArcana#"
+- "#flavorTextArcana#"
+- "#flavorTextArcana#"
+- "#flavorRevelation#"
+- "#flavorRevelation#"
+
+communityNews:
+- "#tournamentNews#"
+- "#tournamentNews#"
+- "#teamTournamentNews#"
+- "#proTeamAnnouncement#"
+
+smallImageHeadlineOrRandomText1:
+- "#smallImageHeadline1#"
+- "#randomTextHeadline#"
+- "#randomTextHeadline#"
+
+smallImageHeadlineOrRandomText2:
+- "#smallImageHeadline2#"
+- "#randomTextHeadline#"
+- "#randomTextHeadline#"
+

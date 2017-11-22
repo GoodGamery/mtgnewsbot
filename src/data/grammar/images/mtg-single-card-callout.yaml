@@ -66,18 +66,18 @@ pickRandomBGText: >
 year: "#CONTENT.currentYear#" 
 
 randomBgText:
-  # - "Hasbro ©#year# Hasbro ©#year# Hasbro ©#year# [_fontSize:56px][_lineHeight:1em][_sp:#spanSpacer#][_textSpacerWidth:75px][_textXTranslate:-800px][_debug:hasbro]"
-  # - "© DO NOT STEAL © DO NOT STEAL © DO NOT STEAL [_fontSize:56px][_lineHeight:1.2em][_sp:#spanSpacer#][_textSpacerWidth:75px][_textXTranslate:-800px][_debug:dns]"
-  # - "newsbot loves you newsbot loves you [_fontSize:56px][_lineHeight:1em][_sp:#spanSpacer#][_textSpacerWidth:75px][_textXTranslate:-800px][_debug:news]"
-  # - "MTG MTG MTG MTG MTG MTG [_lineHeight:.9em][_sp:#spanSpacer#][_textSpacerWidth:50px][_textXTranslate:-550px][_debug:mtg]"
-  # - "WOW  WOW  WOW  WOW  WOW  WOW  [_fontSize:64px][_lineHeight:1.2em][_sp:#spanSpacer#][_textSpacerWidth:50px][_textXTranslate:-550px][_debug:mtg]"
-  # - "$$$$$$$$$$$$$$$$$$$$$$$$$$$$$[_lineHeight:.9em][_debug:dollar]"
-  # - "?????????????????????????????[_lineHeight:.8em][_letterSpacing:.08em][_debug:ques]"
-  # - "! ! ! ! ! ! ! ! ! ! ! ! ! ! ! [_lineHeight:.8em][_debug:bang]"
-  # - "@@@@@@@@@@@@@@@@@@@@@@@@@@@@@[_lineHeight:1em][_debug:at]"
-  # - "%%%%%%%%%%%%%%%[_lineHeight:0.8em][_letterSpacing:.08em][_debug:percentage]"
+  - "Hasbro ©#year# Hasbro ©#year# Hasbro ©#year# [_fontSize:56px][_lineHeight:1em][_sp:#spanSpacer#][_textSpacerWidth:75px][_textXTranslate:-800px][_debug:hasbro]"
+  - "© DO NOT STEAL © DO NOT STEAL © DO NOT STEAL [_fontSize:56px][_lineHeight:1.2em][_sp:#spanSpacer#][_textSpacerWidth:75px][_textXTranslate:-800px][_debug:dns]"
+  - "newsbot loves you newsbot loves you [_fontSize:56px][_lineHeight:1em][_sp:#spanSpacer#][_textSpacerWidth:75px][_textXTranslate:-800px][_debug:news]"
+  - "MTG MTG MTG MTG MTG MTG [_lineHeight:.9em][_sp:#spanSpacer#][_textSpacerWidth:50px][_textXTranslate:-550px][_debug:mtg]"
+  - "WOW  WOW  WOW  WOW  WOW  WOW  [_fontSize:64px][_lineHeight:1.2em][_sp:#spanSpacer#][_textSpacerWidth:50px][_textXTranslate:-550px][_debug:mtg]"
+  - "$$$$$$$$$$$$$$$$$$$$$$$$$$$$$[_lineHeight:.9em][_debug:dollar]"
+  - "?????????????????????????????[_lineHeight:.8em][_letterSpacing:.08em][_debug:ques]"
+  - "! ! ! ! ! ! ! ! ! ! ! ! ! ! ! [_lineHeight:.8em][_debug:bang]"
+  - "@@@@@@@@@@@@@@@@@@@@@@@@@@@@@[_lineHeight:1em][_debug:at]"
+  - "%%%%%%%%%%%%%%%[_lineHeight:0.8em][_letterSpacing:.08em][_debug:percentage]"
   - "§§§§§§§§§§§§§§§[_lineHeight:1em][_letterSpacing:.08em][_debug:section]"  
-  # - "[h:❤&nbsp;❤&nbsp;❤&nbsp;❤&nbsp;]#h##h##h##h##h##h#[_lineHeight:.9em][_sp:#spanSpacer#][_textSpacerWidth:16px][_textXTranslate:-200px][_debug:heart]"
+  - "[h:❤&nbsp;❤&nbsp;❤&nbsp;❤&nbsp;]#h##h##h##h##h##h#[_lineHeight:.9em][_sp:#spanSpacer#][_textSpacerWidth:16px][_textXTranslate:-200px][_debug:heart]"
 
 bgTextLine: >
   #_bgText##_bgText##_bgText##_bgText##_bgText##_bgText##_bgText##_bgText##_bgText##_bgText#
@@ -348,7 +348,8 @@ singleCardHtml: |
           <div class="color-bg #_backgroundClass#">#_backgroundTextContent#</div>
         </div>    
         <div class="image-wrap #_cardImageOrientation#">
-          <img class="mtg-card" src="https://goodgamery.com/api/mtg/image?card=#_cardname#" />
+
+          <img class="mtg-card" src="https://goodgamery.com/api/mtg/card/image?q=name:%22!#_cardname#%22&sort=random"/>
         </div>
         <div class="image-overlay #_overlayOrientation#">
           <img class="image-overlay" src="#_overlayImageDirPath#/overlay#_overlayImageIndex#.png"/>

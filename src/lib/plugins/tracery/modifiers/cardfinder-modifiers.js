@@ -24,6 +24,10 @@ const colorNames = {
   URG: 'RUG'
 };
 
+const escapedParams = {
+  '_COMMA_': ','
+};
+
 const TRACERY_LABEL_PREFIX = '_card';
 
 class CardSearchResultField {
@@ -116,6 +120,10 @@ async function cardSearchTwoParter(separator, params) {
   // optional string prefix to remove before parsing
   var ignorePrefix = params[1];
 
+  Object.keys(escapedParams).forEach(escapeCode => {
+    ignorePrefix = ignorePrefix.replace(new RegExp(escapeCode, 'g'), escapedParams[escapeCode]);
+  });
+
   const firstPart = new CardSearchResultField('NameFirstPart', card => {
     var name = card.name.replace(new RegExp(`^${ignorePrefix}`), '').trim();
     return traceryEscape(name.split(splitter)[0]).trim();
@@ -185,6 +193,20 @@ async function cardSearchByType(s, params) {
     q: 't:' + s
   };
   return cardFinderSearch(query, params);
+}
+
+async function cardSearchOneWordName(undefined, params) {
+  const cardTypes = params.slice(1);
+  const query = {
+    q: 'not name:"? "'
+  };
+  if (cardTypes.length > 0) {
+    query.q += cardTypes.reduce((list, type) => {
+      list = list.length === 0 ? ' ' : list + ' OR ';
+      return list += 't: ' + type;
+    }, '');
+  }
+  return cardFinderSearch(query, params);  
 }
 
 async function cardSearchCustomQuery(s, params) {
@@ -386,6 +408,7 @@ module.exports = {
   cardSearchByText,
   cardSearchByType,  
   cardSearchTwoParter,
+  cardSearchOneWordName,
   cardSearchCustomQuery,
   randomCard:   () => cardSearchRandom(undefined, 1),
   randomCards:  cardSearchRandom,

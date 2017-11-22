@@ -1,5 +1,5 @@
 {
-  "plane": ["Rath", "Shandalar", "Mirrodin", "Kamigawa", "Alara", "Zendikar", "Innistrad", "Kaladesh", "Amonkhet",
+  "plane": ["Rath", "Shandalar", "Mirrodin", "Kamigawa", "Alara", "Zendikar", "Innistrad", "Kaladesh", "Amonkhet", "Ixalan",
             "Muraganda", "Mercadia", "Mirrodin", "Ravnica", "Lorwyn", "Tarkir", "Vryn", "Theros", "Shadowmoor", "Phyrexia"],
   "nonPlaneLocation": [
       "Adarkar",
@@ -153,5 +153,6 @@
       "Vodalian",
       "Wirewood"
   ],
-  "storyLocation": ["#plane#", "#nonPlaneLocation#"]
+  "storyLocation": ["#plane#", "#nonPlaneLocation#"],
+  "nonPlaneStoryLocation": ["#nonPlaneLocation#", "#minorStoryLocation#"]
 }

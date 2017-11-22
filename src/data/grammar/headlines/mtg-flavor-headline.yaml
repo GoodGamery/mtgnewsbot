@@ -1,0 +1,43 @@
+flavorRevelation:
+- "[_leadIn:In today's Magic Story,Story Arcana,Exploring the Story,Story Time,Story Hour]#_leadIn.allCaps#: #magicStorylineHighlight#"
+
+magicStoryPlotAdj:
+- harrowing
+- arduous
+- perilous
+- treacherous
+- incredible
+- gripping
+- surprising
+- astonishing
+- remarkable
+- difficult
+- bizarre
+- memorable
+- deadly
+- remarkable
+- fabled
+- colorful
+- "#adj#"
+
+unusualCharacter:
+- "the #adj.capitalizeAll# #creatureTypeOrCharacterClass.capitalizeAll#"
+
+storyCharacter:
+- "#planeswalkerFirstName#"
+- "#character#"
+- "[_unusualCharacter:#unusualCharacter#,#unusualCharacter#,#historicalFigure#,#historicalFigure#,#person#]#_unusualCharacter#"
+
+magicRealm:
+- "#realm.capitalizeAll#"
+- "#storyLocation.capitalizeAll#"
+- "the #adjStorybook.capitalizeAll# #placeNoun.capitalizeAll#"
+
+originStoryOverview: "#character#'s [_originStory:origin story,first adventure,humble beginning,#magicStoryPlotAdj# triumph]#_originStory#"
+originStoryDetails: "[_fate:capturing,rescuing,locating,search for,quest for,#collectiveActionOrRealm# of,#collectiveActionOrRealm# of]#_fate.capitalizeAll# [_what:the #mcGuffin.capitalizeAll#,the #count# #mcGuffin.capitalizeAll#,#unusualCharacter#,#unusualCharacter#]#_what#"
+
+magicStorylineHighlight:
+- "#character#'s #adj# [_past:past,history,backstory,rivalry,partnership]#_past# with #character# finally [_verbed:revealed,explained,uncovered,divulged,explored,exposed]#_verbed#"
+- "#character#'s #magicStoryPlotAdj# [_trek:journey,trek,odyssey]#_trek# [_with:,with #character#]#_with# [_toWhere:to #magicRealm#, across #storyLocation#]#_toWhere#"
+- "#character#'s #magicStoryPlotAdj# [_quest:quest,ordeal,campaign,odyssey,#planNoun#]#_quest# to [_fate:defeat,rescue,confront,#verbTransitive#]#_fate# #storyCharacter#"
+- "[_originStory:#originStoryOverview##colon# #originStoryDetails#,#originStoryDetails##colon# #originStoryOverview#]#_originStory#"

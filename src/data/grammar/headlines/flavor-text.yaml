@@ -84,6 +84,10 @@ flavorText:
     "[_who:It,He,She]#_who# is #adjComparative# than all but the #adjSuperlative# #pluralNoun#, and #adjComparative# than all but the #adjSuperlative#."
   - > 
     "I am the #nounVerber#, the #sealInscriptionDescription#.\"  —[_inscription:Seal inscription,#itemNoun.capitalize# inscription]#_inscription#
+  - >
+    "The #creatureTypeOrCharacterClass.s# of [_place:#minorStoryLocation#,#nonPlaneLocation#]#_place# treat each #itemNoun# with #emotion# for the #creatureTypeOrCharacterClass# it will become."
+  - >
+    "It is #adjComparative# than all but the #adjSuperlative# #pluralNoun#, and #adjComparative# than all but the #adjSuperlative#."
 
 sealInscriptionDescriptionWhatIam:
 - "#itemNoun#"
@@ -109,10 +113,6 @@ sealInscriptionDescription:
   - "#sealInscriptionDescriptionWhatIam# that #sealInscriptionDescriptionWhatIdo#"
   - "#sealInscriptionDescriptionWhatIam# that #sealInscriptionDescriptionWhatIdo#"
   - "#sealInscriptionDescriptionWhatIam# that #sealInscriptionDescriptionWhatIdo#"
-
-newFlavorText:
-# - >
-#   "The #creatureTypeOrCharacterClass.s# of [_place:#minorStoryLocation#,#nonPlaneLocation#]#_place# treat each #itemNoun# with #emotion# for the #creatureTypeOrCharacterClass# it will become."
 
 placeOrPeopleVerbPluralAgreement:
 - "[_placeOrPeople:#placeNoun#][_verbs:#_verb.s#]"

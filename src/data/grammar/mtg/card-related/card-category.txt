@@ -39,4 +39,6 @@ nonland permanent
 combo piece
 mana rock
 tripple-flipple card
+reprint
+functional reprint
 #rarity#

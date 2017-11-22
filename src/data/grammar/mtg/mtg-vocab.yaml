@@ -1,0 +1,13 @@
+itemOrCreatureType:
+- "#itemNoun#"
+- "#creatureTypes#"
+
+creatureTypeOrCharacterClass:
+- "#creatureTypes#"
+- "#characterClass#"
+
+mtgThing:
+- "#deckArchOrCategory#"
+- "#randomAnyCard#"
+- "#format#"
+- "#cardCategory.s#"

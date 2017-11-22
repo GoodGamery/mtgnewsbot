@@ -1,0 +1,56 @@
+medium
+as-fan
+bah-roken
+bolt bait
+wombo combo
+der infy
+Frown Town
+DOBs
+durdle turtle
+inevitability
+lenticular
+geegs
+spin to win
+Prime Time
+sarnath'd
+battle lands
+check lands
+strictly better
+chump attack
+tradebait
+mise well
+EOTFOFYL
+Cap'n Tickles
+Jacetice League
+CAW
+must be nice
+the nuts
+almost got me
+soft lock
+group hug
+instantment
+snap-keep
+sneep
+the stone nuts
+tiltscoop
+ground pounder
+windmill slam
+Pauly K
+Swagtusk
+Splashiok
+Nasty Terasty
+Yung Peezy
+E-Wit
+Coolamog
+Baby Jace
+LOL Troll
+fat pants
+Yawg-win
+deep anal
+MOOBWAP
+magic brain juice
+for the win
+indestructible a minus
+[_name:#characterMonosyllabic#,#characterDisyllabic#,#massNoun.capitalize.noSpaces#]The #_name#father
+P.S. #CARDSEARCH.cardSearchOneWordName(1,instant,sorcery)##_cardName1# Yu
+[_noun:#massNoun#,#creatureTypes#,#CARDSEARCH.cardSearchOneWordName##_cardName1#,#cardCategory#,#mtgSlangTerm.lowercase#]#_noun# on a stick

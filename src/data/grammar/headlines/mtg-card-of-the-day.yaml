@@ -38,8 +38,12 @@ cotdTextDescription:
   - "If you think this #cardQuality# #_cardDesc# only fits into [_deckType:#_cardColor1#,#deckLimitedArchetype#,#deck#]#_deckType# decks, you may need to reconsider your #format# strategies."
   - "[#cotdCardCategorySearch#]One of the best [_kindOfCard:#_cardRarity1#,#_cardType1#,#_cardDesc#]#_kindOfCard.lowercase.s# in [_italicText:#_cardSet1#]#_italicize# Limited right here. Turns out  [_cardlinkName:#cardAlone#]#_cotdHtmlCardLink# is still one of #_cardColor1#'s #cardSuperlative# [_otherKindOfCard:#cardCategory#,#_cardDesc#]#_otherKindOfCard.s#."
   - "[#cotdCardCategorySearch#]#_cardColorClass1.capitalize#, #cardQuality# #_cardDescCategory# will always be [_position:an unavoidable part of,a necessary evil in,at a premium in,a commodity in,#kindaGood# in]#_position# #popularFormat#, [_authority:Development,Mark Rosewater,Hasbro,the Future-Future League][_rigid:extremely rigid,militant,inconsistent,incomprehensible,ludicrous,unreasonably firm][_qualifier:unfortunately,like it or not,thanks to #_authority#'s #_rigid# stance on #_cardDescCategory#,regardless of the cost,thanks to the New World Order,because of reasons,because of the Reserved List,and always has been]#_qualifier#. Though sticking it on [_cardlinkName:#cardAlone#][_surface:#_cardtype.lowercase.a#,#cardCategory.lowercase.a#,#_cotdHtmlCardLink.a# variant]#_surface# [_result:certainly helps,certainly helps,doesn't help,really changes things,makes no sense,makes a certain kind of sense,certainly might make you resonsider it,is a clumsy approach to fixing this, is a feeble way to remedy this]#_result#."
-  - "This [_preDesc:,#cardQuality# ]#_preDesc##_cardDesc# has had [_who:#pros#,#psychographics#,#pro#,#person#][_reactionVerb:salivating,drooling,giggling,dancing,cartwheeling,rejoicing,grumbling,talking,confused,making predictions,trying to break it,calling for its banning][_verbing:#_reactionVerb#,#verbIntransitiveGerund#]#_who# #_verbing# since it was [_verbed:first revealed,first spoiled,first unbanned,first printed,reprinted]#_verbed#."
+  - "This [_preDesc:,#cardQuality# ]#_preDesc##_cardDesc# has had [_who:#pros#,#psychographic.s#,#pro#,#person#][_reactionVerb:salivating,drooling,giggling,dancing,cartwheeling,rejoicing,grumbling,talking,confused,making predictions,trying to break it,calling for its banning][_verbing:#_reactionVerb#,#verbIntransitiveGerund#]#_who# #_verbing# since it was [_verbed:first revealed,first spoiled,first unbanned,first printed,reprinted]#_verbed#."
   - "#adjOrCardQuality.capitalize#, #adjOrCardQuality#, and #adjOrCardQuality#—one of the #adjSuperlativeOrCardSuperlative# and #adjSuperlativeOrCardSuperlative# #_cardCategory.s# ever printed returns!"
+
+cotdPetOwner:
+- "#historicalFigure#"
+- "#character#"
 
 cotdCreatureTypeDescription:
  - "Only on #plane# would people see this #adjImpressive# #_creatureType# and nickname it [_nickname:The #adj.capitalizeAll.hyphenate# #characterClass.capitalizeAll#,#planeswalkerFirstName#'s #characterClass.capitalizeAll#]“#_nickname#”."
@@ -53,14 +57,26 @@ cotdCreatureTypeDescription:
  - "#_creatureType.capitalizeAll# [_doctors:psychologists,behaviorists,therapists]#_doctors# will tell you that [_dreams:dreams,nightmares]#_dreams# about #_badDream# are very common. Unfortunately for this #_creatureType#, it isn't a dream. How [_dreamFeeling:embarrassing,distressing,terrifying,heartbreaking,awful,unfortunate,ominous,disturbing,hilarious,disastrous,appalling,awkward]#_dreamFeeling#."
  - "It started with \"How do you give #_cardSubtype1.s# [_italicText:#keyword.lowercase#]#_italicize#?\" and ended with [_italicText:#keyword.lowercase#][_q:How do you give #_cardSubtype1.a# #_italicize#,What would #_cardSubtype1.a# made out of #massNoun# look like,Why bother,Who cares,Why don't you just follow the design file,Can we design #cardCategory.a# instead,What's for lunch]\"#_q#?\" [_obv:Obviously,Suffice it to say,As you can see for yourself]#_obv#, #_cardName1#[_result:'s playtest went well,'s final design doesn't disappoint,'s printed version answers none of these questions, turned out to be a real mess, turned out great]#_result#."
  - "The only thing left to make #_creatureType.capitalize# tribal viable[_where:, now, in #format#]#_where# is...[_what:a lot more #_creatureType.s#.,a few #_creatureType# lords.,#_creatureType.a# that's actually playable.,probably a playable #cardCategory# or two.,about #count# more cards.,about a million other cards.,actually we have no idea.,nothing. It's never going to be playable#comma# sorry.,nothing. It's already viable!]#_what#"
+ - > 
+  [_companions:pets,pets,companions,friends,#characterClass.s#]
+  [_usefulItem:#bodypartsPlural#,#abstractNounPluralItemNounMassNounOrEmotion#]
+  [_undesirableVerb:eat,steal,run away with,hide,hoard,ruin]
+  [_their:their]
+  [_petOwner:#cotdPetOwner#]
+  [_petLocation:on #_their# private #_creatureType# farm,on #_their# private compound,in #_their# private menagerie,for research purposes,for undisclosed reasons,in a secret location]  
+  [_petLocationMoreSpecific:on #plane#,in #nonPlaneLocation#,in #minorStoryLocation#]
+  [_petLocationSpecific:#_petLocation#,#_petLocation# #_petLocationMoreSpecific#]
+  [_andSecondActivity:, and #nounActivity#]
+  [_somePets:#_creatureType.a#,#count# #_creatureType.s#]
+  [_reason3:You can use their #bodypartsPlural# for #nounActivity##_andSecondActivity#,Won't #_undesirableVerb# your #pluralItemNounOrMassNoun#,#_petOwner# once kept #_somePets# #_petLocationSpecific#,Two words#colon# #adj# #abstractMassOrPluralNounGameConceptOrEmotion#]
+  Reasons #_creatureType.s# [_verb:are,make]#_verb# the [_superlative:best,best,most popular,#cardSuperlative#,#adjSuperlative#]#_superlative# #_companions#: (1) Constantly #verbIntransitiveGerund#. (2) #adj.capitalize# #bodypartsPlural#. (3) #_reason3#. (4) [_willOrWont:Will,Won't]#_willOrWont# [_adv:,#adverb# ]#verbTransitive# your [_who:#personRelationalUnique#,#personRelationalNonunique.s#]#_who#.
 
 cotdCardNameWordPair_And:
-  - "[separator:and][#separator.cardSearchTwoParter(1,\\w+ of)#][_pairWord1:#_cardNameFirstPart1#][_pairWord2:#_cardNameSecondPart1#]"
+  - "[separator:and][#separator.cardSearchTwoParter(1,\\w+ of)#][_pairWord1:#_cardNameFirstPart1#][_pairWord2:#_cardNameSecondPart1#][_pairWordOnly2:#_cardNameSecondPart1#]"
 cotdCardNameWordPair_Or: 
-  - "[separator:or][#separator.cardSearchTwoParter#][_pairWord1:#_cardNameFirstPart1#][_pairWord2:#_cardNameSecondPart1#]"
+  - "[separator:or][#separator.cardSearchTwoParter#][_pairWord1:#_cardNameFirstPart1#][_pairWord2:#_cardNameSecondPart1#][_pairWordOnly2:#_cardNameSecondPart1#]"
 cotdCardNameWordPair_OfThe:
-  # - "[separator:of the][#separator.cardSearchTwoParter#][_pairWord1:#_cardNameFirstPart1#][_pairWord2:the #_cardNameSecondPart1#][_pairWordOnly2:#_cardNameSecondPart1#]"
-  - "[separator:of the][#separator.cardSearchTwoParter(1,\\w+\\,)#][_pairWord1:#_cardNameFirstPart1#][_pairWord2:the #_cardNameSecondPart1#][_pairWordOnly2:#_cardNameSecondPart1#]"
+  - "[separator:of the][#separator.cardSearchTwoParter(1,\\w+_COMMA_)#][_pairWord1:#_cardNameFirstPart1#][_pairWord2:the #_cardNameSecondPart1#][_pairWordOnly2:#_cardNameSecondPart1#]"
 
 cotdCardNameWordPair:
   - "#cotdCardNameWordPair_And#"
@@ -68,9 +84,9 @@ cotdCardNameWordPair:
   - "#cotdCardNameWordPair_OfThe#"
 
 cotdWordPairPonderable:
-  - "[#cotdCardNameWordPair_OfThe#]which came first, the [_italicText:#_pairWord1.lowercase#]#_italicize# or the [_italicText:#_pairWord2.lowercase#]#_italicize#"
+  - "[#cotdCardNameWordPair_OfThe#]which came first, the [_italicText:#_pairWord1.lowercase#]#_italicize# or the [_italicText:#_pairWordOnly2.lowercase#]#_italicize#"
   - "[#cotdCardNameWordPair#]whether \"#_pairWord1.lowercase#\" is more important than \"#_pairWord2.lowercase#\""
-  - "[#cotdCardNameWordPair_And#]if you can ever really separate the [_italicText:#_pairWord1.lowercase#]#_italicize# from the [_italicText:#_pairWord2.lowercase#]#_italicize#"
+  - "[#cotdCardNameWordPair_And#]if you can ever really separate the [_italicText:#_pairWord1.lowercase#]#_italicize# from the [_italicText:#_pairWordOnly2.lowercase#]#_italicize#"
   - "[#cotdCardNameWordPair#]whether #_legendSubtype.s.lowercase# are more \"#_pairWord1.lowercase#\" than \"#_pairWord2.lowercase#\""
   - "[#cotdCardNameWordPair#]whether #creatureTypes.s# prefer \"#_pairWord1.lowercase#\" to \"#_pairWord2.lowercase#\""
 
@@ -330,7 +346,7 @@ historicalFigure:
   - Alexander the Great[_their:his]
   - Julius Caesar[_their:his]
   - Henry VIII[_their:his]
-  - Bonny and Clyde[_their:their]
+  - Bonnie and Clyde[_their:their]
   - Ivan the Terrible[_their:his]
   - Simón Bolívar[_their:his]
   - Marie Antoinette[_their:her]

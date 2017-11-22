@@ -163,7 +163,7 @@ zany
 tawdry
 obscene
 uncertain
-contemptable
+contemptible
 beastly
 sublime
 abominable

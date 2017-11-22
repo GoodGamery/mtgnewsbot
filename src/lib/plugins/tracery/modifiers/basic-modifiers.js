@@ -29,11 +29,27 @@ function hyphenate(s) {
   return s.replace(/\s+/g, '-');
 }
 
+function stripLeadingText(s, params) {
+  const leadingText = params[0];
+  const ignoreCase = !!params[1];
+
+  if (s.length === 0 || !leadingText || leadingText.length === 0) {
+    return s;
+  }
+
+  if (ignoreCase) {
+    return s.toLowerCase().startsWith(leadingText.toLowerCase()) ? s.replace(new RegExp(leadingText, 'i'), '') : s;
+  }
+  
+  return s.startsWith(leadingText) ? s.replace(leadingText,'') : s;
+}
+
 module.exports = { 
   allCaps,
   ed,
   lowercase,
   hyphenate,
   noPunctuation,
-  noSpaces
+  noSpaces,
+  stripLeadingText
 };

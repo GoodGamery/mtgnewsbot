@@ -8,7 +8,7 @@
     "simulate", "immortalize", "subdue", "pigeonhole", "despoil", "enhance", "glamorize", "market", "recognize", "smash", "kiss",
     "cleanse", "corrupt", "punch", "kick", "slap", "pinch", "tickle", "devour", "lick", "poke", "contradict", "ridicule", "tease",
     "detect", "assemble", "seduce", "banish", "romance", "purify", "feed", "simplify", "snuff", "clear", "revive", "appraise", "charm",
-    "annoy", "irritate", "perplex", "exasperate", "disrepsect"
+    "annoy", "irritate", "perplex", "exasperate", "disrepsect", "murder", "eviscerate", "ambush"
   ],
   "verbIntransitive": [ "#verbStrictlyIntransitive#", "#verbStrictlyIntransitive#", "#verbBothTransitive#" ],
   "verbStrictlyIntransitive": [
@@ -32,7 +32,7 @@
     "simulated", "immortalized", "subdued", "pigeonholed", "despoiled", "enhanced", "glamorized", "marketed", "recognized", "smashed", "kissed",
     "cleansed", "corrupted", "punched", "kicked", "slapped", "pinched", "tickled", "devoured", "licked", "poked", "contradicted", "ridiculed", "teased",
     "detected", "assembled", "seduced", "banished", "romanced", "purified", "fed", "simplified", "snuffed", "cleared", "revived", "appraised",
-    "charmed", "annoyed", "irritated", "perplexed", "exasperated", "disrepsected"
+    "charmed", "annoyed", "irritated", "perplexed", "exasperated", "disrepsected", "murdered", "eviscerated", "ambushed"
   ],
   "verbIntransitivePastTense": [ "#verbStrictlyIntransitivePastTense#","#verbStrictlyIntransitivePastTense#", "#verbBothTransitivePastTense#" ],
   "verbStrictlyIntransitivePastTense": [
@@ -56,7 +56,7 @@
     "simulating", "immortalizing", "subduing", "pigeonholing", "despoiling", "enhancing", "glamorizing", "marketing", "recognizing", "smashing", "kissing",
     "cleansing", "corrupting", "punching", "kicking", "slapping", "pinching", "tickling", "devouring", "licking", "poking",, "contradicting", "ridiculing",
     "teasing", "detecting", "sacrificing", "collecting", "assembling", "seducing", "banishing", "romancing", "purifying", "feeding", "simplifying", "snuffing",
-    "clearing", "reviving", "appraising", "charming", "annoying", "irritating", "perplexing", "exasperating", "disrepsecting"
+    "clearing", "reviving", "appraising", "charming", "annoying", "irritating", "perplexing", "exasperating", "disrepsecting", "murdering", "eviscerating", "ambushing"
   ],
   "verbIntransitiveGerund": [ "#verbStrictlyIntransitiveGerund#", "#verbStrictlyIntransitiveGerund#", "#verbBothTransitiveGerund#" ],
   "verbStrictlyIntransitiveGerund": [
@@ -77,13 +77,36 @@
       "overcome",
       "lock down",
       "fix",
-      "take down"
+      "take down",
+      "crush",
+      "dominate",
+      "win over",
+      "overpower",
+      "elbow drop",
+      "absolutely destroy",
+      "wreck",
+      "demolish",
+      "clobber",
+      "K.O.",
+      "steamroll",
+      "pulverize",
+      "scratch out a win against",
+      "barely defeat",
+      "outmaneuver",
+      "knock out",
+      "edge out the win against",
+      "obliterate",
+      "vanquish",
+      "rout",
+      "scuttle",
+      "blow out",
+      "outfox",
+      "steal the win from"
   ],
   "verbDefeating": [
       "defeating",
       "beating",
       "overcoming",
-      "becoming",
       "locking down",
       "fixing",
       "taking down",

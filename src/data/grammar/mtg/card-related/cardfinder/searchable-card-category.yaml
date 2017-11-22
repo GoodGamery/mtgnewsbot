@@ -25,13 +25,14 @@ searchableCardCategory:
   - >
     [_cardCategory:bounce spell][_cardCategoryClass:bounce][_targetCardType:creature,permanent,nonland permanent][_cardCategorySearchTerm:"return target #_targetCardType# to"]
 
+
 searchableCardCategoryCustomQuery:
  - >
   [_cardCategory:mana dork][_cardCategoryClass:mana dorks][_customQuery:text=pool t=creature cmc=<3]
  - >
-  [_cardCategory:weenie][cardCategoryClass:weenies][_customQuery:pow=1 tou=1]
+  [_cardCategory:weenie][_cardCategoryClass:weenies][_customQuery:pow=1 tou=1]
  - >
-  [_cardCategory:fatty][cardCategoryClass:fatties][_customQuery:pow=>4 tou=>4 text!=flying]
+  [_cardCategory:fatty][_cardCategoryClass:fatties][_customQuery:pow=>4 tou=>4 text!=flying]
  - >
   [_cardCategory:grizzly bear,bear][_cardCategoryClass:grizzly bears,bears][_customQuery:cmc=2 pow=2 tou=2]
  - >
@@ -41,17 +42,17 @@ searchableCardCategoryCustomQuery:
  - >
   [_cardCategory:snidd][_cardCategoryClass:snidds][_customQuery:cmc=5 pow=3 tou=3 text!=flying]
  - >
-  [_cardCategory:deadly insect][_cardCategoryClass:deadly insect][_customQuery:pow=6 tou=1]
+  [_cardCategory:deadly insect][_cardCategoryClass:deadly insects][_customQuery:pow=6 tou=1]
  - >
-  [_cardCategory:finisher][cardCategoryClass:finishers][_customQuery:pow=>5 tou=>5 text=flying pow|=>5 tou=>5 text=enters]
+  [_cardCategory:finisher][_cardCategoryClass:finishers][_customQuery:pow=>5 tou=>5 text=flying pow|=>5 tou=>5 text=enters]
  - >
-  [_cardCategory:coinflip card][cardCategoryClass:coinflip cards][_customQuery:text=coin text|=coins]
+  [_cardCategory:coinflip card][_cardCategoryClass:coinflip cards][_customQuery:text=coin text|=coins]
  - > 
-  [_cardCategory:sweeper][cardCategoryClass:sweepers][_customQuery:text="destroy all creatures" text|="exile all creatures" text|="damage to each creature" text|="?creatures get -" text!="0"]
+  [_cardCategory:sweeper][_cardCategoryClass:sweepers][_customQuery:text="destroy all creatures" text|="exile all creatures" text|="damage to each creature" text|="?creatures get -" text!="0"]
  - >
-  [_cardCategory:accelerator,mana accelerator][cardCategoryClass:acceleration,mana acceleration][_customQuery:text=add text=pool text=sacrifice text|=add text=pool text!={T}]
+  [_cardCategory:accelerator,mana accelerator][_cardCategoryClass:acceleration,mana acceleration][_customQuery:text=add text=pool text=sacrifice text|=add text=pool text!={T}]
  - >
-  [_cardCategory:engine piece,combo piece][cardCategoryClass:combo pieces,engine pieces][_customQuery:t=enchantment t|=artifact text=whenever t!=creature text=whenever text|=upkeep text|=instead text|="are the chosen" t!=aura t!=equipment]
+  [_cardCategory:engine piece,combo piece][_cardCategoryClass:combo pieces,engine pieces][_customQuery:t=enchantment t|=artifact text=whenever t!=creature text=whenever text|=upkeep text|=instead text|="are the chosen" t!=aura t!=equipment]
  - >
   [_cardCategory:hatebear][_cardCategoryClass:hatebears][_bearClause:cmc=>1 cmc=<4 pow=>1][_customQuery:text="more to cast" text|="can't search" text|="players can't" text|="can't cast" text|="be cast" text|="chosen name"  text|="reveals his" text|="counter target" text|="?destroy target non" #_bearClause# text!="you cast" text!="you can't" text!="nonblack"]
  - >
@@ -62,3 +63,7 @@ searchableCardCategoryCustomQuery:
   [_cardCategory:draw seven][_cardCategoryClass:draw sevens][_customQuery:text="draw seven" text|="draws seven"]
  - >
   [_cardCategory:manland][_cardCategoryClass:manlands][_customQuery:t=land text="becomes a" text=creature]
+
+cardCategoryClassTerm: 
+- "[#searchableCardCategory#]#_cardCategoryClass#"
+- "[#searchableCardCategoryCustomQuery#]#_cardCategoryClass#"

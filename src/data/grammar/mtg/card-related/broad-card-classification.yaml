@@ -1,0 +1,13 @@
+broadCardClassification:
+- "#cardClassificationModifier##cardClassificationBase#"
+
+cardClassificationModifier:
+- "#basicColors# "
+- "#format# "
+- "#cardSet# "
+- ""
+
+cardClassificationBase:
+- cards
+- "#cardCategory.s#"
+- "#creatureTypes.s#"

@@ -1,0 +1,11 @@
+now THAT'S what I call Magic!
+I'm going ham
+I'M the beatdown
+cheese it—the cops!
+tut-tut, it looks like rain
+still had all these
+go to combat
+you can't even
+I can't get past the balls
+[_what:#count# copies of #randomRealCard#,#itemNoun.a#,#format.a# deck,#countFives# #cardCategory.s#]If you have #_what#, you have a Legacy deck
+[_who:Mama,Papa,Daddy,Baby]#_who# needs a new pair of [_things:shoes,shoes,#bodypartsPlural#,#pluralNoun#]#_things#!

@@ -1,0 +1,111 @@
+tipMoney:
+- "#titleMoney#: Spend more money on #mtgThing#"
+- "#titleMoney#: #investType.capitalize# #commodity# #investReason#"
+- "#titleMoney#: #investType.capitalize# #commodity#[_secondPosition:,#comma# #investType# #commodity#]#_secondPosition#"
+- "#titleMoney#: [_whoIs:#pro# is,#pros# #are#]#_whoIs.capitalize# #investingType# #broadCardClassification#;[_implication:should you?,don't get left behind,act #actWhenFinancial#] #_implication#"
+- '[_leadin:#titleMoney#,BREAKING]#_leadin#: Price of [_trend:spiking,skyrocketing,rising,plummeting,soaring,spiraling,crashing,dropping,tumbling]#commodity# #_trend#; [_financialPosition:market cornered by #financialStakeholders#,shorted by #financialStakeholders#,#financialStakeholders# cashing out,#financialStakeholders# investing heavily,#financialStakeholders# doubling down]#_financialPosition#'
+- '#urgentTitleMoney#: Team #team#''s new #constuctedFormat# deck #deckLocation#s #cardOrCategoryCommodity#, [_invest:invest #whenFinancial#,buy in #whenFinancial#,trade #whenFinancial#,move #whenFinancial#,cash out #whenFinancial#]#_invest#'
+- '#tipMoneyGameChanger#'
+
+tipMoneyGameChanger:
+- "[_improve:Improve,Increase,Pump up,Raise,Augment,Boost][_collection:collection,collection,online collection,binder][_valueType:,resale ,total ,trade ,market ,][_gameChanger:step up your game,make a name for yourself,#_improve# your #_collection#'s #_valueType#value]#_gameChanger.capitalize# by #stupidSolution#"
+
+titleMoney:
+- INVESTOR REPORT
+- MAGIC MONEY
+- TRADING REPORT
+- MAGIC FINANCE
+- MARKET WATCH
+
+urgentTitleMoney:
+- BREAKING
+- Leaked
+- INSIDER TIP
+
+cardOrCategoryCommodity:
+- "#randomCardAlone#"
+- "#randomCardAlone#"
+- "#cardCategory.s#"
+
+commodity:
+- "#randomCardAlone#"
+- "#randomCardAlone#"
+- "#randomCardAlone#"
+- "#randomCardAlone#"
+- "#cardCategory.s#"
+- "#cardCategory.s#"
+- "#gameAccessory.s#"
+
+investType:
+- short
+- buy
+- hold
+- hoard
+- sell
+- dump
+- cash out
+- invest in
+
+investingType:
+- shorting
+- buying
+- buying out
+- holding
+- hoarding
+- selling
+- dumping
+- cashing out
+
+investReason:
+- 'Before #randomCardAlone# is [_fate:banned,restricted,unbanned][_in: in #format#,]#_fate##_in#'
+- 'Before  [_rotation:#cardSet# rotates,#cardSet# rotates from #format#][_fate:#_rotation#,#teaserCardSet# is released,#teaserCardSet# arrives on MTGO,#tournament#]#_fate#'
+
+financialStakeholders:
+- online retailers
+- casual traders
+- speculators
+- LGS owners
+- counterfeiters
+- dealers
+- bulk collection buyers
+- tournament vendors
+- "[_mtgo:MODO,MTGO]#_mtgo# bots"
+- collectors
+- hedge fund managers
+- pharma bros
+- day traders
+- box mappers
+- backpack thieves
+- "#realMtgFinancialEntity#"
+- "#realMtgFinancialEntity#"
+- "#pros#"
+- "#pros#"
+- "#pros#"
+
+realMtgFinancialEntity:
+- MTGGoldfish
+- StarCityGames
+- TCGplayer
+- MTGO Traders
+- MOTL Users
+- PucaTrade refugees
+- /r/mtgfinance users
+
+actWhenFinancial:
+- fast
+- "#whenFinancial#"
+
+outcomeUndesirableFinancial:
+- get left behind
+- miss out
+
+whenFinancial:
+- now
+- right now
+- immediately
+- today
+- ASAP
+- soon
+- aggressively
+- "[_when:by,by this,before,before next]#_when# #dayOfTheWeek#"
+- "[_when:by,before]#_when# #occasion#"

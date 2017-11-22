@@ -1,0 +1,71 @@
+animal:
+- skunk
+- goose
+- giraffe
+- badger
+- monkey
+- spider monkey
+- puffer fish
+- scorpion
+- tarantula
+- mole rat
+- meerkat
+- mongoose
+- monitor lizard
+- garden snail
+- fruit bat
+- chinchilla
+- leopard shark
+- homing pigeon
+- skink
+- capybara
+- hermit crab
+- dik-dik
+- dormouse
+- wildebeest
+- fruit fly
+- hummingbird
+- botfly
+- baboon
+- beaver
+- carpenter ant
+- squirrel
+
+animalPlural: "#_animalPlural#[_fancyGroup:#_group#]"
+
+animalGroup: "[_group:horde][_animals:#animalPlural#]#_group# of #_animals#"
+
+animalFancyGroup: "[_group:horde][_animals:#_animalPlural#][_fancyGroup:#_group#]#_fancyGroup# of #_animals#"
+
+_animalPlural:
+- "[_fancyGroup:surfeit]skunks"
+- "[_fancyGroup:gaggle]geese"
+- "[_group:herd]giraffes"
+- "[_group:horde,colony,family]badgers"
+- "[_fancyGroup:troop,barrel]monkeys"
+- "[_fancyGroup:horde,troop,barrel]spider monkeys"
+- "[_group:school,swarm]puffer fish"
+- "[_group:swarm,nest]scorpions"
+- "[_group:horde,swarm]tarantulas"
+- "[_group:horde,colony,family]mole rats"
+- "[_group:horde,colony,family]meerkats"
+- "[_group:horde,colony,family]mongooses"
+- "[_group:herd,swarm]monitor lizards"
+- "garden snails"
+- "[_group:swarm,colony]fruit bats"
+- "[_group:horde,colony,family]chinchillas"
+- "[_group:swarm,school]leopard sharks"
+- "[_group:flock]homing pigeons"
+- "[_group:horde,colony,family]skinks"
+- "[_group:herd,family,horde]capybaras"
+- "[_group:swarm]hermit crabs"
+- "[_group:horde,colony,family]dik-diks"
+- "[_group:horde,colony,family]dormice"
+- "[_group:herd]wildebeests"
+- "[_group:swarm]fruit flies"
+- "[_group:flock,family]hummingbirds"
+- "[_group:swarm]botflies"
+- "[_fancyGroup:troop]baboons"
+- "[_group:horde,colony,family]beavers"
+- "[_group:horde,colony,swarm]carpenter ants"
+- "[_group:horde,colony,family]squirrels"

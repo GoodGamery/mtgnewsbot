@@ -1,11 +1,11 @@
 'use strict';
 
 function currentYear() {
-  return new Date().getFullYear();
+  return '' + new Date().getFullYear();
 }
 
 function dayOfWeek() {
-  return new Date().toLocaleString('en-us', {  weekday: 'long' });
+  return '' + new Date().toLocaleString('en-us', {  weekday: 'long' });
 }
 
 function dayOfWeekOccasion() {
@@ -14,12 +14,12 @@ function dayOfWeekOccasion() {
     'tuesday'   : ['Tribal', 'Two-Headed', 'Tamiyo', 'Teferi', 'Tezzeret', 'Tutor', 'Tuktuk', 'Tap-Out', 'Trample', 'Takklemaggot', 'True-Name', '0-2'],
     'wednesday' : ['Weird', 'Whiskey', 'Wizard', 'Welkin', 'Werebear', 'Westvale', 'Wither', 'Withengar', 'Wrexial'],
     'thursday'  : ['Throwback', 'Thassa', 'Thalia', 'Thopter', 'Thrull', 'Thragtusk', 'Thoughtseize'],
-    'friday'    : ['Flashback', 'Forgettable', 'Feldon', 'Faerie', 'Frog Tongue', 'Fatty', 'Fat Pants', 'French Vanilla','Fat Pack'],
+    'friday'    : ['Flashback', 'Forgettable', 'Feldon', 'Faerie', 'Frog Tongue', 'Fatty', 'Fat Pants', 'French Vanilla','Fat Pack', 'Finance'],
     'saturday'  : ['Standard', 'Singleton', 'Squirrel', 'Sea Kings\'', 'Satyr', 'Saprazzan', 'Standstill', 'Stasis', 'Storm Scale', 'Shuffler'],
     'sunday'    : ['Stompy', 'Suntail', 'Sun\'s Zenith', 'Sundering', 'Sulfuric', 'Sultai', 'Summoners', 'Spindown', 'Subreddit', 'Slow Play']
   };
   const todayDescriptors = descriptors[dayOfWeek().toLowerCase()];
-  return todayDescriptors[Math.floor(Math.random() * todayDescriptors.length)];
+  return '' + todayDescriptors[Math.floor(Math.random() * todayDescriptors.length)];
 }
 
 function dayOfWeekMotivation() {
@@ -33,7 +33,7 @@ function dayOfWeekMotivation() {
     'sunday'    : ['Sayings', 'Sophistry', 'Stupidity', 'Stories']
   };
   const todayDescriptors = descriptors[dayOfWeek().toLowerCase()];
-  return todayDescriptors[Math.floor(Math.random() * todayDescriptors.length)];
+  return '' + todayDescriptors[Math.floor(Math.random() * todayDescriptors.length)];
 }
 
 module.exports = { 

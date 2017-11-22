@@ -1,0 +1,114 @@
+strategyRealization:
+- "#pros.capitalize# don't realize that #techPlural# #verbDefeat# #obstacle#"
+- "The Importance of [_thing:#randomAnyCard#,#cardCategory.s#,#creatureTypes.capitalize.s#,#gameConcept#]#_thing# in [_where:#format#,#recentCardSet#]#_where#"
+- "The Secret to #improvementGoal.capitalizeAll# is #deckChange.capitalize#"
+- "#pro# Video Series: How I would [_change:improve,fix]#_change# [_improvable:Magic#colon# the Gathering,Magic Online,#format#,competitive Magic,#tournamentType# attendance]#_improvable# by #mtgOpinionSuggestion# #mtgThing#, Part #num2-9#"
+- "Preview of #teaserCardSet# #normalFormat#: will the new #deckVariation# deck be #deckDescription#?"
+
+playGuide:
+- 'CLASSIC STRATEGY: [_prefix:The Philosophy of,It''s All About the]#_prefix# [_thing:#massNoun#,#pluralNoun#,#abstractNoun#,#nouns#]#_thing.capitalizeAll#,
+  by #pro.capitalize#'
+- "[_proIs:#pro# is,#pros# #are#,Team #team# is]#_proIs.capitalize# #verbCreating# #tech.a# to #verbDefeat# #obstacle.capitalize#"
+- "#count.capitalize# #broadCardClassification.capitalizeAll# that should never have
+  Been [_verbed:printed,banned,unbanned,played,ignored]#_verbed#"
+- "[_proReveals:Top Pro #revealVerb.s#,#pro# #revealVerb.s#,#pros# #revealVerb#]#_proReveals.capitalizeAll#
+  #planNoun.capitalize# for #event#: Play #randomAnyCard# in #deck# to counter [_what:#randomCardAlone#,#deckArchOrCategory#]#_what#"
+- "#recentCardSet# [_format:Limited,Constucted]#_format# Set Review:[_color: #basicColors.capitalize#,]#_color#
+  #cardCategory.s.capitalizeAll# and [_other:#cardCategory#,#creatureTypes#]#_other.s.capitalizeAll#"
+- "#recentCardSet# #format# Set Review: [_cat:#basicColors#,#cardCategory.s# and #cardCategory.s#]#_cat.capitalizeAll#"
+- "#decktech#"
+
+tipStrategy:
+- 'The Case for #mtgOpinionSuggestion.capitalizeAll# [_bannedThing:#randomAnyCard#,#gameConcept#]#_bannedThing.capitalizeAll#[_where:
+  in #format#,]#_where#'
+- "#tipTitle#:[_change:Improve,Upgrade,Evolve,Update,Revise,Revitalize,Enliven,Fine-tune,Level up,Completely transform,Revolutionize,Boost,Freshen up,Revise,Customize,Jazz up,Enliven,Invigorate]
+  #_change# Your #deckObjective# by #deckChange#"
+- "#tipTitle#: #deckChange.capitalize# is #adj.a# idea, [_says:Says,Reports]#_says#
+  #pro#"
+- "[_title:#tipTitle#,#pro#]#_title.capitalize#: [_replacement:#randomAnyCard# can replace
+  #randomCardAlone#,#cardCategory.s# can replace #cardCategory.s#]#_replacement.capitalize#
+  in #format#"
+- "#tipTitle#: #improvementGoal.capitalize# by #deckChange#"
+
+tipTitle:
+- MTG TIPS
+- MTG ADVICE
+- DECKBUILDING TIPS
+- TIPS FROM THE PROS
+- BREAKING NEWS
+- DATING ADVICE
+- MAGIC ARCANA
+
+obstacle:
+- "#tournamentType.s#"
+- "#deckArchOrCategory#"
+- "#deckObjective#"
+- "#people#"
+- "#gameConcept#"
+- "#cardCategory.s#"
+
+deckChange:
+- 'adding [_what:#randomAnyCard#,#randomAnyCard#,#randomAnyCard#,#cardCategory.s#]#_what# to the #deckLocation#'
+- maindecking [_what:#randomAnyCard#,#cardCategory.s#]#_what#
+- 'sideboarding #randomAnyCard#'
+- removing [_what:#randomAnyCard#,#cardCategory.s#]#_what#
+- 'including #cardCopyCount# #randomAnyCard#'
+- 'cutting #randomCardAlone# for #randomAnyCard#'
+- using all foils
+- using only misprint cards
+
+deckLocation:
+- maindeck
+- sideboard
+
+tech:
+- deck
+- card
+- format
+- rules change
+- large set
+- sideboard
+- spicy new tech
+
+techPlural:
+- "#adj# decks"
+- "#adj# cards"
+- rotating formats
+- rules changes
+- floor rulings
+- power-level errata
+- large sets
+- small sets
+- sideboards
+- spicy new tech
+
+improvementGoal:
+- "[_challenge:winning,placing at,preparing for,#verbDefeating#]#_challenge# #tournamentType.s#"
+- "[_challenge:winning with,battling with,#verbDefeating#]#_challenge# #deckArchOrCategory#"
+- "[_challenge:winning against,defeating,outplaying,#verbDefeating#]#_challenge# #people#"
+- "[_challenge:understanding,exploiting,getting the most out of,#verbDefeating#]#_challenge#
+  #gameConcept#"
+- "[_challenge:using,winning with,understanding,answering,#verbDefeating#]#_challenge# #cardCategory.s#"
+
+stupidSolution:
+- 'adding subtle grillmarks to your #dualLands# playset'
+- 'hand-scrubbing the rules text off of every copy of #realNormalCard# you own'
+- 'letting children under #count# play with your cards'
+- 'purchasing #cardCopyCount# #copies# of #realBadCard# from our store [_howMuch:,for only #priceUSD#,for just #priceUSD#,for just #priceUSD# each]#_howMuch#'
+- 'adding "speed holes" to your #realPowerfulCard.s# with a hole punch'
+- "#verbStrictlyTransitiveGerund# your #realNormalCard.s# with a [_tool:telescope,band
+  saw,hammer,screwdriver,jackhammer,bolt cutter,pair of pliers]#_tool#"
+- "#verbSolutionGerund#"
+- "[_intimidate:polishing a gun in front of,muttering obscenities to yourself in front
+  of,showing your basement meat locker to,sharpening your katana in front of,squeezing
+  really hard when you shake the hand of]#_intimidate# the buyer"
+- 'destroying a copy of #dualLands# in front of the rest of your cards to set an example'
+- storing your cards in an extremely humid environment, like [_wet:a sauna,a wine
+  cellar,an enclosed shower,a gym bathroom]#_wet#
+- '[_denomination:,one-,five-,ten-,twenty-]using the "roll of #_denomination#dollar bills with a hundred on the outside" technique'
+- '[_action:enrolling in,signing up for,trying out,trying][_adj:new ,innovative ,popular ,state-of-the-art ,affordable ,curated,specially designed,selective ,acclaimed ,award-winning ]
+   [_programType:card,#cardCategory#,deck,#gameAccessory#,finance tip,strategy article]
+   [_program:our #_adj# #_programType.hyphenate.capitalizeAll#-of-the-Month program,MTGNewsbot Premium,our #_adj# #clubProName# Club]
+   #_action# #_program#'
+
+clubProName: "#pros.stripLeadingText(the ,true).capitalizeAll#"

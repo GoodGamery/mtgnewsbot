@@ -1,10 +1,10 @@
 {
     "cardCopyCount": [
-        "1",
-        "2",
-        "3",
-        "4",
-        "7"
+        "one[copies:copy]",
+        "two[copies:copies]",
+        "three[copies:copies]",
+        "four[copies:copies]",
+        "seven[copies:copies]"
     ],
     "deckNameNumber": [
         "1",

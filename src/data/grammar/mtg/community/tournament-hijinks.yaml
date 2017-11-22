@@ -1,0 +1,179 @@
+disqualifyingAction:
+- "[_reading:reading every card's,repeatedly reading #randomRealCard#'s]#_reading# flavor text out loud"
+- smirking
+- refusing to wear a shirt
+- "slowly encroaching #their# [_thing:cards,spindown dice,playmat,#creatureTypes# tokens,#gameAccessory#]#_thing# into
+  #their# opponent's play area"
+- using baseball hand signals to communicate with a teammate
+- getting a bit too close to the truth
+- "making [_sound:'dive bombing',motorcycle,low-pitched wimpering,'karate','car alarm','farting',loud yodeling]#_sound# [_noises:noises,sounds]#_noises# while casting removal on #their# opponents' creatures"
+- flexing
+- "failing to use #their# turn signal when changing lanes"
+- "breakdancing after a [_result:victory,victory,loss]#_result#"
+- 'repeatedly using the [_phraseOrTerm:phrase "#mtgCatchphrase.capitalize#",term "#mtgSlangTerm#"]#_phraseOrTerm#'
+- failing to file a tax return
+- abusing the hospitality of the judging staff
+- "peeking at #their# opponents' cards with [_what:a telescoping mirror,a tiny camera hidden in #their# #bodypart#,a surveillance monkey,a giant novelty magifying glass]#_what#"
+- "impersonating #creatureTypeOrCharacterClass.a#[_how:, without a permit, badly, in poor taste, despite repeated warnings]#_how#"
+- "[_adding:adding,adding #count#]#_adding# [_extra:extra,unregistered]#_extra# copies of #randomAnyCard# to #their# [_where:deck,card pool,#deck# deck]#_where#"
+- "using [_counterfeit:a counterfeit #gameAccessory#,counterfeit #gameAccessory.s#,counterfeit copies of #randomAnyCard#]#_counterfeit#"
+- "carrying a concealed #itemNoun# into the tournament venue"
+- "#verbIntransitiveGerund# like #creatureTypeOrCharacterClass.a#"
+- '[_saying:saying,shouting,screaming,muttering,whispering]repeatedly #_saying# "mtgCatchphrase.capitalize" [_circumstance:and revealing #count# copies of #randomRealCard# after every match,to the judges,to everybody within earshot,during the lunch break,and revealing #their# #bodypartsInPairs# after every match]#_circumstance#'
+- "attempting to bribe [_who:a judge,#their# opponent,#person#]#_who# with [_what:a single copy of #randomAnyCard#,#adj.a# #itemNoun#,#largeAmount.a# of #massNoun#]#_what#"
+- "insisting that #randomAnyCard# is playable in #format#"
+- conduct unbecoming an officer and a gentleman
+- unspecified rudeness
+- "#verbStrictlyIntransitiveGerund# in clear violation of the tournament guidelines"
+- "registering a [_count:#num1-9#,#num1-99#,#num1-999#]#_count#-card deck and #_count.a#-card sideboard"
+- inciting a very small riot
+- attempting to organize a tontine
+- 'playing "got your nose" with #their# opponent'
+- "killing a [_what:goat,#creatureTypes#]#_what# to read its entrails"
+- "not using #their# indoor voice"
+- shuffling wrong
+- burning popcorn in the venue microwave
+- not having Book Burning
+- harassing the local wildlife
+- "[_standup:standup of #historicalFigure#,#character# standup]propositioning a cardboard #_standup#"
+- "[_proTheir:#their#][_personality:#historicalFigure#,#character#]refusing to break character from #_proTheir# cosplay of #_personality#"
+- "[_adjective:,excessive ,inappropriate ,unenthusiastic ][_activity:crunking,swooping,icing,roughing of the passer,use of jazz hands,rushing]#_adjective# #_activity#"
+- "using mismatched [_art:basics,art,art for #their# playset of #randomRealCard.s#]#_art#"
+- not appreciating the value of friendship
+- telling sweet little lies
+- "leaving #their# turn signal on for far too long"
+- "taping without the express written permission of [_organization:the NFL,the DCI]#_organization#"
+- "releasing #animalGroup.a# into the tournament venue"
+- "tapping #their# cards [_how:counterclockwise,360 degrees,with a pair of chopsticks,using only #their# #bodyPart#]#_how#"
+- "[_mocking:mocking,ridiculing,making fun of,making light of]#_mocking# the magic storyline"
+- "throwing [_what:cards,#their# deck,#their# sideboard,#gameAccessory.a#, unsleeved copies of #randomReadCard#]#_what# across the table and shouting at #their# opponents"
+- ugly sleeves
+- continuing to play as if they are town
+- "offering to determine the match outcome via [_method:arm wrestling,thumb wrestling,a riddling contest,a staring contest,a hands-against-a-hard-body contest]#_method#"
+- trying to make fetch happen
+- not waiting for Floral Spuzzem to decide which artifact to destroy
+- attempting to draw the game with Fatespinner
+- attempting to file for compensation
+- improper handling of silverware
+- "blatant product placement[_when:, during a feature match, on #their# deck registration sheet]#_when#"
+- convincing #their# opponents to "deck swap"
+- banishing players to the Shadow Realm
+- "flipping the table after every [_what:win,loss,mulligan,deck check]#_what#"
+- flagrantly shotgunning [_what:PBRs,Mountain Dew,decaf coffee,La Croix,kombucha,Red Bull and zinfandel,motor oil,Easy Cheese,health juice,off-brand cola,Cool Whip,fancy mustards,barbeque sauce,cologne testers]#_what# between rounds
+- "[_emoting:enthusiastically pantomiming,physically acting out,creatively narrating]#_emoting# each of #their# spells"
+- "#crime#"
+- "#crime#"
+
+teamDisqualifyingAction:
+- '[_swapping:swapping,changing]#_swapping# outfits with each other between every round'
+- 'insisting on being [_called:called,referred to as,addressed as]#_called# "The #adj.capitalizeAll# #creatureTypeOrCharacterClass.capitalizeAll.s#"'
+- 'communicating through an elaborate system of clicks and whistles'
+- '[_singularNoun:#singularNoun#]wearing [_matching:matching,custom,hand-made]#_matching# t-shirts that say "#tshirtPhrase.capitalizeAll#"'
+- '[#pluralPronouns#]#disqualifyingAction#'
+- 'acutally being just [_what:one person in a very large costume,nine kids in three adult-sized suites,one person who kept changing hats]#_what#'
+- fighting over who gets the middle seat
+- "scouting [_what:opponents' decklists,opponents' sideboards,opponents' #gameAccessory.s#,potential dinner dates,for their new modeling agency,for their farm league team,the judge's amazon wishlists]#_what#"
+- sitting on each other's laps
+- continuing to play as if they are town
+- insisting that they're playing emperor
+- forming a Super PAC
+- attempting to regrow heads for R apiece
+- using fake moustaches to register twice and get better pairings
+
+tshirtPhrase:
+- "#singularNoun# #noun#"
+- "[_noun1:#singularNoun#][_noun2:#singularNoun#,#singularNoun#,#singularNoun#,#playerCategory#]#_noun1# #_noun2#"
+- "Not My #creatureTypeOrCharacterClass#"
+- "Show Me The #pluralNounOrMassNoun#"
+- I'm drafting [_what:#deckLimitedArchetype#,#basicColors#,#mtgColors#,#cardCategory.s#,#cardCategoryClassTerm#]#_what#
+- "[_personality:#historicalFigure#,#pro#,#character#]Free #_personality#"
+- "[_personality:#historicalFigure#,#pro#,#character#]I ❤ #_personality#"
+- "[_noun:#abstractNoun#,#singularNoun#,#emotion#]#_noun# #nounVagueConcept#"
+- "I'm drafting #cardCategoryClassTerm#"
+- "[_personality:#historicalFigure#,#character#]I'm with #_personality#"
+
+dumbScenario:
+- attempt to roll back the damage-on-stack rules
+- 'join the development team of their fantasy CCG [_gameName:"#creatureTypes# #placeNoun#","Zoxelorn
+  #count#","#abstractMassOrPluralNounOrEmotion# #_fantasyCharacterClass#","#itemNoun# #_scenarioNoun#","#characterClass# #groupNoun##colon# #tabletopGameSuffix#","#creatureTypes# #_scenarioNoun##colon# the #abstractNoun#", "#characterClass.s# of #locationRealOrFantasy#"]#_gameName.capitalizeAll#'
+- join their [_rule:"Fist Bump,"Get Completely Loaded,"Drive With Your Eyes Closed,"Watch
+  Anime,"Don't Pay Your Taxes,"Wander Aimlessly]#_rule# For Charity" initiative
+- participate in their [_magicType:Two-Headed Giant,Pauper EDH,Vintage Singleton,No
+  LD/No Counters/No Burn]#_magicType# invitational tournament
+- 'covertly collect information on #pro# in order to [_rule:learn their shuffling
+  routine,get a better idea of what they look like naked,know what hate cards to board
+  in against them]#_rule#'
+- infiltrate WOTC headquarters and destroy the reserved list
+- 'teach them how to beat #deck#'
+- fix MTGO so that it works properly
+- 'help them complete their #realBadCard# playset'
+
+_fantasyCharacterClass:
+- "#fantasyCharacterClass#"
+- "#fantasyCharacterPluralClass#"
+
+fantasyCharacterClass:
+- mage
+- warrior
+- fighter
+- knight
+- baron
+
+locationRealOrFantasy:
+- "#nonPlaneStoryLocation#"
+- "#city#"
+
+fantasyCharacterPluralClass:
+- lords
+- tribes
+- farmers
+- summoners
+- kings
+- heroes
+
+groupNoun:
+- squad
+- batallion
+- crew
+- division
+- cult
+- brigade
+- party
+- force
+- patrol
+- bros.
+
+_scenarioNoun:
+- "#collectiveActionOrRealm#"
+- "#_scenarioNoun#"
+
+scenarioNoun:
+- heist
+- attack
+- war
+- battle
+- throwdown
+- smackdown
+- showdown
+- quest
+- legacy
+- age
+- race
+- assault
+- alert
+- clash
+- legacy
+- party
+- corps
+- rally
+- encounter
+- brawl
+
+fateSuffix:
+- cide
+
+tabletopGameSuffix:
+- legacy
+- the game
+- "[_gameType:the board,the card,the adventure card,the living card,a #placeNoun# game]#_gameType# game"
+- "#creatureTypeOrCharacterClass.s# vs. #creatureTypeOrCharacterClass.s#"
