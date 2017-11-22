@@ -16,7 +16,16 @@ cp ./src/data/fonts/*.ttf /usr/local/share/fonts
 npm install --production
 
 # tweet
-node --harmony mtgnews --tweet --toot --discord
+
+if
+  [ -z "$1" ]
+then 
+  # tweet random headline
+  node --harmony mtgnews --tweet --toot --discord
+else
+  # tweet specified headline
+  node --harmony mtgnews --tweet --toot --discord -o "#$1#"
+fi
 
 #silent
 set +x
