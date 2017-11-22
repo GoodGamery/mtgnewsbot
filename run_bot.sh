@@ -6,4 +6,4 @@ git pull
 git submodule update --remote
 
 # do a tweet
-sh "./tweet.sh"
+sh ./tweet.sh "$@"
