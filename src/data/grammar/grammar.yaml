@@ -151,21 +151,6 @@ magicStorylineHighlight:
 - "#character#'s #magicStoryPlotAdj# [_quest:quest,ordeal,campaign,odyssey,#planNoun#]#_quest# to [_fate:defeat,rescue,confront,#verbTransitive#]#_fate# #storyCharacter#"
 - "[_originStory:#originStoryOverview##colon# #originStoryDetails#,#originStoryDetails##colon# #originStoryOverview#]#_originStory#"
 
-tournamentNews:
-- 'Emergency Banning: #randomCardAlone.capitalize# Banned in #format#'
-- "#randomCardAlone.capitalize# Banned in #format.capitalizeAll# After [winner:#deck#,#pro#]#winner.capitalizeAll# Wins #tournament.capitalizeAll#"
-- "#tournamentRound#: #pro# vs. [_opp:#otherPersonality#,Evil #pro#,Cyborg #pro#,Baby #pro#,Bizarro #pro#,Dr. #pro# M.D.,a Cardboard Cutout of #pro#,#adj.a# #creatureTypes#]#_opp.capitalizeAll#"
-- "[winner:#pro#,#deck#]#winner# #winWord# [where:at #tournament#,in #city#]#where#"
-- 'Pro Tour #teaserCardSet# will be in #city#'
-- '#pro#, after winning #event# with #deckVariation#: [_comment:It''s #deckDescription#.,#mtgCatchphrase.capitalize#]"#_comment#"'
-- "[_rule:SHOCKER!,BREAKING#colon#,TOURNAMENT UPDATE#colon#,,,,]#_rule# #pro# [_rule:has been DQ'd from,has been suspended from,has been disqualified from,ejected from]#_rule# #event# for #disqualifyingAction#"
-- "Match highlight: #pro# [_defeats:edges out,beats,defeats,routs]#_defeats# #pro# with #randomAnyCard# in round #count# to [_getAhead:lock up,advance in,take down]#_getAhead# #event#"
-- "#pro# topdecks #randomAnyCard# to #verbDefeat# [_opponent:#pro#,#person#]#_opponent#[_when:,, in the finals, and win it all]#_when# #atTournamentInCity#"
-
-teamTournamentNews:
-- '[_series:Team Series,#format# team trios]#_series# #tournamentWonWord# by Team #team# #atTournamentInCity#'
-- "BREAKING#colon# Team #team# disqualified from #tournament# for #teamDisqualifyingAction#"
-
 tipStrategy:
 - 'The Case for #mtgOpinionSuggestion.capitalizeAll# [_bannedThing:#randomAnyCard#,#gameConcept#]#_bannedThing.capitalizeAll#[_where:
   in #format#,]#_where#'
@@ -216,21 +201,6 @@ playguide:
 - "#recentCardSet# #format# Set Review: [_cat:#basicColors#,#cardCategory.s# and #cardCategory.s#]#_cat.capitalizeAll#"
 - "#decktech#"
 
-tournamentRound:
-- "[_tournament:#tournament.capitalize# ,]#_tournament#[_round:Round #num2-9#,Quarterfinals,Semifinals,Finals]#_round#
-  Feature Match"
-- Grudge Match
-- "#format# Super League [_round:Quarterfinals,Semifinals,Finals]#_round#"
-- MOCS [_round:Quarterfinals,Semifinals,Finals]#_round#
-
-itemOrCreatureType:
-- "#itemNoun#"
-- "#creatureTypes#"
-
-creatureTypeOrCharacterClass:
-- "#creatureTypes#"
-- "#characterClass#"
-
 tipTitle:
 - MTG TIPS
 - MTG ADVICE
@@ -239,13 +209,6 @@ tipTitle:
 - BREAKING NEWS
 - DATING ADVICE
 - MAGIC ARCANA
-
-titleMoney:
-- INVESTOR REPORT
-- MAGIC MONEY
-- TRADING REPORT
-- MAGIC FINANCE
-- MARKET WATCH
 
 deckChange:
 - 'adding [_what:#randomAnyCard#,#randomAnyCard#,#randomAnyCard#,#cardCategory.s#]#_what# to the #deckLocation#'

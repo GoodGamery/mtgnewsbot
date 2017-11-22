@@ -1,10 +1,22 @@
 tipMoney:
-# - "#titleMoney#: Spend more money on #thing#"
-# - "#titleMoney#: #investType.capitalize# #commodity# #investReason#"
-# - "#titleMoney#: #investType.capitalize# #commodity#[_secondPosition:,#comma# #investType# #cardOrCategoryCommodity#]#_secondPosition#"
-- "#titleMoney#: [_whoIs:#pro# is,#pros# are]#_whoIs.capitalize# #investType#ing #broadCardClassification#;[_implication:Should you?,Don't get left behind,Act #actWhenFinancial#] #_implication#"
-# - '[_leadin:#titleMoney#,BREAKING]#_leadin#: Price of [_trend:spiking,skyrocketing,rising,plummeting,soaring,spiraling,crashing,dropping,tumbling]#cardOrCategoryCommodity# #_trend#; [_financialPosition:market cornered by #financialStakeholders#,shorted by #financialStakeholders#,#financialStakeholders# cashing out,#financialStakeholders# investing heavily,#financialStakeholders# doubling down]#_financialPosition#'
-# - 'Leaked: Team #team#''s new #constuctedFormat# deck #deckLocation#s #cardOrCategoryCommodity#, [_invest:invest #whenFinancial#,buy in #whenFinancial#,trade #whenFinancial#,move #whenFinancial#,cash out #whenFinancial#]#_invest#'
+- "#titleMoney#: Spend more money on #thing#"
+- "#titleMoney#: #investType.capitalize# #commodity# #investReason#"
+- "#titleMoney#: #investType.capitalize# #commodity#[_secondPosition:,#comma# #investType# #commodity#]#_secondPosition#"
+- "#titleMoney#: [_whoIs:#pro# is,#pros# are]#_whoIs.capitalize# #investingType# #broadCardClassification#;[_implication:should you?,don't get left behind,act #actWhenFinancial#] #_implication#"
+- '[_leadin:#titleMoney#,BREAKING]#_leadin#: Price of [_trend:spiking,skyrocketing,rising,plummeting,soaring,spiraling,crashing,dropping,tumbling]#commodity# #_trend#; [_financialPosition:market cornered by #financialStakeholders#,shorted by #financialStakeholders#,#financialStakeholders# cashing out,#financialStakeholders# investing heavily,#financialStakeholders# doubling down]#_financialPosition#'
+- '#urgentTitleMoney#: Team #team#''s new #constuctedFormat# deck #deckLocation#s #cardOrCategoryCommodity#, [_invest:invest #whenFinancial#,buy in #whenFinancial#,trade #whenFinancial#,move #whenFinancial#,cash out #whenFinancial#]#_invest#'
+
+titleMoney:
+- INVESTOR REPORT
+- MAGIC MONEY
+- TRADING REPORT
+- MAGIC FINANCE
+- MARKET WATCH
+
+urgentTitleMoney:
+- BREAKING
+- Leaked
+- INSIDER TIP
 
 cardOrCategoryCommodity:
 - "#randomCardAlone#"
@@ -14,15 +26,31 @@ cardOrCategoryCommodity:
 commodity:
 - "#randomCardAlone#"
 - "#randomCardAlone#"
+- "#randomCardAlone#"
+- "#randomCardAlone#"
 - "#cardCategory.s#"
-- "#gameAccessory#"
+- "#cardCategory.s#"
+- "#gameAccessory.s#"
 
 investType:
 - short
 - buy
+- buy out
 - hold
 - hoard
 - sell
+- dump
+- cash out
+
+investingType:
+- shorting
+- buying
+- buying out
+- holding
+- hoarding
+- selling
+- dumping
+- cashing out
 
 investReason:
 - 'Before #randomCardAlone# is [_fate:banned,restricted,unbanned][_in: in #format#,]#_fate##_in#'
@@ -34,6 +62,9 @@ financialStakeholders:
 - speculators
 - LGS owners
 - counterfeiters
+- dealers
+- bulk collection buyers
+- tournament vendors
 - "[_mtgo:MODO,MTGO]#_mtgo# bots"
 - collectors
 - hedge fund managers
@@ -41,16 +72,32 @@ financialStakeholders:
 - day traders
 - box mappers
 - backpack thieves
+- "#realMtgFinancialEntity#"
+- "#realMtgFinancialEntity#"
 - "#pros#"
 - "#pros#"
 - "#pros#"
+
+realMtgFinancialEntity:
+- MTGGoldfish
+- StarCityGames
+- TCGplayer
+- MTGO Traders
+- MOTL Users
+- PucaTrade refugees
+- /r/mtgfinance users
 
 actWhenFinancial:
 - fast
 - "#whenFinancial#"
 
+outcomeUndesirableFinancial:
+- get left behind
+- miss out
+
 whenFinancial:
 - now
+- right now
 - immediately
 - today
 - ASAP

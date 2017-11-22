@@ -10,4 +10,4 @@ cardClassificationModifier:
 cardClassificationBase:
 - cards
 - "#cardCategory.s#"
-- "#creatureTypes.s.capitalize#"
+- "#creatureTypes.s#"

@@ -1,0 +1,7 @@
+itemOrCreatureType:
+- "#itemNoun#"
+- "#creatureTypes#"
+
+creatureTypeOrCharacterClass:
+- "#creatureTypes#"
+- "#characterClass#"
