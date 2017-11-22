@@ -17,7 +17,7 @@ curatedHeadlineA3:
 curatedHeadlineA4:
 - "#mtgComic#"
 - "#randomTextHeadline#"
-- "##"
+- "#financeHeadline#"
 
 curatedHeadlineA5:
 - "#imgClassifieds#"
@@ -47,6 +47,7 @@ curatedHeadlineB3:
 curatedHeadlineB4:
 - "#inGraphics#"
 - "#randomTextHeadline#"
+- "#flavorHeadline#"
 
 curatedHeadlineB5:
 - "#graphicAnnouncement#"
