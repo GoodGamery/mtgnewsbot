@@ -1,41 +1,48 @@
 
 curatedHeadlineA1:
 - "#tipStrategy#"
-- "#smallImageHeadline1#"
+- "#smallImageHeadlineOrRandomText1#"
+- "#smallImageHeadlineOrRandomText1#"
 
 curatedHeadlineA2:
 - "#headlineKeepOrMulligan#"
 - "#randomTextHeadline#"
+- "#strategyHeadline#"
 
 curatedHeadlineA3:
 - "#clickbait#"
-- "#smallImageHeadline2#"
+- "#smallImageHeadlineOrRandomText2#"
+- "#smallImageHeadlineOrRandomText2#"
 
 curatedHeadlineA4:
 - "#mtgComic#"
 - "#randomTextHeadline#"
+- "##"
 
 curatedHeadlineA5:
 - "#imgClassifieds#"
-- "#smallImageHeadline1#"
+- "#smallImageHeadlineOrRandomText1#"
+- "#smallImageHeadlineOrRandomText1#"
 
 curatedHeadlineA6:
 - "#inGraphics#"
 - "#randomTextHeadline#"
-- "#randomTextHeadline#"
+- "#flavorHeadline#"
 
 curatedHeadlineB1:
 - "#mediumImageHeadline1#"
-- "#smallImageHeadline2#"
+- "#smallImageHeadlineOrRandomText2#"
+- "#smallImageHeadlineOrRandomText2#"
 
 curatedHeadlineB2:
 - "#mtgComic#"
 - "#randomTextHeadline#"
-- "#randomTextHeadline#"
+- "#communityNews#"
 
 curatedHeadlineB3:
 - "#mtgDeckTechGraphic#"
-- "#smallImageHeadline1#"
+- "#smallImageHeadlineOrRandomText1#"
+- "#smallImageHeadlineOrRandomText1#"
 
 curatedHeadlineB4:
 - "#inGraphics#"
@@ -43,12 +50,13 @@ curatedHeadlineB4:
 
 curatedHeadlineB5:
 - "#graphicAnnouncement#"
-- "#smallImageHeadline2#"
+- "#smallImageHeadlineOrRandomText2#"
+- "#smallImageHeadlineOrRandomText2#"
 
 curatedHeadlineB6:
 - "#headlineKeepOrMulligan#"
 - "#randomTextHeadline#"
-- "#randomTextHeadline#"
+- "#financeHeadline#"
 
 randomTextHeadline:
 - "#tipStrategy#"
@@ -79,11 +87,8 @@ mediumImageHeadline2:
 - "#imgClassifieds#"
 - "#imgClassifieds#"
 
-#### ----------
-
-
-_clickbait:
-- "#clickbait#"
+clickbaitHeadline:
+- "#clickbaitHeadline#"
 
 strategyHeadline:
 - "#tipStrategy#"
@@ -104,3 +109,14 @@ communityNews:
 - "#tournamentNews#"
 - "#teamTournamentNews#"
 - "#proTeamAnnouncement#"
+
+smallImageHeadlineOrRandomText1:
+- "#smallImageHeadline1#"
+- "#randomTextHeadline#"
+- "#randomTextHeadline#"
+
+smallImageHeadlineOrRandomText2:
+- "#smallImageHeadline2#"
+- "#randomTextHeadline#"
+- "#randomTextHeadline#"
+
