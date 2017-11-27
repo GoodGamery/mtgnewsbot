@@ -97,7 +97,7 @@ dumbScenario:
 - 'join the development team of their fantasy CCG [_gameName:"#creatureTypes# #placeNoun#","Zoxelorn
   #count#","#abstractMassOrPluralNounOrEmotion# #_fantasyCharacterClass#","#itemNoun# #_scenarioNoun#","#characterClass# #groupNoun##colon# #tabletopGameSuffix#","#creatureTypes# #_scenarioNoun##colon# the #abstractNoun#", "#characterClass.s# of #locationRealOrFantasy#"]#_gameName.capitalizeAll#'
 - join their [_rule:"Fist Bump,"Get Completely Loaded,"Drive With Your Eyes Closed,"Watch
-  Anime,"Don't Pay Your Taxes,"Wander Aimlessly]#_rule# For Charity" initiative
+  Anime,"Don't Pay Your Taxes,"Wander Aimlessly]#_rule# For Charity" [_initiative:initiative,campaign,drive,effort]#_initiative#
 - participate in their [_magicType:Two-Headed Giant,Pauper EDH,Vintage Singleton,No
   LD/No Counters/No Burn]#_magicType# invitational tournament
 - 'covertly collect information on #pro# in order to [_rule:learn their shuffling
