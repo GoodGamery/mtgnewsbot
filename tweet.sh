@@ -18,13 +18,15 @@ npm install --production
 # tweet
 
 if
-  [ -z "$1" ]
+  [ -z "$2" ]
 then 
   # tweet random headline
+  echo "generating random headline"
   node --harmony mtgnews --tweet --toot --discord
 else
   # tweet specified headline
-  node --harmony mtgnews --tweet --toot --discord -o "#$1#"
+  echo "generating headline with origin \"#$2#\""  
+  node --harmony mtgnews --tweet --toot --discord -o "#$2#"
 fi
 
 #silent

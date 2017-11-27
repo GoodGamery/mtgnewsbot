@@ -11,6 +11,9 @@
     "test": "gulp lint && node --harmony mtgnews -c 10",
     "watch": "gulp"
   },
+  "engines": {
+    "node": ">=7.6.0"
+  },
   "dependencies": {
     "commander": "2.11.0",
     "fs-extra": "4.0.1",
