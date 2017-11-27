@@ -9,7 +9,7 @@ clickbait:
 - '[_change:,more ,less ,running ]Have you considered? [_consider:#randomAnyCard# in #format#,#deckArch#,#deckArch#,#_change##cardCategory.s# in #deckArch#]#_consider.capitalize#'
 - 'PICTURES: #pro.capitalize#''s [_cosplayAdj:amazing,convincing,elaborate,unconventional]#_cosplayAdj#
   cosplay of [_who:#randomCardAlone#,#character#]#_who#'
-- 'New preview card from #teaserCardSet#! Is it #descriptor.a# #realPowerfulCard#?'
+- 'New preview card from #teaserCardSet#! Is it [_desc:#descriptor#,#adjComparative#]#_desc.a# #realPowerfulCard#?'
 - "[_opener:SHOCKER!,Unbelievable!,Rumor#colon#,BREAKING#colon#,It's true#colon#,UPDATE#colon#]#_opener#
   #pro# [_rule:petitioned,solicited,approached,contacted,called out]#_rule# by #wackyCharacter#
   to #dumbScenario#"

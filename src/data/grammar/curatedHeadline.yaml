@@ -1,13 +1,14 @@
 
 curatedHeadlineA1:
 - "#tipStrategy#"
-- "#smallImageHeadlineOrRandomText1#"
+- "#smallImageHeadline1#"
 - "#smallImageHeadlineOrRandomText1#"
 
 curatedHeadlineA2:
 - "#headlineKeepOrMulligan#"
-- "#randomTextHeadline#"
 - "#strategyHeadline#"
+- "#strategyHeadline#"
+- "#randomTextHeadline#"
 
 curatedHeadlineA3:
 - "#clickbait#"
@@ -16,37 +17,40 @@ curatedHeadlineA3:
 
 curatedHeadlineA4:
 - "#mtgComic#"
-- "#randomTextHeadline#"
 - "#financeHeadline#"
+- "#financeHeadline#"
+- "#randomTextHeadline#"
 
 curatedHeadlineA5:
 - "#imgClassifieds#"
-- "#smallImageHeadlineOrRandomText1#"
+- "#smallImageHeadline1#"
 - "#smallImageHeadlineOrRandomText1#"
 
 curatedHeadlineA6:
 - "#inGraphics#"
-- "#randomTextHeadline#"
 - "#flavorHeadline#"
+- "#flavorHeadline#"
+- "#randomTextHeadline#"
 
 curatedHeadlineB1:
 - "#mediumImageHeadline1#"
-- "#smallImageHeadlineOrRandomText2#"
 - "#smallImageHeadlineOrRandomText2#"
 
 curatedHeadlineB2:
 - "#mtgComic#"
 - "#randomTextHeadline#"
 - "#communityNews#"
+- "#communityNews#"
 
 curatedHeadlineB3:
 - "#mtgDeckTechGraphic#"
-- "#smallImageHeadlineOrRandomText1#"
+- "#smallImageHeadline1#"
 - "#smallImageHeadlineOrRandomText1#"
 
 curatedHeadlineB4:
 - "#inGraphics#"
 - "#randomTextHeadline#"
+- "#flavorHeadline#"
 - "#flavorHeadline#"
 
 curatedHeadlineB5:
@@ -56,10 +60,12 @@ curatedHeadlineB5:
 
 curatedHeadlineB6:
 - "#headlineKeepOrMulligan#"
-- "#randomTextHeadline#"
 - "#financeHeadline#"
+- "#financeHeadline#"
+- "#randomTextHeadline#"
 
 randomTextHeadline:
+- "#flavorHeadline#"
 - "#tipStrategy#"
 - "#strategyRealization#"
 - "#playGuide#"
