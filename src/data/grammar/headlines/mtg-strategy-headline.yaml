@@ -1,7 +1,7 @@
 strategyRealization:
 - "#pros.capitalize# don't realize that #techPlural# #verbDefeat# #obstacle#"
 - "The Importance of [_thing:#randomAnyCard#,#cardCategory.s#,#creatureTypes.capitalize.s#,#gameConcept#]#_thing# in [_where:#format#,#recentCardSet#]#_where#"
-- "The Secret to #improvementGoal.capitalizeAll# is #deckChange.capitalize#"
+- "The Secret to #improvementGoal# is #deckChange#"
 - "#pro# Video Series: How I would [_change:improve,fix]#_change# [_improvable:Magic#colon# the Gathering,Magic Online,#format#,competitive Magic,#tournamentType# attendance]#_improvable# by #mtgOpinionSuggestion# #mtgThing#, Part #num2-9#"
 - "Preview of #teaserCardSet# #normalFormat#: will the new #deckVariation# deck be #deckDescription#?"
 
@@ -10,7 +10,7 @@ playGuide:
   by #pro.capitalize#'
 - "[_proIs:#pro# is,#pros# #are#,Team #team# is]#_proIs.capitalize# #verbCreating# #tech.a# to #verbDefeat# #obstacle.capitalize#"
 - "#count.capitalize# #broadCardClassification.capitalizeAll# that should never have
-  Been [_verbed:printed,banned,unbanned,played,ignored]#_verbed#"
+  been [_verbed:printed,banned,unbanned,played,ignored,reprinted]#_verbed#"
 - "[_proReveals:Top Pro #revealVerb.s#,#pro# #revealVerb.s#,#pros# #revealVerb#]#_proReveals.capitalizeAll#
   #planNoun.capitalize# for #event#: Play #randomAnyCard# in #deck# to counter [_what:#randomCardAlone#,#deckArchOrCategory#]#_what#"
 - "#recentCardSet# [_format:Limited,Constucted]#_format# Set Review:[_color: #basicColors.capitalize#,]#_color#
@@ -23,7 +23,7 @@ tipStrategy:
   in #format#,]#_where#'
 - "#tipTitle#:[_change:Improve,Upgrade,Evolve,Update,Revise,Revitalize,Enliven,Fine-tune,Level up,Completely transform,Revolutionize,Boost,Freshen up,Revise,Customize,Jazz up,Enliven,Invigorate]
   #_change# Your #deckObjective# by #deckChange#"
-- "#tipTitle#: #deckChange.capitalize# is #adj.a# idea, [_says:Says,Reports]#_says#
+- "#tipTitle#: #deckChange.capitalize# is #adj.a# idea, [_says:says,reports,suggests,admits,warns,advises,proposes,cautions,according to]#_says#
   #pro#"
 - "[_title:#tipTitle#,#pro#]#_title.capitalize#: [_replacement:#randomAnyCard# can replace
   #randomCardAlone#,#cardCategory.s# can replace #cardCategory.s#]#_replacement.capitalize#
@@ -49,13 +49,14 @@ obstacle:
 
 deckChange:
 - 'adding [_what:#randomAnyCard#,#randomAnyCard#,#randomAnyCard#,#cardCategory.s#]#_what# to the #deckLocation#'
-- maindecking [_what:#randomAnyCard#,#cardCategory.s#]#_what#
+- 'maindecking [_what:#randomAnyCard#,#cardCategory.s#]#_what#'
 - 'sideboarding #randomAnyCard#'
-- removing [_what:#randomAnyCard#,#cardCategory.s#]#_what#
-- 'including #cardCopyCount# #randomAnyCard#'
+- 'removing [_what:#randomAnyCard#,#cardCategory.s#]#_what#'
+- 'playing [_change:more,fewer]#_change# #cardCategory.s#'
+- 'including #cardCopyCount# copies of #randomAnyCard#'
 - 'cutting #randomCardAlone# for #randomAnyCard#'
-- using all foils
-- using only misprint cards
+- 'using all foils'
+- 'using only misprint cards'
 
 deckLocation:
 - maindeck

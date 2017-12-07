@@ -31,7 +31,7 @@ _duelDecksStyleText:
   - "#_duelDecksStyleTextAllCaps#"
 
 _duelDecksStyleTextAllCaps:
-  - "[_combatant1:#_duelDecksCombatant1.allCaps#][_combatant2:#_duelDecksCombatant2.allCaps#][_logoIndex:#_duelDecksLogo#]"
+  - "[_combatant1:#_combatant1.allCaps#][_combatant2:#_combatant2.allCaps#][_logoIndex:#_duelDecksLogo#]"
 
 _duelDecksStyleTextCapitalize:
   - "[_combatant1:#_duelDecksCombatant1.capitalizeAll#][_combatant2:#_duelDecksCombatant2.capitalizeAll#][_logoIndex:#_duelDecksLogo#]"

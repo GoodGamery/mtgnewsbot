@@ -1,6 +1,6 @@
 clickbait:
 - Are you [_verbing:overrating,underrating]#_verbing# [_thing:#gameConcept#,#randomAnyCard#,#deckArchOrCategory#,#creatureTypes.s#,#cardSet#]#_thing#?
-- "[interrogative:Why,How]#interrogative# #pro# is #verbDefeating.capitalizeAll# #nouns.capitalize#"
+- "[interrogative:Why,How]#interrogative# #pro# is #verbDefeating# #nouns#"
 - "#count.capitalize# [_thing:#cardCategory.s#,#creatureTypes.s#,#cardSet# Cards,#format#
   Cards]#_thing.capitalize# [reprinted:That Need to be Reprinted,We'd Love to See
   Reprinted in #teaserCardSet#]#reprinted#"
