@@ -1,4 +1,4 @@
-now [_phrase:THAT'S what I call Magic,that's what *I* call Magic,that's what I call MAGIC]#_now#!
+now [_phrase:THAT'S what I call Magic,that's what *I* call Magic,that's what I call MAGIC]#_phrase#!
 I'm going ham
 I'M the beatdown
 cheese it—the cops!

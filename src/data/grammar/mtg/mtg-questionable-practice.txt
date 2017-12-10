@@ -1,19 +1,22 @@
 pile shuffling
 using marked cards
-[_nonlegal:gold-bordered,silver-bordered,Yu-Gi-Oh,playtest,artists' proof,Collectors' Edition,Microprose,playtest,marked]#_nonlegal# cards
+[_nonlegal:gold-bordered,silver-bordered,Yu-Gi-Oh,playtest,artists' proof,Collectors' Edition,Microprose,playtest,marked,oversized,dexterity,ante]#_nonlegal# cards
 mana weaving
 outside assistance
-pinch-hitting
+"pinch-hitting"
 netdecking
 playing with your cards facing your opponent
-playing [_num:five,six,eight,#num11-99#,unlimited] copies of [_card:#randomAnyCard#,any card]#_card#
+playing [_num:five,six,eight,#num11-99#,unlimited]#_num# copies of [_card:#randomAnyCard#,any card]#_card#
 #randomAnyCard#
 using the phrase [_phrase:#mtgCatchphrase#,#mtgSlangTerm#]"#_phrase#"
 misrepsenting the game state
 using face-down sideboard cards as tokens
-friendly mulligans
+"friendly" mulligans
 pre-sideboarding
 slow play
 randomly determining match outcomes
+moving to combat
+[_takebacks:takebacks,take-backsies]#_takebacks#
 [_error:bribery,collusion,insufficient shuffling,stalling,cheating]#_error#
 [_one:voodoo,mysticism,evil eyes,trickery][_two:witchcraft,hocus-pocus,guile,chicanery,skullduggery][_three:curses,hexes,pseudoscience,legerdemain,disguises,prophecy,subterfuge] #_one#, #_two#, and #_three#
+
