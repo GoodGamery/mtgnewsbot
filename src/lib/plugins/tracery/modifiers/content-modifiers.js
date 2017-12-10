@@ -15,7 +15,7 @@ function randomInt(minOrMaxArg, maxArg) {
 
 // returns a string representation of a date in "Month Day" format with ordinal day, e.g. November 18th
 function getMonthDayOrdinal(date) {
-  return date.toLocaleString('en-us', {  month: 'long' }) + ' ' + getOrdinalNum(date.toLocaleString('en-us', {  day: 'numeric' }))
+  return date.toLocaleString('en-us', {  month: 'long' }) + ' ' + getOrdinalNum(date.toLocaleString('en-us', {  day: 'numeric' }));
 }
 
 // MODIFIERS
@@ -42,20 +42,6 @@ function dayOfWeekOccasion() {
   return '' + todayDescriptors[Math.floor(Math.random() * todayDescriptors.length)];
 }
 
-
-// returns a random month / day other than today's date
-function randomMonthDay() {
-  const date = new Date();
-  date.setDate(date.getDate() + randomInt(1, 364)); // choose a day 7-60 days in future
-  return getMonthDayOrdinal(date);
-}
-
-function randomUpcomingMonthDay() {
-  const date = new Date();
-  date.setDate(date.getDate() + randomInt(7, 60)); // choose a day 7-60 days in future
-  return getMonthDayOrdinal(date);
-}
-
 function dayOfWeekMotivation() {
   const descriptors = {
     'monday'    : ['Motivation', 'Mottos', 'Misconceptions', 'Madness', 'Malarkey', 'Mumbo Jumbo', 'Messages'],
@@ -70,9 +56,24 @@ function dayOfWeekMotivation() {
   return '' + todayDescriptors[Math.floor(Math.random() * todayDescriptors.length)];
 }
 
+// returns a random month / day other than today's date
+function randomMonthDay() {
+  const date = new Date();
+  date.setDate(date.getDate() + randomInt(1, 364)); // choose a day 7-60 days in future
+  return getMonthDayOrdinal(date);
+}
+
+function randomUpcomingMonthDay() {
+  const date = new Date();
+  date.setDate(date.getDate() + randomInt(7, 60)); // choose a day 7-60 days in future
+  return getMonthDayOrdinal(date);
+}
+
 module.exports = { 
   currentYear,
   dayOfWeek,
   dayOfWeekOccasion,
-  dayOfWeekMotivation
+  dayOfWeekMotivation,
+  randomMonthDay,
+  randomUpcomingMonthDay
 };
