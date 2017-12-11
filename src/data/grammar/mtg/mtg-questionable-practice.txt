@@ -1,22 +1,88 @@
 pile shuffling
 using marked cards
-[_nonlegal:gold-bordered,silver-bordered,Yu-Gi-Oh,playtest,artists' proof,Collectors' Edition,Microprose,playtest,marked,oversized,dexterity,ante]#_nonlegal# cards
+[_nonlegal:gold-bordered,silver-bordered,Yu-Gi-Oh,playtest,artists' proof,Collectors' Edition,Microprose,playtest,marked,oversized,dexterity,ante,conspiracy,counterfeit]#_nonlegal# cards
 mana weaving
 outside assistance
 "pinch-hitting"
 netdecking
 playing with your cards facing your opponent
-playing [_num:five,six,eight,#num11-99#,unlimited]#_num# copies of [_card:#randomAnyCard#,any card]#_card#
+putting your lands in the front row
+[_num:five,six,eight,#num11-99#,unlimited][_upTo:,up to ][_card:#randomCardAlone#,any card]playing #_upTo##_num# copies of #_card#
 #randomAnyCard#
-using the phrase [_phrase:#mtgCatchphrase#,#mtgSlangTerm#]"#_phrase#"
 misrepsenting the game state
 using face-down sideboard cards as tokens
 "friendly" mulligans
 pre-sideboarding
 slow play
+railbirding
+punching below your [_weight:weight,weight class]#_weight#
+rules lawyering
+gambling
+hidden cameras
+angle shooting
+bottom dealing
+card flicking
+finger signals
+durdling
+floating mana
+rare drafting
+snap-keeping
+windmill-slamming
+sandbagging
+slow-rolling
+curving out
+counters, discard, and LD
+faking injuries
+tuck effects
+lip-reading
+match fixing
+reordering your graveyard
+6/6/6 mana bases
+dice towers
+throwing cards
+leaving exessive trash in the play area
+oversized dice
+penny sleeves
+deck swapping
+deck stacking
+game rule violations
+mistapping lands
+playing spells before combat
+sloppy play
+tardiness
+fancy plays
+tirades
+peeking at your top card
+failing to provide a method to track life total
+exceeding the preduel time limit
+failing to agree on reality
+[_techScam:packet tampering,clickjacking,URL spoofing,social engineering,badge surfing,identify theft,DDOS attacks,sockpuppeting,griefing,trolling,patent trolling]#_techScam#
+touching both drafted cards and booster cards at the same time
 randomly determining match outcomes
+drafting out of turn
+failing to desideboard
+drawing extra cards
 moving to combat
+appealing to the head judge before waiting for the floor judge to issue a ruling
+demanding that a judge issue a penalty to your opponent
+unsporting conduct
+shell companies
+assuming a frictionless system
+lying to tournament officials
+[_mode:mode,buttons]turbo #_mode#
+[_loudness:loud talking,loud outbursts,emotional outbursts]#_loudness#
+[_onesPlace:0,5,#num0-9#]#num1-5##_onesPlace#-card decks
+[_phrase:#mtgCatchphrase#,#mtgSlangTerm#]using the phrase "#_phrase#"
+[_using:,using ,use of ][_profanity:profanity,profane language,vulgar language,excessively vulgar and profane language,"colorful" language]#_using##_profanity#
+[_jitte:Jitt,Jitty,Jeet,Jah-ee-tay,Jeet-uh][_mispronounciation:#_jitte#,ravenger,head-ron,aith-er,Pythe-ing needle,Omni-science,Ga-rook,stormkirk,Path of Exile,mur,boggle,boggles,nack-tle,Icker-id,tay-ga,Azban,Jeksai]saying "#_mispronounciation#"
+[_turnNumeral:1,#num1-5#][_turnWord:one,#count#][_turn:turn #_turnNumeral#,turn-#_turnWord#,#_turnWord#-turn][_wins:wins,kills,combos]#_turn# #_wins#
+[_sportsCheat:eye gouging,icing,chokeholds,leglocks,full nelsons,rabbit punches,headbutts,jump shots]#_sportsCheat#
+[_gamblingCheat:chip dumping,weighted dice]#_gamblingCheat#
+[_conScheme:salting the mine,Spanish Prisoner schemes,pig-in-a-poke scams,white-van speaker scams,pigeon-dropping,badger games,pumping-and-dumping]#_conScheme#
+[_fallacy:affirming the consequent,false dilemmas,begging the question,appeal to authority,No True Scotsman,Handwaving,Tu quoque,poisoning the well,moral equivalency,straw man arguments,motte and bailey,Gallileo gambits]#_fallacy#
+[_doping:doping,steroids,steroid use,performance-enhancing drugs]#_doping#
+[_adj:lewd,lascivious,suggestive,vulgar,raunchy,anime][_accessory:playmats,sleeves,deck boxes,card alters,team names]#_adj# #_accessory#
 [_takebacks:takebacks,take-backsies]#_takebacks#
-[_error:bribery,collusion,insufficient shuffling,stalling,cheating]#_error#
-[_one:voodoo,mysticism,evil eyes,trickery][_two:witchcraft,hocus-pocus,guile,chicanery,skullduggery][_three:curses,hexes,pseudoscience,legerdemain,disguises,prophecy,subterfuge] #_one#, #_two#, and #_three#
-
+[_action:harassing,arguing with,acting belligerently toward][_subject:tournament officials,players,spectators]#_action# #_subject#
+[_shadyActivity:bribery,collusion,insufficient shuffling,stalling,cheating]#_shadyActivity#
+[_one:voodoo,mysticism,evil eyes,trickery][_two:witchcraft,hocus-pocus,guile,chicanery,skullduggery][_three:curses,hexes,pseudoscience,legerdemain,disguises,prophecy,subterfuge][_list:#_one#,#_two#,#_three#,#_one# and #_two#,#_one# and #_three#,#_two# and #_three#,#_one##comma# #_two##comma# and #_three#]#_list#

@@ -15,7 +15,7 @@ tournamentNews:
 - "[_rule:SHOCKER!,BREAKING#colon#,TOURNAMENT UPDATE#colon#,,,,]#_rule# #pro# [_rule:has been DQ'd from,has been suspended from,has been disqualified from,ejected from]#_rule# #event# for #disqualifyingAction#"
 - "Match highlight: #pro# [_defeats:edges out,beats,defeats,routs]#_defeats# #pro# with #randomAnyCard# in round #count# to [_getAhead:lock up,advance in,take down]#_getAhead# #event#"
 - "#pro# topdecks #randomAnyCard# to #verbDefeat# [_opponent:#pro#,#person#]#_opponent#[_when:,, in the finals, and win it all]#_when# #atTournamentInCity#"
-- "#mtgQuestionablePractice.capitalize# will be legal in #format# until [_closeTime:next month,the end of the month,the end of the year,the next MTGO maintenance downtime,the next B&R announcement,the DCI determines otherwise,#occasion#][_when:#teaserCardSet# is released,#_closeTime#,#CONTENT.randomUpcomingMonthDay#,#CONTENT.randomUpcomingMonthDay#]#_when#"
+- "#mtgQuestionablePractice.capitalize# will be legal in [_format:#format#,#popularFormat#]#_format# until [_closeTime:next month,the end of the month,the end of the year,the next MTGO maintenance downtime,the next B&R announcement,the DCI determines otherwise,#occasion#,Pro Tour #teaserCardSet#][_when:#teaserCardSet# is released,#_closeTime#,#standardCardSet# rotates,#CONTENT.randomUpcomingMonthDay#,#CONTENT.randomUpcomingMonthDay#]#_when#"
 
 teamTournamentNews:
 - '[_series:Team Series,#format# team trios]#_series# #tournamentWonWord# by Team #team# #atTournamentInCity#'
