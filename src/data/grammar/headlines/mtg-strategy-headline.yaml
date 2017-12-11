@@ -41,9 +41,6 @@ _peopleOrPerson:
 - "#peoplePlural#"
 - "#person#"
 
-
-_articleNounList: ""
-
 verbAppeal:
 - appeal to
 - impress
@@ -62,7 +59,7 @@ verbAppeal:
 
 wizardsPlayerAppealGoal:
 - "#verbAppeal# #_peopleOrPerson#"
-- "answer requests from #peoplePlural# for more #cardClassificationBase.s#"
+- "answer #peoplePlural##possessive# [_wishes:wishes,requests,prayers]#_wishes# for more #cardClassificationBase.s#"
 
 wizardsBusinessGoal:
 - "address problems with #format#"

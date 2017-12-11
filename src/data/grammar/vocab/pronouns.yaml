@@ -1,15 +1,15 @@
 {
   "malePronouns": [
-      "[they:he][theirs:his][their:his][them:him][are:is]"
+      "[they:he][theirs:his][their:his][them:him][are:is][possessive:'s]"
   ],
   "femalePronouns": [
-      "[they:she][theirs:hers][their:her][them:her][are:is]"
+      "[they:she][theirs:hers][their:her][them:her][are:is][possessive:'s]"
   ],
   "pluralPronouns": [
-      "[they:they][theirs:theirs][their:their][them:them][are:are]"
+      "[they:they][theirs:theirs][their:their][them:them][are:are][possessive:']"
   ],
   "neutralPronouns": [
-      "[they:it][theirs:theirs][their:its][them:it][are:is]"
+      "[they:it][theirs:theirs][their:its][them:it][are:is][possessive:'s]"
   ],
   "somePronoun": [
 		"#malePronouns#",

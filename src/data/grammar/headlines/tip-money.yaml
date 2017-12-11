@@ -61,21 +61,21 @@ investReason:
 - '[_prep:before [_rotation:#cardSet# rotates,#cardSet# rotates from #format#][_fate:#_rotation#,#teaserCardSet# is released,#teaserCardSet# arrives on MTGO,#tournament#]#_fate#'
 
 financialStakeholders:
-- online retailers
-- casual traders
-- speculators
-- LGS owners
-- counterfeiters
-- dealers
-- bulk collection buyers
-- tournament vendors
-- "[_mtgo:MODO,MTGO]#_mtgo# bots"
-- collectors
-- hedge fund managers
-- pharma bros
-- day traders
-- box mappers
-- backpack thieves
+- "online retailers[#pluralPronouns#]"
+- "casual traders[#pluralPronouns#]"
+- "speculators[#pluralPronouns#]"
+- "LGS owners[#pluralPronouns#]"
+- "counterfeiters[#pluralPronouns#]"
+- "dealers[#pluralPronouns#]"
+- "bulk collection buyers[#pluralPronouns#]"
+- "tournament vendors[#pluralPronouns#]"
+- "[_mtgo:MODO,MTGO]#_mtgo# bots[#pluralPronouns#]"
+- "collectors[#pluralPronouns#]"
+- "hedge fund managers[#pluralPronouns#]"
+- "pharma bros[#pluralPronouns#]"
+- "day traders[#pluralPronouns#]"
+- "box mappers[#pluralPronouns#]"
+- "backpack thieves[#pluralPronouns#]"
 - "#realMtgFinancialEntity#"
 - "#realMtgFinancialEntity#"
 - "#pros#"
@@ -83,13 +83,13 @@ financialStakeholders:
 - "#pros#"
 
 realMtgFinancialEntity:
-- MTGGoldfish
-- StarCityGames
-- TCGplayer
-- MTGO Traders
-- MOTL Users
-- PucaTrade refugees
-- /r/mtgfinance users
+- "MTGGoldfish[#neutralPronouns#]"
+- "StarCityGames[#neutralPronouns#]"
+- "TCGplayer[#neutralPronouns#]"
+- "MTGO Traders[#pluralPronouns#]"
+- "MOTL Users[#pluralPronouns#]"
+- "PucaTrade refugees[#pluralPronouns#]"
+- "/r/mtgfinance users[#pluralPronouns#]"
 
 actWhenFinancial:
 - fast
