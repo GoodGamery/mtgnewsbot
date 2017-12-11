@@ -1,18 +1,25 @@
 strategyRealization:
-- "#pros.capitalize# don't realize that #techPlural# #verbDefeat# #obstacle#"
+- "#pros.capitalize# [_realization:don't realize,are discovering,are learning,don't understand,are slowly realizing,are finding]#_realization# that #techPlural# #verbDefeat# #obstacle#"
 - "The Importance of [_thing:#randomAnyCard#,#cardCategory.s#,#creatureTypes.capitalize.s#,#gameConcept#]#_thing# in [_where:#format#,#recentCardSet#]#_where#"
 - "The Secret to #improvementGoal# is #deckChange#"
 - "#pro# Video Series: How I would [_change:improve,fix]#_change# [_improvable:Magic#colon# the Gathering,Magic Online,#format#,competitive Magic,#tournamentType# attendance]#_improvable# by #mtgOpinionSuggestion# #mtgThing#, Part #num2-9#"
 - "Preview of #teaserCardSet# #normalFormat#: will the new #deckVariation# deck be #deckDescription#?"
 
 playGuide:
-- 'CLASSIC STRATEGY: [_prefix:The Philosophy of,It''s All About the]#_prefix# [_thing:#massNoun#,#pluralNoun#,#abstractNoun#,#nouns#]#_thing.capitalizeAll#,
-  by #pro.capitalize#'
-- "[_proIs:#pro# is,#pros# #are#,Team #team# is]#_proIs.capitalize# #verbCreating# #tech.a# to #verbDefeat# #obstacle.capitalize#"
-- "#count.capitalize# #broadCardClassification.capitalizeAll# that should never have
-  been [_verbed:printed,banned,unbanned,played,ignored,reprinted]#_verbed#"
-- "[_proReveals:Top Pro #revealVerb.s#,#pro# #revealVerb.s#,#pros# #revealVerb#]#_proReveals.capitalizeAll#
-  #planNoun.capitalize# for #event#: Play #randomAnyCard# in #deck# to counter [_what:#randomCardAlone#,#deckArchOrCategory#]#_what#"
+- "CLASSIC STRATEGY: [_adj:#adj#,#cardQuality#][_prefix:The Philosophy of,It's All About the,Next-Level][_topic:#massNoun#,#pluralNoun#,#abstractNoun#,#nouns#,#gameConcept#]#_prefix# #_topic.capitalizeAll#, by #pro.capitalize#"
+- "[_proIs:#pro# is,#pros# #are#,Team #team# is][_developing:#verbCreating# #tech.a#,#verbCreating# #tech.a#,#verbDeveloping# #officialTech.a#][_magicIs:#officialEntity# #are# #verbDeveloping# #officialTech.a#][_what:#_proIs.capitalize# #_developing# to #verbDefeat# #obstacle#,#_magicIs# to #wizardsGoal#]#_what#"
+- "[_verbed:printed,banned,unbanned,played,ignored,reprinted]
+  [_cardCategory:#cardClassificationBase#,#popularFormat# #cardClassificationBase#,#basicColors# #cardClassificationBase#]
+  [_setOrBlock:#cardSet#,#mtgRealSet#,#cardBlock##cardBlockName# Block]
+  [_list:
+  #count# #broadCardClassification# that should never have been #_verbed#,
+  The #count.capitalize# #cardSuperlative.capitalizeAll# #broadCardClassification.capitalizeAll# of All-Time,
+  #count# #broadCardClassification# that had #peoplePlural# #cardReactionVerb#,
+  The #count# #cardSuperlative# #_cardCategory.s# from #_setOrBlock#,
+  #count# #_cardCategory.capitalize.s# that #_peopleOrPerson# #cardEvaluatedVerb#]
+  #_list.capitalize#"
+- "[_proReveals:Top pro #revealVerb.s#,#pro# #revealVerb.s#,#pros# #revealVerb#]#_proReveals.capitalize# [_planAdj:new,secret,exclusive,classified,fresh,winning,innovative,groundbreaking,radical]#_planAdj#
+  #planNoun# for #event#: Play [_what:#randomAnyCard#,#cardCategory.s#,#cardCategoryClassTerm#]#_what# in #deck# to [_confound:confound,fluster,thwart,foil,cripple,debilitate,hamstring,overwhelm,crush,win against,prepare for,trump][_counter:beat,counter,trump,win against,foil][_confoundOrCounter:#_confound#,#_counter#][_win:#_counter# #randomCardAlone#,#_confound# #deckArchOrCategory#,#_confoundOrCounter# #cardCategoryClassTerm#]#_win#"
 - "#recentCardSet# [_format:Limited,Constucted]#_format# Set Review:[_color: #basicColors.capitalize#,]#_color#
   #cardCategory.s.capitalizeAll# and [_other:#cardCategory#,#creatureTypes#]#_other.s.capitalizeAll#"
 - "#recentCardSet# #format# Set Review: [_cat:#basicColors#,#cardCategory.s# and #cardCategory.s#]#_cat.capitalizeAll#"
@@ -29,6 +36,89 @@ tipStrategy:
   #randomCardAlone#,#cardCategory.s# can replace #cardCategory.s#]#_replacement.capitalize#
   in #format#"
 - "#tipTitle#: #improvementGoal.capitalize# by #deckChange#"
+
+_peopleOrPerson:
+- "#peoplePlural#"
+- "#person#"
+
+
+_articleNounList: ""
+
+verbAppeal:
+- appeal to
+- impress
+- mollify
+- market to
+- placate
+- intrigue
+- impress
+- sell more cards to
+- throw a bone to
+- delight
+- entertain
+- gratify
+- befuddle
+- confuse
+
+wizardsPlayerAppealGoal:
+- "#verbAppeal# #_peopleOrPerson#"
+- "answer requests from #peoplePlural# for more #cardClassificationBase.s#"
+
+wizardsBusinessGoal:
+- "address problems with #format#"
+- "combat #deck#"
+- "[_verb:combat,reduce,curb,address]#_verb# #mtgQuestionablePractice#"
+- "improve #tournamentType# attendance"
+- "generate interest for #teaserCardSet#"
+- "retcon #character#'s backstory"
+- "drum up interest for [_product:MTG Arena,Magic: Battlegrounds,Magic Puzzle Quest,Funko Pop toys,offically licensed accessories,#recentCardSet#,#teaserCardSet#]#_product#"
+
+wizardsGoal:
+- "#wizardsPlayerAppealGoal#"
+- "#wizardsBusinessGoal#"
+
+playerRequest:
+- "a more competitive play experience"
+- "a more accessible #tournamentType# program"
+- "[_adj:more,better,increased]#_adj# support for [_what:#format#,multiplayer,casual play,competitive magic]#_what#"
+- "more balance in #format#"
+- "making [_what:#format#,#mtgRealSet#,the reserved list]#_what# [_moreOrLess:more,less,even more, even less][_adj:#_moreOrLess# affordable,#_moreOrLess# accessible,friendlier to #_peopleOrPerson#"
+- "more #cardClassificationBase.s# in #format#"
+- "more #cardCategoryClassTerm#[_where:, in #format#]#_where#"
+- "a replacement for #format#"
+
+cardReactionVerb:
+- screaming
+- cheering
+- grumbling
+- rioting
+- scrambling
+- rejoicing
+- preordering
+- freaking out
+- talking
+- gossiping
+- ranting
+- "calling [_wizards:Wizards,Wizards of the Coast]#_wizards# Customer Service"
+- filing for compensation
+- emptying their trade binders
+- "redefining #cardQuality# cards"
+- selling their collections
+- getting back into magic
+- quitting magic
+- updating their want lists
+- picketing
+- boycotting 
+
+cardEvaluatedVerb:
+- ignored
+- underrated
+- overrated
+- "[_requested:wanted to be,wanted,asked to be,wished were,hoped would be,asked to have]#_requested# banned"
+- loved
+- feared
+- hated
+- misunderstood
 
 tipTitle:
 - MTG TIPS
@@ -64,12 +154,25 @@ deckLocation:
 
 tech:
 - deck
-- card
-- format
-- rules change
-- large set
+- new deck
+- new archetype
 - sideboard
 - spicy new tech
+- new strategy
+- strategy
+- sideboard plan
+- deck tweak
+
+officialTech:
+- card
+- format
+- new format
+- large set
+- supplemental product
+- new mechanic
+- keyword
+- banlist
+- rules change
 
 techPlural:
 - "#adj# decks"

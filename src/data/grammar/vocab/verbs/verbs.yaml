@@ -71,16 +71,16 @@
     "celebrating", "exaggerating", "pantomiming", "advertizing", "deep-frying", "decorating", "fighting", "burning", "gargling", "sniffing", "fleeing",
     "worshipping", "consuming", "seeing", "shaving"
   ],
+
   "verbDefeat": [
       "defeat",
       "beat",
       "overcome",
-      "lock down",
       "fix",
       "take down",
       "crush",
       "dominate",
-      "win over",
+      "win against",
       "overpower",
       "elbow drop",
       "absolutely destroy",
@@ -91,7 +91,7 @@
       "steamroll",
       "pulverize",
       "scratch out a win against",
-      "barely defeat",
+      "outclass",
       "outmaneuver",
       "knock out",
       "edge out the win against",
@@ -101,8 +101,9 @@
       "scuttle",
       "blow out",
       "outfox",
-      "steal the win from"
+      "steal wins against"
   ],
+
   "verbDefeating": [
       "defeating",
       "beating",
@@ -110,6 +111,9 @@
       "locking down",
       "fixing",
       "taking down",
+      "conquering",
+      "dominating",
+      "crushing",
       "mastering"
   ],
 
@@ -120,16 +124,37 @@
       "brewing up",
       "developing",
       "mashing together",
-      "shuffling up"
+      "shuffling up",
+      "brainstorming",
+      "collaborating on",
+      "evolving",
+      "crafting",
+      "engineering",
+      "devising",
+      "concocting",
+      "cooking up",
+      "workshopping",
+      "working on",
+      "working on"
   ],
 
   "verbDeveloping": [
       "designing",
       "making",
       "creating",
-      "brewing up",
       "designing",
-      "developing"
+      "developing",
+      "engineering",
+      "researching",
+      "promoting",
+      "planning",
+      "inventing",
+      "devising",
+      "proposing",
+      "producing",
+      "dreaming up",
+      "working on",
+      "working on",
   ],
 
   "verbSolutionGerund": [

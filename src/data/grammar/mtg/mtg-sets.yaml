@@ -87,7 +87,8 @@
     "[cardBlockName:Battle for Zendikar,BFZ][cardBlockSet:#cardBlockName#,Oath of the Gatewatch]",
     "[cardBlockName:Shadows over Innistrad,Shadows][cardBlockSet:#cardBlockName#,Eldritch Moon]",
     "[cardBlockName:Kaladesh][cardBlockSet:Aether Revolt]",
-    "[cardBlockName:Amonkhet][cardBlockSet:#cardBlockName#,Hour of Devastation]"
+    "[cardBlockName:Amonkhet][cardBlockSet:#cardBlockName#,Hour of Devastation]",
+    "[cardBlockName:Ixalan][cardBlockSet:#cardBlockName#]"
   ],
 
   "randomCardSet": [

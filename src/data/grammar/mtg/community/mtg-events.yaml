@@ -5,7 +5,7 @@
       "GP",
       "Grand Prix",
       "FNM",
-      "your local draft league"
+      "local draft league"
   ],
   "event": [
       "#tournament#",
@@ -20,9 +20,9 @@
   ],
   "nonTournamentEvent": [
       "the next team draft",
-      "casual Commander night",
+      "Casual Commander Night",
       "a drunken kitchen-table game",
-      "a 24-hour MTGO stream"
+      "a 24-hour [_platform:MTGO,Twitch,live]#_platform# stream"
   ],
 
 

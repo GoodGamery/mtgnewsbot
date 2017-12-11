@@ -28,8 +28,13 @@ chump blocking
 milling
 jedi mind tricks
 tight play
+loose play
+fancy play
 getting lucky
+lethal damage
+alternate win cons
 the storm scale
+#gameStep#
 good cards, like #randomRealCard#
 bad cards, like #randomRealCard#
 #cardQuality# cards, like #randomRealCard#

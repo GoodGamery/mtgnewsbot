@@ -1,6 +1,7 @@
 {
   "people": ["#pros#","#pros#","#pro#","#pro#","#otherPersonality#"],
   "person": ["#pro#","#pro#","#otherPersonality#"],
+  "peoplePlural": ["#pros#", "#pros#", "#playerCategory.s#","#playerCategory.s#", "#financialStakeholders#"],
   "pro": [
       "Kai Budde#malePronouns#",
       "Jarvis Yu#malePronouns#",
@@ -22,13 +23,42 @@
       "Patrick Chapin#malePronouns#",
       "Jůza#malePronouns#",
       "Richard Garfield#malePronouns#",
-      "GLEEMAX#neutralPronouns#",
       "Mike Flores#malePronouns#",
       "Rich Hagon#malePronouns#",
+      "EFro#malePronouns#",
+      "Masashi Oiso#malePronouns#",
+      "Rob Doughrety#malePronouns#",
+      "Darwin Kastle#malePronouns#",
       "Conley Woods#malePronouns#",
       "Sam Black#malePronouns#",
+      "Shuhei#malePronouns#",
+      "Shouta#malePronouns#",
+      "Jelger Wiegersma#malePronouns#",
+      "Seth Manfield#malePronouns#",
+      "Márcio Carvalho#malePronouns#",
+      "Corey Baumeister#malePronouns#",
+      "Brian Braun-Duin#malePronouns#",
+      "Christian Calcano#malePronouns#",
+      "Pascal Maynard#malePronouns#",
+      "Owen Turtenwald#malePronouns#",
+      "Andrea Mengucci#malePronouns#",
+      "Brad Nelson#malePronouns#",
+      "Matt Severa#malePronouns#",
+      "Mike Sigrist#malePronouns#",
+      "Gerry Thompson#malePronouns#",
+      "Ben Stark#malePronouns#",
+      "Anton Jonsson#malePronouns#",
+      "Dirk Baberowski#malePronouns#",
+      "Samuel Pardee#malePronouns#",
+      "Paul Rietzl#malePronouns#",
+      "Guillaume Wafo-Tapa#malePronouns#",
+      "Andrew Cuneo#malePronouns#",
+      "Jacob Wilson#malePronouns#",
+      "Steve Rubin#malePronouns#",
+      "Matt Nass#malePronouns#",
       "Urza#malePronouns#",
-      "RoboRosewater#neutralPronouns#"
+      "RoboRosewater#neutralPronouns#",
+      "GLEEMAX#neutralPronouns#"
   ],
   "otherPersonality": [
       "Bram Snepvangers#malePronouns#",
@@ -36,6 +66,9 @@
       "Jamie Wakefield#malePronouns#",
       "Sheldon Mennery#malePronouns#",
       "John Friggin' Rizzo#malePronouns#",
+      "Gary Wise#malePronouns#",
+      "Osyp Lebedowicz#malePronouns#",
+      "Chris Pikula#malePronouns#",
       "#jokePersonality#"
   ],
 
@@ -72,7 +105,7 @@
       "Magic players#pluralPronouns#",
       "Wizards#neutralPronouns#",
       "sorcerers#pluralPronouns#",
-      "MODO player#pluralPronouns#s",
+      "MODO players#pluralPronouns#",
       "MTGO developers#pluralPronouns#",
       "judges#pluralPronouns#",
       "[_type:,MTGO ,PPTQ ]#_type#grinders#pluralPronouns#",
@@ -95,26 +128,27 @@
       "#playerCategory.s##pluralPronouns#",
       "#playerCategory.s##pluralPronouns#"
   ],
-
   "playerCategory": [
     "casual",
     "dinosaur",
     "grinder",
     "grognard",
     "Hall-of-Famer",
-    "johnny",
-    "melvin",
+    "Johnny",
+    "Melvin",
     "netdecker",
     "playtester",
     "pro",
     "scrub",
     "sorceror",
-    "spike",
-    "timmy",
-    "vorthos",
+    "Spike",
+    "Timmy",
+    "Vorthos",
     "warrior",
     "wizard",
-    "[_personality:#character#,#character#,#historicalFigure#]#_personality# cosplayers#"
+    "#creatureTypes# fan",
+    "#creatureTypes# fan",
+    "[_personality:#character#,#character#,#historicalFigure#]#_personality# cosplayer"
   ],
 
   "psychographic": [
@@ -123,6 +157,37 @@
       "Spike",
       "Melvin",
       "Vorthos"
+  ],
+
+  "officialEntityPerson": [
+    "Mark Rosewater#malePronouns#",
+    "Mark Rosewater#malePronouns#",
+    "Elaine Chase#femalePronouns#",
+    "Jeremy Jarvis#malePronouns#",
+    "Jenna Helland#femalePronouns#",
+    "Melissa DeTora#femalePronouns#",
+    "Sam Stoddard#malePronouns#",
+    "Matt Tabak#malePronouns#",
+    "Mark Globus#malePronouns#",
+    "Tom LaPille#malePronouns#",
+    "Lee Sharpe#malePronouns#",
+    "Scott Larabee#malePronouns#",
+    "Gavin Verhey#malePronouns#"
+  ],
+
+  "officialEntityGroup": [
+    "Hasbro#neutralPronouns#",
+    "WOTC#neutralPronouns#",
+    "R&D#neutralPronouns#",
+    "The DCI#neutralPronouns#",
+    "The Future Future League#neutralPronouns#",
+    "The Magic Digital Team#neutralPronouns#",
+    "The #recentCardSet# Design Team#neutralPronouns#"
+  ],
+
+  "officialEntity": [
+    "#officialEntityPerson#",
+    "#officialEntityGroup#"
   ],
 
   "team": [
