@@ -1,13 +1,23 @@
 broadCardClassification:
-- "#cardClassificationModifier##cardClassificationBase#"
+- "#cardClassificationModifier# [_cards:cards,#cardClassificationBase.s#]#_cards#"
+- "#cardClassificationModifier# [_cards:cards,#cardClassificationBase.s#]#_cards#"
+- "#cardClassificationBase.s#"
 
 cardClassificationModifier:
-- "#basicColors# "
-- "#format# "
-- "#cardSet# "
-- ""
+- "#basicColors#"
+- "#basicColors#"
+- "#format#"
+- "#format#"
+- "#cardSet#"
+- "#cardSet#"
+- "#cardQuality#"
 
 cardClassificationBase:
-- cards
-- "#cardCategory.s#"
-- "#creatureTypes.s#"
+- "#creatureTypes#"
+- "#creatureTypes#"
+- "#cardCategory#"
+- "#cardCategory#"
+- "#cardCategoryTerm#"
+- "#cardCategoryTerm#"
+- "#cardTypes#"
+- "#rarity#"

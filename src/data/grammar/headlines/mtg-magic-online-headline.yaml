@@ -108,10 +108,10 @@ eventComeOn:
 - Sign up now
 - Don't forget
 - We're serious this time
-- Most of the cards have even been tested
+- "[_amount:Most,Many,Some,A few]#_amount# of the cards [_cardClaim:have even been tested,are working correctly,"
 - "Prepare to be #verbTransitivePastTense#"
 - "[_cardType:creature][#_cardType.cardSearchByType(1)#]All participants receive a free #_cardName1# avatar"
-# - "[_query:name!=\"? \"][#_query.cardSearchCustomQuery(1)#]The first #num2-9##num1-99# players to type [_code:caw,#planeswalkerFirstName#,#_cardName1#]#_code.allCaps# will [_prize:receive a promo #randomCardAlone#,receive a free treasure chest,receive a free draft set of #randomCardSet#, be entered manually]#_prize#"
+- "[_query:name!=\"? \"][#_query.cardSearchCustomQuery(1)#][_numTensPlace:,,#num1-9#]The first #_numTensPlace##num2-99# players to type [_code:caw,#planeswalkerFirstName#,#_cardName1#]#_code.allCaps# will [_prize:receive a promo #randomCardAlone#,receive a free treasure chest,receive a free draft set of #randomCardSet.capitalizeAll#,be entered manually]#_prize#"
 
 onlineEventAnnouncement1: "[_starting:starting,beginning,launching]#onlineEvent.capitalize##_s# #_isAre# starting #onlineEventTimeStart#. #eventComeOn#"
 onlineEventAnnouncement2: "[_starting:starting,beginning,launching]join [_event:#onlineEvent#]#_aThe# #_event#, #_starting# #onlineEventTimeStart#"
@@ -192,7 +192,7 @@ cardOneOff:
   #imgCard#
 - |
   [_customQuery:t=artifact t|=enchantment t!=creature][#_customQuery.cardSearchCustomQuery#][_cardname:#_cardName1#]
-  [_noun: #abstractNounMassNounOrEmotion#]
+  [_noun:#abstractNounMassNounOrEmotion#]
   [_verbers:Lovers,Lovers,#verbTransitiveGerund#]
   [_its:,It's ]
   [_daySubject:#_cardNameLastWord1.capitalize#]

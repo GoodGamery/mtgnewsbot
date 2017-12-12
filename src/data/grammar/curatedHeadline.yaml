@@ -75,6 +75,7 @@ randomTextHeadline:
 smallImageHeadline1:
 - "#cardCallout#"
 - "#mtgoTwitterStyleHeadline#"
+- "#graphicAnnouncement#"
 
 smallImageHeadline2:
 - "#cardCallout#"

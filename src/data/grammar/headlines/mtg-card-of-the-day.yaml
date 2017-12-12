@@ -102,8 +102,8 @@ cotdCustomQueryDecscription:
   Long ago, [_adj:inventive,resourceful,desparate,clever,crafty,beleagured]#_adj.a# #creatureTypes# decided to [_adhere:stick,slap,affix]#_adhere# some #massNoun.hyphenate#-infused [_equipmentPart:#bodypart# armor,blades,spikes,bracers,pauldrons,gauntlets,rivets,ribbons,pinstripes,toothpicks,pipe cleaners,pom poms,rhinestones]#_equipmentPart# onto what appears to be [_surface:#itemNoun#,pair of #itemNoun.s#]#_surface.a#. Today, almost every #characterClass# [_worn:has donned,has worn,wields,sports]#_worn# [_theArmor:one of these,a pair]#_theArmor# to #creatureActionVerb# as they [_verb:dash,rumble,rush,roll,charge,barrel,plow]#_verb# [_intoBattle:into battle,into the fray,into combat,into the red zone,through the breach,into the kill zone,into the night]#_intoBattle#.
 - >
   [#cotdLegendaryCreatureSearch#][_cardlinkName:#_cardName1#][_petOwner:#_cotdHtmlCardLink#,#character#]
-  [#cotdCreatureTypeSearch#]
-  #_petOwner#'s [_adj:loyal,faithful,trusty,obedient,frisky,adopted,beloved,pampered,favorite,well-trained,ill-tempered,housebroken]#_adj# pet #_cardSubtype1.capitalize# is a bit #adjComparative# than they are, but it's still #adj#.
+  [#cotdCreatureTypeSearch#][_adj:loyal,faithful,trusty,obedient,frisky,adopted,beloved,pampered,favorite,well-trained,ill-tempered,housebroken]
+  #_petOwner#'s #_adj# pet #_cardSubtype1.capitalize# is a bit [_comparative:#adjComparative#,less #adj#]#_comparative# than they are, but it's still [_adv:,really,very,quite,surprisingly,fairly,unbelievably,incredibly]#_adv# #adj#.
 - >
   [_customQuery:t=artifact t=creature][#cotdCustomSearch#]
   Pro Tour [_italicText:#teaserCardSet#]#_italicize# may be when [_cardlinkName:#_cardname#]#_cotdHtmlCardLink# finally [_fate:accepts its obsolescence, allows itself to be unplugged,steps aside to make room for a newer model,retires to the scrapyard,decides to settle down with a nice #appliance# and raise a family,busts its last spring,gets its battery pulled,goes to robot heaven,goes off the rails,gets scrapped for parts]#_fate#.
@@ -122,32 +122,6 @@ adjOrCardQuality:
 adjSuperlativeOrCardSuperlative:
 - "#adjSuperlative#"
 - "#cardSuperlative#"
-
-cardSuperlative:
-- most versatile
-- most flexible
-- most powerful
-- most underrated
-- most popular
-- most undercosted
-- most reprinted
-- most underestimated
-- most frequently sideboarded
-- most draftable
-- most iconic
-- least balanced
-- most conditional
-- most overrated
-- most overpriced
-- most underwhelming
-- most proxied
-- most counterfeited
-- least powerful
-- best-designed
-- simplest
-- narrowest
-- best
-- worst
 
 interestingPlayAdj:
   - hilarious

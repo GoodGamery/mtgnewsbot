@@ -64,6 +64,10 @@ searchableCardCategoryCustomQuery:
  - >
   [_cardCategory:manland][_cardCategoryClass:manlands][_customQuery:t=land text="becomes a" text=creature]
 
+cardCategoryTerm: 
+- "[#searchableCardCategory#]#_cardCategory#"
+- "[#searchableCardCategoryCustomQuery#]#_cardCategory#"
+
 cardCategoryClassTerm: 
 - "[#searchableCardCategory#]#_cardCategoryClass#"
 - "[#searchableCardCategoryCustomQuery#]#_cardCategoryClass#"

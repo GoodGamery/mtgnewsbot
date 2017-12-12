@@ -87,7 +87,8 @@
     "[cardBlockName:Battle for Zendikar,BFZ][cardBlockSet:#cardBlockName#,Oath of the Gatewatch]",
     "[cardBlockName:Shadows over Innistrad,Shadows][cardBlockSet:#cardBlockName#,Eldritch Moon]",
     "[cardBlockName:Kaladesh][cardBlockSet:Aether Revolt]",
-    "[cardBlockName:Amonkhet][cardBlockSet:#cardBlockName#,Hour of Devastation]"
+    "[cardBlockName:Amonkhet][cardBlockSet:#cardBlockName#,Hour of Devastation]",
+    "[cardBlockName:Ixalan][cardBlockSet:#cardBlockName#]"
   ],
 
   "randomCardSet": [
@@ -100,23 +101,32 @@
       "Ixalan",
       "Hour of Devastation",
       "Modern Masters",
-      "Eternal Masters"
+      "Iconic Masters",
+      "Eternal Masters",
+      "Explorers of Ixalan",
+      "Unstable"
+  ],
+  "standardCardSet": [
+      "Kaladesh",
+      "Aether Revolt",
+      "Amonkhet",
+      "Hour of Devastation",
+      "Ixalan",
+      "Rivals of Ixalan"
   ],
   "teaserCardSet": [
-      "Commander 2017",
+      "Commander 2018",
       "Masters 25",
       "Rivals of Ixalan",
-      "Explorers of Ixalan",
-      "Iconic Masters",
       "Dominaria",
-      "Unstable",
+      "Core 2019",
       "#codename#",
       "#novelCardSetName.capitalizeAll#"
   ],
   "codename": [
       "Spaghetti",
       "Meatballs",
-      "[_futureSet:Milk,Archery,Baseball]#_futureSet#"
+      "[_futureSet:Milk,Archery,Baseball,Cricket]#_futureSet#"
   ],
   "novelCardSetName": [
     "#planeBasedSet#",
