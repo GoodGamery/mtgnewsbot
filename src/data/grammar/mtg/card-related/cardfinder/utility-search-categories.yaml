@@ -1,0 +1,104 @@
+###### generally useful / frequently used search queries ######
+
+cardQueryPermanent:
+- >
+  [_customQuery:t!=instant t!=sorcery][#_customQuery.cardSearchCustomQuery(1)#][_cardName:#_cardName1#]
+
+cardQueryCreature:
+- >
+  [_customQuery:t=creature][#_customQuery.cardSearchCustomQuery(1)#][_cardName:#_cardName1#]
+
+cardQueryInstantOrSorcery:
+- >
+  [_customQuery:t=instant t|=sorcery][#_customQuery.cardSearchCustomQuery(1)#][_cardName:#_cardName1#]
+
+cardQueryLand:
+- >
+  [_customQuery:t=land][#_customQuery.cardSearchCustomQuery(1)#][_cardName:#_cardName1#]
+
+cardQueryNonbasicLand:
+- >
+  [_customQuery:t=land t!=basic][#_customQuery.cardSearchCustomQuery(1)#][_cardName:#_cardName1#]
+
+cardQueryNonland:
+- >
+  [_customQuery:t!=land][#_customQuery.cardSearchCustomQuery(1)#][_cardName:#_cardName1#]
+
+cardQueryNoncreatureArtifact:
+- >
+  [_customQuery:t=artifact t!=creature][#_customQuery.cardSearchCustomQuery(1)#][_cardName:#_cardName1#]
+
+cardQueryMultiWordNoncreatureArtifact:
+- >
+  [_customQuery:t=artifact t!=creature text="? "][#_customQuery.cardSearchCustomQuery(1)#][_cardName:#_cardName1#]
+
+cardQueryTutor:
+- >
+  [_customQuery:name=tutor,t=instant t|=sorcery text="search your library for a card"][#_customQuery.cardSearchCustomQuery(1)#][_cardName:#_cardName1#]
+
+# expects _searchString to be defined
+cardQueryPermanentWithSearch:
+- >
+  [_customQuery:t!=instant t!=sorcery #_searchString#][#_customQuery.cardSearchCustomQuery(1)#][_cardName:#_cardName1#]
+
+# expects _searchString to be defined
+cardQueryWithText:
+- >
+  [_customQuery:text="#_searchString#"][#_customQuery.cardSearchCustomQuery(1)#][_cardName:#_cardName1#]
+
+# expects _searchString to be defined
+cardQueryPermanentWithText:
+- >
+  [_customQuery:t!=instant t!=sorcery text="#_searchString#"][#_customQuery.cardSearchCustomQuery(1)#][_cardName:#_cardName1#]
+
+# expects _searchString to be defined
+cardQueryCreatureWithText:
+- >
+  [_customQuery:t=creature text="#_searchString#"][#_customQuery.cardSearchCustomQuery(1)#][_cardName:#_cardName1#]
+
+###### just card names ######
+
+randomPermanentCard:
+- >
+  [#cardQueryPermanent#]#_cardName#
+
+randomCreatureCard:
+- >
+  [#cardQueryCreature#]#_cardName#
+
+randomInstantOrSorceryCard:
+- >
+  [#cardQueryInstantOrSorcery#]#_cardName#
+
+randomLandCard:
+- >
+  [#cardQueryLand#]#_cardName#
+
+randomNonbasicLandCard:
+- >
+  [#cardQueryNonbasicLand#]#_cardName#
+
+randomNonlandCard:
+- >
+  [#cardQueryNonland#]#_cardName#
+
+randomTutorCard:
+- >
+  [_card:#cardQueryTutor#]#_cardName#
+
+# expects _searchString to be defined
+randomCardWithText:
+- >
+  [_card:#cardQueryPermanentWithText#]#_cardName#
+
+# expects _searchString to be defined
+randomPermanentWithText:
+- >
+  [_card:#cardQueryPermanentWithText#]#_cardName#
+
+# expects _searchString to be defined
+randomCreatureWithText:
+- >
+  [_card:#cardQueryPermanentWithText#]#_cardName#
+
+  
