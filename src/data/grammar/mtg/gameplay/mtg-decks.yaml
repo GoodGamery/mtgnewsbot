@@ -169,13 +169,13 @@
       "the only valid choice",
       "completely unplayable",
       "pure garbage",
-      "Tier [tier:0,1,1.5,2,2.5,3]#_tier#",
+      "Tier [_tier:0,1,1.5,2,2.5,3]#_tier#",
       "ban-worthy",
-      "WotC's biggest mistake yet",
+      "#officialEntity#'s biggest mistake yet",
       "a trap",
       "positioned perfectly in the meta",
-      "overhyped by singles retailers",
-      "[legality:legal,illegal,broken]#_legality# under tournament rules",
+      "overhyped by #financialStakeholders#",
+      "[_legality:legal,illegal,broken,allowed,sanctioned]#_legality# under tournament rules",
       "viable once #randomRealCard# is [_outcome:banned,reprinted]#_outcome#"
   ],
   "deckLimitedArchetype": [

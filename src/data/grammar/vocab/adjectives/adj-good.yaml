@@ -1,0 +1,22 @@
+kindaGood:
+  - good
+  - great
+  - okay
+  - spicy
+  - ridiculous
+  - terrible
+  - mildly interesting
+  - bewildering
+  - unimpressive
+  - reasonable
+
+reallyGood:
+  - wonderful
+  - awesome
+  - amazing
+  - superlative
+  - literally the best
+  - bonkers
+  - just plain nuts
+  - "#kindaGood#, but more so"
+  - "really #kindaGood#"

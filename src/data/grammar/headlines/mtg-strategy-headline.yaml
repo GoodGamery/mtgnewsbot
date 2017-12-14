@@ -1,9 +1,9 @@
 strategyRealization:
-- "#pros.capitalize# [_realization:don't realize,are discovering,are learning,don't understand,are slowly realizing,are finding]#_realization# that #techPlural# #verbDefeat# #obstacle#"
-- "The Importance of [_thing:#randomAnyCard#,#cardCategory.s#,#creatureTypes.capitalize.s#,#gameConcept#]#_thing# in [_where:#format#,#recentCardSet#]#_where#"
-- "The Secret to #improvementGoal# is #deckChange#"
-- "#pro# Video Series: How I would [_change:improve,fix]#_change# [_improvable:Magic#colon# the Gathering,Magic Online,#format#,competitive Magic,#tournamentType# attendance]#_improvable# by #mtgOpinionSuggestion# #mtgThing#, Part #num2-9#"
-- "Preview of #teaserCardSet# #normalFormat#: will the new #deckVariation# deck be #deckDescription#?"
+- "#pros.capitalize# [_realization:don't realize,don't realize,don't realize,are discovering,are learning,don't acknowledge,are slowly learning,are now realizing,are finding,finally acknowledge][_tech:#techWithVerb#][_is:#_isVerb#]#_realization# that [_modifier:can't,won't,will never,will always,#_is# the best way to,can no longer][_effectivePhrase:more effective than,better than,secretly better than,way worse than,even better than][_finding:#techSingular# #verbDefeat.s# #obstacle#,#techPlural# #verbDefeat# #obstacle#,#_tech# #_modifier# #verbDefeat# #obstacle#,#_tech# #_is# the secret to #verbDefeating# #obstacle#,#_is# #_effectivePhrase# #techWithVerb#]#_finding#"
+- "The Importance of [_thing:#randomAnyCard#,#techCardCategory#,#creatureTypes.s#,#gameConcept#]#_thing.capitalizeAll# in [_where:#format#,#recentCardSet#]#_where#"
+- "The [_secret:secret,trick,solution]#_secret# to #improvementGoal# is #deckChange#"
+- "#pro# Video Series: How I would [_change:improve,fix]#_change# [_improvable:Magic#colon# the Gathering,Magic Online,#format#,competitive Magic,#tournamentType# attendance]#_improvable# by #mtgOpinionSuggestion# #mtgThing#[_tirade:tirade,diatribe,rant][_adjTirade:angry,lengthy,crazed,methodical,deranged,honest][_play:play,comedy,musical,farce][_performance:musical appeal,rap odyssey,#_play# in #count# acts][_speechType:#_adjTirade# #_tirade#,rigorous examination,thought experiment,#_performance#][_subtitle:,#comma# Part #num2-9#,#comma# Part #num2-9#,#comma# #_speechType.a#]#_subtitle#"
+- "Preview of #teaserCardSet#[_format:, #normalFormat#,in #normalFormat#]: Will [_deck:#deck#,#deckArch#,the new #deckVariation# deck]#_deck# be #deckDescription#?"
 
 playGuide:
 - "CLASSIC STRATEGY: [_adj:#adj#,#cardQuality#][_prefix:The Philosophy of,It's All About the,Next-Level][_topic:#massNoun#,#pluralNoun#,#abstractNoun#,#nouns#,#gameConcept#]#_prefix# #_topic.capitalizeAll#, by #pro.capitalize#"
@@ -134,16 +134,24 @@ obstacle:
 - "#gameConcept#"
 - "#cardCategory.s#"
 
+cardUsingVerb:
+- using
+- playing
+- including
+- running
+
 deckChange:
-- 'adding [_what:#randomAnyCard#,#randomAnyCard#,#randomAnyCard#,#cardCategory.s#]#_what# to the #deckLocation#'
-- 'maindecking [_what:#randomAnyCard#,#cardCategory.s#]#_what#'
+- 'adding [_what:#randomAnyCard#,#randomAnyCard#,#techCardCategory#]#_what# to the #deckLocation#'
+- 'maindecking [_what:#randomAnyCard#,#techCardCategory#]#_what#'
 - 'sideboarding #randomAnyCard#'
-- 'removing [_what:#randomAnyCard#,#cardCategory.s#]#_what#'
-- 'playing [_change:more,fewer]#_change# #cardCategory.s#'
+- '[_removing:removing,cutting,not playing]#_removing# [_what:#randomAnyCard#,#techCardCategory#]#_what#'
+- 'playing [_change:more,fewer]#_change# #techCardCategory#'
+- 'playing around [_what:#randomAnyCard#,#techCardCategory#]'
 - 'including #cardCopyCount# copies of #randomAnyCard#'
 - 'cutting #randomCardAlone# for #randomAnyCard#'
 - 'using all foils'
 - 'using only misprint cards'
+- 'using [_only:only,nothing but ]#_only##cardQuality# cards'
 
 deckLocation:
 - maindeck
@@ -171,17 +179,55 @@ officialTech:
 - banlist
 - rules change
 
+techCardCategory:
+- "#cardCategory.s#"
+- "#cardCategoryTerm.s#"
+
+techCardAttribute:
+- "#adj#"
+- "#cardQuality#"
+
+techSingular:
+- "learning to beat #deckArch#"
+- "understanding #deckArch# matchups"
+- "understanding #techCardCategory#"
+- "#techCardCategory#"
+- "playtesting #format#"
+- "playing #num2-99# hours of #format# every week"
+- "solving the #format# metagame"
+- sideboard tech
+- sideboarding
+- good sideboarding
+- bad sideboarding
+- good card evaluation skills
+- "#nounActivity#"
+- practicing your shuffling technique
+- mana weaving
+- pile shuffling
+- power-level errata
+- "always calling [_face:heads,tails]#_face#"
+- "#mtgQuestionablePractice#"
+- "always playing #randomRealCard#"
+
 techPlural:
-- "#adj# decks"
-- "#adj# cards"
 - rotating formats
 - rules changes
 - floor rulings
-- power-level errata
 - large sets
 - small sets
 - sideboards
-- spicy new tech
+- windmill-slam first picks
+- evergreen mechanics
+- jedi mind tricks
+- "#techCardCategory#"
+- "#techCardAttribute# decks"
+- "#techCardAttribute# cards"
+- "#techCardAttribute# #techCardCategory#"
+- "#count#-card combos"
+
+techWithVerb:
+- "#techSingular#[_isVerb:is]"
+- "#techPlural#[_isVerb:are]"
 
 improvementGoal:
 - "[_challenge:winning,placing at,preparing for,#verbDefeating#]#_challenge# #tournamentType.s#"
