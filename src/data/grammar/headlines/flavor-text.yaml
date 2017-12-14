@@ -33,7 +33,7 @@ flavorText:
   - >
     "[_cost:One #concreteNoun#,#count.capitalize# #concreteNoun.s#]#_cost# #verbTransitivePastTense# for every #concreteNoun# #verbTransitivePastTense#[_where:, underfoot, overhead, abroad]#_where#." —#demonym# penalty for #crime#
   - >
-    "Its diet consists of #pluralNoun#, [_place1:#placeNoun#][_thing:#pluralNoun#]#adj# #_place1# #_thing#, #adj# #_place1# #_thing#, and #_place1.s#."
+    "Its diet consists of #pluralNoun#, #pluralNoun#, [_place1:#placeNoun#][_thing:#pluralNoun#]#adj# #_place1# #_thing#, #adj# #_place1# #_thing#, #_place1.s#, [_adj1:#adj#,#singularNoun#] [_thing2:#singularNoun#] #_adj1# #_thing2.s#, #_adj1# #creatureTypeOrCharacterClass.s#, and #adj# [_place2:#placeNoun#,#placeNoun#,#placeNounCanonical#]#_place2.s#."
   - >
     "‘[_who:#character#]#_who.capitalize#, #verbTransitive# those #itemOrCreatureType.s#.’ ‘#_who#, #verbTransitive# those #itemOrCreatureType.s#.’ No one cares that today is #occasion#."
   - >
@@ -88,6 +88,8 @@ flavorText:
     "The #creatureTypeOrCharacterClass.s# of [_place:#minorStoryLocation#,#nonPlaneLocation#]#_place# treat each #itemNoun# with #emotion# for the #creatureTypeOrCharacterClass# it will become."
   - >
     "It is #adjComparative# than all but the #adjSuperlative# #pluralNoun#, and #adjComparative# than all but the #adjSuperlative#."
+  - >
+      "[#cardQueryMultiWordNoncreatureArtifact#][_quote:¡Yo quiero #_cardName#!,Show me the #_cardName#!]#_quote#"
 
 sealInscriptionDescriptionWhatIam:
 - "#itemNoun#"

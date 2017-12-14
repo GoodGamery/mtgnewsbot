@@ -47,10 +47,13 @@
   realHandCard: [
     "#realCard#",
     "#realCard#",
+    "#realCard#",
+    "#randomRealCard#",
     "#randomRealCard#",
     "#randomRealCard#",
     "#realLandCard#",
-    "#realLandCard#"
+    "#realLandCard#",
+    "#randomNonbasicLandCard#"
   ],
 
   realCard: [
@@ -66,7 +69,8 @@
     "#basicLands#",
     "#dualLands#",
     "#utilityLands#",
-    "#limitedLands#"
+    "#limitedLands#",
+    "randomNonbasicLandCard"
   ],
 
   descriptiveCard: [

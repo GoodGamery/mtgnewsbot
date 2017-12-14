@@ -11,6 +11,10 @@
   "neutralPronouns": [
       "[they:it][theirs:theirs][their:its][them:it][are:is][possessive:'s]"
   ],
+  "genderedPronouns": [
+    "#malePronouns#",
+    "#femalePronouns#"
+  ],
   "somePronoun": [
 		"#malePronouns#",
 		"#femalePronouns#",

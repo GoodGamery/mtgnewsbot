@@ -8,6 +8,6 @@ creatureTypeOrCharacterClass:
 
 mtgThing:
 - "#deckArchOrCategory#"
-- "#randomAnyCard#"
+- "#randomCardAlone#"
 - "#format#"
 - "#cardCategory.s#"
