@@ -2,123 +2,143 @@
 
 cardQueryPermanent:
 - >
-  [_customQuery:t!=instant t!=sorcery#_colorTerm#][#_customQuery.cardSearchCustomQuery(1)#][_cardName:#_cardName1#]
-
-cardQueryCreature:
-- >
-  [_customQuery:t=creature#_colorTerm#][#_customQuery.cardSearchCustomQuery(1)#][_cardName:#_cardName1#]
-
-cardQueryInstantOrSorcery:
-- >
-  [_customQuery:t=instant t|=sorcery#_colorTerm#][#_customQuery.cardSearchCustomQuery(1)#][_cardName:#_cardName1#]
-
-cardQueryCounterspell:
-- >
-  [_customQuery:t=instant text="counter target spell"][#_customQuery.cardSearchCustomQuery(1)#][_cardName:#_cardName1#]
-
-cardQueryLand:
-- >
-  [_customQuery:t=land#_colorTerm#][#_customQuery.cardSearchCustomQuery(1)#][_cardName:#_cardName1#]
-
-cardQueryNonbasicLand:
-- >
-  [_customQuery:t=land t!=basic#_colorTerm#][#_customQuery.cardSearchCustomQuery(1)#][_cardName:#_cardName1#]
-
-cardQueryNonland:
-- >
-  [_customQuery:t!=land#_colorTerm##_colorTerm#][#_customQuery.cardSearchCustomQuery(1)#][_cardName:#_cardName1#]
-
-cardQueryNoncreatureArtifact:
-- >
-  [_customQuery:t=artifact t!=creature#_colorTerm#][#_customQuery.cardSearchCustomQuery(1)#][_cardName:#_cardName1#]
-
-cardQueryMultiWordNoncreatureArtifact:
-- >
-  [_customQuery:t=artifact t!=creature text="? "#_colorTerm#][#_customQuery.cardSearchCustomQuery(1)#][_cardName:#_cardName1#]
-
-cardQueryCardDraw:
-- >
-  [_customQuery:t=instant t|=sorcery text="draw" text="cards"#_colorTerm#][#_customQuery.cardSearchCustomQuery(1)#][_cardName:#_cardName1#]
-
-cardQueryTutor:
-- >
-  [_customQuery:name=tutor,t=instant t|=sorcery text="search your library for a card"#_colorTerm#][#_customQuery.cardSearchCustomQuery(1)#][_cardName:#_cardName1#]
-
-cardQueryFlyingFinisher:
-- >
-  [_customQuery:t=creature text=flying pow=>4#_colorTerm#][#_customQuery.cardSearchCustomQuery(1)#][_cardName:#_cardName1#]
-
-randomFlyingFinisherCard:
-- >
-  [#cardQueryFlyingFinisher#]#_cardName#
-
-# expects _searchString to be defined
-cardQueryPermanentWithSearch:
-- >
-  [_customQuery:t!=instant t!=sorcery #_searchString##_colorTerm#][#_customQuery.cardSearchCustomQuery(1)#][_cardName:#_cardName1#]
-
-# expects _searchString to be defined
-cardQueryWithText:
-- >
-  [_customQuery:text="#_searchString#"#_colorTerm#][#_customQuery.cardSearchCustomQuery(1)#][_cardName:#_cardName1#]
-
-# expects _searchString to be defined
-cardQueryPermanentWithText:
-- >
-  [_customQuery:t!=instant t!=sorcery text="#_searchString#"#_colorTerm#][#_customQuery.cardSearchCustomQuery(1)#][_cardName:#_cardName1#]
-
-# expects _searchString to be defined
-cardQueryCreatureWithText:
-- >
-  [_customQuery:t=creature text="#_searchString#"#_colorTerm#][#_customQuery.cardSearchCustomQuery(1)#][_cardName:#_cardName1#]
+  [_customQuery:t!=instant t!=sorcery#_colorFilter#][#_customQuery.cardSearchCustomQuery(1)#][_cardName:#_cardName1#]
 
 randomPermanentCard:
 - >
   [#cardQueryPermanent#]#_cardName#
 
+
+cardQueryCreature:
+- >
+  [_customQuery:t=creature#_colorFilter#][#_customQuery.cardSearchCustomQuery(1)#][_cardName:#_cardName1#]
+
 randomCreatureCard:
 - >
   [#cardQueryCreature#]#_cardName#
+
+
+cardQueryInstantOrSorcery:
+- >
+  [_customQuery:t=instant t|=sorcery#_colorFilter#][#_customQuery.cardSearchCustomQuery(1)#][_cardName:#_cardName1#]
 
 randomInstantOrSorceryCard:
 - >
   [#cardQueryInstantOrSorcery#]#_cardName#
 
+
+cardQueryCounterspell:
+- >
+  [_customQuery:t=instant text="counter target spell"][#_customQuery.cardSearchCustomQuery(1)#][_cardName:#_cardName1#]
+
 randomCounterspellCard:
 - >
   [#cardQueryCounterspell#]#_cardName#
+
+
+cardQueryLand:
+- >
+  [_customQuery:t=land#_colorFilter#][#_customQuery.cardSearchCustomQuery(1)#][_cardName:#_cardName1#]
 
 randomLandCard:
 - >
   [#cardQueryLand#]#_cardName#
 
+
+cardQueryNonbasicLand:
+- >
+  [_customQuery:t=land t!=basic#_colorFilter#][#_customQuery.cardSearchCustomQuery(1)#][_cardName:#_cardName1#]
+
 randomNonbasicLandCard:
 - >
   [#cardQueryNonbasicLand#]#_cardName#
+
+
+cardQueryNonland:
+- >
+  [_customQuery:t!=land#_colorFilter##_colorFilter#][#_customQuery.cardSearchCustomQuery(1)#][_cardName:#_cardName1#]
 
 randomNonlandCard:
 - >
   [#cardQueryNonland#]#_cardName#
 
+
+cardQueryNoncreatureArtifact:
+- >
+  [_customQuery:t=artifact t!=creature#_colorFilter#][#_customQuery.cardSearchCustomQuery(1)#][_cardName:#_cardName1#]
+
+
+cardQueryMultiWordNoncreatureArtifact:
+- >
+  [_customQuery:t=artifact t!=creature text="? "#_colorFilter#][#_customQuery.cardSearchCustomQuery(1)#][_cardName:#_cardName1#]
+
+
+cardQueryCardDraw:
+- >
+  [_customQuery:t=instant t|=sorcery text="draw" text="cards"#_colorFilter#][#_customQuery.cardSearchCustomQuery(1)#][_cardName:#_cardName1#]
+
 randomCardDrawCard:
 - >
   [_card:#cardQueryCardDraw#]#_cardName#
+
+
+cardQueryTutor:
+- >
+  [_customQuery:name=tutor,t=instant t|=sorcery text="search your library for a card"#_colorFilter#][#_customQuery.cardSearchCustomQuery(1)#][_cardName:#_cardName1#]
 
 randomTutorCard:
 - >
   [_card:#cardQueryTutor#]#_cardName#
 
+
+cardQueryFlyingFinisher:
+- >
+  [_customQuery:t=creature text=flying pow=>4#_colorFilter#][#_customQuery.cardSearchCustomQuery(1)#][_cardName:#_cardName1#]
+
+randomFlyingFinisherCard:
+- >
+  [#cardQueryFlyingFinisher#]#_cardName#
+
+
 # expects _searchString to be defined
+cardQueryWithText:
+- >
+  [_customQuery:text="#_searchString#"#_colorFilter#][#_customQuery.cardSearchCustomQuery(1)#][_cardName:#_cardName1#]
+
+# expects _searchString, see above
 randomCardWithText:
 - >
   [_card:#cardQueryPermanentWithText#]#_cardName#
 
+
 # expects _searchString to be defined
+cardQueryPermanentWithSearch:
+- >
+  [_customQuery:t!=instant t!=sorcery #_searchString##_colorFilter#][#_customQuery.cardSearchCustomQuery(1)#][_cardName:#_cardName1#]
+
+# expects _searchString, see above
+randomPermanentWithSearch:
+- >
+  [_card:#cardQueryPermanentWithSearch#]#_cardName#
+
+
+# expects _searchString to be defined
+cardQueryPermanentWithText:
+- >
+  [_customQuery:t!=instant t!=sorcery text="#_searchString#"#_colorFilter#][#_customQuery.cardSearchCustomQuery(1)#][_cardName:#_cardName1#]
+
+# expects _searchString, see above
 randomPermanentWithText:
 - >
   [_card:#cardQueryPermanentWithText#]#_cardName#
 
+
 # expects _searchString to be defined
+cardQueryCreatureWithText:
+- >
+  [_customQuery:t=creature text="#_searchString#"#_colorFilter#][#_customQuery.cardSearchCustomQuery(1)#][_cardName:#_cardName1#]
+
+# expects _searchString, see above
 randomCreatureWithText:
 - >
-  [_card:#cardQueryPermanentWithText#]#_cardName#
+  [_card:#cardQueryCreatureWithText#]#_cardName#
