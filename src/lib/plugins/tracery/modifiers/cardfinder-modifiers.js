@@ -243,6 +243,8 @@ async function cardSearchCustomQuery(s, params) {
           key = 'not ' + key.substring(0, key.length - 1);
         }  else if (key.endsWith('|')) {
           key = 'or ' + key.substring(0, key.length - 1);
+        } else if (key.endsWith('~')) {
+          key = ' ' + key.substring(0, key.length - 1);
         } else if (query.length > 0) {
           key = 'and ' + key;
         }

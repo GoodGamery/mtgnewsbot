@@ -3,7 +3,7 @@ searchableColor:
 - "#searchableMonoColor#"
 - "#searchableMulticolorWithLetters#"
 - "#searchableMulticolorWithWords#"
-- "#searchableColorComboNickname#"
+# - "#searchableColorComboNickname#"
 
 searchableBasicColor:
 - "white#color_W#"
@@ -45,9 +45,9 @@ searchableMulticolorWithWords:
 - "Red-Green#color_RG#"
 - "Black-White#color_BW#"
 - "Black-Green#color_BG#"
-- "Four-Color#color_4color#"
-- "Five-Color#wubrg#"
-- "Purple#wubrg#"
+- "Four-Color#color_fourColor#"
+- "Five-Color#color_WUBRG#"
+- "Purple#color_WUBRG#"
 
 searchableColorComboNickname:
 - "Orzhov#color_BW#"
