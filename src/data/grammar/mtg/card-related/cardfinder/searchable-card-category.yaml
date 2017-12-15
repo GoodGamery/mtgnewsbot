@@ -25,7 +25,6 @@ searchableCardCategory:
   - >
     [_cardCategory:bounce spell][_cardCategoryClass:bounce][_targetCardType:creature,permanent,nonland permanent][_cardCategorySearchTerm:"return target #_targetCardType# to"]
 
-
 searchableCardCategoryCustomQuery:
  - >
   [_cardCategory:mana dork][_cardCategoryClass:mana dorks][_customQuery:text=pool t=creature cmc=<3]
@@ -63,6 +62,9 @@ searchableCardCategoryCustomQuery:
   [_cardCategory:draw seven][_cardCategoryClass:draw sevens][_customQuery:text="draw seven" text|="draws seven"]
  - >
   [_cardCategory:manland][_cardCategoryClass:manlands][_customQuery:t=land text="becomes a" text=creature]
+ - >
+  [_cardCategory:draw spell][_cardCategoryClass:card draw][_customQuery:t=instant t|=sorcery text="draw" text="cards"]
+
 
 cardCategoryTerm: 
 - "[#searchableCardCategory#]#_cardCategory#"

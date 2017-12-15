@@ -2,61 +2,63 @@
 
 cardQueryPermanent:
 - >
-  [_customQuery:t!=instant t!=sorcery][#_customQuery.cardSearchCustomQuery(1)#][_cardName:#_cardName1#]
+  [_customQuery:t!=instant t!=sorcery#_colorTerm#][#_customQuery.cardSearchCustomQuery(1)#][_cardName:#_cardName1#]
 
 cardQueryCreature:
 - >
-  [_customQuery:t=creature][#_customQuery.cardSearchCustomQuery(1)#][_cardName:#_cardName1#]
+  [_customQuery:t=creature#_colorTerm#][#_customQuery.cardSearchCustomQuery(1)#][_cardName:#_cardName1#]
 
 cardQueryInstantOrSorcery:
 - >
-  [_customQuery:t=instant t|=sorcery][#_customQuery.cardSearchCustomQuery(1)#][_cardName:#_cardName1#]
+  [_customQuery:t=instant t|=sorcery#_colorTerm#][#_customQuery.cardSearchCustomQuery(1)#][_cardName:#_cardName1#]
 
 cardQueryLand:
 - >
-  [_customQuery:t=land][#_customQuery.cardSearchCustomQuery(1)#][_cardName:#_cardName1#]
+  [_customQuery:t=land#_colorTerm#][#_customQuery.cardSearchCustomQuery(1)#][_cardName:#_cardName1#]
 
 cardQueryNonbasicLand:
 - >
-  [_customQuery:t=land t!=basic][#_customQuery.cardSearchCustomQuery(1)#][_cardName:#_cardName1#]
+  [_customQuery:t=land t!=basic#_colorTerm#][#_customQuery.cardSearchCustomQuery(1)#][_cardName:#_cardName1#]
 
 cardQueryNonland:
 - >
-  [_customQuery:t!=land][#_customQuery.cardSearchCustomQuery(1)#][_cardName:#_cardName1#]
+  [_customQuery:t!=land#_colorTerm##_colorTerm#][#_customQuery.cardSearchCustomQuery(1)#][_cardName:#_cardName1#]
 
 cardQueryNoncreatureArtifact:
 - >
-  [_customQuery:t=artifact t!=creature][#_customQuery.cardSearchCustomQuery(1)#][_cardName:#_cardName1#]
+  [_customQuery:t=artifact t!=creature#_colorTerm#][#_customQuery.cardSearchCustomQuery(1)#][_cardName:#_cardName1#]
 
 cardQueryMultiWordNoncreatureArtifact:
 - >
-  [_customQuery:t=artifact t!=creature text="? "][#_customQuery.cardSearchCustomQuery(1)#][_cardName:#_cardName1#]
+  [_customQuery:t=artifact t!=creature text="? "#_colorTerm#][#_customQuery.cardSearchCustomQuery(1)#][_cardName:#_cardName1#]
+
+cardQueryCardDraw:
+- >
+  [_customQuery:t=instant t|=sorcery text="draw" text="cards"#_colorTerm#][#_customQuery.cardSearchCustomQuery(1)#][_cardName:#_cardName1#]
 
 cardQueryTutor:
 - >
-  [_customQuery:name=tutor,t=instant t|=sorcery text="search your library for a card"][#_customQuery.cardSearchCustomQuery(1)#][_cardName:#_cardName1#]
+  [_customQuery:name=tutor,t=instant t|=sorcery text="search your library for a card"#_colorTerm#][#_customQuery.cardSearchCustomQuery(1)#][_cardName:#_cardName1#]
 
 # expects _searchString to be defined
 cardQueryPermanentWithSearch:
 - >
-  [_customQuery:t!=instant t!=sorcery #_searchString#][#_customQuery.cardSearchCustomQuery(1)#][_cardName:#_cardName1#]
+  [_customQuery:t!=instant t!=sorcery #_searchString##_colorTerm#][#_customQuery.cardSearchCustomQuery(1)#][_cardName:#_cardName1#]
 
 # expects _searchString to be defined
 cardQueryWithText:
 - >
-  [_customQuery:text="#_searchString#"][#_customQuery.cardSearchCustomQuery(1)#][_cardName:#_cardName1#]
+  [_customQuery:text="#_searchString#"#_colorTerm#][#_customQuery.cardSearchCustomQuery(1)#][_cardName:#_cardName1#]
 
 # expects _searchString to be defined
 cardQueryPermanentWithText:
 - >
-  [_customQuery:t!=instant t!=sorcery text="#_searchString#"][#_customQuery.cardSearchCustomQuery(1)#][_cardName:#_cardName1#]
+  [_customQuery:t!=instant t!=sorcery text="#_searchString#"#_colorTerm#][#_customQuery.cardSearchCustomQuery(1)#][_cardName:#_cardName1#]
 
 # expects _searchString to be defined
 cardQueryCreatureWithText:
 - >
-  [_customQuery:t=creature text="#_searchString#"][#_customQuery.cardSearchCustomQuery(1)#][_cardName:#_cardName1#]
-
-###### just card names ######
+  [_customQuery:t=creature text="#_searchString#"#_colorTerm#][#_customQuery.cardSearchCustomQuery(1)#][_cardName:#_cardName1#]
 
 randomPermanentCard:
 - >
@@ -82,6 +84,10 @@ randomNonlandCard:
 - >
   [#cardQueryNonland#]#_cardName#
 
+randomCardDrawCard:
+- >
+  [_card:#cardQueryCardDraw#]#_cardName#
+
 randomTutorCard:
 - >
   [_card:#cardQueryTutor#]#_cardName#
@@ -102,3 +108,53 @@ randomCreatureWithText:
   [_card:#cardQueryPermanentWithText#]#_cardName#
 
   
+###### color filters ######
+_colorTerm: ""
+color_W: "[_colorTerm: color=w]"
+color_U: "[_colorTerm: color=u]"
+color_B: "[_colorTerm: color=b]"
+color_R: "[_colorTerm: color=r]"
+color_G: "[_colorTerm: color=g]"
+
+color_WU: "[_colorTerm: color=wu]"
+color_UB: "[_colorTerm: color=ub]"
+color_BR: "[_colorTerm: color=br]"
+color_RG: "[_colorTerm: color=rg]"
+color_GW: "[_colorTerm: color=gw]"
+color_WB: "[_colorTerm: color=wb]"
+color_UR: "[_colorTerm: color=ur]"
+color_BG: "[_colorTerm: color=bg]"
+color_RW: "[_colorTerm: color=rw]"
+color_UG: "[_colorTerm: color=ug]"
+color_UW: "#color_WU#"
+color_BU: "#color_UB#"
+color_RB: "#color_BR#"
+color_GR: "#color_RG#"
+color_WG: "#color_GW#"
+color_BW: "#color_WB#"
+color_RU: "#color_UR#"
+color_GB: "#color_BG#"
+color_WR: "#color_RW#"
+color_GU: "#color_UG#"
+
+color_WUB: "[_colorTerm: color=wu]"
+color_UBR: "[_colorTerm: color=ub]"
+color_BRG: "[_colorTerm: color=br]"
+color_RGW: "[_colorTerm: color=rg]"
+color_GWU: "[_colorTerm: color=gw]"
+color_WBR: "[_colorTerm: color=wb]"
+color_URG: "[_colorTerm: color=ur]"
+color_BGW: "[_colorTerm: color=bg]"
+color_RWU: "[_colorTerm: color=rw]"
+color_GUB: "[_colorTerm: color=ug]"
+color_RUG: "#color_URG#"
+color_BUG: "#color_GUB#"
+
+color_WUBRG: "[_colorTerm: color=wubrg]"
+
+color_4color:
+- "wubr"
+- "ubrg"
+- "brgw"
+- "rgwu"
+- "gwub"
