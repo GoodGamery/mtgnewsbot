@@ -6,3 +6,7 @@ Jeskai
 Orzhov
 Boros
 Jund
+Sultai
+Temur
+Abzan
+Izzet

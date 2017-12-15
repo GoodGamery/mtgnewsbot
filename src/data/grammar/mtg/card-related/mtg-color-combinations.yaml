@@ -1,0 +1,42 @@
+mtgColors:
+- "#basicColors.capitalize#"
+- "#monoColor#"
+- "#multicolorWithLetters#"
+- "#multicolorWithWords#"
+- "#colorComboNickname#"
+
+monoColor:
+- Mono-Black
+- Mono-White
+- Mono-Red
+- Mono-Blue
+- Mono-Green
+- Mono-Brown
+
+multicolorWithLetters:
+- WB
+- UG
+- UR
+- UB
+- UW
+- BG
+- GW
+- RB
+- RUG
+- BUG
+
+multicolorWithWords:
+- Blue-White
+- Blue-Black
+- Blue-Red
+- Blue-Green
+- Green-White
+- Red-Green
+- Red-Black
+- Red-White
+- Red-Green
+- Black-White
+- Black-Green
+- Four-Color
+- Five-Color
+- Purple
