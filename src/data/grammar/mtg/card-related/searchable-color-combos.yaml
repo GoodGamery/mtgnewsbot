@@ -3,7 +3,7 @@ searchableColor:
 - "#searchableMonoColor#"
 - "#searchableMulticolorWithLetters#"
 - "#searchableMulticolorWithWords#"
-# - "#searchableColorComboNickname#"
+- "#searchableColorComboNickname#"
 
 searchableBasicColor:
 - "white#color_W#"
