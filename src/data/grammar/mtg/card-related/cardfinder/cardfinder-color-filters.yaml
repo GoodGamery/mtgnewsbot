@@ -31,12 +31,12 @@ color_WUB: '[_colorFilter: color=wub color!=rg][_landColorFilter:#landFilter_WU#
 color_UBR: '[_colorFilter: color=ubr color!=gw][_landColorFilter:#landFilter_UB#,#landFilter_BR#,#landFilter_UR#,#landFilter_UBR#]'
 color_BRG: '[_colorFilter: color=brg color!=wu][_landColorFilter:#landFilter_BR#,#landFilter_RG#,#landFilter_BG#,#landFilter_BRG#]'
 color_RGW: '[_colorFilter: color=rgw color!=ub][_landColorFilter:#landFilter_RG#,#landFilter_GW#,#landFilter_RW#,#landFilter_RGW#]'
-color_GWU: '[_colorFilter: color=gwu color!=br][_landColorFilter:#landFilter_GW#,#landFilter_WU#,#landFilter_UG#,#landFilter_GWU#]'
-color_WBR: '[_colorFilter: color=wbr color!=ug][_landColorFilter:#landFilter_WB#,#landFilter_BR#,#landFilter_WR#,#landFilter_WBR#]'
-color_URG: '[_colorFilter: color=urg color!=wb][_landColorFilter:#landFilter_UR#,#landFilter_RG#,#landFilter_UG#,#landFilter_URG#]'
-color_BGW: '[_colorFilter: color=bgw color!=ur][_landColorFilter:#landFilter_BG#,#landFilter_GW#,#landFilter_BW#,#landFilter_BGW#]'
-color_RWU: '[_colorFilter: color=rwu color!=bg][_landColorFilter:#landFilter_RW#,#landFilter_WU#,#landFilter_RU#,#landFilter_RWU#]'
-color_GUB: '[_colorFilter: color=gub color!=rw][_landColorFilter:#landFilter_GU#,#landFilter_UB#,#landFilter_GB#,#landFilter_GUB#]'
+color_GWU: '[_colorFilter: color=gwu color!=br][_landColorFilter:#landFilter_GW#,#landFilter_WU#,#landFilter_GU#,#landFilter_GWU#]'
+color_WBR: '[_colorFilter: color=wbr color!=ug][_landColorFilter:#landFilter_WB#,#landFilter_BR#,#landFilter_RW#,#landFilter_WBR#]'
+color_URG: '[_colorFilter: color=urg color!=wb][_landColorFilter:#landFilter_UR#,#landFilter_RG#,#landFilter_GU#,#landFilter_URG#]'
+color_BGW: '[_colorFilter: color=bgw color!=ur][_landColorFilter:#landFilter_BG#,#landFilter_GW#,#landFilter_WB#,#landFilter_BGW#]'
+color_RWU: '[_colorFilter: color=rwu color!=bg][_landColorFilter:#landFilter_RW#,#landFilter_WU#,#landFilter_UR#,#landFilter_RWU#]'
+color_GUB: '[_colorFilter: color=gub color!=rw][_landColorFilter:#landFilter_GU#,#landFilter_UB#,#landFilter_BG#,#landFilter_GUB#]'
 color_RUG: '#color_URG#'
 color_BUG: '#color_GUB#'
 
@@ -204,7 +204,7 @@ landFilter_Colorless:
 - ' text="{C}" text!="{W}" text!="{U}" text!="{B}" text!="{R}" text!="{G}" text!="any color" text!="that color" text!="one color" text!="colors" text!="plains" text!="island" text!="swamp" text!="mountain" text!="forest"'
 
 landfilter_ManyColorLand:
-- 'text="any color" text!="one color" text|="colors"  text|="{W}{U}{B}{R}{G}"'
+- 'text="any color" text|="one color" text|="colors"  text|="{W}{U}{B}{R}{G}"'
 - 'text="search" text="basic land" text!="{W}" text!="{U}" text!="{B}" text!="{R}" text!="{G}"'
 
 #tribal - cavern of souls and new ixalan land?

@@ -152,3 +152,8 @@ cardQueryLandWithColorFilter:
 randomLandCardByColor:
 - >
   [_card:#cardQueryLandWithColorFilter#]#_cardName#
+
+# expects _searchString, see above
+randomLandCardByColor2:
+- >
+  [_card:#cardQueryLandWithColorFilter#]#_cardName#, [_card:#cardQueryLandWithColorFilter#]#_cardName#, [_card:#cardQueryLandWithColorFilter#]#_cardName#
