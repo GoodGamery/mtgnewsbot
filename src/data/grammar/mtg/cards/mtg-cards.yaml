@@ -51,8 +51,16 @@
     "#randomRealCard#",
     "#randomRealCard#",
     "#randomRealCard#",
-    "#realLandCard#",
-    "#realLandCard#",
+    "#realFilteredLandCard#",
+    "#realFilteredLandCard#",
+    "#realFilteredLandCard#"
+  ],
+
+  realLandCard: [
+    "#basicLands#",
+    "#dualLands#",
+    "#utilityLands#",
+    "#limitedLands#",
     "#randomNonbasicLandCard#"
   ],
 
@@ -63,14 +71,6 @@
       "#realObscureCard#",
       "#realPowerfulCard#",
       "#realBadCard#"
-  ],
-
-  realLandCard: [
-    "#basicLands#",
-    "#dualLands#",
-    "#utilityLands#",
-    "#limitedLands#",
-    "randomNonbasicLandCard"
   ],
 
   descriptiveCard: [

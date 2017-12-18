@@ -6,7 +6,7 @@ cardQueryPermanent:
 
 randomPermanentCard:
 - >
-  [#cardQueryPermanent#]#_cardName#
+  #cardQueryPermanent##_cardName#
 
 
 cardQueryCreature:
@@ -15,7 +15,7 @@ cardQueryCreature:
 
 randomCreatureCard:
 - >
-  [#cardQueryCreature#]#_cardName#
+  #cardQueryCreature##_cardName#
 
 
 cardQueryInstantOrSorcery:
@@ -24,16 +24,16 @@ cardQueryInstantOrSorcery:
 
 randomInstantOrSorceryCard:
 - >
-  [#cardQueryInstantOrSorcery#]#_cardName#
+  #cardQueryInstantOrSorcery##_cardName#
 
 
 cardQueryCounterspell:
 - >
-  [_customQuery:t=instant text="counter target spell"][#_customQuery.cardSearchCustomQuery(1)#][_cardName:#_cardName1#]
+  [_customQuery:t=instant text="counter target"#_colorFilter#]#_customQuery.cardSearchCustomQuery(1)#
 
 randomCounterspellCard:
 - >
-  [#cardQueryCounterspell#]#_cardName#
+  #cardQueryCounterspell##_cardName1#
 
 
 cardQueryLand:
@@ -42,7 +42,7 @@ cardQueryLand:
 
 randomLandCard:
 - >
-  [#cardQueryLand#]#_cardName#
+  #cardQueryLand##_cardName#
 
 
 cardQueryNonbasicLand:
@@ -51,16 +51,16 @@ cardQueryNonbasicLand:
 
 randomNonbasicLandCard:
 - >
-  [#cardQueryNonbasicLand#]#_cardName#
+  #cardQueryNonbasicLand##_cardName#
 
 
 cardQueryNonland:
 - >
-  [_customQuery:t!=land#_colorFilter##_colorFilter#][#_customQuery.cardSearchCustomQuery(1)#][_cardName:#_cardName1#]
+  [_customQuery:t!=land#_colorFilter#][#_customQuery.cardSearchCustomQuery(1)#][_cardName:#_cardName1#]
 
 randomNonlandCard:
 - >
-  [#cardQueryNonland#]#_cardName#
+  #cardQueryNonland##_cardName#
 
 
 cardQueryNoncreatureArtifact:
@@ -75,11 +75,11 @@ cardQueryMultiWordNoncreatureArtifact:
 
 cardQueryCardDraw:
 - >
-  [_customQuery:t=instant t|=sorcery text="draw" text="cards"#_colorFilter#][#_customQuery.cardSearchCustomQuery(1)#][_cardName:#_cardName1#]
+  [_customQuery:t=instant t|=sorcery text="draw" text="cards"#_colorFilter#]#_customQuery.cardSearchCustomQuery(1)#[_cardName:#_cardName1#]
 
 randomCardDrawCard:
 - >
-  [_card:#cardQueryCardDraw#]#_cardName#
+  #cardQueryCardDraw##_cardName#
 
 
 cardQueryTutor:
@@ -88,16 +88,16 @@ cardQueryTutor:
 
 randomTutorCard:
 - >
-  [_card:#cardQueryTutor#]#_cardName#
+  #cardQueryTutor##_cardName#
 
 
 cardQueryFlyingFinisher:
 - >
-  [_customQuery:t=creature text=flying pow=>4#_colorFilter#][#_customQuery.cardSearchCustomQuery(1)#][_cardName:#_cardName1#]
+  [_customQuery:t=creature text=flying pow=>4#_colorFilter#]#_customQuery.cardSearchCustomQuery(1)#[_cardName:#_cardName1#]
 
 randomFlyingFinisherCard:
 - >
-  [#cardQueryFlyingFinisher#]#_cardName#
+  #cardQueryFlyingFinisher##_cardName#
 
 
 # expects _searchString to be defined
@@ -108,8 +108,7 @@ cardQueryWithText:
 # expects _searchString, see above
 randomCardWithText:
 - >
-  [_card:#cardQueryPermanentWithText#]#_cardName#
-
+  #cardQueryPermanentWithText##_cardName#
 
 # expects _searchString to be defined
 cardQueryPermanentWithSearch:
@@ -119,7 +118,7 @@ cardQueryPermanentWithSearch:
 # expects _searchString, see above
 randomPermanentWithSearch:
 - >
-  [_card:#cardQueryPermanentWithSearch#]#_cardName#
+ #cardQueryPermanentWithSearch##_cardName#
 
 
 # expects _searchString to be defined
@@ -130,7 +129,7 @@ cardQueryPermanentWithText:
 # expects _searchString, see above
 randomPermanentWithText:
 - >
-  [_card:#cardQueryPermanentWithText#]#_cardName#
+  #cardQueryPermanentWithText##_cardName#
 
 
 # expects _searchString to be defined
@@ -141,7 +140,7 @@ cardQueryCreatureWithText:
 # expects _searchString, see above
 randomCreatureWithText:
 - >
-  [_card:#cardQueryCreatureWithText#]#_cardName#
+  #cardQueryCreatureWithText##_cardName#
 
 # expects _searchString to be defined
 cardQueryLandWithColorFilter:
@@ -151,9 +150,4 @@ cardQueryLandWithColorFilter:
 # expects _searchString, see above
 randomLandCardByColor:
 - >
-  [_card:#cardQueryLandWithColorFilter#]#_cardName#
-
-# expects _searchString, see above
-randomLandCardByColor2:
-- >
-  [_card:#cardQueryLandWithColorFilter#]#_cardName#, [_card:#cardQueryLandWithColorFilter#]#_cardName#, [_card:#cardQueryLandWithColorFilter#]#_cardName#
+  #cardQueryLandWithColorFilter##_cardName#

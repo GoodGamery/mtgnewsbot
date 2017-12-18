@@ -13,7 +13,7 @@ deckArch:
  - >
   [_format:#format#]#_format# #deckVariation#
  - >
-  #mtgColors.capitalize# #deck#
+  #searchableColor.capitalize# #deck#
  - >
   [_deck:#deckArch#,#preconDeck#]#_deck#
 
@@ -33,14 +33,22 @@ deckArchOrCategory:
  - >
   [_format:#format#]#_format# #deckVariation#
  - >
-  #mtgColors.capitalize# #deck#
+  #searchableColor.capitalize# #deck#
  - >
   [_deck:#deckArch#,#preconDeck#]#_deck#
+
+
+_deckCardClass: "#randomCounterspellCard#"
+deckTest:
+ - >
+  Draw-Go
+# [_deckCardClass:#randomCounterspellCard#]
+#  [_deckCardClass:#randomCounterspellCard#,#randomCardDrawCard#,#randomFlyingFinisherCard#]
 
 deck: 
  - >
   Draw-Go
-  [_deckCardClass1:]
+  [_deckCardClass:#randomNonlandCard#,#randomCounterspellCard#,#randomCardDrawCard#,#randomFlyingFinisherCard#]
  - >
   Dredge
  - >
@@ -118,13 +126,13 @@ deck:
  - >
   Ponza
  - >
-  #mtgColors# Devotion
+  #searchableColor# Devotion
  - >
   #deckNameNumber#-Rack
  - >
   #deckNameNumber#-Post
  - >
-  #mtgColors# Deck Wins
+  #searchableColor# Deck Wins
  - >
   #definingCardname#-Go
  - >
@@ -159,62 +167,64 @@ deckVariation:
 deckPrefix:
  - >
   Turbo
- - >
-  Midrange
- - >
-  Manaless
- - >
-  Suicide
- - >
-  Counter
- - >
-  Owling
- - >
-  Shardless
- - >
-  Eternal
- - >
-  Full English
- - >
-  Angry
- - >
-  Fruity
- - >
-  Sped
- - >
-  Wet #colorComboNickname#
- - >
-  Dark #colorComboNickname#
- - >
-  Pale #colorComboNickname#
- - >
-  Hot #colorComboNickname#
- - >
-  Tooth &
- - >
-  All-in
- - >
-  Aggro
- - >
-  Angel
- - >
-  Dragon
- - >
-  Eldrazi
- - >
-  Seething
- - >
-  Oops! All #definingCardname.s#
- - >
-  Canadian
- - >
-  Cat
- - >
-  Deadguy
- - >
-  Ramunap
- - >
-  Budget
+  [_searchString:draws an additional]
+ # [_deckCardClass:#randomNonlandCard#,#cardQueryWithText#,#cardQueryWithText#]
+ # - >
+ #  Midrange
+ # - >
+ #  Manaless
+ # - >
+ #  Suicide
+ # - >
+ #  Counter
+ # - >
+ #  Owling
+ # - >
+ #  Shardless
+ # - >
+ #  Eternal
+ # - >
+ #  Full English
+ # - >
+ #  Angry
+ # - >
+ #  Fruity
+ # - >
+ #  Sped
+ # - >
+ #  Wet #colorComboNickname#
+ # - >
+ #  Dark #colorComboNickname#
+ # - >
+ #  Pale #colorComboNickname#
+ # - >
+ #  Hot #colorComboNickname#
+ # - >
+ #  Tooth &
+ # - >
+ #  All-in
+ # - >
+ #  Aggro
+ # - >
+ #  Angel
+ # - >
+ #  Dragon
+ # - >
+ #  Eldrazi
+ # - >
+ #  Seething
+ # - >
+ #  Oops! All #definingCardname.s#
+ # - >
+ #  Canadian
+ # - >
+ #  Cat
+ # - >
+ #  Deadguy
+ # - >
+ #  Ramunap
+ # - >
+ #  Budget
 
 deckSuffix:
  - >
@@ -362,21 +372,21 @@ deckLimitedArchetype:
 
 limitedDeckDescription:
  - >
-  a #mtgColors# #deckLimitedArchetype# deck
+  a #searchableColor# #deckLimitedArchetype# deck
  - >
-  a #mtgColors# #deckLimitedArchetype# deck
+  a #searchableColor# #deckLimitedArchetype# deck
  - >
-  a #mtgColors# #deckLimitedArchetype# deck
+  a #searchableColor# #deckLimitedArchetype# deck
  - >
-  #mtgColors# #deckLimitedArchetype#
+  #searchableColor# #deckLimitedArchetype#
  - >
-  #mtgColors# #deckLimitedArchetype#
+  #searchableColor# #deckLimitedArchetype#
  - >
-  #mtgColors# #deckLimitedArchetype#
+  #searchableColor# #deckLimitedArchetype#
  - >
-  a #mtgColors# trainwreck
+  a #searchableColor# trainwreck
  - >
-  a #mtgColors# pile
+  a #searchableColor# pile
  - >
   a 4#num1-9#-card special
 

@@ -1,5 +1,6 @@
 ###### color filters ######
 _colorFilter: ''
+
 color_W: '[_colorFilter: color=w color!=ubrg][_landColorFilter:#landFilter_W#,#landFilter_W#,#landFilter_Colorless#]'
 color_U: '[_colorFilter: color=u color!=brgw][_landColorFilter:#landFilter_U#,#landFilter_U#,#landFilter_Colorless#]'
 color_B: '[_colorFilter: color=b color!=rgwu][_landColorFilter:#landFilter_B#,#landFilter_B#,#landFilter_Colorless#]'
@@ -43,7 +44,7 @@ color_BUG: '#color_GUB#'
 color_WUBRG: '[_colorFilter: color=wubrg][_landColorFilter:#landFilter_WUB#,#landFilter_UBR#,#landFilter_BRG#,#landFilter_RGW#,#landFilter_GWU#,#landFilter_WBR#,#landFilter_URG#,#landFilter_BGW#,#landFilter_RWU#,#landFilter_GUB#]'
 
 # include wastes
-color_Colorless: '[_colorFilter: color!=wubrg][_landColorFilter: name=wastes,#landFilter_Colorless#]'
+color_Colorless: '[_colorFilter: color!=wubrg][_landColorFilter:#landFilter_Colorless#,#landFilter_Colorless#,#landFilter_Colorless#, name=wastes t=basic]'
 
 color_fourColor:
 - '[_colorFilter: color=wubr color!=g][_landColorFilter:#landFilter_WUB#,#landFilter_UBR#,#landFilter_WBR#,#landFilter_RWU#]'
@@ -55,6 +56,8 @@ color_fourColor:
 - '[_colorFilter: color=rgwu color!=b][_landColorFilter:#landFilter_RGW#,#landFilter_GWU#,#landFilter_URG#,#landFilter_RWU#]'
 
 - '[_colorFilter: color=gwub color!=r][_landColorFilter:#landFilter_WUB#,#landFilter_GWU#,#landFilter_BGW#,#landFilter_GUB#]'
+
+### land filters (referenced by color filters) ###
 
 landFilter_W:
 - ' t=plains t=basic'
@@ -204,7 +207,16 @@ landFilter_Colorless:
 - ' text="{C}" text!="{W}" text!="{U}" text!="{B}" text!="{R}" text!="{G}" text!="any color" text!="that color" text!="one color" text!="colors" text!="plains" text!="island" text!="swamp" text!="mountain" text!="forest"'
 
 landfilter_ManyColorLand:
-- 'text="any color" text|="one color" text|="colors"  text|="{W}{U}{B}{R}{G}"'
-- 'text="search" text="basic land" text!="{W}" text!="{U}" text!="{B}" text!="{R}" text!="{G}"'
+- ' text="any color" text|="one color" text|="colors"'
+- ' text="search" text="basic land" text!="{W}" text!="{U}" text!="{B}" text!="{R}" text!="{G}"'
+
+landfilter_WUBRG:
+- '#landfilter_ManyColorLand#'
+- ' text="{W}{U}{B}{R}{G}"'
 
 #tribal - cavern of souls and new ixalan land?
+tribal:
+
+untribal:
+- '#tribal#'
+- 'UNTRIBAL'

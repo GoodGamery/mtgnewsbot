@@ -13,8 +13,18 @@ function ed(s) {
   return s + 'ed';
 }
 
+// useful if you wish to invoke a rule without displaying its text
+function hide(s) {
+  return '\0';
+}
+
 function lowercase(s) {
   return s.toLowerCase();
+}
+
+// useful for testing
+function noop(s) {
+  return s;
 }
 
 function noPunctuation(s) {
@@ -48,7 +58,9 @@ module.exports = {
   allCaps,
   ed,
   lowercase,
+  hide,
   hyphenate,
+  noop,
   noPunctuation,
   noSpaces,
   stripLeadingText
