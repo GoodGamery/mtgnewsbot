@@ -29,11 +29,11 @@ randomInstantOrSorceryCard:
 
 cardQueryCounterspell:
 - >
-  [_customQuery:t=instant text="counter target"#_colorFilter#]#_customQuery.cardSearchCustomQuery(1)#
+  [_customQuery:t=instant text="counter target spell"#_colorFilter#][#_customQuery.cardSearchCustomQuery(1)#][_cardName:#_cardName1#]
 
 randomCounterspellCard:
 - >
-  #cardQueryCounterspell##_cardName1#
+  #cardQueryCounterspell##_cardName#
 
 
 cardQueryLand:
@@ -75,7 +75,7 @@ cardQueryMultiWordNoncreatureArtifact:
 
 cardQueryCardDraw:
 - >
-  [_customQuery:t=instant t|=sorcery text="draw" text="cards"#_colorFilter#]#_customQuery.cardSearchCustomQuery(1)#[_cardName:#_cardName1#]
+  [_customQuery:t=instant t|=sorcery text="draw" text="cards"#_colorFilter#][#_customQuery.cardSearchCustomQuery(1)#][_cardName:#_cardName1#]
 
 randomCardDrawCard:
 - >
@@ -93,12 +93,11 @@ randomTutorCard:
 
 cardQueryFlyingFinisher:
 - >
-  [_customQuery:t=creature text=flying pow=>4#_colorFilter#]#_customQuery.cardSearchCustomQuery(1)#[_cardName:#_cardName1#]
+  [_customQuery:t=creature text=flying pow=>4#_colorFilter#][#_customQuery.cardSearchCustomQuery(1)#][_cardName:#_cardName1#]
 
 randomFlyingFinisherCard:
 - >
   #cardQueryFlyingFinisher##_cardName#
-
 
 # expects _searchString to be defined
 cardQueryWithText:

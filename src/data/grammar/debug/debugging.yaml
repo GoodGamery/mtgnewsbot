@@ -27,3 +27,97 @@ dbgReplaceEscapedComma:
  - "#dbgStringWithCommas.replace(\\,,!)#"
 dbgStringWithCommas:
  - "banana\\, apple, and orange"
+
+dbgList1:
+- apple
+- banana
+- canteloupe
+- durian
+- elderberry
+
+dbgList1p2:
+- vanilla
+- chocolate
+- strawberry
+- pistachio
+- rocky road
+
+dbgList1Combo: 
+- "#dbgList1#"
+- "#dbgList1p2#"
+
+
+dbgList2: 
+- aardvark
+- badger
+- cougar
+- dolphin
+- emu
+
+dbgList2p2:
+- dragon
+- wyvern
+- ogre
+- troll
+- beholder
+
+dbgList2Combo: 
+- "#dbgList2#"
+- "#dbgList2p2#"
+
+dbgList12Combo:
+- "#dbgList1Combo#"
+- "#dbgList2Combo#"
+
+dbgList3:
+- granite
+- marble
+- limestone
+- slate
+
+# same as dbgList
+dbgList1a: "#dbgList1#"
+
+dbgList1b: "[#dbgList1#]#dbgList1#"
+
+dbgListCombo: 
+- '#dbgList1#'
+- '#dbgList2#'
+
+dbgListCombo2Prime: 
+- '[dbgListPrimeAlpha:#dbgList1#,#dbgList2#]#dbgListPrimeAlpha#'
+
+dbgListPrime: 
+- '[dbgListPrimeAlpha:#dbgList1#]#dbgListPrimeAlpha#'
+- '[dbgListPrimeAlpha:#dbgList2#]#dbgListPrimeAlpha#'
+
+dbgListPrime2: 
+- '[dbgListPrimeAlpha:#dbgList1#,#dbgList2#]#dbgListPrimeAlpha#'
+
+dbgListComboPrime: "[_dbgList12Combo:#dbgList12Combo#,#dbgList3#]#_dbgList12Combo#"
+
+dbgTestCardList1: "#randomCounterspellCard#"
+
+
+dbgTestCardList: "#dbgTestCardList1#"
+
+# dbgTestCardList2: "[dbgTestCardList:#dbgTestCardList#,#randomLandCard#]"
+
+dbgTestCardList2: 
+- "#dbgTestCardList#"
+- "#randomNonbasicLandCard#"
+# - "[dbgTestCardList:#dbgTestCardList#,#dbgTestCardList#,#dbgTestCardList#,#dbgTestCardList#,#randomLandCard#,#randomLandCard#,#randomLandCard#,#randomLandCard#]"
+
+
+dbgTestCardListEval: "#dbgTestCardList# #dbgTestCardList# #dbgTestCardList#"
+
+dbgTestThingListEval: "(#dbgTestCardList#) / #dbgTestCardList# / #dbgTestCardList# / #dbgTestCardList# / #dbgTestCardList#"
+
+#dbgHero: ["[name:Francis][pet:Zippy]f+z", "[name:Jersey][pet:Glovesy]j+g"]
+dbgHero: ["[name:#dbgANames#][pet:#randomCounterspellCard#,#randomCardDrawCard#,#randomFlyingFinisherCard#]", "[name:#dbgZNames#][pet:Zestrel,Zub-Zub]"]
+
+dbgANames: ["Amelia", "Aaron", "Andy", "Alicia"]
+dbgZNames: ["Ziggy", "Zelda", "Zephyr", "Zanzibar"]
+
+dbgStory: "#name# loved #pet# who loved #pet# and #pet#"
+dbgTellStory: ["[#dbgHero#]#dbgStory#"]

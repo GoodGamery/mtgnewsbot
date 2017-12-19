@@ -37,13 +37,11 @@ deckArchOrCategory:
  - >
   [_deck:#deckArch#,#preconDeck#]#_deck#
 
-
-_deckCardClass: "#randomCounterspellCard#"
 deckTest:
  - >
   Draw-Go
+  [_deckCardClass:#randomNonlandCard#,#randomCounterspellCard#,#randomCardDrawCard#,#randomFlyingFinisherCard#]#_deckCardClass# #_deckCardClass# #_deckCardClass# #_deckCardClass #_deckCardClass# #_deckCardClass#  
 # [_deckCardClass:#randomCounterspellCard#]
-#  [_deckCardClass:#randomCounterspellCard#,#randomCardDrawCard#,#randomFlyingFinisherCard#]
 
 deck: 
  - >
