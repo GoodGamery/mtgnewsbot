@@ -81,6 +81,33 @@ function stripLeadingText(s, params) {
   return s.startsWith(leadingText) ? s.replace(leadingText,'') : s;
 }
 
+
+// converts a whole number string to its english equivalent. currently supports only 0-99
+function wholeNumberToText(s) {
+  const max = 99;
+
+  const subTwentyNumbers = [
+    'zero', 'one', 'two', 'three', 'four', 'five', 'six', 'seven', 'eight', 'nine',
+    'ten', 'eleven', 'twelve', 'thirteen', 'fourteen', 'fifteen', 'sixteen', 'seventeen', 'eighteen', 'nineteen'
+  ];
+
+  const tens = [
+    '', '', 'twenty', 'thirty', 'forty', 'fifty', 'sixty', 'seventy', 'eighty', 'ninety'
+  ];
+
+  if (!Number.isSafeInteger(+s) || +s < 0 || +s > max) {
+    return s;
+  }
+
+  const number = +s;
+
+  if (number < subTwentyNumbers.length) {
+    return subTwentyNumbers[number];
+  }
+
+  return `${tens[Math.floor(number/10)]}${number%10 ? '-' + subTwentyNumbers[number%10] : ''}`; 
+}
+
 module.exports = { 
   allCaps,
   ed,
@@ -91,5 +118,6 @@ module.exports = {
   noPunctuation,
   noSpaces,
   sIfNeeded,
-  stripLeadingText
+  stripLeadingText,
+  wholeNumberToText
 };

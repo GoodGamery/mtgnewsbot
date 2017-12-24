@@ -117,3 +117,11 @@ cardQueryLandWithColorFilter:
   [_customQuery:t=land#_landColorFilter#][#_customQuery.cardSearchCustomQuery(1)#][_cardName:#_cardName1#]
 
 randomLandCardByColor: "#cardQueryLandWithColorFilter##_cardName#"
+
+cardQueryCategoryWithOneWordName: 
+ ->
+  [#searchableCardCategory#][_customQuery:#_customQuery# name!="? "][#_cardCategorySearchTerm.cardSearchByText#]
+ - >
+  [#searchableCardCategoryCustomQuery#][_customQuery:#_customQuery# name!="? "][#_customQuery.cardSearchCustomQuery#]
+
+randomCategoryCardWithOneWordName: "#cardQueryCategoryWithOneWordName##_cardName1#"
