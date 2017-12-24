@@ -1,23 +1,10 @@
 ---
 
-randomParameterizedCardDefault:
-- "#randomNonlandCard#"
-- "#randomNonlandCard#"
-# - "#realCard#"
-
-_randomDeckCard: 
-# - "#randomParameterizedCardDefault#"
-- "#_deckCardClass#"
-# - "#_deckCardClass#"
-# - "#randomLandCardByColor#"
-# - "#randomLandCardByColor#"
-
-# TODO: refactor searchableColor to have a no-text version (this use case) and a text version
-initializeKeepOrMulligan: "[_deckColor:#searchableColor#]#_deckColor.hide#[_opposingDeck:#opposingDeck#][_deck:#deckTest#]"
-
-
 headlineKeepOrMulligan: >
-  [_format:#format#]#initializeKeepOrMulligan#[_headerText:#svgMulliganHeaderText#][#svgMulliganBodyText#]#svgMulliganStatusText# {svg svgString=`#svgMulligan#`}
+  [_format:#format#][#initializeKeepOrMulligan#][_headerText:#svgMulliganHeaderText#][#svgMulliganBodyText#]#svgMulliganStatusText# {svg svgString=`#svgMulligan#`}
+
+initializeKeepOrMulligan: "[_deckColor:#searchableColor#]#_deckColor.hide#[opposingDeck:#opposingDeck#][_deck:#deckTest#]"
+
 svgMulliganStatusText:
 - "Keep or Mulligan? With #pro#"
 - "Keep or Mulligan? #_format# Edition"
@@ -49,33 +36,33 @@ svgMulliganBeforeText:
   It’s game #gameNumber# and you're on the #playOrDraw#. You mulligan your first
   hand but draw another 7 cards anyway. Your new hand is:
 - >
-  [_aboveTextSize:26px]You’re playing against #_opposingDeck#, game #gameNumber#,
+  [_aboveTextSize:26px]You’re playing against #opposingDeck#, game #gameNumber#,
   on the draw. Your hand is:
 - >
   [_aboveTextSize:22px]You're playing Team Limited with #limitedDeckDescription#.
-  Your deck is not very aggressive, but your opponent’s deck is better than yours
-  and you feel that [#somePronoun#]#theirs# has more late-game power, so you side
-  in cards like #randomCardAlone# and try to go aggressive game 2. Your mana is OK but not
-  great: you have #landCategory.a# and two [_land:#landCategory#,#realLandCard#]#_land.s#,
-  you think. For game 3, on the draw, this is your hand:
+  Your deck is not very [_desc:aggressive,powerful,focused]#_desc#, but your opponent’s deck is better than yours
+  and you feel that [#somePronoun#]#theirs# has more [_more:late-game power,removal,bombs,quality cards,synergy]#_more#, so you side
+  in cards like #randomCardAlone# and try to [_strategy:go aggressive,get lucky,go wide,go under #them#,win the attrition battle]#_strategy# game 2. Your mana is [_manaBaseDesc:OK but not
+  great,really bad,amazing#comma# at least,a mess,not very consistent]#_manaBaseDesc#: you have #landCategory.a# and two [_land:#landCategory#,#realLandCard#]#_land.s#, [_verb:you think,you hope,if memory serves]#_verb#. 
+  For game 3, on the draw, this is your hand:
 - >
-  [_aboveTextSize:26px]You’re playing #_format# #_deck#. It’s game #gameNumber# on
-  the draw against #_opposingDeck#. This is your hand:
+  [_aboveTextSize:26px]You’re playing #_format# #deck#. It’s game #gameNumber# on
+  the draw against #opposingDeck#. This is your hand:
 - >
-  [_aboveTextSize:26px]You’re on the #playOrDraw# against #_opposingDeck#, and it’s
+  [_aboveTextSize:26px]You’re on the #playOrDraw# against #opposingDeck#, and it’s
   game #gameNumber#. This is your draw:
 - >
   [_aboveTextSize:26px]It’s the start of [_round:Round #num1-9#,day two]#_round#
-  at #tournament#, and you're matched against #_opposingDeck#. Your hand is:
+  at #tournament#, and you're matched against #opposingDeck#. Your hand is:
 - >
-  [_aboveTextSize:26px]You’re playing #deckVariation# against #_opposingDeck# at #event#
+  [_aboveTextSize:26px]You’re playing #deckVariation# against #opposingDeck# at #event#
   (old #_format#). Your opener:
 - >
-  You’re playing #_deck# in #_format# and you know your opponent is playing #deckVariation#.
+  You’re playing #deck# in #_format# and you know your opponent is playing #deckVariation#.
   It’s game 1. You're on the #playOrDraw#, and your hand is:
 - >
   You’re playing #_format# with #deckVariation# (basically #deck.a# deck but with
-  #randomCardAlone#). You’re on the #playOrDraw# against #_opposingDeck#. Your hand is:
+  #randomCardAlone#). You’re on the #playOrDraw# against #opposingDeck#. Your hand is:
 - >
   You’re playing #deckVariation# in #_format# and you’re on the  #playOrDraw#. You
   don’t know what your opponent is playing, but you’re currently in the #bracket#
@@ -85,12 +72,11 @@ svgMulliganBeforeText:
 - >
   [_aboveTextSize:22px]You’re playing #_deckColor.a# #creatureTypes#-based deck in
   #cardSet# Draft. [_baseColor:#basicColors#]Your deck is base-#_baseColor# and your
-  mana is 1#num0-9# #basicLands#, #num1-5# [_otherLands:#basicLands#,#limitedLands#]#_otherLands#,
-  [_n:1,1,2]#_n# #realLandCard#. 1#num0-9# of your cards are #_baseColor#, with two
+  mana is 1#num0-9# #basicLands#, #num1-5# [_otherLands:#randomLandCardByColor#,#limitedLands#]#_otherLands#, [_n:1,1,2]#_n# #realLandCard#. 1#num0-9# of your cards are #_baseColor#, with two
   of those being [_multiplier:double,double,triple]#_multiplier#-#_baseColor#. Your
   deck is [_rating:above average,below average,average,amazing,good,bad,a trainwreck,a
-  steaming pile of garbage]#_rating# (a #num0-9#-#num0-9# deck). You’re on the #playOrDraw#
-  against #_opposingDeck#. Your opening hand is:
+  steaming pile of garbage,#deckQualityAdj#,#deckQualityAdj#]#_rating# (a #num0-9#-#num0-9# deck). You’re on the #playOrDraw#
+  against #opposingDeck#. Your opening hand is:
 _aboveTextSize: 24px
 svgMulliganHeaderTextStyle: >
   color: white; font-size: 72px; line-height: 84px; font-family:
@@ -107,6 +93,17 @@ svgMulliganCardFinderUrl: https://goodgamery.com/api/mtg/image?card=#_cardname#
 svgMulliganResetStyles: "[_aboveTextSize:24px]"
 svgBackgroundIndex: ["1", "2", "3", "4", "5", "6", "7", "8", "9", "10"]
 
+svgMulliganHandCard:
+- "#realCard#"
+- "#realCard#"
+- "#realCard#"
+- "#randomNonlandCard#"
+- "#randomNonlandCard#"
+- "#randomNonlandCard#"
+- "#randomLandCardByColor#"
+- "#randomLandCardByColor#"
+- "#randomLandCardByColor#"
+
 svgMulligan: |
     <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="1849" height="840">
         <defs>
@@ -114,25 +111,25 @@ svgMulligan: |
                 <image x="0" y="0" width="223" height="310" xlink:href="./data/images/cardmask.png" />
             </mask>
             <svg id="Card1">
-                <image xlink:href="[_cardname:#_randomDeckCard#]#svgMulliganCardFinderUrl#" x="0" y="0" mask="url(\#cardMask)" width="223" height="310" />
+                <image xlink:href="[_cardname:#svgMulliganHandCard#]#svgMulliganCardFinderUrl#" x="0" y="0" mask="url(\#cardMask)" width="223" height="310" />
             </svg>
             <svg id="Card2">
-                <image xlink:href="[_cardname:#_randomDeckCard#]#svgMulliganCardFinderUrl#" x="0" y="0" mask="url(\#cardMask)" width="223" height="310" />
+                <image xlink:href="[_cardname:#svgMulliganHandCard#]#svgMulliganCardFinderUrl#" x="0" y="0" mask="url(\#cardMask)" width="223" height="310" />
             </svg>
             <svg id="Card3">
-                <image xlink:href="[_cardname:#_randomDeckCard#]#svgMulliganCardFinderUrl#" x="0" y="0" mask="url(\#cardMask)" width="223" height="310" />
+                <image xlink:href="[_cardname:#svgMulliganHandCard#]#svgMulliganCardFinderUrl#" x="0" y="0" mask="url(\#cardMask)" width="223" height="310" />
             </svg>
             <svg id="Card4">
-                <image xlink:href="[_cardname:#_randomDeckCard#]#svgMulliganCardFinderUrl#" x="0" y="0" mask="url(\#cardMask)" width="223" height="310" />
+                <image xlink:href="[_cardname:#svgMulliganHandCard#]#svgMulliganCardFinderUrl#" x="0" y="0" mask="url(\#cardMask)" width="223" height="310" />
             </svg>
             <svg id="Card5">
-                <image xlink:href="[_cardname:#_randomDeckCard#]#svgMulliganCardFinderUrl#" x="0" y="0" mask="url(\#cardMask)" width="223" height="310" />
+                <image xlink:href="[_cardname:#svgMulliganHandCard#]#svgMulliganCardFinderUrl#" x="0" y="0" mask="url(\#cardMask)" width="223" height="310" />
             </svg>
             <svg id="Card6">
-                <image xlink:href="[_cardname:#_randomDeckCard#]#svgMulliganCardFinderUrl#" x="0" y="0" mask="url(\#cardMask)" width="223" height="310" />
+                <image xlink:href="[_cardname:#svgMulliganHandCard#]#svgMulliganCardFinderUrl#" x="0" y="0" mask="url(\#cardMask)" width="223" height="310" />
             </svg>
             <svg id="Card7">
-                <image xlink:href="[_cardname:#_randomDeckCard#]#svgMulliganCardFinderUrl#" x="0" y="0" mask="url(\#cardMask)" width="223" height="310" />
+                <image xlink:href="[_cardname:#svgMulliganHandCard#]#svgMulliganCardFinderUrl#" x="0" y="0" mask="url(\#cardMask)" width="223" height="310" />
             </svg>
         </defs>
         <image width="100%" height="100%" xlink:href="./data/images/keepormull/background#svgBackgroundIndex#.png" />

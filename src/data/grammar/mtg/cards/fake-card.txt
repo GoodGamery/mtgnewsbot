@@ -26,7 +26,7 @@ a saltine with a Magic card back
 Jace's #randomRealCard#
 M #randomRealCard# EX
 Magus of the #randomRealCard#
-Magus of the #concreteNoun.capitalize#
+Magus of the #concreteNoun.capitalizeAll#
 Mons's #randomRealCard#
 Mox #randomRealCard#
 Robo#randomRealCard#

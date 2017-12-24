@@ -163,7 +163,7 @@ landFilter_WB:
 landFilter_GU:
 - ' text="{G}" text="{U}" text!="{B}" text!="{R}" text!="{W}"'
 - ' text="{G}" text="{U}" text!="{B}" text!="{R}" text!="{W}"'
-- ' t=foest t=basic'
+- ' t=forest t=basic'
 - ' t=island t=basic'
 - ' t=forest t=island'
 - ' text="search" text="forest" text="island" text!="swamp" text!="mountain" text!="plains"'

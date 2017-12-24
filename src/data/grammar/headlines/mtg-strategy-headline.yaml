@@ -147,7 +147,7 @@ deckChange:
 - '[_removing:removing,cutting,not playing]#_removing# [_what:#randomAnyCard#,#techCardCategory#]#_what#'
 - 'playing [_change:more,fewer]#_change# #techCardCategory#'
 - 'playing around [_what:#randomAnyCard#,#techCardCategory#]#_what#'
-- 'including #cardCopyCount# copies of #randomAnyCard#'
+- 'including #cardCopyCount# #copies# of #randomAnyCard#'
 - 'cutting #randomCardAlone# for #randomAnyCard#'
 - 'using all foils'
 - 'using only misprint cards'

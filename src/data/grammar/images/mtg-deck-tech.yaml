@@ -1,6 +1,6 @@
 ---
 mtgDeckTechGraphic: >
-  [_format:#format#][_pro:#pro#][#svgDeckTechGenerateName#]#_statusText# {svg svgString=`#svgDeckTechImage#`}
+  [_format:#format#][_pro:#pro#][#searchableColor#][#svgDeckTechGenerateName#]#_statusText# {svg svgString=`#svgDeckTechImage#`}
 
 _statusText:
  - "DECK TECH: #_deckName#"
@@ -86,9 +86,9 @@ svgDeckTechTitle:
   - "#_format# Brews[_textSubtitle:][_pro:#_pro#][_postScript:#_pro#]"
 
 svgDeckTechGenerateName:
-  - "[_featuredCard:#realHandCard#][_deckName:#deckArch#]"
-  - "[_featuredCard:#realHandCard#][_deckName:#deckArch#]"
-  - "[_featuredCard:#realHandCard#][_deckName:#deckArch# with #_featuredCard#]"
+  - "[_featuredCard:#deckTechHandCard#][_deckName:#deckArch#]"
+  - "[_featuredCard:#deckTechHandCard#][_deckName:#deckArch#]"
+  - "[_featuredCard:#deckTechHandCard#][_deckName:#deckArch# with #_featuredCard#]"
 
 svgDeckTechTemplateWidth: "1024"
 svgDeckTechTemplateHeight: "560"
@@ -131,6 +131,16 @@ svgDeckTechTextColorFill:
 - Blue
 - Yellow
 
+deckTechHandCard:
+- "#realCard#"
+- "#realCard#"
+- "#realCard#"
+- "#randomNonlandCard#"
+- "#randomNonlandCard#"
+- "#randomNonlandCard#"
+- "#randomLandCardByColor#"
+- "#randomLandCardByColor#"
+
 svgDeckTechImage: |
     #svgDeckTechTemplate#
     [_deckTechTextColor:#svgDeckTechTextColorFill#]
@@ -141,13 +151,13 @@ svgDeckTechImage: |
           <image x="0" y="0" width="223" height="310" xlink:href="./data/images/cardmask.png" />
         </mask>
         <svg id="Card1">
-          <image xlink:href="[_cardname:#realHandCard#]#svgDeckTechCardFinderUrl#" x="0" y="0" mask="url(\#cardMask)" width="223" height="310" />
+          <image xlink:href="[_cardname:#deckTechHandCard#]#svgDeckTechCardFinderUrl#" x="0" y="0" mask="url(\#cardMask)" width="223" height="310" />
         </svg>
         <svg id="Card2">
-          <image xlink:href="[_cardname:#realHandCard#]#svgDeckTechCardFinderUrl#" x="0" y="0" mask="url(\#cardMask)" width="223" height="310" />
+          <image xlink:href="[_cardname:#deckTechHandCard#]#svgDeckTechCardFinderUrl#" x="0" y="0" mask="url(\#cardMask)" width="223" height="310" />
         </svg>
         <svg id="Card3">
-          <image xlink:href="[_cardname:#realHandCard#]#svgDeckTechCardFinderUrl#" x="0" y="0" mask="url(\#cardMask)" width="223" height="310" />
+          <image xlink:href="[_cardname:#deckTechHandCard#]#svgDeckTechCardFinderUrl#" x="0" y="0" mask="url(\#cardMask)" width="223" height="310" />
         </svg>
         <svg id="Card4">
           <image xlink:href="[_cardname:#_featuredCard#]#svgDeckTechCardFinderUrl#" x="0" y="0" mask="url(\#cardMask)" width="223" height="310" />

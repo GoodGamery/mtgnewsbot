@@ -1,443 +1,234 @@
-
-deckArch:
- - >
-  #deck#
- - >
-  #deckVariation#
- - >
-  [_tribal:#creatureTypes.capitalize# Tribal,#creatureTypes.capitalize.s#]#_tribal#
- - >
-  [_format:#format#]#_format# #creatureTypesPlural.capitalize#
- - >
-  [_format:#format#]#_format# #deck#
- - >
-  [_format:#format#]#_format# #deckVariation#
- - >
-  #searchableColor.capitalize# #deck#
- - >
-  [_deck:#deckArch#,#preconDeck#]#_deck#
-
-deckArchOrCategory:
- - >
-  #deck#
- - >
-  #deckVariation#
- - >
-  decks with #randomCardAlone#
- - >
-  [_tribal:#creatureTypes.capitalize# Tribal,#creatureTypes.capitalize.s#]#_tribal#
- - >
-  [_format:#format#]#_format# #creatureTypesPlural.capitalize#
- - >
-  [_format:#format#]#_format# #deck#
- - >
-  [_format:#format#]#_format# #deckVariation#
- - >
-  #searchableColor.capitalize# #deck#
- - >
-  [_deck:#deckArch#,#preconDeck#]#_deck#
-
-deckTest:
- - >
-  Draw-Go
-  [_deckCardClass:#randomNonlandCard#,#randomCounterspellCard#,#randomCardDrawCard#,#randomFlyingFinisherCard#]#_deckCardClass# #_deckCardClass# #_deckCardClass# #_deckCardClass #_deckCardClass# #_deckCardClass#  
-# [_deckCardClass:#randomCounterspellCard#]
-
-deck: 
- - >
-  Draw-Go
-  [_deckCardClass:#randomNonlandCard#,#randomCounterspellCard#,#randomCardDrawCard#,#randomFlyingFinisherCard#]
- - >
-  Dredge
- - >
-  Lands
- - >
-  Stompy
- - >
-  Control
- - >
-  Sligh
- - >
-  Combo
- - >
-  Marvel
- - >
-  Energy
- - >
-  Vehicles
- - >
-  Miracles
- - >
-  Goblins
- - >
-  Elves
- - >
-  Draft Leftovers
- - >
-  Fish
- - >
-  Delver
- - >
-  Solidarity
- - >
-  Maverick
- - >
-  Death & Taxes
- - >
-  Oath
- - >
-  Affinity
- - >
-  Tron
- - >
-  Burn
- - >
-  Rock
- - >
-  Company
- - >
-  Hatebears
- - >
-  Fires
- - >
-  Madness
- - >
-  Reanimator
- - >
-  Zoo
- - >
-  Slide
- - >
-  Tokens
- - >
-  Eggs
- - >
-  Junk
- - >
-  Pebbles
- - >
-  Solar Flare
- - >
-  Superfriends
- - >
-  Survival
- - >
-  Ponza
- - >
-  #searchableColor# Devotion
- - >
-  #deckNameNumber#-Rack
- - >
-  #deckNameNumber#-Post
- - >
-  #searchableColor# Deck Wins
- - >
-  #definingCardname#-Go
- - >
-  #creatureTypes.capitalize# in a Blender
- - >
-  #creatureTypes.capitalize#vantage
- - >
-  #creatureTypes.capitalize# [_parent:Dad,Dad,Dad,Mom]#_parent#
- - >
-  [_prefix:#creatureTypes#,#deckPrefix#] Breakfast
- - >
-  #deckNameCompoundPrefix##deckNameCompoundSuffix#
- - >
-  Counter#creatureTypes.s#
-
-deckVariation:
- - >
-  #deck#
- - >
-  #deckPrefix# #deck#
- - >
-  #deck# #deckSuffix#
- - >
-  #definingCardname# #deck#
- - >
-  #deckPrefix# #definingCardname#
- - >
-  #definingCardname# #deckSuffix#
- - >
-  #deckPrefix# #deckVariation#
-
-deckPrefix:
- - >
-  Turbo
-  [_searchString:draws an additional]
- # [_deckCardClass:#randomNonlandCard#,#cardQueryWithText#,#cardQueryWithText#]
- # - >
- #  Midrange
- # - >
- #  Manaless
- # - >
- #  Suicide
- # - >
- #  Counter
- # - >
- #  Owling
- # - >
- #  Shardless
- # - >
- #  Eternal
- # - >
- #  Full English
- # - >
- #  Angry
- # - >
- #  Fruity
- # - >
- #  Sped
- # - >
- #  Wet #colorComboNickname#
- # - >
- #  Dark #colorComboNickname#
- # - >
- #  Pale #colorComboNickname#
- # - >
- #  Hot #colorComboNickname#
- # - >
- #  Tooth &
- # - >
- #  All-in
- # - >
- #  Aggro
- # - >
- #  Angel
- # - >
- #  Dragon
- # - >
- #  Eldrazi
- # - >
- #  Seething
- # - >
- #  Oops! All #definingCardname.s#
- # - >
- #  Canadian
- # - >
- #  Cat
- # - >
- #  Deadguy
- # - >
- #  Ramunap
- # - >
- #  Budget
-
-deckSuffix:
- - >
-  & Taxes
- - >
-  & Nail
-
-deckNameCompoundPrefix:
- - >
-  Counter
- - >
-  Elf
- - >
-  Stone
- - >
-  Caw
- - >
-  Grisel
- - >
-  Death
-
-deckNameCompoundSuffix:
- - >
-  ball
- - >
-  blade
- - >
-  haups
- - >
-  stacks
- - >
-  storm
- - >
-  still
- - >
-  tron
- - >
-  erator
- - >
-  -troll
- - >
-  -Gro
- - >
-  vantage
-
-definingCardname:
- - >
-  Death's Shadow
- - >
-  Delver
- - >
-  Ravager
- - >
-  Amulet
- - >
-  Belcher
- - >
-  Pod
- - >
-  Kiki
- - >
-  Melira
- - >
-  Gifts
- - >
-  Twin
- - >
-  Tog
- - >
-  Slaver
- - >
-  Valakut
- - >
-  Scepter
- - >
-  Lantern
- - >
-  Ad Nauseam
- - >
-  Mentor
- - >
-  Workshop
- - >
-  Moon
- - >
-  Vial
- - >
-  Necro
- - >
-  Teachings
-
-deckDescription: 
- - >
-  the deck to beat
- - >
-  completely broken
- - >
-  totally dominant
- - >
-  the stone nuts
- - >
-  the only valid choice
- - >
-  completely unplayable
- - >
-  pure garbage
- - >
-  Tier [_tier:0,1,1.5,2,2.5,3]#_tier#
- - >
-  ban-worthy
- - >
-  #officialEntity#'s biggest mistake yet
- - >
-  a trap
- - >
-  positioned perfectly in the meta
- - >
-  overhyped by #financialStakeholders#
- - >
-  [_legality:legal,illegal,broken,allowed,sanctioned]#_legality# under tournament rules
- - >
-  viable once #randomRealCard# is [_outcome:banned,reprinted]#_outcome#
-
-deckLimitedArchetype:
- - >
-  aggro
- - >
-  midrange
- - >
-  control
- - >
-  goodstuff
- - >
-  converge
- - >
-  domain
- - >
-  devoid
- - >
-  delerium
- - >
-  mill
- - >
-  ramp
-
-limitedDeckDescription:
- - >
-  a #searchableColor# #deckLimitedArchetype# deck
- - >
-  a #searchableColor# #deckLimitedArchetype# deck
- - >
-  a #searchableColor# #deckLimitedArchetype# deck
- - >
-  #searchableColor# #deckLimitedArchetype#
- - >
-  #searchableColor# #deckLimitedArchetype#
- - >
-  #searchableColor# #deckLimitedArchetype#
- - >
-  a #searchableColor# trainwreck
- - >
-  a #searchableColor# pile
- - >
-  a 4#num1-9#-card special
-
-preconDeck:
- - >
-  Assemble the Doomsday Machine
- - >
-  Blazing Beasts of Myth
- - >
-  Esper Air Assault
- - >
-  Fun With Fungus
- - >
-  Future Shock
- - >
-  Grave Danger
- - >
-  Grixis Shambling Army
- - >
-  Izzet Gizmometry
- - >
-  Jungle Jam
- - >
-  Kjeldoran Cunning
- - >
-  Manipulative Monstrosities
- - >
-  Max Attax
- - >
-  Monstrous Surprise
- - >
-  Morph Mayhem
- - >
-  Psychic Labyrinth
- - >
-  Political Puppets
- - >
-  Rats' Nest
- - >
-  Sizzle Blizzard
- - >
-  Spectral Slam
- - >
-  Swell the Host
- - >
-  The Sparkler
- - >
-  Trounce-o-Matic
- - >
-  White Heat
- - >
-  Wicked Big
- - >
-  Widowmaker
- - >
-  Wrack and Rage
+{
+  "deckArch": [
+      "#deck#",
+      "#deckVariation#",
+      "[_tribal:#creatureTypes.capitalize# Tribal,#creatureTypes.capitalize.s#]#_tribal#",
+      "[_format:#format#]#_format# #creatureTypesPlural.capitalize#",
+      "[_format:#format#]#_format# #deck#",
+      "[_format:#format#]#_format# #deckVariation#",
+      "#searchableColor.capitalize# #deck#",
+      "[_deck:#deckArch#,#preconDeck#]#_deck#"
+  ],
+  "deckArchOrCategory": [
+      "#deck#",
+      "#deckVariation#",
+      "decks with #randomCardAlone#",
+      "[_tribal:#creatureTypes.capitalize# Tribal,#creatureTypes.capitalize.s#]#_tribal#",
+      "[_format:#format#]#_format# #creatureTypesPlural.capitalize#",
+      "[_format:#format#]#_format# #deck#",
+      "[_format:#format#]#_format# #deckVariation#",
+      "#searchableColor.capitalize# #deck#",
+      "[_deck:#deckArch#,#preconDeck#]#_deck#"
+  ],
+  "deck": [
+      "Draw-Go",
+      "Dredge",
+      "Lands",
+      "Stompy",
+      "Control",
+      "Sligh",
+      "Combo",
+      "Marvel",
+      "Energy",
+      "Vehicles",
+      "Miracles",
+      "Goblins",
+      "Elves",
+      "Draft Leftovers",
+      "Fish",
+      "Delver",
+      "Solidarity",
+      "Maverick",
+      "Death & Taxes",
+      "Oath",
+      "Affinity",
+      "Tron",
+      "Burn",
+      "Rock",
+      "Company",
+      "Hatebears",
+      "Fires",
+      "Madness",
+      "Reanimator",
+      "Zoo",
+      "Slide",
+      "Tokens",
+      "Eggs",
+      "Junk",
+      "Pebbles",
+      "Solar Flare",
+      "Superfriends",
+      "Survival",
+      "Ponza",
+      "#searchableColor# Devotion",
+      "#deckNameNumber#-Rack",
+      "#deckNameNumber#-Post",
+      "#searchableColor# Deck Wins",
+      "#definingCardname#-Go",
+      "#creatureTypes.capitalize# in a Blender",
+      "#creatureTypes.capitalize#vantage",
+      "#creatureTypes.capitalize# [_parent:Dad,Dad,Dad,Mom]#_parent#",
+      "[_prefix:#creatureTypes#,#deckPrefix#]#_prefix# Breakfast",
+      "#deckNameCompoundPrefix##deckNameCompoundSuffix#",
+      "Counter#creatureTypes.s#"
+  ],
+  "deckVariation" : [
+    "#deck#",
+    "#deckPrefix# #deck#",
+    "#deck# #deckSuffix#",
+    "#definingCardname# #deck#",
+    "#deckPrefix# #definingCardname#",
+    "#definingCardname# #deckSuffix#",
+    "#deckPrefix# #deckVariation#"
+  ],
+  "deckPrefix" : [
+    "Turbo",
+    "Midrange",
+    "Manaless",
+    "Suicide",
+    "Counter",
+    "Owling",
+    "Shardless",
+    "Eternal",
+    "Full English",
+    "Angry",
+    "Fruity",
+    "Sped",
+    "Wet #colorComboNickname#",
+    "Dark #colorComboNickname#",
+    "Pale #colorComboNickname#",
+    "Hot #colorComboNickname#",
+    "Tooth &",
+    "All-in",
+    "Aggro",
+    "Angel",
+    "Dragon",
+    "Eldrazi",
+    "Seething",
+    "Oops! All #definingCardname.s#",
+    "Canadian",
+    "Cat",
+    "Deadguy",
+    "Ramunap",
+    "Budget"
+  ],
+  "deckSuffix" : [
+    "& Taxes",
+    "& Nail"
+  ],
+  "deckNameCompoundPrefix" :[
+    "Counter",
+    "Elf",
+    "Stone",
+    "Caw",
+    "Grisel",
+    "Death"
+  ],
+  "deckNameCompoundSuffix" :[
+    "ball",
+    "blade",
+    "haups",
+    "stacks",
+    "storm",
+    "still",
+    "tron",
+    "erator",
+    "-troll",
+    "-Gro",
+    "vantage"
+  ],
+  "definingCardname" : [
+    "Death's Shadow",
+    "Delver",
+    "Ravager",
+    "Amulet",
+    "Belcher",
+    "Pod",
+    "Kiki",
+    "Melira",
+    "Gifts",
+    "Twin",
+    "Tog",
+    "Slaver",
+    "Valakut",
+    "Scepter",
+    "Lantern",
+    "Ad Nauseam",
+    "Mentor",
+    "Workshop",
+    "Moon",
+    "Vial",
+    "Necro",
+    "Teachings"
+  ],
+  "deckDescription": [
+      "the deck to beat",
+      "completely broken",
+      "totally dominant",
+      "the stone nuts",
+      "the only valid choice",
+      "completely unplayable",
+      "pure garbage",
+      "Tier [_tier:0,1,1.5,2,2.5,3]#_tier#",
+      "ban-worthy",
+      "#officialEntity#'s biggest mistake yet",
+      "a trap",
+      "positioned perfectly in the meta",
+      "overhyped by #financialStakeholders#",
+      "[_legality:legal,illegal,broken,allowed,sanctioned]#_legality# under tournament rules",
+      "viable once #randomRealCard# is [_outcome:banned,reprinted]#_outcome#"
+  ],
+  "deckLimitedArchetype": [
+    "aggro",
+    "midrange",
+    "control",
+    "goodstuff",
+    "converge",
+    "domain",
+    "devoid",
+    "delerium",
+    "mill",
+    "ramp"
+  ],
+  "limitedDeckDescription": [
+    "#searchableColor.a# #deckLimitedArchetype# deck",
+    "#searchableColor.a# #deckLimitedArchetype# deck",
+    "#searchableColor.a# #deckLimitedArchetype# deck",
+    "#searchableColor# #deckLimitedArchetype#",
+    "#searchableColor# #deckLimitedArchetype#",
+    "#searchableColor# #deckLimitedArchetype#",
+    "#deckQualityAdj.a# #searchableColor# [_deck:deck,trainwreck,pile]#_deck#",
+    "#deckQualityAdj.a# #deckLimitedArchetype# deck",
+    "#searchableColor.a# trainwreck",
+    "#searchableColor.a# pile",
+    "a 4#num1-9#-card special"
+  ],
+  "preconDeck": [
+    "Assemble the Doomsday Machine",
+    "Blazing Beasts of Myth",
+    "Esper Air Assault",
+    "Fun With Fungus",
+    "Future Shock",
+    "Grave Danger",
+    "Grixis Shambling Army",
+    "Izzet Gizmometry",
+    "Jungle Jam",
+    "Kjeldoran Cunning",
+    "Manipulative Monstrosities",
+    "Max Attax",
+    "Monstrous Surprise",
+    "Morph Mayhem",
+    "Psychic Labyrinth",
+    "Political Puppets",
+    "Rats' Nest",
+    "Sizzle Blizzard",
+    "Spectral Slam",
+    "Swell the Host",
+    "The Sparkler",
+    "Trounce-o-Matic",
+    "White Heat",
+    "Wicked Big",
+    "Widowmaker",
+    "Wrack and Rage"
+  ]
+}

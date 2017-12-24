@@ -44,18 +44,6 @@
       "#fakeCard#"
   ],
 
-  realHandCard: [
-    "#realCard#",
-    "#realCard#",
-    "#realCard#",
-    "#randomRealCard#",
-    "#randomRealCard#",
-    "#randomRealCard#",
-    "#realFilteredLandCard#",
-    "#realFilteredLandCard#",
-    "#realFilteredLandCard#"
-  ],
-
   realLandCard: [
     "#basicLands#",
     "#dualLands#",
