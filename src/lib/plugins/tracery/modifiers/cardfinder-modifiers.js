@@ -356,6 +356,7 @@ async function cardFinderSearch(query, params, additionalFields) {
       const someColor = getSomeColor(card.colorIdentity);
       const nameFirstWord = card.name.split(" ")[0];
       const nameLastWord = card.name.split(" ").pop();
+      const cmc = card.cmc;
 
       if (card.layout === 'token') {
         name += ' Token';
@@ -382,7 +383,8 @@ async function cardFinderSearch(query, params, additionalFields) {
         subtype ? `[${prefix}Subtype${i}:${subtype}]` : '',
         color ? `[${prefix}Color${i}:${color}]` : '',             
         colorClass ? `[${prefix}ColorClass${i}:${colorClass}]` : '',
-        someColor ? `[${prefix}SomeColor${i}:${someColor}]`: ''        
+        someColor ? `[${prefix}SomeColor${i}:${someColor}]`: '',
+        cmc ? `[${prefix}Cmc${i}:${cmc}]`: ''     
       );
 
       if (additionalFields) {
