@@ -61,9 +61,8 @@ cotdCreatureTypeDescription:
   [_companions:pets,pets,companions,friends,#characterClass.s#]
   [_usefulItem:#bodypartsPlural#,#abstractNounPluralItemNounMassNounOrEmotion#]
   [_undesirableVerb:eat,steal,run away with,hide,hoard,ruin]
-  [_their:their]
   [_petOwner:#cotdPetOwner#]
-  [_petLocation:on #_their# private #_creatureType# farm,on #_their# private compound,in #_their# private menagerie,for research purposes,for undisclosed reasons,in a secret location]  
+  [_petLocation:on #their# private #_creatureType# farm,on #their# private compound,in #their# private menagerie,for research purposes,for undisclosed reasons,in a secret location]  
   [_petLocationMoreSpecific:on #plane#,in #nonPlaneLocation#,in #minorStoryLocation#]
   [_petLocationSpecific:#_petLocation#,#_petLocation# #_petLocationMoreSpecific#]
   [_andSecondActivity:, and #nounActivity#]
@@ -93,7 +92,7 @@ cotdWordPairPonderable:
 cotdCustomQueryDecscription:
 - >
   [#cotdLegendaryCreatureSearch#]
-  [_preposition:by][_cause:#causeOfDeath#][_deathAdj:fabled,fateful,infamous,notorious,historical]This top-down card inspired by #historicalFigure# turns #_their# #_deathAdj# death #_preposition# #_cause# on #_their# enemies—[_andYours:and yours,and your opponents,lucky you,fortunately for you]#_andYours#.
+  [_preposition:by][_cause:#causeOfDeath#][_deathAdj:fabled,fateful,infamous,notorious,historical]This top-down card inspired by #historicalFigure# turns #their# #_deathAdj# death #_preposition# #_cause# on #their# enemies—[_andYours:and yours,and your opponents,lucky you,fortunately for you]#_andYours#.
 - >
   [#cotdLegendaryCreatureSearch#]
   [_legendImgUrl:#_cardImgUrl1#][_legendSubtype:#_cardSubtype1#]#_legendName# has [_agenda:a plan,an agenda,a bright idea,a mission in life,a puzzle to solve,a philosophical question to ponder,homework to do,a survey to conduct,a dispute to settle,a bee in their bonnet]#_agenda#. They're going to [_solve:decide,answer the question of,find out,finally determine,ask #planeswalkerFirstName#]#_solve# #cotdWordPairPonderable#.[_cardImgUrl1:#_legendImgUrl#]
@@ -109,7 +108,8 @@ cotdCustomQueryDecscription:
   Pro Tour [_italicText:#teaserCardSet#]#_italicize# may be when [_cardlinkName:#_cardname#]#_cotdHtmlCardLink# finally [_fate:accepts its obsolescence, allows itself to be unplugged,steps aside to make room for a newer model,retires to the scrapyard,decides to settle down with a nice #appliance# and raise a family,busts its last spring,gets its battery pulled,goes to robot heaven,goes off the rails,gets scrapped for parts]#_fate#.
 - >
   [#_drawXDiscardY#][_s:#_s#][_customQuery:text="draw#_s# #_x# #_xcards#" text="discard#_s# #_y# #_ycards#"][_cardSubtype1:#creatureTypeOrCharacterClass#,#creatureTypeOrCharacterClass#,#creatureTypeOrCharacterClass#,#animal#,#animal#][#cotdCustomSearch#]
-  Getting #_gain# for the price of #_price# may seem like [_desc:#kindaGood#,#adj#]#_desc.a# deal ... but when it's offered by the [_where:in the #placeNounRealm#, in the #placeNoun#,in #nonPlaneLocation#, on #plane#][_italicText:#adjSuperlative# #_cardSubtype1.lowercase# #_where#?]#_italicize# #adjSuperlative.capitalize# deal ever.
+  Getting #_gain# for the price of #_price# may seem like [_desc:#kindaGood#,#adj#]#_desc.a# deal ... but when it's offered by the [_inNonPlane:in,in all of][_onPlane:on,in all of][_where:in the #placeNounRealm#,in the #placeNoun#,#_inNonPlane# #nonPlaneLocation#,#_onPlane# #plane#][_italicText:#adjSuperlative# #_cardSubtype1.lowercase# #_where#?]#_italicize# [_superlative:#adjSuperlativeValue#,#adjSuperlative#]#_superlative.capitalize# [_deal:deal,bargain,trade,investment
+  ]#_deal# [_investment:soul,last #itemNoun#,pet #animal#,#bodypart#,#personRelationalUnique#][_quantity:#largeAmount.a# of#,#nounContainer.a# of,#nounContainer.a# full of][_return:#itemNoun.a#,#itemNoun.a#,#_quantity# #pluralItemNounOrMassNoun#,#adjStorybook.a# #itemNoun#,#descriptiveCard#,#count# #itemNoun.s#][_traded:traded,sold][_partner:, to #cotdPersonality#][_when:ever,ever,of all time,since #cotdPersonality# #_traded# #their# #_investment##_partner# for #_return#,this side of #storyLocation#]#_when#.
 
 _badDream:
 - "[_discovery:getting lost at,being naked at,being late to,being teased at,#verbIntransitiveGerund# in,flunking out of][_schoolType:#_creatureType#,#characterClass#][_italicText:#_discovery# #_schoolType# school]#_italicize#"
@@ -120,11 +120,17 @@ _badDream:
 
 _drawXDiscardY:
 - "[_x:a][_y:a][_gain:one card][_price:one card,another,another card][_xcards:card][_ycards:card][_s:,s]"
-- "[_x:two][_y:a][_gain:two cards][_price:one,one card][_xcards:cards][_ycards:card][_s:,s]"
 - "[_x:two][_y:two][_gain:two cards][_price:two,two cards][_xcards:cards][_ycards:cards][_s:,s]"
+- "#_drawXDiscardYRare#"
+- "#_drawXDiscardYRare#"
+
+_drawXDiscardYRare:
 - "[_x:three][_y:three][_gain:three cards][_price:three,three cards][_xcards:cards][_ycards:cards][_s:,s]"
-- "[_x:three][_y:two][_gain:three cards][_price:two,two cards][_xcards:cards][_ycards:cards][_s:,s]"
+- "[_x:three][_y:three][_gain:three cards][_price:three,three cards][_xcards:cards][_ycards:cards][_s:,s]"
 - "[_x:three][_y:a][_gain:three cards][_price:one card,another card][_xcards:cards][_ycards:card][_s:]"
+- "[_x:three][_y:a][_gain:three cards][_price:one card,another card][_xcards:cards][_ycards:card][_s:]"
+- "[_x:three][_y:two][_gain:three cards][_price:two,two cards][_xcards:cards][_ycards:cards][_s:,s]"
+- "[_x:three][_y:two][_gain:three cards][_price:two,two cards][_xcards:cards][_ycards:cards][_s:,s]"
 - "[_x:four][_y:two][_gain:four cards][_price:two,two cards][_xcards:cards][_ycards:cards][_s:]"
 - "[_x:two][_y:three][_gain:two cards][_price:three,three cards][_xcards:cards][_ycards:cards][_s:s]"
 
@@ -137,6 +143,19 @@ adjOrCardQuality:
 adjSuperlativeOrCardSuperlative:
 - "#adjSuperlative#"
 - "#cardSuperlative#"
+
+adjSuperlativeValue:
+- best
+- best
+- finest
+- greatest
+- worst
+- worst
+- crummiest
+- most important
+- most incredible
+- lamest
+- most underwhelming
 
 interestingPlayAdj:
   - hilarious
@@ -199,6 +218,13 @@ tribalCreature:
  - "#commonCharacterFirstName#, the #abstractNounMassNounOrEmotion.capitalizeAll# #_creatureType.capitalizeAll#"
  - "#commonCharacterFirstName#, #_creatureType.capitalizeAll# #characterClass.capitalizeAll#"
  - "#commonCharacterFirstName#, #characterClass.capitalizeAll# of the #placeNoun.capitalizeAll#"
+
+cotdPersonality:
+- "#character#"
+- "#character#"
+- "#character#"
+- "#pro#"
+- "#historicalFigure#"
 
 marginalThingToDo:
   - gain protection from a single color
@@ -300,56 +326,56 @@ cardWhichCountersSpells:
   - Voidslime
 
 historicalFigure:
-  - Cleopatra[_their:her]
-  - Napoleon[_their:his]
-  - Abraham Lincoln[_their:his]
-  - Joan of Arc[_their:her]
-  - Socrates[_their:his]
-  - Genghis Khan[_their:his]
-  - Sigmund Freud[_their:his]
-  - Beethoven[_their:his]
-  - Billy the Kid[_their:his]
-  - Alexander the Great[_their:his]
-  - Julius Caesar[_their:his]
-  - Henry VIII[_their:his]
-  - Bonnie and Clyde[_their:their]
-  - Ivan the Terrible[_their:his]
-  - Simón Bolívar[_their:his]
-  - Marie Antoinette[_their:her]
-  - Mark Twain[_their:his]
-  - Da Vinci[_their:his]
-  - Oscar Wilde[_their:his]
-  - Descartes[_their:his]
-  - Florence Nightingale[_their:her]
-  - Thomas Edison[_their:his]
-  - Kublai Khan[_their:his]
-  - Samuel Coleridge[_their:his]
-  - Orville and Wilbur Wright[_their:their]
-  - Andrew Carnegie[_their:his]
-  - Tolstoy[_their:his]
-  - Queen Victoria[_their:her]
-  - Otto von Bismarck[_their:his]
-  - Trotsky[_their:his]
-  - Galileo[_their:his]
-  - Jane Austen[_their:her]
-  - Alfred Hitchcock[_their:his]
-  - Captain Cook[_their:his]
-  - Catherine the Great[_their:her]
-  - Al-Khwarizmi[_their:his]
-  - Voltaire[_their:his]
-  - Attila the Hun[_their:his]
-  - Amelia Earhart[_their:her]
-  - Marco Polo[_their:his]
-  - Shakespeare[_their:his]
-  - Sir Walter Raleigh[_their:his]
-  - Marie Curie[_their:her]
-  - Truman Capote[_their:his]
-  - Andre the Giant[_their:his]
-  - Kermit the Frog[_their:his]
-  - Carl Sagan[_their:his]
-  - Pagliacci[_their:his]
-  - Orville Redenbacher[_their:his]
-  - Walter Cronkite[_their:his]
+  - Cleopatra[their:her]
+  - Napoleon[their:his]
+  - Abraham Lincoln[their:his]
+  - Joan of Arc[their:her]
+  - Socrates[their:his]
+  - Genghis Khan[their:his]
+  - Sigmund Freud[their:his]
+  - Beethoven[their:his]
+  - Billy the Kid[their:his]
+  - Alexander the Great[their:his]
+  - Julius Caesar[their:his]
+  - Henry VIII[their:his]
+  - Bonnie and Clyde[their:their]
+  - Ivan the Terrible[their:his]
+  - Simón Bolívar[their:his]
+  - Marie Antoinette[their:her]
+  - Mark Twain[their:his]
+  - Da Vinci[their:his]
+  - Oscar Wilde[their:his]
+  - Descartes[their:his]
+  - Florence Nightingale[their:her]
+  - Thomas Edison[their:his]
+  - Kublai Khan[their:his]
+  - Samuel Coleridge[their:his]
+  - Orville and Wilbur Wright[their:their]
+  - Andrew Carnegie[their:his]
+  - Tolstoy[their:his]
+  - Queen Victoria[their:her]
+  - Otto von Bismarck[their:his]
+  - Trotsky[their:his]
+  - Galileo[their:his]
+  - Jane Austen[their:her]
+  - Alfred Hitchcock[their:his]
+  - Captain Cook[their:his]
+  - Catherine the Great[their:her]
+  - Al-Khwarizmi[their:his]
+  - Voltaire[their:his]
+  - Attila the Hun[their:his]
+  - Amelia Earhart[their:her]
+  - Marco Polo[their:his]
+  - Shakespeare[their:his]
+  - Sir Walter Raleigh[their:his]
+  - Marie Curie[their:her]
+  - Truman Capote[their:his]
+  - Andre the Giant[their:his]
+  - Kermit the Frog[their:his]
+  - Carl Sagan[their:his]
+  - Pagliacci[their:his]
+  - Orville Redenbacher[their:his]
+  - Walter Cronkite[their:his]
 
 causeOfDeath:
 - defenstration
