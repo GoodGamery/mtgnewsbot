@@ -107,6 +107,9 @@ cotdCustomQueryDecscription:
 - >
   [_customQuery:t=artifact t=creature][#cotdCustomSearch#]
   Pro Tour [_italicText:#teaserCardSet#]#_italicize# may be when [_cardlinkName:#_cardname#]#_cotdHtmlCardLink# finally [_fate:accepts its obsolescence, allows itself to be unplugged,steps aside to make room for a newer model,retires to the scrapyard,decides to settle down with a nice #appliance# and raise a family,busts its last spring,gets its battery pulled,goes to robot heaven,goes off the rails,gets scrapped for parts]#_fate#.
+- >
+  [#_drawXDiscardY#][_s:#_s#][_customQuery:text="draw#_s# #_x# #_xcards#" text="discard#_s# #_y# #_ycards#"][_cardSubtype1:#creatureTypeOrCharacterClass#,#creatureTypeOrCharacterClass#,#creatureTypeOrCharacterClass#,#animal#,#animal#][#cotdCustomSearch#]
+  Getting #_gain# for the price of #_price# may seem like [_desc:#kindaGood#,#adj#]#_desc.a# deal ... but when it's offered by the [_where:in the #placeNounRealm#, in the #placeNoun#,in #nonPlaneLocation#, on #plane#][_italicText:#adjSuperlative# #_cardSubtype1.lowercase# #_where#?]#_italicize# #adjSuperlative.capitalize# deal ever.
 
 _badDream:
 - "[_discovery:getting lost at,being naked at,being late to,being teased at,#verbIntransitiveGerund# in,flunking out of][_schoolType:#_creatureType#,#characterClass#][_italicText:#_discovery# #_schoolType# school]#_italicize#"
@@ -114,6 +117,18 @@ _badDream:
 - "being [_tormented:tormented,crushed,chased,mocked,strangled,seduced,interrogated,tickled to death,spanked,stalked,given a wedgie,cuddled,scolded][_italicText:#_tormented#]#_italicize# by [_adj:giant,enormous,faceless,murderous,tiny,#adj#,#count#-foot-tall,#count#-legged][_italicText:#_adj.a# #creatureTypes#]#_italicize#"
 - "[_italicText:your #bodypartsExternal# falling off,your #bodypartsInternal# falling out,losing your #bodypartsInPairs#,forgetting your #itemNoun#]#_italicize# at [_where:house,party,wedding,graduation][_italicText:#planeswalkerFirstName#'s #_where#]#_italicize#"
 - "turning into a giant [_italicText:#creatureTypes#]#_italicize#"
+
+_drawXDiscardY:
+- "[_x:a][_y:a][_gain:one card][_price:one card,another,another card][_xcards:card][_ycards:card][_s:,s]"
+- "[_x:two][_y:a][_gain:two cards][_price:one,one card][_xcards:cards][_ycards:card][_s:,s]"
+- "[_x:two][_y:two][_gain:two cards][_price:two,two cards][_xcards:cards][_ycards:cards][_s:,s]"
+- "[_x:three][_y:three][_gain:three cards][_price:three,three cards][_xcards:cards][_ycards:cards][_s:,s]"
+- "[_x:three][_y:two][_gain:three cards][_price:two,two cards][_xcards:cards][_ycards:cards][_s:,s]"
+- "[_x:three][_y:a][_gain:three cards][_price:one card,another card][_xcards:cards][_ycards:card][_s:]"
+- "[_x:four][_y:two][_gain:four cards][_price:two,two cards][_xcards:cards][_ycards:cards][_s:]"
+- "[_x:two][_y:three][_gain:two cards][_price:three,three cards][_xcards:cards][_ycards:cards][_s:s]"
+
+_drawXDiscardYSearchQuery: '[#_drawXDiscardY#][_s:#_s#][_customQuery:text="draw#_s# #_x# #_xcards#" text="discard#_s# #_y# #_ycards#"][#cotdCustomSearch#]'
 
 adjOrCardQuality:
 - "#adj#"

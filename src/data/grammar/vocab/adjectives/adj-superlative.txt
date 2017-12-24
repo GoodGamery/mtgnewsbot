@@ -24,7 +24,7 @@ darkest
 most delightful
 most dreadful
 dimmest
-dirtiess
+dirtiest
 most enormous
 most exciting
 fanciest
@@ -175,6 +175,6 @@ most earnest
 worthiest
 unworthiest
 seaworthiest
-less redeemable
+least redeemable
 least useful
 least useless

@@ -371,16 +371,16 @@ async function cardFinderSearch(query, params, additionalFields) {
         `[${prefix}Set${i}:${set}]`,
         `[${prefix}Rarity${i}:${rarity}]`,      
         `[${prefix}Type${i}:${type}]`,     
-        `[${prefix}Subtype${i}:${subtype}]`,
-        `[${prefix}FullType${i}:${fullType}]`,
         `[${prefix}FullSubtype${i}:${fullSubtype}]`,
+        `[${prefix}FullType${i}:${fullType}]`,   
         `[${prefix}SomeTypeOrSubtype${i}:${someTypeOrSubtype}]`,                              
         `[${prefix}ImgUrl${i}:${imgUrl}]`,
-        `[${prefix}Color${i}:${color}]`,
         `[${prefix}Descriptive${i}:${colorDescriptive}]`,
-        `[${prefix}ColorClass${i}:${colorClass}]`,
-        `[${prefix}SomeColor${i}:${someColor}]`,
-        `[${prefix}NameLastWord${i}:${nameLastWord}]`      
+        `[${prefix}NameLastWord${i}:${nameLastWord}]`,
+        subtype ? `[${prefix}Subtype${i}:${subtype}]` : '',
+        color ? `[${prefix}Color${i}:${color}]` : '',             
+        colorClass ? `[${prefix}ColorClass${i}:${colorClass}]` : '',
+        someColor ? `[${prefix}SomeColor${i}:${someColor}]`: ''        
       );
 
       if (additionalFields) {
