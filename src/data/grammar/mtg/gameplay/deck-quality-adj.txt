@@ -1,0 +1,26 @@
+overpowered
+underpowered
+above-average
+below-average
+average
+amazing
+good
+bad
+broken
+underwhelming
+amazing
+terrible
+spicy
+unimpressive
+unremarkable
+ridiculous
+unconventional
+unusual
+typical
+atypical
+unbeatable
+ambitious
+“interesting”
+Tier [_tier:0,1,1.5,2,2.5,3]#_tier#
+#kindaGood#
+#kindaGood#

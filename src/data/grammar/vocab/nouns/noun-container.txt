@@ -1,0 +1,8 @@
+backpack
+bag
+barrel
+box
+bucket
+handful
+pocketful
+sack

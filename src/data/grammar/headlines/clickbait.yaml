@@ -18,7 +18,7 @@ clickbait:
 
 clickbaitShocker:
 - "#pro# [_picked:first picked,last picked,wheeled,drafted,topdecked,morphed]#_picked#
-  #randomAnyCard.capitalizeAll#[_challenge: and you won't believe,. You'll be floored by,.
+  #randomAnyCard#[_challenge: and you won't believe,. You'll be floored by,.
   Guess,. Find out,. #pros.capitalizeAll# are still talking about#]#_challenge.capitalize# [_what:what
   happened next,what #pro.capitalize# said next,what #pro.capitalize# did next,why
   #pro.capitalize# called a judge]#_what#"

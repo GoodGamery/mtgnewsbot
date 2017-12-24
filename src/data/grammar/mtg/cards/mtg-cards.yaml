@@ -44,15 +44,11 @@
       "#fakeCard#"
   ],
 
-  realHandCard: [
-    "#realCard#",
-    "#realCard#",
-    "#realCard#",
-    "#randomRealCard#",
-    "#randomRealCard#",
-    "#randomRealCard#",
-    "#realLandCard#",
-    "#realLandCard#",
+  realLandCard: [
+    "#basicLands#",
+    "#dualLands#",
+    "#utilityLands#",
+    "#limitedLands#",
     "#randomNonbasicLandCard#"
   ],
 
@@ -63,14 +59,6 @@
       "#realObscureCard#",
       "#realPowerfulCard#",
       "#realBadCard#"
-  ],
-
-  realLandCard: [
-    "#basicLands#",
-    "#dualLands#",
-    "#utilityLands#",
-    "#limitedLands#",
-    "#randomNonbasicLandCard#"
   ],
 
   descriptiveCard: [

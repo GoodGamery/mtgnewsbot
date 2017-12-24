@@ -30,7 +30,7 @@ inGraphicsStep:
 - '[_action:Slam #_card2# onto #_card1#,Brush #_card2# against #_card1#,Smash #_card2# against #_card1#,Caress #_eitherCard#,Carefully lay #_card2# on top of #_card1#]#_action# with #emotion#'
 - 'Attach both cards to #gameAccessory.a#'
 - 'Place #_card2# into #_card1#''s sleeve'
-- 'Write [_phrase:#mtgCatchphrase#,#mtgSlangTerm#][_loveHate:love,hate,❤][_text:#realPowerfulCard#,#_phrase#,I #_loveHate# #anyPersonality#]“#_text#” on #_card2# with [_implement:sharpie,crayon,pencil,permanent marker]#_implement.a#'
+- 'Write [_phrase:#mtgCatchphrase#,#mtgSlangTerm#][_loveHate:love,hate][_text:#realPowerfulCard#,#_phrase#,I #_loveHate# #anyPersonality#]“#_text#” on #_card2# with [_implement:sharpie,crayon,pencil,permanent marker]#_implement.a#'
 - 'Transform #_card1# to flip #_card2# to unmorph #randomPermanentCard#'
 - 'Throw #_card1# across the table while shouting about #gameConcept#'
 - 'Ask a judge [_otherThing:#_card2#,#keyword#][_question:how #_card1# and #_otherThing# interact,for the oracle text of #_otherThing#]#_question#'

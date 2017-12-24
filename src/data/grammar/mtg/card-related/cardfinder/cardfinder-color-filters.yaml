@@ -1,0 +1,222 @@
+###### color filters ######
+_colorFilter: ''
+
+color_W: '[_colorFilter: color=w color!=ubrg][_landColorFilter:#landFilter_W#,#landFilter_W#,#landFilter_Colorless#]'
+color_U: '[_colorFilter: color=u color!=brgw][_landColorFilter:#landFilter_U#,#landFilter_U#,#landFilter_Colorless#]'
+color_B: '[_colorFilter: color=b color!=rgwu][_landColorFilter:#landFilter_B#,#landFilter_B#,#landFilter_Colorless#]'
+color_R: '[_colorFilter: color=r color!=gwub][_landColorFilter:#landFilter_R#,#landFilter_R#,#landFilter_Colorless#]'
+color_G: '[_colorFilter: color=g color!=wubr][_landColorFilter:#landFilter_G#,#landFilter_G#,#landFilter_Colorless#]'
+
+color_WU: '[_colorFilter: color=wu color!=brg][_landColorFilter:#landFilter_W#,#landFilter_U#,#landFilter_WU#,#landFilter_WU#,#landFilter_Colorless#]'
+color_UB: '[_colorFilter: color=ub color!=rgw][_landColorFilter:#landFilter_U#,#landFilter_B#,#landFilter_UB#,#landFilter_UB#,#landFilter_Colorless#]'
+color_BR: '[_colorFilter: color=br color!=gwu][_landColorFilter:#landFilter_B#,#landFilter_R#,#landFilter_BR#,#landFilter_BR#,#landFilter_Colorless#]'
+color_RG: '[_colorFilter: color=rg color!=wub][_landColorFilter:#landFilter_R#,#landFilter_G#,#landFilter_RG#,#landFilter_RG#,#landFilter_Colorless#]'
+color_GW: '[_colorFilter: color=gw color!=ubr][_landColorFilter:#landFilter_G#,#landFilter_W#,#landFilter_GW#,#landFilter_GW#,#landFilter_Colorless#]'
+color_WB: '[_colorFilter: color=wb color!=urg][_landColorFilter:#landFilter_W#,#landFilter_B#,#landFilter_WB#,#landFilter_WB#,#landFilter_Colorless#]'
+color_UR: '[_colorFilter: color=ur color!=bgw][_landColorFilter:#landFilter_U#,#landFilter_R#,#landFilter_UR#,#landFilter_UR#,#landFilter_Colorless#]'
+color_BG: '[_colorFilter: color=bg color!=rwu][_landColorFilter:#landFilter_B#,#landFilter_G#,#landFilter_BG#,#landFilter_BG#,#landFilter_Colorless#]'
+color_RW: '[_colorFilter: color=rw color!=gub][_landColorFilter:#landFilter_R#,#landFilter_W#,#landFilter_RW#,#landFilter_RW#,#landFilter_Colorless#]'
+color_UG: '[_colorFilter: color=ug color!=wbr][_landColorFilter:#landFilter_G#,#landFilter_U#,#landFilter_GU#,#landFilter_GU#,#landFilter_Colorless#]'
+color_UW: '#color_WU#'
+color_BU: '#color_UB#'
+color_RB: '#color_BR#'
+color_GR: '#color_RG#'
+color_WG: '#color_GW#'
+color_BW: '#color_WB#'
+color_RU: '#color_UR#'
+color_GB: '#color_BG#'
+color_WR: '#color_RW#'
+color_GU: '#color_UG#'
+
+color_WUB: '[_colorFilter: color=wub color!=rg][_landColorFilter:#landFilter_WU#,#landFilter_UB#,#landFilter_WB#,#landFilter_WUB#]'
+color_UBR: '[_colorFilter: color=ubr color!=gw][_landColorFilter:#landFilter_UB#,#landFilter_BR#,#landFilter_UR#,#landFilter_UBR#]'
+color_BRG: '[_colorFilter: color=brg color!=wu][_landColorFilter:#landFilter_BR#,#landFilter_RG#,#landFilter_BG#,#landFilter_BRG#]'
+color_RGW: '[_colorFilter: color=rgw color!=ub][_landColorFilter:#landFilter_RG#,#landFilter_GW#,#landFilter_RW#,#landFilter_RGW#]'
+color_GWU: '[_colorFilter: color=gwu color!=br][_landColorFilter:#landFilter_GW#,#landFilter_WU#,#landFilter_GU#,#landFilter_GWU#]'
+color_WBR: '[_colorFilter: color=wbr color!=ug][_landColorFilter:#landFilter_WB#,#landFilter_BR#,#landFilter_RW#,#landFilter_WBR#]'
+color_URG: '[_colorFilter: color=urg color!=wb][_landColorFilter:#landFilter_UR#,#landFilter_RG#,#landFilter_GU#,#landFilter_URG#]'
+color_BGW: '[_colorFilter: color=bgw color!=ur][_landColorFilter:#landFilter_BG#,#landFilter_GW#,#landFilter_WB#,#landFilter_BGW#]'
+color_RWU: '[_colorFilter: color=rwu color!=bg][_landColorFilter:#landFilter_RW#,#landFilter_WU#,#landFilter_UR#,#landFilter_RWU#]'
+color_GUB: '[_colorFilter: color=gub color!=rw][_landColorFilter:#landFilter_GU#,#landFilter_UB#,#landFilter_BG#,#landFilter_GUB#]'
+color_RUG: '#color_URG#'
+color_BUG: '#color_GUB#'
+
+color_WUBRG: '[_colorFilter: color=wubrg][_landColorFilter:#landFilter_WUB#,#landFilter_UBR#,#landFilter_BRG#,#landFilter_RGW#,#landFilter_GWU#,#landFilter_WBR#,#landFilter_URG#,#landFilter_BGW#,#landFilter_RWU#,#landFilter_GUB#]'
+
+# include wastes
+color_Colorless: '[_colorFilter: color!=wubrg][_landColorFilter:#landFilter_Colorless#,#landFilter_Colorless#,#landFilter_Colorless#, name=wastes t=basic]'
+
+color_fourColor:
+- '[_colorFilter: color=wubr color!=g][_landColorFilter:#landFilter_WUB#,#landFilter_UBR#,#landFilter_WBR#,#landFilter_RWU#]'
+
+- '[_colorFilter: color=ubrg color!=w][_landColorFilter:#landFilter_UBR#,#landFilter_BRG#,#landFilter_URG#,#landFilter_GUB#]'
+
+- '[_colorFilter: color=brgw color!=u][_landColorFilter:#landFilter_BRG#,#landFilter_RGW#,#landFilter_WBR#,#landFilter_BGW#]'
+
+- '[_colorFilter: color=rgwu color!=b][_landColorFilter:#landFilter_RGW#,#landFilter_GWU#,#landFilter_URG#,#landFilter_RWU#]'
+
+- '[_colorFilter: color=gwub color!=r][_landColorFilter:#landFilter_WUB#,#landFilter_GWU#,#landFilter_BGW#,#landFilter_GUB#]'
+
+### land filters (referenced by color filters) ###
+
+landFilter_W:
+- ' t=plains t=basic'
+- ' text="{W}" text!="{U}" text!="{B}" text!="{R}" text!="{G}"'
+
+landFilter_U:
+- ' t=island t=basic'
+- ' text="{U}" text!="{W}" text!="{B}" text!="{R}" text!="{G}"'
+
+landFilter_B:
+- ' t=swamp t=basic'
+- ' text="{B}" text!="{U}" text!="{W}" text!="{R}" text!="{G}"'
+
+landFilter_R:
+- ' t=mountain t=basic'
+- ' text="{R}" text!="{U}" text!="{B}" text!="{W}" text!="{G}"'
+
+landFilter_G:
+- ' t=forest t=basic'
+- ' text="{G}" text!="{U}" text!="{B}" text!="{R}" text!="{W}"'
+
+landFilter_WU:
+- ' text="{W}" text="{U}" text!="{B}" text!="{R}" text!="{G}"'
+- ' text="{W}" text="{U}" text!="{B}" text!="{R}" text!="{G}"'
+- ' t=plains t=basic'
+- ' t=island t=basic'
+- ' t=plains t=island'
+- ' text="search" text="plains" text="island" text!="swamp" text!="mountain" text!="forest"'
+- ' text="{W/U}"'
+
+landFilter_UB:
+- ' text="{U}" text="{B}" text!="{W}" text!="{R}" text!="{G}"'
+- ' text="{U}" text="{B}" text!="{W}" text!="{R}" text!="{G}"'
+- ' t=island t=basic'
+- ' t=swamp t=basic'
+- ' t=island t=swamp'
+- ' text="search" text="island" text="swamp" text!="plains" text!="mountain" text!="forest"'
+- ' text="{U/B}"'
+
+landFilter_BR:
+- ' text="{B}" text="{R}" text!="{W}" text!="{U}" text!="{G}"'
+- ' text="{B}" text="{R}" text!="{W}" text!="{U}" text!="{G}"'
+- ' t=swamp t=basic'
+- ' t=mountain t=basic'
+- ' t=swamp t=mountain'
+- ' text="search" text="swamp" text="mountain" text!="plains" text!="island" text!="forest"'
+- ' text="{B/R}"'
+
+landFilter_RG:
+- ' text="{R}" text="{G}" text!="{W}" text!="{U}" text!="{B}"'
+- ' text="{R}" text="{G}" text!="{W}" text!="{U}" text!="{B}"'
+- ' t=mountain t=basic'
+- ' t=forest t=basic'
+- ' t=mountain t=forest'
+- ' text="search" text="mountain" text="forest" text!="plains" text!="island" text!="swamp"'
+- ' text="{R/G}"'
+
+landFilter_GW:
+- ' text="{G}" text="{W}" text!="{B}" text!="{R}" text!="{U}"'
+- ' text="{G}" text="{W}" text!="{B}" text!="{R}" text!="{U}"'
+- ' t=forest t=basic'
+- ' t=plains t=basic'
+- ' t=forest t=plains'
+- ' text="search" text="forest" text="plains" text!="swamp" text!="mountain" text!="island"'
+- ' text="{G/W}"'
+
+landFilter_RW:
+- ' text="{R}" text="{W}" text!="{B}" text!="{U}" text!="{G}"'
+- ' text="{R}" text="{W}" text!="{B}" text!="{U}" text!="{G}"'
+- ' t=mountain t=basic'
+- ' t=white t=basic'
+- ' t=mountain t=plains'
+- ' text="search" text="mountain" text="plains" text!="swamp" text!="island" text!="forest"'
+- ' text="{R/W}"'
+
+landFilter_BG:
+- ' text="{B}" text="{G}" text!="{W}" text!="{R}" text!="{U}"'
+- ' text="{B}" text="{G}" text!="{W}" text!="{R}" text!="{U}"'
+- ' t=swamp t=basic'
+- ' t=forest t=basic'
+- ' t=swamp t=forest'
+- ' text="search" text="swamp" text="forest" text!="plains" text!="mountain" text!="island"'
+- ' text="{B/G}"'
+
+landFilter_UR:
+- ' text="{U}" text="{R}" text!="{W}" text!="{B}" text!="{G}"'
+- ' text="{U}" text="{R}" text!="{W}" text!="{B}" text!="{G}"'
+- ' t=island t=basic'
+- ' t=mountain t=basic'
+- ' t=island t=mountain'
+- ' text="search" text="island" text="mountain" text!="plains" text!="swamp" text!="forest"'
+- ' text="{U/R}"'
+
+landFilter_WB:
+- ' text="{W}" text="{B}" text!="{R}" text!="{U}" text!="{G}"'
+- ' text="{W}" text="{B}" text!="{R}" text!="{U}" text!="{G}"'
+- ' t=plains t=basic'
+- ' t=swamp t=basic'
+- ' t=plains t=swamp'
+- ' text="search" text="plains" text="swamp" text!="mountain" text!="island" text!="forest"'
+- ' text="{W/B}"'
+
+landFilter_GU:
+- ' text="{G}" text="{U}" text!="{B}" text!="{R}" text!="{W}"'
+- ' text="{G}" text="{U}" text!="{B}" text!="{R}" text!="{W}"'
+- ' t=forest t=basic'
+- ' t=island t=basic'
+- ' t=forest t=island'
+- ' text="search" text="forest" text="island" text!="swamp" text!="mountain" text!="plains"'
+- ' text="{G/U}"'
+
+landFilter_WUB: 
+- ' text="{W}" text="{U}" text="{B}" text!="{R}" text!="{G}"'
+- '#landfilter_ManyColorLand#'
+landFilter_UBR:
+- ' text!="{W}" text="{U}" text="{B}" text="{R}" text!="{G}"'
+- '#landfilter_ManyColorLand#'
+landFilter_BRG:
+- ' text!="{W}" text!="{U}" text="{B}" text="{R}" text="{G}"'
+- '#landfilter_ManyColorLand#'
+landFilter_RGW:
+- ' text="{W}" text!="{U}" text!="{B}" text!="{R}" text="{G}"'
+- '#landfilter_ManyColorLand#'
+landFilter_GWU:
+- ' text="{W}" text="{U}" text!="{B}" text!="{R}" text!="{G}"'
+- '#landfilter_ManyColorLand#'
+landFilter_WBR:
+- ' text="{W}" text="{U}" text="{B}" text="{R}" text="{G}"'
+- '#landfilter_ManyColorLand#'
+landFilter_URG:
+- ' text="{W}" text="{U}" text="{B}" text="{R}" text="{G}"'
+- '#landfilter_ManyColorLand#'
+landFilter_BGW:
+- ' text="{W}" text="{U}" text="{B}" text="{R}" text="{G}"'
+- '#landfilter_ManyColorLand#'
+landFilter_RWU:
+- ' text="{W}" text="{U}" text="{B}" text="{R}" text="{G}"'
+- '#landfilter_ManyColorLand#'
+landFilter_GUB:
+- ' text="{W}" text="{U}" text="{B}" text="{R}" text="{G}"'
+- '#landfilter_ManyColorLand#'
+
+landFilter_RUG: '#landFilter_URG#'
+landFilter_BUG: '#landFilter_GUB#'
+
+landFilter_Colorless:
+- ' text="{C}" text!="{W}" text!="{U}" text!="{B}" text!="{R}" text!="{G}" text!="any color" text!="that color" text!="one color" text!="colors" text!="plains" text!="island" text!="swamp" text!="mountain" text!="forest"'
+
+landfilter_ManyColorLand:
+- ' text="any color" text|="one color" text|="colors"'
+- ' text="search" text="basic land" text!="{W}" text!="{U}" text!="{B}" text!="{R}" text!="{G}"'
+
+landfilter_WUBRG:
+- '#landfilter_ManyColorLand#'
+- ' text="{W}{U}{B}{R}{G}"'
+
+#tribal - cavern of souls and new ixalan land?
+tribal:
+
+untribal:
+- '#tribal#'
+- 'UNTRIBAL'

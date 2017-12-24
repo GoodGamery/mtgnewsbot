@@ -243,6 +243,8 @@ async function cardSearchCustomQuery(s, params) {
           key = 'not ' + key.substring(0, key.length - 1);
         }  else if (key.endsWith('|')) {
           key = 'or ' + key.substring(0, key.length - 1);
+        } else if (key.endsWith('~')) {
+          key = ' ' + key.substring(0, key.length - 1);
         } else if (query.length > 0) {
           key = 'and ' + key;
         }
@@ -352,6 +354,7 @@ async function cardFinderSearch(query, params, additionalFields) {
       const colorDescriptive = getColorFullDescription(card.colorIdentity);
       const colorClass = getColorCategory(card.colorIdentity);    
       const someColor = getSomeColor(card.colorIdentity);
+      const nameFirstWord = card.name.split(" ")[0];
       const nameLastWord = card.name.split(" ").pop();
 
       if (card.layout === 'token') {
@@ -369,16 +372,17 @@ async function cardFinderSearch(query, params, additionalFields) {
         `[${prefix}Set${i}:${set}]`,
         `[${prefix}Rarity${i}:${rarity}]`,      
         `[${prefix}Type${i}:${type}]`,     
-        `[${prefix}Subtype${i}:${subtype}]`,
-        `[${prefix}FullType${i}:${fullType}]`,
         `[${prefix}FullSubtype${i}:${fullSubtype}]`,
+        `[${prefix}FullType${i}:${fullType}]`,   
         `[${prefix}SomeTypeOrSubtype${i}:${someTypeOrSubtype}]`,                              
         `[${prefix}ImgUrl${i}:${imgUrl}]`,
-        `[${prefix}Color${i}:${color}]`,
         `[${prefix}Descriptive${i}:${colorDescriptive}]`,
-        `[${prefix}ColorClass${i}:${colorClass}]`,
-        `[${prefix}SomeColor${i}:${someColor}]`,
-        `[${prefix}NameLastWord${i}:${nameLastWord}]`      
+        `[${prefix}NameFirstWord${i}:${nameFirstWord}]`,        
+        `[${prefix}NameLastWord${i}:${nameLastWord}]`,
+        subtype ? `[${prefix}Subtype${i}:${subtype}]` : '',
+        color ? `[${prefix}Color${i}:${color}]` : '',             
+        colorClass ? `[${prefix}ColorClass${i}:${colorClass}]` : '',
+        someColor ? `[${prefix}SomeColor${i}:${someColor}]`: ''        
       );
 
       if (additionalFields) {
