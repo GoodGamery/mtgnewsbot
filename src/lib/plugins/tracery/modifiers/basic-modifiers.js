@@ -1,5 +1,14 @@
 'use strict';
 
+// utility functions
+
+function isVowel(c) {
+    var c2 = c.toLowerCase();
+    return (c2 === 'a') || (c2 === 'e') || (c2 === 'i') || (c2 === 'o') || (c2 === 'u');
+}
+
+// modifiers
+
 function allCaps(s) {
   return s.toUpperCase();
 }
@@ -14,7 +23,7 @@ function ed(s) {
 }
 
 // useful if you wish to invoke a rule without displaying its text
-function hide(s) {
+function hide() {
   return '\0';
 }
 
@@ -37,6 +46,24 @@ function noSpaces(s) {
 
 function hyphenate(s) {
   return s.replace(/\s+/g, '-');
+}
+
+function sIfNeeded(s) {
+  switch (s.charAt(s.length -1)) {
+    case 's':
+      return s;
+    case 'h':
+      return s + "es";
+    case 'x':
+       return s + "es";
+    case 'y':
+      if (!isVowel(s.charAt(s.length - 2))) {
+        return s.substring(0, s.length - 1) + "ies";
+      }
+      return s + "s";
+    default:
+      return s + "s";
+    }
 }
 
 function stripLeadingText(s, params) {
@@ -63,5 +90,6 @@ module.exports = {
   noop,
   noPunctuation,
   noSpaces,
+  sIfNeeded,
   stripLeadingText
 };

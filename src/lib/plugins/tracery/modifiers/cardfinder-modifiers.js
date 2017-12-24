@@ -354,6 +354,7 @@ async function cardFinderSearch(query, params, additionalFields) {
       const colorDescriptive = getColorFullDescription(card.colorIdentity);
       const colorClass = getColorCategory(card.colorIdentity);    
       const someColor = getSomeColor(card.colorIdentity);
+      const nameFirstWord = card.name.split(" ")[0];
       const nameLastWord = card.name.split(" ").pop();
 
       if (card.layout === 'token') {
@@ -376,6 +377,7 @@ async function cardFinderSearch(query, params, additionalFields) {
         `[${prefix}SomeTypeOrSubtype${i}:${someTypeOrSubtype}]`,                              
         `[${prefix}ImgUrl${i}:${imgUrl}]`,
         `[${prefix}Descriptive${i}:${colorDescriptive}]`,
+        `[${prefix}NameFirstWord${i}:${nameFirstWord}]`,        
         `[${prefix}NameLastWord${i}:${nameLastWord}]`,
         subtype ? `[${prefix}Subtype${i}:${subtype}]` : '',
         color ? `[${prefix}Color${i}:${color}]` : '',             
