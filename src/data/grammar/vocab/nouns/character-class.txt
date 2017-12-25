@@ -150,3 +150,6 @@ homewrecker
 babysitter
 chauffeur
 provocateur
+#playerCategory#
+#personAuthorityFigure#
+#personRelational#

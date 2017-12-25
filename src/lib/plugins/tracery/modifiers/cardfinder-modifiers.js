@@ -125,7 +125,7 @@ async function cardSearchTwoParter(separator, params) {
   };
 
   // optional string prefix to remove before parsing
-  var ignorePrefix = params[1];
+  var ignorePrefix = params[1] || '';
 
   Object.keys(escapedParams).forEach(escapeCode => {
     ignorePrefix = ignorePrefix.replace(new RegExp(escapeCode, 'g'), escapedParams[escapeCode]);
@@ -240,7 +240,7 @@ async function cardSearchCustomQuery(s, params) {
     try {
       let query = terms.reduce((query, term) => {        
         let key = term.split('=')[0];
-        let value = term.split('=')[1].replace(/\++/g, ' ');
+        let value = term.split('=')[1] ? term.split('=')[1].replace(/\++/g, ' ') : term;
 
         if (query.length > 0) {
           query += ' ';

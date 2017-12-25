@@ -87,9 +87,22 @@ flavorText:
   - >
     "The #creatureTypeOrCharacterClass.s# of [_place:#minorStoryLocation#,#nonPlaneLocation#]#_place# treat each #itemNoun# with #emotion# for the #creatureTypeOrCharacterClass# it will become."
   - >
-    "It is #adjComparative# than all but the #adjSuperlative# #pluralNoun#, and #adjComparative# than all but the #adjSuperlative#."
+    "[#cardQueryMultiWordNoncreatureArtifact#][_quote:¡Yo quiero #_cardName#!,Show me the #_cardName#!]#_quote#"
   - >
-      "[#cardQueryMultiWordNoncreatureArtifact#][_quote:¡Yo quiero #_cardName#!,Show me the #_cardName#!]#_quote#"
+    "[#somePronoun#][_they:#they#]#_they.capitalize# #are# #judgeJury#, #judgeJury#, and #juryExecutioner# because #_they# #verbTransitivePastTense# them all."
+
+judgeJury:
+- "#characterClass#"
+- "#characterClass#"
+- "#creatureTypes#"
+- "#playerCategory#"
+
+juryExecutioner:
+- "#characterClass#"
+- "#character#"
+- "#creatureTypes#"
+- "#historicalFigure#"
+- "#miscPersonSingular#"
 
 sealInscriptionDescriptionWhatIam:
 - "#itemNoun#"
