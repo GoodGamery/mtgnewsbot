@@ -40,6 +40,8 @@ cotdTextDescription:
   - "[#cotdCardCategorySearch#]#_cardColorClass1.capitalize#, #cardQuality# #_cardDescCategory# will always be [_position:an unavoidable part of,a necessary evil in,at a premium in,a commodity in,#kindaGood# in]#_position# #popularFormat#, [_authority:Development,Mark Rosewater,Hasbro,the Future-Future League][_rigid:extremely rigid,militant,inconsistent,incomprehensible,ludicrous,unreasonably firm][_qualifier:unfortunately,like it or not,thanks to #_authority#'s #_rigid# stance on #_cardDescCategory#,regardless of the cost,thanks to the New World Order,because of reasons,because of the Reserved List,and always has been]#_qualifier#. Though sticking it on [_cardlinkName:#cardAlone#][_surface:#_cardtype.lowercase.a#,#cardCategory.lowercase.a#,#_cotdHtmlCardLink.a# variant]#_surface# [_result:certainly helps,certainly helps,doesn't help,really changes things,makes no sense,makes a certain kind of sense,certainly might make you resonsider it,is a clumsy approach to fixing this, is a feeble way to remedy this]#_result#."
   - "This [_preDesc:,#cardQuality# ]#_preDesc##_cardDesc# has had [_who:#pros#,#psychographic.s#,#pro#,#person#][_reactionVerb:salivating,drooling,giggling,dancing,cartwheeling,rejoicing,grumbling,talking,confused,making predictions,trying to break it,calling for its banning][_verbing:#_reactionVerb#,#verbIntransitiveGerund#]#_who# #_verbing# since it was [_verbed:first revealed,first spoiled,first unbanned,first printed,reprinted]#_verbed#."
   - "#adjOrCardQuality.capitalize#, #adjOrCardQuality#, and #adjOrCardQuality#—one of the #adjSuperlativeOrCardSuperlative# and #adjSuperlativeOrCardSuperlative# #_cardCategory.s# ever printed returns!"
+  - "[_cardSomeCreatureType1:#creatureTypes#][#cotdCardCategorySearch#]It [_helps:helps,doesn't hurt]#_helps# that this [_great:great,great,#cardQuality#]#_great# #_cardCmc1.wholeNumberToText#-mana #_cardCategory# can #gameplayDevelopment#, but[_com:,#comma#][_honestly:, honestly#_com#, really#_com#, actually#_com#, admittedly#_com#, to be fair#_com#]#_honestly# we'd [_playIt:play it anyway,play it no matter what,just run it,just play it,consider playing it,maindeck it]#_playIt# [_for:for,just for,simply for]#_for# [_chance:chance,excuse]#_chance.a# to [_say:yell,#verbExclaim#]#_say# [_punct:,!,!,?][_italicText:#_cardname.lowercase#][_phrase:#mtgCatchphrase#,#mtgSlangTerm#][_utterance:#_cardname.allCaps#!,#_cardname.allCaps#?,#_italicize#,#_phrase.allCaps#]“#_utterance#”[_adj:our best,our very best,our meanest,a flawless,an uncanny,a deadpan,our loudest,a menacing,a friendly,our most convincing,our #adjSuperlative#,#adjSuperlative.a#][_voice:#_cardSomeCreatureType1.lowercase#,#cotdPersonality#,#characterClass#][_yellWhere:ears,faces][_inVoice:,, in #_adj# #_voice# voice, in #_adj# #_voice# voice, at #person#, at the top of our lungs, until we're hoarse, until someone calls a judge, in our opponents' #_yellWhere#]#_inVoice#."
+
 
 cotdPetOwner:
 - "#historicalFigure#"
@@ -49,7 +51,7 @@ cotdCreatureTypeDescription:
  - "Only on #plane# would people see this #adjImpressive# #_creatureType# and nickname it [_nickname:The #adj.capitalizeAll.hyphenate# #characterClass.capitalizeAll#,#planeswalkerFirstName#'s #characterClass.capitalizeAll#]“#_nickname#”."
  - "Now that we know that this #_creatureType# is the [_source:creator,progenitor,source]#_source# of all #_creatureType#kind across the multiverse (even [_cardlinkName:#tribalCreature#]#_cotdHtmlCardLink#), does that mean that every #_creatureType# is a [_minionTitle:Scion of the #_cardname#,Spawn of #_cardname#,Minion of #_cardname#, #_cardname.hyphenate#'s Faithful][_cardlinkName:#_minionTitle#]#_cotdHtmlCardLink#?"
  - "#_creatureType.capitalize.s# may not ascend to #characterClass.hyphenate#hood very often, but when they do, the results tend to be[_adv:, really, pretty, extremely, surprisingly, quite, truly] #adj#."
- - "If you're looking for #interestingPlayAdj.a# bomb in [_italicText:#teaserCardSet#]#_italicize# Limited, look no further than this #adj# #_creatureType#."
+ - "If you're looking for #interestingPlayAdj.a# bomb in #_italicize# Limited, look no further than this #adj# #_creatureType#."
  - "Things took a dark turn [_where:at the #storyLocation# #placeNoun.capitalize#,in #minorStoryLocation#,in #nonPlaneLocation#]#_where# after this #_creatureType# learned they had run out of [_item:#itemNoun.s#,#massNoun#]#_item#."
  - "#_creatureType.capitalize# tribal, meet #format#. We've wanted to introduce you two for a while, and we thought [_adj:loving,friendly,abundant,populated,inhabited][_italicText:#teaserCardSet#][_teaserSet:#_italicize#][_where:the #_creatureType#-#_adj# plane of #plane#,#_teaserSet#]#_where# would be the perfect place for you to meet."
  - "If you're looking to beef up #character#'s tribal support next [_date:business day,weekend,week,month,week,month,year,year,decade,century]#_date#, make sure to look at the #_creatureType.capitalizeAll# tribal pushes [_italicText:#cardSet#][_pastSet1:#_italicize#][_italicText:#_cardset#][_pastSet2:#_italicize#][_futureSet:#teaserCardSet#,#novelCardSetName#][_italicText:#_futureSet.capitalizeAll#][_futureSetText:we're making in #_italicize#][_madeOrAreMaking:we made back in #_pastSet1# and #_pastSet2#,#_futureSetText#]#_madeOrAreMaking#."
@@ -108,7 +110,7 @@ cotdCustomQueryDecscription:
   Pro Tour [_italicText:#teaserCardSet#]#_italicize# may be when [_cardlinkName:#_cardname#]#_cotdHtmlCardLink# finally [_fate:accepts its obsolescence, allows itself to be unplugged,steps aside to make room for a newer model,retires to the scrapyard,decides to settle down with a nice #appliance# and raise a family,busts its last spring,gets its battery pulled,goes to robot heaven,goes off the rails,gets scrapped for parts]#_fate#.
 - >
   [#_drawXDiscardY#][_s:#_s#][_customQuery:text="draw#_s# #_x# #_xcards#" text="discard#_s# #_y# #_ycards#"][_cardSubtype1:#creatureTypeOrCharacterClass#,#creatureTypeOrCharacterClass#,#creatureTypeOrCharacterClass#,#animal#,#animal#][#cotdCustomSearch#]
-  Getting #_gain# for the price of #_price# may seem like [_desc:#kindaGood#,#adj#]#_desc.a# deal ... but when it's offered by the [_inNonPlane:in,in all of][_onPlane:on,in all of][_where:in the #placeNounRealm#,in the #placeNoun#,#_inNonPlane# #nonPlaneLocation#,#_onPlane# #plane#][_italicText:#adjSuperlative# #_cardSubtype1.lowercase# #_where#?]#_italicize# [_superlative:#adjSuperlativeValue#,#adjSuperlative#]#_superlative.capitalize# [_deal:deal,bargain,trade,investment
+  Getting #_gain# for the price of #_price# may seem like [_desc:#kindaGood#,#adj#]#_desc.a# deal ... but when it's offered by the [_inNonPlane:in,in all of][_onPlane:on,in all of][_where:in the #placeNounRealm#,in the #placeNoun#,#_inNonPlane# #nonPlaneLocation#,#_onPlane# #plane#][_italicText:#adjSuperlative# #_cardSomeCreatureType1.lowercase# #_where#?]#_italicize# [_superlative:#adjSuperlativeValue#,#adjSuperlative#]#_superlative.capitalize# [_deal:deal,bargain,trade,investment
   ]#_deal# [_investment:soul,last #itemNoun#,pet #animal#,#bodypart#,#personRelationalUnique#][_quantity:#largeAmount.a# of#,#nounContainer.a# of,#nounContainer.a# full of][_return:#itemNoun.a#,#itemNoun.a#,#_quantity# #pluralItemNounOrMassNoun#,#adjStorybook.a# #itemNoun#,#descriptiveCard#,#count# #itemNoun.s#][_traded:traded,sold][_partner:, to #cotdPersonality#][_when:ever,ever,of all time,since #cotdPersonality# #_traded# #their# #_investment##_partner# for #_return#,this side of #storyLocation#]#_when#.
 - >
   [_suffix:ing,y,ed,born,ous,ful,ic,ble,less,ant,al][_customQuery:t=creature name="?#_suffix# "][#cotdCustomSearch#][_firstWord:#_cardNameFirstWord1#]Does this mean #plane# is also [_inhabited:inhabited by,populated by,home to,full of,teeming with]#_inhabited# a bunch of [_entity:#_firstWord.lowercase# #_cardSubtype1#,#_firstWord.lowercase# #animal#,#_firstWord.lowercase# #characterClass#,#adj# #_cardNameLastWord1#,#adjStorybook# #_cardNameLastWord1#]#_entity.lowercase.sIfNeeded# somewhere?
@@ -174,6 +176,7 @@ interestingPlayAdj:
 
 interestingPlay:
   - "#interestingPlayAdj# flavor plays"
+  - "#interestingPlayAdj# tempo plays"
   - "#interestingPlayAdj# topdecks"
   - "#interestingPlayAdj# bluffing opportunities"
   - "#interestingPlayAdj# potential combos"
@@ -181,6 +184,50 @@ interestingPlay:
   - "#interestingPlayAdj# blowouts"
   - "#interestingPlayAdj# misplay opportunities"
   - "#interestingPlayAdj# punts"
+
+gameplayDevelopment:
+- 'swing #gameplayPosition.a# [_benefit:in your favor,around,the right way,into #adjFavorable.a# one]#_benefit#'
+- '[_winLose:win,lose,auto-win,auto-lose,just win,close out]#_winLose#[_theGame:, the game, a close game, a game]#_theGame#[_when:, on the spot, out of nowhere, out of the blue, from a tenuous position, from #gameplayPosition.a#]#_when#'
+- 'turn around #adjChallenging.a# board state'
+- '[_enable:allow you to set up, enable]#_enable# some #interestingPlay#'
+- '#gameplayHelp# win a [_war:counter,attrition]#_war# war'
+- '#gameplayHelp# recover from a board wipe'
+- '#gameplayHelp# [_stop:shut down,slow down,counter,defend against]#_stop# opposing [_challenge:bombs,aggression,#cardCategoryClassTerm#,#deckObjective#]#_challenge#'
+
+
+gameplayPosition:
+- "#adjChallenging# [_situation:combat step,board state,game state,game]#_situation#"
+
+gameplayHelp:
+-
+- help
+
+adjChallenging:
+- thorny
+- difficult
+- awkward
+- troublesome
+- tricky
+- messy
+- rough
+- tough
+- risky
+- complicated
+- problematic
+- delicate
+- bleak
+- hopeless
+- worsening
+- daunting
+- losing
+
+adjFavorable:
+- winning
+- favorable
+- agreeable
+- good
+- advantageous
+- preferable
 
 adjImpressive:
  - benevolent

@@ -109,6 +109,13 @@ function getSomeCardTypeOrSubtype(types, subtypes) {
   return randomElement(typesAndSubtypes);
 }
 
+function getSomeCreatureType(types, subtypes) {
+  if (types.indexOf('Creature') === -1 || !subtypes) {
+    return undefined;
+  }
+  return randomElement(subtypes);
+}
+
 async function cardSearchTwoParter(separator, params) {
   const searchTerm = separator.match(/^".*"$/) ? separator : `"? ${separator} "`;
   const splitter = separator.match(/^".*"$/) && separator.match(/[^?!"|]+/) ? separator.match(/[^?!"|]+/)[0] : ` ${separator} `; 
@@ -349,6 +356,7 @@ async function cardFinderSearch(query, params, additionalFields) {
       const fullType = card.types.join(' ');
       const fullSubtype = card.subtypes && card.types.join(' ');    
       const someTypeOrSubtype = getSomeCardTypeOrSubtype(card.types, card.subtypes);
+      const someCreatureType = getSomeCreatureType(card.types, card.subtypes);
       const imgUrl = traceryEscape(card.imageUrl);
       const color = getColorDescription(card.colorIdentity);
       const colorDescriptive = getColorFullDescription(card.colorIdentity);
@@ -356,7 +364,7 @@ async function cardFinderSearch(query, params, additionalFields) {
       const someColor = getSomeColor(card.colorIdentity);
       const nameFirstWord = card.name.split(" ")[0];
       const nameLastWord = card.name.split(" ").pop();
-      const cmc = card.cmc;
+      const cmc = card.cmc || '0';
 
       if (card.layout === 'token') {
         name += ' Token';
@@ -380,11 +388,12 @@ async function cardFinderSearch(query, params, additionalFields) {
         `[${prefix}Descriptive${i}:${colorDescriptive}]`,
         `[${prefix}NameFirstWord${i}:${nameFirstWord}]`,        
         `[${prefix}NameLastWord${i}:${nameLastWord}]`,
+        `[${prefix}Cmc${i}:${cmc}]`,        
         subtype ? `[${prefix}Subtype${i}:${subtype}]` : '',
+        someCreatureType ? `[${prefix}SomeCreatureType${i}:${someCreatureType}]` : '', 
         color ? `[${prefix}Color${i}:${color}]` : '',             
         colorClass ? `[${prefix}ColorClass${i}:${colorClass}]` : '',
-        someColor ? `[${prefix}SomeColor${i}:${someColor}]`: '',
-        cmc ? `[${prefix}Cmc${i}:${cmc}]`: ''     
+        someColor ? `[${prefix}SomeColor${i}:${someColor}]`: ''
       );
 
       if (additionalFields) {

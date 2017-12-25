@@ -124,4 +124,4 @@ cardQueryCategoryWithOneWordName:
  - >
   [#searchableCardCategoryCustomQuery#][_customQuery:#_customQuery# name!="? "][#_customQuery.cardSearchCustomQuery#]
 
-randomCategoryCardWithOneWordName: "#cardQueryCategoryWithOneWordName##_cardName1#"
+randomCategoryCardWithOneWordName: "#cardQueryCategoryWithOneWordName##_cardName#"
