@@ -46,7 +46,7 @@ cardPunSetup:
   [_cardPunLine1:#challengeAppeal#]
 - |
   [separator:of the][#separator.cardSearchTwoParter(1)#][_cardname:#_cardName1#]
-  [_verbPun:#verbYourself# yourself]
+  [_verbPun:#verbReflexive# yourself]
   [_beOneOf:be one of,be among,fight alongside,answer the call of,fight for,become a champion of,become #_cardNameFirstPart1.a# of,be #follower.a# of]
   [_willYouBe:#_beOneOf# the #_cardNameSecondPart1#]
   [_areYouOne:one of the #_cardNameSecondPart1#,a true #_cardNameFirstPart1#,#_cardNameFirstPart1.a# of the #_cardNameSecondPart1#,#_cardNameFirstPart1.a# or #characterClass.capitalize.a#, #follower.a# of the #_cardNameSecondPart1#]

@@ -10,7 +10,7 @@ bigness
 dullness
 brilliance
 charm
-clammuness
+clamminess
 collectability
 comfort
 complication
@@ -106,7 +106,7 @@ tinyness
 two-facedness
 unorthodoxness
 unstableness
-creamuness
+creaminess
 wonder
 world-weariness
 worthlessness
@@ -126,12 +126,12 @@ fickleness
 studiousness
 nastiness
 repulsiveness
-creepuness
+creepiness
 obnoxiousness
 petulance
 deliciousness
 loathsomeness
-jauntuness
+jauntiness
 wastefulness
 classicalness
 zaniness
