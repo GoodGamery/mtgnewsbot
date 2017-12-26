@@ -1,10 +1,18 @@
 {
     "cardCopyCount": [
-        "one[copies:copy]",
-        "two[copies:copies]",
-        "three[copies:copies]",
-        "four[copies:copies]",
-        "seven[copies:copies]"
+        "one[copies:copy][s:]",
+        "one[copies:copy][s:]",
+        "two[copies:copies][s:s]",
+        "two[copies:copies][s:s]",
+        "three[copies:copies][s:s]",
+        "three[copies:copies][s:s]",
+        "four[copies:copies][s:s]",
+        "five[copies:copies][s:s]",
+        "six[copies:copies][s:s]",
+        "seven[copies:copies][s:s]",
+        "eight[copies:copies][s:s]",
+        "nine[copies:copies][s:s]",
+        "ten[copies:copies][s:s]"
     ],
     "deckNameNumber": [
         "1",

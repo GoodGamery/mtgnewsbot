@@ -13,6 +13,10 @@ function allCaps(s) {
   return s.toUpperCase();
 }
 
+function compactSpaces(s) {
+  return s.replace(/\s+/g, ' ');
+}
+
 function ed(s) {
   if (s.endsWith('e')) {
     return s + 'd';
@@ -110,6 +114,7 @@ function wholeNumberToText(s) {
 
 module.exports = { 
   allCaps,
+  compactSpaces,
   ed,
   lowercase,
   hide,

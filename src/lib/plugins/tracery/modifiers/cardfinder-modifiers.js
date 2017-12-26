@@ -120,9 +120,16 @@ async function cardSearchTwoParter(separator, params) {
   const searchTerm = separator.match(/^".*"$/) ? separator : `"? ${separator} "`;
   const splitter = separator.match(/^".*"$/) && separator.match(/[^?!"|]+/) ? separator.match(/[^?!"|]+/)[0] : ` ${separator} `; 
 
+  const additionalQueryTerms = decodeURIComponent(params[2]);
+
   const query = { 
-    q: `name:${searchTerm}`
+    q: `name:${searchTerm}` + (additionalQueryTerms ? ` ${additionalQueryTerms}` : '')
   };
+
+  logger.log(`separator: ${separator}`);
+  logger.log(`searchTerm: ${searchTerm}`);
+  logger.log(`query.q: ${query.q}`);
+
 
   // optional string prefix to remove before parsing
   var ignorePrefix = params[1] || '';

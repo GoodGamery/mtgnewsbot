@@ -117,6 +117,10 @@ cotdCustomQueryDecscription:
 - >
   [_customQuery:t=instant t|=sorcery name="? the " name!="?of the" name!="?with the" name!="?for the" name!="?ing the" name!="?to the" name!="?in the" name!="?ing the" name!="?into "][#cotdCustomSearch#][_firstWord:#_cardNameFirstWord1#][_lastWord:#_cardNameLastWord1#]
   Given that this card can #_firstWord.lowercase#, among others, [_cardlinkName:#randomCreatureCard#]#_cotdHtmlCardLink#, [_cardlinkName:#randomCreatureCard#]#_cotdHtmlCardLink#, and [_cardlinkName:#randomCreatureCard#]#_cotdHtmlCardLink#, the "#_lastWord.lowercase#" part of the name is beginning to feel [_adv:,pretty,fairly,somewhat,incredibly]#_adv#... [_adj:#adj#,#adj#,#kindaGood#,#reallyGood#]#_adj#. 
+- >
+  [separator:the][#separator.cardSearchTwoParter(1,,not name%3A"?of " not name%3A"?for " not name%3A"?to " not name%3A"?into " not name%3A"?in " not name%3A"?with " not name%3A"?at " t%3Ainstant OR t%3Asorcery)#][_firstPart:#_cardNameFirstPart1#][_lastPart:#_cardNameSecondPart1#]
+  [_cardname:#_cardName1#][#cotdCardNameSearch#]
+  Given that this card can #_firstPart.lowercase#, among others, [_cardlinkName:#randomCreatureCard#]#_cotdHtmlCardLink#, [_cardlinkName:#randomCreatureCard#]#_cotdHtmlCardLink#, and [_cardlinkName:#randomCreatureCard#]#_cotdHtmlCardLink#, the "#_lastPart.lowercase#" part of the name is beginning to feel[_adv:, pretty, fairly, somewhat, incredibly, quite distinctly]#_adv#... [_adj:#adj#,#adj#,#kindaGood#,#reallyGood#]#_adj#. 
 
 _badDream:
 - "[_discovery:getting lost at,being naked at,being late to,being teased at,#verbIntransitiveGerund# in,flunking out of][_schoolType:#_creatureType#,#characterClass#][_italicText:#_discovery# #_schoolType# school]#_italicize#"
