@@ -71,9 +71,9 @@ inGraphicsStep:
 - "Tell your opponent that you lost to #anyPersonality# last round"
 - "[_verb:Insist,Explain,Announce]#_verb# that you're currently [_doingProject:filming a documentary about,writing a book about,conducting a social experiment with]#_doingProject# #_eitherCard#"
 - "[_perform:Perform,Stage,Put on]#_perform# a short “puppet show” with #_card1# and #_card2#"
-- "#randomKeywordAction#"
-- "#randomKeywordAction#"
-- "#randomKeywordAction#"
+- "#randomKeywordAction.capitalize#"
+- "#randomKeywordAction.capitalize#"
+- "#randomKeywordAction.capitalize#"
 
 typeOfCard: 
 - "#cardCategory#"

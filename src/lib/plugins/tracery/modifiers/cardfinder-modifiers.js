@@ -361,7 +361,7 @@ async function cardFinderSearch(query, params, additionalFields) {
       const type = randomElement(card.types);
       const subtype = randomElement(card.subtypes);
       const fullType = card.types.join(' ');
-      const fullSubtype = card.subtypes && card.types.join(' ');    
+      const fullSubtype = card.subtypes && card.subtypes.join(' ');    
       const someTypeOrSubtype = getSomeCardTypeOrSubtype(card.types, card.subtypes);
       const someCreatureType = getSomeCreatureType(card.types, card.subtypes);
       const imgUrl = traceryEscape(card.imageUrl);

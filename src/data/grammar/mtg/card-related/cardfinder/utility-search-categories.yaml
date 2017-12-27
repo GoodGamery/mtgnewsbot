@@ -27,7 +27,6 @@ randomNonbasicLandCard: "#cardQueryNonbasicLand##_cardName#"
 cardQueryNonland: "[_customQuery:t!=land#_colorFilter#][#_customQuery.cardSearchCustomQuery(1)#][_cardName:#_cardName1#]"
 randomNonlandCard: "#cardQueryNonland##_cardName#"
 
-
 cardQueryNoncreatureArtifact: "[_customQuery:t=artifact t!=creature#_colorFilter#][#_customQuery.cardSearchCustomQuery(1)#][_cardName:#_cardName1#]"
 cardQueryMultiWordNoncreatureArtifact: '[_customQuery:t=artifact t!=creature text="? "#_colorFilter#][#_customQuery.cardSearchCustomQuery(1)#][_cardName:#_cardName1#]'
 
@@ -70,3 +69,12 @@ cardQueryCategoryWithOneWordName:
  - '[#searchableCardCategory#][_customQuery:#_customQuery# name!="? "][#_cardCategorySearchTerm.cardSearchByText#]'
  - '[#searchableCardCategoryCustomQuery#][_customQuery:#_customQuery# name!="? "][#_customQuery.cardSearchCustomQuery#]'
 randomCategoryCardWithOneWordName: "#cardQueryCategoryWithOneWordName##_cardName#"
+
+cardQueryLordCreature:
+- '[_customQuery:t=creature text=other text="creatures get" text!="?other creature" text!="?target creature" #_colorFilter#][#_customQuery.cardSearchCustomQuery(1)#][_cardName:#_cardName1#]'
+- '[_customQuery:t=creature text=other text="creatures get" text!="?other creature" text!="?target creature" #_colorFilter#][#_customQuery.cardSearchCustomQuery(1)#][_cardName:#_cardName1#]'
+- '[_customQuery:t=creature text=other text="creatures you control" text!="?other creature" text!="?target creature" #_colorFilter#][#_customQuery.cardSearchCustomQuery(1)#][_cardName:#_cardName1#]'
+- '[_customQuery:t=creature text=other text="creatures you control" text!="?other creature" text!="?target creature" #_colorFilter#][#_customQuery.cardSearchCustomQuery(1)#][_cardName:#_cardName1#]'
+- '[_customQuery:t=creature text=other text="creature you control" text!="?other creature" text!="?target creature" #_colorFilter#][#_customQuery.cardSearchCustomQuery(1)#][_cardName:#_cardName1#]'
+
+randomLordCreatureCard: "#cardQueryLordCreature##_cardName#"
