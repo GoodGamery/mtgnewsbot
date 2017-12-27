@@ -179,6 +179,7 @@
     "Zaliki",
     "Zilan"
   ],
+
   "commonCharacterLastName": [
   	"Arenson",
   	"Dagsson",
@@ -338,6 +339,8 @@
     "Tah"
   ],
 
+  "godCharacter": "[_creatureType:god][#_creatureType.cardSearchByType#]#_cardFamiliarName1#",
+
   "characterFactionOrRace": [
   	"#characterRace#",
   	"#characterFaction#"
@@ -348,5 +351,5 @@
   	"#nonPlaneswalkerCharacter#",
   	"#npcCharacter#",
   	"#mashupCharacter#"
-  ]
+  ],
 }

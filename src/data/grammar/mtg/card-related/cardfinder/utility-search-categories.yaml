@@ -65,9 +65,14 @@ randomCreatureWithText: "#cardQueryCreatureWithText##_cardName#"
 cardQueryLandWithColorFilter: "[_customQuery:t=land#_landColorFilter#][#_customQuery.cardSearchCustomQuery(1)#][_cardName:#_cardName1#]"
 randomLandCardByColor: "#cardQueryLandWithColorFilter##_cardName#"
 
+cardQueryCategoryCard: 
+ - '[#searchableCardCategory#][_customQuery:text=#_cardCategorySearchTerm##_colorFilter#][#_customQuery.cardSearchCustomQuery#]'
+ - '[#searchableCardCategoryCustomQuery#][_customQuery:#_customQuery##_colorFilter#][#_customQuery.cardSearchCustomQuery#]'
+randomCategoryCard: "#cardQueryCategoryCard##_cardName#"
+
 cardQueryCategoryWithOneWordName: 
- - '[#searchableCardCategory#][_customQuery:#_customQuery# name!="? "][#_cardCategorySearchTerm.cardSearchByText#]'
- - '[#searchableCardCategoryCustomQuery#][_customQuery:#_customQuery# name!="? "][#_customQuery.cardSearchCustomQuery#]'
+ - '[#searchableCardCategory#][_customQuery:#_cardCategorySearchTerm# name!="? "#_colorFilter#][#_customQuery.cardSearchCustomQuery#]'
+ - '[#searchableCardCategoryCustomQuery#][_customQuery:#_customQuery# name!="? "#_colorFilter#][#_customQuery.cardSearchCustomQuery#]'
 randomCategoryCardWithOneWordName: "#cardQueryCategoryWithOneWordName##_cardName#"
 
 cardQueryLordCreature:

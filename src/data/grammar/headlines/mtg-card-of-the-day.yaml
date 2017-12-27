@@ -5,18 +5,20 @@ cotdImage:
   - "#cotdImage_RandomCategoryCard#"
   - "#cotdImage_RandomCustomSearchCard#"
 
-cotdImage_RandomCard: "[#initCotdImage#][_cardname:#randomRealCard#][#cotdCardNameSearch#][_cotdDescription:#cotdDescription#][_cotdImgUrl:https#colon#//goodgamery.com/api/mtg/image?card=#_cardname#][_title:#cotdTitle#]#_title#: #_cardname##cotdImageHtml#"
-cotdImage_RandomCreature: "[#initCotdImage#][#cotdCreatureTypeSearch#][_cotdDescription:#cotdCreatureTypeDescription#][_title:#cotdTitle#]#_title#: #_cardname##cotdImageHtml#"
-cotdImage_RandomCategoryCard: "[#initCotdImage#][#searchableCardCategory#][#cotdCardCategorySearch#][_cotdDescription:#cotdTextDescription#][_title:#cotdTitle#]#_title#: #_cardname##cotdImageHtml"
-cotdImage_RandomCustomSearchCard: "[#initCotdImage#][_cotdDescription:#cotdCustomQueryDecscription#][_title:#cotdTitle#]#_title#: #_cardname##cotdImageHtml#"
+cotdImage_RandomCard: "#initCotdImage#[_cardname:#randomRealCard#][#cotdCardNameSearch#][_cotdDescription:#cotdDescription#][_cotdImgUrl:https#colon#//goodgamery.com/api/mtg/image?card=#_cardname#][_title:#cotdTitle#]#_title#: #_cardname##cotdImageHtml#"
+cotdImage_RandomCreature: "#initCotdImage#[#cotdCreatureTypeSearch#][_cotdDescription:#cotdCreatureTypeDescription#][_title:#cotdTitle#]#_title#: #_cardname##cotdImageHtml#"
+cotdImage_RandomCategoryCard: "#initCotdImage#[#cotdCardCategorySearch#][_cotdDescription:#cotdTextDescription#][_title:#cotdTitle#]#_title#: #_cardname##cotdImageHtml#"
+cotdImage_RandomCustomSearchCard: "#initCotdImage#[_cotdDescription:#cotdCustomQueryDecscription#][_title:#cotdTitle#]#_title#: #_cardname##cotdImageHtml#"
+
 cotdCardNameSearch: "#_cardName#[#_cardname.cardSearchByName(1)#][_cardname:#_cardName1#][_cardset:#_cardSet1#][_cardtype:#_cardSomeTypeOrSubtype1#][_cardcolor:#_cardColor1#][_cotdImgUrl:#_cardImgUrl1#][_cardDesc:#_cardType#][_cardDescCategory:#_cardDesc.s#]"
-cotdCardTypeSearch: "[_cardType:#cardTypes#][#_cardType.cardSearchByType(5)#][_cardname:#_cardName1#][_cardset:#_cardSet1#][_cardtype:#_cardSomeTypeOrSubtype1#][_cardcolor:#_cardColor1#][_cotdImgUrl:#_cardImgUrl1#][_cardDesc:#_cardType#][_cardDescCategory:#_cardDesc.s#]"
-cotdCreatureTypeSearch: "[_creatureType:#creatureTypes#][#_creatureType.cardSearchByType(5)#][_cardname:#_cardName1#][_cardset:#_cardSet1#][_cardtype:#_cardSomeTypeOrSubtype1#][_cardcolor:#_cardColor1#][_cotdImgUrl:#_cardImgUrl1#][_cardDesc:#_creatureType#][_cardDescCategory:#_cardDesc.s#]"
-cotdCardCategorySearch: "[_cardText:#_cardCategorySearchTerm#][#_cardText.cardSearchByText(5)#][_cardname:#_cardName1#][_cardset:#_cardSet1#][_cardtype:#_cardSomeTypeOrSubtype1#][_cardcolor:#_cardColor1#][_cotdImgUrl:#_cardImgUrl1#][_cardDesc:#_cardCategory#][_cardDescCategory:#_cardCategoryClass#]"
+cotdCardTypeSearch: "[_cardType:#cardTypes#][#_cardType.cardSearchByType(1)#][_cardname:#_cardName1#][_cardset:#_cardSet1#][_cardtype:#_cardSomeTypeOrSubtype1#][_cardcolor:#_cardColor1#][_cotdImgUrl:#_cardImgUrl1#][_cardDesc:#_cardType#][_cardDescCategory:#_cardDesc.s#]"
+cotdCreatureTypeSearch: "[_creatureType:#creatureTypes#][#_creatureType.cardSearchByType(1)#][_cardname:#_cardName1#][_cardset:#_cardSet1#][_cardtype:#_cardSomeTypeOrSubtype1#][_cardcolor:#_cardColor1#][_cotdImgUrl:#_cardImgUrl1#][_cardDesc:#_creatureType#][_cardDescCategory:#_cardDesc.s#]"
+cotdCardCategorySearch: "[#randomCategoryCard#][_cardname:#_cardName1#][_cardset:#_cardSet1#][_cardtype:#_cardSomeTypeOrSubtype1#][_cardcolor:#_cardColor1#][_cotdImgUrl:#_cardImgUrl1#][_cardDesc:#_cardCategory#][_cardDescCategory:#_cardCategoryClass#]"
 cotdLegendaryCreatureSearch: "[_customQuery:t=legendary t=creature][#cotdCustomSearch#][_legendName:#_cardFamiliarName1#]"
 cotdCustomSearch: "[#_customQuery.cardSearchCustomQuery(1)#][_cardname:#_cardName1#][_cardset:#_cardSet1#][_cardtype:#_cardSomeTypeOrSubtype1#][_cardcolor:#_cardColor1#][_cotdImgUrl:#_cardImgUrl1#][_cardDesc:#_cardCategory#][_cardDescCategory:#_cardCategoryClass#]"
+cotdPrefinedCustomQuerySearch: "[#_predefinedQuery#][_cardname:#_cardName1#][_cardset:#_cardSet1#][_cardtype:#_cardSomeTypeOrSubtype1#][_cardcolor:#_cardColor1#][_cotdImgUrl:#_cardImgUrl1#][_cardDesc:#_cardType#][_cardDescCategory:#_cardCategoryClass#]"
 
-initCotdImage: "[_cardSomeCreatureType1:#creatureTypes#]"
+initCotdImage: "[_searchColor:#searchableColor#][_cardSomeCreatureType1:#creatureTypes#]"
 
 cotdImageNameAndUrl: "[_cardname:#_cardName1#][_cotdImgUrl:#_cardImgUrl1#]"
 
@@ -40,6 +42,16 @@ cotdDescription:
   - "Every player aspires to have as many [_cardlinkName:#_cardname.sIfNeeded#]#_cotdHtmlCardLink# as they have #mtgColors# #deckArchOrCategory# decks."
   - "#multicolor# #deckLimitedArchetype.capitalize# may be the favored deck for this card, but that doesn't mean #multicolor# #keyword# isn't always happy to have another tool in its [_toolbox:back pocket,arsenal,toolbox,kit,playbook]#_toolbox#!"
   - "Step one: #randomKeywordCardAction.capitalize#[_payoff:,,#gameActionPayoff#]. Step two: [_noise:#soundEmanation#]#_noise.capitalize# [_how:at #_them#,#adverb#]#_how# (#gameActionReaction#). Step three: [_nextStep:one,two][_step3:profit,#verbReflexive# yourself,#verbStrictlyIntransitive#,Go to Step #_nextStep#]#_step3.capitalize#. Optional step four: [_verb1:pet,#verbTransitive#][_pet:#_cardSomeCreatureType1##neutralPronouns#][_verb2:thank,berate,praise,congratulate,confront,salute,applaud,tease][_goodPet:good #_pet#,#adj# #_pet#][_verb3:#verbIntransitiveGerund#,#verbReflexiveGerund# #themselves#,being #_goodPet.a#][_activityAdj:leisurely,long,quiet,well-deserved][_activityTime:morning,afternoon,evening,weekend,day,week][_activityVerb:practice,take up,research,plan #_activityAdj.a# #_activityTime# of][_activity:#nounActivity#,#verbIntransitiveGerund#][_step4:#_verb1# your #_pet# and #_verb2# #them# for #_verb3#,practice #nounActivity#]#_step4.capitalize#."
+  - >
+    [_originalCard:#randomRealCard#][_adj:strictly better,#adjComparative#,#cardQuality#,#cardComparative#][_deity:#planeswalkerFirstName#,#godCharacter#]
+    [_benficiary:#cotdBeneficiaries#][_benficiaryHas:#has#][_benficiaryTheir:#their#][_benefit:#cotdBenefactorRandomCardOrCategory#]
+    [_benefactor:#officialEntity#,#_cardSet1#][_finally:After who knows how long#comma#  #_benficiary#,At long last#comma# #_benficiary#,Thanks to #_benefactor##comma# #_benficiary#,#_deity# be praised! #_benficiary.capitalize#]#_finally# [_now:now,finally,once again]#_now# #_benficiaryHas# #_benefit#
+
+cotdBeneficiaries: 
+- "the world[#neutralPronouns#]"
+- "#_searchColor#[#neutralPronouns#]"
+- "#deckArch#[#neutralPronouns#]"
+- "#peoplePlural#"
 
 cotdTextDescription:
   - "It's no surprise that #_cardcolor.capitalize#'s [_superlative:#cardSuperlative#,second-#cardSuperlative#,#adjSuperlative#]#_superlative# #_cardCategory# finds its way into almost every [_decktype:#format#,#deckArchOrCategory#]#_decktype# deck that can support it. Plus it [_verbs:offers,enables,makes possible]#_verbs# some of the most #interestingPlay# the game has ever seen."
@@ -121,15 +133,25 @@ cotdCustomQueryDecscription:
 - >
   [_suffix:ing,y,ed,born,ous,ful,ic,ble,less,ant,al][_customQuery:t=creature name="?#_suffix# "][#cotdCustomSearch#][_firstWord:#_cardNameFirstWord1#]Does this mean #plane# is also [_inhabited:inhabited by,populated by,home to,full of,teeming with]#_inhabited# a bunch of [_entity:#_firstWord.lowercase# #_cardSubtype1#,#_firstWord.lowercase# #animal#,#_firstWord.lowercase# #characterClass#,#adj# #_cardNameLastWord1#,#adjStorybook# #_cardNameLastWord1#]#_entity.lowercase.sIfNeeded# somewhere?
 - >
-  [_customQuery:t=instant t|=sorcery name="? the " name!="?of the" name!="?with the" name!="?for the" name!="?ing the" name!="?to the" name!="?in the" name!="?ing the" name!="?into "][#cotdCustomSearch#][_firstWord:#_cardNameFirstWord1#][_lastWord:#_cardNameLastWord1#]
-  Given that this card can #_firstWord.lowercase#, among others, [_cardlinkName:#randomCreatureCard#]#_cotdHtmlCardLink#, [_cardlinkName:#randomCreatureCard#]#_cotdHtmlCardLink#, and [_cardlinkName:#randomCreatureCard#]#_cotdHtmlCardLink#, the "#_lastWord.lowercase#" part of the name is beginning to feel [_adv:,pretty,fairly,somewhat,incredibly]#_adv# ... [_adj:#adj#,#adj#,#kindaGood#,#reallyGood#]#_adj#. 
-- >
-  [separator:the][#separator.cardSearchTwoParter(1,,not name%3A"?of " not name%3A"?for " not name%3A"?to " not name%3A"?into " not name%3A"?in " not name%3A"?with " not name%3A"?at " t%3Ainstant OR t%3Asorcery)#][_firstPart:#_cardNameFirstPart1#][_lastPart:#_cardNameSecondPart1#]
-  [_cardname:#_cardName1#][#cotdCardNameSearch#]
-  Given that this card can #_firstPart.lowercase#, among others, [_cardlinkName:#randomCreatureCard#]#_cotdHtmlCardLink#, [_cardlinkName:#randomCreatureCard#]#_cotdHtmlCardLink#, and [_cardlinkName:#randomCreatureCard#]#_cotdHtmlCardLink#, the "#_lastPart.lowercase#" part of the name is beginning to feel[_adv:, pretty, fairly, somewhat, incredibly, quite distinctly]#_adv#... [_adj:#adj#,#adj#,#kindaGood#,#reallyGood#]#_adj#.
+  [#cotdGivenTheFirstPartSearch#]
+  Given that this card can #_firstPart.lowercase#, among others, [_cardlinkName:#randomCreatureCard#]#_cotdHtmlCardLink#, [_cardlinkName:#randomCreatureCard#]#_cotdHtmlCardLink#, and [_cardlinkName:#randomCreatureCard#]#_cotdHtmlCardLink#, the "#_lastPart.lowercase#" part of the name is beginning to feel[_adv:, pretty, fairly, somewhat, incredibly, quite, distinctly]#_adv# ... [_adj:#adj#,#adj#,#kindaGood#,#reallyGood#]#_adj#.
 - >
   [#cotdLegendaryCreatureSearch#][_lordCard:#_lordCard#,#_lordCard#,#randomCreatureCard#][_legendFullName:#_cardname#][_finallyPhrase:#_lordFinally#][#_lordOrCommander#][#cotdImageNameAndUrl#]
   #_finallyPhrase# #_deck# #_finally##has# the #_lordDesc# #they# #_need# to be [_viable:viable,good enough,competetive,playable]#_viable##_where#.
+
+cotdGivenTheFirstPartSearch:
+- >
+  [separator:the][#separator.cardSearchTwoParter(1,,not name%3A"?of " not name%3A"?for " not name%3A"?to " not name%3A"?into " not name%3A"?in " not name%3A"?with " not name%3A"?at " t%3Ainstant OR t%3Asorcery)#][_firstPart:#_cardNameFirstPart1#][_lastPart:#_cardNameSecondPart1#]
+  [_cardname:#_cardName1#][#cotdCardNameSearch#]
+- >
+  [_customQuery:t=instant t|=sorcery name="? the " name!="?of the" name!="?with the" name!="?for the" name!="?ing the" name!="?to the" name!="?in the" name!="?ing the" name!="?into " name!="?from the"][#cotdCustomSearch#][_firstPart:#_cardNameFirstWord1#][_lastPart:#_cardNameLastWord1#]
+
+cotdRandomColorCard: "[_predifinedQuery:#randomNonlandCard#]#cotdPrefinedCustomQuerySearch#"
+cotdRandomCatCard: "#cotdCardCategorySearch#"
+
+cotdBenefactorRandomCardOrCategory:
+- "#cotdRandomColorCard#[_cardlinkName:#_originalCard#][_card:#_cotdHtmlCardLink#!,#_cotdHtmlCardLink#!,... #_cotdHtmlCardLink#?][_version:a new,#_benficiaryTheir# own][_improvement:#adj.a# version of,#_version# version of,#constuctedFormat.a#-legal version of]#_improvement# #_card#"
+- "[#cotdRandomCatCard#][_cat:#_cardCategory#][_catImprovement:#their# own version of #_cat.a#,a new #_cat#,#constuctedFormat.a#-legal #_cat#,#_adj.a# #_cat#,#_cat.a#]#_catImprovement#!"
 
 _lordFinally: 
 - "Finally,[_finally:]"
