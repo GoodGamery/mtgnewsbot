@@ -109,16 +109,30 @@ function getSomeCardTypeOrSubtype(types, subtypes) {
   return randomElement(typesAndSubtypes);
 }
 
+function getSomeCreatureType(types, subtypes) {
+  if (types.indexOf('Creature') === -1 || !subtypes) {
+    return undefined;
+  }
+  return randomElement(subtypes);
+}
+
 async function cardSearchTwoParter(separator, params) {
   const searchTerm = separator.match(/^".*"$/) ? separator : `"? ${separator} "`;
   const splitter = separator.match(/^".*"$/) && separator.match(/[^?!"|]+/) ? separator.match(/[^?!"|]+/)[0] : ` ${separator} `; 
 
+  const additionalQueryTerms = decodeURIComponent(params[2]);
+
   const query = { 
-    q: `name:${searchTerm}`
+    q: `name:${searchTerm}` + (additionalQueryTerms ? ` ${additionalQueryTerms}` : '')
   };
 
+  logger.log(`separator: ${separator}`);
+  logger.log(`searchTerm: ${searchTerm}`);
+  logger.log(`query.q: ${query.q}`);
+
+
   // optional string prefix to remove before parsing
-  var ignorePrefix = params[1];
+  var ignorePrefix = params[1] || '';
 
   Object.keys(escapedParams).forEach(escapeCode => {
     ignorePrefix = ignorePrefix.replace(new RegExp(escapeCode, 'g'), escapedParams[escapeCode]);
@@ -233,7 +247,7 @@ async function cardSearchCustomQuery(s, params) {
     try {
       let query = terms.reduce((query, term) => {        
         let key = term.split('=')[0];
-        let value = term.split('=')[1].replace(/\++/g, ' ');
+        let value = term.split('=')[1] ? term.split('=')[1].replace(/\++/g, ' ') : term;
 
         if (query.length > 0) {
           query += ' ';
@@ -347,8 +361,9 @@ async function cardFinderSearch(query, params, additionalFields) {
       const type = randomElement(card.types);
       const subtype = randomElement(card.subtypes);
       const fullType = card.types.join(' ');
-      const fullSubtype = card.subtypes && card.types.join(' ');    
+      const fullSubtype = card.subtypes && card.subtypes.join(' ');    
       const someTypeOrSubtype = getSomeCardTypeOrSubtype(card.types, card.subtypes);
+      const someCreatureType = getSomeCreatureType(card.types, card.subtypes);
       const imgUrl = traceryEscape(card.imageUrl);
       const color = getColorDescription(card.colorIdentity);
       const colorDescriptive = getColorFullDescription(card.colorIdentity);
@@ -356,6 +371,7 @@ async function cardFinderSearch(query, params, additionalFields) {
       const someColor = getSomeColor(card.colorIdentity);
       const nameFirstWord = card.name.split(" ")[0];
       const nameLastWord = card.name.split(" ").pop();
+      const cmc = card.cmc || '0';
 
       if (card.layout === 'token') {
         name += ' Token';
@@ -379,10 +395,12 @@ async function cardFinderSearch(query, params, additionalFields) {
         `[${prefix}Descriptive${i}:${colorDescriptive}]`,
         `[${prefix}NameFirstWord${i}:${nameFirstWord}]`,        
         `[${prefix}NameLastWord${i}:${nameLastWord}]`,
+        `[${prefix}Cmc${i}:${cmc}]`,        
         subtype ? `[${prefix}Subtype${i}:${subtype}]` : '',
+        someCreatureType ? `[${prefix}SomeCreatureType${i}:${someCreatureType}]` : '', 
         color ? `[${prefix}Color${i}:${color}]` : '',             
         colorClass ? `[${prefix}ColorClass${i}:${colorClass}]` : '',
-        someColor ? `[${prefix}SomeColor${i}:${someColor}]`: ''        
+        someColor ? `[${prefix}SomeColor${i}:${someColor}]`: ''
       );
 
       if (additionalFields) {

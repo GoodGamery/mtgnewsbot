@@ -1,7 +1,7 @@
 ---
 searchableCardCategory:
   - >
-    [_cardCategory:removal spell,kill spell][_cardCategoryClass:removal][_toughness:1,2,3,4,5,X][_cardCategorySearchTerm:"destroy target creature","exile target creature","enchanted creature can't attack","fights target","damage to target creature","sacrifices a creature","/-#_toughness# until","enchanted creature doesn't"]
+    [_cardCategory:removal spell,kill spell][_cardCategoryClass:removal][_toughness:1,2,3,4,5,X][_cardCategorySearchTerm:"destroy target creature","exile target creature","enchanted creature can't attack","fights target","damage to target creature","sacrifices a creature","?/-#_toughness# until","enchanted creature doesn't"]
   - >
     [_cardCategory:land destruction spell][_cardCategoryClass:land destruction][_cardCategorySearchTerm:"destroy target land","sacrifices a land"]
   - >
@@ -65,7 +65,6 @@ searchableCardCategoryCustomQuery:
  - >
   [_cardCategory:draw spell][_cardCategoryClass:card draw][_customQuery:t=instant t|=sorcery text="draw" text="cards"]
 
-
 cardCategoryTerm: 
 - "[#searchableCardCategory#]#_cardCategory#"
 - "[#searchableCardCategoryCustomQuery#]#_cardCategory#"
@@ -73,3 +72,5 @@ cardCategoryTerm:
 cardCategoryClassTerm: 
 - "[#searchableCardCategory#]#_cardCategoryClass#"
 - "[#searchableCardCategoryCustomQuery#]#_cardCategoryClass#"
+
+# "randomCategoryCardWithOneWordName" rule (in utility-search-categories) to search 

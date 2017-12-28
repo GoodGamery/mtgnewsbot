@@ -1,0 +1,171 @@
+randomKeywordAction:
+- "#cardRandomAction_Cast#"
+- "#cardRandomAction_Counter#"
+- "#cardRandomAction_Create#"
+- "#cardRandomAction_Destroy#"
+- "#cardRandomAction_Discard#"
+- "#cardRandomAction_Exile#"
+- "#cardRandomAction_Play#"
+- "#cardRandomAction_Regenerate#"
+- "#cardRandomAction_Reveal#"
+- "#cardRandomAction_Sacrifice#"
+- "#cardRandomAction_Search#"
+- "#cardRandomAction_Shuffle#"
+- "#cardRandomAction_Tap#"
+- "#cardRandomAction_Untap#"
+- "#cardRandomAction_Fateseal#"
+- "#cardRandomAction_Clash#"
+- "#cardRandomAction_Planeswalk#"
+- "#cardRandomAction_SetInMotion#"
+- "#cardRandomAction_Transform#"
+- "#cardRandomAction_Detain#"
+- "#cardRandomAction_Manifest#"
+- "#cardRandomAction_Exert#"
+- "#cardRandomAction_Proliferate#"
+- "#cardRandomAction_Populate#"
+- "#cardRandomAction_Vote#"
+- "#cardRandomAction_Investigate#"
+- "#cardRandomAction_Explore#"
+
+randomKeywordCardAction:
+- "#cardRandomAction_Cast#"
+- "#cardRandomAction_Counter#"
+- "#cardRandomAction_Create#"
+- "#cardRandomAction_Destroy#"
+- "#cardRandomAction_Discard#"
+- "#cardRandomAction_Exile#"
+- "#cardRandomAction_Play#"
+- "#cardRandomAction_Regenerate#"
+- "#cardRandomAction_Reveal#"
+- "#cardRandomAction_Sacrifice#"
+- "#cardRandomAction_Search#"
+- "#cardRandomAction_Shuffle#"
+- "#cardRandomAction_Tap#"
+- "#cardRandomAction_Untap#"
+- "#cardRandomAction_SetInMotion#"
+- "#cardRandomAction_Transform#"
+- "#cardRandomAction_Detain#"
+- "#cardRandomAction_Manifest#"
+- "#cardRandomAction_Exert#"
+
+cardRandomAction_Cast: "cast #_cardActionVerbYourSpells#"
+cardRandomAction_Counter: "counter #_cardActionVerbAllSpells#"
+cardRandomAction_Create: ["#cardRandomAction_Create_One#", "#cardRandomAction_Create_Many#"]
+cardRandomAction_Destroy: "destroy #_cardActionVerbPermanent#"
+cardRandomAction_Discard: "discard #_cardActionVerbCardsInHand#[_from:, from your hand, in your hand]"
+cardRandomAction_Exile: "exile #_cardActionVerbPermanent#"
+cardRandomAction_Play: "play #_cardActionVerbYourSpells#"
+cardRandomAction_Regenerate: "Regenerate #_cardActionVerbPermanent#"
+cardRandomAction_Reveal: "reveal #_cardActionVerbCardsInHand#[_fromWhere:from your hand,from your library,from your sideboard,from your trade binder] #_fromWhere#"
+cardRandomAction_Sacrifice: "sacrifice #_cardActionVerbPermanent#"
+cardRandomAction_Search: "search [_zone:#_whose# library,#_whose# library,#_whose# graveyard,#_whose# graveyard#comma# hand#comma# and library]#_zone# for #_cardActionVerbAnyCard#"
+cardRandomAction_Shuffle: "shuffle #_cardActionVerbPermanent# into #_whose# library"
+cardRandomAction_Tap: "tap #_cardActionVerbPermanent#"
+cardRandomAction_Untap: "untap #_cardActionVerbPermanent#"
+cardRandomAction_Fateseal: "fateseal[_who:yourself,your opponent] #_who#"
+cardRandomAction_Clash: "clash with[_who:your opponent,your opponent,yourself] #_who#"
+cardRandomAction_Planeswalk: "planeswalk to #planechasePlane#"
+cardRandomAction_SetInMotion: "set #cardRandomAction_SetInMotion_Scheme# in motion"
+cardRandomAction_Proliferate: "proliferate #_countTimes#"
+cardRandomAction_Transform: ["#cardRandomAction_Tranform_One#", "#cardRandomAction_Tranform_Many#"]
+cardRandomAction_Detain: "detain #_cardActionVerbPermanent#"
+cardRandomAction_Populate: "populate #_countTimes#"
+cardRandomAction_Vote: "vote for “#willOfTheCouncilVoteChoice.capitalize#”"
+cardRandomAction_Manifest:  ["#cardRandomAction_Manifest_One#", "#cardRandomAction_Tranform_Many#"]
+cardRandomAction_Investigate: "investigate #_countTimes#"
+cardRandomAction_Exert: "exert #_cardActionVerbPermanent#"
+cardRandomAction_Explore: "explore #_countTimes#"
+
+cardRandomAction_SetInMotion_Scheme:
+- "#archenemyScheme##_them_it#"
+- "#count# schemes#_them_them#"
+
+_them_it: "[_them:it]#"
+_them_them: "[_them:them]"
+
+cardRandomAction_Create_One:  "create [_aOne:#creatureTypes.a#,#creatureTypes.a#,exactly one #creatureTypes#]#_aOne# token#_them_it#"
+cardRandomAction_Create_Many: "create #count# #creatureTypes# tokens#_them_them#"
+
+cardRandomAction_Manifest_One: "#_them_it#manifest [_card:card,#cardClassificationBase#][_what:the top card of your library,#_card.a# from your hand#_them_it#,#_card.a# from your sideboard]#_what#"
+cardRandomAction_Manifest_Many: "#_them_them#manifest [_card:card,#cardClassificationBase#][_what:the top #count# cards of your library#_them_them#,#cardCopyCount# #_card.sIfNeeded# from your hand#_them_them#]#_what##_them_them#"
+
+cardRandomAction_Tranform_One: "#_them_it#transform #_cardActionVerbPermanentSingle# into #cardRandomAction_Tranform_Target_Single#"
+cardRandomAction_Tranform_Many: "#_them_them#transform #_cardActionVerbPermanentMulti# into #cardRandomAction_Tranform_Target_Multi#"
+
+cardRandomAction_Tranform_Target_Single:
+- "#randomPermanentCard##_them_it#"
+- "a random #cardClassificationBase##_them_it#"
+- "a random #cardTypes##_them_it#"
+
+cardRandomAction_Tranform_Target_Multi:
+- "random #cardClassificationBase.sIfNeeded##_them_them#"
+- "random #cardTypes.sIfNeeded##_them_them#"
+
+# otherCounts
+c_one: "[_one:any,exactly one]#_one##_them_it#"
+
+c_everyEach:
+- "every#_them_them#"
+- "each#_them_it#"
+
+c_all: "all"
+c_allOfYour: "[_allEach:all,each]#_allEach# of your"
+c_some: "[_howmany:a bunch of,a couple of,a few,any number of,several]#_howmany#"
+c_someOf: "[_howmany:a bunch of,a couple of,a few of,any number of,several of]#_howmany#"
+
+_countSingular:
+- "#c_one#"
+- "#c_everyEach#"
+
+_countMultiple:
+- "#c_all#"
+- "#c_some#"
+- "#count#"
+
+_countTimes:
+- "once"
+- "exactly once"
+- "twice"
+- "#count# times"
+- "#count# times"
+
+_objCount: "#_count# #_object#"
+
+_whose: ["your","your","your opponent's"]
+_whoseOwnSingle: 
+- "your own#_them_it#"
+- "your opponent's#_them_it#"
+- "your opponent's#_them_it#"
+_whoseOwnMulti: 
+- "your own#_them_them#"
+- "your opponent's#_them_them#"
+- "your opponent's#_them_them#"
+
+_controlled: ["", " you control", " your opponent controls"]
+
+randomNonland: "[#randomNonlandCard#]#_cardFamiliarName1#"
+
+_cardActionVerbSingleOptions:
+- "#_objCount##_them_it#"
+- "#_object.a##_controlled##_them_it#"
+- "#randomPermanentCard##_them_it#"
+
+_cardActionVerbPermanent: ["#_cardActionVerbPermanentSingle#","#_cardActionVerbPermanentMulti#"]
+_cardActionVerbPermanentSingle: "#_them_it#[_count:#_countSingular#][_object:permanent,#cardClassificationBase#,#cardClassificationBase#,#cardCategory#,#randomPermanentCard#,#cardTypes#]#_cardActionVerbSingleOptions#"
+_cardActionVerbPermanentMulti: "#_them_them#[_own:, own][_count:#_countMultiple#,#c_allOfYour# opponent's,#c_allOfYour##_own#][_object:permanents,#cardClassificationBase.sIfNeeded#,#cardClassificationBase.sIfNeeded#,#cardCategory.sIfNeeded#,#cardTypes.sIfNeeded#][_result:#_objCount#,#_countMultiple# #_object##_controlled#]#_result#"
+
+_cardActionVerbCardsInHand: ["#_cardActionVerbCardsInHandSingle#","#_cardActionVerbCardsInHandMulti#"]
+_cardActionVerbCardsInHandSingle: "#_them_it#[_count:#_countSingular#][_object:#cardCategory#,#cardClassificationBase#,#randomNonland#,#cardTypes#]#_objCount#"
+_cardActionVerbCardsInHandMulti: "#_them_them#[_count:#_countMultiple#][_object:#cardCategory.sIfNeeded#,#cardClassificationBase.sIfNeeded#,#randomNonland.sIfNeeded#,#cardTypes.sIfNeeded#]#_objCount#"
+
+_cardActionVerbYourSpells: ["#_cardActionVerbYourSpellsSingle#","#_cardActionVerbYourSpellsMulti#"]
+_cardActionVerbYourSpellsSingle: "#_them_it#[_count:#_countSingular#][_object:spell,#cardClassificationBase#,copy of #randomNonland#]#_objCount#"
+_cardActionVerbYourSpellsMulti: "#_them_them#[_count:#_countMultiple#][_object:spells,#cardClassificationBase.sIfNeeded#,copies of #randomNonland#]#_objCount#"
+
+_cardActionVerbAllSpells:  ["#_cardActionVerbAllSpellsSingle#","#_cardActionVerbAllSpellsMulti#"]
+_cardActionVerbAllSpellsSingle: "#_them_it#[_count:#_countSingular#][_object:spell,#cardClassificationBase#,#randomNonland#][_result:#_objCount#,one of #_whoseOwnSingle# #_object.sIfNeeded#,your own #_object#,one of #_whoseOwnSingle# #_object.sIfNeeded#]#_result#"
+_cardActionVerbAllSpellsMulti: "#_them_them#[_count:#_countMultiple#][_object:spells,#cardClassificationBase.sIfNeeded#,#randomNonland.sIfNeeded#][_result:#_objCount#,#c_someOf# #_whoseOwnMulti# #_object#,#_whoseOwnMulti# #_object#]#_result#"
+
+_cardActionVerbAnyCard: ["#_cardActionVerbAnyCardSingle#","#_cardActionVerbAnyCardMulti#"]
+_cardActionVerbAnyCardSingle: "#_them_it#[_count:#c_one#][_object:card,#cardClassificationBase#,#cardTypes#,#cardCategory#][_result:#_objCount#,#_objCount#,a copy of #randomRealCard#]#_result#"
+_cardActionVerbAnyCardMulti: "#_them_them#[_count:#c_all#][_object:#cardClassificationBase.sIfNeeded#,copies of #randomRealCard#,#cardTypes.sIfNeeded#,#cardCategory.sIfNeeded#]#_objCount#"
