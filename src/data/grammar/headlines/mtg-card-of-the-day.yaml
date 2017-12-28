@@ -18,9 +18,9 @@ cotdLegendaryCreatureSearch: "[_customQuery:t=legendary t=creature][#cotdCustomS
 cotdCustomSearch: "[#_customQuery.cardSearchCustomQuery(1)#][_cardname:#_cardName1#][_cardset:#_cardSet1#][_cardtype:#_cardSomeTypeOrSubtype1#][_cardcolor:#_cardColor1#][_cotdImgUrl:#_cardImgUrl1#][_cardDesc:#_cardCategory#][_cardDescCategory:#_cardCategoryClass#]"
 cotdPrefinedCustomQuerySearch: "[#_predefinedQuery#][_cardname:#_cardName1#][_cardset:#_cardSet1#][_cardtype:#_cardSomeTypeOrSubtype1#][_cardcolor:#_cardColor1#][_cotdImgUrl:#_cardImgUrl1#][_cardDesc:#_cardType#][_cardDescCategory:#_cardCategoryClass#]"
 
-initCotdImage: "[_searchColor:#searchableColor#][_cardSomeCreatureType1:#creatureTypes#]"
+initCotdImage: "[_cardSomeCreatureType1:#creatureTypes#]"
 
-cotdImageNameAndUrl: "[_cardname:#_cardName1#][_cotdImgUrl:#_cardImgUrl1#]"
+cotdImageNameAndUrl: "[_cardname:#_cardName1#][_cotdImgUrl:#_cardImgUrl1#][_cardSet1:#randomCardSet#]"
 
 cotdParameterizedCardSearch:
   - "#cotdCardTypeSearch#"
@@ -43,7 +43,7 @@ cotdDescription:
   - "#multicolor# #deckLimitedArchetype.capitalize# may be the favored deck for this card, but that doesn't mean #multicolor# #keyword# isn't always happy to have another tool in its [_toolbox:back pocket,arsenal,toolbox,kit,playbook]#_toolbox#!"
   - "Step one: #randomKeywordCardAction.capitalize#[_payoff:,,#gameActionPayoff#]. Step two: [_noise:#soundEmanation#]#_noise.capitalize# [_how:at #_them#,#adverb#]#_how# (#gameActionReaction#). Step three: [_nextStep:one,two][_step3:profit,#verbReflexive# yourself,#verbStrictlyIntransitive#,Go to Step #_nextStep#]#_step3.capitalize#. Optional step four: [_verb1:pet,#verbTransitive#][_pet:#_cardSomeCreatureType1##neutralPronouns#][_verb2:thank,berate,praise,congratulate,confront,salute,applaud,tease][_goodPet:good #_pet#,#adj# #_pet#][_verb3:#verbIntransitiveGerund#,#verbReflexiveGerund# #themselves#,being #_goodPet.a#][_activityAdj:leisurely,long,quiet,well-deserved][_activityTime:morning,afternoon,evening,weekend,day,week][_activityVerb:practice,take up,research,plan #_activityAdj.a# #_activityTime# of][_activity:#nounActivity#,#verbIntransitiveGerund#][_step4:#_verb1# your #_pet# and #_verb2# #them# for #_verb3#,practice #nounActivity#]#_step4.capitalize#."
   - >
-    [_originalCard:#randomRealCard#][_adj:strictly better,#adjComparative#,#cardQuality#,#cardComparative#][_deity:#planeswalkerFirstName#,#godCharacter#]
+    [_originalCard:#randomRealCard#][_adj:strictly better,#adjComparative#,#cardQuality#,#cardComparative#][_deity:#planeswalkerFirstName#,#godCharacter#][_searchColor:#searchableColor#]
     [_benficiary:#cotdBeneficiaries#][_benficiaryHas:#has#][_benficiaryTheir:#their#][_benefit:#cotdBenefactorRandomCardOrCategory#]
     [_benefactor:#officialEntity#,#_cardSet1#][_finally:After who knows how long#comma#  #_benficiary#,At long last#comma# #_benficiary#,Thanks to #_benefactor##comma# #_benficiary#,#_deity# be praised! #_benficiary.capitalize#]#_finally# [_now:now,finally,once again]#_now# #_benficiaryHas# #_benefit#
 
@@ -68,7 +68,7 @@ cotdCreatureTypeDescription:
  - "Only on #plane# would people see this #adjImpressive# #_creatureType# and nickname it [_nickname:The #adj.capitalizeAll.hyphenate# #characterClass.capitalizeAll#,#planeswalkerFirstName#'s #characterClass.capitalizeAll#]“#_nickname#”."
  - "Now that we know that this #_creatureType# is the [_source:creator,progenitor,source]#_source# of all #_creatureType#kind across the multiverse (even [_cardlinkName:#tribalCreature#]#_cotdHtmlCardLink#), does that mean that every #_creatureType# is a [_minionTitle:Scion of the #_cardname#,Spawn of #_cardname#,Minion of #_cardname#, #_cardname.hyphenate#'s Faithful][_cardlinkName:#_minionTitle#]#_cotdHtmlCardLink#?"
  - "#_creatureType.capitalize.s# may not ascend to #characterClass.hyphenate#hood very often, but when they do, the results tend to be[_adv:, really, pretty, extremely, surprisingly, quite, truly] #adj#."
- - "If you're looking for #interestingPlayAdj.a# bomb in [_italicText:#randomCardSet#]#_italicize# Limited, look no further than this #adj# #_creatureType#."
+ - "If you're looking for #interestingPlayAdj.a# bomb in [_italicText:#randomCardSet#,#_cardSet1#]#_italicize# [_format:Limited,Draft,Sealed]#_format#, look no further than this #adj# #_creatureType#."
  - "Things took a dark turn [_where:at the #storyLocation# #placeNoun.capitalize#,in #minorStoryLocation#,in #nonPlaneLocation#]#_where# after this #_creatureType# learned they had run out of [_item:#itemNoun.s#,#massNoun#]#_item#."
  - "#_creatureType.capitalize# tribal, meet #format#. We've wanted to introduce you two for a while, and we thought [_adj:loving,friendly,abundant,populated,inhabited][_italicText:#teaserCardSet#][_teaserSet:#_italicize#][_where:the #_creatureType#-#_adj# plane of #plane#,#_teaserSet#]#_where# would be the perfect place for you to meet."
  - "If you're looking to beef up #character#'s tribal support next [_date:tournament,FNM,weekend,week,month,week,month,year,year,decade,century]#_date#, make sure to look at the #_creatureType.capitalizeAll# tribal pushes [_italicText:#cardSet#][_pastSet1:#_italicize#][_italicText:#_cardset#][_pastSet2:#_italicize#][_futureSet:#teaserCardSet#,#novelCardSetName#][_italicText:#_futureSet.capitalizeAll#][_futureSetText:we're making in #_italicize#][_madeOrAreMaking:we made back in #_pastSet1# and #_pastSet2#,#_futureSetText#]#_madeOrAreMaking#."

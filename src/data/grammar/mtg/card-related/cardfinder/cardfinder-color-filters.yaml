@@ -1,6 +1,8 @@
 ###### color filters ######
 _colorFilter: ''
 
+resetColorFilter: '[_colorFilter:]'
+
 color_W: '[_colorFilter: color=w color!=ubrg][_landColorFilter:#landFilter_W#,#landFilter_W#,#landFilter_Colorless#]'
 color_U: '[_colorFilter: color=u color!=brgw][_landColorFilter:#landFilter_U#,#landFilter_U#,#landFilter_Colorless#]'
 color_B: '[_colorFilter: color=b color!=rgwu][_landColorFilter:#landFilter_B#,#landFilter_B#,#landFilter_Colorless#]'
@@ -213,10 +215,3 @@ landfilter_ManyColorLand:
 landfilter_WUBRG:
 - '#landfilter_ManyColorLand#'
 - ' text="{W}{U}{B}{R}{G}"'
-
-#tribal - cavern of souls and new ixalan land?
-tribal:
-
-untribal:
-- '#tribal#'
-- 'UNTRIBAL'

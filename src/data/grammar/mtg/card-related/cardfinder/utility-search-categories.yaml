@@ -66,13 +66,13 @@ cardQueryLandWithColorFilter: "[_customQuery:t=land#_landColorFilter#][#_customQ
 randomLandCardByColor: "#cardQueryLandWithColorFilter##_cardName#"
 
 cardQueryCategoryCard: 
- - '[#searchableCardCategory#][_customQuery:text=#_cardCategorySearchTerm##_colorFilter#][#_customQuery.cardSearchCustomQuery#]'
- - '[#searchableCardCategoryCustomQuery#][_customQuery:#_customQuery##_colorFilter#][#_customQuery.cardSearchCustomQuery#]'
+ - '[#searchableCardCategory#][_customQuery:text=#_cardCategorySearchTerm##_colorFilter#][#_customQuery.cardSearchCustomQuery#][_cardName:#_cardName1#]'
+ - '[#searchableCardCategoryCustomQuery#][_customQuery:#_customQuery##_colorFilter#][#_customQuery.cardSearchCustomQuery#][_cardName:#_cardName1#]'
 randomCategoryCard: "#cardQueryCategoryCard##_cardName#"
 
 cardQueryCategoryWithOneWordName: 
- - '[#searchableCardCategory#][_customQuery:#_cardCategorySearchTerm# name!="? "#_colorFilter#][#_customQuery.cardSearchCustomQuery#]'
- - '[#searchableCardCategoryCustomQuery#][_customQuery:#_customQuery# name!="? "#_colorFilter#][#_customQuery.cardSearchCustomQuery#]'
+ - '[#searchableCardCategory#][_customQuery:#_cardCategorySearchTerm# name!="? "#_colorFilter#][#_customQuery.cardSearchCustomQuery#][_cardName:#_cardName1#]'
+ - '[#searchableCardCategoryCustomQuery#][_customQuery:#_customQuery# name!="? "#_colorFilter#][#_customQuery.cardSearchCustomQuery#][_cardName:#_cardName1#]'
 randomCategoryCardWithOneWordName: "#cardQueryCategoryWithOneWordName##_cardName#"
 
 cardQueryLordCreature:

@@ -52,6 +52,14 @@ sloppy play
 tardiness
 fancy plays
 tirades
+skullduggery
+shenanigans
+double-dealing
+funny business
+horseplay
+monkey business
+buffoonery
+rough-housing
 peeking at your top card
 failing to provide a method to track life total
 exceeding the preduel time limit
@@ -65,10 +73,11 @@ drawing extra cards
 moving to combat
 appealing to the head judge before waiting for the floor judge to issue a ruling
 demanding that a judge issue a penalty to your opponent
-unsporting conduct
+unsportsmanlike conduct
 shell companies
 assuming a frictionless system
 lying to tournament officials
+unforced errors
 [_mode:mode,buttons]turbo #_mode#
 [_loudness:loud talking,loud outbursts,emotional outbursts]#_loudness#
 [_onesPlace:0,5,#num0-9#]#num1-5##_onesPlace#-card decks
@@ -76,7 +85,7 @@ lying to tournament officials
 [_using:,using ,use of ][_profanity:profanity,profane language,vulgar language,excessively vulgar and profane language,"colorful" language]#_using##_profanity#
 [_jitte:Jitt,Jitty,Jeet,Jah-ee-tay,Jeet-uh][_mispronounciation:#_jitte#,ravenger,head-ron,aith-er,Pythe-ing needle,Omni-science,Ga-rook,stormkirk,Path of Exile,mur,boggle,boggles,nack-tle,Icker-id,tay-ga,Azban,Jeksai]saying "#_mispronounciation#"
 [_turnNumeral:1,#num1-5#][_turnWord:one,#count#][_turn:turn #_turnNumeral#,turn-#_turnWord#,#_turnWord#-turn][_wins:wins,kills,combos]#_turn# #_wins#
-[_sportsCheat:eye gouging,icing,chokeholds,leglocks,full nelsons,rabbit punches,headbutts,jump shots]#_sportsCheat#
+[_sportsCheat:eye gouging,icing,chokeholds,leglocks,full nelsons,rabbit punches,headbutts,jump shots,technical fouls,rough-housing,encroachment,false starts,passing interference,roughing the kicker]#_sportsCheat#
 [_gamblingCheat:chip dumping,weighted dice]#_gamblingCheat#
 [_conScheme:salting the mine,Spanish Prisoner schemes,pig-in-a-poke scams,white-van speaker scams,pigeon-dropping,badger games,pumping-and-dumping]#_conScheme#
 [_fallacy:affirming the consequent,false dilemmas,begging the question,appeal to authority,No True Scotsman,Handwaving,Tu quoque,poisoning the well,moral equivalency,straw man arguments,motte and bailey,Gallileo gambits]#_fallacy#
