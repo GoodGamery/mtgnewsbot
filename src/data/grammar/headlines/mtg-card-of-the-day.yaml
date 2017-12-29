@@ -151,7 +151,7 @@ cotdRandomCatCard: "#cotdCardCategorySearch#"
 
 cotdBenefactorRandomCardOrCategory:
 - "#cotdRandomColorCard#[_cardlinkName:#_originalCard#][_card:#_cotdHtmlCardLink#!,#_cotdHtmlCardLink#!,... #_cotdHtmlCardLink#?][_version:a new,#_benficiaryTheir# own][_improvement:#adj.a# version of,#_version# version of,#constuctedFormat.a#-legal version of]#_improvement# #_card#"
-- "[#cotdRandomCatCard#][_cat:#_cardCategory#][_catImprovement:#their# own version of #_cat.a#,a new #_cat#,#constuctedFormat.a#-legal #_cat#,#_adj.a# #_cat#,#_cat.a#]#_catImprovement#!"
+- "[#cotdRandomCatCard#][_cat:#_cardCategory#][_catImprovement:#their# own version of #_cat.a#,a new #_cat#,#constuctedFormat.a#-legal #_cat#,#_adj.a# #_cat#,#_cat.a#,a real #_cat#]#_catImprovement#!"
 
 _lordFinally: 
 - "Finally,[_finally:]"
