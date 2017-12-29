@@ -37,7 +37,7 @@ function lowercase(s) {
 
 // useful for testing
 function noop(s) {
-  return s;
+  return '\0';
 }
 
 function noPunctuation(s) {
