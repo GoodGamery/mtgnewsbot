@@ -30,7 +30,7 @@ titleClassified:
 headlineThreeCardsForSale:
 - "#_card1#, #_card3#, and #_card2#"
 - "#_card1#, #_card3#, & #_card2#"
-- "#_card3# plus some other cards[_where:on the floor,in the couch,in the glovebox,in my mom's purse,in the bulk bin][_about:, we found #_where#, we don't want anymore, nobody wants, #peoplePlural# love#s#]#_about#"
+- "#_card3# plus [_quantity:some,a few,several,two]#_quantity# other cards[_where:on the floor,in the couch,in the glovebox,in my mom's purse,in the bulk bin,in the garbage,on the subway][_cardLovers:#peoplePlural#,#creatureTypeOrCharacterClass.s##pluralPronouns#][_about:, we found #_where#, we don't want anymore, nobody wants, #_cardLovers# love#s#]#_about#"
 - "#deck.capitalize# combo pieces"
 - "Repacked boosters that might contain the Power 9"
 - "#_card3# and friends"
@@ -183,6 +183,7 @@ ComeOnTextCallToAction:
 - "[_svgComeOnTextSize:34px][_svgComeOnLineHeight:32px][_ComeOnYPos:247]YOU WON'T<br/>BE SORRY"
 - "[_svgComeOnTextSize:34px][_svgComeOnLineHeight:32px][_ComeOnYPos:247]DON'T<br/>IGNORE THIS"
 - "[_svgComeOnTextSize:34px][_svgComeOnLineHeight:32px][_ComeOnYPos:247]WE NEED<br/>YOUR BUSINESS"
+- "[_svgComeOnTextSize:34px][_svgComeOnLineHeight:32px][_ComeOnYPos:247][_time:WEEK,MONTH,YEAR,DECADE][DEAL OF<br/>THE #_time#"
 - >
   [_svgComeOnTextSize:32px][_svgComeOnLineHeight:32px]
   [_magicType:SAND,MILK,DIRT,MURK,SOUP,GRAVY][_witchMagic:WITCH,MAGIC][_insideJoke:MOOBWAP,HEHAL,BOAT BREW,FARTZ0NE,ICE AGE,JADE LEECH,BRAIN JUICE]
