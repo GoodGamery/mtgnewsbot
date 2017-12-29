@@ -28,9 +28,9 @@ titleClassified:
 - LOOK AT THESE CARDS
 - PREPARE YOUR BINDER
 headlineThreeCardsForSale:
-- "#_card1#, #_card2#, and #_card3#"
-- "#_card1#, #_card2#, & #_card3#"
-- "#_card3# plus some other cards I found on the floor"
+- "#_card1#, #_card3#, and #_card2#"
+- "#_card1#, #_card3#, & #_card2#"
+- "#_card3# plus some other cards [_where:on the floor,in the couch,in the glovebox,in my mom's purse,in the bulk bin][_about:we found #_where#,we don't want anymore,nobody wants,#peoplePlural# love#s#]"
 - "#deck.capitalize# combo pieces"
 - "Repacked boosters that might contain the Power 9"
 - "#_card3# and friends"
@@ -68,6 +68,7 @@ headlineCardfinder:
 - "[#pickThreeCardsFromFinderSearchCardBroadCategory#][_adj:classic,#cardQuality#][_desc:Three #_adj#,#_adj.capitalize#]#_desc# #_cardCategory.s#"
 - "[#pickThreeCardsFromFinderSearchCardBroadCategory#][_adj:classic,#cardQuality#][_desc:Three #_adj#,#_adj.capitalize#]#_desc# #_cardCategory.s#"
 
+
 priceOffer:
 - ""
 - ""
@@ -75,11 +76,11 @@ priceOffer:
 - ""
 - ""
 - ""
-- ", only #priceUSD#"
+- ", only [_price:#priceUSD#,#priceUSDCheap#]#_price#"
 - ", only #priceTix#"
-- " for [_qualifier:,just,only]#_qualifier# #priceUSD#"
+- " for [_qualifier:,just,only]#_qualifier# [_price:#priceUSD#,#priceUSDCheap#]#_price#"
 - " for [_qualifier:,just,only]#_qualifier# #priceTix#"
-- " @ #priceUSD# ea."
+- " @ [_price:#priceUSD#,#priceUSDCheap#]#_price# ea."
 - " @ #priceTix# ea."
 
 pickThreeCards:
@@ -179,7 +180,17 @@ ComeOnTextCallToAction:
 - "[_svgComeOnTextSize:34px][_svgComeOnLineHeight:32px][_ComeOnYPos:247]POSSIBLY<br/>A GLITCH"
 - "[_svgComeOnTextSize:34px][_svgComeOnLineHeight:32px][_ComeOnYPos:247]1-DAY DRONE<br/>SHIPPING"
 - "[_svgComeOnTextSize:34px][_svgComeOnLineHeight:32px][_ComeOnYPos:247]SATISFACTION<br/>LIKELY"
-- "[_svgComeOnTextSize:32px][_svgComeOnLineHeight:30px][_ComeOnYPos:249]ALL CARDS<br/>[_grade:NM,SP,MP]#_grade# OR BETTER"
+- "[_svgComeOnTextSize:34px][_svgComeOnLineHeight:32px][_ComeOnYPos:247]YOU WON'T<br/>BE SORRY"
+- "[_svgComeOnTextSize:34px][_svgComeOnLineHeight:32px][_ComeOnYPos:247]DON'T<br/>IGNORE THIS"
+- "[_svgComeOnTextSize:34px][_svgComeOnLineHeight:32px][_ComeOnYPos:247]WE NEED<br/>YOUR BUSINESS"
+- >
+  [_svgComeOnTextSize:32px][_svgComeOnLineHeight:32px]
+  [_magicType:SAND,MILK,DIRT,MURK,SOUP,GRAVY][_witchMagic:WITCH,MAGIC][_insideJoke:MOOBWAP,HEHAL,BOAT BREW,FARTZ0NE,ICE AGE,JADE LEECH,BRAIN JUICE]
+  [_code:NEWSBOT,MTGNEWSBOT,I ❤ NEWSBOT,FROWN TOWN,SNAP KEEP,YUNG PEEZY,SHIRTLESS,GOING HAM,WOMBO COMBO,#_magicType# #_witchMagic#,ALMOST GOT ME,SWAGTUSK,GHOST DAD,SPLASHIOK,FROWN TOWN,TWO EXPLORES,MAGMAW,#_insideJoke#,#_insideJoke#,#ComeOnFreebieDesignCardReference#,#ComeOnFreebieDesignCardReference#]  
+  [_ComeOnYPos:247]PROMO CODE:<br/>#_code#
+
+
+# - "[_svgComeOnTextSize:32px][_svgComeOnLineHeight:30px][_ComeOnYPos:249]ALL CARDS<br/>[_grade:NM,SP,MP]#_grade# OR BETTER"
 
 ComeOnFreebie:
 - "[_svgComeOnTextSize:28px][_svgComeOnLineHeight:28px][_ComeOnYPos:252]FREE #ComeOnFreebieDesign#<br/>#ComeOnFreebieItem#"
@@ -350,11 +361,11 @@ svgThreeCards: |
       </g>
       <g id="Card2">
         <rect x="-2" y="-2" width="189" height="260"  rx="12" ry="12" style="fill:#_themeColor1#; stroke-width:3; stroke-opactity:0.9; stroke-color:red;"/>                         
-        <image xlink:href="#cardFinder##_card2#" x="0" y="0" mask="url(\#cardMask)" width="183" height="256" />
+        <image xlink:href="#cardFinder##_card2.replace(",%22)#" x="0" y="0" mask="url(\#cardMask)" width="183" height="256" />
       </g>
       <g id="Card3">
         <rect x="-2" y="-2" width="193" height="268"  rx="12" ry="12" style="fill:#_themeColor1#; stroke-width:3; stroke-opactity:0.9; stroke-color:red;"/>                          
-        <image xlink:href="#cardFinder##_card3#" x="0" y="0" mask="url(\#cardMaskLarger)" width="189" height="264" />
+        <image xlink:href="#cardFinder##_card3.replace(",%22)#" x="0" y="0" mask="url(\#cardMaskLarger)" width="189" height="264" />
       </g>
     </defs>
     <image width="100%" height="100%" xlink:href="#art700x420#" />
