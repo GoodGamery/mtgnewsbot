@@ -30,7 +30,7 @@ titleClassified:
 headlineThreeCardsForSale:
 - "#_card1#, #_card3#, and #_card2#"
 - "#_card1#, #_card3#, & #_card2#"
-- "#_card3# plus some other cards [_where:on the floor,in the couch,in the glovebox,in my mom's purse,in the bulk bin][_about:we found #_where#,we don't want anymore,nobody wants,#peoplePlural# love#s#]"
+- "#_card3# plus some other cards[_where:on the floor,in the couch,in the glovebox,in my mom's purse,in the bulk bin][_about:, we found #_where#, we don't want anymore, nobody wants, #peoplePlural# love#s#]#_about#"
 - "#deck.capitalize# combo pieces"
 - "Repacked boosters that might contain the Power 9"
 - "#_card3# and friends"
