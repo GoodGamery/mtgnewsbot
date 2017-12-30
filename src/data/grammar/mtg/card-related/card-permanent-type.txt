@@ -1,0 +1,5 @@
+artifact
+creature
+enchantment
+land
+planeswalker
