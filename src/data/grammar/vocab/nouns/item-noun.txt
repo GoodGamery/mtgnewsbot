@@ -9,7 +9,6 @@ plant
 crown
 jewel
 amulet
-egg
 banner
 boot
 aegis

@@ -18,12 +18,26 @@ function compactSpaces(s) {
 }
 
 function ed(s) {
+  const singledConsanants = ['w', 'y'];
+
   if (s.endsWith('e')) {
     return s + 'd';
   } else if (s.endsWith('y')) {
     return s.substring(0, s.length - 1) + 'ied';
+  } else if (s.length > 1 && isVowel(s.charAt(s.length - 2)) 
+      && !singledConsanants.includes(s.charAt(s.length - 1))
+      && (s.length === 2 || !isVowel(s.charAt(s.length - 3)))) {
+    const last = s.charAt(s.length - 1);
+    return s.substring(0, s.length - 1) + last + last + 'ed';
   }
   return s + 'ed';
+}
+
+function er(s) {
+  if (s.endsWith('e')) {
+    return s + 'r';
+  }
+  return s + 'er';
 }
 
 // useful if you wish to invoke a rule without displaying its text
@@ -116,6 +130,7 @@ module.exports = {
   allCaps,
   compactSpaces,
   ed,
+  er,
   lowercase,
   hide,
   hyphenate,
