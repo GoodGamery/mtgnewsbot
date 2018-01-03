@@ -34,6 +34,7 @@ getting lucky
 lethal damage
 alternate win cons
 the storm scale
+deckbuilding
 #gameStep#
 good cards, like #randomRealCard#
 bad cards, like #randomRealCard#

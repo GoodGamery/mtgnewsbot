@@ -7,23 +7,23 @@ inGraphicsText:
 inGraphicsHeadline:
 - '[_desc:Surprising,Baffling,Perverse,Shocking,#adj#]#_desc.a.capitalizeAll# Combination'
 - '[_desc:Rogue,Unconventional,Subtle,Advanced]#_desc# Strategies'
-- 'A New Use for #_card1#'
-- 'Nuts and Bolts[_and:, and #cardCategoryTerm.capitalizeAll.s#, and #cardCategory.sIfNeeded.capitalizeAll#, and #pluralNounOrMassNoun.capitalizeAll#, and #emotion.capitalizeAll#]#_and#'
+- '[_use:A New,#adjValue.a.capitalizeAll#,#deckQualityAdj.a.capitalizeAll#]#_use# Use for #_card1#'
+- 'Nuts and Bolts[_and:, and #cardCategoryTerm.capitalizeAll.sIfNeeded#, and #cardCategory.sIfNeeded.capitalizeAll#, and #pluralNounOrMassNoun.capitalizeAll#, and #emotion.capitalizeAll#]#_and#'
 - '[_techType:The Hot New,#cardQuality#]#_techType.capitalizeAll# Tech'
 - "#_card2#'s New [_pal:Partner,Best Friend,Accomplice]#_pal#"
 - '[_besting:Overcoming,Conquering,Overpowering,Dominating,Defeating,Mastering,#verbTransitiveGerund.capitalizeAll#]#_besting# #obstacle.capitalizeAll#'
 - 'How to [_what:#_card1#,#_card1#,#cardCategoryTerm#]#_what.capitalizeAll# — In Graphics'
-- "[_cat:#cardCategory.capitalizeAll#][_categoryHeadline:#_cat.s# Everywhere,The Best #_cat.s# in Town]#_categoryHeadline#"
-- '[_infi:Infinite,Boundless,Enter the,Day of the,More]#_infi# [_what:#creatureTypes.capitalizeAll.s#,#gameConcept#]#_what#'
-- '[_do:Break the Game Open,Dominate the Competition,Save the Day,Make a Splash,Spin to Win]#_do# with #_card1#'
-- '#_card1# [_doesWhat:goes on the offensive,on the move]#_doesWhat#'
+- "[_cat:#cardCategory.capitalizeAll#][_categoryHeadline:#_cat.sIfNeeded# Everywhere,The Best #_cat.sIfNeeded# in Town]#_categoryHeadline#"
+- '[_infi:Infinite,Boundless,Enter the,Day of the,More]#_infi# [_what:#creatureTypes.capitalizeAll.sIfNeeded#,#gameConcept#]#_what#'
+- '[_do:Break the Game Open,Crush the Competition,Save the Day,Make a Splash,Spin to Win]#_do# with #_card1#'
+- "#_card1#[_moment:'s moment in the sun,'s time to shine][_where:to #storyLocation#,to College,#direction.capitalizeAll#][_doesWhat: goes on the offensive, on the move, goes #_where#,#_moment#, makes it to the Big Time, Gets Its Grove Back,#colon# A Play in Three Acts]#_doesWhat#"
 - 'The [_hidden:Hidden,Unexpected,Secret][_power:Power,Potential,Value]#_hidden# #_power# of #_card1#'
 - "#keywordAction.capitalize# [_secondPart:and You'll Win It,for the Moon,Forever,Until the #creatureTypes.s.capitalize# Come Home,and #keywordAction#]#_secondPart#"
 - "[_what:#keyword#,#planeswalkerFirstName#,#mtgQuestionablePractice#]#_what.capitalizeAll#!"
-- "All of the [_what:#cardCategory#,#creatureTypes#,#gameConcept#,#gameAccessory#]#_what.s.capitalizeAll#"
+- "All of the [_what:#cardCategory#,#creatureTypes#,#gameConcept#,#gameAccessory#]#_what.sIfNeeded.capitalizeAll#"
 - "One #mood.capitalizeAll# [_what:#creatureTypes#,#creatureTypes#,#cardCategoryTerm#]#_what.capitalizeAll#"
 - "[_actioned:#keywordAction.ed#][_what:Un-#_actioned#,Re-#_actioned#,#_actioned# Again]#_what.capitalizeAll# and It Feels So [_feeling:Good,#adjValue#,#adjChallenging#,#adj#,#cardQuality#]#_feeling.capitalizeAll#"
-- "[_verbing:Navigating]#_verbing# [separator:the][#separator.cardSearchTwoParter(1)#][_what:the #_cardNameSecondPart1#,the #massNoun#,the #placeNoun#,#storyLocation#]#_what.capitalizeAll#"
+- "[_verbing:Navigating,Navigating,Exploring,Rocking,Investigating,Searching]#_verbing# [separator:the][#separator.cardSearchTwoParter(1)#][_what:the #_cardNameSecondPart1#,the #massNoun#,the #placeNoun#,#storyLocation#]#_what.capitalizeAll#"
 inGraphicsStep:
 - 'Cast #_eitherCard#'
 - 'Return #_card1# to your hand with #_card2#'
@@ -33,7 +33,7 @@ inGraphicsStep:
 - 'Protect your #cardCategory.s# with #_card1#'
 - 'Cast #_card2# with #_card1# on the stack'
 - 'Shuffle #_eitherCard# into your library'
-- '[_action:Slam #_card2# onto #_card1#,Brush #_card2# against #_card1#,Smash #_card2# against #_card1#,Caress #_eitherCard#,Carefully lay #_card2# on top of #_card1#]#_action# with #emotion#'
+- '[_action:Slam #_card2# onto #_card1#,Brush #_card2# against #_card1#,Smash #_card2# against #_card1#,Caress #_eitherCard#,Carefully lay #_card2# on top of #_card1#]#_action#[_how:, with #emotion#, until someone asks you to stop,for a full minute]#_how#'
 - 'Attach both cards to #gameAccessory.a#'
 - 'Place #_card2# into #_card1#''s sleeve'
 - 'Write [_phrase:#mtgCatchphrase#,#mtgSlangTerm#][_loveHate:love,hate][_text:#realPowerfulCard#,#_phrase#,I #_loveHate# #anyPersonality#]“#_text#” on #_card2# with [_implement:sharpie,crayon,pencil,permanent marker]#_implement.a#'
@@ -68,30 +68,40 @@ inGraphicsStep:
 - 'Toss #_card2# into the air and [_then:shrug,grin like an idiot,glare menacingly,stare blankly,wink knowlingly]#_then#'
 - 'Explain to your opponent that #_card1# [_what:is strictly better than #randomCardAlone#,is strictly worse than #randomCardAlone#,was the playtest version of #randomCardAlone#,was actually designed by #anyPersonality#,is the new #randomCardAlone#]#_what#'
 - 'Reveal #hiddenAgendaCard# naming #_card2#'
-- 'Offer to sell #_card1# to your opponent for [_price:#priceUSD#,#priceUSD#,a kiss,a song and dance,a sack of #pluralNounOrMassNoun#]#_price#'
 - 'Point to #_card2# and tell your opponent [_guy:guy,gal,fella,dame,dude,jerk,joker,nerd,twit,clown]“save #typeOfCard.a# to deal with this #_guy#.”'
-- "Stick #_card2# into your mouth and [_then:let it hang out like a tongue,swallow it whole,spit it back onto the table,wait for it to get soggy,try to read it with your tongue]#_then#"
+- "Stick #_card2# into your mouth and [_then:let it hang out like a tongue,attempt to swallow it whole,spit it back onto the table,wait for it to get soggy,try to read it with your tongue]#_then#"
 - "[_craft:Fashion,Craft,Construct,Assemble]#_craft# [#makeshiftClothing#]#_clothing.a# from copies of #_card2# and #_clothingAdorn# [_whose:your,your,your opponent's,a judge's]#_whose# #_clothingWhere#"
 - "Scoop a handful of #massNoun# out of your [_where:pocket,pants,backpack]#_where# and [_then:drop it theatrically onto the table,cram it into your mouth,place it carefully on top of your head,offer it temptingly to your opponent,smear it on your face,pretend it's whispering secrets to you,smear it all over your face]#_then#"
 - "[_make:Pretend to make,Make]#_make# #_card1# and #_card2# “kiss each other”"
 - "Tell your opponent that you lost to #anyPersonality# last round"
 - "[_verb:Insist,Explain,Announce]#_verb# that you're currently [_doingProject:filming a documentary about,writing a book about,conducting a social experiment with]#_doingProject# #_eitherCard#"
-- "[_perform:Perform,Stage,Put on]#_perform# a short “puppet show” with #_card1# and #_card2#"
+- "[_perform:Perform,Stage,Put on]#_perform# [_adj:short,lengthy,theatrical]#_adj.a# “puppet show” with #_card1# and #_card2#"
 - "If you are [_lucky:lucky,smart,charming,skilled,attractive,crazy,powerful,fortunate,brave]#_lucky# enough to [_open:open,be passed,open or be passed,own,play]#_open# #_card1.a#, cast it"
-- "Cast #_card2# on one of your #cardPermanentType.s# and #randomKeywordAction# thanks to #_card1#"
-- "Cast #_eitherCard# and search for [#cotdCreatureTypeSearch#][_target:#_creatureType#,#cardCategoryTerm#]#_target.a# (e.g. [_targetCard:#_creatureType#,#randomCreatureCard#]#_targetCard#)"
+# - "Cast #_card2# on one of your #cardPermanentType.s# and #randomKeywordAction# thanks to #_card1#"
+- "Cast #_eitherCard# and search for [#cotdCreatureTypeSearch#][_target:#_creatureType#,#cardCategoryTerm#]#_target.a# (e.g. [_targetCard:#_cardname#,#randomCreatureCard#,#randomRealCard#]#_targetCard#)"
 - "[_do:Draw,Discard,Reveal,#cardAbilityVerb#]#_do.capitalize# [_card:card,permanent]#_card.a#. If it's [_what:#deckQualityAdj#,#cardCategory.a#,#cardQuality.a# card,#randomRealCard#,#_eitherCard#]#_what#, [_doWhat:start again,#gameAction#]#_doWhat#!"
 - "[_cast:Cast,Play]#_cast# the best [#randomCategoryCard#]#_cardCategory.s# available. We suggest #_cardName# and [_otherCard:#_eitherCard#,#randomAnyCard#]#_otherCard#."
-- "[_cast:Cast,Play]#_cast# the #cardSuperlative# [_what:#_card2Type#,#cardCategory#]#_what.lowercase# [_where:available,in the game,in #constuctedFormat#]#_where#: #_card2#."
+- "[_cast:Cast,Play]#_cast# the #cardSuperlative# [_what:#_card2Type#,#cardCategory#]#_what.lowercase# [_where:available,in the game,in #constuctedFormat#,there is]#_where#: #_card2#."
+- "#randomKeywordAction.capitalize#"
+- "#randomKeywordAction.capitalize#"
+- "#randomKeywordAction.capitalize#"
+- >
+  [_adj:tiny,antique,cheap,stolen,greasy,giant,#adjStorybook#][_container:sack,bag,box,suitcase full]
+  [_bookAdj:dog-eared,used,pirated,signed][_book:Deckade,Next-Level Magic,The Brothers' War,The Gathering Dark]  
+  [_other:#_container.a# of #pluralNounOrMassNoun#,#_adj.a# #itemNoun#,a #_bookAdj# copy of #_book#,a kiss,a song and dance,a price to be determined later]
+  [_price:#priceUSD#,#priceUSD#,#descriptiveCard#,conceding the match,#_other#]
+  Offer to #buySell# #_card1# #_buyOrSellFrom# your opponent #_buyOrSellFor# #_price#
 - >
   [_cardTypeQuery:instant][_carderize:#randomTypeCardWithOneWordName#]
-  [_where:into your graveyard,onto the battlefield,into your pocket,into your hand,on top of your head,on top of your library,on top of one of your opponent's #cardPermanentType.s#,swap it with #cardPermanentType.a# on the battlefield]
-  [_doWhatSubSearch:put it #_where#,#keywordAction.lowercase# it,put it #_where#. Then #cardAbilityVerb.lowercase# it,#randomKeywordCardAction#][_whose:your,your,your opponent's]
+  [_where:into your graveyard,onto the battlefield,into your pocket,into your hand,on top of your head,on top of your library,on top of one of your opponent's #cardPermanentType.s#]
+  [_doWhatSubSearch:put it #_where#,#keywordAction.lowercase# it,put it #_where#. Then #cardAbilityVerb.lowercase# it,#randomKeywordCardAction#,swap it with #cardPermanentType.a# on the battlefield][_whose:your,your,your opponent's]
   [_doWhat:search #_whose# library for it and #_doWhatSubSearch#,put it onto the battlefield and #cardAbilityVerb.lowercase# it,#cardAbilityVerb.lowercase# it. Then #randomKeywordCardAction#]
   "#_carderize.capitalize#" #_eitherCard# (#_doWhat#)
-- "#randomKeywordAction.capitalize#"
-- "#randomKeywordAction.capitalize#"
-- "#randomKeywordAction.capitalize#"
+
+buySell:
+- "buy[_buyOrSellFrom:from][_buyOrSellFor:for]"
+- "sell[_buyOrSellFrom:to][_buyOrSellFor:for,in exchange for]"
+- "trade[_buyOrSellFrom:to][_buyOrSellFor:for,in exchange for]"
 
 typeOfCard: 
 - "#cardCategory#"
@@ -118,6 +128,15 @@ inGraphicsBacksplash:
 - "./data/images/ingraphics/backsplash/backsplash_f.png"
 - "./data/images/ingraphics/backsplash/backsplash_g.png"
 - "./data/images/ingraphics/backsplash/backsplash_h.png"
+- "./data/images/ingraphics/backsplash/backsplash_i.png"
+- "./data/images/ingraphics/backsplash/backsplash_j.png"
+- "./data/images/ingraphics/backsplash/backsplash_k.png"
+- "./data/images/ingraphics/backsplash/backsplash_l.png"
+- "./data/images/ingraphics/backsplash/backsplash_m.png"
+- "./data/images/ingraphics/backsplash/backsplash_n.png"
+- "./data/images/ingraphics/backsplash/backsplash_o.png"
+- "./data/images/ingraphics/backsplash/backsplash_p.png"
+
 fontHeader: >
   font-size: 36px; font-family: Beleren, Georgia, 'Liberation Serif',
   'DejaVu Serif', serif; font-weight: 700; text-shadow: 2px 2px 2px black'
@@ -137,13 +156,13 @@ inGraphicsImage: |
     <foreignObject y="30" width="700" height="100">
       <p #xhtml# style="color: white; #fontHeader#; text-align:center">#_headline#</p>
     </foreignObject>
-    <foreignObject x="58" y="458" width="170" height="400">
+    <foreignObject x="58" y="460" width="170" height="400">
       <p #xhtml# style="#fontBody#; text-align:left">#inGraphicsStep#</p>
     </foreignObject>
-    <foreignObject x="271" y="458" width="170" height="400">
+    <foreignObject x="271" y="460" width="170" height="400">
       <p #xhtml# style="#fontBody#; text-align:left">#inGraphicsStep#</p>
     </foreignObject>
-    <foreignObject x="487" y="458" width="170" height="400">
+    <foreignObject x="487" y="460" width="170" height="400">
       <p #xhtml# style="#fontBody#; text-align:left">#inGraphicsStep#</p>
     </foreignObject>
   </svg>
