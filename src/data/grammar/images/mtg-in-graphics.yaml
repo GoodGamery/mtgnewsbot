@@ -99,16 +99,16 @@ makeshiftClothing:
 - "[_clothing:tunic,breastplate,cape,shirt][_clothingAdorn:drape it over,wrap it around,affix it to][_clothingWhere:shoulders,body]"
 - "[_clothing:belt,skirt,codpiece,diaper][_clothingAdorn:wrap it around,fasten it to][_clothingWhere:waist]"
 
-inGraphicsCardMask: "./data/images/cardmask-double.png"
+inGraphicsCardMask: "./data/images/ingraphics/cardmask-double.png"
 inGraphicsBacksplash:
-- "./data/images/backsplash_a.png"
-- "./data/images/backsplash_b.png"
-- "./data/images/backsplash_c.png"
-- "./data/images/backsplash_d.png"
-- "./data/images/backsplash_e.png"
-- "./data/images/backsplash_f.png"
-- "./data/images/backsplash_g.png"
-- "./data/images/backsplash_h.png"
+- "./data/images/ingraphics/backsplash/backsplash_a.png"
+- "./data/images/ingraphics/backsplash/backsplash_b.png"
+- "./data/images/ingraphics/backsplash/backsplash_c.png"
+- "./data/images/ingraphics/backsplash/backsplash_d.png"
+- "./data/images/ingraphics/backsplash/backsplash_e.png"
+- "./data/images/ingraphics/backsplash/backsplash_f.png"
+- "./data/images/ingraphics/backsplash/backsplash_g.png"
+- "./data/images/ingraphics/backsplash/backsplash_h.png"
 fontHeader: >
   font-size: 36px; font-family: Beleren, Georgia, 'Liberation Serif',
   'DejaVu Serif', serif; font-weight: 700; text-shadow: 2px 2px 2px black'
@@ -116,7 +116,7 @@ fontBody: >
   font-size: 16px; font-family: Arial, 'Liberation Sans', 'DejaVu Sans', sans-serif
 xhtml: xmlns="http://www.w3.org/1999/xhtml"
 inGraphicsImage: |
-  <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" height="580" width="700">
+  <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" height="600" width="700">
     <defs>
       <mask id="cardMask" maskUnits="userSpaceOnUse" mask-type="alpha">
         <image x="0" y="0" width="100%" height="100%" xlink:href="#inGraphicsCardMask#" />
