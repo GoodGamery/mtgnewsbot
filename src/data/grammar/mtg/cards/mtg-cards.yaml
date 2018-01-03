@@ -70,7 +70,7 @@
     "an artist's proof #realCard#",
     "a Magic Player Rewards #realCard#",
     "a foreign-language #realCard#",
-    "a From the Vault: [_contents:#nouns#,#pluralNoun#,#massNoun#]#_contents.capitalize# #realCard#",
+    "a From the Vault: [_contents:#nouns#,#pluralNoun#,#massNoun#]#_contents.capitalizeAll# #realCard#",
     "a proxy #realCard#",
     "#realCard.a# borrowed from a dealer",
     "#pro#'s personal #realCard#"
