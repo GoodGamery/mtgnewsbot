@@ -239,7 +239,9 @@
   ],
   "website": [
     "Pojo Dot [_tld:Org,Net,Gov]#_tld#",
-    "[_domain:#creatureTypes#,#itemNoun#]#_domain.capitalizeAll# Dot Com"
+    "[_domain:#creatureTypes#,#itemNoun#]#_domain.capitalizeAll# Dot Com",
+    "MTG Salvation Dot com",
+    "Good Gamery Dot com"
   ],
   "otherTeamPrefix": [
     "#cardCategory.capitalizeAll#",

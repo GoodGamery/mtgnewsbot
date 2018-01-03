@@ -22,7 +22,7 @@ function ed(s) {
 
   if (s.endsWith('e')) {
     return s + 'd';
-  } else if (s.endsWith('y')) {
+  } else if (s.endsWith('y') && s.length > 2 && !isVowel(s.charAt(s.length - 2))) {
     return s.substring(0, s.length - 1) + 'ied';
   } else if (s.length > 1 && isVowel(s.charAt(s.length - 2)) 
       && !singledConsanants.includes(s.charAt(s.length - 1))
