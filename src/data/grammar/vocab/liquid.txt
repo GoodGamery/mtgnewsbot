@@ -4,3 +4,7 @@ coke
 pepsi
 water
 paint
+urine
+sweat
+blood
+whiskey

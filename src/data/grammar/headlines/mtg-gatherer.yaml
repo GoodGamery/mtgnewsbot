@@ -22,7 +22,7 @@
         "this is the [_shift:timeshifted,colorshifted,playtest,Space#colon# the Convergence,good]#_shift# version of #randomRealCard#.",
         "when the #xth# ability resolves, the #cardCategory# you [_put:put, don't put]#_put# #cardLocation# stays #cardLocation#.",
         "…finally, #_cardname# is placed #cardLocation#. This is a state-based action.",
-        "#_cardname.s# are #cardLocation# regardless of whether they're #cardState# or #cardState#.",
+        "#_cardname.sIfNeeded# are #cardLocation# regardless of whether they're #cardState# or #cardState#.",
         "cards not actually #cardLocation# can't be affected by #_cardname#.",
         "does not #gameEffectAction# itself. But can be #_actionPastTense# by another #_cardname#.",
         "this card can be used to put [_what:two copies of #randomCardAlone#,both #randomCardAlone# and #randomCardAlone#,both sides of #randomCardAlone#]#_what# onto the battlefield at once.",
@@ -32,6 +32,9 @@
         "for more information on [_topic:#gameConcept#,#cardCategory.s#,#_randomTopic#]#_topic#, see the [_set:#cardSet#,#teaserCardSet#]#_set# mechanics article at <a href=\"\">#_gathererRulingImageArticleUrl#</a>.",
         "[_card2:#randomRealCard#][_card3:#randomCardAlone#]In a Commander game, your commander may be #_cardname# or #_card2#, and the other may be in your deck. If they meld into #_card3#, #_card3# will also be your commander.",
         "#opalRuling#",
+        # "If you're [_doingWhat:casting a spell,activating the ability of #cardPermanentType.a#,"
+        "[_whoControls:you control,you control,you control,your opponent controls,the active player controls][_token:#creatureTypes# token][_cardCategory:#cardCategory#][_what:first,last,activated,triggered,targeted,#keywordAction.lowercase#][_controlledThing:#_what# ability,#_what# ability,#_cardCategory#,#_token#][_firstLast:,first ,last ][_last:, last][_counter:#counterType# counter][_abilityVerb:#cardAbilityVerb#][_abilityVerbed:#_past#][_counterReceiver:#_cardname#,it][_whatThen:give it its #_counter#,create the#_last# #_token#,#_abilityVerb# the#_last# #_cardCategory#,place the#_last# #_counter# on #_counterReceiver#][_counterAction:removed,removed,added][_whatNext:#_counter# is #_counterAction#,ability resolves][_however:However#comma#,Keep in mind that,Remember#comma# though,Remember that,Don't forget that][_target:,target ,#cardState# ][_num:zero,#count#,#count#,#count#][_choices:#_num# #_target#permanents,up to #_num# #_target##_cardCategory.s#,any number of players][_other:other ,additional ][_choice:choose #_choices#,choose up to #cardCopyCount# #_other##_cardCategory##s#][_choiceFor:as targets,to be #_abilityVerbed#,at random][_game:first,second,third][_condition:, if you want, if it's the #_game# game of the match, if the head judge allows it, if your opponent isn't paying attention, to receive the #_counter.s#][_part1:#_whoControls# the #_controlledThing##comma# no matter who #_firstLast#activated the ability to #_whatThen#.][_imperative:must,may,may optionally,are required to][_part2:You #_imperative# #_abilityVerb# #_cardname# as its last #_whatNext#.][_part3:you can #_choice# #_choiceFor##_condition#.][_ruling:#_part1#,#_part2#,#_part3#,#_part1# #_part2#,#_part2# #_however# #_part3#,#_part1# #_part2# #_however# #_part3#]#_ruling#",
+        "[_if:If,As long as,Provided that,At the beginning of #gameStep##comma# if]#_if# the player who [_abilityVerb:#cardAbilityVerb#][_didWhat:controlled,targeted,#_past#]#_didWhat# #_cardname# [_which:first ,second ,last ,#keyword.lowercase# ][_verbed:triggered,resolved,was put on the stack,was activated][_when:as its #_which# ability #_verbed#,before its #_which# ability #_verbed#,at the beginning of the turn,last turn,at the end of the #gameStep#]#_when# [_abilityResult:resolves,resolves,triggers,triggers again][_it:it,#_cardname#,#realCard#][_controlsIt:controls #_it#,doesn't control #_it#,still controls #_it#,no longer controls #_it#,has forgotten about #_it#,is confused,leaves the tournament venue,shuffles their library,asks for a takeback,calls a judge,moves to combat][_ability:that ability,its #keyword.lowercase# ability][_doesWhat:#_controlsIt# as #_ability# #_abilityResult#]#_doesWhat#, #_cardname# [_prep1:must,won't,can't]#_prep1# be [#cardAbilityVerb#][_abilityVerbed:#_past#,returned to your hand,returned to your hand,discarded,discarded,sacrificed,sacrificed,put into in your graveyard,placed on top of your library]#_abilityVerbed#.[_however:however,until end of turn][_prep2:still,now,no longer,suddenly][_isWhat:it's #_prep2# #cardState#,has #cardCopyCount# #counterType# counter#s# on it,you can't explain how it got there,your opponent is #disqualifyingAction#][_imperative:must,may,may optionally,are required to] [_prep3:,immediately ][_again:, again][_zone:library,hand,graveyard,nonland permanents,opponents' #cardCategory.s#][_abilityTarget:#cardCategory.a#,an untapped land,a copy of #randomNonlandCard#,your #_zone#,up to one target #cardType.s#][_abilityResult:resolve,be countered,trigger again][_winLose:win,lose,immediately win,immediately lose,must concede][_then:you #_imperative# #keywordAction.lowercase# #_abilityTarget#,its #_which# ability will immediately #_abilityResult#,you #_imperative# #_prep3##gameAction##_again#,you #_winLose# the game,good luck with that,call a judge][_secondPart:, #_however.capitalize##comma# if it's #_prep2# #cardLocation# and #_isWhat##comma# #_then#.]#_secondPart#",
         "your #cardCategory.s# can help cast this spell.",
         "#gathererTextRare#"
     ],
@@ -40,12 +43,12 @@
         "the effect [_verb:is,isn't,might be,is probably]#_verb# [_description:cumulative,uncounterable,#cardOrEffectAdj#]#_description#.",
         "you can't interfere in any physical way with the casting of this card.",
         "you can't make any decisions that aren't called for or allowed by  [_allower:the game rules,#person#]#_allower# or by any cards, permanents, spells, abilities, and so on.",
-        "if one player has fewer #cardCategory.s# than required, that player [_result:wins,lose,concede,forfeit]#_result.s#. If both have fewer than required, both players #_result#.",
+        "if one player has fewer #cardCategory.s# than required, that player [_result:win,lose,concede,forfeit]#_result.s#. If both have fewer than required, both players #_result#.",
         "there's no current game meaning of [_what:#pluralNounOrMassNoun#,#gameConcept#]“#_what#”.",
         "#_cardname# can't be countered except by [_counterer:spells and abilities,#cardCategory.s#,#randomAnyCard#]#_counterer#.",
         "#_cardname# [_can:can,can't,may,should,shouldn't]#_can# be used to force a player to play a card that isn't [_where:in his or her hand,#cardLocation#]#_where#.",
         "#_cardname# won't necessarily [_result:end the game,end the turn,remain #cardLocation#,restart the game,require you to actually tear it into pieces,have any effect,do what you expect]#_result# when its ability resolves.",
-        "yes, you're allowed to have a deck consisting of sixty [_copies:#_cardname.s#,#cardCategory.s#]#_copies# and nothing else.",
+        "yes, you're allowed to have a deck consisting of sixty [_copies:#_cardname.sIfNeeded#,#cardCategory.s#]#_copies# and nothing else.",
         "only [_objects:cards,#cardCategory.s#,#creatureTypes.s#]#_objects# touched [_when:when,before,after]#_when# #_cardname# stops moving are affected. Not ones touched while it is moving.",
         "the card you're thinking of is #_cardname#.",
         "magic isn't real, you idiot. Read a book.",
@@ -74,7 +77,8 @@
         "Yes, #gathererRuling# It's not optional.",
         "#gathererRuling# This is known as #informalRule#.",
         "Actually, #gathererRuling#",
-        "#gathererRuling# This may be wrong."
+        "#gathererRuling# This may be wrong.",
+        "#gathererRuling#. This is #officialEntityPerson##possessive# [_least:,least ]#_least#favorite ruling."
     ],
 
     "opalRuling": "[_card2:#randomRealCard#][_card3:#randomCardAlone#]this is the current interaction between #_cardname# and #_card2#: The type-changing effect applies at #rulesLayer#[_part2:.,#opalPart2#]#_part2#",
@@ -102,7 +106,7 @@
     ],
     "_randomTopic": ["#character#", "the #gameStep#", "#person#" , "#pluralNounOrMassNoun#", "#format#", "#deckArch#"],
     "gameAction": ["look at the top card of your library", "shuffle your library", "reorder your graveyard", "search your library", "untap one or more permanents",
-                    "lose the game", "win the game", "draw the game", "mulligan", "flip a coin", "ignore this ability"],
+                    "lose the game", "win the game", "draw the game", "concede the game", "call a judge", "mulligan", "flip a coin", "ignore this ability"],
     "gameEffectAction": [
         "counter[_actionPastTense:countered]",
         "destroy[_actionPastTense:destroyed]",
@@ -113,6 +117,20 @@
         "target[_actionPastTense:targeted]",
         "affect[_actionPastTense:affected]"
     ],
+
+    "playersEffectAction": [
+      "gains #n1-5# life",
+      "loses #n1-5# life",
+      "draws #cardCopyCount# card#s#",
+      "discards #cardCopyCount# card#s#",
+      "sacrifices #cardCopyCount# permanent#s#",
+      "reveals his or her hand",
+      "secretly [_what:chooses a number,chooses a permanent they control,names a card]#_what#",
+      "[_xEquals:equal to the number][_xIs:#comma# where X is the number][_doesWhat:gains life #_xEquals#,loses life #_xEquals#,draws cards #_xEquals#,creates an X/X #creatureTypes# token #_xIs#,puts the top X cards of his or her library into his or her graveyard#_xIs#]#_doesWhat# of [_zone:hand,library,graveyard][_quantity:#cardPermanentType.s# he or she controls,#cardCategory.s# he or she controls,cards in his or her #_zone#]#_quantity#",
+      "draws #n1-5# cards",
+      "[_doesWhat:discards a card,untaps a number of permanents,sacrifices #cardPermanentType.s#]#_doesWhat# for each [_whatType:#cardPermanentType.s#,#cardCategory.s# he or she controls]#_whatType# [_quantity:he or she controls,in his or her graveyard]#_quantity#"
+    ],
+
     "informalRule": [
       "the legend rule",
       "the tuck rule",

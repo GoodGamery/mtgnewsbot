@@ -68,7 +68,7 @@
       "#creatureTypes.capitalize# in a Blender",
       "#creatureTypes.capitalize#vantage",
       "#creatureTypes.capitalize# [_parent:Dad,Dad,Dad,Mom]#_parent#",
-      "[_prefix:#creatureTypes#,#deckPrefix#]#_prefix# Breakfast",
+      "[_prefix:#creatureTypes.capitalize#,#deckNameCompoundPrefix#]#_prefix# Breakfast",
       "#deckNameCompoundPrefix##deckNameCompoundSuffix#",
       "Counter#creatureTypes.s#"
   ],
@@ -105,7 +105,7 @@
     "Dragon",
     "Eldrazi",
     "Seething",
-    "Oops! All #definingCardname.s#",
+    "Oops! All #definingCardname.sIfNeeded#",
     "Canadian",
     "Cat",
     "Deadguy",
