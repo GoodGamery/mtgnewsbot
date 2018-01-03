@@ -75,6 +75,12 @@ cardQueryCategoryWithOneWordName:
  - '[#searchableCardCategoryCustomQuery#][_customQuery:#_customQuery# name!="? "#_colorFilter#][#_customQuery.cardSearchCustomQuery#][_cardName:#_cardName1#]'
 randomCategoryCardWithOneWordName: "#cardQueryCategoryWithOneWordName##_cardName#"
 
+# expects _cardTypeQuery to be defined
+cardTypeCardWithOneWordName: 
+ - '[_customQuery:t=#_cardTypeQuery# name!="? "#_colorFilter#][#_customQuery.cardSearchCustomQuery#][_cardName:#_cardName1#]'
+ # expects _cardTypeQuery to be defined
+randomTypeCardWithOneWordName: "#cardTypeCardWithOneWordName##_cardName#"
+
 cardQueryLordCreature:
 - '[_customQuery:t=creature text=other text="creatures get" text!="?other creature" text!="?target creature" #_colorFilter#][#_customQuery.cardSearchCustomQuery(1)#][_cardName:#_cardName1#]'
 - '[_customQuery:t=creature text=other text="creatures get" text!="?other creature" text!="?target creature" #_colorFilter#][#_customQuery.cardSearchCustomQuery(1)#][_cardName:#_cardName1#]'

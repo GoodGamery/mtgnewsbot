@@ -64,7 +64,7 @@
   descriptiveCard: [
     "an altered #realCard#",
     "an artist-signed #realCard#",
-    "an #card-grade# #liquid#-stained #realCard#",
+    "an #card-grade# #liquid#-[_effect:stained,soaked]#_effect# #realCard#",
     "a counterfeit #realCard#",
     "a foil #realCard#",
     "an artist's proof #realCard#",
