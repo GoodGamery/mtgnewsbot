@@ -1,15 +1,18 @@
 {
   "malePronouns": [
-      "[they:he][theirs:his][their:his][them:him][are:is][has:has][themselves:himself][possessive:'s][s:s]"
+      "[they:he][theirs:his][their:his][them:him][are:is][has:has][themselves:himself][possessive:'s][s:s][es:s]"
   ],
   "femalePronouns": [
-      "[they:she][theirs:hers][their:her][them:her][are:is][has:has][themselves:herself][possessive:'s][s:s]"
+      "[they:she][theirs:hers][their:her][them:her][are:is][has:has][themselves:herself][possessive:'s][s:s][es:s]"
   ],
   "pluralPronouns": [
-      "[they:they][theirs:theirs][their:their][them:them][are:are][has:have][themselves:themselves][possessive:'][s:#they.noop#]"
+      "[they:they][theirs:theirs][their:their][them:them][are:are][has:have][themselves:themselves][possessive:'][s:#they.noop#][es:#they.noop#]"
   ],
   "neutralPronouns": [
-      "[they:it][theirs:theirs][their:its][them:it][are:is][has:has][themselves:itself][possessive:'s][s:s]"
+      "[they:it][theirs:theirs][their:its][them:it][are:is][has:has][themselves:itself][possessive:'s][s:s][es:s]"
+  ],
+  "youPronouns": [
+      "[they:you][theirs:yours][their:your][them:yourself][are:are][has:have][themselves:yourself][possessive:'s][s:][es:s]"
   ],
   "genderedPronouns": [
     "#malePronouns#",

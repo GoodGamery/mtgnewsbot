@@ -18,7 +18,7 @@ function compactSpaces(s) {
 }
 
 function ed(s) {
-  const singledConsanants = ['w', 'y'];
+  const singledConsanants = ['w', 'y', 'r'];
 
   if (s.endsWith('e')) {
     return s + 'd';
