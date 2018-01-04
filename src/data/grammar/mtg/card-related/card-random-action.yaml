@@ -60,16 +60,16 @@ cardRandomAction_Destroy: "destroy#s# #_cardActionVerbPermanent#"
 cardRandomAction_Discard: "discard#s# #_cardActionVerbCardsInHand#[_from:, from #their# hand, in #their# hand]"
 cardRandomAction_Exile: "exile#s# #_cardActionVerbPermanent#"
 cardRandomAction_Play: "play#s# #_cardActionVerbTheirSpells#"
-cardRandomAction_Regenerate: "regenerate #_cardActionVerbPermanent#"
+cardRandomAction_Regenerate: "regenerate#s# #_cardActionVerbPermanent#"
 cardRandomAction_Reveal: "reveal#s# #_cardActionVerbCardsInHand#[_fromWhere:from #their# hand,from #their# library,from #their# sideboard,from #their# trade binder] #_fromWhere#"
 cardRandomAction_Sacrifice: "sacrifice#s# #_cardActionVerbPermanent#"
-cardRandomAction_Search: "search#s# [_zone:#_whose# library,#_whose# library,#_whose# graveyard,#_whose# graveyard#comma# hand#comma# and library]#_zone# for #_cardActionVerbAnyCard#"
+cardRandomAction_Search: "search#es# [_zone:#_whose# library,#_whose# library,#_whose# graveyard,#_whose# graveyard#comma# hand#comma# and library]#_zone# for #_cardActionVerbAnyCard#"
 cardRandomAction_Shuffle: "shuffle#s# #_cardActionVerbPermanent# into #_whose# library"
 cardRandomAction_Tap: "tap#s# #_cardActionVerbPermanent#"
 cardRandomAction_Untap: "untap#s# #_cardActionVerbPermanent#"
 cardRandomAction_Fateseal: "fateseal#s#[_who:#themselves#,#their# opponent] #_who#"
-cardRandomAction_Clash: "clash#s# with[_who:#their# opponent,#their# opponent,#themselves#] #_who#"
-cardRandomAction_Planeswalk: "planeswal#s#k to #planechasePlane#"
+cardRandomAction_Clash: "clash#es# with[_who:#their# opponent,#their# opponent,#themselves#] #_who#"
+cardRandomAction_Planeswalk: "planeswalk#s# to #planechasePlane#"
 cardRandomAction_SetInMotion: "set#s# #cardRandomAction_SetInMotion_Scheme# in motion"
 cardRandomAction_Proliferate: "proliferate#s# #_countTimes#"
 cardRandomAction_Transform: ["#cardRandomAction_Tranform_One#", "#cardRandomAction_Tranform_Many#"]
@@ -85,7 +85,7 @@ cardRandomAction_SetInMotion_Scheme:
 - "#archenemyScheme##_them_it#"
 - "#count# schemes#_them_them#"
 
-_them_it: "[_them:it]#"
+_them_it: "[_them:it]"
 _them_them: "[_them:them]"
 
 cardRandomAction_Create_One:  "create#s# [_aOne:#creatureTypes.a#,#creatureTypes.a#,exactly one #creatureTypes#]#_aOne# token#_them_it#"
@@ -139,12 +139,12 @@ _objCount: "#_count# #_object#"
 _whose: ["#their#","#their#","#their# opponent'#s#"]
 _whoseOwnSingle: 
 - "#their# own#_them_it#"
-- "#their# opponent#s##_them_it#"
-- "#their# opponent#s##_them_it#"
+- "#their# opponent#possessive##_them_it#"
+- "#their# opponent#possessive##_them_it#"
 _whoseOwnMulti: 
 - "#their# own#_them_them#"
-- "#their# opponent#s##_them_them#"
-- "#their# opponent#s##_them_them#"
+- "#their# opponent#possessive##_them_them#"
+- "#their# opponent#possessive##_them_them#"
 
 _controlled: ["", " #they# control", " #their# opponent controls"]
 
@@ -157,7 +157,7 @@ _cardActionVerbSingleOptions:
 
 _cardActionVerbPermanent: ["#_cardActionVerbPermanentSingle#","#_cardActionVerbPermanentMulti#"]
 _cardActionVerbPermanentSingle: "#_them_it#[_count:#_countSingular#][_object:permanent,#cardClassificationBase#,#cardClassificationBase#,#cardCategory#,#randomPermanentCard#,#cardTypes#]#_cardActionVerbSingleOptions#"
-_cardActionVerbPermanentMulti: "#_them_them#[_own:, own][_count:#_countMultiple#,#c_allOfTheir# opponent#s#,#c_allOfTheir##_own#][_object:permanents,#cardClassificationBase.sIfNeeded#,#cardClassificationBase.sIfNeeded#,#cardCategory.sIfNeeded#,#cardTypes.sIfNeeded#][_result:#_objCount#,#_countMultiple# #_object##_controlled#]#_result#"
+_cardActionVerbPermanentMulti: "#_them_them#[_own:, own][_count:#_countMultiple#,#c_allOfTheir# opponent#possessive#,#c_allOfTheir##_own#][_object:permanents,#cardClassificationBase.sIfNeeded#,#cardClassificationBase.sIfNeeded#,#cardCategory.sIfNeeded#,#cardTypes.sIfNeeded#][_result:#_objCount#,#_countMultiple# #_object##_controlled#]#_result#"
 
 _cardActionVerbCardsInHand: ["#_cardActionVerbCardsInHandSingle#","#_cardActionVerbCardsInHandMulti#"]
 _cardActionVerbCardsInHandSingle: "#_them_it#[_count:#_countSingular#][_object:#cardCategory#,#cardClassificationBase#,#randomNonland#,#cardTypes#]#_objCount#"

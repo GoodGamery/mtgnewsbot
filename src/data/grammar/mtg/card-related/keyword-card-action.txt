@@ -1,0 +1,17 @@
+activate
+cast
+counter
+destroy
+discard
+exile
+play
+regenerate
+reveal
+sacrifice
+search For
+tap
+untap
+transform
+detain
+exert
+explore
