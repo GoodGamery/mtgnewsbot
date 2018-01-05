@@ -1,0 +1,51 @@
+adjPersonCharacteristic:
+- young
+- old
+- smart
+- dumb
+- experienced
+- inexperienced
+- nice
+- mean
+- attractive
+- confused
+- skilled
+- serious
+- competitive
+- new
+- "#adj#"
+
+
+adjPersonCharacteristicComparative:
+- younger
+- older
+- smarter
+- dumber
+- more experienced
+- more inexperienced
+- nicer
+- meaner
+- more attractive
+- more confused
+- more skilled
+- more serious
+- more competitive
+- newer
+- "#adjComparative#"
+
+adjPersonCharacteristicSuperlative:
+- youngest
+- oldest
+- smartest
+- dumbest
+- most experienced
+- most inexperienced
+- nicest
+- meanest
+- most attractive
+- most confused
+- most skilled
+- most serious
+- most competitive
+- newest
+- "#adjSuperlative#"

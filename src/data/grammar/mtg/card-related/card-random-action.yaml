@@ -88,8 +88,8 @@ cardRandomAction_SetInMotion_Scheme:
 _them_it: "[_them:it]"
 _them_them: "[_them:them]"
 
-cardRandomAction_Create_One:  "create#s# [_aOne:#creatureTypes.a#,#creatureTypes.a#,exactly one #creatureTypes#]#_aOne# token#_them_it#"
-cardRandomAction_Create_Many: "create#s# #count# #creatureTypes# tokens#_them_them#"
+cardRandomAction_Create_One:  "create#s# [_aOne:#creatureTypes.capitalize.a#,#creatureTypes.capitalize.a#,exactly one #creatureTypes.capitalize#]#_aOne# token#_them_it#"
+cardRandomAction_Create_Many: "create#s# #count# #creatureTypes.capitalize# tokens#_them_them#"
 
 cardRandomAction_Manifest_One: "#_them_it#manifest#s# [_card:card,#cardClassificationBase#][_what:the top card of #their# library,#_card.a# from #their# hand#_them_it#,#_card.a# from #their# sideboard]#_what#"
 cardRandomAction_Manifest_Many: "#_them_them#manifest#s# [_card:card,#cardClassificationBase#][_what:the top #count# cards of #their# library#_them_them#,#cardCopyCount# #_card.sIfNeeded# from #their# hand#_them_them#]#_what##_them_them#"
@@ -126,6 +126,7 @@ _countMultiple:
 - "#c_all#"
 - "#c_some#"
 - "#count#"
+- "#count#"
 
 _countTimes:
 - "once"
@@ -146,7 +147,7 @@ _whoseOwnMulti:
 - "#their# opponent#possessive##_them_them#"
 - "#their# opponent#possessive##_them_them#"
 
-_controlled: ["", " #they# control", " #their# opponent controls"]
+_controlled: ["", " #they# control#s#", " #their# opponent controls"]
 
 randomNonland: "[#randomNonlandCard#]#_cardFamiliarName1#"
 
