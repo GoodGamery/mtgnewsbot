@@ -29,14 +29,25 @@
         "if an ability (from #randomCardAlone#, for example) causes you to #gameAction#, nothing happens.",
         "#_cardname#'s first and third abilities are linked. [_also:Also,Similarly,Believe it or not,For some reason,Inexplicably,Surprisingly,Apparently]#_also#, #_cardname.capitalize#'s [_linkedAbilities:second and third abilities,first and last abilities,#keyword# and #keyword# abilities,#cardAttribute# and #cardAttribute#]#_linkedAbilities# are [_linked:linked,#reallyGood#]#_linked#.",
         "the #creatureTypes# tokens are created even if [_circumstance:the target isn't,no #cardCategory.s# are]#_circumstance# [#gameEffectAction#]#_actionPastTense# by #_cardname#'s ability.",
-        "for more information on [_topic:#gameConcept#,#cardCategory.s#,#_randomTopic#]#_topic#, see the [_set:#cardSet#,#teaserCardSet#]#_set# mechanics article at <a href=\"\">#_gathererRulingImageArticleUrl#</a>.",
+        "for more information on [_topic:#gameConcept#,#cardCategory.s#,#mtgQuestionablePractice#,#_randomTopic#]#_topic#, see the [_set:#cardSet#,#teaserCardSet#]#_set# mechanics article at <a href=\"\">#_gathererRulingImageArticleUrl#</a>.",
         "[_card2:#randomRealCard#][_card3:#randomCardAlone#]In a Commander game, your commander may be #_cardname# or #_card2#, and the other may be in your deck. If they meld into #_card3#, #_card3# will also be your commander.",
         "#opalRuling#",
-        # "If you're [_doingWhat:casting a spell,activating the ability of #cardPermanentType.a#,"
+        "each player #heOrShePronouns#[_doesWhat:#randomKeywordActionWithPronoun#,#playersEffectAction#]#_doesWhat#. [_deckAdj:best,worst,most expensive,most original,most competitive,largest,#adjSuperlative#][_starting: starting with #somePlayer##comma#]Then#_starting# each player [_want:want#s#,wish#es#,would like][_what:#cardCategory# #they# control#s#,#cardCategoryTerm#,#itemNoun# #they# #_want#][_doesWhatNext:chooses #_what.a# to #keywordCardAction#,#playersEffectAction#]#_doesWhatNext##_parenthetical#.",
         "[_whoControls:you control,you control,you control,your opponent controls,the active player controls][_token:#creatureTypes# token][_cardCategory:#cardCategory#][_what:first,last,activated,triggered,targeted,#keywordAction.lowercase#][_controlledThing:#_what# ability,#_what# ability,#_cardCategory#,#_token#][_firstLast:,first ,last ][_last:, last][_counter:#counterType# counter][_abilityVerb:#cardAbilityVerb#][_abilityVerbed:#_past#][_counterReceiver:#_cardname#,it][_whatThen:give it its #_counter#,create the#_last# #_token#,#_abilityVerb# the#_last# #_cardCategory#,place the#_last# #_counter# on #_counterReceiver#][_counterAction:removed,removed,added][_whatNext:#_counter# is #_counterAction#,ability resolves][_however:However#comma#,Keep in mind that,Remember#comma# though,Remember that,Don't forget that][_target:,target ,#cardState# ][_num:zero,#count#,#count#,#count#][_choices:#_num# #_target#permanents,up to #_num# #_target##_cardCategory.s#,any number of players][_other:other ,additional ][_choice:choose #_choices#,choose up to #cardCopyCount# #_other##_cardCategory##s#][_choiceFor:as targets,to be #_abilityVerbed#,at random][_game:first,second,third][_condition:, if you want, if it's the #_game# game of the match, if the head judge allows it, if your opponent isn't paying attention, to receive the #_counter.s#][_part1:#_whoControls# the #_controlledThing##comma# no matter who #_firstLast#activated the ability to #_whatThen#.][_imperative:must,may,may optionally,are required to][_part2:You #_imperative# #_abilityVerb# #_cardname# as its last #_whatNext#.][_part3:you can #_choice# #_choiceFor##_condition#.][_ruling:#_part1#,#_part2#,#_part3#,#_part1# #_part2#,#_part2# #_however# #_part3#,#_part1# #_part2# #_however# #_part3#]#_ruling#",
         "[_if:If,As long as,Provided that,At the beginning of #gameStep##comma# if]#_if# the player who [_abilityVerb:#cardAbilityVerb#][_didWhat:controlled,targeted,#_past#]#_didWhat# #_cardname# [_which:first ,second ,last ,#keyword.lowercase# ][_verbed:triggered,resolved,was put on the stack,was activated][_when:as its #_which# ability #_verbed#,before its #_which# ability #_verbed#,at the beginning of the turn,last turn,at the end of the #gameStep#]#_when# [_abilityResult:resolves,resolves,triggers,triggers again][_it:it,#_cardname#,#realCard#][_controlsIt:controls #_it#,doesn't control #_it#,still controls #_it#,no longer controls #_it#,has forgotten about #_it#,is confused,leaves the tournament venue,shuffles their library,asks for a takeback,calls a judge,moves to combat][_ability:that ability,its #keyword.lowercase# ability][_doesWhat:#_controlsIt# as #_ability# #_abilityResult#]#_doesWhat#, #_cardname# [_prep1:must,won't,can't]#_prep1# be [#cardAbilityVerb#][_abilityVerbed:#_past#,returned to your hand,returned to your hand,discarded,discarded,sacrificed,sacrificed,put into in your graveyard,placed on top of your library]#_abilityVerbed#.[_however:however,until end of turn][_prep2:still,now,no longer,suddenly][_isWhat:it's #_prep2# #cardState#,has #cardCopyCount# #counterType# counter#s# on it,you can't explain how it got there,your opponent is #disqualifyingAction#][_imperative:must,may,may optionally,are required to] [_prep3:,immediately ][_again:, again][_zone:library,hand,graveyard,nonland permanents,opponents' #cardCategory.s#][_abilityTarget:#cardCategory.a#,an untapped land,a copy of #randomNonlandCard#,your #_zone#,up to one target #cardType.s#][_abilityResult:resolve,be countered,trigger again][_winLose:win,lose,immediately win,immediately lose,must concede][_then:you #_imperative# #keywordAction.lowercase# #_abilityTarget#,its #_which# ability will immediately #_abilityResult#,you #_imperative# #_prep3##gameAction##_again#,you #_winLose# the game,good luck with that,call a judge][_secondPart:, #_however.capitalize##comma# if it's #_prep2# #cardLocation# and #_isWhat##comma# #_then#.]#_secondPart#",
         "your #cardCategory.s# can help cast this spell.",
+        "[_cardClassification:#cardTypes# card,#cardTypes#,#cardCategory#,#cardCategoryTerm#][_quoted:“#_cardClassification#”]#_quoted.a# is any #_cardClassification#, including [_what:#cardCategory.s#,#randomAnyCard#]#_what#.",
+        "You [_have:do not have,are allowed,are required]#_have# to [_cardClassification:#cardTypes# card,#cardCategory#][_what:find #_cardClassification.a#,discard #_cardClassification.a#,reveal #_cardClassification.a#,#keywordCardAction# #_cardClassification.a#]#_what#, [_evenIf:even if,unless]#_evenIf# [_whatElse:you don't want to,you have one #cardLocation#,#cardSurprisingResult#]#_whatElse#.",
         "#gathererTextRare#"
+    ],
+
+    "somePlayer": [
+     "the active player",
+     "the nonactive player",
+     "the #adjPersonCharacteristicSuperlative# player",
+     "#person#",
+     "your #personRelationalUnique#",
+     "the player with the #_deckAdj# deck"
     ],
 
     "gathererTextRare": [
@@ -67,18 +78,22 @@
     ],
 
     "gathererTextRareChoiceOfItems": [
-        "when it comes to choice of items, use common sense. Items should be small enough to [_hide:hide,#verbTransitive#]#_hide# but large enough to [_count:count,#verbTransitive#]#_count#.",
+        "when it comes to choice of items, use common sense. Items should be small enough to [_hide:hide,#verbTransitive#]#_hide# but large enough to [_count:count,#verbTransitive#,#keywordAction#]#_count#.",
         "when it comes to choice of items, use #itemNoun.s#.",
    ],
 
     "embellishedGathererText": [
-        "#gathererRuling# Yes, this is a bit weird.",
+        "#gathererRuling# Yes, this is [_adv:a bit,super,extremely]#_adv# [_adj:weird,weird,absurd,annoying]#_adj#.",
         "Unless something weird happens, #gathererRuling#",
         "Yes, #gathererRuling# It's not optional.",
         "#gathererRuling# This is known as #informalRule#.",
         "Actually, #gathererRuling#",
         "#gathererRuling# This may be wrong.",
-        "#gathererRuling#. This is #officialEntityPerson##possessive# [_least:,least ]#_least#favorite ruling."
+        "#gathererRuling# This is #officialEntityPerson##possessive# [_least:,least ]#_least#favorite ruling.",
+        "#gathererRuling# No, we don't [_understand:understand,understand,like]#_understand# this[_ruling:,, ruling, rule]#_ruling#[_how:, either, any more than you do]#_how#.",
+        "#gathererRuling# This is [_adj:#reallyGood#,#adjValue#][_what:for the good of the game,“for the good of the game”,why we can't have nice things,not a joke,to prevent #gameConcept#,because of #informalRule#,not “for” you,#_adj#]#_what#.",
+        "#gathererRuling# Help, I'm trapped in a [_adj:,,fake ]#_adj#Gatherer Rulings factory.",
+        "#gathererRuling# We're [_advAdv:actually,honestly]#_advAdv# [_adv:,really ,rather ,extremely ][_attitude:proud of,fond of,ashamed of,pleased with,afraid of,confused by]#_adv##_attitude# this ruling."
     ],
 
     "opalRuling": "[_card2:#randomRealCard#][_card3:#randomCardAlone#]this is the current interaction between #_cardname# and #_card2#: The type-changing effect applies at #rulesLayer#[_part2:.,#opalPart2#]#_part2#",
@@ -119,16 +134,17 @@
     ],
 
     "playersEffectAction": [
-      "gains #n1-5# life",
-      "loses #n1-5# life",
+      "gains #num1-5# life",
+      "loses #num1-5# life",
       "draws #cardCopyCount# card#s#",
       "discards #cardCopyCount# card#s#",
       "sacrifices #cardCopyCount# permanent#s#",
       "reveals his or her hand",
+      "names [_namedCard:card,nonland card,#cardCategory#]#_namedCard.a#",
       "secretly [_what:chooses a number,chooses a permanent they control,names a card]#_what#",
-      "[_xEquals:equal to the number][_xIs:#comma# where X is the number][_doesWhat:gains life #_xEquals#,loses life #_xEquals#,draws cards #_xEquals#,creates an X/X #creatureTypes# token #_xIs#,puts the top X cards of his or her library into his or her graveyard#_xIs#]#_doesWhat# of [_zone:hand,library,graveyard][_quantity:#cardPermanentType.s# he or she controls,#cardCategory.s# he or she controls,cards in his or her #_zone#]#_quantity#",
-      "draws #n1-5# cards",
-      "[_doesWhat:discards a card,untaps a number of permanents,sacrifices #cardPermanentType.s#]#_doesWhat# for each [_whatType:#cardPermanentType.s#,#cardCategory.s# he or she controls]#_whatType# [_quantity:he or she controls,in his or her graveyard]#_quantity#"
+      "[_xEquals:equal to the number][_xIs:#comma# where X is the number][_doesWhat:gains life #_xEquals#,loses life #_xEquals#,draws cards #_xEquals#,creates an X/X #creatureTypes.capitalize# token#_xIs#,puts the top X cards of his or her library into his or her graveyard#_xIs#]#_doesWhat# of [_zone:hand,library,graveyard][_quantity:#cardPermanentType.s# he or she controls,#cardCategory.s# he or she controls,cards in his or her #_zone#]#_quantity#",
+      "draws #cardCopyCount# card#s#",
+      "[_doesWhat:discards a card,untaps a number of permanents,sacrifices #cardPermanentType.s#]#_doesWhat# for each[_turn:turn,game][_whatType:#cardPermanentType#,#cardCategory#] #_whatType# [_quantity:#they# control#s#,in #their# graveyard,on the battlefield,#they# played this #_turn#]#_quantity#"
     ],
 
     "informalRule": [
@@ -138,5 +154,41 @@
       "last known information",
       "summoning sickness",
       "#verbStrictlyIntransitiveGerund# sickness"
+    ],
+
+    "_parenthetical": [
+      "[_normally:normally,usually,typically,ordinarily] (#_normally# #normalParentheticalScenario#)",
+      ""
+    ],
+
+    "normalParentheticalScenario": [
+      "with their eyes closed",
+      "without seeing what the other players are doing",
+      "while [_humming:humming,whistling,mouthing the lyrics to]#_humming# #songsToHum#[_how:, under #their# breath]",
+      "without understanding [_what:what is happening,what they are doing,the implications of this,why this is happening]#_what#",
+      "[_who:nobody,everybody,no one,everyone]#_who# wants to [_do:do,do,consider the implications,continue playing after]#_do# this",
+      "this is [_adj:stupid,terrible,excellent]#_adj.a# idea",
+      "while [_verb:rubbing,touching,pointing to,revealing,baring,brandishing]#_verb# their #bodypartsInPairs#",
+      "[_cards:#cardCategory.s#,#cardCategoryTerm.s#]#_cards# are treated as though they don't exist",
+      "this doesn't matter[_like:,like#comma# ][_esp:, #_like#at all,#comma# unless you're concerned about #gameConcept#]#_esp#",
+      "this is the last thing you'd expect to happen",
+      "#playerCategory.s# [_love:love,hate]#_love# this",
+      "this goes on for several #timePeriod.s#",
+      "the game [_what:devolves into chaos,is effectively over,needs to be restarted]#_what# at this point",
+      "with their hands under the table"
+    ],
+
+    "songsToHum": [
+      "“Oh, Susanna”",
+      "“Mambo Number 5”",
+      "“On Top of Old Smokey”",
+      "“Turkey in the Straw”",
+      "“The Flintstones theme song”",
+      "“Memories”",
+      "the “Thong Song”",
+      "“The Final Countdown”",
+      "“Another One Bites the Dust”",
+      "the 1812 Overture",
+      "circus music",
     ]
 }

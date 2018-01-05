@@ -38,7 +38,7 @@ inGraphicsStep:
 - 'Place #_card2# into #_card1#''s sleeve'
 - 'Write [_phrase:#mtgCatchphrase#,#mtgSlangTerm#][_loveHate:love,hate][_text:#realPowerfulCard#,#_phrase#,I #_loveHate# #anyPersonality#]“#_text#” on #_card2# with [_implement:sharpie,crayon,pencil,permanent marker]#_implement.a#'
 - 'Transform #_card1# to flip #_card2# to unmorph #randomPermanentCard#'
-- 'Throw #_card1# across the table while shouting about #gameConcept#'
+- 'Throw #_card1# across the table while [_verbing:shouting,muttering,screaming,complaining,blathering,ranting,wisecracking]#_verbing# about #gameConcept#'
 - 'Ask a judge [_otherThing:#_card2#,#keyword#][_question:how #_card1# and #_otherThing# interact,for the oracle text of #_otherThing#]#_question#'
 - 'Look extremely puzzled for #num2-9# minutes'
 - "Gesture to the [_what:collection of PTQ Top 8 pins,mustard and ketchup stains,detailed portrait of #anyPersonality#,collection of #creatureTypes# tokens,tiny #itemNoun.s#]#_what# on your playmat"
