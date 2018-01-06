@@ -18,3 +18,5 @@ fascinating
 intriguing
 amusing
 disturbing
+redundant
+stupid
