@@ -1,5 +1,5 @@
 randomKeywordAction: "#youPronouns##randomKeywordActionWithPronoun#"
-randomKeyworCarddAction: "#youPronouns##randomKeywordCardActionWithPronoun#"
+randomKeywordCardAction: "#youPronouns##randomKeywordCardActionWithPronoun#"
 
 # expects #pronoun# to be selected
 randomKeywordActionWithPronoun:
