@@ -105,6 +105,9 @@ class MtgNewsbot {
       } else {
         tweetResult = await this.twitter.postTweet(headline.text);
       }
+
+      console.log(`Twitter status POST response: ${JSON.stringify(tweetResult)}`);
+
       const tweetId = tweetResult.id_str;
       const tweetUser = tweetResult.user.screen_name;
       postedMessage = `https://twitter.com/${tweetUser}/status/${tweetId}`;
