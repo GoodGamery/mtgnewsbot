@@ -37,7 +37,7 @@ originStoryOverview: "#character#'s [_originStory:origin story,first adventure,h
 originStoryDetails: "[_fate:capturing,rescuing,locating,search for,quest for,#collectiveActionOrRealm# of,#collectiveActionOrRealm# of]#_fate.capitalizeAll# [_what:the #mcGuffin.capitalizeAll#,the #count# #mcGuffin.capitalizeAll#,#unusualCharacter#,#unusualCharacter#]#_what#"
 
 magicStorylineHighlight:
-- "#character#'s #adj# [_past:past,history,backstory,rivalry,partnership]#_past# with #character# finally [_verbed:revealed,explained,uncovered,divulged,explored,exposed]#_verbed#"
+- "#character#'s [_adj:#adj#,#adj#,strangely #adj#,secret,fabled,legendary,infamous,terrible,heartwarming,tawdry]#_adj# [_past:past,history,backstory,rivalry,partnership,clash]#_past# with #character# finally [_verbed:revealed,explained,uncovered,divulged,explored,exposed]#_verbed#"
 - "#character#'s #magicStoryPlotAdj# [_trek:journey,trek,odyssey]#_trek# [_with:,with #character#]#_with# [_toWhere:to #magicRealm#, across #storyLocation#]#_toWhere#"
 - "#character#'s #magicStoryPlotAdj# [_quest:quest,ordeal,campaign,odyssey,#planNoun#]#_quest# to [_fate:defeat,rescue,confront,#verbTransitive#]#_fate# #storyCharacter#"
 - "[_originStory:#originStoryOverview##colon# #originStoryDetails#,#originStoryDetails##colon# #originStoryOverview#]#_originStory#"
