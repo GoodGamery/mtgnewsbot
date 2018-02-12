@@ -19,3 +19,7 @@ denial
 duplication
 torture
 #randomPermanentCard#
+#pluralItemNounOrMassNoun#
+#abstractMassOrPluralNounOrEmotion#
+#abstractNounPluralItemNounMassNounOrEmotion#
+#abstractMassOrPluralNounGameConceptOrEmotion#

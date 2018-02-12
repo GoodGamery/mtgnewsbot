@@ -31,12 +31,33 @@ Mons's #randomRealCard#
 Mox #randomRealCard#
 Robo#randomRealCard#
 #randomRealCard# Elemental Blast
-#randomRealCard# of the Pearl Trident
+[_cardTypeQuery:creature]#cardTypeCardWithOneWordName##_cardName# of the Pearl Trident
+Kami of the [_kamiWhat:#concreteNounOrPluralNoun#,#adj# #itemNoun.s#,#placeNoun#,#adj# #placeNoun#,#adj# #placeNounCanonical#]#_kamiWhat.capitalizeAll#
 #randomRealCard# (Not the #cardSet# One)
+Wormfang #creatureTypes.capitalize#
+Bloodfire #creatureTypes.capitalize#
+Wall of #abstractMassOrPluralNounOrEmotion.capitalizeAll#
+#demonym.capitalizeAll# Emissary
+Avatar of #abstractNounMassNounOrEmotion.capitalizeAll#
+Chain of #massNoun.capitalizeAll#
+#abstractNounMassNounOrEmotion.capitalizeAll# Elemental
+Clockwork [_type:#creatureTypes#,#creatureTypes#,#creatureTypeOrCharacterClass#]#_type.capitalizeAll#
+Crown of [_material:#emotion#,#massNoun#,#abstractMassOrPluralNounOrEmotion#]#_material.capitalizeAll#
+#nounStateOfBeing.capitalizeAll# Sliver
+#abstractNounOrEmotion.capitalizeAll# Charm
+Oath of #characterClass.s.capitalizeAll#
+#abstractNounMassNounOrEmotion.capitalizeAll#monger
+[_whose:Urza's,Jixed]#_whose# #clothingOrAccessory.capitalizeAll#
+#verbGerund.capitalizeAll# Wind
+Darksteel [#cardQueryOneWordNoncreatureArtifact#]#_cardName#
+#creatureTypes.capitalize# Replica
+[_type:#massNoun# #bodypart#]#_type.capitalizeAll.hyphenate# Chimera
+[#notablePairs#][_duelDecksCombatant2:#pairPart2#][_duelDecksCombatant1:#pairPart1#]#pairPart1.capitalizeAll# // #pairPart2.capitalizeAll#
+[_embracer:#nonPlaneStoryLocation#,#characterFirstNameOrMonoOrDisyllabic#,#creatureTypeOrCharacterClass#]#_embracer.capitalizeAll#'s Embrace
 #adj.capitalizeAll# Wish
 #verbGerund.capitalizeAll# Shoal
 #randomRealCard# (Not the #novelCardSetName.capitalizeAll# One)
 Snow-Covered #randomRealCard#
 #bodypart.capitalize# in a Jar
-Form of the #creatureTypes#
+Form of the #creatureTypes.capitalize#
 Circle of Protection: [_someNoun:#abstractNoun#,#emotion#,#massNoun#,#pluralNoun#][_what:#creatureTypes.s#,#cardCategory.s#,#_someNoun#]#_what.capitalizeAll#

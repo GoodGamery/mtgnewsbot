@@ -1,0 +1,66 @@
+pants
+sneakers
+belt
+crown
+sombrero
+helmet
+goggles
+tunic
+breastplate
+cape
+shirt
+blanket
+skirt
+codpiece
+diaper
+earmuffs
+swimsuit
+bathrobe
+apron
+onesie
+leotard
+suspenders
+glove
+loincloth
+mittens
+nightgown
+pajamas
+yoga pants
+thong
+unmentionables
+poncho
+raincoat
+jockstrap
+unitard
+snorkel
+smartwatch
+hauberk
+friendship bracelet
+headphones
+hankerchief
+turban
+cufflinks
+deely bobbers
+yarmulke
+hairnet
+energy dome
+chainmail
+money clip
+longjohns
+handbag
+wetsuit
+fatsuit
+zoot suit
+petticoat
+hockey mask
+overalls
+gym shorts
+girdle
+cargo shorts
+hammer pants
+lederhosen
+beret
+briefcase
+shaving kit
+duffel bag
+umbrella
