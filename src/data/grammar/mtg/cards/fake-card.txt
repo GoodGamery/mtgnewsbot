@@ -51,7 +51,7 @@ Oath of #characterClass.s.capitalizeAll#
 #verbGerund.capitalizeAll# Wind
 Darksteel [#cardQueryOneWordNoncreatureArtifact#]#_cardName#
 #creatureTypes.capitalize# Replica
-[_type:#massNoun# #bodypart#]#_type.capitalizeAll.hyphenate# Chimera
+[_type:#adjCorporeal# #bodypart#,#massNoun# #bodypart#]#_type.capitalizeAll.hyphenate# Chimera
 [#notablePairs#][_duelDecksCombatant2:#pairPart2#][_duelDecksCombatant1:#pairPart1#]#pairPart1.capitalizeAll# // #pairPart2.capitalizeAll#
 [_embracer:#nonPlaneStoryLocation#,#characterFirstNameOrMonoOrDisyllabic#,#creatureTypeOrCharacterClass#]#_embracer.capitalizeAll#'s Embrace
 #adj.capitalizeAll# Wish
