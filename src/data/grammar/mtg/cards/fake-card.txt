@@ -23,7 +23,7 @@ Dominator Bleb
 Octopus Token
 the [_cardCount:ace,two,three,four,five,ten]#_cardCount# of [_cardSuit:spades,hearts,clubs,diamonds]#_cardSuit#
 a saltine with a Magic card back
-Jace's #randomRealCard#
+#planeswalkerFirstName#'s [_cardTypeQuery:creature,artifact][#cardTypeCardWithOneWordName#][_possession:#_cardName#,#emotion#]#_possession.capitalizeAll#
 M #randomRealCard# EX
 Magus of the #randomRealCard#
 Magus of the #concreteNoun.capitalizeAll#
