@@ -29,7 +29,7 @@ Magus of the #randomRealCard#
 Magus of the #concreteNoun.capitalizeAll#
 Mons's #randomRealCard#
 Mox #randomRealCard#
-Robo[_cardTypeQuery:creature,instant,sorcery,artifact,enchantment]#cardTypeCardWithOneWordName##_cardName#
+Robo#randomRealCard.capitalizeAll.noPunctuation.noSpaces
 #randomRealCard# Elemental Blast
 [_cardTypeQuery:creature]#cardTypeCardWithOneWordName##_cardName# of the Pearl Trident
 Kami of the [_kamiWhat:#concreteNounOrPluralNoun#,#adj# #itemNoun.s#,#placeNoun#,#adj# #placeNoun#,#adj# #placeNounCanonical#]#_kamiWhat.capitalizeAll#
@@ -43,7 +43,7 @@ Chain of #massNoun.capitalizeAll#
 #abstractNounMassNounOrEmotion.capitalizeAll# Elemental
 Clockwork [_type:#creatureTypes#,#creatureTypes#,#creatureTypeOrCharacterClass#]#_type.capitalizeAll#
 Crown of [_material:#emotion#,#massNoun#,#abstractMassOrPluralNounOrEmotion#]#_material.capitalizeAll#
-#nounStateOfBeing.capitalizeAll# Sliver
+[_sliverType:#abstractNoun#,#abstractNounOrMassNoun#,#nounStateOfBeing#]#_sliverType.capitalizeAll# Sliver
 #abstractNounOrEmotion.capitalizeAll# Charm
 Oath of #characterClass.s.capitalizeAll#
 #abstractNounMassNounOrEmotion.capitalizeAll#monger
