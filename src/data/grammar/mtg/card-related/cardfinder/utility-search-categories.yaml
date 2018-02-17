@@ -28,15 +28,14 @@ cardQueryNonland: "[_customQuery:t!=land#_colorFilter#][#_customQuery.cardSearch
 randomNonlandCard: "#cardQueryNonland##_cardName#"
 
 cardQueryNoncreatureArtifact: "[_customQuery:t=artifact t!=creature#_colorFilter#][#_customQuery.cardSearchCustomQuery(1)#][_cardName:#_cardName1#]"
-cardQueryMultiWordNoncreatureArtifact: '[_customQuery:t=artifact t!=creature text="? "#_colorFilter#][#_customQuery.cardSearchCustomQuery(1)#][_cardName:#_cardName1#]'
-
+cardQueryOneWordNoncreatureArtifact: '[_customQuery:t=artifact t!=creature name!="? "#_colorFilter#][#_customQuery.cardSearchCustomQuery(1)#][_cardName:#_cardName1#]'
+cardQueryMultiWordNoncreatureArtifact: '[_customQuery:t=artifact t!=creature name="? "#_colorFilter#][#_customQuery.cardSearchCustomQuery(1)#][_cardName:#_cardName1#]'
 
 cardQueryCardDraw: '[_customQuery:t=instant t|=sorcery text="draw" text="cards"#_colorFilter#][#_customQuery.cardSearchCustomQuery(1)#][_cardName:#_cardName1#]'
 randomCardDrawCard: "#cardQueryCardDraw##_cardName#"
 
 cardQueryTutor: '[_customQuery:name=tutor,t=instant t|=sorcery text="search your library for a card"#_colorFilter#][#_customQuery.cardSearchCustomQuery(1)#][_cardName:#_cardName1#]'
 randomTutorCard: "#cardQueryTutor##_cardName#"
-
 
 cardQueryFlyingFinisher: "[_customQuery:t=creature text=flying pow=>4#_colorFilter#][#_customQuery.cardSearchCustomQuery(1)#][_cardName:#_cardName1#]"
 randomFlyingFinisherCard: "#cardQueryFlyingFinisher##_cardName#"

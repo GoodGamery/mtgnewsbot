@@ -14,7 +14,7 @@ inGraphicsHeadline:
 - '[_besting:Overcoming,Conquering,Overpowering,Dominating,Defeating,Mastering,#verbTransitiveGerund.capitalizeAll#]#_besting# #obstacle.capitalizeAll#'
 - 'How to [_what:#_card1#,#_card1#,#cardCategoryTerm#]#_what.capitalizeAll# — In Graphics'
 - "[_cat:#cardCategory.capitalizeAll#][_categoryHeadline:#_cat.sIfNeeded# Everywhere,The Best #_cat.sIfNeeded# in Town]#_categoryHeadline#"
-- '[_infi:Infinite,Boundless,Enter the,Day of the,More]#_infi# [_what:#creatureTypes.capitalizeAll.sIfNeeded#,#gameConcept#]#_what#'
+- '[_infi:Infinite,Boundless,Enter the,Day of the,More]#_infi# [_what:#creatureTypes.capitalizeAll.sIfNeeded#,#gameConcept.capitalizeAll#]#_what#'
 - '[_do:Break the Game Open,Crush the Competition,Save the Day,Make a Splash,Spin to Win]#_do# with #_card1#'
 - "#_card1#[_moment:'s moment in the sun,'s time to shine][_where:to #storyLocation#,to College,#direction.capitalizeAll#][_doesWhat: goes on the offensive, on the move, goes #_where#,#_moment#, makes it to the Big Time, Gets Its Grove Back,#colon# A Play in Three Acts]#_doesWhat#"
 - 'The [_hidden:Hidden,Unexpected,Secret][_power:Power,Potential,Value]#_hidden# #_power# of #_card1#'

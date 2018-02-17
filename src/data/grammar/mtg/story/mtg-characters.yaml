@@ -136,6 +136,12 @@
     "Venser"
   ],
 
+  "characterFirstNameOrMonoOrDisyllabic": [
+    "#characterFirstName#",
+    "#characterMonosyllabic#",
+    "#characterDisyllabic#"
+  ],
+
   "commonCharacterFirstName": [
   	"Agathe",
   	"Borzard",

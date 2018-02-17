@@ -3,3 +3,4 @@ creature
 enchantment
 land
 planeswalker
+[_other:aura,vehicle,token,clue,contraption,cartouche,curse,shrine]#_other#
