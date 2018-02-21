@@ -88,6 +88,57 @@ class MtgNewsbot {
     return `${prefix}-${suffix}`;
   }
 
+  async wait(seconds) {
+    return new Promise(resolve => {
+      setTimeout(() => resolve(true), seconds*1000);
+    });
+  }
+
+  // Do the tweet
+  async tweet(headline, renderResult) {
+    try {
+      let tweetResult = null;
+      if (renderResult.rendered) {
+        tweetResult = await this.twitter.postTweet(headline.text, renderResult.path, headline.altText);
+      } else {
+        tweetResult = await this.twitter.postTweet(headline.text);
+      }
+
+      console.log(`Twitter status POST response:\n${JSON.stringify(tweetResult)}`);
+
+      if (!tweetResult.user || !tweetResult.id_str) {
+        console.error("The response was empty or invalid.");
+        return false;
+      }
+
+      const tweetId = tweetResult.id_str;
+      const tweetUser = tweetResult.user.screen_name;
+      return `https://twitter.com/${tweetUser}/status/${tweetId}`;
+    } catch (e) {
+      console.error('Exception: ', e);
+      return false;
+    }
+  }
+
+  async toot(headline, renderResult) {
+    let tootResult = null;
+    if (renderResult.rendered) {
+      tootResult = await this.mastodon.toot(headline.text, renderResult.path);
+    } else {
+      tootResult = await this.mastodon.toot(headline.text);
+    }
+    console.log(`Tooted: ${tootResult.data.uri}`);
+    return tootResult.data.uri;
+  }
+
+  async discordMessage(message) {
+    console.log(`Sending to ${this.options.debug ? `DEBUG` : `NORMAL`} discord: "${message}"`);
+    if (this.options.debug)
+      Discord.sendDebug(message);
+    else
+      Discord.sendText(message);
+  }
+
   async processHeadline(headline) {
     let postedMessage = headline.text;
     console.log(`\n* ${headline.text}`);
@@ -97,41 +148,30 @@ class MtgNewsbot {
       console.log("Render result: " + renderResult.msg);
     }
 
-    // Twitter
-    if (this.options.tweet && !this.options.debug) {
-      let tweetResult = null;
-      if (renderResult.rendered) {
-        tweetResult = await this.twitter.postTweet(headline.text, renderResult.path, headline.altText);
-      } else {
-        tweetResult = await this.twitter.postTweet(headline.text);
-      }
-
-      console.log(`Twitter status POST response: ${JSON.stringify(tweetResult)}`);
-
-      const tweetId = tweetResult.id_str;
-      const tweetUser = tweetResult.user.screen_name;
-      postedMessage = `https://twitter.com/${tweetUser}/status/${tweetId}`;
-    }
-
     // Mastodon
     if (this.options.toot && !this.options.debug) {
-      let tootResult = null;
-      if (renderResult.rendered) {
-        tootResult = await this.mastodon.toot(headline.text, renderResult.path);
-      } else {
-        tootResult = await this.mastodon.toot(headline.text);
+      postedMessage = await this.toot(headline, renderResult);
+    }
+
+    // Twitter
+    if (this.options.tweet && !this.options.debug) {
+      let timeoutSeconds = 10;
+      for (let iterations = 5; iterations > 0; --iterations) {
+        let tweetResult = await this.tweet(headline, renderResult);
+        if (tweetResult === false) {
+          console.warn(` -> Tweet failed. Waiting ${timeoutSeconds} seconds to retry tweet...`);
+          await this.wait(timeoutSeconds);
+          timeoutSeconds *= 2;
+        } else {
+          postedMessage = tweetResult;
+          break;
+        }
       }
-      console.log(`Tooted: ${tootResult.data.uri}`);
     }
 
     // Discord
     if (this.options.discord) {
-      // Do something with the message for discord
-      console.log(`Sending to ${this.options.debug ? `DEBUG` : `NORMAL`} discord: "${postedMessage}"`);
-      if (this.options.debug)
-        Discord.sendDebug(postedMessage);
-      else
-        Discord.sendText(postedMessage);
+      await this.discordMessage(postedMessage);
     }
 
     return Promise.resolve(postedMessage);
