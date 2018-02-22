@@ -167,8 +167,7 @@ class MtgNewsbot {
             timeoutSeconds *= 2;
           }
           else {
-            const failureMessage = `Tweet failed after ${NUM_TWEET_ATTEMPTS} attempts.`;
-            throw new Error(failureMessage);
+            throw new Error(`Tweet failed after ${NUM_TWEET_ATTEMPTS} attempts.`);
           }
         } else {
           postedMessage = tweetResult;
