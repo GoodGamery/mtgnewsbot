@@ -140,6 +140,8 @@ class MtgNewsbot {
   }
 
   async processHeadline(headline) {
+    const NUM_TWEET_ATTEMPTS = 5;
+
     let postedMessage = headline.text;
     console.log(`\n* ${headline.text}`);
     const outputPath = `${config.paths.tempDirectory}/${MtgNewsbot.createFileName(headline)}.png`;
@@ -156,12 +158,17 @@ class MtgNewsbot {
     // Twitter
     if (this.options.tweet && !this.options.debug) {
       let timeoutSeconds = 10;
-      for (let iterations = 5; iterations > 0; --iterations) {
+      for (let iterations = NUM_TWEET_ATTEMPTS; iterations > 0; --iterations) {
         let tweetResult = await this.tweet(headline, renderResult);
         if (tweetResult === false) {
-          console.warn(` -> Tweet failed. Waiting ${timeoutSeconds} seconds to retry tweet...`);
-          await this.wait(timeoutSeconds);
-          timeoutSeconds *= 2;
+          if (iterations > 1) {
+            console.warn(` -> Tweet failed. Waiting ${timeoutSeconds} seconds to retry tweet...`);
+            await this.wait(timeoutSeconds);
+            timeoutSeconds *= 2;
+          }
+          else {
+            throw new Error(`Tweet failed after ${NUM_TWEET_ATTEMPTS} attempts.`);
+          }
         } else {
           postedMessage = tweetResult;
           break;
