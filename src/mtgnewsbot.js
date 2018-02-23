@@ -67,8 +67,9 @@ class MtgNewsbot {
     headlines.forEach(headline =>
       this.processHeadline(headline)
         .then(result => {
-          if (this.options.verbose)
+          if (this.options.verbose) {
             console.log(`Final result:\n${result}`);
+          }
         })
         .catch(err => {
           console.error(err);
@@ -96,28 +97,24 @@ class MtgNewsbot {
 
   // Do the tweet
   async tweet(headline, renderResult) {
-    try {
-      let tweetResult = null;
-      if (renderResult.rendered) {
-        tweetResult = await this.twitter.postTweet(headline.text, renderResult.path, headline.altText);
-      } else {
-        tweetResult = await this.twitter.postTweet(headline.text);
-      }
-
-      console.log(`Twitter status POST response:\n${JSON.stringify(tweetResult)}`);
-
-      if (!tweetResult.user || !tweetResult.id_str) {
-        console.error("The response was empty or invalid.");
-        return false;
-      }
-
-      const tweetId = tweetResult.id_str;
-      const tweetUser = tweetResult.user.screen_name;
-      return `https://twitter.com/${tweetUser}/status/${tweetId}`;
-    } catch (e) {
-      console.error('Exception: ', e);
-      return false;
+    let tweetResult = null;
+    if (renderResult.rendered) {
+      tweetResult = await this.twitter.postTweet(headline.text, renderResult.path, headline.altText);
+    } else {
+      tweetResult = await this.twitter.postTweet(headline.text);
     }
+
+    console.log(`Twitter status POST response:\n${JSON.stringify(tweetResult)}`);
+
+    if (!tweetResult.user || !tweetResult.id_str) {
+      const msg =  'The response was empty or invalid.';
+      console.error(msg);
+      throw new Error(msg);
+    }
+
+    const tweetId = tweetResult.id_str;
+    const tweetUser = tweetResult.user.screen_name;
+    return `https://twitter.com/${tweetUser}/status/${tweetId}`;
   }
 
   async toot(headline, renderResult) {
@@ -142,6 +139,8 @@ class MtgNewsbot {
   async processHeadline(headline) {
     const NUM_TWEET_ATTEMPTS = 5;
 
+    const exceptions = [];
+
     let postedMessage = headline.text;
     console.log(`\n* ${headline.text}`);
     const outputPath = `${config.paths.tempDirectory}/${MtgNewsbot.createFileName(headline)}.png`;
@@ -152,28 +151,41 @@ class MtgNewsbot {
 
     // Mastodon
     if (this.options.toot && !this.options.debug) {
-      postedMessage = await this.toot(headline, renderResult);
+      try {
+        postedMessage = await this.toot(headline, renderResult);
+      } catch (e) {
+        exceptions.push(new Error(`Mastadon toot failed: ${e}`));
+      }
     }
 
     // Twitter
     if (this.options.tweet && !this.options.debug) {
       let timeoutSeconds = 10;
       for (let iterations = NUM_TWEET_ATTEMPTS; iterations > 0; --iterations) {
-        let tweetResult = await this.tweet(headline, renderResult);
-        if (tweetResult === false) {
+        try {
+          let tweetResult = await this.tweet(headline, renderResult);
+          postedMessage = tweetResult;
+          break;        
+        } catch (e) {
           if (iterations > 1) {
             console.warn(` -> Tweet failed. Waiting ${timeoutSeconds} seconds to retry tweet...`);
             await this.wait(timeoutSeconds);
             timeoutSeconds *= 2;
           }
           else {
-            throw new Error(`Tweet failed after ${NUM_TWEET_ATTEMPTS} attempts.`);
+            exceptions.push(new Error(`Tweet failed after ${NUM_TWEET_ATTEMPTS} attempts. ${e}`));
           }
-        } else {
-          postedMessage = tweetResult;
-          break;
         }
       }
+    }
+
+    if (exceptions.length > 1) {
+      throw new Error(exceptions.reduce(
+        (message, exception, index) => `${message}\n\n${index+1}) ${exception}`,
+        `Encountered multiple failures while posting headline:`
+      ));
+    } else if (exceptions.length === 1) {
+      throw exceptions[0];
     }
 
     // Discord
