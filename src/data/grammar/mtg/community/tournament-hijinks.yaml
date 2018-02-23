@@ -19,7 +19,7 @@ disqualifyingAction:
 - "using [_counterfeit:a counterfeit #gameAccessory#,counterfeit #gameAccessory.s#,counterfeit copies of #randomAnyCard#]#_counterfeit#"
 - "carrying a concealed #itemNoun# into the tournament venue"
 - "#verbIntransitiveGerund# like #creatureTypeOrCharacterClass.a#"
-- '[_saying:saying,shouting,screaming,muttering,whispering]repeatedly #_saying# "mtgCatchphrase.capitalize" [_circumstance:and revealing #count# copies of #randomRealCard# after every match,to the judges,to everybody within earshot,during the lunch break,and revealing #their# #bodypartsInPairs# after every match]#_circumstance#'
+- '[_saying:saying,shouting,screaming,muttering,whispering]repeatedly #_saying# "#mtgCatchphrase.capitalize#" [_circumstance:and revealing #count# copies of #randomRealCard# after every match,to the judges,to everybody within earshot,during the lunch break,and revealing #their# #bodypartsInPairs# after every match]#_circumstance#'
 - "attempting to bribe [_who:a judge,#their# opponent,#person#]#_who# with [_what:a single copy of #randomAnyCard#,#adj.a# #itemNoun#,#largeAmount.a# of #massNoun#]#_what#"
 - "insisting that #randomAnyCard# is playable in #format#"
 - conduct unbecoming an officer and a gentleman
