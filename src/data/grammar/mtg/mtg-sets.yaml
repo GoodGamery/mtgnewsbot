@@ -117,7 +117,6 @@
   "teaserCardSet": [
       "Commander 2018",
       "Masters 25",
-      "Rivals of Ixalan",
       "Dominaria",
       "Core 2019",
       "#codename#",
@@ -126,7 +125,7 @@
   "codename": [
       "Spaghetti",
       "Meatballs",
-      "[_futureSet:Milk,Archery,Baseball,Cricket]#_futureSet#"
+      "[_futureSet:Milk,Archery,Baseball,Cricket,Diving]“#_futureSet#”"
   ],
   "novelCardSetName": [
     "#planeBasedSet#",
