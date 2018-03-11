@@ -238,7 +238,8 @@ cardOneOff:
   #imgCard#  
 
 # requires "_cardverb" to be defined
-hashtagArbitrary: "[_object:Yourself,Every Day,The World][_hashtag1Term:#_cardverb# #_object#,#gameConcept#,#mtgQuestionablePractice#,#mtgSlangTerm#]{hashtag}#_hashtag1Term.capitalizeAll.noPunctuation.noSpaces#"
+hashtagAbsurdTerm: "[_absurdTerm:#itemNounOrMassNoun# Surprise,#itemNounOrMassNoun# #CONTENT.dayOfWeek#,#randomMtgLocation# #pluralNounOrMassNoun#]#_absurdTerm#"
+hashtagArbitrary: "[_object:Yourself,Every Day,The World][_hashtag1Term:#_cardverb# #_object#,#gameConcept#,#mtgQuestionablePractice#,#mtgSlangTerm#,Mtg #abstractMassOrPluralNounGameConceptOrEmotion#,#hashtagAbsurdTerm#]{hashtag}#_hashtag1Term.capitalizeAll.noPunctuation.noSpaces#"
 hashtagDay: "{hashtag}#CONTENT.dayOfWeekOccasion.capitalizeAll.noPunctuation.noSpaces##CONTENT.dayOfWeek.capitalize#"
 hashtagDayMotivation: "{hashtag}#CONTENT.dayOfWeekMotivation.lowercase.capitalizeAll.noPunctuation.noSpaces##CONTENT.dayOfWeek.capitalize#"
 

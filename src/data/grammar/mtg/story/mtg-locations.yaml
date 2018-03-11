@@ -154,5 +154,6 @@
       "Wirewood"
   ],
   "storyLocation": ["#plane#", "#nonPlaneLocation#"],
-  "nonPlaneStoryLocation": ["#nonPlaneLocation#", "#minorStoryLocation#"]
+  "nonPlaneStoryLocation": ["#nonPlaneLocation#", "#minorStoryLocation#"],
+  "randomMtgLocation": ["#plane#", "#nonPlaneLocation#", "#minorStoryLocation#"]
 }
