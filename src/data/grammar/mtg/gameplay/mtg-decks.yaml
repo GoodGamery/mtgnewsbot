@@ -74,9 +74,13 @@
   ],
   "deckVariation" : [
     "#deck#",
+    "#deck#",
+    "#deckPrefix# #deck#",
     "#deckPrefix# #deck#",
     "#deck# #deckSuffix#",
     "#definingCardname# #deck#",
+    "#definingCardname# #deck#",
+    "#deckPrefix# #definingCardname#",
     "#deckPrefix# #definingCardname#",
     "#definingCardname# #deckSuffix#",
     "#deckPrefix# #deckVariation#"

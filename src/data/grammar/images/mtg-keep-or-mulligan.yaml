@@ -6,9 +6,9 @@ headlineKeepOrMulligan: >
 initializeKeepOrMulligan: "[_deckColor:#searchableColor#]#_deckColor.hide#[opposingDeck:#opposingDeck#][_deck:#deckTest#]"
 
 svgMulliganStatusText:
-- "Keep or Mulligan? With #pro#"
+- "Keep or Mulligan? With #proFullName#"
 - "Keep or Mulligan? #_format# Edition"
-- "What's the Play? With #pro#"
+- "What's the Play? With #proFullName#"
 - "What's the Play? #_format# Edition"
 - "You Make the Play: Keep or Mulligan?"
 svgMulliganHeaderText:
