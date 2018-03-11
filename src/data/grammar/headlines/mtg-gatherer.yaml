@@ -132,7 +132,7 @@
     "rulesLayer": ["layer #num1-9#", "layer #num1-9#", "layer #num1-9#a", "layer #num1-9#b", "layer #num1-9#c"],
 
     "_gathererRulingImageArticleUrl": [
-        "http://magic.wizards.com/en/articles/archive/"
+        "http://magic.wizards.com/en/articles/archive/[_action:#keywordAction#,#keywordActionIntransitive#,#verbIntransitive#][_topic:#gameConcept#,#broadCardClassification#,#mtgQuestionablePractice#,#abstractMassOrPluralNounGameConceptOrEmotion#][_broadTopic:#_action#,#_topic#,#randomCardSet#,#creatureTypeOrCharacterClass#,#nounActivity#][_pageName:,how to #_action#,understanding #_topic#,#_topic# explained,#_broadTopic# faq,#_broadTopic# rules update][_pageName:#_pageName#]#_pageName.replace(-,ZZZZZ).noPunctuation.replace(ZZZZZ,-).lowercase.hyphenate#"
     ],
     "_randomTopic": ["#character#", "the #gameStep#", "#person#" , "#pluralNounOrMassNoun#", "#format#", "#deckArch#"],
     "gameAction": ["look at the top card of your library", "shuffle your library", "reorder your graveyard", "search your library", "untap one or more permanents",

@@ -13,6 +13,11 @@ adjPersonCharacteristic:
 - serious
 - competitive
 - new
+- clever
+- nimble
+- naive
+- level-headed
+- unpredictable
 - "#adj#"
 
 
@@ -31,6 +36,11 @@ adjPersonCharacteristicComparative:
 - more serious
 - more competitive
 - newer
+- more clever
+- nimbler
+- more naive
+- more level-headed
+- more unpredictable
 - "#adjComparative#"
 
 adjPersonCharacteristicSuperlative:
@@ -48,4 +58,9 @@ adjPersonCharacteristicSuperlative:
 - most serious
 - most competitive
 - newest
+- most clever
+- nimblest
+- most naive
+- most level-headed
+- most unpredictable
 - "#adjSuperlative#"

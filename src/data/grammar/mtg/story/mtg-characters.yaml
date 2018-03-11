@@ -35,6 +35,38 @@
       "Venser#malePronouns#",
       "Yawgmoth#malePronouns#"
   ],
+    "planeswalkerFullName": [
+      "Ajani Goldmane#malePronouns#",
+      "Ashiok, Nightmare Weaver#pluralPronouns#",
+      "Chandra Nalar#femalePronouns#",
+      "Dack Fayden#malePronouns#",
+      "Elspeth Tirel#femalePronouns#",
+      "Freyalise, Llanowar's Fury#femalePronouns#",
+      "Garruk Wildspeaker#malePronouns#",
+      "Gideon Jura#malePronouns#",
+      "Huatli, Warrior Poet#femalePronouns#",
+      "Jace Beleren#malePronouns#",
+      "Jaya Ballard#femalePronouns#",
+      "Kaervek the Merciless#malePronouns#",
+      "Karn, Silver Golem#malePronouns#",
+      "Kiora, the Crashing Wave#femalePronouns#",
+      "Koth of the Hammer#malePronouns#",
+      "Liliana Vess#femalePronouns#",
+      "Mangara of Corondor#malePronouns#",
+      "Mishra, Artificer Prodigy#malePronouns#",
+      "Nahiri, the Lithomancer#femalePronouns#",
+      "Nissa Revane#femalePronouns#",
+      "Sarkhan Vol#malePronouns#",
+      "Serra#femalePronouns#",
+      "Sorin Markov#malePronouns#",
+      "Tamiyo, the Moon Sage#femalePronouns#",
+      "Teferi, Mage of Zhalfir#malePronouns#",
+      "Ugin, the Spirit Dragon#malePronouns#",
+      "Urza, Academy Headmaster #malePronouns#",
+      "Vraska the Unseen#femalePronouns#",
+      "Venser, Shaper Savant#malePronouns#",
+      "Yawgmoth#malePronouns#"
+  ],
   "nonPlaneswalkerCharacter": [
       "Adun Oakenshield#malePronouns#",
       "Alesha#femalePronouns#",
@@ -358,8 +390,12 @@
   "mashupCharacter": "#person##fakecomma# #demonym.capitalize# #characterClass.capitalize#",
   "anyCharacter": [
   	"#planeswalkerFirstName#",
+    "#planeswalkerFullName#",
   	"#nonPlaneswalkerCharacter#",
+    "#nonPlaneswalkerCharacter#",
+    "#npcCharacter#",
   	"#npcCharacter#",
-  	"#mashupCharacter#"
+  	"#mashupCharacter#",
+    "#mashupCharacter#"
   ],
 }

@@ -84,6 +84,13 @@ function sIfNeeded(s) {
     }
 }
 
+function aIfNeeded(s) {
+  if (s.charAt(s.length -1) === 's') {
+    return s;
+  }
+  return a(s);
+}
+
 
 // TODO: move into tracery module (update existing "a" modifier)
 function a(s) {
@@ -167,6 +174,7 @@ function wholeNumberToText(s) {
 
 module.exports = {
   a,
+  aIfNeeded,
   allCaps,
   compactSpaces,
   ed,

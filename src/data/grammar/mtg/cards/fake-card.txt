@@ -20,9 +20,9 @@ Neurok “Commando”
 Shrekhorn
 Eblatirri Efreet
 Dominator Bleb
-Octopus Token
+[_tokenType:#creatureTypes#,#characterClass#,Octopus]#_tokenType.capitalizeAll# Token
 the [_cardCount:ace,two,three,four,five,ten]#_cardCount# of [_cardSuit:spades,hearts,clubs,diamonds]#_cardSuit#
-a saltine with a Magic card back
+[_otherGame:Netrunner,Dominion,Hecatomb,Kaijudo,Uno,Cards Against Humanity][_cardFront:saltine,stale poptart,spent lotto scratcher,drycleaning receipt,#_otherGame# card]#_cardFront.a# with a Magic card back
 #planeswalkerFirstName#'s [_cardTypeQuery:creature,artifact][#cardTypeCardWithOneWordName#][_possession:#_cardName#,#emotion#]#_possession.capitalizeAll#
 M #randomRealCard# EX
 Magus of the #randomRealCard#
@@ -33,18 +33,19 @@ Robo#randomRealCard.capitalizeAll.noPunctuation.noSpaces#
 #randomRealCard# Elemental Blast
 [_cardTypeQuery:creature]#cardTypeCardWithOneWordName##_cardName# of the Pearl Trident
 Kami of the [_kamiWhat:#concreteNounOrPluralNoun#,#adj# #itemNoun.s#,#placeNoun#,#adj# #placeNoun#,#adj# #placeNounCanonical#]#_kamiWhat.capitalizeAll#
-#randomRealCard# (Not the #cardSet# One)
+[_original:#randomRealCard#,#randomRealCard#,#fakeCard#]#_original# (Not the #cardSet# One)
 Wormfang #creatureTypes.capitalize#
 Bloodfire #creatureTypes.capitalize#
 Wall of #abstractMassOrPluralNounOrEmotion.capitalizeAll#
 #demonym.capitalizeAll# Emissary
 Avatar of #abstractNounMassNounOrEmotion.capitalizeAll#
 Chain of #massNoun.capitalizeAll#
+Curse of #abstractNounOrMassNoun.capitalizeAll#
 #abstractNounMassNounOrEmotion.capitalizeAll# Elemental
 Clockwork [_type:#creatureTypes#,#creatureTypes#,#creatureTypeOrCharacterClass#]#_type.capitalizeAll#
 Crown of [_material:#emotion#,#massNoun#,#abstractMassOrPluralNounOrEmotion#]#_material.capitalizeAll#
 [_sliverType:#abstractNoun#,#abstractNounOrMassNoun#,#nounStateOfBeing#,#placeNoun#]#_sliverType.capitalizeAll.hyphenate# Sliver
-#abstractNounOrEmotion.capitalizeAll# Charm
+#abstractNounOrEmotion.capitalizeAll.hyphenate# Charm
 Oath of #characterClass.s.capitalizeAll#
 #abstractNounMassNounOrEmotion.capitalizeAll#monger
 [_whose:Urza's,Jixed]#_whose# #clothingOrAccessory.capitalizeAll#
@@ -58,6 +59,6 @@ Darksteel [#cardQueryOneWordNoncreatureArtifact#]#_cardName#
 #verbGerund.capitalizeAll# Shoal
 #randomRealCard# (Not the #novelCardSetName.capitalizeAll# One)
 Snow-Covered #randomRealCard#
-#bodypart.capitalize# in a Jar
+[_jarContents:#bodypart#,#bodypart#,#singularNoun#]#_jarContents.capitalize# in a Jar
 Form of the #creatureTypes.capitalize#
 Circle of Protection: [_someNoun:#abstractNoun#,#emotion#,#massNoun#,#pluralNoun#][_what:#creatureTypes.s#,#cardCategory.s#,#_someNoun#]#_what.capitalizeAll#

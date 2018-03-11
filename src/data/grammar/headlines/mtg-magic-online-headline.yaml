@@ -14,7 +14,9 @@
 #  this isn't your [grandpa]'s [cardCategory].
 #
 
-mtgoTwitterStyleHeadline:
+mtgoTwitterStyleHeadline: "[#cardTextVerbSearch#]#mtgoTwitterStyleHeadlineContent#"
+
+mtgoTwitterStyleHeadlineContent:
 - "#theXOfYHasZ#"
 - "#cardPunEventInvitation#"
 - "#replyWithCard#"
@@ -224,9 +226,20 @@ cardOneOff:
   #_whatToDo.capitalize# [_verb:#verbTransitive#,#_verbSuggestion#]#_verb# #_who#. 
   #hashtagDayMotivation#
   {newline}{newline}
+  #imgCard# 
+- |
+  [#cardTextVerbSearch#][_verbPun:#_cardverb#]
+  [_adv:feeling,not][_headline:I'm feeling #_cardverb.ed#.,Are you #_adv# #_cardverb.ed#?,Get #_cardverb.ed#!,Don't get #_cardverb.ed#!]
+  [_hashTag1:#hashtagArbitrary#][_hashTag2:#hashtagDay#,#hashtagDayMotivation#][_hashtags:#_hashTag1#,#,#_hashTag1# #_hashTag2#,#_hashTag2# #_hashTag1#]
+  #_headline#
+  {newline}
+  #_hashtags#
+  {newline}{newline}
   #imgCard#  
 
+# requires "_cardverb" to be defined
+hashtagArbitrary: "[_object:Yourself,Every Day,The World][_hashtag1Term:#_cardverb# #_object#,#gameConcept#,#mtgQuestionablePractice#,#mtgSlangTerm#]{hashtag}#_hashtag1Term.capitalizeAll.noPunctuation.noSpaces#"
 hashtagDay: "{hashtag}#CONTENT.dayOfWeekOccasion.capitalizeAll.noPunctuation.noSpaces##CONTENT.dayOfWeek.capitalize#"
-hashtagDayMotivation: "{hashtag}#CONTENT.dayOfWeekMotivation.capitalizeAll.noPunctuation.noSpaces##CONTENT.dayOfWeek.capitalize#"
+hashtagDayMotivation: "{hashtag}#CONTENT.dayOfWeekMotivation.lowercase.capitalizeAll.noPunctuation.noSpaces##CONTENT.dayOfWeek.capitalize#"
 
 creatureSearch: "[_customQuery:t=creature][#_customQuery.cardSearchCustomQuery#]"
