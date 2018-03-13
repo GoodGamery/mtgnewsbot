@@ -20,6 +20,10 @@ function getMonthDayOrdinal(date) {
 
 // MODIFIERS
 
+function currentFullDate() {
+  return getMonthDayOrdinal(new Date()) + currentYear();
+}
+
 function currentYear() {
   return '' + new Date().getFullYear();
 }

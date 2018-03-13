@@ -1,7 +1,7 @@
 disqualifyingAction:
 - "[_reading:reading every card's,repeatedly reading #randomRealCard#'s]#_reading# flavor text aloud"
 - smirking
-- refusing to wear a shirt
+- "refusing to wear [_wearWhat:a shirt,pants,shoes,socks,#clothingOrAccessory.aIfNeeded#,an ankle monitor,a shock collar,a GoPro]#_wearWhat#"
 - "slowly encroaching #their# [_thing:cards,spindown dice,playmat,#creatureTypes# tokens,#gameAccessory#]#_thing# into
   #their# opponent's play area"
 - "using [_system:eye blinks,tiny flags,mirrors,judge calls][_signal:baseball hand signals,a sophisticated system of #_system#,a well-trained #animal#]#_signal# to[_how:, secretly]#_how# communicate with [_who:a teammate,#person#,#their# #personRelationalUnique#]#_who#"
