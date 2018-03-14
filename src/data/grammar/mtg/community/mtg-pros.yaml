@@ -1,7 +1,7 @@
 {
   "people": ["#pros#","#pros#","#pro#","#pro#","#otherPersonality#"],
   "person": ["#pro#","#pro#","#otherPersonality#"],
-  "miscPersonSingular": ["#pro#", "#otherPersonality#", "#playerCategory#", "#psychographic#", "#officialEntity#"],
+  "miscPersonSingular": ["#pro#", "#otherPersonality#", "#psychographic#", "#officialEntity#"],
   "peoplePlural": ["#pros#", "#pros#", "#playerCategory.s#[#pluralPronouns#]","#playerCategory.s#[#pluralPronouns#]", "#financialStakeholders#"],
   "pro": [
       "Kai Budde[_proNickname:Kai][_proFullName:Kai Budde][#malePronouns#]",

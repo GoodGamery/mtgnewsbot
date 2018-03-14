@@ -37,6 +37,7 @@ reclusive
 rabid
 furious
 excitable
+upset
 nervous
 high-strung
 starving
