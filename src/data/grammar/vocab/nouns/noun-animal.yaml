@@ -37,6 +37,9 @@ animalGroup: "[_group:horde][_animals:#animalPlural#]#_group# of #_animals#"
 
 animalFancyGroup: "[_group:horde][_animals:#_animalPlural#][_fancyGroup:#_group#]#_fancyGroup# of #_animals#"
 
+animalFancyGroupDisposition: "[_group:horde][_animals:#_animalPlural#][_adj:#mood#][_fancyGroup:#_group#]#_fancyGroup# of #_adj# #_animals#"
+
+
 _animalPlural:
 - "[_fancyGroup:surfeit]skunks"
 - "[_fancyGroup:gaggle]geese"

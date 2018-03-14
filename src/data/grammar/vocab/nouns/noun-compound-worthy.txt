@@ -39,3 +39,4 @@ scroll
 bone
 chair
 ring
+soul

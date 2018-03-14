@@ -6,7 +6,7 @@ strategyRealization:
 - "Preview of #teaserCardSet#[_format:, #normalFormat#,in #normalFormat#]: Will [_deck:#deck#,#deckArch#,the new #deckVariation# deck]#_deck# be #deckDescription#?"
 
 playGuide:
-- "CLASSIC STRATEGY: [_adj:#adj#,#cardQuality#][_prefix:The Philosophy of,It's All About the,Next-Level][_topic:#massNoun#,#pluralNoun#,#abstractNoun#,#nouns#,#gameConcept#]#_prefix# #_topic.capitalizeAll#, by #pro.capitalize#"
+- "CLASSIC STRATEGY: [_adj:#adj#,#cardQuality#][_prefix:The Philosophy of,It's All About the,Next-Level][_topic:#massNoun#,#pluralNoun#,#abstractNoun#,#nouns#,#gameConcept#]#_prefix# #_topic.capitalizeAll#, by #proFullName#"
 - "[_proIs:#pro# is,#pros# #are#,Team #team# is][_developing:#verbCreating# #tech.a#,#verbCreating# #tech.a#,#verbDeveloping# #officialTech.a#][_magicIs:#officialEntity# #are# #verbDeveloping# #officialTech.a#][_what:#_proIs.capitalize# #_developing# to #verbDefeat# #obstacle#,#_magicIs# to #wizardsGoal#]#_what#"
 - "[_verbed:printed,banned,unbanned,played,ignored,reprinted]
   [_cardCategory:#cardClassificationBase#,#popularFormat# #cardClassificationBase#,#basicColors# #cardClassificationBase#]
@@ -32,7 +32,7 @@ tipStrategy:
   #_change# Your #deckObjective# by #deckChange#"
 - "#tipTitle#: #deckChange.capitalize# is #adj.a# idea, [_says:says,reports,suggests,admits,warns,advises,proposes,cautions,according to]#_says#
   #pro#"
-- "[_title:#tipTitle#,#pro#]#_title.capitalize#: [_replacement:#randomAnyCard# can replace
+- "[_title:#tipTitle#,#proFullName#]#_title.capitalize#: [_replacement:#randomAnyCard# can replace
   #randomCardAlone#,#cardCategory.s# can replace #cardCategory.s#]#_replacement.capitalize#
   in #format#"
 - "#tipTitle#: #improvementGoal.capitalize# by #deckChange#"

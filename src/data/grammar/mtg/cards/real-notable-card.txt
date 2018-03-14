@@ -11,8 +11,10 @@ Brushwagg
 Cheatyface
 Clambassadors
 Collector Protector
+Colossal Dreadmaw
 Creature Guy
 Dwarven Blastminer
+Earl of Squirrel
 Elephant Ambush
 Elvish Impersonators
 Energizer
@@ -24,6 +26,7 @@ Gleemax
 Gravelgill Axeshark
 Hidetsugu's Second Rite
 Hanweir, the Writhing Township
+Hornswaggle
 Hurloon Wrangler
 Imaginary Pet
 Incite
@@ -31,6 +34,8 @@ Island of Wak-Wak
 Jade Leech
 Jar of Eyeballs
 Kaboom!
+Krark's Thumb
+Krark's Other Thumb
 Krazy Kow
 Laboratory Maniac
 Land Tax
@@ -51,10 +56,12 @@ Platinum Angel
 Relentless Rats
 Rocket-Powered Turbo Slug
 Rumbling Slum
+Sea Legs
 Scissors Lizard
 Searing Flesh
 Shahrazad
 Shoving Match
+Skullduggery
 Sneaky Homunculus
 Steamflogger Boss
 Storm Cauldron

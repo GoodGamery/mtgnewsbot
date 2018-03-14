@@ -19,7 +19,7 @@
       "SCG #city#"
   ],
   "nonTournamentEvent": [
-      "the next team draft",
+      "the [_when:last,next]#_when# team draft",
       "Casual Commander Night",
       "a drunken kitchen-table game",
       "a 24-hour [_platform:MTGO,Twitch,live]#_platform# stream"

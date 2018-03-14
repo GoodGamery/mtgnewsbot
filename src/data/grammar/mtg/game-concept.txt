@@ -1,43 +1,43 @@
-bad draws
-mana screw
-poor play
-slow play
-connection problems
-the shuffler
-bugs
-bad cards
-counter's
-land destruction
-discard
-two-card combos
-three-card combos
-nonbos
-swiss pairings
-collusion
-scouting
-manabases
-mulliganing
-scrying
-playing first
-drawing first
-shuffling
-topdecks
-combat tricks
-tapping out
-chump blocking
-milling
-jedi mind tricks
-tight play
-loose play
-fancy play
-getting lucky
-lethal damage
-alternate win cons
-the storm scale
-deckbuilding
-#gameStep#
-good cards, like #randomRealCard#
-bad cards, like #randomRealCard#
-#cardQuality# cards, like #randomRealCard#
-#randomAnyCard#
-#gameAccessory.s#
+bad draws[_is:are]
+mana screw[_is:is]
+poor play[_is:is]
+slow play[_is:is]
+connection problems[_is:are]
+the shuffler[_is:is]
+bugs[_is:are]
+bad cards[_is:are]
+counter's[_is:are]
+land destruction[_is:is]
+discard[_is:is]
+two-card combos[_is:are]
+three-card combos[_is:are]
+nonbos[_is:are]
+swiss pairings[_is:are]
+collusion[_is:is]
+scouting[_is:is]
+manabases[_is:are]
+mulliganing[_is:is]
+scrying[_is:is]
+playing first[_is:is]
+drawing first[_is:is]
+shuffling[_is:is]
+topdecks[_is:are]
+combat tricks[_is:are]
+tapping out[_is:is]
+chump blocking[_is:are]
+milling[_is:is]
+jedi mind tricks[_is:are]
+tight play[_is:is]
+loose play[_is:is]
+fancy play[_is:is]
+getting lucky[_is:is]
+lethal damage[_is:is]
+alternate win cons[_is:are]
+the storm scale[_is:is]
+deckbuilding[_is:is]
+#gameStep#[_is:is]
+good cards, like #randomRealCard#[_is:are]
+bad cards, like #randomRealCard#[_is:are]
+#cardQuality# cards, like #randomRealCard#[_is:are]
+#randomAnyCard#[_is:is]
+#gameAccessory.s#[_is:are]
