@@ -73,10 +73,10 @@ function randomUpcomingMonthDay() {
   return getMonthDayOrdinal(date);
 }
 
-function randomFutureDate(maxYears=10) {
+function randomFutureDate() {
+  const maxYears = 10; 
   const date = new Date();
   date.setDate(randomInt(1,maxYears) * randomInt(1, 365)); // choose a day 7-60 days in future
-  console.log('Date:' + date.toString());
   return getMonthDayOrdinal(date) + ', ' + date.getFullYear();
 }
 

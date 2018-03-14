@@ -178,19 +178,32 @@ banSomethingAnnouncement:
 - |
   [_very:very,extremely,incredibly][_very:#_very#,#_very.allCaps#][_wrong:wrong before,mistaken,confused last time]
   [_reaction:happy,sad,upset,#_very# happy,#mood#,shut up for a while,stop complaning,go crazy,quit magic]
-  [_should:should,will probably,might][_targetPerson:#miscPersonSingular#,#peoplePlural#]
+  [_should:should,will probably,might,may][_targetPerson:#miscPersonSingular#,#peoplePlural#]
   [_opinion:great,awful,terrible,misguided,disastrous,ill-advised,crazy][_decision:decision,idea,change,move]
   [_mistake:mistake,omission,error][_bannedUnbannedAgain:banned again,unbanned again,banned. Again,unbanned. Again][_dyingWhat:Magic,#_format#][_banUnban:ban,unban][_trainwreck:trainwreck,disaster,giant mess]
   [_becauseWhy:We have no idea,Why not,Because #_dyingWhat# is dying,Because we don't care anymore,No reason,Because we can't #_banUnban# now.,Because we can't #_banUnban# #randomCardAlone# now,Because it's too late to #_banUnban# #randomCardAlone# now,Because we can't turn back now,Because #_format# is a #_trainwreck#,Because it doesn't really matter anymore,No reason]
   [_nevermind:nevermind,nevermind that,forget that,maybe not,I think this is a typo,we're going to have a long discussion with #officialEntity# about this]
-  [_actuallyNevermind:Actually#comma# #_nevermind#,Wait#comma# #_nevermind#,Hold on a second. #_nevermind.capitalize#]
-  [_banStatus:banned,banned,banned,banned,unbanned,unbanned,unbanned,unbanned,now legal,#_bannedUnbannedAgain#,#_bannedUnbannedAgain#,still banned,now legal]
+  [_actuallyNevermind:Actually#comma# #_nevermind#,Wait#comma# #_nevermind#,Hold on a second. #_nevermind.capitalize#,On second thought#comma# #_nevermind#]
+  [_banStatus:banned,banned,banned,banned,unbanned,unbanned,unbanned,restricted,now legal,#_bannedUnbannedAgain#,#_bannedUnbannedAgain#,still banned,now legal]
   [_monthsYears:months,years][_tempBanDuration:for one day,for one week,for one month,until #officialEntityPerson# gets back from vacation]
-  [_followUp:,,,,,,,, This may be a mistake., We're not sure why., We probably should have mentioned this in the last announcement., #_actuallyNevermind#., This corrects an #_mistake# from #count# #_monthsYears# ago., This was #officialEntity#'s idea., We hope you're happy., But only #_tempBanDuration#., It turns out we were #_very# wrong about this last time., This #_should# make #_targetPerson# #_reaction#., Personally, I think this is a #_opinion# #_decision#, Why? #_becauseWhy#]  
+  [_followUp:,,,,,,,, This may be a mistake., We're not sure why., We probably should have mentioned this in the last announcement., #_actuallyNevermind#., This corrects an #_mistake# from #count# #_monthsYears# ago., This was #officialEntity#'s idea., We hope you're happy., But only #_tempBanDuration#., It turns out we were #_very# wrong about this last time., This #_should# make #_targetPerson# #_reaction#., Personally#comma# I think this is a #_opinion# #_decision#., Why? #_becauseWhy#., Deal with it., We're not kidding., This is not a drill., This decision will not be reversed. Ever., It's about time#comma# right?, Please remain calm., We'll explain why later. We promise., Trust us on this one., Though this could be a mistake., Wait#comma# seriously? Nobody ever tells me anything., We're just as surprised as you are.]  
   {newline}{newline}
   #_banTarget# #_is# #_banStatus#.#_followUp#
 
 banCardAnnouncement: "[_is:is][_banTarget:#randomCardAlone#]#banSomethingAnnouncement#"
+
+banAnnouncementTarget:
+- "#randomCardAlone#"
+- "#randomCardAlone#"
+- "#randomCardAlone#"
+- "#randomCardAlone#"
+- "#randomCardAlone#"
+- "#randomCardAlone#"
+- "#randomCardAlone#"
+- "#randomCardAlone#"
+- "#mtgQuestionablePractice.capitalize#"
+- "#disqualifyingAction.capitalize#"
+- "[#pro#]#_proFullName#"
 
 banFormatAnnouncement:
 - |
@@ -198,16 +211,17 @@ banFormatAnnouncement:
   {newline}{newline}
   #_format#:
   [_moreBans:,,,#banCardAnnouncement#,#banCardAnnouncement#,#banCardAnnouncement##banCardAnnouncement#]#_moreBans#
-  [_is:is][_target:#randomCardAlone#,#randomCardAlone#,#randomCardAlone#,#randomCardAlone#,#randomCardAlone#,#randomCardAlone#,#randomCardAlone#,#randomCardAlone#,#mtgQuestionablePractice#,#disqualifyingAction#,#person#][_banTarget:#_target.capitalize#]#banSomethingAnnouncement#
+  [_is:is][_banTarget:#banAnnouncementTarget#]#banSomethingAnnouncement#
 
 mtgoStyleAnnouncement:
 - |
   [_format1:#format#][_format2:#alternativeConstructedFormat#,#alternativeDraftFormat#][_format3:#format#,All other formats]
   Announcement Date: #CONTENT.currentFullDate#
   {newline}
-  [_format:#_format1#]#banFormatAnnouncement#[_format:#_format2#][_second:,{newline}#banFormatAnnouncement#][_format:{newline}#_format3#][_third:,,#banFormatAnnouncement#]#_second##_third#
+  [_format:#_format1#]#banFormatAnnouncement#[_format:#_format2#][_second:,{newline}#banFormatAnnouncement#][_format:{newline}#_format3#][_third:,,#banFormatAnnouncement#]#_second##_third#  
   {newline}{newline}{newline}
-  Effective Date: [_date:#CONTENT.randomUpcomingMonthDay##comma# #CONTENT.currentYear#]#_date#
+  [_effectiveDate:#CONTENT.randomUpcomingMonthDay##comma# #CONTENT.currentYear#,#CONTENT.randomFutureDate#]
+  Effective Date: [_mtgoEffective:,#CONTENT.randomUpcomingMonthDay##comma# #CONTENT.currentYear#{newline}{newline}MTGO Effective Date#colon#][_date:#CONTENT.randomUpcomingMonthDay##comma# #CONTENT.currentYear#,#CONTENT.randomFutureDate#]#_mtgoEffective##_effectiveDate#
 
 cardOneOff:
 - |
