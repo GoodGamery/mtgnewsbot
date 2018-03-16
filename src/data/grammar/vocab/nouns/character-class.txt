@@ -150,6 +150,9 @@ homewrecker
 babysitter
 chauffeur
 provocateur
+cannibal
+hermit
+refugee
 #playerCategory#
 #personAuthorityFigure#
 #personRelational#

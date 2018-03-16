@@ -1,13 +1,13 @@
 clickbait:
-- Are you [_verbing:overrating,underrating]#_verbing# [_thing:#gameConcept#,#randomAnyCard#,#deckArchOrCategory#,#creatureTypes.s#,#cardSet#]#_thing#?
-- "[interrogative:Why,How]#interrogative# #pro# is #verbDefeating# #nouns#"
+- "Are you [_format:#format#,#popularFormat#][_cardOrPractice:#randomAnyCard#,#gameConcept#,#mtgQuestionablePractice#][_verbing:overrating,underrating,overvaluing,undervaluing][_thing:#gameConcept#,#randomCardAlone#,#deckArchOrCategory#,#creatureTypes.s#,#cardSet#,#_cardOrPractice# in #_format#]#_verbing# #_thing#?[_opinion:, #pro# thinks you might be ,You'd be surprised, Subscribe to MTGNewsbot Premium to find out]"
+- "[interrogative:Why,How][_defeating:#verbDefeating#,planning to #verbDefeat#]#interrogative# #pro# is #_defeating# #nouns#"
 - "#count.capitalize# [_thing:#cardCategory.s#,#creatureTypes.s#,#cardSet# Cards,#format#
   Cards]#_thing.capitalize# [reprinted:That Need to be Reprinted,We'd Love to See
   Reprinted in #teaserCardSet#]#reprinted#"
 - "#count.capitalize# #cardCategory.s# from #teaserCardSet# leaked"
 - "#format# Banwatch: #randomCardAlone.capitalize#"
-- '[_change:,more ,less ,running ]Have you considered? [_consider:#randomAnyCard# in #format#,#deckArch#,#deckArch#,#_change##cardCategory.s# in #deckArch#]#_consider.capitalize#'
-- 'PICTURES: #pro.capitalize#''s [_cosplayAdj:amazing,convincing,elaborate,unconventional]#_cosplayAdj#
+- '[_change:, play more , play fewer , run ][#pro#][_leadIn:Have you considered?,HOT TECH#colon# play,#_proNickname##colon# play]#_leadIn# [_consider:#randomAnyCard# in #format#,#deckArch#,#deckArch#,#_change##cardCategory.s# in #deckArch#]#_consider.capitalize#'
+- 'PICTURES: #pro#''s [_cosplayAdj:amazing,convincing,elaborate,unconventional]#_cosplayAdj#
   cosplay of [_who:#randomCardAlone#,#character#]#_who#'
 - 'New preview card from #teaserCardSet#! Is it [_desc:#descriptor#,#adjComparative#]#_desc.a# #realPowerfulCard#?'
 - "[_opener:SHOCKER!,Unbelievable!,Rumor#colon#,BREAKING#colon#,It's true#colon#,UPDATE#colon#]#_opener#
@@ -18,22 +18,32 @@ clickbait:
 
 clickbaitShocker:
 - "#pro# [_picked:first picked,last picked,wheeled,drafted,topdecked,hate drafted,windmill slammed,morphed]#_picked#
-  #randomAnyCard#[_challenge: and you won't believe,. You'll be floored by,.
-  Guess,. Find out,. #pros.capitalizeAll# are still talking about#]#_challenge.capitalize# [_what:what
-  happened next,what #pro.capitalize# said next,what #pro.capitalize# did next,why
-  #pro.capitalize# called a judge]#_what#"
+  #randomAnyCard#[_challenge: and you won't believe,. You'll be floored by,. Guess,. Find out,. #peoplePlural.capitalizeAll# are still talking about#]#_challenge.capitalize#[_what:what happened next,what #pro# said next,what #pro# did next,why #pro# called a judge] #_what#"
 
 wackyCharacter:
-- Chinese investors
-- a future version of themselves
-- 'a boy with #count# months to live'
-- a swarm of [_insectAdjective:sentient,psychic,intelligent,cartoon]#_insectAdjective#
-  [_flyingInsects:gnats,moths,bees,mosquitoes]#_flyingInsects#
-- "[_maleAdjective:Stinky,Big,Corduroy,Teflon,Rodeo,Three Finger]#_maleAdjective#
-  [_maleName:Pete,Jeff,Craig,Jimmy,Jack]#_maleName#"
+- "#person#"
+- "#miscPersonSingular#"
+- "a future version of #themselves#"
 - "#their# own grandfather"
-- a woman who can't recall where she parked her car
-- a shadowy man holding a beige envelope
 - local law enforcement
-- a wise rastafarian
-- a group of wisecracking hoodlums
+- a foreign dignitary
+- a crazy cat lady
+- a mad scientist
+- an absent-minded professor
+- a damsel in distress
+- a gentleman thief
+- a hooker with a heart of gold
+- a hotshot pilot
+- a manic pixie dream girl
+- a wide-eyed country bumpkin
+- a star-stuck fan
+- a tortured artist
+- "a wise [_who:old man,old woman,old fool,professor,country sheriff,rastafarian]#_who#"
+- "a woman who can't recall [_what:where she parked her car,her own name]#_what#"
+- "a shadowy [_who:man,figure]#_who# [_what:holding a beige envelope,with a metal briefcase,in a black trenchcoat,with mirrored sunglasses]#_what#"
+- "[_from:Chinese,Russian,foreign,Canadian,extraterrestrial][_who:#_from# investors,#_from.a# diplomat,#_from.a# delegation]#_who#"
+- "a group of wisecracking [_group:hoodlums,teenagers,senior-citizens,improv comics]#_group#"
+- "a boy with [_lifeBound:#count# months,#count# weeks][_what:#_lifeBound# to live,nothing to lose]#_what#"
+- "a swarm of [_insectAdjective:sentient,psychic,intelligent,enormous][_flyingInsects:gnats,moths,bees,mosquitoes,beetles,hermit crabs]#_insectAdjective# #_flyingInsects#"
+- "[_num:No,One,Two,#count.capitalize#][_hometown:Cincinatti,Toledo,Buffalo,Friscom,Hollywood,Uptown,Topeka,Kansas][_maleAdjective:Stinky,Big,Corduroy,Teflon,Rodeo,Klondike,Three-Finger,Whiskey,Sly,Calamity,Greasy,Calico,Slippin',“#massNoun.capitalize#”,#_hometown#,#_num#-#bodypart.capitalize#][_name:Pete,Jeff,Craig,Jimmy,Jack,Nick,Rhonda,Sally]#_maleAdjective# #_name#"
+- "[_adj:#mood#,#mood#,#mood#,undercover,smarmy,extremely confused,foolhardy,depraved,shady,crafty,wide-eyed,troubled,deranged,delirious,timid][_what:robot,child,nun,schoolteacher,preacher,gentleman,con man,gigolo,leprechaun,recluse,fortune-teller,#characterClass#]#_adj.a# #_what#"

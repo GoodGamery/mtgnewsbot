@@ -78,6 +78,8 @@ shell companies
 assuming a frictionless system
 lying to tournament officials
 unforced errors
+box mapping
+using graveyard cards as tokens
 [_mode:mode,buttons]turbo #_mode#
 [_loudness:loud talking,loud outbursts,emotional outbursts]#_loudness#
 [_onesPlace:0,5,#num0-9#]#num1-5##_onesPlace#-card decks

@@ -49,7 +49,7 @@ disqualifyingAction:
 - "throwing [_what:cards,#their# deck,#their# sideboard,#gameAccessory.a#, unsleeved copies of #randomRealCard#]#_what# across the table and shouting at [_who:#their# opponents,#person#]#_who#"
 - ugly sleeves
 - "using [_sleeveType:anime,Ultra PRO,penny,holographic,blatantly mismatched]#_sleeveType# sleeves"
-- continuing to play as if they are town
+- continuing to play as if #they# #are# town
 - "offering to determine the match outcome via [_method:arm wrestling,thumb wrestling,a riddling contest,a staring contest,a hands-against-a-hard-body contest]#_method#"
 - trying to make fetch happen
 - not waiting for Floral Spuzzem to decide which artifact to destroy
@@ -100,20 +100,19 @@ tshirtPhrase:
 - "[_personality:#historicalFigure#,#character#]I'm with #_personality#"
 
 dumbScenario:
-- attempt to roll back the damage-on-stack rules
+- "[_lobby:push #officialEntity# to,ask #officialEntity# to,plead with #officialEntity# to,try to,attempt to]#_lobby# [_goal:bring back damage on the stack,bring back mana burn,allow players to mana weave again,bring back the planeswalker redirection rule,return to using “he or she” in rules text,bring back mana burn]#_goal#"
 - 'join the development team of their fantasy CCG [_gameName:"#creatureTypes# #placeNoun#","Zoxelorn
   #count#","#abstractMassOrPluralNounOrEmotion# #_fantasyCharacterClass#","#itemNoun# #_scenarioNoun#","#characterClass# #groupNoun##colon# #tabletopGameSuffix#","#creatureTypes# #_scenarioNoun##colon# the #abstractNoun#", "#characterClass.s# of #locationRealOrFantasy#"]#_gameName.capitalizeAll#'
-- join their [_rule:"Fist Bump,"Get Completely Loaded,"Drive With Your Eyes Closed,"Watch
-  Anime,"Don't Pay Your Taxes,"Wander Aimlessly]#_rule# For Charity" [_initiative:initiative,campaign,drive,effort]#_initiative#
+- join their [_target:#playerCategory.a#,#animal.a#,#creatureType.a#,#miscPersonSingular.a#][_rule:Fist Bump,Get Completely Loaded,Drive With Your Eyes Closed,Watch
+  Anime,Don't Pay Your Taxes,Wander Aimlessly,Heckle a Child,Mana Weave,#nounActivity.capitalizeAll#,#keywordAction.capitalizeAll#,#verbExclaim.capitalizeAll#,Kiss #_target.a#]"#_rule# For Charity" [_initiative:initiative,campaign,drive,effort]#_initiative#
 - participate in their [_magicType:Two-Headed Giant,Pauper EDH,Vintage Singleton,No
   LD/No Counters/No Burn]#_magicType# invitational tournament
-- 'covertly collect information on #pro# in order to [_rule:learn their shuffling
-  routine,get a better idea of what they look like naked,know what hate cards to board
+- 'covertly collect information on #pro# in order to [_rule:learn #their# shuffling routine,get a better idea of what #they# look#s# like naked,know what hate cards to board
   in against them]#_rule#'
 - infiltrate WOTC headquarters and [_act:destroy the reserved list,trash MaRo's desk,pee in the Mana Pool,steal the Shivan Dragon statue,fall asleep in The Pit]#_act#
 - 'teach them how to beat #deck#'
 - fix MTGO so that it works properly
-- 'help them complete their #realBadCard# playset'
+- 'help them complete #their# #realBadCard# playset'
 
 _fantasyCharacterClass:
 - "#fantasyCharacterClass#"
