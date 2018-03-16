@@ -6,7 +6,7 @@ clickbait:
   Reprinted in #teaserCardSet#]#reprinted#"
 - "#count.capitalize# #cardCategory.s# from #teaserCardSet# leaked"
 - "#format# Banwatch: #randomCardAlone.capitalize#"
-- '[_change:, play more , play fewer , run ][#pro#][_leadIn:Have you considered?,HOT TECH#colon# play,#_proNickname##colon# play]#_leadIn# [_consider:#randomAnyCard# in #format#,#deckArch#,#deckArch#,#_change##cardCategory.s# in #deckArch#]#_consider.capitalize#'
+- '[_change:, play more , play fewer , run ][#pro#][_leadIn:Have you considered?,HOT TECH#colon# Play,#_proNickname##colon# Play]#_leadIn# [_consider:#randomAnyCard# in #format#,#deckArch#,#deckArch#,#_change##cardCategory.s# in #deckArch#]#_consider.capitalize#'
 - 'PICTURES: #pro#''s [_cosplayAdj:amazing,convincing,elaborate,unconventional]#_cosplayAdj#
   cosplay of [_who:#randomCardAlone#,#character#]#_who#'
 - 'New preview card from #teaserCardSet#! Is it [_desc:#descriptor#,#adjComparative#]#_desc.a# #realPowerfulCard#?'
