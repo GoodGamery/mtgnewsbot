@@ -112,7 +112,7 @@ cotdWordPairPonderable:
 cotdCustomQueryDecscription:
 - >
   [#cotdLegendaryCreatureSearch#]
-  [_preposition:by][_cause:#causeOfDeath#][_deathAdj:fabled,fateful,infamous,notorious,historical]This top-down card inspired by #historicalFigure# turns #their# #_deathAdj# death #_preposition# #_cause# on #their# enemies—[_target:opponents,friends,#personRelationalUnique#][_andYours:and yours,and your opponents,and your #_target#,and #character#'s #_target#,pet #animal#,lucky you,fortunately for you]#_andYours#.
+  [_preposition:by][_cause:#causeOfDeath#][_deathAdj:fabled,fateful,infamous,notorious,historical]This top-down card inspired by #historicalFigure# turns #their# #_deathAdj# death#s# #_preposition# #_cause# on #their# enemies—[_target:opponents,friends,#personRelationalUnique#][_andYours:and yours,and your opponents,and your #_target#,and #character#'s #_target#,pet #animal#,lucky you,fortunately for you]#_andYours#.
 - >
   [#cotdLegendaryCreatureSearch#]
   [_legendImgUrl:#_cardImgUrl1#][_legendSubtype:#_cardSubtype1#]#_legendName# has [_agenda:a plan,an agenda,a bright idea,a mission in life,a puzzle to solve,a philosophical question to ponder,homework to do,a survey to conduct,a dispute to settle,a bee in their bonnet]#_agenda#. They're going to [_solve:decide,answer the question of,find out,finally determine,ask #planeswalkerFirstName#]#_solve# #cotdWordPairPonderable#.[_cardImgUrl1:#_legendImgUrl#]

@@ -101,7 +101,7 @@ tshirtPhrase:
 
 dumbScenario:
 - "[_lobby:push #officialEntity# to,ask #officialEntity# to,plead with #officialEntity# to,try to,attempt to]#_lobby# [_goal:bring back damage on the stack,bring back mana burn,allow players to mana weave again,bring back the planeswalker redirection rule,return to using “he or she” in rules text,bring back mana burn]#_goal#"
-- 'join the development team of their fantasy CCG [_gameName:"#creatureTypes# #placeNoun#","Zoxelorn
+- 'join the development team of their fantasy [_game:CCG,TCG,roleplaying game,miniatures game,tabletop game] [_gameName:"#creatureTypes# #placeNoun#","Zoxelorn
   #count#","#abstractMassOrPluralNounOrEmotion# #_fantasyCharacterClass#","#itemNoun# #_scenarioNoun#","#characterClass# #groupNoun##colon# #tabletopGameSuffix#","#creatureTypes# #_scenarioNoun##colon# the #abstractNoun#", "#characterClass.s# of #locationRealOrFantasy#"]#_gameName.capitalizeAll#'
 - join their [_target:#playerCategory.a#,#animal.a#,#creatureType.a#,#miscPersonSingular.a#][_rule:Fist Bump,Get Completely Loaded,Drive With Your Eyes Closed,Watch
   Anime,Don't Pay Your Taxes,Wander Aimlessly,Heckle a Child,Mana Weave,#nounActivity.capitalizeAll#,#keywordAction.capitalizeAll#,#verbExclaim.capitalizeAll#,Kiss #_target.a#]"#_rule# For Charity" [_initiative:initiative,campaign,drive,effort]#_initiative#
