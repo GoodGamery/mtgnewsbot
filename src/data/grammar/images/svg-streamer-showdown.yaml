@@ -1,0 +1,46 @@
+svgStreamerShowdown: "[#svgThemeColors#][#cardFinderChooseFourCreatures#]{svg svgString=`#svgShowdown#`}"
+
+cardFinder: https://goodgamery.com/api/mtg/image?card=
+
+# search for legendary creatures
+
+cardFinderChooseFourCreatures: |
+  [_searchTerm:"creature"][#_searchTerm.cardSearchByType(4)#]
+  [_card1:#_cardRawName1#]
+  [_card2:#_cardRawName2#]
+  [_card3:#_cardRawName3#]
+  [_card4:#_cardRawName4#]
+
+svgThemeColors:
+  - "[_themeColor1:indigo][_themeColor2:goldenrod][_svgComeOnStrokeColor:gold][_svgComeOnOpacity:0.2]"
+  - "[_themeColor1:steelblue][_themeColor2:lightsteelblue][_svgComeOnStrokeColor:gold][_svgComeOnOpacity:0.2]"
+  - "[_themeColor1:darkred][_themeColor2:papayawhip][_svgComeOnStrokeColor:gold][_svgComeOnOpacity:0.4]"
+  - "[_themeColor1:seagreen][_themeColor2:darkseagreen][_svgComeOnStrokeColor:gold][_svgComeOnOpacity:0.2]"
+  - "[_themeColor1:oldlace][_themeColor2:white][_svgComeOnStrokeColor:gold][_svgComeOnOpacity:0.2]"
+  - "[_themeColor1:#d27f19][_themeColor2:#dbeeff][_svgComeOnStrokeColor:gold][_svgComeOnOpacity:0.2]"
+
+svgBodyTextStyle: >
+  color: white;
+  padding: 5px;
+  font-family: Arial, 'Liberation Sans', 'DejaVu Sans', sans-serif;
+  font-weight: 600; text-shadow: 1px 1px 1px black; text-align:center;
+  font-size: 32px; line-height: 30px; 
+
+
+svgShowdown: |
+  <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="700" height="420">
+    <defs>
+      <mask id="cardArtMask" maskUnits="userSpaceOnUse" mask-type="alpha">
+        <image x="0" y="0" width="182" height="256" xlink:href="./data/images/cardmask.png" />
+      </mask>         
+      <g id="Card1">
+        <rect x="-2" y="-2" width="189" height="260" rx="12" ry="12" style="fill:#_themeColor1#; stroke-width:2; stroke-opactity:0.9; stroke-color:red;""/>                    
+        <image xlink:href="#cardFinder##_card1#" x="0" y="0" mask="url(\#cardArtMask)" width="183" height="256" />
+      </g>
+    </defs>
+    <image width="100%" height="100%" xlink:href="#art700x420#" />
+                
+    <g>
+      <use xlink:href="\#Card1" x="0" y="0" transform="translate(50, 50)" />
+    </g>
+  </svg>      
