@@ -13,18 +13,49 @@ _showdownBackgroundImageFile: "#_showdownBackgroundImageDirPath#/bg#_showdownBac
 cardQueryWallOf: '[_customQuery:name="Wall of"][#_customQuery.cardSearchCustomQuery(1)#][_cardName:#_cardName1#]#_cardName# → Wall of #pluralNounOrMassNoun.capitalizeAll#'
 
 
-cardFinderChooseEightCreatures: |
-  [_searchTerm:"creature"][#_searchTerm.cardSearchByType(8)#]
-  [_card1:#_cardRawName1#][_cardname:#_cardRawName1#][_cardfamiliarname:#_cardFamiliarName1#][_creaturetype:#_cardSomeCreatureType1#][_cardDisplayName1:#_cardDisplayName#]
-  [_card2:#_cardRawName2#][_cardname:#_cardRawName2#][_cardfamiliarname:#_cardFamiliarName2#][_creaturetype:#_cardSomeCreatureType2#][_cardDisplayName2:#_cardDisplayName#]
-  [_card3:#_cardRawName3#][_cardname:#_cardRawName3#][_cardfamiliarname:#_cardFamiliarName3#][_creaturetype:#_cardSomeCreatureType3#][_cardDisplayName3:#_cardDisplayName#]
-  [_card4:#_cardRawName4#][_cardname:#_cardRawName4#][_cardfamiliarname:#_cardFamiliarName4#][_creaturetype:#_cardSomeCreatureType4#][_cardDisplayName4:#_cardDisplayName#]
-  [_card5:#_cardRawName5#][_cardname:#_cardRawName5#][_cardfamiliarname:#_cardFamiliarName5#][_creaturetype:#_cardSomeCreatureType5#][_cardDisplayName5:#_cardDisplayName#]
-  [_card6:#_cardRawName6#][_cardname:#_cardRawName6#][_cardfamiliarname:#_cardFamiliarName6#][_creaturetype:#_cardSomeCreatureType6#][_cardDisplayName6:#_cardDisplayName#]
-  [_card7:#_cardRawName7#][_cardname:#_cardRawName7#][_cardfamiliarname:#_cardFamiliarName7#][_creaturetype:#_cardSomeCreatureType7#][_cardDisplayName7:#_cardDisplayName#]
-  [_card8:#_cardRawName8#][_cardname:#_cardRawName8#][_cardfamiliarname:#_cardFamiliarName8#][_creaturetype:#_cardSomeCreatureType8#][_cardDisplayName8:#_cardDisplayName#]
+# cardFinderChooseEightCreatures: |
+#   [_searchTerm:"creature"][#_searchTerm.cardSearchByType(8)#]
+#   [_cardname:#_cardRawName1#][_cardfamiliarname:#_cardFamiliarName1#][_creaturetype:#_cardSomeCreatureType1#][_cardDisplayName1:#_cardDisplayName#]
+#   [_cardname:#_cardRawName2#][_cardfamiliarname:#_cardFamiliarName2#][_creaturetype:#_cardSomeCreatureType2#][_cardDisplayName2:#_cardDisplayName#]
+#   [_cardname:#_cardRawName3#][_cardfamiliarname:#_cardFamiliarName3#][_creaturetype:#_cardSomeCreatureType3#][_cardDisplayName3:#_cardDisplayName#]
+#   [_cardname:#_cardRawName4#][_cardfamiliarname:#_cardFamiliarName4#][_creaturetype:#_cardSomeCreatureType4#][_cardDisplayName4:#_cardDisplayName#]
+#   [_cardname:#_cardRawName5#][_cardfamiliarname:#_cardFamiliarName5#][_creaturetype:#_cardSomeCreatureType5#][_cardDisplayName5:#_cardDisplayName#]
+#   [_cardname:#_cardRawName6#][_cardfamiliarname:#_cardFamiliarName6#][_creaturetype:#_cardSomeCreatureType6#][_cardDisplayName6:#_cardDisplayName#]
+#   [_cardname:#_cardRawName7#][_cardfamiliarname:#_cardFamiliarName7#][_creaturetype:#_cardSomeCreatureType7#][_cardDisplayName7:#_cardDisplayName#]
+#   [_cardname:#_cardRawName8#][_cardfamiliarname:#_cardFamiliarName8#][_creaturetype:#_cardSomeCreatureType8#][_cardDisplayName8:#_cardDisplayName#]
 
-_cardDisplayName:
+showdownCreatureVariation:
+# - "[_cardname:Willbender][_cardDisplayName:#pluralNounOrMassNoun.capitalizeAll#bender]"
+- '[_customQuery:name="Wall of"][#_customQuery.cardSearchCustomQuery(1)#][_cardname:#_cardName1#][_cardDisplayName:Wall of #pluralNounOrMassNoun.capitalizeAll#]'
+- "[_creatureType:Wizard][#_creatureType.cardSearchByType(1)#][_cardname:#_cardName1#][_magic:#abstractMassOrItemNounOrEmotion.capitalizeAll.hyphenate#][_cardDisplayName:#_magic# Mage,#_magic# Wizard,Magus of the #pluralNounOrMassNoun.capitalizeAll#]"
+- "[_creatureType:Beast][#_creatureType.cardSearchByType(1)#][_cardname:#_cardName1#][_desc:#abstractMassOrItemNounOrEmotion.capitalizeAll#,#mood#,#adj#][_compoundSuffix:howler,hopper,ripper,diver,stomper,crusher,thrasher,beast][_cardDisplayName:#_desc.capitalizeAll.hyphenate# Beast,#nonPlaneStoryLocation# #nounCompoundWorthy.capitalize##_compoundSuffix#]"
+
+
+showdownCreatureCardFinderSearch: |
+  [_searchTerm:"creature"][#_searchTerm.cardSearchByType(1)#]
+  [_cardname:#_cardRawName1#][_cardfamiliarname:#_cardFamiliarName1#][_creaturetype:#_cardSomeCreatureType1#][_cardDisplayName:#_cardDisplayNameVariant#]
+
+cardFinderChooseCreature: 
+- "#showdownCreatureCardFinderSearch#"
+- "#showdownCreatureCardFinderSearch#"
+- "#showdownCreatureCardFinderSearch#"
+- "#showdownCreatureCardFinderSearch#"
+- "#showdownCreatureCardFinderSearch#"
+- "#showdownCreatureCardFinderSearch#"
+- "#showdownCreatureCardFinderSearch#"
+- "#showdownCreatureVariation#"
+
+cardFinderChooseEightCreatures: |
+  [#cardFinderChooseCreature#][_card1:#_cardname#][_cardDisplayName1:#_cardDisplayName#]
+  [#cardFinderChooseCreature#][_card2:#_cardname#][_cardDisplayName2:#_cardDisplayName#]
+  [#cardFinderChooseCreature#][_card3:#_cardname#][_cardDisplayName3:#_cardDisplayName#]
+  [#cardFinderChooseCreature#][_card4:#_cardname#][_cardDisplayName4:#_cardDisplayName#]
+  [#cardFinderChooseCreature#][_card5:#_cardname#][_cardDisplayName5:#_cardDisplayName#]
+  [#cardFinderChooseCreature#][_card6:#_cardname#][_cardDisplayName6:#_cardDisplayName#]
+  [#cardFinderChooseCreature#][_card7:#_cardname#][_cardDisplayName7:#_cardDisplayName#]
+  [#cardFinderChooseCreature#][_card8:#_cardname#][_cardDisplayName8:#_cardDisplayName#]
+
+_cardDisplayNameVariant:
 - "#_cardname#"
 - "#_cardname#"
 - "#_cardname#"
