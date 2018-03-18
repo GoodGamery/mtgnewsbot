@@ -114,5 +114,6 @@ darkness
 hay
 grass
 gravel
+#liquid#
 #creatureTypes# meat
 #creatureTypes# milk
