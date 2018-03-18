@@ -12,28 +12,21 @@ _showdownBackgroundImageFile: "#_showdownBackgroundImageDirPath#/bg#_showdownBac
 
 cardQueryWallOf: '[_customQuery:name="Wall of"][#_customQuery.cardSearchCustomQuery(1)#][_cardName:#_cardName1#]#_cardName# → Wall of #pluralNounOrMassNoun.capitalizeAll#'
 
-
-# cardFinderChooseEightCreatures: |
-#   [_searchTerm:"creature"][#_searchTerm.cardSearchByType(8)#]
-#   [_cardname:#_cardRawName1#][_cardfamiliarname:#_cardFamiliarName1#][_creaturetype:#_cardSomeCreatureType1#][_cardDisplayName1:#_cardDisplayName#]
-#   [_cardname:#_cardRawName2#][_cardfamiliarname:#_cardFamiliarName2#][_creaturetype:#_cardSomeCreatureType2#][_cardDisplayName2:#_cardDisplayName#]
-#   [_cardname:#_cardRawName3#][_cardfamiliarname:#_cardFamiliarName3#][_creaturetype:#_cardSomeCreatureType3#][_cardDisplayName3:#_cardDisplayName#]
-#   [_cardname:#_cardRawName4#][_cardfamiliarname:#_cardFamiliarName4#][_creaturetype:#_cardSomeCreatureType4#][_cardDisplayName4:#_cardDisplayName#]
-#   [_cardname:#_cardRawName5#][_cardfamiliarname:#_cardFamiliarName5#][_creaturetype:#_cardSomeCreatureType5#][_cardDisplayName5:#_cardDisplayName#]
-#   [_cardname:#_cardRawName6#][_cardfamiliarname:#_cardFamiliarName6#][_creaturetype:#_cardSomeCreatureType6#][_cardDisplayName6:#_cardDisplayName#]
-#   [_cardname:#_cardRawName7#][_cardfamiliarname:#_cardFamiliarName7#][_creaturetype:#_cardSomeCreatureType7#][_cardDisplayName7:#_cardDisplayName#]
-#   [_cardname:#_cardRawName8#][_cardfamiliarname:#_cardFamiliarName8#][_creaturetype:#_cardSomeCreatureType8#][_cardDisplayName8:#_cardDisplayName#]
-
 showdownCreatureVariation:
-# - "[_cardname:Willbender][_cardDisplayName:#pluralNounOrMassNoun.capitalizeAll#bender]"
 - '[_customQuery:name="Wall of"][#_customQuery.cardSearchCustomQuery(1)#][_cardname:#_cardName1#][_cardDisplayName:Wall of #pluralNounOrMassNoun.capitalizeAll#]'
 - "[_creatureType:Wizard][#_creatureType.cardSearchByType(1)#][_cardname:#_cardName1#][_magic:#abstractMassOrItemNounOrEmotion.capitalizeAll.hyphenate#][_cardDisplayName:#_magic# Mage,#_magic# Wizard,Magus of the #pluralNounOrMassNoun.capitalizeAll#]"
 - "[_creatureType:Beast][#_creatureType.cardSearchByType(1)#][_cardname:#_cardName1#][_desc:#abstractMassOrItemNounOrEmotion.capitalizeAll#,#mood#,#adj#][_compoundSuffix:howler,hopper,ripper,diver,stomper,crusher,thrasher,beast][_cardDisplayName:#_desc.capitalizeAll.hyphenate# Beast,#nonPlaneStoryLocation# #nounCompoundWorthy.capitalize##_compoundSuffix#]"
-
+# - "[_cardname:Willbender][_cardDisplayName:#pluralNounOrMassNoun.capitalizeAll#bender]"
 
 showdownCreatureCardFinderSearch: |
   [_searchTerm:"creature"][#_searchTerm.cardSearchByType(1)#]
   [_cardname:#_cardRawName1#][_cardfamiliarname:#_cardFamiliarName1#][_creaturetype:#_cardSomeCreatureType1#][_cardDisplayName:#_cardDisplayNameVariant#]
+
+
+showdownLegendaryCreatureSearch: |
+  [_customQuery:t=legendary t=creature][#cotdCustomSearch#]
+  [_cardname:#_cardRawName1#][_cardDisplayName:#_cardFamiliarName1#]
+
 
 cardFinderChooseCreature: 
 - "#showdownCreatureCardFinderSearch#"
@@ -41,8 +34,8 @@ cardFinderChooseCreature:
 - "#showdownCreatureCardFinderSearch#"
 - "#showdownCreatureCardFinderSearch#"
 - "#showdownCreatureCardFinderSearch#"
-- "#showdownCreatureCardFinderSearch#"
-- "#showdownCreatureCardFinderSearch#"
+- "#showdownLegendaryCreatureSearch#"
+- "#showdownLegendaryCreatureSearch#"
 - "#showdownCreatureVariation#"
 
 cardFinderChooseEightCreatures: |
@@ -64,7 +57,7 @@ _cardDisplayNameVariant:
 - "#_cardname#"
 - "#_cardname#"
 - "#_cardfamiliarname#"
-- "[_firstname:#firstName#,#genericNickname#][_veryCharacteristic:#adjPersonCharacteristic#,very #adjPersonCharacteristic#][_veryMoody:#mood#,very #mood#][_variation:Some #_creaturetype#,Another #_creaturetype#,#_veryCharacteristic.capitalizeAll.a# #_creaturetype#,#_veryMoody.capitalizeAll.a# #_creaturetype#,#_creaturetype.a# named #_firstname#,#_firstname# the #_creaturetype#,#_creaturetype.a#]#_variation.capitalize#"
+- "[_firstname:#firstName#,#genericNickname#][_veryCharacteristic:#adjPersonCharacteristic#,very #adjPersonCharacteristic#][_veryMoody:#mood#,very #mood#][_variation:Some #_creaturetype#,Another #_creaturetype#,#_veryCharacteristic.capitalizeAll.a# #_creaturetype#,#_veryMoody.capitalizeAll.a# #_creaturetype#,#_creaturetype.a# named “#_firstname#”,#_firstname# the #_creaturetype#,#_creaturetype.a#]#_variation.capitalize#"
 - "[_variation:Big #_cardname#,Baby #_cardname#,“#adj.capitalizeAll#” #_cardname#,“#genericNickname#” (#_cardname#),#_cardname##comma# a.k.a. “#genericNickname#”,#_cardname#,#_cardname##comma# Sr.,#_cardname##comma# Jr.]#_variation#"
 - "[_variation:#firstName#,#firstName#,#genericNickname#,“#genericNickname#”]#_variation#"
 - "#colorfulLocal#"
