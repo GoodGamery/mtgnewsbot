@@ -1,46 +1,177 @@
-svgStreamerShowdown: "[#svgThemeColors#][#cardFinderChooseFourCreatures#]{svg svgString=`#svgShowdown#`}"
+svgStreamerShowdown: "[#svgThemeColors#][#cardFinderChooseEightCreatures#][#svgEightPersonShowdownPosition#]{svg svgString=`#svgShowdown#`}Streamer Showdown: Team #_cardRawName1# vs. Team #_cardRawName5 #"
 
 cardFinder: https://goodgamery.com/api/mtg/image?card=
 
+_showdownBackgroundImageDirPath: "./data/images/showdown/backgrounds"
+_showdownBackgroundImageIndex: ["1", "2", "3", "4", "5", "6", "7"]
+_showdownBackgroundImageFile: "#_showdownBackgroundImageDirPath#/bg#_showdownBackgroundImageIndex#.jpg"
+
 # search for legendary creatures
 
-cardFinderChooseFourCreatures: |
-  [_searchTerm:"creature"][#_searchTerm.cardSearchByType(4)#]
-  [_card1:#_cardRawName1#]
-  [_card2:#_cardRawName2#]
-  [_card3:#_cardRawName3#]
-  [_card4:#_cardRawName4#]
+cardFinderChooseEightCreatures: |
+  [_searchTerm:"creature"][#_searchTerm.cardSearchByType(8)#]
+  [_card1:#_cardRawName1#][_cardname:#_cardRawName1#][_cardfamiliarname:#_cardFamiliarName1#][_cardDisplayName1:#_cardDisplayName#]
+  [_card2:#_cardRawName2#][_cardname:#_cardRawName2#][_cardfamiliarname:#_cardFamiliarName2#][_cardDisplayName2:#_cardDisplayName#]
+  [_card3:#_cardRawName3#][_cardname:#_cardRawName3#][_cardfamiliarname:#_cardFamiliarName3#][_cardDisplayName3:#_cardDisplayName#]
+  [_card4:#_cardRawName4#][_cardname:#_cardRawName4#][_cardfamiliarname:#_cardFamiliarName4#][_cardDisplayName4:#_cardDisplayName#]
+  [_card5:#_cardRawName5#][_cardname:#_cardRawName5#][_cardfamiliarname:#_cardFamiliarName5#][_cardDisplayName5:#_cardDisplayName#]
+  [_card6:#_cardRawName6#][_cardname:#_cardRawName6#][_cardfamiliarname:#_cardFamiliarName6#][_cardDisplayName6:#_cardDisplayName#]
+  [_card7:#_cardRawName7#][_cardname:#_cardRawName7#][_cardfamiliarname:#_cardFamiliarName7#][_cardDisplayName7:#_cardDisplayName#]
+  [_card8:#_cardRawName8#][_cardname:#_cardRawName8#][_cardfamiliarname:#_cardFamiliarName8#][_cardDisplayName8:#_cardDisplayName#]
 
-svgThemeColors:
-  - "[_themeColor1:indigo][_themeColor2:goldenrod][_svgComeOnStrokeColor:gold][_svgComeOnOpacity:0.2]"
-  - "[_themeColor1:steelblue][_themeColor2:lightsteelblue][_svgComeOnStrokeColor:gold][_svgComeOnOpacity:0.2]"
-  - "[_themeColor1:darkred][_themeColor2:papayawhip][_svgComeOnStrokeColor:gold][_svgComeOnOpacity:0.4]"
-  - "[_themeColor1:seagreen][_themeColor2:darkseagreen][_svgComeOnStrokeColor:gold][_svgComeOnOpacity:0.2]"
-  - "[_themeColor1:oldlace][_themeColor2:white][_svgComeOnStrokeColor:gold][_svgComeOnOpacity:0.2]"
-  - "[_themeColor1:#d27f19][_themeColor2:#dbeeff][_svgComeOnStrokeColor:gold][_svgComeOnOpacity:0.2]"
+_cardDisplayName:
+- "#_cardname#"
+- "#_cardname#"
+- "#_cardname#"
+- "#_cardname#"
+- "#_cardname#"
+- "#_cardname#"
+- "#_cardname#"
+- "#_cardname#"
+- "#_cardname#"
+- "#_cardname#"
+- "#_cardname#"
+- "#_cardname#"
+- "#_cardname#"
+- "#_cardname#"
+- "#_cardname#"
+- "#_cardfamiliarname#"
+- "[_variation:Big #_cardname#,Baby #_cardname#,“#adj#” #_cardname#,#_cardname#,#_cardname# Sr.,#_cardname#, Jr.]#_variation#"
 
-svgBodyTextStyle: >
+
+svgStreamerNameStyle: >
   color: white;
   padding: 5px;
   font-family: Arial, 'Liberation Sans', 'DejaVu Sans', sans-serif;
   font-weight: 600; text-shadow: 1px 1px 1px black; text-align:center;
-  font-size: 32px; line-height: 30px; 
+  font-size: 16px; line-height: 16px;   
 
+
+svgStreamerNameStyleParagraph: >
+  display: table-cell; 
+  vertical-align: top; 
+  text-align: center;   
+
+
+svgEightPersonShowdownPosition: |
+  [_text1x:20][_text1y:160][_text1w:180][_text1h:50]
+  [_text2x:220][_text2y:160][_text2w:180][_text2h:50]
+  [_text3x:420][_text3y:160][_text3w:180][_text3h:50]
+  [_text4x:620][_text4y:160][_text4w:180][_text4h:50]
+  [_text5x:20][_text5y:360][_text5w:180][_text5h:50]
+  [_text6x:220][_text6y:360][_text6w:180][_text6h:50]
+  [_text7x:420][_text7y:360][_text7w:180][_text7h:50]
+  [_text8x:620][_text8y:360][_text8w:180][_text8h:50]
 
 svgShowdown: |
-  <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="700" height="420">
+  <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="820" height="420">
     <defs>
       <mask id="cardArtMask" maskUnits="userSpaceOnUse" mask-type="alpha">
-        <image x="0" y="0" width="182" height="256" xlink:href="./data/images/cardmask.png" />
-      </mask>         
-      <g id="Card1">
-        <rect x="-2" y="-2" width="189" height="260" rx="12" ry="12" style="fill:#_themeColor1#; stroke-width:2; stroke-opactity:0.9; stroke-color:red;""/>                    
-        <image xlink:href="#cardFinder##_card1#" x="0" y="0" mask="url(\#cardArtMask)" width="183" height="256" />
-      </g>
+        <image x="0" y="0" width="223" height="310" xlink:href="./data/images/card-art-mask.png" />
+      </mask>
+      <mask id="cardArtMask2" maskUnits="userSpaceOnUse" mask-type="alpha">
+        <image x="200" y="0" width="223" height="310" xlink:href="./data/images/card-art-mask.png" />
+      </mask>
+      <mask id="cardArtMask3" maskUnits="userSpaceOnUse" mask-type="alpha">
+        <image x="400" y="0" width="223" height="310" xlink:href="./data/images/card-art-mask.png" />
+      </mask>
+      <mask id="cardArtMask4" maskUnits="userSpaceOnUse" mask-type="alpha">
+        <image x="600" y="0" width="223" height="310" xlink:href="./data/images/card-art-mask.png" />
+      </mask>
+
+      <mask id="cardArtMask5" maskUnits="userSpaceOnUse" mask-type="alpha">
+        <image x="0" y="200" width="223" height="310" xlink:href="./data/images/card-art-mask.png" />
+      </mask>
+      <mask id="cardArtMask6" maskUnits="userSpaceOnUse" mask-type="alpha">
+        <image x="200" y="200" width="223" height="310" xlink:href="./data/images/card-art-mask.png" />
+      </mask>
+      <mask id="cardArtMask7" maskUnits="userSpaceOnUse" mask-type="alpha">
+        <image x="400" y="200" width="223" height="310" xlink:href="./data/images/card-art-mask.png" />
+      </mask>
+      <mask id="cardArtMask8" maskUnits="userSpaceOnUse" mask-type="alpha">
+        <image x="600" y="200" width="223" height="310" xlink:href="./data/images/card-art-mask.png" />
+      </mask> 
+
     </defs>
-    <image width="100%" height="100%" xlink:href="#art700x420#" />
-                
-    <g>
-      <use xlink:href="\#Card1" x="0" y="0" transform="translate(50, 50)" />
-    </g>
-  </svg>      
+    <image width="100%" height="100%" xlink:href="#_showdownBackgroundImageFile#" />    
+    <image width="223" height="310" xlink:href="#cardFinder##_card1#" x="0" y="0" mask="url(\#cardArtMask)" />
+    <foreignObject x="#_text1x#" y="#_text1y#" width="#_text1w#" height="#_text1h#">
+      <div style="width: #_text1w#px; height: #_text1h#px; overflow: hidden; display:table;">
+        <div xmlns="http://www.w3.org/1999/xhtml" style="#svgStreamerNameStyle# display: table-cell; vertical-align: middle; text-align: center; padding: 2px;">
+          <p style=#svgStreamerNameStyleParagraph#">
+            #_cardDisplayName1#
+          </p>
+        </div>
+      </div>
+    </foreignObject>
+    <image width="223" height="310" xlink:href="#cardFinder##_card2#" x="200" y="0" mask="url(\#cardArtMask2)" />
+    <foreignObject x="#_text2x#" y="#_text2y#" width="#_text2w#" height="#_text2h#">   
+      <div style="width: #_text2w#px; height: #_text2h#px; overflow: hidden; display:table;">
+        <div xmlns="http://www.w3.org/1999/xhtml" style="#svgStreamerNameStyle# display: table-cell; vertical-align: middle; text-align: center; padding: 2px;">
+          <p style=#svgStreamerNameStyleParagraph#">
+            #_cardDisplayName2#
+          </p>
+        </div>
+      </div>
+    </foreignObject>
+    <image width="223" height="310" xlink:href="#cardFinder##_card3#" x="400" y="0" mask="url(\#cardArtMask3)" />
+    <foreignObject x="#_text3x#" y="#_text3y#" width="#_text3w#" height="#_text3h#">   
+      <div style="width: #_text3w#px; height: #_text3h#px; overflow: hidden; display:table;">
+        <div xmlns="http://www.w3.org/1999/xhtml" style="#svgStreamerNameStyle# display: table-cell; vertical-align: middle; text-align: center; padding: 2px;">
+          <p style=#svgStreamerNameStyleParagraph#">
+            #_cardDisplayName3#
+          </p>
+        </div>
+      </div>
+    </foreignObject>
+    <image width="223" height="310" xlink:href="#cardFinder##_card4#" x="600" y="0" mask="url(\#cardArtMask4)" />
+    <foreignObject x="#_text4x#" y="#_text4y#" width="#_text4w#" height="#_text4h#">   
+      <div style="width: #_text4w#px; height: #_text4h#px; overflow: hidden; display:table;">
+        <div xmlns="http://www.w3.org/1999/xhtml" style="#svgStreamerNameStyle# display: table-cell; vertical-align: middle; text-align: center; padding: 2px;">
+          <p style=#svgStreamerNameStyleParagraph#">
+            #_cardDisplayName4#
+          </p>
+        </div>
+      </div>
+    </foreignObject>
+    <image width="223" height="310" xlink:href="#cardFinder##_card5#" x="0" y="200" mask="url(\#cardArtMask5)" />
+    <foreignObject x="#_text5x#" y="#_text5y#" width="#_text5w#" height="#_text5h#">   
+      <div style="width: #_text5w#px; height: #_text5h#px; overflow: hidden; display:table;">
+        <div xmlns="http://www.w3.org/1999/xhtml" style="#svgStreamerNameStyle# display: table-cell; vertical-align: middle; text-align: center; padding: 2px;">
+          <p style=#svgStreamerNameStyleParagraph#">
+            #_cardDisplayName5#
+          </p>
+        </div>
+      </div>
+    </foreignObject>
+    <image width="223" height="310" xlink:href="#cardFinder##_card6#" x="200" y="200" mask="url(\#cardArtMask6)" />
+    <foreignObject x="#_text6x#" y="#_text6y#" width="#_text6w#" height="#_text6h#">   
+      <div style="width: #_text6w#px; height: #_text6h#px; overflow: hidden; display:table;">
+        <div xmlns="http://www.w3.org/1999/xhtml" style="#svgStreamerNameStyle# display: table-cell; vertical-align: middle; text-align: center; padding: 2px;">
+          <p style=#svgStreamerNameStyleParagraph#">
+            #_cardDisplayName6#
+          </p>
+        </div>
+      </div>
+    </foreignObject>
+    <image width="223" height="310" xlink:href="#cardFinder##_card7#" x="400" y="200" mask="url(\#cardArtMask7)" />
+    <foreignObject x="#_text7x#" y="#_text7y#" width="#_text7w#" height="#_text7h#">   
+      <div style="width: #_text7w#px; height: #_text7h#px; overflow: hidden; display:table;">
+        <div xmlns="http://www.w3.org/1999/xhtml" style="#svgStreamerNameStyle# display: table-cell; vertical-align: middle; text-align: center; padding: 2px;">
+          <p style=#svgStreamerNameStyleParagraph#">
+            #_cardDisplayName7#
+          </p>
+        </div>
+      </div>
+    </foreignObject>
+    <image width="223" height="310" xlink:href="#cardFinder##_card8#" x="600" y="200" mask="url(\#cardArtMask8)" />
+    <foreignObject x="#_text8x#" y="#_text8y#" width="#_text8w#" height="#_text8h#">   
+      <div style="width: #_text8w#px; height: #_text8h#px; overflow: hidden; display:table;">
+        <div xmlns="http://www.w3.org/1999/xhtml" style="#svgStreamerNameStyle# display: table-cell; vertical-align: middle; text-align: center; padding: 2px;">
+          <p style=#svgStreamerNameStyleParagraph#">
+            #_cardDisplayName8#
+          </p>
+        </div>
+      </div>
+    </foreignObject>        
+  </svg>
