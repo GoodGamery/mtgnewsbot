@@ -226,7 +226,7 @@ mtgoStyleAnnouncement:
 cardOneOff:
 - |
   [#creatureSearch#][_creatureType:#_cardSubtype1#][_cardname:#_cardName1#]
-  [_verb:talk,#verbIntransitive#]
+  [_verb:talk,#soundEmanation#,#verbIntransitive#]
   [_day:#_verb.noPunctuation.capitalizeAll# Like #_creatureType.a.capitalizeAll# Day]
   [_secondDay:EVERY DAY,EVERY DAY,#CONTENT.dayOfWeek.capitalize#,#CONTENT.dayOfWeek.capitalize#,the best day of the week,#occasion.capitalizeAll#]  
   It's {hashtag}#_day.noSpaces#!
