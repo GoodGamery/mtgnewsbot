@@ -25,11 +25,11 @@ flavorText:
   - >
     "Sorry I #verbTransitivePastTense# your #concreteNoun#. Here's some #pluralNoun#."
   - >
-    "Your [_thingBecoming:#abstractNoun# has,#massNoun# has,#abstractNoun# has,#massNoun# has,#pluralNoun# have]#_thingBecoming# become your #abstractNoun#." —[_coiner:#character#,#mashupCharacter#]#_coiner.capitalize#
+    "Your [_thingBecoming:#abstractNoun# has,#massNoun# has,#abstractNoun# has,#massNoun# has,#pluralNoun# have]#_thingBecoming# become your #abstractNoun#." —[_coiner:#character#,#mashupCharacter#,#characterAttribution#]#_coiner.capitalize#
   - >
     "It doesn't [_doVerb:#verbTransitive#]#_doVerb# #pluralNounOrMassNoun#. It #_doVerb.s# #pluralNounOrMassNoun#."
   - >
-    "[_v1:#verbIntransitivePastTense#]He #_v1# at the #placeNoun#, at his #noun#, at his #noun#. But mostly he just #_v1#."
+    "[#genderedPronouns#][_v1:#verbIntransitivePastTense#]#they.capitalize# #_v1# at the #placeNoun#, at #their# #noun#, at #their# #noun#. But mostly #they# just #_v1#."
   - >
     "[_cost:One #concreteNoun#,#count.capitalize# #concreteNoun.s#]#_cost# #verbTransitivePastTense# for every #concreteNoun# #verbTransitivePastTense#[_where:, underfoot, overhead, abroad]#_where#." —#demonym# penalty for #crime#
   - >
@@ -45,7 +45,7 @@ flavorText:
   - >
     "As the #adj# #creatureTypeOrCharacterClass# #verbStrictlyIntransitivePastTense#, #adj# #pluralNounOrMassNoun# #verbStrictlyIntransitivePastTense# around it."
   - >
-    "#storyLocation.capitalize#'s #adj# [_role:#characterClass#]#_role.s# are the #creatureTypes.s#, yet #adjComparative# #_role.s# were created by [_creator:#storyLocation# itself,#character# #them#self.]#_creator#"
+    "#storyLocation.capitalize#'s #adj# [_role:#characterClass#]#_role.s# are the #creatureTypes.s#[_yet:#comma# yet,#comma# but,... but]#_yet# [_compare:the #adjSuperlative#,even #adjComparative#,some #adjComparative#]#_compare# #_role.s# were created by [_creator:#storyLocation# itself,#character# #them#self.]#_creator#"
   - >
     "#creatureTypeOrCharacterClass.capitalize.s#! They #verbTransitivePastTense# my favorite #itemNoun#! We'll #verbTransitive# them all!"
   - >
@@ -53,7 +53,7 @@ flavorText:
   - >
     "We hold sacred the powers of #abstractNoun# and #abstractNoun#. #abstractNounMassNounOrEmotion.capitalize# and #abstractNounMassNounOrEmotion# are our greatest weapons." —#characterFactionOrRace.capitalize# #motto#
   - >
-    "#verbTransitive.capitalize# that which was never #verbTransitivePastTense#." —#itemNoun.capitalize# #inscription#
+    "#verbTransitive.capitalize# that which was [_never:never,once]#_never# #verbTransitivePastTense#." —#itemNoun.capitalize# #inscription#
   - >
     "No #abstractNoun#. No #abstractNoun#. No matter what." —#itemNoun.capitalize# #inscription#
   - >
@@ -90,6 +90,19 @@ flavorText:
     "[#cardQueryMultiWordNoncreatureArtifact#][_quote:¡Yo quiero #_cardName#!,Show me the #_cardName#!]#_quote#"
   - >
     "[#somePronoun#][_they:#they#]#_they.capitalize# #are# #judgeJury#, #judgeJury#, and #juryExecutioner# because #_they# #verbTransitivePastTense# them all."
+  - >
+    "[#genderedPronouns#][_they:#they#][_adj:#adj#,#adjPersonCharacteristic#]#theyre.capitalize# #_adj# for a #creatureTypeOrCharacterClass#. #they.capitalize# can do two things: [_verb1:#verbIntransitive#,#verbExclaim#,#nounActionSound#][_verb2:#verbIntransitive#,#verbExclaim#,#nounActionSound#]#_verb1# and #_verb2#."
+  - >
+     "I came looking for [#lookingFor#]#_lookFor1.s# and I find [_place:#placeNoun#,#placeNounCanonical#,#placeNounRealm#]#_place.a# full of #_lookFor2.s#. [_feeling:I love,I hate,I despise,I'm terrified of,I'm not a fan of,I'm amused by,I'm tired of all these,Enough with the,So many,It had to be,What's with the,I'm sick of the,Three cheers for]#_feeling# #_lookFor2.s#." —#characterAttribution#
+
+characterAttribution:
+  - "#planeswalkerFullName#"
+  - "#anyCharacter#"
+
+lookingFor:
+  - "[_lookFor1:#creatureTypes#][_lookFor2:#creatureTypes#]"
+  - "[_lookFor1:#characterClass#][_lookFor2:#characterClass#]"
+  - "[_lookFor1:#itemNoun#][_lookFor2:#itemNoun#]"
 
 judgeJury:
 - "#characterClass#"

@@ -117,7 +117,6 @@
   "teaserCardSet": [
       "Commander 2018",
       "Masters 25",
-      "Rivals of Ixalan",
       "Dominaria",
       "Core 2019",
       "#codename#",
@@ -126,7 +125,7 @@
   "codename": [
       "Spaghetti",
       "Meatballs",
-      "[_futureSet:Milk,Archery,Baseball,Cricket]#_futureSet#"
+      "[_futureSet:Milk,Archery,Baseball,Cricket,Diving]“#_futureSet#”"
   ],
   "novelCardSetName": [
     "#planeBasedSet#",
@@ -146,7 +145,7 @@
     "#collective# of #beings#",
     "#beings# #verbIntransitiveGerund#",
     "[_time:Hour,Day,Age,Dawn]#_time# of #abstractNoun#",
-    "[_mastery:#format#,#adj#]#_mastery# masters [_year:,2017,2018]#_year#",
+    "[_mastery:#format#,#adj#]#_mastery# masters [_year:,2017,2018,2018,2019]#_year#",
     "[_desc:#adj#,#massNoun#,#creatureTypes#]#_desc.capitalizeAll# #omenOrEventNoun#",
     "[_desc:#adj#,#massNoun#,#creatureTypes#]#_desc.capitalizeAll# #fableLocationNoun#",
     "[_setting:Theater of,Curse of][_adjOrSetting:#adj#,#_setting#]#_adjOrSetting# #abstractNoun#"

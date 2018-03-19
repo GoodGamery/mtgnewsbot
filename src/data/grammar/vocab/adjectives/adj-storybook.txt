@@ -34,6 +34,7 @@ fantastical
 hair-raising
 peculiar
 incredible
+terrifying
 #characterClass#'s
 #creatureTypes#'s
 #adj#

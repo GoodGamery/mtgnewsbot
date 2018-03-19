@@ -1,53 +1,54 @@
 disqualifyingAction:
-- "[_reading:reading every card's,repeatedly reading #randomRealCard#'s]#_reading# flavor text out loud"
+- "[_reading:reading every card's,repeatedly reading #randomRealCard#'s]#_reading# flavor text aloud"
 - smirking
-- refusing to wear a shirt
-- "slowly encroaching #their# [_thing:cards,spindown dice,playmat,#creatureTypes# tokens,#gameAccessory#]#_thing# into
+- "refusing to wear [_wearWhat:a shirt,pants,shoes,socks,#clothingOrAccessory.aIfNeeded#,an ankle monitor,a shock collar,a GoPro]#_wearWhat#"
+- "slowly encroaching #their# [_thing:cards,spindown dice,playmat,#creatureTypes# tokens,#gameAccessory#,#bodypartsInPairs#]#_thing# into
   #their# opponent's play area"
-- using baseball hand signals to communicate with a teammate
+- "using [_system:eye blinks,tiny flags,mirrors,judge calls][_signal:baseball hand signals,a sophisticated system of #_system#,a well-trained #animal#]#_signal# to[_how:, secretly]#_how# communicate with [_who:a teammate,#person#,#their# #personRelationalUnique#]#_who#"
 - getting a bit too close to the truth
-- "making [_sound:'dive bombing',motorcycle,low-pitched wimpering,'karate','car alarm','farting',loud yodeling]#_sound# [_noises:noises,sounds]#_noises# while casting removal on #their# opponents' creatures"
+- "making [_sound:'dive bombing',motorcycle,low-pitched wimpering,'karate','car alarm','farting',loud yodeling,'laser']#_sound# [_noises:noises,sounds]#_noises# while casting removal on #their# opponents' creatures"
 - flexing
 - "failing to use #their# turn signal when changing lanes"
-- "breakdancing after a [_result:victory,victory,loss]#_result#"
+- "[_behavior:breakdancing,howling pitifully,complaining loudly,blaming the shuffler,removing an article of clothing]#_behavior# after every [_result:victory,victory,loss]#_result#"
 - 'repeatedly using the [_phraseOrTerm:phrase "#mtgCatchphrase.capitalize#",term "#mtgSlangTerm#"]#_phraseOrTerm#'
 - failing to file a tax return
 - abusing the hospitality of the judging staff
-- "peeking at #their# opponents' cards with [_what:a telescoping mirror,a tiny camera hidden in #their# #bodypart#,a surveillance monkey,a giant novelty magifying glass]#_what#"
-- "impersonating #creatureTypeOrCharacterClass.a#[_how:, without a permit, badly, in poor taste, despite repeated warnings]#_how#"
+- "peeking at #their# opponents' cards with [_what:a telescoping mirror,a tiny camera hidden in #their# #bodypart#,a surveillance #animal#,a giant novelty magifying glass]#_what#"
+- "impersonating [_who:#creatureTypeOrCharacterClass.a#,#person#,#historicalFigure#]#_who#[_how:, without a permit,#comma# badly, in poor taste, despite repeated warnings]#_how#"
 - "[_adding:adding,adding #count#]#_adding# [_extra:extra,unregistered]#_extra# copies of #randomAnyCard# to #their# [_where:deck,card pool,#deck# deck]#_where#"
 - "using [_counterfeit:a counterfeit #gameAccessory#,counterfeit #gameAccessory.s#,counterfeit copies of #randomAnyCard#]#_counterfeit#"
 - "carrying a concealed #itemNoun# into the tournament venue"
-- "#verbIntransitiveGerund# like #creatureTypeOrCharacterClass.a#"
-- '[_saying:saying,shouting,screaming,muttering,whispering]repeatedly #_saying# "mtgCatchphrase.capitalize" [_circumstance:and revealing #count# copies of #randomRealCard# after every match,to the judges,to everybody within earshot,during the lunch break,and revealing #their# #bodypartsInPairs# after every match]#_circumstance#'
+- "[_verbing:#verbStrictlyIntransitiveGerund#,looking,behaving]#_verbing# like [_adj:#mood#,#adjCorporeal#][_who:#_adj.a# #creatureTypeOrCharacterClass#,#person#,#historicalFigure#]#_who#"
+- '[_saying:saying,shouting,screaming,muttering,whispering]repeatedly #_saying# "#mtgCatchphrase.capitalize#" [_circumstance:and revealing #cardCopyCount# #copies# of #randomRealCard# after every match,to the judges,to everybody within earshot,during the lunch break,and revealing #their# #bodypartsInPairs# after every match]#_circumstance#'
 - "attempting to bribe [_who:a judge,#their# opponent,#person#]#_who# with [_what:a single copy of #randomAnyCard#,#adj.a# #itemNoun#,#largeAmount.a# of #massNoun#]#_what#"
 - "insisting that #randomAnyCard# is playable in #format#"
 - conduct unbecoming an officer and a gentleman
 - unspecified rudeness
 - "#verbStrictlyIntransitiveGerund# in clear violation of the tournament guidelines"
-- "registering a [_count:#num1-9#,#num1-99#,#num1-999#]#_count#-card deck and #_count.a#-card sideboard"
+- "registering a [_count:#num1-9#,#num1-99#,#num1-999#]#_count#-card deck and [_count:#num1-9#,#num1-99#,#num1-999#]#_count.a#-card sideboard"
 - inciting a very small riot
 - attempting to organize a tontine
-- 'playing "got your nose" with #their# opponent'
-- "killing a [_what:goat,#creatureTypes#]#_what# to read its entrails"
+- 'playing [_game:"got your nose","52-card pickup","pull my finger",the "circle game"]#_game# with [_who:#their# opponent,#pro#]#_who#'
+- "killing [_what:a goat,#creatureTypes.a#,#animal.a#]#_what# to read its entrails"
 - "not using #their# indoor voice"
 - shuffling wrong
-- burning popcorn in the venue microwave
+- "burning [_what:popcorn,popcorn,#massNoun#]#_what# in the venue microwave"
 - not having Book Burning
 - harassing the local wildlife
 - "[_standup:standup of #historicalFigure#,#character# standup]propositioning a cardboard #_standup#"
 - "[_proTheir:#their#][_personality:#historicalFigure#,#character#]refusing to break character from #_proTheir# cosplay of #_personality#"
 - "[_adjective:,excessive ,inappropriate ,unenthusiastic ][_activity:crunking,swooping,icing,roughing of the passer,use of jazz hands,rushing]#_adjective# #_activity#"
-- "using mismatched [_art:basics,art,art for #their# playset of #randomRealCard.s#]#_art#"
+- "using [_art:mismatched basics,a playset #randomRealCard.s# with mismatched art]#_art#"
 - not appreciating the value of friendship
 - telling sweet little lies
 - "leaving #their# turn signal on for far too long"
-- "taping without the express written permission of [_organization:the NFL,the DCI]#_organization#"
+- "[_what:recording,videotaping,liveblogging,borrowing tournament materials,selling magazine subscriptions,getting up to use the restroom]#_what# without the express written permission of [_organization:the NFL,the DCI,#officialEntity#,#their# #personRelationalUnique#,the tournament organizer]#_organization#"
 - "releasing #animalGroup.a# into the tournament venue"
-- "tapping #their# cards [_how:counterclockwise,360 degrees,with a pair of chopsticks,using only #their# #bodyPart#]#_how#"
+- "tapping #their# cards [_how:counterclockwise,360 degrees,with a pair of chopsticks,using only #their# #bodyPart#,along the wrong axis]#_how#"
 - "[_mocking:mocking,ridiculing,making fun of,making light of]#_mocking# the magic storyline"
-- "throwing [_what:cards,#their# deck,#their# sideboard,#gameAccessory.a#, unsleeved copies of #randomReadCard#]#_what# across the table and shouting at #their# opponents"
+- "throwing [_what:cards,#their# deck,#their# sideboard,#gameAccessory.a#, unsleeved copies of #randomRealCard#]#_what# across the table and shouting at [_who:#their# opponents,#person#]#_who#"
 - ugly sleeves
+- "using [_sleeveType:anime,Ultra PRO,penny,holographic,blatantly mismatched]#_sleeveType# sleeves"
 - continuing to play as if they are town
 - "offering to determine the match outcome via [_method:arm wrestling,thumb wrestling,a riddling contest,a staring contest,a hands-against-a-hard-body contest]#_method#"
 - trying to make fetch happen
@@ -56,13 +57,19 @@ disqualifyingAction:
 - attempting to file for compensation
 - improperly handling silverware
 - "blatant product placement[_when:, during a feature match, on #their# deck registration sheet]#_when#"
-- convincing #their# opponents to "deck swap"
-- banishing players to the Shadow Realm
-- "flipping the table after every [_what:win,loss,mulligan,deck check]#_what#"
-- flagrantly shotgunning [_what:PBRs,Mountain Dew,decaf coffee,La Croix,kombucha,Red Bull and zinfandel,motor oil,Easy Cheese,health juice,off-brand cola,Cool Whip,fancy mustards,barbeque sauce,cologne testers]#_what# between rounds
+- "attempting to convince #hijinksTarget# to [_what:“deck swap”,give #them# a piggyback ride,add copies of #randomRealCard# to #their# card pool#s#,drop from the tournament]#_what#"
+- "banishing [_who:players,#pro#]#_who# to the Shadow Realm"
+- "flipping the table after every [_what:win,win,loss,loss,mulligan,round,deck check,judge call]#_what#"
+- "[_act:mocking,teasing,badgering,harassing,conspiring with,swapping decks with,soliciting strategy advice from][_who:a small child,#pro#'s #personRelationalUnique#,#mood.a# #animal#]#_act# #_who#"
+- "[_how:flagrantly,aggressively,eagerly,thirstily][_verb:chugging,shotgunning,guzzling][_what:PBRs,Mountain Dew,decaf coffee,La Croix,kombucha,Red Bull and zinfandel,motor oil,Easy Cheese,health juice,off-brand cola,Cool Whip,fancy mustards,barbeque sauce,cologne testers,#massNoun#]#_how# #_verb# #_what# between rounds"
 - "[_emoting:enthusiastically pantomiming,physically acting out,creatively narrating]#_emoting# each of #their# spells"
+- "playing #count# Explores"
 - "#crime#"
 - "#crime#"
+
+hijinksTarget:
+- "#their# opponents#pluralPronouns#[s:s]"
+- "#person#[s:]"
 
 teamDisqualifyingAction:
 - '[_swapping:swapping,changing]#_swapping# outfits with each other between every round'

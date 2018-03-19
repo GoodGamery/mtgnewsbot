@@ -60,26 +60,37 @@
       "Superfriends",
       "Survival",
       "Ponza",
+      "High Tide",
+      "Bogles",
       "#searchableColor# Devotion",
       "#deckNameNumber#-Rack",
       "#deckNameNumber#-Post",
       "#searchableColor# Deck Wins",
       "#definingCardname#-Go",
-      "#creatureTypes.capitalize# in a Blender",
+      "#nounCompoundWorthy.capitalizeAll# Sisters",
+      "[_what:#creatureTypes#,#creatureTypes#,#animal#,#planeswalkerFirstName#]#_what.capitalizeAll# in a Blender",
+      "[_what:#creatureTypes#,#animal#]#_what.capitalizeAll# Opposition",
       "#creatureTypes.capitalize#vantage",
       "#creatureTypes.capitalize# [_parent:Dad,Dad,Dad,Mom]#_parent#",
       "[_prefix:#creatureTypes.capitalize#,#deckNameCompoundPrefix#]#_prefix# Breakfast",
       "#deckNameCompoundPrefix##deckNameCompoundSuffix#",
-      "Counter#creatureTypes.s#"
+      "Counter#creatureTypes.s#",
+      "#searchableColor# #keyword.capitalizeAll#"
   ],
   "deckVariation" : [
     "#deck#",
+    "#deck#",
+    "#deckPrefix# #deck#",
+    "#deckPrefix# #deck#",
     "#deckPrefix# #deck#",
     "#deck# #deckSuffix#",
     "#definingCardname# #deck#",
+    "#definingCardname# #deck#",
     "#deckPrefix# #definingCardname#",
-    "#definingCardname# #deckSuffix#",
-    "#deckPrefix# #deckVariation#"
+    "#deckPrefix# #definingCardname#",
+    "#deckSuffixPrefix# #deckSuffix#",
+    "#deckPrefix# #deckVariation#",
+    "#deckPrefix# [_suffix:#animal#,#bodypartsInPairs#,#creatureTypes#,#creatureTypes.s#]#_suffix.capitalizeAll#"
   ],
   "deckPrefix" : [
     "Turbo",
@@ -110,11 +121,20 @@
     "Cat",
     "Deadguy",
     "Ramunap",
-    "Budget"
+    "Budget",
+    "Sneak &",
+    "Madcap",
+    "[_adj:#mood#,#adjStorybook#]#_adj.capitalizeAll#"
   ],
   "deckSuffix" : [
     "& Taxes",
-    "& Nail"
+    "& Nail",
+    "& Show"
+  ],
+  "deckSuffixPrefix": [
+    "#definingCardname.capitalizeAll#",
+    "#creatureTypes.capitalizeAll#",
+    "[_randomNoun:#massNoun#,#nounCompoundWorthy#,#liquid#]#_randomNoun.capitalizeAll#"
   ],
   "deckNameCompoundPrefix" :[
     "Counter",
@@ -122,7 +142,9 @@
     "Stone",
     "Caw",
     "Grisel",
-    "Death"
+    "Death",
+    "Invincible Counter-",
+    "#nounCompoundWorthy.capitalizeAll#"
   ],
   "deckNameCompoundSuffix" :[
     "ball",
@@ -135,7 +157,8 @@
     "erator",
     "-troll",
     "-Gro",
-    "vantage"
+    "vantage",
+    "#nounCompoundWorthy#"
   ],
   "definingCardname" : [
     "Death's Shadow",
@@ -159,7 +182,8 @@
     "Moon",
     "Vial",
     "Necro",
-    "Teachings"
+    "Teachings",
+    "#randomCardWithOneWordName#"
   ],
   "deckDescription": [
       "the deck to beat",

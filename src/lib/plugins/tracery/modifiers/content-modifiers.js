@@ -20,6 +20,10 @@ function getMonthDayOrdinal(date) {
 
 // MODIFIERS
 
+function currentFullDate() {
+  return getMonthDayOrdinal(new Date()) + ', ' + currentYear();
+}
+
 function currentYear() {
   return '' + new Date().getFullYear();
 }
@@ -56,7 +60,7 @@ function dayOfWeekMotivation() {
   return '' + todayDescriptors[Math.floor(Math.random() * todayDescriptors.length)];
 }
 
-// returns a random month / day other than today's date
+// returns a random month / day other than today's dater
 function randomMonthDay() {
   const date = new Date();
   date.setDate(date.getDate() + randomInt(1, 364)); // choose a day 7-60 days in future
@@ -79,11 +83,20 @@ function randomUpcomingMonthDay(string, format) {
   return formats[format](date);
 }
 
+function randomFutureDate() {
+  const maxYears = 10; 
+  const date = new Date();
+  date.setDate(randomInt(1,maxYears) * randomInt(1, 365)); // choose a day 7-60 days in future
+  return getMonthDayOrdinal(date) + ', ' + date.getFullYear();
+}
+
 module.exports = { 
   currentYear,
+  currentFullDate,
   dayOfWeek,
   dayOfWeekOccasion,
   dayOfWeekMotivation,
   randomMonthDay,
-  randomUpcomingMonthDay
+  randomUpcomingMonthDay,
+  randomFutureDate
 };

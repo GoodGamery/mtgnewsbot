@@ -69,6 +69,10 @@ cardQueryCategoryCard:
  - '[#searchableCardCategoryCustomQuery#][_customQuery:#_customQuery##_colorFilter#][#_customQuery.cardSearchCustomQuery#][_cardName:#_cardName1#]'
 randomCategoryCard: "#cardQueryCategoryCard##_cardName#"
 
+cardQueryCardWithOneWordName: 
+ - '[_customQuery:name!="? "#_colorFilter#][#_customQuery.cardSearchCustomQuery#][_cardName:#_cardName1#]'
+randomCardWithOneWordName: "#cardQueryCardWithOneWordName##_cardName#"
+
 cardQueryCategoryWithOneWordName: 
  - '[#searchableCardCategory#][_customQuery:#_cardCategorySearchTerm# name!="? "#_colorFilter#][#_customQuery.cardSearchCustomQuery#][_cardName:#_cardName1#]'
  - '[#searchableCardCategoryCustomQuery#][_customQuery:#_customQuery# name!="? "#_colorFilter#][#_customQuery.cardSearchCustomQuery#][_cardName:#_cardName1#]'

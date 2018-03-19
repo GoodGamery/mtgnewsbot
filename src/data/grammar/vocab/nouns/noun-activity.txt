@@ -18,5 +18,15 @@ interpretive dance
 keeping your friends close and your enemies closer
 parlor tricks
 locksmithing
+leatherworking
+thumb wrestling
 competetive eating
 interpretive dance
+finger puppetry
+deckbuilding
+railbirding
+rules lawyering
+theorycrafting
+going for broke
+wearing [_what:#clothingOrAccessory.aIfNeeded#, #clothingOrAccessory.aIfNeeded# on your head, #itemNoun.aIfNeeded# on your head]#_what#
+eating #pluralItemNounOrMassNoun#

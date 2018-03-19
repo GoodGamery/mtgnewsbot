@@ -8,13 +8,13 @@ tournamentRound:
 tournamentNews:
 - 'Emergency Banning: #randomCardAlone.capitalize# Banned in #format#'
 - "#randomCardAlone.capitalize# Banned in #format.capitalizeAll# After [winner:#deck#,#pro#]#winner.capitalizeAll# Wins #tournament.capitalizeAll#"
-- "#tournamentRound#: #pro# vs. [_opp:#otherPersonality#,Evil #pro#,Cyborg #pro#,Baby #pro#,Bizarro #pro#,Dr. #pro# M.D.,a Cardboard Cutout of #pro#,#adj.a# #creatureTypes#]#_opp.capitalizeAll#"
+- "#tournamentRound#: #proFullName# vs. [_adj:#mood#,#adjCorporeal#,#adjStorybook#][_opp:#otherPersonality#,Evil #pro#,Cyborg #pro#,Baby #pro#,Bizarro #pro#,a very #mood# #pro#,Dr. #pro##comma# M.D.,a Cardboard Cutout of #pro#,#pro#'s #personRelationalUnique#,#animalFancyGroupDisposition.a#,#_adj.a# #creatureTypeOrCharacterClass#]#_opp.capitalizeAll#"
 - "[winner:#pro#,#deck#]#winner# #winWord# [where:at #tournament#,in #city#]#where#"
 - 'Pro Tour #teaserCardSet# will be in #city#'
 - '#pro#, after winning #event# with #deckVariation#: [_comment:It''s #deckDescription#.,#mtgCatchphrase.capitalize#]"#_comment#"'
 - "[_rule:SHOCKER!,BREAKING#colon#,TOURNAMENT UPDATE#colon#,,,,]#_rule# #pro# [_rule:has been DQ'd from,has been suspended from,has been disqualified from,ejected from]#_rule# #event# for #disqualifyingAction#"
-- "Match highlight: #pro# [_defeats:edges out,beats,defeats,routs]#_defeats# #pro# with #randomAnyCard# in round #count# to [_getAhead:lock up,advance in,take down]#_getAhead# #event#"
-- "#pro# topdecks #randomAnyCard# to #verbDefeat# [_opponent:#pro#,#person#]#_opponent#[_when:,, in the finals, and win it all]#_when# #atTournamentInCity#"
+- "Match highlight: #proFullName# [_defeats:edges out,beats,defeats,routs]#_defeats# #pro# with #randomAnyCard# in round #count# to [_getAhead:lock up,advance in,take down]#_getAhead# #event#"
+- "#proFullName# topdecks #randomAnyCard# to #verbDefeat# [_opponent:#pro#,#person#]#_opponent#[_when:,, in the finals, and win it all]#_when# #atTournamentInCity#"
 - "#mtgQuestionablePractice.capitalize# will be legal in [_format:#format#,#popularFormat#]#_format# until [_closeTime:next month,the end of the month,the end of the year,the next MTGO maintenance downtime,the next B&R announcement,the DCI determines otherwise,#occasion#,Pro Tour #teaserCardSet#][_when:#teaserCardSet# is released,#_closeTime#,#standardCardSet# rotates,#CONTENT.randomUpcomingMonthDay#,#CONTENT.randomUpcomingMonthDay#]#_when#"
 
 teamTournamentNews:
