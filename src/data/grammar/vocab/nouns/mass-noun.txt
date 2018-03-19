@@ -114,6 +114,7 @@ darkness
 hay
 grass
 gravel
+mutton
 #liquid#
 #creatureTypes# meat
 #creatureTypes# milk

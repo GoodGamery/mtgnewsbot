@@ -57,6 +57,7 @@ firstName:
 - Beverly
 - Blaine
 - Andy
+- Laverne
 - Carson
 - Jules
 - Kyle
@@ -87,9 +88,11 @@ firstName:
 - Dana
 - Helen
 - Maurice
+- Floyd
 - Günther
 - Rufus
 - Penny
+- Clyde
 - Rusty
 - Brooklyn
 - Bruno
@@ -98,7 +101,6 @@ firstName:
 - Ziggy
 - Guy
 - Napoleon
-
 
 genericNickname:
 - Stubby
@@ -148,5 +150,7 @@ genericNickname:
 - Gooch
 - Duke
 - Jeeves
+- Binky
 - Pac-Man
 - Precious
+- Squiggy

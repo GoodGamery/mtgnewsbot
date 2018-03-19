@@ -1,4 +1,10 @@
-svgStreamerShowdown: "[#svgThemeColors#][#cardFinderChooseEightCreatures#][#svgEightPersonShowdownPosition#]{svg svgString=`#svgShowdown#`}Streamer Showdown: Team #_cardRawName1# vs. Team #_cardRawName5 #"
+svgStreamerShowdown: "[#svgThemeColors#][_title:#svgStreamerShowdownTitle#][#cardFinderChooseEightCreatures#][#svgEightPersonShowdownPosition#]{svg svgString=`#svgShowdown#`}#_title#"
+
+svgStreamerShowdownTitle:
+- "#format# Super League [_round:Quarterfinals,Semifinals,Finals]#_round#"
+- "#playerCategory.capitalizeAll# Showdown"
+- "Streamer Showdown: Team #_cardRawName1# vs. Team #_cardRawName5#"
+- "Newsbot Showdown"
 
 cardFinder: https://goodgamery.com/api/mtg/image?card=
 
@@ -6,17 +12,14 @@ _showdownBackgroundImageDirPath: "./data/images/showdown/backgrounds"
 _showdownBackgroundImageIndex: ["1", "2", "3", "4", "5", "6", "7"]
 _showdownBackgroundImageFile: "#_showdownBackgroundImageDirPath#/bg#_showdownBackgroundImageIndex#.jpg"
 
-# search for legendary creatures
-
-# search for creatures and change names ("wall of" → Wall of #pluralNounOrMassNoun#; "subtype:wizard" →  #noun# Mage, legendary creature types)
-
 cardQueryWallOf: '[_customQuery:name="Wall of"][#_customQuery.cardSearchCustomQuery(1)#][_cardName:#_cardName1#]#_cardName# → Wall of #pluralNounOrMassNoun.capitalizeAll#'
 
 showdownCreatureVariation:
 - '[_customQuery:name="Wall of"][#_customQuery.cardSearchCustomQuery(1)#][_cardname:#_cardName1#][_cardDisplayName:Wall of #pluralNounOrMassNoun.capitalizeAll#]'
 - "[_creatureType:Wizard][#_creatureType.cardSearchByType(1)#][_cardname:#_cardName1#][_magic:#abstractMassOrItemNounOrEmotion.capitalizeAll.hyphenate#][_cardDisplayName:#_magic# Mage,#_magic# Wizard,Magus of the #pluralNounOrMassNoun.capitalizeAll#]"
 - "[_creatureType:Beast][#_creatureType.cardSearchByType(1)#][_cardname:#_cardName1#][_desc:#abstractMassOrItemNounOrEmotion.capitalizeAll#,#mood#,#adj#][_compoundSuffix:howler,hopper,ripper,diver,stomper,crusher,thrasher,beast][_cardDisplayName:#_desc.capitalizeAll.hyphenate# Beast,#nonPlaneStoryLocation# #nounCompoundWorthy.capitalize##_compoundSuffix#]"
-# - "[_cardname:Willbender][_cardDisplayName:#pluralNounOrMassNoun.capitalizeAll#bender]"
+- "[_creatureType:Atog][#_creatureType.cardSearchByType(1)#][_cardname:#_cardName1#][_cardDisplayName:#nounCompoundWorthy.capitalize#atog]"
+- "[_creatureType:Spirit][#_creatureType.cardSearchByType(1)#][_cardname:#_cardName1#][_cardDisplayName:#abstractNounMassNounOrEmotion.capitalize# Kami,Kami of #adj.capitalize# #pluralItemNounOrMassNoun.capitalizeAll#,#countLargeLimit.capitalize#-#bodypart.ed# Kami]"
 
 showdownCreatureCardFinderSearch: |
   [_searchTerm:"creature"][#_searchTerm.cardSearchByType(1)#]
@@ -57,7 +60,7 @@ _cardDisplayNameVariant:
 - "#_cardname#"
 - "#_cardname#"
 - "#_cardfamiliarname#"
-- "[_firstname:#firstName#,#genericNickname#][_veryCharacteristic:#adjPersonCharacteristic#,very #adjPersonCharacteristic#][_veryMoody:#mood#,very #mood#][_variation:Some #_creaturetype#,Another #_creaturetype#,#_veryCharacteristic.capitalizeAll.a# #_creaturetype#,#_veryMoody.capitalizeAll.a# #_creaturetype#,#_creaturetype.a# named “#_firstname#”,#_firstname# the #_creaturetype#,#_creaturetype.a#]#_variation.capitalize#"
+- "[_firstname:#firstName#,#genericNickname#][_veryCharacteristic:#adjPersonCharacteristic#,very #adjPersonCharacteristic#][_veryMoody:#mood#,very #mood#][_variation:Some #_creaturetype#,Another #_creaturetype#,#_veryCharacteristic.capitalizeAll.a# #_creaturetype#,#_veryMoody.capitalizeAll.a# #_creaturetype#,#_creaturetype.a# Named “#_firstname#”,#_firstname# the #_creaturetype#,#_creaturetype.a#]#_variation.capitalize#"
 - "[_variation:Big #_cardname#,Baby #_cardname#,“#adj.capitalizeAll#” #_cardname#,“#genericNickname#” (#_cardname#),#_cardname##comma# a.k.a. “#genericNickname#”,#_cardname#,#_cardname##comma# Sr.,#_cardname##comma# Jr.]#_variation#"
 - "[_variation:#firstName#,#firstName#,#genericNickname#,“#genericNickname#”]#_variation#"
 - "#colorfulLocal#"
@@ -69,11 +72,24 @@ svgStreamerNameStyle: >
   font-weight: 600; text-shadow: 1px 1px 1px black; text-align:center;
   font-size: 16px; line-height: 16px;   
 
+svgStreamerTitleStyle: >
+  color: white;
+  padding: 5px;
+  font-family: Beleren, Georgia, 'Liberation Serif', 'DejaVu Serif', serif;
+  font-weight: 600; text-shadow: 1px 1px 1px black; text-align:center;
+  font-size: 64px; line-height: 48px; 
+
+svgStreamerInfoStyle: >
+  color: white;
+  padding: 5px;
+  font-family: 'Open Sans' Arial, 'Liberation Sans', 'DejaVu Sans', sans-serif;
+  font-weight: 600; text-shadow: 1px 1px 1px black; text-align:center;
+  font-size: 48px; line-height: 48px; 
+
 svgStreamerNameStyleParagraph: >
   display: table-cell; 
   vertical-align: top; 
   text-align: center;   
-
 
 svgEightPersonShowdownPosition: |
   [_text1x:20][_text1y:160][_text1w:180][_text1h:60]
