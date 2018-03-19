@@ -1,10 +1,17 @@
-svgStreamerShowdown: "[#svgThemeColors#][_title:#svgStreamerShowdownTitle#][#cardFinderChooseEightCreatures#][#svgEightPersonShowdownPosition#]{svg svgString=`#svgShowdown#`}#_title#"
+svgStreamerShowdown: "[#svgThemeColors#][#cardFinderChooseEightCreatures#][#svgEightPersonShowdownPosition#][_title:#svgStreamerShowdownTitle#]{svg svgString=`#svgShowdown#`}#_title#"
 
 svgStreamerShowdownTitle:
-- "#format# Super League [_round:Quarterfinals,Semifinals,Finals]#_round#"
+- "#format# Super League"
 - "#playerCategory.capitalizeAll# Showdown"
-- "Streamer Showdown: Team #_card1# vs. Team #_card5#"
 - "Newsbot Showdown"
+#- "Streamer Showdown: Team #_card1# vs. Team #_card5#"
+#- "#format# Super League [_round:Quarterfinals,Semifinals,Finals]#_round#"
+
+svgStreamerShowdownInfo:
+- "[_day:#dayOfTheWeek#,#CONTENT.randomUpcomingMonthDay#,#CONTENT.randomUpcomingMonthDay(numeric)#]#_day# | #num1-12#[_mins:,,#colon#30]#_mins#[_amPm:am,pm,pm,pm]#_amPm#[_zone:, PT]#_zone#"
+
+svgStreamerShowdownSecondaryInfo:
+
 
 cardFinder: https://goodgamery.com/api/mtg/image?card=
 
@@ -72,18 +79,32 @@ svgStreamerNameStyle: >
   color: white;
   padding: 5px;
   font-family:  'Open Sans',Arial, 'DejaVu Sans', 'Liberation Sans', 'Open Sans',sans-serif;
-  font-weight: 600; text-shadow: 1px 1px 1px black; text-align:center;
-  font-size: 16px; line-height: 16px;   
+  font-weight: 600;
+  text-shadow: 1px 1px 1px black;
+  text-align:center;
+  font-size: 16px;
+  line-height: 16px;   
   display: table-cell;
   vertical-align: top;
   text-align: center;
 
+svgStreamerNameParagraphStyle: >
+  display: table-cell; 
+  vertical-align: top; 
+  text-align: center;   
+
 svgStreamerTitleStyle: >
   color: white;
-  padding: 5px;
   font-family: Beleren, Georgia, 'Liberation Serif', 'DejaVu Serif', serif;
-  font-weight: 600; text-shadow: 1px 1px 1px black; text-align:center;
-  font-size: 64px; line-height: 48px; 
+  font-weight: 400;
+  text-shadow: 1px 1px 1px black;
+  text-align:center;
+  vertical-align: bottom;
+  font-size: 64px;
+  line-height: 58px;
+  position: absolute;
+  bottom: 0;
+  padding: 0px 5px 20px 20px;
 
 svgStreamerInfoStyle: >
   color: white;
@@ -91,11 +112,6 @@ svgStreamerInfoStyle: >
   font-family: 'Open Sans', Arial, 'Liberation Sans', 'DejaVu Sans', sans-serif;
   font-weight: 600; text-shadow: 1px 1px 1px black; text-align:center;
   font-size: 48px; line-height: 48px; 
-
-svgStreamerNameStyleParagraph: >
-  display: table-cell; 
-  vertical-align: top; 
-  text-align: center;   
 
 svgEightPersonShowdownPosition: |
   [_text1x:448][_text1y:236][_text1w:176][_text1h:100]
@@ -139,9 +155,27 @@ svgShowdown: |
       <g id="textBox">
         <rect x="0" y="0" width="183" height="220" style="fill:black;" fill-opacity="0.7"/>                    
       </g>
-
     </defs>
+
     <image width="100%" height="100%" xlink:href="#_showdownBackgroundImageFile#" /> 
+
+    <foreignObject x="10" y="10" width="430" height="330">
+      <div style="width: 430px; height: 330px;">
+        <div xmlns="http://www.w3.org/1999/xhtml" style="#svgStreamerTitleStyle#">
+          #_title.allCaps#
+        </div>
+      </div>
+    </foreignObject>
+
+
+    <foreignObject x="10" y="10" width="430" height="330">
+      <div style="width: 430px; height: 330px;">
+        <div xmlns="http://www.w3.org/1999/xhtml" style="#svgStreamerTitleStyle#">
+          #_title.allCaps#
+        </div>
+      </div>
+    </foreignObject>
+
     <g>
       <use xlink:href="\#textBox" x="446" y="110"/>
     </g>
@@ -149,7 +183,7 @@ svgShowdown: |
     <foreignObject x="#_text1x#" y="#_text1y#" width="#_text1w#" height="#_text1h#">
       <div style="width: #_text1w#px; height: #_text1h#px; overflow: hidden; display:table;">
         <div xmlns="http://www.w3.org/1999/xhtml" style="#svgStreamerNameStyle#">
-          <p style=#svgStreamerNameStyleParagraph#">
+          <p style=#svgStreamerNameParagraphStyle#">
             #_cardDisplayName1#
           </p>
         </div>
@@ -162,7 +196,7 @@ svgShowdown: |
     <foreignObject x="#_text2x#" y="#_text2y#" width="#_text2w#" height="#_text2h#">   
       <div style="width: #_text2w#px; height: #_text2h#px; overflow: hidden; display:table;">
         <div xmlns="http://www.w3.org/1999/xhtml" style="#svgStreamerNameStyle#">
-          <p style=#svgStreamerNameStyleParagraph#">
+          <p style=#svgStreamerNameParagraphStyle#">
             #_cardDisplayName2#
           </p>
         </div>
@@ -175,7 +209,7 @@ svgShowdown: |
     <foreignObject x="#_text3x#" y="#_text3y#" width="#_text3w#" height="#_text3h#">   
       <div style="width: #_text3w#px; height: #_text3h#px; overflow: hidden; display:table;">
         <div xmlns="http://www.w3.org/1999/xhtml" style="#svgStreamerNameStyle#">
-          <p style=#svgStreamerNameStyleParagraph#">
+          <p style=#svgStreamerNameParagraphStyle#">
             #_cardDisplayName3#
           </p>
         </div>
@@ -188,7 +222,7 @@ svgShowdown: |
     <foreignObject x="#_text4x#" y="#_text4y#" width="#_text4w#" height="#_text4h#">   
       <div style="width: #_text4w#px; height: #_text4h#px; overflow: hidden; display:table;">
         <div xmlns="http://www.w3.org/1999/xhtml" style="#svgStreamerNameStyle#">
-          <p style=#svgStreamerNameStyleParagraph#">
+          <p style=#svgStreamerNameParagraphStyle#">
             #_cardDisplayName4#
           </p>
         </div>
@@ -201,7 +235,7 @@ svgShowdown: |
     <foreignObject x="#_text5x#" y="#_text5y#" width="#_text5w#" height="#_text5h#">   
       <div style="width: #_text5w#px; height: #_text5h#px; overflow: hidden; display:table;">
         <div xmlns="http://www.w3.org/1999/xhtml" style="#svgStreamerNameStyle#">
-          <p style=#svgStreamerNameStyleParagraph#">
+          <p style=#svgStreamerNameParagraphStyle#">
             #_cardDisplayName5#
           </p>
         </div>
@@ -214,7 +248,7 @@ svgShowdown: |
     <foreignObject x="#_text6x#" y="#_text6y#" width="#_text6w#" height="#_text6h#">   
       <div style="width: #_text6w#px; height: #_text6h#px; overflow: hidden; display:table;">
         <div xmlns="http://www.w3.org/1999/xhtml" style="#svgStreamerNameStyle#">
-          <p style=#svgStreamerNameStyleParagraph#">
+          <p style=#svgStreamerNameParagraphStyle#">
             #_cardDisplayName6#
           </p>
         </div>
@@ -227,7 +261,7 @@ svgShowdown: |
     <foreignObject x="#_text7x#" y="#_text7y#" width="#_text7w#" height="#_text7h#">   
       <div style="width: #_text7w#px; height: #_text7h#px; overflow: hidden; display:table;">
         <div xmlns="http://www.w3.org/1999/xhtml" style="#svgStreamerNameStyle#">
-          <p style=#svgStreamerNameStyleParagraph#">
+          <p style=#svgStreamerNameParagraphStyle#">
             #_cardDisplayName7#
           </p>
         </div>
@@ -240,7 +274,7 @@ svgShowdown: |
     <foreignObject x="#_text8x#" y="#_text8y#" width="#_text8w#" height="#_text8h#">   
       <div style="width: #_text8w#px; height: #_text8h#px; overflow: hidden; display:table;">
         <div xmlns="http://www.w3.org/1999/xhtml" style="#svgStreamerNameStyle#">
-          <p style=#svgStreamerNameStyleParagraph#">
+          <p style=#svgStreamerNameParagraphStyle#">
             #_cardDisplayName8#
           </p>
         </div>

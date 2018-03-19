@@ -63,10 +63,20 @@ function randomMonthDay() {
   return getMonthDayOrdinal(date);
 }
 
-function randomUpcomingMonthDay() {
+function randomUpcomingMonthDay(string, format) {
+
+  const formats = {
+    english: date => getMonthDayOrdinal(date),
+    numeric: date => `${date.getMonth()}/${date.getDate()}`
+  };
+
+  if (!format || !formats[format]) {
+    format = 'english';
+  }
+
   const date = new Date();
   date.setDate(date.getDate() + randomInt(7, 60)); // choose a day 7-60 days in future
-  return getMonthDayOrdinal(date);
+  return formats[format](date);
 }
 
 module.exports = { 
