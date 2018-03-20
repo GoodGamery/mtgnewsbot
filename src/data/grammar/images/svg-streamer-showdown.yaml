@@ -158,10 +158,40 @@ svgEightPersonShowdownPosition: |
   [_text7x:824][_text7y:516][_text7w:176][_text7h:100]
   [_text8x:1012][_text8y:516][_text8w:176][_text8h:100]
 
+svgShowdownStreamerPortrait: |
+    <image width="#_imgWidth#" height="#_imgHeight#" xlink:href="#_portraitUrl#" x="#_imgX#" y="#_imgY#" mask="url(\##_imgMask#)" />
+
+svgShowdownStreamerCardArtPortrait: |
+   [_imgWidth:226][_imgHeight:318][_portraitUrl:#cardFinder##_cardName#]#svgShowdownStreamerPortrait#
+
+svgShowdownStreamerPortrait1: 
+- "[_imgX:425][_imgY:75][_cardName:#_card1#][_imgMask:cardArtMask1]#svgShowdownStreamerCardArtPortrait#"
+
+svgShowdownStreamerPortrait2: 
+- "[_imgX:613][_imgY:75][_cardName:#_card2#][_imgMask:cardArtMask2]#svgShowdownStreamerCardArtPortrait#"
+
+svgShowdownStreamerPortrait3: 
+- "[_imgX:801][_imgY:75][_cardName:#_card3#][_imgMask:cardArtMask3]#svgShowdownStreamerCardArtPortrait#"
+
+svgShowdownStreamerPortrait4: 
+- "[_imgX:989][_imgY:75][_cardName:#_card4#][_imgMask:cardArtMask4]#svgShowdownStreamerCardArtPortrait#"
+
+svgShowdownStreamerPortrait5: 
+- "[_imgX:425][_imgY:355][_cardName:#_card5#][_imgMask:cardArtMask5]#svgShowdownStreamerCardArtPortrait#"
+
+svgShowdownStreamerPortrait6: 
+- "[_imgX:613][_imgY:355][_cardName:#_card6#][_imgMask:cardArtMask6]#svgShowdownStreamerCardArtPortrait#"
+
+svgShowdownStreamerPortrait7: 
+- "[_imgX:801][_imgY:355][_cardName:#_card7#][_imgMask:cardArtMask7]#svgShowdownStreamerCardArtPortrait#"
+
+svgShowdownStreamerPortrait8: 
+- "[_imgX:989][_imgY:355][_cardName:#_card8#][_imgMask:cardArtMask8]#svgShowdownStreamerCardArtPortrait#"
+
 svgShowdown: |
   <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="1200" height="675">
     <defs>
-      <mask id="cardArtMask" maskUnits="userSpaceOnUse" mask-type="alpha">
+      <mask id="cardArtMask1" maskUnits="userSpaceOnUse" mask-type="alpha">
         <image x="425" y="75" width="226" height="318" xlink:href="./data/images/card-art-mask.png" />
       </mask>
       <mask id="cardArtMask2" maskUnits="userSpaceOnUse" mask-type="alpha">
@@ -221,7 +251,7 @@ svgShowdown: |
     <g>
       <use xlink:href="\#textBox" x="446" y="110"/>
     </g>
-    <image width="226" height="318" xlink:href="#cardFinder##_card1#" x="425" y="75" mask="url(\#cardArtMask)" />
+    #svgShowdownStreamerPortrait1#
     <foreignObject x="#_text1x#" y="#_text1y#" width="#_text1w#" height="#_text1h#">
       <div style="width: #_text1w#px; height: #_text1h#px; overflow: hidden; display:table;">
         <div xmlns="http://www.w3.org/1999/xhtml" style="#svgStreamerNameStyle#">
@@ -234,7 +264,7 @@ svgShowdown: |
     <g>
       <use xlink:href="\#textBox" x="634" y="110"/>
     </g>
-    <image width="226" height="318" xlink:href="#cardFinder##_card2#" x="613" y="75" mask="url(\#cardArtMask2)" />
+    #svgShowdownStreamerPortrait2#
     <foreignObject x="#_text2x#" y="#_text2y#" width="#_text2w#" height="#_text2h#">   
       <div style="width: #_text2w#px; height: #_text2h#px; overflow: hidden; display:table;">
         <div xmlns="http://www.w3.org/1999/xhtml" style="#svgStreamerNameStyle#">
@@ -247,7 +277,7 @@ svgShowdown: |
     <g>
       <use xlink:href="\#textBox" x="822" y="110"/>
     </g>    
-    <image width="226" height="318" xlink:href="#cardFinder##_card3#" x="801" y="75" mask="url(\#cardArtMask3)" />
+    #svgShowdownStreamerPortrait3#
     <foreignObject x="#_text3x#" y="#_text3y#" width="#_text3w#" height="#_text3h#">   
       <div style="width: #_text3w#px; height: #_text3h#px; overflow: hidden; display:table;">
         <div xmlns="http://www.w3.org/1999/xhtml" style="#svgStreamerNameStyle#">
@@ -260,7 +290,7 @@ svgShowdown: |
     <g>
       <use xlink:href="\#textBox" x="1010" y="110"/>
     </g>    
-    <image width="226" height="318" xlink:href="#cardFinder##_card4#" x="989" y="75" mask="url(\#cardArtMask4)" />
+    #svgShowdownStreamerPortrait4#
     <foreignObject x="#_text4x#" y="#_text4y#" width="#_text4w#" height="#_text4h#">   
       <div style="width: #_text4w#px; height: #_text4h#px; overflow: hidden; display:table;">
         <div xmlns="http://www.w3.org/1999/xhtml" style="#svgStreamerNameStyle#">
@@ -273,7 +303,7 @@ svgShowdown: |
     <g>
       <use xlink:href="\#textBox" x="446" y="390"/>
     </g>  
-    <image width="226" height="318" xlink:href="#cardFinder##_card5#" x="425" y="355" mask="url(\#cardArtMask5)" />
+    #svgShowdownStreamerPortrait5#
     <foreignObject x="#_text5x#" y="#_text5y#" width="#_text5w#" height="#_text5h#">   
       <div style="width: #_text5w#px; height: #_text5h#px; overflow: hidden; display:table;">
         <div xmlns="http://www.w3.org/1999/xhtml" style="#svgStreamerNameStyle#">
@@ -286,7 +316,7 @@ svgShowdown: |
     <g>
       <use xlink:href="\#textBox" x="634" y="390"/>
     </g>     
-    <image width="226" height="318" xlink:href="#cardFinder##_card6#" x="610" y="355" mask="url(\#cardArtMask6)" />
+    #svgShowdownStreamerPortrait6#
     <foreignObject x="#_text6x#" y="#_text6y#" width="#_text6w#" height="#_text6h#">   
       <div style="width: #_text6w#px; height: #_text6h#px; overflow: hidden; display:table;">
         <div xmlns="http://www.w3.org/1999/xhtml" style="#svgStreamerNameStyle#">
@@ -299,7 +329,7 @@ svgShowdown: |
     <g>
       <use xlink:href="\#textBox" x="822" y="390"/>
     </g>      
-    <image width="226" height="318" xlink:href="#cardFinder##_card7#" x="795" y="355" mask="url(\#cardArtMask7)" />
+    #svgShowdownStreamerPortrait7#
     <foreignObject x="#_text7x#" y="#_text7y#" width="#_text7w#" height="#_text7h#">   
       <div style="width: #_text7w#px; height: #_text7h#px; overflow: hidden; display:table;">
         <div xmlns="http://www.w3.org/1999/xhtml" style="#svgStreamerNameStyle#">
@@ -312,7 +342,7 @@ svgShowdown: |
     <g>
       <use xlink:href="\#textBox" x="1010" y="390"/>
     </g>     
-    <image width="226" height="318" xlink:href="#cardFinder##_card8#" x="980" y="355" mask="url(\#cardArtMask8)" />
+    #svgShowdownStreamerPortrait8#
     <foreignObject x="#_text8x#" y="#_text8y#" width="#_text8w#" height="#_text8h#">   
       <div style="width: #_text8w#px; height: #_text8h#px; overflow: hidden; display:table;">
         <div xmlns="http://www.w3.org/1999/xhtml" style="#svgStreamerNameStyle#">
