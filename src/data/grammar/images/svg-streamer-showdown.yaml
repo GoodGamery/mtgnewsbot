@@ -7,7 +7,7 @@
 ##
 svgStreamerShowdown: "[#svgStreamerShowdownInitialize#]{svg svgString=`#svgShowdown#`}#_showdownTitle#"
 
-svgStreamerShowdownInitialize: "[#cardFinderChooseEightCreatures#][_format:#format#][#svgStreamerShowdownDate#][_showdownTitle:#svgStreamerShowdownTitle#][_showdownInfo:#svgStreamerShowdownInfo#][_showdownSecondaryInfo:#svgStreamerShowdownSecondaryInfo#][#svgEightPersonShowdownPosition#]"
+svgStreamerShowdownInitialize: "[#cardFinderChooseEightStreamers#][_format:#format#][#svgStreamerShowdownDate#][_showdownTitle:#svgStreamerShowdownTitle#][_showdownInfo:#svgStreamerShowdownInfo#][_showdownSecondaryInfo:#svgStreamerShowdownSecondaryInfo#][#svgEightPersonShowdownPosition#]"
 
 
 svgStreamerShowdownDate: "[_showdownDate:#CONTENT.randomUpcomingMonthDay#][_showdownDateNumeric:#__randomMonthDayNumeric#][_showdownDateMonth:#__randomMonth#][_showdownDayOfWeek:#dayOfTheWeek#]"
@@ -72,15 +72,31 @@ cardFinderChooseCreature:
 - "#showdownLegendaryCreatureSearch#"
 - "#showdownCreatureVariation#"
 
+choosePortrait:
+- "#mtgPortraitsPros#[_portraitName:#_portraitDisplayNameVariant#]"
+
+cardFinderChooseEightStreamers: |
+  [#cardFinderChooseEightCreatures#][#cardFinderChooseEightPortraits#]
+
+cardFinderChooseEightPortraits: |
+  [#choosePortrait#][_portraitUrl1:#_portrait#][_portraitName1:#_portraitName#]
+  [#choosePortrait#][_portraitUrl2:#_portrait#][_portraitName2:#_portraitName#]
+  [#choosePortrait#][_portraitUrl3:#_portrait#][_portraitName3:#_portraitName#]
+  [#choosePortrait#][_portraitUrl4:#_portrait#][_portraitName4:#_portraitName#]
+  [#choosePortrait#][_portraitUrl5:#_portrait#][_portraitName5:#_portraitName#]
+  [#choosePortrait#][_portraitUrl6:#_portrait#][_portraitName6:#_portraitName#]
+  [#choosePortrait#][_portraitUrl7:#_portrait#][_portraitName7:#_portraitName#]
+  [#choosePortrait#][_portraitUrl8:#_portrait#][_portraitName8:#_portraitName#]
+
 cardFinderChooseEightCreatures: |
-  [#cardFinderChooseCreature#][_card1:#_cardname#][_cardDisplayName1:#_cardDisplayName.allCaps#]
-  [#cardFinderChooseCreature#][_card2:#_cardname#][_cardDisplayName2:#_cardDisplayName.allCaps#]
-  [#cardFinderChooseCreature#][_card3:#_cardname#][_cardDisplayName3:#_cardDisplayName.allCaps#]
-  [#cardFinderChooseCreature#][_card4:#_cardname#][_cardDisplayName4:#_cardDisplayName.allCaps#]
-  [#cardFinderChooseCreature#][_card5:#_cardname#][_cardDisplayName5:#_cardDisplayName.allCaps#]
-  [#cardFinderChooseCreature#][_card6:#_cardname#][_cardDisplayName6:#_cardDisplayName.allCaps#]
-  [#cardFinderChooseCreature#][_card7:#_cardname#][_cardDisplayName7:#_cardDisplayName.allCaps#]
-  [#cardFinderChooseCreature#][_card8:#_cardname#][_cardDisplayName8:#_cardDisplayName.allCaps#]
+  [#cardFinderChooseCreature#][_card1:#_cardname#][_cardDisplayName1:#_cardDisplayName#]
+  [#cardFinderChooseCreature#][_card2:#_cardname#][_cardDisplayName2:#_cardDisplayName#]
+  [#cardFinderChooseCreature#][_card3:#_cardname#][_cardDisplayName3:#_cardDisplayName#]
+  [#cardFinderChooseCreature#][_card4:#_cardname#][_cardDisplayName4:#_cardDisplayName#]
+  [#cardFinderChooseCreature#][_card5:#_cardname#][_cardDisplayName5:#_cardDisplayName#]
+  [#cardFinderChooseCreature#][_card6:#_cardname#][_cardDisplayName6:#_cardDisplayName#]
+  [#cardFinderChooseCreature#][_card7:#_cardname#][_cardDisplayName7:#_cardDisplayName#]
+  [#cardFinderChooseCreature#][_card8:#_cardname#][_cardDisplayName8:#_cardDisplayName#]
 
 _cardDisplayNameVariant:
 - "#_cardname#"
@@ -95,6 +111,18 @@ _cardDisplayNameVariant:
 - "[_variation:Big #_cardname#,Baby #_cardname#,“#adj.capitalizeAll#” #_cardname#,“#genericNickname#” (#_cardname#),#_cardname# a.k.a. “#genericNickname#”,#_cardname#,#_cardname##comma# Sr.,#_cardname##comma# Jr.]#_variation#"
 - "[_variation:#firstName#,#firstName#,#genericNickname#,“#genericNickname#”]#_variation#"
 - "#colorfulLocal#"
+
+_portraitDisplayNameVariant:
+- "#_portraitName#"
+- "#_portraitName#"
+- "#_portraitName#"
+- "#_portraitName#"
+- "[_modifier:Biazarro,Evil]#_modifier# #_portraitName#"
+- "[_desc:#adjPersonCharacteristic#,#adj#,#mood#]“#_desc#” #_portraitName#"
+- "#_portraitName# a.k.a. “#genericNickname#”"
+- "[_variation:#firstName#,#firstName#,#genericNickname#,“#genericNickname#”,#]#_variation#"
+- "[_doctorate:, MD, Ph.D.,][_honorific:#_portraitName##comma# Sr.,#_portraitName##comma# Jr.,#_portraitName##comma# Esq.,The Honorable Judge #_portraitName#,Dr. #_portraitName##_doctorate#]#_honorific#"
+- "[_very:,,very ][_adj:#adjPersonCharacteristic#,#adj#,#mood#][_desc:#characterClass#,#playerCategory#,#someGuyOrGal#][_variant:Some #_desc#,A #very##_adj# #_desc#,A #_desc# named #_portraitName#]#_variant#"
 
 svgStreamerNameStyle: >
   color: white;
@@ -158,35 +186,48 @@ svgEightPersonShowdownPosition: |
   [_text7x:824][_text7y:516][_text7w:176][_text7h:100]
   [_text8x:1012][_text8y:516][_text8w:176][_text8h:100]
 
+_noMask: ""
+
 svgShowdownStreamerPortrait: |
-    <image width="#_imgWidth#" height="#_imgHeight#" xlink:href="#_portraitUrl#" x="#_imgX#" y="#_imgY#" mask="url(\##_imgMask#)" />
+    <image width="#_imgWidth#" height="#_imgHeight#" xlink:href="#_portraitUrl#" x="#_imgX#" y="#_imgY#" mask="url(\##_imgMask#)" style="-webkit-transform: scaleX(1);" />
 
 svgShowdownStreamerCardArtPortrait: |
    [_imgWidth:226][_imgHeight:318][_portraitUrl:#cardFinder##_cardName#]#svgShowdownStreamerPortrait#
 
+svgShowdownStreamerProPortrait: |
+   [_imgWidth:175][_imgHeight:135][_imgMask:#_noMask#][_portraitUrl:#_portraitUrl#]#svgShowdownStreamerPortrait#
+
 svgShowdownStreamerPortrait1: 
-- "[_imgX:425][_imgY:75][_cardName:#_card1#][_imgMask:cardArtMask1]#svgShowdownStreamerCardArtPortrait#"
+- "[_imgX:425][_imgY:75][_streamerDisplayName1:#_cardDisplayName1#][_cardName:#_card1#][_imgMask:cardArtMask1][_streamerDisplayName1:#_cardDisplayName1#]#svgShowdownStreamerCardArtPortrait#"
+- "[_imgX:450][_imgY:115][_streamerDisplayName1:#_portraitName1#][_portraitUrl:#_portraitUrl1#]#svgShowdownStreamerProPortrait#"
 
 svgShowdownStreamerPortrait2: 
-- "[_imgX:613][_imgY:75][_cardName:#_card2#][_imgMask:cardArtMask2]#svgShowdownStreamerCardArtPortrait#"
+- "[_imgX:613][_imgY:75][_streamerDisplayName2:#_cardDisplayName2#][_cardName:#_card2#][_imgMask:cardArtMask2]#svgShowdownStreamerCardArtPortrait#"
+- "[_imgX:638][_imgY:115][_streamerDisplayName2:#_portraitName2#][_portraitUrl:#_portraitUrl2#]#svgShowdownStreamerProPortrait#"
 
 svgShowdownStreamerPortrait3: 
-- "[_imgX:801][_imgY:75][_cardName:#_card3#][_imgMask:cardArtMask3]#svgShowdownStreamerCardArtPortrait#"
+- "[_imgX:801][_imgY:75][_streamerDisplayName3:#_cardDisplayName3#][_cardName:#_card3#][_imgMask:cardArtMask3]#svgShowdownStreamerCardArtPortrait#"
+- "[_imgX:826][_imgY:115][_streamerDisplayName3:#_portraitName3#][_portraitUrl:#_portraitUrl3#]#svgShowdownStreamerProPortrait#"
 
 svgShowdownStreamerPortrait4: 
-- "[_imgX:989][_imgY:75][_cardName:#_card4#][_imgMask:cardArtMask4]#svgShowdownStreamerCardArtPortrait#"
+- "[_imgX:989][_imgY:75][_streamerDisplayName4:#_cardDisplayName4#][_cardName:#_card4#][_imgMask:cardArtMask4]#svgShowdownStreamerCardArtPortrait#"
+- "[_imgX:1014][_imgY:115][_streamerDisplayName4:#_portraitName4#][_portraitUrl:#_portraitUrl4#]#svgShowdownStreamerProPortrait#"
 
 svgShowdownStreamerPortrait5: 
-- "[_imgX:425][_imgY:355][_cardName:#_card5#][_imgMask:cardArtMask5]#svgShowdownStreamerCardArtPortrait#"
+- "[_imgX:425][_imgY:355][_streamerDisplayName5:#_cardDisplayName5#][_cardName:#_card5#][_imgMask:cardArtMask5]#svgShowdownStreamerCardArtPortrait#"
+- "[_imgX:450][_imgY:395][_streamerDisplayName5:#_portraitName5#][_portraitUrl:#_portraitUrl5#]#svgShowdownStreamerProPortrait#"
 
 svgShowdownStreamerPortrait6: 
-- "[_imgX:613][_imgY:355][_cardName:#_card6#][_imgMask:cardArtMask6]#svgShowdownStreamerCardArtPortrait#"
+- "[_imgX:613][_imgY:355][_streamerDisplayName6:#_cardDisplayName6#][_cardName:#_card6#][_imgMask:cardArtMask6]#svgShowdownStreamerCardArtPortrait#"
+- "[_imgX:638][_imgY:395][_streamerDisplayName6:#_portraitName6#][_portraitUrl:#_portraitUrl6#]#svgShowdownStreamerProPortrait#"
 
 svgShowdownStreamerPortrait7: 
-- "[_imgX:801][_imgY:355][_cardName:#_card7#][_imgMask:cardArtMask7]#svgShowdownStreamerCardArtPortrait#"
+- "[_imgX:801][_imgY:355][_streamerDisplayName7:#_cardDisplayName7#][_cardName:#_card7#][_imgMask:cardArtMask7]#svgShowdownStreamerCardArtPortrait#"
+- "[_imgX:826][_imgY:395][_streamerDisplayName7:#_portraitName7#][_portraitUrl:#_portraitUrl7#]#svgShowdownStreamerProPortrait#"
 
 svgShowdownStreamerPortrait8: 
-- "[_imgX:989][_imgY:355][_cardName:#_card8#][_imgMask:cardArtMask8]#svgShowdownStreamerCardArtPortrait#"
+- "[_imgX:989][_imgY:355][_streamerDisplayName8:#_cardDisplayName8#][_cardName:#_card8#][_imgMask:cardArtMask8]#svgShowdownStreamerCardArtPortrait#"
+- "[_imgX:1014][_imgY:395][_streamerDisplayName8:#_portraitName8#][_portraitUrl:#_portraitUrl8#]#svgShowdownStreamerProPortrait#"
 
 svgShowdown: |
   <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="1200" height="675">
@@ -256,7 +297,7 @@ svgShowdown: |
       <div style="width: #_text1w#px; height: #_text1h#px; overflow: hidden; display:table;">
         <div xmlns="http://www.w3.org/1999/xhtml" style="#svgStreamerNameStyle#">
           <p style=#svgStreamerNameParagraphStyle#">
-            #_cardDisplayName1#
+            #_streamerDisplayName1.allCaps#
           </p>
         </div>
       </div>
@@ -269,7 +310,7 @@ svgShowdown: |
       <div style="width: #_text2w#px; height: #_text2h#px; overflow: hidden; display:table;">
         <div xmlns="http://www.w3.org/1999/xhtml" style="#svgStreamerNameStyle#">
           <p style=#svgStreamerNameParagraphStyle#">
-            #_cardDisplayName2#
+            #_streamerDisplayName2.allCaps#
           </p>
         </div>
       </div>
@@ -282,7 +323,7 @@ svgShowdown: |
       <div style="width: #_text3w#px; height: #_text3h#px; overflow: hidden; display:table;">
         <div xmlns="http://www.w3.org/1999/xhtml" style="#svgStreamerNameStyle#">
           <p style=#svgStreamerNameParagraphStyle#">
-            #_cardDisplayName3#
+            #_streamerDisplayName3.allCaps#
           </p>
         </div>
       </div>
@@ -295,7 +336,7 @@ svgShowdown: |
       <div style="width: #_text4w#px; height: #_text4h#px; overflow: hidden; display:table;">
         <div xmlns="http://www.w3.org/1999/xhtml" style="#svgStreamerNameStyle#">
           <p style=#svgStreamerNameParagraphStyle#">
-            #_cardDisplayName4#
+            #_streamerDisplayName4.allCaps#
           </p>
         </div>
       </div>
@@ -308,7 +349,7 @@ svgShowdown: |
       <div style="width: #_text5w#px; height: #_text5h#px; overflow: hidden; display:table;">
         <div xmlns="http://www.w3.org/1999/xhtml" style="#svgStreamerNameStyle#">
           <p style=#svgStreamerNameParagraphStyle#">
-            #_cardDisplayName5#
+            #_streamerDisplayName5.allCaps#
           </p>
         </div>
       </div>
@@ -321,7 +362,7 @@ svgShowdown: |
       <div style="width: #_text6w#px; height: #_text6h#px; overflow: hidden; display:table;">
         <div xmlns="http://www.w3.org/1999/xhtml" style="#svgStreamerNameStyle#">
           <p style=#svgStreamerNameParagraphStyle#">
-            #_cardDisplayName6#
+            #_streamerDisplayName6.allCaps#
           </p>
         </div>
       </div>
@@ -334,7 +375,7 @@ svgShowdown: |
       <div style="width: #_text7w#px; height: #_text7h#px; overflow: hidden; display:table;">
         <div xmlns="http://www.w3.org/1999/xhtml" style="#svgStreamerNameStyle#">
           <p style=#svgStreamerNameParagraphStyle#">
-            #_cardDisplayName7#
+            #_streamerDisplayName7.allCaps#
           </p>
         </div>
       </div>
@@ -347,7 +388,7 @@ svgShowdown: |
       <div style="width: #_text8w#px; height: #_text8h#px; overflow: hidden; display:table;">
         <div xmlns="http://www.w3.org/1999/xhtml" style="#svgStreamerNameStyle#">
           <p style=#svgStreamerNameParagraphStyle#">
-            #_cardDisplayName8#
+            #_streamerDisplayName8.allCaps#
           </p>
         </div>
       </div>
