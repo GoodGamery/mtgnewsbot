@@ -118,11 +118,11 @@ _portraitDisplayNameVariant:
 - "#_portraitName#"
 - "#_portraitName#"
 - "[_modifier:Biazarro,Evil]#_modifier# #_portraitName#"
-- "[_desc:#adjPersonCharacteristic#,#adj#,#mood#]“#_desc#” #_portraitName#"
+- "[_desc:#adjPersonCharacteristic#,#adj#,#mood#,#genericNickname#]“#_desc#” #_portraitName#"
 - "#_portraitName# a.k.a. “#genericNickname#”"
-- "[_variation:#firstName#,#firstName#,#genericNickname#,“#genericNickname#”,#]#_variation#"
-- "[_doctorate:, MD, Ph.D.,][_honorific:#_portraitName##comma# Sr.,#_portraitName##comma# Jr.,#_portraitName##comma# Esq.,The Honorable Judge #_portraitName#,Dr. #_portraitName##_doctorate#]#_honorific#"
-- "[_very:,,very ][_adj:#adjPersonCharacteristic#,#adj#,#mood#][_desc:#characterClass#,#playerCategory#,#someGuyOrGal#][_variant:Some #_desc#,A #very##_adj# #_desc#,A #_desc# named #_portraitName#]#_variant#"
+- "[_variation:#firstName#,#firstName#,#genericNickname#,“#genericNickname#”]#_variation#"
+- "[_dr:,,Dr. ][_doctorate:, MD, Ph.D.,][_honorific:#_portraitName##comma# Sr.,#_portraitName##comma# Jr.,#_portraitName##comma# Esq.,The Honorable Judge #_portraitName#,#_dr##_portraitName##_doctorate#]#_honorific#"
+- "[_very:,,very ][_adj:#adjPersonCharacteristic#,#adj#,#mood#][_desc:#characterClass#,#playerCategory#,#someGuyOrGal#,#_adj# #someGuyOrGal#][_variant:Some #_desc#,A #_very##_adj# #_desc#,A #_desc# named #_portraitName#]#_variant#"
 
 svgStreamerNameStyle: >
   color: white;
