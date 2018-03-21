@@ -4,3 +4,17 @@ colorfulLocal: |
   [_adjective:Stinky,Big,Corduroy,Teflon,Yukon,Rodeo,Klondike,Three-Finger,Whiskey,Sly,Calamity,Greasy,Calico,Slippin',“#massNoun.capitalize#”,#_hometown#,#_num#-#bodypart.capitalize#]
   [_name:Pete,Jeff,Craig,Jimmy,Jack,Nick,Rhonda,Sally,Irene,Zelda,Megan]
   #_adjective# #_name#
+
+someGuyOrGal: 
+- guy
+- gal
+- fella
+- dame
+- dude
+- jerk
+- joker
+- nerd
+- twit
+- clown
+- loser
+- fool
