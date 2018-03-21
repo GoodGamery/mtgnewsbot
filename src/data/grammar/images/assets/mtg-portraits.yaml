@@ -2,7 +2,17 @@
 _proDir: "../src/data/images/showdown/portraits/pros"
 
 mtgPortraitsPros:
-- "[_portraitName:Elaine Chase][_portrait:#_proDir#/elaine-chase-1.jpg]"
+- "[_portraitName:Anton Jonsson][_portrait:#_proDir#/anton-jonsson-1.jpg]"
+- "[_portraitName:“Baby” Huey Jensen][_portrait:#_proDir#/baby-huey-jensen-1.jpg]"
+- "[_portraitName:Ben Stark][_portrait:#_proDir#/ben-stark-1.jpg]"
+- "[_portraitName:Brad Nelson][_portrait:#_proDir#/brad-nelson-1.jpg,#_proDir#/brad-nelson-2.jpg]"
+- "[_portraitName:Brian Bran-Duin][_portrait:#_proDir#/brian-bran-duin-1.jpg,#_proDir#/brian-bran-duin-2.jpg]"
+- "[_portraitName:Brian David-Marshall][_portrait:#_proDir#/brian-david-marshall-1.jpg]"
+- "[_portraitName:Brian Kibler[_portrait:#_proDir#/brian-kibler-1.jpg,#_proDir#/brian-kibler-2.jpg]"
+- "[_portraitName:Caleb Durward,CalebDMTG][_portrait:#_proDir#/caleb-durward-1.jpg]"
+- "[_portraitName:Craig Wescoe][_portrait:#_proDir#/craig-wescoe-1.jpg,#_proDir#/craig-wescoe-2.jpg]"
+- "[_portraitName:David Ochoa,Wrapter][_portrait:#_proDir#/david-ochoa-1.jpg,#_proDir#/david-ochoa-2.jpg,#_proDir#/david-ochoa-3.jpg,#_proDir#/david-ochoa-4.jpg]"
+- "[_portraitName:Elaine Chase][_portrait:#_proDir#/elaine-chase-1.jpg,#_proDir#/elaine-chase-2.jpg]"
 - "[_portraitName:Gary Wise][_portrait:#_proDir#/gary-wise-1.jpg]"
 - "[_portraitName:Jarvis Yu][_portrait:#_proDir#/jarvis-yu-4.jpg]"
 - "[_portraitName:LSV,Luis Scott-Vargas][_portrait:#_proDir#/lsv-2.jpg]"
