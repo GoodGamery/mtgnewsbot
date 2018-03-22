@@ -48,7 +48,7 @@ cardQueryWallOf: '[_customQuery:name="Wall of"][#_customQuery.cardSearchCustomQu
 
 showdownCreatureVariation:
 - '[_customQuery:name="Wall of"][#_customQuery.cardSearchCustomQuery(1)#][_cardname:#_cardName1#][_cardDisplayName:Wall of #pluralNounOrMassNoun.capitalizeAll#]'
-- "[_creatureType:Wizard][#_creatureType.cardSearchByType(1)#][_cardname:#_cardName1#][_magic:#abstractMassOrItemNounOrEmotion.capitalizeAll.hyphenate#][_cardDisplayName:#_magic# Mage,#_magic# Wizard,Magus of the #pluralNounOrMassNoun.capitalizeAll#]"
+- "[_creatureType:Wizard][#_creatureType.cardSearchByType(1)#][_cardname:#_cardName1#][_magic:#abstractMassOrItemNounOrEmotion.capitalizeAll.hyphenate#][_magusMagic:#pluralNoun#,#massNoun#,#placeNoun#][_cardDisplayName:#_magic# Mage,#_magic# Wizard,Magus of the #_magusMagic.capitalizeAll#]"
 - "[_creatureType:Beast][#_creatureType.cardSearchByType(1)#][_cardname:#_cardName1#][_desc:#abstractMassOrItemNounOrEmotion.capitalizeAll#,#mood#,#adj#][_compoundSuffix:howler,hopper,ripper,diver,stomper,crusher,thrasher,beast][_compoundBeastName:#nounCompoundWorthy.capitalize##_compoundSuffix#][_cardDisplayName:#_desc.capitalizeAll.hyphenate# Beast,#nonPlaneStoryLocation.capitalize# #_compoundBeastName#,#verbStrictlyIntransitiveGerund# #_compoundBeastName#]"
 - "[_creatureType:Atog][#_creatureType.cardSearchByType(1)#][_cardname:#_cardName1#][_cardDisplayName:#nounCompoundWorthy.capitalize#atog]"
 - "[_creatureType:Spirit][#_creatureType.cardSearchByType(1)#][_cardname:#_cardName1#][_cardDisplayName:#abstractNounMassNounOrEmotion.capitalize# Kami,Kami of #adj.capitalize# #pluralItemNounOrMassNoun.capitalizeAll#,#countLargeLimit.capitalize#-#bodypart.ed# Kami]"
@@ -108,7 +108,7 @@ _cardDisplayNameVariant:
 - "#_cardname#"
 - "#_cardname#"
 - "#_cardfamiliarname#"
-- "[_firstname:#firstName#,#genericNickname#][_veryCharacteristic:#adjPersonCharacteristic#,very #adjPersonCharacteristic#][_veryMoody:#mood#,very #mood#][_variation:Some #_creaturetype#,Another #_creaturetype#,#_veryCharacteristic.capitalizeAll.a# #_creaturetype#,#_veryMoody.capitalizeAll.a# #_creaturetype#,#_creaturetype.a# Named “#_firstname#”,#_firstname# the #_creaturetype#,#_creaturetype.a#]#_variation.capitalize#"
+- "[_firstname:#firstName#,#genericNickname#][_veryCharacteristic:#adjPersonCharacteristic#,very #adjPersonCharacteristic#][_veryMoody:#mood#,very #mood#][_variation:Some #_veryCharacteristic# #_creaturetype#,Another #_creaturetype#,#_veryCharacteristic.capitalizeAll.a# #_creaturetype#,#_veryMoody.capitalizeAll.a# #_creaturetype#,#_creaturetype.a# Named “#_firstname#”,#_firstname# the #_creaturetype#,#_creaturetype.a#]#_variation.capitalize#"
 - "[_variation:Big #_cardname#,Baby #_cardname#,“#adj.capitalizeAll#” #_cardname#,“#genericNickname#” (#_cardname#),#_cardname# a.k.a. “#genericNickname#”,#_cardname#,#_cardname##comma# Sr.,#_cardname##comma# Jr.]#_variation#"
 - "[_variation:#firstName#,#firstName#,#genericNickname#,“#genericNickname#”]#_variation#"
 - "#colorfulLocal#"
@@ -121,12 +121,13 @@ _portraitDisplayNameVariant:
 - "#_portraitName#"
 - "#_portraitName#"
 - "#_portraitName#"
-- "[_modifier:Biazarro,Evil]#_modifier# #_portraitName#"
+- "#playerCategory# #_portraitName#"
+- "[_modifier:Biazarro,Evil,#playerCategory#,#characterClass#]#_modifier# #_portraitName#"
 - "[_desc:#adjPersonCharacteristic#,#adj#,#mood#,#genericNickname#]“#_desc#” #_portraitName#"
 - "#_portraitName# a.k.a. “#genericNickname#”"
 - "[_variation:#firstName#,#firstName#,#genericNickname#,“#genericNickname#”]#_variation#"
 - "[_dr:,,Dr. ][_doctorate:, MD, Ph.D.,][_honorific:#_portraitName##comma# Sr.,#_portraitName##comma# Jr.,#_portraitName##comma# Esq.,The Honorable Judge #_portraitName#,#_dr##_portraitName##_doctorate#]#_honorific#"
-- "[_very:,,very ][_adj:#adjPersonCharacteristic#,#adj#,#mood#][_desc:#characterClass#,#playerCategory#,#someGuyOrGal#,#_adj# #someGuyOrGal#][_variant:Some #_desc#,This #_desc#,#_very.a##_adj# #_desc#,#_desc.a# named #_portraitName#]#_variant#"
+- "[_very:very,really,extremely,][_adj:#adjPersonCharacteristic#,#adj#,#mood#][_desc:#characterClass#,#playerCategory#,#someGuyOrGal#][_variant:Some #_desc#,This #_desc#,#_very.a# #_adj# #_desc#,Some #_desc# named #_portraitName#]#_variant#"
 
 svgStreamerNameStyle: >
   color: white;
@@ -203,33 +204,57 @@ svgShowdownStreamerProPortrait: |
 
 svgShowdownStreamerPortrait1: 
 - "[_imgX:425][_imgY:75][_streamerDisplayName1:#_cardDisplayName1#][_cardName:#_card1#][_imgMask:cardArtMask1]#svgShowdownStreamerCardArtPortrait#"
+- "[_imgX:425][_imgY:75][_streamerDisplayName1:#_cardDisplayName1#][_cardName:#_card1#][_imgMask:cardArtMask1]#svgShowdownStreamerCardArtPortrait#"
+- "[_imgX:425][_imgY:75][_streamerDisplayName1:#_cardDisplayName1#][_cardName:#_card1#][_imgMask:cardArtMask1]#svgShowdownStreamerCardArtPortrait#"
+- "[_imgX:425][_imgY:75][_streamerDisplayName1:#_cardDisplayName1#][_cardName:#_card1#][_imgMask:cardArtMask1]#svgShowdownStreamerCardArtPortrait#"
+- "[_imgX:425][_imgY:75][_streamerDisplayName1:#_cardDisplayName1#][_cardName:#_card1#][_imgMask:cardArtMask1]#svgShowdownStreamerCardArtPortrait#"
 - "[_imgX:450][_imgY:115][_streamerDisplayName1:#_portraitName1#][_portraitUrl:#_portraitUrl1#]#svgShowdownStreamerProPortrait#"
 
 svgShowdownStreamerPortrait2: 
+- "[_imgX:613][_imgY:75][_streamerDisplayName2:#_cardDisplayName2#][_cardName:#_card2#][_imgMask:cardArtMask2]#svgShowdownStreamerCardArtPortrait#"
+- "[_imgX:613][_imgY:75][_streamerDisplayName2:#_cardDisplayName2#][_cardName:#_card2#][_imgMask:cardArtMask2]#svgShowdownStreamerCardArtPortrait#"
 - "[_imgX:613][_imgY:75][_streamerDisplayName2:#_cardDisplayName2#][_cardName:#_card2#][_imgMask:cardArtMask2]#svgShowdownStreamerCardArtPortrait#"
 - "[_imgX:638][_imgY:115][_streamerDisplayName2:#_portraitName2#][_portraitUrl:#_portraitUrl2#]#svgShowdownStreamerProPortrait#"
 
 svgShowdownStreamerPortrait3: 
 - "[_imgX:801][_imgY:75][_streamerDisplayName3:#_cardDisplayName3#][_cardName:#_card3#][_imgMask:cardArtMask3]#svgShowdownStreamerCardArtPortrait#"
+- "[_imgX:801][_imgY:75][_streamerDisplayName3:#_cardDisplayName3#][_cardName:#_card3#][_imgMask:cardArtMask3]#svgShowdownStreamerCardArtPortrait#"
+- "[_imgX:801][_imgY:75][_streamerDisplayName3:#_cardDisplayName3#][_cardName:#_card3#][_imgMask:cardArtMask3]#svgShowdownStreamerCardArtPortrait#"
+- "[_imgX:801][_imgY:75][_streamerDisplayName3:#_cardDisplayName3#][_cardName:#_card3#][_imgMask:cardArtMask3]#svgShowdownStreamerCardArtPortrait#"
+- "[_imgX:801][_imgY:75][_streamerDisplayName3:#_cardDisplayName3#][_cardName:#_card3#][_imgMask:cardArtMask3]#svgShowdownStreamerCardArtPortrait#"
 - "[_imgX:826][_imgY:115][_streamerDisplayName3:#_portraitName3#][_portraitUrl:#_portraitUrl3#]#svgShowdownStreamerProPortrait#"
 
 svgShowdownStreamerPortrait4: 
+- "[_imgX:989][_imgY:75][_streamerDisplayName4:#_cardDisplayName4#][_cardName:#_card4#][_imgMask:cardArtMask4]#svgShowdownStreamerCardArtPortrait#"
+- "[_imgX:989][_imgY:75][_streamerDisplayName4:#_cardDisplayName4#][_cardName:#_card4#][_imgMask:cardArtMask4]#svgShowdownStreamerCardArtPortrait#"
 - "[_imgX:989][_imgY:75][_streamerDisplayName4:#_cardDisplayName4#][_cardName:#_card4#][_imgMask:cardArtMask4]#svgShowdownStreamerCardArtPortrait#"
 - "[_imgX:1014][_imgY:115][_streamerDisplayName4:#_portraitName4#][_portraitUrl:#_portraitUrl4#]#svgShowdownStreamerProPortrait#"
 
 svgShowdownStreamerPortrait5: 
 - "[_imgX:425][_imgY:355][_streamerDisplayName5:#_cardDisplayName5#][_cardName:#_card5#][_imgMask:cardArtMask5]#svgShowdownStreamerCardArtPortrait#"
+- "[_imgX:425][_imgY:355][_streamerDisplayName5:#_cardDisplayName5#][_cardName:#_card5#][_imgMask:cardArtMask5]#svgShowdownStreamerCardArtPortrait#"
+- "[_imgX:425][_imgY:355][_streamerDisplayName5:#_cardDisplayName5#][_cardName:#_card5#][_imgMask:cardArtMask5]#svgShowdownStreamerCardArtPortrait#"
+- "[_imgX:425][_imgY:355][_streamerDisplayName5:#_cardDisplayName5#][_cardName:#_card5#][_imgMask:cardArtMask5]#svgShowdownStreamerCardArtPortrait#"
+- "[_imgX:425][_imgY:355][_streamerDisplayName5:#_cardDisplayName5#][_cardName:#_card5#][_imgMask:cardArtMask5]#svgShowdownStreamerCardArtPortrait#"
 - "[_imgX:450][_imgY:395][_streamerDisplayName5:#_portraitName5#][_portraitUrl:#_portraitUrl5#]#svgShowdownStreamerProPortrait#"
 
 svgShowdownStreamerPortrait6: 
+- "[_imgX:613][_imgY:355][_streamerDisplayName6:#_cardDisplayName6#][_cardName:#_card6#][_imgMask:cardArtMask6]#svgShowdownStreamerCardArtPortrait#"
+- "[_imgX:613][_imgY:355][_streamerDisplayName6:#_cardDisplayName6#][_cardName:#_card6#][_imgMask:cardArtMask6]#svgShowdownStreamerCardArtPortrait#"
 - "[_imgX:613][_imgY:355][_streamerDisplayName6:#_cardDisplayName6#][_cardName:#_card6#][_imgMask:cardArtMask6]#svgShowdownStreamerCardArtPortrait#"
 - "[_imgX:638][_imgY:395][_streamerDisplayName6:#_portraitName6#][_portraitUrl:#_portraitUrl6#]#svgShowdownStreamerProPortrait#"
 
 svgShowdownStreamerPortrait7: 
 - "[_imgX:801][_imgY:355][_streamerDisplayName7:#_cardDisplayName7#][_cardName:#_card7#][_imgMask:cardArtMask7]#svgShowdownStreamerCardArtPortrait#"
+- "[_imgX:801][_imgY:355][_streamerDisplayName7:#_cardDisplayName7#][_cardName:#_card7#][_imgMask:cardArtMask7]#svgShowdownStreamerCardArtPortrait#"
+- "[_imgX:801][_imgY:355][_streamerDisplayName7:#_cardDisplayName7#][_cardName:#_card7#][_imgMask:cardArtMask7]#svgShowdownStreamerCardArtPortrait#"
+- "[_imgX:801][_imgY:355][_streamerDisplayName7:#_cardDisplayName7#][_cardName:#_card7#][_imgMask:cardArtMask7]#svgShowdownStreamerCardArtPortrait#"
+- "[_imgX:801][_imgY:355][_streamerDisplayName7:#_cardDisplayName7#][_cardName:#_card7#][_imgMask:cardArtMask7]#svgShowdownStreamerCardArtPortrait#"
 - "[_imgX:826][_imgY:395][_streamerDisplayName7:#_portraitName7#][_portraitUrl:#_portraitUrl7#]#svgShowdownStreamerProPortrait#"
 
 svgShowdownStreamerPortrait8: 
+- "[_imgX:989][_imgY:355][_streamerDisplayName8:#_cardDisplayName8#][_cardName:#_card8#][_imgMask:cardArtMask8]#svgShowdownStreamerCardArtPortrait#"
+- "[_imgX:989][_imgY:355][_streamerDisplayName8:#_cardDisplayName8#][_cardName:#_card8#][_imgMask:cardArtMask8]#svgShowdownStreamerCardArtPortrait#"
 - "[_imgX:989][_imgY:355][_streamerDisplayName8:#_cardDisplayName8#][_cardName:#_card8#][_imgMask:cardArtMask8]#svgShowdownStreamerCardArtPortrait#"
 - "[_imgX:1014][_imgY:395][_streamerDisplayName8:#_portraitName8#][_portraitUrl:#_portraitUrl8#]#svgShowdownStreamerProPortrait#"
 
