@@ -16,8 +16,6 @@ svgStreamerShowdownTitle:
 - "#_format# Super League"
 - "[_showdownType:#_format#,#playerCategory#,#adjPersonCharacteristic# Streamer,#creatureTypeOrCharacterClass#]#_showdownType.capitalizeAll# Showdown"
 - "[_kind:,#_showdownDateMonth# ,#_showdownDayOfWeek# ]#_kind#Newsbot Showdown"
-# - "Streamer Showdown: Team #_card1# vs. Team #_card5#"
-#- "#format# Super League [_round:Quarterfinals,Semifinals,Finals]#_round#"
 
 svgStreamerShowdownInfo:
 - "#_showdownDayOfWeek#｜[_mins:,,#colon#30][_amPm:am,pm,pm,pm]#num1-12##_mins##_amPm#"
