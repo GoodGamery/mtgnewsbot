@@ -5,7 +5,7 @@ curatedHeadlineA1:
 - "#smallImageHeadlineOrRandomText1#"
 
 curatedHeadlineA2:
-- "#headlineKeepOrMulligan#"
+- "#largeOccasionalImageHeadline1#"
 - "#strategyHeadline#"
 - "#strategyHeadline#"
 - "#randomTextHeadline#"
@@ -27,7 +27,7 @@ curatedHeadlineA5:
 - "#smallImageHeadlineOrRandomText1#"
 
 curatedHeadlineA6:
-- "#inGraphics#"
+- "#largeOccasionalImageHeadline2#"
 - "#flavorHeadline#"
 - "#flavorHeadline#"
 - "#randomTextHeadline#"
@@ -48,7 +48,7 @@ curatedHeadlineB3:
 - "#smallImageHeadlineOrRandomText1#"
 
 curatedHeadlineB4:
-- "#inGraphics#"
+- "#largeOccasionalImageHeadline2#"
 - "#randomTextHeadline#"
 - "#flavorHeadline#"
 - "#flavorHeadline#"
@@ -59,7 +59,7 @@ curatedHeadlineB5:
 - "#smallImageHeadlineOrRandomText2#"
 
 curatedHeadlineB6:
-- "#headlineKeepOrMulligan#"
+- "#largeOccasionalImageHeadline1#"
 - "#financeHeadline#"
 - "#financeHeadline#"
 - "#randomTextHeadline#"
@@ -127,3 +127,9 @@ smallImageHeadlineOrRandomText2:
 - "#randomTextHeadline#"
 - "#randomTextHeadline#"
 
+largeOccasionalImageHeadline1:
+- "#headlineKeepOrMulligan#"
+- "#svgStreamerShowdown#"
+
+largeOccasionalImageHeadline2:
+- "#inGraphics#"
