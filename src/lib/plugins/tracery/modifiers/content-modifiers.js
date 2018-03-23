@@ -68,9 +68,18 @@ function randomMonthDay() {
 }
 
 function randomUpcomingMonthDay() {
+  const formats = {
+    english: date => getMonthDayOrdinal(date),
+    numeric: date => `${date.getMonth() + 1}/${date.getDate()}`
+  };
+
   const date = new Date();
   date.setDate(date.getDate() + randomInt(7, 60)); // choose a day 7-60 days in future
-  return getMonthDayOrdinal(date);
+
+  const monthString = date.toLocaleString('en-us', {  month: 'long' });
+  const referenceRules = `[__randomMonth:${monthString}][__randomDate:${date.getDate()}][__randomMonthDayNumeric:${formats.numeric(date)}]`;
+
+  return formats.english(date) + referenceRules;
 }
 
 function randomFutureDate() {

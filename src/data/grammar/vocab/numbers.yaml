@@ -33,7 +33,16 @@
         "seven",
         "ten"
     ],
-
+    "countLargeLimit": [
+        "#count#",
+        "#count#",
+        "#count#",
+        "twelve",
+        "twenty",
+        "fifty",
+        "hundred",
+        "thousand"
+    ],
     "countFives": [
       "five",
       "ten",

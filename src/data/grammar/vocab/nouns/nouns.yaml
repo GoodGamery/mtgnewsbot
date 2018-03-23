@@ -4,6 +4,7 @@
   "abstractNounOrMassNoun": ["#abstractNoun#","#massNoun#"],
   "abstractNounOrEmotion": ["#abstractNoun#","#massNoun#"],
   "abstractNounMassNounOrEmotion": ["#abstractNoun#","#massNoun#","#emotion#"],
+  "abstractMassOrItemNounOrEmotion": ["#abstractNoun#","#massNoun#","#itemNoun#","#emotion#"],
   "abstractMassOrPluralNounOrEmotion": ["#abstractNoun#","#massNoun#","#pluralNoun#","#emotion#"],
   "abstractMassOrPluralNounGameConceptOrEmotion": ["#abstractNoun#","#massNoun#","#pluralNoun#","#gameConcept#","#emotion#"],
   "itemNounOrMassNoun": ["#itemNoun#","#massNoun#"],

@@ -1,0 +1,413 @@
+###
+#  TODO: 
+#  * borders around portraits
+#  * textwrapping for showdown title (too-long words)
+#  * colorized backgrounds
+#  * vertically center portraits (move bottom row up)      
+##
+svgStreamerShowdown: "[#svgStreamerShowdownInitialize#]{svg svgString=`#svgShowdown#`}#_showdownTitle#"
+
+svgStreamerShowdownInitialize: "[#cardFinderChooseEightStreamers#][_format:#format#][#svgStreamerShowdownDate#][_showdownTitle:#svgStreamerShowdownTitle#][_showdownInfo:#svgStreamerShowdownInfo#][_showdownSecondaryInfo:#svgStreamerShowdownSecondaryInfo#][#svgEightPersonShowdownPosition#]"
+
+
+svgStreamerShowdownDate: "[_showdownDate:#CONTENT.randomUpcomingMonthDay#][_showdownDateNumeric:#__randomMonthDayNumeric#][_showdownDateMonth:#__randomMonth#][_showdownDayOfWeek:#dayOfTheWeek#]"
+
+svgStreamerShowdownTitle:
+- "#_format# Super League"
+- "[_showdownType:#_format#,#playerCategory#,#adjPersonCharacteristic# Streamer,#creatureTypeOrCharacterClass#]#_showdownType.capitalizeAll# Showdown"
+- "[_kind:,#_showdownDateMonth# ,#_showdownDayOfWeek# ]#_kind#Newsbot Showdown"
+
+svgStreamerShowdownInfo:
+- "#_showdownDayOfWeek#｜[_mins:,,#colon#30][_amPm:am,pm,pm,pm]#num1-12##_mins##_amPm#"
+- "#_showdownDate#｜[_mins:,,#colon#30][_amPm:am,pm,pm,pm]#num1-12##_mins##_amPm#"
+- "#_showdownDateNumeric#｜[_mins:,,#colon#30][_amPm:am,pm,pm,pm][_zone:, PT]#num1-12##_mins##_amPm##_zone#"
+
+svgStreamerShowdownSecondaryInfo:
+- "\\##svgStreamerHashtag.capitalizeAll.noPunctuation.noSpaces#"
+
+svgStreamerHashtag:
+- |
+  [_absurdTerm:#itemNounOrMassNoun# Surprise,#randomMtgLocation# #pluralNounOrMassNoun#]#_absurdTerm#
+- | 
+  [_cardverb:#cardTextVerb#][_query:text=?#_cardverb#][#_query.cardSearchCustomQuery(1)#][_cardname:#_cardName1#]
+  [_object:Yourself,Every Day,The World]
+  [_hashtag1Term:#_cardverb# #_object#,#gameConcept#,#mtgQuestionablePractice#,#mtgSlangTerm#,MTG #abstractMassOrPluralNounGameConceptOrEmotion#,Just #_mtgoHeadlineShortMtgTopic# Things,#hashtagAbsurdTerm#]#_hashtag1Term.capitalizeAll.noPunctuation.noSpaces#"
+
+cardFinder: https://goodgamery.com/api/mtg/image?card=
+
+_showdownBackgroundImageDirPath: "./data/images/showdown/backgrounds-large"
+_showdownBackgroundImageIndex: ["1","1","2","3","4","5"]
+
+_showdownBackgroundImageFile: "#_showdownBackgroundImageDirPath#/bg#_showdownBackgroundImageIndex#.jpg"
+
+cardQueryWallOf: '[_customQuery:name="Wall of"][#_customQuery.cardSearchCustomQuery(1)#][_cardName:#_cardName1#]#_cardName# → Wall of #pluralNounOrMassNoun.capitalizeAll#'
+
+showdownCreatureVariation:
+- '[_customQuery:name="Wall of"][#_customQuery.cardSearchCustomQuery(1)#][_cardname:#_cardName1#][_cardDisplayName:Wall of #pluralNounOrMassNoun.capitalizeAll#]'
+- "[_creatureType:Wizard][#_creatureType.cardSearchByType(1)#][_cardname:#_cardName1#][_magic:#abstractMassOrItemNounOrEmotion.capitalizeAll.hyphenate#][_magusMagic:#pluralNoun#,#massNoun#,#placeNoun#][_cardDisplayName:#_magic# Mage,#_magic# Wizard,Magus of the #_magusMagic.capitalizeAll#]"
+- "[_creatureType:Beast][#_creatureType.cardSearchByType(1)#][_cardname:#_cardName1#][_desc:#abstractMassOrItemNounOrEmotion.capitalizeAll#,#mood#,#adj#][_compoundSuffix:howler,hopper,ripper,diver,stomper,crusher,thrasher,beast][_compoundBeastName:#nounCompoundWorthy.capitalize##_compoundSuffix#][_cardDisplayName:#_desc.capitalizeAll.hyphenate# Beast,#nonPlaneStoryLocation.capitalize# #_compoundBeastName#,#verbStrictlyIntransitiveGerund# #_compoundBeastName#]"
+- "[_creatureType:Atog][#_creatureType.cardSearchByType(1)#][_cardname:#_cardName1#][_cardDisplayName:#nounCompoundWorthy.capitalize#atog]"
+- "[_creatureType:Spirit][#_creatureType.cardSearchByType(1)#][_cardname:#_cardName1#][_cardDisplayName:#abstractNounMassNounOrEmotion.capitalize# Kami,Kami of #adj.capitalize# #pluralItemNounOrMassNoun.capitalizeAll#,#countLargeLimit.capitalize#-#bodypart.ed# Kami]"
+
+showdownCreatureCardFinderSearch: |
+  [_searchTerm:"creature"][#_searchTerm.cardSearchByType(1)#]
+  [_cardname:#_cardRawName1#][_cardfamiliarname:#_cardFamiliarName1#][_creaturetype:#_cardSomeCreatureType1#][_cardDisplayName:#_cardDisplayNameVariant#]
+
+
+showdownLegendaryCreatureSearch: |
+  [_customQuery:t=legendary t=creature][#cotdCustomSearch#]
+  [_cardname:#_cardRawName1#][_cardDisplayName:#_cardFamiliarName1#]
+
+cardFinderChooseCreature: 
+- "#showdownCreatureCardFinderSearch#"
+- "#showdownCreatureCardFinderSearch#"
+- "#showdownCreatureCardFinderSearch#"
+- "#showdownCreatureCardFinderSearch#"
+- "#showdownCreatureCardFinderSearch#"
+- "#showdownLegendaryCreatureSearch#"
+- "#showdownLegendaryCreatureSearch#"
+- "#showdownCreatureVariation#"
+
+choosePortrait:
+- "#mtgPortraitsPros#[_portraitName:#_portraitDisplayNameVariant#]"
+
+cardFinderChooseEightStreamers: |
+  [#cardFinderChooseEightCreatures#][#cardFinderChooseEightPortraits#]
+
+cardFinderChooseEightPortraits: |
+  [#choosePortrait#]
+  [#choosePortrait#][_portraitUrl1:#_portrait#][_portraitName1:#_portraitName#]
+  [#choosePortrait#][_portraitUrl2:#_portrait#][_portraitName2:#_portraitName#]
+  [#choosePortrait#][_portraitUrl3:#_portrait#][_portraitName3:#_portraitName#]
+  [#choosePortrait#][_portraitUrl4:#_portrait#][_portraitName4:#_portraitName#]
+  [#choosePortrait#][_portraitUrl5:#_portrait#][_portraitName5:#_portraitName#]
+  [#choosePortrait#][_portraitUrl6:#_portrait#][_portraitName6:#_portraitName#]
+  [#choosePortrait#][_portraitUrl7:#_portrait#][_portraitName7:#_portraitName#]
+  [#choosePortrait#][_portraitUrl8:#_portrait#][_portraitName8:#_portraitName#]
+
+cardFinderChooseEightCreatures: |
+  [#cardFinderChooseCreature#][_card1:#_cardname#][_cardDisplayName1:#_cardDisplayName#]
+  [#cardFinderChooseCreature#][_card2:#_cardname#][_cardDisplayName2:#_cardDisplayName#]
+  [#cardFinderChooseCreature#][_card3:#_cardname#][_cardDisplayName3:#_cardDisplayName#]
+  [#cardFinderChooseCreature#][_card4:#_cardname#][_cardDisplayName4:#_cardDisplayName#]
+  [#cardFinderChooseCreature#][_card5:#_cardname#][_cardDisplayName5:#_cardDisplayName#]
+  [#cardFinderChooseCreature#][_card6:#_cardname#][_cardDisplayName6:#_cardDisplayName#]
+  [#cardFinderChooseCreature#][_card7:#_cardname#][_cardDisplayName7:#_cardDisplayName#]
+  [#cardFinderChooseCreature#][_card8:#_cardname#][_cardDisplayName8:#_cardDisplayName#]
+
+_cardDisplayNameVariant:
+- "#_cardname#"
+- "#_cardname#"
+- "#_cardname#"
+- "#_cardname#"
+- "#_cardname#"
+- "#_cardname#"
+- "#_cardname#"
+- "#_cardfamiliarname#"
+- "[_firstname:#firstName#,#genericNickname#][_veryCharacteristic:#adjPersonCharacteristic#,very #adjPersonCharacteristic#][_veryMoody:#mood#,very #mood#][_variation:Some #_veryCharacteristic# #_creaturetype#,Another #_creaturetype#,#_veryCharacteristic.capitalizeAll.a# #_creaturetype#,#_veryMoody.capitalizeAll.a# #_creaturetype#,#_creaturetype.a# Named “#_firstname#”,#_firstname# the #_creaturetype#,#_creaturetype.a#]#_variation.capitalize#"
+- "[_variation:Big #_cardname#,Baby #_cardname#,“#adj.capitalizeAll#” #_cardname#,“#genericNickname#” (#_cardname#),#_cardname# a.k.a. “#genericNickname#”,#_cardname#,#_cardname##comma# Sr.,#_cardname##comma# Jr.]#_variation#"
+- "[_variation:#firstName#,#firstName#,#genericNickname#,“#genericNickname#”]#_variation#"
+- "#colorfulLocal#"
+
+_portraitDisplayNameVariant:
+- "#_portraitName#"
+- "#_portraitName#"
+- "#_portraitName#"
+- "#_portraitName#"
+- "#_portraitName#"
+- "#_portraitName#"
+- "#_portraitName#"
+- "#playerCategory# #_portraitName#"
+- "[_player:Expert,Guru,Mainstay,Champion,Genius,Pro,Specialist,Master,Virtuoso,Champ]#format# #_player# #_portraitName#"
+- "[_modifier:Biazarro,Evil,#playerCategory#,#characterClass#]#_modifier# #_portraitName#"
+- "[_desc:#adjPersonCharacteristic#,#adj#,#mood#,#genericNickname#]“#_desc#” #_portraitName#"
+- "#_portraitName# a.k.a. “#genericNickname#”"
+- "[_variation:#genericNickname#,“#genericNickname#”]#_variation#"
+- "[_dr:,,Dr. ][_doctorate:, MD, Ph.D.,][_honorific:Sir #_portraitName#,Dame #_portraitName#,#_portraitName##comma# Sr.,#_portraitName##comma# Jr.,#_portraitName##comma# Esq.,The Reverend #_portraitName#,Professor #_portraitName#,Vice-Chancellor #_portraitName#,#their.capitalize# Excellency #_portraitName#,The Honorable Judge #_portraitName#,#_dr##_portraitName##_doctorate#]#_honorific#"
+- "[_very:very,really,extremely][_adj:#adjPersonCharacteristic#,#adj#,#mood#][_desc:#characterClass#,#playerCategory#,#someGuyOrGal#][_variant:Some #_desc#,This #_desc#,#_very.a# #_adj# #_desc#,Some #_desc# named #_portraitName#]#_variant#"
+
+svgStreamerNameStyle: >
+  color: white;
+  padding: 5px;
+  font-family: 'Open Sans',Arial, 'DejaVu Sans', 'Liberation Sans', 'Open Sans',sans-serif;
+  font-weight: 600;
+  text-shadow: 1px 1px 1px black;
+  text-align:center;
+  font-size: 16px;
+  line-height: 16px;   
+  display: table-cell;
+  vertical-align: top;
+
+svgStreamerNameParagraphStyle: >
+  display: table-cell; 
+  vertical-align: top; 
+  text-align: center;   
+
+svgStreamerTitleStyle: >
+  color: white;
+  font-family: Beleren, Georgia, 'Liberation Serif', 'DejaVu Serif', serif;
+  font-weight: 400;
+  text-shadow: 1px 1px 1px black;
+  text-align:center;
+  vertical-align: bottom;
+  font-size: 64px;
+  line-height: 58px;
+  position: absolute;
+  bottom: 0;
+  padding: 0px 5px 20px 20px;
+
+svgStreamerInfoStyle: >
+  color: white;
+  padding: 5px;
+  font-family: 'Open Sans',Arial, 'DejaVu Sans', 'Liberation Sans', 'Open Sans', sans-serif;
+  font-weight: bold; 
+  text-shadow: 1px 1px 1px black;
+  text-align: center;
+  font-size: 36px; 
+  line-height: 32px; 
+  padding: 36px 0px 0px 0px;
+
+svgStreamerSecondaryInfoStyle: >
+  color: white;
+  padding: 5px;
+  font-family: 'Open Sans',Arial, 'DejaVu Sans', 'Liberation Sans', 'Open Sans', sans-serif;
+  font-weight: bold; 
+  text-shadow: 1px 1px 1px black;
+  text-align: center;
+  font-size: 26px; 
+  line-height: 22px; 
+  padding: 20px 0px 0px 0px;
+
+svgEightPersonShowdownPosition: |
+  [_text1x:448][_text1y:236][_text1w:176][_text1h:100]
+  [_text2x:636][_text2y:236][_text2w:176][_text2h:100]
+  [_text3x:824][_text3y:236][_text3w:176][_text3h:100]
+  [_text4x:1012][_text4y:236][_text4w:176][_text4h:100]
+  [_text5x:448][_text5y:516][_text5w:176][_text5h:100]
+  [_text6x:636][_text6y:516][_text6w:176][_text6h:100]
+  [_text7x:824][_text7y:516][_text7w:176][_text7h:100]
+  [_text8x:1012][_text8y:516][_text8w:176][_text8h:100]
+
+_noMask: ""
+
+svgShowdownStreamerPortrait: |
+    <image width="#_imgWidth#" height="#_imgHeight#" xlink:href="#_portraitUrl#" x="#_imgX#" y="#_imgY#" mask="url(\##_imgMask#)" style="-webkit-transform: scaleX(1);" />
+
+svgShowdownStreamerCardArtPortrait: |
+   [_imgWidth:226][_imgHeight:318][_portraitUrl:#cardFinder##_cardName#]#svgShowdownStreamerPortrait#
+
+svgShowdownStreamerProPortrait: |
+   [_imgWidth:175][_imgHeight:135][_imgMask:#_noMask#][_portraitUrl:#_portraitUrl#]#svgShowdownStreamerPortrait#
+
+svgShowdownStreamerPortrait1: 
+- "[_imgX:425][_imgY:75][_streamerDisplayName1:#_cardDisplayName1#][_cardName:#_card1#][_imgMask:cardArtMask1]#svgShowdownStreamerCardArtPortrait#"
+- "[_imgX:425][_imgY:75][_streamerDisplayName1:#_cardDisplayName1#][_cardName:#_card1#][_imgMask:cardArtMask1]#svgShowdownStreamerCardArtPortrait#"
+- "[_imgX:425][_imgY:75][_streamerDisplayName1:#_cardDisplayName1#][_cardName:#_card1#][_imgMask:cardArtMask1]#svgShowdownStreamerCardArtPortrait#"
+- "[_imgX:425][_imgY:75][_streamerDisplayName1:#_cardDisplayName1#][_cardName:#_card1#][_imgMask:cardArtMask1]#svgShowdownStreamerCardArtPortrait#"
+- "[_imgX:425][_imgY:75][_streamerDisplayName1:#_cardDisplayName1#][_cardName:#_card1#][_imgMask:cardArtMask1]#svgShowdownStreamerCardArtPortrait#"
+- "[_imgX:450][_imgY:115][_streamerDisplayName1:#_portraitName1#][_portraitUrl:#_portraitUrl1#]#svgShowdownStreamerProPortrait#"
+
+svgShowdownStreamerPortrait2: 
+- "[_imgX:613][_imgY:75][_streamerDisplayName2:#_cardDisplayName2#][_cardName:#_card2#][_imgMask:cardArtMask2]#svgShowdownStreamerCardArtPortrait#"
+- "[_imgX:613][_imgY:75][_streamerDisplayName2:#_cardDisplayName2#][_cardName:#_card2#][_imgMask:cardArtMask2]#svgShowdownStreamerCardArtPortrait#"
+- "[_imgX:613][_imgY:75][_streamerDisplayName2:#_cardDisplayName2#][_cardName:#_card2#][_imgMask:cardArtMask2]#svgShowdownStreamerCardArtPortrait#"
+- "[_imgX:638][_imgY:115][_streamerDisplayName2:#_portraitName2#][_portraitUrl:#_portraitUrl2#]#svgShowdownStreamerProPortrait#"
+
+svgShowdownStreamerPortrait3: 
+- "[_imgX:801][_imgY:75][_streamerDisplayName3:#_cardDisplayName3#][_cardName:#_card3#][_imgMask:cardArtMask3]#svgShowdownStreamerCardArtPortrait#"
+- "[_imgX:801][_imgY:75][_streamerDisplayName3:#_cardDisplayName3#][_cardName:#_card3#][_imgMask:cardArtMask3]#svgShowdownStreamerCardArtPortrait#"
+- "[_imgX:801][_imgY:75][_streamerDisplayName3:#_cardDisplayName3#][_cardName:#_card3#][_imgMask:cardArtMask3]#svgShowdownStreamerCardArtPortrait#"
+- "[_imgX:826][_imgY:115][_streamerDisplayName3:#_portraitName3#][_portraitUrl:#_portraitUrl3#]#svgShowdownStreamerProPortrait#"
+
+svgShowdownStreamerPortrait4: 
+- "[_imgX:989][_imgY:75][_streamerDisplayName4:#_cardDisplayName4#][_cardName:#_card4#][_imgMask:cardArtMask4]#svgShowdownStreamerCardArtPortrait#"
+- "[_imgX:989][_imgY:75][_streamerDisplayName4:#_cardDisplayName4#][_cardName:#_card4#][_imgMask:cardArtMask4]#svgShowdownStreamerCardArtPortrait#"
+- "[_imgX:1014][_imgY:115][_streamerDisplayName4:#_portraitName4#][_portraitUrl:#_portraitUrl4#]#svgShowdownStreamerProPortrait#"
+
+svgShowdownStreamerPortrait5: 
+- "[_imgX:425][_imgY:355][_streamerDisplayName5:#_cardDisplayName5#][_cardName:#_card5#][_imgMask:cardArtMask5]#svgShowdownStreamerCardArtPortrait#"
+- "[_imgX:425][_imgY:355][_streamerDisplayName5:#_cardDisplayName5#][_cardName:#_card5#][_imgMask:cardArtMask5]#svgShowdownStreamerCardArtPortrait#"
+- "[_imgX:425][_imgY:355][_streamerDisplayName5:#_cardDisplayName5#][_cardName:#_card5#][_imgMask:cardArtMask5]#svgShowdownStreamerCardArtPortrait#"
+- "[_imgX:450][_imgY:395][_streamerDisplayName5:#_portraitName5#][_portraitUrl:#_portraitUrl5#]#svgShowdownStreamerProPortrait#"
+
+svgShowdownStreamerPortrait6: 
+- "[_imgX:613][_imgY:355][_streamerDisplayName6:#_cardDisplayName6#][_cardName:#_card6#][_imgMask:cardArtMask6]#svgShowdownStreamerCardArtPortrait#"
+- "[_imgX:613][_imgY:355][_streamerDisplayName6:#_cardDisplayName6#][_cardName:#_card6#][_imgMask:cardArtMask6]#svgShowdownStreamerCardArtPortrait#"
+- "[_imgX:638][_imgY:395][_streamerDisplayName6:#_portraitName6#][_portraitUrl:#_portraitUrl6#]#svgShowdownStreamerProPortrait#"
+
+svgShowdownStreamerPortrait7: 
+- "[_imgX:801][_imgY:355][_streamerDisplayName7:#_cardDisplayName7#][_cardName:#_card7#][_imgMask:cardArtMask7]#svgShowdownStreamerCardArtPortrait#"
+- "[_imgX:801][_imgY:355][_streamerDisplayName7:#_cardDisplayName7#][_cardName:#_card7#][_imgMask:cardArtMask7]#svgShowdownStreamerCardArtPortrait#"
+- "[_imgX:801][_imgY:355][_streamerDisplayName7:#_cardDisplayName7#][_cardName:#_card7#][_imgMask:cardArtMask7]#svgShowdownStreamerCardArtPortrait#"
+- "[_imgX:826][_imgY:395][_streamerDisplayName7:#_portraitName7#][_portraitUrl:#_portraitUrl7#]#svgShowdownStreamerProPortrait#"
+
+svgShowdownStreamerPortrait8: 
+- "[_imgX:989][_imgY:355][_streamerDisplayName8:#_cardDisplayName8#][_cardName:#_card8#][_imgMask:cardArtMask8]#svgShowdownStreamerCardArtPortrait#"
+- "[_imgX:989][_imgY:355][_streamerDisplayName8:#_cardDisplayName8#][_cardName:#_card8#][_imgMask:cardArtMask8]#svgShowdownStreamerCardArtPortrait#"
+- "[_imgX:1014][_imgY:395][_streamerDisplayName8:#_portraitName8#][_portraitUrl:#_portraitUrl8#]#svgShowdownStreamerProPortrait#"
+
+svgShowdown: |
+  <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="1200" height="675">
+    <defs>
+      <mask id="cardArtMask1" maskUnits="userSpaceOnUse" mask-type="alpha">
+        <image x="425" y="75" width="226" height="318" xlink:href="./data/images/card-art-mask.png" />
+      </mask>
+      <mask id="cardArtMask2" maskUnits="userSpaceOnUse" mask-type="alpha">
+        <image x="613" y="75" width="226" height="318" xlink:href="./data/images/card-art-mask.png" />
+      </mask>
+      <mask id="cardArtMask3" maskUnits="userSpaceOnUse" mask-type="alpha">
+        <image x="801" y="75" width="226" height="318" xlink:href="./data/images/card-art-mask.png" />
+      </mask>
+      <mask id="cardArtMask4" maskUnits="userSpaceOnUse" mask-type="alpha">
+        <image x="989" y="75" width="226" height="318" xlink:href="./data/images/card-art-mask.png" />
+      </mask>
+
+      <mask id="cardArtMask5" maskUnits="userSpaceOnUse" mask-type="alpha">
+        <image x="425" y="355" width="226" height="318" xlink:href="./data/images/card-art-mask.png" />
+      </mask>
+      <mask id="cardArtMask6" maskUnits="userSpaceOnUse" mask-type="alpha">
+        <image x="613" y="355" width="226" height="318" xlink:href="./data/images/card-art-mask.png" />
+      </mask>
+      <mask id="cardArtMask7" maskUnits="userSpaceOnUse" mask-type="alpha">
+        <image x="801" y="355" width="226" height="318" xlink:href="./data/images/card-art-mask.png" />
+      </mask>
+      <mask id="cardArtMask8" maskUnits="userSpaceOnUse" mask-type="alpha">
+        <image x="989" y="355" width="226" height="318" xlink:href="./data/images/card-art-mask.png" />
+      </mask> 
+
+      <g id="textBox">
+        <rect x="0" y="0" width="183" height="220" style="fill:black;" fill-opacity="0.7"/>                    
+      </g>
+    </defs>
+
+    <image width="100%" height="100%" xlink:href="#_showdownBackgroundImageFile#" /> 
+
+    <foreignObject x="10" y="10" width="430" height="330">
+      <div style="width: 430px; height: 330px;">
+        <div xmlns="http://www.w3.org/1999/xhtml" style="#svgStreamerTitleStyle#">
+          #_showdownTitle.allCaps#
+        </div>
+      </div>
+    </foreignObject>
+
+    <foreignObject x="10" y="337" width="430px" height="70">
+      <div style="width: 430px; height: 70px; text-align:center;">
+        <div xmlns="http://www.w3.org/1999/xhtml" style="#svgStreamerInfoStyle#">
+          #_showdownInfo.allCaps#
+        </div>
+      </div>
+    </foreignObject>
+
+    <foreignObject x="10" y="396" width="430px" height="70">
+      <div style="width: 430px; height: 70px; text-align:center;">
+        <div xmlns="http://www.w3.org/1999/xhtml" style="#svgStreamerSecondaryInfoStyle#">
+          #_showdownSecondaryInfo.allCaps#
+        </div>
+      </div>
+    </foreignObject> 
+
+    <g>
+      <use xlink:href="\#textBox" x="446" y="110"/>
+    </g>
+    #svgShowdownStreamerPortrait1#
+    <foreignObject x="#_text1x#" y="#_text1y#" width="#_text1w#" height="#_text1h#">
+      <div style="width: #_text1w#px; height: #_text1h#px; overflow: hidden; display:table;">
+        <div xmlns="http://www.w3.org/1999/xhtml" style="#svgStreamerNameStyle#">
+          <p style=#svgStreamerNameParagraphStyle#">
+            #_streamerDisplayName1.allCaps#
+          </p>
+        </div>
+      </div>
+    </foreignObject>
+    <g>
+      <use xlink:href="\#textBox" x="634" y="110"/>
+    </g>
+    #svgShowdownStreamerPortrait2#
+    <foreignObject x="#_text2x#" y="#_text2y#" width="#_text2w#" height="#_text2h#">   
+      <div style="width: #_text2w#px; height: #_text2h#px; overflow: hidden; display:table;">
+        <div xmlns="http://www.w3.org/1999/xhtml" style="#svgStreamerNameStyle#">
+          <p style=#svgStreamerNameParagraphStyle#">
+            #_streamerDisplayName2.allCaps#
+          </p>
+        </div>
+      </div>
+    </foreignObject>
+    <g>
+      <use xlink:href="\#textBox" x="822" y="110"/>
+    </g>    
+    #svgShowdownStreamerPortrait3#
+    <foreignObject x="#_text3x#" y="#_text3y#" width="#_text3w#" height="#_text3h#">   
+      <div style="width: #_text3w#px; height: #_text3h#px; overflow: hidden; display:table;">
+        <div xmlns="http://www.w3.org/1999/xhtml" style="#svgStreamerNameStyle#">
+          <p style=#svgStreamerNameParagraphStyle#">
+            #_streamerDisplayName3.allCaps#
+          </p>
+        </div>
+      </div>
+    </foreignObject>
+    <g>
+      <use xlink:href="\#textBox" x="1010" y="110"/>
+    </g>    
+    #svgShowdownStreamerPortrait4#
+    <foreignObject x="#_text4x#" y="#_text4y#" width="#_text4w#" height="#_text4h#">   
+      <div style="width: #_text4w#px; height: #_text4h#px; overflow: hidden; display:table;">
+        <div xmlns="http://www.w3.org/1999/xhtml" style="#svgStreamerNameStyle#">
+          <p style=#svgStreamerNameParagraphStyle#">
+            #_streamerDisplayName4.allCaps#
+          </p>
+        </div>
+      </div>
+    </foreignObject>
+    <g>
+      <use xlink:href="\#textBox" x="446" y="390"/>
+    </g>  
+    #svgShowdownStreamerPortrait5#
+    <foreignObject x="#_text5x#" y="#_text5y#" width="#_text5w#" height="#_text5h#">   
+      <div style="width: #_text5w#px; height: #_text5h#px; overflow: hidden; display:table;">
+        <div xmlns="http://www.w3.org/1999/xhtml" style="#svgStreamerNameStyle#">
+          <p style=#svgStreamerNameParagraphStyle#">
+            #_streamerDisplayName5.allCaps#
+          </p>
+        </div>
+      </div>
+    </foreignObject>
+    <g>
+      <use xlink:href="\#textBox" x="634" y="390"/>
+    </g>     
+    #svgShowdownStreamerPortrait6#
+    <foreignObject x="#_text6x#" y="#_text6y#" width="#_text6w#" height="#_text6h#">   
+      <div style="width: #_text6w#px; height: #_text6h#px; overflow: hidden; display:table;">
+        <div xmlns="http://www.w3.org/1999/xhtml" style="#svgStreamerNameStyle#">
+          <p style=#svgStreamerNameParagraphStyle#">
+            #_streamerDisplayName6.allCaps#
+          </p>
+        </div>
+      </div>
+    </foreignObject>
+    <g>
+      <use xlink:href="\#textBox" x="822" y="390"/>
+    </g>      
+    #svgShowdownStreamerPortrait7#
+    <foreignObject x="#_text7x#" y="#_text7y#" width="#_text7w#" height="#_text7h#">   
+      <div style="width: #_text7w#px; height: #_text7h#px; overflow: hidden; display:table;">
+        <div xmlns="http://www.w3.org/1999/xhtml" style="#svgStreamerNameStyle#">
+          <p style=#svgStreamerNameParagraphStyle#">
+            #_streamerDisplayName7.allCaps#
+          </p>
+        </div>
+      </div>
+    </foreignObject>
+    <g>
+      <use xlink:href="\#textBox" x="1010" y="390"/>
+    </g>     
+    #svgShowdownStreamerPortrait8#
+    <foreignObject x="#_text8x#" y="#_text8y#" width="#_text8w#" height="#_text8h#">   
+      <div style="width: #_text8w#px; height: #_text8h#px; overflow: hidden; display:table;">
+        <div xmlns="http://www.w3.org/1999/xhtml" style="#svgStreamerNameStyle#">
+          <p style=#svgStreamerNameParagraphStyle#">
+            #_streamerDisplayName8.allCaps#
+          </p>
+        </div>
+      </div>
+    </foreignObject>  
+  </svg>
