@@ -125,9 +125,9 @@ _portraitDisplayNameVariant:
 - "[_modifier:Biazarro,Evil,#playerCategory#,#characterClass#]#_modifier# #_portraitName#"
 - "[_desc:#adjPersonCharacteristic#,#adj#,#mood#,#genericNickname#]“#_desc#” #_portraitName#"
 - "#_portraitName# a.k.a. “#genericNickname#”"
-- "[_variation:#firstName#,#firstName#,#genericNickname#,“#genericNickname#”]#_variation#"
+- "[_variation:#genericNickname#,“#genericNickname#”]#_variation#"
 - "[_dr:,,Dr. ][_doctorate:, MD, Ph.D.,][_honorific:#_portraitName##comma# Sr.,#_portraitName##comma# Jr.,#_portraitName##comma# Esq.,The Honorable Judge #_portraitName#,#_dr##_portraitName##_doctorate#]#_honorific#"
-- "[_very:very,really,extremely,][_adj:#adjPersonCharacteristic#,#adj#,#mood#][_desc:#characterClass#,#playerCategory#,#someGuyOrGal#][_variant:Some #_desc#,This #_desc#,#_very.a# #_adj# #_desc#,Some #_desc# named #_portraitName#]#_variant#"
+- "[_very:very,really,extremely][_adj:#adjPersonCharacteristic#,#adj#,#mood#][_desc:#characterClass#,#playerCategory#,#someGuyOrGal#][_variant:Some #_desc#,This #_desc#,#_very.a# #_adj# #_desc#,Some #_desc# named #_portraitName#]#_variant#"
 
 svgStreamerNameStyle: >
   color: white;

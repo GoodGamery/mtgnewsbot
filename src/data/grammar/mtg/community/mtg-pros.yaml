@@ -150,7 +150,8 @@
     "warrior[#neutralPronouns#]",
     "wizard[#neutralPronouns#]",
     "#creatureTypes# fan[#neutralPronouns#]",
-    "#creatureTypes# fan[#neutralPronouns#]",
+    "#format# player[#neutralPronouns#]",
+    "#planeswalkerFirstName# fan[#neutralPronouns#]",
     "[_personality:#character#,#character#,#historicalFigure#]#_personality# cosplayer[#neutralPronouns#]"
   ],
 
