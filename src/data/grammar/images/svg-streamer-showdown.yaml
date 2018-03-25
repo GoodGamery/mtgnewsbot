@@ -15,7 +15,7 @@ svgStreamerShowdownDate: "[_showdownDate:#CONTENT.randomUpcomingMonthDay#][_show
 svgStreamerShowdownTitle:
 - "#_format# Super League"
 - "[_showdownType:#_format#,#playerCategory#,#adjPersonCharacteristic# Streamer,#creatureTypeOrCharacterClass#]#_showdownType.capitalizeAll# Showdown"
-- "[_kind:,#_showdownDateMonth# ,#_showdownDayOfWeek# ]#_kind#Newsbot Showdown"
+- "[_format:#popularFormat#][_kind:#_showdownDateMonth# Newsbot,#_showdownDayOfWeek# Newsbot,Newsbot #_format#]#_kind# Showdown"
 
 svgStreamerShowdownInfo:
 - "#_showdownDayOfWeek#｜[_mins:,,#colon#30][_amPm:am,pm,pm,pm]#num1-12##_mins##_amPm#"
@@ -23,15 +23,12 @@ svgStreamerShowdownInfo:
 - "#_showdownDateNumeric#｜[_mins:,,#colon#30][_amPm:am,pm,pm,pm][_zone:, PT]#num1-12##_mins##_amPm##_zone#"
 
 svgStreamerShowdownSecondaryInfo:
-- "\\##svgStreamerHashtag.capitalizeAll.noPunctuation.noSpaces#"
+- "\\##svgStreamerHashtag.allCaps.noPunctuation.replace( ,&shy;)#"
 
 svgStreamerHashtag:
-- |
-  [_absurdTerm:#itemNounOrMassNoun# Surprise,#randomMtgLocation# #pluralNounOrMassNoun#]#_absurdTerm#
-- | 
-  [_cardverb:#cardTextVerb#][_query:text=?#_cardverb#][#_query.cardSearchCustomQuery(1)#][_cardname:#_cardName1#]
-  [_object:Yourself,Every Day,The World]
-  [_hashtag1Term:#_cardverb# #_object#,#gameConcept#,#mtgQuestionablePractice#,#mtgSlangTerm#,MTG #abstractMassOrPluralNounGameConceptOrEmotion#,Just #_mtgoHeadlineShortMtgTopic# Things,#hashtagAbsurdTerm#]#_hashtag1Term.capitalizeAll.noPunctuation.noSpaces#"
+- "[_absurdTerm:#itemNounOrMassNoun# Surprise,#randomMtgLocation# #pluralNounOrMassNoun#]#_absurdTerm#"
+- "[_cardverb:#cardTextVerb#][_query:text=?#_cardverb#][#_query.cardSearchCustomQuery(1)#][_cardname:#_cardName1#][_object:Yourself,Every Day,The World][_hashtag1Term:#_cardverb# #_object#,#gameConcept#,#mtgQuestionablePractice#,#mtgSlangTerm#,MTG #abstractMassOrPluralNounGameConceptOrEmotion#,Just #_mtgoHeadlineShortMtgTopic# Things,#hashtagAbsurdTerm#]#_hashtag1Term.capitalizeAll.noPunctuation.noSpaces#"
+- "[_topic:#cardCategory.s#,#playerCategory.s#,#character#,#mtgRealSet#,#randomMtgLocation#][_hashtag:Just #_topic# Things,From the Vault #_topic#,Why Not #_topic#,Real #_topic#,#adj# #_topic#,#team#]#_hashtag#"
 
 cardFinder: https://goodgamery.com/api/mtg/image?card=
 
@@ -47,7 +44,7 @@ showdownCreatureVariation:
 - "[_creatureType:Wizard][#_creatureType.cardSearchByType(1)#][_cardname:#_cardName1#][_magic:#abstractMassOrItemNounOrEmotion.capitalizeAll.hyphenate#][_magusMagic:#pluralNoun#,#massNoun#,#placeNoun#][_cardDisplayName:#_magic# Mage,#_magic# Wizard,Magus of the #_magusMagic.capitalizeAll#]"
 - "[_creatureType:Beast][#_creatureType.cardSearchByType(1)#][_cardname:#_cardName1#][_desc:#abstractMassOrItemNounOrEmotion.capitalizeAll#,#mood#,#adj#][_compoundSuffix:howler,hopper,ripper,diver,stomper,crusher,thrasher,beast][_compoundBeastName:#nounCompoundWorthy.capitalize##_compoundSuffix#][_cardDisplayName:#_desc.capitalizeAll.hyphenate# Beast,#nonPlaneStoryLocation.capitalize# #_compoundBeastName#,#verbStrictlyIntransitiveGerund# #_compoundBeastName#]"
 - "[_creatureType:Atog][#_creatureType.cardSearchByType(1)#][_cardname:#_cardName1#][_cardDisplayName:#nounCompoundWorthy.capitalize#atog]"
-- "[_creatureType:Spirit][#_creatureType.cardSearchByType(1)#][_cardname:#_cardName1#][_cardDisplayName:#abstractNounMassNounOrEmotion.capitalize# Kami,Kami of #adj.capitalize# #pluralItemNounOrMassNoun.capitalizeAll#,#countLargeLimit.capitalize#-#bodypart.ed# Kami]"
+- "[_creatureType:Spirit][#_creatureType.cardSearchByType(1)#][_abstractThing:#abstractNounMassNounOrEmotion#,#soundEmanation#][_cardname:#_cardName1#][_cardDisplayName:#abstractNounMassNounOrEmotion.capitalize# Kami,Kami of #adj.capitalize# #pluralItemNounOrMassNoun.capitalizeAll#,#countLargeLimit.capitalize#-#bodypart.ed# Kami,Kami of #placeNoun#'s #emotion#,Kami of the #adj# #_abstractThing#]"
 
 showdownCreatureCardFinderSearch: |
   [_searchTerm:"creature"][#_searchTerm.cardSearchByType(1)#]
@@ -70,6 +67,8 @@ cardFinderChooseCreature:
 
 choosePortrait:
 - "#mtgPortraitsPros#[_portraitName:#_portraitDisplayNameVariant#]"
+- "#mtgPortraitsPros#[_portraitName:#_portraitDisplayNameVariant#]"
+- "#mtgPortraitsOthers#"
 
 cardFinderChooseEightStreamers: |
   [#cardFinderChooseEightCreatures#][#cardFinderChooseEightPortraits#]
@@ -149,6 +148,8 @@ svgStreamerTitleStyle: >
   font-weight: 400;
   text-shadow: 1px 1px 1px black;
   text-align:center;
+  overflow-wrap: break-word;
+  hyphens: auto; 
   vertical-align: bottom;
   font-size: 64px;
   line-height: 58px;
@@ -159,23 +160,25 @@ svgStreamerTitleStyle: >
 svgStreamerInfoStyle: >
   color: white;
   padding: 5px;
-  font-family: 'Open Sans',Arial, 'DejaVu Sans', 'Liberation Sans', 'Open Sans', sans-serif;
+  font-family: 'Open Sans', Arial, 'DejaVu Sans', 'Liberation Sans' sans-serif;
   font-weight: bold; 
   text-shadow: 1px 1px 1px black;
   text-align: center;
   font-size: 36px; 
-  line-height: 32px; 
+  line-height: 32px;
   padding: 36px 0px 0px 0px;
 
 svgStreamerSecondaryInfoStyle: >
   color: white;
   padding: 5px;
-  font-family: 'Open Sans',Arial, 'DejaVu Sans', 'Liberation Sans', 'Open Sans', sans-serif;
+  font-family: 'Open Sans', Arial, 'DejaVu Sans', 'Liberation Sans', 'Open Sans', sans-serif;
   font-weight: bold; 
   text-shadow: 1px 1px 1px black;
   text-align: center;
-  font-size: 26px; 
-  line-height: 22px; 
+  font-size: 26px;
+  line-height: 22px;
+  overflow-wrap: break-word;
+  hyphens: auto;
   padding: 20px 0px 0px 0px;
 
 svgEightPersonShowdownPosition: |
@@ -290,7 +293,7 @@ svgShowdown: |
       </div>
     </foreignObject>
 
-    <foreignObject x="10" y="337" width="430px" height="70">
+    <foreignObject x="10" y="337" width="430px" height="100">
       <div style="width: 430px; height: 70px; text-align:center;">
         <div xmlns="http://www.w3.org/1999/xhtml" style="#svgStreamerInfoStyle#">
           #_showdownInfo.allCaps#
@@ -300,9 +303,9 @@ svgShowdown: |
 
     <foreignObject x="10" y="396" width="430px" height="70">
       <div style="width: 430px; height: 70px; text-align:center;">
-        <div xmlns="http://www.w3.org/1999/xhtml" style="#svgStreamerSecondaryInfoStyle#">
-          #_showdownSecondaryInfo.allCaps#
-        </div>
+        <p xmlns="http://www.w3.org/1999/xhtml" style="#svgStreamerSecondaryInfoStyle#">
+          #_showdownSecondaryInfo#
+        </p>
       </div>
     </foreignObject> 
 
