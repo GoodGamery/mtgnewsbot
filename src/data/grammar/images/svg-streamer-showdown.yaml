@@ -50,7 +50,6 @@ showdownCreatureCardFinderSearch: |
   [_searchTerm:"creature"][#_searchTerm.cardSearchByType(1)#]
   [_cardname:#_cardRawName1#][_cardfamiliarname:#_cardFamiliarName1#][_creaturetype:#_cardSomeCreatureType1#][_cardDisplayName:#_cardDisplayNameVariant#]
 
-
 showdownLegendaryCreatureSearch: |
   [_customQuery:t=legendary t=creature][#cotdCustomSearch#]
   [_cardname:#_cardRawName1#][_cardDisplayName:#_cardFamiliarName1#]
@@ -66,7 +65,6 @@ cardFinderChooseCreature:
 - "#showdownCreatureVariation#"
 
 choosePortrait:
-- "#mtgPortraitsPros#[_portraitName:#_portraitDisplayNameVariant#]"
 - "#mtgPortraitsPros#[_portraitName:#_portraitDisplayNameVariant#]"
 - "#mtgPortraitsOthers#"
 
@@ -117,7 +115,7 @@ _portraitDisplayNameVariant:
 - "#_portraitName#"
 - "#_portraitName#"
 - "#playerCategory# #_portraitName#"
-- "[_player:Expert,Guru,Mainstay,Champion,Genius,Pro,Specialist,Master,Virtuoso,Champ]#format# #_player# #_portraitName#"
+- "[_player:Expert,Guru,Champion,Genius,Pro,Specialist,Master,Virtuoso,Champ]#format# #_player# #_portraitName#"
 - "[_modifier:Biazarro,Evil,#playerCategory#,#characterClass#]#_modifier# #_portraitName#"
 - "[_desc:#adjPersonCharacteristic#,#adj#,#mood#,#genericNickname#]“#_desc#” #_portraitName#"
 - "#_portraitName# a.k.a. “#genericNickname#”"

@@ -1,7 +1,6 @@
 
 _proDir: "../src/data/images/showdown/portraits/pros"
 _otherDir: "../src/data/images/showdown/portraits/others"
-
 mtgPortraitsPros:
 - "[_portraitName:Adrian Sullivan][#malePronouns#][_portrait:#_proDir#/adrian-sullivan-1.jpg]"
 - "[_portraitName:Andrea Mengucci][#malePronouns#][_portrait:#_proDir#/andrea-mengucci-1.jpg,#_proDir#/andrea-mengucci-2.jpg]"
@@ -167,7 +166,7 @@ mtgPortraitsOthers:
 - "[_portraitName:Toby The Turtle][_portrait:#_otherDir#/toby-turtle-1.jpg]"
 - "[_portraitName:Todd Stevens][_portrait:#_otherDir#/todd-stevens-1.jpg]"
 - "[_portraitName:Usain Bolt][_portrait:#_otherDir#/usain-bolt-1.jpg]"
-- "[_portraitName:Vampire Mike Flores][_portrait:#_otherDir#/vampire-mike-flores.jpg]"
+- "[_portraitName:Vampire Mike Flores][_portrait:#_otherDir#/vampire-mike-flores-1.jpg]"
 - "[_portraitName:A Velociraptor][_portrait:#_otherDir#/velociraptor-1.jpg,#_otherDir#/velociraptor-2.jpg]"
 - "[_portraitName:William Vanderbilt][_portrait:#_otherDir#/william-vanderbilt-1.jpg]"
 - "[_portraitName:Yanni][_portrait:#_otherDir#/yanni-1.jpg]"
@@ -175,4 +174,3 @@ mtgPortraitsOthers:
 - "[_portraitName:Young Victor Frankenstein][_portrait:#_otherDir#/young-victor-frankenstein-1.jpg]"
 - "[_portraitName:Zed the Exterminator][_portrait:#_otherDir#/zed-the-exterminator.jpg]"
 - "[_portraitName:Zombie FDR][_portrait:#_otherDir#/zombie-fdr-1.jpg]"
-
