@@ -9,6 +9,11 @@
     "[#CARDFINDER.randomCard#]#_cardName1#"
   ],
 
+  randomRealCardExcludeBasics: [
+    "#realCard#",
+    "[#randomCardExcludeBasics#]#_cardName#"
+  ],
+
   randomCardAlone: [
     "#cardAlone#",
     "[#CARDFINDER.randomCard#]#_cardName1#"

@@ -1,0 +1,272 @@
+svgPackOnePickOne: "[#svgPackOnePickOneInitialize#]{svg svgString=`#svgPackOnePickOneGraphic#`}Pack One Pick One: #_format#"
+
+svgPackOnePickOneInitialize: >
+  [_desc:#abstractMassOrPluralNounGameConceptOrEmotion#,#cardCategory#,#adj#,#cardQuality#][_formatName:#_desc# Draft]
+  [#svgPackOnePickOneCardTheme#]
+  [_format:#_cleanUpFormat#]
+  [_bottomBannerText:#_format.allCaps#]
+
+_cleanUpFormat: "#_formatName.replace(Limited Edition,).replace(Core Set,).replace(Duel Decks: ,).capitalizeAll#"
+
+svgPackOnePickOneCardTheme:
+- "#svgPackOnePickOneCardTheme_Cube#"
+- "#svgPackOnePickOneCardTheme_CardSetBooster#"
+
+svgPackOnePickOneCard1: "#randomRealCard#"
+svgPackOnePickOneCard2: "#randomRealCard#"
+svgPackOnePickOneCard3: "#randomRealCard#"
+svgPackOnePickOneCard4: "#randomRealCard#"
+svgPackOnePickOneCard5: "#randomRealCard#"
+svgPackOnePickOneCard6: "#randomRealCard#"
+svgPackOnePickOneCard7: "#randomRealCard#"
+svgPackOnePickOneCard8: "#randomRealCard#"
+svgPackOnePickOneCard9: "#randomRealCard#"
+svgPackOnePickOneCard10: "#randomRealCard#"
+svgPackOnePickOneCard11: "#randomRealCard#"
+svgPackOnePickOneCard12: "#randomRealCard#"
+svgPackOnePickOneCard13: "#randomRealCard#"
+svgPackOnePickOneCard14: "#randomRealCard#"
+svgPackOnePickOneCard15: "#randomRealCard#"
+
+_cardImageUrl: https://goodgamery.com/api/mtg/image?card=#_cardname#
+
+_cardSetImageUrl: >
+  https://goodgamery.com/api/mtg/image?q=name:%22#_cardname#%22set#colon#%22#_cardset#%22
+
+# TODO filter by rarity (common/uncommon/rare-mythic by count, exclude basics)
+svgPackOnePickOneCardTheme_CardSetBooster:  >
+  [#CARDFINDER.randomCard#][_cardset:#_cardSet1#][_formatName:#_cardset#]
+  [_query:set="#_cardset#" t!=basic][#_query.cardSearchCustomQuery(15)#]
+  [_cardname:#_cardName1#][_svgPackOnePickOneCardImageUrl1:#_cardSetImageUrl#]
+  [_cardname:#_cardName2#][_svgPackOnePickOneCardImageUrl2:#_cardSetImageUrl#]
+  [_cardname:#_cardName3#][_svgPackOnePickOneCardImageUrl3:#_cardSetImageUrl#]
+  [_cardname:#_cardName4#][_svgPackOnePickOneCardImageUrl4:#_cardSetImageUrl#]
+  [_cardname:#_cardName5#][_svgPackOnePickOneCardImageUrl5:#_cardSetImageUrl#]
+  [_cardname:#_cardName6#][_svgPackOnePickOneCardImageUrl6:#_cardSetImageUrl#]
+  [_cardname:#_cardName7#][_svgPackOnePickOneCardImageUrl7:#_cardSetImageUrl#]
+  [_cardname:#_cardName8#][_svgPackOnePickOneCardImageUrl8:#_cardSetImageUrl#]
+  [_cardname:#_cardName9#][_svgPackOnePickOneCardImageUrl9:#_cardSetImageUrl#]
+  [_cardname:#_cardName10#][_svgPackOnePickOneCardImageUrl10:#_cardSetImageUrl#]
+  [_cardname:#_cardName11#][_svgPackOnePickOneCardImageUrl11:#_cardSetImageUrl#]
+  [_cardname:#_cardName12#][_svgPackOnePickOneCardImageUrl12:#_cardSetImageUrl#]
+  [_cardname:#_cardName13#][_svgPackOnePickOneCardImageUrl13:#_cardSetImageUrl#]
+  [_cardname:#_cardName14#][_svgPackOnePickOneCardImageUrl14:#_cardSetImageUrl#]
+  [_cardname:#_cardName15#][_svgPackOnePickOneCardImageUrl15:#_cardSetImageUrl#]
+
+svgPackOnePickOneCardTheme_Cube:
+- "#svgPackOnePickOneCardTheme_ThemeCube#"
+- "#svgPackOnePickOneCardTheme_RandomCube#"
+
+svgPackOnePickOneCardTheme_RandomCube: >
+  [_cardDesc:#cardQuality#,#deckQualityAdj#][_cardCubeDesc:#_cardDesc#,#_cardDesc# Card][_cubeTheme:#_cardCubeDesc#]
+  [_formatName:#_cubeTheme# Cube]
+  [_cardname:#_cardName#][_svgPackOnePickOneCardImageUrl1:#_cardImageUrl#]
+  [_cardname:#_cardName#][_svgPackOnePickOneCardImageUrl2:#_cardImageUrl#]
+  [_cardname:#_cardName#][_svgPackOnePickOneCardImageUrl3:#_cardImageUrl#]
+  [_cardname:#_cardName#][_svgPackOnePickOneCardImageUrl4:#_cardImageUrl#]
+  [_cardname:#_cardName#][_svgPackOnePickOneCardImageUrl5:#_cardImageUrl#]
+  [_cardname:#_cardName#][_svgPackOnePickOneCardImageUrl6:#_cardImageUrl#]
+  [_cardname:#_cardName#][_svgPackOnePickOneCardImageUrl7:#_cardImageUrl#]
+  [_cardname:#_cardName#][_svgPackOnePickOneCardImageUrl8:#_cardImageUrl#]
+  [_cardname:#_cardName#][_svgPackOnePickOneCardImageUrl9:#_cardImageUrl#]
+  [_cardname:#_cardName#][_svgPackOnePickOneCardImageUrl10:#_cardImageUrl#]
+  [_cardname:#_cardName#][_svgPackOnePickOneCardImageUrl11:#_cardImageUrl#]
+  [_cardname:#_cardName#][_svgPackOnePickOneCardImageUrl12:#_cardImageUrl#]
+  [_cardname:#_cardName#][_svgPackOnePickOneCardImageUrl13:#_carImageUrl#]
+  [_cardname:#_cardName#][_svgPackOnePickOneCardImageUrl14:#_carImageUrl#]
+  [_cardname:#_cardName#][_svgPackOnePickOneCardImageUrl15:#_carImageUrl#]  
+
+svgPackOnePickOneCardTheme_ThemeCube_Theme_ByCardCategory_TextSearch: >
+  [#searchableCardCategory#][_cubeTheme:#_cardCategoryClass#]
+  [#_cardCategorySearchTerm.cardSearchByText(15)#]
+
+svgPackOnePickOneCardTheme_ThemeCube_Theme_ByCardCategory_CustomSearch: >
+  [#searchableCardCategoryCustomQuery#][_cubeTheme:#_cardCategory#]
+  [#_customQuery.cardSearchCustomQuery(15)#]
+
+svgPackOnePickOneCardTheme_ThemeCube_Theme_ByCardCategory:
+- "#svgPackOnePickOneCardTheme_ThemeCube_Theme_ByCardCategory_TextSearch#"
+- "#svgPackOnePickOneCardTheme_ThemeCube_Theme_ByCardCategory_CustomSearch#"
+
+svgPackOnePickOneCardTheme_ThemeCube_Theme_ByKeyword: >
+  [_keyword:#keyword#][_cubeTheme:#_keyword#]
+  [#_keyword.cardSearchByText(15)#]
+
+svgPackOnePickOneCardTheme_ThemeCube_Theme_ByCardType: >
+  [_cardType:#cardTypes#][_cubeTheme:#_cardType#]
+  [_searchTerm:"#_cardType#"][#_searchTerm.cardSearchByType(15)#]
+
+svgPackOnePickOneCardTheme_ThemeCube_Theme_ByCreatureType: >
+  [_creatureType:#creatureTypes#][_cubeTheme:#_creatureType#]
+  [_searchTerm:"#_creatureType#"][#_searchTerm.cardSearchByType(15)#]
+
+svgPackOnePickOneCardTheme_ThemeCube_Theme:
+- "#svgPackOnePickOneCardTheme_ThemeCube_Theme_ByCardCategory#"
+- "#svgPackOnePickOneCardTheme_ThemeCube_Theme_ByKeyword#"
+- "#svgPackOnePickOneCardTheme_ThemeCube_Theme_ByCardType#"
+- "#svgPackOnePickOneCardTheme_ThemeCube_Theme_ByCreatureType#"
+
+svgPackOnePickOneCardTheme_CardImages_Distrubtion1: >
+  [_cardname:#_cardName1#][_svgPackOnePickOneCardImageUrl1:#_cardImageUrl#]
+  [_cardname:#_cardName14#][_svgPackOnePickOneCardImageUrl2:#_cardImageUrl#]
+  [_cardname:#_cardName3#][_svgPackOnePickOneCardImageUrl3:#_cardImageUrl#]
+  [_cardname:#_cardName12#][_svgPackOnePickOneCardImageUrl3:#_cardImageUrl#]
+  [_cardname:#_cardName5#][_svgPackOnePickOneCardImageUrl5:#_cardImageUrl#]
+  [_cardname:#_cardName10#][_svgPackOnePickOneCardImageUrl6:#_cardImageUrl#]
+  [_cardname:#_cardName7#][_svgPackOnePickOneCardImageUrl7:#_cardImageUrl#]
+  [_cardname:#_cardName8#][_svgPackOnePickOneCardImageUrl8:#_cardImageUrl#]
+  [_cardname:#_cardName9#][_svgPackOnePickOneCardImageUrl9:#_cardImageUrl#]
+  [_cardname:#_cardName6#][_svgPackOnePickOneCardImageUrl10:#_cardImageUrl#]
+  [_cardname:#_cardName11#][_svgPackOnePickOneCardImageUrl11:#_cardImageUrl#]
+  [_cardname:#_cardName4#][_svgPackOnePickOneCardImageUrl12:#_cardImageUrl#]
+  [_cardname:#_cardName13#][_svgPackOnePickOneCardImageUrl13:#_cardImageUrl#]
+  [_cardname:#_cardName2#][_svgPackOnePickOneCardImageUrl14:#_cardImageUrl#]
+  [_cardname:#_cardName15#][_svgPackOnePickOneCardImageUrl15:#_cardImageUrl#]
+
+svgPackOnePickOneCardTheme_CardImages_Distrubtion2: >
+  [_cardname:#_cardName1#][_svgPackOnePickOneCardImageUrl1:#_cardImageUrl#]
+  [_cardname:#_cardName2#][_svgPackOnePickOneCardImageUrl2:#_cardImageUrl#]
+  [_cardname:#_cardName15#][_svgPackOnePickOneCardImageUrl3:#_cardImageUrl#]
+  [_cardname:#_cardName3#][_svgPackOnePickOneCardImageUrl4:#_cardImageUrl#]
+  [_cardname:#_cardName4#][_svgPackOnePickOneCardImageUrl5:#_cardImageUrl#]
+  [_cardname:#_cardName14#][_svgPackOnePickOneCardImageUrl6:#_cardImageUrl#]
+  [_cardname:#_cardName5#][_svgPackOnePickOneCardImageUrl7:#_cardImageUrl#]
+  [_cardname:#_cardName6#][_svgPackOnePickOneCardImageUrl8:#_cardImageUrl#]
+  [_cardname:#_cardName13#][_svgPackOnePickOneCardImageUrl9:#_cardImageUrl#]
+  [_cardname:#_cardName7#][_svgPackOnePickOneCardImageUrl10:#_cardImageUrl#]
+  [_cardname:#_cardName8#][_svgPackOnePickOneCardImageUrl11:#_cardImageUrl#]
+  [_cardname:#_cardName12#][_svgPackOnePickOneCardImageUrl12:#_cardImageUrl#]
+  [_cardname:#_cardName9#][_svgPackOnePickOneCardImageUrl13:#_cardImageUrl#]
+  [_cardname:#_cardName10#][_svgPackOnePickOneCardImageUrl14:#_cardImageUrl#]
+  [_cardname:#_cardName11#][_svgPackOnePickOneCardImageUrl15:#_cardImageUrl#]
+
+svgPackOnePickOneCardTheme_CardImages_Distrubtion:
+- "#svgPackOnePickOneCardTheme_CardImages_Distrubtion1#"
+- "#svgPackOnePickOneCardTheme_CardImages_Distrubtion2#"
+
+svgPackOnePickOneCardTheme_ThemeCube: >
+  [#svgPackOnePickOneCardTheme_ThemeCube_Theme#]
+  [_formatName:#_cubeTheme# Cube]
+  [#svgPackOnePickOneCardTheme_CardImages_Distrubtion#]
+
+_p1p1ImgDir: "./data/images/pack1pick1"
+
+svgPackOnePickOneBackgroundImageUrl: "#_p1p1ImgDir#/background.jpg"
+
+svgPackOnePickOneCardWidth: "185"
+svgPackOnePickOneCardHeight: "260"
+
+svgPackOnePickOneBottomBannerTileUrl: "#_p1p1ImgDir#/bottom-banner-background-tile.jpg"
+svgPackOnePickOneBottomBannerLeftEndcapUrl: "#_p1p1ImgDir#/bottom-banner-endcap-left.jpg"
+svgPackOnePickOneBottomBannerRightEndcapUrl: "#_p1p1ImgDir#/bottom-banner-endcap-right.jpg"
+
+_bottomBannerTextColor:
+- "rgb(96,212,224)"
+
+_bottomBannerTextGlowColor:
+- "rgb(140,220,248)"
+
+_bottomBannerStyle: |
+  <style>
+    td.bottom-banner
+      << text-align: center; -webkit-text-fill-color: transparent;>>
+    td.bottom-banner-text
+      << background-color:rgb(0, 0, 12); font-size:64px; min-width: 500px; white-space: nowrap; font-family:Beleren; color: #_bottomBannerTextColor#; background-image: url(#svgPackOnePickOneBottomBannerTileUrl#); background-repeat: repeat-x;  padding: 0; >>
+    span.bottom-banner-text
+      <<  padding: 2px 10px 0px 14px; display:table; margin:0 auto; font-weight: 600; text-shadow: 0px 0px 3px rgb(140,220,248); text-align:center; >>
+  </style>
+
+_bottomBanner: |
+  <foreignObject x="0" y="#_bottomBannerY#" width="100%" height="#_bottomBannerHeight#">
+    <head>
+    #_bottomBannerStyle#
+    </head>
+    <body>
+    <table align="center" cellspacing="0" cellpadding="0">
+      <tr>
+        <td class="bottom-banner"><img src="#svgPackOnePickOneBottomBannerLeftEndcapUrl#"/></td>
+        <td class="bottom-banner-text"><span class="bottom-banner-text">#_bottomBannerText#</span></td>
+        <td class="bottom-banner"><img src="#svgPackOnePickOneBottomBannerRightEndcapUrl#"/></td>
+      </tr>
+    </table>
+    </body>    
+  </foreignObject>    
+
+_bottomBannerY: "824"
+_bottomBannerHeight: "74"
+
+svgPackOnePickOneGraphic: |
+  <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="1200" height="900">
+    <defs>
+      <mask id="cardMask" maskUnits="userSpaceOnUse" mask-type="alpha">
+        <image x="0" y="0" width="#svgPackOnePickOneCardWidth#" height="#svgPackOnePickOneCardHeight#" xlink:href="./data/images/cardmask.png" />
+      </mask>   
+
+      <svg id="Card1">
+          <image xlink:href="#_svgPackOnePickOneCardImageUrl1#" x="0" y="0" mask="url(\#cardMask)" width="#svgPackOnePickOneCardWidth#" height="#svgPackOnePickOneCardHeight#" />
+      </svg>
+      <svg id="Card2">
+        <image xlink:href="#_svgPackOnePickOneCardImageUrl2#" x="0" y="0" mask="url(\#cardMask)" width="#svgPackOnePickOneCardWidth#" height="#svgPackOnePickOneCardHeight#" />
+      </svg>
+      <svg id="Card3">
+        <image xlink:href="#_svgPackOnePickOneCardImageUrl3#" x="0" y="0" mask="url(\#cardMask)" width="#svgPackOnePickOneCardWidth#" height="#svgPackOnePickOneCardHeight#" />
+      </svg>
+      <svg id="Card4">
+        <image xlink:href="#_svgPackOnePickOneCardImageUrl4#" x="0" y="0" mask="url(\#cardMask)" width="#svgPackOnePickOneCardWidth#" height="#svgPackOnePickOneCardHeight#" />
+      </svg>
+      <svg id="Card5">
+        <image xlink:href="#_svgPackOnePickOneCardImageUrl5#" x="0" y="0" mask="url(\#cardMask)" width="#svgPackOnePickOneCardWidth#" height="#svgPackOnePickOneCardHeight#" />
+      </svg>
+      <svg id="Card6">
+        <image xlink:href="#_svgPackOnePickOneCardImageUrl6#" x="0" y="0" mask="url(\#cardMask)" width="#svgPackOnePickOneCardWidth#" height="#svgPackOnePickOneCardHeight#" />
+      </svg>
+      <svg id="Card7">
+        <image xlink:href="#_svgPackOnePickOneCardImageUrl7#" x="0" y="0" mask="url(\#cardMask)" width="#svgPackOnePickOneCardWidth#" height="#svgPackOnePickOneCardHeight#" />
+      </svg>
+      <svg id="Card8">
+        <image xlink:href="#_svgPackOnePickOneCardImageUrl8#" x="0" y="0" mask="url(\#cardMask)" width="#svgPackOnePickOneCardWidth#" height="#svgPackOnePickOneCardHeight#" />
+      </svg>
+      <svg id="Card9">
+        <image xlink:href="#_svgPackOnePickOneCardImageUrl9#" x="0" y="0" mask="url(\#cardMask)" width="#svgPackOnePickOneCardWidth#" height="#svgPackOnePickOneCardHeight#" />
+      </svg>
+
+      <svg id="Card10">
+        <image xlink:href="#_svgPackOnePickOneCardImageUrl10#" x="0" y="0" mask="url(\#cardMask)" width="#svgPackOnePickOneCardWidth#" height="#svgPackOnePickOneCardHeight#" />
+      </svg>
+      <svg id="Card11">
+        <image xlink:href="#_svgPackOnePickOneCardImageUrl11#" x="0" y="0" mask="url(\#cardMask)" width="#svgPackOnePickOneCardWidth#" height="#svgPackOnePickOneCardHeight#" />
+      </svg>
+      <svg id="Card12">
+        <image xlink:href="#_svgPackOnePickOneCardImageUrl12#" x="0" y="0" mask="url(\#cardMask)" width="#svgPackOnePickOneCardWidth#" height="#svgPackOnePickOneCardHeight#" />
+      </svg>
+      <svg id="Card13">
+        <image xlink:href="#_svgPackOnePickOneCardImageUrl13#" x="0" y="0" mask="url(\#cardMask)" width="#svgPackOnePickOneCardWidth#" height="#svgPackOnePickOneCardHeight#" />
+      </svg>
+      <svg id="Card14">
+        <image xlink:href="#_svgPackOnePickOneCardImageUrl14#" x="0" y="0" mask="url(\#cardMask)" width="#svgPackOnePickOneCardWidth#" height="#svgPackOnePickOneCardHeight#" />
+      </svg>
+      <svg id="Card15">
+        <image xlink:href="#_svgPackOnePickOneCardImageUrl15#" x="0" y="0" mask="url(\#cardMask)" width="#svgPackOnePickOneCardWidth#" height="#svgPackOnePickOneCardHeight#" />
+      </svg>
+    </defs>
+
+    <image width="100%" height="100%" xlink:href="#svgPackOnePickOneBackgroundImageUrl#"/>
+    <use xlink:href="\#Card1" x="309" y="11" />
+    <use xlink:href="\#Card2" x="507" y="11" />
+    <use xlink:href="\#Card3" x="705" y="11" />
+
+    <use xlink:href="\#Card4" x="12" y="281" />
+    <use xlink:href="\#Card5" x="210" y="281" />
+    <use xlink:href="\#Card6" x="408" y="281" />
+    <use xlink:href="\#Card7" x="606" y="281" />
+    <use xlink:href="\#Card8" x="803" y="281" />
+    <use xlink:href="\#Card9" x="1000" y="281" />
+
+    <use xlink:href="\#Card10" x="12" y="552" />
+    <use xlink:href="\#Card11" x="210" y="552" />
+    <use xlink:href="\#Card12" x="408" y="552" />
+    <use xlink:href="\#Card13" x="606" y="552" />
+    <use xlink:href="\#Card14" x="803" y="552" />
+    <use xlink:href="\#Card15" x="1000" y="552" />
+    #_bottomBanner#
+  </svg>
