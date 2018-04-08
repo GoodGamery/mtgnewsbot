@@ -75,9 +75,9 @@ svgPackOnePickOneCardTheme_RandomCube: >
   [_cardname:#randomRealCardExcludeBasics#][_svgPackOnePickOneCardImageUrl10:#_cardImageUrl#]
   [_cardname:#randomRealCardExcludeBasics#][_svgPackOnePickOneCardImageUrl11:#_cardImageUrl#]
   [_cardname:#randomRealCardExcludeBasics#][_svgPackOnePickOneCardImageUrl12:#_cardImageUrl#]
-  [_cardname:#randomRealCardExcludeBasics#][_svgPackOnePickOneCardImageUrl13:#_carImageUrl#]
-  [_cardname:#randomRealCardExcludeBasics#][_svgPackOnePickOneCardImageUrl14:#_carImageUrl#]
-  [_cardname:#randomRealCardExcludeBasics#][_svgPackOnePickOneCardImageUrl15:#_carImageUrl#]  
+  [_cardname:#randomRealCardExcludeBasics#][_svgPackOnePickOneCardImageUrl13:#_cardImageUrl#]
+  [_cardname:#randomRealCardExcludeBasics#][_svgPackOnePickOneCardImageUrl14:#_cardImageUrl#]
+  [_cardname:#randomRealCardExcludeBasics#][_svgPackOnePickOneCardImageUrl15:#_cardImageUrl#]  
 
 svgPackOnePickOneCardTheme_ThemeCube_Theme_ByCardCategory_TextSearch: >
   [#searchableCardCategory#][_cubeTheme:#_cardCategoryClass#]
