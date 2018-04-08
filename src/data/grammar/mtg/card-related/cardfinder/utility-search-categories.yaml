@@ -23,9 +23,11 @@ randomLandCard: "#cardQueryLand##_cardName#"
 cardQueryNonbasicLand: "[_customQuery:t=land t!=basic#_landColorFilter#][#_customQuery.cardSearchCustomQuery(1)#][_cardName:#_cardName1#]"
 randomNonbasicLandCard: "#cardQueryNonbasicLand##_cardName#"
 
-
 cardQueryNonland: "[_customQuery:t!=land#_colorFilter#][#_customQuery.cardSearchCustomQuery(1)#][_cardName:#_cardName1#]"
 randomNonlandCard: "#cardQueryNonland##_cardName#"
+
+cardQueryRandomExcludeBasics: "[_customQuery:t!=basic#_colorFilter#][#_customQuery.cardSearchCustomQuery(1)#][_cardName:#_cardName1#]"
+randomCardExcludeBasics: "#cardQueryRandomExcludeBasics##_cardName#"
 
 cardQueryNoncreatureArtifact: "[_customQuery:t=artifact t!=creature#_colorFilter#][#_customQuery.cardSearchCustomQuery(1)#][_cardName:#_cardName1#]"
 cardQueryOneWordNoncreatureArtifact: '[_customQuery:t=artifact t!=creature name!="? "#_colorFilter#][#_customQuery.cardSearchCustomQuery(1)#][_cardName:#_cardName1#]'
