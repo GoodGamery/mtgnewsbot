@@ -10,6 +10,9 @@ _cleanUpFormat: "#_formatName.replace(Limited Edition,).replace(Core Set,).repla
 
 svgPackOnePickOneCardTheme:
 - "#svgPackOnePickOneCardTheme_Cube#"
+- "#svgPackOnePickOneCardTheme_Cube#"
+- "#svgPackOnePickOneCardTheme_Cube#"
+- "#svgPackOnePickOneCardTheme_CardSetBooster#"
 - "#svgPackOnePickOneCardTheme_CardSetBooster#"
 
 svgPackOnePickOneCard1: "#randomRealCard#"
@@ -60,21 +63,21 @@ svgPackOnePickOneCardTheme_Cube:
 svgPackOnePickOneCardTheme_RandomCube: >
   [_cardDesc:#cardQuality#,#deckQualityAdj#][_cardCubeDesc:#_cardDesc#,#_cardDesc# Card][_cubeTheme:#_cardCubeDesc#]
   [_formatName:#_cubeTheme# Cube]
-  [_cardname:#_cardName#][_svgPackOnePickOneCardImageUrl1:#_cardImageUrl#]
-  [_cardname:#_cardName#][_svgPackOnePickOneCardImageUrl2:#_cardImageUrl#]
-  [_cardname:#_cardName#][_svgPackOnePickOneCardImageUrl3:#_cardImageUrl#]
-  [_cardname:#_cardName#][_svgPackOnePickOneCardImageUrl4:#_cardImageUrl#]
-  [_cardname:#_cardName#][_svgPackOnePickOneCardImageUrl5:#_cardImageUrl#]
-  [_cardname:#_cardName#][_svgPackOnePickOneCardImageUrl6:#_cardImageUrl#]
-  [_cardname:#_cardName#][_svgPackOnePickOneCardImageUrl7:#_cardImageUrl#]
-  [_cardname:#_cardName#][_svgPackOnePickOneCardImageUrl8:#_cardImageUrl#]
-  [_cardname:#_cardName#][_svgPackOnePickOneCardImageUrl9:#_cardImageUrl#]
-  [_cardname:#_cardName#][_svgPackOnePickOneCardImageUrl10:#_cardImageUrl#]
-  [_cardname:#_cardName#][_svgPackOnePickOneCardImageUrl11:#_cardImageUrl#]
-  [_cardname:#_cardName#][_svgPackOnePickOneCardImageUrl12:#_cardImageUrl#]
-  [_cardname:#_cardName#][_svgPackOnePickOneCardImageUrl13:#_carImageUrl#]
-  [_cardname:#_cardName#][_svgPackOnePickOneCardImageUrl14:#_carImageUrl#]
-  [_cardname:#_cardName#][_svgPackOnePickOneCardImageUrl15:#_carImageUrl#]  
+  [_cardname:#randomRealCardExcludeBasics#][_svgPackOnePickOneCardImageUrl1:#_cardImageUrl#]
+  [_cardname:#randomRealCardExcludeBasics#][_svgPackOnePickOneCardImageUrl2:#_cardImageUrl#]
+  [_cardname:#randomRealCardExcludeBasics#][_svgPackOnePickOneCardImageUrl3:#_cardImageUrl#]
+  [_cardname:#randomRealCardExcludeBasics#][_svgPackOnePickOneCardImageUrl4:#_cardImageUrl#]
+  [_cardname:#randomRealCardExcludeBasics#][_svgPackOnePickOneCardImageUrl5:#_cardImageUrl#]
+  [_cardname:#randomRealCardExcludeBasics#][_svgPackOnePickOneCardImageUrl6:#_cardImageUrl#]
+  [_cardname:#randomRealCardExcludeBasics#][_svgPackOnePickOneCardImageUrl7:#_cardImageUrl#]
+  [_cardname:#randomRealCardExcludeBasics#][_svgPackOnePickOneCardImageUrl8:#_cardImageUrl#]
+  [_cardname:#randomRealCardExcludeBasics#][_svgPackOnePickOneCardImageUrl9:#_cardImageUrl#]
+  [_cardname:#randomRealCardExcludeBasics#][_svgPackOnePickOneCardImageUrl10:#_cardImageUrl#]
+  [_cardname:#randomRealCardExcludeBasics#][_svgPackOnePickOneCardImageUrl11:#_cardImageUrl#]
+  [_cardname:#randomRealCardExcludeBasics#][_svgPackOnePickOneCardImageUrl12:#_cardImageUrl#]
+  [_cardname:#randomRealCardExcludeBasics#][_svgPackOnePickOneCardImageUrl13:#_carImageUrl#]
+  [_cardname:#randomRealCardExcludeBasics#][_svgPackOnePickOneCardImageUrl14:#_carImageUrl#]
+  [_cardname:#randomRealCardExcludeBasics#][_svgPackOnePickOneCardImageUrl15:#_carImageUrl#]  
 
 svgPackOnePickOneCardTheme_ThemeCube_Theme_ByCardCategory_TextSearch: >
   [#searchableCardCategory#][_cubeTheme:#_cardCategoryClass#]
