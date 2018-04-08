@@ -1,4 +1,4 @@
-svgPackOnePickOne: "[#svgPackOnePickOneInitialize#]{svg svgString=`#svgPackOnePickOneGraphic#`}Pack One Pick One: #_format#"
+svgPackOnePickOne: "[#svgPackOnePickOneInitialize#]{svg svgString=`#svgPackOnePickOneGraphic#`}#svgPackOnePickOneTeaserText#"
 
 svgPackOnePickOneInitialize: >
   [_desc:#abstractMassOrPluralNounGameConceptOrEmotion#,#cardCategory#,#adj#,#cardQuality#][_formatName:#_desc# Draft]
@@ -6,7 +6,18 @@ svgPackOnePickOneInitialize: >
   [_format:#_cleanUpFormat#]
   [_bottomBannerText:#_format.allCaps#]
 
-_cleanUpFormat: "#_formatName.replace(Limited Edition,).replace(Core Set,).replace(Duel Decks: ,).capitalizeAll#"
+svgPackOnePickOneTeaserText:
+- "[_whatPick:What's the pick?,You Make the Pick#colon#]#_whatPick# #_format# Edition"
+- "What's [_the:the,your]#_the# pick? #_svgPackOnePickOneHashTag#"
+- "[_prefix:,What's the pick? ][_cleverPhrase:Choose wisely.,It’s decision time.,Time to choose.,Make up your mind.]#_prefix##_cleverPhrase# #_svgPackOnePickOneHashTag#"
+- "[_cleverPhrase:Show us how to draft.,We have no idea what to do. Tell us your pick.,Show us what to do.,Show us what you got.,Send help.,Sick of these yet?,We're totally lost. \\#Fblthp]#_cleverPhrase# #_svgPackOnePickOneHashTag#"
+
+
+_svgPackOnePickOneHashTag:
+- "[_formatTagName:#_formatName#,Mtg #_formatName#][_formatHashTag:#_formatTagName.capitalizeAll.noPunctuation.noSpaces#]\\##_formatHashTag#"
+- "#mtgHashtagRandom#"
+
+_cleanUpFormat: "#_formatName.replace(Limited Edition,).replace(Core Set,).replace(Duel Decks: ,).replace(Masterpiece Series: ,).capitalizeAll#"
 
 svgPackOnePickOneCardTheme:
 - "#svgPackOnePickOneCardTheme_Cube#"
@@ -159,9 +170,15 @@ svgPackOnePickOneBackgroundImageUrl: "#_p1p1ImgDir#/background.jpg"
 svgPackOnePickOneCardWidth: "185"
 svgPackOnePickOneCardHeight: "260"
 
+svgPackOnePickOneLogoX: "940"
+svgPackOnePickOneLogoY: "109"
+
 svgPackOnePickOneBottomBannerTileUrl: "#_p1p1ImgDir#/bottom-banner-background-tile.jpg"
 svgPackOnePickOneBottomBannerLeftEndcapUrl: "#_p1p1ImgDir#/bottom-banner-endcap-left.jpg"
 svgPackOnePickOneBottomBannerRightEndcapUrl: "#_p1p1ImgDir#/bottom-banner-endcap-right.jpg"
+
+_logoImageIndex: ["1","2","3","4","5","6","7","8","9","10","11","12","13","14","15","16"]
+svgPackOnePickOneLogoImage: "#_p1p1ImgDir#/logos/newsbot-logo-#_logoImageIndex#.png"
 
 _bottomBannerTextColor:
 - "rgb(96,212,224)"
@@ -254,6 +271,9 @@ svgPackOnePickOneGraphic: |
     </defs>
 
     <image width="100%" height="100%" xlink:href="#svgPackOnePickOneBackgroundImageUrl#"/>
+
+    <image width="260" height="84" x="#svgPackOnePickOneLogoX#" y="#svgPackOnePickOneLogoY#" xlink:href="#svgPackOnePickOneLogoImage#"/>
+
     <use xlink:href="\#Card1" x="309" y="11" />
     <use xlink:href="\#Card2" x="507" y="11" />
     <use xlink:href="\#Card3" x="705" y="11" />
