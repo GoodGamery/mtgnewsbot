@@ -69,6 +69,7 @@
       "#definingCardname#-Go",
       "#nounCompoundWorthy.capitalizeAll# Sisters",
       "[_what:#creatureTypes#,#creatureTypes#,#animal#,#planeswalkerFirstName#]#_what.capitalizeAll# in a Blender",
+      "[_what:#creatureTypes#,#animal#]#_what.capitalizeAll# with #nounWeapon.capitalizeAll.a#",
       "[_what:#creatureTypes#,#animal#]#_what.capitalizeAll# Opposition",
       "#creatureTypes.capitalize#vantage",
       "#creatureTypes.capitalize# [_parent:Dad,Dad,Dad,Mom]#_parent#",
@@ -124,7 +125,7 @@
     "Budget",
     "Sneak &",
     "Madcap",
-    "[_adj:#mood#,#adjStorybook#]#_adj.capitalizeAll#"
+    "[_adj:#mood.hyphenate#,#adjStorybook#]#_adj.capitalizeAll#"
   ],
   "deckSuffix" : [
     "& Taxes",

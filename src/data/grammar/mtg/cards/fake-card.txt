@@ -20,6 +20,7 @@ Neurok “Commando”
 Shrekhorn
 Eblatirri Efreet
 Dominator Bleb
+Bloodbraif Elf
 [_tokenType:#creatureTypes#,#characterClass#,Octopus]#_tokenType.capitalizeAll# Token
 the [_cardCount:ace,two,three,four,five,ten]#_cardCount# of [_cardSuit:spades,hearts,clubs,diamonds]#_cardSuit#
 [_otherGame:Netrunner,Dominion,Hecatomb,Kaijudo,Uno,Cards Against Humanity][_cardFront:saltine,stale poptart,spent lotto scratcher,drycleaning receipt,#_otherGame# card]#_cardFront.a# with a Magic card back
