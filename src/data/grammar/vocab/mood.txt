@@ -42,6 +42,7 @@ nervous
 high-strung
 starving
 bloodthirsty
+desperate
 sleepy
 uneasy
 aroused

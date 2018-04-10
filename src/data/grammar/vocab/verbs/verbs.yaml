@@ -170,20 +170,45 @@
       "running head first into a wall",
       "barfing into a hat",
       "living inside an animal carcass",
-      "refusing to shake people's hands"
+      "refusing to shake people's hands",
+      "learning not to blink",
+      "“going commando”",
+      "reading about #historicalFigure#",
+      "training a pet #animal# to #soundEmanation#",
+      "fasting for #count# [_time:days,weeks]#_time#",
+      "drinking #liquid#",
+      "sleeping in a hyperbaric chamber",
+      "always calling a bluff",
+      "playing “hide the salami” with a real salami",
+      "taking candy from a baby",
+      "procrastinating",
+      "flying under the radar",
+      "running from the law",
+      "speaking only in monotone",
+      "taking",
+      "wearing a hair shirt",
+      "loving, but not being *in love* with #miscPersonSingular#",
+      "#nounActivity#",
+      "#disqualifyingAction#",
+      "#gameConcept#"
   ],
+
   "verbDesireableOutcomeIntransitive": [
       "win the Pro Tour",
+      "make day two of #tournament#",
+      "post threads on reddit that don't get immediately closed",
       "secure a job with WOTC",
       "open a thriving LGS",
       "build a sideboard for the burn matchup",
       "crush noobs on MTGO",
-      "cast a 15/15 with haste",
+      "cast a [_num:1#num1-5#]#_num#/#_num# with #keyword#[_discount:, for just #count# mana, for free]#_discount#",
+      "morph a #randomAnyCard",
       "gain enough pro points to travel to #city#",
       "finally beat Shandalar on hard mode",
       "secretly draw an extra card when using a fetchland",
       "discover the secrets of the MTGO shuffler",
-      "get MaRo to step down as Lead Magic Designer"
+      "get MaRo to step down as Lead Magic Designer",
+      "teach #their#  [_who:#personRelationalUnique#,#personRelationalNonunique.s#]#_who# to play Magic"
   ],
   "revealVerb": [
       "reveal", "unveil", "disclose", "uncover", "expose", "explain"

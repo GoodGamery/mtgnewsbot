@@ -1,8 +1,8 @@
 colorfulLocal: |
   [_num:No,One,Two,#count.capitalize#]
   [_hometown:Cincinatti,Toledo,Buffalo,Frisco,Hollywood,Uptown,Topeka,Kansas]
-  [_adjective:Stinky,Big,Wolfman,Corduroy,Teflon,Yukon,Rodeo,Klondike,Diamond,Whiskey,Sly,Calamity,Greasy,Calico,Slippin',Aunt,Uncle,Cousin,Tall,Lil',“#massNoun.capitalize#”,#_hometown#,#_num#-#bodypart.capitalize#]
-  [_name:Pete,Jeff,Craig,Jimmy,Jack,Nick,Rhonda,Sally,Irene,Zelda,Megan,#firstName#,#firstName#,#firstName#]
+  [_adjective:Stinky,Big,Wolfman,Corduroy,Teflon,Yukon,Rodeo,Klondike,Diamond,Three-Finger,Whiskey,Sly,Calamity,Greasy,Calico,Slippin',Aunt,Uncle,Cousin,Tall,Lil',“#massNoun.capitalize#”,#_hometown#,#_num#-#bodypart.capitalize#]
+  [_name:Pete,Jeff,Craig,Jimmy,Jack,Nick,Rhonda,Sally,Irene,Zelda,Megan,#firstName#,#firstName#,#firstName#,#firstName#,#firstName#,#firstName#]
   #_adjective# #_name#
 
 firstName:

@@ -20,3 +20,8 @@ amusing
 disturbing
 redundant
 stupid
+endearing
+repulsive
+questionable
+ingenious
+clever

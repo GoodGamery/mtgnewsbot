@@ -13,7 +13,7 @@
       "Type 4",
       "Two-Headed Giant",
       "Kitchen Table Magic",
-      "Team Unified #constuctedFormat#",
+      "Team Unified #constructedFormat#",
       "#alternativeConstructedFormat#",
       "#alternativeDraftFormat#"
   ],
@@ -38,14 +38,14 @@
       "Constructed",
       "Limited"
   ],
-  "constuctedFormat": [
+  "constructedFormat": [
     "Standard",
     "Modern",
     "Vintage",
     "Legacy",
     "Commander",
     "Pauper",
-    "#alternativeConstructedFormat#",
+    "#expansionBlock# Block Constructed",
     "#alternativeConstructedFormat#"
   ],
   "alternativeConstructedFormat": [
@@ -59,7 +59,8 @@
     "Tiny Masters",
     "Three-Card Blind",
     "Tribal Wars",
-    "Type Dan Gray"
+    "Type Dan Gray",
+    "#alternativeConstructedFormat#"
   ],
   "alternativeDraftFormat": [
     "Backdraft",
@@ -68,7 +69,10 @@
     "Rotisserie Draft",
     "Rochester Draft",
     "Solomon Draft",
-    "Winston Draft"
+    "Winston Draft",
+    "Chaos Draft",
+    "Stipulation Draft",
+    "#alternativeCubeFormat#"
   ],
   "expansionBlock": [
     "Ice Age",
@@ -88,5 +92,26 @@
     "Alara",
     "Zendikar",
     "Innistrad"
+  ],
+  "alternativeCubeFormat": [
+    "#creatureTypes.capitalizeAll# Cube",
+    "[_card:, Card]#cardQuality.capitalizeAll##_card# Cube",
+    "#deckQualityAdj.capitalizeAll# Cube",
+    "#keyword.capitalizeAll# Cube",
+    "#cardCategory.capitalizeAll# Cube",
+    "[#searchableCardCategory#]#_cardCategory.capitalizeAll# Cube",
+    "#searchableColor.capitalizeAll# Cube",
+    "[_theme:#_cubeMattersTheme#]#_theme.capitalizeAll# #_theme.sAgreement(Matter)# Cube",
+    "#randomCardSet# Cube",
+    "[_commonTheme:#rarity#,#cardTypes#]#_commonTheme.capitalizeAll# Cube",
+    "[_precon:Duel Decks,From the Vault,Signature Spellbook,Planeshift,Archenemy,Deckbuilder's Toolkit,Commander's Arsenal,Chaos][_counter:, Counter][_unusualTheme:#landCategory#,#character#,#_precon#,#counterType##_counter#,#officialEntityPerson# Vanity]#_unusualTheme.capitalizeAll# Cube"
+  ],
+  "_cubeMattersTheme": [
+    "#keyword#",
+    "#cardPermanentType.s#",
+    "#cardCategory.s#",
+    "#cardAttribute#",
+    "#cardCategoryClassTerm#",
+    "#abstractNounMassNounOrEmotion#"
   ]
 }

@@ -120,7 +120,7 @@
       "Dominaria",
       "Core 2019",
       "#codename#",
-      "#novelCardSetName.capitalizeAll#"
+      "#novelCardSetName#"
   ],
   "codename": [
       "Spaghetti",
@@ -128,9 +128,9 @@
       "[_futureSet:Milk,Archery,Baseball,Cricket,Diving]“#_futureSet#”"
   ],
   "novelCardSetName": [
-    "#planeBasedSet#",
-    "#miscNovelCardSetName#",
-    "#miscNovelCardSetName#"
+    "#planeBasedSet.capitalizeAll#",
+    "#miscNovelCardSetName.capitalizeAll#",
+    "#miscNovelCardSetName.capitalizeAll#"
   ],
 
   "fakeCardSetName": [

@@ -72,7 +72,9 @@ svgPackOnePickOneCardTheme_Cube:
 - "#svgPackOnePickOneCardTheme_RandomCube#"
 
 svgPackOnePickOneCardTheme_RandomCube: >
-  [_cardDesc:#cardQuality#,#deckQualityAdj#][_cardCubeDesc:#_cardDesc#,#_cardDesc# Card][_cubeTheme:#_cardCubeDesc#]
+  [_cardDesc:#cardQuality#,#deckQualityAdj#]
+  [_cardCubeDesc:#_cardDesc#,#_cardDesc#,#_cardDesc#,#_cardDesc#,#_cardDesc# Card,#_cardDesc# Card,#_cardDesc# Card,#_cardDesc# Card,#officialEntityPerson# Vanity]
+  [_cubeTheme:#_cardCubeDesc#]
   [_formatName:#_cubeTheme# Cube]
   [_cardname:#randomRealCardExcludeBasics#][_svgPackOnePickOneCardImageUrl1:#_cardImageUrl#]
   [_cardname:#randomRealCardExcludeBasics#][_svgPackOnePickOneCardImageUrl2:#_cardImageUrl#]

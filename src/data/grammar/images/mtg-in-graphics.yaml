@@ -68,7 +68,7 @@ inGraphicsStep:
 - 'Toss #_card2# into the air and [_then:shrug,grin like an idiot,glare menacingly,stare blankly,wink knowlingly]#_then#'
 - 'Explain to your opponent that #_card1# [_what:is strictly better than #randomCardAlone#,is strictly worse than #randomCardAlone#,was the playtest version of #randomCardAlone#,was actually designed by #anyPersonality#,is the new #randomCardAlone#]#_what#'
 - 'Reveal #hiddenAgendaCard# naming #_card2#'
-- 'Point to #_card2# and tell your opponent [_guy:guy,gal,fella,dame,dude,jerk,joker,nerd,twit,clown]“save #typeOfCard.a# to deal with this #_guy#.”'
+- 'Point to #_card2# and tell your opponent “save #typeOfCard.a# to deal with this #someGuyOrGal#.”'
 - "Stick #_card2# into your mouth and [_then:let it hang out like a tongue,attempt to swallow it whole,spit it back onto the table,wait for it to get soggy,try to read it with your tongue]#_then#"
 - "[_craft:Fashion,Craft,Construct,Assemble]#_craft# [#makeshiftClothing#]#_clothing.a# from copies of #_card2# and #_clothingAdorn# [_whose:your,your,your opponent's,a judge's]#_whose# #_clothingWhere#"
 - "Scoop a handful of #massNoun# out of your [_where:pocket,pants,backpack]#_where# and [_then:drop it theatrically onto the table,cram it into your mouth,place it carefully on top of your head,offer it temptingly to your opponent,smear it on your face,pretend it's whispering secrets to you,smear it all over your face]#_then#"
@@ -81,7 +81,7 @@ inGraphicsStep:
 - "Cast #_eitherCard# and search for [#cotdCreatureTypeSearch#][_target:#_creatureType#,#cardCategoryTerm#]#_target.a# (e.g. [_targetCard:#_cardname#,#randomCreatureCard#,#randomRealCard#]#_targetCard#)"
 - "[_do:Draw,Discard,Reveal,#cardAbilityVerb#]#_do.capitalize# [_card:card,permanent]#_card.a#. If it's [_what:#deckQualityAdj#,#cardCategory.a#,#cardQuality.a# card,#randomRealCard#,#_eitherCard#]#_what#, [_doWhat:start again,#gameAction#]#_doWhat#!"
 - "[_cast:Cast,Play]#_cast# the best [#randomCategoryCard#]#_cardCategory.s# available. We suggest #_cardName# and [_otherCard:#_eitherCard#,#randomAnyCard#]#_otherCard#."
-- "[_cast:Cast,Play]#_cast# the #cardSuperlative# [_what:#_card2Type#,#cardCategory#]#_what.lowercase# [_where:available,in the game,in #constuctedFormat#,there is]#_where#: #_card2#."
+- "[_cast:Cast,Play]#_cast# the #cardSuperlative# [_what:#_card2Type#,#cardCategory#]#_what.lowercase# [_where:available,in the game,in #constructedFormat#,there is]#_where#: #_card2#."
 - "#randomKeywordAction.capitalize#"
 - "#randomKeywordAction.capitalize#"
 - "#randomKeywordAction.capitalize#"

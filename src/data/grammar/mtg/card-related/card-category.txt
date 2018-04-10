@@ -31,6 +31,7 @@ land
 vehicle
 equipment
 sweeper
+saga
 fatty
 weenie
 mana dork
@@ -42,5 +43,6 @@ mana rock
 tripple-flipple card
 reprint
 functional reprint
+historic spell
 #cardCategoryTerm#
 #rarity#

@@ -84,6 +84,15 @@ function sIfNeeded(s) {
     }
 }
 
+function sAgreement(s, params) {
+  const targetWord = params[0];
+
+  if (targetWord && s.charAt(s.length -1) === 's') {
+    return targetWord;
+  }
+  return sIfNeeded(targetWord);
+}
+
 function aIfNeeded(s) {
   if (s.charAt(s.length -1) === 's') {
     return s;
@@ -185,6 +194,7 @@ module.exports = {
   noop,
   noPunctuation,
   noSpaces,
+  sAgreement,
   sIfNeeded,
   stripLeadingText,
   wholeNumberToText

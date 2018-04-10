@@ -1,6 +1,6 @@
 ---
 mtgDeckTechGraphic: >
-  [_format:#constuctedFormat#][_pro:#pro#][#searchableColor#][#svgDeckTechGenerateName#]#_statusText# {svg svgString=`#svgDeckTechImage#`}
+  [_format:#constructedFormat#][_pro:#pro#][#searchableColor#][#svgDeckTechGenerateName#]#_statusText# {svg svgString=`#svgDeckTechImage#`}
 
 _statusText:
  - "DECK TECH: #_deckName#"
