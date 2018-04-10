@@ -153,6 +153,8 @@ provocateur
 cannibal
 hermit
 refugee
+pilgrim
+scientician
 #playerCategory#
 #personAuthorityFigure#
 #personRelational#

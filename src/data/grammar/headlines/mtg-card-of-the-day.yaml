@@ -150,8 +150,8 @@ cotdRandomColorCard: "[_predifinedQuery:#randomNonlandCard#]#cotdPrefinedCustomQ
 cotdRandomCatCard: "#cotdCardCategorySearch#"
 
 cotdBenefactorRandomCardOrCategory:
-- "#cotdRandomColorCard#[_cardlinkName:#_originalCard#][_card:#_cotdHtmlCardLink#!,#_cotdHtmlCardLink#!,... #_cotdHtmlCardLink#?][_version:a new,#_benficiaryTheir# own][_improvement:#adj.a# version of,#_version# version of,#constuctedFormat.a#-legal version of]#_improvement# #_card#"
-- "[#cotdRandomCatCard#][_cat:#_cardCategory#][_catImprovement:#their# own version of #_cat.a#,a new #_cat#,#constuctedFormat.a#-legal #_cat#,#_adj.a# #_cat#,#_cat.a#,a real #_cat#]#_catImprovement#!"
+- "#cotdRandomColorCard#[_cardlinkName:#_originalCard#][_card:#_cotdHtmlCardLink#!,#_cotdHtmlCardLink#!,... #_cotdHtmlCardLink#?][_version:a new,#_benficiaryTheir# own][_improvement:#adj.a# version of,#_version# version of,#constructedFormat.a#-legal version of]#_improvement# #_card#"
+- "[#cotdRandomCatCard#][_cat:#_cardCategory#][_catImprovement:#their# own version of #_cat.a#,a new #_cat#,#constructedFormat.a#-legal #_cat#,#_adj.a# #_cat#,#_cat.a#,a real #_cat#]#_catImprovement#!"
 
 _lordFinally: 
 - "Finally,[_finally:]"
@@ -167,7 +167,7 @@ _lordFinally:
 - "[_gift:A gift,A present,Great news]#_gift# from #_cardSet1#:[_finally:finally ]"
 
 _lordOrCommander:
-- "#_lord#[_deck:#_cardSomeCreatureType1# tribal,#_subTypesSlashed# tribal, #constuctedFormat# #_cardSomeCreatureType1.s#][#neutralPronouns#][_need:needs][_lordDesc:lord][_where:]"
+- "#_lord#[_deck:#_cardSomeCreatureType1# tribal,#_subTypesSlashed# tribal, #constructedFormat# #_cardSomeCreatureType1.s#][#neutralPronouns#][_need:needs][_lordDesc:lord][_where:]"
 - "#_lord#[_deck:#_legendName# decks][#pluralPronouns#][_need:need][_lordDesc:#_cardSomeCreatureType1# lord][_where: in Commander, in EDH]"
 - "[_deck:#_cardSomeCreatureType1# tribal][#neutralPronouns#][_need:needs][_lordDesc:commander,general][_where: in EDH]"
 

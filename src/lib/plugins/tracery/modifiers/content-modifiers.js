@@ -18,14 +18,46 @@ function getMonthDayOrdinal(date) {
   return date.toLocaleString('en-us', {  month: 'long' }) + ' ' + getOrdinalNum(date.toLocaleString('en-us', {  day: 'numeric' }));
 }
 
-// MODIFIERS
+function getSeason(date) {
+  const month = new Date().toLocaleString('en-us', {  month: 'numeric' });
 
+  switch (month) {
+    case '1':
+    case '2':
+    case '12':
+      return 'winter';
+    case '3':
+    case '4':
+    case '5':
+      return 'spring';
+    case '6':
+    case '7':
+    case '8':
+      return 'winter';
+    case '9':
+    case '10':
+    case '11':
+      return 'fall';
+    default:
+      return 'summer';
+  }
+}
+
+// MODIFIERS
 function currentFullDate() {
   return getMonthDayOrdinal(new Date()) + ', ' + currentYear();
 }
 
+function currentMonth() {
+  return new Date().toLocaleString('en-us', {  month: 'long' });
+}
+
 function currentYear() {
   return '' + new Date().getFullYear();
+}
+
+function currentSeason() {
+  return getSeason(new Date());
 }
 
 function dayOfWeek() {
@@ -90,8 +122,10 @@ function randomFutureDate() {
 }
 
 module.exports = { 
+  currentMonth,
   currentYear,
   currentFullDate,
+  currentSeason,
   dayOfWeek,
   dayOfWeekOccasion,
   dayOfWeekMotivation,

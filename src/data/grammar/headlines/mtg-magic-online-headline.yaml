@@ -29,7 +29,7 @@ theXOfYHasZ:
 - |
   [_query:t!="legendary" t!="planeswalker" (name="hour of" name|="time of" name|="day of" name|="moment of" name|="festival of" name|="dance of" name|="feast of" name|="march of" name|="reign of" name|="rise of" name|="wrath of" name|="rain of" name|="rite of" name|="ritual of" name|="test of" name|="trial of" name|="approach of" name|="era of" name|="dawn of" name|="night of" name|="spring of" name|="carnival of" name|="lord of" name|="voice of" name|="sire of" name|="avatar of" name|="bane of" name|="bearer of"  name|="brink of" name|="call of" name|="champion of" name|="chancellor of" name|="chorus of" name|="eater of" name|="hand of" name|="harbinger of" name|="magus of"  name|="master of" name|="order of" name|="season of " name|="terror of ")][#_query.cardSearchCustomQuery(1)#][_cardname:#_cardName1#]
   The #_cardname# [_here:is here,has arrived,has come,is finally here]#_here#!
-  {newline}{newline}[_announcement:#onlineEventAnnouncement1#!,#onlineEventAnnouncement2#.]#_announcement.capitalize#
+  {newline}{newline}[_announcement:#onlineEventAnnouncement1#!,#onlineEventAnnouncement2#.,#onlineEventAnnouncement3#!]#_announcement.capitalize#
   {newline}#imgCard#
 
 ##### cardPunEventInvitation ######
@@ -37,22 +37,23 @@ theXOfYHasZ:
 cardPunEventInvitation:
 - |
   [#cardPunSetup#]
-  [_leadIn:Get ready to,]
+  [_leadIn:Get ready to,It's time to,Don't]
   #_cardPunLine1#
-  {newline}{newline}[_cardPunLine2:Get ready to #_verbPun#—#onlineEventAnnouncement1#,#_verbPun# and #onlineEventAnnouncement2#]#_cardPunLine2.capitalize#!
+  {newline}{newline}[_separator:—,... ][_cardPunLine2:#_leadIn# #_verbPun##_separator##onlineEventAnnouncement1#,#_verbPun# and #onlineEventAnnouncement2#,#_verbPun##_separator##onlineEventAnnouncement3#]#_cardPunLine2.capitalize#!
   {newline}#imgCard#  
 
 cardPunSetup:
 - |
   [#cardTextVerbSearch#][_verbPun:#_cardverb# your opponents,#_cardverb# your enemies,#_cardverb# the competition,#_cardverb# yourself]
-  [_verbPun:#_cardverb# your opponents,#_cardverb# your enemies,#_cardverb# the competition,#_cardverb# yourself]
+  [_verbPun:just #_cardverb#—,#_cardverb# your opponents,#_cardverb# your enemies,#_cardverb# the competition,#_cardverb# yourself]
   [_cardPunLine1:#challengeAppeal#]
 - |
   [separator:of the][#separator.cardSearchTwoParter(1)#][_cardname:#_cardName1#]
   [_verbPun:#verbReflexive# yourself]
   [_beOneOf:be one of,be among,fight alongside,answer the call of,fight for,become a champion of,become #_cardNameFirstPart1.a# of,be #follower.a# of]
   [_willYouBe:#_beOneOf# the #_cardNameSecondPart1#]
-  [_areYouOne:one of the #_cardNameSecondPart1#,a true #_cardNameFirstPart1#,#_cardNameFirstPart1.a# of the #_cardNameSecondPart1#,#_cardNameFirstPart1.a# or #characterClass.capitalize.a#, #follower.a# of the #_cardNameSecondPart1#]
+  [_youAdj:true,real,worthy,serious,genuine,certified,bona fide,secret]
+  [_areYouOne:one of the #_cardNameSecondPart1#,#_youAdj.a# #_cardNameFirstPart1#,#_cardNameFirstPart1.a# of the #_cardNameSecondPart1#,#_cardNameFirstPart1.a# or #characterClass.capitalize.a#, #follower.a# of the #_cardNameSecondPart1#]
   [_cardPunLine1:Will you #_willYouBe#?,Are you #_areYouOne#?]
 
 challengeAppeal:
@@ -99,25 +100,68 @@ onlineEventType:
 onlineEvent:
 - "[_aThe:][_isAre:is][_s:]the #onlineEventFormat.capitalize# MOCS #onlineEventType.capitalize#[_event:, event]#_event#"
 - "[_aThe:a][_isAre:are][_s:s]MTGNewsbot-sponsored #onlineEventFormat.capitalize# #onlineEventType.capitalize# event"
-- "[_aThe:a][_isAre:are][_s:s]#teaserCardSet# online [_type:release,premiere]#_type# event"
+- "[_aThe:a][_isAre:are][_s:s]#teaserCardSet# online [_type:release,premiere,challenge]#_type# event"
 - "[_aThe:a][_isAre:are][_s:s][_set:#_cardSet1#,#cardSet#]#_set# [_back:Flashback,Throwback]#_back# [_event:draft,sealed league,standard event]#_event#"
 - "[_aThe:a][_isAre:are][_s:s]#popularFormat# Cube [_event:league,league,queue]#_event#"
-- "[_aThe:a][_isAre:are][_s:s]#alternativeConstructedFormat# online [_event:league, premiere event]#_event#"
+- "[_aThe:a][_isAre:are][_s:s]#alternativeConstructedFormat# online [_event:league, premiere event,challenge event]#_event#"
+
+_eventStyle: 
+- competitive
+- noncompetitive
+- hypercompetitive
+- cutthroat
+- casual
+- experimental
+- round-robin
+- free-for-all
+- first-come-first-serve
+- retro
+- leisurely
+- phantom
+- pay-as-you-go
+- invite-only
+- month-long
+- weekly
+- daily
+- endless
+- quickfire
+- "[_count:#cardCopyCount#,#cardCopyCount#,#countLargeLimit#][_person:person,player]"
+- "[_psy:#psychographic#-friendly,#psychographic.s#-only#]#_psy#"
+- "[_group:raredrafter,netdecker,][_desc:no-#_practice#,#_practice#-friendly]"
+
+ongoingEvent:
+- "[_style:#_eventStyle#][_person:person,player,man][_queueType:Swiss,single-elimination,#cardCopyCount#-#_person#][_queue:#_style# #constructedFormat#,#constructedFormat# #_queueType#]#_queue.capitalizeAll# Queues[_begins:begin,start,go live,are starting]"
+- "[_style:#_eventStyle#][_queueType:Swiss,single-elimination][_league:#_style# #format#,#format# #_queueType#]#_league.capitalizeAll# Leagues[_begins:begin,start,go live,are starting]"
+- "#alternativeCubeFormat#[_begins:begins,starts,goes live,is starting]"
+
+_eventComeOnTweet: |
+ [_where:,,at us,at us, at #officialEntityPerson#]
+ [_scoop:and let us know how #_adv# you care,what you're going to play,how much you're willing to pay for this,if this is a good idea]
+ [_mood:excited,#mood#][_adv:much,little][_product:playmat,deckbox,t-shirt,avatar,#clothingOrAccessory#,#clothingOrAccessory#]
+ [_what:to let us know how excited you are,and let us know what you think,for a chance to win #character.aIfNeeded# #_product#,and show us how #_mood# you are] 
+  {newline}{newline}
+  Tweet #hashtagArbitrary##_where##_what#"
 
 eventComeOn:
 - Don't miss it
 - Be there or be square
 - Registration is limited
-- Sign up now
+- "Sign up [_when:now,today,for once]#_when#"
 - Don't forget
 - We're serious this time
-- "[_amount:Most,Many,Some,A few]#_amount# of the cards [_cardClaim:have even been tested,are working correctly,"
+- Please sign up for this
+- This is not a drill
+- "Don't be [_what:#someGuyOrGal#,#characterClass#]#_what.a#"
+- "[_amount:Most,Many,Some,A few]#_amount# of the cards [_cardClaim:have even been tested,are working correctly,still aren't banned]#_cardClaim#"
 - "Prepare to be #verbTransitivePastTense#"
 - "[_cardType:creature][#_cardType.cardSearchByType(1)#]All participants receive a free #_cardName1# avatar"
 - "[_query:name!=\"? \"][#_query.cardSearchCustomQuery(1)#][_numTensPlace:,,#num1-9#]The first #_numTensPlace##num2-99# players to type [_code:caw,#planeswalkerFirstName#,#_cardName1#]#_code.allCaps# will [_prize:receive a promo #randomCardAlone#,receive a free treasure chest,receive a free draft set of #randomCardSet.capitalizeAll#,be entered manually]#_prize#"
+- "#_eventComeOnTweet#"
+- "#_eventComeOnTweet#"
 
 onlineEventAnnouncement1: "[_starting:starting,beginning,launching]#onlineEvent.capitalize##_s# #_isAre# starting #onlineEventTimeStart#. #eventComeOn#"
 onlineEventAnnouncement2: "[_starting:starting,beginning,launching]join [_event:#onlineEvent#]#_aThe# #_event#, #_starting# #onlineEventTimeStart#"
+onlineEventAnnouncement3: "#ongoingEvent.capitalize# #_begins# #onlineEventTimeStart#[_comeOn:,. #eventComeOn#]#_comeOn#"
 
 ####### replyWithCard ######
 
@@ -216,6 +260,8 @@ banFormatAnnouncement:
 mtgoStyleAnnouncement:
 - |
   [_format1:#format#][_format2:#alternativeConstructedFormat#,#alternativeDraftFormat#][_format3:#format#,All other formats]
+  [_timePeriod:#CONTENT.currentFullDate#,#CONTENT.currentMonth# #CONTENT.currentYear#,#CONTENT.currentSeason# #CONTENT.currentYear#][_headerText:#_timePeriod# Banned and Restricted Announcement]#_headerText.allCaps#
+  {newline}{newline}{newline}
   Announcement Date: #CONTENT.currentFullDate#
   {newline}
   [_format:#_format1#]#banFormatAnnouncement#[_format:#_format2#][_second:,{newline}#banFormatAnnouncement#][_format:{newline}#_format3#][_third:,,#banFormatAnnouncement#]#_second##_third#  
