@@ -52,7 +52,7 @@ sloppy play
 tardiness
 fancy plays
 tirades
-skullduggery
+skulduggery
 shenanigans
 double-dealing
 funny business
@@ -96,4 +96,4 @@ using graveyard cards as tokens
 [_takebacks:takebacks,take-backsies]#_takebacks#
 [_action:harassing,arguing with,acting belligerently toward][_subject:tournament officials,players,spectators]#_action# #_subject#
 [_shadyActivity:bribery,collusion,insufficient shuffling,stalling,cheating]#_shadyActivity#
-[_one:voodoo,mysticism,evil eyes,trickery][_two:witchcraft,hocus-pocus,guile,chicanery,skullduggery][_three:curses,hexes,pseudoscience,legerdemain,disguises,prophecy,subterfuge][_list:#_one#,#_two#,#_three#,#_one# and #_two#,#_one# and #_three#,#_two# and #_three#,#_one##comma# #_two##comma# and #_three#]#_list#
+[_one:voodoo,mysticism,evil eyes,trickery][_two:witchcraft,hocus-pocus,guile,chicanery,skulduggery][_three:curses,hexes,pseudoscience,legerdemain,disguises,prophecy,subterfuge][_list:#_one#,#_two#,#_three#,#_one# and #_two#,#_one# and #_three#,#_two# and #_three#,#_one##comma# #_two##comma# and #_three#]#_list#

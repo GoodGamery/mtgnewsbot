@@ -14,8 +14,40 @@ showboating
 street magic
 valet parking
 pubcrawling
+bartending
+parasailing
+breakdancing
+telemarketing
+trolling
+yodeling
+gargling
+flossing
+knitting quilts
+whittling
+bungee jumping
+drinking irresponsibly
+whistling ominously
+visiting the museum
+refilling prescriptions
+rock climbing
+fly fishing
+whale watching
+jogging
+collecting stamps
+clipping coupons
+sunbathing
+smoking meats
+singing falsetto
+ice fishing
+birdwatching
+geocaching
+lifting weights
+stealing people's mail
+playing dress-up
+forging documents
+distributing pamplets
+decorating cakes
 interpretive dance
-keeping your friends close and your enemies closer
 parlor tricks
 locksmithing
 leatherworking
@@ -29,5 +61,4 @@ railbirding
 rules lawyering
 theorycrafting
 going for broke
-wearing [_what:#clothingOrAccessory.aIfNeeded#, #clothingOrAccessory.aIfNeeded# on your head, #itemNoun.aIfNeeded# on your head]#_what#
 eating #pluralItemNounOrMassNoun#

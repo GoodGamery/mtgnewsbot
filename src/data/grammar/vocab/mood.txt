@@ -3,7 +3,7 @@ happy
 sad
 confused
 anxious
-pissed-off
+pissed off
 cranky
 excited
 pleased
@@ -13,7 +13,7 @@ grumpy
 indifferent
 optomistic
 pessimistic
-stressed-out
+stressed out
 brooding
 depressed
 overjoyed
@@ -43,3 +43,13 @@ high-strung
 starving
 bloodthirsty
 desperate
+sleepy
+uneasy
+aroused
+skeptical
+concerned
+worried
+afraid
+exasperated
+uncomfortable
+mildly enthused

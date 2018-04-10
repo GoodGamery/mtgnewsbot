@@ -221,7 +221,7 @@ mtgoStyleAnnouncement:
   [_format:#_format1#]#banFormatAnnouncement#[_format:#_format2#][_second:,{newline}#banFormatAnnouncement#][_format:{newline}#_format3#][_third:,,#banFormatAnnouncement#]#_second##_third#  
   {newline}{newline}{newline}
   [_effectiveDate:#CONTENT.randomUpcomingMonthDay##comma# #CONTENT.currentYear#,#CONTENT.randomFutureDate#]
-  Effective Date: [_mtgoEffective:,#CONTENT.randomUpcomingMonthDay##comma# #CONTENT.currentYear#{newline}{newline}MTGO Effective Date#colon#][_date:#CONTENT.randomUpcomingMonthDay##comma# #CONTENT.currentYear#,#CONTENT.randomFutureDate#]#_mtgoEffective##_effectiveDate#
+  Effective Date: [_mtgoEffective:,#CONTENT.randomUpcomingMonthDay##comma# #CONTENT.currentYear#{newline}{newline}MTGO Effective Date#colon# ][_date:#CONTENT.randomUpcomingMonthDay##comma# #CONTENT.currentYear#,#CONTENT.randomFutureDate#]#_mtgoEffective##_effectiveDate#
 
 cardOneOff:
 - |

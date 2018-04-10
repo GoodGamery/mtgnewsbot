@@ -1,0 +1,6 @@
+mtgHashtagRandom: "\\##_mtgRandomHashtag.noPunctuation.capitalizeAll.noSpaces#"
+
+_mtgRandomHashtag:
+- "[_absurdTerm:#itemNounOrMassNoun# Surprise,#randomMtgLocation# #pluralNounOrMassNoun#]#_absurdTerm#"
+- "[_cardverb:#cardTextVerb#][_query:text=?#_cardverb#][#_query.cardSearchCustomQuery(1)#][_cardname:#_cardName1#][_object:Yourself,Every Day,The World][_hashtag1Term:#_cardverb# #_object#,#gameConcept#,#mtgQuestionablePractice#,#mtgSlangTerm#,MTG #abstractMassOrPluralNounGameConceptOrEmotion#,Just #_mtgoHeadlineShortMtgTopic# Things,#hashtagAbsurdTerm#]#_hashtag1Term.capitalizeAll.noPunctuation.noSpaces#"
+- "[_topic:#cardCategory.s#,#playerCategory.s#,#character#,#mtgRealSet#,#randomMtgLocation#][_hashtag:Just #_topic# Things,From the Vault #_topic#,Why Not #_topic#,Real #_topic#,#adj# #_topic#,#team#]#_hashtag#"

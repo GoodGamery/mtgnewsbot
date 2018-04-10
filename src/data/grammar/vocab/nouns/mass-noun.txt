@@ -116,5 +116,4 @@ grass
 gravel
 mutton
 #liquid#
-#creatureTypes# meat
-#creatureTypes# milk
+#creatureTypes# [_food:meat,milk,eggs,juice]#_food#

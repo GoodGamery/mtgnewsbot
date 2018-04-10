@@ -1,0 +1,22 @@
+machine gun
+sniper rifle
+flamethrower
+crossbow
+quarterstaff
+tomahawk
+hand grenade
+blowgun
+scimitar
+samurai sword
+battle Axe
+bullwhip
+throwing star
+grappling hook
+elephant gun
+frying pan
+shillelagh
+pitchfork
+speargun
+claymore
+katana
+blowdart
