@@ -22,7 +22,7 @@ trolling
 yodeling
 gargling
 flossing
-knitting quilts
+knitting
 whittling
 bungee jumping
 drinking irresponsibly
@@ -41,12 +41,12 @@ singing falsetto
 ice fishing
 birdwatching
 geocaching
-lifting weights
+weightlifting
 stealing people's mail
 playing dress-up
-forging documents
-distributing pamplets
-decorating cakes
+forgery
+hacktivism
+cake decorating
 interpretive dance
 parlor tricks
 locksmithing
@@ -61,4 +61,4 @@ railbirding
 rules lawyering
 theorycrafting
 going for broke
-eating #pluralItemNounOrMassNoun#
+#pluralItemNounOrMassNoun#-eating

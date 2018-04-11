@@ -99,20 +99,26 @@ tshirtPhrase:
 - "I'm drafting #cardCategoryClassTerm#"
 - "[_personality:#historicalFigure#,#character#]I'm with #_personality#"
 
-dumbScenario:
-- "[_lobby:push #officialEntity# to,ask #officialEntity# to,plead with #officialEntity# to,try to,attempt to]#_lobby# [_goal:bring back damage on the stack,bring back mana burn,allow players to mana weave again,bring back the planeswalker redirection rule,return to using “he or she” in rules text,bring back mana burn]#_goal#"
-- 'join the development team of their fantasy [_game:CCG,TCG,roleplaying game,miniatures game,tabletop game] [_gameName:"#creatureTypes# #placeNoun#","Zoxelorn
-  #count#","#abstractMassOrPluralNounOrEmotion# #_fantasyCharacterClass#","#itemNoun# #_scenarioNoun#","#characterClass# #groupNoun##colon# #tabletopGameSuffix#","#creatureTypes# #_scenarioNoun##colon# the #abstractNoun#", "#characterClass.s# of #locationRealOrFantasy#"]#_gameName.capitalizeAll#'
-- join their [_target:#playerCategory.a#,#animal.a#,#creatureType.a#,#miscPersonSingular.a#][_rule:Fist Bump,Get Completely Loaded,Drive With Your Eyes Closed,Watch
-  Anime,Don't Pay Your Taxes,Wander Aimlessly,Heckle a Child,Mana Weave,#nounActivity.capitalizeAll#,#keywordAction.capitalizeAll#,#verbExclaim.capitalizeAll#,Kiss #_target.a#]"#_rule# For Charity" [_initiative:initiative,campaign,drive,effort]#_initiative#
-- participate in their [_magicType:Two-Headed Giant,Pauper EDH,Vintage Singleton,No
-  LD/No Counters/No Burn]#_magicType# invitational tournament
-- 'covertly collect information on #pro# in order to [_rule:learn #their# shuffling routine,get a better idea of what #they# look#s# like naked,know what hate cards to board
-  in against them]#_rule#'
-- infiltrate WOTC headquarters and [_act:destroy the reserved list,trash MaRo's desk,pee in the Mana Pool,steal the Shivan Dragon statue,fall asleep in The Pit]#_act#
-- 'teach them how to beat #deck#'
-- fix MTGO so that it works properly
-- 'help them complete #their# #realBadCard# playset'
+dumbScenario: "[_their:#their#][_them:#them#][_they:#they#]#_dumbScenario#"
+
+_dumbScenario:
+- "[_lobby:push #officialEntity# to,ask #officialEntity# to,plead with #officialEntity# to,try to,attempt to]#_lobby# [_goal:bring back damage on the stack,bring back mana burn,make mana weaving legal again,bring back the planeswalker redirection rule,return to using “he or she” in rules text,bring back mana burn]#_goal#"
+- 'join the development team of #_their# fantasy [_game:CCG,TCG,roleplaying game,miniatures game,tabletop game] [_gameName:"#creatureTypes# #placeNoun#","Zoxelorn
+  #count#","#abstractMassOrPluralNounOrEmotion# #_fantasyCharacterClass#","#itemNoun# #_scenarioNoun#","#characterClass# #groupNoun##colon# #tabletopGameSuffix#","#creatureTypes# #_scenarioNoun##colon# the #abstractNoun#", "#characterClass.s# of #locationRealOrFantasy#"]#_game# #_gameName.capitalizeAll#'
+- "join #_their# [_intimateActivity:kiss,hug,dance with,wrestle][_target:#playerCategory#,#animal#,#creatureTypes#,#miscPersonSingular#][_rule:Fist Bump,Get Completely Loaded,Drive With Your Eyes Closed,Watch Anime,Don't Pay Your Taxes,Wander Aimlessly,Heckle a Child,Mana Weave,#nounActivity.capitalizeAll#,#keywordAction.capitalizeAll#,#verbExclaim.capitalizeAll#,#_target.capitalize# #_target.a#]\"#_rule# For Charity\" [_initiative:initiative,campaign,drive,effort]#_initiative#"
+- "participate in #_their# #format# invitational tournament"
+- "covertly collect information on #pro# in order to [_rule:learn #their# shuffling routine,learn what #they# look#s# like naked,know what hate cards to board
+  in against #their# #deck# deck,destroy their reputation,understand why #they# think#s# #gameConcept# #_is# so important]#_rule#"
+- "[_infiltrate:infiltrate,travel to,storm,stage a rally at]#_infiltrate# WOTC headquarters and [_topic:#informalRule#,the NWO,the #constructedFormat# banlist,declining print quality,the judge program,the Arena economy][_act:destroy the reserved list,trash MaRo's desk,pee in the Mana Pool,steal the Shivan Dragon statue,fall asleep in The Pit,petition for the construction of #character.a# statue,confront #officialEntityPerson# about #_topic#,steal the #teaserCardSet# godbook]#_act#"
+- "teach #_them# how to win the #deck# matchup"
+- "[_what:fix MTGO so that it works properly,fix the shuffler,fix the launch problems with MTG Arena,fix the #constructedFormat# banlist,address the #mtgQuestionablePractice# problem in #popularFormat#]#_what#"
+- "help #_them# [_cardOrSet:#randomAnyCard#,#randomCardSet#][_playset:#realBadCard# playset,playset of #_cardOrSet#,#cardCategory# collection][_forEvent:, for #event#][_prepare:prepare,playtest][_goal:complete #_their# #_playset#,tune #_their# #deckArch# decklist#_forEvent#,#_prepare# for #event#]#_goal#"
+- "[_join:join,join up with,come aboard,defect to,abandon,become a mole for,dump]#_join# Team #team#"
+- "[_quit:quit,give up][_activity:go #nounActivity# together,#_quit# Magic for #nounActivity#,take up #nounActivity#,run a #nounActivity# scam]#_activity#"
+- "[_ventureDesc:illegal,underground,illict,secret,shady][_shop:LGS,game store][_venture:open #_ventureDesc.a# #_shop#,build #_ventureDesc.a# #placeNoun#,start #_ventureDesc.a# trading site]#_venture# [_where:together,together in #city#,in #city#,in #city#]#_where#"
+- "design [_desc:flashy,playable,#cardQuality#,new][_card:#rarity#,#cardCategoryTerm#,legendary #creatureTypes#,#cardTypes#]#_desc.a# #_card# for #teaserCardSet#"
+- "[_throw:throw,fix,go down in][_rnd:quarterfinal,semifinal,final][_roundOf:#_rnd# round of,#_rnd.s# at]#_throw# the #_roundOf# #tournament#"
+- "[_item:playtesting results,#constructedFormat# decklists,match result data,#gameAccessory.s#,#descriptiveCard#,#clothingOrAccessory.aIfNeeded#][_who:#pro#,Team #team#]steal #_item# from #_who#"
 
 _fantasyCharacterClass:
 - "#fantasyCharacterClass#"

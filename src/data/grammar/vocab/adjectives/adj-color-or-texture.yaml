@@ -1,0 +1,34 @@
+adjColorOrTexture:
+- "#adjColor#"
+- "#adjTexture#"
+- "#adjPattern#"
+
+adjTexture:
+- shiny
+- rubber
+- silken
+- golden
+- filthy
+- chainmail
+- flimsy
+- leather
+- vinyl
+
+adjPattern:
+- pinstriped
+- herringbone
+- paisley
+- polka dot
+- plaid
+- agyle
+
+adjColor:
+- silver
+- black
+- white
+- blue
+- red
+- yellow
+- crimson
+
+

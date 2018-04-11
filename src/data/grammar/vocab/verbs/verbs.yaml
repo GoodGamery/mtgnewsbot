@@ -194,12 +194,13 @@
   ],
 
   "verbDesireableOutcomeIntransitive": [
-      "win the Pro Tour",
+      "win the pro tour",
       "make day two of #tournament#",
-      "post threads on reddit that don't get immediately closed",
+      "post threads on reddit that don't get closed immediately",
       "secure a job with WOTC",
       "open a thriving LGS",
-      "build a sideboard for the burn matchup",
+      "get the most out of #mtgQuestionablePractice#",
+      "build a sideboard for the #deck# matchup",
       "crush noobs on MTGO",
       "cast a [_num:1#num1-5#]#_num#/#_num# with #keyword#[_discount:, for just #count# mana, for free]#_discount#",
       "morph a #randomAnyCard",
@@ -208,6 +209,11 @@
       "secretly draw an extra card when using a fetchland",
       "discover the secrets of the MTGO shuffler",
       "get MaRo to step down as Lead Magic Designer",
+      "presideboard effectively for every match",
+      "start a successful #nounActivity# business",
+      "[_player:Expert,Guru,Champion,Genius,Pro,Specialist,Master,Virtuoso,Champ]become #format.a# #_player#",
+      "learn to [_make:paint,draw,sketch][_adj:amazing,lifelike,extraordinary][_who:#person#,#character#,#historicalFigure#]#_make# #_adj# portraits of #_who#",
+      "use trading prowess to convert a pack of #mtgRealSet# into [_result:#descriptiveCard#,a playset of #realCard.s#]#_result#",
       "teach #their#  [_who:#personRelationalUnique#,#personRelationalNonunique.s#]#_who# to play Magic"
   ],
   "revealVerb": [
