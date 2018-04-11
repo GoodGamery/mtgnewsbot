@@ -39,18 +39,19 @@ cardPunEventInvitation:
   [#cardPunSetup#]
   [_leadIn:Get ready to,It's time to,Don't]
   #_cardPunLine1#
-  {newline}{newline}[_separator:—,... ][_cardPunLine2:#_leadIn# #_verbPun##_separator##onlineEventAnnouncement1#,#_verbPun# and #onlineEventAnnouncement2#,#_verbPun##_separator##onlineEventAnnouncement3#]#_cardPunLine2.capitalize#!
+  {newline}{newline}[_separator:—,! ][_cardPunLine2:#_leadIn# #_verbPun##_separator##onlineEventAnnouncement1#,#_verbPun# and #onlineEventAnnouncement2#,#_verbPun##_separator##onlineEventAnnouncement3#]#_cardPunLine2.capitalize#!
   {newline}#imgCard#  
 
 cardPunSetup:
 - |
   [#cardTextVerbSearch#][_verbPun:#_cardverb# your opponents,#_cardverb# your enemies,#_cardverb# the competition,#_cardverb# yourself]
-  [_verbPun:just #_cardverb#—,#_cardverb# your opponents,#_cardverb# your enemies,#_cardverb# the competition,#_cardverb# yourself]
+  [_dont:#_cardverb#,#_cardverb# yourself,just do something—#_cardverb#]
+  [_verbPun:Don't #_dont#,#_cardverb# your opponents,#_cardverb# your enemies,#_cardverb# the competition,#_cardverb# yourself,#_cardverb# until the #adjCorporeal# #creatureTypeOrCharacterClass# #verbStrictlyIntransitive.s#]
   [_cardPunLine1:#challengeAppeal#]
 - |
   [separator:of the][#separator.cardSearchTwoParter(1)#][_cardname:#_cardName1#]
   [_verbPun:#verbReflexive# yourself]
-  [_beOneOf:be one of,be among,fight alongside,answer the call of,fight for,become a champion of,become #_cardNameFirstPart1.a# of,be #follower.a# of]
+  [_beOneOf:be one of,be among,fight alongside,answer the call of,fight for,become a champion of,become #_cardNameFirstPart1.a# of,be #follower.a# of,remember]
   [_willYouBe:#_beOneOf# the #_cardNameSecondPart1#]
   [_youAdj:true,real,worthy,serious,genuine,certified,bona fide,secret]
   [_areYouOne:one of the #_cardNameSecondPart1#,#_youAdj.a# #_cardNameFirstPart1#,#_cardNameFirstPart1.a# of the #_cardNameSecondPart1#,#_cardNameFirstPart1.a# or #characterClass.capitalize.a#, #follower.a# of the #_cardNameSecondPart1#]
@@ -135,12 +136,12 @@ ongoingEvent:
 - "#alternativeCubeFormat#[_begins:begins,starts,goes live,is starting]"
 
 _eventComeOnTweet: |
- [_where:,,at us,at us, at #officialEntityPerson#]
+ [_where:,, at us, at us, at #officialEntityPerson#]
  [_scoop:and let us know how #_adv# you care,what you're going to play,how much you're willing to pay for this,if this is a good idea]
  [_mood:excited,#mood#][_adv:much,little][_product:playmat,deckbox,t-shirt,avatar,#clothingOrAccessory#,#clothingOrAccessory#]
  [_what:to let us know how excited you are,and let us know what you think,for a chance to win #character.aIfNeeded# #_product#,and show us how #_mood# you are] 
   {newline}{newline}
-  Tweet #hashtagArbitrary##_where##_what#"
+  Tweet #hashtagArbitrary##_where# #_what#
 
 eventComeOn:
 - Don't miss it
@@ -225,12 +226,12 @@ banSomethingAnnouncement:
   [_should:should,will probably,might,may][_targetPerson:#miscPersonSingular#,#peoplePlural#]
   [_opinion:great,awful,terrible,misguided,disastrous,ill-advised,crazy][_decision:decision,idea,change,move]
   [_mistake:mistake,omission,error][_bannedUnbannedAgain:banned again,unbanned again,banned. Again,unbanned. Again][_dyingWhat:Magic,#_format#][_banUnban:ban,unban][_trainwreck:trainwreck,disaster,giant mess]
-  [_becauseWhy:We have no idea,Why not,Because #_dyingWhat# is dying,Because we don't care anymore,No reason,Because we can't #_banUnban# now.,Because we can't #_banUnban# #randomCardAlone# now,Because it's too late to #_banUnban# #randomCardAlone# now,Because we can't turn back now,Because #_format# is a #_trainwreck#,Because it doesn't really matter anymore,No reason]
+  [_becauseWhy:We have no idea,Why not,Because #_dyingWhat# is dying,Because we don't care anymore,No reason,Because we can't #_banUnban# now.,Because we can't #_banUnban# #randomCardAlone# now,Because it's too late to #_banUnban# #randomCardAlone# now,Because somebody cut the breaks on this train,Because #_format# is a #_trainwreck#,Because it doesn't really matter anymore,No reason]
   [_nevermind:nevermind,nevermind that,forget that,maybe not,I think this is a typo,we're going to have a long discussion with #officialEntity# about this]
   [_actuallyNevermind:Actually#comma# #_nevermind#,Wait#comma# #_nevermind#,Hold on a second. #_nevermind.capitalize#,On second thought#comma# #_nevermind#]
   [_banStatus:banned,banned,banned,banned,unbanned,unbanned,unbanned,restricted,now legal,#_bannedUnbannedAgain#,#_bannedUnbannedAgain#,still banned,now legal]
   [_monthsYears:months,years][_tempBanDuration:for one day,for one week,for one month,until #officialEntityPerson# gets back from vacation]
-  [_followUp:,,,,,,,, This may be a mistake., We're not sure why., We probably should have mentioned this in the last announcement., #_actuallyNevermind#., This corrects an #_mistake# from #count# #_monthsYears# ago., This was #officialEntity#'s idea., We hope you're happy., But only #_tempBanDuration#., It turns out we were #_very# wrong about this last time., This #_should# make #_targetPerson# #_reaction#., Personally#comma# I think this is a #_opinion# #_decision#., Why? #_becauseWhy#., Deal with it., We're not kidding., This is not a drill., This decision will not be reversed. Ever., It's about time#comma# right?, Please remain calm., We'll explain why later. We promise., Trust us on this one., Though this could be a mistake., Wait#comma# seriously? Nobody ever tells me anything., We're just as surprised as you are.]  
+  [_followUp:,,,,,,,, This may be a mistake., We're not sure why., We probably should have mentioned this in the last announcement., #_actuallyNevermind#., This corrects an #_mistake# from #count# #_monthsYears# ago., This was #officialEntity#'s idea., We hope you're happy., But only #_tempBanDuration#., It turns out we were #_very# wrong about this last time., This #_should# make #_targetPerson# #_reaction#., Personally#comma# I think this is a #_opinion# #_decision#., Why? #_becauseWhy#., Deal with it., We're not kidding., This is not a drill., This decision will not be reversed. Ever., It's about time#comma# right?, Please remain calm., We'll explain why later. We promise., Trust us on this one., Though this could be a mistake., Wait#comma# seriously? Nobody ever tells me anything., We're just as surprised as you are.,I think.,I told Eli this was going to be unpopular.]  
   {newline}{newline}
   #_banTarget# #_is# #_banStatus#.#_followUp#
 
@@ -274,7 +275,7 @@ cardOneOff:
   [#creatureSearch#][_creatureType:#_cardSubtype1#][_cardname:#_cardName1#]
   [_verb:talk,#soundEmanation#,#verbIntransitive#]
   [_day:#_verb.noPunctuation.capitalizeAll# Like #_creatureType.a.capitalizeAll# Day]
-  [_secondDay:EVERY DAY,EVERY DAY,#CONTENT.dayOfWeek.capitalize#,#CONTENT.dayOfWeek.capitalize#,the best day of the week,#occasion.capitalizeAll#]  
+  [_secondDay:EVERY DAY,EVERY DAY,#CONTENT.dayOfWeek.capitalize#,#CONTENT.dayOfWeek.capitalize#,#CONTENT.currentMonthDay#,the best day of the week,#occasion.capitalizeAll#]  
   It's {hashtag}#_day.noSpaces#!
   {newline}
   Or for the #_creatureType.capitalize.s# of #_cardSet1#...#_secondDay#!
