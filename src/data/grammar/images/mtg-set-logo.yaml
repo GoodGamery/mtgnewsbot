@@ -26,10 +26,9 @@ setLogoColorMedium:
   - "Chocolate"
   - "LightSeaGreen"
   - "DarkOrange"
-  - "RebeccaPurple"
   - "MediumSeaGreen"
   - "OrangeRed"
-  -  "DeepSkyBlue"
+  - "DeepSkyBlue"
   - "DodgerBlue"
   - "CornflowerBlue"
   - "BlueViolet"
@@ -48,46 +47,90 @@ setLogoColorDark:
   - "DarkRed"
   - "Black"
 setLogoFontUnused:
+  - "Beleren[_setLogoFontSize:90][_setLogoStrokeWidth:4,5,6][_forcedStrokeWidth:2][_setLogoFontWeight:bold][_setLogoLineHeight:80][_setLogoBaseline:bottom][_setLogoAdditionalStyles:#_setLogoCustomStyleTextured#,#_setLogoCustomStyleItalicized#,#_setLogoCustomStyleGradient#][_mtgSetLogoWidth:760px][_mtgSetLogoMaxWidth:950px]"
   - "Drift Wood[_setLogoFontSize:72][_setLogoStrokeWidth:2][_setLogoFontWeight:normal]"
   - "Kulkeuma[_setLogoFontSize:72][_setLogoStrokeWidth:4][_setLogoFontWeight:normal][_setLogoLineHeight:80][_setLogoBaseline:bottom][_setLogoAdditionalStyles:#_setLogoCustomStyleTextured#,#_setLogoCustomStyleItalicized#]"
+
 setLogoFont:
   - "Abandon[_setLogoFontSize:90][_setLogoStrokeWidth:4][_setLogoFontWeight:normal][_setLogoLineHeight:98][_setLogoBaseline:middle][_setLogoAdditionalStyles:letter-spacing#colon# 0.025em;][_mtgSetLogoWidth:760px][_mtgSetLogoMaxWidth:950px]"
-  - "Action Is[_setLogoFontSize:100][_setLogoStrokeWidth:4][_setLogoFontWeight:bold][_setLogoLineHeight:83][_setLogoBaseline:bottom][_setLogoAdditionalStyles:,#_setLogoCustomStyleTextured#][_mtgSetLogoWidth:600px][_mtgSetLogoMaxWidth:950px][_mtgSetLogoPaddingTop:10px]"
+  - "Black Dahlia[_cardset:#_cardset.allCaps#][_setLogoFontSize:116][_setLogoStrokeWidth:2][_setLogoFontWeight:normal][_setLogoLineHeight:98][_setLogoBaseline:middle][_setLogoAdditionalStyles:#_setLogoCustomStyleGradient#]"
+  - "Action Is[_setLogoFontSize:100][_setLogoStrokeWidth:4][_setLogoFontWeight:bold][_setLogoLineHeight:83][_setLogoBaseline:bottom][_setLogoAdditionalStyles:#_setLogoCustomStyleTextured#][_mtgSetLogoWidth:600px][_mtgSetLogoMaxWidth:950px][_mtgSetLogoPaddingTop:10px]"
+  - "Action Is[_setLogoFontSize:100][_setLogoStrokeWidth:2][_setLogoFontWeight:bold][_setLogoLineHeight:83][_setLogoBaseline:bottom][_setLogoAdditionalStyles:#_setLogoCustomStyleGradient#][_mtgSetLogoWidth:600px][_mtgSetLogoMaxWidth:950px][_mtgSetLogoPaddingTop:10px]"
   - "Becker[_setLogoFontSize:90][_setLogoStrokeWidth:4][_setLogoFontWeight:bold][_setLogoLineHeight:77][_setLogoBaseline:bottom][_setLogoAdditionalStyles:#_setLogoCustomStyleTextured#,#_setLogoCustomStyleItalicized#][_mtgSetLogoWidth:760px][_mtgSetLogoMaxWidth:950px]"
-  - "Beleren[_setLogoFontSize:90][_setLogoStrokeWidth:4,5,6][_setLogoFontWeight:bold][_setLogoLineHeight:80][_setLogoBaseline:bottom][_setLogoAdditionalStyles:#_setLogoCustomStyleTextured#,#_setLogoCustomStyleItalicized#][_mtgSetLogoWidth:760px][_mtgSetLogoMaxWidth:950px]"
-  - "Black Dahlia[_cardset:#_cardset.allCaps#][_setLogoFontSize:116][_setLogoStrokeWidth:4][_setLogoFontWeight:normal][_setLogoLineHeight:98][_setLogoBaseline:middle]"
-  - "BlackCastleMF[_cardset:#_cardset.allCaps#][_setLogoFontSize:94][_setLogoStrokeWidth:5][_setLogoFontWeight:bold][_setLogoLineHeight:88][_setLogoBaseline:middle][_setLogoAdditionalStyles:#_setLogoCustomStyleTexturedGradient#]"  
-  - "Eighties Horror[_cardset:#_cardset.allCaps#][_setLogoFontSize:96][_setLogoStrokeWidth:5][_setLogoFontWeight:normal][_setLogoLineHeight:96][_setLogoBaseline:middle][_setLogoAdditionalStyles:,#_setLogoCustomStyleTexturedGradient#]"
+  - "Becker[_setLogoFontSize:90][_setLogoStrokeWidth:2][_setLogoFontWeight:bold][_setLogoLineHeight:77][_setLogoBaseline:bottom][_setLogoAdditionalStyles:#_setLogoCustomStyleGradient#][_mtgSetLogoWidth:760px][_mtgSetLogoMaxWidth:950px]"
+  - "BlackCastleMF[_cardset:#_cardset.allCaps#][_setLogoFontSize:94][_setLogoStrokeWidth:3][_setLogoFontWeight:bold][_setLogoLineHeight:88][_setLogoBaseline:middle][_setLogoAdditionalStyles:#_setLogoCustomStyleTexturedGradient#]"  
+  - "Dungeons[_setLogoFontSize:100][_setLogoStrokeWidth:5][_setLogoFontWeight:bold][_setLogoLineHeight:80][_setLogoBaseline:top][_mtgSetLogoMaxWidth:800px][_mtgSetLogoPaddingTop:10px][_setLogoAdditionalStyles:#_setLogoCustomStyleTextured#]"
+  - "Dungeons[_setLogoFontSize:100][_setLogoStrokeWidth:2,3][_setLogoFontWeight:bold][_setLogoLineHeight:80][_setLogoBaseline:top][_mtgSetLogoMaxWidth:800px][_mtgSetLogoPaddingTop:10px][_setLogoAdditionalStyles:#_setLogoCustomStyleGradient#,#_setLogoCustomStyleTexturedGradient#]"
+  - "Eighties Horror[_cardset:#_cardset.allCaps#][_setLogoFontSize:96][_setLogoStrokeWidth:5][_setLogoFontWeight:normal][_setLogoLineHeight:96][_setLogoBaseline:middle][_setLogoAdditionalStyles:#_setLogoCustomStyleTextured#]"
   - "Empire State NF[_setLogoFontSize:90][_setLogoStrokeWidth:4][_setLogoFontWeight:normal][_setLogoLineHeight:95][_setLogoBaseline:bottom][_setLogoAdditionalStyles:#_setLogoCustomStyleTextured#,#_setLogoCustomStyleItalicized#][_mtgSetLogoWidth:760px][_mtgSetLogoMaxWidth:950px]"
-  - "Feast of Flesh BB[_setLogoFontSize:96][_setLogoStrokeWidth:4][_setLogoFontWeight:bold][_setLogoLineHeight:86][_setLogoBaseline:bottom][_setLogoAdditionalStyles:,#_setLogoCustomStyleTextured#,#_setLogoCustomStyleItalicized#][_mtgSetLogoMaxWidth:950px]"
+  - "Feast of Flesh BB[_setLogoFontSize:96][_setLogoStrokeWidth:2][_forcedStrokeWidth:2][_setLogoFontWeight:bold][_setLogoLineHeight:86][_setLogoBaseline:bottom][_setLogoAdditionalStyles:#_setLogoCustomStyleTextured#,#_setLogoCustomStyleItalicized#,#_setLogoCustomStyleGradient#][_mtgSetLogoMaxWidth:950px]"
   - "Fiendish[_setLogoFontSize:60][_setLogoStrokeWidth:6][_setLogoFontWeight:normal][_setLogoLineHeight:118][_setLogoBaseline:middle][_setLogoAdditionalStyles:#_setLogoCustomStyleTextured#]"
-  - "Gelio Retsina[_setLogoFontSize:96][_setLogoStrokeWidth:4][_setLogoFontWeight:bold][_setLogoLineHeight:82][_setLogoBaseline:middle][_setLogoAdditionalStyles:#_setLogoCustomStyleTexturedGradient#]"
-  - "Jungle Fever NF[_setLogoFontSize:100][_setLogoStrokeWidth:4][_setLogoFontWeight:normal][_setLogoLineHeight:80][_setLogoBaseline:bottom][_setLogoAdditionalStyles:#_setLogoCustomStyleTextured#,#_setLogoCustomStyleItalicized#][_mtgSetLogoMaxWidth:950px]"
+  - "Fiendish[_setLogoFontSize:60][_setLogoStrokeWidth:2][_setLogoFontWeight:normal][_setLogoLineHeight:118][_setLogoBaseline:middle][_setLogoAdditionalStyles:#_setLogoCustomStyleGradient#]"
+  - "Gelio Retsina[_setLogoFontSize:96][_setLogoStrokeWidth:4][_forcedStrokeWidth:0,2][_setLogoFontWeight:bold][_setLogoLineHeight:82][_setLogoBaseline:middle][_setLogoAdditionalStyles:#_setLogoCustomStyleTexturedGradient#]"
+  - "Jungle Fever NF[_setLogoFontSize:100][_setLogoStrokeWidth:5][_setLogoFontWeight:normal][_setLogoLineHeight:80][_setLogoBaseline:bottom][_setLogoAdditionalStyles:#_setLogoCustomStyleTextured#,#_setLogoCustomStyleItalicized#,#_setLogoCustomStyleTextured# #_setLogoCustomStyleItalicized#][_mtgSetLogoMaxWidth:950px]"
+  - "Jungle Fever NF[_setLogoFontSize:100][_setLogoStrokeWidth:2][_setLogoFontWeight:normal][_setLogoLineHeight:80][_setLogoBaseline:bottom][_setLogoAdditionalStyles:#_setLogoCustomStyleGradient#, #_setLogoCustomStyleTexturedGradient#, #_setLogoCustomStyleGradient# #_setLogoCustomStyleItalicized#][_mtgSetLogoMaxWidth:950px]"
   - "Magda[_setLogoFontSize:86][_setLogoStrokeWidth:4][_setLogoFontWeight:bold][_setLogoLineHeight:78][_setLogoBaseline:middle]"
-  - "MEDICINE SHOW CAPS[_setLogoFontSize:90][_setLogoStrokeWidth:4][_setLogoFontWeight:normal][_setLogoLineHeight:76][_setLogoBaseline:bottom][_setLogoAdditionalStyles:#_setLogoCustomStyleTextured# text-transform#colon# uppercase;,#_setLogoCustomStyleItalicized# text-transform#colon# uppercase;][_mtgSetLogoWidth:700px][_mtgSetLogoMaxWidth:780px]"
+  - "MEDICINE SHOW CAPS[_setLogoFontSize:90][_setLogoStrokeWidth:4][_setLogoFontWeight:normal][_setLogoLineHeight:76][_setLogoBaseline:bottom][_setLogoAdditionalStyles:#_setLogoCustomStyleTextured# #_forceUpperCase#,#_setLogoCustomStyleItalicized# #_forceUpperCase#][_mtgSetLogoWidth:700px][_mtgSetLogoMaxWidth:780px]"
+  - "Orc Horde BB[_setLogoFontSize:100][_setLogoStrokeWidth:5][_setLogoFontWeight:bold][_setLogoLineHeight:96][_setLogoBaseline:top][_mtgSetLogoMaxWidth:800px][_mtgSetLogoPaddingTop:10px][_setLogoAdditionalStyles:#_setLogoCustomStyleTextured#]"
+  - "Orc Horde BB[_setLogoFontSize:100][_setLogoStrokeWidth:2][_setLogoFontWeight:bold][_setLogoLineHeight:96][_setLogoBaseline:top][_mtgSetLogoMaxWidth:800px][_mtgSetLogoPaddingTop:10px][_setLogoAdditionalStyles:#_setLogoCustomStyleGradient#,#_setLogoCustomStyleTexturedGradient#]"
+  - "Orc Horde Inline BB[_setLogoFontSize:100][_setLogoStrokeWidth:4][_setLogoFontWeight:bold][_setLogoLineHeight:96][_setLogoBaseline:top][_mtgSetLogoMaxWidth:800px][_mtgSetLogoPaddingTop:10px][_setLogoAdditionalStyles:#_setLogoCustomStyleTextured#][_setLogoFontColorSet:#_setLogoFontColo rSetHighContrast#]"
+  - "Orc Horde Inline BB[_setLogoFontSize:100][_setLogoStrokeWidth:3][_setLogoFontWeight:bold][_setLogoLineHeight:96][_setLogoBaseline:top][_mtgSetLogoMaxWidth:800px][_mtgSetLogoPaddingTop:10px][_setLogoAdditionalStyles:#_setLogoCustomStyleGradient#,#_setLogoCustomStyleTexturedGradient#][_setLogoFontColorSet:#_setLogoFontColorSetHighContrast#]"
   - "Ringbearer[_setLogoFontSize:84][_setLogoStrokeWidth:5][_setLogoFontWeight:bold][_setLogoLineHeight:96][_setLogoBaseline:top][_mtgSetLogoMaxWidth:800px][_mtgSetLogoPaddingTop:10px]"
-  - "TOXIA[_cardset:#_cardset.allCaps#][_setLogoFontSize:96][_setLogoStrokeWidth:4][_setLogoFontWeight:normal][_setLogoLineHeight:82][_setLogoBaseline:middle][_mtgSetLogoWidth:760px][_mtgSetLogoPaddingTop:8px][_setLogoAdditionalStyles:#_setLogoCustomStyleTexturedGradient#]"
+  - "Ringbearer[_setLogoFontSize:84][_setLogoStrokeWidth:2][_setLogoFontWeight:bold][_setLogoLineHeight:96][_setLogoBaseline:top][_mtgSetLogoMaxWidth:800px][_mtgSetLogoPaddingTop:10px][_setLogoAdditionalStyles:#_setLogoCustomStyleGradient#]"
+  - "TOXIA[_cardset:#_cardset.allCaps#][_setLogoFontSize:96][_setLogoStrokeWidth:4][_setLogoFontWeight:normal][_setLogoLineHeight:82][_setLogoBaseline:middle][_mtgSetLogoWidth:760px][_mtgSetLogoPaddingTop:8px][_setLogoAdditionalStyles:#_setLogoCustomStyleTextured#]"
+  - "TOXIA[_cardset:#_cardset.allCaps#][_setLogoFontSize:96][_setLogoStrokeWidth:2][_setLogoFontWeight:normal][_setLogoLineHeight:82][_setLogoBaseline:middle][_mtgSetLogoWidth:760px][_mtgSetLogoPaddingTop:8px][_setLogoAdditionalStyles:#_setLogoCustomStyleGradient#,#_setLogoCustomStyleTexturedGradient#]"
+
+_forceHighContrastText: "[_setLogoFontColorSet:#_setLogoFontColorSetHighContrast#]"
+_forceUpperCase: "text-transform#colon# uppercase;"
+
+_resetLogoAdditionalStyles: "[_setLogoAdditionalStyles:]"
+
+#_testTraceChoice: "[_defaultX:0][_specialX:BC][_z:#_traceChoice#]#_z#:#_x#"
+_testTraceChoice: "[_defaultX:0][_specialX:BC][_z:#_traceChoiceA#,#_traceChoiceB#,#_traceChoiceC#]#_z#:#_x#"
+
+_traceChoice:
+- "A[_x:#_defaultX#]"
+- "B[_x:#_specialX#]"
+- "C[_x:#_specialX#]"
+
+_traceChoiceA: "A[_x:#_defaultX#]"
+_traceChoiceB: "B[_x:#_specialX#]"
+_traceChoiceC: "C[_x:#_specialX#]"
+
 fontTextureDirectoryUrl:
   - "http://pseudochaos.org/goodgamery/mtgnewsbot/images/textures/"
+
 fontTexture:
   - "grit.png"
+
 _setLogoFontColorSet:
-  - "[_setLogoFontColor:#setLogoColorLight#][_setLogoStrokeColor:#setLogoColorMedium#]"
-  - "[_setLogoFontColor:#setLogoColorLight#][_setLogoStrokeColor:#setLogoColorDark#]"
-  - "[_setLogoFontColor:#setLogoColorMedium#][_setLogoStrokeColor:#setLogoColorLight#]"
-  - "[_setLogoFontColor:#setLogoColorMedium#][_setLogoStrokeColor:#setLogoColorDark#]"
-  - "[_setLogoFontColor:#setLogoColorDark#][_setLogoStrokeColor:#setLogoColorLight#]"
-  - "[_setLogoFontColor:#setLogoColorDark#][_setLogoStrokeColor:#setLogoColorMedium#]"
+  - "[_setLogoFontColor:#setLogoColorLight#][_setLogoStrokeColor:#setLogoColorMedium#][_setLogoGradientColor:#setLogoColorDark#]"
+  - "[_setLogoFontColor:#setLogoColorLight#][_setLogoStrokeColor:#setLogoColorDark#][_setLogoGradientColor:#setLogoColorMedium#]"
+  - "[_setLogoFontColor:#setLogoColorMedium#][_setLogoStrokeColor:#setLogoColorLight#][_setLogoGradientColor:#setLogoColorDark#]"
+  - "[_setLogoFontColor:#setLogoColorMedium#][_setLogoStrokeColor:#setLogoColorDark#][_setLogoGradientColor:#setLogoColorLight#]"
+  - "[_setLogoFontColor:#setLogoColorDark#][_setLogoStrokeColor:#setLogoColorLight#][_setLogoGradientColor:#setLogoColorMedium#]"
+  - "[_setLogoFontColor:#setLogoColorDark#][_setLogoStrokeColor:#setLogoColorMedium#][_setLogoGradientColor:#setLogoColorLight#]"
+
+_setLogoFontColorSetHighContrast:
+  - "[_setLogoFontColor:#setLogoColorLight#][_setLogoStrokeColor:#setLogoColorDark#][_setLogoGradientColor:#setLogoColorMedium#]"
+  - "[_setLogoFontColor:#setLogoColorDark#][_setLogoStrokeColor:#setLogoColorLight#][_setLogoGradientColor:#setLogoColorMedium#]"
+
 _setLogoCustomStyleTexturedLocal:
   - "-webkit-mask-image:url(./src/data/images/textures/grit.png);"
+
 _setLogoCustomStyleTextured:
   - "-webkit-mask-image:url(#fontTextureDirectoryUrl##fontTexture#);"
+
+_setLogoCustomStyleGradient:
+  - "background: -webkit-linear-gradient(bottom, #_setLogoFontColor#, #_setLogoGradientColor#); -webkit-background-clip: text; -webkit-text-fill-color: transparent; #_forceHighContrastText#"
+
 _setLogoCustomStyleTexturedGradient:
-  - "-webkit-mask-image:url(#fontTextureDirectoryUrl##fontTexture#), linear-gradient(rgba(0, 0, 0, 1.0), transparent);"  
+  - "#_setLogoCustomStyleTextured# #_setLogoCustomStyleGradient# #_forceHighContrastText#"  
+
 _setLogoCustomStyleItalicized:
   - "font-style: italic;"
 _setLogoFont:
-  - "[#_setLogoFontColorSet#][_setLogoFontFace:#setLogoFont#]"
+  - "[#_resetLogoAdditionalStyles#][#_setLogoFontColorSet#][_setLogoFontFace:#setLogoFont#]"
 _setLogoStyles:
   - "text-align: center;line-height: #_setLogoLineHeight#px;"
 _setLogoTextStyles:
