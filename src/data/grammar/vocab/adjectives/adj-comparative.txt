@@ -177,3 +177,4 @@ unworthier
 seaworthier
 less redeemable
 less useful
+brighter

@@ -22,9 +22,17 @@ trolling
 yodeling
 gargling
 flossing
+napping
+golfing
+yachting
+getting swole
 knitting quilts
 whittling
 bungee jumping
+dumpster diving
+selling insurance
+spelunking
+mining bitcoins
 drinking irresponsibly
 whistling ominously
 visiting the museum
@@ -52,6 +60,7 @@ parlor tricks
 locksmithing
 leatherworking
 crowdfunding
+crowdsourcing
 thumb wrestling
 competetive eating
 interpretive dance
@@ -62,3 +71,6 @@ rules lawyering
 theorycrafting
 going for broke
 eating #pluralItemNounOrMassNoun#
+collecting #pluralNoun#
+wearing #clothingOrAccessory.aIfNeeded#
+[_activity:hunting,feeding,raising,petting]#_activity# #animalPlural#
