@@ -103,27 +103,14 @@ mtgSetLogoImageMtgLogoImage:
 - "./src/data/images/mtg-logos/mtg-small-logo-5.png"
 - "./src/data/images/mtg-logos/mtg-small-logo-6.png"
 
-mtgSetLogoBackgroundImage:
-- "./src/data/images/setlogo/backgrounds/setlogo-background-1.jpg"
-- "./src/data/images/setlogo/backgrounds/setlogo-background-2.jpg"
-- "./src/data/images/setlogo/backgrounds/setlogo-background-3.jpg"
-- "./src/data/images/setlogo/backgrounds/setlogo-background-4.jpg"
-- "./src/data/images/setlogo/backgrounds/setlogo-background-5.jpg"
-- "./src/data/images/setlogo/backgrounds/setlogo-background-6.jpg"
-- "./src/data/images/setlogo/backgrounds/setlogo-background-7.jpg"
-- "./src/data/images/setlogo/backgrounds/setlogo-background-8.jpg"
-- "./src/data/images/setlogo/backgrounds/setlogo-background-9.jpg"
-- "./src/data/images/setlogo/backgrounds/setlogo-background-10.jpg"
-- "./src/data/images/setlogo/backgrounds/setlogo-background-11.jpg"
-- "./src/data/images/setlogo/backgrounds/setlogo-background-12.jpg"
-- "./src/data/images/setlogo/backgrounds/setlogo-background-13.jpg"
-- "./src/data/images/setlogo/backgrounds/setlogo-background-14.jpg"
-- "./src/data/images/setlogo/backgrounds/setlogo-background-15.jpg"
-- "./src/data/images/setlogo/backgrounds/setlogo-background-16.jpg"
-- "./src/data/images/setlogo/backgrounds/setlogo-background-17.jpg"
-- "./src/data/images/setlogo/backgrounds/setlogo-background-18.jpg"
-- "./src/data/images/setlogo/backgrounds/setlogo-background-19.jpg"
-- "./src/data/images/setlogo/backgrounds/setlogo-background-20.jpg"
+mtgSetLogoBackgroundImageIndex: [
+  "1","2","3","4","5","6","7","8","9","10",
+  "11","12","13","14","15","16","17","18","19","20",
+  "21","22","23","24","25","26","27","28","29","30",
+  "31","32","33","34","35","36"
+ ]
+
+mtgSetLogoBackgroundImage: "./src/data/images/setlogo/backgrounds/setlogo-background-#mtgSetLogoBackgroundImageIndex#.jpg"
 
 mtgSetLogoResetStyle: "[_mtgSetLogoWidth:760px][_mtgSetLogoMaxWidth:1024px][_mtgSetLogoPaddingTop: 0px]"
 

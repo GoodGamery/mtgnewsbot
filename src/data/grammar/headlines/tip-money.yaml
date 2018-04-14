@@ -58,7 +58,7 @@ investingType:
 
 investReason:
 - '[_prep:before,before,until,once,when]#_prep# #randomCardAlone# is [_fate:banned,restricted,unbanned][_in: in #format#,]#_fate##_in#'
-- '[_prep:before,before,until,once,when][_rotation:#cardSet# rotates,#cardSet# rotates from #format#][_fate:#_rotation#,#teaserCardSet# is released,#teaserCardSet# arrives on MTGO,#tournament#]#_prep# #_fate#'
+- '[_prep:before,before,until,once,when][_happens:takes place,is over,is finished][_rotation:#cardSet# rotates,#cardSet# rotates from #format#][_fate:#_rotation#,#teaserCardSet# is released,#teaserCardSet# arrives on MTGO,#tournament# #_happens#]#_prep# #_fate#'
 
 financialStakeholders:
 - "online retailers[#pluralPronouns#]"
