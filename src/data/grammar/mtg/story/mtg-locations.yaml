@@ -1,6 +1,7 @@
 {
   "plane": ["Rath", "Shandalar", "Mirrodin", "Kamigawa", "Alara", "Zendikar", "Innistrad", "Kaladesh", "Amonkhet", "Ixalan",
-            "Muraganda", "Mercadia", "Mirrodin", "Ravnica", "Lorwyn", "Tarkir", "Vryn", "Theros", "Shadowmoor", "Phyrexia"],
+            "Muraganda", "Mercadia", "Mirrodin", "Ravnica", "Lorwyn", "Tarkir", "Vryn", "Theros", "Shadowmoor", "Phyrexia",
+            "Dominaria"],
   "nonPlaneLocation": [
       "Adarkar",
       "An-Havva",

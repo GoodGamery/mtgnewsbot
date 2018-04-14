@@ -154,7 +154,10 @@ cannibal
 hermit
 refugee
 pilgrim
+scientist
 scientician
+librarian
+butler
 #playerCategory#
 #personAuthorityFigure#
 #personRelational#

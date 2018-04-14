@@ -115,6 +115,14 @@ function parseMessage(message) {
       // Get the alt text out of it
       altText = tags.htmlImg.altText || altText;
     }
+
+    const tagsToStrip = [
+      "&#173;" // HTML shy tag (suggested linebreaks)
+    ];
+
+    tagsToStrip.forEach(tag => {
+      text = text.replace(new RegExp(tag,'ig'),'');
+    });
   }
 
   text = text.trim().replace(/ +/g,' ');
