@@ -105,7 +105,9 @@ _dumbScenario:
 - "[_lobby:push #officialEntity# to,ask #officialEntity# to,plead with #officialEntity# to,try to,attempt to]#_lobby# [_goal:bring back damage on the stack,bring back mana burn,make mana weaving legal again,bring back the planeswalker redirection rule,return to using “he or she” in rules text,bring back mana burn]#_goal#"
 - 'join the development team of #_their# fantasy [_game:CCG,TCG,roleplaying game,miniatures game,tabletop game] [_gameName:"#creatureTypes# #placeNoun#","Zoxelorn
   #count#","#abstractMassOrPluralNounOrEmotion# #_fantasyCharacterClass#","#itemNoun# #_scenarioNoun#","#characterClass# #groupNoun##colon# #tabletopGameSuffix#","#creatureTypes# #_scenarioNoun##colon# the #abstractNoun#", "#characterClass.s# of #locationRealOrFantasy#"]#_game# #_gameName.capitalizeAll#'
-- "join #_their# [_intimateActivity:kiss,hug,dance with,wrestle][_target:#playerCategory#,#animal#,#creatureTypes#,#miscPersonSingular#][_rule:Fist Bump,Get Completely Loaded,Drive With Your Eyes Closed,Watch Anime,Don't Pay Your Taxes,Wander Aimlessly,Heckle a Child,Mana Weave,#nounActivity.capitalizeAll#,#keywordAction.capitalizeAll#,#verbExclaim.capitalizeAll#,#_target.capitalize# #_target.a#]\"#_rule# For Charity\" [_initiative:initiative,campaign,drive,effort]#_initiative#"
+- "[_join:join,donate to,participate in,help launch][_initiative:initiative,campaign,drive,effort,project,raffle,fundraiser]#_join# #_their# \"#charity.capitalizeAll#\" #_initiative#"
+- participate in their [_magicType:Two-Headed Giant,Pauper EDH,Vintage Singleton,No
+  LD/No Counters/No Burn]#_magicType# invitational tournament
 - "participate in #_their# #format# invitational tournament"
 - "covertly collect information on #pro# in order to [_rule:learn #their# shuffling routine,learn what #they# look#s# like naked,know what hate cards to board
   in against #their# #deck# deck,destroy their reputation,understand why #they# think#s# #gameConcept# #_is# so important]#_rule#"

@@ -19,9 +19,8 @@ function getMonthDayOrdinal(date) {
 }
 
 function getSeason(date) {
-  //TODO: use date if provided
-
-  const month = new Date().toLocaleString('en-us', {  month: 'numeric' });
+  var _date = date ? date : new Date();
+  const month = _date.toLocaleString('en-us', {  month: 'numeric' });
 
   switch (month) {
     case '1':
@@ -57,7 +56,6 @@ function currentMonth() {
 function currentMonthDay() {
   return getMonthDayOrdinal(new Date());
 }
-
 
 function currentYear() {
   return '' + new Date().getFullYear();

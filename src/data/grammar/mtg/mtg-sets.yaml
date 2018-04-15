@@ -236,10 +236,10 @@
   "collectiveActionOrRealm": [
     "rise", "revenge", "clash", "realm", "call", "sphere", "tales", "flight", "festival", "cult", "order", "ruin", "empire", "conclave",
     "council", "mutiny", "decline", "fall", "fate", "scourge", "legacy", "whispers", "way", "triumph", "season", "secrets", "retribution",
-    "reign", "rebellion", "oath", "might", "kiss", "dance", "howl", "moan", "feast", "hunger", "footsteps", "clan"
+    "reign", "rebellion", "oath", "might", "kiss", "dance", "howl", "moan", "feast", "hunger", "footsteps", "clan", "#soundEmanation#"
   ],
   "collective": [
-    "league", "guild", "tournament", "city",  "kingdom", "fellowship", "ruin"
+    "league", "guild", "tournament", "city",  "kingdom", "fellowship", "ruin", "order", "contest"
   ],
   "cardSetSuffix": ["reborn", "revisited", "unleashed", "dawn", "ascendant"]
 }

@@ -59,7 +59,7 @@ duelDecksGraphicAnnouncement:
 - "[#_duelDecksCombatants#][_combatant1:#_duelDecksCombatant1#][_combatant2:#_duelDecksCombatant2#]Wizards Announces: Duel Decks: #_combatant1.capitalizeAll# vs. #_combatant2.capitalizeAll# {htmlImg htmlImgString=`#duelDecksLogoImage#` screenWidth=`2048` screenHeight=`400`}"
 
 novelSetGraphicAnnouncement:
-- 'Wizards Announces: [_cardset:#novelCardSetName.capitalizeAll#]#_cardset# #mtgSetLogoSplash#'
+- 'Wizards Announces: [_cardset:#novelCardSetName#]#_cardset# #mtgSetLogoSplash#'
 - "[_nextSet:The next set,The next fall set,The next spring set,#codename.capitalize#][_verbphrase:is
   actually,is really named,will be named]#_nextSet# #_verbphrase# [_cardset:#novelCardSetName.capitalizeAll#]#_cardset#  #mtgSetLogoSplash#"
 
@@ -74,3 +74,4 @@ colon: ":"
 comma: ","
 fakecomma: "‚"
 hashtag: "_hashtag_"
+shy: "&\\#173;"

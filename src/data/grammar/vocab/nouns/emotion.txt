@@ -37,3 +37,9 @@ regret
 respect
 animosity
 anger
+loathing
+hostility
+disappointment
+astonishment
+embarassment
+exuberance

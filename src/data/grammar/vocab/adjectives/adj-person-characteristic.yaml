@@ -18,8 +18,9 @@ adjPersonCharacteristic:
 - naive
 - level-headed
 - unpredictable
+- shrewd
 - "#adj#"
-
+- "#adjValue#"
 
 adjPersonCharacteristicComparative:
 - younger

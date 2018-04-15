@@ -32,6 +32,20 @@ animal:
 - ostrich
 - carpenter ant
 - squirrel
+- chicken
+- goat
+- gorilla
+- kangaroo
+- woodpecker
+- weasel
+- walrus
+- racoon
+- caribou
+- bee
+- llama
+- sea cucumber
+- sloth
+- warthog
 
 animalPlural: "#_animalPlural#[_fancyGroup:#_group#]"
 
@@ -73,3 +87,15 @@ _animalPlural:
 - "[_group:horde,colony,family]beavers"
 - "[_group:horde,colony,swarm]carpenter ants"
 - "[_group:horde,colony,family]squirrels"
+- "[_group:flock,clutch]chickens"
+- "[_group:flock,horde,colony,family]goats"
+- "[_group:band,colony,family]gorillas"
+- "[_group:mob,family]kangaroos"
+- "[_group:flock,clutch]woodpeckers"
+- "[_group:colony,pack]weasels"
+- "[_group:herd,family]walruses"
+- "[_group:herd,family]caribou"
+- "[_group:swarm]bees"
+- "[_group:colony]sea cucumbers"
+- "[_group:family]sloths"
+- "[_group:herd]warthogs"
