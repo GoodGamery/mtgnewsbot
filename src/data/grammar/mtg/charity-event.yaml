@@ -1,0 +1,54 @@
+charity:
+- "[_charity:charity,charity,#adjSuperlative.a# #_charityFuture#,#adjSuperlative.a# #_charityFuture#,a good cause,#_charityOtherCause#]#_charityActivity# For #_charity#"
+- "[_benefit:#pluralNounOrMassNoun#,#nounActivity#,#format# Decks For][_beneficiary:#character#,#person#]#_benefit# for #_beneficiary#"
+- "[_victim:the #creatureTypes#,the #characterClass.s#,the #_animalPlural#,#person# ,#format#][_aggressor:#peoplePlural#,#peoplePlural#,#officialEntity#][_danger:,, from #_aggressor#]Save #_victim##_danger#"
+- "make [_what:#format#,#cardCategoryClassTerm#][_adj:#adj#,#cardQuality#]#_what# #_adj# again"
+- "[_effort:#pluralNoun#,#cardCategory.s#,#nounActivity#] for #adjSuperlative.a# #_charityFuture#"
+- "[_entity:#creatureTypeOrCharacterClass.s#,#cardCategory.s#,#playerCategory.s#]#_entity# without borders"
+- "#_charityFoundation# for [_recipient:#characterClass#,#creatureTypes#,#animal#]#_recipient# #_charityWelfare#"
+- "[_what:#creatureTypeOrCharacterClass#]Big #_what#, Little #_what#"
+- "[_what:#creatureType.s#,#characterClass#,#playerCategory#,#cardCategory#,#person#][_defense:defense,legal defense,freedom,development]#_what# #_defense# fund"
+- "No [_what:#creatureType.s#,#characterClass#,#cardCategory#,#animal#]#_what# left behind"
+
+_charityActivity:
+- "Fist Bump"
+- "Get Completely Loaded"
+- "Drive With Your Eyes Closed"
+- "Watch Anime"
+- "Don't Pay Your Taxes"
+- "Wander Aimlessly"
+- "Heckle a Child"
+- "Mana Weave"
+- "#nounActivity.capitalizeAll#"
+- "#keywordAction.capitalizeAll#"
+- "#verbExclaim.capitalizeAll#"
+- "Play #format#"
+- " [_intimateActivity:kiss,hug,dance with,wrestle][_target:#playerCategory.a#,#animal.a#,#creatureTypes.a#,#miscPersonSingular.a#,#pro#]#_intimateActivity# #_target.a#"
+
+_charityFuture:
+- "future"
+- "tomorrow"
+- "world"
+- "judge program"
+- "#popularFormat# environment"
+
+_charityFoundation:
+- foundation
+- institute
+- agency
+- alliance
+
+_charityWelfare:
+- relief
+- development
+- learning
+- awareness
+- tolerance
+- advancement
+- equality
+- justice
+
+_charityOtherCause:
+- "[_good:good,better,decent,acceptable]a return to #_good# print quality"
+- "fair print runs"
+- "[_desc:restrained,modest,fair,short,sensible]#_desc.a# banlist"

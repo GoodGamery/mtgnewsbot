@@ -158,6 +158,8 @@ scientist
 scientician
 librarian
 butler
+troublemaker
+steward
 #playerCategory#
 #personAuthorityFigure#
 #personRelational#

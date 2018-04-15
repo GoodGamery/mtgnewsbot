@@ -16,32 +16,32 @@ clickbait:
 
 clickbaitShocker:
 - "#pro# [_picked:first picked,last picked,wheeled,drafted,topdecked,hate drafted,windmill slammed,morphed]#_picked#
-  #randomAnyCard#[_challenge: and you won't believe,. You'll be floored by,. Guess,. Find out,. #peoplePlural.capitalizeAll# are still talking about#]#_challenge.capitalize#[_what:what happened next,what #pro# said next,what #pro# did next,why #pro# called a judge] #_what#"
+  #randomAnyCard#[_challenge: and you won't believe,. You'll be floored by,. Guess,. Find out,. #peoplePlural.capitalizeAll# #are# still talking about#]#_challenge.capitalize#[_what:what happened next,what #pro# said next,what #pro# did next,why #pro# called a judge] #_what#"
 
 wackyCharacter:
 - "#person#"
 - "#miscPersonSingular#"
 - "a future version of #themselves#"
-- "#their# own grandfather"
-- local law enforcement
-- a foreign dignitary
-- a crazy cat lady
-- a mad scientist
-- an absent-minded professor
-- a damsel in distress
-- a gentleman thief
-- a hooker with a heart of gold
-- a hotshot pilot
-- a manic pixie dream girl
-- a wide-eyed country bumpkin
-- a star-stuck fan
-- a tortured artist
-- "a wise [_who:old man,old woman,old fool,professor,country sheriff,rastafarian]#_who#"
-- "a woman who can't recall [_what:where she parked her car,her own name]#_what#"
-- "a shadowy [_who:man,figure]#_who# [_what:holding a beige envelope,with a metal briefcase,in a black trenchcoat,with mirrored sunglasses]#_what#"
-- "[_from:Chinese,Russian,foreign,Canadian,extraterrestrial][_who:#_from# investors,#_from.a# diplomat,#_from.a# delegation]#_who#"
-- "a group of [_desc:wisecracking,#mood#] [_group:hoodlums,teenagers,senior-citizens,improv comics,boat enthusiasts]#_group#"
-- "a boy with [_lifeBound:#count# months,#count# weeks][_what:#_lifeBound# to live,nothing to lose]#_what#"
-- "a swarm of [_insectAdjective:sentient,psychic,intelligent,enormous][_flyingInsects:gnats,moths,bees,mosquitoes,beetles,hermit crabs]#_insectAdjective# #_flyingInsects#"
-- "#colorfulLocal#"
-- "[_adj:#mood#,#mood#,#mood#,undercover,smarmy,extremely confused,foolhardy,depraved,shady,crafty,wide-eyed,troubled,deranged,delirious,timid][_what:robot,child,nun,schoolteacher,preacher,gentleman,con man,gigolo,leprechaun,recluse,fortune-teller,#characterClass#]#_adj.a# #_what#"
+- "#their# own grandfather[#malePronouns#]"
+- "local law enforcement[#theyPronouns#]"
+- "a foreign dignitary[#somePronoun#]"
+- "a crazy cat lady[#femalePronouns#]"
+- "a mad scientist[#somePronoun#]"
+- "an absent-minded professor[#somePronoun#]"
+- "a damsel in distress[#femalePronouns#]"
+- "a gentleman thief[#malePronouns#]"
+- "a hooker with a heart of gold[#somePronoun#]"
+- "a hotshot pilot[#somePronoun#]"
+- "a manic pixie dream girl[#femalePronouns#]"
+- "a wide-eyed country bumpkin[#somePronoun#]"
+- "a star-stuck fan[#somePronoun#]"
+- "a tortured artist[#somePronoun#]"
+- "a wise [_who:old man,old woman,old fool,professor,country sheriff,rastafarian]#_who#[#somePronoun#]"
+- "a woman [_what:who can't recall where she parked her car,who can't remember her own name,who walks on all fours,who only speaks in riddles,with eleven fingers,in #clothingOrAccessory.aIfNeeded#]#_what#[#femalePronouns#]"
+- "a shadowy [_who:man,figure]#_who# [_what:holding a beige envelope,with a metal briefcase,in a black trenchcoat,with mirrored sunglasses]#_what#[#somePronoun#]"
+- "[_from:Chinese,Russian,foreign,Canadian,extraterrestrial][_who:#_from# investors,#_from.a# diplomat,#_from.a# delegation]#_who#[#theyPronouns#]"
+- "a group of [_desc:wisecracking,#mood#] [_group:hoodlums,teenagers,senior-citizens,improv comics,boat enthusiasts]#_group#[#theyPronouns#]"
+- "a boy with [_lifeBound:#count# months,#count# weeks][_what:#_lifeBound# to live,nothing to lose]#_what#[#malePronouns#]"
+- "a swarm of [_insectAdjective:sentient,psychic,intelligent,enormous][_flyingInsects:gnats,moths,bees,mosquitoes,beetles,hermit crabs]#_insectAdjective# #_flyingInsects#[#theyPronouns#]"
+- "#colorfulLocal#[#somePronoun#]"
+- "[_adj:#mood#,#mood#,#mood#,undercover,smarmy,extremely confused,foolhardy,depraved,shady,crafty,wide-eyed,troubled,deranged,delirious,timid][#somePronoun#][_what:robot,child,nun,schoolteacher,preacher,gentleman,con man,gigolo,leprechaun,recluse,fortune-teller,#characterClass#]#_adj.a# #_what#[#somePronoun#]"

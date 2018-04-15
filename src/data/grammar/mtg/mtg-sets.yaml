@@ -99,12 +99,12 @@
   ],
   "recentCardSet": [
       "Ixalan",
-      "Hour of Devastation",
-      "Modern Masters",
       "Iconic Masters",
       "Eternal Masters",
-      "Explorers of Ixalan",
-      "Unstable"
+      "Rivals of Ixalan",
+      "Unstable",
+      "Commander 2018",
+      "Masters 25"
   ],
   "standardCardSet": [
       "Kaladesh",
@@ -112,12 +112,10 @@
       "Amonkhet",
       "Hour of Devastation",
       "Ixalan",
-      "Rivals of Ixalan"
+      "Rivals of Ixalan",
+      "Dominaria"
   ],
   "teaserCardSet": [
-      "Commander 2018",
-      "Masters 25",
-      "Dominaria",
       "Core 2019",
       "#codename#",
       "#novelCardSetName#"

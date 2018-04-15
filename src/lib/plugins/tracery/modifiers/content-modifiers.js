@@ -19,7 +19,8 @@ function getMonthDayOrdinal(date) {
 }
 
 function getSeason(date) {
-  const month = new Date().toLocaleString('en-us', {  month: 'numeric' });
+  var _date = date ? date : new Date();
+  const month = _date.toLocaleString('en-us', {  month: 'numeric' });
 
   switch (month) {
     case '1':
@@ -50,6 +51,10 @@ function currentFullDate() {
 
 function currentMonth() {
   return new Date().toLocaleString('en-us', {  month: 'long' });
+}
+
+function currentMonthDay() {
+  return getMonthDayOrdinal(new Date());
 }
 
 function currentYear() {
@@ -123,6 +128,7 @@ function randomFutureDate() {
 
 module.exports = { 
   currentMonth,
+  currentMonthDay,
   currentYear,
   currentFullDate,
   currentSeason,
