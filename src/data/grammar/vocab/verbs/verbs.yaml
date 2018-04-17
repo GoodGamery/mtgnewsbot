@@ -169,13 +169,12 @@
       "using the power of prayer",
       "doing hard drugs",
       "running head first into a wall",
-      "barfing into a hat",
       "living inside an animal carcass",
       "refusing to shake people's hands",
       "learning not to blink",
       "“going commando”",
       "reading about #historicalFigure#",
-      "training a pet #animal# to #soundEmanation#",
+      "training [_pet:#animal.a#,your pet #animal#,a wild #animal#]#_pet# to #soundEmanation#",
       "fasting for #count# [_time:days,weeks]#_time#",
       "drinking #liquid#",
       "sleeping in a hyperbaric chamber",
@@ -186,12 +185,13 @@
       "flying under the radar",
       "running from the law",
       "speaking only in monotone",
-      "taking",
-      "wearing a hair shirt",
-      "loving, but not being *in love* with #miscPersonSingular#",
+      "taking a long walk off a short pier",
+      "wearing [_what:a hair shirt,#clothingOrAccessory.aIfNeeded#]#_what#",
+      "admitting that you love, but aren't *in love* with #miscPersonSingular#",
       "#nounActivity#",
       "#disqualifyingAction#",
-      "#gameConcept#"
+      "[_mastering:mastering,utilzing,forgetting everything you think you know about]#_mastering# #gameConcept#",
+      "[_strategy:sideboard plan,decklist,innermost desires,“#mtgSlang#”][_muttering:muttering,whispering,mumbling,quietly confiding][_what:barfing,drooling,screaming,whispering secrets,muttering nonsense,#_muttering# #_strategy#][_where:a hat,#clothingOrAccessory.aIfNeeded#,your opponent's ear]#_what# into #_where#"
   ],
 
   "verbDesireableOutcomeIntransitive": [

@@ -8,7 +8,7 @@ tipMoney:
 - '#tipMoneyGameChanger#'
 
 tipMoneyGameChanger:
-- "[_improve:Improve,Increase,Pump up,Raise,Augment,Boost][_collection:collection,collection,online collection,binder][_valueType:,resale ,total ,trade ,market ,][_gameChanger:step up your game,make a name for yourself,#_improve# your #_collection#'s #_valueType#value]#_gameChanger.capitalize# by #stupidSolution#"
+- "[_improve:Improve,Increase,Pump up,Raise,Augment,Boost,Protect][_binder:trade binder,rare binder][_collection:collection,collection,online collection,#_binder#][_valueType:,resale ,total ,trade ,market ,][_gameChanger:step up your game,make a name for yourself,#_improve# your #_collection#'s #_valueType#value]#_gameChanger.capitalize# by #stupidSolution#"
 
 titleMoney:
 - INVESTOR REPORT

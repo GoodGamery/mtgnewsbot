@@ -1,0 +1,10 @@
+#character#
+the #gameStep#
+#person#
+#pluralNounOrMassNoun#
+#format#
+#deckArch#
+#gameConcept#
+#mtgQuestionablePractice#
+#cardCategoryTerm.s#
+the "#mtgThing.capitalizeAll# #nounVagueConcept.capitalizeAll#"
