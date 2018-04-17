@@ -160,6 +160,10 @@ librarian
 butler
 troublemaker
 steward
+derelict
+grifter
+sycophant
+paragon
 #playerCategory#
 #personAuthorityFigure#
 #personRelational#

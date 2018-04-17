@@ -1,7 +1,7 @@
 ---
 gameStep:
   - "Untap Step"
-  - "Upkeep"
+  - "Upkeep Step"
   - "Draw Step"
   - "first Main Phase"
   - "second Main Phase"

@@ -20,7 +20,7 @@ playGuide:
   #_list.capitalize#"
 - "[_proReveals:Top pro #revealVerb.s#,#pro# #revealVerb.s#,#pros# #revealVerb#]#_proReveals.capitalize# [_planAdj:new,secret,exclusive,classified,fresh,winning,innovative,groundbreaking,radical]#_planAdj#
   #planNoun# for #event#: Play [_what:#randomAnyCard#,#cardCategory.s#,#cardCategoryClassTerm#]#_what# in #deck# to [_confound:confound,fluster,thwart,foil,cripple,debilitate,hamstring,overwhelm,crush,win against,prepare for,trump][_counter:beat,counter,trump,win against,foil][_confoundOrCounter:#_confound#,#_counter#][_win:#_counter# #randomCardAlone#,#_confound# #deckArchOrCategory#,#_confoundOrCounter# #cardCategoryClassTerm#]#_win#"
-- "#recentCardSet# [_format:Limited,Constucted]#_format# Set Review:[_color: #basicColors.capitalize#,]#_color#
+- "#recentCardSet# [_format:Limited,Constructed]#_format# Set Review:[_color: #basicColors.capitalize#,]#_color#
   #cardCategory.s.capitalizeAll# and [_other:#cardCategory#,#creatureTypes#]#_other.s.capitalizeAll#"
 - "#recentCardSet# #format# Set Review: [_cat:#basicColors#,#cardCategory.s# and #cardCategory.s#]#_cat.capitalizeAll#"
 - "#decktech#"
@@ -147,7 +147,7 @@ deckChange:
 - '[_removing:removing,cutting,not playing]#_removing# [_what:#randomAnyCard#,#techCardCategory#]#_what#'
 - 'playing [_change:more,fewer]#_change# #techCardCategory#'
 - 'playing around [_what:#randomAnyCard#,#techCardCategory#]#_what#'
-- 'including #cardCopyCount# #copies# of #randomAnyCard#'
+- '[_running:including,running]#_running# #cardCopyCount# #copies# of #randomAnyCard#'
 - 'cutting #randomCardAlone# for #randomAnyCard#'
 - 'using all foils'
 - 'using only misprint cards'
@@ -237,24 +237,19 @@ improvementGoal:
 - "[_challenge:using,winning with,understanding,answering,#verbDefeating#]#_challenge# #cardCategory.s#"
 
 stupidSolution:
-- 'adding subtle grillmarks to your #dualLands# playset'
-- 'hand-scrubbing the rules text off of every copy of #realNormalCard# you own'
-- 'letting children under #count# play with your cards'
-- 'purchasing #cardCopyCount# #copies# of #realBadCard# from our store [_howMuch:,for only #priceUSD#,for just #priceUSD#,for just #priceUSD# each]#_howMuch#'
-- 'adding "speed holes" to your #realPowerfulCard.s# with a hole punch'
-- "#verbStrictlyTransitiveGerund# your #realNormalCard.s# with a [_tool:telescope,band
-  saw,hammer,screwdriver,jackhammer,bolt cutter,pair of pliers]#_tool#"
+- "[_what:adding subtle grillmarks to,drawing racing stripes on,gluing googly eyes onto,affixing adorable baby animal stickers to][_cards:your playset of #dualLands.sIfNeeded#,your #realPowerfulCard.sIfNeeded#]#_what# #_cards#"
+- "hand-scrubbing the [_what:rules text,flavor text,reminder text,mana cost,artwork]#_what# off of every [_cardClass:constructed-playable card,mythic rare,foil rare,piece of power,restricted card,standard card,nonland][_card:copy of #randomCardAlone#,copy of #realPowerfulCard#,#_cardClass#]#_card# you own"
+- "[_letting:letting,having][_who:children under #count#,your #personRelationalUnique#][_build:build,tune,sleeve][_what:play with your cards,negotiate your trades,speculate on junk rares with your credit card,#_build# your #popularFormat.lowercase# decks,choose your mulligans,sideboard for you][_activity:playtesting,value trading,only trading,attending PPTQs,theorycrafting #popularFormat.lowercase#,money drafting][_advice:#_letting# #_who# #_what#,#_activity# with #_who#]#_advice#"
+- "purchasing #cardCopyCount# #copies# of #realBadCard# from our store [_howMuch:,for only #priceUSD#,for just #priceUSD#,for just #priceUSD# each]#_howMuch#"
+- "adding [_what:\"speed holes\",\"fancy\" borders,special watermarks]#_what# to your #realPowerfulCard.sIfNeeded# with [_tool:hole punch,blowtorch,thumbtack,stapler,sewing needle,nail gun,can of spray paint]#_tool.a#"
+- "[_card:#randomCardAlone#,#realNormalCard#][_what:threatening,customzing,personalizing,\"enhancing\",snazzing up,#verbStrictlyTransitiveGerund#]#_what# your #_card.sIfNeeded# with [_tool:clothes iron,industrial degreaser,band saw,hammer,screwdriver,jackhammer,bolt cutter,pair of pliers,hobby knife,soldering iron,glue gun]#_tool.a#"
+- "[_intimidating:eating your trade binder,escaping from a straitjacket,taxiderming #animal.a#,popping and locking,renouncing the government,muttering obscenities to yourself,showing off your secret basement meat locker,sharpening a katana,ranting about #mtgRandomTopic#,french-kissing #animal.a#]#_intimidating# in front of [_who:the buyer,the head judge,your opponent,your LGS,the tournament venue]#_who#"
+- "[_what:destroying,burning,mangling,shredding,eating,slowly crumpling,\"white-bordering\",playing \"Flip-It-Or-Rip-It\" with,giving the \"blue line test\" to]#_what# [_whichCard:#dualLands#,#realPowerfulCard#][_card:a copy of #_whichCard#,#_whichCard.a#]#_card# in front of the rest of your cards to [_goal:set an example,show them who's boss,show them you mean business,establish dominance]#_goal#"
+- "[_storing:storing,keeping,hiding]#_storing# your [_cards:cards,collection,trade binder,#dualLands.s#]#_cards# [_wetPlace:sauna,wine cellar,shower cabinet,boiler room,reptile tank,greenhouse,gym bathroom][_where:in an extremely humid environment#comma# like #_wetPlace.a#,under your mattress,in the bathtub,in the refrigerator,in your cat's litter box,in the compost bin,in the dishwasher,in the microwave,in the back yard]#_where#"
+- "[_always:,always ][_what:squeezing really hard when you,refusing to,winking suggestively when you,refusing to let go after you,grinning like a lunatic when you,sweating profusely when you,quietly whimpering while you,greedily licking your lips while you,wearing a sock on your hand when you]#_always##_what# shake [_who:the buyer,the head judge,your opponent][_hand:#_who#'s hand,the hand of #_who#]#_hand#"
+- "[_denomination:,one-,five-,ten-,twenty-][_clothing:a power tie,a special \"trading suit\",your lucky #clothingOrAccessory#,nothing but #clothingOrAccessory.aIfNeeded#][_every:every,your next][_scam:using the \"roll of #_denomination#dollar bills with a hundred on the outside\" technique,\"quick-changing#\" your trading partners with draft commons,negging your trading partners,wearing #_clothing# to #_every# trade]#_scam#"
+- "[_asset:car,clothes,blood,furniture,most valuable cards][_savings:savings,life savings,bank account][_financialMove:selling your #_asset#,mortgaging your home,cashing out your bank account,getting a second job,robbing a bank]#_financialMove# to finance your [_what:card purchases,singles purchases,#constructedFormat.lowercase# decks,draft habit]#_what#"
 - "#verbSolutionGerund#"
-- "[_intimidate:polishing a gun in front of,muttering obscenities to yourself in front
-  of,showing your basement meat locker to,sharpening your katana in front of,squeezing
-  really hard when you shake the hand of]#_intimidate# the buyer"
-- 'destroying a copy of #dualLands# in front of the rest of your cards to set an example'
-- storing your cards in an extremely humid environment, like [_wet:a sauna,a wine
-  cellar,an enclosed shower,a gym bathroom]#_wet#
-- '[_denomination:,one-,five-,ten-,twenty-]using the "roll of #_denomination#dollar bills with a hundred on the outside" technique'
-- '[_action:enrolling in,signing up for,trying out,trying][_adj:new ,innovative ,popular ,state-of-the-art ,affordable ,curated,specially designed,selective ,acclaimed ,award-winning ]
-   [_programType:card,#cardCategory#,deck,#gameAccessory#,finance tip,strategy article]
-   [_program:our #_adj# #_programType.hyphenate.capitalizeAll#-of-the-Month program,MTGNewsbot Premium,our #_adj# #clubProName# Club]
-   #_action# #_program#'
+- "#verbSolutionGerund#"
 
 clubProName: "#pros.stripLeadingText(the ,true).capitalizeAll#"

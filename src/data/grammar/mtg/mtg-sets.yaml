@@ -146,7 +146,8 @@
     "[_mastery:#format#,#adj#]#_mastery# masters [_year:,2017,2018,2018,2019]#_year#",
     "[_desc:#adj#,#massNoun#,#creatureTypes#]#_desc.capitalizeAll# #omenOrEventNoun#",
     "[_desc:#adj#,#massNoun#,#creatureTypes#]#_desc.capitalizeAll# #fableLocationNoun#",
-    "[_setting:Theater of,Curse of][_adjOrSetting:#adj#,#_setting#]#_adjOrSetting# #abstractNoun#"
+    "[_setting:Theater of,Curse of][_adjOrSetting:#adj#,#_setting#]#_adjOrSetting# #abstractNoun#",
+    "[_what:#emotion#,#bodypart#,#collectiveActionOrRealm#] of #character#"
   ],
 
   "realm": [
