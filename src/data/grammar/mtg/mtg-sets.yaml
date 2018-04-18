@@ -147,7 +147,7 @@
     "[_desc:#adj#,#massNoun#,#creatureTypes#]#_desc.capitalizeAll# #omenOrEventNoun#",
     "[_desc:#adj#,#massNoun#,#creatureTypes#]#_desc.capitalizeAll# #fableLocationNoun#",
     "[_setting:Theater of,Curse of][_adjOrSetting:#adj#,#_setting#]#_adjOrSetting# #abstractNoun#",
-    "[_what:#emotion#,#bodypart#,#collectiveActionOrRealm#] of #character#"
+    "[_what:#emotion#,#bodypart#,#collectiveActionOrRealm#]#_what# of #character#"
   ],
 
   "realm": [
