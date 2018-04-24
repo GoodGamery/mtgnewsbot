@@ -196,7 +196,7 @@ replyWithCardDescribeCard:
 - "the first #_replyCardDescription# you can think of (beside #_cardname#!)"
 - "your [_pickFor:pick for,vote for,choice for, opinion of]#_pickFor# the most powerful #_replyCardDescription#"
 - "#_replyCardDescription.a# that you think nobody else will think of"
-- "#_replyCardDescription.a# that featured in a bad beat story of yours"
+- "#_replyCardDescription.a# that features in a bad beat story of yours"
 - "the most embarrassing #_replyCardDescription# you've ever played"
 - "the worst #_replyCardDescription# you've ever lost to"
 
@@ -231,7 +231,7 @@ banSomethingAnnouncement:
   [_actuallyNevermind:Actually#comma# #_nevermind#,Wait#comma# #_nevermind#,Hold on a second. #_nevermind.capitalize#,On second thought#comma# #_nevermind#]
   [_banStatus:banned,banned,banned,banned,unbanned,unbanned,unbanned,restricted,now legal,#_bannedUnbannedAgain#,#_bannedUnbannedAgain#,still banned,now legal]
   [_monthsYears:months,years][_tempBanDuration:for one day,for one week,for one month,until #officialEntityPerson# gets back from vacation]
-  [_followUp:,,,,,,,, This may be a mistake., We're not sure why., We probably should have mentioned this in the last announcement., #_actuallyNevermind#., This corrects an #_mistake# from #count# #_monthsYears# ago., This was #officialEntity#'s idea., We hope you're happy., But only #_tempBanDuration#., It turns out we were #_very# wrong about this last time., This #_should# make #_targetPerson# #_reaction#., Personally#comma# I think this is a #_opinion# #_decision#., Why? #_becauseWhy#., Deal with it., We're not kidding., This is not a drill., This decision will not be reversed. Ever., It's about time#comma# right?, Please remain calm., We'll explain why later. We promise., Trust us on this one., Though this could be a mistake., Wait#comma# seriously? Nobody ever tells me anything., We're just as surprised as you are.,I think.,I told Eli this was going to be unpopular.]  
+  [_followUp:,,,,,,,, This may be a mistake., We're not sure why., We probably should have mentioned this in the last announcement., #_actuallyNevermind#., This corrects an #_mistake# from #count# #_monthsYears# ago., This was #officialEntity#'s idea., We hope you're happy., But only #_tempBanDuration#., It turns out we were #_very# wrong about this last time., This #_should# make #_targetPerson# #_reaction#., Personally#comma# I think this is a #_opinion# #_decision#., Why? #_becauseWhy#., Deal with it., We're not kidding., This is not a drill., This decision will not be reversed. Ever., It's about time#comma# right?, Please remain calm., We'll explain why later#comma# we promise., Trust us on this one., Though this could be a mistake., Wait#comma# seriously? Nobody ever tells me anything., We're just as surprised as you are.,I think.,I told Eli this was going to be unpopular.]  
   {newline}{newline}
   #_banTarget# #_is# #_banStatus#.#_followUp#
 
@@ -267,8 +267,8 @@ mtgoStyleAnnouncement:
   {newline}
   [_format:#_format1#]#banFormatAnnouncement#[_format:#_format2#][_second:,{newline}#banFormatAnnouncement#][_format:{newline}#_format3#][_third:,,#banFormatAnnouncement#]#_second##_third#  
   {newline}{newline}{newline}
-  [_effectiveDate:#CONTENT.randomUpcomingMonthDay##comma# #CONTENT.currentYear#,#CONTENT.randomFutureDate#]
-  Effective Date: [_mtgoEffective:,#CONTENT.randomUpcomingMonthDay##comma# #CONTENT.currentYear#{newline}{newline}MTGO Effective Date#colon# ][_date:#CONTENT.randomUpcomingMonthDay##comma# #CONTENT.currentYear#,#CONTENT.randomFutureDate#]#_mtgoEffective##_effectiveDate#
+  [_effectiveDate:#CONTENT.randomUpcomingMonthDay##comma# #CONTENT.currentYear#,#CONTENT.randomFutureDate#][_nextDate:MTGO Effective Date,Next B&R Announcement]
+  Effective Date: [_mtgoEffective:,#CONTENT.randomUpcomingMonthDay##comma# #CONTENT.currentYear#{newline}{newline}#_nextDate##colon# ][_date:#CONTENT.randomUpcomingMonthDay##comma# #CONTENT.currentYear#,#CONTENT.randomFutureDate#]#_mtgoEffective##_effectiveDate#
 
 cardOneOff:
 - |
