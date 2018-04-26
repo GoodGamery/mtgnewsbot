@@ -23,7 +23,7 @@ _charityActivity:
 - "#keywordAction.capitalizeAll#"
 - "#verbExclaim.capitalizeAll#"
 - "Play #format#"
-- " [_intimateActivity:kiss,hug,dance with,wrestle][_target:#playerCategory.a#,#animal.a#,#creatureTypes.a#,#miscPersonSingular.a#,#pro#]#_intimateActivity# #_target.a#"
+- "[_intimateActivity:kiss,hug,dance with,wrestle][_target:#playerCategory.a#,#animal.a#,#creatureTypes.a#,#miscPersonSingular.a#,#pro#]#_intimateActivity# #_target.a#"
 
 _charityFuture:
 - "future"

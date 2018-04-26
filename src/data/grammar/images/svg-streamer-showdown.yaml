@@ -115,7 +115,7 @@ _portraitDisplayNameVariant:
 - "#_portraitName#"
 - "#_portraitName#"
 - "#playerCategory# #_portraitName#"
-- "[_player:Expert,Guru,Champion,Genius,Pro,Specialist,Master,Virtuoso,Champ]#format# #_player# #_portraitName#"
+- "#format# #expertPlayer.capitalize# #_portraitName#"
 - "[_modifier:Biazarro,Evil,#playerCategory#,#characterClass#]#_modifier# #_portraitName#"
 - "[_desc:#adjPersonCharacteristic#,#adj#,#mood#,#genericNickname#]“#_desc#” #_portraitName#"
 - "#_portraitName# a.k.a. “#genericNickname#”"

@@ -66,7 +66,8 @@ pickRandomBGText: >
 year: "#CONTENT.currentYear#" 
 
 randomBgText:
-  - "Hasbro ©#year# Hasbro ©#year# Hasbro ©#year# [_fontSize:56px][_lineHeight:1em][_sp:#spanSpacer#][_textSpacerWidth:75px][_textXTranslate:-800px][_debug:hasbro]"
+  - "[_slang:#octothorpe##mtgSlangTerm.allCaps.noSpaces#]#_slang#&nbsp;&nbsp;#_slang#&nbsp;&nbsp;[_fontSize:42px][_lineHeight:1.2em][_sp:#spanSpacer#][_textSpacerWidth:75px][_textXTranslate:-800px][_debug:slang#colon# #_slang#]"
+  - "©Hasbro #year# ©Hasbro #year# ©Hasbro #year# [_fontSize:56px][_lineHeight:1em][_sp:#spanSpacer#][_textSpacerWidth:75px][_textXTranslate:-800px][_debug:hasbro]"
   - "© DO NOT STEAL © DO NOT STEAL © DO NOT STEAL [_fontSize:56px][_lineHeight:1.2em][_sp:#spanSpacer#][_textSpacerWidth:75px][_textXTranslate:-800px][_debug:dns]"
   - "newsbot loves you newsbot loves you [_fontSize:56px][_lineHeight:1em][_sp:#spanSpacer#][_textSpacerWidth:75px][_textXTranslate:-800px][_debug:news]"
   - "MTG MTG MTG MTG MTG MTG [_lineHeight:.9em][_sp:#spanSpacer#][_textSpacerWidth:50px][_textXTranslate:-550px][_debug:mtg]"
