@@ -190,8 +190,8 @@
     "grotto",
     "castle",
     "manor"
-  ]
-,
+  ],
+
   "planeBasedSet": [
     "#cardSetPrefix# #plane#",
     "#cardSetPrefix# #plane#",
@@ -200,9 +200,11 @@
     "#plane# #omenOrEventNoun#",
     "#plane# #verbIntransitiveGerund#"
   ],
+
   "omenOrEventNoun": [
     "dawn", "revolt", "assault", "omen", "moon", "apocalypse", "rising", "age", "awakening", "invasion", "uprising"
   ],
+
   "cardSetPrefix": [
       "#beings# of",
       "#beings# of",
@@ -230,17 +232,24 @@
       "#pluralNounOrMassNoun# over",
       "new"
   ],
+
   "beings": [
     "#creatureTypes.s#",
-    "#characterClass.s#"
+    "#creatureTypes.s#",
+    "#characterClass.s#",
+    "#characterClass.s#",
+    "#animalPlural#"
   ],
+
   "collectiveActionOrRealm": [
     "rise", "revenge", "clash", "realm", "call", "sphere", "tales", "flight", "festival", "cult", "order", "ruin", "empire", "conclave",
     "council", "mutiny", "decline", "fall", "fate", "scourge", "legacy", "whispers", "way", "triumph", "season", "secrets", "retribution",
     "reign", "rebellion", "oath", "might", "kiss", "dance", "howl", "moan", "feast", "hunger", "footsteps", "clan", "#soundEmanation#"
   ],
+
   "collective": [
     "league", "guild", "tournament", "city",  "kingdom", "fellowship", "ruin", "order", "contest"
   ],
+
   "cardSetSuffix": ["reborn", "revisited", "unleashed", "dawn", "ascendant"]
 }

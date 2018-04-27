@@ -35,6 +35,8 @@ hair-raising
 peculiar
 incredible
 terrifying
+cursed
+charmed
 #characterClass#'s
 #creatureTypes#'s
 #adj#

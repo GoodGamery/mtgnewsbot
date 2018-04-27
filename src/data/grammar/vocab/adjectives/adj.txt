@@ -190,3 +190,7 @@ grim
 vapid
 tedious
 bright
+difficult
+troublesome
+tricky
+messy

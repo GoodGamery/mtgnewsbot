@@ -164,6 +164,10 @@ derelict
 grifter
 sycophant
 paragon
+gardener
+housekeeper
+janitor
+germophobe
 #playerCategory#
 #personAuthorityFigure#
 #personRelational#
