@@ -98,7 +98,8 @@
       "Jackal Onassis[#pluralPronouns#]",
       "a goldfish[#neutralPronouns#]",
       "Atlee Hammaker[#malePronouns#]",
-      "Bill Stickers[#malePronouns#]"
+      "Bill Stickers[#malePronouns#]",
+      "Vanilla Phil[#malePronouns#]"
   ],
 
   "pros": [
@@ -153,6 +154,18 @@
     "#format# player[#neutralPronouns#]",
     "#planeswalkerFirstName# fan[#neutralPronouns#]",
     "[_personality:#character#,#character#,#historicalFigure#]#_personality# cosplayer[#neutralPronouns#]"
+  ],
+
+  "expertPlayer": [
+    "expert",
+    "guru",
+    "champion",
+    "genius",
+    "pro",
+    "specialist",
+    "master",
+    "virtuoso",
+    "champ"
   ],
 
   "psychographic": [

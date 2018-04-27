@@ -174,7 +174,7 @@ replyWithCard:
   #replyWithCardTextPart2#
   {newline}#imgCard#
 
-replyWithCardText:
+_replyWithCardText:
 - >
  [#replyCardCategory#]
  [_whatYouMightKnow:the drill,what to do,what that means][_whatYouKnow:#_whatYouMightKnow#]
@@ -185,6 +185,18 @@ replyWithCardText:
   [_hour:#_replyCardShortDescription#,#_cardname#]
   [replyWithCardTextPart1:It's #hashtagDay##comma# and you know what time it is...]
   [replyWithCardTextPart2:It's time for you to #replyBackWith# #replyWithCardDescribeCard#!,It's #_hour.noPunctuation.hyphenate# o'clock! #replyBackWith.capitalize# #replyWithCardDescribeCard#.]
+
+replyWithCardText:
+- "#_replyWithCardText#"
+- "#_replyWithCardText#"
+- "#_replyWithCardText#"
+- "#_replyWithCardText#"
+- "#_replyWithCardText#"
+- >
+ [#replyCardCategory#]
+ [_pullingOut:I'm pulling out of my driveway,We're pulling out of our driveway]
+ [replyWithCardTextPart1:#_pullingOut##comma# and you know what that means!#]
+ [replyWithCardTextPart2:...if you don't know what it means#comma# #replyBackWith# #replyWithCardDescribeCard#.]
 
 replyWithCardDescribeCard:
 - "your favorite #_replyCardDescription#"
@@ -327,7 +339,7 @@ cardOneOff:
 - |
   [#cardTextVerbSearch#][_verbPun:#_cardverb#]
   [_adv:feeling,not][_headline:I'm feeling #_cardverb.ed#.,Are you #_adv# #_cardverb.ed#?,Get #_cardverb.ed#!,Don't get #_cardverb.ed#!]
-  [_hashTag1:#hashtagArbitrary#][_hashTag2:#hashtagDay#,#hashtagDayMotivation#][_hashtags:#_hashTag1#,#,#_hashTag1# #_hashTag2#,#_hashTag2# #_hashTag1#]
+  [_hashTag1:#hashtagArbitrary#][_hashTag2:#hashtagDay#,#hashtagDayMotivation#][_hashtags:#_hashTag1# #_hashTag2#,#_hashTag2# #_hashTag1#]
   #_headline#
   {newline}
   #_hashtags#

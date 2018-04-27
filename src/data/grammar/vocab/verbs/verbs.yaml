@@ -90,7 +90,7 @@
       "wreck",
       "demolish",
       "clobber",
-      "K.O.",
+      "smash",
       "steamroll",
       "pulverize",
       "scratch out a win against",
@@ -212,7 +212,7 @@
       "get MaRo to step down as Lead Magic Designer",
       "presideboard effectively for every match",
       "start a successful #nounActivity# business",
-      "[_player:Expert,Guru,Champion,Genius,Pro,Specialist,Master,Virtuoso,Champ]become #format.a# #_player#",
+      "become #format.a# #expertPlayer.capitalize# ",
       "learn to [_make:paint,draw,sketch][_adj:amazing,lifelike,extraordinary][_who:#person#,#character#,#historicalFigure#]#_make# #_adj# portraits of #_who#",
       "use trading prowess to convert a pack of #mtgRealSet# into [_result:#descriptiveCard#,a playset of #realCard.s#]#_result#",
       "teach #their#  [_who:#personRelationalUnique#,#personRelationalNonunique.s#]#_who# to play Magic"
