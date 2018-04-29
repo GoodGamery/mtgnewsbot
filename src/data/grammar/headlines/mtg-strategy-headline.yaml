@@ -1,7 +1,7 @@
 strategyRealization:
 - "#pros.capitalize# [_realization:don't realize,don't realize,don't realize,are discovering,are learning,don't acknowledge,are slowly learning,are now realizing,are finding,finally acknowledge][_tech:#techWithVerb#][_is:#_isVerb#]#_realization# that [_modifier:can't,won't,will never,will always,#_is# the best way to,can no longer][_effectivePhrase:more effective than,better than,strictly better than,secretly better than,way worse than,even better than][_finding:#techSingular# #verbDefeat.firstS# #obstacle#,#techPlural# #verbDefeat# #obstacle#,#_tech# #_modifier# #verbDefeat# #obstacle#,#_tech# #_is# the secret to #verbDefeating# #obstacle#,#_tech# #_is# #_effectivePhrase# #techWithVerb#]#_finding#"
 - "The Importance of [_thing:#randomAnyCard#,#techCardCategory#,#creatureTypes.s#,#gameConcept#]#_thing.capitalizeAll# in [_where:#format#,#recentCardSet#]#_where#"
-- "The [_secret:secret,trick,solution]#_secret# to #improvementGoal# is #deckChange#"
+- "The [_secret:secret,trick,solution]#_secret# to #improvementGoal# is #deckChangeGerund#"
 - "#pro# Video Series: How I would [_change:improve,fix]#_change# [_improvable:Magic#colon# the Gathering,Magic Online,#format#,competitive Magic,#tournamentType# attendance]#_improvable# by #mtgOpinionSuggestion# #mtgThing#[_tirade:tirade,diatribe,rant][_adjTirade:angry,lengthy,crazed,deranged,brutally honest][_play:play,comedy,musical,farce][_performance:musical essay,rap odyssey,#_play# in #count# acts][_speechType:#_adjTirade# #_tirade#,rigorous examination,thought experiment,thorough analysis,#_performance#][_subtitle:,#comma# Part #num2-9#,#comma# Part #num2-9#,#comma# #_speechType.a#]#_subtitle#"
 - "Preview of #teaserCardSet#[_format:, #normalFormat#,in #normalFormat#]: Will [_deck:#deck#,#deckArch#,the new #deckVariation# deck]#_deck# be #deckDescription#?"
 
@@ -33,16 +33,12 @@ playGuide:
 - "#decktech#"
 
 tipStrategy:
-- 'The Case for #mtgOpinionSuggestion.capitalizeAll# [_bannedThing:#randomAnyCard#,#gameConcept#]#_bannedThing.capitalizeAll#[_where:
+- 'The Case for #mtgOpinionSuggestion.capitalizeAll# [_bannedThing:#randomCardAlone#,#gameConcept#]#_bannedThing.capitalizeAll#[_where:
   in #format#,]#_where#'
-- "#tipTitle#:[_change:Improve,Upgrade,Evolve,Update,Revise,Revitalize,Enliven,Fine-tune,Level up,Completely transform,Revolutionize,Boost,Freshen up,Revise,Customize,Jazz up,Enliven,Invigorate]
-  #_change# Your #deckObjective# by #deckChange#"
-- "#tipTitle#: #deckChange.capitalize# is #adj.a# idea, [_says:says,reports,suggests,admits,warns,advises,proposes,cautions,according to]#_says#
-  #pro#"
-- "[_title:#tipTitle#,#proFullName#]#_title.capitalize#: [_replacement:#randomAnyCard# can replace
-  #randomCardAlone#,#cardCategory.s# can replace #cardCategory.s#]#_replacement.capitalize#
-  in #format#"
-- "#tipTitle#: #improvementGoal.capitalize# by #deckChange#"
+- "#tipTitle#:[_changeUp:improve,upgrade,evolve,update,revitalize,enliven,fine-tune,level up,completely transform,revolutionize,boost,freshen up,customize,jazz up,enliven,invigorate][_suggestion:#_changeUp# your #deckObjective# by #deckChangeGerund#,#deckChange# to #_changeUp# your #deckObjective#] #_suggestion.capitalize#"
+- "#tipTitle#:[_says:says,reports,suggests,admits,warns,advises,proposes,cautions,according to][_idea:idea,strategy,consideration,plan][_suggests:says,suggests,urges,advises][_adj:#adj#,#kindaGood#,#adjValue#][_always:,always , never ][_suggestion:#deckChangeGerund.capitalize# is #_adj.a# #_idea##comma# #_says# #pro#,#_always##deckChange##comma# #_suggests# #pro#] #_suggestion.capitalize#"
+- "[_title:#tipTitle#,#proFullName#]#_title.capitalize#: [_replacement:#randomAnyCard# can replace #randomCardAlone#,#cardCategory.s# can replace #cardCategory.s#]#_replacement.capitalize# in #format#"
+- "#tipTitle#: [_suggestion:#improvementGoal.capitalize# by #deckChangeGerund#,#deckChange# to #improvementGoal#]#_suggestion.capitalize#"
 
 _peopleOrPerson:
 - "#peoplePlural#"
@@ -148,14 +144,27 @@ cardUsingVerb:
 - running
 
 deckChange:
-- 'adding [_what:#randomAnyCard#,#randomAnyCard#,#techCardCategory#]#_what# to the #deckLocation#'
+- 'add [_what:#randomAnyCard#,#randomAnyCard#,#techCardCategory#]#_what# to the #deckLocation#'
+- 'maindeck [_what:#randomAnyCard#,#techCardCategory#]#_what#'
+- 'sideboard #randomAnyCard#'
+- "[_remove:remove,cut,don't play]#_remove# [_what:#randomAnyCard#,#techCardCategory#]#_what#"
+- 'play [_change:more,fewer]#_change# #techCardCategory#'
+- '[_always:,always ]#_always#play around [_what:#randomAnyCard#,#techCardCategory#]#_what#'
+- '[_run:include,run,play]#_run# #cardCopyCount# #copies# of #randomAnyCard#'
+- 'cut #randomCardAlone# for #randomAnyCard#'
+- 'use all foils'
+- 'use only misprint cards'
+- 'use [_only:only ,nothing but ]#_only##cardQuality# cards'
+
+deckChangeGerund:
+- 'adding [_what:#randomAnyCard#,#randomAnyCard#,#techCardCategory#]#_what# to [_the:the,your]#_the# #deckLocation#'
 - 'maindecking [_what:#randomAnyCard#,#techCardCategory#]#_what#'
 - 'sideboarding #randomAnyCard#'
 - '[_removing:removing,cutting,not playing]#_removing# [_what:#randomAnyCard#,#techCardCategory#]#_what#'
 - 'playing [_change:more,fewer]#_change# #techCardCategory#'
 - 'playing around [_what:#randomAnyCard#,#techCardCategory#]#_what#'
-- '[_running:including,running]#_running# #cardCopyCount# #copies# of #randomAnyCard#'
-- 'cutting #randomCardAlone# for #randomAnyCard#'
+- '#cardUsingVerb# #cardCopyCount# #copies# of #randomAnyCard#'
+- '[_replacing:replacing,substituting][_cutting:cutting,exchanging,swapping out][_replacement:#_cutting# #randomCardAlone# for #randomAnyCard#,#_replacing# #randomCardAlone# for #randomAnyCard#]#_replacement#'
 - 'using all foils'
 - 'using only misprint cards'
 - 'using [_only:only ,nothing but ]#_only##cardQuality# cards'
@@ -236,9 +245,16 @@ techWithVerb:
 - "#techPlural#[_isVerb:are]"
 
 improvementGoal:
+- "[_challenge:win,place at,prepare for,#verbDefeat#]#_challenge# #tournamentType.s#"
+- "[_deck:#deckArchOrCategory#][_challenge:win more with #_deck#,increase your win percentage with #_deck#,improve your #_deck# matchup,#verbDefeat# #_deck#]#_challenge#"
+- "[_challenge:win more against,defeat,outplay,#verbDefeat#]#_challenge# #people#"
+- "[_challenge:understand,exploit,get the most out of,#verbDefeat#]#_challenge# #gameConcept#"
+- "[_challenge:use,win more with,understand,answer,#verbDefeat#]#_challenge# #cardCategory.s#"
+
+improvementGoalGerund:
 - "[_challenge:winning,placing at,preparing for,#verbDefeating#]#_challenge# #tournamentType.s#"
 - "[_challenge:winning with,battling with,#verbDefeating#]#_challenge# #deckArchOrCategory#"
-- "[_challenge:winning against,defeating,outplaying,#verbDefeating#]#_challenge# #people#"
+- "[_more:, more][_challenge:winning#_more# against,defeating,outplaying,#verbDefeating#]#_challenge# #people#"
 - "[_challenge:understanding,exploiting,getting the most out of,#verbDefeating#]#_challenge#
   #gameConcept#"
 - "[_challenge:using,winning with,understanding,answering,#verbDefeating#]#_challenge# #cardCategory.s#"
