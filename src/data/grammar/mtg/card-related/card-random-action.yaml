@@ -75,7 +75,7 @@ cardRandomAction_Proliferate: "proliferate#s# #_countTimes#"
 cardRandomAction_Transform: ["#cardRandomAction_Tranform_One#", "#cardRandomAction_Tranform_Many#"]
 cardRandomAction_Detain: "detain#s# #_cardActionVerbPermanent#"
 cardRandomAction_Populate: "populate#s# #_countTimes#"
-cardRandomAction_Vote: "vote#s# for “#willOfTheCouncilVoteChoice.capitalizeAll#”"
+cardRandomAction_Vote: "vote#s# for “#willOfTheCouncilVoteChoice.capitalizeAll#”[_or:, or “#willOfTheCouncilVoteChoice.capitalizeAll#”]#_or#"
 cardRandomAction_Manifest:  ["#cardRandomAction_Manifest_One#", "#cardRandomAction_Tranform_Many#"]
 cardRandomAction_Investigate: "investigate#s# #_countTimes#"
 cardRandomAction_Exert: "exert#s# #_cardActionVerbPermanent#"

@@ -18,5 +18,5 @@ cardCalloutText:
 - "DID YOU KNOW? The #_cardDesc# you're thinking of is"
 - "GET A LOAD OF THIS FRIGGIN' #_cardDesc.allCaps#:"
 - "IS THIS YOUR CARD? The #_cardDesc# you're thinking of is"
-- "REMEMBER THIS #_cardDesc.allCaps#? [_comment:We sure do,We bet you do,We don't,We didn't,You do now,It's our favorite,It's one of our favorites,A true classic,Of course you do,They don't make them like this anymore]#_comment#:"
+- "REMEMBER THIS #_cardDesc.allCaps#? [_classic:real classic,doozy,humdinger][_comment:We sure do,We sure don't,We bet you do,We don't,We didn't,You do now,It's our favorite,It's one of our favorites,A true classic,It's #_classic.a#,Of course you do,They don't make them like this anymore]#_comment#:"
 - "THE RESULTS ARE IN! The [_superlative:most #cardQuality#,most #cardQuality#,#adjSuperlative#]#_superlative# #_cardDesc# is"

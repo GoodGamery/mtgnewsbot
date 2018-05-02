@@ -26,6 +26,9 @@ randomNonbasicLandCard: "#cardQueryNonbasicLand##_cardName#"
 cardQueryNonland: "[_customQuery:t!=land#_colorFilter#][#_customQuery.cardSearchCustomQuery(1)#][_cardName:#_cardName1#]"
 randomNonlandCard: "#cardQueryNonland##_cardName#"
 
+cardQueryNonlandPermanent: "[_customQuery:t!=land t!=instant t!=sorcery#_colorFilter#][#_customQuery.cardSearchCustomQuery(1)#][_cardName:#_cardName1#]"
+randomNonlandPermanentCard: "#cardQueryNonlandPermanent##_cardName#"
+
 cardQueryRandomExcludeBasics: "[_customQuery:t!=basic#_colorFilter#][#_customQuery.cardSearchCustomQuery(1)#][_cardName:#_cardName1#]"
 randomCardExcludeBasics: "#cardQueryRandomExcludeBasics##_cardName#"
 

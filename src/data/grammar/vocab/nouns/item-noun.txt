@@ -89,6 +89,9 @@ torch
 boomerang
 finger puppet
 strawberry
+beltbuckle
 #massNoun# launcher
 #bodypart#
 #gameAccessory#
+#nounWeapon#
+#clothingOrAccessory#
