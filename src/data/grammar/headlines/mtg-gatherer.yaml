@@ -44,17 +44,23 @@
         "#_cardname# won't make [_cat:#cardCategory#]#_cat.a# [_adj1:#adj#,#adjValue#][_what:stop being #_cat.a#,turn into #cardCategory.a#,into #_adj1.a# #_cat#,#_adj1#]#_what#. It'll just be [_what:#_cat.a#,#adj.a# #_cat#,#adjValue#]#_what#.",
         "[_cardClass:#cardPermanentType#][_ability:#cardAbilityVerb#]activating #_cardClass.a#'s #_ability# ability [_isOrIsnt:is,isn't][_comparison:#_isOrIsnt# the same thing as,#_isOrIsnt# the same as,is effectively the same as,#_isOrIsnt# equivalent to,#_isOrIsnt# technically the same as,#_isOrIsnt# normally the same thing as,is technically a separate action from] #_comparison# [#scareQuotes#]#_lQ##_ing##_rQ# the #_cardClass#.[_nextPart1:,][_nextPart2:][_nextPart:#_nextPart1#,#_nextPart2#,#_nextPart1# #_nextPart2#]#_nextPart#",
       "[#_pairedResolveActions#]You #_firstAction##_and##_secondAction##_all# #_while# #_cardname# #_finished#is resolving. [_okayer:your opponent,the head judge,#officialEntity#][_usually:Usually,Typically,Generally,Unless #_okayer# allows it][_nothingCan:Nothing can,Nothing can really, #_usually##comma# nothing can][_who:you,your opponent,both players,either player,#somePlayer#][_whoThough:#_who#][_conjunction:and no player may,except you#comma# and only you#comma# may,but #_who# may,except #_whoThough##comma# and only #_whoThough##comma# may,except #_who# may,and under no circumstances may either player][_teamMove:finish the game in your place,join you for the rest of the game,give you advice for the rest of the game][_doException:take actions,take actions,ask for takebacks,#gameAction#,speak,concede,randomly determine the outcome of the game,ask a single rules question,ask a single riddle,resleeve your deck,“tap in” a teammate to finish the game in your place][_choose:choose,choose,attempt,offer][_moratorium:#_doException#,#_choose# to #_doException#,agree to #_doException#]#_nothingCan# happen #_interim#, #_conjunction# #_moratorium#.",
-      "[_preface:,We're not supposed to say this#comma# but ,This isn't technically a ruling#comma# but ][_designerWhose:my,#miscPersonSingular#'s][_designer:#miscPersonSingular#,#animal.a#,#_designerWhose# #personRelationalUnique#,#historicalFigure#][_supposedly:,supposedly ,actually ][_adj:awful,delightful,really confusing,stupid,super boring,really good,really good,really bad,really good,really bad,really bad,just terrible][_loves:loves,hates,hates,doesn't understand][_revelation:this card isn't any good,this card is #_adj#,this card is really #cardQuality#,#miscPersonSingular# hates this card,this card was #_supposedly#designed by #_designer#][_ruling:#_preface##_revelation#]#_ruling.capitalize#.",
+      "[_preface:,We're not supposed to say this#comma# but ,This isn't technically a ruling#comma# but ][_designerWhose:my,#miscPersonSingular#'s][_designer:#miscPersonSingular#,#animal.a#,#_designerWhose# #personRelationalUnique#,#historicalFigure#][_supposedly:,supposedly ,actually ][_adj:awful,delightful,really confusing,stupid,super boring,really good,really good,really bad,really good,really bad,really bad,just terrible][_loves:loves,hates,hates,doesn't understand][_thisCard:this card,#_cardname#][_revelation:#_thisCard# isn't any good,#_thisCard# is #_adj#,#_thisCard# is really #cardQuality#,#miscPersonSingular# hates #_thisCard#,#_thisCard# was #_supposedly#designed by #_designer#][_ruling:#_preface##_revelation#]#_ruling.capitalize#.",
+      "[_numerous:numerous,wealth of][_possible:,possible ,potential ,apparent ,theoretical ][_synergies:synergies,interactions][_connectionType:mechanical,strategic,thematic,flavor][_similarities:similarities,parallels,resemblance,#_connectionType# connection,obvious relationship,apparent link,#_numerous# interesting #_possible##_synergies#][_thing1:#_ostensiblyInteractingThing#][_thing2:#_ostensiblyInteractingOtherThing#][_well:,,well ,very well, as you'd expect, in any meaningful way ]Despite the #_similarities# between #_thing1# and #_thing2#, #_thing1# doesn't interact #_well# with #_nonInteractingThings#.[_butWell:,,very well,surprisingly well,as you'd expect,in a number of interesting ways,in unexpected ways][_but:,,, But it does interact #_well# with #_interactingOtherThing#.]#_but#",
         "#gathererTextRare#"
-    ],
-
-    "gatherRulingNew": [
-
     ],
 
     "scareQuotes": [
       "[_lQ:][_rQ:]",
       "[_lQ:“][_rQ:”]"
+    ],
+
+    "_ostensiblyInteractingThing": [
+      "#_cardname#",
+      "#keyword#"
+    ],
+    "_ostensiblyInteractingOtherThing": [
+      "[_otherCard:#randomCardAlone#][_nonInteractingThings:#_otherCard#,#_otherCard#,either #_otherCard# or #randomCardAlone#][_interactingOtherThing:#randomCardAlone#][_result:#_otherCard#,cards like #_otherCard#]#_result#",
+      "[_otherKeyword:#keyword#][_nonInteractingThings:#_otherKeyword#,#_otherKeyword#,either #_otherKeyword# or #keyword#][_interactingOtherThing:#keyword#]#_otherKeyword#"
     ],
 
     "_pairedResolveActions": [
