@@ -37,6 +37,7 @@ incredible
 terrifying
 cursed
 charmed
+dark
 #characterClass#'s
 #creatureTypes#'s
 #adj#

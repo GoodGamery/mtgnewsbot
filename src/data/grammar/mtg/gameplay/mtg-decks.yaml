@@ -12,7 +12,7 @@
   "deckArchOrCategory": [
       "#deck#",
       "#deckVariation#",
-      "decks with #randomCardAlone#",
+      "decks [_with:with,that run]#_with# #randomCardAlone#",
       "[_tribal:#creatureTypes.capitalize# Tribal,#creatureTypes.capitalize.s#]#_tribal#",
       "[_format:#format#]#_format# #creatureTypesPlural.capitalize#",
       "[_format:#format#]#_format# #deck#",

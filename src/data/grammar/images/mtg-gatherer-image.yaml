@@ -1,6 +1,6 @@
 ---
 gathererRulingImage: |
-  [_cardname:#randomCardAlone#][gathererHeadline:#gathererIntro# #_cardname#]#gathererHeadline# {htmlImg htmlImgString=`#_gathererRulingImage#`}
+  [_cardname:#randomCardAlone#][_cardname:#randomCardAlone#][gathererHeadline:#gathererIntro# #_cardname#]#gathererHeadline# {htmlImg htmlImgString=`#_gathererRulingImage#`}
 
 gathererMtgLogoImage:
 - "./src/data/images/mtg-logos/gatherer/gatherer-mtg-logo.png"
@@ -29,7 +29,7 @@ _gathererRulingImageStyle: |
       a:visited
         << color: rgb(120,120,120); font-size: .8em; >>
       div.cardnameHeader
-        << font-family: 'Beleren'; font-weight: bold; font-size: 22pt; line-height: 80%; color: rgb(230,230,230); background-color: rgb(31,30,30); padding-bottom: 12px; >>        
+        << font-family: 'Beleren'; font-weight: bold; font-size: 22pt; line-height: 90%; color: rgb(230,230,230); background-color: rgb(31,30,30); padding-bottom: 12px; >>        
     </style>
   </head>
 

@@ -23,11 +23,11 @@
       "#massNoun#"
   ],
   "pluralNoun": [
-      "#cardCategory.s#",
-      "#creatureTypes.s#",
-      "#itemNoun.s#",
+      "#cardCategory.sIfNeeded#",
+      "#creatureTypes.sIfNeeded#",
+      "#itemNoun.sIfNeeded#",
       "#irregularPluralNoun#",
-      "#placeNoun.s#"
+      "#placeNoun.sIfNeeded#"
   ],
   "aNoun": [
       "#cardCategory.a#",

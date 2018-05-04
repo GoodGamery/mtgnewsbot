@@ -69,7 +69,7 @@ function parseMessage(message) {
     hashtag: '#'
   };
 
-  let match = text.match(/\{\s*\w+?(\s+?.*)?\}/g);
+  let match = text.match(/\{\s*[^}]+?(\s+?[^}]*)?\}/g);
   if (match) {
     const removeEndlRegex = new RegExp(`\\${ENDL_MARKER}`, `g`);
     match.forEach(match => {
@@ -86,7 +86,7 @@ function parseMessage(message) {
       }
 
       text = text
-        .replace(match, replacementTags[tag] ? replacementTags[tag] : '')
+        .replace(match, replacementTags[tag.toLowerCase()] ? replacementTags[tag.toLowerCase()] : '')
         .replace(removeEndlRegex, '')
         .trim();
     });

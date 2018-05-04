@@ -1,4 +1,4 @@
-svgPackOnePickOne: "[#svgPackOnePickOneInitialize#]{svg svgString=`#svgPackOnePickOneGraphic#`}#svgPackOnePickOneTeaserText#"
+svgPackOnePickOne: "[#svgPackOnePickOneInitialize#]{svg svgString=`#svgPackOnePickOneGraphic#`} #svgPackOnePickOneTeaserText#"
 
 svgPackOnePickOneInitialize: >
   [_desc:#abstractMassOrPluralNounGameConceptOrEmotion#,#cardCategory#,#adj#,#cardQuality#][_formatName:#_desc# Draft]
@@ -7,22 +7,25 @@ svgPackOnePickOneInitialize: >
   [_bottomBannerText:#_format.allCaps#]
 
 svgPackOnePickOneTeaserText:
-- "[_whatPick:What's the pick?,You Make the Pick#colon#]#_whatPick# #_format# Edition"
-- "What's [_the:the,your]#_the# pick? #_svgPackOnePickOneHashTag#"
-- "[_prefix:,What's the pick? ][_cleverPhrase:Choose wisely.,It’s decision time.,Time to choose.,Make up your mind.]#_prefix##_cleverPhrase# #_svgPackOnePickOneHashTag#"
-- "[_cleverPhrase:Show us how to draft.,We have no idea what to do. Tell us your pick.,Show us what to do.,Show us what you got.,Send help.,Sick of these yet?,We're totally lost. \\#Fblthp]#_cleverPhrase# #_svgPackOnePickOneHashTag#"
-
+# - "[_whatPick:What's the pick?,You Make the Pick#colon#]#_whatPick# #_format# Edition"
+# - "What's [_the:the,your]#_the# pick? #_svgPackOnePickOneHashTag#"
+# - "[_prefix:,What's the pick? ][_cleverPhrase:Choose wisely.,It’s decision time.,Time to choose.,Make up your mind.]#_prefix##_cleverPhrase# #_svgPackOnePickOneHashTag#"
+# - "[_cleverPhrase:Show us how to draft.,We have no idea what to do. Tell us your pick.,Don't make us do all the work.,Show us what to do.,Show us what you got.,Send help.,Sick of these yet?,We're totally lost. \\#Fblthp,Make it count.,Don't let us down.,We're counting on you,]#_cleverPhrase# #_svgPackOnePickOneHashTag#"
+- "[_edition: #_format# Edition][_whatPick:What's the pick?#_edition#,You Make the Pick!#_edition#,Are you ready to draft #_format#?]#_whatPick#{newline}{newline}[_remember:Remember,Don't forget,Remember to follow]#_remember# [_mnemonicSeparator:,—,:][_mnemonicSpacer:{newline} • ]#mtgDraftMnemonic#"
 
 _svgPackOnePickOneHashTag:
 - "[_formatTagName:#_formatName#,Mtg #_formatName#][_formatHashTag:#_formatTagName.capitalizeAll.noPunctuation.noSpaces#]\\##_formatHashTag#"
 - "#mtgHashtagRandom#"
 
-_cleanUpFormat: "#_formatName.replace(Limited Edition,).replace(Core Set,).replace(Duel Decks: ,).replace(Masterpiece Series: ,).capitalizeAll#"
+_cleanUpFormat: "#_formatName.replace(Limited Edition,).replace(Core Set,).replace(Duel Decks: ,).replace(Masterpiece Series: ,).replace(Magic: The Gathering-,).replace(Magic: The Gathering—,).capitalizeAll#"
 
 svgPackOnePickOneCardTheme:
-- "#svgPackOnePickOneCardTheme_Cube#"
-- "#svgPackOnePickOneCardTheme_Cube#"
-- "#svgPackOnePickOneCardTheme_Cube#"
+# - "#svgPackOnePickOneCardTheme_Cube#"
+# - "#svgPackOnePickOneCardTheme_Cube#"
+# - "#svgPackOnePickOneCardTheme_Cube#"
+# - "#svgPackOnePickOneCardTheme_Cube#"
+# - "#svgPackOnePickOneCardTheme_Cube#"
+- "#svgPackOnePickOneCardTheme_CardSetBooster#"
 - "#svgPackOnePickOneCardTheme_CardSetBooster#"
 - "#svgPackOnePickOneCardTheme_CardSetBooster#"
 
@@ -42,30 +45,50 @@ svgPackOnePickOneCard13: "#randomRealCard#"
 svgPackOnePickOneCard14: "#randomRealCard#"
 svgPackOnePickOneCard15: "#randomRealCard#"
 
-_cardImageUrl: https://goodgamery.com/api/mtg/image?card=#_cardname#
+_cardImageUrl: https://goodgamery.com/api/mtg/image?version=any&nocache=#CONTENT.randomAlphaNumericString#&card=#_cardname#
 
 _cardSetImageUrl: >
-  https://goodgamery.com/api/mtg/image?q=name:%22#_cardname#%22set#colon#%22#_cardset#%22
+  https://goodgamery.com/api/mtg/image?q=name:%22#_cardname.escapeParentheses#%22code#colon##_setcode#&version=any
 
-# TODO filter by rarity (common/uncommon/rare-mythic by count, exclude basics)
+# first search with no rarity filter (since not all sets have all rarities). then search with rarities
 svgPackOnePickOneCardTheme_CardSetBooster:  >
-  [#CARDFINDER.randomCard#][_cardset:#_cardSet1#][_formatName:#_cardset#]
-  [_query:set="#_cardset#" t!=basic][#_query.cardSearchCustomQuery(15)#]
-  [_cardname:#_cardName1#][_svgPackOnePickOneCardImageUrl1:#_cardSetImageUrl#]
-  [_cardname:#_cardName2#][_svgPackOnePickOneCardImageUrl2:#_cardSetImageUrl#]
-  [_cardname:#_cardName3#][_svgPackOnePickOneCardImageUrl3:#_cardSetImageUrl#]
-  [_cardname:#_cardName4#][_svgPackOnePickOneCardImageUrl4:#_cardSetImageUrl#]
-  [_cardname:#_cardName5#][_svgPackOnePickOneCardImageUrl5:#_cardSetImageUrl#]
-  [_cardname:#_cardName6#][_svgPackOnePickOneCardImageUrl6:#_cardSetImageUrl#]
-  [_cardname:#_cardName7#][_svgPackOnePickOneCardImageUrl7:#_cardSetImageUrl#]
-  [_cardname:#_cardName8#][_svgPackOnePickOneCardImageUrl8:#_cardSetImageUrl#]
-  [_cardname:#_cardName9#][_svgPackOnePickOneCardImageUrl9:#_cardSetImageUrl#]
-  [_cardname:#_cardName10#][_svgPackOnePickOneCardImageUrl10:#_cardSetImageUrl#]
-  [_cardname:#_cardName11#][_svgPackOnePickOneCardImageUrl11:#_cardSetImageUrl#]
-  [_cardname:#_cardName12#][_svgPackOnePickOneCardImageUrl12:#_cardSetImageUrl#]
-  [_cardname:#_cardName13#][_svgPackOnePickOneCardImageUrl13:#_cardSetImageUrl#]
-  [_cardname:#_cardName14#][_svgPackOnePickOneCardImageUrl14:#_cardSetImageUrl#]
-  [_cardname:#_cardName15#][_svgPackOnePickOneCardImageUrl15:#_cardSetImageUrl#]
+  [#CARDFINDER.randomCard#][_setcode:#_cardSetCode1#][_formatName:#_cardSet1#]
+  [_query:code=#_setcode# t!=basic][#_query.cardSearchCustomQuery(15)#]
+  [_cardname:#_cardSanitizedName1#][_svgPackOnePickOneCardImageUrl1:#_cardSetImageUrl#]
+  [_cardname:#_cardSanitizedName2#][_svgPackOnePickOneCardImageUrl2:#_cardSetImageUrl#]
+  [_cardname:#_cardSanitizedName3#][_svgPackOnePickOneCardImageUrl3:#_cardSetImageUrl#]
+  [_cardname:#_cardSanitizedName4#][_svgPackOnePickOneCardImageUrl4:#_cardSetImageUrl#]
+  [_cardname:#_cardSanitizedName5#][_svgPackOnePickOneCardImageUrl13:#_cardSetImageUrl#]
+  [_cardname:#_cardSanitizedName6#][_svgPackOnePickOneCardImageUrl14:#_cardSetImageUrl#]
+  [_cardname:#_cardSanitizedName7#][_svgPackOnePickOneCardImageUrl15:#_cardSetImageUrl#]
+  [_cardname:#_cardSanitizedName8#][_svgPackOnePickOneCardImageUrl12:#_cardSetImageUrl#]  
+  [_cardname:#_cardSanitizedName9#][_svgPackOnePickOneCardImageUrl5:#_cardSetImageUrl#]
+  [_cardname:#_cardSanitizedName10#][_svgPackOnePickOneCardImageUrl6:#_cardSetImageUrl#]
+  [_cardname:#_cardSanitizedName11#][_svgPackOnePickOneCardImageUrl7:#_cardSetImageUrl#]
+  [_cardname:#_cardSanitizedName12#][_svgPackOnePickOneCardImageUrl8:#_cardSetImageUrl#]
+  [_cardname:#_cardSanitizedName13#][_svgPackOnePickOneCardImageUrl9:#_cardSetImageUrl#]
+  [_cardname:#_cardSanitizedName14#][_svgPackOnePickOneCardImageUrl10:#_cardSetImageUrl#]
+  [_cardname:#_cardSanitizedName15#][_svgPackOnePickOneCardImageUrl11:#_cardSetImageUrl#]
+  [_query:code=#_setcode# rarity=rare sort=random][#_query.cardSearchCustomQuery(1,notRandom)#]  
+  [_rarity:rare,mythic]
+  [_query:code=#_setcode# rarity=#_rarity# sort=random][#_query.cardSearchCustomQuery(1,notRandom)#]
+  [_cardname:#_cardSanitizedName1#][_svgPackOnePickOneCardImageUrl1:#_cardSetImageUrl#]
+  [_query:code=#_setcode# rarity=uncommon sort=random][#_query.cardSearchCustomQuery(3,notRandom)#]  
+  [_cardname:#_cardSanitizedName1#][_svgPackOnePickOneCardImageUrl2:#_cardSetImageUrl#]
+  [_cardname:#_cardSanitizedName2#][_svgPackOnePickOneCardImageUrl3:#_cardSetImageUrl#]
+  [_cardname:#_cardSanitizedName3#][_svgPackOnePickOneCardImageUrl4:#_cardSetImageUrl#]
+  [_query:code=#_setcode# t!=basic rarity=common sort=random][#_query.cardSearchCustomQuery(11,notRandom)#]   
+  [_cardname:#_cardSanitizedName1#][_svgPackOnePickOneCardImageUrl13:#_cardSetImageUrl#]
+  [_cardname:#_cardSanitizedName2#][_svgPackOnePickOneCardImageUrl14:#_cardSetImageUrl#]
+  [_cardname:#_cardSanitizedName3#][_svgPackOnePickOneCardImageUrl15:#_cardSetImageUrl#]
+  [_cardname:#_cardSanitizedName4#][_svgPackOnePickOneCardImageUrl12:#_cardSetImageUrl#]  
+  [_cardname:#_cardSanitizedName5#][_svgPackOnePickOneCardImageUrl5:#_cardSetImageUrl#]
+  [_cardname:#_cardSanitizedName6#][_svgPackOnePickOneCardImageUrl6:#_cardSetImageUrl#]
+  [_cardname:#_cardSanitizedName7#][_svgPackOnePickOneCardImageUrl7:#_cardSetImageUrl#]
+  [_cardname:#_cardSanitizedName8#][_svgPackOnePickOneCardImageUrl8:#_cardSetImageUrl#]
+  [_cardname:#_cardSanitizedName9#][_svgPackOnePickOneCardImageUrl9:#_cardSetImageUrl#]
+  [_cardname:#_cardSanitizedName10#][_svgPackOnePickOneCardImageUrl10:#_cardSetImageUrl#]
+  [_cardname:#_cardSanitizedName11#][_svgPackOnePickOneCardImageUrl11:#_cardSetImageUrl#]
 
 svgPackOnePickOneCardTheme_Cube:
 - "#svgPackOnePickOneCardTheme_ThemeCube#"

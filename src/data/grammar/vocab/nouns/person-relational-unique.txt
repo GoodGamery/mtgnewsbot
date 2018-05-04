@@ -17,6 +17,7 @@ grandmother
 grandfather
 sister
 brother
+uncle
 soulmate
 secret lover
 next-door neighbor

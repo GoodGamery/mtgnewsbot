@@ -40,6 +40,10 @@ function er(s) {
   return s + 'er';
 }
 
+function firstCharacter(s) {
+  return (s.length > 0) ? s.charAt(0) : s;
+}
+
 // useful if you wish to invoke a rule without displaying its text
 function hide() {
   return '\0';
@@ -64,6 +68,27 @@ function noSpaces(s) {
 
 function hyphenate(s) {
   return s.replace(/\s+/g, '-');
+}
+
+function randomAlphaNumericString() {
+  const length = 12;
+
+  const alphaNumChars = 
+    Array.from({length:26}, (v,k) => String.fromCharCode(k+65))
+      .concat(Array.from({length:26}, (v,k) => String.fromCharCode(k+97)))
+      .concat(Array.from({length:10}, (v,k) => '' + k));
+
+  let randomString = '';
+  for (var i = 0; i < length; i++) {
+    randomString += alphaNumChars[randomInt(alphaNumChars.length)];
+  }
+  return randomString;
+}
+
+function randomInt(minOrMaxArg, maxArg) {
+  const min = (maxArg !== undefined) ? minOrMaxArg : 1;
+  const max = (maxArg !== undefined) ? maxArg : minOrMaxArg;
+  return Math.floor(Math.random() * (max - min  + 1)) + min;
 }
 
 function sIfNeeded(s) {
@@ -188,12 +213,14 @@ module.exports = {
   compactSpaces,
   ed,
   er,
+  firstCharacter,
   lowercase,
   hide,
   hyphenate,
   noop,
   noPunctuation,
   noSpaces,
+  randomAlphaNumericString,
   sAgreement,
   sIfNeeded,
   stripLeadingText,
