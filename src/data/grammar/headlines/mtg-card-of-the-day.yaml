@@ -5,7 +5,7 @@ cotdImage:
   - "#cotdImage_RandomCategoryCard#"
   - "#cotdImage_RandomCustomSearchCard#"
 
-cotdImage_RandomCard: "#initCotdImage#[_cardname:#randomRealCard#][#cotdCardNameSearch#][_cotdDescription:#cotdDescription#][_cotdImgUrl:https#colon#//goodgamery.com/api/mtg/image?card=#_cardname#][_title:#cotdTitle#]#_title#: #_cardname##cotdImageHtml#"
+cotdImage_RandomCard: "#initCotdImage#[_cardname:#randomRealCard#][#cotdCardNameSearch#][_cotdDescription:#cotdDescription#][_cotdImgUrl:https#colon#//goodgamery.com/api/mtg/image?version=any&card=#_cardname#][_title:#cotdTitle#]#_title#: #_cardname##cotdImageHtml#"
 cotdImage_RandomCreature: "#initCotdImage#[#cotdCreatureTypeSearch#][_cotdDescription:#cotdCreatureTypeDescription#][_title:#cotdTitle#]#_title#: #_cardname##cotdImageHtml#"
 cotdImage_RandomCategoryCard: "#initCotdImage#[#cotdCardCategorySearch#][_cotdDescription:#cotdTextDescription#][_title:#cotdTitle#]#_title#: #_cardname##cotdImageHtml#"
 cotdImage_RandomCustomSearchCard: "#initCotdImage#[_cotdDescription:#cotdCustomQueryDecscription#][_title:#cotdTitle#]#_title#: #_cardname##cotdImageHtml#"

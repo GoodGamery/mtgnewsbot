@@ -6,6 +6,7 @@
   "main": "mtgnews",
   "scripts": {
     "start": "node --harmony mtgnews",
+    "start-debug": "node --inspect-brk --harmony mtgnews",    
     "print": "node --harmony mtgnews",
     "lint": "gulp lint",
     "test": "gulp lint && node --harmony mtgnews -c 10",

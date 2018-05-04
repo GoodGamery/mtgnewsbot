@@ -1,0 +1,34 @@
+_mnemonicSpacer: " * "
+_mnemonicSeparator: ""
+mtgDraftMnemonic: >
+  [_threatAdjConsonant:resilient,ridiculous]
+  [_threatAdjVowel:evasive,undercosted,overcosted,unblockable,enormous,inexpensive]
+  [_keyword:#randomKeyword#]
+  [_limitedCardUnderOver:overrated,underrated,underpowered,overpowered,underwhelming]
+  [_numberC:two,three,four,five,six,seven][_numberOf:two,three,four]  
+  [_limitedCardHard:bombs,removal,chase rares,curve-toppers,disruption,deck thinning,dual lands,fixing,milling,creatures,threats,vanilla creatures,card draw,cantrips,chump blockers,counters,fast mana,finishers,goof grabs,ground poinderjank,junk rares,basic lands,bricks,beaters,tips and tricks cards,tokens,tradebait,virtual time walks,#_numberC#-drops,#_numberOf#-ofs]
+  [_limitedCardSoft:removal,lifegain,land,weenies,ramp spells,hatedrafts,signals,#_threatAdjConsonant# threats]
+  [_limitedCardVowel:acceleration,anthems,aggro,artifacts,edicts,enchantments,engine cards,hosers,inevitability,instants,one-ofs,utility lands,one-drops,eight-drops,#_limitedCardUnderOver# cards]
+  [_someWord:#cardCategory.s#,#cardCategoryClassTerm#,#creatureTypes.s#,#cardQuality# cards,#pro#'s pick order]
+  [_firstWord1:#_limitedCardHard#,#_limitedCardSoft#][_secondWord1:#_limitedCardVowel#][_thirdWord1:#_limitedCardHard#,#_limitedCardSoft#][_fourthWord1:#_limitedCardVowel#][_fifthWord1:#_limitedCardHard#,#_limitedCardSoft#,#_someWord#]
+  [__firstWord1:#_firstWord1#][__secondWord1:#_secondWord1#][__thirdWord1:#_thirdWord1#][__fourthWord1:#_fourthWord1#][__fifthWord1:#_fifthWord1#]
+  [_acronym1:#__firstWord1.firstCharacter#.#__secondWord1.firstCharacter#.#__thirdWord1.firstCharacter#.#__fourthWord1.firstCharacter#.#__fifthWord1.firstCharacter#.]
+  [_phrase1:#_acronym1.capitalizeAll##_mnemonicSeparator##_mnemonicSpacer##__firstWord1.capitalize##_mnemonicSpacer##__secondWord1.capitalize##_mnemonicSpacer##__thirdWord1.capitalize##_mnemonicSpacer##__fourthWord1.capitalize##_mnemonicSpacer##__fifthWord1.capitalize#]
+
+  [_firstWord2:#_limitedCardHard#][_secondWord2:#_limitedCardSoft#][_thirdWord2:#_limitedCardVowel#][_fourthWord2:#_someWord#][_fifthWord2:#_limitedCardHard#,#_limitedCardSoft#,#_limitedCardVowel#]
+  [__firstWord2:#_firstWord2#][__secondWord2:#_secondWord2#][__thirdWord2:#_thirdWord2#][__fourthWord2:#_fourthWord2#][__fifthWord2:#_fifthWord2#]
+  [_acronym2:#__firstWord2.firstCharacter#.#__secondWord2.firstCharacter#.#__thirdWord2.firstCharacter#.#__fourthWord2.firstCharacter#.#__fifthWord2.firstCharacter#.]
+  [_phrase2:#_acronym2.capitalizeAll##_mnemonicSeparator##_mnemonicSpacer##__firstWord2.capitalize##_mnemonicSpacer##__secondWord2.capitalize##_mnemonicSpacer##__thirdWord2.capitalize##_mnemonicSpacer##__fourthWord2.capitalize##_mnemonicSpacer##__fifthWord2.capitalize#]
+
+  [_firstWord3:#_limitedCardVowel#][_secondWord3:#_limitedCardHard#,#_limitedCardSoft#,#_someWord#][_thirdWord3:#_limitedCardSoft#][_fourthWord3:#_limitedCardVowel#][_fifthWord3:#_limitedCardHard#,#_someWord#]
+  [__firstWord3:#_firstWord3#][__secondWord3:#_secondWord3#][__thirdWord3:#_thirdWord3#][__fourthWord3:#_fourthWord3#][__fifthWord3:#_fifthWord3#]
+  [_acronym3:#__firstWord3.firstCharacter#.#__secondWord3.firstCharacter#.#__thirdWord3.firstCharacter#.#__fourthWord3.firstCharacter#.#__fifthWord3.firstCharacter#.]
+  [_phrase3:#_acronym3.capitalizeAll##_mnemonicSeparator##_mnemonicSpacer##__firstWord3.capitalize##_mnemonicSpacer##__secondWord3.capitalize##_mnemonicSpacer##__thirdWord3.capitalize##_mnemonicSpacer##__fourthWord3.capitalize##_mnemonicSpacer##__fifthWord3.capitalize#]
+
+  [_firstWord4:#_limitedCardHard#,#_limitedCardSoft#,#_someWord#][_secondWord4:#_limitedCardVowel#][_thirdWord4:#_limitedCardHard#,#_limitedCardSoft#,#_someWord#][_fourthWord4:#_limitedCardHard#,#_limitedCardVowel#]
+  [__firstWord4:#_firstWord4#][__secondWord4:#_secondWord4#][__thirdWord4:#_thirdWord4#][__fourthWord4:#_fourthWord4#]
+  [_acronym4:#__firstWord4.firstCharacter#.#__secondWord4.firstCharacter#.#__thirdWord4.firstCharacter#.#__fourthWord4.firstCharacter#.]
+  [_phrase4:#_acronym4.capitalizeAll##_mnemonicSeparator##_mnemonicSpacer##__firstWord4.capitalize##_mnemonicSpacer##__secondWord4.capitalize##_mnemonicSpacer##__thirdWord4.capitalize##_mnemonicSpacer##__fourthWord4.capitalize#]
+
+  [_mnemonic:#_phrase1#,#_phrase2#,#_phrase3#,#_phrase4#]
+  #_mnemonic#

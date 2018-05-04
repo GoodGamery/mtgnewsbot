@@ -130,7 +130,6 @@ async function cardSearchTwoParter(separator, params) {
   logger.log(`searchTerm: ${searchTerm}`);
   logger.log(`query.q: ${query.q}`);
 
-
   // optional string prefix to remove before parsing
   var ignorePrefix = params[1] || '';
 
@@ -174,9 +173,28 @@ function randomStaticCards(limit) {
   return cards;
 }
 
+// fix for unhiged card names e.g. Sly Spy (e) -> Sly Spy
+function stripVersionLetterCode(s) {
+  try {
+    const letterCodeRegExp = /(.*)\s+\(\w\)/;
+    const match = s.match(letterCodeRegExp);
+
+    if (match) {
+      return match[1];
+    }
+  } catch (e) {
+    logger.warn('Error parsing version letter code: ' + e);
+  }
+  return s;  
+}
+
+function escapeParentheses(s) {
+  return s.replace(/(\(|\))/g,'%5C$1');
+}
+
 async function cardSearchRandom(undefined, params) {
   const query = { 
-    q: 'cmc >= 0'
+    q: 'not rarity:basic'
   };
   return cardFinderSearch(query, params);    
 }
@@ -272,6 +290,7 @@ async function cardSearchCustomQuery(s, params) {
   } else {
     logger.log('query argument not specified.');        
   }
+
   return cardSearchRandom(undefined, params);
 }
 
@@ -313,7 +332,7 @@ async function cardFinderSearch(query, params, additionalFields) {
 
   logger.log(`Searching for ${queryLimit} cards.`);
   try {
-    try {      
+    try {
       resultData = await searchCardFinder(query);
       try {
         result = JSON.parse(resultData);
@@ -326,6 +345,12 @@ async function cardFinderSearch(query, params, additionalFields) {
 
         if (result.length < queryLimit) {          
           logger.warn(`Zero or insufficient results returned from card search: expected ${queryLimit} but received ${result.length}.`);
+            
+          if (params[1] === 'notRandom') {
+            logger.warn(`'notRandom' paramter specified. Returning empty result.`);            
+            return '';
+          }
+
           logger.warn('Fetching random cards.');
 
           resultData = await randomCards(queryLimit - result.length);
@@ -343,7 +368,7 @@ async function cardFinderSearch(query, params, additionalFields) {
     logger.warn(e);    
     result = [randomStaticCards(queryLimit)];
   }
-   
+
   logger.log('Result: ' + JSON.stringify(result));
   logger.log('Total cards: ' + result.length);
 
@@ -354,9 +379,11 @@ async function cardFinderSearch(query, params, additionalFields) {
 
       const rawName = traceryEscape(card.name);
       const familiarName = traceryEscape(getFamiliarName(card.name));
+      const sanitizedName = stripVersionLetterCode(rawName);    
 
       let name = rawName;
       const set = traceryEscape(card.set);
+      const setCode = traceryEscape(card.code);      
       const rarity = traceryEscape(card.rarity);      
       const type = randomElement(card.types);
       const subtype = randomElement(card.subtypes);
@@ -384,8 +411,10 @@ async function cardFinderSearch(query, params, additionalFields) {
       finalResult = finalResult.concat(
         `[${prefix}Name${i}:${name}]`,
         `[${prefix}RawName${i}:${rawName}]`,
-        `[${prefix}FamiliarName${i}:${familiarName}]`,        
+        `[${prefix}FamiliarName${i}:${familiarName}]`,
+        `[${prefix}SanitizedName${i}:${sanitizedName}]`,                
         `[${prefix}Set${i}:${set}]`,
+        `[${prefix}SetCode${i}:${setCode}]`,        
         `[${prefix}Rarity${i}:${rarity}]`,      
         `[${prefix}Type${i}:${type}]`,     
         `[${prefix}FullSubtype${i}:${fullSubtype}]`,
@@ -432,6 +461,7 @@ module.exports = {
   cardSearchTwoParter,
   cardSearchOneWordName,
   cardSearchCustomQuery,
+  escapeParentheses,
   randomCard:   () => cardSearchRandom(undefined, 1),
   randomCards:  cardSearchRandom,
   sanityCheck: (s) => console.log(s)
