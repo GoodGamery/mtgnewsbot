@@ -7,11 +7,11 @@ svgPackOnePickOneInitialize: >
   [_bottomBannerText:#_format.allCaps#]
 
 svgPackOnePickOneTeaserText:
-- "[_whatPick:What's the pick?,You Make the Pick#colon#]#_whatPick# #_format# Edition"
-- "What's [_the:the,your]#_the# pick? #_svgPackOnePickOneHashTag#"
-- "[_prefix:,What's the pick? ][_cleverPhrase:Choose wisely.,It’s decision time.,Time to choose.,Make up your mind.]#_prefix##_cleverPhrase# #_svgPackOnePickOneHashTag#"
-- "[_cleverPhrase:Show us how to draft.,We have no idea what to do. Tell us your pick.,Don't make us do all the work.,Show us what to do.,Show us what you got.,Send help.,Sick of these yet?,We're totally lost. \\#Fblthp,Make it count.,Don't let us down.,We're counting on you,]#_cleverPhrase# #_svgPackOnePickOneHashTag#"
-- "[_whatPick:What's the pick?,You Make the Pick!,Are you ready to draft #_format#?]#_whatPick#{newline}{newline}[_remember:Remember,Don't forget,Remember to follow]#_remember# [_mnemonicSeparator:{newline}][_mnemonicSpacer:{newline} • ]#mtgDraftMnemonic#"
+# - "[_whatPick:What's the pick?,You Make the Pick#colon#]#_whatPick# #_format# Edition"
+# - "What's [_the:the,your]#_the# pick? #_svgPackOnePickOneHashTag#"
+# - "[_prefix:,What's the pick? ][_cleverPhrase:Choose wisely.,It’s decision time.,Time to choose.,Make up your mind.]#_prefix##_cleverPhrase# #_svgPackOnePickOneHashTag#"
+# - "[_cleverPhrase:Show us how to draft.,We have no idea what to do. Tell us your pick.,Don't make us do all the work.,Show us what to do.,Show us what you got.,Send help.,Sick of these yet?,We're totally lost. \\#Fblthp,Make it count.,Don't let us down.,We're counting on you,]#_cleverPhrase# #_svgPackOnePickOneHashTag#"
+- "[_edition: #_format# Edition][_whatPick:What's the pick?#_edition#,You Make the Pick!#_edition#,Are you ready to draft #_format#?]#_whatPick#{newline}{newline}[_remember:Remember,Don't forget,Remember to follow]#_remember# [_mnemonicSeparator:,—,:][_mnemonicSpacer:{newline} • ]#mtgDraftMnemonic#"
 
 _svgPackOnePickOneHashTag:
 - "[_formatTagName:#_formatName#,Mtg #_formatName#][_formatHashTag:#_formatTagName.capitalizeAll.noPunctuation.noSpaces#]\\##_formatHashTag#"
@@ -20,11 +20,11 @@ _svgPackOnePickOneHashTag:
 _cleanUpFormat: "#_formatName.replace(Limited Edition,).replace(Core Set,).replace(Duel Decks: ,).replace(Masterpiece Series: ,).replace(Magic: The Gathering-,).replace(Magic: The Gathering—,).capitalizeAll#"
 
 svgPackOnePickOneCardTheme:
-- "#svgPackOnePickOneCardTheme_Cube#"
-- "#svgPackOnePickOneCardTheme_Cube#"
-- "#svgPackOnePickOneCardTheme_Cube#"
-- "#svgPackOnePickOneCardTheme_Cube#"
-- "#svgPackOnePickOneCardTheme_Cube#"
+# - "#svgPackOnePickOneCardTheme_Cube#"
+# - "#svgPackOnePickOneCardTheme_Cube#"
+# - "#svgPackOnePickOneCardTheme_Cube#"
+# - "#svgPackOnePickOneCardTheme_Cube#"
+# - "#svgPackOnePickOneCardTheme_Cube#"
 - "#svgPackOnePickOneCardTheme_CardSetBooster#"
 - "#svgPackOnePickOneCardTheme_CardSetBooster#"
 - "#svgPackOnePickOneCardTheme_CardSetBooster#"
