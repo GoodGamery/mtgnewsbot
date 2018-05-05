@@ -69,26 +69,40 @@ function parseMessage(message) {
     hashtag: '#'
   };
 
-  let match = text.match(/\{\s*[^}]+?(\s+?[^}]*)?\}/g);
-  if (match) {
+  const replacementTagRegexp = /\{\s*\w+\s*\}/g;
+  let replacementTagMatches = text.match(replacementTagRegexp);
+  if (replacementTagMatches) {
+    replacementTagMatches.forEach(match => {
+      const tagMatch = match.match(/\w+/);
+      const tag = tagMatch[0];
+      if (tag && replacementTags[tag.toLowerCase()]) {
+        text = text.replace(match, replacementTags[tag.toLowerCase()]);
+      }
+    });
+  }
+
+  const regexp = /\{\s*\w+?(\s+?.*)?\}/g;
+  let matches = text.match(regexp);
+  if (matches) {
     const removeEndlRegex = new RegExp(`\\${ENDL_MARKER}`, `g`);
-    match.forEach(match => {
+    matches.forEach(match => {
       const tagMatch = match.match(/\{\s*(\w+)(\s?)/);
       const tag = tagMatch[1];
 
-      if (!tags[tag] && tagMatch[2]) {
-        tags[tag] = match.match(/(\w+=`.*?`)/g).reduce((result, next) => {
-          let key = next.match(/(\w+)=/)[1];
-          let value = next.match(/=`(.*?)`/)[1];
-          result[key] = value;
-          return result;
-        }, {});
-      }
+      if (tagMatch[2] && !tags[tag] || replacementTags[tagMatch[2]]) {
+        const matchMatch = match.match(/(\w+=`.*?`)/g);
+          if (matchMatch) {
+            tags[tag] = matchMatch.reduce((result, next) => {
+            let key = next.match(/(\w+)=/)[1];
+            let value = next.match(/=`(.*?)`/)[1];
+            result[key] = value;
+            return result;
+          }, {});
+        }
 
-      text = text
-        .replace(match, replacementTags[tag.toLowerCase()] ? replacementTags[tag.toLowerCase()] : '')
-        .replace(removeEndlRegex, '')
-        .trim();
+        // remove the tags from the message text now that we've stored the data in the tags object
+        text = text.replace(match, '').replace(removeEndlRegex, '').trim();        
+      }
     });
 
     // Further process svg tags
