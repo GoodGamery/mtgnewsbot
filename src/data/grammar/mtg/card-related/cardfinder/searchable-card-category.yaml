@@ -64,7 +64,7 @@ searchableCardCategoryCustomQuery:
   [_cardCategory:manland][_cardCategoryClass:manlands][_customQuery:t=land text="becomes a" text=creature]
  - >
   [_cardCategory:draw spell][_cardCategoryClass:card draw][_customQuery:t=instant t|=sorcery text="draw" text="cards"]
-- >
+ - >
   [_borderColors:black,silver,white][_borderColor:#_borderColors#][_cardCategory:#_borderColor#-bordered card][_cardCategoryClass:#_cardCategory.s#][_customQuery:border=#_borderColor#]
 
 cardCategoryTerm: 

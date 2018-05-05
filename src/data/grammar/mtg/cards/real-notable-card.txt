@@ -20,6 +20,7 @@ Elvish Impersonators
 Energizer
 Enter the Dungeon
 Evil Eye of Orms-by-Gore
+Explore
 Giant Ambush Beetle
 Gilder Bairn
 Gleemax
@@ -77,6 +78,7 @@ Vial Smasher the Fierce
 Vizzerdrix
 Werebear
 Whipgrass Entangler
+Yargle, Glutton of Urborg
 Yet Another Aether Vortex
 Zo-Zu the Punisher
 Zzzyxas's Abyss

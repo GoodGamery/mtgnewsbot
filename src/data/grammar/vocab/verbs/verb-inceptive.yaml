@@ -40,6 +40,12 @@ verbInceptiveTransitive:
 - impress
 - persuade
 - fool
+- ignore
+- discover
+- disprove
+- suppress
+- conceal
+- reveal
 
 verbInceptiveTransitivePastTense:
 - faced
@@ -82,6 +88,12 @@ verbInceptiveTransitivePastTense:
 - impressed
 - persuaded
 - fooled
+- ignored
+- discovered
+- disproved
+- suppressed
+- concealed
+- revealed
 
 verbInceptiveTransitiveGerund:
 - facing
@@ -124,6 +136,12 @@ verbInceptiveTransitiveGerund:
 - impressing
 - persuading
 - fooling
+- ignoring
+- discovering
+- disproving
+- suppressing
+- concealing
+- revealing
 
 verbInceptiveIntransitive:
 - stand
