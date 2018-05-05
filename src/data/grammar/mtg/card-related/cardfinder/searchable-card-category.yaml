@@ -64,6 +64,8 @@ searchableCardCategoryCustomQuery:
   [_cardCategory:manland][_cardCategoryClass:manlands][_customQuery:t=land text="becomes a" text=creature]
  - >
   [_cardCategory:draw spell][_cardCategoryClass:card draw][_customQuery:t=instant t|=sorcery text="draw" text="cards"]
+- >
+  [_borderColors:black,silver,white][_borderColor:#_borderColors#][_cardCategory:#_borderColor#-bordered card][_cardCategoryClass:#_cardCategory.s#][_customQuery:border=#_borderColor#]
 
 cardCategoryTerm: 
 - "[#searchableCardCategory#]#_cardCategory#"
@@ -73,4 +75,4 @@ cardCategoryClassTerm:
 - "[#searchableCardCategory#]#_cardCategoryClass#"
 - "[#searchableCardCategoryCustomQuery#]#_cardCategoryClass#"
 
-# "randomCategoryCardWithOneWordName" rule (in utility-search-categories) to search 
+# use "randomCategoryCard / randomCategoryCardWithOneWordName" rule (in utility-search-categories) to search 
