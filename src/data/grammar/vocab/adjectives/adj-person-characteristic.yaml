@@ -19,6 +19,8 @@ adjPersonCharacteristic:
 - level-headed
 - unpredictable
 - shrewd
+- incorrigible
+- charming
 - "#adj#"
 - "#adjValue#"
 
@@ -42,6 +44,8 @@ adjPersonCharacteristicComparative:
 - more naive
 - more level-headed
 - more unpredictable
+- more incorrigible
+- more charming
 - "#adjComparative#"
 
 adjPersonCharacteristicSuperlative:
@@ -64,4 +68,6 @@ adjPersonCharacteristicSuperlative:
 - most naive
 - most level-headed
 - most unpredictable
+- most incorrigible
+- most charming
 - "#adjSuperlative#"

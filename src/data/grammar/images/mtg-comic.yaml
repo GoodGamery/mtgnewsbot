@@ -155,22 +155,6 @@ itemNounMassNounOrCreatureType:
 - "#massNoun#"
 - "#creatureTypes#"
 
-exasperatedLeadIn:
-- wow
-- man
-- ugh
-- geez
-- oh boy
-- great
-
-mildEpithet:
-- damnit
-- crap
-- $\#@!
-- sonofa
-- great
-- shoot
-
 itemNounOrAppliance:
 - "#itemNoun#"
 - "#appliance#"
@@ -275,20 +259,6 @@ ruleOfThumb:
 - "never make a deal with [_who:#character#,#creatureTypeOrCharacterClass.a#]#_who#"
 - "always aim for the #bodypartsInPairs#"
 
-exclamationSurprise:
-- Ahh
-- Ow ow ow
-- Ouch
-- Oof
-- Yowza
-- Oh no
-- Yikes
-- Ack
-- Crikey
-- Jinkies
-- "Oh#comma# man"
-- "#mildEpithet#"
-
 _jokeSetupCard:
 - "[_cardCategory:#cardCategory#][_card:#randomRealCard#]"
 - "[#randomCategoryCard#][_cardCategory:#_cardCategory#][_card:#_cardName#]"
@@ -338,8 +308,8 @@ _ok:
 svgComicTemplate3Content5aText:
 - "Wait, wait, wait, wait. I have an idea."
 - "#mildEpithet#, I dropped my #itemNoun#."
-- "#exclamationSurprise#! I just stepped in some #massNoun#."
-- "#exclamationSurprise#[_punct:!,#comma#]#_punct# I think I was just bitten by #creatureTypes.a#."
+- "#exclamationSurprise.capitalize#! I just stepped in some #massNoun#."
+- "#exclamationSurprise.capitalize#[_punct:!,#comma#]#_punct# I think I was just bitten by #creatureTypes.a#."
 - "#_ok#I think I may have just broken my #bodypart#."
 - "#_ok#I gotta go pee."
 - "#_ok#I feel like I'm gonna throw up."

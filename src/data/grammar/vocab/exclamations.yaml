@@ -1,0 +1,60 @@
+exclamationSurprise:
+- ahh
+- ow ow ow
+- ouch
+- oof
+- yowza
+- oh no
+- yikes
+- ack
+- crikey
+- jinkies
+- yeouch
+- great scott
+- "oh#comma# man"
+- "#mildEpithet#"
+
+exclamationInspired:
+- charge
+- let's do this
+- can you dig it
+- lemme at 'em
+- food fight
+- freedom
+- up and at them
+- "#abstractNounOrMassNoun# or death"
+
+exclamationOminous:
+- we're going to need a bigger boat
+- here's johnny
+- they're heeere
+
+exclamationFriendly:
+- you betcha
+
+exclamationPopReference:
+- inconceivable
+- rosebud
+- schwing
+- fiddle-dee-dee
+- I'm melting
+- I'll be back
+- you complete me
+- "we'll always have #randomMtgLocation#"
+
+mildEpithet:
+- damnit
+- crap
+- $\#@!
+- sonofa
+- great
+- shoot
+
+# max 6 characters (to fit in comic word balloons)
+exasperatedLeadIn:
+- wow
+- man
+- ugh
+- geez
+- oh boy
+- great

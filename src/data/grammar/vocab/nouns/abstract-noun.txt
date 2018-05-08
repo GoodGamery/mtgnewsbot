@@ -27,7 +27,7 @@ misery
 indigestion
 shirtlessness
 prize eligibility
-strong fashion sense
+fashion sense
 bootlicking
 intellect
 snobbery
@@ -122,6 +122,8 @@ deceit
 improv comedy
 disapproval
 opposition
+forgery
+employment
 #massNoun# magic
 #nounStateOfBeing#
 #nounStateOfBeing#
