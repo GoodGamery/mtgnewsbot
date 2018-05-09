@@ -90,6 +90,13 @@ boomerang
 finger puppet
 strawberry
 beltbuckle
+toothpick
+toothbrush
+umbrella
+briefcase
+ironing board
+playing card
+shoehorn
 #massNoun# launcher
 #bodypart#
 #gameAccessory#
