@@ -1,6 +1,6 @@
 coffee
 tea
-coke
+cola
 pepsi
 water
 paint

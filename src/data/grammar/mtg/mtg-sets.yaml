@@ -143,11 +143,11 @@
     "#collective# of #beings#",
     "#beings# #verbIntransitiveGerund#",
     "[_time:Hour,Day,Age,Dawn]#_time# of #abstractNoun#",
-    "[_mastery:#format#,#adj#]#_mastery# masters [_year:,2017,2018,2018,2019]#_year#",
+    "[_mastery:#format#,#adj#]#_mastery# masters [_year:,2018,2018,2019]#_year#",
     "[_desc:#adj#,#massNoun#,#creatureTypes#]#_desc.capitalizeAll# #omenOrEventNoun#",
     "[_desc:#adj#,#massNoun#,#creatureTypes#]#_desc.capitalizeAll# #fableLocationNoun#",
     "[_setting:Theater of,Curse of][_adjOrSetting:#adj#,#_setting#]#_adjOrSetting# #abstractNoun#",
-    "[_what:#emotion#,#bodypart#,#collectiveActionOrRealm#]#_what# of #character#"
+    "[_what:#emotion#,#bodypart#][_character:#character#,#planeswalkerFirstName#][_setname:#_character#'s #_what#,#_character#'s #_what#,#collectiveActionOrRealm# of #character#]#_setname#"
   ],
 
   "realm": [
