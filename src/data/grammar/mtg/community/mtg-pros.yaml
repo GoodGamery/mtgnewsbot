@@ -3,6 +3,7 @@
   "person": ["#pro#","#pro#","#otherPersonality#"],
   "miscPersonSingular": ["#pro#", "#otherPersonality#", "#psychographic#", "#officialEntity#", "#mtgArtist#"],
   "peoplePlural": ["#pros#", "#pros#", "#playerCategory.s#[#pluralPronouns#]","#playerCategory.s#[#pluralPronouns#]", "#financialStakeholders#"],
+  "peopleStrictlyPlural": ["#playerCategory.s#[#pluralPronouns#]","#playerCategory.s#[#pluralPronouns#]", "#financialStakeholders#"],
   "pro": [
       "Kai Budde[_proNickname:Kai][_proFullName:Kai Budde][#malePronouns#]",
       "Jarvis Yu[_proNickname:Jarvis][_proFullName:Jarvis Yu][#malePronouns#]",

@@ -4,6 +4,7 @@ playmat
 spindown counter
 deckbox
 treasure chest
+trade binder
 event ticket
 play point
 untradeable war mark
