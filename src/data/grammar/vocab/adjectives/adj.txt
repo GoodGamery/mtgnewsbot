@@ -37,6 +37,7 @@ ingenious
 gigantic
 glamorous
 secret
+secretive
 malevolent
 glorious
 good
