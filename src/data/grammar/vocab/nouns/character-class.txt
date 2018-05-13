@@ -184,6 +184,7 @@ prospector
 turncoat
 deserter
 taskmaster
+surgeon
 #playerCategory#
 #personAuthorityFigure#
 #personRelational#

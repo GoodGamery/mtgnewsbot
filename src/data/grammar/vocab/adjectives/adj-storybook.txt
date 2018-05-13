@@ -38,6 +38,7 @@ terrifying
 cursed
 charmed
 dark
+angelic
 #characterClass#'s
 #creatureTypes#'s
 #adj#
