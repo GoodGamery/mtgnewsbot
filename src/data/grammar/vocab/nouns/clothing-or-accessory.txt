@@ -21,6 +21,7 @@ onesie
 leotard
 suspenders
 glove
+gauntlet
 loincloth
 mittens
 nightgown
@@ -64,3 +65,4 @@ briefcase
 shaving kit
 duffel bag
 umbrella
+breastplate

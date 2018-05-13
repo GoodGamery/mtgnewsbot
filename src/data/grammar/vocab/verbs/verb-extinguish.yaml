@@ -1,0 +1,56 @@
+verbExitinguishSpecific:
+- slaughter
+- drown
+- strangle
+- devour
+- poison
+- immolate
+- smother
+- trample
+- eviscerate
+- disembowel
+- crush
+- dismember
+- flay
+- dissolve
+- vaporize
+- impale
+- behead
+- obliterate
+
+verbExitinguishSpecificPastTense:
+- slaughtered
+- drowned
+- strangled
+- devoured
+- poisoned
+- immolated
+- smothered
+- trampled
+- eviscerated
+- disemboweled
+- crushed
+- dismembered
+- flayed
+- dissolved
+- vaporized
+- impaled
+- beheaded
+- obliterated
+
+verbExitinguishGeneral:
+- slaughter
+- slay
+- murder
+- kill
+- slay
+- extinguish
+- assassinate
+
+verbExitinguishGeneralPastTense:
+- slaughtered
+- slain
+- murdered
+- killed
+- extinguished
+- assassinated

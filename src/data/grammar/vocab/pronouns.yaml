@@ -1,24 +1,24 @@
 {
   "malePronouns": [
-      "[they:he][theirs:his][their:his][theyre:he's][them:him][are:is][has:has][themselves:himself][possessive:'s][s:s][es:es]"
+      "[they:he][theirs:his][their:his][theyre:he's][them:him][are:is][were:was][has:has][themselves:himself][possessive:'s][s:s][es:es]"
   ],
   "femalePronouns": [
-      "[they:she][theirs:hers][their:her][theyre:she's][them:her][are:is][has:has][themselves:herself][possessive:'s][s:s][es:es]"
+      "[they:she][theirs:hers][their:her][theyre:she's][them:her][are:is][were:was][has:has][themselves:herself][possessive:'s][s:s][es:es]"
   ],
   "pluralPronouns": [
-      "[they:they][theirs:theirs][their:their][theyre:they're][them:them][are:are][has:have][themselves:themselves][possessive:'][s:][es:]"
+      "[they:they][theirs:theirs][their:their][theyre:they're][them:them][are:are][were:were][has:have][themselves:themselves][possessive:'][s:][es:]"
   ],
   "heOrShePronouns": [
-      "[they:he or she][theyre:they're][theirs:his or hers][their:his or her][them:him or her][are:is][has:has][themselves:himself or herself][possessive:'s][s:s][es:es]"
+      "[they:he or she][theyre:they're][theirs:his or hers][their:his or her][them:him or her][are:is][were:was][has:has][themselves:himself or herself][possessive:'s][s:s][es:es]"
   ],
   "theyPronouns": [
-      "[they:they][theirs:theirs][their:their][theyre:they're][them:them][are:are][has:have][themselves:themselves][possessive:'s][s:s][es:es]"
+      "[they:they][theirs:theirs][their:their][theyre:they're][them:them][are:are][were:were][has:have][themselves:themselves][possessive:'s][s:s][es:es]"
   ],
   "neutralPronouns": [
-      "[they:it][theirs:theirs][their:its][theyre:it's][them:it][are:is][has:has][themselves:itself][possessive:'s][s:s][es:es]"
+      "[they:it][theirs:theirs][their:its][theyre:it's][them:it][are:is][were:was][has:has][themselves:itself][possessive:'s][s:s][es:es]"
   ],
   "youPronouns": [
-      "[they:you][theirs:yours][their:your][theyre:you're][them:yourself][are:are][has:have][themselves:yourself][possessive:'s][s:][es:]"
+      "[they:you][theirs:yours][their:your][theyre:you're][them:yourself][are:are][were:were][has:have][themselves:yourself][possessive:'s][s:][es:]"
   ],
   "genderedPronouns": [
     "#malePronouns#",

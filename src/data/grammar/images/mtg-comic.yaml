@@ -55,7 +55,7 @@ svgComicTemplate1: >
   [_text3x:430][_text3y:439][_text3w:72][_text3h:36][_text3Style:#svgComicTemplate1Text2Style#][_text3Content:#svgComicExclamation##svgComicPunctuation#]
   [_text4x:277][_text4y:677][_text4w:180][_text4h:45][_text4Style:#svgComicTemplate1Text2Style#][#svgComicDialogCouplet#][_text4Content:#_line1#]
   [_text5x:463][_text5y:710][_text5w:162][_text5h:55][_text5Style:#svgComicTemplate1Text3Style#][_text5Content:#_line2#]
-  [_text6x:502][_text6y:815][_text6w:250][_text6h:80][_text6Style:#svgComicTemplate1Text2Style#][_lesson:#gameConcept#,#pluralNounOrMassNoun#,#abstractNoun#][_text6Verb:took,destroyed,have defiled][_text6Content:But #_text1OtherPerson# thinks you're #adj#.,#_andOrBut.capitalize# I #_text6Verb# your #concreteNounOrPluralNoun#.,But you're no match for my #_lesson#.,But I have your #pluralNounOrMassNoun#.,Now it's time to teach you about #_lesson#.,Now yell “HRAAUGH!” and flail your arms around.,There's a spider in your hair though.,Now let's see how you like my #massNoun# magic.]
+  [_text6x:502][_text6y:815][_text6w:250][_text6h:80][_text6Style:#svgComicTemplate1Text2Style#][_lesson:#gameConcept#,#pluralNounOrMassNoun#,#abstractNoun#][_text6Verb:took,destroyed,have defiled][_text6Content:But #_text1OtherPerson# thinks you're #adj#.,#_andOrBut.capitalize# I #_text6Verb# your #concreteNounOrPluralNoun#.,But you're no match for my #_lesson#.,But I have your #pluralNounOrMassNoun#.,Now it's time to teach you about #_lesson#.,Now yell “HRAAUGH!” and flail your arms around.,There's #animalSmall.a# in your hair though.,Now let's see how you like my #massNoun# magic.]
   [_text7Content:][_text8Content:]  
 
 svgComicTemplate2: >

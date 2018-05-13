@@ -109,3 +109,12 @@ bathroom
 port-o-potty
 meat locker
 locker room
+belfry
+chapel
+lagoon
+stable
+asylum
+prison
+refuge
+quarry
+cottage

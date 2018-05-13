@@ -1,0 +1,12 @@
+fountain
+gravestone
+obelisk
+monolith
+statue
+signpost
+gateway
+monument
+keystone
+lamppost
+pillar
+pedestal
