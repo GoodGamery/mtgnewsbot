@@ -53,7 +53,7 @@ flavorText:
   - >
     "We hold sacred the powers of #abstractNoun# and #abstractNoun#. #abstractNounMassNounOrEmotion.capitalize# and #abstractNounMassNounOrEmotion# are our [_adj:greatest,oldest,only,favorite,#adjSuperlative#][_what:weapons,regrets,problems,obessions,sources of confusion]#_adj# #_what#." —#characterFactionOrRace.capitalize# #motto#
   - >
-    "#verbTransitive.capitalize# that which [_cannot:cannot,must not][_never:never,once][_was:#_was# #_never#,is no longer,#_cannot# be] #verbTransitivePastTense#." —#itemNoun.capitalize# #inscription#
+    "#verbTransitive.capitalize# that which [_cannot:cannot,must not][_never:never,once][_was:#_was# #_never#,is no longer,#_cannot# be] #_was# #verbTransitivePastTense#." —#itemNoun.capitalize# #inscription#
   - >
     "No #abstractNoun#. No #abstractNoun#. No matter what." —#itemNoun.capitalize# #inscription#
   - >
@@ -75,7 +75,7 @@ flavorText:
   - >
     "[_firstVerb:#verbInceptiveIntransitive#][_verb:#_firstVerb#][_secondVerb:#verbInceptiveTransitive#][#placeOrPeopleVerbPluralAgreement#][_object:#_placeOrPeople#]Some days you #_firstVerb# to #_secondVerb# the #_object#. Other days the #_object# #_verbs# to #_secondVerb# you."
   - >
-   "When the #placeNoun.s# are #adj# and the [_thing:#itemNoun#,#characterClass#,#creatureTypes#]#_thing.s# are #verbTransitivePastTense#, [#somePronoun#]#they# will take #their# rightful place as #characterClass# of the #placeNounCanonical#." —#npcCharacter#
+   "When the #placeNoun.s# are #adj# and the [_thing:#itemNoun#,#characterClass#,#creatureTypes#]#_thing.s# are #verbTransitivePastTense#, [_theyWillTakeTheir:#somePronoun##they# will take #their#,#character# will take #their#][#somePronoun#]#_theyWillTakeTheir# rightful place as #characterClass# of the #placeNounCanonical#." —#npcCharacter#
   - >
     "Only #adj.a# few are [_allowed:allowed,permitted,invited,welcome]#_allowed# within the #adj# [_place:#placeNoun#,#placeNounCanonical#]#_place# known as [_place:#minorStoryLocation#,#nonPlaneLocation#]#_place#."
   - >
@@ -114,6 +114,8 @@ flavorText:
     "[_callIt:Call it,Think of it as][_desc:thinking,working,veteran,seasoned,inexperienced,#adjValue#,#adjPersonCharacteristic#][_simpleClass:wizard,mage,soldier][_class:the #_desc# #_simpleClass#,the #_desc# #_simpleClass#,#creatureTypeOrCharacterClass.a#,#animal.a#][_whose:#_class#,#_class#,#_class#,#character#,#randomMtgLocation#][_categoryOrConceptSingular:#cardCategory.a,#cardCategoryTerm.a#,#gameConcept#][_categoryOrConceptPlural:#cardCategory.s#,#cardCategoryTerm.s#,#gameConcept#][_categoryOrConcept:#cardCategory.a#,#cardCategoryTerm.a#,#gameConcept#][_whatSingular:#abstractNoun#,#abstractNounOrMassNoun#,#abstractMassOrPluralNounOrEmotion#,#_categoryOrConceptSingular#][_whatPlural:#abstractNoun#,#abstractNounOrMassNoun#,#abstractMassOrPluralNounOrEmotion#,#_categoryOrConceptPlural#][_ode:ode,homage,tribute][_versionOf:version of #_whatSingular#][_reactionTo:interpretation of #_whatPlural#,response to #_whatPlural#,reaction to #_whatPlural#,bias toward #_whatPlural#,#_ode# to #_whatPlural#][_versionOfWhat:#_versionOf#,#_reactionTo#]#_callIt# #_whose#'s #_versionOfWhat#."   
   - >
     [_found:found out,learned,discovered][_learned:#_found# the hard way,quickly learned,slowly realized,finally grasped,suddenly understood,never quite understood,didn't grasp][#cotdLegendaryCreatureSearch#][_discoverer:#_legendName#,#characterFirstName#,#commonCharacterFirstName#][_discoverDawned:it slowly dawned on #_discoverer#,it eventually occurred to #_discoverer#][_discovererLearned:#_discoverer# #_learned#,#_discoverDawned#]#_discovererLearned.capitalize# [#wordSameNotOpposite#][_same1:#_phrase#][_same2:#_otherPhrase#][#wordNotOpposite#][_notOpposite1:#_phrase#][_notOpposite2:#_otherPhrase#][_isMeans:is,means][_discoverySame:#_same1# and #_same2# mean the same thing,#_same1# #_isMeans# the same thing as #_same2#][_discoveryNotOpposite:#_notOpposite1# and #_notOpposite2# aren't opposites,#_notOpposite1# isn't the opposite of #_notOpposite2#][#wordPrefixDistinction#][_different1:#_phrase#][_different2:#_otherPhrase#][_discoveryDifferentDifference:there's a difference between #_different1# and #_different2#,#_different1# doesn't mean the same thing as #_different2#,there's a subtle distinction between #_different1# and #_different2#][_discoveryDifferentDistinction:difference,subtle distinction,minor difference][_discoveryDifferent:that #_discoveryDifferentDifference#,the #_discoveryDifferentDistinction# between #_different1# and #_different2#][#_adjOpposite#][_opposite1:“#_adjOpposite1#”][_opposite2:“#_adjOpposite2#”][_oppositeDifference:a big difference,a subtle disctinction,a world of difference,a meaningful distinction][_discoverOppositeDifference:there's #_oppositeDifference# between #_opposite1# and #_opposite2#][_discoveryOpposite:#_discoverOppositeDifference#,#_discoverOppositeDifference#,#_discoverOppositeDifference#,#_opposite1# is the opposite of #_opposite2#][_discovery:that #_discoverySame#,that #_discoveryNotOpposite#,#_discoveryDifferent#,that #_discoveryOpposite#]#_discovery#.
+  - >
+    [_event:#nounActionSound#,#nounActionEvent#][_source:#animalPlural#,#creatureTypes.s#][_location:head,brain,mind,skull,ears,noggin,stomach,soul,chest,loins,guts,#bodypart#,#clothingOrAccessory#][_bodyOrdeal:on fire,wet,bleeding,covered in #massNoun#,shrinking,falling #_outOff#,#adjCorporeal#][_bodypartFeeling:#bodypartsInternalExternal# #_isAre# #adjBodySensation#,#bodypart# #verbSensation.firstS.trim#,#bodypartsInternalExternal# #_isAre# #_bodyOrdeal#][_feelSick:I feel sick,I feel ill,I'm going to be sick,I don't feel so good][_really:,,really ,feeling ,feeling really ][_imConcerned:something's not right,we're in danger,I think there's a problem,I have a bad feeling right now,I'm concerned for our safety,watch your step,be very careful,don't make any sudden moves,be cool,follow my lead,I know what I'm doing,I don't know what I'm doing,abandon ship][_rightNow:,, right now][_otherOrdeal:#_feelSick#,I'm #_really# #mood##_rightNow#][_meaning:my #_bodypartFeeling#,#_otherOrdeal#,#exclamation.capitalize#!,#_imConcerned#][_anEvent:#_event.a#,there's #_event.a#,it's like #_event.a#]#_anEvent.capitalize# of #_source# in my #_location# —#nonPlaneStoryLocation# #expression# meaning "#_meaning#"    
 flavorTextNew:
  - >
   ""
@@ -124,7 +126,7 @@ characterAttribution:
 
 occasionOrSourceOfWisdom:
 - wedding ceremony
-- funeral ceremony
+- funeral rite
 - greeting card
 - "traditional [_what:birthday,graduation,retirement]#_what# speech"
 

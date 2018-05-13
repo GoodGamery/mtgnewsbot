@@ -10,3 +10,4 @@ aphorism
 adage
 prayer
 teaching
+slogan
