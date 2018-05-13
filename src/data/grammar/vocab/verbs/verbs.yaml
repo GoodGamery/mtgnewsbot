@@ -1,6 +1,6 @@
 {
   "verb": [ "#verbStrictlyTransitive#", "#verbStrictlyIntransitive#", "#verbBothTransitive#" ],
-  "verbTransitive": [ "#verbStrictlyTransitive#", "#verbStrictlyTransitive#", "#verbBothTransitive#" ],
+  "verbTransitive": [ "#verbStrictlyTransitive#", "#verbInceptiveTransitive#", "#verbStrictlyTransitive#", "#verbBothTransitive#" ],
   "verbStrictlyTransitive": [
     "control", "defeat", "hold", "capture", "handle", "understand", "wield", "carry", "water", "nourish", "question", "cradle",
     "cherish", "despise", "summon", "perceive", "realize", "explain", "ignore", "adorn", "capture", "release", "destroy", "realize",
@@ -9,23 +9,24 @@
     "cleanse", "corrupt", "punch", "kick", "slap", "pinch", "tickle", "devour", "lick", "poke", "contradict", "ridicule", "tease",
     "detect", "assemble", "seduce", "banish", "romance", "purify", "feed", "simplify", "snuff", "clear", "revive", "appraise", "charm",
     "annoy", "irritate", "perplex", "exasperate", "disrepsect", "murder", "eviscerate", "ambush", "besmirch", "harass", "massage",
-    "arm-wrestle", "swindle"
+    "arm-wrestle", "swindle", "injure"
   ],
-  "verbIntransitive": [ "#verbStrictlyIntransitive#", "#verbStrictlyIntransitive#", "#verbBothTransitive#" ],
+  "verbIntransitive": [ "#verbStrictlyIntransitive#", "#verbInceptiveIntransitive#", "#verbStrictlyIntransitive#", "#verbBothTransitive#" ],
   "verbStrictlyIntransitive": [
     "hesitate", "wonder", "snort", "chuckle", "weep", "run", "sleep", "brood", "occur", "materialize", "complain", "yawn",
     "belch", "emerge", "embroider", "scream", "dance", "collapse", "appear", "disappear", "sneeze", "arrive", "exist", "fall",
     "rise", "revolt", "smile", "smirk", "scowl", "awaken", "prevail", "descend", "retreat", "negotiate", "stare", "howl", "skulk",
     "snicker", "groan", "cough", "listen", "leave", "condescend", "wish", "shiver", "juggle", "crackle", "drip", "explode", "drool",
-    "snore", "equivocate", "starve", "lollygag", "pretend", "live", "think", "dream", "daydream", "pantomime", "suffer", "drool", "blink"
+    "snore", "equivocate", "starve", "lollygag", "pretend", "live", "think", "dream", "daydream", "pantomime", "suffer", "drool", "blink",
+    "rejoice", "wiggle", "breakdance"
   ],
   "verbBothTransitive": [
     "approach","shuffle", "kill", "observe", "grow", "swallow", "transform", "forget", "remember", "study", "misunderstand",
     "sacrifice", "collect", "celebrate", "exaggerate", "advertize", "deep-fry", "decorate", "fight", "burn", "gargle", "flee",
-    "worship", "sniff", "consume", "snuff", "clear", "revive", "consume", "see", "shave", "help"
+    "worship", "sniff", "consume", "snuff", "clear", "revive", "consume", "see", "shave", "help", "mourn"
   ],
   "verbPastTense": [ "#verbStrictlyTransitivePastTense#", "#verbStrictlyIntransitivePastTense#", "#verbBothTransitivePastTense#" ],
-  "verbTransitivePastTense": [ "#verbStrictlyTransitivePastTense#", "#verbStrictlyTransitivePastTense#", "#verbBothTransitivePastTense#" ],
+  "verbTransitivePastTense": [ "#verbStrictlyTransitivePastTense#", "#verbInceptiveTransitivePastTense#", "#verbStrictlyTransitivePastTense#", "#verbBothTransitivePastTense#" ],
   "verbStrictlyTransitivePastTense": [
     "controlled", "defeated", "held", "captured", "handled", "understood", "wielded", "carried", "watered", "nourished", "questioned", "cradled",
     "cherished", "despised", "summoned", "perceived", "realized", "explained", "ignored", "adorned", "captured", "released", "destroyed", "realized",
@@ -34,23 +35,24 @@
     "cleansed", "corrupted", "punched", "kicked", "slapped", "pinched", "tickled", "devoured", "licked", "poked", "contradicted", "ridiculed", "teased",
     "detected", "assembled", "seduced", "banished", "romanced", "purified", "fed", "simplified", "snuffed", "cleared", "revived", "appraised",
     "charmed", "annoyed", "irritated", "perplexed", "exasperated", "disrepsected", "murdered", "eviscerated", "ambushed", "besmirched", "harassed",
-    "massaged", "arm-wrestled", "swindled"
+    "massaged", "arm-wrestled", "swindled", "injured"
   ],
-  "verbIntransitivePastTense": [ "#verbStrictlyIntransitivePastTense#","#verbStrictlyIntransitivePastTense#", "#verbBothTransitivePastTense#" ],
+  "verbIntransitivePastTense": [ "#verbStrictlyIntransitivePastTense#", "#verbInceptiveIntransitivePastTense#", "#verbStrictlyIntransitivePastTense#", "#verbBothTransitivePastTense#" ],
   "verbStrictlyIntransitivePastTense": [
     "hesitated", "wondered", "snorted", "chuckled", "wept", "ran", "slept", "brooded", "occurred", "materialized", "complained", "yawned",
     "belched", "emerged", "embroidered", "screamed", "danced", "collapsed", "appeared", "disappeared", "sneezed", "arrived", "existed", "fell",
     "rose", "revolted", "smiled", "smirked", "scowled", "awakened", "prevailed", "descended", "retreated", "negotiated", "stared", "howled",  "skulked",
     "snickered", "groaned", "coughed", "listened", "left", "condescended", "wished", "shivered", "juggled", "dripped", "exploded", "drooled", "snored",
-    "equivocated", "starved", "lollygagged", "pretended", "lived", "thought", "dreamed", "daydreamed", "pantomimed", "suffered", "drooled", "blinked"
+    "equivocated", "starved", "lollygagged", "pretended", "lived", "thought", "dreamed", "daydreamed", "pantomimed", "suffered", "drooled", "blinked",
+    "rejoiced", "wiggled", "breakdanced"
   ],
   "verbBothTransitivePastTense": [
     "approached","shuffled", "killed", "observed", "grew", "swallowed", "transformed", "forgot", "remembered", "studied", "misunderstood",
     "sacrificed", "collected", "celebrated", "exaggerated", "advertized", "deep-fried", "decorated", "fought", "burned", "gargled", "fled",
-  	"worshipped", "sniffed", "consumed", "saw", "shaved", "helped"
+  	"worshipped", "sniffed", "consumed", "saw", "shaved", "helped", "mourned"
   ],
   "verbGerund": [ "#verbStrictlyTransitiveGerund#", "#verbStrictlyIntransitiveGerund#", "#verbBothTransitiveGerund#" ],
-  "verbTransitiveGerund": [ "#verbStrictlyTransitiveGerund#", "#verbStrictlyTransitiveGerund#", "#verbBothTransitiveGerund#" ],
+  "verbTransitiveGerund": [ "#verbStrictlyTransitiveGerund#", "#verbInceptiveTransitiveGerund#", "#verbStrictlyTransitiveGerund#", "#verbBothTransitiveGerund#" ],
   "verbStrictlyTransitiveGerund": [
     "controlling", "defeating", "holding", "capturing", "handling", "understanding", "wielding", "carrying", "watering", "nourishing", "questioning", "cradling",
     "cherishing", "despising", "summoning", "perceiving", "realizing", "explaining", "ignoring", "adorning", "capturing", "releasing", "destroying", "realizing",
@@ -59,20 +61,36 @@
     "cleansing", "corrupting", "punching", "kicking", "slapping", "pinching", "tickling", "devouring", "licking", "poking",, "contradicting", "ridiculing",
     "teasing", "detecting", "sacrificing", "collecting", "assembling", "seducing", "banishing", "romancing", "purifying", "feeding", "simplifying", "snuffing",
     "clearing", "reviving", "appraising", "charming", "annoying", "irritating", "perplexing", "exasperating", "disrepsecting", "murdering", "eviscerating", "ambushing",
-    "besmirching", "harassing", "massaging", "arm-wrestling", "swindling"
+    "besmirching", "harassing", "massaging", "arm-wrestling", "swindling", "injuring"
   ],
-  "verbIntransitiveGerund": [ "#verbStrictlyIntransitiveGerund#", "#verbStrictlyIntransitiveGerund#", "#verbBothTransitiveGerund#" ],
+  "verbIntransitiveGerund": [ "#verbStrictlyIntransitiveGerund#", "#verbInceptiveIntransitiveGerund#", "#verbStrictlyIntransitiveGerund#", "#verbBothTransitiveGerund#" ],
   "verbStrictlyIntransitiveGerund": [
     "hesitating", "wondering", "snorting", "chuckling", "weeping", "running", "sleeping", "brooding", "occurring", "materializing", "complaining", "yawning",
     "belching", "emerging", "embroidering", "screaming", "dancing", "collapsing", "appearing", "disappearing", "sneezing", "arriving", "existing", "falling",
     "rising", "revolting", "smiling", "smirking", "scowling", "awakening", "prevailing", "descending", "retreating", "negotiating", "staring", "howling", "skulking",
     "snickering", "groaning", "coughing", "listening", "leaving", "condescending", "wishing", "shivering", "juggling", "dripping", "exploding", "drooling", "snoring",
-    "equivocating", "starving", "lollygagging", "pretending", "living", "thinking", "dreaming", "daydreaming", "pantomiming", "suffering", "drooling", "blinking"
+    "equivocating", "starving", "lollygagging", "pretending", "living", "thinking", "dreaming", "daydreaming", "pantomiming", "suffering", "drooling", "blinking",
+    "rejoicing", "wiggling", "breakdancing"
   ],
   "verbBothTransitiveGerund": [
     "approaching","shuffling", "killing", "observing", "growing", "swallowing", "transforming", "forgetting", "remembering", "studying", "misunderstanding",
     "celebrating", "exaggerating", "pantomiming", "advertizing", "deep-frying", "decorating", "fighting", "burning", "gargling", "sniffing", "fleeing",
-    "worshipping", "consuming", "seeing", "shaving", "helping"
+    "worshipping", "consuming", "seeing", "shaving", "helping", "mourning"
+  ],
+
+  "verbBeat": [
+      "defeat",
+      "combat",
+      "prepare for",
+      "beat",
+      "overcome",
+      "crush",
+      "dominate",
+      "win against",
+      "overpower",
+      "outmaneuver",
+      "knock out",
+      "steal wins against"
   ],
 
   "verbDefeat": [
@@ -204,7 +222,7 @@
       "build a sideboard for the #deck# matchup",
       "crush noobs on MTGO",
       "cast a [_num:1#num1-5#]#_num#/#_num# with #keyword#[_discount:, for just #count# mana, for free]#_discount#",
-      "morph a #randomAnyCard",
+      "morph #randomAnyCard.a#",
       "gain enough pro points to travel to #city#",
       "finally beat Shandalar on hard mode",
       "secretly draw an extra card when using a fetchland",

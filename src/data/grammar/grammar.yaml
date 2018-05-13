@@ -21,6 +21,8 @@ headline:
 - "#mtgDeckTechGraphic#"
 - "#cardCallout#"
 - "#mtgoTwitterStyleHeadline#"
+- "#svgStreamerShowdown#"
+- "#svgPackOnePickOne#"
 
 oncePerDay:
   - "#cotdImage#"

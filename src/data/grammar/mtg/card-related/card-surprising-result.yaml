@@ -1,0 +1,23 @@
+cardSurprisingResult:
+- "it means there's a legendary #creatureTypes.capitalize# token to be had"
+- "it #_surprisingEffectively#[_allows:allows,enables]#_allows# you to play #cardCategory.a# for free"
+- "it's the only card in [_magic:Magic,the game]#_magic# that lets you #marginalThingToDo#"
+- "it can let you take up to #count# extra turns"
+- "you get to return it to your hand"
+- "you can combo it with [_cardlinkName:#cardAlone#]#_cotdHtmlCardLink#"
+- "it's going to be [_future:#rarity.a#,#rarity.a#,reprinted]#_future# in [_italicText:#teaserCardSet.capitalizeAll#]#_italicize#"
+- "it's [_surprisingColor:#_cardDescriptive1#,#_cardRarity1#,from #_cardSet1#][_technially:,technically ,actually ,secretly ,#_surprisingColor.a#]#_technially##cardCategoryTerm.lowercase.a#"
+- "it lets you #_surprisingEffectively##randomKeywordAction#"
+- "it enables you to #_surprisingEffectively##randomKeywordAction#"
+- "it[_wasAlmost: was almost, was nearly,was once ,used to be , 's]#_wasAlmost# banned in #constructedFormat#"
+
+_surprisingColor: 
+- "#mtgColors#"
+- "#rarity#"
+- "from #randomCardSet#"
+
+_surprisingEffectively:
+- ""
+- "effectively "
+- "basically "
+- "essentially "

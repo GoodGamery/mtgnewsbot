@@ -43,9 +43,43 @@ animal:
 - caribou
 - bee
 - llama
+- turtle
 - sea cucumber
 - sloth
 - warthog
+- octopus
+- rabbit
+- hedgehog
+- skunk
+
+animalSmall:
+- spider
+- spider
+- scorpion
+- tarantula
+- mole rat
+- snail
+- fruit bat
+- pigeon
+- lizard
+- squirrel
+- hermit crab
+- hummingbird
+- botfly
+- hamster
+- ostrich
+- carpenter ant
+- woodpecker
+- weasel
+- bee
+- llama
+- sea cucumber
+- frog
+- mouse
+- chipmunk
+- hamster
+- "tiny [_tinyAnimal:monkey,octopus,#animal#]#_tinyAnimal#"
+
 
 animalPlural: "#_animalPlural#[_fancyGroup:#_group#]"
 
@@ -98,4 +132,6 @@ _animalPlural:
 - "[_group:swarm]bees"
 - "[_group:colony]sea cucumbers"
 - "[_group:family]sloths"
+- "[_group:family]turtles"
 - "[_group:herd]warthogs"
+- "[_group:colony]octopi"

@@ -90,8 +90,21 @@ boomerang
 finger puppet
 strawberry
 beltbuckle
+toothpick
+toothbrush
+umbrella
+briefcase
+ironing board
+playing card
+shoehorn
+popsicle
+trophy
+ingot
+pebble
+figurine
 #massNoun# launcher
 #bodypart#
 #gameAccessory#
 #nounWeapon#
 #clothingOrAccessory#
+#nounFixture#

@@ -94,20 +94,36 @@ _duelDecksCardfinder:
 
 _duelDecksFontStyle:
   - >
-    [#_duelDecksStyleTextAllCaps#]
-    font-size:84px; white-space: nowrap; font-family:"FTY SKRADJHUWN NCV 1"; font-weight: bold; padding: 0;  line-height: 1.1em;  
+    [#_duelDecksStyleTextAllCaps#] 
+    font-size:84px; white-space: nowrap; font-family:"Orc Horde BB"; font-weight: normal; padding: 0;  line-height: 0.9em;
   - >
     [#_duelDecksStyleTextAllCaps#]
-    font-size:108px; white-space: nowrap; font-family:"Ravenscroft"; font-weight: bold; padding: 0;  line-height: 0.9em;  
+    font-size:108px; white-space: nowrap; font-family:"Ravenscroft"; font-weight: bold; padding: 0;  line-height: 0.9em;
   - >
-    [#_duelDecksStyleTextAllCaps#]  
-    font-size:72px; white-space: nowrap; font-family:Beleren; font-weight: bold; padding: 0;  line-height: 1em;
+    #_duelDecksFontStyle_Beleren#
   - >
-    [#_duelDecksStyleTextAllCaps#]  
-    font-size:72px; white-space: nowrap; font-family:Beleren; font-weight: bold; padding: 0;  line-height: 1em;
+    #_duelDecksFontStyle_Beleren#
   - >
-    [#_duelDecksStyleTextAllCaps#]  
-    font-size:72px; white-space: nowrap; font-family:Beleren; font-weight: bold; padding: 0;  line-height: 1em;
+    #_duelDecksFontStyle_FTY_SKRADJHUWN#
+  - >
+    #_duelDecksFontStyle_FTY_SKRADJHUWN#
+  - >
+    #_duelDecksFontStyle_WildBreathOfZelda#
+  - >
+    #_duelDecksFontStyle_WildBreathOfZelda#
+
+_duelDecksFontStyle_Beleren: 
+  - > 
+   [#_duelDecksStyleTextAllCaps#]  
+   font-size:72px; white-space: nowrap; font-family:Beleren; font-weight: bold; padding: 0;  line-height: 1em;
+_duelDecksFontStyle_FTY_SKRADJHUWN: 
+  - > 
+   [#_duelDecksStyleTextAllCaps#]
+   font-size:84px; white-space: nowrap; font-family:"FTY SKRADJHUWN NCV 1"; font-weight: bold; padding: 0;  line-height: 1.0em;
+_duelDecksFontStyle_WildBreathOfZelda: 
+  - >
+   [#_duelDecksStyleTextAllCaps#]
+   font-size:84px; white-space: nowrap; font-family:"The Wild Breath of Zelda"; font-weight: bold; padding: 0;  line-height: 1.0em;  
 
 _duelDecksLogoStyle: |
   <head>
@@ -121,7 +137,7 @@ _duelDecksLogoStyle: |
       span.vs-text
         << font-size:56px; >>
       span.combatant-two-text
-        <<  padding: 0 20px 20px 0; >>       
+        <<  padding: 0 20px 20px 0; >>      
       #_duelDecksLogoStyleEmbellished#
     </style>
   </head>
