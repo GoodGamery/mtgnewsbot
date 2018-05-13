@@ -140,7 +140,7 @@
       "[_cardA:#_card3#][_cardB:#_cardname#][_cardC:#_card2#]"
     ],
     "opalLayerEffect": [
-      "[#opalCardOrdering#]#rulesLayer.capitalize#: #_cardB# and #_cardC# each become [_became:creatures,#cardCategory.s#,#pluralNoun#]#_became# that are still #cardCategory.s# (#_cardA#).",
+      "[#opalCardOrdering#]#rulesLayer.capitalize#: #_cardB# and #_cardC# each become [_became:creatures,#cardCategory.s#,#pluralNoun#]#_became#[_still:, that are still #cardCategory.s# (#_cardA#)]#_still#.",
       "[#opalCardOrdering#][_stats:#opalPT#]#rulesLayer.capitalize#: #_cardB# becomes #_stats# and #_cardC# becomes #_stats# (#_cardA#)."
     ],
     "opalLayerEffectStack": [

@@ -78,6 +78,21 @@
     "worshipping", "consuming", "seeing", "shaving", "helping", "mourning"
   ],
 
+  "verbBeat": [
+      "defeat",
+      "combat",
+      "prepare for",
+      "beat",
+      "overcome",
+      "crush",
+      "dominate",
+      "win against",
+      "overpower",
+      "outmaneuver",
+      "knock out",
+      "steal wins against"
+  ],
+
   "verbDefeat": [
       "defeat",
       "beat",
@@ -207,7 +222,7 @@
       "build a sideboard for the #deck# matchup",
       "crush noobs on MTGO",
       "cast a [_num:1#num1-5#]#_num#/#_num# with #keyword#[_discount:, for just #count# mana, for free]#_discount#",
-      "morph a #randomAnyCard",
+      "morph #randomAnyCard.a#",
       "gain enough pro points to travel to #city#",
       "finally beat Shandalar on hard mode",
       "secretly draw an extra card when using a fetchland",
