@@ -1,5 +1,6 @@
 bang
 beep
+bellow
 bray
 buzz
 chime
@@ -11,12 +12,16 @@ crinkle
 flutter
 gurgle
 hiss
+honk
 hum
 jingle
+murmur
+pitter-patter
 plop
 pop
 rattle
 ring
+screech
 sizzle
 splash
 splat
@@ -25,6 +30,8 @@ squeak
 thud
 thump
 toot
+trumpet
+whimper
 whine
 whir
 whoosh

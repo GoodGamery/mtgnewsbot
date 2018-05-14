@@ -1,3 +1,12 @@
+exclamation:
+- "#exclamationSurprise#"
+- "#exclamationInspired#"
+- "#exclamationOminous#"
+- "#exclamationPopReference#"
+- "#mildEpithet#"
+- "#exasperatedLeadIn#"
+- "#mtgCatchphrase#"
+
 exclamationSurprise:
 - ahh
 - ow ow ow
@@ -40,6 +49,8 @@ exclamationPopReference:
 - I'm melting
 - I'll be back
 - you complete me
+- I've made a huge
+- "[_weirdFood:meat's,milk's,eggs are][_foodIs:meat,eggs are,milk is,#liquid#'s,#creatureTypes# #_weirdFood#]#_foodIs# back on the menu, boys"
 - "we'll always have #randomMtgLocation#"
 
 mildEpithet:

@@ -115,5 +115,6 @@ hay
 grass
 gravel
 mutton
+fertilizer
 #liquid#
 #creatureTypes# [_food:meat,milk,eggs,juice]#_food#

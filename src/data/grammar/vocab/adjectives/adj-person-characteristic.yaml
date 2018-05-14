@@ -21,6 +21,13 @@ adjPersonCharacteristic:
 - shrewd
 - incorrigible
 - charming
+- innocent
+- guilty
+- trustworthy
+- reliable
+- sneaky
+- arrogant
+- manipulative
 - "#adj#"
 - "#adjValue#"
 
@@ -46,6 +53,11 @@ adjPersonCharacteristicComparative:
 - more unpredictable
 - more incorrigible
 - more charming
+- more trustworthy
+- more reliable
+- sneakier
+- more arrogant
+- more manipulative
 - "#adjComparative#"
 
 adjPersonCharacteristicSuperlative:
@@ -70,4 +82,9 @@ adjPersonCharacteristicSuperlative:
 - most unpredictable
 - most incorrigible
 - most charming
+- most trustworthy
+- most reliable
+- sneakiest
+- most arrogant
+- most manipulative
 - "#adjSuperlative#"

@@ -134,7 +134,9 @@
     "tongues"
   ],
 
-  "bodypartsInternal": [
+  "bodypartsInternal": "#_bodypartsInternal#[_outOff:out]",
+
+  "_bodypartsInternal": [
     "heart[_isAre:is]",
     "eyes[_isAre:are]",
     "stomach[_isAre:is]",
@@ -152,7 +154,9 @@
     "bellybutton[_isAre:is]"
   ],
 
-  "bodypartsExternal": [
+  "bodypartsExternal": "#_bodypartsExternal#[_outOff:off]",
+
+  "_bodypartsExternal": [
     "head[_isAre:is]",
     "nose[_isAre:is]",
     "ears[_isAre:are]",
@@ -180,5 +184,9 @@
     "lips[_isAre:are]",
     "eyebrows[_isAre:are]",
     "keister[_isAre:is]"
+  ],
+  "bodypartsInternalExternal": [
+    "#bodypartsInternal#",
+    "#bodypartsExternal#"
   ]
 }

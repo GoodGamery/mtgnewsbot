@@ -10,3 +10,6 @@ aphorism
 adage
 prayer
 teaching
+slogan
+superstition
+fable

@@ -7,7 +7,7 @@ mtgDraftMnemonic: >
   [_limitedCardUnderOver:overrated,underrated,underpowered,overpowered,underwhelming]
   [_numberC:two,three,four,five,six,seven][_numberOf:two,three,four]  
   [_limitedCardHard:bombs,removal,chase rares,curve-toppers,disruption,deck thinning,dual lands,fixing,foils,foil #rarity.s#,milling,creatures,threats,vanilla creatures,card draw,cantrips,chump blockers,counters,fast mana,finishers,goof grabs,ground pounders,jank,junk rares,basic lands,bricks,beaters,tips and tricks cards,tokens,tradebait,virtual time walks,#_numberC#-drops,#_numberOf#-ofs]
-  [_limitedCardSoft:removal,lifegain,land,weenies,ramp spells,hatedrafts,signals,#_threatAdjConsonant# threats]
+  [_limitedCardSoft:removal,lifegain,land,weenies,ramp spells,hate picks,signals,#_threatAdjConsonant# threats]
   [_limitedCardVowel:acceleration,anthems,aggro,artifacts,edicts,enchantments,engine cards,hosers,inevitability,instants,one-ofs,utility creatures,utility lands,one-drops,eight-drops,#_limitedCardUnderOver# cards]
   [_someWord:#cardCategory.s#,#cardCategoryClassTerm#,#creatureTypes.s#,#cardQuality# cards,#pro#'s pick order]
   [_firstWord1:#_limitedCardHard#,#_limitedCardSoft#][_secondWord1:#_limitedCardVowel#][_thirdWord1:#_limitedCardHard#,#_limitedCardSoft#][_fourthWord1:#_limitedCardVowel#][_fifthWord1:#_limitedCardHard#,#_limitedCardSoft#,#_someWord#]

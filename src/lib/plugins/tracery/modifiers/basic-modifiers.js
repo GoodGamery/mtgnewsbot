@@ -179,6 +179,9 @@ function stripLeadingText(s, params) {
   return s.startsWith(leadingText) ? s.replace(leadingText,'') : s;
 }
 
+function trim(s) {
+  return s && s.trim();
+}
 
 // converts a whole number string to its english equivalent. currently supports only 0-99
 function wholeNumberToText(s) {
@@ -224,5 +227,6 @@ module.exports = {
   sAgreement,
   sIfNeeded,
   stripLeadingText,
+  trim,
   wholeNumberToText
 };

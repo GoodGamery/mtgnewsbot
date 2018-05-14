@@ -1,0 +1,11 @@
+rune
+ward
+glyph
+orb
+charm
+hex
+enchantment
+mark
+talisman
+glamour
+nimbus
