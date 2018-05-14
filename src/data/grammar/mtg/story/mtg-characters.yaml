@@ -37,9 +37,8 @@
       "Yawgmoth#malePronouns#"
   ],
     "planeswalkerFullName": [
-      "Admiral Beckett Brass#femalePronouns#",
       "Ajani Goldmane#malePronouns#",
-      "Angrath, Minotaur Pirate#malePronouns",
+      "Angrath, Minotaur Pirate#malePronouns#",
       "Ashiok, Nightmare Weaver#pluralPronouns#",
       "Chandra Nalar#femalePronouns#",
       "Dack Fayden#malePronouns#",
@@ -72,6 +71,7 @@
       "Yawgmoth#malePronouns#"
   ],
   "nonPlaneswalkerCharacter": [
+      "Admiral Beckett Brass#femalePronouns#",
       "Adun Oakenshield#malePronouns#",
       "Alesha#femalePronouns#",
       "Akroma#femalePronouns#",
@@ -81,7 +81,7 @@
       "Baron Sengir#malePronouns#",
       "Belbe#femalePronouns#",
       "Belzenlok#malePronouns#",
-      "Borborygmos#malePronouns#",,
+      "Borborygmos#malePronouns#",
       "Chandler#malePronouns#",
       "Commander Eesha#femalePronouns#",
       "Crovax#malePronouns#",

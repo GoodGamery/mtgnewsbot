@@ -9,7 +9,7 @@
     "cleanse", "corrupt", "punch", "kick", "slap", "pinch", "tickle", "devour", "lick", "poke", "contradict", "ridicule", "tease",
     "detect", "assemble", "seduce", "banish", "romance", "purify", "feed", "simplify", "snuff", "clear", "revive", "appraise", "charm",
     "annoy", "irritate", "perplex", "exasperate", "disrepsect", "murder", "eviscerate", "ambush", "besmirch", "harass", "massage",
-    "arm-wrestle", "swindle", "injure"
+    "arm-wrestle", "swindle", "injure", "#verbExitinguishGeneric#", "#verbExitinguishSpecific#"
   ],
   "verbIntransitive": [ "#verbStrictlyIntransitive#", "#verbInceptiveIntransitive#", "#verbStrictlyIntransitive#", "#verbBothTransitive#" ],
   "verbStrictlyIntransitive": [
@@ -18,7 +18,7 @@
     "rise", "revolt", "smile", "smirk", "scowl", "awaken", "prevail", "descend", "retreat", "negotiate", "stare", "howl", "skulk",
     "snicker", "groan", "cough", "listen", "leave", "condescend", "wish", "shiver", "juggle", "crackle", "drip", "explode", "drool",
     "snore", "equivocate", "starve", "lollygag", "pretend", "live", "think", "dream", "daydream", "pantomime", "suffer", "drool", "blink",
-    "rejoice", "wiggle", "breakdance"
+    "rejoice", "wiggle", "breakdance", "shudder",  "piorouette", "concentrate", "panic", "worry", "frown", "gulp", "sigh", "spit"
   ],
   "verbBothTransitive": [
     "approach","shuffle", "kill", "observe", "grow", "swallow", "transform", "forget", "remember", "study", "misunderstand",
@@ -44,7 +44,7 @@
     "rose", "revolted", "smiled", "smirked", "scowled", "awakened", "prevailed", "descended", "retreated", "negotiated", "stared", "howled",  "skulked",
     "snickered", "groaned", "coughed", "listened", "left", "condescended", "wished", "shivered", "juggled", "dripped", "exploded", "drooled", "snored",
     "equivocated", "starved", "lollygagged", "pretended", "lived", "thought", "dreamed", "daydreamed", "pantomimed", "suffered", "drooled", "blinked",
-    "rejoiced", "wiggled", "breakdanced"
+    "rejoiced", "wiggled", "breakdanced", "shuddered",  "piorouetted", "concentrated", "panicked", "worried", "frowned", "gulped", "sighed", "spat"
   ],
   "verbBothTransitivePastTense": [
     "approached","shuffled", "killed", "observed", "grew", "swallowed", "transformed", "forgot", "remembered", "studied", "misunderstood",
@@ -70,7 +70,7 @@
     "rising", "revolting", "smiling", "smirking", "scowling", "awakening", "prevailing", "descending", "retreating", "negotiating", "staring", "howling", "skulking",
     "snickering", "groaning", "coughing", "listening", "leaving", "condescending", "wishing", "shivering", "juggling", "dripping", "exploding", "drooling", "snoring",
     "equivocating", "starving", "lollygagging", "pretending", "living", "thinking", "dreaming", "daydreaming", "pantomiming", "suffering", "drooling", "blinking",
-    "rejoicing", "wiggling", "breakdancing"
+    "rejoicing", "wiggling", "breakdancing", "shuddering",  "piorouetting", "concentrating", "panicking", "worrying", "frowning", "gulping", "sighing", "spitting"
   ],
   "verbBothTransitiveGerund": [
     "approaching","shuffling", "killing", "observing", "growing", "swallowing", "transforming", "forgetting", "remembering", "studying", "misunderstanding",

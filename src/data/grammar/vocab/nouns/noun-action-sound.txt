@@ -30,7 +30,7 @@ squeak
 thud
 thump
 toot
-trumpeting
+trumpet
 whimper
 whine
 whir
