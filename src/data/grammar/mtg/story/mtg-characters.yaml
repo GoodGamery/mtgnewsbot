@@ -5,6 +5,7 @@
   ],
   "planeswalkerFirstName": [
       "Ajani#malePronouns#",
+      "Angrath#malePronouns#",
       "Ashiok#pluralPronouns#",
       "Chandra#femalePronouns#",
       "Dack#malePronouns#",
@@ -36,7 +37,9 @@
       "Yawgmoth#malePronouns#"
   ],
     "planeswalkerFullName": [
+      "Admiral Beckett Brass#femalePronouns#",
       "Ajani Goldmane#malePronouns#",
+      "Angrath, Minotaur Pirate#malePronouns",
       "Ashiok, Nightmare Weaver#pluralPronouns#",
       "Chandra Nalar#femalePronouns#",
       "Dack Fayden#malePronouns#",
@@ -110,7 +113,9 @@
       "Norin#malePronouns#",
       "Purphoros#malePronouns#",
       "Purraj of Urborg#femalePronouns#",
+      "Raff Capashen#malePronouns#",
       "Saffi Eriksdotter#femalePronouns#",
+      "Shauku, Endbringer#femalePronouns#",
       "Sisay#femalePronouns#",
       "Slimefoot#malePronouns#",
       "Sol'kanar the Swamp King#malePronouns#",
@@ -120,6 +125,7 @@
       "Tasigur#malePronouns#",
       "Tawnos#malePronouns#",
       "Thassa#femalePronouns#",
+      "Toshiro Umezawa#malePronouns#",
       "Tsabo Tavoc#femalePronouns#",
       "Vinz Clortho#malePronouns#",
       "Volrath#malePronouns#",
@@ -210,6 +216,7 @@
   	"elder",
   	"evincar",
     "heretic",
+    "initiate",
   	"lunarch",
   	"noble",
     "royal [_position:#characterClass#,#characterProfession#]#_position#",
@@ -238,6 +245,8 @@
     "caller",
     "chief",
     "crafter",
+    "duke",
+    "dutchess",
     "hunter",
     "keeper",
     "master",
@@ -254,6 +263,7 @@
   ],
   "characterProfession": [
     "architect",
+    "archivist",
     "armorer",
     "astronomer",
     "baliff",
@@ -272,15 +282,19 @@
     "headsman",
     "magistrate",
     "metalworker",
+    "scholar",
     "scrivener",
+    "storyteller",
     "tailor",
     "tax collector",
     "undertaker",
     "woodworker",
+    "#animal# trainer",
     "#nounCompoundWorthy#wright"
   ],
   "wizardSubclass": [
     "mutationist",
+    "[_element:fire,wind,tide,stone]#nounCompoundWorthy##_element# mystic",
     "#nounCompoundWorthy#weaver",
     "#massNoun#mancer",
     "#placeNoun# witch",
@@ -292,7 +306,9 @@
     "ordinar",
     "sective",
     "tactician",
-    "veteran"
+    "veteran",
+    "whisperer",
+    "#massNoun# rider"
   ],
   "characterRace": [
   	"akki",

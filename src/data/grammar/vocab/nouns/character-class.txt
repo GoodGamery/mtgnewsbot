@@ -185,6 +185,8 @@ turncoat
 deserter
 taskmaster
 surgeon
+#characterProfession#
+#minorCharacterClass#
 #playerCategory#
 #personAuthorityFigure#
 #personRelational#

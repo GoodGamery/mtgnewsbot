@@ -124,6 +124,8 @@ disapproval
 opposition
 forgery
 employment
+civilaztion
+friendship
 #massNoun# magic
 #nounStateOfBeing#
 #nounStateOfBeing#

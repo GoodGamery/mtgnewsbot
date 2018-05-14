@@ -40,3 +40,4 @@ bone
 chair
 ring
 soul
+stone
