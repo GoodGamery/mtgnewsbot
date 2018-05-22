@@ -10,7 +10,8 @@ echo $PATH
 node -v
 
 # install fonts
-cp ./src/data/fonts/*.{ttf,otf} /usr/local/share/fonts
+cp ./src/data/fonts/*.ttf /usr/local/share/fonts
+cp ./src/data/fonts/*.otf /usr/local/share/fonts
 
 # install dependencies
 npm install --production
