@@ -2,6 +2,7 @@ adjColorOrTexture:
 - "#adjColor#"
 - "#adjTexture#"
 - "#adjPattern#"
+- "#adjColorPattern#"
 
 adjTexture:
 - shiny
@@ -12,7 +13,11 @@ adjTexture:
 - chainmail
 - flimsy
 - leather
+- stippled
 - vinyl
+- gossamer
+- barbed
+
 
 adjPattern:
 - pinstriped
@@ -22,13 +27,31 @@ adjPattern:
 - plaid
 - agyle
 
-adjColor:
-- silver
-- black
-- white
-- blue
-- red
-- yellow
-- crimson
+adjColorPattern:
+- ashen
+- brilliant
+- dim
+- chromatic
+- glowing
+- opalescent
+- opaline
+- pearly
+- prismatic
+- shiny
+- sparkly
+- sun-bleached
+- transulcent
 
+adjColor:
+- amber
+- black
+- blue
+- crimson
+- indigo
+- red
+- scarlet
+- silver
+- vermillion
+- white
+- yellow
 

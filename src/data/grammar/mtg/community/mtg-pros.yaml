@@ -289,7 +289,8 @@
     "[_domain:#creatureTypes#,#itemNoun#]#_domain.capitalizeAll# Dot Com",
     "MTG Salvation Dot Com",
     "Good Gamery Dot Com",
-    "Brainburst Dot Com"
+    "Brainburst Dot Com",
+    "[_othersite:Zombo,Misetings,Sideboard,Gleemax]#_othersite# Dot Com"
   ],
   "otherTeamPrefix": [
     "#cardCategory.capitalizeAll#",

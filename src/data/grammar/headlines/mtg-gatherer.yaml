@@ -70,15 +70,6 @@
       "[_action:keep your eyes closed,keep your fingers crossed,refrain from touching the table,hold your breath,remain expressionless,remain completely silent,keep talking,keep your hands below the table][_firstAction:Must #_action#][_and:][_all:,][_while:until][_finished: finished ][_interim:until then][_secondAction:]"
     ],
 
-    "somePlayer": [
-     "the active player",
-     "the nonactive player",
-     "the #adjPersonCharacteristicSuperlative# player",
-     "#person#",
-     "your #personRelationalUnique#",
-     "[_deckAdj:best,worst,most expensive,most original,most competitive,largest,#adjSuperlative#]the player with the #_deckAdj# deck"
-    ],
-
     "gathererTextRare": [
         "the effect [_verb:is,isn't,might be,is probably]#_verb# [_description:cumulative,uncounterable,#cardOrEffectAdj#]#_description#.",
         "you can't interfere in any physical way with the casting of this card.",

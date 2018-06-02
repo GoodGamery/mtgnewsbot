@@ -66,6 +66,22 @@ searchableCardCategoryCustomQuery:
   [_cardCategory:draw spell][_cardCategoryClass:card draw][_customQuery:t=instant t|=sorcery text="draw" text="cards"]
  - >
   [_borderColors:black,silver,white][_borderColor:#_borderColors#][_cardCategory:#_borderColor#-bordered card][_cardCategoryClass:#_cardCategory.s#][_customQuery:border=#_borderColor#]
+ - >
+  #searchableLayoutCategory#
+
+searchableLayoutCategory:
+ - >
+  [_cardCategory:split card][_cardCategoryClass:#_cardCategory#][_customQuery:layout=split]
+ - >
+  [_cardCategory:flip card][_cardCategoryClass:#_cardCategory#][_customQuery:layout=flip]
+ - >
+  [_cardCategory:double-faced card,transform card][_cardCategoryClass:#_cardCategory#][_customQuery:layout=double-faced]
+ - >
+  [_cardCategory:level-up card][_cardCategoryClass:#_cardCategory#][_customQuery:layout=leveler]
+ - >
+  [_cardCategory:aftermath card][_cardCategoryClass:#_cardCategory#][_customQuery:layout=aftermath]
+ - >
+  [_cardCategory:token][_cardCategoryClass:#_cardCategory#][_customQuery:layout=token]
 
 cardCategoryTerm: 
 - "[#searchableCardCategory#]#_cardCategory#"

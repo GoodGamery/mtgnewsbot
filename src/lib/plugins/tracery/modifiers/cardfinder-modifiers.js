@@ -404,6 +404,8 @@ async function cardFinderSearch(query, params, additionalFields) {
         name += ' Token';
       } else if (card.layout === 'vanguard') {
         name += ' Avatar';
+      } else if (card.layout === 'split' || card.layout === 'aftermath') {
+        name = card.names ? card.names.reduce((fullName, name) => fullName.length === 0 ? name : `${fullName} // ${name}`) : card.name;
       }
 
       const prefix = TRACERY_LABEL_PREFIX;

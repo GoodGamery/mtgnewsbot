@@ -1,3 +1,50 @@
 # bug fix: #card# no longer displays the rules text for nonlandCard | [it now displays the rules text for nonlandCard2 | although it still works as if it does | because it no longer displays any rules text (at all)]
 
 # bug / fix: [_searchTerm:creatures you control][_searchTermReplacement:#cardCategoryOrCreatureType#s you control, creatures <your opponent controls | etc.>]#card# now correctly reads #_searchTerm# instead of #__searchTermReplacement#.
+
+# Split cards such as Cut // Ribbons are reported as 3 cards in the chat log.
+# -> [searchableCardClass such as _cardname are| are no longer #cardfate#]
+# -> []
+
+bugBlogIs: is
+bugBlogAre: are
+bugBlogCurrently: currently
+
+bugBlogKnownIssue: "[bugBlogIs:is][bugBlogAre:are][bugBlogCurrently:currently]"
+bugBlogChangeLog: "[bugBlogIs:is no longer][bugBlogAre:are no longer][bugBlogCurrently:now,finally]"
+bugBlogChangeLogFixed: "[bugBlogIs:is now,is now,is now correctly][bugBlogAre:are now,are now,are now correctly]"
+
+bugBlogEntry:
+- "[#randomLayoutOrCategoryCard#]#_cardCategory.s# [_like:such as]#_like# #_cardName# #bugBlogAre# #bugBlogFate#"
+
+bugBlogFate:
+- "#bugBlogCurrently# legal in #format#"
+- "treated as #bugBlogCardPossibilityPlural# in the chat log"
+
+randomLayoutOrCategoryCard:
+- "#randomLayoutCard#"
+- "#randomCategoryCard#"
+
+bugBlogCategory:
+- Deckbuilding
+- Duel Scene
+- General
+- Gameplay
+- Play Lobby
+- Trade
+
+ownedControlled:
+- owned
+- cotrolled
+
+bugBlogCardPossibilityPlural:
+- face-down cards
+- untradeable
+- untargetable
+- morphed cards
+- hidden cards
+- epic spells
+- "#cardCopyCount# card#s#"
+- "having #cardCopyCount# target#s#"
+- "#ownedControlled# by #somePlayer#"
+- "#alwaysSometimes# targeting #ownedControlled# by #somePlayer#"

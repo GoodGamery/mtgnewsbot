@@ -1,0 +1,7 @@
+somePlayer
+the active player
+the nonactive player
+the #adjPersonCharacteristicSuperlative# player
+#person#
+your #personRelationalUnique#
+[_deckAdj:best,worst,most expensive,most original,most competitive,largest,#adjSuperlative#]the player with the #_deckAdj# deck

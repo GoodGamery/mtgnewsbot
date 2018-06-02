@@ -62,4 +62,5 @@ Darksteel [#cardQueryOneWordNoncreatureArtifact#]#_cardName#
 Snow-Covered #randomRealCard#
 [_jarContents:#bodypart#,#bodypart#,#singularNoun#]#_jarContents.capitalize# in a Jar
 Form of the #creatureTypes.capitalize#
+Release the [_liberated:#creatureTypes.s#,#animalPlural#]#_liberated.capitalizeAll#
 Circle of Protection: [_someNoun:#abstractNoun#,#emotion#,#massNoun#,#pluralNoun#][_what:#creatureTypes.s#,#cardCategory.s#,#_someNoun#]#_what.capitalizeAll#
