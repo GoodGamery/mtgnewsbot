@@ -1,0 +1,3 @@
+# bug fix: #card# no longer displays the rules text for nonlandCard | [it now displays the rules text for nonlandCard2 | although it still works as if it does | because it no longer displays any rules text (at all)]
+
+# bug / fix: [_searchTerm:creatures you control][_searchTermReplacement:#cardCategoryOrCreatureType#s you control, creatures <your opponent controls | etc.>]#card# now correctly reads #_searchTerm# instead of #__searchTermReplacement#.
