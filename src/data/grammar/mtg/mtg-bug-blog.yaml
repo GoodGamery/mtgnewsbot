@@ -15,15 +15,44 @@ bugBlogChangeLog: "[bugBlogIs:is no longer][bugBlogAre:are no longer][bugBlogCur
 bugBlogChangeLogFixed: "[bugBlogIs:is now,is now,is now correctly][bugBlogAre:are now,are now,are now correctly]"
 
 bugBlogEntry:
-- "[#randomLayoutOrCategoryCard#]#_cardCategory.s# [_like:such as]#_like# #_cardName# #bugBlogAre# #bugBlogFate#"
+- "[#randomLayoutOrCategoryCard#]#_cardCategory.s# [_like:such as]#_like# #_cardName# #bugBlogFate#"
+- "#bugBlogCardTextIssue#"
 
 bugBlogFate:
-- "#bugBlogCurrently# legal in #format#"
-- "treated as #bugBlogCardPossibilityPlural# in the chat log"
+- "[_legal:legal,banned,restricted,not legal][_treated:treated as,considered]#bugBlogAre# #bugBlogCurrently# #_treated# #_legal# in #popularFormat#"
+- "[_while:while,if,unless][_client:engine,client][_whereWhen:in the chat log,by the game engine,in #gameClass#,#_while# they're #cardLocation#,in the preview window]#bugBlogAre# [_treated:treated,depicted]#_treated# as #bugBlogCardPossibilityPlural# #_whereWhen#"
+
+bugBlogCardTextIssue:
+  - "[#neutralPronouns#][#cardSearch_permanentCreateToken#]#_cardName# does not create #_tokenType.a# token if #permanentPassiveEffect# #effectWhileCondition#"
+  - "[#neutralPronouns#][#cardSearch_permanentCreateToken#][_effect:creates #creatureTypes.capitalize# tokens instead of,#permanentActiveEffect# instead of creating]#_cardName# currently #_effect# #_tokenType.capitalize# tokens"
+
+gameClass:
+  - "post-sideboard games"
+  - "[_league:draft,friendly constructed,competitive #popularFormat#,premiere,release event sealed,phantom draft]#_league# leagues"
+  - "[_queue:constructed two-player,two-player #popularFormat]#_queue# queues"
+  - "MOCS [_type:monthly,playoff,championship]#_type# events"
+
+permanentPassiveEffect:
+- it dies
+- it's exiled
+- "it's #cardState#"
+- it's put onto the battlefield
+- "it's targeted by #targetSource.a#"
+
+permanentActiveEffect:
+- "[_reduced:#spellType.s#,spells #mtgSomePlayer# control#s#]reduces the cost of #_reduced#"
+- "#keywordCardAction.s# [_what:itself,itself,a random permanent,a random permanent,the last #cardPermanentType# to enter the battlefield]#_what#"
+
+effectWhileCondition:
+- "with #their# ability on the stack"
+- "[_when:before,after,on,during]#_when# the #xth# turn of the game"
+- "[_if:unless,and,after,before][_moreThan:more than,less than,exactly]#_if# #_moreThan# #cardCopyCount# spell#s# have been cast this turn"
+- "[_whoControls:you control,your opponent controls,either player controls,#mtgSomePlayer# control#s#][_what:#cardPermanentType#,#basicColors# #cardPermanentType#,#cardState# #cardPermanentType#]while #_whoControls# #_what.a#"
 
 randomLayoutOrCategoryCard:
 - "#randomLayoutCard#"
 - "#randomCategoryCard#"
+# - "[_color:#searchableBasicColor#]#_color# #randomCategoryCard#[_cardCategory:#_color# #_cardCategory#]"
 
 bugBlogCategory:
 - Deckbuilding
@@ -37,14 +66,18 @@ ownedControlled:
 - owned
 - cotrolled
 
+alwaysSometimes:
+- always
+- sometimes
+
 bugBlogCardPossibilityPlural:
 - face-down cards
-- untradeable
 - untargetable
 - morphed cards
 - hidden cards
 - epic spells
-- "#cardCopyCount# card#s#"
+- "copies of #randomRealCard#"
+- "[_howMany:two cards,multiple cards,#cardCopyCount# card#s#]#_howMany#"
 - "having #cardCopyCount# target#s#"
-- "#ownedControlled# by #somePlayer#"
-- "#alwaysSometimes# targeting #ownedControlled# by #somePlayer#"
+- "if they are #ownedControlled# by #mtgSomePlayer#"
+- "#alwaysSometimes# targeting #mtgSomePlayer#"

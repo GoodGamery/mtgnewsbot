@@ -1,0 +1,10 @@
+instant
+instant
+sorcery
+sorcery
+artifact spell
+creature spell
+enchantment spell
+planeswalker spells
+#basicColors# spells
+[_other:aura,vehicle,equipment,saga]#_other# spells

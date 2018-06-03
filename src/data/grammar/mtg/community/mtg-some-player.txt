@@ -1,7 +1,10 @@
-somePlayer
-the active player
-the nonactive player
-the #adjPersonCharacteristicSuperlative# player
-#person#
-your #personRelationalUnique#
-[_deckAdj:best,worst,most expensive,most original,most competitive,largest,#adjSuperlative#]the player with the #_deckAdj# deck
+the active player[s:s]
+the nonactive player[s:s]
+a random player[s:s]
+both players[s:]
+any player[s:s]
+a player in another game[s:s]
+your previous opponent[s:s]
+the #adjPersonCharacteristicSuperlative# player[s:s]
+[_unusual:Floral Spuzzem,GLEEMAX,your #personRelationalUnique#,#person#]#_unusual#[s:s]
+[_deckAdj:best,worst,most expensive,most original,most competitive,largest,#adjSuperlative#]the player with the #_deckAdj# deck[s:s]

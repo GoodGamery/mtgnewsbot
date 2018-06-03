@@ -410,6 +410,10 @@ async function cardFinderSearch(query, params, additionalFields) {
 
       const prefix = TRACERY_LABEL_PREFIX;
 
+      // match given string, set an enumerated field to the value of each '$'
+      const cardTextMatches = params[2] && card.text && (card.text.match(new RegExp(params[2].replace(/\$/g, '(.+)'), 'i')) || []).slice(1)
+        .reduce((list, match, index) => `${list}[${prefix}TextMatch${index+1}_${i}:${match}]`, '');
+
       finalResult = finalResult.concat(
         `[${prefix}Name${i}:${name}]`,
         `[${prefix}RawName${i}:${rawName}]`,
@@ -431,7 +435,8 @@ async function cardFinderSearch(query, params, additionalFields) {
         someCreatureType ? `[${prefix}SomeCreatureType${i}:${someCreatureType}]` : '', 
         color ? `[${prefix}Color${i}:${color}]` : '',             
         colorClass ? `[${prefix}ColorClass${i}:${colorClass}]` : '',
-        someColor ? `[${prefix}SomeColor${i}:${someColor}]`: ''
+        someColor ? `[${prefix}SomeColor${i}:${someColor}]`: '',
+        cardTextMatches ? cardTextMatches : ''        
       );
 
       if (additionalFields) {

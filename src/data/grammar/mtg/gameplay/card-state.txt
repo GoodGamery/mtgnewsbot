@@ -6,7 +6,7 @@ morphed
 unmorphed
 transformed
 face-up
-faced-down
+face-down
 phased in
 phased out
 revealed

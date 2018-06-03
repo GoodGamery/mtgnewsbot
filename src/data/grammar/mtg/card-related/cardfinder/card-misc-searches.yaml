@@ -1,0 +1,6 @@
+cardSearch_permanentCreateToken:
+ -> 
+  [_cardTextMatch2_1:#creatureTypes.capitalize#]
+  [_customQuery:text="create" text="creature token" t!=instant t!=sorcery]
+  [#_customQuery.cardSearchCustomQuery(1,undefined,create $ $ creature token)#]
+  [_cardName:#_cardName1#][_tokenType:#_cardTextMatch2_1#]

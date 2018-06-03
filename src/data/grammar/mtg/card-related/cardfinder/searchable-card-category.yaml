@@ -27,7 +27,7 @@ searchableCardCategory:
 
 searchableCardCategoryCustomQuery:
  - >
-  [_cardCategory:mana dork][_cardCategoryClass:mana dorks][_customQuery:text=pool t=creature cmc=<3]
+  [_cardCategory:mana dork][_cardCategoryClass:mana dorks][_customQuery:text=add t=creature cmc=<3]
  - >
   [_cardCategory:weenie][_cardCategoryClass:weenies][_customQuery:pow=1 tou=1]
  - >
@@ -82,6 +82,11 @@ searchableLayoutCategory:
   [_cardCategory:aftermath card][_cardCategoryClass:#_cardCategory#][_customQuery:layout=aftermath]
  - >
   [_cardCategory:token][_cardCategoryClass:#_cardCategory#][_customQuery:layout=token]
+
+# relatively specific categories which may return a limited result set. may not work with color search terms
+searchableCardCategorySpecificCustomQuery:
+  - >
+    [_cardCategory:clone][_cardCategoryClass:#_cardCategory#][_customQuery:t=creature text="as a copy of"]
 
 cardCategoryTerm: 
 - "[#searchableCardCategory#]#_cardCategory#"
