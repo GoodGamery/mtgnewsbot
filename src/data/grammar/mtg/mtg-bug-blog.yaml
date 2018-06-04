@@ -27,9 +27,11 @@ bugBlogEntry:
 
 bugBlogEntrySimple:
 - "[_when:,,sometimes ,randomly ][_noFunction:does not have any effect when cast,does not function]#randomInstantOrSorceryCard# #_when##_noFunction#"
-- "#randomCardExcludeBasics# [_only:,only ]#_only#functions [_where:from the graveyard,#cardLocation#]#_where#"
+- "#randomCardExcludeBasics# [_only:,only ]#_only#functions [_where:from the graveyard,#cardLocationFrom#]#_where#"
 - "#randomInstantOrSorceryCard# #bugBlogBadSpellResult# unless #bugBlogCardCastException#"
 - "#randomNonlandCard# can [_be:be ,only be,also be]#_be# cast from [_whose:the,your,its owner's][_where:library,sideboard,graveyard]#_whose# [_whereIf:#_where#,#_where#,#_where# if #bugBlogCardCastException#]#_whereIf#"
+
+cardLocationFrom: "#cardLocation.replace(in ,from )#"
 
 bugBlogBadSpellResult:
 - is immediately exiled with no effect
