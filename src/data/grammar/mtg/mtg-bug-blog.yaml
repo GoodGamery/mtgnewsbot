@@ -6,6 +6,12 @@
 # -> [searchableCardClass such as _cardname are| are no longer #cardfate#]
 # -> []
 
+# card costs {random mana or other cost} instead of its expected mana cost
+
+# incorrectly prevents ...
+# wrong frame (frame color) / border
+# a workaround is [zooming in on the token]
+
 bugBlogIs: is
 bugBlogAre: are
 bugBlogCurrently: currently
@@ -15,11 +21,35 @@ bugBlogChangeLog: "[bugBlogIs:is no longer][bugBlogAre:are no longer][bugBlogCur
 bugBlogChangeLogFixed: "[bugBlogIs:is now,is now,is now correctly][bugBlogAre:are now,are now,are now correctly]"
 
 bugBlogEntry:
-- "[#randomLayoutOrCategoryCard#]#_cardCategory.s# [_like:such as]#_like# #_cardName# #bugBlogFate#"
+- "[#randomLayoutOrCategoryCard#][_all:,,all ,all ,some ]#_all##_cardCategory.s# [_like:such as]#_like# #_cardName# #bugBlogFate#"
 - "#bugBlogCardTextIssue#"
+- "#bugBlogEntrySimple#"
+
+bugBlogEntrySimple:
+- "[_when:,,sometimes ,randomly ][_noFunction:does not have any effect when cast,does not function]#randomInstantOrSorceryCard# #_when##_noFunction#"
+- "#randomCardExcludeBasics# [_only:,only ]#_only#functions [_where:from the graveyard,#cardLocation#]#_where#"
+- "#randomInstantOrSorceryCard# #bugBlogBadSpellResult# unless #bugBlogCardCastException#"
+- "#randomNonlandCard# can [_be:be ,only be,also be]#_be# cast from [_whose:the,your,its owner's][_where:library,sideboard,graveyard]#_whose# [_whereIf:#_where#,#_where#,#_where# if #bugBlogCardCastException#]#_whereIf#"
+
+bugBlogBadSpellResult:
+- is immediately exiled with no effect
+- "cannot resolve, preventing the game from proceeding,"
+- "resolves as though [_controlled:it's controlled,it was cast] by your opponent"
+- has no effect
+- is countered on resolution
+- "refunds [_allPart:all,part of,all]all mana costs [_when:upon resolution,if it's countered]#_when#"
+
+bugBlogCardCastException:
+- it's the only card in your hand
+- it's foil
+- "you pay its mana cost [_manaType:#basicColors#,#basicColors#,snow][_payHow:twice,again when it resolves,using at #leastMost# one #_manaType# mana]#_payHow#"
+- your opponent has no untapped lands
+- you tap your mana in a specific order
+- your mana pool is empty
+- "you hold down [_key:the shift key,the space bar,the enter key,F#num1-9#][_when:while you cast it,until it has finished resolving]#_key# #_when#"
 
 bugBlogFate:
-- "[_legal:legal,banned,restricted,not legal][_treated:treated as,considered]#bugBlogAre# #bugBlogCurrently# #_treated# #_legal# in #popularFormat#"
+- "[_legal:legal,banned,restricted,not legal][_treatedAs:,treated as ]#bugBlogAre# #bugBlogCurrently# #_treatedAs##_legal# in #popularFormat#"
 - "[_while:while,if,unless][_client:engine,client][_whereWhen:in the chat log,by the game engine,in #gameClass#,#_while# they're #cardLocation#,in the preview window]#bugBlogAre# [_treated:treated,depicted]#_treated# as #bugBlogCardPossibilityPlural# #_whereWhen#"
 
 bugBlogCardTextIssue:
@@ -29,10 +59,31 @@ bugBlogCardTextIssue:
 gameClass:
   - "post-sideboard games"
   - "[_league:draft,friendly constructed,competitive #popularFormat#,premiere,release event sealed,phantom draft]#_league# leagues"
-  - "[_queue:constructed two-player,two-player #popularFormat]#_queue# queues"
+  - "[_queue:constructed two-player,two-player #popularFormat#]#_queue# queues"
   - "MOCS [_type:monthly,playoff,championship]#_type# events"
 
+bugBlogBenignAction:
+- "choosing to #playDraw# first"
+- "mulliganing [_count:no,all,zero,seven]#_count.a#-land hand"
+- "tapping too much mana to cast #randomNonlandCard#"
+- "[_with:#cardSearch_searchLibrary#][_searching:failing to search your library with #_cardName#,failing to find #_searchTarget# with #_cardName#,searching for #_searchTarget# with #_cardName#]#_searching#"
+
+bugBlogHugeEffect:
+ - "[_restart:cause the game to restart,cause a game restart]#_restart#"
+ - "cause #mtgSomePlayer#'#s# life total to become[_total:0,0,1,20]#_total#"
+ - "cause a game"
+ - "cause the client to crash"
+ - "orders each player's library [_criteria:by increasing converted mana cost,alphabetically,by collector number,by TCGPlayer Mid market price]#_criteria#"
+ - "exiles each player's [_what:hand,graveyard,library,best permanent]#_what#"
+
+manaType:
+- "#basicColors#"
+- "#basicColors#"
+- "[_other:snow,phyrexian]#_other#"
+
 permanentPassiveEffect:
+- it triggers
+- it triggers
 - it dies
 - it's exiled
 - "it's #cardState#"
@@ -46,7 +97,7 @@ permanentActiveEffect:
 effectWhileCondition:
 - "with #their# ability on the stack"
 - "[_when:before,after,on,during]#_when# the #xth# turn of the game"
-- "[_if:unless,and,after,before][_moreThan:more than,less than,exactly]#_if# #_moreThan# #cardCopyCount# spell#s# have been cast this turn"
+- "[_if:unless,and,after,before][_moreThan:more than,less than,exactly]#_if# #_moreThan# #cardCopyCount# spell#s# have been cast this [_turn:turn,game]#_turn#"
 - "[_whoControls:you control,your opponent controls,either player controls,#mtgSomePlayer# control#s#][_what:#cardPermanentType#,#basicColors# #cardPermanentType#,#cardState# #cardPermanentType#]while #_whoControls# #_what.a#"
 
 randomLayoutOrCategoryCard:
@@ -61,6 +112,14 @@ bugBlogCategory:
 - Gameplay
 - Play Lobby
 - Trade
+
+leastMost:
+- least
+- most
+
+playDraw:
+- play
+- draw
 
 ownedControlled:
 - owned

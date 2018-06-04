@@ -4,3 +4,20 @@ cardSearch_permanentCreateToken:
   [_customQuery:text="create" text="creature token" t!=instant t!=sorcery]
   [#_customQuery.cardSearchCustomQuery(1,undefined,create $ $ creature token)#]
   [_cardName:#_cardName1#][_tokenType:#_cardTextMatch2_1#]
+
+cardSearch_searchLibrary: >
+ - |
+  [_cardTextMatch2_1:#cardTypes#]
+  [_customQuery:text="search" text="library for a"  text|="library for an" text!="for a card"]
+  [#_customQuery.cardSearchCustomQuery(1,undefined,library for $? $! card)#]
+  [_cardName:#_cardName1#][_searchTarget:#_cardTextMatch2_1.a#,#_cardTextMatch2_1.a# card]
+ - |
+  [_cardTextMatch2_1:#cardTypes#]
+  [_customQuery:text="search" text="library for a"  text|="library for an" text!="for a card"]
+  [#_customQuery.cardSearchCustomQuery(1,undefined,library for $? $! card)#]
+  [_cardName:#_cardName1#][_searchTarget:#_cardTextMatch2_1.a#,#_cardTextMatch2_1.a# card]
+ - |
+  [_cardTextMatch2_1:#cardTypes#]
+  [_customQuery:text="search" text="cards and" text!="those cards"]
+  [#_customQuery.cardSearchCustomQuery(1,undefined,library for $ $! cards)#]
+  [_cardName:#_cardName1#][_searchTarget:#_cardTextMatch2_1.a#,#_cardTextMatch2_1.a# card,any #_cardTextMatch2_1# cards]
