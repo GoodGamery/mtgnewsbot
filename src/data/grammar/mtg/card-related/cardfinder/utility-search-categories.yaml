@@ -93,6 +93,12 @@ cardTypeCardWithOneWordName:
  # expects _cardTypeQuery to be defined
 randomTypeCardWithOneWordName: "#cardTypeCardWithOneWordName##_cardName#"
 
+cardQueryLegendaryPermanent: "[_customQuery:t=legendary t!=instant t!=sorcery][#cotdCustomSearch#][_cardName:#_cardName1#][_legendName:#_cardFamiliarName1#]"
+randomLegendaryPermanent: "#cardQueryLegendaryPermanent##_cardName#"
+
+cardQueryLegendaryNonlandPermanent: "[_customQuery:t=legendary t!=instant t!=sorcery t!=land][#cotdCustomSearch#][_cardName:#_cardName1#][_legendName:#_cardFamiliarName1#]"
+randomLegendaryNonlandPermanent: "#cardQueryLegendaryPermanent##_cardName#"
+
 cardQueryLordCreature:
 - '[_customQuery:t=creature text=other text="creatures get" text!="?other creature" text!="?target creature" #_colorFilter#][#_customQuery.cardSearchCustomQuery(1)#][_cardName:#_cardName1#]'
 - '[_customQuery:t=creature text=other text="creatures get" text!="?other creature" text!="?target creature" #_colorFilter#][#_customQuery.cardSearchCustomQuery(1)#][_cardName:#_cardName1#]'

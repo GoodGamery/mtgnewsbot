@@ -5,6 +5,41 @@ cardSearch_permanentCreateToken:
   [#_customQuery.cardSearchCustomQuery(1,undefined,create $ $ creature token)#]
   [_cardName:#_cardName1#][_tokenType:#_cardTextMatch2_1#]
 
+cardSearch_nameACard:
+ - |
+  [_customQuery:text="card name" text!="card named"]
+  [#_customQuery.cardSearchCustomQuery#]
+  [_cardName:#_cardName1#]
+
+cardSearch_eachPlayerStepTrigger:
+ - |
+  [_customQuery:text="beginning of each player's"]
+  [#_customQuery.cardSearchCustomQuery#]
+  [_cardName:#_cardName1#]
+
+cardSearch_playersCantX:
+ - |
+  [_customQuery:text="players can't" text!="split second"]
+  [#_customQuery.cardSearchCustomQuery#]
+  [_cardName:#_cardName1#]
+
+cardSearch_winLoseTheGame:
+ - |
+  [_winOrLose:win,lose][_causesPrevents:causes][_causingPreventing:causing][_causingTo:to]
+  [_customQuery:text="#_winOrLose# the game" text!=can't]
+  [#_customQuery.cardSearchCustomQuery#]
+  [_cardName:#_cardName1#]
+ - |
+  [_winOrLose:lose][_causesPrevents:causes][_causingPreventing:causing][_causingTo:to]
+  [_customQuery:text="player loses the game"]
+  [#_customQuery.cardSearchCustomQuery#]
+  [_cardName:#_cardName1#]
+ - |
+  [_winOrLose:win,lose][_causesPrevents:prevents][_causingPreventing:preventing][_causingTo:from]
+  [_customQuery:text="cannot #_winOrLose# the game"]
+  [#_customQuery.cardSearchCustomQuery#]
+  [_cardName:#_cardName1#]
+
 cardSearch_searchLibrary: >
  - |
   [_cardTextMatch2_1:#cardTypes#]

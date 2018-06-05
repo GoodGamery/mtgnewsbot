@@ -4,7 +4,7 @@ targetSource:
 - sorcery
 - activated ability
 - triggered ability
-- "[_spellType:bounce,removal,pump,#mtgColors#]#_spellType# spell"
+- "[_spellType:#mtgColors#,#mtgColors#,#spellMechanic#,#spellMechanic#,#spellMechanic#,bounce,removal]#_spellType# spell"
 - "[_perm:permanent,#cardPermanentType#][_spell:spell,card,activated ability of a #_perm#,triggered ability of a #_perm#]#_spell# from #setOrBlockSource#"
 
 setOrBlockSource:
