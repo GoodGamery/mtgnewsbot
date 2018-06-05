@@ -13,6 +13,10 @@
 # a workaround is [zooming in on the token]
 # causes players to GAIN/LOSE (N?) life instead of LOSING/GAINING life. search for "lose $! life" or "loses $! life" (same for gain)
 
+# card is currently (banned in all formats, etc) because (weird behavior)
+
+# the display name for #card# is incorrect. (silly name/other card name. silly name may contain animals?)
+
 bugBlogIs: is
 bugBlogAre: are
 bugBlogCurrently: currently
@@ -123,7 +127,7 @@ bugBlogEntry_winLoseTheGame: "[#cardSearch_winLoseTheGame#]#_cardName# will #bug
 bugBlogEntry_nameACard:
 -  "[#cardSearch_nameACard#][#scareQuotes#]#_cardName# always behaves as if its controller named #_lQ##randomNonlandCard##_rQ#"
 -  "[#cardSearch_nameACard#]Rather than choosing a card to name with #_cardName#, the name of a card[_zone:hand,library,graveyard,sideboard,collection][_fromWhere: is chosen at random, from #setOrBlock# is chosen at random, is chosen at random from its controller's #_zone#]#_fromWhere#"
--  "[#cardSearch_nameACard#][_theCard:#_cardName#][_someCard:#_cardName# itself,#randomNonlandCard#][_outcome:the game ends in a draw,#_cardName#'s controller shuffles it into their library,the game can't proceed,repeat this process,both players skip their next main phase,end the turn]Players can't choose a card to name with #_theCard#. [_doesWhat:Instead#comma# #mtgSomePlayer# exiles the top #count# cards from the top of their library and #_theCard# treats each of those as the named card,Instead#comma# each player secretly chooses a card name. If each player names the same card#comma# #_outcome#,Only #_someCard# can be named,Instead #bugBlogUnexpectedOutcome#]#_doesWhat#"
+-  "[#cardSearch_nameACard#][_theCard:#_cardName#][_someCard:#_cardName# itself,#randomNonlandCard#][_outcome:the game ends in a draw,#_cardName#'s controller shuffles it into their library,the game can't proceed,repeat this process,both players skip their next main phase,the turn ends]Players can't choose a card to name with #_theCard#. [_doesWhat:Instead#comma# #mtgSomePlayer# exiles the top #count# cards from the top of their library and #_theCard# treats each of those as the named card,Instead#comma# each player must secretl choose a card name. If each player names the same card#comma# #_outcome#,Only #_someCard# can be named,Instead #bugBlogUnexpectedOutcome#]#_doesWhat#"
 
 bugBlogEntery_asymmetrical:
 - "[#cardSearch_eachPlayerStepTrigger#][_card1:#_cardName#][#cardSearch_playersCantX#][_card2:#_cardName#][_card:#_card1#,#_card2#][_affects:only affects,doesn't affect][_randomPlayer:one player#comma# at random,t][_who:its controller,the #activeNonActive# player][_onlyAffects:#_affects# #_who#][_aCounter:#counterType.a#,at least one #counterType#][_sometimeWhen:on every other turn of the game,on the first #count# turns of the game,if both players agree to allow it,if it has #_aCounter# counter on it,if #basicColors# mana was spent to cast it][_hasAnEffect:has an effect,applies,does anything][_sometimeEffect:only has an effect #_sometimeWhen#][_preventsPlayers:prevents players from #bugBlogSimpleActionGerundGeneral#,will prevent players from #bugBlogSimpleActionGerundGeneral#,enables players to #bugBlogSimpleAction#][_arbitraryEffect:#_preventsPlayers#,#_preventsPlayers# #_sometimeWhen#][_effect:#_onlyAffects#,#_sometimeEffect#,#_arbitraryEffect#]#_card# #_effect#"
@@ -202,10 +206,10 @@ bugBlogHugeEffect:
  - "cause players to enter a subgame"
  - "cause the game to end in a draw"
  - "prevent the game from [_what:proceeding,continuing,being able to continue,ending]#_what#"
- - "cause the client to crash"
+ - "cause the [_clientServer:client,client,server]#_clientServer# to crash"
  - "reset the #activeNonActive# player's clock"
  - "[_increasing:increasing,decreasing][_criteria:by #_increasing# converted mana cost,alphabetically,by collector number,by TCGPlayer Mid market price][_reorder:order,reorder][_zone:library,graveyard,permanents][_order:randomly reorder each player's #_zone#,#_reorder# each player's #_zone# #_criteria#]#_order#"
- - "cause each player's [_desc:best,oldest,newest,least expensive,most expensive][_what:hand,graveyard,library,#_desc# permanent]#_what# to be exiled"
+ - "cause each player's [_desc:best,most recent,least expensive,most expensive][_what:hand,graveyard,library,#_desc# permanent]#_what# to be exiled"
  - "tap all permanents on the battlefield"
  - "cause #mtgSomePlayer# to concede the [_game:game,match]#_game#"
  - "force both players to play with their [_what:hands,libraries]#_what# revealed for the rest of the game"
