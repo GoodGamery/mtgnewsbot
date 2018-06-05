@@ -60,7 +60,7 @@ bugBlogEntry:
 # - "[#bugBlogChangeLogFixed#]FIXED: #_bugBlogEntry.capitalize#."
 
 _bugBlogEntry:
-- "[#randomLayoutOrCategoryCard#][_all:,,all ,all ,some ,no ]#_all##_cardCategory.s# [_like:like,including,Tsuch as]#_like# #_cardName# #bugBlogFate#"
+- "[#randomLayoutOrCategoryCard#][_all:,,all ,all ,some ,no ]#_all##_cardCategory.s# [_like:like,including,such as]#_like# #_cardName# #bugBlogFate#"
 - "#bugBlogCardTextIssue#"
 - "#bugBlogEntrySimple#"
 - "#bugBlogSimpleActionGerund#[_scenario:, #bugBlogSimpleScenario#, #bugBlogSimpleScenario#]#_scenario# #canMayBrokenOrFixed# #bugBlogHugeEffect#"
