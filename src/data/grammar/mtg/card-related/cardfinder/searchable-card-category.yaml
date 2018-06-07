@@ -86,7 +86,19 @@ searchableLayoutCategory:
 # relatively specific categories which may return a limited result set. may not work with color search terms
 searchableCardCategorySpecificCustomQuery:
   - >
-    [_cardCategory:clone][_cardCategoryClass:#_cardCategory#][_customQuery:t=creature text="as a copy of"]
+    [_cardCategory:clone][_cardCategoryClass:clones][_customQuery:t=creature text="as a copy of"]
+
+searchableCreatureCategory:
+- >
+  [_cardCategory:mana dork][_cardCategoryClass:mana dorks][_customQuery:text=add t=creature cmc=<3]
+- >
+  [_cardCategory:manland][_cardCategoryClass:manlands][_customQuery:t=land text="becomes a" text=creature]
+- >
+  [_keyword:#creatureKeyword.lowercase#][_cardCategory:creature with #_keyword#][_cardCategoryClass:creatures with #_keyword#][_customQuery:t=creature text="#_keyword#"]
+- >
+  [_cardCategory:token generator][_cardCategoryClass:token generators][_customQuery:t=creature text="create"]
+- >
+  [_cardCategory:clone][_cardCategoryClass:clones][_customQuery:t=creature text="as a copy of"]
 
 cardCategoryTerm: 
 - "[#searchableCardCategory#]#_cardCategory#"

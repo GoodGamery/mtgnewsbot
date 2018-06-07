@@ -78,6 +78,10 @@ cardQueryLayoutCard:
  - '[#searchableLayoutCategory#][_customQuery:#_customQuery##_colorFilter#][#_customQuery.cardSearchCustomQuery#][_cardName:#_cardName1#]'
 randomLayoutCard: "#cardQueryLayoutCard##_cardName#"
 
+cardQueryCreatureCategoryCard: 
+ - '[#searchableCreatureCategory#][_customQuery:#_customQuery##_colorFilter#][#_customQuery.cardSearchCustomQuery#][_cardName:#_cardName1#]'
+randomCreatureCategoryCard: "#cardQueryCreatureCategoryCard##_cardName#"
+
 cardQueryCardWithOneWordName: 
  - '[_customQuery:name!="? "#_colorFilter#][#_customQuery.cardSearchCustomQuery#][_cardName:#_cardName1#]'
 randomCardWithOneWordName: "#cardQueryCardWithOneWordName##_cardName#"

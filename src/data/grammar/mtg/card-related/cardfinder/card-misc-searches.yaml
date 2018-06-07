@@ -61,3 +61,16 @@ cardSearch_searchLibrary: >
   [_customQuery:text="search" text="cards and" text!="those cards"]
   [#_customQuery.cardSearchCustomQuery(1,undefined,library for $ $! cards)#]
   [_cardName:#_cardName1#][_searchTarget:#_cardTextMatch2_1.a#,#_cardTextMatch2_1.a# card,any #_cardTextMatch2_1# cards]
+
+cardSearch_creatureTrigger: >
+ - |
+  [_customQuery:text="whenever a creature" text!="exalted" text!="flanking" text!="evolve"]
+  [#_customQuery.cardSearchCustomQuery(1)#]
+  [_cardName:#_cardName1#][_searchTarget:#_cardTextMatch2_1.a#,#_cardTextMatch2_1.a# card]
+
+cardSearch_permanentGrantsCreatureAbility: >
+ - |
+  [_cardTextMatch1_1:the intended ability] 
+  [_customQuery:text="creature gains" text!="strike" text!="this ability" text!="your choice" t!="instant" t!="sorcery"]
+  [#_customQuery.cardSearchCustomQuery(1, undefined,creature gains $!)#]
+  [_cardName:#_cardName1#][_ability:#_cardTextMatch1_1#]
