@@ -23,19 +23,24 @@ cardSearch_playersCantX:
   [#_customQuery.cardSearchCustomQuery#]
   [_cardName:#_cardName1#]
 
+_winOrLoseChoice:
+- "[_winOrLose:win][_winningOrLosing:winning]"
+- "[_winOrLose:lose][_winningOrLosing:losing]"
+
+
 cardSearch_winLoseTheGame:
  - |
-  [_winOrLose:win,lose][_causesPrevents:causes][_causingPreventing:causing][_causingTo:to]
+  [_winOrLose:#_winOrLoseChoice#][_passiveWinOrLose:#_winningOrLosing#][_causesPrevents:causes][_causingPreventing:causing][_causingTo:to]
   [_customQuery:text="#_winOrLose# the game" text!=can't]
   [#_customQuery.cardSearchCustomQuery#]
   [_cardName:#_cardName1#]
  - |
-  [_winOrLose:lose][_causesPrevents:causes][_causingPreventing:causing][_causingTo:to]
+  [_winOrLose:lose][_passiveWinOrLose:lose][_causesPrevents:causes][_causingPreventing:causing][_causingTo:to]
   [_customQuery:text="player loses the game"]
   [#_customQuery.cardSearchCustomQuery#]
   [_cardName:#_cardName1#]
  - |
-  [_winOrLose:win,lose][_causesPrevents:prevents][_causingPreventing:preventing][_causingTo:from]
+  [_winOrLose:#_winOrLoseChoice#][_passiveWinOrLose:#_winningOrLosing#][_causesPrevents:prevents][_causingPreventing:preventing][_causingTo:from]
   [_customQuery:text="cannot #_winOrLose# the game"]
   [#_customQuery.cardSearchCustomQuery#]
   [_cardName:#_cardName1#]

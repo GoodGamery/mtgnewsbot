@@ -22,6 +22,24 @@ bugBlogAre: are
 bugBlogCurrently: currently
 canMayBrokenOrFixed: "#canMayBroken#"
 
+_listSpacer: ""
+
+bugBlogHeadline: "Magic Online Bug Blog – #CONTENT.currentFullDate#{newline}{newline}#bugBlogEntryListing#"
+
+_knownIssue:
+- known issue
+- "[_newly:newly,recently]#_newly# added known issue"
+
+
+bugBlogEntryListing:
+- "#_knownIssue.capitalizeAll#:{newline}#bugBlogEntryListItem#"
+- "#_knownIssue.capitalizeAll#:{newline}#bugBlogEntryListItem#"
+- "#_knownIssue.s.capitalizeAll#:{newline}#bugBlogEntryListItem##bugBlogEntryListItem#"
+- "#_knownIssue.s.capitalizeAll#:{newline}#bugBlogEntryListItem##bugBlogEntryListItem#"
+- "#_knownIssue.s.capitalizeAll#:{newline}#bugBlogEntryListItem##bugBlogEntryListItem##bugBlogEntryListItem#"
+
+bugBlogEntryListItem: "[_listSpacer:{newline}• ]#_listSpacer##bugBlogEntry#"
+
 bugBlogKnownIssue: "[bugBlogIs:is][bugBlogAre:are][bugBlogCurrently:currently][canMay:#canMayBroken#][canMayWont:#canMayBrokenWont#]"
 bugBlogChangeLog: "[bugBlogIs:is no longer][bugBlogAre:are no longer][bugBlogCurrently:now,finally][canMay:#canMayFixed#][canMayWont:#canMayFixedWont#]"
 bugBlogChangeLogFixed: "[bugBlogIs:is now,is now,is now correctly][bugBlogAre:are now,are now,are now correctly][bugBlogCurrently:now,finally][canMay:#canMayFixed#][canMayWont:#canMayFixedWont#]"
@@ -60,11 +78,11 @@ canMayFixed:
 - will no longer occasionally
 
 bugBlogEntry:
-- "[#bugBlogKnownIssue#]KNOWN ISSUE: #_bugBlogEntry.capitalize#."
-# - "[#bugBlogChangeLogFixed#]FIXED: #_bugBlogEntry.capitalize#."
+- "[#bugBlogKnownIssue#]#_bugBlogEntry.capitalize#."
+
 
 _bugBlogEntry:
-- "[#randomLayoutOrCategoryCard#][_all:,,all ,all ,some ,no ]#_all##_cardCategory.s# [_like:like,including,such as]#_like# #_cardName# #bugBlogFate#"
+- "[#randomLayoutOrCategoryCard#][_all:,,all ,all ,some ,certain ]#_all##_cardCategory.s# [_like:like,including,such as]#_like# #_cardName# #bugBlogFate#"
 - "#bugBlogCardTextIssue#"
 - "#bugBlogEntrySimple#"
 - "#bugBlogSimpleActionGerund#[_scenario:, #bugBlogSimpleScenario#, #bugBlogSimpleScenario#]#_scenario# #canMayBrokenOrFixed# #bugBlogHugeEffect#"
@@ -97,7 +115,7 @@ bugBlogCardCastException:
 - "you hold down [_key:the shift key,the space bar,the enter key,F#num1-9#][_when:while you cast it,until it has finished resolving]#_key# #_when#"
 
 bugBlogFate:
-- "[_legal:legal,banned,restricted,not legal][_considered:,considered ]#bugBlogAre# #bugBlogCurrently# #_considered##_legal# in #popularFormat#"
+- "[_legal:legal,banned,restricted,not playable][_considered:,,considered , treated as]#bugBlogAre# #bugBlogCurrently# #_considered##_legal# in #popularFormat#"
 - "[_while:while,if,unless][_client:engine,client][_whereWhen:in the chat log,by the game engine,in #gameClass#,#_while# they're #cardLocation#,in the preview window]#bugBlogAre# [_treated:treated,depicted]#_treated# as #bugBlogCardPossibilityPlural# #_whereWhen#"
 
 bugBlogCardTextIssue:
@@ -122,7 +140,7 @@ bugBlogStandaloneEntry:
 - "#bugBlogEntry_nameACard#"
 - "#bugBlogEntery_asymmetrical#"
 
-bugBlogEntry_winLoseTheGame: "[#cardSearch_winLoseTheGame#]#_cardName# will #bugBlogHugeEffect# instead of #_causingPreventing# a player #_causingTo# #_winOrLose# the game"
+bugBlogEntry_winLoseTheGame: "[#cardSearch_winLoseTheGame#]#_cardName# will #bugBlogHugeEffect# instead of #_causingPreventing# a player #_causingTo# #_passiveWinOrLose# the game"
 
 bugBlogEntry_nameACard:
 -  "[#cardSearch_nameACard#][#scareQuotes#]#_cardName# always behaves as if its controller named #_lQ##randomNonlandCard##_rQ#"
