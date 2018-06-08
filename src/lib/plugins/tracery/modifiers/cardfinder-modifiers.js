@@ -387,10 +387,10 @@ async function cardFinderSearch(query, params, additionalFields) {
       const rarity = traceryEscape(card.rarity);      
       const type = randomElement(card.types);
       const subtype = randomElement(card.subtypes);
-      const fullType = card.types.join(' ');
+      const fullType = card.types ? card.types.join(' ') : (card.layout === 'token' ? 'token' : undefined);
       const fullSubtype = card.subtypes && card.subtypes.join(' ');    
-      const someTypeOrSubtype = getSomeCardTypeOrSubtype(card.types, card.subtypes);
-      const someCreatureType = getSomeCreatureType(card.types, card.subtypes);
+      const someTypeOrSubtype = fullType === 'token' ? 'token' : card.types && getSomeCardTypeOrSubtype(card.types, card.subtypes);
+      const someCreatureType = fullType === 'token' ? 'token' : card.types && getSomeCreatureType(card.types, card.subtypes);
       const imgUrl = traceryEscape(card.imageUrl);
       const color = getColorDescription(card.colorIdentity);
       const colorDescriptive = getColorFullDescription(card.colorIdentity);
@@ -400,7 +400,7 @@ async function cardFinderSearch(query, params, additionalFields) {
       const nameLastWord = card.name.split(" ").pop();
       const cmc = card.cmc || '0';
 
-      if (card.layout === 'token') {
+      if (card.layout === 'token' && name.toLowerCase().indexOf('token') === -1) {
         name += ' Token';
       } else if (card.layout === 'vanguard') {
         name += ' Avatar';

@@ -82,7 +82,7 @@ bugBlogEntry:
 
 
 _bugBlogEntry:
-- "[#randomLayoutOrCategoryCard#][_all:,,all ,all ,some ,certain ]#_all##_cardCategory.s# [_like:like,including,such as]#_like# #_cardName# #bugBlogFate#"
+- "[_card:#randomLayoutOrCategoryCard#][_all:,all ,all ][_some:some,certain][_like:like,including,such as][_allOrSomeCards:#_all##_cardCategory.s# #_like# #_card#,#_some# #_cardCategory.s##comma# #_like# #_card##comma#]#_allOrSomeCards# #bugBlogFate#"
 - "#bugBlogCardTextIssue#"
 - "#bugBlogEntrySimple#"
 - "#bugBlogSimpleActionGerund#[_scenario:, #bugBlogSimpleScenario#, #bugBlogSimpleScenario#]#_scenario# #canMayBrokenOrFixed# #bugBlogHugeEffect#"
@@ -116,7 +116,7 @@ bugBlogCardCastException:
 - "you hold down [_key:the shift key,the space bar,the enter key,F#num1-9#][_when:while you cast it,until it has finished resolving]#_key# #_when#"
 
 bugBlogFate:
-- "[_legal:legal,banned,restricted,not playable][_considered:,,considered , treated as]#bugBlogAre# #bugBlogCurrently# #_considered##_legal# in #popularFormat#"
+- "[_legal:legal,banned,restricted,not playable][_considered:,,considered ,treated as ]#bugBlogAre# #bugBlogCurrently# #_considered##_legal# in #popularFormat#"
 - "[_while:while,if,unless][_client:engine,client][_whereWhen:in the chat log,by the game engine,in #gameClass#,#_while# they're #cardLocation#,in the preview window]#bugBlogAre# [_treated:treated,depicted]#_treated# as #bugBlogCardPossibilityPlural# #_whereWhen#"
 
 bugBlogCardTextIssue:
@@ -142,19 +142,19 @@ bugBlogStandaloneEntry:
 - "#bugBlogEntry_asymmetrical#"
 - "#bugBlogEntry_cardsSuchAs#"
 
-bugBlogEntry_winLoseTheGame: "[#cardSearch_winLoseTheGame#]#_cardName# will #bugBlogHugeEffect# instead of #_causingPreventing# a player #_causingTo# #_passiveWinOrLose# the game"
+bugBlogEntry_winLoseTheGame: "#cardSearch_winLoseTheGame##_cardName# will #bugBlogHugeEffect# instead of #_causingPreventing# #_winnerLoser# #_toFrom# #_winOrLoseWithTense# the game"
 
 bugBlogEntry_nameACard:
 -  "[#cardSearch_nameACard#][#scareQuotes#]#_cardName# always behaves as if its controller named #_lQ##randomNonlandCard##_rQ#"
 -  "[#cardSearch_nameACard#]Rather than choosing a card to name with #_cardName#, the name of a card[_zone:hand,library,graveyard,sideboard,collection][_fromWhere: is chosen at random, from #setOrBlock# is chosen at random, is chosen at random from its controller's #_zone#]#_fromWhere#"
--  "[#cardSearch_nameACard#][_theCard:#_cardName#][_someCard:#_cardName# itself,#randomNonlandCard#][_outcome:the game ends in a draw,#_cardName#'s controller shuffles it into their library,the game can't proceed,repeat this process,both players skip their next main phase,the turn ends]Players can't choose a card to name with #_theCard#. [_doesWhat:Instead#comma# #mtgSomePlayer# exiles the top #count# cards from the top of their library and #_theCard# treats each of those as the named card,Instead#comma# each player must secretl choose a card name. If each player names the same card#comma# #_outcome#,Only #_someCard# can be named,Instead #bugBlogUnexpectedOutcome#]#_doesWhat#"
+-  "[#cardSearch_nameACard#][_theCard:#_cardName#][_someCard:#_cardName# itself,#randomNonlandCard#][_outcome:the game ends in a draw,#_cardName#'s controller shuffles it into their library,the game can't proceed,repeat this process,both players skip their next main phase,the turn ends]Players can't choose a card to name with #_theCard#. [_doesWhat:Instead#comma# #mtgSomePlayer# exiles the top #count# cards from the top of their library and #_theCard# treats each of those as the named card,Instead#comma# each player must secretly choose a card name. If each player names the same card#comma# #_outcome#,Only #_someCard# can be named,Instead #bugBlogUnexpectedOutcome#]#_doesWhat#"
 
 bugBlogEntry_asymmetrical:
 - "[#cardSearch_eachPlayerStepTrigger#][_card1:#_cardName#][#cardSearch_playersCantX#][_card2:#_cardName#][_card:#_card1#,#_card2#][_affects:only affects,doesn't affect][_randomPlayer:one player#comma# at random,t][_who:its controller,the #activeNonActive# player][_onlyAffects:#_affects# #_who#][_aCounter:#counterType.a#,at least one #counterType#][_sometimeWhen:on every other turn of the game,on the first #count# turns of the game,if both players agree to allow it,if it has #_aCounter# counter on it,if #basicColors# mana was spent to cast it][_hasAnEffect:has an effect,applies,does anything][_sometimeEffect:only has an effect #_sometimeWhen#][_preventsPlayers:prevents players from #bugBlogSimpleActionGerundGeneral#,will prevent players from #bugBlogSimpleActionGerundGeneral#,enables players to #bugBlogSimpleAction#][_arbitraryEffect:#_preventsPlayers#,#_preventsPlayers# #_sometimeWhen#][_effect:#_onlyAffects#,#_sometimeEffect#,#_arbitraryEffect#]#_card# #_effect#"
 
 bugBlogEntry_cardsSuchAs:
 - "[#randomCreatureCategoryCard#][_cardsEither:#_cardCategoryClass# such as #_cardName#,#randomCreatureCard#,either #randomCreatureCard# or #randomCreatureCard#][_cardsBoth:#_cardCategoryClass# such as #_cardName#,#randomCreatureCard#,both #randomCreatureCard# and #randomCreatureCard#][#cardSearch_creatureTrigger#][_triggers:doesn't trigger off of #_cardsEither#,doesn't trigger off of #_cardsEither#,triggers an additional time off of #_cardsBoth#]#_cardName# #_triggers#"
-- "[#randomCreatureCategoryCard#][_cards:#_cardCategoryClass# such as #_cardName#,#randomCreatureCard#,#randomCreatureCard# and #randomCreatureCard#][_cardsOr:#_cardCategoryClass# such as #_cardName#,#randomCreatureCard#,#randomCreatureCard# or #randomCreatureCard#][_cardsAre:#_cardCategoryClass# such as #_cardName# are,#randomCreatureCard# is,#randomCreatureCard# and #randomCreatureCard# are][#cardSearch_permanentGrantsCreatureAbility#][_replacementAbility:#creatureKeyword.lowercase#,#creatureKeyword.lowercase#,#creatureKeyword.lowercase# and #creatureKeyword.lowercase#][_additionalInstance:an additional instance,two additional instances][_triggerEffect:#_cardsAre# not granted #_ability# by #_cardName#,#_cardsAre# granted #_additionalInstance# of #_ability# by #_cardName#,#_cardName# grants #_replacementAbility.lowercase# to #_cards# instead of granting #_ability#,When #_cardsOr# cause #_cardName1# to trigger#comma# it #bugBlogBadSpellResult#]#_triggerEffect#"
+- "[#randomCreatureCategoryCard#][_cards:#_cardCategoryClass# such as #_cardName#,#randomCreatureCard#,#randomCreatureCard# and #randomCreatureCard#][_cardsOrCause:#_cardCategoryClass# such as #_cardName# cause,#randomCreatureCard# causes,#randomCreatureCard# or #randomCreatureCard# cause][_cardsAre:#_cardCategoryClass# such as #_cardName# are,#randomCreatureCard# is,#randomCreatureCard# and #randomCreatureCard# are][#cardSearch_permanentGrantsCreatureAbility#][_replacementAbility:#creatureKeyword.lowercase#,#creatureKeyword.lowercase#,#creatureKeyword.lowercase# and #creatureKeyword.lowercase#][_additionalInstance:an additional instance,two additional instances][_triggerEffect:#_cardsAre# not granted #_ability# by #_cardName#,#_cardsAre# granted #_additionalInstance# of #_ability# by #_cardName#,#_cardName# grants #_replacementAbility.lowercase# to #_cards# instead of granting #_ability#,When #_cardsOrCause# cause #_cardName1# to trigger#comma# it #bugBlogBadSpellResult#]#_triggerEffect#"
 
 bugBlogUnexpectedOutcome:
 - the game ends in a draw
@@ -260,7 +260,7 @@ permanentActiveEffect:
 effectWhileCondition:
 - "with #their# ability on the stack"
 - "[_when:before,after,on,during]#_when# the #xth# turn of the game"
-- "[_if:unless,and,after,before][_moreThan:more than,less than,exactly][_spellsHave:#count# spells have,one spell has]#_if# #_moreThan# #count# #_spellsHave# been cast this [_turn:turn,game]#_turn#"
+- "[_if:unless,and,after,before][_moreThan:more than,less than,exactly][_spellsHave:#count# spells have,one spell has]#_if# #_moreThan# #_spellsHave# been cast this [_turn:turn,game]#_turn#"
 - "[_whoControls:you control,your opponent controls,either player controls,#mtgSomePlayer# control#s#][_what:#cardPermanentType#,#basicColors# #cardPermanentType#,#cardState# #cardPermanentType#]while #_whoControls# #_what.a#"
 
 randomLayoutOrCategoryCard:

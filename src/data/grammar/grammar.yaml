@@ -68,7 +68,7 @@ novelSetGraphicAnnouncement:
 decktech:
 - 'Deck Tech: #deckVariation#'
 - 'Deck of the Day: #deckVariation#'
-- 'Winning at #format# with #deckVariation#'
+- 'Winning in #format# with #deckVariation#'
 - 'Preparing for #tournament# with #deckVariation#'
 
 # This is for use inside inlined-rules in tracery

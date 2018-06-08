@@ -27,23 +27,26 @@ _winOrLoseChoice:
 - "[_winOrLose:win][_winningOrLosing:winning]"
 - "[_winOrLose:lose][_winningOrLosing:losing]"
 
+_winOrLoseCause: "[_causesPrevents:causes][_causingPreventing:causing][_toFrom:to][_winOrLoseWithTense:#_winOrLose#]"
+
+_winOrLosePrevent: "[_causesPrevents:prevents][_causingPreventing:preventing][_toFrom:from][_winOrLoseWithTense:#_winningOrLosing#]"
 
 cardSearch_winLoseTheGame:
  - |
-  [_winOrLose:#_winOrLoseChoice#][_passiveWinOrLose:#_winningOrLosing#][_causesPrevents:causes][_causingPreventing:causing][_causingTo:to]
+  [#_winOrLoseChoice#][#_winOrLoseCause#]
   [_customQuery:text="#_winOrLose# the game" text!=can't]
   [#_customQuery.cardSearchCustomQuery#]
-  [_cardName:#_cardName1#]
+  [_cardName:#_cardName1#][_winnerLoser:you]
  - |
-  [_winOrLose:lose][_passiveWinOrLose:lose][_causesPrevents:causes][_causingPreventing:causing][_causingTo:to]
-  [_customQuery:text="player loses the game"]
+  [#_winOrLoseChoice#][#_winOrLoseCause#]
+  [_customQuery:text="#_winOrLose.s# the game"]
   [#_customQuery.cardSearchCustomQuery#]
-  [_cardName:#_cardName1#]
+  [_cardName:#_cardName1#][_winnerLoser:a player]
  - |
-  [_winOrLose:#_winOrLoseChoice#][_passiveWinOrLose:#_winningOrLosing#][_causesPrevents:prevents][_causingPreventing:preventing][_causingTo:from]
-  [_customQuery:text="cannot #_winOrLose# the game"]
+  [#_winOrLoseChoice#][#_winOrLosePrevent#]
+  [_customQuery:text="can't #_winOrLose# the game"]
   [#_customQuery.cardSearchCustomQuery#]
-  [_cardName:#_cardName1#]
+  [_cardName:#_cardName1#][_winnerLoser:a player]
 
 cardSearch_searchLibrary: >
  - |
