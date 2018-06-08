@@ -17,6 +17,12 @@
 
 # the display name for #card# is incorrect. (silly name/other card name. silly name may contain animals?)
 
+# Certain cards that reveal an opponent's hand report this information twice in the chat log.
+
+# The undo function works incorrectly with Torment of Hailfire.
+
+# Hollow One doesn’t count discarded split cards.
+
 bugBlogIs: is
 bugBlogAre: are
 bugBlogCurrently: currently
@@ -141,6 +147,7 @@ bugBlogStandaloneEntry:
 - "#bugBlogEntry_nameACard#"
 - "#bugBlogEntry_asymmetrical#"
 - "#bugBlogEntry_cardsSuchAs#"
+- "#bugBlogEntry_oppositeInstead#"
 
 bugBlogEntry_winLoseTheGame: "#cardSearch_winLoseTheGame##_cardName# will #bugBlogHugeEffect# instead of #_causingPreventing# #_winnerLoser# #_toFrom# #_winOrLoseWithTense# the game"
 
@@ -155,6 +162,14 @@ bugBlogEntry_asymmetrical:
 bugBlogEntry_cardsSuchAs:
 - "[#randomCreatureCategoryCard#][_cardsEither:#_cardCategoryClass# such as #_cardName#,#randomCreatureCard#,either #randomCreatureCard# or #randomCreatureCard#][_cardsBoth:#_cardCategoryClass# such as #_cardName#,#randomCreatureCard#,both #randomCreatureCard# and #randomCreatureCard#][#cardSearch_creatureTrigger#][_triggers:doesn't trigger off of #_cardsEither#,doesn't trigger off of #_cardsEither#,triggers an additional time off of #_cardsBoth#]#_cardName# #_triggers#"
 - "[#randomCreatureCategoryCard#][_cards:#_cardCategoryClass# such as #_cardName#,#randomCreatureCard#,#randomCreatureCard# and #randomCreatureCard#][_cardsOrCause:#_cardCategoryClass# such as #_cardName# cause,#randomCreatureCard# causes,#randomCreatureCard# or #randomCreatureCard# cause][_cardsAre:#_cardCategoryClass# such as #_cardName# are,#randomCreatureCard# is,#randomCreatureCard# and #randomCreatureCard# are][#cardSearch_permanentGrantsCreatureAbility#][_replacementAbility:#creatureKeyword.lowercase#,#creatureKeyword.lowercase#,#creatureKeyword.lowercase# and #creatureKeyword.lowercase#][_additionalInstance:an additional instance,two additional instances][_triggerEffect:#_cardsAre# not granted #_ability# by #_cardName#,#_cardsAre# granted #_additionalInstance# of #_ability# by #_cardName#,#_cardName# grants #_replacementAbility.lowercase# to #_cards# instead of granting #_ability#,When #_cardsOrCause# cause #_cardName1# to trigger#comma# it #bugBlogBadSpellResult#]#_triggerEffect#"
+
+bugBlogEntry_oppositeInstead:
+- "[#cardSearch_lifeGainOrLoss#]#_cardName# causes #_who# to #_opposite# #_lifeAmount# life instead of #_actioning# it"
+- "[#cardSearch_lifeGainOrLoss#]#_cardName# causes #_oppositePerson# to #_gainOrLose# life instead of #_whoTarget#"
+- "[#cardSearch_drawOrDiscard#]#_cardName# #_causesRequires# #_who# to #_opposite# #_cardAmount# instead of #_actioning# #_cardAmountSubject#"
+- "[#cardSearch_drawOrDiscard#]#_cardName# #_causesRequires# #_oppositePerson# to #_drawOrDiscard# #_cardAmount# instead of #_whoTarget#"
+- "[#cardSearch_lifeGainOrLoss#][_playerEffectAmount:#_lifeAmount#]#_cardName# [_causes:causes,forces]#_causes# #_who# to #bugBlogPlayerEffect# instead of #_actioning# [_life:life,#_lifeAmount# life]#_life#"
+- "[#cardSearch_drawOrDiscard#][_playerEffectAmount:#_cardAmountCount#]#_cardName# [_causes:causes,forces]#_causes# #_who# to #bugBlogPlayerEffect# instead of #_actioning# #_cardAmount#"
 
 bugBlogUnexpectedOutcome:
 - the game ends in a draw
@@ -238,6 +253,41 @@ bugBlogHugeEffect:
  - "cause #mtgSomePlayer# to concede the [_game:game,match]#_game#"
  - "force both players to play with their [_what:hands,libraries]#_what# revealed for the rest of the game"
  - "cause [_who:the #activeNonActive# player,both players,a random player]#_who# to drop from the current tournament"
+
+mtgoClientSetting:
+- Animate Summoning Sickness
+- Animate Foil Animations
+- Keep “Miracle bluffing” on
+
+_playerEffectAmount: "#n2-9#"
+
+# expects _playerEffectAmount to be defined
+bugBlogPlayerEffect:
+- win the game
+- lose the game
+- concede the game
+- "scry #_playerEffectAmount#"
+- "sacrifice #_playerEffectAmount# permanents"
+- "lose #their# connection to the server"
+- "choose a card name"
+- "open a treasure chest"
+- "pay [_price:#priceTix#,#pricePlayPoints#]#_price#"
+- "shuffle #their# library"
+- "lose #num1-9# minutes from #their# play clock"
+- "reveal #their# hand"
+- "create #creatureTypes.a# token"
+- "shuffle a permanent #they# control into #their# library"
+- "place #_playerEffectAmount# #counterType# counters on a creature #they# control"
+- "enter #their# Magic Online password"
+- "enable foil animations"
+- "set a stop on [_whose:#thier#,#their# opponent's]#_whose# #mtgGameStep#"
+- "message an ORC"
+- "open a trade window"
+- "set a stop on [_yourOpponents:your,your opponent's]#_yourOpponents# [_step:upkeep,untap,end,combat]#_step# step"
+- enable the profanity filter
+- "enable the \"#mtgoClientSetting#\" client setting"
+- "reset #their# key bindings"
+- have book burning
 
 manaType:
 - "#basicColors#"

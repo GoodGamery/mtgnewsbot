@@ -3,6 +3,18 @@ gameStep:
   - "Untap Step"
   - "Upkeep Step"
   - "Draw Step"
+  - "Combat Step"
   - "first Main Phase"
   - "second Main Phase"
+  - "End Step"
   - "Cleanup Step"
+
+mtgGameStep:
+  - "Upkeep Step"
+  - "Draw Step"
+  - "[_beginningOf:,Beginning of ,End of ]#_beginningOf#Combat Step"
+  - "Combat Damage Step"
+  - "Declare [_attackers:Attackers,Blockers]#_attackers# Step"
+  - "first Main Phase"
+  - "second Main Phase"
+  - "End Step"
