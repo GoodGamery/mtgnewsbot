@@ -9,7 +9,7 @@
     "cleanse", "corrupt", "punch", "kick", "slap", "pinch", "tickle", "devour", "lick", "poke", "contradict", "ridicule", "tease",
     "detect", "assemble", "seduce", "banish", "romance", "purify", "feed", "simplify", "snuff", "clear", "revive", "appraise", "charm",
     "annoy", "irritate", "perplex", "exasperate", "disrepsect", "murder", "eviscerate", "ambush", "besmirch", "harass", "massage",
-    "arm-wrestle", "swindle", "injure", "#verbExitinguishGeneral#", "#verbExitinguishSpecific#"
+    "arm-wrestle", "swindle", "injure", "#verbExtinguishGeneral#", "#verbExtinguishSpecific#"
   ],
   "verbIntransitive": [ "#verbStrictlyIntransitive#", "#verbInceptiveIntransitive#", "#verbStrictlyIntransitive#", "#verbBothTransitive#" ],
   "verbStrictlyIntransitive": [

@@ -1,7 +1,7 @@
 ---
 flavorText:
   - >
-    "Ach! #character#, [_who:yourself,me,us][_verbIntransitive:#verbInceptiveIntransitive#,#verbStrictlyIntransitive#][_verb:#verbTransitive# #_who#,#_verbIntransitive#,#verbReflexive# yourself]#_verb#! It's the [_cardTypeQuery:creature][#randomTypeCardWithOneWordName#][_hansThreat:#creatureTypes#,#_cardName#,#animal#][_threat:#_hansThreat#]#_threat#!" [_last:last,final,dying,parting][_theThreat:#_threat.a#,the #_threat#][#somePronoun#][_just:just,shortly,right,moments before][_beforeBeing:before being,#_just# before being,as #they# #were#][_eaten:#verbExitinguishGeneralPastTense#,#verbExitinguishSpecificPastTense#,eaten][_fate:#_last# words,#_last# moments,#_threat# victim,#_beforeBeing# #_eaten# by #_theThreat#][_firstName:#character#,#commonCharacterFirstName#][_dotter:#_firstName# #planeswalkerFirstName#sdotter][_victim:#_dotter#,#commonCharacterFirstName# #commonCharacterLastName#][_attribution:#_dotter#,#_victim#,#npcCharacter#]—#_attribution#, #_fate#
+    "Ach! #character#, [_who:yourself,me,us][_verbIntransitive:#verbInceptiveIntransitive#,#verbStrictlyIntransitive#][_verb:#verbTransitive# #_who#,#_verbIntransitive#,#verbReflexive# yourself]#_verb#! It's the [_cardTypeQuery:creature][#randomTypeCardWithOneWordName#][_hansThreat:#creatureTypes#,#_cardName#,#animal#][_threat:#_hansThreat#]#_threat#!" [_last:last,final,dying,parting][_theThreat:#_threat.a#,the #_threat#][#somePronoun#][_just:just,shortly,right,moments before][_beforeBeing:before being,#_just# before being,as #they# #were#][_eaten:#verbExtinguishGeneralPastTense#,#verbExtinguishSpecificPastTense#,eaten][_fate:#_last# words,#_last# moments,#_threat# victim,#_beforeBeing# #_eaten# by #_theThreat#][_firstName:#character#,#commonCharacterFirstName#][_dotter:#_firstName# #planeswalkerFirstName#sdotter][_victim:#_dotter#,#commonCharacterFirstName# #commonCharacterLastName#][_attribution:#_dotter#,#_victim#,#npcCharacter#]—#_attribution#, #_fate#
   - >
     "I want [_thing:#aNoun#,#massNoun#,#pluralNoun#]#_thing# THIS #adj#!"
   - >
@@ -39,7 +39,7 @@ flavorText:
   - >
     "[#character#][_first:#pluralNounOrMassNoun#][_second:#pluralNounOrMassNoun#][_third:#pluralNounOrMassNoun#][_fourth:#pluralNounOrMassNoun#]#they.capitalize# traded #_first# for #_second#, #_second# for #_third#, #_third# for #_fourth#. In the end, #they# traded #_fourth# for #_first#."
   - >
-    "The #massNoun# didn't [_otherVerb:#verbTransitive#,#verbInceptiveTransitive#][_verb:kill,#verbExitinguishSpecific#,#_otherVerb#]#_verb# #nonPlaneswalkerCharacter#. But as #they# lay [_prep:in,on,beside,under]#_prep# it, watching #creatureTypes.s#[_second:, and #creatureTypes.s#]#_second# [_verbing:#verbInceptiveTransitiveGerund#,#verbInceptiveTransitiveGerund#,#verbTransitiveGerund#]#_verbing# #them#, #they# wished it had."
+    "The #massNoun# didn't [_otherVerb:#verbTransitive#,#verbInceptiveTransitive#][_verb:kill,#verbExtinguishSpecific#,#_otherVerb#]#_verb# #nonPlaneswalkerCharacter#. But as #they# lay [_prep:in,on,beside,under]#_prep# it, watching #creatureTypes.s#[_second:, and #creatureTypes.s#]#_second# [_verbing:#verbInceptiveTransitiveGerund#,#verbInceptiveTransitiveGerund#,#verbTransitiveGerund#]#_verbing# #them#, #they# wished it had."
   - >
     "As #adj# as #creatureTypes.a#'s [_thingy:#itemNoun#,#abstractNoun#,#bodypart#]#_thingy#."
   - >
