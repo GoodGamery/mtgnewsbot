@@ -27,7 +27,7 @@ searchableCardCategory:
 
 searchableCardCategoryCustomQuery:
  - >
-  [_cardCategory:mana dork][_cardCategoryClass:mana dorks][_customQuery:text=pool t=creature cmc=<3]
+  [_cardCategory:mana dork][_cardCategoryClass:mana dorks][_customQuery:text=add t=creature cmc=<3]
  - >
   [_cardCategory:weenie][_cardCategoryClass:weenies][_customQuery:pow=1 tou=1]
  - >
@@ -66,6 +66,39 @@ searchableCardCategoryCustomQuery:
   [_cardCategory:draw spell][_cardCategoryClass:card draw][_customQuery:t=instant t|=sorcery text="draw" text="cards"]
  - >
   [_borderColors:black,silver,white][_borderColor:#_borderColors#][_cardCategory:#_borderColor#-bordered card][_cardCategoryClass:#_cardCategory.s#][_customQuery:border=#_borderColor#]
+ - >
+  #searchableLayoutCategory#
+
+searchableLayoutCategory:
+ - >
+  [_cardCategory:split card][_cardCategoryClass:#_cardCategory#][_customQuery:layout=split]
+ - >
+  [_cardCategory:flip card][_cardCategoryClass:#_cardCategory#][_customQuery:layout=flip]
+ - >
+  [_cardCategory:double-faced card,transform card][_cardCategoryClass:#_cardCategory#][_customQuery:layout=double-faced]
+ - >
+  [_cardCategory:level-up card][_cardCategoryClass:#_cardCategory#][_customQuery:layout=leveler]
+ - >
+  [_cardCategory:aftermath card][_cardCategoryClass:#_cardCategory#][_customQuery:layout=aftermath]
+ - >
+  [_cardCategory:token][_cardCategoryClass:#_cardCategory#][_customQuery:layout=token]
+
+# relatively specific categories which may return a limited result set. may not work with color search terms
+searchableCardCategorySpecificCustomQuery:
+  - >
+    [_cardCategory:clone][_cardCategoryClass:clones][_customQuery:t=creature text="as a copy of"]
+
+searchableCreatureCategory:
+- >
+  [_cardCategory:mana dork][_cardCategoryClass:mana dorks][_customQuery:text=add t=creature cmc=<3]
+- >
+  [_cardCategory:manland][_cardCategoryClass:manlands][_customQuery:t=land text="becomes a" text=creature]
+- >
+  [_keyword:#creatureKeyword.lowercase#][_cardCategory:creature with #_keyword#][_cardCategoryClass:creatures with #_keyword#][_customQuery:t=creature text="#_keyword#"]
+- >
+  [_cardCategory:token generator][_cardCategoryClass:token generators][_customQuery:t=creature text="create"]
+- >
+  [_cardCategory:clone][_cardCategoryClass:clones][_customQuery:t=creature text="as a copy of"]
 
 cardCategoryTerm: 
 - "[#searchableCardCategory#]#_cardCategory#"

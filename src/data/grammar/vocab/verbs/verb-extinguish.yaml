@@ -1,4 +1,4 @@
-verbExitinguishSpecific:
+verbExtinguishSpecific:
 - slaughter
 - drown
 - strangle
@@ -18,7 +18,7 @@ verbExitinguishSpecific:
 - behead
 - obliterate
 
-verbExitinguishSpecificPastTense:
+verbExtinguishSpecificPastTense:
 - slaughtered
 - drowned
 - strangled
@@ -38,7 +38,7 @@ verbExitinguishSpecificPastTense:
 - beheaded
 - obliterated
 
-verbExitinguishGeneral:
+verbExtinguishGeneral:
 - slaughter
 - slay
 - murder
@@ -47,7 +47,7 @@ verbExitinguishGeneral:
 - extinguish
 - assassinate
 
-verbExitinguishGeneralPastTense:
+verbExtinguishGeneralPastTense:
 - slaughtered
 - slain
 - murdered

@@ -195,3 +195,7 @@ difficult
 troublesome
 tricky
 messy
+#adjCorporeal#
+#adjValue#
+#adjStorybook#
+#adjPersonalCharacteristic#

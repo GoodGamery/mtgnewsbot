@@ -123,6 +123,7 @@
       "Hall-of-Famer[#somePronoun#]",
       "#psychographic#[#somePronoun#]",
       "netdecker[#somePronoun#]",
+      "[_redditors:redditors,r/magicTCG posters]#_redditors#[#somePronoun#]",
       "#deck# player[#somePronoun#]",
       "#deck# player[#somePronoun#]",
       "#format# player[#somePronoun#]",
@@ -278,15 +279,18 @@
   ],
   "jokeTeam":  [
     "#creatureTypes.capitalize#",
-    "#randomCardAlone.noPunctuation.capitalizeAll.noSpaces#",
+    "#randomCardAlone.noPunctuation.capitalizeAll#",
     "#website#",
     "#adj.capitalizeAll.noPunctuation.noSpaces#Card",
+    "[_webcomic:Pro MTG Online,Cardboard Crack,Tap to Laugh]#_webcomic#"
   ],
   "website": [
     "Pojo Dot [_tld:Org,Net,Gov]#_tld#",
     "[_domain:#creatureTypes#,#itemNoun#]#_domain.capitalizeAll# Dot Com",
     "MTG Salvation Dot Com",
-    "Good Gamery Dot Com"
+    "Good Gamery Dot Com",
+    "Brainburst Dot Com",
+    "[_othersite:Zombo,Misetings,Sideboard,Gleemax]#_othersite# Dot Com"
   ],
   "otherTeamPrefix": [
     "#cardCategory.capitalizeAll#",

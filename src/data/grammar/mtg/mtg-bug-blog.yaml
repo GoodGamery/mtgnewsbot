@@ -1,0 +1,363 @@
+# bug fix: #card# no longer displays the rules text for nonlandCard | [it now displays the rules text for nonlandCard2 | although it still works as if it does | because it no longer displays any rules text (at all)]
+
+# bug / fix: [_searchTerm:creatures you control][_searchTermReplacement:#cardCategoryOrCreatureType#s you control, creatures <your opponent controls | etc.>]#card# now correctly reads #_searchTerm# instead of #__searchTermReplacement#.
+
+# Split cards such as Cut // Ribbons are reported as 3 cards in the chat log.
+# -> [searchableCardClass such as _cardname are| are no longer #cardfate#]
+# -> []
+
+# card costs {random mana or other cost} instead of its expected mana cost
+
+# incorrectly prevents ...
+# wrong frame (frame color) / border
+# a workaround is [zooming in on the token]
+# causes players to GAIN/LOSE (N?) life instead of LOSING/GAINING life. search for "lose $! life" or "loses $! life" (same for gain)
+
+# card is currently (banned in all formats, etc) because (weird behavior)
+
+# the display name for #card# is incorrect. (silly name/other card name. silly name may contain animals?)
+
+# Certain cards that reveal an opponent's hand report this information twice in the chat log.
+
+# The undo function works incorrectly with Torment of Hailfire.
+
+# Hollow One doesn’t count discarded split cards.
+
+bugBlogIs: is
+bugBlogAre: are
+bugBlogCurrently: currently
+canMayBrokenOrFixed: "#canMayBroken#"
+
+_listSpacer: ""
+
+bugBlogHeadline: "Magic Online Bug Blog – #CONTENT.currentFullDate#{newline}{newline}#bugBlogEntryListing#"
+
+_knownIssue:
+- known issue
+- "[_newly:newly,recently]#_newly# added known issue"
+
+
+bugBlogEntryListing:
+- "#_knownIssue.capitalizeAll#:{newline}#bugBlogEntryListItem#"
+- "#_knownIssue.capitalizeAll#:{newline}#bugBlogEntryListItem#"
+- "#_knownIssue.s.capitalizeAll#:{newline}#bugBlogEntryListItem##bugBlogEntryListItem#"
+- "#_knownIssue.s.capitalizeAll#:{newline}#bugBlogEntryListItem##bugBlogEntryListItem#"
+- "#_knownIssue.s.capitalizeAll#:{newline}#bugBlogEntryListItem##bugBlogEntryListItem##bugBlogEntryListItem#"
+
+bugBlogEntryListItem: "[_listSpacer:{newline}• ]#_listSpacer##bugBlogEntry#"
+
+bugBlogKnownIssue: "[bugBlogIs:is][bugBlogAre:are][bugBlogCurrently:currently][canMay:#canMayBroken#][canMayWont:#canMayBrokenWont#]"
+bugBlogChangeLog: "[bugBlogIs:is no longer][bugBlogAre:are no longer][bugBlogCurrently:now,finally][canMay:#canMayFixed#][canMayWont:#canMayFixedWont#]"
+bugBlogChangeLogFixed: "[bugBlogIs:is now,is now,is now correctly][bugBlogAre:are now,are now,are now correctly][bugBlogCurrently:now,finally][canMay:#canMayFixed#][canMayWont:#canMayFixedWont#]"
+
+canMayBroken:
+- can
+- can
+- may
+- may
+- may sometimes
+- will
+- will
+- will occasionally
+- will sometimes
+
+canMayBrokenWont:
+- does not
+- does not
+- doesn't
+- won't
+- fails to
+- may not
+
+canMayFixedWont:
+- will now
+- will now
+- will now correctly
+- will again
+
+canMayFixed:
+- now won't
+- now won't
+- now doesn't
+- will no longer
+- will no longer
+- will no longer occasionally
+
+bugBlogEntry:
+- "[#bugBlogKnownIssue#]#_bugBlogEntry.capitalize#."
+
+
+_bugBlogEntry:
+- "[_card:#randomLayoutOrCategoryCard#][_all:,all ,all ][_some:some,certain][_like:like,including,such as][_allOrSomeCards:#_all##_cardCategory.s# #_like# #_card#,#_some# #_cardCategory.s##comma# #_like# #_card##comma#]#_allOrSomeCards# #bugBlogFate#"
+- "#bugBlogCardTextIssue#"
+- "#bugBlogEntrySimple#"
+- "#bugBlogSimpleActionGerund#[_scenario:, #bugBlogSimpleScenario#, #bugBlogSimpleScenario#]#_scenario# #canMayBrokenOrFixed# #bugBlogHugeEffect#"
+- "#bugBlogStandaloneEntry#"
+- "#bugBlogStandaloneEntry#"
+
+bugBlogEntrySimple:
+- "[_when:,,sometimes ,randomly ][_noFunction:#canMayWont# have an effect when cast,#canMayWont# function]#randomInstantOrSorceryCard# #_when##_noFunction#"
+- "#randomCardExcludeBasics# [_only:,only ]#_only#functions [_where:from the graveyard,#cardLocationFrom#]#_where#"
+- "#randomInstantOrSorceryCard# #bugBlogBadSpellResult# unless #bugBlogCardCastException#"
+- "#randomInstantOrSorceryCard# [_behaves:#alwaysSometimes# behaves as if it has,#canMay# behave as if it had]#_behaves# #spellMechanic#"
+- "#randomNonlandCard# can [_be:be ,only be,also be]#_be# cast from [_whose:the,your,its owner's][_where:library,sideboard,graveyard]#_whose# [_whereIf:#_where#,#_where#,#_where# if #bugBlogCardCastException#]#_whereIf#"
+
+cardLocationFrom: "#cardLocation.replace(in ,from )#"
+
+bugBlogBadSpellResult:
+- "#bugBlogIs# immediately exiled with no effect"
+- "prevents the game from proceeding"
+- "resolves as though [_controlled:it's controlled,it was cast]#_controlled# by your opponent"
+- has no effect
+- "#bugBlogIs# countered on resolution"
+- "[_refunds:refunds,#canMay# refund]#_refunds# [_allPart:all,part of,all]all mana costs [_when:upon resolution,if it's countered]#_when#"
+
+bugBlogCardCastException:
+- it's the only card in your hand
+- it's foil
+- "you pay its mana cost [_manaType:#basicColors#,#basicColors#,snow][_payHow:twice,again when it resolves,using at #leastMost# one #_manaType# mana]#_payHow#"
+- your opponent has no untapped lands
+- you tap your mana in a specific order
+- your mana pool is empty
+- "you hold down [_key:the shift key,the space bar,the enter key,F#num1-9#][_when:while you cast it,until it has finished resolving]#_key# #_when#"
+
+bugBlogFate:
+- "[_legal:legal,banned,restricted,not playable][_considered:,,considered ,treated as ]#bugBlogAre# #bugBlogCurrently# #_considered##_legal# in #popularFormat#"
+- "[_while:while,if,unless][_client:engine,client][_whereWhen:in the chat log,by the game engine,in #gameClass#,#_while# they're #cardLocation#,in the preview window]#bugBlogAre# [_treated:treated,depicted]#_treated# as #bugBlogCardPossibilityPlural# #_whereWhen#"
+
+bugBlogCardTextIssue:
+  - "[#neutralPronouns#][#cardSearch_permanentCreateToken#]#_cardName# #canMayWont# create #_tokenType.a# token if #permanentPassiveEffect# #effectWhileCondition#"
+  - "[#neutralPronouns#][#cardSearch_permanentCreateToken#][_effect:creates #creatureTypes.capitalize# tokens instead of,#permanentActiveEffect# instead of creating]#_cardName# #bugBlogCurrently# #_effect# #_tokenType.capitalize# tokens"
+
+gameClass:
+  - "post-sideboard games"
+  - "[_league:draft,friendly constructed,competitive #popularFormat#,premiere,release event sealed,phantom draft]#_league# leagues"
+  - "[_queue:constructed two-player,two-player #popularFormat#]#_queue# queues"
+  - "MOCS [_type:monthly,playoff,championship]#_type# events"
+
+bugBlogBenignAction:
+- "choosing to #playDraw# first"
+- "mulliganing [_count:no,all,zero,seven]#_count.a#-land hand"
+- "tapping too much mana to cast #randomNonlandCard#"
+- "[_with:#cardSearch_searchLibrary#][_searching:failing to search your library with #_cardName#,failing to find #_searchTarget# with #_cardName#,searching for #_searchTarget# with #_cardName#]#_searching#"
+- "targeting [_target:a player,a creature,#cardPermanentType.a#,#randomLegendaryPermanent#,yourself]#_target# with #targetSource.a#"
+
+bugBlogStandaloneEntry:
+- "#bugBlogEntry_winLoseTheGame#"
+- "#bugBlogEntry_nameACard#"
+- "#bugBlogEntry_asymmetrical#"
+- "#bugBlogEntry_cardsSuchAs#"
+- "#bugBlogEntry_oppositeInstead#"
+
+bugBlogEntry_winLoseTheGame: "#cardSearch_winLoseTheGame##_cardName# will #bugBlogHugeEffect# instead of #_causingPreventing# #_winnerLoser# #_toFrom# #_winOrLoseWithTense# the game"
+
+bugBlogEntry_nameACard:
+-  "[#cardSearch_nameACard#][#scareQuotes#]#_cardName# always behaves as if its controller named #_lQ##randomNonlandCard##_rQ#"
+-  "[#cardSearch_nameACard#]Rather than choosing a card to name with #_cardName#, the name of a card[_zone:hand,library,graveyard,sideboard,collection][_fromWhere: is chosen at random, from #setOrBlock# is chosen at random, is chosen at random from its controller's #_zone#]#_fromWhere#"
+-  "[#cardSearch_nameACard#][_theCard:#_cardName#][_someCard:#_cardName# itself,#randomNonlandCard#][_outcome:the game ends in a draw,#_cardName#'s controller shuffles it into their library,the game can't proceed,repeat this process,both players skip their next main phase,the turn ends]Players can't choose a card to name with #_theCard#. [_doesWhat:Instead#comma# #mtgSomePlayer# exiles the top #count# cards from the top of their library and #_theCard# treats each of those as the named card,Instead#comma# each player must secretly choose a card name. If each player names the same card#comma# #_outcome#,Only #_someCard# can be named,Instead #bugBlogUnexpectedOutcome#]#_doesWhat#"
+
+bugBlogEntry_asymmetrical:
+- "[#cardSearch_eachPlayerStepTrigger#][_card1:#_cardName#][#cardSearch_playersCantX#][_card2:#_cardName#][_card:#_card1#,#_card2#][_affects:only affects,doesn't affect][_randomPlayer:one player#comma# at random,t][_who:its controller,the #activeNonActive# player][_onlyAffects:#_affects# #_who#][_aCounter:#counterType.a#,at least one #counterType#][_sometimeWhen:on every other turn of the game,on the first #count# turns of the game,if both players agree to allow it,if it has #_aCounter# counter on it,if #basicColors# mana was spent to cast it][_hasAnEffect:has an effect,applies,does anything][_sometimeEffect:only has an effect #_sometimeWhen#][_preventsPlayers:prevents players from #bugBlogSimpleActionGerundGeneral#,will prevent players from #bugBlogSimpleActionGerundGeneral#,enables players to #bugBlogSimpleAction#][_arbitraryEffect:#_preventsPlayers#,#_preventsPlayers# #_sometimeWhen#][_effect:#_onlyAffects#,#_sometimeEffect#,#_arbitraryEffect#]#_card# #_effect#"
+
+bugBlogEntry_cardsSuchAs:
+- "[#randomCreatureCategoryCard#][_cardsEither:#_cardCategoryClass# such as #_cardName#,#randomCreatureCard#,either #randomCreatureCard# or #randomCreatureCard#][_cardsBoth:#_cardCategoryClass# such as #_cardName#,#randomCreatureCard#,both #randomCreatureCard# and #randomCreatureCard#][#cardSearch_creatureTrigger#][_triggers:doesn't trigger off of #_cardsEither#,doesn't trigger off of #_cardsEither#,triggers an additional time off of #_cardsBoth#]#_cardName# #_triggers#"
+- "[#randomCreatureCategoryCard#][_cards:#_cardCategoryClass# such as #_cardName#,#randomCreatureCard#,#randomCreatureCard# and #randomCreatureCard#][_cardsOrCause:#_cardCategoryClass# such as #_cardName# cause,#randomCreatureCard# causes,#randomCreatureCard# or #randomCreatureCard# cause][_cardsAre:#_cardCategoryClass# such as #_cardName# are,#randomCreatureCard# is,#randomCreatureCard# and #randomCreatureCard# are][#cardSearch_permanentGrantsCreatureAbility#][_replacementAbility:#creatureKeyword.lowercase#,#creatureKeyword.lowercase#,#creatureKeyword.lowercase# and #creatureKeyword.lowercase#][_additionalInstance:an additional instance,two additional instances][_triggerEffect:#_cardsAre# not granted #_ability# by #_cardName#,#_cardsAre# granted #_additionalInstance# of #_ability# by #_cardName#,#_cardName# grants #_replacementAbility.lowercase# to #_cards# instead of granting #_ability#,When #_cardsOrCause# cause #_cardName1# to trigger#comma# it #bugBlogBadSpellResult#]#_triggerEffect#"
+
+bugBlogEntry_oppositeInstead:
+- "[#cardSearch_lifeGainOrLoss#]#_cardName# causes #_who# to #_opposite# #_lifeAmount# life instead of #_actioning# it"
+- "[#cardSearch_lifeGainOrLoss#]#_cardName# causes #_oppositePerson# to #_gainOrLose# life instead of #_whoTarget#"
+- "[#cardSearch_drawOrDiscard#]#_cardName# #_causesRequires# #_who# to #_opposite# #_cardAmount# instead of #_actioning# #_cardAmountSubject#"
+- "[#cardSearch_drawOrDiscard#]#_cardName# #_causesRequires# #_oppositePerson# to #_drawOrDiscard# #_cardAmount# instead of #_whoTarget#"
+- "[#cardSearch_lifeGainOrLoss#][_playerEffectAmount:#_lifeAmount#]#_cardName# [_causes:causes,forces]#_causes# #_who# to #bugBlogPlayerEffect# instead of #_actioning# [_life:life,#_lifeAmount# life]#_life#"
+- "[#cardSearch_drawOrDiscard#][_playerEffectAmount:#_cardAmountCount#]#_cardName# [_causes:causes,forces]#_causes# #_who# to #bugBlogPlayerEffect# instead of #_actioning# #_cardAmount#"
+
+bugBlogUnexpectedOutcome:
+- the game ends in a draw
+- they must choose a player's name
+- "#bugBlogNegativeOutcome#"
+
+bugBlogNegativeOutcome:
+- "you are unable to #bugBlogNegativeOutcome#"
+- "you are unable to #bugBlogNegativeOutcome# or #bugBlogNegativeOutcome#"
+- "you can only #bugBlogSimpleAction#"
+
+bugBlogSimpleAction:
+ - play lands
+ - reveal your hand
+ - draw extra cards
+ - search your library
+ - see cards in your hand
+ - look at your opponent's graveyard
+ - see which of your opponent's permanents are tapped
+ - choose or order blockers
+ - play modal spells
+ - pay kicker costs
+ - play instants on your opponent's turn
+ - play sorceries on your turn
+ - tap nonland permanents for mana
+ - gain life
+ - target permanents your opponent controls
+ - see the number of cards in your libary
+ - scry cards to the bottom of your library
+ - "untap more than #cardCopyCount# land#s# during your untap step"
+ - "set a stop on [_yourOpponents:your,your opponent's]#_yourOpponents# [_step:upkeep,untap,end,combat]#_step# step"
+ - disable foil animations
+ - "play spells during #gameStep#"
+
+bugBlogSimpleActionGerund:
+- "#bugBlogSimpleActionGerundSpecific#"
+- "#bugBlogSimpleActionGerundGeneral#"
+
+bugBlogSimpleActionGerundSpecific:
+- playing a land
+- drawing a card
+- drawing an extra card
+- discarding a card
+- playing a sideboard card
+- resolving a scry effect
+- "revealing [_what:your hand,the top card of your library]#_what#"
+- "[_casting:casting,attempting to cast][_what:spell,#spellType#,#randomLegendaryNonlandPermanent#]#_casting# #_what.a#"
+- "pressing [_keystroke:F2,F3,F6,F8,CTRL-Z]#_keystroke#"
+
+bugBlogSimpleActionGerundGeneral:
+- playing lands
+- drawing cards
+- drawing extra cards
+- discarding cards
+- playing sideboard cards
+- resolving scry effects
+- clashing with your opponent
+- "revealing [_what:your hand,the top card of your library]#_what#"
+- "[_casting:casting,attempting to cast][_what:spell,#spellType#,#randomLegendaryNonlandPermanent#]#_casting# #_what.a#"
+- "pressing [_keystroke:F2,F3,F6,F8,CTRL-Z]#_keystroke#"
+
+bugBlogSimpleScenario:
+- "with an empty [_what:library,graveyard,hand]#_what#"
+- "during your #gameStep.lowercase#"
+- "with mana in your mana pool"
+- "after searching your library"
+- "[_legend:#randomLegendaryPermanent#][_when:with #_legend# on the battlefield,while your opponent controls #_legend#]#_when#"
+- "with #spellMechanic.a# spell on the stack"
+
+bugBlogHugeEffect:
+ - "[_restart:cause the game to restart,cause a game restart]#_restart#"
+ - "cause #mtgSomePlayer#'#s# life total to become [_total:0,0,1,20]#_total#"
+ - "cause players to enter a subgame"
+ - "cause the game to end in a draw"
+ - "prevent the game from [_what:proceeding,continuing,being able to continue,ending]#_what#"
+ - "cause the [_clientServer:client,client,server]#_clientServer# to crash"
+ - "reset the #activeNonActive# player's clock"
+ - "[_increasing:increasing,decreasing][_criteria:by #_increasing# converted mana cost,alphabetically,by collector number,by TCGPlayer Mid market price][_reorder:order,reorder][_zone:library,graveyard,permanents][_order:randomly reorder each player's #_zone#,#_reorder# each player's #_zone# #_criteria#]#_order#"
+ - "cause each player's [_desc:best,most recent,least expensive,most expensive][_what:hand,graveyard,library,#_desc# permanent]#_what# to be exiled"
+ - "tap all permanents on the battlefield"
+ - "cause #mtgSomePlayer# to concede the [_game:game,match]#_game#"
+ - "force both players to play with their [_what:hands,libraries]#_what# revealed for the rest of the game"
+ - "cause [_who:the #activeNonActive# player,both players,a random player]#_who# to drop from the current tournament"
+
+mtgoClientSetting:
+- Animate Summoning Sickness
+- Animate Foil Animations
+- Keep “Miracle bluffing” on
+
+_playerEffectAmount: "#n2-9#"
+
+# expects _playerEffectAmount to be defined
+bugBlogPlayerEffect:
+- win the game
+- lose the game
+- concede the game
+- "scry #_playerEffectAmount#"
+- "sacrifice #_playerEffectAmount# permanents"
+- "lose #their# connection to the server"
+- "choose a card name"
+- "open a treasure chest"
+- "pay [_price:#priceTix#,#pricePlayPoints#]#_price#"
+- "shuffle #their# library"
+- "lose #num1-9# minutes from #their# play clock"
+- "reveal #their# hand"
+- "create #creatureTypes.a# token"
+- "shuffle a permanent #they# control into #their# library"
+- "place #_playerEffectAmount# #counterType# counters on a creature #they# control"
+- "enter #their# Magic Online password"
+- "enable foil animations"
+- "set a stop on [_whose:#thier#,#their# opponent's]#_whose# #mtgGameStep#"
+- "message an ORC"
+- "open a trade window"
+- "set a stop on [_yourOpponents:your,your opponent's]#_yourOpponents# [_step:upkeep,untap,end,combat]#_step# step"
+- enable the profanity filter
+- "enable the \"#mtgoClientSetting#\" client setting"
+- "reset #their# key bindings"
+- have book burning
+
+manaType:
+- "#basicColors#"
+- "#basicColors#"
+- "[_other:snow,phyrexian]#_other#"
+
+permanentPassiveEffect:
+- it triggers
+- it triggers
+- it dies
+- it's exiled
+- "it's #cardState#"
+- it's put onto the battlefield
+- "it's targeted by #targetSource.a#"
+
+permanentActiveEffect:
+- "[_reduced:#spellType.s#,spells #mtgSomePlayer# control#s#]reduces the cost of #_reduced#"
+- "#keywordCardAction.s# [_what:itself,itself,a random permanent,a random permanent,the last #cardPermanentType# to enter the battlefield]#_what#"
+
+effectWhileCondition:
+- "with #their# ability on the stack"
+- "[_when:before,after,on,during]#_when# the #xth# turn of the game"
+- "[_if:unless,and,after,before][_moreThan:more than,less than,exactly][_spellsHave:#count# spells have,one spell has]#_if# #_moreThan# #_spellsHave# been cast this [_turn:turn,game]#_turn#"
+- "[_whoControls:you control,your opponent controls,either player controls,#mtgSomePlayer# control#s#][_what:#cardPermanentType#,#basicColors# #cardPermanentType#,#cardState# #cardPermanentType#]while #_whoControls# #_what.a#"
+
+randomLayoutOrCategoryCard:
+- "#randomLayoutCard#"
+- "#randomCategoryCard#"
+# - "[_color:#searchableBasicColor#]#_color# #randomCategoryCard#[_cardCategory:#_color# #_cardCategory#]"
+
+setOrBlock:
+- "#mtgRealSet#"
+- "#cardBlock##cardBlockName# Block"
+
+bugBlogCategory:
+- Deckbuilding
+- Duel Scene
+- General
+- Gameplay
+- Play Lobby
+- Trade
+
+leastMost:
+- least
+- most
+
+playDraw:
+- play
+- draw
+
+ownedControlled:
+- owned
+- cotrolled
+
+activeNonActive:
+- active
+- nonactive
+
+alwaysSometimes:
+- always
+- sometimes
+
+bugBlogCardPossibilityPlural:
+- face-down cards
+- untargetable
+- morphed cards
+- hidden cards
+- epic spells
+- "copies of #randomRealCard#"
+- "[_howMany:two cards,multiple cards,#cardCopyCount# card#s#]#_howMany#"
+- "having #cardCopyCount# target#s#"
+- "if they are #ownedControlled# by #mtgSomePlayer#"
+- "#alwaysSometimes# targeting #mtgSomePlayer#"

@@ -387,10 +387,10 @@ async function cardFinderSearch(query, params, additionalFields) {
       const rarity = traceryEscape(card.rarity);      
       const type = randomElement(card.types);
       const subtype = randomElement(card.subtypes);
-      const fullType = card.types.join(' ');
+      const fullType = card.types ? card.types.join(' ') : (card.layout === 'token' ? 'token' : undefined);
       const fullSubtype = card.subtypes && card.subtypes.join(' ');    
-      const someTypeOrSubtype = getSomeCardTypeOrSubtype(card.types, card.subtypes);
-      const someCreatureType = getSomeCreatureType(card.types, card.subtypes);
+      const someTypeOrSubtype = fullType === 'token' ? 'token' : card.types && getSomeCardTypeOrSubtype(card.types, card.subtypes);
+      const someCreatureType = fullType === 'token' ? 'token' : card.types && getSomeCreatureType(card.types, card.subtypes);
       const imgUrl = traceryEscape(card.imageUrl);
       const color = getColorDescription(card.colorIdentity);
       const colorDescriptive = getColorFullDescription(card.colorIdentity);
@@ -400,13 +400,20 @@ async function cardFinderSearch(query, params, additionalFields) {
       const nameLastWord = card.name.split(" ").pop();
       const cmc = card.cmc || '0';
 
-      if (card.layout === 'token') {
+      if (card.layout === 'token' && name.toLowerCase().indexOf('token') === -1) {
         name += ' Token';
       } else if (card.layout === 'vanguard') {
         name += ' Avatar';
+      } else if (card.layout === 'split' || card.layout === 'aftermath') {
+        name = card.names ? card.names.reduce((fullName, name) => fullName.length === 0 ? name : `${fullName} // ${name}`) : card.name;
       }
 
       const prefix = TRACERY_LABEL_PREFIX;
+
+      // match given string, set an enumerated field to the value of each '$'
+      // $! ==> single-word match; $? ==> lazy match
+      const cardTextMatches = params[2] && card.text && (card.text.match(new RegExp(params[2].replace(/\$!/g, '\\b([^ ]+?)\\b').replace(/\$\?/g, '(.+?)').replace(/\$/g, '(.+)'), 'i')) || []).slice(1)
+        .reduce((list, match, index) => `${list}[${prefix}TextMatch${index+1}_${i}:${match}]`, '');
 
       finalResult = finalResult.concat(
         `[${prefix}Name${i}:${name}]`,
@@ -429,7 +436,8 @@ async function cardFinderSearch(query, params, additionalFields) {
         someCreatureType ? `[${prefix}SomeCreatureType${i}:${someCreatureType}]` : '', 
         color ? `[${prefix}Color${i}:${color}]` : '',             
         colorClass ? `[${prefix}ColorClass${i}:${colorClass}]` : '',
-        someColor ? `[${prefix}SomeColor${i}:${someColor}]`: ''
+        someColor ? `[${prefix}SomeColor${i}:${someColor}]`: '',
+        cardTextMatches ? cardTextMatches : ''        
       );
 
       if (additionalFields) {

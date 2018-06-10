@@ -1,0 +1,180 @@
+cardSearch_permanentCreateToken:
+ -> 
+  [_cardTextMatch2_1:#creatureTypes.capitalize#]
+  [_customQuery:text="create" text="creature token" t!=instant t!=sorcery]
+  [#_customQuery.cardSearchCustomQuery(1,undefined,create $ $ creature token)#]
+  [_cardName:#_cardName1#][_tokenType:#_cardTextMatch2_1#]
+
+cardSearch_nameACard:
+ - |
+  [_customQuery:text="card name" text!="card named"]
+  [#_customQuery.cardSearchCustomQuery#]
+  [_cardName:#_cardName1#]
+
+cardSearch_eachPlayerStepTrigger:
+ - |
+  [_customQuery:text="beginning of each player's"]
+  [#_customQuery.cardSearchCustomQuery#]
+  [_cardName:#_cardName1#]
+
+cardSearch_playersCantX:
+ - |
+  [_customQuery:text="players can't" text!="split second"]
+  [#_customQuery.cardSearchCustomQuery#]
+  [_cardName:#_cardName1#]
+
+_winOrLoseChoice:
+- "[_winOrLose:win][_winningOrLosing:winning]"
+- "[_winOrLose:lose][_winningOrLosing:losing]"
+
+_winOrLoseCause: "[_causesPrevents:causes][_causingPreventing:causing][_toFrom:to][_winOrLoseWithTense:#_winOrLose#]"
+
+_winOrLosePrevent: "[_causesPrevents:prevents][_causingPreventing:preventing][_toFrom:from][_winOrLoseWithTense:#_winningOrLosing#]"
+
+cardSearch_winLoseTheGame:
+ - |
+  [#_winOrLoseChoice#][#_winOrLoseCause#]
+  [_customQuery:text="#_winOrLose# the game" text!=can't]
+  [#_customQuery.cardSearchCustomQuery#]
+  [_cardName:#_cardName1#][_winnerLoser:you]
+ - |
+  [#_winOrLoseChoice#][#_winOrLoseCause#]
+  [_customQuery:text="#_winOrLose.s# the game"]
+  [#_customQuery.cardSearchCustomQuery#]
+  [_cardName:#_cardName1#][_winnerLoser:a player]
+ - |
+  [#_winOrLoseChoice#][#_winOrLosePrevent#]
+  [_customQuery:text="can't #_winOrLose# the game"]
+  [#_customQuery.cardSearchCustomQuery#]
+  [_cardName:#_cardName1#][_winnerLoser:a player]
+
+_gainOrLoseLifeGain:
+- "[_gainOrLose:gain][_gainingOrLosing:gaining][_opposite:lose]"
+
+_gainOrLoseLifeLose:
+- "[_gainOrLose:lose][_gainingOrLosing:losing][_opposite:gain]"
+
+_drawOrDiscardCardsDraw:
+- "[_drawOrDiscard:draw][_drawingOrDiscarding:drawing][_opposite:discard][_causesRequires:causes]"
+
+_drawOrDiscardCardsDiscard:
+- "[_drawOrDiscard:discard][_drawingOrDiscarding:discarding][_opposite:draw][_causesRequires:causes,requires]"
+
+_oppositePersonTargetPlayer:
+- "[_oppositePerson:both players][_whoTarget:just the targeted player,only one player]"
+- "[_oppositePerson:a random player][_whoTarget:the targeted player]"
+
+_oppositePersonYou:
+- "[_oppositePerson:your opponent][_whoTarget:you]"
+- "[_oppositePerson:a random player][_whoTarget:just you]"
+- "[_oppositePerson:both players][_whoTarget:just you]"
+
+_oppositePersonEachPlayer:
+- "[_oppositePerson:your opponent,just your opponent][_whoTarget:both players]"
+- "[_oppositePerson:you,just you][_whoTarget:both players]"
+
+cardSearch_lifeGainOrLoss:
+ - |
+  [_cardTextMatch1_1:a random amount,#num1-9#]
+  [#_gainOrLoseLifeGain#]
+  [_customQuery:text="#_gainOrLose#" text=life text!="gain life" text!=gains text!=loses text!=control text!=can't text!=instead text!=lifelink text!=extort]
+  [#_customQuery.cardSearchCustomQuery(1,undefined,gain $ life)#]
+  [_cardName:#_cardName1#][_action:#_gainOrLose#][_actioning:#_gainingOrLosing#][_lifeAmount:#_cardTextMatch1_1#][_who:you][#youPronouns#][#_oppositePersonYou#][_oppositePersonGainsOrLoses:#_oppositePerson# loses]
+ - |
+  [_cardTextMatch1_1:a random amount,#num1-9#]
+  [#_gainOrLoseLifeLose#]
+  [_customQuery:text="#_gainOrLose#" text=life text!="lose life" text!=gains text!=loses text!=control text!=can't text!=instead text!=lifelink text!=extort]
+  [#_customQuery.cardSearchCustomQuery(1,undefined,lose $ life)#]
+  [_cardName:#_cardName1#][_action:#_gainOrLose#][_actioning:#_gainingOrLosing#][_lifeAmount:#_cardTextMatch1_1#][_who:you][#youPronouns#][#_oppositePersonYou#][_oppositePersonGainsOrLoses:#_oppositePerson# loses]
+ - |
+  [_cardTextMatch1_1:a random amount,#num1-9#]
+  [#_gainOrLoseLifeGain#]
+  [_customQuery:text=life text="target player #_gainOrLose.s#" text!=control text!=can't text!=instead text!=lifelink text!=extort]
+  [#_customQuery.cardSearchCustomQuery(1,undefined,gains $ life)#]
+  [_cardName:#_cardName1#][_action:#_gainOrLose#][_actioning:#_gainingOrLosing#][_lifeAmount:#_cardTextMatch1_1#][_who:the targeted player][#theyPronouns#][#_oppositePersonTargetPlayer#]
+ - |
+  [_cardTextMatch1_1:a random amount,#num1-9#]
+  [#_gainOrLoseLifeLose#]
+  [_customQuery:text="target player #_gainOrLose.s#" text=life text!=control text!=can't text!=instead text!=lifelink text!=extort]
+  [#_customQuery.cardSearchCustomQuery(1,undefined,loses $ life)#]
+  [_cardName:#_cardName1#][_action:#_gainOrLose#][_actioning:#_gainingOrLosing#][_lifeAmount:#_cardTextMatch1_1#][_who:the targeted player][#theyPronouns#][#_oppositePersonTargetPlayer#]
+
+cardSearch_drawOrDiscard:
+ - |
+  [_cardTextMatch1_1:a random amount,#num1-9#]
+  [#_drawOrDiscardCardsDraw#]
+  [_customQuery:text="draw a card" text!="can't draw" text!=discard text!="draw a card for each"]
+  [#_customQuery.cardSearchCustomQuery#]
+  [_cardName:#_cardName1#][_action:#_drawOrDiscard#][_actioning:#_drawingOrDiscarding#][_cardAmountCount:1][_cardAmount:a card][_cardAmountSubject:one][_oppositePerson:your opponent][_oppositePersonDraws:your opponent draws][_who:you][#youPronouns#][_whoTarget:you]
+ - |
+  [_cardTextMatch1_1:a random amount,#num1-9#]
+  [#_drawOrDiscardCardsDiscard#]
+  [_customQuery:text="discard a card" text!=draw]
+  [#_customQuery.cardSearchCustomQuery#]
+  [_cardName:#_cardName1#][_action:#_drawOrDiscard#][_actioning:#_drawingOrDiscarding#][_cardAmountCount:1][_cardAmount:a card][_cardAmountSubject:one][_oppositePerson:your opponent][_oppositePersonDraws:your opponent draws][_who:you][#youPronouns#][_whoTarget:you]
+ - |
+  [_cardTextMatch1_1:a random amount,#num1-9#]
+  [#_drawOrDiscardCardsDraw#]
+  [_customQuery:text="target player draws a card" text!=discards text!="draws a card for each"]
+  [#_customQuery.cardSearchCustomQuery#]
+  [_cardName:#_cardName1#][_action:#_drawOrDiscard#][_actioning:#_drawingOrDiscarding#][_cardAmountCount:1][_cardAmount:a card][_cardAmountSubject:one][#_oppositePersonTargetPlayer#][_oppositePersonDraws:#_oppositePerson# draws][_who:the targeted player][#theyPronouns#]
+ - |
+  [_cardTextMatch1_1:a random amount,#num1-9#]
+  [#_drawOrDiscardCardsDiscard#]
+  [_customQuery:text="target player discards a card" text!=draws text!="discards a card for each"]
+  [#_customQuery.cardSearchCustomQuery#]
+  [_cardName:#_cardName1#][_action:#_drawOrDiscard#][_actioning:#_drawingOrDiscarding#][_cardAmountCount:1][_cardAmount:a card][_cardAmountSubject:one][#_oppositePersonTargetPlayer#][_oppositePersonDraws:#_oppositePerson# discards][_who:the targeted player][#theyPronouns#]
+ - |
+  [_cardTextMatch1_1:a random number of,#num1-9#]
+  [#_drawOrDiscardCardsDraw#]
+  [_customQuery:text="draw" text="cards" text!=draws text!=equal text!=discard]
+  [#_customQuery.cardSearchCustomQuery(1,undefined,draw $! cards)#]
+  [_cardName:#_cardName1#][_action:#_drawOrDiscard#][_actioning:#_drawingOrDiscarding#][_cardAmountCount:#_cardTextMatch1_1#][_cardAmount:#_cardTextMatch1_1# cards,cards][_cardAmountSubject:them][_oppositePerson:your opponent][_oppositePersonDraws:your opponent draws][_who:you][#youPronouns#][_whoTarget:you]
+ - |
+  [_cardTextMatch1_1:a random number of,#num1-9#]
+  [#_drawOrDiscardCardsDiscard#]
+  [_customQuery:text="discard" text="cards" text!=discards text!=equal text!=draw]
+  [#_customQuery.cardSearchCustomQuery(1,undefined,discard $! cards)#]
+  [_cardName:#_cardName1#][_action:#_drawOrDiscard#][_actioning:#_drawingOrDiscarding#][_cardAmountCount:#_cardTextMatch1_1#][_cardAmount:#_cardTextMatch1_1# cards,cards][_cardAmountSubject:them][_oppositePerson:your opponent][_oppositePersonDraws:your opponent draws][_who:you][#youPronouns#][_whoTarget:you]
+ - |
+  [_cardTextMatch1_1:a random number of,#num1-9#]
+  [#_drawOrDiscardCardsDraw#]
+  [_customQuery:text="target player draws" text="cards" text!=equal text!=discard]
+  [#_customQuery.cardSearchCustomQuery(1,undefined,draws $! cards)#]
+  [_cardName:#_cardName1#][_action:#_drawOrDiscard#][_actioning:#_drawingOrDiscarding#][_cardAmountCount:#_cardTextMatch1_1#][_cardAmount:#_cardTextMatch1_1# cards,cards][_cardAmountSubject:them][#_oppositePersonTargetPlayer#][_oppositePersonDraws:#_oppositePerson# discards][#theyPronouns#][_who:the targeted player]
+ - |
+  [_cardTextMatch1_1:a random number of,#num1-9#]
+  [#_drawOrDiscardCardsDiscard#]
+  [_customQuery:text="target player discards" text="cards" text!=equal text!=draw]
+  [#_customQuery.cardSearchCustomQuery(1,undefined,discards $! cards)#]
+  [_cardName:#_cardName1#][_action:#_drawOrDiscard#][_actioning:#_drawingOrDiscarding#][_cardAmountCount:#_cardTextMatch1_1#][_cardAmount:#_cardTextMatch1_1# cards,cards][_cardAmountSubject:them][#_oppositePersonTargetPlayer#][_oppositePersonDraws:#_oppositePerson# discards][#theyPronouns#][_who:the targeted player]
+  
+cardSearch_searchLibrary: >
+ - |
+  [_cardTextMatch2_1:#cardTypes#]
+  [_customQuery:text="search" text="library for a"  text|="library for an" text!="for a card"]
+  [#_customQuery.cardSearchCustomQuery(1,undefined,library for $? $! card)#]
+  [_cardName:#_cardName1#][_searchTarget:#_cardTextMatch2_1.a#,#_cardTextMatch2_1.a# card]
+ - |
+  [_cardTextMatch2_1:#cardTypes#]
+  [_customQuery:text="search" text="library for a"  text|="library for an" text!="for a card"]
+  [#_customQuery.cardSearchCustomQuery(1,undefined,library for $? $! card)#]
+  [_cardName:#_cardName1#][_searchTarget:#_cardTextMatch2_1.a#,#_cardTextMatch2_1.a# card]
+ - |
+  [_cardTextMatch2_1:#cardTypes#]
+  [_customQuery:text="search" text="cards and" text!="those cards"]
+  [#_customQuery.cardSearchCustomQuery(1,undefined,library for $ $! cards)#]
+  [_cardName:#_cardName1#][_searchTarget:#_cardTextMatch2_1.a#,#_cardTextMatch2_1.a# card,any #_cardTextMatch2_1# cards]
+
+cardSearch_creatureTrigger: >
+ - |
+  [_customQuery:text="whenever a creature" text!="exalted" text!="flanking" text!="evolve"]
+  [#_customQuery.cardSearchCustomQuery(1)#]
+  [_cardName:#_cardName1#][_searchTarget:#_cardTextMatch2_1.a#,#_cardTextMatch2_1.a# card]
+
+cardSearch_permanentGrantsCreatureAbility: >
+ - |
+  [_cardTextMatch1_1:the intended ability] 
+  [_customQuery:text="creature gains" text!="strike" text!="this ability" text!="your choice" t!="instant" t!="sorcery"]
+  [#_customQuery.cardSearchCustomQuery(1, undefined,creature gains $!)#]
+  [_cardName:#_cardName1#][_ability:#_cardTextMatch1_1#]

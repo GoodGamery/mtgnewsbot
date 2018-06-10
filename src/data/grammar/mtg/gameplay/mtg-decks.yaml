@@ -91,7 +91,7 @@
     "#deckPrefix# #definingCardname#",
     "#deckSuffixPrefix# #deckSuffix#",
     "#deckPrefix# #deckVariation#",
-    "#deckPrefix# [_suffix:#animal#,#bodypartsInPairs#,#creatureTypes#,#creatureTypes.s#]#_suffix.capitalizeAll#"
+    "#deckPrefix# [_suffix:#animal#,#animalPlural#,#bodypartsInPairs#,#creatureTypes#,#creatureTypes.s#]#_suffix.capitalizeAll#"
   ],
   "deckPrefix" : [
     "Turbo",
@@ -117,7 +117,7 @@
     "Dragon",
     "Eldrazi",
     "Seething",
-    "Oops! All #definingCardname.sIfNeeded#",
+    "Oops! All [_surprise:#definingCardname.sIfNeeded#,#definingCardname.sIfNeeded#,#cardCategoryTerm.sIfNeeded#,#animalPlural#]#_surprise.capitalizeAll#",
     "Canadian",
     "Cat",
     "Deadguy",

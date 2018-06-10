@@ -1,0 +1,12 @@
+targetSource:
+- spell
+- instant
+- sorcery
+- activated ability
+- triggered ability
+- "[_spellType:#mtgColors#,#mtgColors#,#spellMechanic#,#spellMechanic#,#spellMechanic#,bounce,removal]#_spellType# spell"
+- "[_perm:permanent,#cardPermanentType#][_spell:spell,card,activated ability of a #_perm#,triggered ability of a #_perm#]#_spell# from #setOrBlockSource#"
+
+setOrBlockSource:
+- "#cardSet#"
+- "[#cardBlock#]#cardBlockName.replace( Block,)# Block"

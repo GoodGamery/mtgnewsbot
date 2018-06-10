@@ -19,6 +19,7 @@ curatedHeadlineA4:
 - "#mtgComic#"
 - "#financeHeadline#"
 - "#financeHeadline#"
+- "#bugBlogHeadline#"
 - "#randomTextHeadline#"
 
 curatedHeadlineA5:
@@ -41,6 +42,7 @@ curatedHeadlineB2:
 - "#randomTextHeadline#"
 - "#communityNews#"
 - "#communityNews#"
+- "#bugBlogHeadline#"
 
 curatedHeadlineB3:
 - "#mtgDeckTechGraphic#"
@@ -71,6 +73,7 @@ randomTextHeadline:
 - "#playGuide#"
 - "#tournamentNews#"
 - "#clickbait#"
+- "#bugBlogHeadline#"
 
 smallImageHeadline1:
 - "#cardCallout#"

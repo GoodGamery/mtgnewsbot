@@ -25,3 +25,5 @@ repulsive
 questionable
 ingenious
 clever
+forgettable
+unforgettable
