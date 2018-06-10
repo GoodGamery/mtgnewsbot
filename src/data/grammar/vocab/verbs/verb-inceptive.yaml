@@ -171,6 +171,11 @@ verbInceptiveIntransitive:
 - try
 - dare
 - happen
+- sleep
+- wonder
+- dream
+- gorge
+- despair
 
 verbInceptiveIntransitivePastTense:
 - stood
@@ -200,6 +205,45 @@ verbInceptiveIntransitivePastTense:
 - tried
 - dared
 - happened
+- wondered
+- slept
+- dreamed
+- gorged
+- despaired
+
+verbInceptiveIntransitivePerfectPastTense:
+- stood
+- risen
+- appeared
+- volunteered
+- stretched
+- fallen
+- arrived
+- left
+- gone
+- pledged
+- shifted
+- entered
+- grown
+- gotten
+- turned
+- resolved
+- decided
+- resigned
+- conceded
+- withdraen
+- proposed
+- submitted
+- failed
+- ventured
+- tried
+- dared
+- happened
+- wondered
+- slept
+- dreamt
+- gorged
+- despaired
 
 verbInceptiveIntransitiveGerund:
 - standing
@@ -229,3 +273,9 @@ verbInceptiveIntransitiveGerund:
 - trying
 - daring
 - happening
+- happening
+- sleeping
+- wondering
+- dreaming
+- gorging
+- despairing

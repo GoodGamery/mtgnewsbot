@@ -122,9 +122,20 @@ flavorText:
     "[_byWith:by,with][_instrument:#nounMagicalElement#,#nounMagicalElement#,#nounWeapon#,#itemNoun#][_justBy:#_byWith# this #_instrument.lowercase##comma#][_itsByThis:#_justBy# #,#_justBy#,it is #_byWith# this #_instrument#][_affirm:affirm,decree,foretell,bid,confirm,yield][_char1:#planeswalkerFirstName#,#character#][_char2:#character#,#character#,#miscPersonSingular#]#_itsByThis.capitalize# I #_affirm# your #nounDestiny#." #_char1#, to #_char2#
   - >
     "[_dances:dance,sing,chant][_dance:#_dances#]I #_dance# the [_danceType:#mood#,#emotion#,#animal#,#creatureTypes#]#_danceType# #_dance.replace(i,o)#, / #bodypartsInPairs# [_up:,up ][_upWhere:trees,clouds,sky,eaves][_firstWhere:in the air,'round my head,#_up#above,in the sky,in the #_upWhere#,held #_up#high,toward the sun]#_firstWhere#, [_secondThing:#bodypartsInPairs#,#pluralItemNounOrMassNoun#] #_secondThing# [_downWhere:river,sea,sand,earth,grave][_secondWhere:on the ground,in the sand,on my feet,down below,in the dirt,on the floor]#_secondWhere#." —#characterFactionOrRace.capitalize# [_chant:chant,rhyme]#_chant#
+ - >
+  #wallOfVaporParts#\"#_part.capitalize# of #_body1.a# #_isAre# made out of #massNounCompoundWorthy#,/ #_part.capitalize# of #_body2.a# #_isAre# made out of #massNounCompoundWorthy#./ #_myPart.capitalize# #_isAre# made out of [_material:#massNounCompoundWorthy#][_makeup:nothing but #_material#,#_material# alone,only #_material#,pure #_material#]#_makeup#,/ [_adj:#adjComparative#,#adjPersonCharacteristicComparative#,more #mood#]#_adj.capitalize# than [_that:that,who][_all:all,those,any][_whoElse:any #_that# ever have #verbInceptiveIntransitivePerfectPastTense#,#_all# who have #verbIntransitivePastTense# before me]#_whoElse#.\" —#commonCharacterFirstName# #commonCharacterLastName#, #folkSongOrPoem#
 
 flavorTextNew:
 # -> Cerulean Wisps flavor text
+
+folkSongOrPoem:
+- "The [_who:#animal#,#characterClass#]#_who.capitalizeAll#'s [_song:song,tale,lament,chorus]#_song.capitalizeAll#"
+- "[_song:song,saga,history,chronicle,ballad]#_song.capitalizeAll# of #randomMtgLocation.capitalizeAll#"
+- "[_song:song,hymn,psalm,tale,fable,legend]#_song.capitalizeAll# of [_what:#massNoun.capitalizeAll#,#massNounCompoundWorthy.capitalizeAll#,#massNounCompoundWorthy.capitalizeAll# and #massNounCompoundWorthy.capitalizeAll#,#massNounCompoundWorthy.capitalizeAll# and #massNoun.capitalizeAll#]#_what#"
+
+wallOfVaporParts:
+ - "[_part:#roomPart#][_myPart:my #_indefinite#][_body1:#placeNoun#][_body2:#placeNoun#]"
+ - "[_bodyPart:#bodypartsInternalExternal#][_part:#_bodyPart#,#_bodyPart#][_myPart:my #_bodyPart#][_body1:#animal#,#creatureTypes#][_body2:#animal#,#creatureTypes#]"
 
 characterAttribution:
   - "#planeswalkerFullName#"
@@ -142,6 +153,18 @@ lookingFor:
   - "[_lookFor1:#creatureTypes#][_lookFor2:#creatureTypes#]"
   - "[_lookFor1:#characterClass#][_lookFor2:#characterClass#]"
   - "[_lookFor1:#itemNoun#][_lookFor2:#itemNoun#]"
+
+roomPart:
+  - "walls[_indefinite:walls][_isAre:are]"
+  - "floors[_indefinite:floors][_isAre:are]"
+  - "doors[_indefinite:doors][_isAre:are]"
+  - "the foundation[_indefinite:foundation][_isAre:is]"
+  - "the roof[_indefinite:roof][_isAre:is]"
+  - "[_whatParts:best,worst,oldest,strongest,weakest,softest]the #_whatParts# parts[_indefinite:#_whatParts#][_isAre:are]"
+  - "the inside[_indefinite:inside][_isAre:is]"
+  - "the outside[_indefinite:outside][_isAre:is]"
+  - "the hearth[_indefinite:hearth][_isAre:is]"
+  - "the entrance[_indefinite:entrance][_isAre:is]"
 
 judgeJury:
 - "#characterClass#"
