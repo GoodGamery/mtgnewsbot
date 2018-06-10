@@ -45,11 +45,11 @@ _gathererRulingImageTable: |
 _gathererRulingImageTableContents: "#_gathererLogoHeader# #_gathererRulingImageHeader# #_gathererRulingImageTableRulings#"
 
 _gathererRulingImageTableRulings:
-  - "#_gathererRulingImageRowOdd# #_gathererRulingImageRowEven#"
-  - "#_gathererRulingImageRowOdd# #_gathererRulingImageRowEven#"
-  - "#_gathererRulingImageRowOdd# #_gathererRulingImageRowEven# #_gathererRulingImageRowOdd#"
-  - "#_gathererRulingImageRowOdd# #_gathererRulingImageRowEven# #_gathererRulingImageRowOdd#"
-  - "#_gathererRulingImageRowOdd# #_gathererRulingImageRowEven# #_gathererRulingImageRowOdd# #_gathererRulingImageRowEven#"
+- "[#_gathererRuling2Dates#]#_gathererRulingImage1##_gathererRulingImage2#"
+- "[#_gathererRuling2Dates#]#_gathererRulingImage1##_gathererRulingImage2#"
+- "[#_gathererRuling3Dates#]#_gathererRulingImage1##_gathererRulingImage2##_gathererRulingImage3#"
+- "[#_gathererRuling3Dates#]#_gathererRulingImage1##_gathererRulingImage2##_gathererRulingImage3#"
+- "[#_gathererRuling4Dates#]#_gathererRulingImage1##_gathererRulingImage2##_gathererRulingImage3##_gathererRulingImage4#"
 
 _gathererLogoHeader: |
   <tr>
@@ -66,11 +66,47 @@ _gathererRulingImageHeader: |
     </td>
   </tr>
 
+_gathererRulingGenerateDates: "#CONTENT.randomGathererDates(6)#"
+
+_gathererRuling2Dates:
+- "#_gathererRulingGenerateDates#[_gathererRulingImageDate1:#_randomGathererDate1#][_gathererRulingImageDate2:#_randomGathererDate2#]"
+- "#_gathererRulingGenerateDates#[_gathererRulingImageDate1:#_randomGathererDate1#][_gathererRulingImageDate2:#_randomGathererDate3#]"
+- "#_gathererRulingGenerateDates#[_gathererRulingImageDate1:#_randomGathererDate2#][_gathererRulingImageDate2:#_randomGathererDate4#]"
+- "#_gathererRulingGenerateDates#[_gathererRulingImageDate1:#_randomGathererDate4#][_gathererRulingImageDate2:#_randomGathererDate5#]"
+- "#_gathererRulingGenerateDates#[_gathererRulingImageDate1:#_randomGathererDate5#][_gathererRulingImageDate2:#_randomGathererDate6#]"
+- "[_date:#_randomGathererDate1#,#_randomGathererDate2#,#_randomGathererDate3#,#_randomGathererDate4#,#_randomGathererDate5#]#_gathererRulingGenerateDates#[_gathererRulingImageDate1:#_date#][_gathererRulingImageDate2:#_date#]"
+- "[_date:#_randomGathererDate1#,#_randomGathererDate2#,#_randomGathererDate3#,#_randomGathererDate4#,#_randomGathererDate5#]#_gathererRulingGenerateDates#[_gathererRulingImageDate1:#_date#][_gathererRulingImageDate2:#_date#]"
+
+_gathererRuling3Dates:
+- "#_gathererRulingGenerateDates#[_gathererRulingImageDate1:#_randomGathererDate1#][_gathererRulingImageDate2:#_randomGathererDate2#][_gathererRulingImageDate3:#_randomGathererDate3#]"
+- "#_gathererRulingGenerateDates#[_gathererRulingImageDate1:#_randomGathererDate1#][_gathererRulingImageDate2:#_randomGathererDate2#][_gathererRulingImageDate3:#_randomGathererDate4#]"
+- "#_gathererRulingGenerateDates#[_gathererRulingImageDate1:#_randomGathererDate2#][_gathererRulingImageDate2:#_randomGathererDate3#][_gathererRulingImageDate3:#_randomGathererDate5#]"
+- "#_gathererRulingGenerateDates#[_gathererRulingImageDate1:#_randomGathererDate2#][_gathererRulingImageDate2:#_randomGathererDate3#][_gathererRulingImageDate3:#_randomGathererDate5#]"
+- "#_gathererRulingGenerateDates#[_gathererRulingImageDate1:#_randomGathererDate3#][_gathererRulingImageDate2:#_randomGathererDate5#][_gathererRulingImageDate3:#_randomGathererDate6#]"
+- "#_gathererRulingGenerateDates#[_gathererRulingImageDate1:#_randomGathererDate4#][_gathererRulingImageDate2:#_randomGathererDate5#][_gathererRulingImageDate3:#_randomGathererDate6#]"
+- "#_gathererRulingGenerateDates#[_date:#_randomGathererDate1#,#_randomGathererDate2#,#_randomGathererDate3#][_date1:#_date#][_gathererRulingImageDate1:#_date1#][_gathererRulingImageDate2:#_date1#][_gathererRulingImageDate3:#_randomGathererDate4#,#_randomGathererDate5#,#_randomGathererDate6#]"
+- "#_gathererRulingGenerateDates#[_date:#_randomGathererDate4#,#_randomGathererDate5#,#_randomGathererDate6#][_date2:#_date#][_gathererRulingImageDate1:#_randomGathererDate1#,#_randomGathererDate2#,#_randomGathererDate3#][_gathererRulingImageDate2:#_date2#][_gathererRulingImageDate3:#_date2#]"
+
+_gathererRuling4Dates:
+- "#_gathererRulingGenerateDates#[_gathererRulingImageDate1:#_randomGathererDate1#][_gathererRulingImageDate2:#_randomGathererDate2#][_gathererRulingImageDate3:#_randomGathererDate4#][_gathererRulingImageDate4:#_randomGathererDate6#]"
+- "#_gathererRulingGenerateDates#[_gathererRulingImageDate1:#_randomGathererDate1#][_gathererRulingImageDate2:#_randomGathererDate3#][_gathererRulingImageDate3:#_randomGathererDate4#][_gathererRulingImageDate4:#_randomGathererDate5#]"
+- "#_gathererRulingGenerateDates#[_gathererRulingImageDate1:#_randomGathererDate2#][_gathererRulingImageDate2:#_randomGathererDate4#][_gathererRulingImageDate3:#_randomGathererDate5#][_gathererRulingImageDate4:#_randomGathererDate6#]"
+- "#_gathererRulingGenerateDates#[_gathererRulingImageDate1:#_randomGathererDate1#][_gathererRulingImageDate2:#_randomGathererDate2#][_gathererRulingImageDate3:#_randomGathererDate3#][_gathererRulingImageDate4:#_randomGathererDate5#]"
+- "#_gathererRulingGenerateDates#[_date:#_randomGathererDate1#,#_randomGathererDate2#,#_randomGathererDate3#][_date1:#_date#][_gathererRulingImageDate1:#_date1#][_gathererRulingImageDate2:#_date1#][_gathererRulingImageDate3:#_randomGathererDate4#,#_randomGathererDate5#][_gathererRulingImageDate4:#_randomGathererDate5#,#_randomGathererDate6#]"
+- "#_gathererRulingGenerateDates#[_date:#_randomGathererDate1#,#_randomGathererDate2#,#_randomGathererDate3#][_date2:#_date#][_gathererRulingImageDate1:#_randomGathererDate2#][_gathererRulingImageDate2:#_date2#][_gathererRulingImageDate3:#_randomGathererDate4#,#_randomGathererDate5#][_gathererRulingImageDate4:#_randomGathererDate5#,#_randomGathererDate6#]"
+
+_gathererRulingImageDate: |
+  <td class="rulingDate #_parityClass#">#_gathererTimestamp#</td>
+
 _gathererRulingImageRowOdd: "[_parityClass:oddItem]#_gathererRulingImageRow#"
 _gathererRulingImageRowEven: "[_parityClass:evenItem]#_gathererRulingImageRow#"
 
+_gathererRulingImage1: "[_gathererTimestamp:#_gathererRulingImageDate1#]#_gathererRulingImageRowOdd#"
+_gathererRulingImage2: "[_gathererTimestamp:#_gathererRulingImageDate2#]#_gathererRulingImageRowEven#"
+_gathererRulingImage3: "[_gathererTimestamp:#_gathererRulingImageDate3#]#_gathererRulingImageRowOdd#"
+_gathererRulingImage4: "[_gathererTimestamp:#_gathererRulingImageDate4#]#_gathererRulingImageRowEven#"
+
 _gathererRulingImageRow: "<tr>#_gathererRulingImageDate# #_gathererRulingImageText#</tr>"
-_gathererRulingImageDate: |
-  <td class="rulingDate #_parityClass#">#gathererTimestamp#</td>
+
 _gathererRulingImageText: |
   <td class="rulingText #_parityClass#">#gathererText.capitalize#</td>

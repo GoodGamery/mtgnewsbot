@@ -67,7 +67,7 @@
       "[_firstAction:#gameAction#,#randomKeywordAction#][_and: and ][_all:, all ][_while:while][_finished:][_interim:between the two][_secondAction:#randomKeywordAction#,#gameAction#,choose to #verbReflexive# yourself]",
       "[#youPronouns#][_and: and ][_all:, all ][_while:while][_finished:][_interim:between the two][_mutterHow:under your breath,to yourself][_mutter:mutter “#mtgSlangTerm#” #_mutterHow#][_firstAction:#gameAction#,#randomKeywordAction#][_secondAction:#randomKeywordCardAction#,#gameAction#,#_mutter#]",
       "[_firstAction:Draw #cardCopyCount# card#s#][_and: and ][_all:, all ][_while:while][_finished:][_interim:between the two][_secondAction:put #cardCopyCount# card#s# back]",
-      "[_action:keep your eyes closed,keep your fingers crossed,refrain from touching the table,hold your breath,remain expressionless,remain completely silent,keep talking,keep your hands below the table][_firstAction:Must #_action#][_and:][_all:,][_while:until][_finished: finished ][_interim:until then][_secondAction:]"
+      "[_action:keep your eyes closed,keep your fingers crossed,refrain from touching the table,hold your breath,remain expressionless,remain completely silent,keep talking,keep your hands below the table][_firstAction:must #_action#][_and:][_all:,][_while:until][_finished: finished ][_interim:until then][_secondAction:]"
     ],
 
     "gathererTextRare": [
