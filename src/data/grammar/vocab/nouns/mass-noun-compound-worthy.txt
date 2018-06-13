@@ -61,5 +61,8 @@ moss
 mold
 tin
 iron
-gunk
 goo
+juice
+slime
+trash
+clay

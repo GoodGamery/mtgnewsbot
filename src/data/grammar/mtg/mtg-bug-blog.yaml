@@ -97,12 +97,12 @@ _bugBlogEntry:
 
 bugBlogEntrySimple:
 - "[_when:,,sometimes ,randomly ][_noFunction:#canMayWont# have an effect when cast,#canMayWont# function]#randomInstantOrSorceryCard# #_when##_noFunction#"
-- "#randomCardExcludeBasics# [_only:,only ]#_only#functions [_where:from the graveyard,#cardLocationFrom#]#_where#"
+- "#randomNonlandCard# [_only:,only ,also ][_functions:#_only#functions,#_only#works,can #_only#be cast]#_functions# [_where:from the graveyard,from #cardLocationFrom#]#_where#"
 - "#randomInstantOrSorceryCard# #bugBlogBadSpellResult# unless #bugBlogCardCastException#"
 - "#randomInstantOrSorceryCard# [_behaves:#alwaysSometimes# behaves as if it has,#canMay# behave as if it had]#_behaves# #spellMechanic#"
 - "#randomNonlandCard# can [_be:be ,only be,also be]#_be# cast from [_whose:the,your,its owner's][_where:library,sideboard,graveyard]#_whose# [_whereIf:#_where#,#_where#,#_where# if #bugBlogCardCastException#]#_whereIf#"
 
-cardLocationFrom: "#cardLocation.replace(in ,from )#"
+cardLocationFrom: "#cardLocation.replace(in , )#"
 
 bugBlogBadSpellResult:
 - "#bugBlogIs# immediately exiled with no effect"
@@ -308,7 +308,7 @@ permanentActiveEffect:
 - "#keywordCardAction.s# [_what:itself,itself,a random permanent,a random permanent,the last #cardPermanentType# to enter the battlefield]#_what#"
 
 effectWhileCondition:
-- "with #their# ability on the stack"
+- "with [_their:#their#,#their# own]#_their# ability on the stack"
 - "[_when:before,after,on,during]#_when# the #xth# turn of the game"
 - "[_if:unless,and,after,before][_moreThan:more than,less than,exactly][_spellsHave:#count# spells have,one spell has]#_if# #_moreThan# #_spellsHave# been cast this [_turn:turn,game]#_turn#"
 - "[_whoControls:you control,your opponent controls,either player controls,#mtgSomePlayer# control#s#][_what:#cardPermanentType#,#basicColors# #cardPermanentType#,#cardState# #cardPermanentType#]while #_whoControls# #_what.a#"
@@ -340,7 +340,7 @@ playDraw:
 
 ownedControlled:
 - owned
-- cotrolled
+- controlled
 
 activeNonActive:
 - active
