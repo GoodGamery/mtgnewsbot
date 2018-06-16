@@ -85,8 +85,9 @@ cotdCreatureTypeDescription:
   [_companions:pets,pets,companions,friends,#characterClass.s#]
   [_usefulItem:#bodypartsPlural#,#abstractNounPluralItemNounMassNounOrEmotion#]
   [_undesirableVerb:eat,steal,run away with,hide,hoard,ruin]
+  [_their:#their#]
   [_petOwner:#cotdPetOwner#]
-  [_petLocation:on #their# private #_creatureType# farm,on #their# private compound,in #their# private menagerie,for research purposes,for undisclosed reasons,in a secret location]  
+  [_petLocation:on #_their# private #_creatureType# farm,on #_their# private compound,in #_their# private menagerie,for research purposes,for undisclosed reasons,in a secret location]  
   [_petLocationMoreSpecific:on #plane#,in #nonPlaneLocation#,in #minorStoryLocation#]
   [_petLocationSpecific:#_petLocation#,#_petLocation# #_petLocationMoreSpecific#]
   [_andSecondActivity:, and #nounActivity#]
@@ -117,7 +118,7 @@ cotdWordPairPonderable:
 cotdCustomQueryDecscription:
 - >
   [#cotdLegendaryCreatureSearch#]
-  [_preposition:by][_cause:#causeOfDeath#][_deathAdj:fabled,fateful,infamous,notorious,historical]This top-down card inspired by #historicalFigure# turns #their# #_deathAdj# death#s# #_preposition# #_cause# on #their# enemies—[_target:opponents,friends,#personRelationalUnique#][_andYours:and yours,and your opponents,and your #_target#,and #character#'s #_target#,pet #animal#,lucky you,fortunately for you]#_andYours#.
+  [_preposition:by][_cause:#causeOfDeath#][_deathAdj:fabled,fateful,infamous,notorious,historical]This top-down card inspired by #historicalFigure# turns #their# #_deathAdj# death#sPlural# #_preposition# #_cause# on #their# enemies—[_target:opponents,friends,#personRelationalUnique#][_andYours:and yours,and your opponents,and your #_target#,and #character#'s #_target#,pet #animal#,lucky you,fortunately for you]#_andYours#.
 - >
   [#cotdLegendaryCreatureSearch#]
   [_legendImgUrl:#_cardImgUrl1#][_legendSubtype:#_cardSubtype1#]#_legendName# has [_agenda:a plan,an agenda,a bright idea,a mission in life,a puzzle to solve,a philosophical question to ponder,homework to do,a survey to conduct,a dispute to settle,a bee in their bonnet]#_agenda#. They're going to [_solve:decide,answer the question of,find out,finally determine,ask #planeswalkerFirstName#]#_solve# #cotdWordPairPonderable#.[_cardImgUrl1:#_legendImgUrl#]
@@ -435,56 +436,56 @@ cardWhichCountersSpells:
   - Voidslime
 
 historicalFigure:
-  - Cleopatra[their:her]
-  - Napoleon[their:his]
-  - Abraham Lincoln[their:his]
-  - Joan of Arc[their:her]
-  - Socrates[their:his]
-  - Genghis Khan[their:his]
-  - Sigmund Freud[their:his]
-  - Beethoven[their:his]
-  - Billy the Kid[their:his]
-  - Alexander the Great[their:his]
-  - Julius Caesar[their:his]
-  - Henry VIII[their:his]
-  - Bonnie and Clyde[their:their]
-  - Ivan the Terrible[their:his]
-  - Simón Bolívar[their:his]
-  - Marie Antoinette[their:her]
-  - Mark Twain[their:his]
-  - Da Vinci[their:his]
-  - Oscar Wilde[their:his]
-  - Descartes[their:his]
-  - Florence Nightingale[their:her]
-  - Thomas Edison[their:his]
-  - Kublai Khan[their:his]
-  - Samuel Coleridge[their:his]
-  - Orville and Wilbur Wright[their:their]
-  - Andrew Carnegie[their:his]
-  - Tolstoy[their:his]
-  - Queen Victoria[their:her]
-  - Otto von Bismarck[their:his]
-  - Trotsky[their:his]
-  - Galileo[their:his]
-  - Jane Austen[their:her]
-  - Alfred Hitchcock[their:his]
-  - Captain Cook[their:his]
-  - Catherine the Great[their:her]
-  - Al-Khwarizmi[their:his]
-  - Voltaire[their:his]
-  - Attila the Hun[their:his]
-  - Amelia Earhart[their:her]
-  - Marco Polo[their:his]
-  - Shakespeare[their:his]
-  - Sir Walter Raleigh[their:his]
-  - Marie Curie[their:her]
-  - Truman Capote[their:his]
-  - Andre the Giant[their:his]
-  - Kermit the Frog[their:his]
-  - Carl Sagan[their:his]
-  - Pagliacci[their:his]
-  - Orville Redenbacher[their:his]
-  - Walter Cronkite[their:his]
+  - "Cleopatra[#femalePronouns#]"
+  - "Napoleon[#malePronouns#]"
+  - "Abraham Lincoln[#malePronouns#]"
+  - "Joan of Arc[#femalePronouns#]"
+  - "Socrates[#malePronouns#]"
+  - "Genghis Khan[#malePronouns#]"
+  - "Sigmund Freud[#malePronouns#]"
+  - "Beethoven[#malePronouns#]"
+  - "Billy the Kid[#malePronouns#]"
+  - "Alexander the Great[#malePronouns#]"
+  - "Julius Caesar[#malePronouns#]"
+  - "Henry VIII[#malePronouns#]"
+  - "Bonnie and Clyde[#pluralPronouns#]"
+  - "Ivan the Terrible[#malePronouns#]"
+  - "Simón Bolívar[#malePronouns#]"
+  - "Marie Antoinette[#femalePronouns#]"
+  - "Mark Twain[#malePronouns#]"
+  - "Da Vinci[#malePronouns#]"
+  - "Oscar Wilde[#malePronouns#]"
+  - "Descartes[#malePronouns#]"
+  - "Florence Nightingale[#femalePronouns#]"
+  - "Thomas Edison[#malePronouns#]"
+  - "Kublai Khan[#malePronouns#]"
+  - "Samuel Coleridge[#malePronouns#]"
+  - "Orville and Wilbur Wright[#pluralPronouns#]"
+  - "Andrew Carnegie[#malePronouns#]"
+  - "Tolstoy[#malePronouns#]"
+  - "Queen Victoria[#femalePronouns#]"
+  - "Otto von Bismarck[#malePronouns#]"
+  - "Trotsky[#malePronouns#]"
+  - "Galileo[#malePronouns#]"
+  - "Jane Austen[#femalePronouns#]"
+  - "Alfred Hitchcock[#malePronouns#]"
+  - "Captain Cook[#malePronouns#]"
+  - "Catherine the Great[#femalePronouns#]"
+  - "Al-Khwarizmi[#malePronouns#]"
+  - "Voltaire[#malePronouns#]"
+  - "Attila the Hun[#malePronouns#]"
+  - "Amelia Earhart[#femalePronouns#]"
+  - "Marco Polo[#malePronouns#]"
+  - "Shakespeare[#malePronouns#]"
+  - "Sir Walter Raleigh[#malePronouns#]"
+  - "Marie Curie[#femalePronouns#]"
+  - "Truman Capote[#malePronouns#]"
+  - "Andre the Giant[#malePronouns#]"
+  - "Kermit the Frog[#malePronouns#]"
+  - "Carl Sagan[#malePronouns#]"
+  - "Pagliacci[#malePronouns#]"
+  - "Orville Redenbacher[#malePronouns#]"
+  - "Walter Cronkite[#malePronouns#]"
 
 causeOfDeath:
 - defenstration

@@ -248,7 +248,7 @@ improvementGoal:
 - "[_challenge:win,place at,prepare for,#verbDefeat#]#_challenge# #tournamentType.s#"
 - "[_deck:#deckArchOrCategory#][_challenge:win more with #_deck#,increase your win percentage with #_deck#,improve your #_deck# matchup,#verbDefeat# #_deck#]#_challenge#"
 - "[_challenge:win more against,defeat,outplay,#verbDefeat#]#_challenge# #people#"
-- "[_challenge:understand,exploit,get the most out of,#verbDefeat#]#_challenge# #gameConcept#"
+- "[_challenge:understand,exploit,get the most out of,#verbDefeat#]#_challenge# #gameConcept#[_where:, in #constructedFormat#]#_where#"
 - "[_challenge:use,win more with,understand,answer,#verbDefeat#]#_challenge# #cardCategory.s#"
 
 improvementGoalGerund:
