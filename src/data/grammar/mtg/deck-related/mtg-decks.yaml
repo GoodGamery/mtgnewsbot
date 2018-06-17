@@ -187,22 +187,24 @@
     "#randomCardWithOneWordName#"
   ],
   "deckDescription": [
+      "#deckQualityAdj#",
+      "the #deckSuperlative# deck in [_format:the format,#constructedFormat#]#_format#",
       "the deck to beat",
       "completely broken",
       "totally dominant",
       "the stone nuts",
-      "[_choiceKind:the only valid,a questionable,an unusual choice]#_choiceKind#",
+      "[_choice:choice,deck,option][_choiceKind:the only valid,a questionable,an unusual]#_choiceKind# #_choice#",
       "completely unplayable",
       "pure garbage",
       "Tier [_tier:0,1,1.5,2,2.5,3]#_tier#",
       "ban-worthy",
-      "#officialEntity#'s biggest mistake yet",
+      "#officialEntity#'s biggest [_mistake:mistake,blunder,misstep]#_mistake# yet",
       "a trap",
-      "[_not:,not ][_positioned:well-positioned,viable,competitive,good]#_not# #_positioned#",
-      "[_positioned:well-positioned,positioned perfectly,viable,competitive]#_positioned# in the meta",
+      "[_not:,not ][_positioned:well-positioned,viable,competitive,good,#deckQualityAdj#]#_not##_positioned#",
+      "[_positioned:well-positioned,positioned perfectly,viable,competitive]#_positioned# in [_meta:the meta,the metagame,the current environment]#_meta#",
       "overhyped by #financialStakeholders#",
-      "[_legality:legal,illegal,broken,allowed,sanctioned]#_legality# under tournament rules",
-      "viable once #randomRealCard# is [_outcome:banned,reprinted]#_outcome#"
+      "[_legality:legal,illegal,broken,not allowed,sanctioned]#_legality# under tournament rules",
+      "[_until:until,once,as long as,if][_howViable:only viable #_until#,only viable #_until#,the best choice #_until#,a terrible choice #_until#]#_howViable# #randomRealCard# is [_outcome:banned,reprinted,playable]#_outcome#"
   ],
   "deckLimitedArchetype": [
     "aggro",

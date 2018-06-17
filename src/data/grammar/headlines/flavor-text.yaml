@@ -9,7 +9,7 @@ flavorText:
   - >
     "Only #characterClass.a# could create such [#objectNounPronoun#]#_noun#. Only an imbecile would #verbTransitive# #_pronoun#."
   - >
-    "There's [_adjDist:little,not much,a huge,a noticeable,an obvious,a subtle,a real,#adjCorporeal.a#][_distinction:distinction,difference,contrast,simalirity][_distinctionDesc:#_adjDist# #_distinction#][_adjS:,thin,wide,narrow][_adjSep:#_adjS#,#_adjS#,#_adjS#,very #_adjS#][_separator:line,margin,separation][_separatorDesc:#_adjSep# #_separator#][_difference:#_distinctionDesc#,#_separatorDesc.a#][_things:#aNoun# and #aNoun#,#pluralNoun# and #pluralNoun#,#character# and #character#,#randomMtgLocation# and #randomMtgLocation#,#abstractMassOrPluralNounGameConceptOrEmotion# and #abstractMassOrPluralNounGameConceptOrEmotion#][_thing2:#aNoun#,#pluralNoun#][_count:a few,#cardCopyCount#][_time:a few #timePeriod.s#,just #timePeriod.a#,#timePeriod.a#][_notOnly:only,not][_says:says,wants,wishes,loves][_allow:allow me to,permit me to,give me #_time# to,but #_notOnly# if you,but not if you,just try to,maybe you should,I think I might,#character# #_says# to]#_difference# between #_things#. #_allow.capitalize# #verbInceptiveTransitive# it." —Liliana Vess
+    "There's [_adjDist:little,not much,a huge,a noticeable,an obvious,a subtle,a real,#adjCorporeal.a#][_distinction:distinction,difference,contrast,simalirity][_distinctionDesc:#_adjDist# #_distinction#][_adjS:thin,wide,narrow][_adjSep:#_adjS#,#_adjS#,#_adjS#,very #_adjS#][_separator:line,margin,separation][_separatorDesc:#_adjSep# #_separator#][_difference:#_distinctionDesc#,#_separatorDesc.a#][_things:#aNoun# and #aNoun#,#pluralNoun# and #pluralNoun#,#character# and #character#,#randomMtgLocation# and #randomMtgLocation#,#abstractMassOrPluralNounGameConceptOrEmotion# and #abstractMassOrPluralNounGameConceptOrEmotion#][_thing2:#aNoun#,#pluralNoun#][_count:a few,#cardCopyCount#][_time:a few #timePeriod.s#,just #timePeriod.a#,#timePeriod.a#][_notOnly:only,not][_says:says,wants,wishes,loves][_allow:allow me to,permit me to,give me #_time# to,but #_notOnly# if you,but not if you,just try to,maybe you should,I think I might,#character# #_says# to]#_difference# between #_things#. #_allow.capitalize# #verbInceptiveTransitive# it." —Liliana Vess
   - >
     [#twoObjects#]#jayaText#
   - >
@@ -105,7 +105,7 @@ flavorText:
   - >
     "[_who:#personPejorative#,#someGuyOrGal#,#characterClass#,#animal#][_what:#concreteNounOrPluralNoun#][_nextVerb:#verbStrictlyTransitive#,#verbInceptiveTransitive#]The #_who# who #verbInceptiveTransitive.s# the #_what#, #_nextVerb.s# the #_what#."
   - >
-    "[_member:member of,student of,#creatureTypeOrCharacterClass# from][_school:Institute of,Academy of,Center for,Society for,Guild of][_adj:,,,,#adj# ,#adjCorporeal# ,#adjStorybook# ,#adjValue# ][_subject:#creatureTypes.s#,#creatureTypes.s#,#creatureTypes.s#,#animalPlural#,#animalPlural#,#animalPlural#][_focus:#abstractNounMassNounOrEmotion#,#_adj# #_subject#,#cardQuality# #cardCategory.s#,#character#,#mtgQuestionablePractice#][_acquires:acquires,develops,cultivates][_taste:taste,appetite,fondness,penchant,passion][_vice:#pluralNounOrMassNoun#,#_subject#,#nounActivity#,#clothingOrAccessory.sIfNeeded#,#abstractNoun#,#verbStrictlyTransitiveGerund# #_subject#]Ocassionally a #_member# the #_school# #_focus.capitalizeAll# #_acquires# #_taste.a# for #_vice#.[_rarely:Rarely do,Seldom do,Often,Sometimes,Occasionally,Suprisingly,For some reason][_trouble:trouble,a problem,difficulty,a hard time][_finding:finding,obtaining,getting,finding][_sanction:sanction,approve of,indulge][_investors:supporters for,anyone to #_sanction#,a professor to #_sanction#][_investment:their behavior,their cause,it][_someone:someone,anyone][_goal:employment,a job,#_someone# to join them,believers for their cause,#_someone# to help them,a license,#_investors# #_investment#,a date][_secondLine:,, Though it's generally frowned upon., The administration usually doesn't approve., #_rarely# they get expelled., #_rarely# they have #_trouble# #_finding# #_goal#.]#_secondLine#"
+    "[_member:member of,student of,#creatureTypeOrCharacterClass# from][_school:Institute of,Academy of,Center for,Society for,Guild of][_adj:,,,,#adj# ,#adjCorporeal# ,#adjStorybook# ,#adjValue# ][_subject:#creatureTypes.s#,#creatureTypes.s#,#creatureTypes.s#,#animalPlural#,#animalPlural#,#animalPlural#][_focus:#abstractNounMassNounOrEmotion#,#_adj# #_subject#,#cardQuality# #cardCategory.s#,#character#,#mtgQuestionablePractice#][_acquires:acquires,develops,cultivates][_taste:taste,appetite,fondness,penchant,passion][_vice:#pluralNounOrMassNoun#,#_subject#,#nounActivity#,#clothingOrAccessory.sIfNeeded#,#abstractNoun#,#verbStrictlyTransitiveGerund# #_subject#]Ocassionally a #_member# the #_school# #_focus.capitalizeAll# #_acquires# #_taste.a# for #_vice#.[_rarely:Rarely do,Seldom do,Often,Sometimes,Occasionally,Suprisingly,For some reason][_trouble:trouble,a problem,difficulty,a hard time][_finding:finding,obtaining,getting,finding][_sanction:sanction,approve of,indulge][_investors:supporters for,anyone to #_sanction#,a professor to #_sanction#][_investment:their behavior,their cause,it,the practice][_someone:someone,anyone][_goal:employment,a job,#_someone# to join them,believers for their cause,#_someone# to help them,a license,#_investors# #_investment#,a date][_secondLine:,, Though it's generally frowned upon., The administration usually doesn't approve., #_rarely# they get expelled., #_rarely# they have #_trouble# #_finding# #_goal#.]#_secondLine#"
   - >
     "[_pursues:pursues,searches for,seeks out][_pursue:pursue,search for,seek out][_truth:the truth,answers][_topic:#character#,#plane#,#abstractNounPluralItemNounMassNounOrEmotion#][_searchTopic:#_truth#,#_topic#][_characters:#randomMtgLocation#'s #characterClass.s#,the #personAuthorityFigure.s# of #randomMtgLocation#][_character1:#character#][_firstCharacterSearches:As #_character1# #_pursues# #_searchTopic##comma#,#_character1# #_pursues# #_searchTopic# while,#_character1.capitalize# #_pursues# #_searchTopic#.,As #_characters# #_pursue# #_searchTopic##comma#,#_characters.capitalize# #_pursue# #_searchTopic#.]#_firstCharacterSearches# #character# [_finally:,finally ][_unearth:unearth,uncover,understand,#_finally#make sense of][_searches:searches,wanders,scours][_seeks:searches,seeks,wanders,looks][_searchUnearth:#_seeks# to #_unearth#,#_searches# #randomMtgLocation# for][_yearns:yearns,pines,prays,quietly hopes][_searchesFor:#_searchUnearth#,searches for,wanders #plane# for,ponders,hopes for,desperately #_searches# #randomMtgLocation# for,looks for,obsesses over,#_yearns# for][_forClues:clues to,someone who knows about,,][_theirPast:#their# past,#their# #abstractMassOrPluralNounOrEmotion#][_secretTopic:#nounActivity#,#gameConcept#][_secrets:the secret to #nounActivity#,the secrets of #abstractMassOrPluralNounOrEmotion#,the secrets of #_secretTopic#,the secret history of #randomMtgLocation#'s #creatureTypeOrCharacterClass.s#][_whose:#their#,#their# long-lost,#character#'s][_topic:#_theirPast#,#_secrets#, #pluralNounOrMassNoun#,#_whose# #personRelationalUnique#,#creatureTypes.s#,#_character1#][_searchForClues:#_searchesFor# #_forClues#,#_searchesFor#]#_searchForClues# #_topic#."
   - >
@@ -122,9 +122,20 @@ flavorText:
     "[_byWith:by,with][_instrument:#nounMagicalElement#,#nounMagicalElement#,#nounWeapon#,#itemNoun#][_justBy:#_byWith# this #_instrument.lowercase##comma#][_itsByThis:#_justBy# #,#_justBy#,it is #_byWith# this #_instrument#][_affirm:affirm,decree,foretell,bid,confirm,yield][_char1:#planeswalkerFirstName#,#character#][_char2:#character#,#character#,#miscPersonSingular#]#_itsByThis.capitalize# I #_affirm# your #nounDestiny#." #_char1#, to #_char2#
   - >
     "[_dances:dance,sing,chant][_dance:#_dances#]I #_dance# the [_danceType:#mood#,#emotion#,#animal#,#creatureTypes#]#_danceType# #_dance.replace(i,o)#, / #bodypartsInPairs# [_up:,up ][_upWhere:trees,clouds,sky,eaves][_firstWhere:in the air,'round my head,#_up#above,in the sky,in the #_upWhere#,held #_up#high,toward the sun]#_firstWhere#, [_secondThing:#bodypartsInPairs#,#pluralItemNounOrMassNoun#] #_secondThing# [_downWhere:river,sea,sand,earth,grave][_secondWhere:on the ground,in the sand,on my feet,down below,in the dirt,on the floor]#_secondWhere#." —#characterFactionOrRace.capitalize# [_chant:chant,rhyme]#_chant#
+  - >
+    #wallOfVaporParts#\"#_part.capitalize# of #_body1.a# #_isAre# made out of #massNounCompoundWorthy#,/ #_part.capitalize# of #_body2.a# #_isAre# made out of #massNounCompoundWorthy#./ #_myPart.capitalize# #_isAre# made out of [_material:#massNounCompoundWorthy#][_makeup:nothing but #_material#,#_material# alone,only #_material#,pure #_material#]#_makeup#,/ [_adj:#adjComparative#,#adjPersonCharacteristicComparative#,more #mood#]#_adj.capitalize# than [_that:that,who][_all:all,those,any][_whoElse:any #_that# ever have #verbInceptiveIntransitivePerfectPastTense#,#_all# who have #verbIntransitivePastTense# before me]#_whoElse#.\" —#commonCharacterFirstName# #commonCharacterLastName#, #folkSongOrPoem#
 
 flavorTextNew:
 # -> Cerulean Wisps flavor text
+
+folkSongOrPoem:
+- "The [_who:#animal#,#characterClass#]#_who.capitalizeAll#'s [_song:song,tale,lament,chorus]#_song.capitalizeAll#"
+- "[_song:song,saga,history,chronicle,ballad]#_song.capitalizeAll# of #randomMtgLocation.capitalizeAll#"
+- "[_song:song,hymn,psalm,tale,fable,legend]#_song.capitalizeAll# of [_what:#massNoun.capitalizeAll#,#massNounCompoundWorthy.capitalizeAll#,#massNounCompoundWorthy.capitalizeAll# and #massNounCompoundWorthy.capitalizeAll#,#massNounCompoundWorthy.capitalizeAll# and #massNoun.capitalizeAll#]#_what#"
+
+wallOfVaporParts:
+ - "[_part:#roomPart#][_myPart:my #_indefinite#][_body1:#placeNoun#][_body2:#placeNoun#]"
+ - "[_bodyPart:#bodypartsInternalExternal#][_part:#_bodyPart#,#_bodyPart#][_myPart:my #_bodyPart#][_body1:#animal#,#creatureTypes#][_body2:#animal#,#creatureTypes#]"
 
 characterAttribution:
   - "#planeswalkerFullName#"
@@ -142,6 +153,18 @@ lookingFor:
   - "[_lookFor1:#creatureTypes#][_lookFor2:#creatureTypes#]"
   - "[_lookFor1:#characterClass#][_lookFor2:#characterClass#]"
   - "[_lookFor1:#itemNoun#][_lookFor2:#itemNoun#]"
+
+roomPart:
+  - "walls[_indefinite:walls][_isAre:are]"
+  - "floors[_indefinite:floors][_isAre:are]"
+  - "doors[_indefinite:doors][_isAre:are]"
+  - "the foundation[_indefinite:foundation][_isAre:is]"
+  - "the roof[_indefinite:roof][_isAre:is]"
+  - "[_whatParts:best,worst,oldest,strongest,weakest,softest]the #_whatParts# parts[_indefinite:#_whatParts#][_isAre:are]"
+  - "the inside[_indefinite:inside][_isAre:is]"
+  - "the outside[_indefinite:outside][_isAre:is]"
+  - "the hearth[_indefinite:hearth][_isAre:is]"
+  - "the entrance[_indefinite:entrance][_isAre:is]"
 
 judgeJury:
 - "#characterClass#"

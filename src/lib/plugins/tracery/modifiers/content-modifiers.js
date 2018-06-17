@@ -97,7 +97,7 @@ function dayOfWeekMotivation() {
   return '' + todayDescriptors[Math.floor(Math.random() * todayDescriptors.length)];
 }
 
-// returns a random month / day other than today's dater
+// returns a random month / day other than today's date
 function randomMonthDay() {
   const date = new Date();
   date.setDate(date.getDate() + randomInt(1, 364)); // choose a day 7-60 days in future
@@ -126,6 +126,21 @@ function randomFutureDate() {
   return getMonthDayOrdinal(date) + ', ' + date.getFullYear();
 }
 
+function randomGathererDates(s, params) {
+  const num = params[0] || 1;
+  const beginning = new Date('August 5, 1993');
+  const range = new Date() - beginning;
+
+  const dates = [];
+  for (var i = 0; i < num; i++) {
+    dates.push(new Date(beginning.getTime() + Math.floor(range * Math.random())));
+  }
+
+  return dates
+    .sort((date1, date2) => date1.getTime() - date2.getTime())
+    .reduce((dateString, date, i) => dateString += `[_randomGathererDate${i+1}:${date.getMonth() + 1}/${date.getDate()}/${date.getFullYear()}]`, '');
+}
+
 module.exports = { 
   currentMonth,
   currentMonthDay,
@@ -135,6 +150,7 @@ module.exports = {
   dayOfWeek,
   dayOfWeekOccasion,
   dayOfWeekMotivation,
+  randomGathererDates,
   randomMonthDay,
   randomUpcomingMonthDay,
   randomFutureDate
