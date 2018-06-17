@@ -35,6 +35,8 @@ bugBlogHeadline: "Magic Online Bug Blog – #CONTENT.currentFullDate#{newline}{n
 _knownIssue:
 - known issue
 - "[_newly:newly,recently]#_newly# added known issue"
+- won't fix
+- recently broken
 
 
 bugBlogEntryListing:
@@ -98,11 +100,13 @@ _bugBlogEntry:
 bugBlogEntrySimple:
 - "[_when:,,sometimes ,randomly ][_noFunction:#canMayWont# have an effect when cast,#canMayWont# function]#randomInstantOrSorceryCard# #_when##_noFunction#"
 - "#randomNonlandCard# [_only:,only ,also ][_functions:#_only#functions,#_only#works,can #_only#be cast]#_functions# [_where:from the graveyard,from #cardLocationFrom#]#_where#"
+- "#randomCardExcludeBasics# [_only:,only ]#_only#functions [_where:from the graveyard,#cardLocationFrom#]#_where#"
 - "#randomInstantOrSorceryCard# #bugBlogBadSpellResult# unless #bugBlogCardCastException#"
 - "#randomInstantOrSorceryCard# [_behaves:#alwaysSometimes# behaves as if it has,#canMay# behave as if it had]#_behaves# #spellMechanic#"
 - "#randomNonlandCard# can [_be:be ,only be,also be]#_be# cast from [_whose:the,your,its owner's][_where:library,sideboard,graveyard]#_whose# [_whereIf:#_where#,#_where#,#_where# if #bugBlogCardCastException#]#_whereIf#"
 
-cardLocationFrom: "#cardLocation.replace(in , )#"
+
+cardLocationFrom: "#cardLocation.replace(in ,from )#"
 
 bugBlogBadSpellResult:
 - "#bugBlogIs# immediately exiled with no effect"
