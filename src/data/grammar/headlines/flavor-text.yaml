@@ -84,7 +84,7 @@ flavorText:
     "I [_forge:forge,shape,fashion,fabricate]#_forge# my #itemNoun.s# from the #abstractNoun# of my [_who:enemies,enemies,adversaries,rivals,captors,masters,overlords,ancestors,critics,underlings,#personRelationalNonunique.s#]#_who#." —#npcCharacter#
   - >
     "[_who:It,He,She]#_who# is [_adj:#adjComparative#]#_adj# than all but the #adjSuperlative# #pluralNoun#, and [_adj2:#_adj# still,#adjComparative#]#_adj2# than all but the #adjSuperlative#."
-  - > 
+  - >
     "I am the #nounVerber#, the #sealInscriptionDescription#.\"  —[_inscription:Seal inscription,#itemNoun.capitalize# inscription]#_inscription#
   - >
     "The #creatureTypeOrCharacterClass.s# of [_place:#minorStoryLocation#,#nonPlaneLocation#]#_place# treat each [_what:#itemNoun#,#animal#]#_what# with #emotion# for the #creatureTypeOrCharacterClass# it will become."

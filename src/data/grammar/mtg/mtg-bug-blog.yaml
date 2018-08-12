@@ -32,19 +32,56 @@ _listSpacer: ""
 
 bugBlogHeadline: "Magic Online Bug Blog – #CONTENT.currentFullDate#{newline}{newline}#bugBlogEntryListing#"
 
-_knownIssue:
+_knownIssueSingular:
 - known issue
-- "[_newly:newly,recently]#_newly# added known issue"
-- won't fix
-- recently broken
+- "[_newly:newly,recently][_added:added,added,discovered,acknowledge,introduced]#_newly# added known issue"
+- "[_weirdWont:dasn't,shan't,needn't,musn't,oughtn't][_wont:won't,won't,won't,won't,can't,can't,might,might not,should,#_weirdWont#]#_wont# fix"
+- "[_broken:recently broken,recently broken,broken again,inexplicably broken]#_broken#"
+- "#_knownIssueSingularRare#"
+- "#_knownIssueSingularRare#"
 
+_knownIssuesPlural:
+- known issues
+- "[_newly:newly,recently]#_newly# added known issues"
+- "[_wont:won't,won't,won't,can't,might not,should]#_wont# fix"
+- "[_broken:recently broken,broken again]#_broken#"
+- "#_knownIssuesPluralRare#"
+- "#_knownIssuesPluralRare#"
+
+_knownIssueSingularBug:
+- this
+- this one
+- this bug
+
+_knownIssuePluralBug:
+- these
+- these ones
+- these bugs
+
+_knownIssueSingularRare:
+- "We [_promiseWe:,promise we ,swear we ,sincerely ]#_promiseWe#haven't forgotten about #_knownIssueSingularBug#"
+- "We [_almost:almost,nearly,almost completely]#_almost# forgot about #_knownIssueSingularBug#"
+- "We [_literally:,literally ,actually ]#_literally# just remembered about #_knownIssueSingularBug#"
+- "#person# [_reported:reported,just reported,discovered,tweeted about]#_reported# #_knownIssueSingularBug#"
+- "[dont:Don't,You can't,Please don't]#_dont# blame us for this one"
+- "[_weSupposeThis:This,We suppose this]#_weSupposeThis# is technically a bug"
+- "[_doozy:doozy,problem,real problem,real mess,puzzler,stumper]This one's #_doozy.a#"
+- "We're not sure if this is actually a bug"
+
+_knownIssuesPluralRare:
+- "We [_promiseWe:,promise we ,swear we ,sincerely ]#_promiseWe#haven't forgotten about #_knownIssuePluralBug#"
+- "We [_almost:almost,nearly,almost completely]#_almost# forgot about #_knownIssuePluralBug#"
+- "We [_literally:,literally ,actually ]#_literally# just remembered #_knownIssuePluralBug#"
+- "Vote for [_fix:fix,try to fix][_theBug:one bug to be fixed,which bug we'll #_fix# next,which bug you'd like to see upgraded ot a feature]#_theBug#"
+- "More proof that [_personality:#miscPersonSingular#,##,#wackyCharacter#][_programmers:lunatics,monkeys,children,an insane AI,#][_proof:we need a larger development budget,we should have stuck with Leaping Lizard,the game engine was written by #_programmers#]#_proof#"
+- "[_lamention:Dear lord,For goodness' sake#comma#,Oh#comma# please no.,We're so tired.,This is a nightmare.][_realization:they just keep coming,when will they stop,why does this keep happening]#_lamention# #_realization#"
 
 bugBlogEntryListing:
-- "#_knownIssue.capitalizeAll#:{newline}#bugBlogEntryListItem#"
-- "#_knownIssue.capitalizeAll#:{newline}#bugBlogEntryListItem#"
-- "#_knownIssue.s.capitalizeAll#:{newline}#bugBlogEntryListItem##bugBlogEntryListItem#"
-- "#_knownIssue.s.capitalizeAll#:{newline}#bugBlogEntryListItem##bugBlogEntryListItem#"
-- "#_knownIssue.s.capitalizeAll#:{newline}#bugBlogEntryListItem##bugBlogEntryListItem##bugBlogEntryListItem#"
+- "#_knownIssueSingular.capitalizeAll#:{newline}#bugBlogEntryListItem#"
+- "#_knownIssueSingular.capitalizeAll#:{newline}#bugBlogEntryListItem#"
+- "#_knownIssuesPlural.capitalizeAll#:{newline}#bugBlogEntryListItem##bugBlogEntryListItem#"
+- "#_knownIssuesPlural.capitalizeAll#:{newline}#bugBlogEntryListItem##bugBlogEntryListItem#"
+- "#_knownIssuesPlural.capitalizeAll#:{newline}#bugBlogEntryListItem##bugBlogEntryListItem##bugBlogEntryListItem#"
 
 bugBlogEntryListItem: "[_listSpacer:{newline}• ]#_listSpacer##bugBlogEntry#"
 
@@ -104,7 +141,6 @@ bugBlogEntrySimple:
 - "#randomInstantOrSorceryCard# #bugBlogBadSpellResult# unless #bugBlogCardCastException#"
 - "#randomInstantOrSorceryCard# [_behaves:#alwaysSometimes# behaves as if it has,#canMay# behave as if it had]#_behaves# #spellMechanic#"
 - "#randomNonlandCard# can [_be:be ,only be,also be]#_be# cast from [_whose:the,your,its owner's][_where:library,sideboard,graveyard]#_whose# [_whereIf:#_where#,#_where#,#_where# if #bugBlogCardCastException#]#_whereIf#"
-
 
 cardLocationFrom: "#cardLocation.replace(in ,from )#"
 
@@ -315,7 +351,7 @@ effectWhileCondition:
 - "with [_their:#their#,#their# own]#_their# ability on the stack"
 - "[_when:before,after,on,during]#_when# the #xth# turn of the game"
 - "[_if:unless,and,after,before][_moreThan:more than,less than,exactly][_spellsHave:#count# spells have,one spell has]#_if# #_moreThan# #_spellsHave# been cast this [_turn:turn,game]#_turn#"
-- "[_whoControls:you control,your opponent controls,either player controls,#mtgSomePlayer# control#s#][_what:#cardPermanentType#,#basicColors# #cardPermanentType#,#cardState# #cardPermanentType#]while #_whoControls# #_what.a#"
+- "[_whoControls:you control,your opponent controls,either player controls,that #mtgSomePlayer# control#s#][_what:#cardPermanentType#,#basicColors# #cardPermanentType#,#cardState# #cardPermanentType#]while #_whoControls# #_what.a#"
 
 randomLayoutOrCategoryCard:
 - "#randomLayoutCard#"
