@@ -62,6 +62,7 @@
       "Ponza",
       "High Tide",
       "Bogles",
+      "Humans",
       "#searchableColor# Devotion",
       "#deckNameNumber#-Rack",
       "#deckNameNumber#-Post",
@@ -89,6 +90,7 @@
     "#definingCardname# #deck#",
     "#deckPrefix# #definingCardname#",
     "#deckPrefix# #definingCardname#",
+    "#deckPrefix# #randomCardWithOneWordName#",
     "#deckSuffixPrefix# #deckSuffix#",
     "#deckPrefix# #deckVariation#",
     "#deckPrefix# [_suffix:#animal#,#animalPlural#,#bodypartsInPairs#,#creatureTypes#,#creatureTypes.s#]#_suffix.capitalizeAll#"
@@ -125,7 +127,8 @@
     "Budget",
     "Sneak &",
     "Madcap",
-    "[_adj:#mood.hyphenate#,#adjStorybook#]#_adj.capitalizeAll#"
+    "[_adj:#mood.hyphenate#,#adjStorybook#]#_adj.capitalizeAll#",
+    "#randomCardWithOneWordName#"
   ],
   "deckSuffix" : [
     "& Taxes",

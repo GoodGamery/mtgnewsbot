@@ -145,7 +145,7 @@
     "#characterClass.s# of #creatureTypes#[_place:#shortRealmSuffix#,#longRealmSuffix#]#_place#",
     "#collective# of #beings#",
     "#beings# #verbIntransitiveGerund#",
-    "[#randomLegendaryCreature#][_legend:#_cardName#,#_legendName#][_signatory:#character#,#_legend#]Signature Spellbook: #_signatory#"
+    "[#randomLegendaryCreature#][_legend:#_cardName#,#_legendName#][_signatory:#character#,#_legend#]Signature Spellbook: #_signatory#",
     "[_time:Hour,Day,Age,Dawn]#_time# of #abstractNoun#",
     "[_mastery:#format#,#adj#]#_mastery# masters [_year:,2018,2018,2019]#_year#",
     "[_desc:#adj#,#massNoun#,#creatureTypes#]#_desc.capitalizeAll# #omenOrEventNoun#",
