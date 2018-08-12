@@ -98,32 +98,35 @@
     "#teaserCardSet#"
   ],
   "recentCardSet": [
-      "Ixalan",
-      "Iconic Masters",
-      "Eternal Masters",
-      "Rivals of Ixalan",
+      "Battlebond",
+      "Dominaria",
+      "Core 2019",
       "Unstable",
       "Commander 2018",
-      "Masters 25"
+      "Masters 25",
+      "[_otherSet:Signature Spellbook#colon# Jace,Global Series#colon# Jiang Yanggu & Mu Yanling]#_otherSet#"
   ],
   "standardCardSet": [
-      "Kaladesh",
-      "Aether Revolt",
-      "Amonkhet",
-      "Hour of Devastation",
+      "Core 2019",
+      "Dominaria",
       "Ixalan",
       "Rivals of Ixalan",
-      "Dominaria"
+      "Amonkhet",
+      "Hour of Devastation",      
+      "Kaladesh",
+      "Aether Revolt",      
   ],
   "teaserCardSet": [
-      "Core 2019",
+      "Guilds of Ravnica",
+      "Ravnica Allegiance",
+      "Core Set 2020",
       "#codename#",
       "#novelCardSetName#"
   ],
   "codename": [
       "Spaghetti",
       "Meatballs",
-      "[_futureSet:Milk,Archery,Baseball,Cricket,Diving]“#_futureSet#”"
+      "[_futureSet:Milk,Archery,Baseball,Cricket,Diving,Equestrian,Fencing]“#_futureSet#”"
   ],
   "novelCardSetName": [
     "#planeBasedSet.capitalizeAll#",
@@ -142,6 +145,7 @@
     "#characterClass.s# of #creatureTypes#[_place:#shortRealmSuffix#,#longRealmSuffix#]#_place#",
     "#collective# of #beings#",
     "#beings# #verbIntransitiveGerund#",
+    "[#randomLegendaryCreature#][_legend:#_cardName#,#_legendName#][_signatory:#character#,#_legend#]Signature Spellbook: #_signatory#"
     "[_time:Hour,Day,Age,Dawn]#_time# of #abstractNoun#",
     "[_mastery:#format#,#adj#]#_mastery# masters [_year:,2018,2018,2019]#_year#",
     "[_desc:#adj#,#massNoun#,#creatureTypes#]#_desc.capitalizeAll# #omenOrEventNoun#",
