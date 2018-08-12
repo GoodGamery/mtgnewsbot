@@ -11,6 +11,7 @@ Birthing Pod
 Black Lotus
 Blade Splicer
 Blightsteel Colossus
+Blood Moon
 Bloodbraid Elf
 Bonesplitter
 Boros Reckoner
@@ -23,9 +24,11 @@ Chains of Mephistopheles
 Chaos Orb
 Chaos Warp
 Channel
+City of Traitors
 Contract from Below
 Counterbalance
 Craterhoof Behemoth
+Crucible of Worlds
 Cryptic Command
 Cursed Scroll
 Dark Confidant
@@ -39,11 +42,13 @@ Disenchant
 Dragonlord Silumgar
 Dreadbore
 Emrakul, the Promised End
+Engineered Explosives
 Entomb
 Fact or Fiction
 Felidar Guardian
 Fireblast
 Force of Will
+Gaea's Cradle
 Gavony Township
 Geist of Saint Traft
 Ghost Quarter
@@ -85,6 +90,7 @@ Morphling
 Mother of Runes
 Mox Emerald
 Mox Jet
+Mox Opal
 Mox Pearl
 Mox Ruby
 Mox Sapphire
@@ -92,6 +98,7 @@ Mulldrifter
 Mystic Snake
 Nekrataal
 Nevinyrral's Disk
+Nexus of Fate
 Noble Hierarch
 Opposition
 Pack Rat

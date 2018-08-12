@@ -10,6 +10,7 @@ cardSurprisingResult:
 - "it lets you #_surprisingEffectively##randomKeywordAction#"
 - "it enables you to #_surprisingEffectively##randomKeywordAction#"
 - "it[_wasAlmost: was almost, was nearly,was once ,used to be , 's]#_wasAlmost# banned in #constructedFormat#"
+- "it was designed by [_who:#animal.a#,#characterClass.a#,#person#,#miscPersonSingular#]#_who#"
 
 _surprisingColor: 
 - "#mtgColors#"
