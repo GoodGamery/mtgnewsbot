@@ -27,3 +27,13 @@ dbgReplaceEscapedComma:
  - "#dbgStringWithCommas.replace(\\,,!)#"
 dbgStringWithCommas:
  - "banana\\, apple, and orange"
+ 
+capitalizeAllHijinks:
+- Elves vs. Goblins
+- Elves V Goblins
+- Elves v Goblins
+- Valves v Goblins
+- Violins v Goblins
+- Elves V Goblins
+- Elves v. Goblins
+- Elves-v-Goblins
