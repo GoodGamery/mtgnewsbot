@@ -52,9 +52,14 @@ svgComicTemplate4: >
   [_text1x:65][_text1y:39][_text1w:158][_text1h:54]
   [_text1Style:#_style1#][_text1Content:#_text1#]
   [_text2x:156][_text2y:98][_text2w:186][_text2h:45][_text2Style:#_style2#][_text2Content:#_text2#]
-
   [_text3x:540][_text3y:242][_text3w:197][_text3h:47][_text3Style:#_style3#][_text3Content:#_text3#]
-  [_text4x:341][_text4y:640][_text4w:206][_text4h:54][_text4Style:#_style4#][_text4Content:#_text4#]
+  [_text4x:51][_text4y:331][_text4w:63][_text4h:51][_text4Style:#_style4#][_text4Content:#_text4#]
+  [_text5x:146][_text5y:433][_text5w:134][_text5h:70][_text5Style:#_style5#][_text5Content:#_text5#]
+  [_text6x:524][_text6y:450][_text6w:151][_text6h:56][_text6Style:#_style6#][_text6Content:#_text6#]
+  [_text7x:615][_text7y:543][_text7w:140][_text7h:112][_text7Style:#_style7#][_text7Content:#_text7#]
+  [_text8x:357][_text8y:730][_text8w:89][_text8h:76][_text8Style:#_style8#][_text8Content:#_text8#]
+
+
   [_text5Content:][_text6Content:][_text7Content:][_text8Content:]
 
 svgComicTemplate4NarrativeStyle1:
@@ -62,10 +67,11 @@ svgComicTemplate4NarrativeStyle1:
 svgComicTemplate4NarrativeStyle2:
   - "color: black; font-size: 12px; font-family: Anime Ace, Comic Sans, Sans-Serif; font-weight: 600;  word-wrap:break-all;"
 
-
+svgComicTemplate4Style1:
+  - "color: black; font-size: 11px; font-family: Anime Ace, Comic Sans, Sans-Serif; font-weight: 600;  word-wrap:break-all;"
 
 svgComicTemplate4Content:
-  - "[_pet:#animal#][_gotta:Gotta,I need to,Time to,Have to,Supposed to,Really should][_meal:Dinner,Lunch,Meal,Supper,Snack][_my:My,The][_hungry:hungry,starving,famished][_are:are,must be,are probably][_style1:#svgComicTemplate4NarrativeStyle1#][_food:food,chow,chow,grub,snacks,kibble,treats][_elipsis:...,...,.][_text1text:#_gotta# feed my #_pet.s#,#_meal# time,#_my# #_pet.s# #_are# #_hungry#][_text1:#_text1text##_elipsis#][_style2:#svgComicTemplate4NarrativeStyle2#][_text2:But I'm all out of #_pet# chow.][_style3:#svgComicTemplate4NarrativeStyle#][_text3:ridiculously #adj#.][_style4:#svgComicTextStyle3#][_text4:And I plan on finding out what that is.]"
+  - "[_pet:#animal#][_gotta:Gotta,I need to,Time to,Have to,Supposed to,Really should][_meal:Dinner,Lunch,Meal,Supper,Snack][_my:My,The][_hungry:hungry,starving,famished][_are:are,must be,are probably][_style1:#svgComicTemplate4NarrativeStyle1#][_food:food,chow,chow,grub,snacks,treats][_elipsis:...,...,.][_text1text:#_gotta# feed my #_pet.s#,#_meal# time,#_my# #_pet.s# #_are# #_hungry#][_text1:#_text1text##_elipsis#][_style2:#svgComicTemplate4NarrativeStyle2#][_im:I'm,we're][_text2:But #_im# all out of #_pet# #_food#.][_style3:#svgComicTemplate4NarrativeStyle1#][_mad:mad,cross,angry,#mood#][_so:,so ][_flipOut:flip out,go ape,freak out,be home soon,take my #itemNoun# away][_prediction:be #_so##_mad#,#_flipOut#][_timeHour:5,6,7,8][_closingTime:#_timeHour# o'clock,#_timeHour##colon#30][_text3:I guess I'd better go into town before the market closes.,What time does the store close?<br/>#_closingTime#?,#_familyMemberAddress# is going to #_prediction#.][_style4:#svgComicTemplate4Style1#][_text4:Woss all this then?,The kid's nuts.,What's he on about?,...what the?,Not this kid again.,Psst. On your nine.,This can't be good.,Oh. Oh no.,Not again.,#exclamationSurprise.capitalize##_elipsis#]"
   # - "[_style1:#svgComicTextStyle3#][_text1:Are you here to tell me what a bad eugoogoolizer I am? ][_style2:#svgComicTextStyle2#][_text2:A eugoogoolizer...][_style3:#svgComicTextStyle2#][_text3:one who speaks at funerals.][_style4:#svgComicTextStyle5#][_text4: Or did you think I was too stupid to know what a eugoogoly was?]"
   # - "[_style1:#svgComicTextStyle1#][_text1:#abstractNoun#...][_style2:#svgComicTextStyle2#][_xness:#nounStateOfBeing#][_text2:Is the essence of #_xness#. And][_style3:#svgComicTextStyle2#][_text3:#_xness#...][_style4:#svgComicTextStyle2#][_ofWhat:#abstractNounMassNounOrEmotion#,#abstractMassOrPluralNounGameConceptOrEmotion#,#pluralNounOrMassNoun#][_opinion:love,hate,fear,know][_whoDoesWhat:#planeswalkerFirstName# #_opinion.s#,#creatureTypes.s# #_opinion#,#historicalFigure# #_opinion.s#,#person# #_opinion.s#][_text4:is the essence of #_ofWhat#.,is what #_whoDoesWhat# most.]"
   # - "[_style1:#svgComicTextStyle2#][_text1:Wait a minute. I might just have an idea.][_style2:#svgComicTextStyle2#][_text2:They'll be looking for us at #characterFirstName#'s‚ right?][_style3:#svgComicTextStyle3#][_text3:But they won't be looking for...][_style4:#svgComicTextStyle1#][_who:not us,#anyCharacter#,#historicalFigure#,#person#, three #adj# #creatureTypeOrCharacterClass.s#, three #characterClass.s# in #creatureTypes.a# suit][_text4:...#_who#.]"
@@ -215,6 +221,16 @@ _familyMember:
 - "boyfriend[#malePronouns#]"
 - "girlfriend[#femalePronouns#]"
 - "nephew[#malePronouns#]"
+
+_familyMemberAddress:
+- "mom[#femalePronouns#]"
+- "dad[#malePronouns#]"
+- "mother[#femalePronouns#]"
+- "father[#malePronouns#]"
+- "grandma[_name:, #firstName#][#femalePronouns#]"
+- "grandpa[#malePronouns#, #firstName#]"
+- "uncle #firstName#[#malePronouns#]"
+- "aunt #firstName#[#femalePronouns#]"
 
 alternativeActivity:
 - "#mundaneActivity#"
