@@ -1,121 +1,117 @@
-temple
-palace
-castle
-garden
-market
-dungeon
-sanctuary
-mansion
-kingdom
-colony
-vacation rental
-graveyard
-oasis
-metropolis
-village
-hamlet
-carnival
-closet
-guildhouse
-amphitheater
-lighthouse
-hovel
-guildgate
-cathedral
-church
-catacomb
-coliseum
-wharf
-tower
-mineshaft
-necropolis
-citadel
-encampment
-valley
-planet
-hedge maze
-ball pit
-orchard
-watchtower
-sanitarium
-ballroom
-schoolyard
-university
-harbor
-library
-plane
-factory
-greenhouse
-basement
-monastery
-academy
-farmstead
-petting zoo
-ghost town
-secret lair
-laboratory
-portal
-hair salon
-shipwreck
-pasture
-circus tent
-fortress
-junkyard
-pillow fort
-mausoleum
-sepulcher
-kitchenette
-churchyard
-mortuary
-abattoir
-art studio
-pet store
-armory
-gazebo
-playground
-animal shelter
-labyrinth
-taco stand
-pyramid
-igloo
-dude ranch
-cabin
-gas station
-tattoo parlor
-tavern
-vineyard
-drawbridge
-pantry
-stairwell
-petting zoo
-supermarket
-bayou
-ziggurat
-clocktower
-lair
-void
-quarry
-farmer's market
-hidey-hole
-pool
-vault
-volcano
-cave
-sanctum
-monastery
-castle
-keep
-bathroom
-port-o-potty
-meat locker
-locker room
-belfry
-chapel
-lagoon
-stable
-asylum
-prison
-refuge
-quarry
-cottage
-bog
+temple[_inOn:in]
+palace[_inOn:in]
+castle[_inOn:in]
+garden[_inOn:in]
+market[_inOn:in]
+dungeon[_inOn:in]
+sanctuary[_inOn:in]
+mansion[_inOn:in]
+kingdom[_inOn:in]
+colony[_inOn:in]
+vacation rental[_inOn:in]
+graveyard[_inOn:in]
+oasis[_inOn:in]
+metropolis[_inOn:in]
+village[_inOn:in]
+hamlet[_inOn:in]
+carnival[_inOn:in]
+closet[_inOn:in]
+guildhouse[_inOn:in]
+amphitheater[_inOn:in]
+lighthouse[_inOn:in]
+hovel[_inOn:in]
+guildgate[_inOn:on]
+cathedral[_inOn:in]
+church[_inOn:in]
+catacomb[_inOn:in]
+coliseum[_inOn:in]
+wharf[_inOn:on]
+tower[_inOn:in,on]
+mineshaft[_inOn:in]
+necropolis[_inOn:in]
+citadel[_inOn:in]
+encampment[_inOn:in]
+valley[_inOn:in]
+planet[_inOn:on]
+hedge maze[_inOn:in]
+ball pit[_inOn:in]
+orchard[_inOn:in]
+watchtower[_inOn:in.on]
+sanitarium[_inOn:in]
+ballroom[_inOn:in]
+schoolyard[_inOn:in]
+university[_inOn:in]
+harbor[_inOn:in]
+library[_inOn:in]
+plane[_inOn:on]
+factory[_inOn:in]
+greenhouse[_inOn:in]
+basement[_inOn:in]
+monastery[_inOn:in]
+academy[_inOn:in]
+farmstead[_inOn:on]
+petting zoo[_inOn:in]
+ghost town[_inOn:in]
+secret lair[_inOn:in]
+laboratory[_inOn:in]
+portal[_inOn:in]
+hair salon[_inOn:in]
+shipwreck[_inOn:on]
+pasture[_inOn:in]
+circus tent[_inOn:in]
+fortress[_inOn:in]
+junkyard[_inOn:in]
+pillow fort[_inOn:in]
+mausoleum[_inOn:in]
+sepulcher[_inOn:in]
+kitchenette[_inOn:in]
+churchyard[_inOn:in]
+mortuary[_inOn:in]
+abattoir[_inOn:in]
+art studio[_inOn:in]
+pet store[_inOn:in]
+armory[_inOn:in]
+gazebo[_inOn:in]
+playground[_inOn:on]
+animal shelter[_inOn:in]
+labyrinth[_inOn:in]
+taco stand[_inOn:in]
+pyramid[_inOn:in,on]
+igloo[_inOn:in]
+dude ranch[_inOn:on]
+cabin[_inOn:in]
+gas station[_inOn:in]
+tattoo parlor[_inOn:in]
+tavern[_inOn:in]
+vineyard[_inOn:in]
+drawbridge[_inOn:on]
+pantry[_inOn:in]
+stairwell[_inOn:in]
+supermarket[_inOn:in]
+bayou[_inOn:in]
+ziggurat[_inOn:in,on]
+clocktower[_inOn:in,on]
+lair[_inOn:in]
+void[_inOn:in]
+quarry[_inOn:in]
+farmer's market[_inOn:in]
+hidey-hole[_inOn:in]
+pool[_inOn:in]
+vault[_inOn:in]
+volcano[_inOn:on]
+cave[_inOn:in]
+sanctum[_inOn:in]
+keep[_inOn:in]
+bathroom[_inOn:in]
+port-o-potty[_inOn:in]
+meat locker[_inOn:in]
+locker room[_inOn:in]
+belfry[_inOn:in]
+chapel[_inOn:in]
+lagoon[_inOn:in]
+stable[_inOn:in]
+asylum[_inOn:in]
+prison[_inOn:in]
+refuge[_inOn:in]
+cottage[_inOn:in]
+bog[_inOn:in]

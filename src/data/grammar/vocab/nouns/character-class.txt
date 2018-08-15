@@ -185,6 +185,7 @@ turncoat
 deserter
 taskmaster
 surgeon
+tormentor
 #characterProfession#
 #minorCharacterClass#
 #playerCategory#

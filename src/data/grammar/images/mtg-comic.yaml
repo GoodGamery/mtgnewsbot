@@ -62,23 +62,143 @@ svgComicTemplate4: >
   [_text6Content:][_text7Content:][_text8Content:]
 
 svgComicTemplate4NarrativeStyle1:
-  - "color: black; font-size: 12px; font-family: Anime Ace, Comic Sans, Sans-Serif; font-weight: 600;  word-wrap:break-all;"
+  - "color: black; font-size: 12px; font-family: Anime Ace, Comic Sans, Sans-Serif; font-weight: 600; word-wrap:break-all;"
 svgComicTemplate4NarrativeStyle2:
-  - "color: black; font-size: 12px; font-family: Anime Ace, Comic Sans, Sans-Serif; font-weight: 600;  word-wrap:break-all;"
+  - "color: black; font-size: 11px; font-family: Anime Ace, Comic Sans, Sans-Serif; font-weight: 600; word-wrap:break-all;"
+svgComicTemplate4NarrativeStyle3:
+  - "color: black; font-size: 10.5px; font-family: Anime Ace, Comic Sans, Sans-Serif; font-weight: 600; word-wrap:break-all;"
+svgComicTemplate4NarrativeStyle4:
+  - "color: black; font-size: 10px; font-family: Anime Ace, Comic Sans, Sans-Serif; font-weight: 600; word-wrap:break-all;"
+
 
 svgComicTemplate4Style1:
   - "color: black; font-size: 11px; font-family: Anime Ace, Comic Sans, Sans-Serif; font-weight: 600;  word-wrap:break-all;"
+svgComicTemplate4Style2:
+  - "color: black; font-size: 10.5px; font-family: Anime Ace, Comic Sans, Sans-Serif; font-weight: 600;  word-wrap:break-all;"
+svgComicTemplate4Style3:
+  - "color: black; font-size: 10px; font-family: Anime Ace, Comic Sans, Sans-Serif; font-weight: 600;  word-wrap:break-all;"
 
 svgComicTemplate4Content:
-  - "[_pet:#animal#][_gotta:Gotta,I need to,Time to,Have to,Supposed to,Really should][_meal:Dinner,Lunch,Meal,Supper,Snack][_my:My,The][_hungry:hungry,starving,famished][_are:are,must be,are probably][_style1:#svgComicTemplate4NarrativeStyle1#][_food:food,chow,chow,grub,snacks,treats][_elipsis:...,...,.][_pet1:#genericNickname#][_pet2:#genericNickname#][_myPets:#_my# #_pet.s#,#_my# #_pet.s#,#_pet1# and #_pet2#][_text1text:#_gotta# feed #_myPets#,#_meal# time,#_myPets# #_are# #_hungry#][_text1:#_text1text##_elipsis#][_style2:#svgComicTemplate4NarrativeStyle2#][_im:I'm,we're][_problem:#_im# all out of,I ate all the,I forgot to buy][_text2:#_andOrBut.capitalize# #_problem# #_pet# #_food#.][_style3:#svgComicTemplate4NarrativeStyle1#][_mad:mad,cross,angry,#mood#][_so:,so ][_when:,, again, this time][_flipOut:flip out,go ape,freak out,be home soon,take my #itemNoun# away#_when#][_goingTo:going to,going to,gonna][_predictionFear:can't find out about this,is #_goingTo# chew my #bodypartsInPairs# off,is not going to be happy,will have my #bodypart# for this][_prediction:is #_goingTo# be #_so##_mad#,is #_goingTo# #_flipOut#,#_predictionFear#][_timeHour:5,6,7,8][_closingTime:#_timeHour# o'clock,#_timeHour##colon#30][_otherCharacter:#_familyMemberAddress#,#_familyMemberAddress#,#_familyMemberAddress#,#planeswalkerFirstName#][_otherStore:mall,deli,#_pet.capitalizeAll.hyphenate# Mart,supermarket][_store:store,market,#_otherStore#][_theStore:#_store#][_punct:.,.,.,!,!][_obsessed:Gotta get to the #_theStore#,Goin' to the #_theStore#,Time to go to the #_store.capitalize#][_storeObessesed:#_obsessed##_punct#,♫ #_obsessed# ♫][_time:Time to,I guess I'd better,So I gottta][_scareUp:scare up,go find,go look for,bag,snag,forage for,round up][_again:,, again, now][_getFood:#_time# #_scareUp# some #_food##_again#][_text3:I guess I'd better go into town before the #_theStore# closes.,What time does the #_theStore# close?<br/>#_closingTime#?,#_storeObessesed#,#_otherCharacter# #_prediction##_punct#,#_getFood#.][_style4:#svgComicTemplate4Style1#][_text4:Woss all this then?,The kid's nuts.,What's he on about?,...what the?,Not this kid again.,Psst. On your nine.,This can't be good.,Oh. Oh no.,Not again.,#exclamationSurprise.capitalize##_elipsis#][_style5:#svgComicTemplate4Style1#][_probably:Probably,Must be,I'll bet he's,I'll wager he's,With our luck#comma# he's][_theLocal:The,Our local,The famous,The famous][_tamer:tamer,wrangler,whisperer,speaker,tamer,boy,speaker][_verber:#_tamer#,#nounVerber#][_tamerDesc:#_theLocal# \"#_pet.hyphenate#-#_verber#\" ][_boy:boy,boy,kid,son][_kid:boy,kid][_garrukDescOther:#firstName# Wildspeaker's #_boy#,#firstName# Wildspeaker's #_boy#,the Wildspeaker #_kid#][_garrukDesc:#_tamerDesc#,#_garrukDescOther#][_noDoubt:no doubt,it seems,I'm afraid,I'll wager,I think][_herName:,,#comma# #firstName#,#comma# #termOfEndearment#,#comma# you #personPejorative#][_gather:Gather your things,Drop everything,Listen to me very carefully,I'm being very serious right now,Don't ask any questions][_weGottaGo:We've got to go][run:Run. Just run.,][_text5a:#_gather##_herName#. #_weGottaGo#.,Run. Just run.][_please:Please,For goodness' sake,Hush][_suddenly:,, all of a sudden, right now, just now][_beSick:be sick,be ill,throw up,be naseous,pass out,cry,start screaming,just curl up into a ball][_peed:peed myself,threw up a little,soiled my breeches][_sickRealization:I think I'm going to #_beSick#,I think I just #_peed#,I'm feeling dizzy,My #bodypartsInternalExternal# #_isAre# #adjBodySensation##_suddenly#][_makeScene:make a scene,cause a scene,freak out,overreact,panic,get hysterical,throw a fit,make a big deal out of this][_noScene:Don't #_makeScene#,Let's not #_makeScene#,Please don't #_makeScene#,No reason to #_makeScene#][_text5b:I hate it when he does this.,#_sickRealization#.,#_noScene##_herName#.][_commaNoDoubt:,#comma# #_noDoubt#][_isAtIt:is at it,has lost it,is acting out,is lost,is confused,is off his meds,is in a mood][_text5:#_text5a#,#_text5b#,#_probably# here to feed his \"#_pet.s#\".,#_garrukDesc# #_isAtIt# again#_commaNoDoubt#.]"
-  # - "[_style1:#svgComicTextStyle3#][_text1:Are you here to tell me what a bad eugoogoolizer I am? ][_style2:#svgComicTextStyle2#][_text2:A eugoogoolizer...][_style3:#svgComicTextStyle2#][_text3:one who speaks at funerals.][_style4:#svgComicTextStyle5#][_text4: Or did you think I was too stupid to know what a eugoogoly was?]"
-  # - "[_style1:#svgComicTextStyle1#][_text1:#abstractNoun#...][_style2:#svgComicTextStyle2#][_xness:#nounStateOfBeing#][_text2:Is the essence of #_xness#. And][_style3:#svgComicTextStyle2#][_text3:#_xness#...][_style4:#svgComicTextStyle2#][_ofWhat:#abstractNounMassNounOrEmotion#,#abstractMassOrPluralNounGameConceptOrEmotion#,#pluralNounOrMassNoun#][_opinion:love,hate,fear,know][_whoDoesWhat:#planeswalkerFirstName# #_opinion.s#,#creatureTypes.s# #_opinion#,#historicalFigure# #_opinion.s#,#person# #_opinion.s#][_text4:is the essence of #_ofWhat#.,is what #_whoDoesWhat# most.]"
-  # - "[_style1:#svgComicTextStyle2#][_text1:Wait a minute. I might just have an idea.][_style2:#svgComicTextStyle2#][_text2:They'll be looking for us at #characterFirstName#'s‚ right?][_style3:#svgComicTextStyle3#][_text3:But they won't be looking for...][_style4:#svgComicTextStyle1#][_who:not us,#anyCharacter#,#historicalFigure#,#person#, three #adj# #creatureTypeOrCharacterClass.s#, three #characterClass.s# in #creatureTypes.a# suit][_text4:...#_who#.]"
-  # - "[_style1:#svgComicTextStyle1#][_toWhat:read,#verbIntransitive#][_inWhere:inside the building,inside the #placeNoun#][_text1:How can we be expected][_style2:#svgComicTextStyle1#][_text2:to teach children how to #_toWhat#][_style3:#svgComicTextStyle1#][_text3:if they can't even...][_style4:#svgComicTextStyle2#][_text4:fit #_inWhere#?]"
-  # - "[_style1:#svgComicTextStyle1#][_text1:What is this?][_style2:#svgComicTextStyle1#][_text2:...][_style3:#svgComicTextStyle1#][_text3: #placeNoun.a#...][_style4:#svgComicTextStyle1#][_who:ants,#creatureTypes.s#][_text4:for #_who#?]"
-  # - "[_style1:#svgComicTextStyle3#][_adj:cool,#adj#][_forWhat:for school,for #storyLocation#,to #verbStrictlyIntransitive#,to #verbStrictlyTransitive# me][_text1:You think that you're too #_adj# #_forWhat#...][_style2:#svgComicTextStyle1#][_text2:but I have a news flash for you‚][_style3:#svgComicTextStyle1#][_text3:#historicalFigure#,#anyCharacter#...][_style4:#svgComicTextStyle1#][_text4:...you aren't.]"
-  # - "[_style1:#svgComicTextStyle1#][_do:go pee,go #verbStrictlyIntransitive#,#verbStrictlyIntransitive#,stop #verbIntransitiveGerund#][_text1:Look‚ I gotta #_do#.][_style2:#svgComicTextStyle2#][_text2:but I'd really like to continue][_style3:#svgComicTextStyle3#][_aboutWhat:this conversation,#creatureTypes.s#,#abstractMassOrPluralNounGameConceptOrEmotion#][_text3:talking about #_aboutWhat#][_style4:#svgComicTextStyle1#][_whenWhat:when I come back,when #character# gets here,on #occasion#][_text4:...#_whenWhat#.]"
-  # - "[_style1:#svgComicTextStyle3#][_wereLike:brothers,#characterClass.s#,#itemNoun.s#,#adj#][_like:#_wereLike#][_text1:#characterFirstName##comma# #characterFirstName##comma# and #characterFirstName# were like #_like# to me.][_style2:#svgComicTextStyle3#][_text2:And when I say #_like# I don't mean‚ like‚ actually #_like#.][_people:black people,#adj# people,#creatureTypes.s#][_style3:#svgComicTextStyle3#][_text3: I mean it like the way #_people# use it.][_style4:#svgComicTextStyle3#][_more:more meaningful,#adjComparative#,#adjComparative#][_text4:Which is #_more#‚ I think.]"
+  - "[#svgComicTemplate4ContentInit#]#svgComicTemplate4Content_a#"
+
+svgComicTemplate4ContentInit: "[_pet:#animal#][_pet1:#genericNickname#][_pet2:#genericNickname#][_elipsisOrPeriod:...,...,.]"
+
+svgComicTemplate4Content_a: "[_text1:#svgComicTemplate4Content1a#][_text2:#_part2#][_text3:#_part3#][_text4:#svgComicTemplate4Content4a#][_text5:#_part5#]"
+
+svgComicTemplate4Content1a:
+- "#svgComicTemplate4Content1a_slingBlade#"
+- "#svgComicTemplate4Content1a_feedingTime#"
+
+svgComicTemplate4_waterAdj:
+- cold
+- hot
+- chilly
+- warm
+- deep
+- shallow
+- dirty
+- clear
+- salty
+- fresh
+- wet
+- '#adjStorybook#'
+- '#adjStorybook#'
+- "#adj#"
+- "#adj#"
+
+svgComicTemplate4Content1a_slingBlade: "[_style1:#svgComicTemplate4NarrativeStyle1#][_style2:#svgComicTemplate4NarrativeStyle2#][_style3:#svgComicTemplate4NarrativeStyle2#]#svgComicTemplate4Content1a_slingBlade_textContent#"
+
+svgComicTemplate4Content1a_slingBlade_bridge:
+- "bridge[_inOn:on]"
+- "#placeNoun#"
+
+svgComicTemplate4Content1a_slingBlade_textContent:
+- "[_hungry:hungry,famished,peckish][_realization:I'm awful #_hungry#,I'm feelin' #_hungry#,Startin' to get #_hungry#,Stomach's rumblin','bout suppertime,Worked me up an appetite,Awful hot out today]#_realization#.[#svgComicTemplate4Content1a_slingBlade_part2sand3#]"
+- "[_water:water,river,#liquid#,#massNoun#][_theWater:#_water#][_bridge:#svgComicTemplate4Content1a_slingBlade_bridge.a#]Two fellers standin' #_inOn# #_bridge#.[_fellerSays:feller says#comma# the #_theWater#'s][_part2:One #_fellerSays# #svgComicTemplate4_waterAdj#.][_comeFrom:come from #randomMtgLocation#,was #creatureTypeOrCharacterClass.a#][_part3:The other #_fellerSays# #svgComicTemplate4_waterAdj#.,Get it?,I think the other feller #_comeFrom#.,#svgComicTemplate4Content1a_slingBlade_genericPart3#]"
+- "[_badOption:bad,untoward,sad,good,scary,nasty][_bad:#_badOption#][_ward:children,#animalSmall.s#,#animal.s#,#planeswalkerFirstName#][_deserving:#creatureTypeOrCharacterClass.s#,people who's #adjPersonCharacteristic#][_style1:#svgComicTemplate4NarrativeStyle4#]I don't think anything #_bad# ought to happen to #_ward#.[_style2:#svgComicTemplate4NarrativeStyle4#][_happen:only happen to,be saved up for][_part2:All the #_bad# stuff should #_happen# #_deserving#.][_part3:That's the way I see it.,#svgComicTemplate4Content1a_slingBlade_genericPart3#]"
+
+svgComicTemplate4Content1a_slingBladeFood:
+- "[_that:that][_them:me some][_food:food,chow,chow,grub]#_pet# #_food#"
+- "[_that:those][_them:them][_food:snacks,treats]#_pet# #_food#"
+- "[_that:those][_them:them]french fried #animalSmall.s#"
+- "[_that:those][_them:them]french fried potaters"
+- "[_that:those][_them:them]french fried potaters"
+
+svgComicTemplate4Content1a_slingBlade_part2sand3:
+- "[_style2:#svgComicTemplate4NarrativeStyle4#][_food:#svgComicTemplate4Content1a_slingBladeFood#][_iReckon:I reckon I'll,Maybe I'll,Makin' to,Thinkin' I'll,Goin' to][_part2:#_iReckon# have me some of #_that# #_food#.][_those:#_them# ,][_part3:I like #_those##_food#.,Mmm hmm.,#svgComicTemplate4Content1a_slingBlade_genericPart3#]"
+- "[_part2:#svgComicTemplate4Content1a_slingBlade_part2sand3_2#][_part3:#svgComicTemplate4Content1a_slingBlade_part2sand3_3#]"
+
+svgComicTemplate4Content1a_slingBlade_part2sand3_2:
+- "[_style2:#svgComicTemplate4NarrativeStyle4#][_iReckon:I reckon I'll,Maybe I'll,Makin' to,Thinkin' I'll,Goin' to]#_iReckon# I'll have me some of those french fried potaters." 
+- "#svgComicTemplate4Content1a_slingBlade_genericPart2#"
+
+svgComicTemplate4Content1a_slingBlade_part2sand3_3:
+- "I like them french fried potaters." 
+- "#svgComicTemplate4Content1a_slingBlade_genericPart3#"
+
+svgComicTemplate4Content1a_slingBlade_genericPart2: "[_style2:#svgComicTemplate4NarrativeStyle1#]#svgComicTemplate4Content1a_slingBlade_generic#"
+
+svgComicTemplate4Content1a_slingBlade_genericPart3: "[_style3:#svgComicTemplate4NarrativeStyle1#]#svgComicTemplate4Content1a_slingBlade_generic#"
+
+svgComicTemplate4Content1a_slingBlade_generic:
+- "Mmm."
+- "Mmm hmm."
+- "That's right."
+- "That's the way I see it."
+- "I studied about it."
+- "I don't reckon I know any differ'nt."
+- "That don't seem right."
+- "I s'pose I'll head into town."
+- "[_boutIt:, about it.]Made up my mind#_boutIt#."
+- "[_better:better,ought to][_talkTo:talk to,go talk to,ask]I reckon I #_better# go #_talkTo# #planeswalkerFirstName# 'bout it."
+
+svgComicTemplate4Content1a_feedingTime:  
+- "[_gotta:Gotta,I need to,Time to,Have to,Supposed to,Really should][_meal:Dinner,Lunch,Meal,Supper,Snack][_my:My,The][_hungry:hungry,starving,famished][_are:are,must be,are probably][_style1:#svgComicTemplate4NarrativeStyle1#][_food:food,chow,chow,grub,snacks,treats][_pet1:#genericNickname#][_pet2:#genericNickname#][_myPets:#_my# #_pet.s#,#_my# #_pet.s#,#_pet1# and #_pet2#][_text:#_gotta# feed #_myPets#,#_meal# time,#_myPets# #_are# #_hungry#]#_text##_elipsisOrPeriod#[_part2:#svgComicTemplate4Content2a#][_part3:#svgComicTemplate4Content3a#]"
+
+svgComicTemplate4Content2a:
+- "[_style2:#svgComicTemplate4NarrativeStyle1#][_im:I'm,we're][_problem:#_im# all out of,I ate all the,I forgot to buy]#_andOrBut.capitalize# #_problem# #_pet# #_food#."
+
+svgComicTemplate4Content3a:
+- "[_style3:#svgComicTemplate4NarrativeStyle1#][_otherStore:mall,deli,#_pet.capitalizeAll.hyphenate# Mart,supermarket][_store:store,market,#_otherStore#][_theStore:#_store#][_punct:.,.,.,!,!]#svgComicTemplate4Content3a_textContent#"
+
+svgComicTemplate4Content3a_textContent:
+- "I guess I'd better go into town before the #_theStore# closes."
+- "[_timeHour:5,6,7,8][_closingTime:#_timeHour# o'clock,#_timeHour##colon#30]What time does the #_theStore# close?<br/>#_closingTime#?"
+- "[_obsessed:Gotta get to the #_theStore#,Goin' to the #_theStore#,Time to go to the #_store.capitalize#][_storeObessesed:#_obsessed##_punct#,♫ #_obsessed# ♫]#_storeObessesed#"
+- "[_otherCharacter:#_familyMemberAddress#,#_familyMemberAddress#,#_familyMemberAddress#,#planeswalkerFirstName#][_so:,so ][_mad:mad,cross,angry,#mood#][_when:,, again, this time][_flipOut:flip out,go ape,freak out,be home soon,take my #itemNoun# away#_when#][_goingTo:going to,going to,gonna][_predictionFear:can't find out about this,is #_goingTo# chew my #bodypartsInPairs# off,is not going to be happy,will have my #bodypart# for this][_prediction:is #_goingTo# be #_so##_mad#,is #_goingTo# #_flipOut#,#_predictionFear#]#_otherCharacter# #_prediction##_punct#"
+- "[_time:Time to,I guess I'd better,So I gottta][_time:Time to,I guess I'd better,So I gottta][_scareUp:scare up,go find,go look for,bag,snag,forage for,round up][_again:,, again, now][_getFood:#_time# #_scareUp# some #_food##_again#]#_getFood#."
+
+svgComicTemplate4Content4a:
+- "[_style4:#svgComicTemplate4Style1#]#svgComicTemplate4Content4a_textContent#[_part5:#svgComicTemplate4Content5a_reply#]"
+
+svgComicTemplate4Content4a_textContent:
+- "[_style4:#svgComicTemplate4Style3#]Is<br/>that Garruk?"
+- "[_style4:#svgComicTemplate4Style3#][_mark:!,?]Garruk#_mark#"
+- Woss all this then?
+- The kid's nuts.
+- What's he on about?
+- ...what the?
+- Not this kid again.
+- Psst. On your nine.
+- This can't be good.
+- Oh. Oh no.
+- Not again.
+- "#exclamationSurprise.capitalize##_elipsisOrPeriod#"
+
+svgComicTemplate4Content5a_reply:
+- "[_style5:#svgComicTemplate4Style1#][_you:,you ][_herName:,,#comma# #firstName#,#comma# #termOfEndearment#,#comma# #_you##personPejorativeAffectionate#][_please:Please,For goodness' sake#comma#,Hush.]#svgComicTemplate4Content5a_reply_textContent#"
+
+
+_svgComicTemplate4Content5a_noDoubt:
+- ""
+- "[_style5:#svgComicTemplate4Style3#]#comma# #_noDoubt#"
+
+svgComicTemplate4Content5a_reply_textContent:
+- "[_gather:Gather your things,Drop everything,Listen to me very carefully,I'm being very serious right now,Don't ask any questions][_weGottaGo:We've got to go,Be ready to run,Let's go home][run:Run. Just run.,][_officer:Constable,Doctor,Bailiff,Magistrate,Warden][_suggestion:Run. Just run.,Just smile and nod.,Pretend you don't see him.,Summon the #_officer#.,Remember what we practiced.][_textContent:#_weGottaGo#.,#_gather##_herName#. #_weGottaGo#.,#_suggestion#]#_textContent#"
+- "[_makeScene:make a scene,cause a scene,freak out,overreact,panic,get hysterical,throw a fit,make a big deal out of this][_noScene:Don't #_makeScene#,Let's not #_makeScene#,#_please# don't #_makeScene#,No reason to #_makeScene#][_does:does,gets like][_textContent:I hate it when he #_does# this.,#_noScene##_herName#.]#_textContent#"
+- "[_beSick:be sick,be ill,throw up,be naseous,pass out,cry,start screaming,just curl up into a ball][_peed:peed myself,threw up a little,soiled my breeches][_suddenly:,, all of a sudden, right now, just now][_sickRealization:I think I'm going to #_beSick#,I think I just #_peed#,I'm feeling dizzy,My #bodypartsInternalExternal# #_isAre# #adjBodySensation##_suddenly#]#_sickRealization#."
+- "[_style5:#svgComicTemplate4Style2#][_probably:Probably,Must be,I'll bet he's,I'll wager he's,With our luck#comma# he's]#_probably# here to feed his \"#_pet.s#\"."
+- "[_boy:boy,boy,kid,son][_kid:boy,kid][_garrukDescOther:#firstName# Wildspeaker's #_boy#,#firstName# Wildspeaker's #_boy#,the Wildspeaker #_kid#][_theLocal:The,Our local,The famous,The famous][_tamer:tamer,wrangler,whisperer,speaker,tamer,boy,speaker][_verber:#_tamer#,#nounVerber#][_tamerDesc:#_theLocal# \"#_pet.hyphenate#-#_verber#\" ][_garrukDesc:#_tamerDesc#,#_garrukDescOther#][_noDoubt:no doubt,it seems,I'm afraid,I'll wager,I think][_isAtIt:is at it,has lost it,is acting out,is lost,is confused,is off his meds,is in a mood]#_garrukDesc# #_isAtIt# again#_svgComicTemplate4Content5a_noDoubt#."
 
 # ==========================================================
 
@@ -302,7 +422,7 @@ svgComicTemplate3Content_a:
 
 ruleOfThumb:
 - "the [_blindOnes:living,#characterClass.s#]#_blindOnes# usually won't [_verb:see,#verbTransitive#]#_verb# the [_adj:dead,#adj#,#pluralNoun#]#_adj#"
-- "never #verbTransitive# a #creatureTypeOrCharacterClass#"
+- "never #verbTransitive# #creatureTypeOrCharacterClass.a#"
 - "always check the #placeNoun# first"
 - "it's always the #creatureTypeOrCharacterClass.s#"
 - "never make a deal with [_who:#character#,#creatureTypeOrCharacterClass.a#]#_who#"

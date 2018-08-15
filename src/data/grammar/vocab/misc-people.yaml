@@ -190,6 +190,15 @@ personPejorative:
 - klutz
 - dweeb
 
+personPejorativeAffectionate: 
+- weirdo
+- goofus
+- klutz
+- dweeb
+- goofball
+- dummy
+- monkey
+
 termOfEndearment:
 - dear
 - sweetheart
