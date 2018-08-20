@@ -199,6 +199,11 @@ personPejorativeAffectionate:
 - dummy
 - monkey
 
+personPejorativeAny:
+- "#personPejorative#"
+- "#personPejorative#"
+- "#personPejorativeAffectionate#"
+
 termOfEndearment:
 - dear
 - sweetheart
