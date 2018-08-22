@@ -55,3 +55,22 @@ adjColor:
 - white
 - yellow
 
+adjColorSimple:
+- red
+- green
+- blue
+- yellow
+- orange
+- purple
+- black
+- gray
+- turquoise
+- pink
+- navy blue
+- violet
+- beige
+- white
+
+adjColorAny:
+- "#adjColor#"
+- "#adjColorSimple#"

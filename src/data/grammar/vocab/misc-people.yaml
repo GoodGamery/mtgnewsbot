@@ -97,6 +97,7 @@ firstName:
 - Ziggy
 - Guy
 - Napoleon
+- Carlton
 
 genericNickname:
 - Stubby
@@ -151,6 +152,14 @@ genericNickname:
 - Precious
 - Squiggy
 - Fancy Pants
+- Buttercup
+- Gumdrop
+- Clementine
+- Petunia
+- Lulu
+- Samson
+- Jonesy
+- Gizmo
 
 someGuyOrGal: 
 - guy
@@ -178,3 +187,29 @@ personPejorative:
 - clown
 - genius
 - fool
+- klutz
+- dweeb
+
+personPejorativeAffectionate: 
+- weirdo
+- goofus
+- klutz
+- dweeb
+- goofball
+- dummy
+- monkey
+
+personPejorativeAny:
+- "#personPejorative#"
+- "#personPejorative#"
+- "#personPejorativeAffectionate#"
+
+termOfEndearment:
+- dear
+- sweetheart
+- my love
+- honeybunch
+- darling
+- pumpkin
+- baby
+- lambchop

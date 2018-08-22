@@ -8,20 +8,42 @@ exclamation:
 - "#mtgCatchphrase#"
 
 exclamationSurprise:
+- oh
 - ahh
+- wow
+- wowza
 - ow ow ow
 - ouch
 - oof
+- eek
 - yowza
 - oh no
 - yikes
 - ack
 - crikey
 - jinkies
+- jeepers
 - yeouch
 - great scott
+- gadzooks
+- holy cow
 - "oh#comma# man"
 - "#mildEpithet#"
+
+exclamationPleased:
+- hooray
+- aha
+- woohoo
+- whoopee
+- bingo
+- hallelujah
+- hot dog
+- yippee
+- amen
+- behold
+- bravo
+- ooh-la-la
+- zing
 
 exclamationInspired:
 - charge
@@ -49,6 +71,7 @@ exclamationPopReference:
 - I'm melting
 - I'll be back
 - you complete me
+- bazinga
 - I've made a huge
 - "[_weirdFood:meat's,milk's,eggs are][_foodIs:meat,eggs are,milk is,#liquid#'s,#creatureTypes# #_weirdFood#]#_foodIs# back on the menu, boys"
 - "we'll always have #randomMtgLocation#"
@@ -60,6 +83,9 @@ mildEpithet:
 - sonofa
 - great
 - shoot
+- oops
+- whoops
+- humbug
 
 # max 6 characters (to fit in comic word balloons)
 exasperatedLeadIn:
@@ -67,5 +93,19 @@ exasperatedLeadIn:
 - man
 - ugh
 - geez
+- jeez
 - oh boy
 - great
+- boo
+- phooey
+- shucks
+- alas
+- egad
+- golly
+- harumph
+- ew
+
+simpleExclamation:
+- "#mildEpithet#"
+- "#exasperatedLeadIn#"
+- "#exclamationPleased#"
