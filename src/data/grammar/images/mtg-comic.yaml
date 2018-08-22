@@ -42,9 +42,9 @@ svgComicTextStyleLarge3:
 
 
 svgComicTemplate:
-  - "#svgComicTemplate1#"
-  - "#svgComicTemplate2#"
-  - "#svgComicTemplate3#"
+  # - "#svgComicTemplate1#"
+  # - "#svgComicTemplate2#"
+  # - "#svgComicTemplate3#"
   - "#svgComicTemplate4#"
 
 
@@ -163,7 +163,7 @@ svgComicTemplate4Content1a_slingBlade_generic:
 - "That don't seem right."
 - "I s'pose I'll head into town."
 - "I don't reckon I got any reason to [_verb:kill,#verbInceptiveTransitive#]#_verb# anybody."
-- "[_drink:coffee,#liquid.capitalize#]#_drink# make me [_nervous:nervous,#mood#]#_nervous# when I drink it."
+- "[_drink:coffee,#liquid.capitalize#]#_drink# makes me [_nervous:nervous,#mood#]#_nervous# when I drink it."
 - "[_boutIt:, about it.]Made up my mind#_boutIt#."
 - "[_better:better,ought to][_talkTo:talk to,go talk to,ask]I reckon I #_better# #_talkTo# #planeswalkerFirstName# 'bout it."
 - "I never used no #nounWeapon# that I remember."
