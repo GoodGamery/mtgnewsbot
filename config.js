@@ -30,10 +30,6 @@ let config = {
   MASTODON_API_URL: null
 };
 
-const submodules = {
-  tracery: require('./submodules/tracery')
-};
-
 // apply overrides from config overrides file
 try {
   let override = require(CONFIG_OVERRIDE_PATH);
@@ -56,6 +52,5 @@ Object.freeze(config);
 
 global.mtgnewsbot = global.mtgnewsbot || {};
 global.mtgnewsbot.config = config;
-global.submodules = submodules;
 
 module.exports = config;
