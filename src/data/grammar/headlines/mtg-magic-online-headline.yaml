@@ -37,7 +37,7 @@ theXOfYHasZ:
 cardPunEventInvitation:
 - |
   [#cardPunSetup#]
-  [_leadIn:Get ready to,It's time to,Don't]
+  [_leadIn:Get ready to,It's time to]
   #_cardPunLine1#
   {newline}{newline}[_separator:—,! ][_cardPunLine2:#_leadIn# #_verbPun##_separator##onlineEventAnnouncement1#,#_verbPun# and #onlineEventAnnouncement2#,#_verbPun##_separator##onlineEventAnnouncement3#]#_cardPunLine2.capitalize#!
   {newline}#imgCard#  

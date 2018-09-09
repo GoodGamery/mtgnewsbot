@@ -116,5 +116,7 @@ grass
 gravel
 mutton
 fertilizer
+blubber
+ointment
 #liquid#
 #creatureTypes# [_food:meat,milk,eggs,juice]#_food#
