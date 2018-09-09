@@ -13,8 +13,10 @@ glee
 rage
 insecurity
 self-consciousness
-abject terror
-cautious optimism
+optimism
+pessimism
+embarrassment
+self-pity
 boredom
 cowardice
 sorrow

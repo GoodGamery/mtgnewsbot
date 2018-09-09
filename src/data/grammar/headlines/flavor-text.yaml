@@ -13,7 +13,7 @@ flavorText:
   - >
     [#twoObjects#]#jayaText#
   - >
-    "I've got the [_n1:#noun#]#_n1#", #planeswalkerFirstName# said as the #noun# came to life. "I've got the #_n1#!"
+    "I've got the [_n1:#noun#]#_n1#", #planeswalkerFirstName# said as the [_unusual:][_what:#noun#,#noun#,#animal.s#,#creatureTypes.s#]#_what# came to life. "I've got the #_n1#!"
   - >
     "From nothing came [_thing:#aNoun#,#massNoun#,#pluralNoun#,#clothingOrAccessory.aIfNeeded#]#_thing#."
   - >
@@ -60,7 +60,7 @@ flavorText:
     "The #placeNoun# will surround you with its #abstractNoun# if you are [_adj1:#mood#,#adjCorporeal#,#adjPersonCharacteristic#][_adj2:#mood#,#adjCorporeal#,#adjPersonCharacteristic#]#_adj1# and #_adj2#."
   - >
     "#adj.capitalize#." —#anyCharacter.capitalize#
-  - >    
+  - >
     "#exclamation.allCaps#!" —Jaya Ballard, [_thing:#abstractNoun#,#emotion#,#itemNoun#,#massNoun#][_magic:Task,#_thing#]#_magic.capitalizeAll# Mage
   - >
     "After #timePeriod.a# in the #placeNoun#, #character# [_adverb:seriously,nervously,foolishly,wisely,soberly,dispassionately,feverishly][_verbed:pondered,considered,examined,reviewed,weighed]#_adverb# #_verbed# the advantages of #abstractMassOrPluralNounGameConceptOrEmotion# over #abstractMassOrPluralNounGameConceptOrEmotion#."
@@ -124,9 +124,12 @@ flavorText:
     "[_dances:dance,sing,chant][_dance:#_dances#]I #_dance# the [_danceType:#mood#,#emotion#,#animal#,#creatureTypes#]#_danceType# #_dance.replace(i,o)#, / #bodypartsInPairs# [_up:,up ][_upWhere:trees,clouds,sky,eaves][_firstWhere:in the air,'round my head,#_up#above,in the sky,in the #_upWhere#,held #_up#high,toward the sun]#_firstWhere#, [_secondThing:#bodypartsInPairs#,#pluralItemNounOrMassNoun#] #_secondThing# [_downWhere:river,sea,sand,earth,grave][_secondWhere:on the ground,in the sand,on my feet,down below,in the dirt,on the floor]#_secondWhere#." —#characterFactionOrRace.capitalize# [_chant:chant,rhyme]#_chant#
   - >
     #wallOfVaporParts#\"#_part.capitalize# of #_body1.a# #_isAre# made out of #massNounCompoundWorthy#,/ #_part.capitalize# of #_body2.a# #_isAre# made out of #massNounCompoundWorthy#./ #_myPart.capitalize# #_isAre# made out of [_material:#massNounCompoundWorthy#][_makeup:nothing but #_material#,#_material# alone,only #_material#,pure #_material#]#_makeup#,/ [_adj:#adjComparative#,#adjPersonCharacteristicComparative#,more #mood#]#_adj.capitalize# than [_that:that,who][_all:all,those,any][_whoElse:any #_that# ever have #verbInceptiveIntransitivePerfectPastTense#,#_all# who have #verbIntransitivePastTense# before me]#_whoElse#.\" —#commonCharacterFirstName# #commonCharacterLastName#, #folkSongOrPoem#
+  - >
+    [_it:Itself,Essentially,As][_product:product,manifestation,expression,personification,materialization,representation,aspect,symbol,refutation,denial,condemnation,rejection,contradiction,reflection,aspect,celebration,distillation,progression][#theyPronouns#]#_it# #_product.a# of #_characterOrPlacePossessive# [_adj:#adj#,#adjStorybook#,#adjBodySensation#][_psyche:psyche,mind,dreams,imagination,spirit,ego][_characteristic:#_psyche#,#emotion#,#bodypartsInPairs#]#_adj# #_characteristic#, [_theThis:the,this][_object:#_theThis# #itemNoun#,#_theThis# #massNoun#,#nonPlaneLocation#]#_object# [_dreams:dreams,nightmares,fears,thoughts,misconceptions,delusions,faults,mistakes,problems,character flaws,weaknesses,vices,knowledge][_talking:talking,#adjPersonCharacteristic#,confused,#adjCorporeal#][_likeWhatWeird:#_talking.a# #animal#][_believeTheyre:believe #theyre#,see #themselves# as][_lookLike:look like,seem like,resemble,#_believeTheyre#][_extremely:extremely,exceptionally,strangely,intensely,unusually,awfully,extra,mildly,incredibly][_whatItMakesThem:#_lookLike# #_appearance#,#_extremely# #mood#][_awakens:awakens,stirs,arouses,excites][_bringsDreamsToLife:brings #their# #adjSuperlative# #_dreams# to life,#_awakens# #their# #dreams#][_whatItDoes:#_bringsDreamsToLife#,makes #them# #_whatItMakesThem#]#_whatItDoes#.
 
 flavorTextNew:
-# -> Cerulean Wisps flavor text
+- >
+  [_it:Itself,Essentially,As][_product:product,manifestation,expression,personification,materialization,representation,aspect,symbol,refutation,denial,condemnation,rejection,contradiction,reflection,aspect,celebration,distillation,progression][#theyPronouns#]#_it# #_product.a# of #_characterOrPlacePossessive# [_adj:#adj#,#adjStorybook#,#adjBodySensation#][_psyche:psyche,mind,dreams,imagination,spirit,ego][_characteristic:#_psyche#,#emotion#,#bodypartsInPairs#]#_adj# #_characteristic#, [_theThis:the,this][_object:#_theThis# #itemNoun#,#_theThis# #massNoun#,#nonPlaneLocation#]#_object# [_dreams:dreams,nightmares,fears,thoughts,misconceptions,delusions,faults,mistakes,problems,character flaws,weaknesses,vices,knowledge][_talking:talking,#adjPersonCharacteristic#,confused,#adjCorporeal#][_likeWhatWeird:#_talking.a# #animal#][_believeTheyre:believe #theyre#,see #themselves# as][_lookLike:look like,seem like,resemble,#_believeTheyre#][_extremely:extremely,exceptionally,strangely,intensely,unusually,awfully,extra,mildly,incredibly][_whatItMakesThem:#_lookLike# #_appearance#,#_extremely# #mood#][_awakens:awakens,stirs,arouses,excites][_bringsDreamsToLife:brings #their# #adjSuperlative# #_dreams# to life,#_awakens# #their# #dreams#][_whatItDoes:#_bringsDreamsToLife#,makes #them# #_whatItMakesThem#]#_whatItDoes#.
 
 folkSongOrPoem:
 - "The [_who:#animal#,#characterClass#]#_who.capitalizeAll#'s [_song:song,tale,lament,chorus]#_song.capitalizeAll#"
@@ -136,6 +139,16 @@ folkSongOrPoem:
 wallOfVaporParts:
  - "[_part:#roomPart#][_myPart:my #_indefinite#][_body1:#placeNoun#][_body2:#placeNoun#]"
  - "[_bodyPart:#bodypartsInternalExternal#][_part:#_bodyPart#,#_bodyPart#][_myPart:my #_bodyPart#][_body1:#animal#,#creatureTypes#][_body2:#animal#,#creatureTypes#]"
+
+_likeWhat:
+- "[_proper:proper,real][_fool:fool,failure,#personPejorativeAny#,#characterClass#][_resemblance:#_proper# #_fool#,#adjPersonCharacteristic# #creatureTypeOrCharacterClass#]"
+
+_characterOrPlacePossessive:
+- "[#_likeWhat#][_appearance:#_resemblance.a#][#theyPronouns#][#cotdLegendaryCreatureSearch#]#_legendName#'s"
+- "[#_likeWhat#][_appearance:#_resemblance.a#]#character#'s"
+- "[#_likeWhat#][_appearance:#_resemblance.a#]#character#'s"
+- "[#_likeWhat#][_appearance:#_resemblance.sIfNeeded#][#theyPronouns#]the #creatureTypeOrCharacterClass.sIfNeeded#'"
+
 
 characterAttribution:
   - "#planeswalkerFullName#"
