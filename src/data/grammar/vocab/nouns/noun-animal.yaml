@@ -51,6 +51,33 @@ animal:
 - rabbit
 - hedgehog
 - skunk
+- weiner dog
+- alpaca
+- donkey
+- buffalo
+- iguana
+- rhino
+- turkey
+- anteater
+- coyote
+- penguin
+- cuttlefish
+- dolphin
+- dingo
+- flamingo
+- greyhound
+- guinea pig
+- howler monkey
+- lemming
+- lobster
+- moose
+- porcupine
+- rattlesnake
+- salamander
+- seahorse
+- starfish
+- yak
+- "#animalSmall#"
 
 animalSmall:
 - spider
@@ -77,6 +104,11 @@ animalSmall:
 - mouse
 - chipmunk
 - hamster
+- parakeet
+- bullfrog
+- centipede
+- caterpillar
+- dragonfly
 - "tiny [_tinyAnimal:monkey,octopus,#animal#]#_tinyAnimal#"
 
 

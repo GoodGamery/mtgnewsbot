@@ -102,6 +102,8 @@ trophy
 ingot
 pebble
 figurine
+sphere
+tablet
 #massNoun# launcher
 #bodypart#
 #gameAccessory#

@@ -29,8 +29,11 @@ magicStoryPlotAdj:
 - phoned-in
 - off-script
 - poorly-conceived
+- tragic
 - tragicomic
 - overblown
+- chilling
+- fateful
 - "#adj#"
 
 unusualCharacter:
@@ -46,7 +49,7 @@ magicRealm:
 - "#storyLocation.capitalizeAll#"
 - "the #adjStorybook.capitalizeAll# #placeNoun.capitalizeAll#"
 
-originStoryOverview: "#character#'s [_originStory:origin story,first adventure,humble beginning,#magicStoryPlotAdj# triumph]#_originStory#"
+originStoryOverview: "#character#'s [_first:first,last,latest][_originStory:origin story,#_first# adventure,humble beginning,#magicStoryPlotAdj# triumph]#_originStory#"
 originStoryDetails: "[_fate:capturing,rescuing,locating,search for,quest for,#collectiveActionOrRealm# of,#collectiveActionOrRealm# of]#_fate.capitalize# [_what:the #mcGuffin.capitalizeAll#,the #count.capitalize# #mcGuffin.capitalizeAll#,#unusualCharacter#,#unusualCharacter#]#_what#"
 
 magicStorylineHighlight:
