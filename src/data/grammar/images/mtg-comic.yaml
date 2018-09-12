@@ -42,9 +42,9 @@ svgComicTextStyleLarge3:
 
 
 svgComicTemplate:
-  # - "#svgComicTemplate1#"
-  # - "#svgComicTemplate2#"
-  # - "#svgComicTemplate3#"
+  - "#svgComicTemplate1#"
+  - "#svgComicTemplate2#"
+  - "#svgComicTemplate3#"
   - "#svgComicTemplate4#"
 
 
