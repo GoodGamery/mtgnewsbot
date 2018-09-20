@@ -7,3 +7,4 @@ formality
 insolence
 impartiality
 clumsiness
+arrogance
