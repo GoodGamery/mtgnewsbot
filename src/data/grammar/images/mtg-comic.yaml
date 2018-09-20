@@ -71,8 +71,6 @@ svgComicTemplate4NarrativeStyle3:
 svgComicTemplate4NarrativeStyle4:
   - "color: black; font-size: 10px; font-family: Anime Ace, Comic Sans, Sans-Serif; font-weight: 600; word-wrap:break-all;"
 
-
-
 svgComicTemplate4Style1:
   - "color: black; font-size: 11px; font-family: Anime Ace, Comic Sans, Sans-Serif; font-weight: 600;  word-wrap:break-all;"
 svgComicTemplate4Style2:
@@ -342,14 +340,14 @@ svgComicTemplate1: >
   [svgComicTemplateWidth:810][svgComicTemplateHeight:1245][_textLocation:#svgComicLocation#]
   [_textCharacter1:Garruk][_textCharacter2:Liliana][_text1x:38][_text1y:269][_text1w:314]
   [_text1h:76][_text1Style:#svgComicTemplate1NarrativeStyle#][_char1Verb:confronts,questions]
-  [_text1OtherPerson:#svgComicPerson#][_char2Nickname:she-#creatureTypes#,#massNoun# witch,#adj# #creatureTypeOrCharacterClass#]
+  [_text1OtherPerson:#svgComicPerson#][_char2Nicknames:she-#creatureTypes#,#massNoun# witch,#adj# #creatureTypeOrCharacterClass#,#massNounCompoundWorthy#mancer][_char2Nickname:#_char2Nicknames#]
   [_text1Content:#_subLocPrep# #_textLocation#‚ #_textCharacter1# #_char1Verb# #_textCharacter2# about #_text1OtherPerson#...,The #itemNoun# is #verbStrictlyTransitivePastTense#. Finally‚ it has begun.,The #creatureTypes.s# had no answers for me. But the #_char2Nickname# will talk., #emotion# burns in my #bodypartsInPairs#. The #_char2Nickname# eludes me no longer.]
   [_text2x:266][_text2y:407][_text2w:151][_text2h:50][_text2Style:#svgComicTemplate1Text2Style#]
   [_text2Content:#_textCharacter2##svgComicPunctuation#,#_textCharacter2##svgComicPunctuation#,#_char2Nickname##svgComicPunctuation#,#_text1OtherPerson#?]
   [_text3x:430][_text3y:439][_text3w:72][_text3h:36][_text3Style:#svgComicTemplate1Text2Style#][_text3Content:#svgComicExclamation##svgComicPunctuation#]
-  [_text4x:277][_text4y:677][_text4w:180][_text4h:45][_text4Style:#svgComicTemplate1Text2Style#][#svgComicDialogCouplet#][_text4Content:#_line1#]
+  [_text4x:277][_text4y:677][_text4w:180][_text4h:45][_text4Style:#svgComicTemplate1Text2Style#][_odor:#massNoun#][#svgComicDialogCouplet#][_text4Content:#_line1#]
   [_text5x:463][_text5y:710][_text5w:162][_text5h:55][_text5Style:#svgComicTemplate1Text3Style#][_text5Content:#_line2#]
-  [_text6x:502][_text6y:815][_text6w:250][_text6h:80][_text6Style:#svgComicTemplate1Text2Style#][_lesson:#gameConcept#,#pluralNounOrMassNoun#,#abstractNoun#][_text6Verb:took,destroyed,have defiled][_text6Content:But #_text1OtherPerson# thinks you're #adj#.,#_andOrBut.capitalize# I #_text6Verb# your #concreteNounOrPluralNoun#.,But you're no match for my #_lesson#.,But I have your #pluralNounOrMassNoun#.,Now it's time to teach you about #_lesson#.,Now yell “HRAAUGH!” and flail your arms around.,There's #animalSmall.a# in your hair though.,Now let's see how you like my #massNoun# magic.]
+  [_text6x:502][_text6y:815][_text6w:250][_text6h:80][_text6Style:#svgComicTemplate1Text2Style#][_lesson:#gameConcept#,#pluralNounOrMassNoun#,#abstractNoun#][_text6Verb:took,destroyed,have defiled][_but:But,Now#comma#][_adj:,poor ,sad ,#adj# ,veil-cursed ][_garrukAddress:my #adjPersonCharacteristic# friend,you #_adj##personPejorativeAny#][_garruk:Garruk,Wildspeaker][_forYou:for you,for you#comma# #_garruk#,for you#comma# my #adjPersonCharacteristic# friend][_taste:taste,enjoy,get a load of,have a whiff of,let's see how you like,have a taste of,tell me what you think of,it's time for][_have:have,took,stole][_thinksAdj:#adj#,#adjPersonCharacteristic#][_inYourHair:There's #animalSmall.a# in your hair though.,Is that #animalSmall.a# in your hair?][_text6Content:But #_text1OtherPerson# thinks you're #_thinksAdj#.,#_andOrBut.capitalize# I #_text6Verb# your #concreteNounOrPluralNoun#.,But you're no match for my #_lesson#.,But I #_have# your #pluralNounOrMassNoun#.,Now it's time to teach you about #_lesson#.,Now yell “HRAAUGH!” and flail your arms around.,#_inYourHair#,Now #_taste# my #massNoun# magic.,Now I'm taking your #pluralNounOrMassNoun#.]
   [_text7Content:][_text8Content:]  
 
 svgComicTemplate2: >
@@ -725,15 +723,27 @@ svgComicExclamation: ["what", "yeah","wha","um","haha","lol","you","no","get rea
 svgComicQuestionResponse: ["That's for me to know.", "I'll never tell.", "That's a long story.", "I lost track of #them#.", "I have no clue."]
 
 svgComicDialogCouplet:
-  - "[_line1:Where's #_text1OtherPerson#?][_line2:At the #placeNoun#.,in #nonPlaneLocation#.,#svgComicQuestionResponse#]"
-  - "[_line1:I'm #adj#.][_line2:So am I.,No you're not.,#svgComicDialogShortResponse#]"
-  - "[_line1:You reek of #massNoun#.][_line2:So do you.,#svgComicDialogShortResponse#]"
+  - "[_line1:Where's #_text1OtherPerson#?][_line2:At the #placeNoun#.,in #nonPlaneLocation#.,#nounActivity#.,#svgComicQuestionResponse#]"
+  - "[#adjOpposite#][_adj1:#adj#,#adjPersonCharacteristic#,#_adjOpposite1#][_imYoure:I'm,You're][_adj2:#adj#,#adjPersonCharacteristic#,#_adjOpposite2#][_line1:I'm #_adj1#.][_line2:So am I.,No you're not.,#_imYoure# #_adj2#.,#svgComicDialogShortResponse#]"
+  - "[_dirt:dirt,hell,garbage,a wreck,death,crap][_lookLike:like #massNoun#,like #animal.a#,like #_dirt#,#adjCorporeal#,#mood#][_line1:You reek of #_odor#.,You look #_lookLike#.][_line2:So do you.,#svgComicDialogShortResponse#]"
+  - "[_mood:#mood#][_line1:Why so #_mood#?][_imYoure:I'm,You're][_otherMood:#mood#,#_mood#][_stop:stop,you're,maybe you're,I think you're][_youreAdj:#mood#,#adjCorporeal#][_projecting:projecting,deflecting][_disgust:disgust,amuse,baffle,bore,mock,envy][_disgustMe:You #_disgust# me,Don't make me laugh,You #personPejorativeAny#][_line2:#_mood#? You're #_otherMood#.,I'm not. I'm #mood#.,\"#_mood#\"? #_disgustMe#.,You're the #_mood# one.,#_stop# projecting.,I like being #_mood#.] "
 
 svgComicDialogShortResponse:
   - "Says you."
   - "Doubtful."
   - "If you say so."
   - "You're so #adj#."
+  - "A likely story."
+  - "No chance."
+  - "Interesting."
+  - "[_how:,How ,That's ][_good:#_how# #kindaGood#]#_good.capitalize#."
+  - "#adjGood.capitalize#."
+  - "You're #personPejorativeAny.a#."
+  - "Try again."
+  - "[_punct:?,?,.]How are you not getting this#_punct#"
+  - "You got it#comma# #condescendingNickname#."
+  - "[_serious:serious,for real]You can't be #_serious#."
+  - "[_iYou:I,you,I bet you][_like:like,love,hate][_this:this,you,#pluralNounOrMassNoun#]#_iYou# #_like# this."
 
 svgComicPerson:
   - "#character#"
