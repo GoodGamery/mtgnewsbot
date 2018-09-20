@@ -1,7 +1,7 @@
 'use strict';
 
 const path = require('path');
-const tracery = global.submodules.tracery;
+const tracery = require(`./lib/tracery`);
 const customTraceryModifiers = require(`./lib/plugins/tracery/modifiers`);
 const pathToFileUrl = require(`./lib/util/path-to-file-url`);
 
