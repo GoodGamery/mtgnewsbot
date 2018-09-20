@@ -29,6 +29,45 @@ adjPersonCharacteristic:
 - arrogant
 - manipulative
 - evil
+- winsome
+- stylish
+- crotchety
+- sullen
+- surly
+- straitlaced
+- wild
+- pretentious
+- sassy
+- longwinded
+- skittish
+- suspicious
+- humble
+- insolent
+- audacious
+- boastful
+- shameless
+- bashful
+- ill-mannered
+- disrespectful
+- insightful
+- tenacious
+- spineless
+- sultry
+- stouthearted
+- chivalrous
+- clumsy
+- uneducated
+- vulgar
+- demented
+- deranged
+- awkward
+- cantankerous
+- pompous
+- disingenuous
+- well-heeled
+- wealthy
+- destitute
+- talented
 - "#adj#"
 - "#adjValue#"
 
@@ -59,6 +98,46 @@ adjPersonCharacteristicComparative:
 - sneakier
 - more arrogant
 - more manipulative
+- more evil
+- more winsome
+- more stylish
+- more crotchety
+- more sullen
+- surlier
+- more straitlaced
+- wilder
+- more pretentious
+- sassier
+- more longwinded
+- more skittish
+- more suspicious
+- humbler
+- more insolent
+- more audacious
+- more boastful
+- more shameless
+- more bashful
+- more ill-mannered
+- more disrespectful
+- more insightful
+- more tenacious
+- more spineless
+- sultrier
+- more stouthearted
+- more chivalrous
+- clumsier
+- less educated
+- more vulgar
+- more demented
+- more deranged
+- more awkward
+- more cantankerous
+- more pompous
+- more disingenuous
+- better-heeled
+- wealthier
+- more destitute
+- more talented
 - "#adjComparative#"
 
 adjPersonCharacteristicSuperlative:
@@ -88,4 +167,44 @@ adjPersonCharacteristicSuperlative:
 - sneakiest
 - most arrogant
 - most manipulative
+- most evil
+- most winsome
+- most stylish
+- most crotchety
+- most sullen
+- surliest
+- most straitlaced
+- wildest
+- most pretentious
+- sassiest
+- most longwinded
+- most skittish
+- most suspicious
+- humblest
+- most insolent
+- most audacious
+- most boastful
+- most shameless
+- most bashful
+- most ill-mannered
+- most disrespectful
+- most insightful
+- most tenacious
+- most spineless
+- sultriest
+- most stouthearted
+- most chivalrous
+- clumsiest
+- less educated
+- most vulgar
+- most demented
+- most deranged
+- most awkward
+- most cantankerous
+- most pompous
+- most disingenuous
+- best-heeled
+- wealthiest
+- most destitute
+- most talented
 - "#adjSuperlative#"

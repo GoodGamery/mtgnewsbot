@@ -195,6 +195,7 @@ difficult
 troublesome
 tricky
 messy
+juicy
 #adjCorporeal#
 #adjValue#
 #adjStorybook#

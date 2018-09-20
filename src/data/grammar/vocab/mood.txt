@@ -53,3 +53,4 @@ afraid
 exasperated
 uncomfortable
 mildly enthused
+serious
