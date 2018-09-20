@@ -196,7 +196,6 @@ troublesome
 tricky
 messy
 juicy
-winsome
 #adjCorporeal#
 #adjValue#
 #adjStorybook#

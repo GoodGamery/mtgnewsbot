@@ -19,4 +19,3 @@ artist credit
 copyright line
 holofoil stamp
 playtest version
-artist credit
