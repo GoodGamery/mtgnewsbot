@@ -32,7 +32,8 @@
   "aNoun": [
       "#cardCategory.a#",
       "#creatureTypes.a#",
-      "#itemNoun.a#"
+      "#itemNoun.a#",
+      "#animal.a#"
   ],
   "concreteNoun": [
       "#itemNoun#",

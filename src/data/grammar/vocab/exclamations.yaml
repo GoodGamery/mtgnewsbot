@@ -45,6 +45,11 @@ exclamationPleased:
 - ooh-la-la
 - zing
 
+exclamationDissmissive:
+- hogwash
+- phooey
+- nonsense
+
 exclamationInspired:
 - charge
 - let's do this
@@ -73,8 +78,10 @@ exclamationPopReference:
 - you complete me
 - bazinga
 - I've made a huge
-- "[_weirdFood:meat's,milk's,eggs are][_foodIs:meat,eggs are,milk is,#liquid#'s,#creatureTypes# #_weirdFood#]#_foodIs# back on the menu, boys"
+- "stab them with the #adjCorporeal# end"
+- "[_weirdFood:meat's,milk's,eggs are][_foodIs:meat's,eggs are,milk is,#liquid#'s,#creatureTypes# #_weirdFood#]#_foodIs# back on the menu, boys"
 - "we'll always have #randomMtgLocation#"
+- "where we're going, we don't need #pluralItemNounOrMassNoun#"
 
 mildEpithet:
 - damnit

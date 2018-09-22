@@ -168,8 +168,8 @@ _lordFinally:
 - "Huzzah![_finally:finally ]"
 - "It's about time:[_finally:finally ]"
 - "[_wait:wait,long wait]The #_wait# is over:[_finally:finally ]"
-- "#_legendFullName# approves![_legendName:#deckLimitedArchetype.capitalize#][_finally:finally ]"
-- "#_legendFullName#'s prayers have been answered![_legendName:#deckLimitedArchetype.capitalize#][_finally:finally ]"
+- "#_legendFullName# approves![_legendName:#deckLimitedArchetype.capitalize#,#deck#][_finally:finally ]"
+- "#_legendFullName#'s prayers have been answered![_legendName:#deckLimitedArchetype.capitalize#,#_cardSomeCreatureType1.capitalize# tribal][_finally:finally ]"
 - "[_gift:A gift,A present,Great news]#_gift# from #_cardSet1#:[_finally:finally ]"
 
 _lordOrCommander:

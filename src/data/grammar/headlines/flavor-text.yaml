@@ -60,12 +60,12 @@ flavorText:
     "The #placeNoun# will surround you with its #abstractNoun# if you are [_adj1:#mood#,#adjCorporeal#,#adjPersonCharacteristic#][_adj2:#mood#,#adjCorporeal#,#adjPersonCharacteristic#]#_adj1# and #_adj2#."
   - >
     "#adj.capitalize#." —#anyCharacter.capitalize#
-  - >    
+  - >
     "#exclamation.allCaps#!" —Jaya Ballard, [_thing:#abstractNoun#,#emotion#,#itemNoun#,#massNoun#][_magic:Task,#_thing#]#_magic.capitalizeAll# Mage
   - >
     "After #timePeriod.a# in the #placeNoun#, #character# [_adverb:seriously,nervously,foolishly,wisely,soberly,dispassionately,feverishly][_verbed:pondered,considered,examined,reviewed,weighed]#_adverb# #_verbed# the advantages of #abstractMassOrPluralNounGameConceptOrEmotion# over #abstractMassOrPluralNounGameConceptOrEmotion#."
   - >
-    [_customQuery:t=elemental t!=incarnation name!="? "][#cotdCustomSearch#][cardName:#_cardName1#]"The #philosophicalPursuit# is [_adj:simple,obvious,known,indisputable]#_adj#. Everything is #massNoun# for the #cardName#." —#commonCharacterFirstName#, #_cardName1# #follower#
+    "The #philosophicalPursuit# is [_adj:simple,obvious,known,indisputable]#_adj#. Everything is #massNoun# for the #randomElementalName#." —#commonCharacterFirstName#, #_cardName1# #follower#
   - >
     "#minorStoryLocation.capitalize#, [_placeType:site,home,heart]#_placeType# of the #abstractNounOrMassNoun.capitalizeAll# #placeNoun.capitalizeAll#, source of #demonym# #abstractMassOrPluralNounGameConceptOrEmotion#."
   - >

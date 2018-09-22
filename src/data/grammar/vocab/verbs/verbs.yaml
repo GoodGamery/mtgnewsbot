@@ -18,7 +18,8 @@
     "rise", "revolt", "smile", "smirk", "scowl", "awaken", "prevail", "descend", "retreat", "negotiate", "stare", "howl", "skulk",
     "snicker", "groan", "cough", "listen", "leave", "condescend", "wish", "shiver", "juggle", "crackle", "drip", "explode", "drool",
     "snore", "equivocate", "starve", "lollygag", "pretend", "live", "think", "dream", "daydream", "pantomime", "suffer", "drool", "blink",
-    "rejoice", "wiggle", "breakdance", "shudder",  "piorouette", "concentrate", "panic", "worry", "frown", "gulp", "sigh", "spit"
+    "rejoice", "wiggle", "breakdance", "shudder",  "piorouette", "concentrate", "panic", "worry", "frown", "gulp", "sigh", "spit", 
+    "hatch"
   ],
   "verbBothTransitive": [
     "approach","shuffle", "kill", "observe", "grow", "swallow", "transform", "forget", "remember", "study", "misunderstand",
@@ -35,7 +36,7 @@
     "cleansed", "corrupted", "punched", "kicked", "slapped", "pinched", "tickled", "devoured", "licked", "poked", "contradicted", "ridiculed", "teased",
     "detected", "assembled", "seduced", "banished", "romanced", "purified", "fed", "simplified", "snuffed", "cleared", "revived", "appraised",
     "charmed", "annoyed", "irritated", "perplexed", "exasperated", "disrepsected", "murdered", "eviscerated", "ambushed", "besmirched", "harassed",
-    "massaged", "arm-wrestled", "swindled", "injured"
+    "massaged", "arm-wrestled", "swindled", "injured", "hatched"
   ],
   "verbIntransitivePastTense": [ "#verbStrictlyIntransitivePastTense#", "#verbInceptiveIntransitivePastTense#", "#verbStrictlyIntransitivePastTense#", "#verbBothTransitivePastTense#" ],
   "verbStrictlyIntransitivePastTense": [
@@ -61,7 +62,7 @@
     "cleansing", "corrupting", "punching", "kicking", "slapping", "pinching", "tickling", "devouring", "licking", "poking",, "contradicting", "ridiculing",
     "teasing", "detecting", "sacrificing", "collecting", "assembling", "seducing", "banishing", "romancing", "purifying", "feeding", "simplifying", "snuffing",
     "clearing", "reviving", "appraising", "charming", "annoying", "irritating", "perplexing", "exasperating", "disrepsecting", "murdering", "eviscerating", "ambushing",
-    "besmirching", "harassing", "massaging", "arm-wrestling", "swindling", "injuring"
+    "besmirching", "harassing", "massaging", "arm-wrestling", "swindling", "injuring", "hatching"
   ],
   "verbIntransitiveGerund": [ "#verbStrictlyIntransitiveGerund#", "#verbInceptiveIntransitiveGerund#", "#verbStrictlyIntransitiveGerund#", "#verbBothTransitiveGerund#" ],
   "verbStrictlyIntransitiveGerund": [

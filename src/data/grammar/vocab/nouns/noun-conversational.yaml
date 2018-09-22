@@ -1,0 +1,45 @@
+nounNonsense:
+- nonsense
+- hogwash
+- rubbish
+- gibberish
+- drivel
+- poppycock
+- baloney
+- foolishness
+- balderdash
+- blatherskite
+- trash
+- "#randomElementalName#"
+- "#nounNonsenseCompoundSource#wash"
+- "#nounNonsenseCompoundSource#spittle"
+- "#nounNonsenseCompoundSource# crap"
+
+nounNonsenseCompoundSource:
+- "horse"
+- "bull"
+- "fish"
+- "goose"
+- "goat"
+- "lizard"
+- "ape"
+- "bat"
+- "bear"
+- "bird"
+- "hog"
+- "crab"
+- "dwarf"
+- "elf"
+- "gnome"
+- "hag"
+- "imp"
+- "monkey"
+- "ogre"
+- "oyster"
+- "satyr"
+- "sheep"
+- "snake"
+- "squid"
+- "squirrel"
+- "wolf"
+- "whale"
