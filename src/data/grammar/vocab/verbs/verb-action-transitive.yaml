@@ -1,0 +1,180 @@
+verbActionTransitive:
+- "#verbActionTransitiveChanging#"
+- "#verbActionTransitiveUnchanging#"
+- "#verbActionTransitiveSimple#"
+
+verbActionTransitiveUnchanging:
+- "#verbActionTransitiveUnchangingPassive#"
+- "#verbActionTransitiveUnchangingActive#"
+
+verbActionTransitiveUnchangingActive:
+- kiss
+- wrestle
+- tickle
+- handle
+- hold
+
+verbActionTransitiveUnchangingPassive:
+- count
+- weigh
+- measure
+- scrutinze
+- question
+- dismiss
+- consider
+- study
+- glamorize
+- romanticize
+- lecture
+- tease
+- worship
+
+verbActionTransitiveChanging:
+- "#verbActionTransitiveChangeStates#"
+- "#verbActionTransitiveChangeBeing#"
+- "#verbActionTransitivePassiveChange#"
+- "#verbActionTransitiveChangeStatesOverTime#"
+
+verbActionTransitivePassiveChange:
+- "#verbActionTransitivePassiveChangeAny#"
+- "#verbActionTransitivePassiveChangeBeing#"
+
+verbActionTransitivePassiveChangeAny:
+- exploit
+- irritate
+- baptize
+- misplace
+- forget
+- ignore
+- mock
+- praise
+- disrespect
+- discourage
+- encourage
+- spurn
+- compliment
+- bad-mouth
+- trivialize
+- massage
+- disregard
+
+verbActionTransitivePassiveChangeBeing:
+- mislead
+- elighten
+- discipline
+- entertain
+- disturb
+- pester
+- torment
+- provoke
+- taunt
+- impress
+- disappoint
+- aggrivate
+- insult
+- humiliate
+- flatter
+- disabuse
+- placate
+- soothe
+- fluster
+- confuse
+- hypnotize
+- belittle
+- antagonize
+- enthrall
+- frighten
+- seduce
+- contradict
+- harass
+
+verbActionTransitiveSimple:
+- scratch
+- kick
+- embrace
+- shove
+- slap
+- poke
+- stretch
+- compress
+- enlarge
+- shrink
+- squeeze
+- caress
+- tackle
+- bite
+- teleport
+- disguise
+- smuggle
+- ambush
+- trash
+- cradle
+- sniff
+- lick
+- taste
+- smell
+- fight
+- pinch
+- devour
+
+verbActionTransitiveChangeStates:
+- paint
+- capture
+- murder
+- imprison
+- shave
+- destroy
+- clean
+- soil
+- lubricate
+- defile
+- decorate
+- consume
+- incinerate
+- melt
+- cremate
+- rinse
+- moisten
+- overpower
+- drown
+- bury
+- assemble
+- entrap
+
+verbActionTransitiveChangeStatesOverTime:
+- cultivate
+- nurture
+- erode
+- neglect
+- preserve
+- educate
+- abandon
+- discourage
+- encourage
+- oppress
+- nourish
+- foster
+- train
+- protect
+- hoard
+- collect
+- stockpile
+- bleed
+- avoid
+
+verbActionTransitiveChangeBeing:
+- murder
+- disembowel
+- innoculate
+- disrobe
+- bathe
+- dismember
+- medicate
+- poison
+- fatten
+- starve
+- trip
+- tranquilize
+- invigorate
+- injure
+- "#verbExtinguishPastTense#"

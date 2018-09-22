@@ -1,10 +1,18 @@
 ---
 mtgComic:
   - "#svgComicHeadlinePrefix#: #comicTitle# {svg svgString=`#svgComicImage#`}"
+
 svgComicHeadlinePrefix:
   - "Planeswalker Chronicles"
   - "Comic Excerpts"
   - "Paths of the Planeswalkers"
+
+svgComicTemplate:
+  - "#svgComicTemplate1#"
+  - "#svgComicTemplate2#"
+  - "#svgComicTemplate3#"
+  - "#svgComicTemplate4#"
+
 _svgComicDefaultTextSize:
   - "18px"
 svgComicTemplate1NarrativeStyle:
@@ -39,14 +47,6 @@ svgComicTextStyleLarge2:
   - "color: black; font-size:18px; font-family: Anime Ace, Comic Sans, Sans-Serif; font-weight: 600; word-wrap:break-all;"
 svgComicTextStyleLarge3:
   - "color: black; font-size:16px; font-family: Anime Ace, Comic Sans, Sans-Serif; font-weight: 600; word-wrap:break-all;"
-
-
-svgComicTemplate:
-  - "#svgComicTemplate1#"
-  - "#svgComicTemplate2#"
-  - "#svgComicTemplate3#"
-  - "#svgComicTemplate4#"
-
 
 svgComicTemplate4: >
   [svgComicTemplateImageUrl:./data/images/comics/comic_template_4.jpg]
@@ -95,8 +95,76 @@ svgComicTemplate4ContentInit: "[_pet:#_petOption#][_pet1:#genericNickname#][_pet
 svgComicTemplate4Content_a: "[_text1:#svgComicTemplate4Content1a#][_text2:#_part2#][_text3:#_part3#][_text4:#svgComicTemplate4Content4a#][_text5:#_part5#][_text6:#svgComicTemplate4Content6#][_text7:#svgComicTemplate4Content7a#][_text8:#svgComicTemplate4Content8a#]"
 
 svgComicTemplate4Content1a:
+- "#svgComicTemplate4Content1a_saying#"
 - "#svgComicTemplate4Content1a_slingBlade#"
 - "#svgComicTemplate4Content1a_feedingTime#"
+
+_characterOrFamilyMember:
+- "#character#"
+- "#_familyMemberAddress#"
+- "[#randomLegendaryCreature#]#_legendName#"
+- "#commonCharacterFirstName#"
+- "#historicalFigure#"
+
+svgComicTemplate4Content1a_characterSaid:
+- "What is it that [_sayer:#_characterOrFamilyMember#]#_sayer# [_said:said,told me,likes to tell me]#_said#?"
+- "What did [_sayer:#_characterOrFamilyMember#]#_sayer#  tell me?"
+- "It's like [_sayer:#_characterOrFamilyMember#]#_sayer# [_says:always says,once told me,likes to say]#_says#..."
+- "[_what:Now what,What,]#_what# was it that [_sayer:#_characterOrFamilyMember#]#_sayer# said?"
+- "What's [_sayer:#_characterOrFamilyMember#]#_sayer# always #soundEmanationGerund# [_atMe:at me,to me,about]#_atMe#?"
+- "What do the [_sayer:#animal#,#creatureTypeOrCharacterClass#][_theSayer:#_sayer#]#_theSayer.s# say?[_sayer:the #_theSayer#,#_theSayer.a#]"
+
+svgComicTemplate4Content1a_characterSaying:
+- "[_squeeze:squeeze,get,extract,draw,bleed,suck,obtain,steal]You can't #_squeeze# #liquid# from [_source:#animal.a#,#creatureTypeOrCharacterClass.a#,#aNoun#,#randomMtgLocation#,#planeswalkerFirstName#]#_source#."
+- "[_count:count,#verbActionTransitive#,#verbActionTransitive#,#keywordCardAction#][_dont:Don't,Don't,Never,Always,Never][_dontCount:#_count#,#_dont# #_count#]#_dontCount.capitalize# your #pluralNoun# before they [_verb:#verbStrictlyIntransitive#,#keywordActionIntransitive#]#_verb#."
+- "[_style2:#svgComicTemplate4NarrativeStyle2#]#exclamation##svgComicDotBang#"
+- "[_style2:#svgComicTemplate4NarrativeStyle2#]#svgComicTemplate4Content1a_characterSaying_random#"
+
+svgComicTemplate4Content1a_characterSaying_flavorText:
+- "From nothing came [_thing:#aNoun#,#massNoun#,#pluralNoun#,#clothingOrAccessory.aIfNeeded#]#_thing#."
+- "Catch!"
+- "[_style2:#svgComicTemplate4NarrativeStyle3#]Sorry I #verbTransitivePastTense# your [_what:#concreteNoun#,#concreteNoun#,#animal.s#]#_what#. Here's some #pluralNoun#."
+
+svgComicTemplate4Content1a_characterSaying_random:
+- "Don't misquote me."
+- "This isn't your house."
+- "Get off my lawn."
+- "You're not welcome here."
+- "You're such #personPejorativeAny.a#."
+- "You're dead to me."
+- "[_kill:#verbExtinguishGeneral#,#verbExtinguishSpecific#][_killed:#verbExtinguishPastTense#,#verbActionTransitivePastTense#][_threat:I'm going to #_kill# you,Prepare to be #_killed#]#_threat##svgComicDotBang#"
+- "Get a life, you #personPejorativeAny#."
+- "Keep your #characterClass.s# close and your #characterClass.s# closer."
+- "[_leadIn:For the last time,Seriously,You #personPejorativeAny#]#_leadIn#, I'm not #_sayer#."
+- "Life is like #nounContainer.a# of #pluralNounOrMassNoun#."
+- "Spare the #abstractNounPluralItemNounMassNounOrEmotion#, spoil the #abstractNounPluralItemNounMassNounOrEmotion#."
+- "Help, I'm trapped in #pluralNounOrMassNoun.a# factory."
+- "Help me, [_ailment:thirst,hunger,#animal# pox][_curser:witch,goblin,demon][_dying:I can't breathe,I'm drowning,I'm dying of #_ailment#,I'm seriously injured,I've been cursed by#massNoun.a# #_curser#]#_dying#."
+- "Where's the #pluralNounOrMassNoun#?"
+- "[_otherIllusion:Free will,Time,#nounStateOfBeing#,#plane#][_theIllusion:#abstractNounMassNounOrEmotion#,##][_madeUp:made up,a lie invented,a conspiracy][_isAnIllusion:is an illusion,isn't real,isn't anything. It's the only thing,is #_madeUp# by the government]#_theIllusion.capitalize# #_isAnIllusion#."
+- "#svgComicTemplate4Content1a_characterSaying_flavorText#"
+- "#exclamation##svgComicDotBang#"
+
+svgComicTemplate4Content1a_saying_comment:
+- "Never made much sense to me."
+- "Always stuck with me."
+- "That's my motto."
+- "Really makes you think."
+- "[_theyre:#_theyre#,And #_theyre#]#_theyre.capitalize# not wrong."
+- "From the mouths of [_what:babes,#characterClass.s#,#animal.s#]#_what#."
+- "[_itThat:it,that][_gonnaGet:Gonna get,Might get]#_gonnaGet# #_itThat# [_tattooed:tattooed on my #bodypartsExternal#,inscribed on my #itemNoun#]#_tattooed#."
+- "[_but:,But ][_theyre:#_theyre#]#_but##character# says #_theyre# [_what:wrong,wrong,just #adjPersonCharacteristic#]#_what#."
+- "It took me a minute."
+- "[_thats:That's,And That's]#_thats# what I told #character#."
+- "But #_theyre# [_so:,,so ,just ]#_so##adjPersonCharacteristic#."
+- "What #personPejorativeAny.a#."
+- "[_knew:knew,understood]I wish I #_knew# what that meant."
+- "[_thats:That's,Which is,It's]#_thats# about the [_smartest:smartest,dumbest,wisest,most confusing,#adjPersonCharacteristicSuperlative#]#_smartest# thing I ever heard."
+- "#svgComicTemplate3Content8a#"
+- "[_so:So,It's,And it's,Wish it were,But it's not]#_so# true."
+- "[_dotDotBang:.,.,!]What a [_load:load,bunch]#_load# of #nounNonsense##_dotDotBang#"
+- "#svgComicTemplate4Content1a_slingBlade_generic#"
+- "#exclamation##svgComicDotBang#"
 
 svgComicTemplate4_waterAdj:
 - cold
@@ -114,6 +182,11 @@ svgComicTemplate4_waterAdj:
 - '#adjStorybook#'
 - "#adj#"
 - "#adj#"
+
+svgComicTemplate4Content1a_saying: "[_style1:#svgComicTemplate4NarrativeStyle2#][_style2:#svgComicTemplate4NarrativeStyle2#][_style3:#svgComicTemplate4NarrativeStyle1#]#svgComicTemplate4Content1a_saying_textContent#"
+
+svgComicTemplate4Content1a_saying_textContent:
+- "[#theyPronouns#]#svgComicTemplate4Content1a_characterSaid#[_theyre:#theyre#][_style2:#svgComicTemplate4NarrativeStyle4#][_part2:“#svgComicTemplate4Content1a_characterSaying#”][_part3:#svgComicTemplate4Content1a_saying_comment#]"
 
 svgComicTemplate4Content1a_slingBlade: "[_style1:#svgComicTemplate4NarrativeStyle1#][_style2:#svgComicTemplate4NarrativeStyle2#][_style3:#svgComicTemplate4NarrativeStyle2#]#svgComicTemplate4Content1a_slingBlade_textContent#"
 
@@ -214,9 +287,9 @@ svgComicTemplate4Content5a_reply_textContent:
 - "[_boy:boy,boy,kid,son][_kid:boy,kid][_garrukDescOther:#firstName# Wildspeaker's #_boy#,#firstName# Wildspeaker's #_boy#,the Wildspeaker #_kid#][_theLocal:The,Our local,The famous,The famous][_tamer:tamer,wrangler,whisperer,speaker,tamer,boy,speaker,#nounVerber#][_tamerDesc:#_theLocal# \"#_pet.hyphenate#-#_tamer#\" ][_garrukDesc:#_tamerDesc#,#_garrukDescOther#][_noDoubt:no doubt,it seems,I'm afraid,I'll wager,I think][_isAtIt:is at it,has lost it,is acting out,is lost,is confused,is off his meds,is in a mood]#_garrukDesc# #_isAtIt# again#_svgComicTemplate4Content5a_noDoubt#."
 
 svgComicTemplate4Content6:
-- "[_style6:#svgComicTemplate4Style1#][_ill:ill,foul,dark,black]This is #_ill.a# omen."
+- "[_style6:#svgComicTemplate4Style1#][_ill:ill,foul,dark,black,#mtgStoryPlotAdj#][_omen:omen,sign,development,day]This is #_ill.a# #_omen#."
 - "[_style6:#svgComicTemplate4Style1#]#svgComicTemplate4Content6_whosThat#"
-- "[_style6:#svgComicTemplate4Style2#][_oh:,,,Oh#comma# ,Oh wow#comma# ][_heardAbout:heard about,like,don't like]#_oh#I #_heardAbout# this [_guy:guy,lunatic,maniac,nutjob,troublemaker,smart-aleck,#personPejorativeAny#]#_guy#."
+- "[_style6:#svgComicTemplate4Style2#][_oh:,,,Oh#comma# ,Oh wow#comma# ][_heardAbout:I've heard about,I like,I don't like]#_oh##_heardAbout# this [_guy:guy,lunatic,maniac,nutjob,troublemaker,smart-aleck,#personPejorativeAny#]#_guy#."
 - "[_style6:#svgComicTemplate4Style2#][_tdy:, today][_nails:hair,nails][_destination:college,#nonPlaneStoryLocation#,work#_tdy#][_shouldHave:stayed home#_tdy#,listened to #character#,stayed inside#_tdy#,left town#_tdy#,stuck to #nounActivity#,gone to #_destination#,got my #_nails# done#_tdy#]I knew I should have #_shouldHave#."
 
 
@@ -274,14 +347,14 @@ svgComicTemplate4Content8a_textContent:
 - "[#svgComicTemplate4Content8a_textContent_admission#]"
 - "[#svgComicTemplate4Content8a_textContent_twoPart#]"
 - "[_preface:#zerowidth#][_punct2part:#zerowidth#][_content:#svgComicTemplate4Content8a_textContent_phrase#]"
-- "[_preface:#zerowidth#][_punct2part:#zerowidth#][_content:#svgComicTemplate4Content8a_textContent_garrukQuote#]"
+- "[_preface:#zerowidth#][_punct2part:#zerowidth#][_style8:#svgComicTemplate4Style3#][_content:#svgComicTemplate4Content8a_textContent_garrukQuote#]"
 
 svgComicTemplate4Content8a_textContent_admission: "[#svgComicTemplate4Content7a_textContent_intro#][_admission:#svgComicTemplate4Content8a_textContent_listenUp#][_preface:#zerowidth#][_content:#_admission#][_punct2part:#zerowidth#]"
 
 svgComicTemplate4Content8a_textContent_phrase:
 - "[_style8:#svgComicTemplate4Style1Bigger1#]Can. You. Dig it?"
 - "[_style8:#svgComicTemplate4Style1Bigger1#]They're heeere!"
-- "[_style8:#svgComicTemplate4Style1Bigger1#]Are you not entertained?"
+- "Are you not entertained?"
 - "[_style8:#svgComicTemplate4Style1Bigger1#]Say hello to my little friends!"
 - "Unleash the #_pets#!"
 - "[_style8:#svgComicTemplate4Style1Bigger1#]I'm king of the world!"
@@ -317,7 +390,7 @@ svgComicTemplate4Content8a_textContent_listenUp_lookingFor:
 - "#_doesAnyone# #_haveAny#[_qp:?]"
 - "[_just:,just ]I'm #_just#looking for#_some#[_qp:.]"
 - "Where can I get#_some#[_qp:?]"
-- "[_here:,, around here, in town, hereabouts, nearby][_good:good,decent][_goodPlace:a #_good# place to,#_anywhere# I can,#_anywhere# to]Is there #_goodPlace##_here# buy[_qp:?]"
+- "[_here:,, around here, in town, hereabouts, nearby][_good:good,decent][_goodPlace:#_good.a# place to,#_anywhere# I can,#_anywhere# to]Is there #_goodPlace##_here# buy[_qp:?]"
 
 svgComicTemplate4Content8a_textContent_listenUp:
 - "[_haveAny:have any,know where I can find some][_anywhere:anywhere,somewhere,some place][_here:,, around here, in town, hereabouts, nearby][_goodPlace:a good place to,#_anywhere# I can,#_anywhere# to][_some:, some, some][_food:food,chow,chow,grub,snacks,treats][_otherThing:#itemNoun#,#nounWeapon#,#clothingOrAccessory#][_quarry:#_pet# food,#_pet# #_food#,#massNoun#,#_otherThing.s#]#svgComicTemplate4Content8a_textContent_listenUp_lookingFor# #_quarry##_qp#"
@@ -327,7 +400,7 @@ svgComicTemplate4Content8a_textContent_listenUp:
 - "[_admit:Full disclosure#comma#,My bad#comma#,Confession time#_commaPeriodColon#,I should warn you#_commaPeriod#,apologies everyone#comma#][_intro:*****,#_admit# ,#_admit# ][_style8:#svgComicTemplate4Style3#][_mayHave:may have,think I,might have][_lock:lock,latch][_pen:pen,enclosure,corral,room][_accidentally:accidentally][_forgotten:#_accidentally# just cast #_svgComicTemplate4_cardsearch_overrunCard#][_curseAdj:,nasty ,harmless ,serious ,wee  ,touch of a ,small ][_curseDesc:veil-based,#_curseAdj#veil,#_curseAdj##bodypart#,#adjStorybook#,#_curseAdj##nounCompoundWorthy#,#_curseAdj##demonym#][_contracted:picked up,contracted,acquired,developed][_otherDevelopment:have #animalSmall.a# in my hair,#_contracted# #_curseDesc.a# curse][_development:#_forgotten#,#_otherDevelopment#]I #_mayHave# #_development#."
 - "[_iAm:I'm,I might be][_iJust:I just,I might have,I might have just,It's possible I just][_imWearing:#_iAm# wearing,#_iJust# put on][_some:some,a lot of,an entire bottle of][_cologne:cologne,axe body spray,febreeze,patchouli,Chanel No. 5,Drakkar Noir][_mtgCologne:Sunfire Balm,Fishliver Oil,Essence of the Wild,Witch's Mist,
 Alluring Scent][_aLotOf:a lot of,an entire bottle of,a little too much][_what:#_some# #_cologne#,#_aLotOf# #_mtgCologne#][_breath:coffee,garlic,onion,tuna,#animal#,#massNoun#,#liquid#,#creatureTypes#,#_pet#][_iHave:I have,I've got,I might have,I'm afraid I've got][_bad:bad,nasty,serious,righteous,fierce][_caseOf:, #_bad.a# case of][_scentConfession:#_imWearing# #_what#,#_iHave##_caseOf# #_breath# breath]#_scentConfession#."
-- "I just ate [_big:big,huge,giant,enormous]#_big.a# bowl of [_meatSource:#creatureTypes#,#animal#,#_pet#][_food:chili,spaghetti,prunes,#_meatSource# meat,#massNoun#]#_food#[_punct:.,!]#_punct#"
+- "I just ate [_big:big,huge,giant,enormous]#_big.a# bowl of [_meatSource:#creatureTypes#,#animal#,#_pet#][_food:chili,spaghetti,pasta,pudding,refried beans,oatmeal,prunes,#_meatSource# meat,#massNoun#,#massNoun#]#_food#[_punct:.,!]#_punct#"
 
 _svgComicTemplate4_cardsearch_summoned: "[_type:demon,demon,demon,eldrazi,horror][_customQuery:t=legendary t=demon][#_customQuery.cardSearchCustomQuery(1)#][_whoSummoned:#_cardFamiliarName1#,the baloths,#_pet1# and #_pet2#,the #_pets#]#_whoSummoned#"
 
@@ -718,6 +791,8 @@ presentTime:
 - today
 - tonight
 
+
+svgComicDotBang: [".","!"]
 svgComicPunctuation: ["!","?","...","."]
 svgComicExclamation: ["what", "yeah","wha","um","haha","lol","you","no","get real"]
 svgComicQuestionResponse: ["That's for me to know.", "I'll never tell.", "That's a long story.", "I lost track of #them#.", "I have no clue."]

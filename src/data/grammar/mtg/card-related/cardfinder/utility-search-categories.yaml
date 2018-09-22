@@ -106,6 +106,9 @@ randomLegendaryNonlandPermanent: "#cardQueryLegendaryPermanent##_cardName#"
 cardQueryLegendaryCreature: "[_customQuery:t=legendary t=creature][#cotdCustomSearch#][_cardName:#_cardName1#][_legendName:#_cardFamiliarName1#]"
 randomLegendaryCreature: "#cardQueryLegendaryCreature##_cardName#"
 
+cardQueryElementalName: '[_customQuery:t=elemental t!=incarnation name!="? "][#cotdCustomSearch#][_cardName:#_cardName1#]'
+randomElementalName: "#cardQueryElementalName##_cardName#"
+
 cardQueryLordCreature:
 - '[_customQuery:t=creature text=other text="creatures get" text!="?other creature" text!="?target creature" #_colorFilter#][#_customQuery.cardSearchCustomQuery(1)#][_cardName:#_cardName1#]'
 - '[_customQuery:t=creature text=other text="creatures get" text!="?other creature" text!="?target creature" #_colorFilter#][#_customQuery.cardSearchCustomQuery(1)#][_cardName:#_cardName1#]'

@@ -1,0 +1,180 @@
+verbActionTransitivePastTense:
+- "#verbActionTransitiveChangingPastTense#"
+- "#verbActionTransitiveUnchangingPastTense#"
+- "#verbActionTransitiveSimplePastTense#"
+
+verbActionTransitiveUnchangingPastTense:
+- "#verbActionTransitiveUnchangingPassivePastTense#"
+- "#verbActionTransitiveUnchangingActivePastTense#"
+
+verbActionTransitiveUnchangingActivePastTense:
+- kissed
+- wrestled
+- tickled
+- handled
+- held
+
+verbActionTransitiveUnchangingPassivePastTense:
+- counted
+- weighed
+- measured
+- scrutinzed
+- questioned
+- dismissed
+- considered
+- studied
+- glamorized
+- romanticized
+- lectured
+- teased
+- worshipped
+
+verbActionTransitiveChangingPastTense:
+- "#verbActionTransitiveChangeStatesPastTense#"
+- "#verbActionTransitiveChangeBeingPastTense#"
+- "#verbActionTransitivePassiveChangePastTense#"
+- "#verbActionTransitiveChangeStatesOverTimePastTense#"
+
+verbActionTransitivePassiveChangePastTense:
+- "#verbActionTransitivePassiveChangeAnyPastTense#"
+- "#verbActionTransitivePassiveChangeBeingPastTense#"
+
+verbActionTransitivePassiveChangeAnyPastTense:
+- exploited
+- irritated
+- baptized
+- misplaced
+- forgotten
+- ignored
+- mocked
+- praised
+- disrespected
+- discouraged
+- encouraged
+- spurned
+- complimented
+- bad-mouthed
+- trivialized
+- massaged
+- disregarded
+
+verbActionTransitivePassiveChangeBeingPastTense:
+- misled
+- elightened
+- disciplined
+- entertained
+- disturbed
+- pestered
+- tormented
+- provoked
+- taunted
+- impressed
+- disappointed
+- aggrivated
+- insulted
+- humiliated
+- flattered
+- disabused
+- placated
+- soothed
+- flustered
+- confused
+- hypnotized
+- belittled
+- antagonized
+- enthralled
+- frightened
+- seduced
+- contradicted
+- harassed
+
+verbActionTransitiveSimplePastTense:
+- scratched
+- kicked
+- embraced
+- shoved
+- slapped
+- poked
+- stretched
+- compressed
+- enlarged
+- shrunk
+- squeezed
+- caressed
+- tackled
+- bitten
+- teleported
+- disguised
+- smuggled
+- ambushed
+- trashed
+- cradled
+- sniffed
+- licked
+- tasted
+- smelled
+- fought
+- pinched
+- devoured
+
+verbActionTransitiveChangeStatesPastTense:
+- painted
+- captured
+- murdered
+- imprisoned
+- shaved
+- destroyed
+- cleaned
+- soiled
+- lubricated
+- defiled
+- decorated
+- consumed
+- incinerated
+- melted
+- cremated
+- rinsed
+- moistened
+- overpowered
+- drowned
+- buried
+- assembled
+- entrapped
+
+verbActionTransitiveChangeStatesOverTimePastTense:
+- cultivated
+- nurtured
+- eroded
+- neglected
+- preserved
+- educated
+- abandoned
+- discouraged
+- encouraged
+- oppressed
+- nourished
+- fostered
+- trained
+- protected
+- hoarded
+- collected
+- stockpiled
+- bled
+- avoided
+
+verbActionTransitiveChangeBeingPastTense:
+- murdered
+- disemboweled
+- innoculated
+- disrobed
+- bathed
+- dismembered
+- medicated
+- poisoned
+- fattened
+- starved
+- tripped
+- tranquilized
+- invigorated
+- injured
+- "#verbExtinguishPastTense#"
