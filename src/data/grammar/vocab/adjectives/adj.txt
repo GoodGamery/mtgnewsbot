@@ -199,4 +199,4 @@ juicy
 #adjCorporeal#
 #adjValue#
 #adjStorybook#
-#adjPersonalCharacteristic#
+#adjPersonCharacteristic#
