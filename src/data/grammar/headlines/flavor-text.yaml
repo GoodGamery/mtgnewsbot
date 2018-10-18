@@ -65,7 +65,7 @@ flavorText:
   - >
     "After #timePeriod.a# in the #placeNoun#, #character# [_adverb:seriously,nervously,foolishly,wisely,soberly,dispassionately,feverishly][_verbed:pondered,considered,examined,reviewed,weighed]#_adverb# #_verbed# the advantages of #abstractMassOrPluralNounGameConceptOrEmotion# over #abstractMassOrPluralNounGameConceptOrEmotion#."
   - >
-    "The #philosophicalPursuit# is [_adj:simple,obvious,known,indisputable]#_adj#. Everything is #massNoun# for the #randomElementalName#." —#commonCharacterFirstName#, #_cardName1# #follower#
+    "[#randomElementalName#]The #philosophicalPursuit# is [_adj:simple,obvious,known,indisputable]#_adj#. Everything is #massNoun# for the #_cardName#." —#commonCharacterFirstName#, #_cardName1# #follower#
   - >
     "#minorStoryLocation.capitalize#, [_placeType:site,home,heart]#_placeType# of the #abstractNounOrMassNoun.capitalizeAll# #placeNoun.capitalizeAll#, source of #demonym# #abstractMassOrPluralNounGameConceptOrEmotion#."
   - >
@@ -125,7 +125,7 @@ flavorText:
   - >
     #wallOfVaporParts#\"#_part.capitalize# of #_body1.a# #_isAre# made out of #massNounCompoundWorthy#,/ #_part.capitalize# of #_body2.a# #_isAre# made out of #massNounCompoundWorthy#./ #_myPart.capitalize# #_isAre# made out of [_material:#massNounCompoundWorthy#][_makeup:nothing but #_material#,#_material# alone,only #_material#,pure #_material#]#_makeup#,/ [_adj:#adjComparative#,#adjPersonCharacteristicComparative#,more #mood#]#_adj.capitalize# than [_that:that,who][_all:all,those,any][_whoElse:any #_that# ever have #verbInceptiveIntransitivePerfectPastTense#,#_all# who have #verbIntransitivePastTense# before me]#_whoElse#.\" —#commonCharacterFirstName# #commonCharacterLastName#, #folkSongOrPoem#
 
-flavorTextNew:
+# flavorTextNew:
 # -> Cerulean Wisps flavor text
 
 folkSongOrPoem:
@@ -218,7 +218,7 @@ philosophicalPursuit:
 - answer to everything
 - hard truth
 - "reason I'm #verbIntransitiveGerund#"
-- "secret to understanding the #cardName#"
+- "secret to understanding the #_cardName#"
 
 follower:
 - believer
