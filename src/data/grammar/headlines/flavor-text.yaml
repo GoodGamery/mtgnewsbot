@@ -49,7 +49,7 @@ flavorText:
   - >
     "#creatureTypeOrCharacterClass.capitalize.s#! They #verbTransitivePastTense# my favorite #itemNoun#! We'll #verbTransitive# them all!"
   - >
-    "No wonder where you fin them, #creatureTypes.s# love #pluralNounOrMassNoun#."
+    "No wonder where you find them, #creatureTypes.s# love #pluralNounOrMassNoun#."
   - >
     "We hold sacred the powers of #abstractNoun# and #abstractNoun#. #abstractNounMassNounOrEmotion.capitalize# and #abstractNounMassNounOrEmotion# are our [_adj:greatest,oldest,only,favorite,#adjSuperlative#][_what:weapons,regrets,problems,comforts,guides,obessions,sources of confusion]#_adj# #_what#." —#characterFactionOrRace.capitalize# #motto#
   - >
