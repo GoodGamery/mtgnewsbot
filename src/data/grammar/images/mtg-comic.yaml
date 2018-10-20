@@ -8,9 +8,9 @@ svgComicHeadlinePrefix:
   - "Paths of the Planeswalkers"
 
 svgComicTemplate:
-  - "#svgComicTemplate1#"
-  - "#svgComicTemplate2#"
-  - "#svgComicTemplate3#"
+  # - "#svgComicTemplate1#"
+  # - "#svgComicTemplate2#"
+  # - "#svgComicTemplate3#"
   - "#svgComicTemplate4#"
 
 _svgComicDefaultTextSize:
@@ -56,7 +56,7 @@ svgComicTemplate4: >
   [_text1Style:#_style1#][_text1Content:#_text1#]
   [_text2x:156][_text2y:98][_text2w:186][_text2h:45][_text2Style:#_style2#][_text2Content:#_text2#]
   [_text3x:533][_text3y:234][_text3w:215][_text3h:58][_text3Style:#_style3#][_text3Content:#_text3#]
-  [_text4x:51][_text4y:331][_text4w:63][_text4h:51][_text4Style:#_style4#][_text4Content:#_text4#]
+  [_text4x:51][_text4y:331][_text4w:63][_text4h:59][_text4Style:#_style4#][_text4Content:#_text4#]
   [_text5x:146][_text5y:433][_text5w:134][_text5h:70][_text5Style:#_style5#][_text5Content:#_text5#]
   [_text6x:524][_text6y:450][_text6w:151][_text6h:56][_text6Style:#_style6#][_text6Content:#_text6#]
   [_text7x:615][_text7y:543][_text7w:140][_text7h:112][_text7Style:#_style7#][_text7Content:#_text7#]
