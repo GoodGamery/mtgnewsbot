@@ -1,0 +1,66 @@
+---
+tournamentLogoHeadline: "[#_tournamentInit#]#_pro# wins #_tournamentType.capitalize# #_tournamentName.capitalize# {htmlImg htmlImgString=`#tournamentLogoImage#`}"
+
+_tournamentPro:
+- "[_tournamentTextColor:white][_tournamentTypeLogoSubDirectory:#_tournamentTypeLogoDirectory#/light][_pro:#pro#]"
+- "[_tournamentTextColor:black][_tournamentTypeLogoSubDirectory:#_tournamentTypeLogoDirectory#/dark][_pro:#pro#]"
+
+tournamentLogoImage: "#_tournamentLogoStyle# #_tournamentLogo#"
+
+_tournamentLogoStyle: ""
+
+_tournamentMtgLogoDirectory: "./src/data/images/mtg-logos"
+_tournamentTypeLogoDirectory: "./src/data/images/tournament-logos"
+
+_tournamentSetLogoDirectory: "./src/data/images/mtg-sets"
+
+_tournamentLogoTournamentTypeStyle: >
+  color: #_tournamentTextColor#;
+  font-family: 'Chuck Noon', Beleren, Georgia, 'Liberation Serif', 'DejaVu Serif', serif;
+  text-transform: capitalize;
+  font-size:66px; 
+  font-weight:400;
+  bottom: 0;
+  border-width: 1px;
+  padding: 0px 5px 0px 5px;
+  margin: 0px;
+  line-height: .85em;
+  text-align: left;
+  width: 600px;
+
+
+_tournamentLogoTournamentNameStyle: "#_tournamentLogoTournamentTypeStyle#"
+
+_tournamentInit:
+- "[#_tournamentPro#][_tournamentType:Grand Prix][_tournamentTypeSrc:#_tournamentTypeLogoSubDirectory#/grand-prix-small.png][_tournamentName:#city#]"
+- "[#_tournamentPro#][_tournamentType:Pro Tour][_tournamentTypeSrc:#_tournamentTypeLogoSubDirectory#/pro-tour-small.png][_tournamentName:#randomCardSet#]"
+
+_tournamentLogoMtgLogoSrc:
+- "#_tournamentMtgLogoDirectory#/mtg-small-logo-1.png"
+- "#_tournamentMtgLogoDirectory#/mtg-small-logo-2.png"
+
+_tournamentLogoContent:
+ <tr>
+  <td><img src="#_tournamentLogoMtgLogoSrc#"></td> 
+ </tr>
+ <tr>   
+  <td style="#_tournamentLogoTournamentTypeStyle#"><img src="#_tournamentTypeSrc#"></td>
+ </tr>
+ <tr>
+  <td style="#_tournamentLogoTournamentNameStyle#">#_tournamentName.allCaps#</td>
+ </tr> 
+
+_tournamentLogo: |
+  <head>
+    <style> 
+
+    </style>
+  </head>
+  <body>
+  #_tournamentLogoContainer#
+  </body>
+
+_tournamentLogoContainer: |
+  <table cellspacing="0" cellpadding="0">
+    #_tournamentLogoContent#
+  </table>

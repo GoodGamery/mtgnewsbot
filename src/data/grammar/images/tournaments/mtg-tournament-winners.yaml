@@ -1,0 +1,6 @@
+mtgTournamentWinners:
+- "[_winnerName:Alexander Hayne][#_mtgTournamentPhoto_1#]"
+
+mtgTournamentPhotoDir: "./src/data/images/tournament-winners"
+
+_mtgTournamentPhoto_1:
