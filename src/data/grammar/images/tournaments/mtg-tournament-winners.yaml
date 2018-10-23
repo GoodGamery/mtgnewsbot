@@ -1,6 +1,39 @@
-mtgTournamentWinners:
-- "[_winnerName:Alexander Hayne][#_mtgTournamentPhoto_1#]"
+mtgTournamentWinner:
+- "[#mtgTournamentWinners#][_mtgTournamentPhotoSrc:#_tournamentPhoto#][mtgTournamentWinnerSrc:#mtgTournamentPhotoDir#/#_mtgTournamentPhotoSrc#]"
 
-mtgTournamentPhotoDir: "./src/data/images/tournament-winners"
+mtgTournamentPhotoDir: "./src/data/images/tournaments/winners"
+
+mtgTournamentWinners:
+- "[_winnerName:Alan Comer][#_mtgTournamentPhoto_1#]"
+- "[_winnerName:Alexander Hayne][_mtgTournamentPhotoSrc:#_mtgTournamentPhoto_2#]"
+- "[_winnerName:Amaz][_mtgTournamentPhotoSrc:#_mtgTournamentPhoto_3#]"
+- "[_winnerName:Andrea Mengucci][_mtgTournamentPhotoSrc:#_mtgTournamentPhoto_4#]"
+- "[_winnerName:Andrew Cuneo][_mtgTournamentPhotoSrc:#_mtgTournamentPhoto_5#]"
+- "[_winnerName:Ben Stark][_mtgTournamentPhotoSrc:#_mtgTournamentPhoto_6#]"
+- "[_winnerName:Brian Bran-Duin][_mtgTournamentPhotoSrc:#_mtgTournamentPhoto_7#]"
+- "[_winnerName:Brian Kibler][_mtgTournamentPhotoSrc:#_mtgTournamentPhoto_8#]"
+
 
 _mtgTournamentPhoto_1:
+- "[_tournamentPhoto:alan-comer-1.jpg]"
+
+_mtgTournamentPhoto_2:
+- "[_tournamentPhoto:alexander-hayne-1.jpg]"
+
+_mtgTournamentPhoto_3:
+- "[_tournamentPhoto:amaz-1.jpg]"
+
+_mtgTournamentPhoto_4:
+- "[_tournamentPhoto:andrea-mengucci-1.jpg]"
+
+_mtgTournamentPhoto_5:
+- "[_tournamentPhoto:andrew-cuneo-1.jpg]"
+
+_mtgTournamentPhoto_6:
+- "[_tournamentPhoto:ben-stark-2.jpg]"
+
+_mtgTournamentPhoto_7:
+- "[_tournamentPhoto:brian-bran-duin-1.jpg]"
+
+_mtgTournamentPhoto_8:
+- "[_tournamentPhoto:brian-kibler-2.jpg]"
