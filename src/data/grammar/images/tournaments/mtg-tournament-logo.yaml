@@ -10,7 +10,7 @@ tournamentLogoImage: "#_tournamentLogoStyle# #_tournamentLogo#"
 _tournamentLogoStyle: ""
 
 _tournamentMtgLogoDirectory: "./src/data/images/mtg-logos"
-_tournamentTypeLogoDirectory: "./src/data/images/tournament-logos"
+_tournamentTypeLogoDirectory: "./src/data/images/tournaments/logos"
 
 _tournamentSetLogoDirectory: "./src/data/images/mtg-sets"
 

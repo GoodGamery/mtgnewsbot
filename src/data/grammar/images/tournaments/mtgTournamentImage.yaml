@@ -1,4 +1,4 @@
-tournamentLogo: "[#_tournamentInit#][_tournamentWinnerText:#_pro# wins #_tournamentType.capitalize# #_tournamentName.capitalize#]"
+tournamentLogo: "[#_tournamentInit#][_tournamentWinnerText:#_pro# wins #_tournamentType.capitalize# #_tournamentName.capitalize#]#_tournamentWinnerText#{htmlImg htmlImgString=`#tournamentLogoImage#`}"
 
 _tournamentLogoHtml: |
   <div class="container">
