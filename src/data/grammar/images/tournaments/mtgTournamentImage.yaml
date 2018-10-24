@@ -1,17 +1,13 @@
 # tournamentLogo: "[#_tournamentInit#][_tournamentWinnerText:#_pro# wins #_tournamentType.capitalize# #_tournamentName.capitalize#]#_tournamentWinnerText# #_tournamentLogoOrientationPlaceholder# {htmlImg htmlImgString=`#_tournamentImageStyle# #tournamentLogoImage#`}"
 
-tournamentLogo: "[#_tournamentInit#][#mtgTournamentWinner#][_tournamentWinnerText:#_winnerName# wins #_tournamentType.capitalize# #_tournamentName.capitalize#]#_tournamentWinnerText# #_tournamentLogoOrientationPlaceholder# {htmlImg htmlImgString=`#_tournamentLogoHtml#`}"
+tournamentLogo: "[#_tournamentInit#][#mtgTournamentWinner#]_tournamentTypeSrcTEST: #_tournamentTypeSrcTEST#[_tournamentWinnerText:#_winnerName# wins #_tournamentType.capitalize# #_tournamentName.capitalize#]#_tournamentWinnerText#
+  [_logoOrientation:#_logoAlign#]
+  {htmlImg htmlImgString=`#_tournamentLogoHtml#`}"
 
 _tournamentLogoDirectory: "./src/data/images/mtg-logos"
 
 _tournamentLogoDirectoryImage:
 - "mtg-small-logo-2.png"
-
-_tournamentLogoOrientationPlaceholder:
-- "[_logoOrientation:#_logoAlign#][_tournamentTypeSrc:#_tournamentTypeSrcDark#]"
-# - "[_lightOrDark:dark][_logoOrientation:#_tournamentLogoStyle_topLeft#][_tournamentTypeSrc:#_tournamentTypeSrcDark#]"
-# - "[_lightOrDark:dark][_logoOrientation:#_tournamentLogoStyle_bottomRight#][_tournamentTypeSrc:#_tournamentTypeSrcDark#]"
-# - "[_lightOrDark:dark][_logoOrientation:#_tournamentLogoStyle_bottomLeft#][_tournamentTypeSrc:#_tournamentTypeSrcDark#]"
 
 _tournamentLogoStyle_topRight: |
   [#_tournamentLogoVertAlignTop#]
