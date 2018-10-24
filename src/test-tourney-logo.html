@@ -1,13 +1,57 @@
- <base href="/"/> <head>
+<head>
   <style>
+    table.photo { width: 800px; height: 530px; background-size: 100% auto; margin: 20px; }
 
+    table.photo-source { background-image: url(file:///D:/development/git/mtgnewsbot/src/data/images/tournaments/winners/william-jensen-3.jpg); }
+
+    td { line-height: .9em; -webkit-text-stroke-width: .75px; font-size: 48px; font-family: 'Chuck Noon',Beleren,serif; text-transform :capitalize; bottom: 0; padding: 0px 5px 0px 5px; text-shadow: 0px 0px 5px rgba(1, 1, 1, 1); margin: 0px; }
+
+    td.light { color: black; -webkit-text-stroke-width: 2px; -webkit-text-fill-color: white; }
+
+    td.dark { color: white; -webkit-text-stroke-width: 3px; -webkit-text-fill-color: black; }
+
+    td.bottom-row { padding-bottom: 2px; }
+
+    td.top-row.top-aligned { vertical-align: top; padding-top: 20px; }
+
+    td.top-row.bottom-aligned { height: 100%; vertical-align: bottom; }
+
+    td.bottom-row.top-aligned { height: 100%; vertical-align: top; }
+
+    td.bottom-row.bottom-aligned { vertical-align: bottom; padding-bottom: 20px; }
+
+    td.left-aligned { text-align: left; padding-left: 20px; }
+
+    td.left-aligned-image { margin-right: 100%;  padding-left: 20px; }
+
+    td.right-aligned { text-align: right; padding-right: 20px; }
+
+    td.right-aligned-image { margin-left: 100%; padding-right: 20px; }
+
+
+    td.bottom-row-sized { width: 350px; }
+
+    img.magic-logo { display: block; max-width: 250px; max-height: 80px; width: auto; height: auto; }
+
+    td.no-width { width: 0px }
+
+    td.fill-width { width: 100% }
+
+    td.tournament-name { 280px; }
   </style>
 </head>
-<body>
-<table cellspacing="0" cellpadding="0">
-  <tr> <td><img src="file:///D:/development/git/mtgnewsbot/src/data/images/mtg-logos/mtg-small-logo-2.png"></td> </tr> <tr> <td style="color: Black; font-family: Beleren, Georgia, 'Liberation Serif', 'DejaVu Serif', serif; text-transform:capitalize; font-variant:small-caps; font-size:64px;  font-weight:bold; bottom: 0; border-width: 1px; padding: 0px 5px 0px 5px; margin: 0px; border-style: dashed; border-color: green;
-">Pro Tour</td> </tr> <tr> <td style="color: Black; font-family: Beleren, Georgia, 'Liberation Serif', 'DejaVu Serif', serif; text-transform:capitalize; font-variant:small-caps; font-size:64px;  font-weight:bold; bottom: 0; border-width: 1px; padding: 0px 5px 0px 5px; margin: 0px; border-style: dashed; border-color: green;
-">Boring Valley</td> </tr>
-</table>
 
+<body>
+  <table class="photo photo-source" cellspacing="0" cellpadding="0">
+    <tr>
+      <td align="right" class="top-row right-aligned-image top-aligned" colspan=2><img class="magic-logo" src="file:///D:/development/git/mtgnewsbot/src/data/images/mtg-logos/mtg-small-logo-2.png"></td>
+    </tr>
+    <tr>
+      <td class="right-aligned" colspan=2><img src="file:///D:/development/git/mtgnewsbot/src/data/images/tournaments/logos/dark/grand-prix-small-outlined.png"/></td></tr>
+    <tr>
+      <td class="fill-width"></td>
+      <td class="bottom-row right-aligned dark top-aligned bottom-row-sized">NEW VEGAS</td>
+      <td class="no-width"></td>
+    </tr>
+  </table>
 </body>

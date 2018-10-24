@@ -8,13 +8,39 @@ _tournamentLogoDirectoryImage:
 - "mtg-small-logo-2.png"
 
 _tournamentLogoOrientationPlaceholder:
-# - "[_lightOrDark:light][_logoOrientation:#_tournamentLogoStyle_topRight#][_tournamentTypeSrc:#_tournamentTypeSrcLight#]"
-- "[_lightOrDark:dark][_logoOrientation:#_tournamentLogoStyle_topRight#][_tournamentTypeSrc:#_tournamentTypeSrcDark#]"
+- "[_logoOrientation:#_logoAlign#][_tournamentTypeSrc:#_tournamentTypeSrcDark#]"
+# - "[_lightOrDark:dark][_logoOrientation:#_tournamentLogoStyle_topLeft#][_tournamentTypeSrc:#_tournamentTypeSrcDark#]"
+# - "[_lightOrDark:dark][_logoOrientation:#_tournamentLogoStyle_bottomRight#][_tournamentTypeSrc:#_tournamentTypeSrcDark#]"
+# - "[_lightOrDark:dark][_logoOrientation:#_tournamentLogoStyle_bottomLeft#][_tournamentTypeSrc:#_tournamentTypeSrcDark#]"
 
 _tournamentLogoStyle_topRight: |
-  [_topRowClass:top-row top-aligned right-aligned-image][_topRowAlign:right]
+  [#_tournamentLogoVertAlignTop#]
+  [#_tournamentLogoStyle_right#]
+
+_tournamentLogoStyle_topLeft: |
+  [#_tournamentLogoVertAlignTop#]
+  [#_tournamentLogoStyle_left#]
+
+_tournamentLogoStyle_bottomRight: |
+  [#_tournamentLogoVertAlignBot#]
+  [#_tournamentLogoStyle_right#]
+
+_tournamentLogoStyle_bottomLeft: |
+  [#_tournamentLogoVertAlignBot#]
+  [#_tournamentLogoStyle_left#]
+
+_tournamentLogoStyle_right: |
+  [_topRowClass:top-row right-aligned-image #_topRowVerticalClass#][_topRowAlign:right]
   [_midRowClass:right-aligned]
-  [_botRowClass:bottom-row top-aligned right-aligned #_lightOrDark#]
+  [_botRowClass:bottom-row right-aligned #_lightOrDark# #_bottomRowVerticalClass#][_spacerLeftClass:fill-width][_spacerRightClass:no-width]
+
+_tournamentLogoStyle_left: |
+  [_topRowClass:top-row left-aligned-image #_topRowVerticalClass#][_topRowAlign:left]
+  [_midRowClass:left-aligned]
+  [_botRowClass:bottom-row left-aligned #_lightOrDark# #_bottomRowVerticalClass#][_spacerLeftClass:no-width][_spacerRightClass:fill-width]
+
+_tournamentLogoVertAlignTop: "[_topRowVerticalClass:top-aligned][_bottomRowVerticalClass:top-aligned]"
+_tournamentLogoVertAlignBot: "[_topRowVerticalClass:bottom-aligned][_bottomRowVerticalClass:bottom-aligned]"
 
 _tournamentLogoHtml: |
   #_tournamentImageStyle#
@@ -26,11 +52,15 @@ _tournamentLogoHtml: |
       <tr>
         <td class="#_midRowClass#" colspan=2><img src="#_tournamentTypeSrc#"/></td></tr>
       <tr>
-        <td class="filler"></td>
+        <td class="#_spacerLeftClass#"></td>
         <td class="#_botRowClass# bottom-row-sized">#_tournamentName.allCaps#</td>
+        <td class="#_spacerRightClass#"></td>        
       </tr>
     </table>
   </body> 
+
+_cellOuterPaddingVertical: "12px"
+_cellOuterPaddingHorizontal: "8px"
 
 _tournamentImageStyle: |
   <head>
@@ -47,24 +77,30 @@ _tournamentImageStyle: |
 
       td.bottom-row << padding-bottom: 2px; >>
 
-      td.top-row.top-aligned << vertical-align: top; >>
+      td.top-row.top-aligned << vertical-align: top; padding-top: #_cellOuterPaddingVertical#; >>
 
       td.top-row.bottom-aligned << height: 100%; vertical-align: bottom; >>
 
       td.bottom-row.top-aligned << height: 100%; vertical-align: top; >>
 
-      td.bottom-row.bottom-aligned << vertical-align: bottom; >>
+      td.bottom-row.bottom-aligned << vertical-align: bottom; padding-bottom: #_cellOuterPaddingVertical#; >>
 
-      td.left-aligned << text-align: left; >>
+      td.left-aligned << text-align: left; padding-left: #_cellOuterPaddingHorizontal#; >>
 
-      td.right-aligned << text-align: right; >> 
+      td.left-aligned-image << margin-right: 100%;  padding-left: #_cellOuterPaddingHorizontal#; >>
 
-      td.right-aligned-image << margin-left: 100%; >>
+      td.right-aligned << text-align: right; padding-right: #_cellOuterPaddingHorizontal#; >> 
+
+      td.right-aligned-image << margin-left: 100%; padding-right: #_cellOuterPaddingHorizontal#; >>
 
       td.bottom-row-sized << width: 350px; >>
 
       img.magic-logo << display: block; max-width: 250px; max-height: 80px; width: auto; height: auto; >>
 
-      td.tournament-name << 300px; >>
+      td.no-width << width: 0px >>
+
+      td.fill-width << width: 100% >>
+
+      td.tournament-name << 280px; >>
     </style>
   </head>
