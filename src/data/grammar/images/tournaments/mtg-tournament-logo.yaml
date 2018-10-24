@@ -30,9 +30,12 @@ _tournamentLogoTournamentTypeStyle: >
 
 _tournamentLogoTournamentNameStyle: "#_tournamentLogoTournamentTypeStyle#"
 
+_tournamentImagesGrandPrix: "[_tournamentTypeSrc:#_tournamentTypeLogoSubDirectory#/grand-prix-small.png][_tournamentTypeSrcLight:#_tournamentTypeLogoSubDirectory#/light/grand-prix-small-outlined.png][_tournamentTypeSrcDark:#_tournamentTypeLogoSubDirectory#/dark/grand-prix-small-outlined.png]"
+_tournamentImagesProTour: "[_tournamentType:Pro Tour][_tournamentTypeSrc:#_tournamentTypeLogoSubDirectory#/pro-tour-small.png][_tournamentTypeSrcLight:#_tournamentTypeLogoSubDirectory#/light/pro-tour-small-outlined.png][_tournamentTypeSrcDark:#_tournamentTypeLogoSubDirectory#/dark/pro-tour-small-outlined.png]"
+
 _tournamentInit:
-- "[#_tournamentPro#][_tournamentType:Grand Prix][_tournamentTypeSrcLight:#_tournamentTypeLogoSubDirectory#/light/grand-prix-small-outlined.png][_tournamentTypeSrcDark:#_tournamentTypeLogoSubDirectory#/dark/grand-prix-small-outlined.png][_tournamentName:#city#]"
-- "[#_tournamentPro#][_tournamentType:Pro Tour][_tournamentTypeSrcLight:#_tournamentTypeLogoSubDirectory#/light/pro-tour-small-outlined.png][_tournamentTypeSrcDark:#_tournamentTypeLogoSubDirectory#/dark/pro-tour-small-outlined.png][_tournamentName:#randomCardSet#]"
+- "[#_tournamentPro#][_tournamentType:Grand Prix][#_tournamentImagesGrandPrix#][_tournamentName:#city#]"
+- "[#_tournamentPro#][_tournamentType:Pro Tour][#_tournamentImagesProTour#][_tournamentName:#randomCardSet#]"
 
 _tournamentLogoMtgLogoSrc:
 - "#_tournamentMtgLogoDirectory#/mtg-small-logo-1.png"

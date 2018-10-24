@@ -38,10 +38,9 @@ _mtgTournamentPhoto_2:
 - "[_tournamentPhoto:alexander-hayne-1.jpg][#_logoDark#][_logoAlign:#_logoBotLeft#]"
 
 _mtgTournamentPhoto_3:
-- "[_tournamentPhoto:amaz-1.jpg]"
-- "[_tournamentPhoto:alexander-hayne-1.jpg][#_logoDark#][_logoAlign:#_logoTopRight#]"
-- "[_tournamentPhoto:alexander-hayne-1.jpg][#_logoDark#][_logoAlign:#_logoBotRight#]"
-- "[_tournamentPhoto:alexander-hayne-1.jpg][#_logoDark#][_logoAlign:#_logoBotLeft#]"
+- "[_tournamentPhoto:amaz-1.jpg][#_logoDark#][_logoAlign:#_logoTopRight#]"
+- "[_tournamentPhoto:amaz-1.jpg][#_logoDark#][_logoAlign:#_logoBotRight#]"
+- "[_tournamentPhoto:amaz-1.jpg][#_logoDark#][_logoAlign:#_logoBotLeft#]"
 
 _mtgTournamentPhoto_4:
 - "[_tournamentPhoto:andrea-mengucci-1.jpg][#_logoDark#][_logoAlign:#_logoTopRight#]"
@@ -52,7 +51,6 @@ _mtgTournamentPhoto_5:
 - "[_tournamentPhoto:andrew-cuneo-1.jpg][#_logoDark#][_logoAlign:#_logoBotLeft#]"
 
 _mtgTournamentPhoto_6:
-- "[_tournamentPhoto:ben-stark-2.jpg][#_logoDark#][_logoAlign:#_logoTopLeft#]"
 - "[_tournamentPhoto:ben-stark-2.jpg][#_logoDark#][_logoAlign:#_logoBotLeft#]"
 
 _mtgTournamentPhoto_7:

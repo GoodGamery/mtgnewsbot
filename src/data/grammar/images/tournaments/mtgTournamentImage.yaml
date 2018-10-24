@@ -1,8 +1,15 @@
 # tournamentLogo: "[#_tournamentInit#][_tournamentWinnerText:#_pro# wins #_tournamentType.capitalize# #_tournamentName.capitalize#]#_tournamentWinnerText# #_tournamentLogoOrientationPlaceholder# {htmlImg htmlImgString=`#_tournamentImageStyle# #tournamentLogoImage#`}"
 
-tournamentLogo: "[#_tournamentInit#][#mtgTournamentWinner#]_tournamentTypeSrcTEST: #_tournamentTypeSrcTEST#[_tournamentWinnerText:#_winnerName# wins #_tournamentType.capitalize# #_tournamentName.capitalize#]#_tournamentWinnerText#
+tournamentLogo: "[#_tournamentInit#][_botRowLeftAlignedClass:left-aligned][_botRowRightAlignedClass:right-aligned][#mtgTournamentWinner#][#_tournamentLogoDefineTournament#][_tournamentWinnerText:#_winnerName# wins #_tournamentType.capitalize# #_tournamentName.capitalize#]#_tournamentWinnerText#
   [_logoOrientation:#_logoAlign#]
   {htmlImg htmlImgString=`#_tournamentLogoHtml#`}"
+
+_tournamentLogoDefineTournament:
+- "[_tournamentLogoName: #_tournamentName.allCaps#]"
+- "[_cardset:#novelCardSetName#][_tournamentType:Pro Tour][#_tournamentImagesProTour#][_tournamentTypeSrc:#_tournamentTypeSrcDark#][_tournamentName:#_cardset#][_botRowLeftAlignedClass:left-aligned-image][_botRowRightAlignedClass:right-aligned-image][_setLogoStylesAlign:#_logoHorizontalAlignment#][_tournamentLogoName:#_tournamentLogoNameImageDiv#][_setLogoFontColorSet:#_setLogoColorLight#]"
+
+_tournamentLogoNameImageDiv: |
+  <div style="float:#_logoHorizontalAlignment#; zoom:60%; margin-top:-2px; margin-#_logoHorizontalAlignment#: -20px;">#mtgSetLogoImage#</div>
 
 _tournamentLogoDirectory: "./src/data/images/mtg-logos"
 
@@ -25,15 +32,17 @@ _tournamentLogoStyle_bottomLeft: |
   [#_tournamentLogoVertAlignBot#]
   [#_tournamentLogoStyle_left#]
 
-_tournamentLogoStyle_right: |
-  [_topRowClass:top-row right-aligned-image #_topRowVerticalClass#][_topRowAlign:right]
-  [_midRowClass:right-aligned]
-  [_botRowClass:bottom-row right-aligned #_lightOrDark# #_bottomRowVerticalClass#][_spacerLeftClass:fill-width][_spacerRightClass:no-width]
-
 _tournamentLogoStyle_left: |
+  [_logoHorizontalAlignment:left]
   [_topRowClass:top-row left-aligned-image #_topRowVerticalClass#][_topRowAlign:left]
   [_midRowClass:left-aligned]
-  [_botRowClass:bottom-row left-aligned #_lightOrDark# #_bottomRowVerticalClass#][_spacerLeftClass:no-width][_spacerRightClass:fill-width]
+  [_botRowClass:bottom-row #_botRowLeftAlignedClass# #_lightOrDark# #_bottomRowVerticalClass#][_spacerLeftClass:no-width][_spacerRightClass:fill-width]
+
+_tournamentLogoStyle_right: |
+  [_logoHorizontalAlignment:right]
+  [_topRowClass:top-row right-aligned-image #_topRowVerticalClass#][_topRowAlign:right]
+  [_midRowClass:right-aligned]
+  [_botRowClass:bottom-row #_botRowRightAlignedClass# #_lightOrDark# #_bottomRowVerticalClass#][_spacerLeftClass:fill-width][_spacerRightClass:no-width]
 
 _tournamentLogoVertAlignTop: "[_topRowVerticalClass:top-aligned][_bottomRowVerticalClass:top-aligned]"
 _tournamentLogoVertAlignBot: "[_topRowVerticalClass:bottom-aligned][_bottomRowVerticalClass:bottom-aligned]"
@@ -49,7 +58,7 @@ _tournamentLogoHtml: |
         <td class="#_midRowClass#" colspan=2><img src="#_tournamentTypeSrc#"/></td></tr>
       <tr>
         <td class="#_spacerLeftClass#"></td>
-        <td class="#_botRowClass# bottom-row-sized">#_tournamentName.allCaps#</td>
+        <td class="#_botRowClass# bottom-row-sized">#_tournamentLogoName#</td>
         <td class="#_spacerRightClass#"></td>        
       </tr>
     </table>
@@ -65,7 +74,7 @@ _tournamentImageStyle: |
 
       table.photo-source << background-image: url(#mtgTournamentWinnerSrc#); >>
 
-      td << line-height: .9em; -webkit-text-stroke-width: .75px; font-size: 48px; font-family: 'Chuck Noon',Beleren,serif; text-transform :capitalize; bottom: 0; padding: 0px 5px 0px 5px; text-shadow: 0px 0px 5px rgba(1, 1, 1, 1); margin: 0px; >>
+      td << line-height: .9em; -webkit-text-stroke-width: .75px; font-size: 52px; font-family: 'Chuck Noon',Beleren,serif; text-transform :capitalize; bottom: 0; padding: 0px 5px 0px 5px; text-shadow: 0px 0px 5px rgba(1, 1, 1, 1); margin: 0px; >>
 
       td.light << color: black; -webkit-text-stroke-width: 2px; -webkit-text-fill-color: white; >>
       

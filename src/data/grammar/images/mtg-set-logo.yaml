@@ -100,12 +100,21 @@ fontTexture:
   - "grit.png"
 
 _setLogoFontColorSet:
-  - "[_setLogoFontColor:#setLogoColorLight#][_setLogoStrokeColor:#setLogoColorMedium#][_setLogoGradientColor:#setLogoColorDark#]"
-  - "[_setLogoFontColor:#setLogoColorLight#][_setLogoStrokeColor:#setLogoColorDark#][_setLogoGradientColor:#setLogoColorMedium#]"
-  - "[_setLogoFontColor:#setLogoColorMedium#][_setLogoStrokeColor:#setLogoColorLight#][_setLogoGradientColor:#setLogoColorDark#]"
-  - "[_setLogoFontColor:#setLogoColorMedium#][_setLogoStrokeColor:#setLogoColorDark#][_setLogoGradientColor:#setLogoColorLight#]"
-  - "[_setLogoFontColor:#setLogoColorDark#][_setLogoStrokeColor:#setLogoColorLight#][_setLogoGradientColor:#setLogoColorMedium#]"
-  - "[_setLogoFontColor:#setLogoColorDark#][_setLogoStrokeColor:#setLogoColorMedium#][_setLogoGradientColor:#setLogoColorLight#]"
+- "#_setLogoColorLight#"
+- "#_setLogoColorMedium#"
+- "#_setLogoColorDark#"
+
+_setLogoColorLight:  
+- "[_setLogoFontColor:#setLogoColorLight#][_setLogoStrokeColor:#setLogoColorMedium#][_setLogoGradientColor:#setLogoColorDark#]"
+- "[_setLogoFontColor:#setLogoColorLight#][_setLogoStrokeColor:#setLogoColorDark#][_setLogoGradientColor:#setLogoColorMedium#]"
+
+_setLogoColorMedium:  
+- "[_setLogoFontColor:#setLogoColorMedium#][_setLogoStrokeColor:#setLogoColorLight#][_setLogoGradientColor:#setLogoColorDark#]"
+- "[_setLogoFontColor:#setLogoColorMedium#][_setLogoStrokeColor:#setLogoColorDark#][_setLogoGradientColor:#setLogoColorLight#]"
+
+_setLogoColorDark:
+- "[_setLogoFontColor:#setLogoColorDark#][_setLogoStrokeColor:#setLogoColorLight#][_setLogoGradientColor:#setLogoColorMedium#]"
+- "[_setLogoFontColor:#setLogoColorDark#][_setLogoStrokeColor:#setLogoColorMedium#][_setLogoGradientColor:#setLogoColorLight#]"
 
 _setLogoFontColorSetHighContrast:
   - "[_setLogoFontColor:#setLogoColorLight#][_setLogoStrokeColor:#setLogoColorDark#][_setLogoGradientColor:#setLogoColorMedium#]"
@@ -127,8 +136,11 @@ _setLogoCustomStyleItalicized:
   - "font-style: italic;"
 _setLogoFont:
   - "[#_resetLogoAdditionalStyles#][#_setLogoFontColorSet#][_setLogoFontFace:#setLogoFont#]"
+
+_setLogoStylesAlign: "center"
+
 _setLogoStyles:
-  - "text-align: center;line-height: #_setLogoLineHeight#px;"
+  - "text-align: #_setLogoStylesAlign#;line-height: #_setLogoLineHeight#px;"
 _setLogoTextStyles:
   - "-webkit-text-fill-color: #_setLogoFontColor#; -webkit-text-stroke-width: #_setLogoStrokeWidth#px; -webkit-text-stroke-color: #_setLogoStrokeColor#; font-size: #_setLogoFontSize#px; font-family: #_setLogoFontFace#;font-weight: #_setLogoFontWeight#; #_setLogoAdditionalStyles#"
 
@@ -169,6 +181,9 @@ mtgSetLogoSplashImage: |
     #mtgSetLogoImage#
     </td></tr>
   </table>
+
+_mtgSetLogoWidth: "1200"
+_mtgSetLogoHeight: "900"
 
 # logo image only | expects "_cardset" to be defined
 mtgSetLogo: "{htmlImg htmlImgString=`#mtgSetLogoImage#` screenWidth=`1200` screenHeight=`900`}"
