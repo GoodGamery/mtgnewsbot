@@ -32,10 +32,11 @@ _mtgSetLogo:
 - "[_cardset:Duel Decks#colon# Elspeth vs. Tezzeret][_cardSetImgName:duel-decks-elspeth-vs-tezzeret.png]"
 - "[_cardset:Duel Decks#colon# Elves vs. Goblins][_cardSetImgName:duel-decks-elves-vs-goblins.png]"
 - "[_cardset:Duel Decks#colon# Jace vs. Chandra][_cardSetImgName:duel-decks-jace-vs-chandra.png]"
+- "[_cardset:Duel Decks#colon# Mind vs. Might][_cardSetImgName:duel-decks-mind-vs-might.png]"
 - "[_cardset:Duel Decks#colon# Phyrexia vs. the Coalition][_cardSetImgName:duel-decks-phyrexia-vs-the-coalition.png]"
 - "[_cardset:Duel Decks#colon# Venser vs. Koth][_cardSetImgName:duel-decks-venser-vs-koth.png]"
 - "[_cardset:Duel Decks#colon# Zendkiar vs. Eldrazi][_cardSetImgName:duel-decks-zendikar-vs-eldrazi.png]"
-- "[_cardset:Duels of the Planeswalkers][_cardSetImgName:duels-of-the-planeswalkers.png,duels-of-the-planeswalkers-2.png]"
+- "[_cardset:Duels of the Planeswalkers][_cardSetImgName:duels-of-the-planeswalkers.png]"
 - "[_cardset:Magic#colon# the Gathering Battlegrounds,MTG Battlegrounds][_cardSetImgName:battlegrounds.png]"
 - "[_cardset:Magic#colon# the Gathering Battlemage,MTG Battlemage][_cardSetImgName:battlemage.png]"
 - "[_cardset:Magic#colon# the Gathering Puzzle Quest,MTG Puzzle Quest][_cardSetImgName:puzzle-quest.png,puzzle-quest-2.png]"
@@ -66,10 +67,10 @@ _mtgSetLogo:
 - "[_cardset:Signature Spellbook#colon# Jace][_cardSetImgName:signature-spellbook-jace.png]"
 - "[_cardset:Spellsinger Starter Kit][_cardSetImgName:spellslinger-starter-kit.png]"
 - "[_cardset:Starter 1999][_cardSetImgName:starter-1999.png]"
-- "[_cardset:Tempest Remastered][_cardSetImgName:tempest-remastered.png]"
-- "[_cardset:Unhinged][_cardSetImgName:unhinged.png]"
-- "[_cardset:Unstable][_cardSetImgName:unstable.png]"
-- "[_cardset:Vintage Masters][_cardSetImgName:vintage-masters.png]"
+# - "[_cardset:Tempest Remastered][_cardSetImgName:tempest-remastered.png]"
+# - "[_cardset:Unhinged][_cardSetImgName:unhinged.png]"
+# - "[_cardset:Unstable][_cardSetImgName:unstable.png]"
+# - "[_cardset:Vintage Masters][_cardSetImgName:vintage-masters.png]"
 
 _mtgSetLogo_needswork:
 - "[_cardset:Arabian Nights][_cardSetImgName:arabian-nights.png]"
@@ -98,6 +99,7 @@ _tournamentLogoDirectoryImage:
 - "mtg-small-logo-2.png"
 
 _tournamentLogoStyle_topRight: |
+  [#_tournamentLogoStyle_right#]
   [#_tournamentLogoVertAlignTop#]
   [#_tournamentLogoStyle_right#]
 
