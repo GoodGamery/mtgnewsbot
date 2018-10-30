@@ -5,6 +5,8 @@ mtgTournamentWinners:
 - "#mtgTournamentWinnersPro#"
 - "#mtgTournamentWinnersTeam#"
 
+### pros
+
 mtgTournamentPhotoDir: "./src/data/images/tournaments/winners/pros"
 
 mtgTournamentWinnersPro: "#mtgTournamentWinnersPros#[_mtgTournamentPhotoSrc:#mtgTournamentPhotoDir#/#_tournamentPhoto#][_s:][_winnerNameProtagonist:#_winnerName#][_opposition:#pro#,#person#,#miscPersonSingular#]"

@@ -100,8 +100,8 @@ _mtgSetLogo_needswork:
 
 _tournamentLogoDefineTournament:
 - "[_tournamentLogoName: #_tournamentName.allCaps#]"
-- "[_cardset:#novelCardSetName#][_tournamentType:Pro Tour][#_tournamentImagesProTour#][_tournamentTypeSrc:#_tournamentTypeSrcDark#][_tournamentName:#_cardset#][_botRowLeftAlignedClass:left-aligned-image][_botRowRightAlignedClass:right-aligned-image][_setLogoStylesAlign:#_logoHorizontalAlignment#][_setLogoImage:#mtgSetLogoImage#][_tournamentLogoName:#_tournamentLogoNameImageDiv#][_setLogoFontColorSet:#_setLogoColorLight#]"
-- "[#_mtgSetLogo#][_tournamentType:Pro Tour][#_tournamentImagesProTour#][_tournamentTypeSrc:#_tournamentTypeSrcDark#][_tournamentName:#_cardset#][_botRowLeftAlignedClass:left-aligned-image][_botRowRightAlignedClass:right-aligned-image ][_setLogoStylesAlign:#_logoHorizontalAlignment#][_setLogoImage:<img class='image-setlogo-resized' src=\"#_mtgSetLogoDirectory#/#_cardSetImgName#\">][_tournamentLogoName:#_tournamentLogoNameImageDiv#][_setLogoFontColorSet:#_setLogoColorLight#]"
+- "[_cardset:#novelCardSetName#][_tournamentType:Pro Tour][#_tournamentImagesProTour#][_tournamentTypeSrc:#_tournamentTypeSrcDark#][_tournamentName:#_cardset#][_botRowLeftAlignedClass:left-aligned-image][_botRowRightAlignedClass:right-aligned-image][_setLogoStylesAlign:#_logoHorizontalAlignment#][_setLogoFontColorSet:#_setLogoColorLight#][_setLogoImage:#mtgSetLogoImage#][_tournamentLogoName:#_tournamentLogoNameImageDiv#]"
+- "[#_mtgSetLogo#][_tournamentType:Pro Tour][#_tournamentImagesProTour#][_tournamentTypeSrc:#_tournamentTypeSrcDark#][_tournamentName:#_cardset#][_botRowLeftAlignedClass:left-aligned-image][_botRowRightAlignedClass:right-aligned-image ][_setLogoStylesAlign:#_logoHorizontalAlignment#][_setLogoImage:<img class='image-setlogo-resized' src=\"#_mtgSetLogoDirectory#/#_cardSetImgName#\">][_tournamentLogoName:#_tournamentLogoNameImageDiv#]"
 
 _tournamentLogoNameImageDiv: |
   <div style="float:#_logoHorizontalAlignment#; zoom:60%; margin-top:-2px; margin-#_logoHorizontalAlignment#: -20px;">#_setLogoImage#</div>
