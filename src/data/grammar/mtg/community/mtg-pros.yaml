@@ -259,7 +259,8 @@
     "Foundation",
     "Unlimited",
     "#basicColors.capitalize#",
-    "#direction.capitalizeAll#"
+    "#direction.capitalizeAll#",
+    "#teamRegion.capitalizeAll#"
   ],
 
   "unusualTeamDescriptor": [
@@ -276,7 +277,17 @@
     "Ultra PRO",
     "Phoenix",
     "Puzzle Quest",
-    "Pojo Dot Com"
+    "Pojo Dot Com",
+    "FaceToFace",
+    "Hareruya",
+    "Massdrop",
+    "Cardhoarder",
+    "Ultimate Guard",
+    "Genesis",
+    "Musashi",
+    "Mutiny",
+    "Eureka",
+    "Hotsauce Games"
   ],
   "jokeTeam":  [
     "#creatureTypes.capitalize#",
@@ -306,6 +317,7 @@
     "Autocomplete",
     "Babylegs",
     "Benchwarmers",
+    "Best Effort",
     "Carpetbaggers",
     "Cobra Style",
     "Deep Web",
@@ -315,10 +327,32 @@
     "Low Ball",
     "Minesweeper",
     "Phone It In",
+    "Pinch Hitters",
+    "Second String",
+    "Space Force",
     "Trivial Pursuit",
     "Tryhard",
     "Wienerdog",
-    "Whirlybird"
+    "Whirlybird",
+    "#playerCategory.capitalizeAll.s#"
+  ],
+  "teamRegion": [
+    "Latin",
+    "Europe",
+    "Asia",
+    "Pacific",
+    "Baltic",
+    "[_pole:Arctic,Antarctic]#_pole#",
+    "Sahara",
+    "Micronesia",
+    "Lunar",
+    "Shadow Realm",
+    "Subterranean",
+    "Stratosphere",
+    "Cyberspace",
+    "Rust Belt",
+    "Midwest",
+    "Disputed Territory"
   ],
   "variantJokeTeamDescriptor": [
     "#massNoun.capitalizeAll# Force",

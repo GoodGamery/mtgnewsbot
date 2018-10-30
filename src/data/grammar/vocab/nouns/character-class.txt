@@ -186,6 +186,7 @@ deserter
 taskmaster
 surgeon
 tormentor
+expatriate
 #characterProfession#
 #minorCharacterClass#
 #playerCategory#

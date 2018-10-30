@@ -1,33 +1,19 @@
-# tournamentLogo: "[#_tournamentInit#][_tournamentWinnerText:#_pro# wins #_tournamentType.capitalize# #_tournamentName.capitalize#]#_tournamentWinnerText# #_tournamentLogoOrientationPlaceholder# {htmlImg htmlImgString=`#_tournamentImageStyle# #tournamentLogoImage#`}"
+tournamentLogo: "#tournamentLogoHeadline#{htmlImg htmlImgString=`#_tournamentLogoHtml#`}"
 
-tournamentLogo: "[#_tournamentInit#][_botRowLeftAlignedClass:left-aligned][_botRowRightAlignedClass:right-aligned][#mtgTournamentWinner#][#_tournamentLogoDefineTournament#][_tournamentWinnerText:#_winnerName# wins #_tournamentType.capitalize# #_tournamentName.capitalize#]#_tournamentWinnerText#
-  [_logoOrientation:#_logoAlign#]
-  {htmlImg htmlImgString=`#_tournamentLogoHtml#`}"
+tournamentLogoHeadline: "[#_tournamentInit#][_botRowLeftAlignedClass:left-aligned][_botRowRightAlignedClass:right-aligned][#mtgTournamentWinner#][#_tournamentLogoDefineTournament#]#_tournamentWinnerText#
+  [_logoOrientation:#_logoAlign#]"
+
+_tournamentWinnerText:
+- "#_tournamentWinnerTextWinnerWins#"
+- "[_leadIn:ANNOUNCEMENT,BREAKING,THE RESULTS ARE IN,TOURNAMENT HIGHLIGHT][_lead:,#_leadIn##colon# ]#_lead##_tournamentWinnerTextWinnerWins#"
+- "[_winner:winner,champion][_winnerOf:#comma# #_winner.capitalize##_s# of, for winning][_tournament:#_tournamentType.capitalize# #_tournamentName.capitalize#]Congratulations to #_winnerName##_winnerOf# #_tournament#[_bang:,!]#_bang#"
+
+_tournamentWinnerTextWinnerWins:
+- "[_tournament:#_tournamentType.capitalize# #_tournamentName.capitalize#][_winsPassive:wins,wins,wins,wins,triumphs,dominates,places first,prevails,reigns,conquers,victorius,triumphant,trophies][_winsActive:wins,wins,dominates,crushes,steamrolls,smashes][_winsDefeats:defeats,dominates,crushes,conquers,overpowers,beats,clobbers,trounces,outdoes,tramples][_field:field,sea,gauntlet][_theField:, the field, the competition, all comers, the opposition, all challengers, a #_field# of #peoplePlural.s#][_loser:#_theField#,#_opposition#][_wins:wins #_tournament#,#_winsPassive# #_inAt#,#_winsActive# #_tournament#,#_winsDefeats# #_loser# #_inAt#]#_winnerFamiliarName# #_wins#"
 
 _mtgSetLogoDirectory: "./src/data/images/set-logos"
 
 _mtgSetLogo:
-# - "[_cardset:Amonkhet][_cardSetImgName:amonkhet.png]"
-# - "[_cardset:Dragon's Maze][_cardSetImgName:dragons-maze.png]"
-# - "[_cardset:Dragons of Tarkir][_cardSetImgName:dragons-of-tarkir.png]"
-# - "[_cardset:Conflux][_cardSetImgName:conflux.png]"
-# - "[_cardset:Eldritch Moon][_cardSetImgName:eldritch-moon.png]"
-# - "[_cardset:Ixalan][_cardSetImgName:ixalan.png]"
-# - "[_cardset:Lorwyn][_cardSetImgName:lorwyn.png]"
-# - "[_cardset:Shadows Over Innistrad][_cardSetImgName:shadows-over-innistrad.png]"
-# - "[_cardset:Worldwake][_cardSetImgName:worldwake.png]"
-# - "[_cardset:2010 Core Set][_cardSetImgName:2010-core-set.png]"
-# - "[_cardset:2011 Core Set][_cardSetImgName:core-set-2011.png]"
-# - "[_cardset:2013 Core Set][_cardSetImgName:2013-core-set.png]"
-# - "[_cardset:Aether Revolt][_cardSetImgName:aether-revolt.png]"
-# - "[_cardset:Avacyn Restored][_cardSetImgName:avacyn-restored.png]"
-# - "[_cardset:Battle for Zendikar][_cardSetImgName:battle-for-zendikar.png]"
-# - "[_cardset:Battle Royale][_cardSetImgName:battle-royale-box-set.png]"
-# - "[_cardset:Betrayers of Kamigawa][_cardSetImgName:betrayers-of-kamigawa.png,betrayers-of-kamigawa-2.png]"
-# - "[_cardset:Coldsnap][_cardSetImgName:coldsnap.png]"
-# - "[_cardset:Dissension][_cardSetImgName:dissension-2.png]"
-# - "[_cardset:Dominaria][_cardSetImgName:dominaria.png]"
-
 - "[_cardset:Duel Decks#colon# Blessed vs. Cursed][_cardSetImgName:duel-decks-blessed-vs-cursed.png]"
 - "[_cardset:Duel Decks#colon# Elspeth vs. Tezzeret][_cardSetImgName:duel-decks-elspeth-vs-tezzeret.png]"
 - "[_cardset:Duel Decks#colon# Elves vs. Goblins][_cardSetImgName:duel-decks-elves-vs-goblins.png]"
@@ -67,10 +53,38 @@ _mtgSetLogo:
 - "[_cardset:Signature Spellbook#colon# Jace][_cardSetImgName:signature-spellbook-jace.png]"
 - "[_cardset:Spellsinger Starter Kit][_cardSetImgName:spellslinger-starter-kit.png]"
 - "[_cardset:Starter 1999][_cardSetImgName:starter-1999.png]"
-# - "[_cardset:Tempest Remastered][_cardSetImgName:tempest-remastered.png]"
-# - "[_cardset:Unhinged][_cardSetImgName:unhinged.png]"
-# - "[_cardset:Unstable][_cardSetImgName:unstable.png]"
-# - "[_cardset:Vintage Masters][_cardSetImgName:vintage-masters.png]"
+- "#_mtgSetLogoRealSet#"
+- "#_mtgSetLogoRealSet#"
+- "#_mtgSetLogoRealSet#"
+- "#_mtgSetLogoRealSet#"
+- "#_mtgSetLogoRealSet#"
+- "#_mtgSetLogoRealSet#"
+
+_mtgSetLogoRealSet:
+- "[_cardset:Amonkhet][_cardSetImgName:amonkhet.png]"
+- "[_cardset:Dragon's Maze][_cardSetImgName:dragons-maze.png]"
+- "[_cardset:Dragons of Tarkir][_cardSetImgName:dragons-of-tarkir.png]"
+- "[_cardset:Conflux][_cardSetImgName:conflux.png]"
+- "[_cardset:Eldritch Moon][_cardSetImgName:eldritch-moon.png]"
+- "[_cardset:Ixalan][_cardSetImgName:ixalan.png]"
+- "[_cardset:Lorwyn][_cardSetImgName:lorwyn.png]"
+- "[_cardset:Shadows Over Innistrad][_cardSetImgName:shadows-over-innistrad.png]"
+- "[_cardset:Worldwake][_cardSetImgName:worldwake.png]"
+- "[_cardset:2010 Core Set][_cardSetImgName:2010-core-set.png]"
+- "[_cardset:2011 Core Set][_cardSetImgName:core-set-2011.png]"
+- "[_cardset:2013 Core Set][_cardSetImgName:2013-core-set.png]"
+- "[_cardset:Aether Revolt][_cardSetImgName:aether-revolt.png]"
+- "[_cardset:Avacyn Restored][_cardSetImgName:avacyn-restored.png]"
+- "[_cardset:Battle for Zendikar][_cardSetImgName:battle-for-zendikar.png]"
+- "[_cardset:Battle Royale][_cardSetImgName:battle-royale-box-set.png]"
+- "[_cardset:Betrayers of Kamigawa][_cardSetImgName:betrayers-of-kamigawa.png,betrayers-of-kamigawa-2.png]"
+- "[_cardset:Coldsnap][_cardSetImgName:coldsnap.png]"
+- "[_cardset:Dissension][_cardSetImgName:dissension-2.png]"
+- "[_cardset:Dominaria][_cardSetImgName:dominaria.png]"
+- "[_cardset:Tempest Remastered][_cardSetImgName:tempest-remastered.png]"
+- "[_cardset:Unhinged][_cardSetImgName:unhinged.png]"
+- "[_cardset:Unstable][_cardSetImgName:unstable.png]"
+- "[_cardset:Vintage Masters][_cardSetImgName:vintage-masters.png]"
 
 _mtgSetLogo_needswork:
 - "[_cardset:Arabian Nights][_cardSetImgName:arabian-nights.png]"

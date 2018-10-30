@@ -45,7 +45,7 @@ _logoAlign_not_botLeft:
 _logoAlign_not_botRight:
 - "#_logoAlignTopRight#"
 - "#_logoAlignTopLeft#"
-- "#_logoAlignBotLeft#" 
+- "#_logoAlignBotLeft#"
 
 _logoAlign_any:
 - "#_logoAlignTopRight#"
@@ -53,5 +53,5 @@ _logoAlign_any:
 - "#_logoAlignBotLeft#"
 - "#_logoAlignBotRight#"
 
-_logoLight: "[_lightOrDark:light][_tournamentTypeSrc:#_tournamentTypeSrcLight#]"
-_logoDark: "[_lightOrDark:dark][_tournamentTypeSrc:#_tournamentTypeSrcDark#]"
+_logoLight: "[_lightOrDark:light][_tournamentTypeSrc:#_tournamentTypeSrcLight#][_tournamentTextColor:black][_tournamentTextOutlineColor:white]"
+_logoDark: "[_lightOrDark:dark][_tournamentTypeSrc:#_tournamentTypeSrcDark#][_tournamentTextColor:white][_tournamentTextOutlineColor:black]"

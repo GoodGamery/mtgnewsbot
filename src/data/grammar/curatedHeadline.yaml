@@ -87,14 +87,14 @@ smallImageHeadline2:
 
 mediumImageHeadline1:
 - "#graphicAnnouncement#"
-- "#graphicAnnouncement#"
 - "#mtgDeckTechGraphic#"
+- "#tournamentLogo#"
 - "#imgClassifieds#"
 
 mediumImageHeadline2:
 - "#graphicAnnouncement#"
 - "#mtgDeckTechGraphic#"
-- "#imgClassifieds#"
+- "#tournamentLogo#"
 - "#imgClassifieds#"
 
 clickbaitHeadline:
