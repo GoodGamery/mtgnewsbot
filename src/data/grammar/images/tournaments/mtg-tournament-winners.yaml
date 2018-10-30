@@ -1,0 +1,335 @@
+mtgTournamentWinner:
+- "[#mtgTournamentWinners#][mtgTournamentWinnerSrc:#_mtgTournamentPhotoSrc#]"
+
+mtgTournamentWinners:
+- "#mtgTournamentWinnersPro#"
+- "#mtgTournamentWinnersTeam#"
+
+### pros
+
+mtgTournamentPhotoDir: "./src/data/images/tournaments/winners/pros"
+
+mtgTournamentWinnersPro: "#mtgTournamentWinnersPros#[_mtgTournamentPhotoSrc:#mtgTournamentPhotoDir#/#_tournamentPhoto#][_s:][_winnerNameProtagonist:#_winnerName#][_opposition:#pro#,#person#,#miscPersonSingular#]"
+
+mtgTournamentWinnersPros:
+- "[_winnerName:Alan Comer][_winnerFamiliarName:Comer][_mtgTournamentPhotoSrc:#_mtgTournamentPhoto_1#]"
+- "[_winnerName:Alexander Hayne][_winnerFamiliarName:Hayne][_mtgTournamentPhotoSrc:#_mtgTournamentPhoto_2#]"
+- "[_winnerName:Amaz][_winnerFamiliarName:Amaz][_mtgTournamentPhotoSrc:#_mtgTournamentPhoto_3#]"
+- "[_winnerName:Andrea Mengucci][_winnerFamiliarName:Andrea Mengucci,Mengucci][_mtgTournamentPhotoSrc:#_mtgTournamentPhoto_4#]"
+- "[_winnerName:Andrew Cuneo][_winnerFamiliarName:Andrew Cuneo,Cuneo][_mtgTournamentPhotoSrc:#_mtgTournamentPhoto_5#]"
+- "[_winnerName:Ben Stark][_winnerFamiliarName:Ben Stark][_mtgTournamentPhotoSrc:#_mtgTournamentPhoto_6#]"
+- "[_winnerName:Brian Bran-Duin][_winnerFamiliarName:Brian Bran-Duin,Bran-Duin][_mtgTournamentPhotoSrc:#_mtgTournamentPhoto_7#]"
+- "[_winnerName:Brian Kibler][_winnerFamiliarName:Brian Kibler,Kibler][_mtgTournamentPhotoSrc:#_mtgTournamentPhoto_8#]"
+- "[_winnerName:Craig Wescoe][_winnerFamiliarName:Craig Wescoe,Wescoe][_mtgTournamentPhotoSrc:#_mtgTournamentPhoto_9#]"
+- "[_winnerName:Javier Dominguez][_winnerFamiliarName:Javier Dominguez,Dominguez][_mtgTournamentPhotoSrc:#_mtgTournamentPhoto_10#]"
+- "[_winnerName:Luis Salvatto][_winnerFamiliarName:Luis Salvatto,Salvatto][_mtgTournamentPhotoSrc:#_mtgTournamentPhoto_11#]"
+- "[_winnerName:William Jensen,Baby Huey,William “Baby Huey” Jensen][_winnerFamiliarName:William Jensen,Baby Huey][_mtgTournamentPhotoSrc:#_mtgTournamentPhoto_12#]"
+- "[_winnerName:Antoine Ruel][_winnerFamiliarName:Antoine Ruel,Antoine][_mtgTournamentPhotoSrc:#_mtgTournamentPhoto_13#]"
+- "[_winnerName:Anton Jonsson][_winnerFamiliarName:Anton Jonsson][_mtgTournamentPhotoSrc:#_mtgTournamentPhoto_14#]"
+- "[_winnerName:Ari Lax][_winnerFamiliarName:Ari Lax][_mtgTournamentPhotoSrc:#_mtgTournamentPhoto_15#]"
+- "[_winnerName:Bob Huang][_winnerFamiliarName:Bob Huang][_mtgTournamentPhotoSrc:#_mtgTournamentPhoto_16#]"
+- "[_winnerName:Brad Nelson][_winnerFamiliarName:Brad Nelson][_mtgTournamentPhotoSrc:#_mtgTournamentPhoto_17#]"
+- "[_winnerName:Carlos Romao][_winnerFamiliarName:Carlos Romao,Romao][_mtgTournamentPhotoSrc:#_mtgTournamentPhoto_18#]"
+- "[_winnerName:Christian Calcano][_winnerFamiliarName:Christian Calcano,Calcano][_mtgTournamentPhotoSrc:#_mtgTournamentPhoto_19#]"
+- "[_winnerName:Dave Williams][_winnerFamiliarName:Dave Williams,David Williams][_mtgTournamentPhotoSrc:#_mtgTournamentPhoto_20#]"
+- "[_winnerName:David Ochoa][_winnerFamiliarName:David Ochoa,Ochoa][_mtgTournamentPhotoSrc:#_mtgTournamentPhoto_21#]"
+- "[_winnerName:Eric Froehlich,EFro][_winnerFamiliarName:Eric Froehlich,EFro][_mtgTournamentPhotoSrc:#_mtgTournamentPhoto_22#]"
+- "[_winnerName:Frank Karsten][_winnerFamiliarName:Frank Karsten,Karsten][_mtgTournamentPhotoSrc:#_mtgTournamentPhoto_23#]"
+- "[_winnerName:Gabriel Nassif,Gab Nassif][_winnerFamiliarName:Gabriel Nassif,Nassif][_mtgTournamentPhotoSrc:#_mtgTournamentPhoto_24#]"
+- "[_winnerName:Gerrard Fabiano][_winnerFamiliarName:Gerrard Fabiano,Fabiano][_mtgTournamentPhotoSrc:#_mtgTournamentPhoto_25#]"
+- "[_winnerName:Gerry Thompson,GerryT][_winnerFamiliarName:Gerry Thompson,GerryT][_mtgTournamentPhotoSrc:#_mtgTournamentPhoto_26#]"
+- "[_winnerName:Ivan Floch][_winnerFamiliarName:Ivan Floch,Floch][_mtgTournamentPhotoSrc:#_mtgTournamentPhoto_27#]"
+- "[_winnerName:Jacob Wilson][_winnerFamiliarName:Jacob Wilson][_mtgTournamentPhotoSrc:#_mtgTournamentPhoto_28#]"
+- "[_winnerName:Jarvis Yu][_winnerFamiliarName:Jarvis Yu,Jarvis,Yu][_mtgTournamentPhotoSrc:#_mtgTournamentPhoto_29#]"
+- "[_winnerName:Jérémy Dezani][_winnerFamiliarName:Jérémy Dezani,Dezani][_mtgTournamentPhotoSrc:#_mtgTournamentPhoto_30#]"
+- "[_winnerName:Joel Larsson][_winnerFamiliarName:Joel Larsson,Larsson][_mtgTournamentPhotoSrc:#_mtgTournamentPhoto_31#]"
+- "[_winnerName:Joe Soh][_winnerFamiliarName:Joe Soh][_mtgTournamentPhotoSrc:#_mtgTournamentPhoto_32#]"
+- "[_winnerName:Jon Finkel][_winnerFamiliarName:Jon Finkel,Finkel][_mtgTournamentPhotoSrc:#_mtgTournamentPhoto_33#]"
+- "[_winnerName:Josh Utter-Leyton,Wrapter][_winnerFamiliarName:Josh Utter-Leyton,Utter-Leyton,Wrapter,Wrapter][_mtgTournamentPhotoSrc:#_mtgTournamentPhoto_34#]"
+- "[_winnerName:Kazuyuki Takimura][_winnerFamiliarName:Kazuyuki Takimura][_mtgTournamentPhotoSrc:#_mtgTournamentPhoto_35#]"
+- "[_winnerName:Lee Shi Tian][_winnerFamiliarName:Lee Shi Tian][_mtgTournamentPhotoSrc:#_mtgTournamentPhoto_36#]"
+- "[_winnerName:Lucas Esper Berthoud][_winnerFamiliarName:Lucas Esper Berthoud,Berthoud][_mtgTournamentPhotoSrc:#_mtgTournamentPhoto_37#]"
+- "[_winnerName:Luis Scott-Vargas,LSV][_winnerFamiliarName:Luis Scott-Vargas,LSV][_mtgTournamentPhotoSrc:#_mtgTournamentPhoto_38#]"
+- "[_winnerName:Lukas Blohon][_winnerFamiliarName:Lukas Blohon,Blohon][_mtgTournamentPhotoSrc:#_mtgTournamentPhoto_39#]"
+- "[_winnerName:Mark Rosewater,MaRo][_winnerFamiliarName:Mark Rosewater,MaRo][_mtgTournamentPhotoSrc:#_mtgTournamentPhoto_40#]"
+- "[_winnerName:Martin Dang][_winnerFamiliarName:Martin Dang][_mtgTournamentPhotoSrc:#_mtgTournamentPhoto_41#]"
+- "[_winnerName:Martin Jůza][_winnerFamiliarName:Martin Jůza,Jůza][_mtgTournamentPhotoSrc:#_mtgTournamentPhoto_42#]"
+- "[_winnerName:Matt Nass][_winnerFamiliarName:Matt Nass,Nass][_mtgTournamentPhotoSrc:#_mtgTournamentPhoto_43#]"
+- "[_winnerName:Matt Severa][_winnerFamiliarName:Matt Severa,Severa][_mtgTournamentPhotoSrc:#_mtgTournamentPhoto_44#]"
+- "[_winnerName:Mike Sigrist,Siggy][_winnerFamiliarName:Mike Sigrist,Siggy][_mtgTournamentPhotoSrc:#_mtgTournamentPhoto_45#]"
+- "[_winnerName:Owen Turtenwald][_winnerFamiliarName:Owen Turtenwald,Turtenwald][_mtgTournamentPhotoSrc:#_mtgTournamentPhoto_46#]"
+- "[_winnerName:Pascal Maynard][_winnerFamiliarName:Pascal Maynard,Maynard][_mtgTournamentPhotoSrc:#_mtgTournamentPhoto_47#]"
+- "[_winnerName:Pat Chapin][_winnerFamiliarName:Pat Chapin,Patrick Chapin,Chapin][_mtgTournamentPhotoSrc:#_mtgTournamentPhoto_48#]"
+- "[_winnerName:Paul Rietzl][_winnerFamiliarName:Paul Rietzl,Rietzl][_mtgTournamentPhotoSrc:#_mtgTournamentPhoto_49#]"
+- "[_winnerName:Paulo Vitor Damo da Rosa,PVDDR][_winnerFamiliarName:Paulo Vitor Damo da Rosa,PVDDR][_mtgTournamentPhotoSrc:#_mtgTournamentPhoto_50#]"
+- "[_winnerName:Raphaël Lévy][_winnerFamiliarName:Raphaël Lévy,Lévy][_mtgTournamentPhotoSrc:#_mtgTournamentPhoto_51#]"
+- "[_winnerName:Reid Duke,The Duke][_winnerFamiliarName:Reid Duke,The Duke,Duke][_mtgTournamentPhotoSrc:#_mtgTournamentPhoto_52#]"
+- "[_winnerName:Rich Hagon][_winnerFamiliarName:Rich Hagon,Hagon][_mtgTournamentPhotoSrc:#_mtgTournamentPhoto_53#]"
+- "[_winnerName:Sam Black][_winnerFamiliarName:Sam Black][_mtgTournamentPhotoSrc:#_mtgTournamentPhoto_54#]"
+- "[_winnerName:Seth Manfield][_winnerFamiliarName:Seth Manfield,Manfield][_mtgTournamentPhotoSrc:#_mtgTournamentPhoto_55#]"
+- "[_winnerName:Shahar Shenhar][_winnerFamiliarName:Shahar Shenhar,Shenhar][_mtgTournamentPhotoSrc:#_mtgTournamentPhoto_56#]"
+- "[_winnerName:Shota Yasooka][_winnerFamiliarName:Shota Yasooka,Shota,Yasooka][_mtgTournamentPhotoSrc:#_mtgTournamentPhoto_57#]"
+- "[_winnerName:Shuhei Nakamura][_winnerFamiliarName:Shuhei Nakamura,Shuhei,Nakamura][_mtgTournamentPhotoSrc:#_mtgTournamentPhoto_58#]"
+- "[_winnerName:Steve Rubin][_winnerFamiliarName:Steve Rubin,Rubin][_mtgTournamentPhotoSrc:#_mtgTournamentPhoto_59#]"
+- "[_winnerName:Wyatt Darby][_winnerFamiliarName:Wyatt Darby][_mtgTournamentPhotoSrc:#_mtgTournamentPhoto_60#]"
+- "[_winnerName:Antonino De Rosa][_winnerFamiliarName:Antonino De Rosa,De Rosa][_mtgTournamentPhotoSrc:#_mtgTournamentPhoto_61#]"
+- "[_winnerName:Chris Pikula][_winnerFamiliarName:Chris Pikula,Pikula][_mtgTournamentPhotoSrc:#_mtgTournamentPhoto_62#]"
+- "[_winnerName:Conley Woods][_winnerFamiliarName:Conley Woods,Conley][_mtgTournamentPhotoSrc:#_mtgTournamentPhoto_63#]"
+- "[_winnerName:Corey Baumeister][_winnerFamiliarName:Corey Baumeister,Baumeister][_mtgTournamentPhotoSrc:#_mtgTournamentPhoto_64#]"
+- "[_winnerName:Osyp Lebedowicz][_winnerFamiliarName:Osyp Lebedowicz,Osyp,Lebedowicz][_mtgTournamentPhotoSrc:#_mtgTournamentPhoto_65#]"
+- "[_winnerName:Sam Pardee][_winnerFamiliarName:Sam Pardee,Pardee][_mtgTournamentPhotoSrc:#_mtgTournamentPhoto_66#]"
+- "[_winnerName:Yuuya Watanabe][_winnerFamiliarName:Yuuya Watanabe,Yuuya,Watanabe][_mtgTournamentPhotoSrc:#_mtgTournamentPhoto_67#]"
+
+
+_mtgTournamentPhoto_1:
+- "[_tournamentPhoto:alan-comer-1.jpg][#_logoDark#][#_logoAlign_not_topRight#]"
+
+_mtgTournamentPhoto_2:
+- "[_tournamentPhoto:alexander-hayne-1.jpg][#_logoDark#][#_logoAlign_leftEither#]"
+
+_mtgTournamentPhoto_3:
+- "[_tournamentPhoto:amaz-1.jpg][#_logoDark#][#_logoAlign_not_topLeft#]"
+
+_mtgTournamentPhoto_4:
+- "[_tournamentPhoto:andrea-mengucci-1.jpg][#_logoDark#][#_logoAlign_rightEither#]"
+
+_mtgTournamentPhoto_5:
+- "[_tournamentPhoto:andrew-cuneo-1.jpg][#_logoDark#][#_logoAlign_topRight_botLeft#]"
+- "[_tournamentPhoto:andrew-cuneo-2.jpg][#_logoDark#][#_logoAlignBotRight#]"
+
+_mtgTournamentPhoto_6:
+- "[_tournamentPhoto:ben-stark-2.jpg][#_logoDark#][#_logoAlignBotLeft#]"
+
+_mtgTournamentPhoto_7:
+- "[_tournamentPhoto:brian-bran-duin-1.jpg][#_logoDark#][#_logoAlign_leftEither#]"
+- "[_tournamentPhoto:brian-bran-duin-2.jpg][#_logoDark#][#_logoAlignBotRight#]"
+
+_mtgTournamentPhoto_8:
+- "[_tournamentPhoto:brian-kibler-2.jpg][#_logoDark#][#_logoAlign_leftEither#]"
+- "[_tournamentPhoto:brian-kibler-3.jpg][#_logoDark#][#_logoAlignBotRight#]"
+
+_mtgTournamentPhoto_9:
+- "[_tournamentPhoto:craig-wescoe-6.jpg][#_logoDark#][#_logoAlign_not_topLeft#]"
+- "[_tournamentPhoto:craig-wescoe-7.jpg][#_logoDark#][#_logoAlign_not_topRight#]"
+
+_mtgTournamentPhoto_10:
+- "[_tournamentPhoto:javier-dominguez-1.jpg][#_logoDark#][#_logoAlign_leftEither#]"
+- "[_tournamentPhoto:javier-dominguez-2.jpg][#_logoDark#][#_logoAlign_leftEither#]"
+- "[_tournamentPhoto:javier-dominguez-3.jpg][#_logoDark#][#_logoAlign_leftEither#]"
+- "[_tournamentPhoto:javier-dominguez-4.jpg][#_logoDark#][#_logoAlign_leftEither#]"
+
+_mtgTournamentPhoto_11:
+- "[_tournamentPhoto:luis-salvatto-1.jpg][#_logoDark#][#_logoAlign_leftEither#]"
+- "[_tournamentPhoto:luis-salvatto-2.jpg][#_logoDark#][#_logoAlign_leftEither#]"
+- "[_tournamentPhoto:luis-salvatto-3.jpg][#_logoDark#][#_logoAlign_leftEither#]"
+
+_mtgTournamentPhoto_12:
+- "[_tournamentPhoto:william-jensen-3.jpg,william-jensen-4.jpg][#_logoDark#][#_logoAlign_leftEither#]"
+
+_mtgTournamentPhoto_13:
+- "[_tournamentPhoto:antoine-ruel-1.jpg][#_logoDark#][#_logoAlignTopRight#]"
+
+_mtgTournamentPhoto_14:
+- "[_tournamentPhoto:anton-jonsson-2.jpg][#_logoDark#][#_logoAlignTopLeft#]"
+- "[_tournamentPhoto:anton-jonsson-3.jpg][#_logoDark#][#_logoAlign_leftEither#]"
+
+_mtgTournamentPhoto_15:
+- "[_tournamentPhoto:ari-lax-1.jpg][#_logoDark#][#_logoAlignBotRight#]"
+- "[_tournamentPhoto:ari-lax-2.jpg][#_logoDark#][#_logoAlign_rightEither#]"
+
+_mtgTournamentPhoto_16:
+- "[_tournamentPhoto:bob-huang-1.jpg][#_logoDark#][#_logoAlignTopLeft#]"
+
+_mtgTournamentPhoto_17:
+- "[_tournamentPhoto:brad-nelson-1.jpg][#_logoDark#][#_logoAlignTopLeft#]"
+- "[_tournamentPhoto:brad-nelson-2.jpg][#_logoDark#][#_logoAlign_leftEither#]"
+- "[_tournamentPhoto:brad-nelson-3.jpg][#_logoDark#][#_logoAlign_leftEither#]"
+- "[_tournamentPhoto:brad-nelson-4.jpg][#_logoDark#][#_logoAlignTopRight#]"
+- "[_tournamentPhoto:brad-nelson-5.jpg][#_logoDark#][#_logoAlign_leftEither#]"
+
+_mtgTournamentPhoto_18:
+- "[_tournamentPhoto:carlos-romao-1.jpg][#_logoDark#][#_logoAlign_topRight_botLeft#]"
+
+_mtgTournamentPhoto_19:
+- "[_tournamentPhoto:christian-calcano-3.jpg][#_logoDark#][#_logoAlign_not_topRight#]"
+
+_mtgTournamentPhoto_20:
+- "[_tournamentPhoto:dave-williams-2.jpg][#_logoDark#][#_logoAlign_rightEither#]"
+- "[_tournamentPhoto:dave-williams-3.jpg][#_logoDark#][#_logoAlign_leftEither#]"
+
+_mtgTournamentPhoto_21:
+- "[_tournamentPhoto:david-ochoa-1.jpg][#_logoDark#][#_logoAlignTopRight#]"
+
+_mtgTournamentPhoto_22:
+- "[_tournamentPhoto:eric-froehlich-2.jpg][#_logoDark#][#_logoAlign_leftEither#]"
+- "[_tournamentPhoto:eric-froehlich-3.jpg][#_logoDark#][#_logoAlign_rightEither#]"
+
+_mtgTournamentPhoto_23:
+- "[_tournamentPhoto:frank-karsten-1.jpg][#_logoDark#][#_logoAlign_leftEither#]"
+- "[_tournamentPhoto:frank-karsten-2.jpg][#_logoDark#][#_logoAlign_rightEither#]"
+
+_mtgTournamentPhoto_24:
+- "[_tournamentPhoto:gabriel-nassif-1.jpg][#_logoDark#][#_logoAlign_rightEither#]"
+- "[_tournamentPhoto:gabriel-nassif-2.jpg][#_logoDark#][#_logoAlign_leftEither#]"
+- "[_tournamentPhoto:gabriel-nassif-3.jpg][#_logoDark#][#_logoAlign_leftEither#]"
+
+_mtgTournamentPhoto_25:
+- "[_tournamentPhoto:gerrard-fabiano-1.jpg][#_logoDark#][#_logoAlign_botEither#]"
+
+_mtgTournamentPhoto_26:
+- "[_tournamentPhoto:gerry-thompson-1.jpg][#_logoDark#][#_logoAlign_leftEither#]"
+- "[_tournamentPhoto:gerry-thompson-2.jpg][#_logoDark#][#_logoAlign_leftEither#]"
+- "[_tournamentPhoto:gerry-thompson-3.jpg][#_logoDark#][#_logoAlign_rightEither#]"
+- "[_tournamentPhoto:gerry-thompson-4.jpg][#_logoDark#][#_logoAlign_leftEither#]"
+- "[_tournamentPhoto:gerry-thompson-5.jpg][#_logoDark#][#_logoAlignBotLeft#]"
+
+_mtgTournamentPhoto_27:
+- "[_tournamentPhoto:ivan-floch-1.jpg][#_logoDark#][#_logoAlign_not_topRight#]"
+- "[_tournamentPhoto:ivan-floch-2.jpg][#_logoDark#][#_logoAlign_not_topRight#]"
+
+_mtgTournamentPhoto_28:
+- "[_tournamentPhoto:jacob-wilson-1.jpg][#_logoDark#][#_logoAlign_leftEither#]"
+
+_mtgTournamentPhoto_29:
+- "[_tournamentPhoto:jarvis-yu-1.jpg][#_logoDark#][#_logoAlign_leftEither#]"
+
+_mtgTournamentPhoto_30:
+- "[_tournamentPhoto:jeremy-dezani-1.jpg][#_logoDark#][#_logoAlign_not_topRight#]"
+
+_mtgTournamentPhoto_31:
+- "[_tournamentPhoto:joel-larsson-1.jpg][#_logoDark#][#_logoAlign_leftEither#]"
+- "[_tournamentPhoto:joel-larsson-2.jpg][#_logoDark#][#_logoAlign_rightEither#]"
+
+_mtgTournamentPhoto_32:
+- "[_tournamentPhoto:joe-soh-1.jpg][#_logoDark#][#_logoAlign_leftEither#]"
+
+_mtgTournamentPhoto_33:
+- "[_tournamentPhoto:jon-finkel-1.jpg][#_logoDark#][#_logoAlign_rightEither#]"
+- "[_tournamentPhoto:jon-finkel-2.jpg][#_logoDark#][#_logoAlign_not_topRight#]"
+
+_mtgTournamentPhoto_34:
+- "[_tournamentPhoto:josh-utter-leyton-1.jpg][#_logoDark#][#_logoAlign_not_topRight#]"
+- "[_tournamentPhoto:josh-utter-leyton-3.jpg][#_logoDark#][#_logoAlign_not_topRight#]"
+- "[_tournamentPhoto:josh-utter-leyton-4.jpg][#_logoDark#][#_logoAlign_leftEither#]"
+
+_mtgTournamentPhoto_35:
+- "[_tournamentPhoto:kazuyuki-takimura-1.jpg][#_logoDark#][#_logoAlignBotRight#]"
+
+_mtgTournamentPhoto_36:
+- "[_tournamentPhoto:lee-shi-tian-1.jpg][#_logoDark#][#_logoAlign_leftEither#]"
+- "[_tournamentPhoto:lee-shi-tian-2.jpg][#_logoDark#][#_logoAlign_leftEither#]"
+- "[_tournamentPhoto:lee-shi-tian-3.jpg][#_logoDark#][#_logoAlign_leftEither#]"
+
+_mtgTournamentPhoto_37:
+- "[_tournamentPhoto:lucas-esper-berthoud-1.jpg][#_logoDark#][#_logoAlign_leftEither#]"
+- "[_tournamentPhoto:lucas-esper-berthoud-2.jpg][#_logoDark#][#_logoAlign_leftEither#]"
+
+_mtgTournamentPhoto_38:
+- "[_tournamentPhoto:lsv-2.jpg][#_logoDark#][#_logoAlign_leftEither#]"
+- "[_tournamentPhoto:lsv-3.jpg][#_logoDark#][#_logoAlign_botEither#]"
+
+_mtgTournamentPhoto_39:
+- "[_tournamentPhoto:lukas-blohon-1.jpg][#_logoDark#][#_logoAlign_leftEither#]"
+
+_mtgTournamentPhoto_40:
+- "[_tournamentPhoto:mark-rosewater-1.jpg][#_logoDark#][#_logoAlign_botEither#]"
+- "[_tournamentPhoto:mark-rosewater-2.jpg][#_logoDark#][#_logoAlign_rightEither#]"
+- "[_tournamentPhoto:mark-rosewater-3.jpg][#_logoDark#][#_logoAlign_rightEither#]"
+- "[_tournamentPhoto:mark-rosewater-4.jpg][#_logoDark#][#_logoAlign_botEither#]"
+
+_mtgTournamentPhoto_41:
+- "[_tournamentPhoto:martin-dang-1.jpg][#_logoDark#][#_logoAlign_leftEither#]"
+
+_mtgTournamentPhoto_42:
+- "[_tournamentPhoto:martin-juza-1.jpg][#_logoDark#][#_logoAlign_not_topRight#]"
+- "[_tournamentPhoto:martin-juza-2.jpg][#_logoDark#][#_logoAlign_leftEither#]"
+- "[_tournamentPhoto:martin-juza-3.jpg][#_logoDark#][#_logoAlign_leftEither#]"
+
+_mtgTournamentPhoto_43:
+- "[_tournamentPhoto:matt-nass-1.jpg][#_logoDark#][#_logoAlign_leftEither#]"
+- "[_tournamentPhoto:matt-nass-3.jpg][#_logoDark#][#_logoAlign_not_topRight#]"
+
+_mtgTournamentPhoto_44:
+- "[_tournamentPhoto:matt-severa-1.jpg][#_logoDark#][#_logoAlignBotLeft#]"
+
+_mtgTournamentPhoto_45:
+- "[_tournamentPhoto:mike-sigrist-1.jpg][#_logoDark#][#_logoAlign_leftEither#]"
+- "[_tournamentPhoto:mike-sigrist-2.jpg][#_logoDark#][#_logoAlign_leftEither#]"
+
+_mtgTournamentPhoto_46:
+- "[_tournamentPhoto:owen-turtenwald-1.jpg][#_logoDark#][#_logoAlign_rightEither#]"
+
+_mtgTournamentPhoto_47:
+- "[_tournamentPhoto:pascal-maynard-1.jpg][#_logoDark#][#_logoAlign_rightEither#]"
+
+_mtgTournamentPhoto_48:
+- "[_tournamentPhoto:patrick-chapin-2.jpg][#_logoDark#][#_logoAlign_rightEither#]"
+
+_mtgTournamentPhoto_49:
+- "[_tournamentPhoto:paul-rietzl-1.jpg][#_logoDark#][#_logoAlign_leftEither#]"
+- "[_tournamentPhoto:paul-rietzl-2.jpg][#_logoDark#][#_logoAlign_rightEither#]"
+- "[_tournamentPhoto:paul-rietzl-3.jpg][#_logoDark#][#_logoAlign_leftEither#]"
+
+_mtgTournamentPhoto_50:
+- "[_tournamentPhoto:pvddr-1.jpg][#_logoDark#][#_logoAlign_botEither#]"
+- "[_tournamentPhoto:pvddr-4.jpg][#_logoDark#][#_logoAlign_leftEither#]"
+- "[_tournamentPhoto:pvddr-5.jpg][#_logoDark#][#_logoAlignBotRight#]"
+
+_mtgTournamentPhoto_51:
+- "[_tournamentPhoto:raphael-levy-1.jpg][#_logoDark#][#_logoAlign_botEither#]"
+- "[_tournamentPhoto:raphael-levy-3.jpg][#_logoDark#][#_logoAlign_leftEither#]"
+
+_mtgTournamentPhoto_52:
+- "[_tournamentPhoto:reid-duke-1.jpg][#_logoDark#][#_logoAlign_not_topRight#]"
+- "[_tournamentPhoto:reid-duke-2.jpg][#_logoDark#][#_logoAlign_botEither#]"
+
+_mtgTournamentPhoto_53:
+- "[_tournamentPhoto:rich-hagon-1.jpg][#_logoDark#][#_logoAlign_leftEither#]"
+- "[_tournamentPhoto:rich-hagon-1.jpg][#_logoDark#][#_logoAlignBotRight#]"
+
+_mtgTournamentPhoto_54:
+- "[_tournamentPhoto:sam-black-2.jpg][#_logoDark#][#_logoAlign_rightEither#]"
+
+_mtgTournamentPhoto_55:
+- "[_tournamentPhoto:seth-manfield-5.jpg][#_logoDark#][#_logoAlign_leftEither#]"
+- "[_tournamentPhoto:seth-manfield-6.jpg][#_logoDark#][#_logoAlign_botEither#]"
+
+_mtgTournamentPhoto_56:
+- "[_tournamentPhoto:shahar-shenhar-1.jpg][#_logoDark#][#_logoAlignBotRight#]"
+
+_mtgTournamentPhoto_57:
+- "[_tournamentPhoto:shota-yasooka-2.jpg][#_logoDark#][#_logoAlign_leftEither#]"
+- "[_tournamentPhoto:shota-yasooka-5.jpg][#_logoDark#][#_logoAlign_leftEither#]"
+
+_mtgTournamentPhoto_58:
+- "[_tournamentPhoto:shuhei-nakamura-1.jpg][#_logoDark#][#_logoAlign_not_topRight#]"
+- "[_tournamentPhoto:shuhei-nakamura-2.jpg][#_logoDark#][#_logoAlign_botEither#]"
+
+_mtgTournamentPhoto_59:
+- "[_tournamentPhoto:steve-rubin-1.jpg][#_logoDark#][#_logoAlign_leftEither#]"
+
+_mtgTournamentPhoto_60:
+- "[_tournamentPhoto:wyatt-darby-1.jpg][#_logoDark#][#_logoAlignBotLeft#]"
+- "[_tournamentPhoto:wyatt-darby-3.jpg][#_logoDark#][#_logoAlign_leftEither#]"
+
+
+_mtgTournamentPhoto_61:
+- "[_tournamentPhoto:antonino-de-rosa-1.jpg][#_logoDark#][#_logoAlign_leftEither#]"
+
+_mtgTournamentPhoto_62:
+- "[_tournamentPhoto:chris-pikula-1.jpg][#_logoDark#][#_logoAlign_rightEither#]"
+
+_mtgTournamentPhoto_63:
+- "[_tournamentPhoto:conley-woods-1.jpg][#_logoDark#][#_logoAlign_leftEither#]"
+
+_mtgTournamentPhoto_64:
+- "[_tournamentPhoto:corey-baumeister-1.jpg][#_logoDark#][#_logoAlign_leftEither#]"
+
+_mtgTournamentPhoto_65:
+- "[_tournamentPhoto:osyp-lebedowicz-1.jpg][#_logoDark#][#_logoAlign_leftEither#]"
+
+_mtgTournamentPhoto_66:
+- "[_tournamentPhoto:sam-pardee-1.jpg][#_logoDark#][#_logoAlignBotLeft#]"
+
+_mtgTournamentPhoto_67:
+- "[_tournamentPhoto:yuuya-watanabe-1.jpg][#_logoDark#][#_logoAlign_leftEither#]"

@@ -47,7 +47,7 @@ textAnnouncement:
 - "#proTeamAnnouncement#"
 
 proTeamAnnouncement:
-- '[_leadIn:ANNOUNCEMENT,BREAKING,UPDATE]#_leadIn#: #pro# [_team: ,Team ][_leavesVerb:leaves,quits,abandons][_resultVerbPhrase:for,to join][_action:has joined,#_leavesVerb# #_team##team# #_resultVerbPhrase#]#_action# Team #team#'
+- '[_leadIn:ANNOUNCEMENT,BREAKING,UPDATE,THIS JUST IN]#_leadIn#: #pro# [_team: ,Team ][_leavesVerb:leaves,quits,abandons][_resultVerbPhrase:for,to join][_action:has joined,#_leavesVerb# #_team##team# #_resultVerbPhrase#]#_action# Team #team#'
 
 graphicAnnouncement:
 - "#fromTheVaultGraphicAnnouncement#"

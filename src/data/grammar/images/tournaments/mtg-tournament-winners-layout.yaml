@@ -1,0 +1,57 @@
+_logoAlignTopLeft: "[_logoAlign:#_tournamentLogoStyle_topLeft#]"
+_logoAlignTopRight: "[_logoAlign:#_tournamentLogoStyle_topRight#]"
+_logoAlignBotLeft: "[_logoAlign:#_tournamentLogoStyle_bottomLeft#]"
+_logoAlignBotRight: "[_logoAlign:#_tournamentLogoStyle_bottomRight#]"
+
+logoAlign_topLeft_botRight:
+- "#_logoAlignTopLeft#"
+- "#_logoAlignBotRight#"
+
+_logoAlign_topRight_botLeft:
+- "#_logoAlignTopRight#"
+- "#_logoAlignBotLeft#"
+
+_logoAlign_leftEither:
+- "#_logoAlignTopLeft#"
+- "#_logoAlignBotLeft#"
+
+_logoAlign_rightEither:
+- "#_logoAlignTopRight#"
+- "#_logoAlignBotRight#"
+
+_logoAlign_topEither:
+- "#_logoAlignTopRight#"
+- "#_logoAlignTopLeft#"
+
+_logoAlign_botEither:
+- "#_logoAlignBotRight#"
+- "#_logoAlignBotLeft#"
+
+_logoAlign_not_topRight:
+- "#_logoAlignTopLeft#"
+- "#_logoAlignBotLeft#"
+- "#_logoAlignBotRight#" 
+
+_logoAlign_not_topLeft:
+- "#_logoAlignTopRight#"
+- "#_logoAlignBotLeft#"
+- "#_logoAlignBotRight#" 
+
+_logoAlign_not_botLeft:
+- "#_logoAlignTopRight#"
+- "#_logoAlignTopLeft#"
+- "#_logoAlignBotRight#" 
+
+_logoAlign_not_botRight:
+- "#_logoAlignTopRight#"
+- "#_logoAlignTopLeft#"
+- "#_logoAlignBotLeft#"
+
+_logoAlign_any:
+- "#_logoAlignTopRight#"
+- "#_logoAlignTopLeft#"
+- "#_logoAlignBotLeft#"
+- "#_logoAlignBotRight#"
+
+_logoLight: "[_lightOrDark:light][_tournamentTypeSrc:#_tournamentTypeSrcLight#][_tournamentTextColor:black][_tournamentTextOutlineColor:white]"
+_logoDark: "[_lightOrDark:dark][_tournamentTypeSrc:#_tournamentTypeSrcDark#][_tournamentTextColor:white][_tournamentTextOutlineColor:black]"

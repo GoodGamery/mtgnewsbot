@@ -125,9 +125,11 @@ _duelDecksFontStyle_WildBreathOfZelda:
    [#_duelDecksStyleTextAllCaps#]
    font-size:84px; white-space: nowrap; font-family:"The Wild Breath of Zelda"; font-weight: bold; padding: 0;  line-height: 1.0em;  
 
+_tournamentMtgLogoDirectory: "./src/data/images/mtg-logos"
+
 _duelDecksLogoStyle: |
   <head>
-    <style> 
+    <style>
       td
         << text-align: center;>>
       td.title-text

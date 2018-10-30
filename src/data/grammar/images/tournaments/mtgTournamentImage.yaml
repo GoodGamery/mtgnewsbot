@@ -1,0 +1,210 @@
+tournamentLogo: "#tournamentLogoHeadline#{htmlImg htmlImgString=`#_tournamentLogoHtml#`}"
+
+tournamentLogoHeadline: "[#_tournamentInit#][_botRowLeftAlignedClass:left-aligned][_botRowRightAlignedClass:right-aligned][#mtgTournamentWinner#][#_tournamentLogoDefineTournament#]#_tournamentWinnerText#
+  [_logoOrientation:#_logoAlign#]"
+
+_tournamentWinnerText:
+- "#_tournamentWinnerTextWinnerWins#"
+- "[_leadIn:ANNOUNCEMENT,BREAKING,THE RESULTS ARE IN,TOURNAMENT HIGHLIGHT][_lead:,#_leadIn##colon# ]#_lead##_tournamentWinnerTextWinnerWins#"
+- "[_winner:winner,champion][_winnerOf:#comma# #_winner.capitalize##_s# of, for winning][_tournament:#_tournamentType.capitalize# #_tournamentName.capitalize#]Congratulations to #_winnerName##_winnerOf# #_tournament#[_bang:,!]#_bang#"
+
+_tournamentWinnerTextWinnerWins:
+- "[_tournament:#_tournamentType.capitalize# #_tournamentName.capitalize#][_winsPassive:wins,wins,wins,wins,triumphs,dominates,places first,prevails,reigns,conquers,victorius,triumphant,trophies][_winsActive:wins,wins,dominates,crushes,steamrolls,smashes][_winsDefeats:defeats,dominates,crushes,conquers,overpowers,beats,clobbers,trounces,outdoes,tramples][_field:field,sea,gauntlet][_theField:, the field, the competition, all comers, the opposition, all challengers, a #_field# of #peoplePlural.s#][_loser:#_theField#,#_opposition#][_wins:wins #_tournament#,#_winsPassive# #_inAt#,#_winsActive# #_tournament#,#_winsDefeats# #_loser# #_inAt#]#_winnerFamiliarName# #_wins#"
+
+_mtgSetLogoDirectory: "./src/data/images/set-logos"
+
+_mtgSetLogo:
+- "[_cardset:Duel Decks#colon# Blessed vs. Cursed][_cardSetImgName:duel-decks-blessed-vs-cursed.png]"
+- "[_cardset:Duel Decks#colon# Elspeth vs. Tezzeret][_cardSetImgName:duel-decks-elspeth-vs-tezzeret.png]"
+- "[_cardset:Duel Decks#colon# Elves vs. Goblins][_cardSetImgName:duel-decks-elves-vs-goblins.png]"
+- "[_cardset:Duel Decks#colon# Jace vs. Chandra][_cardSetImgName:duel-decks-jace-vs-chandra.png]"
+- "[_cardset:Duel Decks#colon# Mind vs. Might][_cardSetImgName:duel-decks-mind-vs-might.png]"
+- "[_cardset:Duel Decks#colon# Phyrexia vs. the Coalition][_cardSetImgName:duel-decks-phyrexia-vs-the-coalition.png]"
+- "[_cardset:Duel Decks#colon# Venser vs. Koth][_cardSetImgName:duel-decks-venser-vs-koth.png]"
+- "[_cardset:Duel Decks#colon# Zendkiar vs. Eldrazi][_cardSetImgName:duel-decks-zendikar-vs-eldrazi.png]"
+- "[_cardset:Duels of the Planeswalkers][_cardSetImgName:duels-of-the-planeswalkers.png]"
+- "[_cardset:Magic#colon# the Gathering Battlegrounds,MTG Battlegrounds][_cardSetImgName:battlegrounds.png]"
+- "[_cardset:Magic#colon# the Gathering Battlemage,MTG Battlemage][_cardSetImgName:battlemage.png]"
+- "[_cardset:Magic#colon# the Gathering Puzzle Quest,MTG Puzzle Quest][_cardSetImgName:puzzle-quest.png,puzzle-quest-2.png]"
+- "[_cardset:Duel Decks#colon# Divine vs. Demonic][_cardSetImgName:divine-vs-demonic.png]"
+- "[_cardset:Commander 2018][_cardSetImgName:commander-2018.png]"
+- "[_cardset:Commander Anthology][_cardSetImgName:commander-anthology.png]"
+- "[_cardset:Conspiracy][_cardSetImgName:conspiracy.png]"
+- "[_cardset:Conspiracy Take the Crown][_cardSetImgName:conspiracy-take-the-crown.png]"
+- "[_cardset:Deckmasters][_cardSetImgName:deckmasters.png]"
+- "[_cardset:Battle Royale][_cardSetImgName:battle-royale-box-set.png]"
+- "[_cardset:Battlebond][_cardSetImgName:battlebond.png]"
+- "[_cardset:Archenemy][_cardSetImgName:archenemy.png,archenemy-2.png]"
+- "[_cardset:Archenemy Nicol Bolas][_cardSetImgName:archenemy-nicol-bolas.png]"
+- "[_cardset:Dragon Heist][_cardSetImgName:dragon-heist.png]"
+- "[_cardset:Explorers of Ixalan][_cardSetImgName:explorers-of-ixalan.png]"
+- "[_cardset:From the Vault#colon# Angels][_cardSetImgName:from-the-vault-angels.png]"
+- "[_cardset:From the Vault#colon# Lore][_cardSetImgName:from-the-vault-lore.png]"
+- "[_cardset:From the Vault#colon# Relics][_cardSetImgName:from-the-vault-relics.png]"
+- "[_cardset:Game Night][_cardSetImgName:game-night.png]"
+- "[_cardset:Legendary Cube][_cardSetImgName:legendary-cube.png,legendary-cube-2.png]"
+- "[_cardset:Modern Masters][_cardSetImgName:modern-masters.png]"
+- "[_cardset:Modern Masters 2017][_cardSetImgName:modern-masters-2017.png]"
+- "[_cardset:Modern Event Deck][_cardSetImgName:modern-event-deck.png]"
+- "[_cardset:Planechase][_cardSetImgName:planechase.png]"
+- "[_cardset:Premium Deck Series#colon# Graveborn][_cardSetImgName:premium-deck-series-graveborn.png]"
+- "[_cardset:Premium Deck Series#colon# Slivers][_cardSetImgName:premium-deck-series-slivers.png]"
+- "[_cardset:Shandalar][_cardSetImgName:shandalar.png]"
+- "[_cardset:Signature Spellbook#colon# Jace][_cardSetImgName:signature-spellbook-jace.png]"
+- "[_cardset:Spellsinger Starter Kit][_cardSetImgName:spellslinger-starter-kit.png]"
+- "[_cardset:Starter 1999][_cardSetImgName:starter-1999.png]"
+- "#_mtgSetLogoRealSet#"
+- "#_mtgSetLogoRealSet#"
+- "#_mtgSetLogoRealSet#"
+- "#_mtgSetLogoRealSet#"
+- "#_mtgSetLogoRealSet#"
+- "#_mtgSetLogoRealSet#"
+
+_mtgSetLogoRealSet:
+- "[_cardset:Amonkhet][_cardSetImgName:amonkhet.png]"
+- "[_cardset:Dragon's Maze][_cardSetImgName:dragons-maze.png]"
+- "[_cardset:Dragons of Tarkir][_cardSetImgName:dragons-of-tarkir.png]"
+- "[_cardset:Conflux][_cardSetImgName:conflux.png]"
+- "[_cardset:Eldritch Moon][_cardSetImgName:eldritch-moon.png]"
+- "[_cardset:Ixalan][_cardSetImgName:ixalan.png]"
+- "[_cardset:Lorwyn][_cardSetImgName:lorwyn.png]"
+- "[_cardset:Shadows Over Innistrad][_cardSetImgName:shadows-over-innistrad.png]"
+- "[_cardset:Worldwake][_cardSetImgName:worldwake.png]"
+- "[_cardset:2010 Core Set][_cardSetImgName:2010-core-set.png]"
+- "[_cardset:2011 Core Set][_cardSetImgName:core-set-2011.png]"
+- "[_cardset:2013 Core Set][_cardSetImgName:2013-core-set.png]"
+- "[_cardset:Aether Revolt][_cardSetImgName:aether-revolt.png]"
+- "[_cardset:Avacyn Restored][_cardSetImgName:avacyn-restored.png]"
+- "[_cardset:Battle for Zendikar][_cardSetImgName:battle-for-zendikar.png]"
+- "[_cardset:Betrayers of Kamigawa][_cardSetImgName:betrayers-of-kamigawa.png,betrayers-of-kamigawa-2.png]"
+- "[_cardset:Coldsnap][_cardSetImgName:coldsnap.png]"
+- "[_cardset:Dominaria][_cardSetImgName:dominaria.png]"
+- "[_cardset:Tempest Remastered][_cardSetImgName:tempest-remastered.png]"
+- "[_cardset:Unhinged][_cardSetImgName:unhinged.png]"
+- "[_cardset:Unstable][_cardSetImgName:unstable.png]"
+- "[_cardset:Vintage Masters][_cardSetImgName:vintage-masters.png]"
+
+_mtgSetLogo_needswork:
+- "[_cardset:Arabian Nights][_cardSetImgName:arabian-nights.png]"
+- "[_cardset:Commander][_cardSetImgName:commander.png]"
+- "[_cardset:Commander 2015][_cardSetImgName:commander-2015.png]"
+- "[_cardset:Dissension][_cardSetImgName:dissension-2.png]"
+- "[_cardset:Alliances][_cardSetImgName:alliances.png]"
+- "[_cardset:Beatdown Box][_cardSetImgName:beatdown-box-set.png]"
+- "[_cardset:Apocalypse][_cardSetImgName:apocalypse.jpg]"
+- "[_cardset:Duel Decks#colon# Garruk vs. Liliana][_cardSetImgName:duel-decks-garruk-vs-liliana.png]"
+- "[_cardset:Unglued][_cardSetImgName:unglued.png]"
+- "[_cardset:Magic Online][_cardSetImgName:magic-online.png]"
+- "[_cardset:Global Series#colon# Jiang Yanggu vs. Yu Manling][_cardSetImgName:global-series-jiang-yanggu-yu-manling.png]"
+- "[_cardset:Ravnica Allegiance][_cardSetImgName:ravnica-allegiance.png]"
+
+_tournamentLogoDefineTournament:
+- "[_tournamentLogoName: #_tournamentName.allCaps#]"
+- "[_cardset:#novelCardSetName#][_tournamentType:Pro Tour][#_tournamentImagesProTour#][_tournamentTypeSrc:#_tournamentTypeSrcDark#][_tournamentName:#_cardset#][_botRowLeftAlignedClass:left-aligned-image][_botRowRightAlignedClass:right-aligned-image][_setLogoStylesAlign:#_logoHorizontalAlignment#][_setLogoFontColorSet:#_setLogoColorLight#][_setLogoImage:#mtgSetLogoImage#][_tournamentLogoName:#_tournamentLogoNameImageDiv#]"
+- "[#_mtgSetLogo#][_tournamentType:Pro Tour][#_tournamentImagesProTour#][_tournamentTypeSrc:#_tournamentTypeSrcDark#][_tournamentName:#_cardset#][_botRowLeftAlignedClass:left-aligned-image][_botRowRightAlignedClass:right-aligned-image ][_setLogoStylesAlign:#_logoHorizontalAlignment#][_setLogoImage:<img class='image-setlogo-resized' src=\"#_mtgSetLogoDirectory#/#_cardSetImgName#\">][_tournamentLogoName:#_tournamentLogoNameImageDiv#]"
+
+_tournamentLogoNameImageDiv: |
+  <div style="float:#_logoHorizontalAlignment#; zoom:60%; margin-top:-2px; margin-#_logoHorizontalAlignment#: -20px;">#_setLogoImage#</div>
+
+_tournamentLogoDirectory: "./src/data/images/mtg-logos"
+
+_tournamentLogoDirectoryImage:
+- "mtg-small-logo-2.png"
+
+_tournamentLogoStyle_topRight: |
+  [#_tournamentLogoStyle_right#]
+  [#_tournamentLogoVertAlignTop#]
+  [#_tournamentLogoStyle_right#]
+
+_tournamentLogoStyle_topLeft: |
+  [#_tournamentLogoVertAlignTop#]
+  [#_tournamentLogoStyle_left#]
+
+_tournamentLogoStyle_bottomRight: |
+  [#_tournamentLogoVertAlignBot#]
+  [#_tournamentLogoStyle_right#]
+
+_tournamentLogoStyle_bottomLeft: |
+  [#_tournamentLogoVertAlignBot#]
+  [#_tournamentLogoStyle_left#]
+
+_tournamentLogoStyle_left: |
+  [_logoHorizontalAlignment:left]
+  [_topRowClass:top-row left-aligned-image #_topRowVerticalClass#][_topRowAlign:left]
+  [_midRowClass:left-aligned]
+  [_botRowClass:bottom-row #_botRowLeftAlignedClass# #_lightOrDark# #_bottomRowVerticalClass#][_spacerLeftClass:no-width][_spacerRightClass:fill-width]
+
+_tournamentLogoStyle_right: |
+  [_logoHorizontalAlignment:right]
+  [_topRowClass:top-row right-aligned-image #_topRowVerticalClass#][_topRowAlign:right]
+  [_midRowClass:right-aligned]
+  [_botRowClass:bottom-row #_botRowRightAlignedClass# #_lightOrDark# #_bottomRowVerticalClass#][_spacerLeftClass:fill-width][_spacerRightClass:no-width]
+
+_tournamentLogoVertAlignTop: "[_topRowVerticalClass:top-aligned][_bottomRowVerticalClass:top-aligned]"
+_tournamentLogoVertAlignBot: "[_topRowVerticalClass:bottom-aligned][_bottomRowVerticalClass:bottom-aligned]"
+
+_tournamentLogoHtml: |
+  #_tournamentImageStyle#
+  <body>
+    <table class="photo photo-source" cellspacing="0" cellpadding="0">
+      <tr>
+        <td align="#_topRowAlign#" class="#_topRowClass#" colspan=2><img class="magic-logo" src="#_tournamentLogoDirectory#/#_tournamentLogoDirectoryImage#"></td>
+      </tr>
+      <tr>
+        <td class="#_midRowClass#" colspan=2><img src="#_tournamentTypeSrc#"/></td></tr>
+      <tr>
+        <td class="#_spacerLeftClass#"></td>
+        <td class="#_botRowClass# bottom-row-sized">#_tournamentLogoName#</td>
+        <td class="#_spacerRightClass#"></td>        
+      </tr>
+    </table>
+  </body> 
+
+_cellOuterPaddingVertical: "12px"
+_cellOuterPaddingHorizontal: "8px"
+
+_tournamentImageStyle: |
+  <head>
+    <style>
+      table.photo << width: 800px; height: 530px; background-size: 100% auto; >>
+
+      table.photo-source << background-image: url(#mtgTournamentWinnerSrc#); >>
+
+      td << line-height: .9em; -webkit-text-stroke-width: .75px; font-size: 52px; font-family: 'Chuck Noon',Beleren,serif; text-transform :capitalize; bottom: 0; padding: 0px 5px 0px 5px; text-shadow: 0px 0px 5px rgba(1, 1, 1, 1); margin: 0px; >>
+
+      td.light << color: black; -webkit-text-stroke-width: 2px; -webkit-text-fill-color: white; >>
+      
+      td.dark << color: white; -webkit-text-stroke-width: 3px; -webkit-text-fill-color: black; >>
+
+      td.bottom-row << padding-bottom: 2px; >>
+
+      td.top-row.top-aligned << vertical-align: top; padding-top: #_cellOuterPaddingVertical#; >>
+
+      td.top-row.bottom-aligned << height: 100%; vertical-align: bottom; >>
+
+      td.bottom-row.top-aligned << height: 100%; vertical-align: top; >>
+
+      td.bottom-row.bottom-aligned << vertical-align: bottom; padding-bottom: #_cellOuterPaddingVertical#; >>
+
+      td.left-aligned << text-align: left; padding-left: #_cellOuterPaddingHorizontal#; >>
+
+      td.left-aligned-image << margin-right: 100%;  padding-left: #_cellOuterPaddingHorizontal#; >>
+
+      img.image-setlogo-resized << height:auto; width: auto; max-height: 300px; max-width: 450px; padding: 3px 12px 3px 12px;>>
+
+
+      td.right-aligned << text-align: right; padding-right: #_cellOuterPaddingHorizontal#; >> 
+
+      td.right-aligned-image << margin-left: 100%; padding-right: #_cellOuterPaddingHorizontal#; >>
+
+      td.bottom-row-sized << width: 350px; >>
+
+      img.magic-logo << display: block; max-width: 250px; max-height: 80px; width: auto; height: auto; >>
+
+      td.no-width << width: 0px >>
+
+      td.fill-width << width: 100% >>
+
+      td.tournament-name << 280px; >>
+    </style>
+  </head>

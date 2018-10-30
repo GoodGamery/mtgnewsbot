@@ -1,0 +1,74 @@
+---
+tournamentLogoHeadline: "[#_tournamentInit#]#_pro# win#_s# #_tournamentType.capitalize# #_tournamentName.capitalize# {htmlImg htmlImgString=`#tournamentLogoImage#`}"
+
+_tournamentPro:
+- "[_tournamentTextColor:black][_tournamentTypeLogoSubDirectory:#_tournamentTypeLogoDirectory#][_pro:#pro#]"
+
+tournamentLogoImage: "#_tournamentLogoStyle# #_tournamentLogo#"
+
+_tournamentLogoStyle: ""
+
+_tournamentMtgLogoDirectory: "./src/data/images/mtg-logos"
+_tournamentTypeLogoDirectory: "./src/data/images/tournaments/logos"
+_tournamentSetLogoDirectory: "./src/data/images/mtg-sets"
+
+_tournamentLogoTournamentTypeStyle: >
+  color: #_tournamentTextColor#;
+  font-family: 'Chuck Noon', Beleren, Georgia, 'Liberation Serif', 'DejaVu Serif', serif;
+  text-transform: capitalize;
+  font-size:66px; 
+  font-weight:400;
+  bottom: 0;
+  border-width: 1px;
+  padding: 0px 5px 0px 5px;
+  margin: 0px;
+  line-height: .85em;
+  text-align: left;
+  width: 600px;
+  -webkit-text-fill-color: white;
+  -webkit-text-stroke-width:3px;"
+
+_tournamentLogoTournamentNameStyle: "#_tournamentLogoTournamentTypeStyle#"
+
+_tournamentImagesGrandPrix: "[_tournamentTypeSrc:#_tournamentTypeLogoSubDirectory#/grand-prix-small.png][_tournamentTypeSrcLight:#_tournamentTypeLogoSubDirectory#/light/grand-prix-small-outlined.png][_tournamentTypeSrcDark:#_tournamentTypeLogoSubDirectory#/dark/grand-prix-small-outlined.png]"
+_tournamentImagesProTour: "[_tournamentType:Pro Tour][_tournamentTypeSrc:#_tournamentTypeLogoSubDirectory#/pro-tour-small.png][_tournamentTypeSrcLight:#_tournamentTypeLogoSubDirectory#/light/pro-tour-small-outlined.png][_tournamentTypeSrcDark:#_tournamentTypeLogoSubDirectory#/dark/pro-tour-small-outlined.png]"
+
+_tournamentInitTournamentName:
+- "#teaserCardSet#"
+- "#recentCardSet#"
+- "#novelCardSetName#"
+- "#randomCardSet#"
+
+_tournamentInit:
+- "[#_logoDark#][#_tournamentPro#][_tournamentType:Grand Prix][#_tournamentImagesGrandPrix#][_tournamentName:#city#][_inAt:in #_tournamentName#,at GP #_tournamentName#]"
+- "[#_logoDark#][#_tournamentPro#][_tournamentType:Pro Tour][#_tournamentImagesProTour#][_pt:PT,Pro Tour][_tournamentName:#_tournamentInitTournamentName#][_inAt:in #city#,at #_pt# #_tournamentName# in #city#]"
+
+_tournamentLogoMtgLogoSrc:
+- "#_tournamentMtgLogoDirectory#/mtg-small-logo-1.png"
+- "#_tournamentMtgLogoDirectory#/mtg-small-logo-2.png"
+
+_tournamentLogoContent:
+ <tr>
+  <td><img src="#_tournamentLogoMtgLogoSrc#"></td> 
+ </tr>
+ <tr>   
+  <td style="#_tournamentLogoTournamentTypeStyle#"><img src="#_tournamentTypeSrc#"></td>
+ </tr>
+ <tr>
+  <td style="#_tournamentLogoTournamentNameStyle#">#_tournamentName.allCaps#</td>
+ </tr> 
+
+_tournamentLogo: |
+  <head>
+    <style> 
+
+    </style>
+  </head>
+  <body>
+  #_tournamentLogoContainer#
+  </body>
+
+_tournamentLogoContainer: |
+  <table cellspacing="0" cellpadding="0">
+    #_tournamentLogoContent#
+  </table>
