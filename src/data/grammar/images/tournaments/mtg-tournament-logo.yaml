@@ -1,6 +1,4 @@
 ---
-tournamentLogoHeadline: "[#_tournamentInit#]#_pro# win#_s# #_tournamentType.capitalize# #_tournamentName.capitalize# {htmlImg htmlImgString=`#tournamentLogoImage#`}"
-
 _tournamentPro:
 - "[_tournamentTextColor:black][_tournamentTypeLogoSubDirectory:#_tournamentTypeLogoDirectory#][_pro:#pro#]"
 
@@ -40,8 +38,16 @@ _tournamentInitTournamentName:
 - "#randomCardSet#"
 
 _tournamentInit:
-- "[#_logoDark#][#_tournamentPro#][_tournamentType:Grand Prix][#_tournamentImagesGrandPrix#][_tournamentName:#city#][_inAt:in #_tournamentName#,at GP #_tournamentName#]"
-- "[#_logoDark#][#_tournamentPro#][_tournamentType:Pro Tour][#_tournamentImagesProTour#][_pt:PT,Pro Tour][_tournamentName:#_tournamentInitTournamentName#][_inAt:in #city#,at #_pt# #_tournamentName# in #city#]"
+- "[#_logoDark#][#_tournamentPro#][_tournamentType:Grand Prix][#_tournamentImagesGrandPrix#][_tournamentName:#city#][_inAt:#_inAtGrandPrix#]"
+- "[#_logoDark#][#_tournamentPro#][_tournamentType:Pro Tour][#_tournamentImagesProTour#][_tournamentName:#_tournamentInitTournamentName#][_inAt:#_inAtProTour#]"
+
+_inAtProTour:
+- "in #city#"
+- "[_pt:PT,Pro Tour]at #_pt# #_tournamentName# in #city#"
+
+_inAtGrandPrix:
+- "in #_tournamentName#"
+- "[_pt:GP,Grand Prix]at #_pt# #_tournamentName#"
 
 _tournamentLogoMtgLogoSrc:
 - "#_tournamentMtgLogoDirectory#/mtg-small-logo-1.png"
