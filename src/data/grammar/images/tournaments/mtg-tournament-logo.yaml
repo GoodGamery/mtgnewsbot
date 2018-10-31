@@ -33,8 +33,10 @@ _tournamentImagesProTour: "[_tournamentType:Pro Tour][_tournamentTypeSrc:#_tourn
 
 _tournamentInitTournamentName:
 - "#teaserCardSet#"
+- "#teaserCardSet#"
 - "#recentCardSet#"
-- "#novelCardSetName#"
+- "#recentCardSet#"
+- "#standardCardSet#"
 - "#randomCardSet#"
 
 _tournamentInit:
