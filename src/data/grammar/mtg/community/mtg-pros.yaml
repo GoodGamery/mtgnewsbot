@@ -241,7 +241,7 @@
   ],
 
   "team": [
-      "[teamSuffix:#teamDescriptor#]#teamPrefix# #teamSuffix#"
+    "[teamSuffix:#teamDescriptor#][_team:#teamPrefix# #teamSuffix#]#_team.trim#"
   ],
   "teamPrefix": [
     "#realTeam#",
@@ -291,7 +291,8 @@
   ],
   "jokeTeam":  [
     "#creatureTypes.capitalize#",
-    "#randomCardAlone.noPunctuation.capitalizeAll#",
+    "[teamSuffix:#normalTeamDescriptor#]#randomCardAlone.noPunctuation.capitalizeAll#",
+    "[teamSuffix:]#randomCardAlone.noPunctuation.capitalizeAll#",
     "#website#",
     "#adj.capitalizeAll.noPunctuation.noSpaces#Card",
     "[_webcomic:Pro MTG Online,Cardboard Crack,Tap to Laugh]#_webcomic#"

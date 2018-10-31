@@ -68,6 +68,8 @@ adjPersonCharacteristic:
 - wealthy
 - destitute
 - talented
+- callow
+- callous
 - "#adj#"
 - "#adjValue#"
 
@@ -138,6 +140,8 @@ adjPersonCharacteristicComparative:
 - wealthier
 - more destitute
 - more talented
+- more callow
+- more callous
 - "#adjComparative#"
 
 adjPersonCharacteristicSuperlative:
@@ -207,4 +211,6 @@ adjPersonCharacteristicSuperlative:
 - wealthiest
 - most destitute
 - most talented
+- most callow
+- most callous
 - "#adjSuperlative#"

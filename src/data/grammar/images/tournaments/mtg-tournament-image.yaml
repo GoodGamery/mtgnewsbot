@@ -5,11 +5,11 @@ tournamentLogoHeadline: "[#_tournamentInit#][_botRowLeftAlignedClass:left-aligne
 
 _tournamentWinnerText:
 - "#_tournamentWinnerTextWinnerWins#"
-- "[_leadIn:ANNOUNCEMENT,BREAKING,THE RESULTS ARE IN,TOURNAMENT HIGHLIGHT][_lead:,#_leadIn##colon# ]#_lead##_tournamentWinnerTextWinnerWins#"
-- "[_winner:winner,champion][_winnerOf:#comma# #_winner.capitalize##_s# of, for winning][_tournament:#_tournamentType.capitalize# #_tournamentName.capitalize#]Congratulations to #_winnerName##_winnerOf# #_tournament#[_bang:,!]#_bang#"
+- "[_leadIn:ANNOUNCEMENT,BREAKING,THE RESULTS ARE IN,TOURNAMENT UPDATE][_lead:,#_leadIn##colon# ]#_lead##_tournamentWinnerTextWinnerWins#"
+- "[_winner:winner,champion][_winnerOf:#comma# #_winner.capitalize##_s# of, for winning][_tournament:#_tournamentType.capitalize# #_tournamentName.capitalize#]Congratulations to #_winnerName##_winnerOf# #_tournament.trim#[_bang:,!]#_bang#"
 
 _tournamentWinnerTextWinnerWins:
-- "[_tournament:#_tournamentType.capitalize# #_tournamentName.capitalize#][_winsPassive:wins,wins,wins,wins,triumphs,dominates,places first,prevails,reigns,conquers,victorius,triumphant,trophies][_winsActive:wins,wins,dominates,crushes,steamrolls,smashes][_winsDefeats:defeats,dominates,crushes,conquers,overpowers,beats,clobbers,trounces,outdoes,tramples][_field:field,sea,gauntlet][_theField:, the field, the competition, all comers, the opposition, all challengers, a #_field# of #peoplePlural.s#][_loser:#_theField#,#_opposition#][_wins:wins #_tournament#,#_winsPassive# #_inAt#,#_winsActive# #_tournament#,#_winsDefeats# #_loser# #_inAt#]#_winnerFamiliarName# #_wins#"
+- "[_tournament:#_tournamentType.capitalize# #_tournamentName.capitalize#][_cruises:cruises,rockets,soars,climbs][_victorious:victorious,triumphant,on top][_winsPassive:wins,wins,wins,wins,triumphs,dominates,places first,prevails,reigns,conquers,victorius,triumphant,trophies,emerges #_victorious#,#_cruises# to first place,comes out on top,takes the trophy][_winsActive:wins,wins,dominates,crushes,steamrolls,smashes][_winsDefeats:defeats,dominates,crushes,conquers,overpowers,beats,clobbers,trounces,outdoes,tramples][_field:field,sea,gauntlet][_theField:, the field, the competition, all comers, the opposition, all challengers, a #_field# of #peoplePlural.s#][_loser:#_theField#,#_opposition#][_wins:wins #_tournament#,#_winsPassive# #_inAt#,#_winsActive# #_tournament#,#_winsDefeats# #_loser# #_inAt#]#_winnerFamiliarName# #_wins#"
 
 _mtgSetLogoDirectory: "./src/data/images/set-logos"
 
@@ -100,8 +100,8 @@ _mtgSetLogo_needswork:
 
 _tournamentLogoDefineTournament:
 - "[_tournamentLogoName: #_tournamentName.allCaps#]"
-- "[_cardset:#novelCardSetName#][_tournamentType:Pro Tour][#_tournamentImagesProTour#][_tournamentTypeSrc:#_tournamentTypeSrcDark#][_tournamentName:#_cardset#][_botRowLeftAlignedClass:left-aligned-image][_botRowRightAlignedClass:right-aligned-image][_setLogoStylesAlign:#_logoHorizontalAlignment#][_setLogoFontColorSet:#_setLogoColorLight#][_setLogoImage:#mtgSetLogoImage#][_tournamentLogoName:#_tournamentLogoNameImageDiv#]"
-- "[#_mtgSetLogo#][_tournamentType:Pro Tour][#_tournamentImagesProTour#][_tournamentTypeSrc:#_tournamentTypeSrcDark#][_tournamentName:#_cardset#][_botRowLeftAlignedClass:left-aligned-image][_botRowRightAlignedClass:right-aligned-image ][_setLogoStylesAlign:#_logoHorizontalAlignment#][_setLogoImage:<img class='image-setlogo-resized' src=\"#_mtgSetLogoDirectory#/#_cardSetImgName#\">][_tournamentLogoName:#_tournamentLogoNameImageDiv#]"
+- "[_cardset:#novelCardSetName#][_tournamentType:Pro Tour][#_tournamentImagesProTour#][_tournamentTypeSrc:#_tournamentTypeSrcDark#][_tournamentName:#_cardset#][_botRowLeftAlignedClass:left-aligned-image][_botRowRightAlignedClass:right-aligned-image][_setLogoStylesAlign:#_logoHorizontalAlignment#][_setLogoFontColorSet:#_setLogoColorLight#][_mtgSetLogoWidth:1400][_setLogoImage:#mtgSetLogoImage#][_tournamentLogoName:#_tournamentLogoNameImageDiv#][_inAt:#_inAtProTour#]"
+- "[#_mtgSetLogo#][_tournamentType:Pro Tour][#_tournamentImagesProTour#][_tournamentTypeSrc:#_tournamentTypeSrcDark#][_tournamentName:#_cardset#][_botRowLeftAlignedClass:left-aligned-image][_botRowRightAlignedClass:right-aligned-image ][_setLogoStylesAlign:#_logoHorizontalAlignment#][_setLogoImage:<img class='image-setlogo-resized' src=\"#_mtgSetLogoDirectory#/#_cardSetImgName#\">][_tournamentLogoName:#_tournamentLogoNameImageDiv#][_inAt:#_inAtProTour#]"
 
 _tournamentLogoNameImageDiv: |
   <div style="float:#_logoHorizontalAlignment#; zoom:60%; margin-top:-2px; margin-#_logoHorizontalAlignment#: -20px;">#_setLogoImage#</div>

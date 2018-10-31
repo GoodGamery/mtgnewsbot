@@ -98,30 +98,27 @@
     "#teaserCardSet#"
   ],
   "recentCardSet": [
-      "Battlebond",
-      "Dominaria",
-      "Core 2019",
-      "Unstable",
-      "Commander 2018",
-      "Masters 25",
-      "[_otherSet:Signature Spellbook#colon# Jace,Global Series#colon# Jiang Yanggu & Mu Yanling]#_otherSet#"
+    "Guilds of Ravnica",
+    "Battlebond",
+    "Dominaria",
+    "Core 2019",
+    "Unstable",
+    "Commander 2018",
+    "Masters 25",
+    "[_otherSet:Signature Spellbook#colon# Jace,Global Series#colon# Jiang Yanggu & Mu Yanling]#_otherSet#"
   ],
   "standardCardSet": [
-      "Core 2019",
-      "Dominaria",
-      "Ixalan",
-      "Rivals of Ixalan",
-      "Amonkhet",
-      "Hour of Devastation",      
-      "Kaladesh",
-      "Aether Revolt",      
+    "Guilds of Ravnica",
+    "Core 2019",
+    "Dominaria",
+    "Ixalan",
+    "Rivals of Ixalan"
   ],
   "teaserCardSet": [
-      "Guilds of Ravnica",
-      "Ravnica Allegiance",
-      "Core Set 2020",
-      "#codename#",
-      "#novelCardSetName#"
+    "Ravnica Allegiance",
+    "Core Set 2020",
+    "#codename#",
+    "#novelCardSetName#"
   ],
   "codename": [
       "Spaghetti",
