@@ -70,6 +70,7 @@ adjPersonCharacteristic:
 - talented
 - callow
 - callous
+- corrupt
 - "#adj#"
 - "#adjValue#"
 
@@ -142,6 +143,7 @@ adjPersonCharacteristicComparative:
 - more talented
 - more callow
 - more callous
+- more corrupt
 - "#adjComparative#"
 
 adjPersonCharacteristicSuperlative:
@@ -213,4 +215,5 @@ adjPersonCharacteristicSuperlative:
 - most talented
 - most callow
 - most callous
+- most corrupt
 - "#adjSuperlative#"
