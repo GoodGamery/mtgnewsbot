@@ -124,9 +124,23 @@ flavorText:
     "[_dances:dance,sing,chant][_dance:#_dances#]I #_dance# the [_danceType:#mood#,#emotion#,#animal#,#creatureTypes#]#_danceType# #_dance.replace(i,o)#, / #bodypartsInPairs# [_up:,up ][_upWhere:trees,clouds,sky,eaves][_firstWhere:in the air,'round my head,#_up#above,in the sky,in the #_upWhere#,held #_up#high,toward the sun]#_firstWhere#, [_secondThing:#bodypartsInPairs#,#pluralItemNounOrMassNoun#] #_secondThing# [_downWhere:river,sea,sand,earth,grave][_secondWhere:on the ground,in the sand,on my feet,down below,in the dirt,on the floor]#_secondWhere#." —#characterFactionOrRace.capitalize# [_chant:chant,rhyme]#_chant#
   - >
     #wallOfVaporParts#\"#_part.capitalize# of #_body1.a# #_isAre# made out of #massNounCompoundWorthy#,/ #_part.capitalize# of #_body2.a# #_isAre# made out of #massNounCompoundWorthy#./ #_myPart.capitalize# #_isAre# made out of [_material:#massNounCompoundWorthy#][_makeup:nothing but #_material#,#_material# alone,only #_material#,pure #_material#]#_makeup#,/ [_adj:#adjComparative#,#adjPersonCharacteristicComparative#,more #mood#]#_adj.capitalize# than [_that:that,who][_all:all,those,any][_whoElse:any #_that# ever have #verbInceptiveIntransitivePerfectPastTense#,#_all# who have #verbIntransitivePastTense# before me]#_whoElse#.\" —#commonCharacterFirstName# #commonCharacterLastName#, #folkSongOrPoem#
+  - >
+    [_character:#characterFirstName#,#commonCharacterFirstName#,The #characterClass#][_languageAdj:crude,simple,rudimentary,coarse,harsh,primitive,vulgar,crass,weird,peculiar,bizarre,incomprehesible,simplistic,unsophisticated,barbaric,exotic,guttural,#adjValue#,#adj#][_source:#characterClass#,#demonym#][_language:language,language,dialect,tongue,vocabulary][_subject:,I ][_subj:#_subject#][_dist:distinguish, differentiate,tell the difference][_ding:distinguishing, differentiating,telling the difference][_didnt:didn't #_dist#,couldn't #_dist#,had trouble #_ding#,couldn't quite #_dist#,somehow couldn't #_dist#,was unable to #_dist#,wasn't equipped to #_dist#][#_differencePair#]#_character#'s #_languageAdj# #_source# #_language# #_didnt# between #_first# and #_second#.
 
-# flavorTextNew:
+flavorTextNew:
 # -> Cerulean Wisps flavor text
+  - >
+    "[_form:#nounActivity#,#verbStrictlyIntransitiveGerund#,#verbStrictlyIntransitiveGerund#][_superlative:#adjSuperlative#]#_form.capitalize# is the #_superlative# form of #abstractNounOrEmotion#."
+
+_differencePair:
+- "[_first:\"#verbGerund#\"][_second:\"#verbGerund#\"]"
+- "[_first:\"#massNoun#\"][_second:\"#massNoun#\"]"
+- "[_first:\"#pluralNoun#\"][_second:\"#pluralNoun#\"]"
+- "[_first:\"#verbReflexive# yourself\"][_second:\"#verbReflexive# yourself\"]"
+- "[#wordPrefixDistinction#][_first:#_phrase#][_second:#_otherPhrase#]"
+- "[#adjOpposite#][_thing:, #pluralNounOrMassNoun#][_theThing:#_thing#][_first:\"#_adjOpposite1##_theThing#\"][_second:\"#_adjOpposite2##_theThing#\"]"
+- "[_verb1:#verbActionTransitive#,#verbTransitive#,#verbInceptiveTransitive#][_verb2:#verbActionTransitive#,#verbTransitive#,#verbInceptiveTransitive#][_objThing:#animal#,#massNounCompoundWorthy#][_object:#noun#,#itemNounOrMassNoun#,#_objThing#][_obj:#_object#][_first:\"#_subj##_verb1# the #_obj#\"][_second:\"#_subj##_verb2# the #_obj#\"]"
+- "[_verb1:#verbActionTransitive#,#verbTransitive#,#verbInceptiveTransitive#][_verb2:#verbActionTransitive#,#verbTransitive#,#verbInceptiveTransitive#][_objThing:#animal#,#massNounCompoundWorthy#][_object:#noun#,#itemNounOrMassNoun#,#_objThing#][_obj:#_object#][_first:\"#_subj##_verb1# the #_obj#\"][_second:\"#_subj##_verb2# the #_obj#\"]"
 
 folkSongOrPoem:
 - "The [_who:#animal#,#characterClass#]#_who.capitalizeAll#'s [_song:song,tale,lament,chorus]#_song.capitalizeAll#"

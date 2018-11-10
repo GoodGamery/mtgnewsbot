@@ -161,6 +161,7 @@ _tournamentLogoHtml: |
   </body> 
 
 _cellOuterPaddingVertical: "12px"
+_cellInnerPaddingVertical: "4px"
 _cellOuterPaddingHorizontal: "8px"
 
 _tournamentImageStyle: |
@@ -184,7 +185,7 @@ _tournamentImageStyle: |
 
       td.bottom-row.top-aligned << height: 100%; vertical-align: top; >>
 
-      td.bottom-row.bottom-aligned << vertical-align: bottom; padding-bottom: #_cellOuterPaddingVertical#; >>
+      td.bottom-row.bottom-aligned << vertical-align: bottom; padding-top: #_cellInnerPaddingVertical#;  padding-bottom: #_cellOuterPaddingVertical#; >>
 
       td.left-aligned << text-align: left; padding-left: #_cellOuterPaddingHorizontal#; >>
 
