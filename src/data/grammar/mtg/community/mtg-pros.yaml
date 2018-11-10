@@ -310,8 +310,25 @@
     "#adj.capitalizeAll#",
     "#adj.capitalizeAll# [teamSuffix:#characterClass.capitalize.s#]",
     "#adj.capitalizeAll# [teamSuffix:#bodypart.capitalize#]",
-    "#direction.capitalizeAll# Coast [teamSuffix:Legends,Warriors,#characterClass.capitalizeAll.s#]",
+    "#squadPrefix.capitalizeAll# [teamSuffix:Legends,Warriors,#characterClass.capitalizeAll.s#]",
     "#basicColors.capitalize# #placeNoun.capitalizeAll# [teamSuffix:Legends,Warriors,#characterClass.capitalizeAll.s#]"
+  ],
+  "squadPrefix:": [
+    "#direction# Coast",
+    "#direction# Coast",
+    "#otherSquadPrefix#"
+  ],
+  "otherSquadPrefix": [
+    "downtown",
+    "inner city",
+    "#direction#side",
+    "underground",
+    "offshore",
+    "atlantic",
+    "hometown",
+    "neighborhood",
+    "original",
+    "vanguard"
   ],
  "jokeTeamDescriptor": [
     "All-Stars",
