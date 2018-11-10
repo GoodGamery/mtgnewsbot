@@ -55,6 +55,7 @@ Garl
 Garner
 Gorghul
 Goton
+Grendel
 Grete
 Grezkrick
 Gulsen
