@@ -13,7 +13,7 @@ let config = {
     deleteTempImages: true
   },  
   loggers: { },
-  logPrefs:  { cardfinder: true, html: true, svg: true },
+  logPrefs:  { cardfinder: true, html: true, svg: true, scryfall: true },
   origin: undefined,
   tweetLength: TWEET_LENGTH,
   paths: {
@@ -47,6 +47,8 @@ try {
 config.loggers.cardfinder  = new Logger('cardfinder', config.logPrefs.cardfinder);
 config.loggers.html        = new Logger('html', config.logPrefs.html);
 config.loggers.svg        = new Logger('svg', config.logPrefs.svg);
+config.loggers.scryfall   = new Logger('scryfall', config.logPrefs.scryfall);
+
 
 Object.freeze(config);
 
