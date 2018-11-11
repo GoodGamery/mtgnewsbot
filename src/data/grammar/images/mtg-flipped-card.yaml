@@ -1,41 +1,11 @@
 
 flippedCardImage: >
   [#CONTENT.randomScryfallCard#]
-  [_cardname:#_cardName1#][_cardImgSrc:#_imgUrl1#][_maskColor:#_borderColor1#]
+  [_cardname:#_cardName1#][_cardImgSrc:#_imgUrl1#][_borderColor:#_borderColor1#][_maskColor:#_translateMaskColor#]
   #_cardname# <> #_cardname.reverse#  
-  {svg svgString=`#svgFlippedCard#`}  
-#  {htmlImg htmlImgString=`#_flippedCardHtml#` screenWidth=`976` screenHeight=`690` width=`976` height=`690`}
+  {svg svgString=`#svgFlippedCard#`}
 
-_cardSrc: ""
-
-_flippedCardHtml: |
-  <head>
-    <style></style>
-  </head>
-  <body>
-    #_flippedCardContent#
-  </body>
-
-_flippedCardContent: |
-  <div style='display: flex;'>
-    <div style='display: flex;'>
-      <div style='width: 488; overflow: hidden;'>
-        <img src='#_cardImgSrc#'>
-      </div>
-      <div style='width: 488; overflow: hidden; -webkit-transform: scaleX(-1)'>
-        <img src='#_cardImgSrc#'>
-      </div>
-    </div>
-
-    <div style='display: flex;'>
-      <div style='width: 488; overflow: hidden; '>
-        <img src='#_cardImgSrc#' style=' -webkit-transform: scaleX(-1);'>
-      </div>
-      <div style='width: 488px; overflow: hidden;'>
-        <img src='#_cardImgSrc#' style=' -webkit-transform: translateX(-244px);'>
-      </div>
-    </div>
-  </div>
+_translateMaskColor: "#_borderColor.replace(gold,DarkGoldenrod)#"
 
 svgFlippedCard: |
   <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="976" height="680">
