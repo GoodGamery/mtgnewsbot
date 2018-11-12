@@ -6,13 +6,14 @@ const config = global.mtgnewsbot.config;
 const logger = config.loggers.scryfall;
 
 const SCRYFALL_REQUEST_URL = 'https://api.scryfall.com/cards/random';
+const SCRYFALL_REQUEST_URL_NORMAL_CARDS =  'https://api.scryfall.com/cards/random?q=-type%3Ascheme%20-type%3Aplane%20-st:set_promo'
 
 function getRandomCard() {
   return new Promise((resolve, reject) => {
     try {
-      logger.log('Getting random card from ' + SCRYFALL_REQUEST_URL);
+      logger.log('Getting random card from ' + SCRYFALL_REQUEST_URL_NORMAL_CARDS);
 
-      https.request(SCRYFALL_REQUEST_URL, function(response) {
+      https.request(SCRYFALL_REQUEST_URL_NORMAL_CARDS, function(response) {
         let data = new Stream();
 
         response.on('data', function(chunk) {

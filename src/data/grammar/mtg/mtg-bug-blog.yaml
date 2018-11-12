@@ -72,7 +72,7 @@ _knownIssuesPluralRare:
 - "We [_promiseWe:,promise we ,swear we ,sincerely ]#_promiseWe#haven't forgotten about #_knownIssuePluralBug#"
 - "We [_almost:almost,nearly,almost completely]#_almost# forgot about #_knownIssuePluralBug#"
 - "We [_literally:,literally ,actually ]#_literally# just remembered #_knownIssuePluralBug#"
-- "Vote for [_fix:fix,try to fix][_theBug:one bug to be fixed,which bug we'll #_fix# next,which bug you'd like to see upgraded to a feature]#_theBug#"
+- "Please vote for [_fix:fix,try to fix][_theBug:one bug to be fixed,which bug we'll #_fix# next,which bug you'd like to see upgraded to a feature]#_theBug#"
 - "More proof that [_personality:#miscPersonSingular#,##,#wackyCharacter#][_programmers:lunatics,monkeys,children,an insane AI,#][_proof:we need a larger development budget,we should have stuck with Leaping Lizard,the game engine was written by #_programmers#]#_proof#"
 - "[_lamention:Dear lord,For goodness' sake#comma#,Oh#comma# please no.,We're so tired.,This is a nightmare.][_realization:they just keep coming,when will they stop,why does this keep happening]#_lamention# #_realization#"
 
