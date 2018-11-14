@@ -1,13 +1,49 @@
 #!/usr/bin/env node --harmony
 'use strict';
 
+global.mtgnewsbot = global.mtgnewsbot || {};
+
 // Command processor
-let commander = require('commander');
-let MtgNewsbot = require('./src/mtgnewsbot.js');
+const commander = require('commander');
+const Config = require('./config');
+
+function getOptions(commandLineOptions) {
+  // Combine with default options	
+	const options = Object.assign({
+    count: 1,
+    origin: '#origin#',
+    verbose: false,
+    tweet: false,
+    toot: false,
+    discord: false,
+    configOverride: undefined
+  }, commandLineOptions);
+
+  // Time to log
+  if (options.verbose) {
+    console.log(`Options:`);
+    console.log(` - Count:   ${options.count}`);
+    console.log(` - Origin: "${options.origin}"`);
+    console.log(` - Verbose: ${options.verbose}`);
+    console.log(` - Tweet:   ${options.tweet}`);
+    console.log(` - Toot:    ${options.toot}`);
+    console.log(` - Discord: ${options.discord}`);
+    console.log(` - Config Override: ${options.configOverride}`);
+  }
+
+  return options;
+}
+
+function loadConfig(overridePath) {
+	let config = new Config(overridePath);
+	global.mtgnewsbot.config = config;
+	return config;
+}
 
 commander
     .version('1.0.0')
     .usage('[options]')
+  	.option('-f --config-override [path]', 'set path to config override path. defaults to ./config-override.json')   
     .option(`-c --count <n>`, `Count of news articles to generate`)
     .option(`-o --origin [string]`, `Origin string to flatten. Defaults to "#origin#"`)
     .option('-v --verbose', "Verbose logging")
@@ -17,5 +53,8 @@ commander
     .option('--debug', "Post the result on debugging discord channel")
     .parse(process.argv);
 
-let bot = new MtgNewsbot(commander);
+const options = getOptions(commander);
+loadConfig(options.configOverride)
+
+let bot = new require('./src/mtgnewsbot.js')(options);
 bot.run();

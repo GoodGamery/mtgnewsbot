@@ -1,58 +1,65 @@
 'use strict';
+const path = require('path')
 const merge = require('lodash.merge');
 const Logger = require('./src/lib/util/logger');
 
-const CONFIG_OVERRIDE_PATH = './config-override.json';
+const DEFAULT_OVERRIDE_PATH = './config-override.json';
 const DEFAULT_GRAMMAR_PATH = './src/data/grammar';
 const TWEET_LENGTH = 280;
 const TEMPFILE_PATH = '/tmp';
 
-let config = {
-  defaultGrammarPath:  DEFAULT_GRAMMAR_PATH,
-  debugOptions: {
-    deleteTempImages: true
-  },  
-  loggers: { },
-  logPrefs:  { cardfinder: true, html: true, svg: true, scryfall: true },
-  origin: undefined,
-  tweetLength: TWEET_LENGTH,
-  paths: {
-    tempDirectory: TEMPFILE_PATH
-  },
-  twitterLink: `https://twitter.com/MTGnewsbot`,
-  webhookUrl: null,
-  webhookUrlErr: null,
-  TWITTER_CONSUMER_KEY: null,
-  TWITTER_CONSUMER_SECRET: null,
-  TWITTER_ACCESS_TOKEN: null,
-  TWITTER_ACCESS_TOKEN_SECRET: null,
-  MASTODON_API_TOKEN: null,
-  MASTODON_API_URL: null
-};
+class Config {
+	constructor(overridePath=DEFAULT_OVERRIDE_PATH) {
 
-// apply overrides from config overrides file
-try {
-  let override = require(CONFIG_OVERRIDE_PATH);
-  console.info(`Loading config overrides from ${CONFIG_OVERRIDE_PATH}`);
-  config = merge(config, override);
-} catch(e) {
-  if (e.code === 'MODULE_NOT_FOUND') { 
-    console.info(`No config overrides located at ${CONFIG_OVERRIDE_PATH}`);
-  } else {
-    console.warn(`Unable to load config override: ${e}`);
-  }
+		let base = {
+		  defaultGrammarPath:  DEFAULT_GRAMMAR_PATH,
+		  debugOptions: {
+		    deleteTempImages: true
+		  },  
+		  loggers: { },
+		  logPrefs:  { cardfinder: true, html: true, svg: true, scryfall: true },
+		  origin: undefined,
+		  tweetLength: TWEET_LENGTH,
+		  paths: {
+		    tempDirectory: TEMPFILE_PATH
+		  },
+		  twitterLink: `https://twitter.com/MTGnewsbot`,
+		  webhookUrl: null,
+		  webhookUrlErr: null,
+		  TWITTER_CONSUMER_KEY: null,
+		  TWITTER_CONSUMER_SECRET: null,
+		  TWITTER_ACCESS_TOKEN: null,
+		  TWITTER_ACCESS_TOKEN_SECRET: null,
+		  MASTODON_API_TOKEN: null,
+		  MASTODON_API_URL: null
+		};
+
+		merge(this, base);
+		// apply overrides from config overrides file
+		try {
+		  let override = require(path.resolve('.', overridePath));
+		  console.info(`Loading config overrides from ${overridePath}`);
+			merge(this, override);		  
+		} catch(e) {
+		  if (e.code === 'MODULE_NOT_FOUND') { 
+		    console.info(`No config override found at ${overridePath}`);
+		  } else {
+		    console.warn(`Unable to load config override: ${e}`);
+		  }
+		}
+
+		// create loggers and enable or disable based on preferences
+		const loggers = {
+			cardfinder: new Logger('cardfinder', this.logPrefs.cardfinder),
+			html: new Logger('html', this.logPrefs.html),
+			svg: new Logger('svg', this.logPrefs.svg),
+			scryfall: new Logger('scryfall', this.logPrefs.scryfall)
+		};
+
+		merge(this, { loggers: loggers });
+
+		Object.freeze(this);
+	}
 }
 
-// create loggers and enable or disable based on preferences
-config.loggers.cardfinder  = new Logger('cardfinder', config.logPrefs.cardfinder);
-config.loggers.html        = new Logger('html', config.logPrefs.html);
-config.loggers.svg        = new Logger('svg', config.logPrefs.svg);
-config.loggers.scryfall   = new Logger('scryfall', config.logPrefs.scryfall);
-
-
-Object.freeze(config);
-
-global.mtgnewsbot = global.mtgnewsbot || {};
-global.mtgnewsbot.config = config;
-
-module.exports = config;
+module.exports = Config;

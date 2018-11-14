@@ -2,12 +2,13 @@
 'use strict';
 
 const uuid = require(`uuid`);
-const config = require('../config');
 const NewsEngine = require('./news-engine');
 const RenderImage = require('./lib/render-image');
 const TwitterClient = require('./lib/api/twitter-client');
 const MastodonClient = require('./lib/api/mastodon-client');
 const Discord = require('./lib/discord');
+
+const config = global.mtgnewsbot.config;
 
 class MtgNewsbot {
   constructor(options) {
@@ -16,26 +17,7 @@ class MtgNewsbot {
 
     this.newsEngine = new NewsEngine();
 
-    // Combine with default options
-    this.options = Object.assign({
-      count: 1,
-      origin: '#origin#',
-      verbose: false,
-      tweet: false,
-      toot: false,
-      discord: false
-    }, options);
-
-    // Time to log
-    if (this.options.verbose) {
-      console.log(`Options:`);
-      console.log(` - Count:   ${this.options.count}`);
-      console.log(` - Origin: "${this.options.origin}"`);
-      console.log(` - Verbose: ${this.options.verbose}`);
-      console.log(` - Tweet:   ${this.options.tweet}`);
-      console.log(` - Toot:    ${this.options.toot}`);
-      console.log(` - Discord: ${this.options.discord}`);
-    }
+    this.options = options;
 
     if (this.options.tweet) {
       this.options.count = 1; // Restrict to a single tweet
