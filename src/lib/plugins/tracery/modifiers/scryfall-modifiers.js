@@ -8,6 +8,10 @@ const logger = config.loggers.scryfall;
 const SCRYFALL_REQUEST_URL = 'https://api.scryfall.com/cards/random';
 const SCRYFALL_REQUEST_URL_NORMAL_CARDS_ONLY =  SCRYFALL_REQUEST_URL + '?q=-type%3Ascheme%20-type%3Aplane%20-type%3Avanguard%20-type%3Aphenomenon%20-st:set_promo%20-is:digital'
 
+function randomElement(array) {
+  return array && array[Math.floor(Math.random() * array.length)];
+}
+
 function getRandomCard() {
   return new Promise((resolve, reject) => {
     try {
@@ -40,7 +44,8 @@ function getRandomCard() {
 
 function randomScryfallCard() {
 	return getRandomCard().then(card => {
-		const result = `[_cardName1:${card.name.replace(/,/g, "#comma#")}][_imgUrl1:${card.image_uris.normal.replace(/:/g, "#colon#")}][_borderColor1:${card.border_color}]`;
+		const cardFace = card.card_faces ? randomElement(card.card_faces) : card; 
+		const result = `[_cardName1:${cardFace.name.replace(/,/g, "#comma#")}][_imgUrl1:${cardFace.image_uris.normal.replace(/:/g, "#colon#")}][_borderColor1:${card.border_color}]`;
 		logger.log('Found card: ' + result);
 		return result;
 	});
