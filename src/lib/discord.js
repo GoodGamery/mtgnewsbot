@@ -1,7 +1,7 @@
 // Util for posting to a webhook
 'use strict';
 const request = require('request');
-const config = require('../../config');
+const config = global.mtgnewsbot.config;
 const COLOR_RED = 14370336;
 const COLOR_BLUE = 4347636;
 

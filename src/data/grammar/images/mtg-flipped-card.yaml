@@ -1,0 +1,46 @@
+
+flippedCardImage: >
+  [#CONTENT.randomScryfallCard#]
+  [_cardname:#_cardName1#][_cardImgSrc:#_imgUrl1#][_borderColor:#_borderColor1#][_maskColor:#_translateMaskColor#]
+  #_cardname# <> #_cardname.reverse#  
+  {svg svgString=`#svgFlippedCard#`}
+
+_translateMaskColor: "#_borderColor.replace(gold,DarkGoldenrod)#"
+
+svgFlippedCard: |
+  <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="976" height="680">
+    <defs>       
+      <mask id="imageMaskLeft" maskUnits="userSpaceOnUse" mask-type="alpha">
+        <image x="0" y="0" width="244" height="680" xlink:href="./data/images/large-card-half-mask.png" />
+      </mask>  
+
+      <mask id="imageMaskRight" maskUnits="userSpaceOnUse" mask-type="alpha">
+        <image x="488" y="0" width="244" height="680" xlink:href="./data/images/large-card-half-mask.png" />
+      </mask>
+
+      <mask id="imageMaskLeft2" maskUnits="userSpaceOnUse" mask-type="alpha">
+        <image x="244" y="0" width="244" height="680" xlink:href="./data/images/large-card-half-mask.png" />
+      </mask>  
+
+      <g id="Card1">
+        <image xlink:href="#_cardImgSrc#" x="0" y="0" mask="url(\#imageMaskLeft)" width="488" height="680" />
+      </g>
+      <g id="Card2">
+        <image xlink:href="#_cardImgSrc#" x="488" y="0" mask="url(\#imageMaskRight)" width="488" height="680" />
+      </g>
+      <g id="Card3">
+        <image xlink:href="#_cardImgSrc#" x="0" y="0" width="488" height="680" />
+      </g>
+      <g id="Card4">
+        <image xlink:href="#_cardImgSrc#" x="0" y="0" mask="url(\#imageMaskLeft2)" width="488" height="680" />
+      </g>      
+    </defs>
+
+    <rect x="0" y="0" width="488" height="680" rx="16" ry="16" style="fill:#_maskColor#"></rect>    
+    <rect x="488" y="0" width="488" height="680" rx="16" ry="16" style="fill:#_maskColor#"></rect>      
+
+    <use xlink:href="\#Card1" x="0" y="0" />
+    <use xlink:href="\#Card2" x="0" y="0" transform="translate(976, 0) scale(-1, 1)"/>
+    <use xlink:href="\#Card3" x="488" y="0" transform="translate(1464, 0) scale(-1, 1)"/>
+    <use xlink:href="\#Card4" x="488" y="0"/>
+  </svg>

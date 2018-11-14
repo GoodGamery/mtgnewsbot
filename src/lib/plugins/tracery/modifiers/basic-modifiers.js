@@ -91,6 +91,10 @@ function randomInt(minOrMaxArg, maxArg) {
   return Math.floor(Math.random() * (max - min  + 1)) + min;
 }
 
+function reverse(s) {
+	return s.split('').reverse().join('');
+}
+
 function sIfNeeded(s) {
   switch (s.charAt(s.length -1)) {
     case 's':
@@ -224,6 +228,7 @@ module.exports = {
   noPunctuation,
   noSpaces,
   randomAlphaNumericString,
+  reverse,
   sAgreement,
   sIfNeeded,
   stripLeadingText,
