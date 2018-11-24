@@ -74,8 +74,8 @@ _gathererRuling2Dates:
 - "#_gathererRulingGenerateDates#[_gathererRulingImageDate1:#_randomGathererDate2#][_gathererRulingImageDate2:#_randomGathererDate4#]"
 - "#_gathererRulingGenerateDates#[_gathererRulingImageDate1:#_randomGathererDate4#][_gathererRulingImageDate2:#_randomGathererDate5#]"
 - "#_gathererRulingGenerateDates#[_gathererRulingImageDate1:#_randomGathererDate5#][_gathererRulingImageDate2:#_randomGathererDate6#]"
-- "[_date:#_randomGathererDate1#,#_randomGathererDate2#,#_randomGathererDate3#,#_randomGathererDate4#,#_randomGathererDate5#]#_gathererRulingGenerateDates#[_gathererRulingImageDate1:#_date#][_gathererRulingImageDate2:#_date#]"
-- "[_date:#_randomGathererDate1#,#_randomGathererDate2#,#_randomGathererDate3#,#_randomGathererDate4#,#_randomGathererDate5#]#_gathererRulingGenerateDates#[_gathererRulingImageDate1:#_date#][_gathererRulingImageDate2:#_date#]"
+- "#_gathererRulingGenerateDates#[_date:#_randomGathererDate1#,#_randomGathererDate2#,#_randomGathererDate3#,#_randomGathererDate4#,#_randomGathererDate5#]#_gathererRulingGenerateDates#[_gathererRulingImageDate1:#_date#][_gathererRulingImageDate2:#_date#]"
+- "#_gathererRulingGenerateDates#[_date:#_randomGathererDate1#,#_randomGathererDate2#,#_randomGathererDate3#,#_randomGathererDate4#,#_randomGathererDate5#]#_gathererRulingGenerateDates#[_gathererRulingImageDate1:#_date#][_gathererRulingImageDate2:#_date#]"
 
 _gathererRuling3Dates:
 - "#_gathererRulingGenerateDates#[_gathererRulingImageDate1:#_randomGathererDate1#][_gathererRulingImageDate2:#_randomGathererDate2#][_gathererRulingImageDate3:#_randomGathererDate3#]"
