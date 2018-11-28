@@ -8,9 +8,9 @@ svgComicHeadlinePrefix:
   - "Paths of the Planeswalkers"
 
 svgComicTemplate:
-  # - "#svgComicTemplate1#"
-  # - "#svgComicTemplate2#"
-  # - "#svgComicTemplate3#"
+  - "#svgComicTemplate1#"
+  - "#svgComicTemplate2#"
+  - "#svgComicTemplate3#"
   - "#svgComicTemplate4#"
 
 _svgComicDefaultTextSize:
