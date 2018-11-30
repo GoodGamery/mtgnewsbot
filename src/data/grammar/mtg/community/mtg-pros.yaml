@@ -313,7 +313,7 @@
     "#squadPrefix.capitalizeAll# [teamSuffix:Legends,Warriors,#characterClass.capitalizeAll.s#]",
     "#basicColors.capitalize# #placeNoun.capitalizeAll# [teamSuffix:Legends,Warriors,#characterClass.capitalizeAll.s#]"
   ],
-  "squadPrefix:": [
+  "squadPrefix": [
     "#direction# Coast",
     "#direction# Coast",
     "#otherSquadPrefix#"
