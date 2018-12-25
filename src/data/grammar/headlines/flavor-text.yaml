@@ -51,7 +51,7 @@ flavorText:
   - >
     "No wonder where you find them, #creatureTypes.s# love #pluralNounOrMassNoun#."
   - >
-    "We hold sacred the powers of #abstractNoun# and #abstractNoun#. #abstractNounMassNounOrEmotion.capitalize# and #abstractNounMassNounOrEmotion# are our [_adj:greatest,oldest,only,favorite,#adjSuperlative#][_what:weapons,regrets,problems,comforts,guides,obessions,sources of confusion]#_adj# #_what#." —#characterFactionOrRace.capitalize# #motto#
+    "We hold sacred the powers of #abstractNoun# and #abstractNoun#. #abstractNounMassNounOrEmotion.capitalize# and #abstractNounMassNounOrEmotion# are our [_adj:greatest,oldest,only,favorite,#adjSuperlative#][_what:weapons,regrets,problems,comforts,guides,obsessions,sources of confusion]#_adj# #_what#." —#characterFactionOrRace.capitalize# #motto#
   - >
     "#verbTransitive.capitalize# that which [_cannot:cannot,must not][_never:never,once][_was:was #_never#,is no longer,#_cannot# be] #_was# #verbTransitivePastTense#." —#itemNoun.capitalize# #inscription#
   - >
