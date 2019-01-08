@@ -812,7 +812,7 @@ svgComicDialogShortResponse:
   - "No chance."
   - "Interesting."
   - "[_how:,How ,That's ][_good:#_how# #kindaGood#]#_good.capitalize#."
-  - "#adjGood.capitalize#."
+  - "#kindaGood.capitalize#."
   - "You're #personPejorativeAny.a#."
   - "Try again."
   - "[_punct:?,?,.]How are you not getting this#_punct#"
