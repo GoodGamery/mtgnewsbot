@@ -119,11 +119,25 @@ function randomUpcomingMonthDay() {
   return formats.english(date) + referenceRules;
 }
 
-function randomFutureDate() {
-  const maxYears = 10; 
+function randomFutureDateObject(maxYears=10) {
   const date = new Date();
-  date.setDate(randomInt(1,maxYears) * randomInt(1, 365)); // choose a day 7-60 days in future
+  const offset = 365 - date.getDate();
+  const randomDays =  randomInt(0, 365);
+  const randomYears = randomInt(0,maxYears - 1);
+
+  date.setDate(date.getDate() + randomYears * 365 + randomDays);
+
+  return date;
+}
+
+function randomFutureDate(s, params) {
+  const date = randomFutureDateObject(params[0]); 
   return getMonthDayOrdinal(date) + ', ' + date.getFullYear();
+}
+
+function randomFutureYear(s, params) {
+	const date = new Date();
+  return '' + (date.getFullYear() + randomInt(params[0] === '1' ? 0 : 1,params[0]));
 }
 
 function randomGathererDates(s, params) {
@@ -153,5 +167,6 @@ module.exports = {
   randomGathererDates,
   randomMonthDay,
   randomUpcomingMonthDay,
-  randomFutureDate
+  randomFutureDate,
+  randomFutureYear
 };

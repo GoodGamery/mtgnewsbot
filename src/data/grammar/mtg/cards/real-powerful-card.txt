@@ -6,6 +6,7 @@ Agony Warp
 Arcbound Ravager
 Ancestral Recall
 Anger of the Gods
+Assassin's Trophy
 Bazaar of Baghdad
 Birthing Pod
 Black Lotus
@@ -65,6 +66,7 @@ Grave Titan
 Gush
 Harnessed Lightning
 Heartbeat of Spring
+Hydroid Krasis
 Jace, the Mind Sculptor
 Karn Liberated
 Kitchen Finks
@@ -116,6 +118,7 @@ Qasali Pridemage
 Reality Smasher
 Recurring Nightmare
 Reflector Mage
+Rhythm of the Wild
 Sakura-Tribe Elder
 Scalding Tarn
 Scroll Rack
@@ -142,10 +145,12 @@ Sword of Body and Mind
 Taiga
 Tainted Pact
 Tarmogoyf
+Teferi, Hero of Dominaria
 Tendrils of Agony
 Thing in the Ice
 Thoughtseize
 Thought-Knot Seer
+Thousand-Year Storm
 Thragtusk
 Thran Dynamo
 Time Vault

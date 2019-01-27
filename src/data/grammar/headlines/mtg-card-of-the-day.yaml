@@ -18,7 +18,7 @@ cotdLegendaryCreatureSearch: "[_customQuery:t=legendary t=creature][#cotdCustomS
 cotdCustomSearch: "[#_customQuery.cardSearchCustomQuery(1)#][_cardname:#_cardName1#][_cardset:#_cardSet1#][_cardtype:#_cardSomeTypeOrSubtype1#][_cardcolor:#_cardColor1#][_cotdImgUrl:#_cardImgUrl1#][_cardDesc:#_cardCategory#][_cardDescCategory:#_cardCategoryClass#]"
 cotdPrefinedCustomQuerySearch: "[#_predefinedQuery#][_cardname:#_cardName1#][_cardset:#_cardSet1#][_cardtype:#_cardSomeTypeOrSubtype1#][_cardcolor:#_cardColor1#][_cotdImgUrl:#_cardImgUrl1#][_cardDesc:#_cardType#][_cardDescCategory:#_cardCategoryClass#]"
 
-initCotdImage: "[_cardSomeCreatureType1:#creatureTypes#]"
+initCotdImage: "[_cardSomeCreatureType1:#creatureTypes#][#somePronoun#]"
 
 cotdImageNameAndUrl: "[_cardname:#_cardName1#][_cotdImgUrl:#_cardImgUrl1#][_cardSet1:#randomCardSet#]"
 
@@ -118,11 +118,11 @@ cotdWordPairPonderable:
 cotdCustomQueryDecscription:
 - >
   [#cotdLegendaryCreatureSearch#]
-  [_preposition:by][_cause:#causeOfDeath#][_deathAdj:fabled,fateful,infamous,notorious,historical]This top-down card inspired by #historicalFigure# turns #their# #_deathAdj# death#sPlural# #_preposition# #_cause# on #their# enemies—[_target:opponents,friends,#personRelationalUnique#][_andYours:and yours,and your opponents,and your #_target#,and #character#'s #_target#,pet #animal#,lucky you,fortunately for you]#_andYours#.
+  [_preposition:by][_cause:#causeOfDeath#][_deathAdj:fabled,fateful,infamous,notorious,historical]This top-down card inspired by #historicalFigure# turns #their# #_deathAdj# death#sPlural# #_preposition# #_cause# on #their# enemies—[_target:opponents,friends,#personRelationalUnique#][_andYours:and yours,and your opponents,and your #_target#,and #character#'s #_target#,and #their# pet #animal#,lucky you,fortunately for you]#_andYours#.
 - >
   [#cotdLegendaryCreatureSearch#]
   [_legendImgUrl:#_cardImgUrl1#][_legendSubtype:#_cardSubtype1#]#_legendName# has [_agenda:a plan,an agenda,a bright idea,a mission in life,a puzzle to solve,a philosophical question to ponder,homework to do,a survey to conduct,a dispute to settle,a bee in their bonnet]#_agenda#. They're going to [_solve:decide,answer the question of,find out,finally determine,ask #planeswalkerFirstName#]#_solve# #cotdWordPairPonderable#.[_cardImgUrl1:#_legendImgUrl#]
-- >  
+- >
   [_customQuery:t=aura t|=equipment t|=artifact t!=creature][#cotdCustomSearch#]
   Long ago, [_adj:inventive,resourceful,desparate,clever,crafty,beleagured]#_adj.a# #creatureTypes# decided to [_adhere:stick,slap,affix]#_adhere# some #massNoun.hyphenate#-infused [_equipmentPart:#bodypart# armor,blades,spikes,bracers,pauldrons,gauntlets,rivets,ribbons,pinstripes,toothpicks,pipe cleaners,pom poms,rhinestones]#_equipmentPart# onto what appears to be [_surface:#itemNoun#,pair of #itemNoun.s#]#_surface.a#. Today, almost every #characterClass# [_worn:has donned,has worn,wields,sports]#_worn# [_theArmor:one of these,a pair]#_theArmor# to #creatureActionVerb# as they [_verb:dash,rumble,rush,roll,charge,barrel,plow]#_verb# [_intoBattle:into battle,into the fray,into combat,into the red zone,through the breach,into the kill zone,into the night]#_intoBattle#.
 - >

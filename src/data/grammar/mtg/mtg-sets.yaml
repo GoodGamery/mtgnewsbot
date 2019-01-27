@@ -99,12 +99,13 @@
   ],
   "recentCardSet": [
     "Guilds of Ravnica",
+    "Ravnica Allegiance",
     "Battlebond",
     "Dominaria",
     "Core 2019",
     "Unstable",
     "Commander 2018",
-    "Masters 25",
+    "Ultimate Masters",
     "[_otherSet:Signature Spellbook#colon# Jace,Global Series#colon# Jiang Yanggu & Mu Yanling]#_otherSet#"
   ],
   "standardCardSet": [
@@ -115,8 +116,9 @@
     "Rivals of Ixalan"
   ],
   "teaserCardSet": [
-    "Ravnica Allegiance",
-    "Core Set 2020",
+    "War of the Spark",
+    "Core Set [_year:#CONTENT.randomFutureYear(2)#]#_year#",
+    "Commander [_year:#CONTENT.randomFutureYear(1)#]#_year#",
     "#codename#",
     "#novelCardSetName#"
   ],
