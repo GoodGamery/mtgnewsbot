@@ -101,3 +101,7 @@ Eternalize
 Afflict
 Explore
 Enrage
+Adapt
+Afterlife
+Mentor
+Riot
