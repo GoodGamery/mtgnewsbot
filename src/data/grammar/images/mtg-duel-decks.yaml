@@ -43,7 +43,7 @@ _duelDecksCombatants:
 - "#_duelDecksCombatantsThings#"
 - "#_duelDecksCombatantsThings#"
 - "#_duelDecksCombatantsThings#"
-- "#_duelDecksCardfinder#"
+# - "#_duelDecksCardfinder#"
 
 _duelDecksCombatantsEntities:
   - "[_personality:#planeswalkerFirstName#][_duelDecksCombatant2:#alternativePersonality#,#planeswalkerFirstName#,#_duelDecksCombatantAnything#][_duelDecksCombatant1:#_personality#]"

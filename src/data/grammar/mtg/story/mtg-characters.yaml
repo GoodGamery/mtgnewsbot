@@ -297,8 +297,8 @@
     "[_element:fire,wind,tide,stone]#nounCompoundWorthy##_element# mystic",
     "#nounCompoundWorthy#weaver",
     "#massNoun#mancer",
-    "#placeNoun# witch",
-    "#abstractNounMassNounOrEmotion# priest[_of:, of #godCharacter#]#_of#"
+    "#placeNoun# witch"
+    # ,"#abstractNounMassNounOrEmotion# priest[_of:, of #godCharacter#]#_of#"
   ],
   "minorCharacterClass": [
     "guardcaptain",
