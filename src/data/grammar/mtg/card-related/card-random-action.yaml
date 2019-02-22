@@ -98,7 +98,7 @@ cardRandomAction_Tranform_One: "#_them_it#transform#s# #_cardActionVerbPermanent
 cardRandomAction_Tranform_Many: "#_them_them#transform#s# #_cardActionVerbPermanentMulti# into #cardRandomAction_Tranform_Target_Multi#"
 
 cardRandomAction_Tranform_Target_Single:
-- "#randomPermanentCard##_them_it#"
+- "#randomAnyCard##_them_it#"
 - "a random #cardClassificationBase##_them_it#"
 - "a random #cardTypes##_them_it#"
 
@@ -149,15 +149,15 @@ _whoseOwnMulti:
 
 _controlled: ["", " #they# control#s#", " #their# opponent controls"]
 
-randomNonland: "[#randomNonlandCard#]#_cardFamiliarName1#"
+randomNonland: "[#randomAnyCard#]#_cardFamiliarName1#"
 
 _cardActionVerbSingleOptions:
 - "#_objCount##_them_it#"
 - "#_object.a##_controlled##_them_it#"
-- "#randomPermanentCard##_them_it#"
+- "#randomAnyCard##_them_it#"
 
 _cardActionVerbPermanent: ["#_cardActionVerbPermanentSingle#","#_cardActionVerbPermanentMulti#"]
-_cardActionVerbPermanentSingle: "#_them_it#[_count:#_countSingular#][_object:permanent,#cardClassificationBase#,#cardClassificationBase#,#cardCategory#,#randomPermanentCard#,#cardTypes#]#_cardActionVerbSingleOptions#"
+_cardActionVerbPermanentSingle: "#_them_it#[_count:#_countSingular#][_object:permanent,#cardClassificationBase#,#cardClassificationBase#,#cardCategory#,#randomAnyCard#,#cardTypes#]#_cardActionVerbSingleOptions#"
 _cardActionVerbPermanentMulti: "#_them_them#[_own:, own][_count:#_countMultiple#,#c_allOfTheir# opponent#possessive#,#c_allOfTheir##_own#][_object:permanents,#cardClassificationBase.sIfNeeded#,#cardClassificationBase.sIfNeeded#,#cardCategory.sIfNeeded#,#cardTypes.sIfNeeded#][_result:#_objCount#,#_countMultiple# #_object##_controlled#]#_result#"
 
 _cardActionVerbCardsInHand: ["#_cardActionVerbCardsInHandSingle#","#_cardActionVerbCardsInHandMulti#"]

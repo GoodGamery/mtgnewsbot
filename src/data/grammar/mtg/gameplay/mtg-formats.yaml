@@ -103,7 +103,7 @@
     "#deckQualityAdj.capitalizeAll# Cube",
     "#keyword.capitalizeAll# Cube",
     "#cardCategory.capitalizeAll# Cube",
-    "[#searchableCardCategory#]#_cardCategory.capitalizeAll# Cube",
+    # "[#searchableCardCategory#]#_cardCategory.capitalizeAll# Cube",
     "#searchableColor.capitalizeAll# Cube",
     "[_theme:#_cubeMattersTheme#]#_theme.capitalizeAll# #_theme.sAgreement(Matter)# Cube",
     "#randomCardSet# Cube",

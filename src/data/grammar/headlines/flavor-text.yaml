@@ -88,8 +88,8 @@ flavorText:
     "I am the #nounVerber#, the #sealInscriptionDescription#.\"  —[_inscription:Seal inscription,#itemNoun.capitalize# inscription]#_inscription#
   - >
     "The #creatureTypeOrCharacterClass.s# of [_place:#minorStoryLocation#,#nonPlaneLocation#]#_place# treat each [_what:#itemNoun#,#animal#]#_what# with #emotion# for the #creatureTypeOrCharacterClass# it will become."
-  - >
-    "[#cardQueryMultiWordNoncreatureArtifact#][_quote:¡Yo quiero #_cardName#!,Show me the #_cardName#!]#_quote#"
+  # - >
+  #   "[#cardQueryMultiWordNoncreatureArtifact#][_quote:¡Yo quiero #_cardName#!,Show me the #_cardName#!]#_quote#"
   - >
     "[#somePronoun#][_they:#they#]#_they.capitalize# #are# #judgeJury#, #judgeJury#, and #juryExecutioner# because #_they# #verbTransitivePastTense# them all."
   - >

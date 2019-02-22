@@ -11,7 +11,7 @@ svgComicTemplate:
   - "#svgComicTemplate1#"
   - "#svgComicTemplate2#"
   - "#svgComicTemplate3#"
-  - "#svgComicTemplate4#"
+  # - "#svgComicTemplate4#"
 
 _svgComicDefaultTextSize:
   - "18px"
