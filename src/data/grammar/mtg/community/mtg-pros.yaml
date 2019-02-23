@@ -57,7 +57,7 @@
       "Jacob Wilson[_proNickname:Jacob Wilson][_proFullName:Jacob Wilson][#malePronouns#]",
       "Steve Rubin[_proNickname:Steve Rubin][_proFullName:Steve Rubin][#malePronouns#]",
       "Matt Nass[_proNickname:Matt Nass][_proFullName:Matt Nass][#malePronouns#]",
-      "Bob Maher[_proNickname:Bob Maher,The Great One][_proFullName:Bob Maher#comma#, Jr.]",
+      "Bob Maher[_proNickname:Bob Maher,The Great One][_proFullName:Bob Maher#comma# Jr.]",
       "Urza[_proNickname:Urza][_proFullName:Urza][#malePronouns#]",
       "RoboRosewater[_proNickname:RoboRosewater][_proFullName:RoboRosewater][#neutralPronouns#]",
       "GLEEMAX[_proNickname:GLEEMAX][_proFullName:GLEEMAX][#neutralPronouns#]"
@@ -83,7 +83,7 @@
     "Baby #_personality#",
     "Bizarro #_personality#",
     "Compleat #_personality#",
-    "#_personality#, Jr."
+    "#_personality##comma# Jr."
   ],
 
   "jokePersonality": [
