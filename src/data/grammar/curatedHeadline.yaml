@@ -19,11 +19,11 @@ curatedHeadlineA4:
 - "#mtgComic#"
 - "#financeHeadline#"
 - "#financeHeadline#"
-# - "#bugBlogHeadline#"
+- "#bugBlogHeadline#"
 - "#randomTextHeadline#"
 
 curatedHeadlineA5:
-# - "#imgClassifieds#"
+- "#imgClassifieds#"
 - "#smallImageHeadline1#"
 - "#smallImageHeadlineOrRandomText1#"
 
@@ -42,10 +42,10 @@ curatedHeadlineB2:
 - "#randomTextHeadline#"
 - "#communityNews#"
 - "#communityNews#"
-# - "#bugBlogHeadline#"
+- "#bugBlogHeadline#"
 
 curatedHeadlineB3:
-# - "#mtgDeckTechGraphic#"
+- "#mtgDeckTechGraphic#"
 - "#smallImageHeadline1#"
 - "#smallImageHeadlineOrRandomText1#"
 
@@ -73,29 +73,29 @@ randomTextHeadline:
 - "#playGuide#"
 - "#tournamentNews#"
 - "#clickbait#"
-# - "#bugBlogHeadline#"
+- "#bugBlogHeadline#"
 
 smallImageHeadline1:
-# - "#cardCallout#"
-# - "#mtgoTwitterStyleHeadline#"
+- "#cardCallout#"
+- "#mtgoTwitterStyleHeadline#"
 - "#graphicAnnouncement#"
 
 smallImageHeadline2:
-# - "#cardCallout#"
-# - "#mtgoTwitterStyleHeadline#"
+- "#cardCallout#"
+- "#mtgoTwitterStyleHeadline#"
 - "#gathererRulingImage#"
 
 mediumImageHeadline1:
 - "#graphicAnnouncement#"
-# - "#mtgDeckTechGraphic#"
+- "#mtgDeckTechGraphic#"
 - "#tournamentLogo#"
-# - "#imgClassifieds#"
+- "#imgClassifieds#"
 
 mediumImageHeadline2:
 - "#graphicAnnouncement#"
-# - "#mtgDeckTechGraphic#"
+- "#mtgDeckTechGraphic#"
 - "#tournamentLogo#"
-# - "#imgClassifieds#"
+- "#imgClassifieds#"
 
 clickbaitHeadline:
 - "#clickbaitHeadline#"
@@ -132,8 +132,8 @@ smallImageHeadlineOrRandomText2:
 
 largeOccasionalImageHeadline1:
 - "#headlineKeepOrMulligan#"
-# - "#svgStreamerShowdown#"
+- "#svgStreamerShowdown#"
 
 largeOccasionalImageHeadline2:
 - "#inGraphics#"
-# - "#svgPackOnePickOne#"
+- "#svgPackOnePickOne#"
