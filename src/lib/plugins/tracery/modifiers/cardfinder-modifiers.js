@@ -295,10 +295,8 @@ async function cardSearchCustomQuery(s, params) {
 }
 
 async function searchCardFinder(query) {
-  const SEARCH_API_JSON_URL = 'https://goodgamery.com/api/mtg/card/json';
-
   return new Promise((resolve, reject) => {
-    request.get({ url: SEARCH_API_JSON_URL, qs: query }, (err, data, body) => {
+    request.get({ url: config.cardfinder.apiUrl, qs: query }, (err, data, body) => {
       logger.log('REQUEST DATA '); logger.log(JSON.stringify(data));
 
       if (err) {
