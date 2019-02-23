@@ -6,9 +6,9 @@ randomOrSearchCard:
 - "#randomRealCard#"
 - "#randomRealCard#"
 - "#randomRealCard#"
-# - "[_customQuery:t=creature][#_customQuery.cardSearchCustomQuery#][_cardDesc:#_cardSubtype1.lowercase#]#_cardName1#"
-# - "[#CARDFINDER.randomCard#][_cardDesc:#_cardSomeTypeOrSubtype1.lowercase#]#_cardName1#"
-# - "[#searchableCardCategory#][#_cardCategorySearchTerm.cardSearchByText#][_cardDesc:#_cardCategory.lowercase#]#_cardName1#"
+- "[_customQuery:t=creature][#_customQuery.cardSearchCustomQuery#][_cardDesc:#_cardSubtype1.lowercase#]#_cardName1#"
+- "[#CARDFINDER.randomCard#][_cardDesc:#_cardSomeTypeOrSubtype1.lowercase#]#_cardName1#"
+- "[#searchableCardCategory#][#_cardCategorySearchTerm.cardSearchByText#][_cardDesc:#_cardCategory.lowercase#]#_cardName1#"
 
 cardCalloutText:
 - "WE'RE NOT WRONG: The #_cardDesc# you're thinking of is"

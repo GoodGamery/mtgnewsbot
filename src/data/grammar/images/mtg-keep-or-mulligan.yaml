@@ -69,14 +69,14 @@ svgMulliganBeforeText:
   bracket (you [_outcome:won,lost,drew,conceded,got a game loss,got a match loss,lost
   your #gameAccessory#,took a nap,broke a sleeve]#_outcome# last round and so did
   [#somePronoun#]#they#). Your opening hand is:
-# - >
-#   [_aboveTextSize:22px]You’re playing #_deckColor.a# #creatureTypes#-based deck in
-#   #cardSet# Draft. [_baseColor:#basicColors#]Your deck is base-#_baseColor# and your
-#   mana is 1#num0-9# #basicLands#, #num1-5# [_otherLands:#randomLandCardByColor#,#limitedLands#]#_otherLands#, [_n:1,1,2]#_n# #realLandCard#. 1#num0-9# of your cards are #_baseColor#, with two
-#   of those being [_multiplier:double,double,triple]#_multiplier#-#_baseColor#. Your
-#   deck is [_rating:above average,below average,average,amazing,good,bad,a trainwreck,a
-#   steaming pile of garbage,#deckQualityAdj#,#deckQualityAdj#]#_rating# (a #num0-9#-#num0-9# deck). You’re on the #playOrDraw#
-#   against #opposingDeck#. Your opening hand is:
+- >
+  [_aboveTextSize:22px]You’re playing #_deckColor.a# #creatureTypes#-based deck in
+  #cardSet# Draft. [_baseColor:#basicColors#]Your deck is base-#_baseColor# and your
+  mana is 1#num0-9# #basicLands#, #num1-5# [_otherLands:#randomLandCardByColor#,#limitedLands#]#_otherLands#, [_n:1,1,2]#_n# #realLandCard#. 1#num0-9# of your cards are #_baseColor#, with two
+  of those being [_multiplier:double,double,triple]#_multiplier#-#_baseColor#. Your
+  deck is [_rating:above average,below average,average,amazing,good,bad,a trainwreck,a
+  steaming pile of garbage,#deckQualityAdj#,#deckQualityAdj#]#_rating# (a #num0-9#-#num0-9# deck). You’re on the #playOrDraw#
+  against #opposingDeck#. Your opening hand is:
 _aboveTextSize: 24px
 svgMulliganHeaderTextStyle: >
   color: white; font-size: 72px; line-height: 84px; font-family:
@@ -97,12 +97,12 @@ svgMulliganHandCard:
 - "#realCard#"
 - "#realCard#"
 - "#realCard#"
-# - "#randomNonlandCard#"
-# - "#randomNonlandCard#"
-# - "#randomNonlandCard#"
-# - "#randomLandCardByColor#"
-# - "#randomLandCardByColor#"
-# - "#randomLandCardByColor#"
+- "#randomNonlandCard#"
+- "#randomNonlandCard#"
+- "#randomNonlandCard#"
+- "#randomLandCardByColor#"
+- "#randomLandCardByColor#"
+- "#randomLandCardByColor#"
 
 svgMulligan: |
     <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="1849" height="840">
