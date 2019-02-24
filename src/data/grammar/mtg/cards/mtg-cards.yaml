@@ -1,22 +1,22 @@
 {
   randomAnyCard: [
     "#card#",
-    # "[#CARDFINDER.randomCard#]#_cardName1#"
+    "[#CARDFINDER.randomCard#]#_cardName1#"
   ],
 
   randomRealCard: [
     "#realCard#",
-    # "[#CARDFINDER.randomCard#]#_cardName1#"
+    "[#CARDFINDER.randomCard#]#_cardName1#"
   ],
 
   randomRealCardExcludeBasics: [
     "#realCard#",
-    # "[#randomCardExcludeBasics#]#_cardName#"
+    "[#randomCardExcludeBasics#]#_cardName#"
   ],
 
   randomCardAlone: [
     "#cardAlone#",
-    # "[#CARDFINDER.randomCard#]#_cardName1#"
+    "[#CARDFINDER.randomCard#]#_cardName1#"
   ],
 
   imgCard: "{htmlImg htmlImgString=`<img src=\"#cardFinderUrl##_cardname#\">`}",
@@ -53,8 +53,8 @@
     "#basicLands#",
     "#dualLands#",
     "#utilityLands#",
-    "#limitedLands#"
-    # ,"#randomNonbasicLandCard#"
+    "#limitedLands#",
+    "#randomNonbasicLandCard#"
   ],
 
   realCard: [

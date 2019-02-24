@@ -18,6 +18,7 @@ free
 denial
 duplication
 torture
+#randomPermanentCard#
 #pluralItemNounOrMassNoun#
 #abstractMassOrPluralNounOrEmotion#
 #abstractNounPluralItemNounMassNounOrEmotion#

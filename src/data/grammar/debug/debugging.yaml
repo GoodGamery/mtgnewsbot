@@ -28,19 +28,19 @@ dbgReplaceEscapedComma:
 dbgStringWithCommas:
  - "banana\\, apple, and orange"
  
-dbgAnyCuratedHeadline:
-- "#curatedHeadlineA1#"
-- "#curatedHeadlineA2#"
-- "#curatedHeadlineA3#"
-- "#curatedHeadlineA4#"
-- "#curatedHeadlineA5#"
-- "#curatedHeadlineA6#"
-- "#curatedHeadlineB1#"
-- "#curatedHeadlineB2#"
-- "#curatedHeadlineB3#"
-- "#curatedHeadlineB4#"
-- "#curatedHeadlineB5#"
-- "#curatedHeadlineB6#"
+dbgAnyCuratedHeadline:  
+- "#curatedHeadlineA1#" 
+- "#curatedHeadlineA2#" 
+- "#curatedHeadlineA3#" 
+- "#curatedHeadlineA4#" 
+- "#curatedHeadlineA5#" 
+- "#curatedHeadlineA6#" 
+- "#curatedHeadlineB1#" 
+- "#curatedHeadlineB2#" 
+- "#curatedHeadlineB3#" 
+- "#curatedHeadlineB4#" 
+- "#curatedHeadlineB5#" 
+- "#curatedHeadlineB6#" 
 
 capitalizeAllHijinks:
 - Elves vs. Goblins

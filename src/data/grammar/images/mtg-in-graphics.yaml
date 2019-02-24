@@ -37,7 +37,7 @@ inGraphicsStep:
 - 'Attach both cards to #gameAccessory.a#'
 - 'Place #_card2# into #_card1#''s sleeve'
 - 'Write [_phrase:#mtgCatchphrase#,#mtgSlangTerm#][_loveHate:love,hate][_text:#realPowerfulCard#,#_phrase#,I #_loveHate# #anyPersonality#]“#_text#” on #_card2# with [_implement:sharpie,crayon,pencil,permanent marker]#_implement.a#'
-# - 'Transform #_card1# to flip #_card2# to unmorph #randomPermanentCard#'
+- 'Transform #_card1# to flip #_card2# to unmorph #randomPermanentCard#'
 - 'Throw #_card1# across the table while [_verbing:shouting,muttering,screaming,complaining,blathering,ranting,wisecracking]#_verbing# about #gameConcept#'
 - 'Ask a judge [_otherThing:#_card2#,#keyword#][_question:how #_card1# and #_otherThing# interact,for the oracle text of #_otherThing#]#_question#'
 - 'Look extremely puzzled for #num2-9# minutes'
@@ -47,15 +47,15 @@ inGraphicsStep:
 - "Tear #_card1# into pieces and [_where:up your nose,into your ears,into your pockets,into your cheeks like a chipmunk,down the front of your pants][_then:eat it,sprinkle them over your opponent's head,cram it #_where#,frantically try to piece them back together]#_then#"
 - Move to the beginning of combat step
 - "Ask your opponent [_really:really a,a good,their favorite][_question:“how many cards in hand?”,“mind if I smoke?”,“would you like some #pluralNounOrMassNoun#?”,“got any trades?”,“any fast effects?”,“can I take that back?”,“come here often?”,if #_eitherCard# is #_really# #typeOfCard#,if they think you look like #character#,“just who do you think your are?”,“am I being detained?”,about #massNoun# magic,if it's #occasion#]#_question#"
-# - "Tap [_what:too much mana,too little mana,exactly the right amount of mana,#randomNonbasicLandCard#,#count# #basicLands.sIfNeeded#]#_what#"
+- "Tap [_what:too much mana,too little mana,exactly the right amount of mana,#randomNonbasicLandCard#,#count# #basicLands.sIfNeeded#]#_what#"
 - "“Accidentally” reveal #_eitherCard# while shuffling"
-# - '[_tutorCard:#adj.capitalizeAll# Tutor,#randomTutorCard#][_tutor:Tutor for #_eitherCard#,Search for #_eitherCard# with #_tutorCard#]#_tutor#'
+- '[_tutorCard:#adj.capitalizeAll# Tutor,#randomTutorCard#][_tutor:Tutor for #_eitherCard#,Search for #_eitherCard# with #_tutorCard#]#_tutor#'
 - 'Cast [_nameCard:Pithing Needle,Meddling Mage,Demonic Consultation,Predict,Tunnel Vision]#_nameCard# naming #_card1#'
 - 'Discard #_eitherCard# to [_searchString:discard a card][_whatCard:Pack Rat,#randomPermanentWithText#]#_whatCard#'
 - 'Make #count# copies of #_eitherCard# with [_searchString:copy target,copy of target]#randomCardWithText#'
 - "Cast #_card1#, immediately say [_oops:Oops,whoops,whoopsie-daisy!,my bad,I'm such a klutz]“Oops”, pick it back up, and cast #_card2#"
 - 'Pitch #_eitherCard# to #verbGerund.capitalizeAll# Shoal'
-# - "Hold #_eitherCard# to your face and [_what:pretend to study the rules text,quietly recite the rules text of #randomNonlandCard#,quietly read its rules text out loud,very slowly sound out each word of rules text]#_what#"
+- "Hold #_eitherCard# to your face and [_what:pretend to study the rules text,quietly recite the rules text of #randomNonlandCard#,quietly read its rules text out loud,very slowly sound out each word of rules text]#_what#"
 - 'Drop #_eitherCard# into your lap[_then:, and sneakily replace it with #randomAnyCard.a#]#_then#'
 - 'Tap emphatically on #_card2# while staring your opponent straight in the eyes'
 - 'Drop your cards on the table and give your opponent [_expression:a puzzled smile,a sultry grin,a bemused smirk,an exaggerated pout,a dramatic flourish,a firm handshake,a disapproving frown,a pitiful whimper,two big thumbs up,a signed photograph of yourself]#_expression#'
@@ -78,9 +78,9 @@ inGraphicsStep:
 - "[_perform:Perform,Stage,Put on]#_perform# [_adj:short,lengthy,theatrical]#_adj.a# “puppet show” with #_card1# and #_card2#"
 - "If you are [_lucky:lucky,smart,charming,skilled,attractive,crazy,powerful,fortunate,brave]#_lucky# enough to [_open:open,be passed,open or be passed,own,play]#_open# #_card1.a#, cast it"
 # - "Cast #_card2# on one of your #cardPermanentType.s# and #randomKeywordAction# thanks to #_card1#"
-# - "Cast #_eitherCard# and search for [#cotdCreatureTypeSearch#][_target:#_creatureType#,#cardCategoryTerm#]#_target.a# (e.g. [_targetCard:#_cardname#,#randomCreatureCard#,#randomRealCard#]#_targetCard#)"
+- "Cast #_eitherCard# and search for [#cotdCreatureTypeSearch#][_target:#_creatureType#,#cardCategoryTerm#]#_target.a# (e.g. [_targetCard:#_cardname#,#randomCreatureCard#,#randomRealCard#]#_targetCard#)"
 - "[_do:Draw,Discard,Reveal,#cardAbilityVerb#]#_do.capitalize# [_card:card,permanent]#_card.a#. If it's [_what:#deckQualityAdj#,#cardCategory.a#,#cardQuality.a# card,#randomRealCard#,#_eitherCard#]#_what#, [_doWhat:start again,#gameAction#]#_doWhat#!"
-# - "[_cast:Cast,Play]#_cast# the best [#randomCategoryCard#]#_cardCategory.s# available. We suggest #_cardName# and [_otherCard:#_eitherCard#,#randomAnyCard#]#_otherCard#."
+- "[_cast:Cast,Play]#_cast# the best [#randomCategoryCard#]#_cardCategory.s# available. We suggest #_cardName# and [_otherCard:#_eitherCard#,#randomAnyCard#]#_otherCard#."
 - "[_cast:Cast,Play]#_cast# the #cardSuperlative# [_what:#_card2Type#,#cardCategory#]#_what.lowercase# [_where:available,in the game,in #constructedFormat#,there is]#_where#: #_card2#."
 - "#randomKeywordAction.capitalize#"
 - "#randomKeywordAction.capitalize#"
@@ -91,12 +91,12 @@ inGraphicsStep:
   [_other:#_container.a# of #pluralNounOrMassNoun#,#_adj.a# #itemNoun#,a #_bookAdj# copy of #_book#,a kiss,a song and dance,a price to be determined later]
   [_price:#priceUSD#,#priceUSD#,#descriptiveCard#,conceding the match,#_other#]
   Offer to #buySell# #_card1# #_buyOrSellFrom# your opponent #_buyOrSellFor# #_price#
-# - >
-#   [_cardTypeQuery:instant][_carderize:#randomTypeCardWithOneWordName#]
-#   [_where:into your graveyard,onto the battlefield,into your pocket,into your hand,on top of your head,on top of your library,on top of one of your opponent's #cardPermanentType.s#]
-#   [_doWhatSubSearch:put it #_where#,#keywordAction.lowercase# it,put it #_where#. Then #cardAbilityVerb.lowercase# it,#randomKeywordCardAction#,swap it with #cardPermanentType.a# on the battlefield][_whose:your,your,your opponent's]
-#   [_doWhat:search #_whose# library for it and #_doWhatSubSearch#,put it onto the battlefield and #cardAbilityVerb.lowercase# it,#cardAbilityVerb.lowercase# it. Then #randomKeywordCardAction#]
-#   "#_carderize.capitalize#" #_eitherCard# (#_doWhat#)
+- >
+  [_cardTypeQuery:instant][_carderize:#randomTypeCardWithOneWordName#]
+  [_where:into your graveyard,onto the battlefield,into your pocket,into your hand,on top of your head,on top of your library,on top of one of your opponent's #cardPermanentType.s#]
+  [_doWhatSubSearch:put it #_where#,#keywordAction.lowercase# it,put it #_where#. Then #cardAbilityVerb.lowercase# it,#randomKeywordCardAction#,swap it with #cardPermanentType.a# on the battlefield][_whose:your,your,your opponent's]
+  [_doWhat:search #_whose# library for it and #_doWhatSubSearch#,put it onto the battlefield and #cardAbilityVerb.lowercase# it,#cardAbilityVerb.lowercase# it. Then #randomKeywordCardAction#]
+  "#_carderize.capitalize#" #_eitherCard# (#_doWhat#)
 
 buySell:
 - "buy[_buyOrSellFrom:from][_buyOrSellFor:for]"
