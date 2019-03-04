@@ -12,6 +12,9 @@ class Config {
 	constructor(overridePath=DEFAULT_OVERRIDE_PATH) {
 
 		let base = {
+			cardfinder: {
+				apiUrl: 'https://mtgcardfinder.herokuapp.com/json'
+			},
 		  defaultGrammarPath:  DEFAULT_GRAMMAR_PATH,
 		  debugOptions: {
 		    deleteTempImages: true
