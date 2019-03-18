@@ -14,10 +14,13 @@
       "Type 4",
       "Two-Headed Giant",
       "Kitchen Table Magic",
+      "Multiplayer",
       "Team Unified #constructedFormat#",
       "Canadian #popularFormat#",
       "#alternativeConstructedFormat#",
-      "#alternativeDraftFormat#"
+      "#alternativeDraftFormat#",
+      "Magic",
+      "[_stakes:friendly,competetive,casual]#_stakes# #format#"
   ],
   "normalFormat": [
       "Standard",

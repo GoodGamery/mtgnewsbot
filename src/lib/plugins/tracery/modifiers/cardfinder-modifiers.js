@@ -381,7 +381,7 @@ async function cardFinderSearch(query, params, additionalFields) {
 
       let name = rawName;
       const set = traceryEscape(card.set);
-      const setCode = traceryEscape(card.code);      
+      const setCode = traceryEscape(card.setCode);      
       const rarity = traceryEscape(card.rarity);      
       const type = randomElement(card.types);
       const subtype = randomElement(card.subtypes);

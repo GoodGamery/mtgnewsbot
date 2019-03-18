@@ -203,26 +203,42 @@ techCardAttribute:
 - "#adj#"
 - "#cardQuality#"
 
+_techSingularApproach:
+- practicing
+- understanding
+- mastering
+- analyzing
+
+_strategyJudgement:
+- good
+- bad
+- "#adjJudgement#"
+
 techSingular:
 - "learning to beat #deckArch#"
-- "understanding #deckArch# matchups"
-- "understanding #techCardCategory#"
+- "#_techSingularApproach# [_matchup:your #deckArch# matchups,the #deckArch# matchup]#_matchup#"
+- "#_techSingularApproach# #techCardCategory#"
 - "playtesting #format#"
 - "playing #num2-99# hours of #format# every week"
 - "solving the #format# metagame"
 - sideboard tech
-- sideboarding
-- good sideboarding
-- bad sideboarding
-- good card evaluation skills
-- practicing your shuffling technique
+- "[_using:,using ,practicing ,practicing your ,executing ,#_techSingularApproach# ][_what:sideboarding,sideboarding,deckbuilding][_techs:techniques,strategies,approaches]#_using##_what# #_techs#"
+- "#_strategyJudgement# sideboarding"
+- "#_strategyJudgement# card evaluation skills"
+- "#_techSingularApproach# your shuffling technique"
 - mana weaving
 - pile shuffling
 - power-level errata
 - "always calling [_face:heads,tails]#_face#"
 - "#mtgQuestionablePractice#"
-- "always playing #randomRealCard#"
+- "always [_inOut:, in, in, out, out][_playing:playing,maindecking,sideboarding#_inOut#][_card:#randomRealCard#,#techCardCategory.sIfNeeded#]#_playing# #_card#"
 - "#nounActivity#"
+- alpha striking
+- "[_approach:,#_techSingularApproach# ,#_techSingularApproach# ,#_techSingularApproach# ][_traditional:Paris,Vancouver,London][_city:#_traditional#,#city#]#_approach#the #_city# Mulligan"
+- going all-in
+- "#_techSingularApproach# #gameConcept#"
+- "sandbagging #techCardCategory.sIfNeeded#"
+- "[_when:during,during,before,after][_spells:spells,instants,cards,#spellType.sIfNeeded#][_whose:your,your,your opponent's][_yourSpells:#_spells#,#_spells#,your #_spells#]always playing #_yourSpells# #_when# #_whose# #gameStep.lowercase#"
 
 techPlural:
 - rotating formats

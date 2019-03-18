@@ -9,6 +9,7 @@
   "abstractMassOrPluralNounGameConceptOrEmotion": ["#abstractNoun#","#massNoun#","#pluralNoun#","#gameConcept#","#emotion#"],
   "itemNounOrMassNoun": ["#itemNoun#","#massNoun#"],
   "pluralItemNounOrMassNoun": ["#itemNoun.s#","#massNoun#"],
+  "pluralNounMassNounOrEmotion":  ["#pluralNounOrMassNoun", "#emotion#"],
   "abstractNounPluralItemNounMassNounOrEmotion": ["#abstractNoun#","#itemNoun.s#","#massNoun#","#emotion#"],
   "noun": [
       "#singularNoun#",

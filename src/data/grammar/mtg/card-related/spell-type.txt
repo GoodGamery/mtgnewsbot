@@ -7,4 +7,11 @@ creature spell
 enchantment spell
 planeswalker spell
 #basicColors# spell
+discard spell
+burn spell
+counterspell
+land destruction spell
+removal spell
+ramp spell
+bounce spell
 [_other:aura,vehicle,equipment,saga]#_other# spell

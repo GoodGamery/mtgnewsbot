@@ -77,7 +77,8 @@
       "[_prefix:#creatureTypes.capitalize#,#deckNameCompoundPrefix#]#_prefix# Breakfast",
       "#deckNameCompoundPrefix##deckNameCompoundSuffix#",
       "Counter#creatureTypes.s#",
-      "#searchableColor# #keyword.capitalizeAll#"
+      "#searchableColor# #keyword.capitalizeAll#",
+      "#searchableColor# Tempo",      
   ],
   "deckVariation" : [
     "#deck#",
@@ -127,6 +128,7 @@
     "Budget",
     "Sneak &",
     "Madcap",
+    "Homebrew",
     "[_adj:#mood.hyphenate#,#adjStorybook#]#_adj.capitalizeAll#",
     "#randomCardWithOneWordName#"
   ],

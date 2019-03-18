@@ -48,3 +48,6 @@ boldly
 boorishly
 gravely
 earnestly
+silently
+quickly
+softly

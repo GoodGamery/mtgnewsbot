@@ -60,7 +60,7 @@ cardPunSetup:
 challengeAppeal:
 - "Are you ready [_forThis:for this,to battle,to face the challenge,to spend all day on Magic Online]#_forThis#?"
 - Are you up to the task?
-- Are you as smart as you think you are?
+- "Are you [_asSmart:as smart as,as smart as ,as #adjPersonCharacteristic# as][_smarter:smarter than, smarter than,#adjComparative# than][_comparison:#_asSmart#,#_asSmart#,#_smarter#]#_comparison# [_youThink:you think you are,you think,you pretend to be,you claim to be][_relation:#personRelationalUnique#,#personRelationalNonunique.s#][_what:#animal.a#,#creatureTypeOrCharacterClass.a#,#person#,#character#,your #_relation#,#_youThink#,#_youThink#]#_what#?"
 - Will you step up to the challenge?
 - How serious are you about winning?
 - Do you want treasure chests?

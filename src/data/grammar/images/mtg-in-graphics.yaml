@@ -30,27 +30,27 @@ inGraphicsStep:
 - 'During [_whose:your,your opponent''s]#_whose# #gameStep#, use #_eitherCard#'
 - 'At end of turn, use #_card2# on #_card1#'
 - 'Attach #_card2# to #_card1#'
-- 'Protect your #cardCategory.s# with #_card1#'
+- 'Protect your #cardCategory.s# with #_eitherCard#'
 - 'Cast #_card2# with #_card1# on the stack'
 - 'Shuffle #_eitherCard# into your library'
 - '[_action:Slam #_card2# onto #_card1#,Brush #_card2# against #_card1#,Smash #_card2# against #_card1#,Caress #_eitherCard#,Carefully lay #_card2# on top of #_card1#]#_action#[_how:, with #emotion#, until someone asks you to stop,for a full minute]#_how#'
 - 'Attach both cards to #gameAccessory.a#'
 - 'Place #_card2# into #_card1#''s sleeve'
 - 'Write [_phrase:#mtgCatchphrase#,#mtgSlangTerm#][_loveHate:love,hate][_text:#realPowerfulCard#,#_phrase#,I #_loveHate# #anyPersonality#]“#_text#” on #_card2# with [_implement:sharpie,crayon,pencil,permanent marker]#_implement.a#'
-- 'Transform #_card1# to flip #_card2# to unmorph #randomPermanentCard#'
+- '[_act1:transform #_card1# ,#randomKeywordCardAction#][_act2:flip,#keywordAction.lowercase#][_act3:unmorph,#keywordCardAction.lowercase#][#_andTo#]#_act1.capitalize# [_third:, and #randomPermanentCard#, #_andTo2# #_act3# #randomPermanentCard#, #_andTo2# #randomKeywordCardAction#][_second:and #_card2##_third#,#_andTo1# #_act2# #_card2##_third#,#_andTo1# #randomKeywordCardAction##_third#,#_andTo1# #_act2# both #_card2# and #randomPermanentCard#]#_second#'
 - 'Throw #_card1# across the table while [_verbing:shouting,muttering,screaming,complaining,blathering,ranting,wisecracking]#_verbing# about #gameConcept#'
 - 'Ask a judge [_otherThing:#_card2#,#keyword#][_question:how #_card1# and #_otherThing# interact,for the oracle text of #_otherThing#]#_question#'
 - 'Look extremely puzzled for #num2-9# minutes'
 - "Gesture to the [_what:collection of PTQ Top 8 pins,mustard and ketchup stains,detailed portrait of #anyPersonality#,collection of #creatureTypes# tokens,tiny #itemNoun.s#]#_what# on your playmat"
-- 'Reveal the [_card:Cheatyface,Cheatyface,Entirely Normal Armchair]#_card# hidden underneath #_card1#'
+- 'Reveal the [_card:Cheatyface,Cheatyface,Entirely Normal Armchair]#_card# hidden underneath #_eitherCard#'
 - 'Draw #_card2# and gaze #adverb# at it'
-- "Tear #_card1# into pieces and [_where:up your nose,into your ears,into your pockets,into your cheeks like a chipmunk,down the front of your pants][_then:eat it,sprinkle them over your opponent's head,cram it #_where#,frantically try to piece them back together]#_then#"
+- "Tear #_eitherCard# into pieces and [_where:up your nose,into your ears,into your pockets,into your cheeks like a chipmunk,down the front of your pants][_then:eat it,sprinkle them over your opponent's head,cram it #_where#,frantically try to piece them back together]#_then#"
 - Move to the beginning of combat step
 - "Ask your opponent [_really:really a,a good,their favorite][_question:“how many cards in hand?”,“mind if I smoke?”,“would you like some #pluralNounOrMassNoun#?”,“got any trades?”,“any fast effects?”,“can I take that back?”,“come here often?”,if #_eitherCard# is #_really# #typeOfCard#,if they think you look like #character#,“just who do you think your are?”,“am I being detained?”,about #massNoun# magic,if it's #occasion#]#_question#"
 - "Tap [_what:too much mana,too little mana,exactly the right amount of mana,#randomNonbasicLandCard#,#count# #basicLands.sIfNeeded#]#_what#"
 - "“Accidentally” reveal #_eitherCard# while shuffling"
 - '[_tutorCard:#adj.capitalizeAll# Tutor,#randomTutorCard#][_tutor:Tutor for #_eitherCard#,Search for #_eitherCard# with #_tutorCard#]#_tutor#'
-- 'Cast [_nameCard:Pithing Needle,Meddling Mage,Demonic Consultation,Predict,Tunnel Vision]#_nameCard# naming #_card1#'
+- 'Cast [_nameCard:Pithing Needle,Meddling Mage,Demonic Consultation,Predict,Tunnel Vision]#_nameCard# naming #_eitherCard#'
 - 'Discard #_eitherCard# to [_searchString:discard a card][_whatCard:Pack Rat,#randomPermanentWithText#]#_whatCard#'
 - 'Make #count# copies of #_eitherCard# with [_searchString:copy target,copy of target]#randomCardWithText#'
 - "Cast #_card1#, immediately say [_oops:Oops,whoops,whoopsie-daisy!,my bad,I'm such a klutz]“Oops”, pick it back up, and cast #_card2#"
@@ -60,27 +60,27 @@ inGraphicsStep:
 - 'Tap emphatically on #_card2# while staring your opponent straight in the eyes'
 - 'Drop your cards on the table and give your opponent [_expression:a puzzled smile,a sultry grin,a bemused smirk,an exaggerated pout,a dramatic flourish,a firm handshake,a disapproving frown,a pitiful whimper,two big thumbs up,a signed photograph of yourself]#_expression#'
 - 'Imprint #_card2# on [_card3:Isochron Scepter,Spellbinder,Soul Foundry,Panoptic Mirror,Mimic Vat]#_card3#'
-- 'Suspend #_card1# with Jhoira of the Ghitu'
+- 'Suspend #_eitherCard# with Jhoira of the Ghitu'
 - 'Tap exactly [_lands:one land,#count# lands,one #basicLands#,#count# #basicLands.s#]#_lands#'
 - 'Retrieve #_card2# from your sideboard with #wishCard#'
 - Flip the table
 - 'Play Three-Card Monte with #_card1#, #_card2#, and a morphed #randomCardAlone#'
 - 'Toss #_card2# into the air and [_then:shrug,grin like an idiot,glare menacingly,stare blankly,wink knowlingly]#_then#'
-- 'Explain to your opponent that #_card1# [_what:is strictly better than #randomCardAlone#,is strictly worse than #randomCardAlone#,was the playtest version of #randomCardAlone#,was actually designed by #anyPersonality#,is the new #randomCardAlone#]#_what#'
-- 'Reveal #hiddenAgendaCard# naming #_card2#'
+- 'Explain to your opponent that #_eitherCard# [_what:is strictly better than #randomCardAlone#,is strictly worse than #randomCardAlone#,was the playtest version of #randomCardAlone#,was actually designed by #anyPersonality#,is the new #randomCardAlone#]#_what#'
+- 'Reveal #hiddenAgendaCard# naming #_eitherCard#'
 - 'Point to #_card2# and tell your opponent “save #typeOfCard.a# to deal with this #someGuyOrGal#.”'
 - "Stick #_card2# into your mouth and [_then:let it hang out like a tongue,attempt to swallow it whole,spit it back onto the table,wait for it to get soggy,try to read it with your tongue]#_then#"
-- "[_craft:Fashion,Craft,Construct,Assemble]#_craft# [#makeshiftClothing#]#_clothing.a# from copies of #_card2# and #_clothingAdorn# [_whose:your,your,your opponent's,a judge's]#_whose# #_clothingWhere#"
+- "[_craft:Fashion,Craft,Construct,Assemble]#_craft# [#makeshiftClothing#][_clothing:#_clothing#]#_clothing.a# from [_massCount:, dozen, dozen, hundred][_countCards:several#_massCount# copies of #_eitherCard#,#count# playsets of #_eitherCard#,#countFives# copies of #_eitherCard#,several copies of #_eitherCard# ,a stack  of #_eitherCard.sIfNeeded#][_fromWhere:you own,you can find][_giant:,giant ,enormous ,massive ][_brought:brought with you,smuggled in,prepared][_copies:copies of #_card1# and #_card2#,#_card1.sIfNeeded# and #_card2.sIfNeeded#,every copy of #_eitherCard# #_fromWhere#,as many copies of #_eitherCard# as you can find,#_countCards#,the #_giant#stack of #_eitherCard.s# you #_brought#]#_copies#[_whose:your,your,your opponent's,a judge's][_whoElse:your opponent,your opponent,a judge,the head judge,your neighbor,another player][_gameUnit:game,match,tournament][_howLong:,,, for the rest of the #_gameUnit#, for a little while, for #timePeriod.a#, for a few minutes][_adornSimple:wear #_clothingPronoun#,#_clothingAdorn# your #_clothingWhere#,#_clothingAdorn# your #_clothingWhere#,wear #_clothingPronoun# on your #_clothingWhere#,try #_clothingPronoun# on][_secretly:secretly ,deftly ,quickly ,ceremonially ,solemnly ,confidently ,theatrically ,dramatically][_adornSpecific:#_clothingAdorn# #_whose# #_clothingWhere#,#_clothingAdorn# #_whose# #_clothingWhere#,ask #_whoElse# to #_adornSimple#][_winnerLoser:winner,loser][_descriptor:#character#'s,fancy,special,power][_announce:announce that it's,call #_clothingPronoun#,refer to #_clothingPronoun# as][_personality:#][_special:,special][_removeIt:remove #_clothingPronoun#,take #_clothingPronoun# off][_hasTo:has to,gets to,should][_propose:propose,stipulate,postulate][_whoLet:#_winnerLoser# of the #_gameUnit#,#_whoElse#][_wearIt:#_adornSimple#,wear it,try it on][_suggestion: and #_propose# that the #_winnerLoser# of the #_gameUnit# #_hasTo# #_adornSimple#, and offer to let #_whoLet# #_wearIt#][_adornSpecial:#_suggestion#,#comma# #_adornSimple##comma# and refuse to #_removeIt#, and #_adornSimple# when your opponent isn't watching, and #_announce# your “#_descriptor# #_clothingSimple#”][_adornWhere: and #_adornSimple#, and #_adornSpecific##_howLong#, and #_secretly# #_adornSpecific#,#_adornSpecial#]#_adornWhere#"
 - "Scoop a handful of #massNoun# out of your [_where:pocket,pants,backpack]#_where# and [_then:drop it theatrically onto the table,cram it into your mouth,place it carefully on top of your head,offer it temptingly to your opponent,smear it on your face,pretend it's whispering secrets to you,smear it all over your face]#_then#"
 - "[_make:Pretend to make,Make]#_make# #_card1# and #_card2# “kiss each other”"
 - "Tell your opponent that you lost to #anyPersonality# last round"
 - "[_verb:Insist,Explain,Announce]#_verb# that you're currently [_doingProject:filming a documentary about,writing a book about,conducting a social experiment with]#_doingProject# #_eitherCard#"
 - "[_perform:Perform,Stage,Put on]#_perform# [_adj:short,lengthy,theatrical]#_adj.a# “puppet show” with #_card1# and #_card2#"
-- "If you are [_lucky:lucky,smart,charming,skilled,attractive,crazy,powerful,fortunate,brave]#_lucky# enough to [_open:open,be passed,open or be passed,own,play]#_open# #_card1.a#, cast it"
-# - "Cast #_card2# on one of your #cardPermanentType.s# and #randomKeywordAction# thanks to #_card1#"
+- "If you are [_lucky:lucky,smart,charming,skilled,attractive,crazy,powerful,fortunate,brave]#_lucky# enough to [_open:open,be passed,open or be passed,own,play]#_open# #_eitherCard.a#, play it"
+- "Cast #_card2# on one of your #cardPermanentType.s# and #randomKeywordAction# thanks to #_card1#"
 - "Cast #_eitherCard# and search for [#cotdCreatureTypeSearch#][_target:#_creatureType#,#cardCategoryTerm#]#_target.a# (e.g. [_targetCard:#_cardname#,#randomCreatureCard#,#randomRealCard#]#_targetCard#)"
 - "[_do:Draw,Discard,Reveal,#cardAbilityVerb#]#_do.capitalize# [_card:card,permanent]#_card.a#. If it's [_what:#deckQualityAdj#,#cardCategory.a#,#cardQuality.a# card,#randomRealCard#,#_eitherCard#]#_what#, [_doWhat:start again,#gameAction#]#_doWhat#!"
-- "[_cast:Cast,Play]#_cast# the best [#randomCategoryCard#]#_cardCategory.s# available. We suggest #_cardName# and [_otherCard:#_eitherCard#,#randomAnyCard#]#_otherCard#."
+- "[_cast:Cast,Play]#_cast# the best [#randomCategoryCard#]#_cardCategory.s# available. We suggest #_cardName#[_andCard:, and #_eitherCard#, and #randomAnyCard#]#_andCard#."
 - "[_cast:Cast,Play]#_cast# the #cardSuperlative# [_what:#_card2Type#,#cardCategory#]#_what.lowercase# [_where:available,in the game,in #constructedFormat#,there is]#_where#: #_card2#."
 - "#randomKeywordAction.capitalize#"
 - "#randomKeywordAction.capitalize#"
@@ -90,7 +90,7 @@ inGraphicsStep:
   [_bookAdj:dog-eared,used,pirated,signed][_book:Deckade,Next-Level Magic,The Brothers' War,The Gathering Dark]  
   [_other:#_container.a# of #pluralNounOrMassNoun#,#_adj.a# #itemNoun#,a #_bookAdj# copy of #_book#,a kiss,a song and dance,a price to be determined later]
   [_price:#priceUSD#,#priceUSD#,#descriptiveCard#,conceding the match,#_other#]
-  Offer to #buySell# #_card1# #_buyOrSellFrom# your opponent #_buyOrSellFor# #_price#
+  Offer to #buySell# #_eitherCard# #_buyOrSellFrom# your opponent #_buyOrSellFor# #_price#
 - >
   [_cardTypeQuery:instant][_carderize:#randomTypeCardWithOneWordName#]
   [_where:into your graveyard,onto the battlefield,into your pocket,into your hand,on top of your head,on top of your library,on top of one of your opponent's #cardPermanentType.s#]
@@ -103,6 +103,10 @@ buySell:
 - "sell[_buyOrSellFrom:to][_buyOrSellFor:for,in exchange for]"
 - "trade[_buyOrSellFrom:to][_buyOrSellFor:for,in exchange for]"
 
+_andTo:
+- "[_andTo1:and][_andTo2:to]"
+- "[_andTo1:to][_andTo2:and]"
+
 typeOfCard: 
 - "#cardCategory#"
 - "#cardCategoryTerm#"
@@ -113,10 +117,37 @@ anyPersonality:
 - "#character#"
 - "#person#"
 
-makeshiftClothing:
-- "[_clothing:crown,hat,elaborate headdress,sombrero,helmet,pair of goggles][_clothingAdorn:place it on][_clothingWhere:head]"
-- "[_clothing:tunic,breastplate,cape,shirt,blanket][_clothingAdorn:drape it over,wrap it around,affix it to][_clothingWhere:shoulders,body]"
-- "[_clothing:belt,skirt,codpiece,diaper][_clothingAdorn:wrap it around,fasten it to][_clothingWhere:waist]"
+makeshiftClothing: "[_clothingPronoun:it]#_makeshiftClothing#"
+
+_makeshiftClothing:
+- "#makeshiftClothingHead#"
+- "#makeshiftClothingTorso#"
+- "#makeshiftClothingWaist#"
+
+makeshiftClothingHead: "[#_makeshiftClothingHead#][_clothingAdorn:place #_clothingPronoun# on][_clothingWhere:head]"
+_makeshiftClothingHead:
+- "[_clothing:crown,headband,garland][_clothingSimple:crown,tiara,hat]"  
+- "[_clothing:hat][_clothingSimple:hat,crown,helmet]"
+- "[_clothing:elaborate headdress][_clothingSimple:headdress,crown,hat]"
+- "[_clothing:sombrero][_clothingSimple:sombrero,crown,hat,helmet]"
+- "[_clothing:helmet][_clothingSimple:helmet,hat]"
+- "[_clothing:pair of goggles][_clothingSimple:goggles,glasses,specs][_clothingPronoun:them]"
+
+makeshiftClothingTorso: "[#_makeshiftClothingTorso#][_clothingAdorn:drape #_clothingPronoun# over,wrap #_clothingPronoun# around,affix #_clothingPronoun# to][_clothingWhere:shoulders,body]"
+_makeshiftClothingTorso:
+- "[_clothing:robe,kimono][_clothingSimple:robe,toga,dress,garment,kimono,mantle]"
+- "[_clothing:tunic][_clothingSimple:tunic,smock,jacket,garment,toga,tabard]"
+- "[_clothing:breastplate][_clothingSimple:breastplate,armor,guardshirt]"
+- "[_clothing:shirt][_clothingSimple:shirt,blouse,jersey]"
+- "[_clothing:cape,shawl,scarf][_clothingSimple:cape,shawl,scarf,cloak]"
+- "[_clothing:blanket,quilt][_clothingSimple:blanket,blankie,quilt,duvet,linens]"
+
+makeshiftClothingWaist: "[#_makeshiftClothingWaist#][_clothingAdorn:wrap #_clothingPronoun# around,fasten #_clothingPronoun# to][_clothingWhere:waist]"
+_makeshiftClothingWaist:
+- "[_clothing:belt,sash,girdle,corset][_clothingSimple:belt,sash,girdle,corset,cummerbund,waistband]"
+- "[_clothing:skirt,tutu,kilt][_clothingSimple:skirt,petticoat,tutu,kilt,waistcoat]"
+- "[_clothing:codpiece,athletic supporter][_clothingSimple:codpiece,jockstrap,cup]"
+- "[_clothing:diaper][_clothingSimple:diaper]"
 
 inGraphicsCardMask: "./data/images/ingraphics/cardmask-double.png"
 inGraphicsBacksplash:

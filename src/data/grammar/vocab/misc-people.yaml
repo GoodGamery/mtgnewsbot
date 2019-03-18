@@ -200,7 +200,6 @@ personPejorativeAffectionate:
 - dweeb
 - goofball
 - dummy
-- monkey
 
 personPejorativeAny:
 - "#personPejorative#"

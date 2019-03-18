@@ -126,7 +126,10 @@ forgery
 employment
 civilaztion
 friendship
+morality
+immorality
 #massNoun# magic
+war
 #nounStateOfBeing#
 #nounStateOfBeing#
 #nounStateOfBeing#
