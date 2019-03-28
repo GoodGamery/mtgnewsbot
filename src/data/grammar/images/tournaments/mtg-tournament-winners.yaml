@@ -57,7 +57,6 @@ mtgTournamentWinnersPros:
 - "[_winnerName:Matt Nass][_winnerFamiliarName:Matt Nass,Nass][_mtgTournamentPhotoSrc:#_mtgTournamentPhoto_43#]"
 - "[_winnerName:Matt Severa][_winnerFamiliarName:Matt Severa,Severa][_mtgTournamentPhotoSrc:#_mtgTournamentPhoto_44#]"
 - "[_winnerName:Mike Sigrist,Siggy][_winnerFamiliarName:Mike Sigrist,Siggy][_mtgTournamentPhotoSrc:#_mtgTournamentPhoto_45#]"
-- "[_winnerName:Owen Turtenwald][_winnerFamiliarName:Owen Turtenwald,Turtenwald][_mtgTournamentPhotoSrc:#_mtgTournamentPhoto_46#]"
 - "[_winnerName:Pascal Maynard][_winnerFamiliarName:Pascal Maynard,Maynard][_mtgTournamentPhotoSrc:#_mtgTournamentPhoto_47#]"
 - "[_winnerName:Pat Chapin][_winnerFamiliarName:Pat Chapin,Patrick Chapin,Chapin][_mtgTournamentPhotoSrc:#_mtgTournamentPhoto_48#]"
 - "[_winnerName:Paul Rietzl][_winnerFamiliarName:Paul Rietzl,Rietzl][_mtgTournamentPhotoSrc:#_mtgTournamentPhoto_49#]"
@@ -255,9 +254,6 @@ _mtgTournamentPhoto_44:
 _mtgTournamentPhoto_45:
 - "[_tournamentPhoto:mike-sigrist-1.jpg][#_logoDark#][#_logoAlign_leftEither#]"
 - "[_tournamentPhoto:mike-sigrist-2.jpg][#_logoDark#][#_logoAlign_leftEither#]"
-
-_mtgTournamentPhoto_46:
-- "[_tournamentPhoto:owen-turtenwald-1.jpg][#_logoDark#][#_logoAlign_rightEither#]"
 
 _mtgTournamentPhoto_47:
 - "[_tournamentPhoto:pascal-maynard-1.jpg][#_logoDark#][#_logoAlign_rightEither#]"
