@@ -63,7 +63,7 @@ _knownIssueSingularRare:
 - "We [_almost:almost,nearly,almost completely]#_almost# forgot about #_knownIssueSingularBug#"
 - "We [_literally:,literally ,actually ]#_literally# just remembered about #_knownIssueSingularBug#"
 - "#person# [_reported:reported,just reported,discovered,tweeted about]#_reported# #_knownIssueSingularBug#"
-- "[dont:Don't,You can't,Please don't]#_dont# blame us for this one"
+- "[_dont:Don't,You can't,Please don't]#_dont# blame us for this one"
 - "[_weSupposeThis:This,We suppose this]#_weSupposeThis# is technically a bug"
 - "[_doozy:doozy,problem,real problem,real mess,puzzler,stumper]This one's #_doozy.a#"
 - "We're not sure if this is actually a bug"
