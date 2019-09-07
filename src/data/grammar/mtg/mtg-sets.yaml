@@ -90,7 +90,6 @@
     "[cardBlockName:Amonkhet][cardBlockSet:#cardBlockName#,Hour of Devastation]",
     "[cardBlockName:Ixalan][cardBlockSet:#cardBlockName#]"
   ],
-
   "randomCardSet": [
     "#cardSet#",
     "#cardSet#",
@@ -98,17 +97,15 @@
     "#teaserCardSet#"
   ],
   "recentCardSet": [
-    "Guilds of Ravnica",
-    "Ravnica Allegiance",
-    "Battlebond",
+    "War of the Spark",
     "Dominaria",
-    "Core 2019",
-    "Unstable",
-    "Commander 2018",
+    "Core 2020",    
+    "Commander 2019",
     "Ultimate Masters",
     "[_otherSet:Signature Spellbook#colon# Jace,Global Series#colon# Jiang Yanggu & Mu Yanling]#_otherSet#"
   ],
   "standardCardSet": [
+    "War of the Spark",    
     "Guilds of Ravnica",
     "Core 2019",
     "Dominaria",
@@ -116,16 +113,18 @@
     "Rivals of Ixalan"
   ],
   "teaserCardSet": [
-    "War of the Spark",
+    "Throne of Eldraine",
+    "Throne of Eldraine",
+    "Theros: Beyond Death",
+    "[_tSet:Ikoria,Ikoria#colon# Lair of Behemoths]#_tSet#",
+    "Zendikar Rising",
     "Core Set [_year:#CONTENT.randomFutureYear(2)#]#_year#",
-    "Commander [_year:#CONTENT.randomFutureYear(1)#]#_year#",
+    "Commander [_year:#CONTENT.randomFutureYear(2)#]#_year#",
     "#codename#",
     "#novelCardSetName#"
   ],
   "codename": [
-      "Spaghetti",
-      "Meatballs",
-      "[_futureSet:Milk,Archery,Baseball,Cricket,Diving,Equestrian,Fencing]“#_futureSet#”"
+      "[_futureSet:Equestrian,Fencing,Golf]“#_futureSet#”"  
   ],
   "novelCardSetName": [
     "#planeBasedSet.capitalizeAll#",
