@@ -58,7 +58,7 @@ cardPunSetup:
   [_cardPunLine1:Will you #_willYouBe#?,Are you #_areYouOne#?]
 
 challengeAppeal:
-- "Are you ready [_forThis:for this,to battle,to face the challenge,to spend all day on Magic Online]#_forThis#?"
+- "Are you ready [_forThis:for this,to battle,to face the challenge,to spend all day on Magic Online,Magic Arena]#_forThis#?"
 - Are you up to the task?
 - "Are you [_asSmart:as smart as,as smart as ,as #adjPersonCharacteristic# as][_smarter:smarter than, smarter than,#adjComparative# than][_comparison:#_asSmart#,#_asSmart#,#_smarter#]#_comparison# [_youThink:you think you are,you think,you pretend to be,you claim to be][_relation:#personRelationalUnique#,#personRelationalNonunique.s#][_what:#animal.a#,#creatureTypeOrCharacterClass.a#,#person#,#character#,your #_relation#,#_youThink#,#_youThink#]#_what#?"
 - Will you step up to the challenge?
@@ -279,7 +279,7 @@ mtgoStyleAnnouncement:
   {newline}
   [_format:#_format1#]#banFormatAnnouncement#[_format:#_format2#][_second:,{newline}#banFormatAnnouncement#][_format:{newline}#_format3#][_third:,,#banFormatAnnouncement#]#_second##_third#  
   {newline}{newline}{newline}
-  [_effectiveDate:#CONTENT.randomUpcomingMonthDay##comma# #CONTENT.currentYear#,#CONTENT.randomFutureDate#][_nextDate:MTGO Effective Date,Next B&R Announcement]
+  [_effectiveDate:#CONTENT.randomUpcomingMonthDay##comma# #CONTENT.currentYear#,#CONTENT.randomFutureDate#][_gamePlatform:MTGO,MTG Arena][_nextDate:#_gamePlatform# Effective Date,Next B&R Announcement]
   Effective Date: [_mtgoEffective:,#CONTENT.randomUpcomingMonthDay##comma# #CONTENT.currentYear#{newline}{newline}#_nextDate##colon# ][_date:#CONTENT.randomUpcomingMonthDay##comma# #CONTENT.currentYear#,#CONTENT.randomFutureDate#]#_mtgoEffective##_effectiveDate#
 
 cardOneOff:

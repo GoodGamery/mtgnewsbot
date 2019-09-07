@@ -58,7 +58,7 @@ investingType:
 
 investReason:
 - '[_prep:before,before,until,once,when]#_prep# #randomCardAlone# is [_fate:banned,restricted,unbanned][_in: in #format#,]#_fate##_in#'
-- '[_prep:before,before,until,once,when][_happens:takes place,is over,is finished][_rotation:#cardSet# rotates,#cardSet# rotates from #format#][_fate:#_rotation#,#teaserCardSet# is released,#teaserCardSet# arrives on MTGO,#tournament# #_happens#]#_prep# #_fate#'
+- '[_prep:before,before,until,once,when][_happens:takes place,is over,is finished][_rotation:#cardSet# rotates,#cardSet# rotates from #format#][_fate:#_rotation#,#teaserCardSet# is released,#teaserCardSet# arrives on MTGO,,#teaserCardSet# arrives on MTG Arena,#tournament# #_happens#]#_prep# #_fate#'
 
 financialStakeholders:
 - "online retailers[#pluralPronouns#]"
@@ -69,7 +69,7 @@ financialStakeholders:
 - "dealers[#pluralPronouns#]"
 - "bulk collection buyers[#pluralPronouns#]"
 - "tournament vendors[#pluralPronouns#]"
-- "[_mtgo:MODO,MTGO]#_mtgo# bots[#pluralPronouns#]"
+- "[_mtgo:MODO,MTGO,MTG Arena]#_mtgo# bots[#pluralPronouns#]"
 - "collectors[#pluralPronouns#]"
 - "hedge fund managers[#pluralPronouns#]"
 - "pharma bros[#pluralPronouns#]"

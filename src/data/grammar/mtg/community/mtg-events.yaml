@@ -2,6 +2,8 @@
   "tournamentType": [
       "Pro Tour",
       "Invitational",
+      "Mythic Championship",
+      "Mythic Qualifier",
       "GP",
       "Grand Prix",
       "FNM",
