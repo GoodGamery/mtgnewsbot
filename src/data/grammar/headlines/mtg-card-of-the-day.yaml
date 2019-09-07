@@ -644,7 +644,7 @@ _cotdHtml: |
     <div class="cotd">
       <div class="col col-40">
         <div style="margin-left: auto; margin-right: auto;">
-          <img class="mtg-card" src="#_cotdImgUrl#">
+          <img class="mtg-card" src="#_cotdImgUrl#" style="width:auto; max-height: 320px; margin-top:7px;">
         </div>
       </div>
       <div class="col col-60">
