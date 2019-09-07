@@ -57,7 +57,6 @@ mtgTournamentWinnersPros:
 - "[_winnerName:Matt Nass][_winnerFamiliarName:Matt Nass,Nass][_mtgTournamentPhotoSrc:#_mtgTournamentPhoto_43#]"
 - "[_winnerName:Matt Severa][_winnerFamiliarName:Matt Severa,Severa][_mtgTournamentPhotoSrc:#_mtgTournamentPhoto_44#]"
 - "[_winnerName:Mike Sigrist,Siggy][_winnerFamiliarName:Mike Sigrist,Siggy][_mtgTournamentPhotoSrc:#_mtgTournamentPhoto_45#]"
-- "[_winnerName:Owen Turtenwald][_winnerFamiliarName:Owen Turtenwald,Turtenwald][_mtgTournamentPhotoSrc:#_mtgTournamentPhoto_46#]"
 - "[_winnerName:Pascal Maynard][_winnerFamiliarName:Pascal Maynard,Maynard][_mtgTournamentPhotoSrc:#_mtgTournamentPhoto_47#]"
 - "[_winnerName:Pat Chapin][_winnerFamiliarName:Pat Chapin,Patrick Chapin,Chapin][_mtgTournamentPhotoSrc:#_mtgTournamentPhoto_48#]"
 - "[_winnerName:Paul Rietzl][_winnerFamiliarName:Paul Rietzl,Rietzl][_mtgTournamentPhotoSrc:#_mtgTournamentPhoto_49#]"
@@ -74,7 +73,6 @@ mtgTournamentWinnersPros:
 - "[_winnerName:Wyatt Darby][_winnerFamiliarName:Wyatt Darby][_mtgTournamentPhotoSrc:#_mtgTournamentPhoto_60#]"
 - "[_winnerName:Antonino De Rosa][_winnerFamiliarName:Antonino De Rosa,De Rosa][_mtgTournamentPhotoSrc:#_mtgTournamentPhoto_61#]"
 - "[_winnerName:Chris Pikula][_winnerFamiliarName:Chris Pikula,Pikula][_mtgTournamentPhotoSrc:#_mtgTournamentPhoto_62#]"
-- "[_winnerName:Conley Woods][_winnerFamiliarName:Conley Woods,Conley][_mtgTournamentPhotoSrc:#_mtgTournamentPhoto_63#]"
 - "[_winnerName:Corey Baumeister][_winnerFamiliarName:Corey Baumeister,Baumeister][_mtgTournamentPhotoSrc:#_mtgTournamentPhoto_64#]"
 - "[_winnerName:Osyp Lebedowicz][_winnerFamiliarName:Osyp Lebedowicz,Osyp,Lebedowicz][_mtgTournamentPhotoSrc:#_mtgTournamentPhoto_65#]"
 - "[_winnerName:Sam Pardee][_winnerFamiliarName:Sam Pardee,Pardee][_mtgTournamentPhotoSrc:#_mtgTournamentPhoto_66#]"
@@ -256,9 +254,6 @@ _mtgTournamentPhoto_45:
 - "[_tournamentPhoto:mike-sigrist-1.jpg][#_logoDark#][#_logoAlign_leftEither#]"
 - "[_tournamentPhoto:mike-sigrist-2.jpg][#_logoDark#][#_logoAlign_leftEither#]"
 
-_mtgTournamentPhoto_46:
-- "[_tournamentPhoto:owen-turtenwald-1.jpg][#_logoDark#][#_logoAlign_rightEither#]"
-
 _mtgTournamentPhoto_47:
 - "[_tournamentPhoto:pascal-maynard-1.jpg][#_logoDark#][#_logoAlign_rightEither#]"
 
@@ -318,9 +313,6 @@ _mtgTournamentPhoto_61:
 
 _mtgTournamentPhoto_62:
 - "[_tournamentPhoto:chris-pikula-1.jpg][#_logoDark#][#_logoAlign_rightEither#]"
-
-_mtgTournamentPhoto_63:
-- "[_tournamentPhoto:conley-woods-1.jpg][#_logoDark#][#_logoAlign_leftEither#]"
 
 _mtgTournamentPhoto_64:
 - "[_tournamentPhoto:corey-baumeister-1.jpg][#_logoDark#][#_logoAlign_leftEither#]"

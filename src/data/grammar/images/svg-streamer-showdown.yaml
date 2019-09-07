@@ -116,7 +116,7 @@ _portraitDisplayNameVariant:
 - "#_portraitName#"
 - "#playerCategory# #_portraitName#"
 - "#format# #expertPlayer.capitalize# #_portraitName#"
-- "[_modifier:Biazarro,Evil,#playerCategory#,#characterClass#]#_modifier# #_portraitName#"
+- "[_modifier:Bizarro,Evil,#playerCategory#,#characterClass#]#_modifier# #_portraitName#"
 - "[_desc:#adjPersonCharacteristic#,#adj#,#mood#,#genericNickname#]“#_desc#” #_portraitName#"
 - "#_portraitName# a.k.a. “#genericNickname#”"
 - "[_variation:#genericNickname#,“#genericNickname#”]#_variation#"
