@@ -47,7 +47,6 @@ randomKeywordCardActionWithPronoun:
 - "#cardRandomAction_Shuffle#"
 - "#cardRandomAction_Tap#"
 - "#cardRandomAction_Untap#"
-- "#cardRandomAction_SetInMotion#"
 - "#cardRandomAction_Transform#"
 - "#cardRandomAction_Detain#"
 - "#cardRandomAction_Manifest#"
@@ -137,7 +136,7 @@ _countTimes:
 
 _objCount: "#_count# #_object#"
 
-_whose: ["#their#","#their#","#their# opponent'#s#"]
+_whose: ["#their#","#their#","#their# opponent's"]
 _whoseOwnSingle: 
 - "#their# own#_them_it#"
 - "#their# opponent#possessive##_them_it#"

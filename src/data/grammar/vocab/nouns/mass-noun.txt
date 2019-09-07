@@ -116,5 +116,8 @@ grass
 gravel
 mutton
 fertilizer
+gingerbread
+asphalt
+slime
 #liquid#
 #creatureTypes# [_food:meat,milk,eggs,juice]#_food#

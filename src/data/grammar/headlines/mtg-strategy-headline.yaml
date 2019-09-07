@@ -2,7 +2,7 @@ strategyRealization:
 - "#pros.capitalize# [_realization:don't realize,don't realize,don't realize,are discovering,are learning,don't acknowledge,are slowly learning,are now realizing,are finding,finally acknowledge][_tech:#techWithVerb#][_is:#_isVerb#]#_realization# that [_modifier:can't,won't,will never,will always,#_is# the best way to,can no longer][_effectivePhrase:more effective than,better than,strictly better than,secretly better than,way worse than,even better than][_finding:#techSingular# #verbBeat.firstS# #obstacle#,#techPlural# #verbBeat# #obstacle#,#_tech# #_modifier# #verbBeat# #obstacle#,#_tech# #_is# the secret to #verbDefeating# #obstacle#,#_tech# #_is# #_effectivePhrase# #techWithVerb#]#_finding#"
 - "The Importance of [_thing:#randomAnyCard#,#techCardCategory#,#creatureTypes.s#,#gameConcept#]#_thing.capitalizeAll# in [_where:#format#,#recentCardSet#]#_where#"
 - "The [_secret:secret,trick,solution]#_secret# to #improvementGoal# is #deckChangeGerund#"
-- "#pro# Video Series: How I would [_change:improve,fix]#_change# [_improvable:Magic#colon# the Gathering,Magic Online,#format#,competitive Magic,#tournamentType# attendance]#_improvable# by #mtgOpinionSuggestion# #mtgThing#[_tirade:tirade,diatribe,rant][_adjTirade:angry,lengthy,crazed,deranged,brutally honest][_play:play,comedy,musical,farce][_performance:musical essay,rap odyssey,#_play# in #count# acts][_speechType:#_adjTirade# #_tirade#,rigorous examination,thought experiment,thorough analysis,#_performance#][_subtitle:,#comma# Part #num2-9#,#comma# Part #num2-9#,#comma# #_speechType.a#]#_subtitle#"
+- "#pro# Video Series: How I would [_change:improve,fix]#_change# [_improvable:Magic#colon# the Gathering,Magic Online,MTG Arena,#format#,competitive Magic,#tournamentType# attendance]#_improvable# by #mtgOpinionSuggestion# #mtgThing#[_tirade:tirade,diatribe,rant][_adjTirade:angry,lengthy,crazed,deranged,brutally honest][_play:play,comedy,musical,farce][_performance:musical essay,rap odyssey,#_play# in #count# acts][_speechType:#_adjTirade# #_tirade#,rigorous examination,thought experiment,thorough analysis,#_performance#][_subtitle:,#comma# Part #num2-9#,#comma# Part #num2-9#,#comma# #_speechType.a#]#_subtitle#"
 - "Preview of #teaserCardSet#[_format:, #normalFormat#,in #normalFormat#]: Will [_deck:#deck#,#deckArch#,the new #deckVariation# deck]#_deck# be #deckDescription#?"
 
 playGuide:
@@ -203,26 +203,42 @@ techCardAttribute:
 - "#adj#"
 - "#cardQuality#"
 
+_techSingularApproach:
+- practicing
+- understanding
+- mastering
+- analyzing
+
+_strategyJudgement:
+- good
+- bad
+- "#adjJudgement#"
+
 techSingular:
 - "learning to beat #deckArch#"
-- "understanding #deckArch# matchups"
-- "understanding #techCardCategory#"
+- "#_techSingularApproach# [_matchup:your #deckArch# matchups,the #deckArch# matchup]#_matchup#"
+- "#_techSingularApproach# #techCardCategory#"
 - "playtesting #format#"
 - "playing #num2-99# hours of #format# every week"
 - "solving the #format# metagame"
 - sideboard tech
-- sideboarding
-- good sideboarding
-- bad sideboarding
-- good card evaluation skills
-- practicing your shuffling technique
+- "[_using:,using ,practicing ,practicing your ,executing ,#_techSingularApproach# ][_what:sideboarding,sideboarding,deckbuilding][_techs:techniques,strategies,approaches]#_using##_what# #_techs#"
+- "#_strategyJudgement# sideboarding"
+- "#_strategyJudgement# card evaluation skills"
+- "#_techSingularApproach# your shuffling technique"
 - mana weaving
 - pile shuffling
 - power-level errata
 - "always calling [_face:heads,tails]#_face#"
 - "#mtgQuestionablePractice#"
-- "always playing #randomRealCard#"
+- "always [_inOut:, in, in, out, out][_playing:playing,maindecking,sideboarding#_inOut#][_card:#randomRealCard#,#techCardCategory.sIfNeeded#]#_playing# #_card#"
 - "#nounActivity#"
+- alpha striking
+- "[_approach:,#_techSingularApproach# ,#_techSingularApproach# ,#_techSingularApproach# ][_traditional:Paris,Vancouver,London][_city:#_traditional#,#city#]#_approach#the #_city# Mulligan"
+- going all-in
+- "#_techSingularApproach# #gameConcept#"
+- "sandbagging #techCardCategory.sIfNeeded#"
+- "[_when:during,during,before,after][_spells:spells,instants,cards,#spellType.sIfNeeded#][_whose:your,your,your opponent's][_yourSpells:#_spells#,#_spells#,your #_spells#]always playing #_yourSpells# #_when# #_whose# #gameStep.lowercase#"
 
 techPlural:
 - rotating formats
