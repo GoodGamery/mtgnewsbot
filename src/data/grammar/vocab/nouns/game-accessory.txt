@@ -7,4 +7,5 @@ treasure chest
 trade binder
 event ticket
 play point
+food token
 untradeable war mark
