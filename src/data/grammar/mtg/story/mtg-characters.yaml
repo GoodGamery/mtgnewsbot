@@ -25,6 +25,7 @@
       "Mishra#malePronouns#",
       "Nahiri#femalePronouns#",
       "Nissa#femalePronouns#",
+      "Oko#malePronouns#",
       "Sarkhan#malePronouns#",
       "Serra#femalePronouns#",
       "Sorin#malePronouns#",
@@ -59,6 +60,7 @@
       "Mishra, Artificer Prodigy#malePronouns#",
       "Nahiri, the Lithomancer#femalePronouns#",
       "Nissa Revane#femalePronouns#",
+      "Oko, Thief of Crowns#malePronouns#",
       "Sarkhan Vol#malePronouns#",
       "Serra#femalePronouns#",
       "Sorin Markov#malePronouns#",
@@ -99,6 +101,7 @@
       "Grick Doobin#malePronouns#",
       "Griselbrand#malePronouns#",
       "Grunn#malePronouns#",
+      "Grumgully#malePronouns#",
       "Hanna#femalePronouns#",
       "Hans#malePronouns#",
       "Hazdur the Abbot#malePronouns#",
@@ -172,6 +175,7 @@
     "Jaya",
     "Joven",
     "Jushi",
+    "Kenrith",
     "Kiki",
     "Krenko",
     "Kresh",
@@ -179,13 +183,15 @@
     "Momir",
     "Norin",
     "Odric",
+    "Oko",
     "Omnath",
     "Rakdos",
     "Talrand",
     "Thassa",
     "Ugin",
     "Urza",
-    "Venser"
+    "Venser",
+    "Yorvo"
   ],
 
   "characterFirstNameOrMonoOrDisyllabic": [

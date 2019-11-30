@@ -1,8 +1,10 @@
 Affectionate Indrik
 Amulet of Quoz
 Arc-Slogger
+Arcane Signet
 Ass Whuppin'
 Barbed Lightning
+Bartered Cow
 Blacker Lotus
 Bonfire of the Damned
 Borrowing 100,000 Arrows
@@ -16,6 +18,7 @@ Clambassadors
 Collector Protector
 Colossal Dreadmaw
 Creature Guy
+Didn't Say
 Domri's Nodorog
 Dwarven Blastminer
 Earl of Squirrel
@@ -63,9 +66,11 @@ Poultrygeist
 Phyrexian Tribute
 Pillage
 Platinum Angel
+Questing Beast
 Relentless Rats
 Rocket-Powered Turbo Slug
 Rumbling Slum
+Run Away Together
 Sea Legs
 Scissors Lizard
 Screaming Shield
@@ -74,6 +79,7 @@ Shahrazad
 Shoving Match
 Skulduggery
 Sneaky Homunculus
+So Tiny
 Steamflogger Boss
 Storm Cauldron
 Stranglehold
@@ -88,6 +94,7 @@ Vial Smasher the Fierce
 Vizzerdrix
 Werebear
 Whipgrass Entangler
+Witch's Oven
 Yargle, Glutton of Urborg
 Yet Another Aether Vortex
 Zo-Zu the Punisher

@@ -1,0 +1,45 @@
+adjMtgRelated:
+- "#adjMtgCreature#"
+- "#adjMtgSpell#"
+- "#adjMtgLand#"
+
+mtgCreaturePrefix:
+- "#adjMtgCreature#"
+- "#adjNounMtgCreaturePrefix#"
+
+adjMtgCreature:
+- "baneslayer"  
+- "noxious"
+- "primeval"
+- "combustable"
+- "stoic"
+- "lightning"
+- "inquisitive"
+
+adjNounMtgCreaturePrefix:
+  - 
+
+nounMtgUncivilizedCreature:
+- "hatcher"
+- "monster"
+- "murlodont"
+- "nodorog"
+
+mtgCreatureRoleNoun:
+- "apprentice"
+- "assassin"
+- "attendant"
+- "brigade"
+- "chosen"
+- "confidant"
+- "emissary"
+- "familiar"
+- "herald"
+- "marauder"
+- "protector"
+- "puppet"
+- "vanguard"
+- "warden"
+- "#nounVerber#"
+- "[_verbToPart:crusher,eater,ripper,smasher]#bodypart##_verbToPart#"
+- "[_beverage:#liquid.nospaces#,#nounCompoundWorthy#]#beverage#drinker"

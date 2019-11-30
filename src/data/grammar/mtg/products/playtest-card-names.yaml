@@ -1,0 +1,55 @@
+playtestCard: 
+- "#playtestCardSpecificReference#"
+- "#playtestCardSpecificReferenceMysteryBooster#"
+- "#playtestCardGeneric#"
+
+playtestCardTemplate: 
+
+# vehicle / equipment / artifact (adj appliance)
+# land (adj location)
+# [planeswalker's | mtgpersonality's] [adj spelleffect | creature (vanguard, lackey, etc.) | ]
+
+playtestCardGeneric:
+- "#fakeCard.capitalizeAll#"
+- "[_charmType:#animal#,#creatureTypeOrCharacterClass#,#characterFactionOrRace#]#_charmType.capitalizeAll# Charm"
+- "#playtestCardSpecificReferenceMisc#"
+- "[_collection:#creatureTypes.s#,#animalPlural#][_ofWhat:#abstractNounPluralItemNounMassNounOrEmotion#,#_collection#]#cardFlavorSpellTypeNoun.capitalize# of #_ofWhat.capitalizeAll#"
+- "[_adj:#adj#,#adjStorybook#,#adjCorporeal#,#adjColorOrTexture#][_adj:#_adj#,#basicColors#][_thing:#concreteNoun#,#animal#,#placeNoun#,#placeNounCanonical#][_individual:#creatureTypes#,#animal#,#creatureTypeOrCharacterClass#][_oneOrMany:#_individual#,#_individual.sIfNeeded#][_ofTheWhat:#_oneOrMany#,#placeNoun#,#_adj# #_thing#]#cardFlavorSpellParticularTypeNoun.capitalizeAll# of the #_ofTheWhat.capitalizeAll#"
+- "#playtestCardFirstName#'s [_possession:#playtestCardUniqueSpellName#,#playtestCardLackey#]#_possession.capitalizeAll#"
+- "#characterClass.capitalizeAll#'s #cardFlavorTypeOfSpell.capitalizeAll#"
+
+
+playtestCardSpecificReference:
+- "#playtestCardSpecificReferenceEldraine#"
+- "#playtestCardSpecificReferenceMysteryBooster#"
+
+playtestCardSpecificReferenceMisc:
+- "[_whater:collector,grinder,eater,taker]#bodypart.capitalize# #_whater.capitalizeAll#"
+
+playtestCardSpecificReferenceMysteryBooster:
+- "#_playtestMysteryBoosterKidAndCount.capitalizeAll# in #clothingOrAccessory.capitalizeAll.aIfNeeded#" 
+
+playtestCardFirstName:
+- "[#cotdLegendaryCreatureSearch#][#pro#][_personality:#psychographic#,#_proNickname#][_char:#_legendName#,#characterFirstName#,#_characterOrFamilyMember#,#_personality#]#_char.capitalize#"
+
+playtestCardUniqueSpellName:
+- "#xth# #cardFlavorTypeOfSpell#"
+
+playtestCardLackey:
+- "#creatureTypeOrCharacterClass#"
+- "#mtgCreatureRoleNoun#"
+- "#nounMtgUncivilizedCreature#"
+- "#characterTitle#"
+
+_playtestMysteryBoosterKidAndCount: 
+- "[_kid:kid,#creatureTypes#,#animal#]One #_kid#"
+- "[_kids:kids,#creatureTypes.s#,#animalPlural#]#count# #_kids#"
+
+playtestCardSpecificReferenceEldraine:
+  - "Castle [_castleName:#commonCharacterLastName#, #characterFaction#]#_castleName#"
+  - "Syr [_syrName:#commonCharacterFirstName#,#firstName#]#_syrName#, the #adj.capitalizeAll#"
+  - "So #adj.capitalizeAll#"
+  - "#verbExtinguishSpecific.capitalizeAll# in the #placeNoun.capitalizeAll#"
+  - "Didn't Say #simpleExclamation.capitalizeAll#"
+
+# ""
