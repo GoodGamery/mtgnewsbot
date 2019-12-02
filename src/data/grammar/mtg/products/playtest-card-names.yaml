@@ -33,6 +33,13 @@ playtestCardSpecificReferenceMisc:
 - "[_ridden:#animal#,#animal#,#creatureTypes#,#bodypart#]#_ridden.capitalizeAll.hyphenate# Rider"
 - "[_source:delver]#_source.capitalizeAll# of [_what:#pluralNoun#,#gameAccessory.s#]#_what.capitalizeAll#"
 - "[_whatIn:#singularNoun#,#creatureTypes#,#animal#][_inWhat:#massNoun#,#placeNoun#][_whatInTheWhat:#_whatIn.capitalizeAll# in the Ice,Thing in the #_inWhat.capitalizeAll#]#_whatInTheWhat#"
+- "Dragonlord [_who:#firstName#,#character#]#_who.capitalize#"
+- "Sol [_ring:#itemNoun#,#cardFlavorSpellTypeNoun#,#animal#,#creatureTypes#]#_ring.capitalizeAll#"
+- "#nounCompoundWorthy.noSpaces.capitalizeAll#twister"
+- "[_mind:mind,#nounCompoundWorthy#][_cat:cat,#animal#,#creatureTypes#][_crowns:crowns,#itemNoun.s#][_history:history,#personAuthorityFigure#][_firstName:#firstName#,#characterFirstName#,#planeswalkerFirstName#][_title:the Aeons Torn,the Promised End,the Infinite Gyre,Butcher of Truth,the Ceaseless Hunger,the Siege Tower,the #_mind.capitalizeAll# Sculptor,the Raze-Boar,the Smiling #_cat.capitalizeAll#,Thief of #_crowns.capitalizeAll#,#_history.capitalizeAll# of #plane.capitalizeAll#,the Moon Sage,the Murder #personAuthorityFigure.capitalizeAll#]#_firstName#, #_title#"
+- "#placeNoun.capitalizeAll# of [_whereOrWho:Ith,Leng,Ugin,Wak-wak,the Dead,the Burnwillows,the False God]#_whereOrWho#"
+- "[_what:#itemNoun#,#itemNoun#,#bodypart#,#animal#,#cardFlavorSpellTypeNoun#]#_what.capitalizeAll# of [_whereOrWho:Urza,Mishra,Bogardan,Tawnos,Gix,Yawgmoth,Ma'rûf,the #xth.capitalizeAll# Kappa,the Ages]#_whereOrWho#"
+- "#nounContainer.capitalizeAll# of #bodypartsPlural.capitalizeAll#"
 
 playtestCardSpecificReferenceUnset:
 - "[_whatAmI:#animal.capitalizeAll.a#,#itemNoun.capitalizeAll.a#,#personPejorativeAny.capitalizeAll.a#,#officialEntityGroup#,#miscPersonSingular.capitalizeAll#][_meIm:me#comma# I'm,you#comma# you're,them#comma# they're]Look at #_meIm.capitalizeAll# #_whatAmI#"
@@ -54,11 +61,12 @@ playtestCardSpecificReferenceMysteryBooster:
 - "#_playtestMysteryBoosterKidAndCount# in #clothingOrAccessory.capitalizeAll.aIfNeeded#"
 - "Time [_what:#nounActionSound#,#nounActionEvent#,#placeNoun.hyphenate#,#nounEventRevolution#,#bodypart#]#_what.capitalizeAll#"
 - "Ancestral [_cardTypeQuery:sorcery][#cardTypeCardWithOneWordName#][_what:#nounActionSound#,#nounActionEvent#,#nounEventRevolution#,#cardFlavorTypeOfSpell#,#cardFlavorSpellTypeNoun#,#cardFlavorTypeOfSpell#,#abstractNounPluralItemNounMassNounOrEmotion#,#_cardName#]#_what.capitalizeAll#"
-- "[_kindOf:#nounCompoundWorthy#,#nounCompoundWorthy#,#deckNameCompoundPrefix#,#massNoun.noSpaces#][_pox:pox,lace]#_kindOf.capitalize##_pox#"
+- "[_kindOf:#nounCompoundWorthy#,#nounCompoundWorthy#,#deckNameCompoundPrefix#,#massNoun.noSpaces#][_pox:pox,lace,potence]#_kindOf.capitalize##_pox#"
 - "[_withWhat:#massNoun#,#abstractNounPluralItemNounMassNounOrEmotion#,#officialEntityGroup#,#mtgRandomTopic#,#mtgQuestionablePractice#]One with #_withWhat.capitalizeAll#"
 - "#creatureTypes.capitalizeAll# with #creatureKeyword.capitalizeAll#"
 - "[_who:#officialEntity#][_mightHave:might have,has][_goneNuts:'s Gone Nuts, Lost #their.capitalize# Marbles,'s Gone Batty, is Having an Episode, is Off #their.capitalize# Meds, Got Hit By a Bus, is Freaking Out,'s Drunk With Power, Has Amnesia, #_mightHave.capitalizeAll# a Brain Parasite, is Behaving Out of Character,'s on a Sugar High, Has Definitely Not Been Mind Controlled By Gleemax,'s in a Beserker Rage, is Foaming at the Mouth, Doesn't Want to Lose #their.capitalize# Job, Has Eaten Too Many Mushrooms,'s on Thin Ice, Has Also Gone Nuts , Has Calmed Down Finally, Hates Fun, Doesn't Care Anymore]#_who.capitalize##_goneNuts#"
 - "[_cardTypeQuery:sorcery][#cardTypeCardWithOneWordName#]#_cardName.reverse.lowercase.capitalizeAll#"
+- "[_mood:#mood#,#adjBodySensation#,#adjCorporeal#,#adjStorybook#,#adj#,#character#'s]#_mood.capitalizeAll# Killbot"
 
 playtestCardFirstName:
 - "[#cotdLegendaryCreatureSearch#][#pro#][_personality:#psychographic#,#_proNickname#,#historicalFigure#][_char:#_legendName#,#characterFirstName#,#_characterOrFamilyMember#,#_personality#]#_char.capitalize#"
