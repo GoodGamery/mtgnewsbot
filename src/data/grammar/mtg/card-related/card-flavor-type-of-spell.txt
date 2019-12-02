@@ -25,4 +25,5 @@ Verdict
 Veto
 Vow
 Will
+Wrath
 #nounMagicalElement#

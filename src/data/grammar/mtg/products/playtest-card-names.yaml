@@ -2,6 +2,7 @@ playtestCard:
 - "#playtestCardSpecificReference#"
 - "#playtestCardSpecificReferenceMysteryBooster#"
 - "#playtestCardGeneric#"
+- "#playtestCardSpecificReferenceUnset#"
 
 playtestCardTemplate: 
 
@@ -22,18 +23,50 @@ playtestCardGeneric:
 playtestCardSpecificReference:
 - "#playtestCardSpecificReferenceEldraine#"
 - "#playtestCardSpecificReferenceMysteryBooster#"
+- "#playtestCardSpecificReferenceUnset#"
 
 playtestCardSpecificReferenceMisc:
 - "[_whater:collector,grinder,eater,taker]#bodypart.capitalize# #_whater.capitalizeAll#"
+- "[_thingy:#appliance#,#gameAccessory#,#singularNoun#,#itemNoun#,#clothingOrAccessory#]Animate #_thingy.capitalizeAll#"
+- "#nounNonsenseCompoundSource.capitalize#coil Engine"
+- "[_runekeeper:#personRelational#,#mtgCreatureRoleNoun#]#_runekeeper.capitalizeAll# of Runes"
+- "[_ridden:#animal#,#animal#,#creatureTypes#,#bodypart#]#_ridden.capitalizeAll.hyphenate# Rider"
+- "[_source:delver]#_source.capitalizeAll# of [_what:#pluralNoun#,#gameAccessory.s#]#_what.capitalizeAll#"
+- "[_whatIn:#singularNoun#,#creatureTypes#,#animal#][_inWhat:#massNoun#,#placeNoun#][_whatInTheWhat:#_whatIn.capitalizeAll# in the Ice,Thing in the #_inWhat.capitalizeAll#]#_whatInTheWhat#"
+
+playtestCardSpecificReferenceUnset:
+- "[_whatAmI:#animal.capitalizeAll.a#,#itemNoun.capitalizeAll.a#,#personPejorativeAny.capitalizeAll.a#,#officialEntityGroup#,#miscPersonSingular.capitalizeAll#][_meIm:me#comma# I'm,you#comma# you're,them#comma# they're]Look at #_meIm.capitalizeAll# #_whatAmI#"
+- "[_adv:unexpectedly,suddenly,incorrectly,repeatedly,inappropriately,down,at dawn,before you,up,around,firm,trial,corrected,by,its ground,out,back,apart,out,to reason,before you,out front][_rareStandReason:#comma# Then Sits Back Down, for the National Anthem,On Ceremon,the Test of Time][_withWhom: with Friends, with Assistance From #miscPersonSingular.capitalizeAll#, Again, Unexpectedly, At Last,#comma# Again,#_rareStandReason#][_affected:#itemNoun#,#animal#][_notStands:Stands #_adv.capitalizeAll#,Sits Down Alone,Takes a Load Off,Takes a Stand,Does a Handstand,Doesn't Stand a Chance,Applies for a Loan,Stands to Make a Killing,Can't Stand it Anymore,Stans Alone,Used to Stand for Something,#verbActionTransitive.capitalizeAll.s# #_affected.capitalizeAll.a#][_cheeseDoes:Stands#_withWhom#,#_notStands#][_stander:#animal#,#massNoun#,#itemNoun#][_thingVerbs:#_stander.capitalizeAll# Stands Alone,#_stander.capitalizeAll# Stands Alone,Cheese #_cheeseDoes#]The #_thingVerbs#"
+- "[_exclamation:#exclamationSurprise#,#exclamationPleased#,#simpleExclamation#,#nounNonsense#]#_exclamation.capitalizeAll#!"
+- "[_classicFaction:Goblin,Elvish,Dwarven][_what:#animal#,#creatureTypes#,#characterFaction#,#_classicFaction#][_sport:bowling,drilling,demolition,digging,strike,rescue][_team:#_sport# team,focus group,fan club,book club,marching band,flash mob,theater troupe][_group:farm,#_team#,of the damned]#_what.capitalizeAll# #_group.capitalizeAll#"
+- "[_possession:#appliance#,#gameAccessory#,#clothingOrAccessory#,#placeNoun#]#character#'s #_possession.capitalizeAll#"
+- "#playtestCardSpecificReferenceUnsetInfrequent#"
+- "Loose #bodypartsInPairs.capitalizeAll#"
+- "My First [_what:#nounWeapon#,#gameAccessory#,#appliance#]#_what.capitalizeAll#"
+- "[_tripleThis:#nounNonsenseCompoundSource.capitalizeAll#]#_tripleThis# #_tripleThis# #_tripleThis#"
+
+playtestCardSpecificReferenceUnsetInfrequent:
+  - "[_freeRangePrefix:free-range][_what:#animal#,#creatureTypes#]#_freeRangePrefix.capitalizeAll# #_what.capitalizeAll#"
+  - "[_concept:#emotion#,#nounDestiny#,#nounStateOfBeing#]#adjCorporeal.capitalizeAll# #bodypart.capitalizeAll# of #_concept.capitalizeAll#"
+  - "[_claims:insists,swears][_studyShows:Our Market Research Shows,Our Market Research Shows,Hasbro Insists,Arena Metrics Show,#officialEntity# #_claims#][_emotion:love,hate,are indifferent to,are sick of,can't get enough of][_what:#mtgQuestionablePractice#,#realPowerfulCard#,#realCard#,#mtgThing#,#mtgRandomTopic#]#_studyShows.capitalizeAll# That Players #_emotion.capitalizeAll# #_what.capitalizeAll# Elemental"
 
 playtestCardSpecificReferenceMysteryBooster:
-- "#_playtestMysteryBoosterKidAndCount.capitalizeAll# in #clothingOrAccessory.capitalizeAll.aIfNeeded#" 
+- "#_playtestMysteryBoosterKidAndCount# in #clothingOrAccessory.capitalizeAll.aIfNeeded#"
+- "Time [_what:#nounActionSound#,#nounActionEvent#,#placeNoun.hyphenate#,#nounEventRevolution#,#bodypart#]#_what.capitalizeAll#"
+- "Ancestral [_cardTypeQuery:sorcery][#cardTypeCardWithOneWordName#][_what:#nounActionSound#,#nounActionEvent#,#nounEventRevolution#,#cardFlavorTypeOfSpell#,#cardFlavorSpellTypeNoun#,#cardFlavorTypeOfSpell#,#abstractNounPluralItemNounMassNounOrEmotion#,#_cardName#]#_what.capitalizeAll#"
+- "[_kindOf:#nounCompoundWorthy#,#nounCompoundWorthy#,#deckNameCompoundPrefix#,#massNoun.noSpaces#][_pox:pox,lace]#_kindOf.capitalize##_pox#"
+- "[_withWhat:#massNoun#,#abstractNounPluralItemNounMassNounOrEmotion#,#officialEntityGroup#,#mtgRandomTopic#,#mtgQuestionablePractice#]One with #_withWhat.capitalizeAll#"
+- "#creatureTypes.capitalizeAll# with #creatureKeyword.capitalizeAll#"
+- "[_who:#officialEntity#][_mightHave:might have,has][_goneNuts:'s Gone Nuts, Lost #their.capitalize# Marbles,'s Gone Batty, is Having an Episode, is Off #their.capitalize# Meds, Got Hit By a Bus, is Freaking Out,'s Drunk With Power, Has Amnesia, #_mightHave.capitalizeAll# a Brain Parasite, is Behaving Out of Character,'s on a Sugar High, Has Definitely Not Been Mind Controlled By Gleemax,'s in a Beserker Rage, is Foaming at the Mouth, Doesn't Want to Lose #their.capitalize# Job, Has Eaten Too Many Mushrooms,'s on Thin Ice, Has Also Gone Nuts , Has Calmed Down Finally, Hates Fun, Doesn't Care Anymore]#_who.capitalize##_goneNuts#"
+- "[_cardTypeQuery:sorcery][#cardTypeCardWithOneWordName#]#_cardName.reverse.lowercase.capitalizeAll#"
 
 playtestCardFirstName:
-- "[#cotdLegendaryCreatureSearch#][#pro#][_personality:#psychographic#,#_proNickname#][_char:#_legendName#,#characterFirstName#,#_characterOrFamilyMember#,#_personality#]#_char.capitalize#"
+- "[#cotdLegendaryCreatureSearch#][#pro#][_personality:#psychographic#,#_proNickname#,#historicalFigure#][_char:#_legendName#,#characterFirstName#,#_characterOrFamilyMember#,#_personality#]#_char.capitalize#"
 
 playtestCardUniqueSpellName:
 - "#xth# #cardFlavorTypeOfSpell#"
+- "#cardFlavorTypeOfSpell#"
+- "#randomCardWithOneWordName#"
 
 playtestCardLackey:
 - "#creatureTypeOrCharacterClass#"
@@ -42,14 +75,16 @@ playtestCardLackey:
 - "#characterTitle#"
 
 _playtestMysteryBoosterKidAndCount: 
-- "[_kid:kid,#creatureTypes#,#animal#]One #_kid#"
-- "[_kids:kids,#creatureTypes.s#,#animalPlural#]#count# #_kids#"
+- "[_otherWhom:#personRelationalUnique#,#proMisc#][_whom:#creatureTypes#,#animal#,#_otherWhom#]One #_whom.capitalizeAll#"
+- "[_otherWhom:#personRelationalUnique#,#proMisc#][_whom:#creatureTypes.s#,#animalPlural#,#_otherWhom.s#]#count.capitalizeAll# #_whom.capitalizeAll#"
 
 playtestCardSpecificReferenceEldraine:
-  - "Castle [_castleName:#commonCharacterLastName#, #characterFaction#]#_castleName#"
+  - "Castle [_castleName:#commonCharacterLastName#, #characterFaction#]#_castleName.capitalizeAll#"
   - "Syr [_syrName:#commonCharacterFirstName#,#firstName#]#_syrName#, the #adj.capitalizeAll#"
   - "So #adj.capitalizeAll#"
-  - "#verbExtinguishSpecific.capitalizeAll# in the #placeNoun.capitalizeAll#"
-  - "Didn't Say #simpleExclamation.capitalizeAll#"
+  - "#massNounCompoundWorthy.capitalize.hyphenate#brute"  
+  - "Cavalier of [_what:#massNoun#,#mtgQuestionablePractice#,#abstractNounPluralItemNounMassNounOrEmotion#]#_what.capitalizeAll#"  
+  - "[_verb:#verbExtinguishSpecific.capitalizeAll#][_place:#placeNoun.capitalizeAll#][_xInTheY:#_verb.capitalizeAll# in the Loch,Drown in the #_place.capitalizeAll#,#_verb.capitalizeAll# in the #_place.capitalizeAll#]#_xInTheY#"
+  - "[_politePhrase:thank you,you're welcome,excuse me,sorry,bless you,beg your pardon,may I be excused,by all means,hello,anything,the magic word,#exasperatedLeadIn#][_what:#simpleExclamation#,#simpleExclamation#,#_politePhrase#]Didn't Say #_what.capitalizeAll#"
 
-# ""
+ # "#cotdCardNameWordPair_OfThe#"
