@@ -71,6 +71,7 @@ adjPersonCharacteristic:
 - callow
 - callous
 - corrupt
+- friendly
 - "#adj#"
 - "#adjValue#"
 
@@ -144,6 +145,7 @@ adjPersonCharacteristicComparative:
 - more callow
 - more callous
 - more corrupt
+- friendlier
 - "#adjComparative#"
 
 adjPersonCharacteristicSuperlative:
@@ -216,4 +218,5 @@ adjPersonCharacteristicSuperlative:
 - most callow
 - most callous
 - most corrupt
+- friendliest
 - "#adjSuperlative#"

@@ -35,11 +35,15 @@ playtestCardSpecificReferenceMisc:
 - "[_whatIn:#singularNoun#,#creatureTypes#,#animal#][_inWhat:#massNoun#,#placeNoun#][_whatInTheWhat:#_whatIn.capitalizeAll# in the Ice,Thing in the #_inWhat.capitalizeAll#]#_whatInTheWhat#"
 - "Dragonlord [_who:#firstName#,#character#]#_who.capitalize#"
 - "Sol [_ring:#itemNoun#,#cardFlavorSpellTypeNoun#,#animal#,#creatureTypes#]#_ring.capitalizeAll#"
-- "#nounCompoundWorthy.noSpaces.capitalizeAll#twister"
+- "[_twister:#nounCompoundWorthy.noSpaces.capitalizeAll#twister]#_twister.replace(ttwister,twister)#"
 - "[_mind:mind,#nounCompoundWorthy#][_cat:cat,#animal#,#creatureTypes#][_crowns:crowns,#itemNoun.s#][_history:history,#personAuthorityFigure#][_firstName:#firstName#,#characterFirstName#,#planeswalkerFirstName#][_title:the Aeons Torn,the Promised End,the Infinite Gyre,Butcher of Truth,the Ceaseless Hunger,the Siege Tower,the #_mind.capitalizeAll# Sculptor,the Raze-Boar,the Smiling #_cat.capitalizeAll#,Thief of #_crowns.capitalizeAll#,#_history.capitalizeAll# of #plane.capitalizeAll#,the Moon Sage,the Murder #personAuthorityFigure.capitalizeAll#]#_firstName#, #_title#"
 - "#placeNoun.capitalizeAll# of [_whereOrWho:Ith,Leng,Ugin,Wak-wak,the Dead,the Burnwillows,the False God]#_whereOrWho#"
 - "[_what:#itemNoun#,#itemNoun#,#bodypart#,#animal#,#cardFlavorSpellTypeNoun#]#_what.capitalizeAll# of [_whereOrWho:Urza,Mishra,Bogardan,Tawnos,Gix,Yawgmoth,Ma'rûf,the #xth.capitalizeAll# Kappa,the Ages]#_whereOrWho#"
 - "#nounContainer.capitalizeAll# of #bodypartsPlural.capitalizeAll#"
+- "[_adj:#adjPersonCharacteristic#,#adjCorporeal#][_adjOrEvil:#_adj#,Evil,Evil][_eye:#bodypart#,#nounNonsenseCompoundSource#][_evilOrAdjEye:#_adjOrEvil.capitalizeAll# #_eye.capitalizeAll#,#_adj.capitalizeAll# Eye][_eyeOrigin:#nonPlaneLocation#,#city#][_evilEye:#_evilOrAdjEye# of Orms-By-Gore,#_evilOrAdjEye# of Orms-By-Gore,Evil Eye of #_eyeOrigin#]#_evilEye#"
+- "Chub #nounNonsenseCompoundSource.capitalizeAll#"
+- "[_thingType:#academicPrefix#,#nounCompoundWorthy#]#_thingType.capitalizeAll#goyf"
+- "[_adj:#adjPersonCharacteristic#,#adjPersonCharacteristic#,#adjPersonCharacteristicComparative#,#adjPersonCharacteristicSuperlative#][_magicType:#nounCompoundWorthy#,#nounNonsenseCompoundSource#,#massNoun.hyphenate#][_mancerPrefix:#academicPrefix#,#_magicType#][_mancer:#_adj.capitalizeAll# Pyromancer,Young #_magicType.capitalize#mancer]#_mancer#"
 
 playtestCardSpecificReferenceUnset:
 - "[_whatAmI:#animal.capitalizeAll.a#,#itemNoun.capitalizeAll.a#,#personPejorativeAny.capitalizeAll.a#,#officialEntityGroup#,#miscPersonSingular.capitalizeAll#][_meIm:me#comma# I'm,you#comma# you're,them#comma# they're]Look at #_meIm.capitalizeAll# #_whatAmI#"
@@ -55,7 +59,7 @@ playtestCardSpecificReferenceUnset:
 playtestCardSpecificReferenceUnsetInfrequent:
   - "[_freeRangePrefix:free-range][_what:#animal#,#creatureTypes#]#_freeRangePrefix.capitalizeAll# #_what.capitalizeAll#"
   - "[_concept:#emotion#,#nounDestiny#,#nounStateOfBeing#]#adjCorporeal.capitalizeAll# #bodypart.capitalizeAll# of #_concept.capitalizeAll#"
-  - "[_claims:insists,swears][_studyShows:Our Market Research Shows,Our Market Research Shows,Hasbro Insists,Arena Metrics Show,#officialEntity# #_claims#][_emotion:love,hate,are indifferent to,are sick of,can't get enough of][_what:#mtgQuestionablePractice#,#realPowerfulCard#,#realCard#,#mtgThing#,#mtgRandomTopic#]#_studyShows.capitalizeAll# That Players #_emotion.capitalizeAll# #_what.capitalizeAll# Elemental"
+  - "[_claims:insists,swears][_studyShows:Our Market Research Shows,Our Market Research Shows,Hasbro Insists,Arena Metrics Show,#officialEntity# #_claims#][_emotion:love,hate,are indifferent to,are sick of,can't get enough of][_subject:#mtgQuestionablePractice#,#realPowerfulCard#,#realCard#,#mtgThing#,#mtgRandomTopic#]#_studyShows.capitalizeAll# That Players #_emotion.capitalizeAll# #_subject.capitalizeAll# Elemental"
 
 playtestCardSpecificReferenceMysteryBooster:
 - "#_playtestMysteryBoosterKidAndCount# in #clothingOrAccessory.capitalizeAll.aIfNeeded#"
@@ -64,7 +68,7 @@ playtestCardSpecificReferenceMysteryBooster:
 - "[_kindOf:#nounCompoundWorthy#,#nounCompoundWorthy#,#deckNameCompoundPrefix#,#massNoun.noSpaces#][_pox:pox,lace,potence]#_kindOf.capitalize##_pox#"
 - "[_withWhat:#massNoun#,#abstractNounPluralItemNounMassNounOrEmotion#,#officialEntityGroup#,#mtgRandomTopic#,#mtgQuestionablePractice#]One with #_withWhat.capitalizeAll#"
 - "#creatureTypes.capitalizeAll# with #creatureKeyword.capitalizeAll#"
-- "[_who:#officialEntity#][_mightHave:might have,has][_goneNuts:'s Gone Nuts, Lost #their.capitalize# Marbles,'s Gone Batty, is Having an Episode, is Off #their.capitalize# Meds, Got Hit By a Bus, is Freaking Out,'s Drunk With Power, Has Amnesia, #_mightHave.capitalizeAll# a Brain Parasite, is Behaving Out of Character,'s on a Sugar High, Has Definitely Not Been Mind Controlled By Gleemax,'s in a Beserker Rage, is Foaming at the Mouth, Doesn't Want to Lose #their.capitalize# Job, Has Eaten Too Many Mushrooms,'s on Thin Ice, Has Also Gone Nuts , Has Calmed Down Finally, Hates Fun, Doesn't Care Anymore]#_who.capitalize##_goneNuts#"
+- "[_who:#officialEntity#][_mightHave:might have,has][_goneNuts:'s Gone Nuts, Has Lost #their.capitalize# Marbles,'s Gone Batty, is Having an Episode, is Off #their.capitalize# Meds, Got Hit By a Bus, is Freaking Out,'s Drunk With Power, Has Amnesia, #_mightHave.capitalizeAll# a Brain Parasite, is Behaving Out of Character,'s on a Sugar High, Has Definitely Not Been Mind Controlled By Gleemax,'s in a Beserker Rage, is Foaming at the Mouth, Doesn't Want to Lose #their.capitalize# Job, Has Eaten Too Many Mushrooms,'s on Thin Ice, Has Also Gone Nuts , Has Calmed Down Finally, Hates Fun, Doesn't Care Anymore]#_who.capitalize##_goneNuts#"
 - "[_cardTypeQuery:sorcery][#cardTypeCardWithOneWordName#]#_cardName.reverse.lowercase.capitalizeAll#"
 - "[_mood:#mood#,#adjBodySensation#,#adjCorporeal#,#adjStorybook#,#adj#,#character#'s]#_mood.capitalizeAll# Killbot"
 
@@ -93,6 +97,6 @@ playtestCardSpecificReferenceEldraine:
   - "#massNounCompoundWorthy.capitalize.hyphenate#brute"  
   - "Cavalier of [_what:#massNoun#,#mtgQuestionablePractice#,#abstractNounPluralItemNounMassNounOrEmotion#]#_what.capitalizeAll#"  
   - "[_verb:#verbExtinguishSpecific.capitalizeAll#][_place:#placeNoun.capitalizeAll#][_xInTheY:#_verb.capitalizeAll# in the Loch,Drown in the #_place.capitalizeAll#,#_verb.capitalizeAll# in the #_place.capitalizeAll#]#_xInTheY#"
-  - "[_politePhrase:thank you,you're welcome,excuse me,sorry,bless you,beg your pardon,may I be excused,by all means,hello,anything,the magic word,#exasperatedLeadIn#][_what:#simpleExclamation#,#simpleExclamation#,#_politePhrase#]Didn't Say #_what.capitalizeAll#"
+  - "[_politePhrase:thank you,you're welcome,excuse me,sorry,bless you,beg your pardon,may I be excused,by all means,hello,anything,the magic word,love you too,may I,#exasperatedLeadIn#][_what:#simpleExclamation#,#simpleExclamation#,#_politePhrase#]Didn't Say #_what.capitalizeAll#"
 
  # "#cotdCardNameWordPair_OfThe#"

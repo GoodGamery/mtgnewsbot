@@ -12,7 +12,7 @@ Knife Juggler
 Grand Market
 Lee Sin Jungle
 Two Explores
-Throat Wolf
+[_bodypart:Throat,#bodypart.capitalizeAll]#_bodypart# Wolf
 Rage Mage
 Horrorcane
 Grak's Managoonz
