@@ -1,0 +1,68 @@
+bakedFood:
+ - cake
+ - pretzel
+ - lasagna
+ - fruitcake
+ - casserole
+ - muffin
+ - meatloaf
+ - cupcake
+ - biscuit
+ - hot pocket
+ - newton
+ - sandwich cookie
+ - shortbread
+ - stroopwafel
+ - pasty
+ - calzone
+ - knish
+ - flan
+ - piroshki
+ - quiche
+ - cabbage roll
+ - kaiser roll
+
+groundFood:
+ - paste
+ - hamburger
+ - powder
+ - sausage
+ - flour
+ - kebab
+ - dessert topping
+ - snack mix
+ - matzo ball
+ - cereal
+ - porridge
+ - hummus
+ - mustard
+ - polenta
+ - pâté
+ - curry
+ - ketchup
+ - jelly
+ - relish
+ - salsa
+ - chutney
+ - tapenade
+
+flattenedFood:
+ - pancake
+ - waffle
+ - pupusa
+ - schnitzel
+ - tortilla
+ - wafer
+ - pop tart
+
+stuffedFood:
+  - tamale
+  - burrito
+  - turkey
+  - eclair
+  - knish
+  - chimichanga
+  - tortellini
+  - pizza
+  - lobster roll
+  - potsticker

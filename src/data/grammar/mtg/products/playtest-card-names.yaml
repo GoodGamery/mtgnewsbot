@@ -30,7 +30,7 @@ playtestCardSpecificReferenceMisc:
 - "[_thingy:#appliance#,#gameAccessory#,#singularNoun#,#itemNoun#,#clothingOrAccessory#]Animate #_thingy.capitalizeAll#"
 - "#nounNonsenseCompoundSource.capitalize#coil Engine"
 - "[_runekeeper:#personRelational#,#mtgCreatureRoleNoun#]#_runekeeper.capitalizeAll# of Runes"
-- "[_ridden:#animal#,#animal#,#creatureTypes#,#bodypart#]#_ridden.capitalizeAll.hyphenate# Rider"
+- "[_ridden:#animal#,#animal#,#creatureTypes#,#bodypart#]#_ridden.capitalizeAll.hyphenate# [_rider:Rider,Rider,Wrangler]#_rider#"
 - "[_source:delver]#_source.capitalizeAll# of [_what:#pluralNoun#,#gameAccessory.s#]#_what.capitalizeAll#"
 - "[_whatIn:#singularNoun#,#creatureTypes#,#animal#][_inWhat:#massNoun#,#placeNoun#][_whatInTheWhat:#_whatIn.capitalizeAll# in the Ice,Thing in the #_inWhat.capitalizeAll#]#_whatInTheWhat#"
 - "Dragonlord [_who:#firstName#,#character#]#_who.capitalize#"
@@ -44,6 +44,8 @@ playtestCardSpecificReferenceMisc:
 - "Chub #nounNonsenseCompoundSource.capitalizeAll#"
 - "[_thingType:#academicPrefix#,#nounCompoundWorthy#]#_thingType.capitalizeAll#goyf"
 - "[_adj:#adjPersonCharacteristic#,#adjPersonCharacteristic#,#adjPersonCharacteristicComparative#,#adjPersonCharacteristicSuperlative#][_magicType:#nounCompoundWorthy#,#nounNonsenseCompoundSource#,#massNoun.hyphenate#][_mancerPrefix:#academicPrefix#,#_magicType#][_mancer:#_adj.capitalizeAll# Pyromancer,Young #_magicType.capitalize#mancer]#_mancer#"
+- "#nounNonsenseCompoundSource.capitalize#ify"
+- "Extra [_parts:#bodypartsPlural.capitalizeAll#]#_parts.replace(Arms,Legs)#"
 
 playtestCardSpecificReferenceUnset:
 - "[_whatAmI:#animal.capitalizeAll.a#,#itemNoun.capitalizeAll.a#,#personPejorativeAny.capitalizeAll.a#,#officialEntityGroup#,#miscPersonSingular.capitalizeAll#][_meIm:me#comma# I'm,you#comma# you're,them#comma# they're]Look at #_meIm.capitalizeAll# #_whatAmI#"
@@ -54,7 +56,7 @@ playtestCardSpecificReferenceUnset:
 - "#playtestCardSpecificReferenceUnsetInfrequent#"
 - "Loose #bodypartsInPairs.capitalizeAll#"
 - "My First [_what:#nounWeapon#,#gameAccessory#,#appliance#]#_what.capitalizeAll#"
-- "[_tripleThis:#nounNonsenseCompoundSource.capitalizeAll#]#_tripleThis# #_tripleThis# #_tripleThis#"
+- "[_tripleThis:#nounNonsenseCompoundSource.capitalizeAll#][_tripleThat:#massNoun.capitalizeAll#][_thisTripled:#_tripleThis# #_tripleThis# #_tripleThis#][_thatTripled:#_tripleThat# #_tripleThat# #_tripleThat#][_tripled:#_thisTripled#,#_thisTripled#,#_thatTripled#]#_tripled#"
 
 playtestCardSpecificReferenceUnsetInfrequent:
   - "[_freeRangePrefix:free-range][_what:#animal#,#creatureTypes#]#_freeRangePrefix.capitalizeAll# #_what.capitalizeAll#"
@@ -70,7 +72,7 @@ playtestCardSpecificReferenceMysteryBooster:
 - "#creatureTypes.capitalizeAll# with #creatureKeyword.capitalizeAll#"
 - "[_who:#officialEntity#][_mightHave:might have,has][_goneNuts:'s Gone Nuts, Has Lost #their.capitalize# Marbles,'s Gone Batty, is Having an Episode, is Off #their.capitalize# Meds, Got Hit By a Bus, is Freaking Out,'s Drunk With Power, Has Amnesia, #_mightHave.capitalizeAll# a Brain Parasite, is Behaving Out of Character,'s on a Sugar High, Has Definitely Not Been Mind Controlled By Gleemax,'s in a Beserker Rage, is Foaming at the Mouth, Doesn't Want to Lose #their.capitalize# Job, Has Eaten Too Many Mushrooms,'s on Thin Ice, Has Also Gone Nuts , Has Calmed Down Finally, Hates Fun, Doesn't Care Anymore]#_who.capitalize##_goneNuts#"
 - "[_cardTypeQuery:sorcery][#cardTypeCardWithOneWordName#]#_cardName.reverse.lowercase.capitalizeAll#"
-- "[_mood:#mood#,#adjBodySensation#,#adjCorporeal#,#adjStorybook#,#adj#,#character#'s]#_mood.capitalizeAll# Killbot"
+- "[_mood:#mood#,#adjBodySensation#,#adjCorporeal#,#adjStorybook#,#adj#,#character#'s]#_mood.capitalize.hyphenate# Killbot"
 
 playtestCardFirstName:
 - "[#cotdLegendaryCreatureSearch#][#pro#][_personality:#psychographic#,#_proNickname#,#historicalFigure#][_char:#_legendName#,#characterFirstName#,#_characterOrFamilyMember#,#_personality#]#_char.capitalize#"
@@ -87,8 +89,8 @@ playtestCardLackey:
 - "#characterTitle#"
 
 _playtestMysteryBoosterKidAndCount: 
-- "[_otherWhom:#personRelationalUnique#,#proMisc#][_whom:#creatureTypes#,#animal#,#_otherWhom#]One #_whom.capitalizeAll#"
-- "[_otherWhom:#personRelationalUnique#,#proMisc#][_whom:#creatureTypes.s#,#animalPlural#,#_otherWhom.s#]#count.capitalizeAll# #_whom.capitalizeAll#"
+- "[_otherWhom:#personRelationalUnique#,#proMisc.capitalizeAll#][_whom:#creatureTypes#,#animal#,#_otherWhom#]One #_whom.capitalizeAll#"
+- "[_otherWhom:#personRelationalUnique#,#proMisc.capitalizeAll#][_whom:#creatureTypes.s#,#animalPlural#,#_otherWhom.s#]#count.capitalizeAll# #_whom.capitalizeAll#"
 
 playtestCardSpecificReferenceEldraine:
   - "Castle [_castleName:#commonCharacterLastName#, #characterFaction#]#_castleName.capitalizeAll#"
@@ -97,6 +99,5 @@ playtestCardSpecificReferenceEldraine:
   - "#massNounCompoundWorthy.capitalize.hyphenate#brute"  
   - "Cavalier of [_what:#massNoun#,#mtgQuestionablePractice#,#abstractNounPluralItemNounMassNounOrEmotion#]#_what.capitalizeAll#"  
   - "[_verb:#verbExtinguishSpecific.capitalizeAll#][_place:#placeNoun.capitalizeAll#][_xInTheY:#_verb.capitalizeAll# in the Loch,Drown in the #_place.capitalizeAll#,#_verb.capitalizeAll# in the #_place.capitalizeAll#]#_xInTheY#"
-  - "[_politePhrase:thank you,you're welcome,excuse me,sorry,bless you,beg your pardon,may I be excused,by all means,hello,anything,the magic word,love you too,may I,#exasperatedLeadIn#][_what:#simpleExclamation#,#simpleExclamation#,#_politePhrase#]Didn't Say #_what.capitalizeAll#"
-
- # "#cotdCardNameWordPair_OfThe#"
+  - "[_politePhrase:thank you,you're welcome,excuse me,sorry,bless you,beg your pardon,may I be excused,by all means,hello,anything,the magic word,love you too,may I,peep,#exasperatedLeadIn#][_what:#simpleExclamation#,#simpleExclamation#,#_politePhrase#]Didn't Say #_what.capitalizeAll#"
+  - "[_baked:Baked into #bakedFood.capitalizeAll.a#][_ground:Ground into #groundFood.capitalizeAll.a#][_flattenedWord:Flattened,Flattened,Pounded,Smashed][_flattened:#_flattenedWord# into #flattenedFood.capitalizeAll.a#][_stuffed:Stuffed into #stuffedFood.capitalizeAll.a#][_preparation:#_baked#,#_ground#,#_flattened#,#_stuffed#]#_preparation#"
