@@ -10,14 +10,27 @@ playtestCardTemplate:
 # land (adj location)
 # [planeswalker's | mtgpersonality's] [adj spelleffect | creature (vanguard, lackey, etc.) | ]
 
+demonymOrFaction:
+- "#demonym#"
+- "#nonPlaneLocation#"
+
+placeFactionOrAffiliated:
+- "#characterFaction#"
+- "#demonym#"
+- "#planeswalkerFirstName#'s"
+
 playtestCardGeneric:
 - "#fakeCard.capitalizeAll#"
 - "[_charmType:#animal#,#creatureTypeOrCharacterClass#,#characterFactionOrRace#]#_charmType.capitalizeAll# Charm"
 - "#playtestCardSpecificReferenceMisc#"
 - "[_collection:#creatureTypes.s#,#animalPlural#][_ofWhat:#abstractNounPluralItemNounMassNounOrEmotion#,#_collection#]#cardFlavorSpellTypeNoun.capitalize# of #_ofWhat.capitalizeAll#"
 - "[_adj:#adj#,#adjStorybook#,#adjCorporeal#,#adjColorOrTexture#][_adj:#_adj#,#basicColors#][_thing:#concreteNoun#,#animal#,#placeNoun#,#placeNounCanonical#][_individual:#creatureTypes#,#animal#,#creatureTypeOrCharacterClass#][_oneOrMany:#_individual#,#_individual.sIfNeeded#][_ofTheWhat:#_oneOrMany#,#placeNoun#,#_adj# #_thing#]#cardFlavorSpellParticularTypeNoun.capitalizeAll# of the #_ofTheWhat.capitalizeAll#"
-- "#playtestCardFirstName#'s [_possession:#playtestCardUniqueSpellName#,#playtestCardLackey#]#_possession.capitalizeAll#"
+- "#playtestCardFirstName#'s [_possession:#playtestCardUniqueSpellName#,#playtestCardLackey#,#nounMundane#]#_possession.capitalizeAll#"
 - "#characterClass.capitalizeAll#'s #cardFlavorTypeOfSpell.capitalizeAll#"
+- "[_doer:diver,chaser,miner]#massNoun.hyphenate.capitalize# #_doer.capitalizeAll#"
+
+playtestCardGeneric2:
+- "[_stuffDoer:flinger,drinker,shaper,bringer][_thingMaster:master,speaker,stalker,peddler,juggler,snatcher,forger][_stuff:#liquidCompoundWorthy#,#nounNonsenseCompoundSource#][_thing:#nounCompoundWorthy#,#nounNonsenseCompoundSource#,#bodypartCompoundWorthy#][_nonhyphenated:#_stuff##_stuffDoer#,#_thing##_thingMaster#][_hyphenated:#_stuff#-#_stuffDoer#,#_thing#-#_thingMaster#][_doerResult:#_nonhyphenated.noSpaces#,#placeFactionOrAffiliated# #_nonhyphenated.noSpaces#,#placeFactionOrAffiliated# #_hyphenated#]#_doerResult.capitalizeAll#"
 
 
 playtestCardSpecificReference:
@@ -30,7 +43,7 @@ playtestCardSpecificReferenceMisc:
 - "[_thingy:#appliance#,#gameAccessory#,#singularNoun#,#itemNoun#,#clothingOrAccessory#]Animate #_thingy.capitalizeAll#"
 - "#nounNonsenseCompoundSource.capitalize#coil Engine"
 - "[_runekeeper:#personRelational#,#mtgCreatureRoleNoun#]#_runekeeper.capitalizeAll# of Runes"
-- "[_ridden:#animal#,#animal#,#creatureTypes#,#bodypart#]#_ridden.capitalizeAll.hyphenate# [_rider:Rider,Rider,Wrangler]#_rider#"
+
 - "[_source:delver]#_source.capitalizeAll# of [_what:#pluralNoun#,#gameAccessory.s#]#_what.capitalizeAll#"
 - "[_whatIn:#singularNoun#,#creatureTypes#,#animal#][_inWhat:#massNoun#,#placeNoun#][_whatInTheWhat:#_whatIn.capitalizeAll# in the Ice,Thing in the #_inWhat.capitalizeAll#]#_whatInTheWhat#"
 - "Dragonlord [_who:#firstName#,#character#]#_who.capitalize#"
@@ -47,9 +60,16 @@ playtestCardSpecificReferenceMisc:
 - "#nounNonsenseCompoundSource.capitalize#ify"
 - "Extra [_parts:#bodypartsPlural.capitalizeAll#]#_parts.replace(Arms,Legs)#"
 
+playtestCardSpecificReferenceMisc2:
+  - "[_ridden:#animal#,#animal#,#creatureTypes#,#bodypart#][_rider:Rider,Rider,Wrangler,Herder,Chaser][_sourceOrAdj:#adjRoleDescription#,##][_riderName:#_ridden.capitalizeAll.hyphenate# #_rider#,#planeswalkerFirstName#'s #_ridden.capitalizeAll#-#_rider.capitalizeAll#]#_riderName.capitalizeAll#"
+
+playtestCardDebug:
+ - "#playtestCardGeneric2#"    
+ - "#playtestCardSpecificReferenceMisc2#"  
+
 playtestCardSpecificReferenceUnset:
 - "[_whatAmI:#animal.capitalizeAll.a#,#itemNoun.capitalizeAll.a#,#personPejorativeAny.capitalizeAll.a#,#officialEntityGroup#,#miscPersonSingular.capitalizeAll#][_meIm:me#comma# I'm,you#comma# you're,them#comma# they're]Look at #_meIm.capitalizeAll# #_whatAmI#"
-- "[_adv:unexpectedly,suddenly,incorrectly,repeatedly,inappropriately,down,at dawn,before you,up,around,firm,trial,corrected,by,its ground,out,back,apart,out,to reason,before you,out front][_rareStandReason:#comma# Then Sits Back Down, for the National Anthem,On Ceremon,the Test of Time][_withWhom: with Friends, with Assistance From #miscPersonSingular.capitalizeAll#, Again, Unexpectedly, At Last,#comma# Again,#_rareStandReason#][_affected:#itemNoun#,#animal#][_notStands:Stands #_adv.capitalizeAll#,Sits Down Alone,Takes a Load Off,Takes a Stand,Does a Handstand,Doesn't Stand a Chance,Applies for a Loan,Stands to Make a Killing,Can't Stand it Anymore,Stans Alone,Used to Stand for Something,#verbActionTransitive.capitalizeAll.s# #_affected.capitalizeAll.a#][_cheeseDoes:Stands#_withWhom#,#_notStands#][_stander:#animal#,#massNoun#,#itemNoun#][_thingVerbs:#_stander.capitalizeAll# Stands Alone,#_stander.capitalizeAll# Stands Alone,Cheese #_cheeseDoes#]The #_thingVerbs#"
+- "[_adv:unexpectedly,suddenly,incorrectly,repeatedly,inappropriately,down,at dawn,before you,up,around,firm,trial,corrected,by,its ground,out,back,apart,out,to reason,before you,out front][_rareStandReason:#comma# Then Sits Back Down, for the National Anthem,On Ceremon,the Test of Time][_withWhom: with Friends, with Assistance From #miscPersonSingular.capitalizeAll#, Again, Unexpectedly, At Last,#comma# Again,#_rareStandReason#][_affected:#itemNoun#,#animal#][_notStands:Stands #_adv.capitalizeAll#,Sits Down Alone,Takes a Load Off,Takes a Stand,Does a Handstand,Doesn't Stand a Chance,Applies for a Loan,Stands to Make a Killing,Can't Stand it Anymore,Stans Alone,Used to Stand for Something,Lays Down,Takes a Nap,#verbActionTransitive.capitalizeAll.s# #_affected.capitalizeAll.a#][_cheeseDoes:Stands#_withWhom#,#_notStands#][_stander:#animal#,#massNoun#,#itemNoun#][_thingVerbs:#_stander.capitalizeAll# Stands Alone,#_stander.capitalizeAll# Stands Alone,Cheese #_cheeseDoes#]The #_thingVerbs#"
 - "[_exclamation:#exclamationSurprise#,#exclamationPleased#,#simpleExclamation#,#nounNonsense#]#_exclamation.capitalizeAll#!"
 - "[_classicFaction:Goblin,Elvish,Dwarven][_what:#animal#,#creatureTypes#,#characterFaction#,#_classicFaction#][_sport:bowling,drilling,demolition,digging,strike,rescue][_team:#_sport# team,focus group,fan club,book club,marching band,flash mob,theater troupe][_group:farm,#_team#,of the damned]#_what.capitalizeAll# #_group.capitalizeAll#"
 - "[_possession:#appliance#,#gameAccessory#,#clothingOrAccessory#,#placeNoun#]#character#'s #_possession.capitalizeAll#"

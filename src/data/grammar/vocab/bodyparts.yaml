@@ -188,5 +188,44 @@
   "bodypartsInternalExternal": [
     "#bodypartsInternal#",
     "#bodypartsExternal#"
-  ]
+  ],
+  
+  "bodypartCompoundWorthy": [
+    "eye",
+    "head",
+    "nose",
+    "ear",
+    "mouth",
+    "neck",
+    "shoulder",
+    "arm",
+    "hand",
+    "stomach",
+    "leg",
+    "knee",
+    "foot",
+    "toe",
+    "gut",
+    "belly",
+    "hair",
+    "throat",
+    "tooth",
+    "eyeball",
+    "skull",
+    "moustache",
+    "elbow",
+    "spine",
+    "brain",
+    "thumb",
+    "shin",
+    "fang",
+    "claw",
+    "feather",
+    "forehead",
+    "pelvis",
+    "sternum",
+    "eyebrow",
+    "tongue",
+    "jaw"
+   ]
 }

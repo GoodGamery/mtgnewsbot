@@ -1,3 +1,9 @@
+preparedFood: 
+ - "#bakedFood#"
+ - "#groundFood#"
+ - "#flattenedFood#"
+ - "#stuffedFood#"
+ 
 bakedFood:
  - cake
  - pretzel

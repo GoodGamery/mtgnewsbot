@@ -1,0 +1,10 @@
+food diary
+screenplay
+#preparedFood# recipe
+[_grades:report card,college transcript]#_grades#
+[_schemeType:get-rich-quick,pyramid,color,ponzi]#_schemeType# scheme
+[_ticketType:parking,speeding,raffle,lottery,meal,bus,hot]#_ticketType# ticket
+[_tripType:ski,trip,camping,business,road,shopping,bad,ego,guilt,power,acid,head]#_tripType# trip
+[_laundry:laundry,dry cleaining,laundry day]#_laundry#
+[_podcastType:movie,roleplaying,pop culture,food,trivia,politics]#_podcastType# podcast
+[_billType:electric,grocery,phone]#_billType# bill
