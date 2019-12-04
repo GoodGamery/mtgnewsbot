@@ -14,6 +14,7 @@ bakedFood:
  - meatloaf
  - cupcake
  - biscuit
+ - croissant
  - hot pocket
  - newton
  - sandwich cookie
@@ -46,6 +47,7 @@ groundFood:
  - pâté
  - curry
  - ketchup
+ - chili
  - jelly
  - relish
  - salsa
@@ -55,7 +57,6 @@ groundFood:
 flattenedFood:
  - pancake
  - waffle
- - pupusa
  - schnitzel
  - tortilla
  - wafer
