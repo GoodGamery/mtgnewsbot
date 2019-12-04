@@ -4,12 +4,6 @@ playtestCard:
 - "#playtestCardGeneric#"
 - "#playtestCardSpecificReferenceUnset#"
 
-playtestCardTemplate: 
-
-# vehicle / equipment / artifact (adj appliance)
-# land (adj location)
-# [planeswalker's | mtgpersonality's] [adj spelleffect | creature (vanguard, lackey, etc.) | ]
-
 demonymOrFaction:
 - "#demonym#"
 - "#nonPlaneLocation#"
@@ -25,9 +19,10 @@ playtestCardGeneric:
 - "#playtestCardSpecificReferenceMisc#"
 - "[_collection:#creatureTypes.s#,#animalPlural#][_ofWhat:#abstractNounPluralItemNounMassNounOrEmotion#,#_collection#]#cardFlavorSpellTypeNoun.capitalize# of #_ofWhat.capitalizeAll#"
 - "[_adj:#adj#,#adjStorybook#,#adjCorporeal#,#adjColorOrTexture#][_adj:#_adj#,#basicColors#][_thing:#concreteNoun#,#animal#,#placeNoun#,#placeNounCanonical#][_individual:#creatureTypes#,#animal#,#creatureTypeOrCharacterClass#][_oneOrMany:#_individual#,#_individual.sIfNeeded#][_ofTheWhat:#_oneOrMany#,#placeNoun#,#_adj# #_thing#]#cardFlavorSpellParticularTypeNoun.capitalizeAll# of the #_ofTheWhat.capitalizeAll#"
-- "#playtestCardFirstName#'s [_possession:#playtestCardUniqueSpellName#,#playtestCardLackey#,#nounMundane#]#_possession.capitalizeAll#"
+- "#playtestCardFirstName#'s [_possession:#playtestCardUniqueSpellName#,#playtestCardLackey#,#nounMundane#,#mtgPersonQuirky.noSpaces#]#_possession.capitalizeAll#"
 - "#characterClass.capitalizeAll#'s #cardFlavorTypeOfSpell.capitalizeAll#"
 - "[_doer:diver,chaser,miner]#massNoun.hyphenate.capitalize# #_doer.capitalizeAll#"
+- "#mtgPersonQuirky.capitalizeAll#"
 - "[_stuffDoer:flinger,drinker,shaper,bringer,singer,swallower][_thingMaster:master,speaker,stalker,peddler,juggler,snatcher,forger,breaker,smasher,bearer][_stuff:#liquidCompoundWorthy#,#nounNonsenseCompoundSource#][_thing:#nounCompoundWorthy#,#nounNonsenseCompoundSource#,#bodypartCompoundWorthy#][_nonhyphenated:#_stuff##_stuffDoer#,#_thing.hyphenate##_thingMaster#][_hyphenated:#_stuff.hyphenate#-#_stuffDoer#,#_thing.hyphenate#-#_thingMaster#][_doerResult:#_nonhyphenated.noSpaces#,#placeFactionOrAffiliated# #_nonhyphenated.noSpaces#,#placeFactionOrAffiliated# #_hyphenated#]#_doerResult.capitalizeAll#"
 
 playtestCardSpecificReference:
