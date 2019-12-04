@@ -1,5 +1,8 @@
 {
   "format": [
+      "Pioneer",
+      "Historic",
+      "",
       "Legacy",
       "Modern",
       "Commander",
@@ -26,10 +29,14 @@
       "Standard",
       "Modern",
       "Draft",
+      "Pioneer",
+      "Historic",
       "Sealed"
   ],
   "popularFormat": [
       "Standard",
+      "Pioneer",
+      "Historic",      
       "Modern",
       "Vintage",
       "Legacy",
@@ -47,6 +54,8 @@
   ],
   "constructedFormat": [
     "Standard",
+    "Pioneer",
+    "Historic",    
     "Modern",
     "Vintage",
     "Legacy",

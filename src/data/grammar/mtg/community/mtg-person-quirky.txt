@@ -1,0 +1,7 @@
+net decker
+stream sniper
+mana weaver
+card flicker
+rare drafter
+pack cracker
+slow roller

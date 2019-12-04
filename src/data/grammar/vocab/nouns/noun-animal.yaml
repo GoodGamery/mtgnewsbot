@@ -54,6 +54,12 @@ animal:
 - wiener dog
 - buffalo
 - manatee
+- water buffalo
+- parrot
+- penguin
+- muskrat
+- platypus
+- koala
 
 animalSmall:
 - spider
@@ -80,6 +86,7 @@ animalSmall:
 - mouse
 - chipmunk
 - hamster
+- lobster
 - "tiny [_tinyAnimal:monkey,octopus,#animal#]#_tinyAnimal#"
 
 

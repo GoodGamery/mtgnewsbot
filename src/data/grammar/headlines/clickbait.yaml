@@ -13,6 +13,7 @@ clickbait:
 - "[_opener:SHOCKER!,Unbelievable!,Rumor#colon#,BREAKING#colon#,It's true#colon#,UPDATE#colon#]#_opener# #pro# [_rule:petitioned,solicited,approached,contacted,called out]#_rule# by #wackyCharacter# to #dumbScenario#"
 - "How #verbSolutionGerund# helped #pro# #verbDesireableOutcomeIntransitive#"
 - "#clickbaitShocker.capitalizeAll#"
+- "#productLeak#"
 
 clickbaitShocker:
 - "#pro# [_picked:first picked,last picked,wheeled,drafted,topdecked,hate drafted,windmill slammed,morphed]#_picked#
@@ -45,3 +46,16 @@ wackyCharacter:
 - "a swarm of [_insectAdjective:sentient,psychic,intelligent,enormous][_flyingInsects:gnats,moths,bees,mosquitoes,beetles,hermit crabs]#_insectAdjective# #_flyingInsects#[#theyPronouns#]"
 - "#colorfulLocal#[#somePronoun#]"
 - "[_adj:#mood#,#mood#,#mood#,undercover,smarmy,extremely confused,foolhardy,depraved,shady,crafty,wide-eyed,troubled,deranged,delirious,timid][#somePronoun#][_what:robot,child,nun,schoolteacher,preacher,gentleman,con man,gigolo,leprechaun,recluse,fortune-teller,#characterClass#]#_adj.a# #_what#[#somePronoun#]"
+
+productLeak:
+- "[#playtestCardsLeaked#][_leaked:leaked,discovered,found,teased][_maybeColon:#colon# , ][_edition:#_maybeColon##xth# edition,#_maybeColon##rarity# edition,#_maybeColon##cardClassificationModifier# edition][_mysteryBooster2:Mystery Booster 2,Mystery Booster#_edition.capitalizeAll#,Mystery Booster #CONTENT.nextYear#][_unknown:previously unknown,previously secret,previously unreleased][_new:new,additional,new #_unknown#][_cardsFrom:playtest cards,Mystery Booster playtest cards,playtest cards from #_mysteryBooster2#][_cardsFromLeaked:#_numCardsLeaked.capitalize# #_new# #_cardsFrom#,Several new #_cardsFrom#,New #_cardsFrom#]#_cardsFromLeaked.capitalize# #_leaked#: #_leakedCardList#"
+
+playtestCardsLeaked:
+- "[_numCardsLeaked:three][_leakedCardList:#playtestCard#; #playtestCard#; #playtestCard#]"
+- "[_numCardsLeaked:four][_leakedCardList:#playtestCard#; #playtestCard#; #playtestCard#; #playtestCard#]"
+- "[_numCardsLeaked:three][_leakedCardList:{newline}#playtestCardListItem##playtestCardListItem##playtestCardListItem#]"
+- "[_numCardsLeaked:four][_leakedCardList:{newline}#playtestCardListItem##playtestCardListItem##playtestCardListItem##playtestCardListItem#]"
+- "[_numCardsLeaked:five][_leakedCardList:#playtestCard#; #playtestCard#; #playtestCard#; #playtestCard#; #playtestCard#]"
+- "[_numCardsLeaked:five][_leakedCardList:{newline}#playtestCardListItem##playtestCardListItem##playtestCardListItem##playtestCardListItem##playtestCardListItem#]"
+
+playtestCardListItem: "[_listSpacer:{newline}• ]#_listSpacer##playtestCard#"

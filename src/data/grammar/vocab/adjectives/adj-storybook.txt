@@ -39,6 +39,7 @@ cursed
 charmed
 dark
 angelic
+spooky
 #characterClass#'s
 #creatureTypes#'s
 #adj#

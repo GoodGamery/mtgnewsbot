@@ -49,6 +49,7 @@ Fact or Fiction
 Felidar Guardian
 Fireblast
 Force of Will
+Frogify
 Gaea's Cradle
 Gavony Township
 Geist of Saint Traft
@@ -102,6 +103,8 @@ Nekrataal
 Nevinyrral's Disk
 Nexus of Fate
 Noble Hierarch
+Once Upon a Time
+Oko, Thief of Crowns
 Opposition
 Pack Rat
 Painter's Servant
@@ -115,9 +118,11 @@ Primeval Titan
 Prophetic Bolt
 Psychatog
 Qasali Pridemage
+Questing Beast
 Reality Smasher
 Recurring Nightmare
 Reflector Mage
+Revenge of Ravens
 Rhythm of the Wild
 Sakura-Tribe Elder
 Scalding Tarn

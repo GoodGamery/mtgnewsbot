@@ -97,6 +97,11 @@ function dayOfWeekMotivation() {
   return '' + todayDescriptors[Math.floor(Math.random() * todayDescriptors.length)];
 }
 
+function nextYear(s, params) {
+	const date = new Date();
+  return '' + (date.getFullYear() + 1);
+}
+
 // returns a random month / day other than today's date
 function randomMonthDay() {
   const date = new Date();
@@ -164,6 +169,7 @@ module.exports = {
   dayOfWeek,
   dayOfWeekOccasion,
   dayOfWeekMotivation,
+  nextYear,
   randomGathererDates,
   randomMonthDay,
   randomUpcomingMonthDay,

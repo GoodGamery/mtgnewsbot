@@ -196,6 +196,7 @@ troublesome
 tricky
 messy
 juicy
+spooky
 #adjCorporeal#
 #adjValue#
 #adjStorybook#
