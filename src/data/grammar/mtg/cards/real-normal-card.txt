@@ -209,6 +209,7 @@ Serra Angel
 Shanodin Dryads
 Shatter
 Shivan Dragon
+Silent Submersible
 Simulacrum
 Sinkhole
 Siren's Call

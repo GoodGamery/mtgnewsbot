@@ -18,7 +18,7 @@ cotdLegendaryCreatureSearch: "[_customQuery:t=legendary t=creature][#cotdCustomS
 cotdCustomSearch: "[#_customQuery.cardSearchCustomQuery(1)#][_cardname:#_cardName1#][_cardset:#_cardSet1#][_cardtype:#_cardSomeTypeOrSubtype1#][_cardcolor:#_cardColor1#][_cotdImgUrl:#_cardImgUrl1#][_cardDesc:#_cardCategory#][_cardDescCategory:#_cardCategoryClass#]"
 cotdPrefinedCustomQuerySearch: "[#_predefinedQuery#][_cardname:#_cardName1#][_cardset:#_cardSet1#][_cardtype:#_cardSomeTypeOrSubtype1#][_cardcolor:#_cardColor1#][_cotdImgUrl:#_cardImgUrl1#][_cardDesc:#_cardType#][_cardDescCategory:#_cardCategoryClass#]"
 
-initCotdImage: "[_cardSomeCreatureType1:#creatureTypes#][#somePronoun#]"
+initCotdImage: "[_cardSomeCreatureType1:#creatureTypes#][_cardColor:#mtgColors#][#somePronoun#]"
 
 cotdImageNameAndUrl: "[_cardname:#_cardName1#][_cotdImgUrl:#_cardImgUrl1#][_cardSet1:#randomCardSet#]"
 

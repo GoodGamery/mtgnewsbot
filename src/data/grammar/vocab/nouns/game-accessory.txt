@@ -8,4 +8,5 @@ trade binder
 event ticket
 play point
 food token
+Collector Booster
 untradeable war mark

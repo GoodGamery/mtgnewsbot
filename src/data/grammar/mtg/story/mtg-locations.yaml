@@ -1,7 +1,7 @@
 {
   "plane": ["Rath", "Shandalar", "Mirrodin", "Kamigawa", "Alara", "Zendikar", "Innistrad", "Kaladesh", "Amonkhet", "Ixalan",
             "Muraganda", "Mercadia", "Mirrodin", "Ravnica", "Lorwyn", "Tarkir", "Vryn", "Theros", "Shadowmoor", "Phyrexia",
-            "Dominaria", "#obscurePlane#"],
+            "Dominaria", "Eldraine", "Ikoria", "#obscurePlane#"],
   "obscurePlane": ["Arkhos", "Azgol", "Belenon", "Equilor", "Ergamon", "Fabacin", "Ir", "Kaldheim", "Karsus", "Kephalai", "Kinshala", "Kolbahan", "Kyneth", "Luvion", "Moag", "Mongseng", "Muruganda", "  Pyrulea", "Rabia", "Segovia", "Ulgrotha", "Valla" ,"Xerex"],
   "nonPlaneLocation": [
       "Adarkar",
