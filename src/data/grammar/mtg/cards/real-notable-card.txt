@@ -3,6 +3,7 @@ Amulet of Quoz
 Arc-Slogger
 Arcane Signet
 Ass Whuppin'
+Bake into a Pie
 Barbed Lightning
 Bartered Cow
 Blacker Lotus
@@ -13,6 +14,7 @@ Brisela, Voice of Nightmares
 Brushwagg
 Captive Audience
 Cheatyface
+Chillerpillar
 Chub Toad
 Clambassadors
 Collector Protector
@@ -22,6 +24,7 @@ Didn't Say Please
 Domri's Nodorog
 Dwarven Blastminer
 Earl of Squirrel
+Eat to Extinction
 Elephant Ambush
 Elvish Impersonators
 Energizer
@@ -31,12 +34,14 @@ Explore
 Galloping Lizrog
 Giant Ambush Beetle
 Gilder Bairn
+Gingerbrute
 Gleemax
 Gravelgill Axeshark
 Hidetsugu's Second Rite
 Hanweir, the Writhing Township
 Hornswaggle
 Hurloon Wrangler
+Ichthyomorphosis
 Imaginary Pet
 Impervious Greatwurm
 Incite
@@ -44,6 +49,7 @@ Island of Wak-Wak
 Jade Leech
 Jar of Eyeballs
 Kaboom!
+Kiora Bests the Sea God
 Krark's Thumb
 Krark's Other Thumb
 Krazy Kow
@@ -51,12 +57,14 @@ Laboratory Maniac
 Land Tax
 Lhurgoyf
 Lost in the Woods
+Mad Ratter
 Magmaw
 Mass Manipulation
 Mizzium Transreliquat
 Mogg Fanatic
 Mox Lotus
 Nantuko Vigilante
+Nessian Boar
 Nexus of Fate
 Noggle Bridgebreaker
 Nosy Goblin
@@ -72,6 +80,7 @@ Rocket-Powered Turbo Slug
 Rumbling Slum
 Run Away Together
 Sea Legs
+Scheming Symmetry
 Scissors Lizard
 Screaming Shield
 Searing Flesh
@@ -89,6 +98,7 @@ The Chain Veil
 The Cheese Stands Alone
 The Ultimate Nightmare of Wizards of the Coast® Customer Service
 Totally Lost
+Turn into a Pumpkin
 Turn to Frog
 Vial Smasher the Fierce
 Vizzerdrix

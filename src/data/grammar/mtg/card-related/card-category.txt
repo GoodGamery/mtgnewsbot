@@ -44,5 +44,6 @@ tripple-flipple card
 reprint
 functional reprint
 historic spell
+showcase card
 #cardCategoryTerm#
 #rarity#

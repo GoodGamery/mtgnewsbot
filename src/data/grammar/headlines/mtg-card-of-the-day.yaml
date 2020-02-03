@@ -18,7 +18,7 @@ cotdLegendaryCreatureSearch: "[_customQuery:t=legendary t=creature][#cotdCustomS
 cotdCustomSearch: "[#_customQuery.cardSearchCustomQuery(1)#][_cardname:#_cardName1#][_cardset:#_cardSet1#][_cardtype:#_cardSomeTypeOrSubtype1#][_cardcolor:#_cardColor1#][_cotdImgUrl:#_cardImgUrl1#][_cardDesc:#_cardCategory#][_cardDescCategory:#_cardCategoryClass#]"
 cotdPrefinedCustomQuerySearch: "[#_predefinedQuery#][_cardname:#_cardName1#][_cardset:#_cardSet1#][_cardtype:#_cardSomeTypeOrSubtype1#][_cardcolor:#_cardColor1#][_cotdImgUrl:#_cardImgUrl1#][_cardDesc:#_cardType#][_cardDescCategory:#_cardCategoryClass#]"
 
-initCotdImage: "[_cardSomeCreatureType1:#creatureTypes#][#somePronoun#]"
+initCotdImage: "[_cardSomeCreatureType1:#creatureTypes#][_cardColor:#mtgColors#][#somePronoun#]"
 
 cotdImageNameAndUrl: "[_cardname:#_cardName1#][_cotdImgUrl:#_cardImgUrl1#][_cardSet1:#randomCardSet#]"
 
@@ -81,7 +81,7 @@ cotdCreatureTypeDescription:
  - "#_creatureType.capitalizeAll# [_doctors:psychologists,behaviorists,therapists]#_doctors# will tell you that [_dreams:dreams,nightmares]#_dreams# about #_badDream# are very common. Unfortunately for this #_creatureType#, it isn't a dream. How [_dreamFeeling:embarrassing,distressing,terrifying,heartbreaking,awful,unfortunate,ominous,disturbing,hilarious,disastrous,appalling,awkward]#_dreamFeeling#."
  - "It started with \"How do you give #_cardSubtype1.lowercase.s# [_italicText:#keyword.lowercase#]#_italicize#?\" and ended with [_italicText:#keyword.lowercase#][_q:How do you give #_cardSubtype1.a# #_italicize#,What would #_cardSubtype1.a# made out of #massNoun# look like,Why bother,Who cares,Why don't you just follow the design file,Can we design #cardCategory.a# instead,What's for lunch]\"#_q#?\" [_obv:Obviously,Suffice it to say,As you can see for yourself]#_obv#, #_cardName1#[_result:'s playtest went well,'s final design doesn't disappoint,'s printed version answers none of these questions, turned out to be a real mess, turned out great]#_result#."
  - "The only thing left to make #_creatureType.capitalize# tribal viable[_where:, now, in #format#]#_where# is...[_what:a lot more #_creatureType.s#.,a few #_creatureType# lords.,#_creatureType.a# that's actually playable.,probably a playable #cardCategory# or two.,about #count# more cards.,about a million other cards.,actually we#comma# have no idea.,nothing. It's never going to be playable#comma# sorry.,nothing. It's already viable!]#_what#"
- - > 
+ - >
   [_companions:pets,pets,companions,friends,#characterClass.s#]
   [_usefulItem:#bodypartsPlural#,#abstractNounPluralItemNounMassNounOrEmotion#]
   [_undesirableVerb:eat,steal,run away with,hide,hoard,ruin]

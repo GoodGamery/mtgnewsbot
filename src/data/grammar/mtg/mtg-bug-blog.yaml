@@ -154,7 +154,7 @@ bugBlogBadSpellResult:
 
 bugBlogCardCastException:
 - it's the only card in your hand
-- it's foil
+- "it's [_cardVersion:foil,a promo version,a showcase card]#_cardVersion#"
 - "you pay its mana cost [_manaType:#basicColors#,#basicColors#,snow][_payHow:twice,again when it resolves,using at #leastMost# one #_manaType# mana]#_payHow#"
 - your opponent has no untapped lands
 - you tap your mana in a specific order

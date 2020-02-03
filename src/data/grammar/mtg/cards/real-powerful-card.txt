@@ -41,13 +41,16 @@ Deranged Hermit
 Disciple of the Vault
 Disenchant
 Dragonlord Silumgar
+Drakuseth, Maw of Flames
 Dreadbore
+Echo of Eons
 Emrakul, the Promised End
 Engineered Explosives
 Entomb
 Fact or Fiction
 Felidar Guardian
 Fireblast
+Fires of Invention
 Force of Will
 Frogify
 Gaea's Cradle
@@ -65,6 +68,7 @@ Goblin Guide
 Golgari Grave-Troll
 Grave Titan
 Gush
+Haktos the Unscarred
 Harnessed Lightning
 Heartbeat of Spring
 Hydroid Krasis
@@ -108,6 +112,7 @@ Oko, Thief of Crowns
 Opposition
 Pack Rat
 Painter's Servant
+Parhelion II
 Path to Exile
 Pernicious Deed
 Phantasmal Image
@@ -152,6 +157,7 @@ Tainted Pact
 Tarmogoyf
 Teferi, Hero of Dominaria
 Tendrils of Agony
+The Elderspell
 Thing in the Ice
 Thoughtseize
 Thought-Knot Seer
