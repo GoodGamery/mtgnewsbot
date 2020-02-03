@@ -4,6 +4,7 @@
       "Invitational",
       "Mythic Championship",
       "Mythic Qualifier",
+      "Players Tour",
       "GP",
       "Grand Prix",
       "FNM",
@@ -14,11 +15,46 @@
       "#tournament#",
       "#nonTournamentEvent#"
   ],
+  "tournamentCanonical": [
+    "the Pro Tour",
+    "the Pro Tour",
+    "the Players Tour",
+    "[_theMagic:,Magic ]the #_theMagic#World Championship",
+    "[_mythic:,Mythic ,Players ]the #_mythic#Invitational"
+
+  ],
+  "tournamentNonspecific": [
+      "a pro tour",
+      "a grand prix",
+      "a mythic championship"
+  ],
+  "tournamentNonspecificOrCanonical": [
+      "#tournamentCanonical#",
+      "#tournamentNonspecific#"
+  ],
+  "tournamentSpecificOrCanonical": [
+      "#tournamentCanonical#",
+      "#tournament#"
+  ],
+  "tournamentSpecificNonSpecificOrCanonical": [
+      "#tournamentCanonical#",
+      "#tournamentNonspecific#",
+      "#tournament#"
+  ],  
   "tournament": [
       "Pro Tour #recentCardSet#",
-      "GP #city#",
+      "Players Tour: #city#",
+      "Magicfest #city#",
+      "Magicfest #city#",
       "Grand Prix #city#",
-      "SCG #city#"
+      "GP #city#",
+      "SCG #city#",
+      "#otherTournament#"
+  ],
+  "otherTournament": [
+    "Red Bull Untapped",
+    "Fandom Legends",
+    "Twitch Rivals"
   ],
   "nonTournamentEvent": [
       "the [_when:last,next]#_when# team draft",

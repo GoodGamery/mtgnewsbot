@@ -213,8 +213,14 @@
       "[_strategy:sideboard plan,decklist,innermost desires,“#mtgSlang#”][_muttering:muttering,whispering,mumbling,quietly confiding][_what:barfing,drooling,screaming,whispering secrets,muttering nonsense,#_muttering# #_strategy#][_where:a hat,#clothingOrAccessory.aIfNeeded#,your opponent's ear]#_what# into #_where#"
   ],
 
+
+
+
   "verbDesireableOutcomeIntransitive": [
-      "win the pro tour",
+      "win #tournamentNonspecificOrCanonical#",
+      "[_tourney:#tournamentNonspecificOrCanonical#,##][_bracketOrDay:day 2,day 3,the top 8,top 8,the finals][_ofTournament:, of #tournamentSpecificNonSpecificOrCanonical#][_makeIt:make,make it to,get to,almost reach]#_makeIt# #_bracketOrDay##_ofTournament#",
+      "[_typeOfPlayer:,,#format# ,#popularFormat# ,#deckLimitedArchetype# ,#deck# ]win #_typeOfPlayer.titleCaps#Player of the Year",
+      "[_makeItInto:make it into,qualify for,get selected for][_league:the MPL,Rivals]make it into the #_league#",
       "make day two of #tournament#",
       "post threads on reddit that don't get closed immediately",
       "secure a job with WOTC",

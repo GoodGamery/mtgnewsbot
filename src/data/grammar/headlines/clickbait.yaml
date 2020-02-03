@@ -1,17 +1,17 @@
 clickbait:
-- "Are you [_format:#format#,#popularFormat#][_cardOrPractice:#randomAnyCard#,#gameConcept#,#mtgQuestionablePractice#][_verbing:overrating,underrating,overvaluing,undervaluing][_thing:#gameConcept#,#randomCardAlone#,#deckArchOrCategory#,#creatureTypes.s#,#cardSet#,#_cardOrPractice# in #_format#]#_verbing# #_thing#?[_opinion:, #pro# thinks you might be ,You'd be surprised, Subscribe to MTGNewsbot Premium to find out]"
-- "[interrogative:Why,How][_defeating:#verbDefeating#,planning to #verbDefeat#]#interrogative# #pro# is #_defeating# #nouns#"
+- "Are you [_format:#format#,#popularFormat#][_cardOrPractice:#randomAnyCard#,#gameConcept#,#mtgQuestionablePractice#][_verbing:overrating,underrating,overvaluing,undervaluing,wrong about][_thing:#gameConcept#,#randomCardAlone#,#deckArchOrCategory#,#creatureTypes.s#,#cardSet#,#_cardOrPractice# in #_format#]#_verbing# #_thing#?[_opinion:, #pro# thinks you might be ,You'd be surprised, Subscribe to MTGNewsbot Premium to find out]"
+- "[_theReason:The surprising reason that,The one reason that,You won't believe how,Guess how][interrogative:How,Why][_howOrReason:#interrogative#,#_theReason#][_defeating:#verbDefeating#,planning to #verbDefeat#][_proDoing:#_defeating# #nouns#,preparing for #tournament#]#_howOrReason# #pro# is #_proDoing#"
 - "#count.capitalize# [_thing:#cardCategory.s#,#creatureTypes.s#,#cardSet# Cards,#format#
-  Cards]#_thing.capitalize# [reprinted:That Need to be Reprinted,We'd Love to See
+  Cards]#_thing.titleCaps# [reprinted:That Need to be Reprinted,We'd Love to See
   Reprinted in #teaserCardSet#]#reprinted#"
 - "#count.capitalize# #cardCategory.s# from #teaserCardSet# leaked"
-- "#format.capitalize# Banwatch: #randomCardAlone.capitalize#"
+- "#constructedFormat.capitalize# Banwatch: #randomCardAlone.capitalize#"
 - 'PICTURES: #pro#''s [_cosplayAdj:amazing,convincing,elaborate,unconventional]#_cosplayAdj#
   cosplay of [_who:#randomCardAlone#,#character#]#_who#'
-- 'New preview card from #teaserCardSet#! Is it [_desc:#descriptor#,#adjComparative#]#_desc.a# #realPowerfulCard#?'
+- '[_isIt:,,is it ,could it be ][_punct:; ,#colon# , —]New preview card from #teaserCardSet##_punct# [_desc:#descriptor#,#adjComparative#][_isItDesc:#_isIt##_desc.a#]#_isItDesc# #realPowerfulCard#?'
 - "[_opener:SHOCKER!,Unbelievable!,Rumor#colon#,BREAKING#colon#,It's true#colon#,UPDATE#colon#]#_opener# #pro# [_rule:petitioned,solicited,approached,contacted,called out]#_rule# by #wackyCharacter# to #dumbScenario#"
-- "How #verbSolutionGerund# helped #pro# #verbDesireableOutcomeIntransitive#"
-- "#clickbaitShocker.capitalizeAll#"
+- "[_pro:#pro#]How #verbSolutionGerund# helped #_pro# #verbDesireableOutcomeIntransitive#"
+- "#clickbaitShocker.titleCaps#"
 - "#hotTechClickbait#"
 - "#hotTechClickbait#"
 - "#productLeak#"
@@ -19,7 +19,7 @@ clickbait:
 
 
 hotTechClickbait:
-  - "[_tier:0,1,1.5,2,2.5,3][_deckTier:Tier #_tier#][_change:play , stop playing][_cardSpecificChange:play,stop playing,run,don't run,sideboard,stop sideboarding][#pro#][_deck:#deckArch#,#deckArchOrCategory#][_cardSuggestion:#randomAnyCard# in #format#,#randomAnyCard# in #_deck#][_formatOrDeck:#format#,#_deck#][_cardChange: #_cardSpecificChange# #randomAnyCard# in #_formatOrDeck#, #_cardSpecificChange# #cardCategory.s# in #_formatOrDeck#][_consideration:#_deck#,#_cardSuggestion#][_deckIs:is now,is still,is no longer,remains][_decksAre:are no longer,remain][_deckRating:good,bad,unplayable,viable,unbeatable,#_deckTier#,#_deckTier#,the deck to beat][_deckDeckAnalysis][_deckIsNow:is,#_deckIs#][_deckAnaysis:#_deckIsNow# #_deckRating#,#_deckIsNow# #_deckRating#,#_deckIsNow# #_deckRating# in #format#][_proTech:#_change# #_deck#,#_cardChange#,#_deck# #_deckAnaysis#][_hotTech:#_deck#,#_proTech#,#_proTech#][_proSays:says to #_change# #_deck#,says that #_deck# #_deckAnaysis#,says to #_cardChange#][_proTechHeadline:#_proNickname##colon# #_proTech.capitalize#,#_proNickname# #_proSays#][_otherConsidered:Sideboard Guide#colon#,Flip it or Rip it?,Next-Level Play?][_haveYouConsidered:Have you considered?,Have you considered?,#_otherConsidered#][_hotTechLead:HOT TECH,LATEST TECH,Metagame call,AHEAD OF THE METAGAME][_suggestion:#_haveYouConsidered# #_consideration#,#_proTechHeadline#,#_hotTechLead##colon# #_hotTech.capitalize#]#_suggestion#"
+  - "[_tier:0,1,1.5,2,2.5,3][_deckTier:Tier #_tier#][_change:play , stop playing][_cardSpecificChange:play,stop playing,run,don't run,sideboard,stop sideboarding][#pro#][_deck:#deckArch#,#deckArchOrCategory#][_cardSuggestion:#randomAnyCard# in #format#,#randomAnyCard# in #_deck#][_formatOrDeck:#format#,#constructedFormat#,#_deck#,#_deck#][_cardChange: #_cardSpecificChange# #randomAnyCard# in #_formatOrDeck#, #_cardSpecificChange# #cardCategory.s# in #_formatOrDeck#][_consideration:#_deck#,#_cardSuggestion#][_deckIs:is now,is still,is no longer,remains][_decksAre:are no longer,remain][_deckRating:good,bad,unplayable,viable,unbeatable,#_deckTier#,#_deckTier#,the deck to beat][_deckDeckAnalysis][_deckIsNow:is,#_deckIs#][_deckAnaysis:#_deckIsNow# #_deckRating#,#_deckIsNow# #_deckRating#,#_deckIsNow# #_deckRating# in #format#][_proTech:#_change# #_deck#,#_cardChange#,#_deck# #_deckAnaysis#][_hotTech:#_deck#,#_proTech#,#_proTech#][_proSays:says to #_change# #_deck#,says that #_deck# #_deckAnaysis#,says to #_cardChange#][_proTechHeadline:#_proNickname##colon# #_proTech.capitalize#,#_proNickname# #_proSays#][_otherConsidered:Sideboard Guide#colon#,Flip it or Rip it?,Next-Level Play?][_haveYouConsidered:Have you considered?,Have you considered?,#_otherConsidered#][_hotTechLead:HOT TECH,LATEST TECH,Metagame call,AHEAD OF THE METAGAME][_suggestion:#_haveYouConsidered# #_consideration.titleCaps#,#_proTechHeadline#,#_hotTechLead##colon# #_hotTech.capitalize#]#_suggestion#"
 
 clickbaitShocker:
 - "#pro# [_picked:first picked,last picked,wheeled,drafted,topdecked,hate drafted,windmill slammed,morphed]#_picked#
