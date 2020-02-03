@@ -5,15 +5,21 @@ clickbait:
   Cards]#_thing.capitalize# [reprinted:That Need to be Reprinted,We'd Love to See
   Reprinted in #teaserCardSet#]#reprinted#"
 - "#count.capitalize# #cardCategory.s# from #teaserCardSet# leaked"
-- "#format# Banwatch: #randomCardAlone.capitalize#"
-- '[_change:, play more , play fewer , run ][#pro#][_leadIn:Have you considered?,HOT TECH#colon# Play,#_proNickname##colon# Play]#_leadIn# [_consider:#randomAnyCard# in #format#,#deckArch#,#deckArch#,#_change##cardCategory.s# in #deckArch#]#_consider.capitalize#'
+- "#format.capitalize# Banwatch: #randomCardAlone.capitalize#"
 - 'PICTURES: #pro#''s [_cosplayAdj:amazing,convincing,elaborate,unconventional]#_cosplayAdj#
   cosplay of [_who:#randomCardAlone#,#character#]#_who#'
 - 'New preview card from #teaserCardSet#! Is it [_desc:#descriptor#,#adjComparative#]#_desc.a# #realPowerfulCard#?'
 - "[_opener:SHOCKER!,Unbelievable!,Rumor#colon#,BREAKING#colon#,It's true#colon#,UPDATE#colon#]#_opener# #pro# [_rule:petitioned,solicited,approached,contacted,called out]#_rule# by #wackyCharacter# to #dumbScenario#"
 - "How #verbSolutionGerund# helped #pro# #verbDesireableOutcomeIntransitive#"
 - "#clickbaitShocker.capitalizeAll#"
+- "#hotTechClickbait#"
+- "#hotTechClickbait#"
 - "#productLeak#"
+- "#productLeak#"
+
+
+hotTechClickbait:
+  - "[_tier:0,1,1.5,2,2.5,3][_deckTier:Tier #_tier#][_change:play , stop playing][_cardSpecificChange:play,stop playing,run,don't run,sideboard,stop sideboarding][#pro#][_deck:#deckArch#,#deckArchOrCategory#][_cardSuggestion:#randomAnyCard# in #format#,#randomAnyCard# in #_deck#][_formatOrDeck:#format#,#_deck#][_cardChange: #_cardSpecificChange# #randomAnyCard# in #_formatOrDeck#, #_cardSpecificChange# #cardCategory.s# in #_formatOrDeck#][_consideration:#_deck#,#_cardSuggestion#][_deckIs:is now,is still,is no longer,remains][_decksAre:are no longer,remain][_deckRating:good,bad,unplayable,viable,unbeatable,#_deckTier#,#_deckTier#,the deck to beat][_deckDeckAnalysis][_deckIsNow:is,#_deckIs#][_deckAnaysis:#_deckIsNow# #_deckRating#,#_deckIsNow# #_deckRating#,#_deckIsNow# #_deckRating# in #format#][_proTech:#_change# #_deck#,#_cardChange#,#_deck# #_deckAnaysis#][_hotTech:#_deck#,#_proTech#,#_proTech#][_proSays:says to #_change# #_deck#,says that #_deck# #_deckAnaysis#,says to #_cardChange#][_proTechHeadline:#_proNickname##colon# #_proTech.capitalize#,#_proNickname# #_proSays#][_otherConsidered:Sideboard Guide#colon#,Flip it or Rip it?,Next-Level Play?][_haveYouConsidered:Have you considered?,Have you considered?,#_otherConsidered#][_hotTechLead:HOT TECH,LATEST TECH,Metagame call,AHEAD OF THE METAGAME][_suggestion:#_haveYouConsidered# #_consideration#,#_proTechHeadline#,#_hotTechLead##colon# #_hotTech.capitalize#]#_suggestion#"
 
 clickbaitShocker:
 - "#pro# [_picked:first picked,last picked,wheeled,drafted,topdecked,hate drafted,windmill slammed,morphed]#_picked#
@@ -31,7 +37,7 @@ wackyCharacter:
 - "an absent-minded professor[#somePronoun#]"
 - "a damsel in distress[#femalePronouns#]"
 - "a gentleman thief[#malePronouns#]"
-- "a hooker with a heart of gold[#somePronoun#]"
+- "[_sage:young man,young woman,kid][_petitioner:#personPejorativeAny#,streetwise #_sage#]#_petitioner.a# with a heart of gold[#somePronoun#]"
 - "a hotshot pilot[#somePronoun#]"
 - "a manic pixie dream girl[#femalePronouns#]"
 - "a wide-eyed country bumpkin[#somePronoun#]"
@@ -49,6 +55,7 @@ wackyCharacter:
 
 productLeak:
 - "[#playtestCardsLeaked#][_leaked:leaked,discovered,found,teased][_maybeColon:#colon# , ][_edition:#_maybeColon##xth# edition,#_maybeColon##rarity# edition,#_maybeColon##cardClassificationModifier# edition][_mysteryBooster2:Mystery Booster 2,Mystery Booster#_edition.capitalizeAll#,Mystery Booster #CONTENT.nextYear#][_unknown:previously unknown,previously secret,previously unreleased][_new:new,additional,new #_unknown#][_cardsFrom:playtest cards,Mystery Booster playtest cards,playtest cards from #_mysteryBooster2#][_cardsFromLeaked:#_numCardsLeaked.capitalize# #_new# #_cardsFrom#,Several new #_cardsFrom#,New #_cardsFrom#]#_cardsFromLeaked.capitalize# #_leaked#: #_leakedCardList#"
+- "[_andComma:;,#comma#][_leakedSets:#miscNovelCardSetName##_andComma# #miscNovelCardSetName#,#miscNovelCardSetName##comma# #miscNovelCardSetName##comma# #miscNovelCardSetName#][_teaseYear:#CONTENT.randomFutureYear(2)#][_product:Product,Expansion,Release][_expansion:expansion,set][_leaked:leaked,teased,revealed,rumored][_tease:New sets #_leaked# for #_teaseYear#,#_product# schedule #_leaked# for #_teaseYear#,#_teaseYear# #_expansion.s# #_leaked#]#_tease#: #_leakedSets#"
 
 playtestCardsLeaked:
 - "[_numCardsLeaked:three][_leakedCardList:#playtestCard#; #playtestCard#; #playtestCard#]"

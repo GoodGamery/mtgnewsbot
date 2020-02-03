@@ -53,6 +53,21 @@ function lowercase(s) {
   return s.toLowerCase();
 }
 
+function lowercasePrepositions(s) {
+  return  s.replace(/\s(and,to,or,the,for)\s/g, ' L$1 ');
+}
+
+function _caps(s) {
+	return s ? s.split(' ').map( w =>  w.substring(0,1).toUpperCase()+ w.substring(1)).join(' ') : '';
+}
+
+function titleCaps(s) {
+	const prepositions = ['and', 'for', 'of', 'or', 'the', 'to'];
+	const capitalized = _caps(s);
+
+	return prepositions.reduce((str, p) => str.replace(new RegExp(' ' + p + ' ', 'ig'),  str => ' ' + str.toLowerCase() + ' '), capitalized);
+}
+
 // useful for testing
 function noop() {
   return '\0';
@@ -217,6 +232,7 @@ module.exports = {
   a,
   aIfNeeded,
   allCaps,
+  _caps,
   compactSpaces,
   ed,
   er,
@@ -232,6 +248,7 @@ module.exports = {
   sAgreement,
   sIfNeeded,
   stripLeadingText,
+  titleCaps,
   trim,
   wholeNumberToText
 };
