@@ -13,6 +13,9 @@ node -v
 cp ./src/data/fonts/*.ttf /usr/local/share/fonts
 cp ./src/data/fonts/*.otf /usr/local/share/fonts
 
+# update repo
+git pull
+
 # install dependencies
 npm install --production
 
@@ -23,11 +26,11 @@ if
 then 
   # tweet random headline
   echo "generating random headline"
-  node --harmony mtgnews --tweet --toot --discord
+  node mtgnews --tweet --discord
 else
   # tweet specified headline
   echo "generating headline with origin \"#$2#\""  
-  node --harmony mtgnews --tweet --toot --discord -o "#$2#"
+  node mtgnews --tweet --discord -o "#$2#"
 fi
 
 #silent

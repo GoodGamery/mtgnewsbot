@@ -54,7 +54,7 @@ commander
     .parse(process.argv);
 
 const options = getOptions(commander);
-loadConfig(options.configOverride)
+loadConfig(options.configOverride);
 
 const MtgNewsbot = require('./src/mtgnewsbot.js');
 let bot = new MtgNewsbot(options);
