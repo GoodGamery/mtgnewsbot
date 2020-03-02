@@ -7,9 +7,6 @@ yarn-error.log*
 
 *-scratch.html
 
-# NPM!!!!
-package-lock.json
-
 # Runtime data
 pids
 *.pid
