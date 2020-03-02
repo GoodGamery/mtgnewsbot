@@ -1,5 +1,4 @@
-'use strict';
-const path = require('path')
+const path = require('path');
 const merge = require('lodash.merge');
 const Logger = require('./src/lib/util/logger');
 
